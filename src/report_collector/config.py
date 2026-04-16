@@ -62,6 +62,8 @@ class Settings:
     must_read_limit: int
     preview_char_limit: int
     summary_sentence_count: int
+    enable_date_fallback: bool
+    max_date_fallback_days: int
     categories: tuple[str, ...]
     broker_priority: tuple[str, ...]
     priority_subjects: tuple[str, ...]
@@ -107,6 +109,11 @@ class Settings:
             must_read_limit=int(os.getenv("MUST_READ_LIMIT", "12")),
             preview_char_limit=int(os.getenv("PREVIEW_CHAR_LIMIT", "240")),
             summary_sentence_count=int(os.getenv("SUMMARY_SENTENCE_COUNT", "3")),
+            enable_date_fallback=_parse_bool(
+                os.getenv("ENABLE_DATE_FALLBACK"),
+                True,
+            ),
+            max_date_fallback_days=int(os.getenv("MAX_DATE_FALLBACK_DAYS", "3")),
             categories=_parse_csv(
                 os.getenv("REPORT_CATEGORIES"),
                 DEFAULT_CATEGORIES,

@@ -310,7 +310,9 @@ def enrich_and_build_digest(
     reports: list[Report],
     *,
     target_date: str,
+    requested_date: str,
     generated_at: str,
+    collection_note: str,
     settings: Settings,
 ) -> DailyDigest:
     for report in reports:
@@ -337,7 +339,9 @@ def enrich_and_build_digest(
 
     return DailyDigest(
         date=target_date,
+        requested_date=requested_date,
         generated_at=generated_at,
+        collection_note=collection_note,
         editorial_note=editorial_note,
         keywords=keywords,
         priority_filters=priority_filters,
@@ -351,11 +355,21 @@ def render_markdown(digest: DailyDigest) -> str:
     lines = [
         f"# {digest.date} 증권사 리포트 데일리",
         "",
+        f"- 요청 기준일: {digest.requested_date}",
         f"- 생성 시각: {digest.generated_at}",
         f"- 수집 건수: {digest.stats['total_reports']}건",
         f"- 키워드: {', '.join(digest.keywords) if digest.keywords else '없음'}",
         "",
     ]
+
+    if digest.collection_note:
+        lines.extend(
+            [
+                "## 수집 메모",
+                digest.collection_note,
+                "",
+            ]
+        )
 
     if digest.priority_filters["enabled"]:
         lines.extend(
@@ -423,6 +437,8 @@ def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[
         f"<b>{html.escape(digest.date)} 증권사 리포트 데일리</b>",
         f"총 {digest.stats['total_reports']}건 수집",
     ]
+    if digest.collection_note:
+        header.append(html.escape(digest.collection_note))
     if digest.priority_filters["enabled"]:
         header.append(
             f"관심 필터 일치 {digest.priority_filters['matched_reports']}건"

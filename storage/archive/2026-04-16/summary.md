@@ -1,8 +1,12 @@
 # 2026-04-16 증권사 리포트 데일리
 
-- 생성 시각: 2026-04-17T00:32:31+09:00
+- 요청 기준일: 2026-04-17
+- 생성 시각: 2026-04-17T00:59:40+09:00
 - 수집 건수: 91건
 - 키워드: 프리뷰, 한화에어로스페이스, 기대치, 하회, 하반기로, 갈수록, S-OIL, 공급
+
+## 수집 메모
+2026-04-17 기준 리포트가 없어 2026-04-16 자료로 대체했습니다.
 
 ## 오늘 한눈에
 오늘은 종목분석 리포트가 47건으로 가장 많았고, 신한투자증권, 삼성증권, 한국IR협의회 발간 비중이 높았습니다. 우선 확인할 만한 핵심 리포트는 한화에어로스페이스 - 1Q26 프리뷰: 기대치 하회. 하반기로 갈수록 .., S-Oil - 1Q26 preview - 공급 타이트에 힘입은 서프라.., 롯데정밀화학 - 1Q26 preview - 예상치 상회 전망입니다.
@@ -121,7 +125,7 @@
 ### 12. [채권분석] 은행채 강세 요인 분석
 - 증권사: 신한투자증권
 - 발행일: 2026-04-16
-- 점수: 5.32
+- 점수: 5.33
 - 선정 이유: 채권분석 카테고리, 우선 추적 증권사
 - 관심 필터 일치: 없음
 - 요약: 중동전쟁 지속으로 신용 스프레드 확대 흐름. 섹터별로는 차별화 중동전쟁 불확실성 국면에서 채권 시장은 전반적 약세 압력을 받았다.
@@ -202,22 +206,22 @@
 - [시황정보] Daily Market Digest (4월 16일) | 신한투자증권 | 2026-04-16 | 점수 5.50 | https://finance.naver.com/research/market_info_read.naver?nid=35725&page=1
 - [종목분석] 이녹스첨단소재 - 사업 다각화라는 성장 스토리를 이어간다 | 한국IR협의회 | 2026-04-16 | 점수 5.50 | https://finance.naver.com/research/company_read.naver?nid=91613&page=2
 - [시황정보] 국내 주식 마감 시황 - IT와 산업재가 견인한 KOSPI .. | 신한투자증권 | 2026-04-16 | 점수 5.35 | https://finance.naver.com/research/market_info_read.naver?nid=35718&page=1
-- [채권분석] 은행채 강세 요인 분석 | 신한투자증권 | 2026-04-16 | 점수 5.32 | https://finance.naver.com/research/debenture_read.naver?nid=10654&page=1
+- [채권분석] 은행채 강세 요인 분석 | 신한투자증권 | 2026-04-16 | 점수 5.33 | https://finance.naver.com/research/debenture_read.naver?nid=10654&page=1
 - [산업분석] 게임 - [IBKS Daily] 인터넷/게임 | IBK투자증권 | 2026-04-16 | 점수 5.25 | https://finance.naver.com/research/industry_read.naver?nid=44233&page=1
 - [채권분석] [해외 크레딧] 케빈 워시와 금융 규제 완화 (은행·사.. | 하나증권 | 2026-04-16 | 점수 5.25 | https://finance.naver.com/research/debenture_read.naver?nid=10659&page=1
-- [채권분석] ESG 채권 시장 동향 점검: 녹색국채를 중심으로 | 키움증권 | 2026-04-16 | 점수 5.23 | https://finance.naver.com/research/debenture_read.naver?nid=10655&page=1
+- [채권분석] ESG 채권 시장 동향 점검: 녹색국채를 중심으로 | 키움증권 | 2026-04-16 | 점수 5.24 | https://finance.naver.com/research/debenture_read.naver?nid=10655&page=1
 - [시황정보] 현시점 2026-04-16 | DS투자증권 | 2026-04-16 | 점수 5.20 | https://finance.naver.com/research/market_info_read.naver?nid=35729&page=1
 - [투자정보] [IBKS Daily] Start with IBKS(2026.04.16) 물가안정.. | IBK투자증권 | 2026-04-16 | 점수 5.20 | https://finance.naver.com/research/invest_read.naver?nid=38552&page=1
 - [시황정보] 4/15 KB 리서치 장마감코멘트 | KB증권 | 2026-04-16 | 점수 5.20 | https://finance.naver.com/research/market_info_read.naver?nid=35717&page=1
 - [시황정보] Daily 신한생각 (4월 16일) | 신한투자증권 | 2026-04-16 | 점수 5.10 | https://finance.naver.com/research/market_info_read.naver?nid=35724&page=1
-- [채권분석] Eugenes FICC Update | 유진투자증권 | 2026-04-16 | 점수 4.78 | https://finance.naver.com/research/debenture_read.naver?nid=10657&page=1
+- [채권분석] Eugenes FICC Update | 유진투자증권 | 2026-04-16 | 점수 4.79 | https://finance.naver.com/research/debenture_read.naver?nid=10657&page=1
 - [시황정보] [DS Defense Daily] 2026-04-16 | DS투자증권 | 2026-04-16 | 점수 4.75 | https://finance.naver.com/research/market_info_read.naver?nid=35730&page=1
 - [시황정보] SK증권 아침에 슥_2026.04.16 | SK증권 | 2026-04-16 | 점수 4.70 | https://finance.naver.com/research/market_info_read.naver?nid=35722&page=1
 - [시황정보] 국내주식 마감 시황 (26.04.15) - 전고점 정복 진행 | 유안타증권 | 2026-04-16 | 점수 4.60 | https://finance.naver.com/research/market_info_read.naver?nid=35727&page=1
 - [시황정보] SK증권 Global Carbon Market Daily_260416 | SK증권 | 2026-04-16 | 점수 4.59 | https://finance.naver.com/research/market_info_read.naver?nid=35720&page=1
-- [채권분석] 사자, 포화 속에서 | SK증권 | 2026-04-16 | 점수 4.56 | https://finance.naver.com/research/debenture_read.naver?nid=10656&page=1
+- [채권분석] 사자, 포화 속에서 | SK증권 | 2026-04-16 | 점수 4.57 | https://finance.naver.com/research/debenture_read.naver?nid=10656&page=1
 - [시황정보] [Morning Brief] 대형기술주와 소프트웨어 강세, 미 .. | iM증권 | 2026-04-16 | 점수 4.50 | https://finance.naver.com/research/market_info_read.naver?nid=35723&page=1
 - [시황정보] Yuanta Morning Snapshot (26.04.16) | 유안타증권 | 2026-04-16 | 점수 4.45 | https://finance.naver.com/research/market_info_read.naver?nid=35728&page=1
 - [시황정보] [IBKS Daily] Morning Brief(260416) | IBK투자증권 | 2026-04-16 | 점수 4.10 | https://finance.naver.com/research/market_info_read.naver?nid=35721&page=1
 - [시황정보] Daily Bond Morning Brief(2026.04.16) | 다올투자증권 | 2026-04-16 | 점수 4.00 | https://finance.naver.com/research/market_info_read.naver?nid=35726&page=1
-- [채권분석] Daily Bond Morning Brief(2026.04.16) | 다올투자증권 | 2026-04-16 | 점수 3.41 | https://finance.naver.com/research/debenture_read.naver?nid=10658&page=1
+- [채권분석] Daily Bond Morning Brief(2026.04.16) | 다올투자증권 | 2026-04-16 | 점수 3.42 | https://finance.naver.com/research/debenture_read.naver?nid=10658&page=1

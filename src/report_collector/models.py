@@ -68,7 +68,9 @@ class Report:
 @dataclass(slots=True)
 class DailyDigest:
     date: str
+    requested_date: str
     generated_at: str
+    collection_note: str
     editorial_note: str
     keywords: list[str]
     priority_filters: dict[str, Any]
@@ -79,7 +81,9 @@ class DailyDigest:
     def to_public_dict(self) -> dict[str, Any]:
         return {
             "date": self.date,
+            "requested_date": self.requested_date,
             "generated_at": self.generated_at,
+            "collection_note": self.collection_note,
             "editorial_note": self.editorial_note,
             "keywords": self.keywords,
             "priority_filters": self.priority_filters,

@@ -12,10 +12,13 @@ jobs:
   build-digest:
     runs-on: ubuntu-latest
     env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
       TZ: Asia/Seoul
       REPORT_TIMEZONE: Asia/Seoul
       REPORT_PAGE_DEPTH: "4"
       MUST_READ_LIMIT: "12"
+      ENABLE_DATE_FALLBACK: "true"
+      MAX_DATE_FALLBACK_DAYS: "3"
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       BROKER_PRIORITY: 메리츠증권,삼성증권,신한투자증권,한국투자증권,키움증권,대신증권,하나증권,NH투자증권,KB증권,미래에셋증권,유안타증권
@@ -24,10 +27,10 @@ jobs:
       PRIORITY_ONLY: ${{ vars.PRIORITY_ONLY }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 

@@ -19,6 +19,49 @@ def _write_text(path: Path, content: str) -> None:
     path.write_text(content, encoding="utf-8")
 
 
+def _load_json(path: Path) -> dict | None:
+    if not path.exists():
+        return None
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _remove_tree(path: Path) -> None:
+    if not path.exists():
+        return
+    if path.is_file():
+        path.unlink()
+        return
+    for child in path.iterdir():
+        _remove_tree(child)
+    path.rmdir()
+
+
+def _cleanup_stale_requested_day(
+    digest: DailyDigest,
+    *,
+    archive_root: Path,
+    docs_root: Path,
+) -> None:
+    if digest.requested_date == digest.date:
+        return
+
+    requested_archive_dir = archive_root / digest.requested_date
+    requested_archive_payload = _load_json(requested_archive_dir / "digest.json")
+    if requested_archive_payload and requested_archive_payload.get("stats", {}).get(
+        "total_reports",
+        0,
+    ) == 0:
+        _remove_tree(requested_archive_dir)
+
+    requested_day_path = docs_root / "data" / "days" / f"{digest.requested_date}.json"
+    requested_day_payload = _load_json(requested_day_path)
+    if requested_day_payload and requested_day_payload.get("stats", {}).get(
+        "total_reports",
+        0,
+    ) == 0:
+        requested_day_path.unlink()
+
+
 def publish_digest(
     digest: DailyDigest,
     *,
@@ -35,6 +78,11 @@ def publish_digest(
     docs_data_root = docs_root / "data"
     _write_json(docs_data_root / "days" / f"{digest.date}.json", digest_payload)
     _write_json(docs_data_root / "latest.json", digest_payload)
+    _cleanup_stale_requested_day(
+        digest,
+        archive_root=archive_root,
+        docs_root=docs_root,
+    )
     _write_json(docs_data_root / "index.json", _build_index(archive_root))
 
 
@@ -64,4 +112,3 @@ def _build_index(archive_root: Path) -> dict:
         )
 
     return {"days": days}
-
