@@ -196,6 +196,50 @@
         gap: 12px;
       }
 
+      .ranking-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 12px;
+      }
+
+      .ranking-panel {
+        padding: 18px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.78);
+        border: 1px solid var(--line);
+      }
+
+      .ranking-panel h3 {
+        margin: 0 0 12px;
+        font-size: 1rem;
+      }
+
+      .ranking-list {
+        display: grid;
+        gap: 10px;
+      }
+
+      .ranking-item {
+        display: grid;
+        gap: 4px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .ranking-item:last-child {
+        padding-bottom: 0;
+        border-bottom: 0;
+      }
+
+      .ranking-item a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .ranking-item small {
+        color: var(--muted);
+      }
+
       .report-card {
         padding: 18px;
         border-radius: 20px;
@@ -329,6 +373,11 @@
 
       <section class="card section spacer">
         <h2>꼭 읽을 리포트</h2>
+        <div id="rankingGrid" class="ranking-grid"></div>
+      </section>
+
+      <section class="card section spacer">
+        <h2>카테고리 랭킹</h2>
         <div id="mustReadList" class="must-read"></div>
       </section>
 
@@ -352,6 +401,20 @@
           throw new Error(`Failed to load ${path}`);
         }
         return response.json();
+      }
+
+      function syncSelectedDate(date) {
+        const params = new URLSearchParams(window.location.search);
+        params.set("date", date);
+        const query = params.toString();
+        const nextUrl = query ? `${window.location.pathname}?${query}` : window.location.pathname;
+        window.history.replaceState({}, "", nextUrl);
+      }
+
+      function getRequestedDate(days) {
+        const params = new URLSearchParams(window.location.search);
+        const requested = params.get("date");
+        return days.some((day) => day.date === requested) ? requested : days[0]?.date;
       }
 
       function reportMatchesQuery(report) {
@@ -473,6 +536,48 @@
         });
       }
 
+      function renderRankings(digest) {
+        const container = document.getElementById("rankingGrid");
+        container.innerHTML = "";
+
+        const rankings = Object.values(digest.rankings || {});
+        if (!rankings.length) {
+          container.innerHTML = '<div class="empty">랭킹 데이터가 없습니다.</div>';
+          return;
+        }
+
+        rankings.forEach((ranking) => {
+          const reports = (ranking.reports || []).filter(reportMatchesQuery);
+          if (!reports.length) {
+            return;
+          }
+
+          const panel = document.createElement("section");
+          panel.className = "ranking-panel";
+          panel.innerHTML = `<h3>${ranking.label}</h3>`;
+
+          const list = document.createElement("div");
+          list.className = "ranking-list";
+
+          reports.forEach((report, index) => {
+            const item = document.createElement("div");
+            item.className = "ranking-item";
+            item.innerHTML = `
+              <strong>${index + 1}. <a href="${report.detail_url}" target="_blank" rel="noreferrer">${report.display_title}</a></strong>
+              <small>${report.broker} · 점수 ${Number(report.score).toFixed(2)}</small>
+            `;
+            list.appendChild(item);
+          });
+
+          panel.appendChild(list);
+          container.appendChild(panel);
+        });
+
+        if (!container.children.length) {
+          container.innerHTML = '<div class="empty">검색 조건에 맞는 랭킹이 없습니다.</div>';
+        }
+      }
+
       function renderMustRead(digest) {
         const container = document.getElementById("mustReadList");
         container.innerHTML = "";
@@ -502,11 +607,16 @@
       async function loadDigest(date) {
         const digest = await fetchJson(`./data/days/${date}.json`);
         state.digest = digest;
+        syncSelectedDate(digest.date);
         document.getElementById("editorialNote").classList.remove("loading");
-        document.getElementById("editorialNote").textContent = digest.editorial_note;
+        document.getElementById("editorialNote").textContent =
+          digest.collection_note
+            ? `${digest.collection_note} ${digest.editorial_note}`
+            : digest.editorial_note;
         renderPriorityFilters(digest);
         renderKeywords(digest.keywords);
         renderStats(digest);
+        renderRankings(digest);
         renderMustRead(digest);
         renderReports(digest);
       }
@@ -514,6 +624,9 @@
       async function init() {
         try {
           state.index = await fetchJson("./data/index.json");
+          document.querySelector("#rankingGrid")?.previousElementSibling?.replaceChildren("카테고리 랭킹");
+          document.querySelector("#mustReadList")?.previousElementSibling?.replaceChildren("꼭 읽을 리포트");
+          document.querySelector("#reportList")?.previousElementSibling?.replaceChildren("전체 수집 결과");
           const dateSelect = document.getElementById("dateSelect");
           const days = state.index.days || [];
           if (!days.length) {
@@ -528,7 +641,11 @@
             dateSelect.appendChild(option);
           });
 
-          await loadDigest(days[0].date);
+          const initialDate = getRequestedDate(days);
+          if (initialDate) {
+            dateSelect.value = initialDate;
+            await loadDigest(initialDate);
+          }
 
           dateSelect.addEventListener("change", async (event) => {
             await loadDigest(event.target.value);
@@ -537,6 +654,7 @@
           document.getElementById("searchInput").addEventListener("input", (event) => {
             state.query = event.target.value.trim().toLowerCase();
             if (state.digest) {
+              renderRankings(state.digest);
               renderMustRead(state.digest);
               renderReports(state.digest);
             }
@@ -545,6 +663,7 @@
           document.getElementById("priorityOnlyToggle").addEventListener("change", (event) => {
             state.priorityOnlyView = Boolean(event.target.checked);
             if (state.digest) {
+              renderRankings(state.digest);
               renderMustRead(state.digest);
               renderReports(state.digest);
             }

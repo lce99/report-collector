@@ -50,6 +50,25 @@ def _parse_bool(value: str | None, default: bool) -> bool:
     return value.strip().lower() in {"1", "true", "yes", "y", "on"}
 
 
+def _normalize_site_url(value: str | None) -> str | None:
+    if not value:
+        return None
+    return value.rstrip("/") + "/"
+
+
+def _default_site_url() -> str | None:
+    explicit = _normalize_site_url(os.getenv("SITE_URL"))
+    if explicit:
+        return explicit
+
+    repository = os.getenv("GITHUB_REPOSITORY")
+    if not repository or "/" not in repository:
+        return None
+
+    owner, name = repository.split("/", 1)
+    return f"https://{owner}.github.io/{name}/"
+
+
 @dataclass(slots=True)
 class Settings:
     base_url: str
@@ -62,6 +81,7 @@ class Settings:
     must_read_limit: int
     preview_char_limit: int
     summary_sentence_count: int
+    ranking_limit: int
     enable_date_fallback: bool
     max_date_fallback_days: int
     categories: tuple[str, ...]
@@ -72,6 +92,7 @@ class Settings:
     telegram_bot_token: str | None
     telegram_chat_id: str | None
     send_telegram: bool
+    site_url: str | None
     site_title: str
 
     @property
@@ -109,6 +130,7 @@ class Settings:
             must_read_limit=int(os.getenv("MUST_READ_LIMIT", "12")),
             preview_char_limit=int(os.getenv("PREVIEW_CHAR_LIMIT", "240")),
             summary_sentence_count=int(os.getenv("SUMMARY_SENTENCE_COUNT", "3")),
+            ranking_limit=int(os.getenv("RANKING_LIMIT", "5")),
             enable_date_fallback=_parse_bool(
                 os.getenv("ENABLE_DATE_FALLBACK"),
                 True,
@@ -134,5 +156,6 @@ class Settings:
             telegram_bot_token=os.getenv("TELEGRAM_BOT_TOKEN"),
             telegram_chat_id=os.getenv("TELEGRAM_CHAT_ID"),
             send_telegram=_parse_bool(os.getenv("SEND_TELEGRAM"), True),
+            site_url=_default_site_url(),
             site_title=os.getenv("SITE_TITLE", "증권사 리포트 데일리"),
         )

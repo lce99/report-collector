@@ -52,6 +52,13 @@ MUST_READ_QUOTAS = (
     ("debenture", 1),
 )
 
+RANKING_GROUPS = (
+    ("company", "종목 랭킹", {"company"}),
+    ("industry", "산업 랭킹", {"industry"}),
+    ("macro", "매크로 랭킹", {"economy", "market", "debenture"}),
+    ("strategy", "전략 랭킹", {"invest"}),
+)
+
 STOPWORDS = {
     "리포트",
     "증권",
@@ -306,6 +313,26 @@ def _build_editorial_note(reports: list[Report], must_read: list[Report]) -> str
     )
 
 
+def _build_rankings(reports: list[Report], limit: int) -> dict[str, dict[str, object]]:
+    rankings: dict[str, dict[str, object]] = {}
+    for key, label, categories in RANKING_GROUPS:
+        matched = [report for report in reports if report.category in categories]
+        if not matched:
+            continue
+        rankings[key] = {
+            "label": label,
+            "reports": matched[:limit],
+        }
+    return rankings
+
+
+def _build_dashboard_url(site_url: str | None, date_text: str) -> str | None:
+    if not site_url:
+        return None
+    separator = "&" if "?" in site_url else "?"
+    return f"{site_url}{separator}date={date_text}"
+
+
 def enrich_and_build_digest(
     reports: list[Report],
     *,
@@ -336,22 +363,110 @@ def enrich_and_build_digest(
     stats = _build_stats(reports, keywords)
     priority_filters = _build_priority_filters(reports, must_read, settings)
     editorial_note = _build_editorial_note(reports, must_read)
+    rankings = _build_rankings(reports, settings.ranking_limit)
+    dashboard_url = _build_dashboard_url(settings.site_url, target_date)
 
     return DailyDigest(
         date=target_date,
         requested_date=requested_date,
         generated_at=generated_at,
         collection_note=collection_note,
+        dashboard_url=dashboard_url,
         editorial_note=editorial_note,
         keywords=keywords,
         priority_filters=priority_filters,
         stats=stats,
+        rankings=rankings,
         must_read=must_read,
         reports=reports,
     )
 
 
 def render_markdown(digest: DailyDigest) -> str:
+    lines = [
+        f"# {digest.date} 증권사 리포트 데일리",
+        "",
+        f"- 요청 기준일: {digest.requested_date}",
+        f"- 생성 시각: {digest.generated_at}",
+        f"- 웹 대시보드: {digest.dashboard_url or '미설정'}",
+        f"- 수집 건수: {digest.stats['total_reports']}건",
+        f"- 키워드: {', '.join(digest.keywords) if digest.keywords else '없음'}",
+        "",
+    ]
+
+    if digest.collection_note:
+        lines.extend(["## 수집 메모", digest.collection_note, ""])
+
+    if digest.priority_filters["enabled"]:
+        lines.extend(
+            [
+                "## 관심 필터",
+                f"- 관심 종목: {', '.join(digest.priority_filters['subjects']) or '없음'}",
+                (
+                    "- 관심 섹터/키워드: "
+                    f"{', '.join(digest.priority_filters['keywords']) or '없음'}"
+                ),
+                f"- 일치 리포트: {digest.priority_filters['matched_reports']}건",
+                (
+                    "- 엄격 필터 모드: "
+                    f"{'켜짐' if digest.priority_filters['priority_only'] else '꺼짐'}"
+                ),
+                "",
+            ]
+        )
+
+    lines.extend(["## 오늘의 핵심", digest.editorial_note, ""])
+
+    if digest.rankings:
+        lines.extend(["## 카테고리 랭킹", ""])
+        for ranking in digest.rankings.values():
+            lines.append(f"### {ranking['label']}")
+            reports = ranking.get("reports", [])
+            if not reports:
+                lines.append("- 결과 없음")
+            else:
+                for index, report in enumerate(reports, start=1):
+                    lines.append(
+                        f"- {index}. {report.display_title} | {report.broker} | 점수 {report.score:.2f}"
+                    )
+            lines.append("")
+
+    lines.append("## 꼭 읽을 리포트")
+    if not digest.must_read:
+        lines.extend(["- 꼭 읽을 리포트로 선정된 항목이 없습니다.", ""])
+
+    for index, report in enumerate(digest.must_read, start=1):
+        score_text = f"{report.score:.2f}"
+        reasons = ", ".join(report.score_reasons) if report.score_reasons else "자동 선정"
+        lines.extend(
+            [
+                f"### {index}. [{report.category_label}] {report.display_title}",
+                f"- 증권사: {report.broker}",
+                f"- 발행일: {report.published_date}",
+                f"- 점수: {score_text}",
+                f"- 선정 이유: {reasons}",
+                (
+                    "- 관심 필터 일치: "
+                    f"종목 {', '.join(report.priority_subject_matches) or '없음'} / "
+                    f"키워드 {', '.join(report.priority_keyword_matches) or '없음'}"
+                )
+                if report.is_priority_match
+                else "- 관심 필터 일치: 없음",
+                f"- 요약: {report.summary}",
+                f"- 상세 링크: {report.detail_url}",
+                f"- PDF: {report.pdf_url or '없음'}",
+                "",
+            ]
+        )
+
+    lines.extend(["## 전체 수집 결과", ""])
+    for report in digest.reports:
+        lines.append(
+            f"- [{report.category_label}] {report.display_title} | {report.broker} | "
+            f"{report.published_date} | 점수 {report.score:.2f} | {report.detail_url}"
+        )
+
+    return "\n".join(lines).strip() + "\n"
     lines = [
         f"# {digest.date} 증권사 리포트 데일리",
         "",
@@ -395,6 +510,20 @@ def render_markdown(digest: DailyDigest) -> str:
         ]
     )
 
+    if digest.rankings:
+        lines.extend(["## 카테고리 랭킹", ""])
+        for ranking in digest.rankings.values():
+            lines.append(f"### {ranking['label']}")
+            reports = ranking.get("reports", [])
+            if not reports:
+                lines.append("- 결과 없음")
+            else:
+                for index, report in enumerate(reports, start=1):
+                    lines.append(
+                        f"- {index}. {report.display_title} | {report.broker} | 점수 {report.score:.2f}"
+                    )
+            lines.append("")
+
     if not digest.must_read:
         lines.append("- 꼭 읽을 리포트로 선정된 항목이 없습니다.")
 
@@ -433,6 +562,79 @@ def render_markdown(digest: DailyDigest) -> str:
 
 
 def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[str]:
+    header = [
+        f"<b>{html.escape(digest.date)} 증권사 리포트 데일리</b>",
+        f"총 {digest.stats['total_reports']}건 수집",
+    ]
+    if digest.dashboard_url:
+        header.append(
+            f'<a href="{html.escape(digest.dashboard_url)}">대시보드 열기</a>'
+        )
+    if digest.collection_note:
+        header.append(html.escape(digest.collection_note))
+    if digest.priority_filters["enabled"]:
+        header.append(
+            f"관심 필터 일치 {digest.priority_filters['matched_reports']}건"
+        )
+    if digest.keywords:
+        header.append(f"키워드: {html.escape(', '.join(digest.keywords[:6]))}")
+    header.append("")
+    header.append(html.escape(digest.editorial_note))
+
+    blocks = ["\n".join(header)]
+
+    ranking_lines = ["", "<b>카테고리 랭킹</b>"]
+    for key in ("company", "industry", "macro", "strategy"):
+        ranking = digest.rankings.get(key)
+        if not ranking:
+            continue
+        reports = ranking.get("reports", [])
+        if not reports:
+            continue
+        top_report = reports[0]
+        ranking_lines.append(
+            f"{html.escape(str(ranking['label']))}: "
+            f'<a href="{html.escape(top_report.detail_url)}">'
+            f"{html.escape(top_report.display_title)}</a>"
+        )
+    if len(ranking_lines) > 2:
+        blocks.append("\n".join(ranking_lines))
+
+    for index, report in enumerate(digest.must_read[:max_reports], start=1):
+        summary = _trim_text(report.summary, 180)
+        parts = [
+            "",
+            f"<b>{index}. [{html.escape(report.category_label)}] "
+            f'<a href="{html.escape(report.detail_url)}">'
+            f"{html.escape(report.display_title)}</a></b>",
+            f"{html.escape(report.broker)} | 점수 {report.score:.2f}",
+        ]
+        if report.is_priority_match:
+            parts.append(
+                "관심 일치: "
+                + html.escape(
+                    ", ".join(
+                        report.priority_subject_matches
+                        + report.priority_keyword_matches[:2]
+                    )
+                )
+            )
+        parts.append(html.escape(summary))
+        blocks.append("\n".join(parts))
+
+    messages: list[str] = []
+    current = ""
+    for block in blocks:
+        candidate = (current + "\n" + block).strip() if current else block
+        if len(candidate) > 3500 and current:
+            messages.append(current.strip())
+            current = block.strip()
+        else:
+            current = candidate
+    if current:
+        messages.append(current.strip())
+
+    return messages
     header = [
         f"<b>{html.escape(digest.date)} 증권사 리포트 데일리</b>",
         f"총 {digest.stats['total_reports']}건 수집",

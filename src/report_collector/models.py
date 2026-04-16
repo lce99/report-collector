@@ -71,10 +71,12 @@ class DailyDigest:
     requested_date: str
     generated_at: str
     collection_note: str
+    dashboard_url: str | None
     editorial_note: str
     keywords: list[str]
     priority_filters: dict[str, Any]
     stats: dict[str, Any]
+    rankings: dict[str, Any]
     must_read: list[Report]
     reports: list[Report]
 
@@ -84,10 +86,20 @@ class DailyDigest:
             "requested_date": self.requested_date,
             "generated_at": self.generated_at,
             "collection_note": self.collection_note,
+            "dashboard_url": self.dashboard_url,
             "editorial_note": self.editorial_note,
             "keywords": self.keywords,
             "priority_filters": self.priority_filters,
             "stats": self.stats,
+            "rankings": {
+                key: {
+                    "label": value.get("label"),
+                    "reports": [
+                        report.to_public_dict() for report in value.get("reports", [])
+                    ],
+                }
+                for key, value in self.rankings.items()
+            },
             "must_read": [report.to_public_dict() for report in self.must_read],
             "reports": [report.to_public_dict() for report in self.reports],
         }
