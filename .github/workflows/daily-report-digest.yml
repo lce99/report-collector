@@ -1,0 +1,48 @@
+name: Daily Broker Report Digest
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "10 9 * * 1-5"
+
+permissions:
+  contents: write
+
+jobs:
+  build-digest:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Seoul
+      REPORT_TIMEZONE: Asia/Seoul
+      REPORT_PAGE_DEPTH: "4"
+      MUST_READ_LIMIT: "12"
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      BROKER_PRIORITY: 메리츠증권,삼성증권,신한투자증권,한국투자증권,키움증권,대신증권,하나증권,NH투자증권,KB증권,미래에셋증권,유안타증권
+      PRIORITY_SUBJECTS: ${{ vars.PRIORITY_SUBJECTS }}
+      PRIORITY_KEYWORDS: ${{ vars.PRIORITY_KEYWORDS }}
+      PRIORITY_ONLY: ${{ vars.PRIORITY_ONLY }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip -r requirements.txt
+
+      - name: Run collector
+        run: python run_daily.py
+
+      - name: Commit updated archive and docs
+        run: |
+          if [ -n "$(git status --porcelain storage docs)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add storage docs
+            git commit -m "chore: update daily broker digest"
+            git push
+          fi

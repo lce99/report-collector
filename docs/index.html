@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Broker Report Radar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f6f1e8;
+        --panel: rgba(255, 252, 247, 0.86);
+        --text: #17211b;
+        --muted: #5d685d;
+        --line: rgba(23, 33, 27, 0.12);
+        --accent: #0f7b5f;
+        --accent-soft: rgba(15, 123, 95, 0.12);
+        --highlight: #e6902f;
+        --shadow: 0 20px 50px rgba(21, 32, 23, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "IBM Plex Sans KR", sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, rgba(230, 144, 47, 0.18), transparent 32%),
+          radial-gradient(circle at top right, rgba(15, 123, 95, 0.2), transparent 28%),
+          linear-gradient(180deg, #f9f5ee 0%, var(--bg) 100%);
+      }
+
+      .shell {
+        width: min(1180px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 32px 0 56px;
+      }
+
+      .hero,
+      .card {
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        background:
+          linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(252, 248, 241, 0.82)),
+          var(--panel);
+        box-shadow: var(--shadow);
+      }
+
+      .hero {
+        position: relative;
+        overflow: hidden;
+        padding: 28px;
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: auto -50px -70px auto;
+        width: 220px;
+        height: 220px;
+        border-radius: 999px;
+        background: radial-gradient(circle, rgba(230, 144, 47, 0.22), transparent 68%);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 14px 0 10px;
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        line-height: 1.02;
+        letter-spacing: -0.04em;
+      }
+
+      .subtitle {
+        max-width: 760px;
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .toolbar {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 14px;
+        margin-top: 24px;
+      }
+
+      .field {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .field label {
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--muted);
+      }
+
+      .toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        min-height: 52px;
+        padding: 14px 16px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.86);
+        color: var(--text);
+      }
+
+      select,
+      input {
+        width: 100%;
+        padding: 14px 16px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.86);
+        color: var(--text);
+        font: inherit;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 18px;
+        margin-top: 20px;
+      }
+
+      .section {
+        padding: 22px;
+      }
+
+      .section h2 {
+        margin: 0 0 14px;
+        font-size: 1.1rem;
+      }
+
+      .summary {
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 14px;
+      }
+
+      .chip {
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.76);
+        border: 1px solid var(--line);
+        font-size: 13px;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .stat {
+        padding: 16px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.78);
+        border: 1px solid var(--line);
+      }
+
+      .stat strong {
+        display: block;
+        font-size: 1.6rem;
+      }
+
+      .must-read,
+      .report-list {
+        display: grid;
+        gap: 12px;
+      }
+
+      .report-card {
+        padding: 18px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.78);
+        border: 1px solid var(--line);
+        transition: transform 160ms ease, border-color 160ms ease;
+      }
+
+      .report-card:hover {
+        transform: translateY(-2px);
+        border-color: rgba(15, 123, 95, 0.3);
+      }
+
+      .kicker,
+      .report-card footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .badge {
+        display: inline-flex;
+        padding: 5px 10px;
+        border-radius: 999px;
+        background: rgba(15, 123, 95, 0.1);
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      .report-card h3 {
+        margin: 10px 0;
+        font-size: 1rem;
+        line-height: 1.45;
+      }
+
+      .report-card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .report-card a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .report-card footer {
+        margin-top: 14px;
+      }
+
+      .priority-copy {
+        margin-top: 10px;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .spacer {
+        margin-top: 20px;
+      }
+
+      .loading,
+      .empty {
+        padding: 24px;
+        border-radius: 20px;
+        border: 1px dashed var(--line);
+        color: var(--muted);
+        background: rgba(255, 255, 255, 0.48);
+      }
+
+      @media (max-width: 900px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .shell {
+          width: min(100vw - 20px, 1180px);
+          padding-top: 18px;
+        }
+
+        .hero,
+        .section {
+          padding: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <span class="eyebrow">GitHub Pages Daily Digest</span>
+        <h1>Broker Report Radar</h1>
+        <p class="subtitle">
+          GitHub Actions가 매일 갱신한 증권사 리포트 데이터를 날짜별로 다시 보고, 필독 후보를 빠르게 훑는
+          정적 대시보드입니다.
+        </p>
+        <div class="toolbar">
+          <div class="field">
+            <label for="dateSelect">기준일</label>
+            <select id="dateSelect"></select>
+          </div>
+          <div class="field">
+            <label for="searchInput">검색</label>
+            <input id="searchInput" type="search" placeholder="제목, 증권사, 카테고리" />
+          </div>
+          <div class="field">
+            <label for="priorityOnlyToggle">관심 필터</label>
+            <label class="toggle">
+              <input id="priorityOnlyToggle" type="checkbox" />
+              <span>관심 항목만 보기</span>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card section">
+          <h2>오늘 한눈에</h2>
+          <p id="editorialNote" class="summary loading">데이터를 불러오는 중입니다.</p>
+          <p id="priorityCopy" class="priority-copy"></p>
+          <div id="priorityFilterChips" class="chips"></div>
+          <div id="keywordChips" class="chips"></div>
+        </article>
+        <article class="card section">
+          <h2>요약 통계</h2>
+          <div id="statsGrid" class="stats"></div>
+        </article>
+      </section>
+
+      <section class="card section spacer">
+        <h2>꼭 읽을 리포트</h2>
+        <div id="mustReadList" class="must-read"></div>
+      </section>
+
+      <section class="card section spacer">
+        <h2>전체 수집 결과</h2>
+        <div id="reportList" class="report-list"></div>
+      </section>
+    </main>
+
+    <script>
+      const state = {
+        index: null,
+        digest: null,
+        query: "",
+        priorityOnlyView: false,
+      };
+
+      async function fetchJson(path) {
+        const response = await fetch(path, { cache: "no-store" });
+        if (!response.ok) {
+          throw new Error(`Failed to load ${path}`);
+        }
+        return response.json();
+      }
+
+      function reportMatchesQuery(report) {
+        if (state.priorityOnlyView && !report.is_priority_match) {
+          return false;
+        }
+        if (!state.query) {
+          return true;
+        }
+        const haystack = [
+          report.display_title,
+          report.broker,
+          report.category_label,
+          report.summary,
+        ]
+          .join(" ")
+          .toLowerCase();
+        return haystack.includes(state.query);
+      }
+
+      function buildReportCard(report, withBadge = false) {
+        const article = document.createElement("article");
+        article.className = "report-card";
+        const reasons = (report.score_reasons || []).join(" · ");
+        const priorityMatches = [
+          ...(report.priority_subject_matches || []),
+          ...(report.priority_keyword_matches || []),
+        ].join(", ");
+        article.innerHTML = `
+          <div class="kicker">
+            ${withBadge ? `<span class="badge">필독 후보</span>` : ""}
+            ${report.is_priority_match ? `<span class="badge">관심 일치</span>` : ""}
+            <span>${report.category_label}</span>
+            <span>${report.broker}</span>
+            <span>${report.published_date}</span>
+            <span>점수 ${Number(report.score).toFixed(2)}</span>
+          </div>
+          <h3><a href="${report.detail_url}" target="_blank" rel="noreferrer">${report.display_title}</a></h3>
+          <p>${report.summary || report.excerpt || "요약 없음"}</p>
+          <footer>
+            ${reasons ? `<span>${reasons}</span>` : ""}
+            ${priorityMatches ? `<span>일치: ${priorityMatches}</span>` : ""}
+            ${report.pdf_url ? `<a href="${report.pdf_url}" target="_blank" rel="noreferrer">PDF</a>` : ""}
+          </footer>
+        `;
+        return article;
+      }
+
+      function renderPriorityFilters(digest) {
+        const copy = document.getElementById("priorityCopy");
+        const chips = document.getElementById("priorityFilterChips");
+        const toggle = document.getElementById("priorityOnlyToggle");
+        chips.innerHTML = "";
+
+        const priority = digest.priority_filters || { enabled: false };
+        toggle.disabled = !priority.enabled;
+
+        if (!priority.enabled) {
+          copy.textContent = "관심 종목/섹터 필터가 아직 설정되지 않았습니다.";
+          toggle.checked = false;
+          state.priorityOnlyView = false;
+          return;
+        }
+
+        copy.textContent =
+          `관심 필터가 켜져 있습니다. 전체 ${priority.matched_reports || 0}건, 필독 후보 ${priority.matched_must_read || 0}건이 일치했습니다.`;
+
+        [...(priority.subjects || []), ...(priority.keywords || [])].forEach((item) => {
+          const chip = document.createElement("span");
+          chip.className = "chip";
+          chip.textContent = item;
+          chips.appendChild(chip);
+        });
+      }
+
+      function renderKeywords(keywords) {
+        const container = document.getElementById("keywordChips");
+        container.innerHTML = "";
+        (keywords || []).forEach((keyword) => {
+          const chip = document.createElement("span");
+          chip.className = "chip";
+          chip.textContent = `# ${keyword}`;
+          container.appendChild(chip);
+        });
+      }
+
+      function renderStats(digest) {
+        const statsGrid = document.getElementById("statsGrid");
+        statsGrid.innerHTML = "";
+
+        const cards = [
+          {
+            label: "총 리포트",
+            value: `${digest.stats.total_reports}`,
+            body: "해당 일자 수집 건수",
+          },
+          {
+            label: "카테고리 최다",
+            value: digest.stats.categories[0]?.label || "-",
+            body: `${digest.stats.categories[0]?.count || 0}건`,
+          },
+          {
+            label: "활동 증권사",
+            value: digest.stats.brokers[0]?.name || "-",
+            body: `${digest.stats.brokers[0]?.count || 0}건`,
+          },
+          {
+            label: "생성 시각",
+            value: digest.generated_at?.slice(11, 16) || "-",
+            body: digest.date,
+          },
+        ];
+
+        cards.forEach((card) => {
+          const item = document.createElement("div");
+          item.className = "stat";
+          item.innerHTML = `<span>${card.label}</span><strong>${card.value}</strong><small>${card.body}</small>`;
+          statsGrid.appendChild(item);
+        });
+      }
+
+      function renderMustRead(digest) {
+        const container = document.getElementById("mustReadList");
+        container.innerHTML = "";
+        const filtered = digest.must_read.filter(reportMatchesQuery);
+        if (!filtered.length) {
+          container.innerHTML = '<div class="empty">검색 조건에 맞는 필독 후보가 없습니다.</div>';
+          return;
+        }
+        filtered.forEach((report) => {
+          container.appendChild(buildReportCard(report, true));
+        });
+      }
+
+      function renderReports(digest) {
+        const container = document.getElementById("reportList");
+        container.innerHTML = "";
+        const filtered = digest.reports.filter(reportMatchesQuery);
+        if (!filtered.length) {
+          container.innerHTML = '<div class="empty">검색 조건에 맞는 리포트가 없습니다.</div>';
+          return;
+        }
+        filtered.forEach((report) => {
+          container.appendChild(buildReportCard(report));
+        });
+      }
+
+      async function loadDigest(date) {
+        const digest = await fetchJson(`./data/days/${date}.json`);
+        state.digest = digest;
+        document.getElementById("editorialNote").classList.remove("loading");
+        document.getElementById("editorialNote").textContent = digest.editorial_note;
+        renderPriorityFilters(digest);
+        renderKeywords(digest.keywords);
+        renderStats(digest);
+        renderMustRead(digest);
+        renderReports(digest);
+      }
+
+      async function init() {
+        try {
+          state.index = await fetchJson("./data/index.json");
+          const dateSelect = document.getElementById("dateSelect");
+          const days = state.index.days || [];
+          if (!days.length) {
+            document.getElementById("editorialNote").textContent = "아직 적재된 데이터가 없습니다.";
+            return;
+          }
+
+          days.forEach((day) => {
+            const option = document.createElement("option");
+            option.value = day.date;
+            option.textContent = `${day.date} · ${day.total_reports}건`;
+            dateSelect.appendChild(option);
+          });
+
+          await loadDigest(days[0].date);
+
+          dateSelect.addEventListener("change", async (event) => {
+            await loadDigest(event.target.value);
+          });
+
+          document.getElementById("searchInput").addEventListener("input", (event) => {
+            state.query = event.target.value.trim().toLowerCase();
+            if (state.digest) {
+              renderMustRead(state.digest);
+              renderReports(state.digest);
+            }
+          });
+
+          document.getElementById("priorityOnlyToggle").addEventListener("change", (event) => {
+            state.priorityOnlyView = Boolean(event.target.checked);
+            if (state.digest) {
+              renderMustRead(state.digest);
+              renderReports(state.digest);
+            }
+          });
+        } catch (error) {
+          document.getElementById("editorialNote").textContent =
+            "데이터를 불러오지 못했습니다. GitHub Actions가 먼저 실행되었는지 확인해 주세요.";
+          console.error(error);
+        }
+      }
+
+      init();
+    </script>
+  </body>
+</html>

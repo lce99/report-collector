@@ -1,0 +1,1 @@
+"""Daily broker report collector."""
