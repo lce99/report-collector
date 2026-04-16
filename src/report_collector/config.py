@@ -50,6 +50,15 @@ def _parse_bool(value: str | None, default: bool) -> bool:
     return value.strip().lower() in {"1", "true", "yes", "y", "on"}
 
 
+def _parse_int(value: str | None, default: int) -> int:
+    if value is None:
+        return default
+    cleaned = value.strip()
+    if not cleaned:
+        return default
+    return int(cleaned)
+
+
 def _normalize_site_url(value: str | None) -> str | None:
     if not value:
         return None
@@ -82,6 +91,10 @@ class Settings:
     preview_char_limit: int
     summary_sentence_count: int
     ranking_limit: int
+    pdf_text_enabled: bool
+    pdf_text_page_limit: int
+    pdf_text_char_limit: int
+    pdf_text_min_body_chars: int
     enable_date_fallback: bool
     max_date_fallback_days: int
     categories: tuple[str, ...]
@@ -89,6 +102,12 @@ class Settings:
     priority_subjects: tuple[str, ...]
     priority_keywords: tuple[str, ...]
     priority_only: bool
+    openai_api_key: str | None
+    openai_model: str
+    openai_summary_max_reports: int
+    openai_summary_min_chars: int
+    openai_summary_char_limit: int
+    openai_reasoning_effort: str | None
     telegram_bot_token: str | None
     telegram_chat_id: str | None
     send_telegram: bool
@@ -106,6 +125,13 @@ class Settings:
     @property
     def priority_filter_enabled(self) -> bool:
         return bool(self.priority_subjects or self.priority_keywords)
+
+    @property
+    def openai_summary_enabled(self) -> bool:
+        return bool(
+            self.openai_api_key
+            and self.openai_summary_max_reports > 0
+        )
 
     @classmethod
     def from_env(cls) -> "Settings":
@@ -125,17 +151,39 @@ class Settings:
             ),
             archive_root=Path(os.getenv("ARCHIVE_ROOT", "storage/archive")),
             docs_root=Path(os.getenv("DOCS_ROOT", "docs")),
-            request_timeout_seconds=int(os.getenv("REQUEST_TIMEOUT_SECONDS", "20")),
-            page_depth=int(os.getenv("REPORT_PAGE_DEPTH", "4")),
-            must_read_limit=int(os.getenv("MUST_READ_LIMIT", "12")),
-            preview_char_limit=int(os.getenv("PREVIEW_CHAR_LIMIT", "240")),
-            summary_sentence_count=int(os.getenv("SUMMARY_SENTENCE_COUNT", "3")),
-            ranking_limit=int(os.getenv("RANKING_LIMIT", "5")),
+            request_timeout_seconds=_parse_int(
+                os.getenv("REQUEST_TIMEOUT_SECONDS"),
+                20,
+            ),
+            page_depth=_parse_int(os.getenv("REPORT_PAGE_DEPTH"), 4),
+            must_read_limit=_parse_int(os.getenv("MUST_READ_LIMIT"), 12),
+            preview_char_limit=_parse_int(os.getenv("PREVIEW_CHAR_LIMIT"), 240),
+            summary_sentence_count=_parse_int(
+                os.getenv("SUMMARY_SENTENCE_COUNT"),
+                3,
+            ),
+            ranking_limit=_parse_int(os.getenv("RANKING_LIMIT"), 5),
+            pdf_text_enabled=_parse_bool(os.getenv("PDF_TEXT_ENABLED"), True),
+            pdf_text_page_limit=_parse_int(
+                os.getenv("PDF_TEXT_PAGE_LIMIT"),
+                8,
+            ),
+            pdf_text_char_limit=_parse_int(
+                os.getenv("PDF_TEXT_CHAR_LIMIT"),
+                12000,
+            ),
+            pdf_text_min_body_chars=_parse_int(
+                os.getenv("PDF_TEXT_MIN_BODY_CHARS"),
+                500,
+            ),
             enable_date_fallback=_parse_bool(
                 os.getenv("ENABLE_DATE_FALLBACK"),
                 True,
             ),
-            max_date_fallback_days=int(os.getenv("MAX_DATE_FALLBACK_DAYS", "3")),
+            max_date_fallback_days=_parse_int(
+                os.getenv("MAX_DATE_FALLBACK_DAYS"),
+                3,
+            ),
             categories=_parse_csv(
                 os.getenv("REPORT_CATEGORIES"),
                 DEFAULT_CATEGORIES,
@@ -153,6 +201,21 @@ class Settings:
                 (),
             ),
             priority_only=_parse_bool(os.getenv("PRIORITY_ONLY"), False),
+            openai_api_key=os.getenv("OPENAI_API_KEY"),
+            openai_model=os.getenv("OPENAI_MODEL", "gpt-5-mini"),
+            openai_summary_max_reports=_parse_int(
+                os.getenv("OPENAI_SUMMARY_MAX_REPORTS"),
+                8,
+            ),
+            openai_summary_min_chars=_parse_int(
+                os.getenv("OPENAI_SUMMARY_MIN_CHARS"),
+                180,
+            ),
+            openai_summary_char_limit=_parse_int(
+                os.getenv("OPENAI_SUMMARY_CHAR_LIMIT"),
+                6000,
+            ),
+            openai_reasoning_effort=(os.getenv("OPENAI_REASONING_EFFORT") or None),
             telegram_bot_token=os.getenv("TELEGRAM_BOT_TOKEN"),
             telegram_chat_id=os.getenv("TELEGRAM_CHAT_ID"),
             send_telegram=_parse_bool(os.getenv("SEND_TELEGRAM"), True),

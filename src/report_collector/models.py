@@ -21,8 +21,10 @@ class Report:
     target_price: str | None = None
     opinion: str | None = None
     body: str = ""
+    pdf_text: str = ""
     excerpt: str = ""
     summary: str = ""
+    summary_engine: str = "rule"
     score: float = 0.0
     score_reasons: list[str] = field(default_factory=list)
     priority_subject_matches: list[str] = field(default_factory=list)
@@ -37,6 +39,25 @@ class Report:
     @property
     def is_priority_match(self) -> bool:
         return bool(self.priority_subject_matches or self.priority_keyword_matches)
+
+    @property
+    def has_pdf_text(self) -> bool:
+        return bool(self.pdf_text)
+
+    @property
+    def content_sources(self) -> list[str]:
+        sources: list[str] = []
+        if self.body:
+            sources.append("html")
+        if self.pdf_text:
+            sources.append("pdf")
+        return sources
+
+    @property
+    def source_text(self) -> str:
+        if self.body and self.pdf_text:
+            return f"{self.body}\n{self.pdf_text}"
+        return self.body or self.pdf_text
 
     def to_public_dict(self) -> dict[str, Any]:
         return {
@@ -55,8 +76,11 @@ class Report:
             "analyst": self.analyst,
             "target_price": self.target_price,
             "opinion": self.opinion,
+            "has_pdf_text": self.has_pdf_text,
+            "content_sources": self.content_sources,
             "excerpt": self.excerpt,
             "summary": self.summary,
+            "summary_engine": self.summary_engine,
             "score": self.score,
             "score_reasons": self.score_reasons,
             "priority_subject_matches": self.priority_subject_matches,

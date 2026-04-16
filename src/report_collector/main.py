@@ -11,6 +11,7 @@ from report_collector.digest import (
     render_markdown,
     render_telegram_messages,
 )
+from report_collector.llm import enhance_digest_summaries
 from report_collector.sources.naver_research import NaverResearchCollector
 from report_collector.storage import publish_digest
 from report_collector.telegram_bot import send_messages
@@ -96,6 +97,7 @@ def main() -> int:
         collection_note=collection_note,
         settings=settings,
     )
+    enhance_digest_summaries(digest, settings)
     markdown = render_markdown(digest)
 
     publish_digest(

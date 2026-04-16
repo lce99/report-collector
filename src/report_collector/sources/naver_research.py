@@ -11,6 +11,7 @@ from bs4 import BeautifulSoup
 
 from report_collector.config import Settings
 from report_collector.models import Report
+from report_collector.pdf_text import extract_pdf_text
 
 
 @dataclass(frozen=True, slots=True)
@@ -306,6 +307,22 @@ class NaverResearchCollector:
             report.views = max(report.views, _parse_int(detail_views))
 
         report.body = self._extract_body(lines)
+        if (
+            self.settings.pdf_text_enabled
+            and report.pdf_url
+            and len(report.body) < self.settings.pdf_text_min_body_chars
+        ):
+            try:
+                report.pdf_text = extract_pdf_text(
+                    report.pdf_url,
+                    user_agent=self.settings.user_agent,
+                    timeout_seconds=self.settings.request_timeout_seconds,
+                    page_limit=self.settings.pdf_text_page_limit,
+                    char_limit=self.settings.pdf_text_char_limit,
+                    referer=report.detail_url,
+                )
+            except Exception:
+                report.pdf_text = ""
 
     def _find_main_table(self, tables: Iterable) -> BeautifulSoup | None:
         for table in tables:

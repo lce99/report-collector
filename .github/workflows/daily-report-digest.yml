@@ -19,6 +19,16 @@ jobs:
       MUST_READ_LIMIT: "12"
       ENABLE_DATE_FALLBACK: "true"
       MAX_DATE_FALLBACK_DAYS: "3"
+      PDF_TEXT_ENABLED: ${{ vars.PDF_TEXT_ENABLED || 'true' }}
+      PDF_TEXT_PAGE_LIMIT: ${{ vars.PDF_TEXT_PAGE_LIMIT || '8' }}
+      PDF_TEXT_CHAR_LIMIT: ${{ vars.PDF_TEXT_CHAR_LIMIT || '12000' }}
+      PDF_TEXT_MIN_BODY_CHARS: ${{ vars.PDF_TEXT_MIN_BODY_CHARS || '500' }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5-mini' }}
+      OPENAI_SUMMARY_MAX_REPORTS: ${{ vars.OPENAI_SUMMARY_MAX_REPORTS || '8' }}
+      OPENAI_SUMMARY_MIN_CHARS: ${{ vars.OPENAI_SUMMARY_MIN_CHARS || '180' }}
+      OPENAI_SUMMARY_CHAR_LIMIT: ${{ vars.OPENAI_SUMMARY_CHAR_LIMIT || '6000' }}
+      OPENAI_REASONING_EFFORT: ${{ vars.OPENAI_REASONING_EFFORT || '' }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       BROKER_PRIORITY: 메리츠증권,삼성증권,신한투자증권,한국투자증권,키움증권,대신증권,하나증권,NH투자증권,KB증권,미래에셋증권,유안타증권
