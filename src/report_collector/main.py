@@ -12,9 +12,60 @@ from report_collector.digest import (
     render_telegram_messages,
 )
 from report_collector.llm import enhance_digest_summaries
+from report_collector.models import Report
+from report_collector.sources.korea_investment import KoreaInvestmentCollector
+from report_collector.sources.mirae_asset import MiraeAssetCollector
 from report_collector.sources.naver_research import NaverResearchCollector
+from report_collector.sources.common import normalize_report_key
 from report_collector.storage import publish_digest
 from report_collector.telegram_bot import send_messages
+
+
+def _report_dedupe_key(report: Report) -> tuple[str, str]:
+    return (
+        report.published_date,
+        normalize_report_key(report.display_title or report.title),
+    )
+
+
+def _report_preference(report: Report) -> tuple[int, int, int, int]:
+    source_rank = {
+        "mirae_asset_official": 3,
+        "korea_investment_official": 2,
+        "naver_research": 1,
+    }.get(report.source, 0)
+    return (
+        source_rank,
+        1 if report.pdf_url else 0,
+        len(report.source_text),
+        len(report.detail_url),
+    )
+
+
+def _dedupe_reports(reports: list[Report]) -> list[Report]:
+    selected: dict[tuple[str, str], Report] = {}
+    for report in reports:
+        key = _report_dedupe_key(report)
+        current = selected.get(key)
+        if current is None or _report_preference(report) > _report_preference(current):
+            selected[key] = report
+    return list(selected.values())
+
+
+def _collect_reports(target_date: date, settings: Settings) -> list[Report]:
+    collectors = [
+        NaverResearchCollector(settings),
+        MiraeAssetCollector(settings),
+        KoreaInvestmentCollector(settings),
+    ]
+    reports: list[Report] = []
+    for collector in collectors:
+        try:
+            reports.extend(collector.collect(target_date))
+        except Exception as exc:
+            print(f"[warn] {collector.__class__.__name__} failed: {exc}")
+            continue
+    return _dedupe_reports(reports)
 
 
 def _parse_args() -> ArgumentParser:
@@ -41,11 +92,10 @@ def _resolve_target_date(value: str | None, timezone_name: str) -> date:
 
 
 def _collect_with_fallback(
-    collector: NaverResearchCollector,
     requested_date: date,
     settings: Settings,
 ) -> tuple[date, list, str]:
-    reports = collector.collect(requested_date)
+    reports = _collect_reports(requested_date, settings)
     if reports:
         return requested_date, reports, ""
 
@@ -54,7 +104,7 @@ def _collect_with_fallback(
 
     for days_back in range(1, settings.max_date_fallback_days + 1):
         candidate_date = requested_date - timedelta(days=days_back)
-        candidate_reports = collector.collect(candidate_date)
+        candidate_reports = _collect_reports(candidate_date, settings)
         if candidate_reports:
             return (
                 candidate_date,
@@ -82,9 +132,7 @@ def main() -> int:
     settings = Settings.from_env()
     requested_date = _resolve_target_date(args.target_date, settings.timezone)
 
-    collector = NaverResearchCollector(settings)
     effective_date, reports, collection_note = _collect_with_fallback(
-        collector,
         requested_date,
         settings,
     )
