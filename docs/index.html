@@ -7,24 +7,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@600;700&display=swap"
       rel="stylesheet"
     />
     <style>
       :root {
-        --bg: #f6f1e8;
-        --panel: rgba(255, 252, 247, 0.86);
-        --text: #17211b;
-        --muted: #5d685d;
-        --line: rgba(23, 33, 27, 0.12);
-        --accent: #0f7b5f;
-        --accent-soft: rgba(15, 123, 95, 0.12);
-        --highlight: #e6902f;
-        --shadow: 0 20px 50px rgba(21, 32, 23, 0.08);
+        --bg: #f5efe6;
+        --bg-deep: #efe3d1;
+        --panel: rgba(255, 252, 247, 0.88);
+        --panel-strong: rgba(255, 253, 250, 0.96);
+        --text: #192118;
+        --muted: #5f675e;
+        --line: rgba(25, 33, 24, 0.12);
+        --line-strong: rgba(25, 33, 24, 0.18);
+        --accent: #116149;
+        --accent-soft: rgba(17, 97, 73, 0.1);
+        --accent-deep: #0c4635;
+        --signal: #c36c1e;
+        --signal-soft: rgba(195, 108, 30, 0.11);
+        --rose: #8c4432;
+        --rose-soft: rgba(140, 68, 50, 0.1);
+        --sky: #355d78;
+        --sky-soft: rgba(53, 93, 120, 0.1);
+        --shadow: 0 22px 60px rgba(24, 33, 25, 0.08);
+        --radius-xl: 30px;
+        --radius-lg: 22px;
+        --radius-md: 18px;
+        --radius-sm: 14px;
       }
 
       * {
         box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
       }
 
       body {
@@ -33,72 +50,167 @@
         font-family: "IBM Plex Sans KR", sans-serif;
         color: var(--text);
         background:
-          radial-gradient(circle at top left, rgba(230, 144, 47, 0.18), transparent 32%),
-          radial-gradient(circle at top right, rgba(15, 123, 95, 0.2), transparent 28%),
-          linear-gradient(180deg, #f9f5ee 0%, var(--bg) 100%);
+          radial-gradient(circle at 12% 0%, rgba(195, 108, 30, 0.18), transparent 24%),
+          radial-gradient(circle at 88% 2%, rgba(17, 97, 73, 0.2), transparent 28%),
+          linear-gradient(180deg, #faf6f0 0%, var(--bg) 48%, var(--bg-deep) 100%);
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.35;
+        background-image:
+          linear-gradient(rgba(17, 97, 73, 0.035) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(17, 97, 73, 0.035) 1px, transparent 1px);
+        background-size: 28px 28px;
+        mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.55), transparent 92%);
+      }
+
+      a {
+        color: inherit;
+      }
+
+      button,
+      input,
+      select {
+        font: inherit;
       }
 
       .shell {
-        width: min(1180px, calc(100vw - 32px));
+        width: min(1240px, calc(100vw - 32px));
         margin: 0 auto;
-        padding: 32px 0 56px;
+        padding: 28px 0 56px;
       }
 
-      .hero,
       .card {
+        position: relative;
         border: 1px solid var(--line);
-        border-radius: 28px;
+        border-radius: var(--radius-xl);
         background:
-          linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(252, 248, 241, 0.82)),
+          linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(252, 247, 239, 0.88)),
           var(--panel);
         box-shadow: var(--shadow);
+        backdrop-filter: blur(16px);
       }
 
       .hero {
-        position: relative;
         overflow: hidden;
-        padding: 28px;
+        padding: 30px;
       }
 
+      .hero::before,
       .hero::after {
         content: "";
         position: absolute;
-        inset: auto -50px -70px auto;
-        width: 220px;
-        height: 220px;
         border-radius: 999px;
-        background: radial-gradient(circle, rgba(230, 144, 47, 0.22), transparent 68%);
+        pointer-events: none;
+      }
+
+      .hero::before {
+        inset: auto auto -92px -52px;
+        width: 260px;
+        height: 260px;
+        background: radial-gradient(circle, rgba(195, 108, 30, 0.16), transparent 68%);
+      }
+
+      .hero::after {
+        inset: -110px -32px auto auto;
+        width: 290px;
+        height: 290px;
+        background: radial-gradient(circle, rgba(17, 97, 73, 0.17), transparent 68%);
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.8fr);
+        gap: 22px;
+        align-items: start;
       }
 
       .eyebrow {
         display: inline-flex;
-        padding: 8px 12px;
+        align-items: center;
+        gap: 8px;
+        padding: 9px 14px;
         border-radius: 999px;
-        background: var(--accent-soft);
+        background: rgba(255, 255, 255, 0.76);
+        border: 1px solid rgba(17, 97, 73, 0.12);
         color: var(--accent);
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
       }
 
-      h1 {
-        margin: 14px 0 10px;
-        font-size: clamp(2rem, 5vw, 3.5rem);
-        line-height: 1.02;
-        letter-spacing: -0.04em;
+      .hero h1 {
+        margin: 16px 0 12px;
+        font-family: "Noto Serif KR", serif;
+        font-size: clamp(2.2rem, 5vw, 4rem);
+        line-height: 1.04;
+        letter-spacing: -0.045em;
       }
 
-      .subtitle {
-        max-width: 760px;
+      .hero-summary {
+        max-width: 720px;
         margin: 0;
         color: var(--muted);
-        line-height: 1.7;
+        font-size: 1.02rem;
+        line-height: 1.78;
+      }
+
+      .hero-meta {
+        display: grid;
+        gap: 12px;
+      }
+
+      .hero-meta-card {
+        min-height: 112px;
+        padding: 18px;
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.72);
+      }
+
+      .hero-meta-card span {
+        display: block;
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--muted);
+      }
+
+      .hero-meta-card strong {
+        display: block;
+        margin-top: 12px;
+        font-size: 1.8rem;
+        line-height: 1.1;
+      }
+
+      .hero-meta-card small {
+        display: block;
+        margin-top: 8px;
+        color: var(--muted);
+        line-height: 1.55;
       }
 
       .toolbar {
+        position: sticky;
+        top: 16px;
+        z-index: 20;
+        margin-top: 18px;
+        padding: 18px;
+        border-radius: 26px;
+        background:
+          linear-gradient(180deg, rgba(255, 253, 249, 0.94), rgba(248, 243, 235, 0.9)),
+          var(--panel-strong);
+      }
+
+      .toolbar-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 14px;
-        margin-top: 24px;
+        grid-template-columns: 1.2fr 1.3fr 0.9fr 0.9fr auto;
+        gap: 12px;
+        align-items: end;
       }
 
       .field {
@@ -107,123 +219,453 @@
         gap: 8px;
       }
 
-      .field label {
+      .field label,
+      .toggle-label {
         font-size: 13px;
         font-weight: 700;
         color: var(--muted);
+      }
+
+      .control,
+      .ghost-button,
+      .toggle {
+        min-height: 52px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.82);
+        color: var(--text);
+      }
+
+      .control {
+        width: 100%;
+        padding: 14px 16px;
+      }
+
+      .toolbar-actions {
+        display: flex;
+        gap: 10px;
+        align-items: end;
+        justify-content: flex-end;
+      }
+
+      .toggle-stack {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
       }
 
       .toggle {
         display: inline-flex;
         align-items: center;
         gap: 10px;
-        min-height: 52px;
-        padding: 14px 16px;
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        background: rgba(255, 255, 255, 0.86);
-        color: var(--text);
+        padding: 0 14px;
       }
 
-      select,
-      input {
-        width: 100%;
-        padding: 14px 16px;
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        background: rgba(255, 255, 255, 0.86);
-        color: var(--text);
-        font: inherit;
+      .toggle input {
+        width: 18px;
+        height: 18px;
+        accent-color: var(--accent);
       }
 
-      .grid {
+      .ghost-button {
+        padding: 0 16px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: transform 160ms ease, border-color 160ms ease;
+      }
+
+      .ghost-button:hover {
+        transform: translateY(-1px);
+        border-color: rgba(17, 97, 73, 0.32);
+      }
+
+      .toolbar-foot {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .hint-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 9px 12px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.72);
+        border: 1px solid var(--line);
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      .layout-top {
         display: grid;
-        grid-template-columns: 1.2fr 0.8fr;
+        grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
         gap: 18px;
-        margin-top: 20px;
+        margin-top: 18px;
+      }
+
+      .layout-main {
+        display: grid;
+        grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+        gap: 18px;
+        margin-top: 18px;
+      }
+
+      .stack {
+        display: grid;
+        gap: 18px;
       }
 
       .section {
-        padding: 22px;
+        padding: 24px;
+      }
+
+      .section-head {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: baseline;
+        margin-bottom: 16px;
+      }
+
+      .section-title-group {
+        display: grid;
+        gap: 6px;
       }
 
       .section h2 {
-        margin: 0 0 14px;
-        font-size: 1.1rem;
+        margin: 0;
+        font-family: "Noto Serif KR", serif;
+        font-size: 1.25rem;
+        letter-spacing: -0.03em;
       }
 
-      .summary {
+      .section-meta {
         color: var(--muted);
-        line-height: 1.7;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .lead {
+        margin: 0;
+        color: var(--text);
+        font-size: 1rem;
+        line-height: 1.82;
+      }
+
+      .body-copy {
+        margin: 12px 0 0;
+        color: var(--muted);
+        line-height: 1.75;
+      }
+
+      .subgroup + .subgroup {
+        margin-top: 22px;
+      }
+
+      .subgroup h3 {
+        margin: 0 0 10px;
+        font-size: 0.98rem;
       }
 
       .chips {
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
-        margin-top: 14px;
       }
 
       .chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
         padding: 8px 12px;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.76);
         border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.78);
         font-size: 13px;
       }
 
-      .stats {
+      .chip strong {
+        font-weight: 700;
+      }
+
+      .stats-grid {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 12px;
       }
 
-      .stat {
-        padding: 16px;
-        border-radius: 18px;
-        background: rgba(255, 255, 255, 0.78);
+      .stat-card {
+        min-height: 118px;
+        padding: 18px;
         border: 1px solid var(--line);
+        border-radius: var(--radius-md);
+        background: rgba(255, 255, 255, 0.78);
       }
 
-      .stat strong {
+      .stat-card span {
         display: block;
-        font-size: 1.6rem;
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 700;
       }
 
-      .change-list,
-      .must-read,
-      .report-list {
+      .stat-card strong {
+        display: block;
+        margin-top: 10px;
+        font-size: 1.68rem;
+        line-height: 1.12;
+      }
+
+      .stat-card small {
+        display: block;
+        margin-top: 8px;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      .dual-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+        margin-top: 18px;
+      }
+
+      .mini-panel {
+        padding: 16px;
+        border-radius: var(--radius-md);
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.74);
+      }
+
+      .mini-panel h3 {
+        margin: 0 0 12px;
+        font-size: 0.98rem;
+      }
+
+      .count-list {
+        display: grid;
+        gap: 10px;
+      }
+
+      .count-row {
+        display: grid;
+        gap: 6px;
+      }
+
+      .count-row-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        font-size: 13px;
+      }
+
+      .count-bar {
+        height: 7px;
+        overflow: hidden;
+        border-radius: 999px;
+        background: rgba(17, 97, 73, 0.08);
+      }
+
+      .count-bar-fill {
+        height: 100%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, rgba(17, 97, 73, 0.78), rgba(17, 97, 73, 0.36));
+      }
+
+      .signal-summary {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        margin-bottom: 14px;
+      }
+
+      .signal-stat {
+        padding: 14px;
+        border-radius: 16px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.78);
+      }
+
+      .signal-stat span {
+        display: block;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .signal-stat strong {
+        display: block;
+        margin-top: 7px;
+        font-size: 1.3rem;
+      }
+
+      .report-stack,
+      .signal-stack,
+      .ranking-grid {
         display: grid;
         gap: 12px;
       }
 
       .ranking-grid {
-        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 12px;
       }
 
-      .ranking-panel {
+      .report-card,
+      .ranking-card {
         padding: 18px;
-        border-radius: 20px;
-        background: rgba(255, 255, 255, 0.78);
+        border-radius: var(--radius-lg);
         border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.8);
+        transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
       }
 
-      .ranking-panel h3 {
-        margin: 0 0 12px;
+      .report-card:hover,
+      .ranking-card:hover {
+        transform: translateY(-2px);
+        border-color: rgba(17, 97, 73, 0.28);
+        box-shadow: 0 16px 28px rgba(24, 33, 25, 0.06);
+      }
+
+      .featured .report-card {
+        background:
+          linear-gradient(180deg, rgba(255, 249, 239, 0.92), rgba(255, 255, 255, 0.84)),
+          rgba(255, 255, 255, 0.8);
+      }
+
+      .report-kicker,
+      .report-footer,
+      .report-actions,
+      .report-data {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 10px;
+      }
+
+      .report-kicker {
+        margin-bottom: 12px;
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 700;
+        border: 1px solid transparent;
+      }
+
+      .badge-default {
+        background: rgba(255, 255, 255, 0.82);
+        border-color: var(--line);
+        color: var(--muted);
+      }
+
+      .badge-accent {
+        background: var(--accent-soft);
+        color: var(--accent);
+      }
+
+      .badge-signal {
+        background: var(--signal-soft);
+        color: var(--signal);
+      }
+
+      .badge-rose {
+        background: var(--rose-soft);
+        color: var(--rose);
+      }
+
+      .badge-sky {
+        background: var(--sky-soft);
+        color: var(--sky);
+      }
+
+      .report-title {
+        margin: 0;
+        font-size: 1.03rem;
+        line-height: 1.52;
+      }
+
+      .report-title a {
+        text-decoration: none;
+      }
+
+      .report-title a:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+      }
+
+      .report-summary {
+        margin: 12px 0 0;
+        color: var(--muted);
+        line-height: 1.72;
+      }
+
+      .report-data {
+        margin-top: 14px;
+      }
+
+      .datum {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 7px 10px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.72);
+        border: 1px solid var(--line);
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .report-footer {
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 14px;
+      }
+
+      .report-actions a {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.78);
+        color: var(--text);
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .report-actions a:hover {
+        border-color: rgba(17, 97, 73, 0.3);
+      }
+
+      .report-reasons {
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.65;
+      }
+
+      .ranking-card h3 {
+        margin: 0 0 14px;
         font-size: 1rem;
       }
 
       .ranking-list {
         display: grid;
-        gap: 10px;
+        gap: 12px;
       }
 
       .ranking-item {
         display: grid;
-        gap: 4px;
-        padding-bottom: 10px;
+        gap: 5px;
+        padding-bottom: 12px;
         border-bottom: 1px solid var(--line);
       }
 
@@ -232,172 +674,257 @@
         border-bottom: 0;
       }
 
-      .ranking-item a {
-        color: inherit;
-        text-decoration: none;
+      .ranking-item strong {
+        font-size: 0.95rem;
+        line-height: 1.45;
       }
 
       .ranking-item small {
         color: var(--muted);
+        line-height: 1.55;
       }
 
-      .report-card {
-        padding: 18px;
-        border-radius: 20px;
-        background: rgba(255, 255, 255, 0.78);
-        border: 1px solid var(--line);
-        transition: transform 160ms ease, border-color 160ms ease;
-      }
-
-      .report-card:hover {
-        transform: translateY(-2px);
-        border-color: rgba(15, 123, 95, 0.3);
-      }
-
-      .kicker,
-      .report-card footer {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px 12px;
-        color: var(--muted);
-        font-size: 13px;
-      }
-
-      .badge {
-        display: inline-flex;
-        padding: 5px 10px;
-        border-radius: 999px;
-        background: rgba(15, 123, 95, 0.1);
-        color: var(--accent);
-        font-weight: 700;
-      }
-
-      .report-card h3 {
-        margin: 10px 0;
-        font-size: 1rem;
-        line-height: 1.45;
-      }
-
-      .report-card p {
-        margin: 0;
+      .empty,
+      .loading {
+        padding: 22px;
+        border: 1px dashed var(--line-strong);
+        border-radius: var(--radius-lg);
+        background: rgba(255, 255, 255, 0.58);
         color: var(--muted);
         line-height: 1.7;
       }
 
-      .report-card a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      .report-card footer {
-        margin-top: 14px;
-      }
-
-      .priority-copy {
-        margin-top: 10px;
+      .muted-note {
         color: var(--muted);
         font-size: 14px;
-        line-height: 1.6;
+        line-height: 1.65;
       }
 
-      .change-copy {
-        margin: 0 0 14px;
-        color: var(--muted);
-        font-size: 14px;
-        line-height: 1.6;
-      }
-
-      .spacer {
-        margin-top: 20px;
-      }
-
-      .loading,
-      .empty {
-        padding: 24px;
-        border-radius: 20px;
-        border: 1px dashed var(--line);
-        color: var(--muted);
-        background: rgba(255, 255, 255, 0.48);
-      }
-
-      @media (max-width: 900px) {
-        .grid {
-          grid-template-columns: 1fr;
+      @media (max-width: 1120px) {
+        .toolbar-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
+        .toolbar-actions {
+          justify-content: stretch;
+          grid-column: 1 / -1;
+        }
+
+        .toggle-stack {
+          width: 100%;
+        }
+
+        .toggle {
+          flex: 1 1 220px;
+        }
+
+        .layout-top,
+        .layout-main,
+        .hero-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 800px) {
         .shell {
-          width: min(100vw - 20px, 1180px);
+          width: min(100vw - 20px, 1240px);
           padding-top: 18px;
+          padding-bottom: 40px;
         }
 
         .hero,
-        .section {
+        .section,
+        .toolbar {
           padding: 18px;
+          border-radius: 22px;
+        }
+
+        .stats-grid,
+        .dual-list,
+        .signal-summary {
+          grid-template-columns: 1fr;
+        }
+
+        .toolbar {
+          top: 10px;
         }
       }
     </style>
   </head>
   <body>
     <main class="shell">
-      <section class="hero">
-        <span class="eyebrow">GitHub Pages Daily Digest</span>
-        <h1>Broker Report Radar</h1>
-        <p class="subtitle">
-          GitHub Actions가 매일 갱신한 증권사 리포트 데이터를 날짜별로 다시 보고, 필독 후보를 빠르게 훑는
-          정적 대시보드입니다.
-        </p>
-        <div class="toolbar">
-          <div class="field">
-            <label for="dateSelect">기준일</label>
-            <select id="dateSelect"></select>
+      <section class="card hero">
+        <div class="hero-grid">
+          <div>
+            <span class="eyebrow">Daily Research Digest</span>
+            <h1>Broker Report Radar</h1>
+            <p id="heroSummary" class="hero-summary loading">
+              오늘 리포트 분위기와 필독 포인트를 불러오는 중입니다.
+            </p>
           </div>
-          <div class="field">
-            <label for="searchInput">검색</label>
-            <input id="searchInput" type="search" placeholder="제목, 증권사, 카테고리" />
-          </div>
-          <div class="field">
-            <label for="priorityOnlyToggle">관심 필터</label>
-            <label class="toggle">
-              <input id="priorityOnlyToggle" type="checkbox" />
-              <span>관심 항목만 보기</span>
-            </label>
+          <div class="hero-meta">
+            <article class="hero-meta-card">
+              <span>업데이트 시각</span>
+              <strong id="heroGeneratedAt">-</strong>
+              <small id="heroDateMeta">기준일 정보를 불러오는 중입니다.</small>
+            </article>
+            <article class="hero-meta-card">
+              <span>필독 후보</span>
+              <strong id="heroMustReadCount">-</strong>
+              <small id="heroMustReadMeta">랭킹과 관심 필터를 합쳐 만든 상위 리포트</small>
+            </article>
+            <article class="hero-meta-card">
+              <span>변화 감지</span>
+              <strong id="heroChangeCount">-</strong>
+              <small id="heroChangeMeta">목표가, 의견, 애널리스트 비교 결과</small>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="grid">
+      <section class="card toolbar">
+        <div class="toolbar-grid">
+          <div class="field">
+            <label for="dateSelect">기준일</label>
+            <select id="dateSelect" class="control"></select>
+          </div>
+          <div class="field">
+            <label for="searchInput">검색</label>
+            <input
+              id="searchInput"
+              class="control"
+              type="search"
+              placeholder="제목, 종목, 증권사, 키워드"
+            />
+          </div>
+          <div class="field">
+            <label for="categorySelect">카테고리</label>
+            <select id="categorySelect" class="control"></select>
+          </div>
+          <div class="field">
+            <label for="sortSelect">정렬</label>
+            <select id="sortSelect" class="control">
+              <option value="score">점수 높은 순</option>
+              <option value="changes">변화 있는 리포트 우선</option>
+              <option value="views">조회수 높은 순</option>
+              <option value="latest">최신순</option>
+              <option value="title">제목 가나다순</option>
+            </select>
+          </div>
+          <div class="toolbar-actions">
+            <div class="field" style="width: 100%">
+              <span class="toggle-label">빠른 보기</span>
+              <div class="toggle-stack">
+                <label class="toggle">
+                  <input id="priorityOnlyToggle" type="checkbox" />
+                  <span>관심 일치만</span>
+                </label>
+                <label class="toggle">
+                  <input id="changesOnlyToggle" type="checkbox" />
+                  <span>변화 감지만</span>
+                </label>
+                <button id="resetFiltersButton" class="ghost-button" type="button">필터 초기화</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="activeFilterBar" class="toolbar-foot">
+          <span class="hint-chip">필터 준비 중</span>
+        </div>
+      </section>
+
+      <section class="layout-top">
         <article class="card section">
-          <h2>오늘 한눈에</h2>
-          <p id="editorialNote" class="summary loading">데이터를 불러오는 중입니다.</p>
-          <p id="priorityCopy" class="priority-copy"></p>
-          <div id="priorityFilterChips" class="chips"></div>
-          <div id="keywordChips" class="chips"></div>
+          <div class="section-head">
+            <div class="section-title-group">
+              <h2>오늘의 메모</h2>
+              <span class="section-meta">수집 메모와 관심 필터, 핵심 키워드를 한 곳에 모았습니다.</span>
+            </div>
+          </div>
+          <p id="editorialNote" class="lead loading">편집 메모를 불러오는 중입니다.</p>
+          <p id="collectionNote" class="body-copy"></p>
+
+          <div class="subgroup">
+            <h3>관심 필터</h3>
+            <p id="priorityCopy" class="muted-note"></p>
+            <div id="priorityFilterChips" class="chips"></div>
+          </div>
+
+          <div class="subgroup">
+            <h3>핵심 키워드</h3>
+            <div id="keywordChips" class="chips"></div>
+          </div>
         </article>
+
         <article class="card section">
-          <h2>요약 통계</h2>
-          <div id="statsGrid" class="stats"></div>
+          <div class="section-head">
+            <div class="section-title-group">
+              <h2>오늘의 판</h2>
+              <span class="section-meta">숫자로 보는 수집 규모와 활발한 카테고리/증권사입니다.</span>
+            </div>
+          </div>
+          <div id="statsGrid" class="stats-grid"></div>
+          <div class="dual-list">
+            <section class="mini-panel">
+              <h3>카테고리 비중</h3>
+              <div id="categoryBreakdown" class="count-list"></div>
+            </section>
+            <section class="mini-panel">
+              <h3>활동 증권사</h3>
+              <div id="brokerBreakdown" class="count-list"></div>
+            </section>
+          </div>
         </article>
       </section>
 
-      <section class="card section spacer">
-        <h2>꼭 읽을 리포트</h2>
-        <div id="rankingGrid" class="ranking-grid"></div>
-      </section>
+      <section class="layout-main">
+        <div class="stack">
+          <article class="card section">
+            <div class="section-head">
+              <div class="section-title-group">
+                <h2>꼭 읽을 리포트</h2>
+                <span class="section-meta">필독 후보와 현재 필터를 반영한 상위 리포트입니다.</span>
+              </div>
+              <span id="mustReadMeta" class="section-meta"></span>
+            </div>
+            <div id="mustReadList" class="report-stack featured"></div>
+          </article>
 
-      <section class="card section spacer">
-        <h2>목표가·의견 변화</h2>
-        <p id="changeCopy" class="change-copy"></p>
-        <div id="changeList" class="change-list"></div>
-      </section>
+          <article class="card section">
+            <div class="section-head">
+              <div class="section-title-group">
+                <h2>전체 수집 결과</h2>
+                <span class="section-meta">검색, 카테고리, 관심 필터, 변화 필터를 모두 반영합니다.</span>
+              </div>
+              <span id="reportMeta" class="section-meta"></span>
+            </div>
+            <div id="reportList" class="report-stack"></div>
+          </article>
+        </div>
 
-      <section class="card section spacer">
-        <h2>카테고리 랭킹</h2>
-        <div id="mustReadList" class="must-read"></div>
-      </section>
+        <div class="stack">
+          <article class="card section">
+            <div class="section-head">
+              <div class="section-title-group">
+                <h2>목표가·의견 변화</h2>
+                <span class="section-meta">같은 증권사와 종목 기준으로 직전 리포트와 비교한 결과입니다.</span>
+              </div>
+              <span id="changeMeta" class="section-meta"></span>
+            </div>
+            <div id="signalSummary" class="signal-summary"></div>
+            <div id="changeList" class="signal-stack"></div>
+          </article>
 
-      <section class="card section spacer">
-        <h2>전체 수집 결과</h2>
-        <div id="reportList" class="report-list"></div>
+          <article class="card section">
+            <div class="section-head">
+              <div class="section-title-group">
+                <h2>카테고리 랭킹</h2>
+                <span class="section-meta">카테고리별 상위 점수 리포트를 따로 볼 수 있습니다.</span>
+              </div>
+            </div>
+            <div id="rankingGrid" class="ranking-grid"></div>
+          </article>
+        </div>
       </section>
     </main>
 
@@ -405,9 +932,24 @@
       const state = {
         index: null,
         digest: null,
+        selectedDate: null,
         query: "",
+        selectedCategory: "all",
+        sortBy: "score",
         priorityOnlyView: false,
+        changesOnlyView: false,
       };
+
+      function el(tag, className, text) {
+        const node = document.createElement(tag);
+        if (className) {
+          node.className = className;
+        }
+        if (text !== undefined && text !== null) {
+          node.textContent = text;
+        }
+        return node;
+      }
 
       async function fetchJson(path) {
         const response = await fetch(path, { cache: "no-store" });
@@ -417,76 +959,268 @@
         return response.json();
       }
 
+      function formatNumber(value) {
+        if (value === null || value === undefined || Number.isNaN(Number(value))) {
+          return "-";
+        }
+        return new Intl.NumberFormat("ko-KR").format(Number(value));
+      }
+
+      function formatShortDateTime(value) {
+        if (!value) {
+          return "-";
+        }
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) {
+          return value;
+        }
+        return date.toLocaleString("ko-KR", {
+          month: "short",
+          day: "numeric",
+          hour: "2-digit",
+          minute: "2-digit",
+        });
+      }
+
+      function formatDateLabel(date) {
+        if (!date) {
+          return "-";
+        }
+        const parsed = new Date(`${date}T00:00:00+09:00`);
+        if (Number.isNaN(parsed.getTime())) {
+          return date;
+        }
+        return parsed.toLocaleDateString("ko-KR", {
+          month: "long",
+          day: "numeric",
+          weekday: "short",
+        });
+      }
+
+      function normalize(text) {
+        return String(text || "").toLowerCase();
+      }
+
+      function compactText(text, maxLength = 180) {
+        const cleaned = String(text || "").replace(/\s+/g, " ").trim();
+        if (!cleaned) {
+          return "요약 정보가 아직 없습니다.";
+        }
+        return cleaned.length > maxLength ? `${cleaned.slice(0, maxLength - 1)}…` : cleaned;
+      }
+
       function syncSelectedDate(date) {
         const params = new URLSearchParams(window.location.search);
         params.set("date", date);
-        const query = params.toString();
-        const nextUrl = query ? `${window.location.pathname}?${query}` : window.location.pathname;
-        window.history.replaceState({}, "", nextUrl);
+        const next = `${window.location.pathname}?${params.toString()}`;
+        window.history.replaceState({}, "", next);
       }
 
-      function getRequestedDate(days) {
-        const params = new URLSearchParams(window.location.search);
-        const requested = params.get("date");
-        return days.some((day) => day.date === requested) ? requested : days[0]?.date;
+      function hasChangeSignal(report) {
+        return Boolean(
+          report &&
+            (report.target_price_change ||
+              report.opinion_changed ||
+              report.analyst_changed ||
+              (report.change_reasons && report.change_reasons.length))
+        );
       }
 
-      function reportMatchesQuery(report) {
+      function reportMatchesFilters(report) {
+        if (!report) {
+          return false;
+        }
+
         if (state.priorityOnlyView && !report.is_priority_match) {
           return false;
         }
+
+        if (state.changesOnlyView && !hasChangeSignal(report)) {
+          return false;
+        }
+
+        if (state.selectedCategory !== "all" && report.category !== state.selectedCategory) {
+          return false;
+        }
+
         if (!state.query) {
           return true;
         }
+
         const haystack = [
           report.display_title,
+          report.title,
           report.broker,
+          report.subject,
           report.category_label,
           report.summary,
-          ...(report.change_reasons || []),
+          report.excerpt,
+          report.analyst,
           report.target_price,
           report.previous_target_price,
           report.opinion,
           report.previous_opinion,
+          report.previous_analyst,
+          ...(report.score_reasons || []),
+          ...(report.priority_subject_matches || []),
+          ...(report.priority_keyword_matches || []),
+          ...(report.change_reasons || []),
         ]
-          .join(" ")
-          .toLowerCase();
+          .map(normalize)
+          .join(" ");
+
         return haystack.includes(state.query);
       }
 
-      function buildReportCard(report, withBadge = false) {
-        const article = document.createElement("article");
-        article.className = "report-card";
-        const reasons = (report.score_reasons || []).join(" · ");
-        const priorityMatches = [
-          ...(report.priority_subject_matches || []),
-          ...(report.priority_keyword_matches || []),
-        ].join(", ");
-        article.innerHTML = `
-          <div class="kicker">
-            ${withBadge ? `<span class="badge">필독 후보</span>` : ""}
-            ${report.has_change_signal ? `<span class="badge">변화 감지</span>` : ""}
-            ${report.is_priority_match ? `<span class="badge">관심 일치</span>` : ""}
-            <span>${report.category_label}</span>
-            <span>${report.broker}</span>
-            <span>${report.published_date}</span>
-            <span>점수 ${Number(report.score).toFixed(2)}</span>
-          </div>
-          <h3><a href="${report.detail_url}" target="_blank" rel="noreferrer">${report.display_title}</a></h3>
-          <p>${report.summary || report.excerpt || "요약 없음"}</p>
-          <footer>
-            ${reasons ? `<span>${reasons}</span>` : ""}
-            ${priorityMatches ? `<span>일치: ${priorityMatches}</span>` : ""}
-            ${report.pdf_url ? `<a href="${report.pdf_url}" target="_blank" rel="noreferrer">PDF</a>` : ""}
-          </footer>
-        `;
+      function sortReports(reports) {
+        const sorted = [...reports];
+        sorted.sort((left, right) => {
+          if (state.sortBy === "changes") {
+            const changeGap = Number(hasChangeSignal(right)) - Number(hasChangeSignal(left));
+            if (changeGap !== 0) {
+              return changeGap;
+            }
+          }
+
+          if (state.sortBy === "views") {
+            const gap = Number(right.views || 0) - Number(left.views || 0);
+            if (gap !== 0) {
+              return gap;
+            }
+          }
+
+          if (state.sortBy === "latest") {
+            const dateGap = normalize(right.published_date).localeCompare(normalize(left.published_date));
+            if (dateGap !== 0) {
+              return dateGap;
+            }
+          }
+
+          if (state.sortBy === "title") {
+            const titleGap = normalize(left.display_title).localeCompare(normalize(right.display_title), "ko");
+            if (titleGap !== 0) {
+              return titleGap;
+            }
+          }
+
+          const scoreGap = Number(right.score || 0) - Number(left.score || 0);
+          if (scoreGap !== 0) {
+            return scoreGap;
+          }
+
+          return Number(right.views || 0) - Number(left.views || 0);
+        });
+        return sorted;
+      }
+
+      function getFilteredReports() {
+        return sortReports((state.digest?.reports || []).filter(reportMatchesFilters));
+      }
+
+      function buildBadge(text, tone = "default") {
+        return el("span", `badge badge-${tone}`, text);
+      }
+
+      function buildDatum(label, value) {
+        return el("span", "datum", `${label} ${value}`);
+      }
+
+      function buildReportCard(report, featured = false) {
+        const article = el("article", "report-card");
+        const kicker = el("div", "report-kicker");
+
+        if (featured) {
+          kicker.appendChild(buildBadge("필독 후보", "signal"));
+        }
+        if (report.is_priority_match) {
+          kicker.appendChild(buildBadge("관심 일치", "accent"));
+        }
+        if (hasChangeSignal(report)) {
+          kicker.appendChild(buildBadge("변화 감지", "rose"));
+        }
+        if (report.has_pdf_text) {
+          kicker.appendChild(buildBadge("PDF 본문 확보", "sky"));
+        }
+
+        kicker.appendChild(buildBadge(report.category_label || "카테고리 없음"));
+        kicker.appendChild(buildBadge(report.broker || "증권사 없음"));
+        article.appendChild(kicker);
+
+        const title = el("h3", "report-title");
+        const titleLink = el("a");
+        titleLink.href = report.detail_url || "#";
+        titleLink.target = "_blank";
+        titleLink.rel = "noreferrer";
+        titleLink.textContent = report.display_title || report.title || "제목 없음";
+        title.appendChild(titleLink);
+        article.appendChild(title);
+
+        article.appendChild(el("p", "report-summary", compactText(report.summary || report.excerpt, featured ? 220 : 180)));
+
+        const data = el("div", "report-data");
+        data.appendChild(buildDatum("점수", Number(report.score || 0).toFixed(2)));
+        if (report.subject) {
+          data.appendChild(buildDatum("주제", report.subject));
+        }
+        if (report.target_price) {
+          data.appendChild(buildDatum("목표가", report.target_price));
+        }
+        if (report.opinion) {
+          data.appendChild(buildDatum("의견", report.opinion));
+        }
+        if (report.analyst) {
+          data.appendChild(buildDatum("애널리스트", report.analyst));
+        }
+        if (report.views) {
+          data.appendChild(buildDatum("조회수", formatNumber(report.views)));
+        }
+        article.appendChild(data);
+
+        const footer = el("div", "report-footer");
+        const reasons = el("div", "report-reasons");
+        const reasonParts = [];
+        if (report.score_reasons && report.score_reasons.length) {
+          reasonParts.push(report.score_reasons.join(" · "));
+        }
+        if (report.change_reasons && report.change_reasons.length) {
+          reasonParts.push(`변화: ${report.change_reasons.join(" · ")}`);
+        }
+        if (report.priority_subject_matches?.length || report.priority_keyword_matches?.length) {
+          reasonParts.push(
+            `일치: ${[...(report.priority_subject_matches || []), ...(report.priority_keyword_matches || [])].join(", ")}`
+          );
+        }
+        reasons.textContent = reasonParts.join(" / ") || "세부 근거 정보 없음";
+        footer.appendChild(reasons);
+
+        const actions = el("div", "report-actions");
+        const detailLink = el("a");
+        detailLink.href = report.detail_url || "#";
+        detailLink.target = "_blank";
+        detailLink.rel = "noreferrer";
+        detailLink.textContent = "상세 보기";
+        actions.appendChild(detailLink);
+
+        if (report.pdf_url) {
+          const pdfLink = el("a");
+          pdfLink.href = report.pdf_url;
+          pdfLink.target = "_blank";
+          pdfLink.rel = "noreferrer";
+          pdfLink.textContent = "PDF";
+          actions.appendChild(pdfLink);
+        }
+
+        footer.appendChild(actions);
+        article.appendChild(footer);
+
         return article;
       }
 
       function formatTargetChange(report) {
-        if (!report.target_price_change) {
-          return "";
+        if (!report?.target_price_change) {
+          return null;
         }
+
         const direction = report.target_price_change === "up" ? "상향" : "하향";
         const pct =
           report.target_price_change_pct === null || report.target_price_change_pct === undefined
@@ -496,71 +1230,211 @@
       }
 
       function buildChangeCard(report) {
-        const article = document.createElement("article");
-        article.className = "report-card";
-        const changeReasons = (report.change_reasons || []).join(" · ");
-        const targetChange = formatTargetChange(report);
-        const details = [
-          targetChange,
-          report.opinion_changed
-            ? `의견 변경: ${report.previous_opinion || "-"} → ${report.opinion || "-"}`
-            : "",
-          report.analyst_changed
-            ? `애널리스트 변경: ${report.previous_analyst || "-"} → ${report.analyst || "-"}`
-            : "",
-          report.previous_report_date ? `비교 기준일: ${report.previous_report_date}` : "",
-        ].filter(Boolean);
+        const article = el("article", "report-card");
+        const kicker = el("div", "report-kicker");
+        kicker.appendChild(buildBadge("변화 감지", "rose"));
+        kicker.appendChild(buildBadge(report.broker || "증권사 없음"));
+        if (report.published_date) {
+          kicker.appendChild(buildBadge(report.published_date));
+        }
+        article.appendChild(kicker);
 
-        article.innerHTML = `
-          <div class="kicker">
-            <span class="badge">변화 감지</span>
-            <span>${report.broker}</span>
-            <span>${report.published_date}</span>
-          </div>
-          <h3><a href="${report.detail_url}" target="_blank" rel="noreferrer">${report.display_title}</a></h3>
-          <p>${changeReasons || "변화 없음"}</p>
-          <footer>
-            ${details.map((item) => `<span>${item}</span>`).join("")}
-          </footer>
-        `;
+        const title = el("h3", "report-title");
+        const titleLink = el("a");
+        titleLink.href = report.detail_url || "#";
+        titleLink.target = "_blank";
+        titleLink.rel = "noreferrer";
+        titleLink.textContent = report.display_title || report.title || "제목 없음";
+        title.appendChild(titleLink);
+        article.appendChild(title);
+
+        const reasons = report.change_reasons?.length
+          ? report.change_reasons.join(" · ")
+          : "비교는 가능하지만 세부 변화 정보가 비어 있습니다.";
+        article.appendChild(el("p", "report-summary", reasons));
+
+        const data = el("div", "report-data");
+        const targetChange = formatTargetChange(report);
+        if (targetChange) {
+          data.appendChild(buildDatum("변화", targetChange));
+        }
+        if (report.opinion_changed) {
+          data.appendChild(buildDatum("의견", `${report.previous_opinion || "-"} → ${report.opinion || "-"}`));
+        }
+        if (report.analyst_changed) {
+          data.appendChild(buildDatum("애널리스트", `${report.previous_analyst || "-"} → ${report.analyst || "-"}`));
+        }
+        if (report.previous_report_date) {
+          data.appendChild(buildDatum("비교 기준", report.previous_report_date));
+        }
+        article.appendChild(data);
+
+        const footer = el("div", "report-footer");
+        footer.appendChild(el("div", "report-reasons", compactText(report.summary || report.excerpt, 140)));
+        const actions = el("div", "report-actions");
+        const detailLink = el("a");
+        detailLink.href = report.detail_url || "#";
+        detailLink.target = "_blank";
+        detailLink.rel = "noreferrer";
+        detailLink.textContent = "원문 보기";
+        actions.appendChild(detailLink);
+        footer.appendChild(actions);
+        article.appendChild(footer);
+
         return article;
       }
 
-      function renderPriorityFilters(digest) {
-        const copy = document.getElementById("priorityCopy");
-        const chips = document.getElementById("priorityFilterChips");
-        const toggle = document.getElementById("priorityOnlyToggle");
-        chips.innerHTML = "";
+      function buildRankingCard(label, reports) {
+        const card = el("section", "ranking-card");
+        card.appendChild(el("h3", null, label || "랭킹"));
+        const list = el("div", "ranking-list");
 
-        const priority = digest.priority_filters || { enabled: false };
-        toggle.disabled = !priority.enabled;
+        reports.slice(0, 5).forEach((report, index) => {
+          const item = el("div", "ranking-item");
+          const strong = el("strong");
+          const link = el("a");
+          link.href = report.detail_url || "#";
+          link.target = "_blank";
+          link.rel = "noreferrer";
+          link.textContent = `${index + 1}. ${report.display_title || report.title || "제목 없음"}`;
+          strong.appendChild(link);
+          item.appendChild(strong);
+          item.appendChild(
+            el(
+              "small",
+              null,
+              `${report.broker || "증권사 없음"} · 점수 ${Number(report.score || 0).toFixed(2)}${
+                report.views ? ` · 조회수 ${formatNumber(report.views)}` : ""
+              }`
+            )
+          );
+          list.appendChild(item);
+        });
 
-        if (!priority.enabled) {
-          copy.textContent = "관심 종목/섹터 필터가 아직 설정되지 않았습니다.";
-          toggle.checked = false;
-          state.priorityOnlyView = false;
-          return;
+        card.appendChild(list);
+        return card;
+      }
+
+      function renderLoadingState() {
+        document.getElementById("heroSummary").textContent = "데이터를 불러오는 중입니다.";
+        document.getElementById("editorialNote").textContent = "편집 메모를 불러오는 중입니다.";
+        document.getElementById("mustReadList").innerHTML = '<div class="loading">필독 후보를 정리하는 중입니다.</div>';
+        document.getElementById("reportList").innerHTML = '<div class="loading">리포트 목록을 불러오는 중입니다.</div>';
+        document.getElementById("changeList").innerHTML = '<div class="loading">변화 감지 정보를 준비하는 중입니다.</div>';
+        document.getElementById("rankingGrid").innerHTML = '<div class="loading">랭킹을 계산하는 중입니다.</div>';
+        document.getElementById("activeFilterBar").innerHTML = '<span class="hint-chip">필터 상태를 준비하는 중입니다.</span>';
+      }
+
+      function renderHintBar(totalVisible, totalReports) {
+        const bar = document.getElementById("activeFilterBar");
+        bar.innerHTML = "";
+
+        const hints = [`표시 ${formatNumber(totalVisible)} / 전체 ${formatNumber(totalReports)}건`];
+        if (state.query) {
+          hints.push(`검색: "${state.query}"`);
         }
+        if (state.selectedCategory !== "all") {
+          const selectedOption = document.querySelector(`#categorySelect option[value="${state.selectedCategory}"]`);
+          hints.push(`카테고리: ${selectedOption?.textContent || state.selectedCategory}`);
+        }
+        if (state.priorityOnlyView) {
+          hints.push("관심 일치만");
+        }
+        if (state.changesOnlyView) {
+          hints.push("변화 감지만");
+        }
+        hints.push(`정렬: ${document.getElementById("sortSelect").selectedOptions[0]?.textContent || ""}`);
 
-        copy.textContent =
-          `관심 필터가 켜져 있습니다. 전체 ${priority.matched_reports || 0}건, 필독 후보 ${priority.matched_must_read || 0}건이 일치했습니다.`;
-
-        [...(priority.subjects || []), ...(priority.keywords || [])].forEach((item) => {
-          const chip = document.createElement("span");
-          chip.className = "chip";
-          chip.textContent = item;
-          chips.appendChild(chip);
+        hints.forEach((hint) => {
+          bar.appendChild(el("span", "hint-chip", hint));
         });
       }
 
-      function renderKeywords(keywords) {
-        const container = document.getElementById("keywordChips");
+      function renderHero(digest) {
+        const editorial = digest.editorial_note || "오늘의 편집 메모가 없습니다.";
+        const collection = digest.collection_note ? `${digest.collection_note} ` : "";
+        document.getElementById("heroSummary").classList.remove("loading");
+        document.getElementById("heroSummary").textContent = `${collection}${editorial}`.trim();
+        document.getElementById("heroGeneratedAt").textContent = formatShortDateTime(digest.generated_at);
+        document.getElementById("heroDateMeta").textContent = `${formatDateLabel(digest.requested_date || digest.date)} 기준`;
+        document.getElementById("heroMustReadCount").textContent = formatNumber((digest.must_read || []).length);
+        document.getElementById("heroMustReadMeta").textContent = `전체 ${formatNumber(digest.stats?.total_reports || 0)}건 중 우선 확인할 후보`;
+        document.getElementById("heroChangeCount").textContent = formatNumber(digest.change_summary?.changed_reports || 0);
+
+        const changeSummary = digest.change_summary || {};
+        document.getElementById("heroChangeMeta").textContent = changeSummary.available
+          ? `상향 ${formatNumber(changeSummary.target_price_up || 0)} · 하향 ${formatNumber(
+              changeSummary.target_price_down || 0
+            )} · 의견 변경 ${formatNumber(changeSummary.opinion_changed || 0)}`
+          : "과거 아카이브가 충분하지 않아 변화 비교가 제한됩니다.";
+      }
+
+      function renderNotes(digest) {
+        const editorial = document.getElementById("editorialNote");
+        editorial.classList.remove("loading");
+        editorial.textContent = digest.editorial_note || "편집 메모가 없습니다.";
+
+        const collection = document.getElementById("collectionNote");
+        collection.textContent = digest.collection_note || "수집 메모는 비어 있습니다.";
+
+        const priority = digest.priority_filters || { enabled: false };
+        const priorityCopy = document.getElementById("priorityCopy");
+        const priorityFilterChips = document.getElementById("priorityFilterChips");
+        const keywordChips = document.getElementById("keywordChips");
+
+        priorityFilterChips.innerHTML = "";
+        keywordChips.innerHTML = "";
+
+        if (!priority.enabled) {
+          priorityCopy.textContent = "관심 종목/키워드 필터가 아직 설정되지 않았습니다.";
+          document.getElementById("priorityOnlyToggle").checked = false;
+          document.getElementById("priorityOnlyToggle").disabled = true;
+          state.priorityOnlyView = false;
+        } else {
+          document.getElementById("priorityOnlyToggle").disabled = false;
+          priorityCopy.textContent = `관심 필터 일치 리포트 ${formatNumber(priority.matched_reports || 0)}건, 필독 후보 ${formatNumber(
+            priority.matched_must_read || 0
+          )}건입니다.`;
+
+          [...(priority.subjects || []), ...(priority.keywords || [])].forEach((item) => {
+            const chip = el("span", "chip");
+            chip.appendChild(el("strong", null, item));
+            priorityFilterChips.appendChild(chip);
+          });
+        }
+
+        (digest.keywords || []).forEach((keyword) => {
+          keywordChips.appendChild(el("span", "chip", `# ${keyword}`));
+        });
+
+        if (!(digest.keywords || []).length) {
+          keywordChips.appendChild(el("span", "chip", "키워드 없음"));
+        }
+      }
+
+      function renderCountBreakdown(items, containerId, keyName) {
+        const container = document.getElementById(containerId);
         container.innerHTML = "";
-        (keywords || []).forEach((keyword) => {
-          const chip = document.createElement("span");
-          chip.className = "chip";
-          chip.textContent = `# ${keyword}`;
-          container.appendChild(chip);
+
+        if (!items || !items.length) {
+          container.appendChild(el("div", "empty", "집계 정보가 없습니다."));
+          return;
+        }
+
+        const max = Math.max(...items.map((item) => Number(item.count || 0)), 1);
+        items.slice(0, 6).forEach((item) => {
+          const row = el("div", "count-row");
+          const head = el("div", "count-row-head");
+          head.appendChild(el("span", null, item[keyName] || "-"));
+          head.appendChild(el("strong", null, formatNumber(item.count || 0)));
+          row.appendChild(head);
+
+          const bar = el("div", "count-bar");
+          const fill = el("div", "count-bar-fill");
+          fill.style.width = `${Math.max((Number(item.count || 0) / max) * 100, 8)}%`;
+          bar.appendChild(fill);
+          row.appendChild(bar);
+          container.appendChild(row);
         });
       }
 
@@ -568,68 +1442,101 @@
         const statsGrid = document.getElementById("statsGrid");
         statsGrid.innerHTML = "";
 
+        const categories = digest.stats?.categories || [];
+        const brokers = digest.stats?.brokers || [];
+        const changeSummary = digest.change_summary || {};
+
         const cards = [
           {
             label: "총 리포트",
-            value: `${digest.stats.total_reports}`,
-            body: "해당 일자 수집 건수",
+            value: formatNumber(digest.stats?.total_reports || 0),
+            body: "해당 날짜에 수집된 전체 건수",
           },
           {
-            label: "카테고리 최다",
-            value: digest.stats.categories[0]?.label || "-",
-            body: `${digest.stats.categories[0]?.count || 0}건`,
+            label: "관심 일치",
+            value: formatNumber(digest.stats?.priority_match_reports || 0),
+            body: "관심 종목/키워드와 겹친 리포트",
           },
           {
-            label: "활동 증권사",
-            value: digest.stats.brokers[0]?.name || "-",
-            body: `${digest.stats.brokers[0]?.count || 0}건`,
-          },
-          {
-            label: "생성 시각",
-            value: digest.generated_at?.slice(11, 16) || "-",
-            body: digest.date,
+            label: "PDF 본문 확보",
+            value: formatNumber(digest.stats?.pdf_text_reports || 0),
+            body: "PDF에서 텍스트까지 읽은 리포트",
           },
           {
             label: "변화 감지",
-            value: `${digest.change_summary?.changed_reports || 0}`,
-            body: "목표가·의견 변화 리포트",
+            value: formatNumber(changeSummary.changed_reports || 0),
+            body: "목표가, 의견, 애널리스트 변경",
+          },
+          {
+            label: "최다 카테고리",
+            value: categories[0]?.label || "-",
+            body: `${formatNumber(categories[0]?.count || 0)}건`,
+          },
+          {
+            label: "활동 증권사",
+            value: brokers[0]?.name || "-",
+            body: `${formatNumber(brokers[0]?.count || 0)}건`,
           },
         ];
 
         cards.forEach((card) => {
-          const item = document.createElement("div");
-          item.className = "stat";
-          item.innerHTML = `<span>${card.label}</span><strong>${card.value}</strong><small>${card.body}</small>`;
-          statsGrid.appendChild(item);
+          const node = el("article", "stat-card");
+          node.appendChild(el("span", null, card.label));
+          node.appendChild(el("strong", null, card.value));
+          node.appendChild(el("small", null, card.body));
+          statsGrid.appendChild(node);
         });
+
+        renderCountBreakdown(categories, "categoryBreakdown", "label");
+        renderCountBreakdown(brokers, "brokerBreakdown", "name");
       }
 
-      function renderChanges(digest) {
-        const copy = document.getElementById("changeCopy");
-        const container = document.getElementById("changeList");
+      function renderSignalSummary(digest, filteredChanges) {
+        const container = document.getElementById("signalSummary");
+        const meta = document.getElementById("changeMeta");
         const summary = digest.change_summary || {};
         container.innerHTML = "";
 
         if (!summary.available) {
-          copy.textContent = "비교할 과거 아카이브가 아직 충분하지 않습니다.";
-          container.innerHTML = '<div class="empty">변화 비교를 위한 히스토리가 없습니다.</div>';
+          meta.textContent = "비교 가능한 과거 아카이브가 부족합니다.";
+          container.appendChild(el("div", "empty", "이 날짜는 히스토리 부족으로 변화 요약이 제한됩니다."));
           return;
         }
 
-        copy.textContent = `변화 감지 ${summary.changed_reports || 0}건 · 목표가 상향 ${summary.target_price_up || 0}건 · 목표가 하향 ${summary.target_price_down || 0}건 · 의견 변경 ${summary.opinion_changed || 0}건`;
+        meta.textContent = `현재 필터 기준 ${formatNumber(filteredChanges.length)}건 표시`;
+        const stats = [
+          { label: "변화 감지", value: summary.changed_reports || 0 },
+          { label: "목표가 상향", value: summary.target_price_up || 0 },
+          { label: "목표가 하향", value: summary.target_price_down || 0 },
+          { label: "의견 변경", value: summary.opinion_changed || 0 },
+        ];
 
-        if (!(digest.changes || []).length) {
-          container.innerHTML = '<div class="empty">이 날짜에는 감지된 목표가·의견 변화가 없습니다.</div>';
+        stats.forEach((stat) => {
+          const node = el("div", "signal-stat");
+          node.appendChild(el("span", null, stat.label));
+          node.appendChild(el("strong", null, formatNumber(stat.value)));
+          container.appendChild(node);
+        });
+      }
+
+      function renderChanges(digest) {
+        const container = document.getElementById("changeList");
+        container.innerHTML = "";
+
+        const changes = sortReports((digest.changes || []).filter(reportMatchesFilters));
+        renderSignalSummary(digest, changes);
+
+        if (!digest.change_summary?.available) {
+          container.appendChild(el("div", "empty", "변화 감지 비교가 가능한 시점부터 카드가 채워집니다."));
           return;
         }
 
-        const filtered = (digest.changes || []).filter(reportMatchesQuery);
-        if (!filtered.length) {
-          container.innerHTML = '<div class="empty">검색 조건에 맞는 변화 감지가 없습니다.</div>';
+        if (!changes.length) {
+          container.appendChild(el("div", "empty", "현재 필터 조건에 맞는 변화 감지 리포트가 없습니다."));
           return;
         }
 
-        filtered.forEach((report) => {
+        changes.forEach((report) => {
           container.appendChild(buildChangeCard(report));
         });
       }
@@ -638,142 +1545,238 @@
         const container = document.getElementById("rankingGrid");
         container.innerHTML = "";
 
-        const rankings = Object.values(digest.rankings || {});
-        if (!rankings.length) {
-          container.innerHTML = '<div class="empty">랭킹 데이터가 없습니다.</div>';
+        const groups = Object.values(digest.rankings || {}).map((group) => ({
+          label: group.label,
+          reports: sortReports((group.reports || []).filter(reportMatchesFilters)),
+        }));
+
+        const nonEmpty = groups.filter((group) => group.reports.length);
+        if (!nonEmpty.length) {
+          container.appendChild(el("div", "empty", "현재 필터 조건에 맞는 랭킹이 없습니다."));
           return;
         }
 
-        rankings.forEach((ranking) => {
-          const reports = (ranking.reports || []).filter(reportMatchesQuery);
-          if (!reports.length) {
-            return;
-          }
-
-          const panel = document.createElement("section");
-          panel.className = "ranking-panel";
-          panel.innerHTML = `<h3>${ranking.label}</h3>`;
-
-          const list = document.createElement("div");
-          list.className = "ranking-list";
-
-          reports.forEach((report, index) => {
-            const item = document.createElement("div");
-            item.className = "ranking-item";
-            item.innerHTML = `
-              <strong>${index + 1}. <a href="${report.detail_url}" target="_blank" rel="noreferrer">${report.display_title}</a></strong>
-              <small>${report.broker} · 점수 ${Number(report.score).toFixed(2)}</small>
-            `;
-            list.appendChild(item);
-          });
-
-          panel.appendChild(list);
-          container.appendChild(panel);
+        nonEmpty.forEach((group) => {
+          container.appendChild(buildRankingCard(group.label, group.reports));
         });
-
-        if (!container.children.length) {
-          container.innerHTML = '<div class="empty">검색 조건에 맞는 랭킹이 없습니다.</div>';
-        }
       }
 
       function renderMustRead(digest) {
         const container = document.getElementById("mustReadList");
+        const meta = document.getElementById("mustReadMeta");
         container.innerHTML = "";
-        const filtered = digest.must_read.filter(reportMatchesQuery);
-        if (!filtered.length) {
-          container.innerHTML = '<div class="empty">검색 조건에 맞는 필독 후보가 없습니다.</div>';
+
+        const mustRead = sortReports((digest.must_read || []).filter(reportMatchesFilters));
+        meta.textContent = `현재 필터 기준 ${formatNumber(mustRead.length)}건`;
+
+        if (!mustRead.length) {
+          container.appendChild(el("div", "empty", "현재 조건에서는 필독 후보가 없습니다."));
           return;
         }
-        filtered.forEach((report) => {
+
+        mustRead.forEach((report) => {
           container.appendChild(buildReportCard(report, true));
         });
       }
 
-      function renderReports(digest) {
+      function renderReports() {
         const container = document.getElementById("reportList");
+        const meta = document.getElementById("reportMeta");
         container.innerHTML = "";
-        const filtered = digest.reports.filter(reportMatchesQuery);
-        if (!filtered.length) {
-          container.innerHTML = '<div class="empty">검색 조건에 맞는 리포트가 없습니다.</div>';
+
+        const reports = getFilteredReports();
+        meta.textContent = `현재 필터 기준 ${formatNumber(reports.length)}건`;
+        renderHintBar(reports.length, state.digest?.stats?.total_reports || 0);
+
+        if (!reports.length) {
+          container.appendChild(el("div", "empty", "현재 필터 조건에 맞는 리포트가 없습니다."));
           return;
         }
-        filtered.forEach((report) => {
+
+        reports.forEach((report) => {
           container.appendChild(buildReportCard(report));
         });
       }
 
+      function populateCategoryOptions(digest) {
+        const select = document.getElementById("categorySelect");
+        const previousValue = state.selectedCategory;
+        select.innerHTML = "";
+
+        const optionAll = el("option");
+        optionAll.value = "all";
+        optionAll.textContent = "전체 카테고리";
+        select.appendChild(optionAll);
+
+        const categories = Array.from(
+          new Map(
+            (digest.reports || [])
+              .filter((report) => report.category)
+              .map((report) => [report.category, report.category_label || report.category])
+          ).entries()
+        ).sort((left, right) => left[1].localeCompare(right[1], "ko"));
+
+        categories.forEach(([value, label]) => {
+          const option = el("option");
+          option.value = value;
+          option.textContent = label;
+          select.appendChild(option);
+        });
+
+        state.selectedCategory = categories.some(([value]) => value === previousValue) ? previousValue : "all";
+        select.value = state.selectedCategory;
+      }
+
+      function renderAll() {
+        if (!state.digest) {
+          return;
+        }
+        renderHero(state.digest);
+        renderNotes(state.digest);
+        renderStats(state.digest);
+        renderChanges(state.digest);
+        renderRankings(state.digest);
+        renderMustRead(state.digest);
+        renderReports();
+      }
+
       async function loadDigest(date) {
-        const digest = await fetchJson(`./data/days/${date}.json`);
-        state.digest = digest;
-        syncSelectedDate(digest.date);
-        document.getElementById("editorialNote").classList.remove("loading");
-        document.getElementById("editorialNote").textContent =
-          digest.collection_note
-            ? `${digest.collection_note} ${digest.editorial_note}`
-            : digest.editorial_note;
-        renderPriorityFilters(digest);
-        renderKeywords(digest.keywords);
-        renderStats(digest);
-        renderRankings(digest);
-        renderChanges(digest);
-        renderMustRead(digest);
-        renderReports(digest);
+        renderLoadingState();
+        try {
+          const digest = await fetchJson(`./data/days/${date}.json`);
+          state.digest = digest;
+          state.selectedDate = digest.date;
+          syncSelectedDate(digest.date);
+          populateCategoryOptions(digest);
+          renderAll();
+        } catch (error) {
+          console.error(error);
+          try {
+            const latest = await fetchJson("./data/latest.json");
+            state.digest = latest;
+            state.selectedDate = latest.date;
+            syncSelectedDate(latest.date);
+            populateCategoryOptions(latest);
+            renderAll();
+          } catch (fallbackError) {
+            console.error(fallbackError);
+            document.getElementById("heroSummary").textContent =
+              "데이터를 불러오지 못했습니다. GitHub Actions로 최신 정적 파일이 생성됐는지 확인해 주세요.";
+            document.getElementById("editorialNote").textContent =
+              "대시보드 데이터 로딩에 실패했습니다. 잠시 후 다시 시도해 주세요.";
+          }
+        }
+      }
+
+      function getRequestedDate(days) {
+        const params = new URLSearchParams(window.location.search);
+        const requested = params.get("date");
+        return days.some((day) => day.date === requested) ? requested : days[0]?.date || null;
+      }
+
+      function populateDateOptions(days) {
+        const select = document.getElementById("dateSelect");
+        select.innerHTML = "";
+        days.forEach((day) => {
+          const option = el("option");
+          option.value = day.date;
+          option.textContent = `${day.date} · ${formatNumber(day.total_reports || 0)}건`;
+          select.appendChild(option);
+        });
+      }
+
+      function resetFilters() {
+        state.query = "";
+        state.selectedCategory = "all";
+        state.sortBy = "score";
+        state.priorityOnlyView = false;
+        state.changesOnlyView = false;
+
+        document.getElementById("searchInput").value = "";
+        document.getElementById("categorySelect").value = "all";
+        document.getElementById("sortSelect").value = "score";
+        document.getElementById("priorityOnlyToggle").checked = false;
+        document.getElementById("changesOnlyToggle").checked = false;
+
+        renderAll();
       }
 
       async function init() {
+        renderLoadingState();
+
+        const dateSelect = document.getElementById("dateSelect");
+        const searchInput = document.getElementById("searchInput");
+        const categorySelect = document.getElementById("categorySelect");
+        const sortSelect = document.getElementById("sortSelect");
+        const priorityOnlyToggle = document.getElementById("priorityOnlyToggle");
+        const changesOnlyToggle = document.getElementById("changesOnlyToggle");
+        const resetFiltersButton = document.getElementById("resetFiltersButton");
+
+        searchInput.addEventListener("input", (event) => {
+          state.query = normalize(event.target.value.trim());
+          renderAll();
+        });
+
+        categorySelect.addEventListener("change", (event) => {
+          state.selectedCategory = event.target.value;
+          renderAll();
+        });
+
+        sortSelect.addEventListener("change", (event) => {
+          state.sortBy = event.target.value;
+          renderAll();
+        });
+
+        priorityOnlyToggle.addEventListener("change", (event) => {
+          state.priorityOnlyView = Boolean(event.target.checked);
+          renderAll();
+        });
+
+        changesOnlyToggle.addEventListener("change", (event) => {
+          state.changesOnlyView = Boolean(event.target.checked);
+          renderAll();
+        });
+
+        resetFiltersButton.addEventListener("click", resetFilters);
+
         try {
-          state.index = await fetchJson("./data/index.json");
-          document.querySelector("#rankingGrid")?.previousElementSibling?.replaceChildren("카테고리 랭킹");
-          document.querySelector("#changeList")?.closest("section")?.querySelector("h2")?.replaceChildren("목표가·의견 변화");
-          document.querySelector("#mustReadList")?.previousElementSibling?.replaceChildren("꼭 읽을 리포트");
-          document.querySelector("#reportList")?.previousElementSibling?.replaceChildren("전체 수집 결과");
-          const dateSelect = document.getElementById("dateSelect");
-          const days = state.index.days || [];
-          if (!days.length) {
-            document.getElementById("editorialNote").textContent = "아직 적재된 데이터가 없습니다.";
+          const index = await fetchJson("./data/index.json");
+          state.index = index;
+          const days = index.days || [];
+
+          if (days.length) {
+            populateDateOptions(days);
+            const initialDate = getRequestedDate(days);
+            dateSelect.value = initialDate;
+            dateSelect.addEventListener("change", async (event) => {
+              await loadDigest(event.target.value);
+            });
+            await loadDigest(initialDate);
             return;
           }
 
-          days.forEach((day) => {
-            const option = document.createElement("option");
-            option.value = day.date;
-            option.textContent = `${day.date} · ${day.total_reports}건`;
-            dateSelect.appendChild(option);
-          });
-
-          const initialDate = getRequestedDate(days);
-          if (initialDate) {
-            dateSelect.value = initialDate;
-            await loadDigest(initialDate);
-          }
-
-          dateSelect.addEventListener("change", async (event) => {
-            await loadDigest(event.target.value);
-          });
-
-          document.getElementById("searchInput").addEventListener("input", (event) => {
-            state.query = event.target.value.trim().toLowerCase();
-            if (state.digest) {
-              renderRankings(state.digest);
-              renderChanges(state.digest);
-              renderMustRead(state.digest);
-              renderReports(state.digest);
-            }
-          });
-
-          document.getElementById("priorityOnlyToggle").addEventListener("change", (event) => {
-            state.priorityOnlyView = Boolean(event.target.checked);
-            if (state.digest) {
-              renderRankings(state.digest);
-              renderChanges(state.digest);
-              renderMustRead(state.digest);
-              renderReports(state.digest);
-            }
-          });
+          const latest = await fetchJson("./data/latest.json");
+          state.digest = latest;
+          state.selectedDate = latest.date;
+          syncSelectedDate(latest.date);
+          populateCategoryOptions(latest);
+          renderAll();
         } catch (error) {
-          document.getElementById("editorialNote").textContent =
-            "데이터를 불러오지 못했습니다. GitHub Actions가 먼저 실행되었는지 확인해 주세요.";
           console.error(error);
+          try {
+            const latest = await fetchJson("./data/latest.json");
+            state.digest = latest;
+            state.selectedDate = latest.date;
+            syncSelectedDate(latest.date);
+            populateCategoryOptions(latest);
+            renderAll();
+          } catch (fallbackError) {
+            console.error(fallbackError);
+            document.getElementById("heroSummary").textContent =
+              "대시보드 데이터를 불러오지 못했습니다. 정적 JSON 파일 생성 상태를 확인해 주세요.";
+            document.getElementById("editorialNote").textContent =
+              "초기 로딩에 실패했습니다. 잠시 후 다시 시도해 주세요.";
+          }
         }
       }
 
