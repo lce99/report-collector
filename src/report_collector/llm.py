@@ -77,6 +77,16 @@ def _build_prompt(report: Report, settings: Settings) -> str:
         f"목표가: {report.target_price or '-'}",
         f"의견: {report.opinion or '-'}",
     ]
+    if report.previous_target_price or report.previous_opinion or report.previous_analyst:
+        metadata_lines.extend(
+            [
+                f"직전 리포트 날짜: {report.previous_report_date or '-'}",
+                f"직전 목표가: {report.previous_target_price or '-'}",
+                f"직전 의견: {report.previous_opinion or '-'}",
+                f"직전 애널리스트: {report.previous_analyst or '-'}",
+                f"감지된 변화: {', '.join(report.change_reasons) or '-'}",
+            ]
+        )
     content = _trim_text(_normalize_space(report.source_text), settings.openai_summary_char_limit)
 
     return "\n".join(

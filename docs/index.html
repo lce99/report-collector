@@ -190,6 +190,7 @@
         font-size: 1.6rem;
       }
 
+      .change-list,
       .must-read,
       .report-list {
         display: grid;
@@ -299,6 +300,13 @@
         line-height: 1.6;
       }
 
+      .change-copy {
+        margin: 0 0 14px;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
       .spacer {
         margin-top: 20px;
       }
@@ -377,6 +385,12 @@
       </section>
 
       <section class="card section spacer">
+        <h2>목표가·의견 변화</h2>
+        <p id="changeCopy" class="change-copy"></p>
+        <div id="changeList" class="change-list"></div>
+      </section>
+
+      <section class="card section spacer">
         <h2>카테고리 랭킹</h2>
         <div id="mustReadList" class="must-read"></div>
       </section>
@@ -429,6 +443,11 @@
           report.broker,
           report.category_label,
           report.summary,
+          ...(report.change_reasons || []),
+          report.target_price,
+          report.previous_target_price,
+          report.opinion,
+          report.previous_opinion,
         ]
           .join(" ")
           .toLowerCase();
@@ -446,6 +465,7 @@
         article.innerHTML = `
           <div class="kicker">
             ${withBadge ? `<span class="badge">필독 후보</span>` : ""}
+            ${report.has_change_signal ? `<span class="badge">변화 감지</span>` : ""}
             ${report.is_priority_match ? `<span class="badge">관심 일치</span>` : ""}
             <span>${report.category_label}</span>
             <span>${report.broker}</span>
@@ -458,6 +478,49 @@
             ${reasons ? `<span>${reasons}</span>` : ""}
             ${priorityMatches ? `<span>일치: ${priorityMatches}</span>` : ""}
             ${report.pdf_url ? `<a href="${report.pdf_url}" target="_blank" rel="noreferrer">PDF</a>` : ""}
+          </footer>
+        `;
+        return article;
+      }
+
+      function formatTargetChange(report) {
+        if (!report.target_price_change) {
+          return "";
+        }
+        const direction = report.target_price_change === "up" ? "상향" : "하향";
+        const pct =
+          report.target_price_change_pct === null || report.target_price_change_pct === undefined
+            ? ""
+            : ` (${Number(report.target_price_change_pct).toFixed(1)}%)`;
+        return `목표가 ${direction}: ${report.previous_target_price || "-"} → ${report.target_price || "-"}${pct}`;
+      }
+
+      function buildChangeCard(report) {
+        const article = document.createElement("article");
+        article.className = "report-card";
+        const changeReasons = (report.change_reasons || []).join(" · ");
+        const targetChange = formatTargetChange(report);
+        const details = [
+          targetChange,
+          report.opinion_changed
+            ? `의견 변경: ${report.previous_opinion || "-"} → ${report.opinion || "-"}`
+            : "",
+          report.analyst_changed
+            ? `애널리스트 변경: ${report.previous_analyst || "-"} → ${report.analyst || "-"}`
+            : "",
+          report.previous_report_date ? `비교 기준일: ${report.previous_report_date}` : "",
+        ].filter(Boolean);
+
+        article.innerHTML = `
+          <div class="kicker">
+            <span class="badge">변화 감지</span>
+            <span>${report.broker}</span>
+            <span>${report.published_date}</span>
+          </div>
+          <h3><a href="${report.detail_url}" target="_blank" rel="noreferrer">${report.display_title}</a></h3>
+          <p>${changeReasons || "변화 없음"}</p>
+          <footer>
+            ${details.map((item) => `<span>${item}</span>`).join("")}
           </footer>
         `;
         return article;
@@ -526,6 +589,11 @@
             value: digest.generated_at?.slice(11, 16) || "-",
             body: digest.date,
           },
+          {
+            label: "변화 감지",
+            value: `${digest.change_summary?.changed_reports || 0}`,
+            body: "목표가·의견 변화 리포트",
+          },
         ];
 
         cards.forEach((card) => {
@@ -533,6 +601,36 @@
           item.className = "stat";
           item.innerHTML = `<span>${card.label}</span><strong>${card.value}</strong><small>${card.body}</small>`;
           statsGrid.appendChild(item);
+        });
+      }
+
+      function renderChanges(digest) {
+        const copy = document.getElementById("changeCopy");
+        const container = document.getElementById("changeList");
+        const summary = digest.change_summary || {};
+        container.innerHTML = "";
+
+        if (!summary.available) {
+          copy.textContent = "비교할 과거 아카이브가 아직 충분하지 않습니다.";
+          container.innerHTML = '<div class="empty">변화 비교를 위한 히스토리가 없습니다.</div>';
+          return;
+        }
+
+        copy.textContent = `변화 감지 ${summary.changed_reports || 0}건 · 목표가 상향 ${summary.target_price_up || 0}건 · 목표가 하향 ${summary.target_price_down || 0}건 · 의견 변경 ${summary.opinion_changed || 0}건`;
+
+        if (!(digest.changes || []).length) {
+          container.innerHTML = '<div class="empty">이 날짜에는 감지된 목표가·의견 변화가 없습니다.</div>';
+          return;
+        }
+
+        const filtered = (digest.changes || []).filter(reportMatchesQuery);
+        if (!filtered.length) {
+          container.innerHTML = '<div class="empty">검색 조건에 맞는 변화 감지가 없습니다.</div>';
+          return;
+        }
+
+        filtered.forEach((report) => {
+          container.appendChild(buildChangeCard(report));
         });
       }
 
@@ -617,6 +715,7 @@
         renderKeywords(digest.keywords);
         renderStats(digest);
         renderRankings(digest);
+        renderChanges(digest);
         renderMustRead(digest);
         renderReports(digest);
       }
@@ -625,6 +724,7 @@
         try {
           state.index = await fetchJson("./data/index.json");
           document.querySelector("#rankingGrid")?.previousElementSibling?.replaceChildren("카테고리 랭킹");
+          document.querySelector("#changeList")?.closest("section")?.querySelector("h2")?.replaceChildren("목표가·의견 변화");
           document.querySelector("#mustReadList")?.previousElementSibling?.replaceChildren("꼭 읽을 리포트");
           document.querySelector("#reportList")?.previousElementSibling?.replaceChildren("전체 수집 결과");
           const dateSelect = document.getElementById("dateSelect");
@@ -655,6 +755,7 @@
             state.query = event.target.value.trim().toLowerCase();
             if (state.digest) {
               renderRankings(state.digest);
+              renderChanges(state.digest);
               renderMustRead(state.digest);
               renderReports(state.digest);
             }
@@ -664,6 +765,7 @@
             state.priorityOnlyView = Boolean(event.target.checked);
             if (state.digest) {
               renderRankings(state.digest);
+              renderChanges(state.digest);
               renderMustRead(state.digest);
               renderReports(state.digest);
             }

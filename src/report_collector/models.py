@@ -29,6 +29,15 @@ class Report:
     score_reasons: list[str] = field(default_factory=list)
     priority_subject_matches: list[str] = field(default_factory=list)
     priority_keyword_matches: list[str] = field(default_factory=list)
+    previous_report_date: str | None = None
+    previous_target_price: str | None = None
+    previous_opinion: str | None = None
+    previous_analyst: str | None = None
+    target_price_change: str | None = None
+    target_price_change_pct: float | None = None
+    opinion_changed: bool = False
+    analyst_changed: bool = False
+    change_reasons: list[str] = field(default_factory=list)
 
     @property
     def display_title(self) -> str:
@@ -43,6 +52,10 @@ class Report:
     @property
     def has_pdf_text(self) -> bool:
         return bool(self.pdf_text)
+
+    @property
+    def has_change_signal(self) -> bool:
+        return bool(self.change_reasons)
 
     @property
     def content_sources(self) -> list[str]:
@@ -86,6 +99,16 @@ class Report:
             "priority_subject_matches": self.priority_subject_matches,
             "priority_keyword_matches": self.priority_keyword_matches,
             "is_priority_match": self.is_priority_match,
+            "previous_report_date": self.previous_report_date,
+            "previous_target_price": self.previous_target_price,
+            "previous_opinion": self.previous_opinion,
+            "previous_analyst": self.previous_analyst,
+            "target_price_change": self.target_price_change,
+            "target_price_change_pct": self.target_price_change_pct,
+            "opinion_changed": self.opinion_changed,
+            "analyst_changed": self.analyst_changed,
+            "change_reasons": self.change_reasons,
+            "has_change_signal": self.has_change_signal,
         }
 
 
@@ -100,7 +123,9 @@ class DailyDigest:
     keywords: list[str]
     priority_filters: dict[str, Any]
     stats: dict[str, Any]
+    change_summary: dict[str, Any]
     rankings: dict[str, Any]
+    changes: list[Report]
     must_read: list[Report]
     reports: list[Report]
 
@@ -115,6 +140,7 @@ class DailyDigest:
             "keywords": self.keywords,
             "priority_filters": self.priority_filters,
             "stats": self.stats,
+            "change_summary": self.change_summary,
             "rankings": {
                 key: {
                     "label": value.get("label"),
@@ -124,6 +150,7 @@ class DailyDigest:
                 }
                 for key, value in self.rankings.items()
             },
+            "changes": [report.to_public_dict() for report in self.changes],
             "must_read": [report.to_public_dict() for report in self.must_read],
             "reports": [report.to_public_dict() for report in self.reports],
         }

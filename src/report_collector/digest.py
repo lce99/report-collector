@@ -3,11 +3,13 @@ from __future__ import annotations
 from collections import Counter, defaultdict
 from datetime import datetime
 import html
+import json
 import math
 import re
 
 from report_collector.config import Settings
 from report_collector.models import DailyDigest, Report
+from report_collector.sources.common import normalize_report_key
 
 
 CATEGORY_WEIGHTS = {
@@ -85,6 +87,23 @@ STOPWORDS = {
 }
 
 SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?])\s+")
+OPINION_ALIASES = {
+    "buy": "buy",
+    "매수": "buy",
+    "strongbuy": "strong_buy",
+    "적극매수": "strong_buy",
+    "hold": "hold",
+    "neutral": "hold",
+    "중립": "hold",
+    "marketperform": "hold",
+    "marketperformer": "hold",
+    "tradingbuy": "trading_buy",
+    "reduce": "sell",
+    "underperform": "sell",
+    "sell": "sell",
+    "매도": "sell",
+    "outperform": "outperform",
+}
 
 
 def _normalize_space(value: str) -> str:
@@ -240,6 +259,186 @@ def _extract_keywords(reports: list[Report], limit: int = 8) -> list[str]:
     return [display_tokens[key] for key, _ in counter.most_common(limit)]
 
 
+def _report_history_key(
+    broker: str | None,
+    subject: str | None,
+) -> str | None:
+    normalized_broker = normalize_report_key(broker or "")
+    normalized_subject = normalize_report_key(subject or "")
+    if not normalized_broker or not normalized_subject:
+        return None
+    return f"{normalized_broker}:{normalized_subject}"
+
+
+def _parse_target_price(value: str | None) -> int | None:
+    if not value:
+        return None
+
+    cleaned = _normalize_space(value).lower().replace(",", "")
+    match = re.search(r"\d+(?:\.\d+)?", cleaned)
+    if not match:
+        return None
+
+    amount = float(match.group(0))
+    if "만원" in cleaned:
+        amount *= 10000
+    elif "천원" in cleaned:
+        amount *= 1000
+
+    return int(round(amount))
+
+
+def _normalize_opinion_value(value: str | None) -> str | None:
+    if not value:
+        return None
+
+    cleaned = _normalize_space(value).lower()
+    token = re.sub(r"[\s/_-]+", "", cleaned)
+    return OPINION_ALIASES.get(token, token or None)
+
+
+def _iter_previous_reports(
+    archive_root,
+    current_date: str,
+) -> list[dict[str, object]]:
+    if not archive_root.exists():
+        return []
+
+    previous_reports: list[dict[str, object]] = []
+    for day_dir in sorted(
+        (path for path in archive_root.iterdir() if path.is_dir()),
+        reverse=True,
+    ):
+        digest_path = day_dir / "digest.json"
+        if not digest_path.exists():
+            continue
+
+        payload = json.loads(digest_path.read_text(encoding="utf-8"))
+        payload_date = str(payload.get("date", ""))
+        if not payload_date or payload_date >= current_date:
+            continue
+
+        for report in payload.get("reports", []):
+            if isinstance(report, dict):
+                previous_reports.append(report)
+
+    return previous_reports
+
+
+def _build_previous_report_lookup(
+    archive_root,
+    current_date: str,
+) -> dict[str, dict[str, object]]:
+    lookup: dict[str, dict[str, object]] = {}
+    for report in _iter_previous_reports(archive_root, current_date):
+        key = _report_history_key(
+            str(report.get("broker") or ""),
+            str(report.get("subject") or ""),
+        )
+        if not key or key in lookup:
+            continue
+        lookup[key] = report
+    return lookup
+
+
+def _change_sort_key(report: Report) -> tuple[int, int, float, float, str]:
+    return (
+        1 if report.opinion_changed else 0,
+        1 if report.target_price_change else 0,
+        abs(report.target_price_change_pct or 0.0),
+        report.score,
+        report.display_title,
+    )
+
+
+def _annotate_changes(
+    reports: list[Report],
+    *,
+    current_date: str,
+    settings: Settings,
+) -> tuple[dict[str, object], list[Report]]:
+    summary = {
+        "available": False,
+        "changed_reports": 0,
+        "target_price_up": 0,
+        "target_price_down": 0,
+        "opinion_changed": 0,
+        "analyst_changed": 0,
+    }
+
+    history_lookup = _build_previous_report_lookup(settings.archive_root, current_date)
+    if not history_lookup:
+        return summary, []
+
+    summary["available"] = True
+    changed_reports: list[Report] = []
+
+    for report in reports:
+        report.previous_report_date = None
+        report.previous_target_price = None
+        report.previous_opinion = None
+        report.previous_analyst = None
+        report.target_price_change = None
+        report.target_price_change_pct = None
+        report.opinion_changed = False
+        report.analyst_changed = False
+        report.change_reasons = []
+
+        key = _report_history_key(report.broker, report.subject)
+        if not key:
+            continue
+
+        previous = history_lookup.get(key)
+        if not previous:
+            continue
+
+        report.previous_report_date = str(previous.get("published_date") or "") or None
+        report.previous_target_price = str(previous.get("target_price") or "") or None
+        report.previous_opinion = str(previous.get("opinion") or "") or None
+        report.previous_analyst = str(previous.get("analyst") or "") or None
+
+        current_target = _parse_target_price(report.target_price)
+        previous_target = _parse_target_price(report.previous_target_price)
+        if (
+            current_target is not None
+            and previous_target is not None
+            and current_target != previous_target
+        ):
+            report.target_price_change = "up" if current_target > previous_target else "down"
+            if previous_target > 0:
+                report.target_price_change_pct = round(
+                    ((current_target - previous_target) / previous_target) * 100,
+                    1,
+                )
+            if report.target_price_change == "up":
+                report.change_reasons.append("목표가 상향")
+                summary["target_price_up"] = int(summary["target_price_up"]) + 1
+            else:
+                report.change_reasons.append("목표가 하향")
+                summary["target_price_down"] = int(summary["target_price_down"]) + 1
+
+        current_opinion = _normalize_opinion_value(report.opinion)
+        previous_opinion = _normalize_opinion_value(report.previous_opinion)
+        if current_opinion and previous_opinion and current_opinion != previous_opinion:
+            report.opinion_changed = True
+            report.change_reasons.append("의견 변경")
+            summary["opinion_changed"] = int(summary["opinion_changed"]) + 1
+
+        current_analyst = _normalize_space(report.analyst or "")
+        previous_analyst = _normalize_space(report.previous_analyst or "")
+        if current_analyst and previous_analyst and current_analyst != previous_analyst:
+            report.analyst_changed = True
+            report.change_reasons.append("애널리스트 변경")
+            summary["analyst_changed"] = int(summary["analyst_changed"]) + 1
+
+        if report.has_change_signal:
+            changed_reports.append(report)
+
+    changed_reports.sort(key=_change_sort_key, reverse=True)
+    summary["changed_reports"] = len(changed_reports)
+    return summary, changed_reports
+
+
 def _select_must_read(reports: list[Report], limit: int) -> list[Report]:
     if not reports:
         return []
@@ -270,7 +469,11 @@ def _select_must_read(reports: list[Report], limit: int) -> list[Report]:
     return selected[:limit]
 
 
-def _build_stats(reports: list[Report], keywords: list[str]) -> dict[str, object]:
+def _build_stats(
+    reports: list[Report],
+    keywords: list[str],
+    change_summary: dict[str, object],
+) -> dict[str, object]:
     category_counts = Counter(report.category_label for report in reports)
     broker_counts = Counter(report.broker for report in reports)
     priority_count = sum(1 for report in reports if report.is_priority_match)
@@ -281,6 +484,7 @@ def _build_stats(reports: list[Report], keywords: list[str]) -> dict[str, object
         "priority_match_reports": priority_count,
         "pdf_text_reports": pdf_text_count,
         "llm_summary_reports": 0,
+        "changed_reports": change_summary.get("changed_reports", 0),
         "categories": [
             {"label": label, "count": count}
             for label, count in category_counts.most_common()
@@ -308,7 +512,11 @@ def _build_priority_filters(
     }
 
 
-def _build_editorial_note(reports: list[Report], must_read: list[Report]) -> str:
+def _build_editorial_note(
+    reports: list[Report],
+    must_read: list[Report],
+    change_summary: dict[str, object],
+) -> str:
     if not reports:
         return "해당 일자에 수집된 리포트가 없습니다."
 
@@ -319,7 +527,19 @@ def _build_editorial_note(reports: list[Report], must_read: list[Report]) -> str
     active_brokers = ", ".join(broker for broker, _ in broker_counts.most_common(3))
     must_read_titles = ", ".join(report.display_title for report in must_read[:3])
 
+    change_bits: list[str] = []
+    if change_summary.get("target_price_up"):
+        change_bits.append("\ubaa9\ud45c\uac00 \uc0c1\ud5a5 {}\uac74".format(change_summary["target_price_up"]))
+    if change_summary.get("target_price_down"):
+        change_bits.append("\ubaa9\ud45c\uac00 \ud558\ud5a5 {}\uac74".format(change_summary["target_price_down"]))
+    if change_summary.get("opinion_changed"):
+        change_bits.append("\uc758\uacac \ubcc0\uacbd {}\uac74".format(change_summary["opinion_changed"]))
+
+    prefix = f"{', '.join(change_bits)}\uc774 \uac10\uc9c0\ub410\uc2b5\ub2c8\ub2e4. " if change_bits else ""
+
     return (
+        prefix
+        + 
         f"오늘은 {busiest_category} 리포트가 {category_count}건으로 가장 많았습니다. "
         f"{active_brokers} 발간 비중이 높았고, "
         f"우선 확인할 만한 핵심 리포트는 {must_read_titles}입니다."
@@ -346,6 +566,20 @@ def _build_dashboard_url(site_url: str | None, date_text: str) -> str | None:
     return f"{site_url}{separator}date={date_text}"
 
 
+def _format_target_change(report: Report) -> str | None:
+    if not report.target_price_change:
+        return None
+
+    direction = "상향" if report.target_price_change == "up" else "하향"
+    percent = ""
+    if report.target_price_change_pct is not None:
+        percent = f" ({report.target_price_change_pct:+.1f}%)"
+    return (
+        f"목표가 {direction}: "
+        f"{report.previous_target_price or '-'} → {report.target_price or '-'}{percent}"
+    )
+
+
 def enrich_and_build_digest(
     reports: list[Report],
     *,
@@ -367,6 +601,11 @@ def enrich_and_build_digest(
         report.score, report.score_reasons = _score_report(report, settings)
 
     reports.sort(key=lambda item: (-item.score, item.broker, item.title))
+    change_summary, changed_reports = _annotate_changes(
+        reports,
+        current_date=target_date,
+        settings=settings,
+    )
     selection_pool = reports
     if settings.priority_only:
         matched_reports = [report for report in reports if report.is_priority_match]
@@ -375,9 +614,9 @@ def enrich_and_build_digest(
 
     must_read = _select_must_read(selection_pool, settings.must_read_limit)
     keywords = _extract_keywords(must_read or reports)
-    stats = _build_stats(reports, keywords)
+    stats = _build_stats(reports, keywords, change_summary)
     priority_filters = _build_priority_filters(reports, must_read, settings)
-    editorial_note = _build_editorial_note(reports, must_read)
+    editorial_note = _build_editorial_note(reports, must_read, change_summary)
     rankings = _build_rankings(reports, settings.ranking_limit)
     dashboard_url = _build_dashboard_url(settings.site_url, target_date)
 
@@ -391,7 +630,9 @@ def enrich_and_build_digest(
         keywords=keywords,
         priority_filters=priority_filters,
         stats=stats,
+        change_summary=change_summary,
         rankings=rankings,
+        changes=changed_reports,
         must_read=must_read,
         reports=reports,
     )
@@ -430,6 +671,50 @@ def render_markdown(digest: DailyDigest) -> str:
         )
 
     lines.extend(["## 오늘의 한줄", digest.editorial_note, ""])
+
+    if digest.change_summary.get("available"):
+        lines.extend(
+            [
+                "## 목표가·의견 변화",
+                f"- 변화 감지 리포트: {digest.change_summary.get('changed_reports', 0)}건",
+                (
+                    f"- 목표가 상향/하향: "
+                    f"{digest.change_summary.get('target_price_up', 0)}건 / "
+                    f"{digest.change_summary.get('target_price_down', 0)}건"
+                ),
+                (
+                    f"- 의견 변경/애널리스트 변경: "
+                    f"{digest.change_summary.get('opinion_changed', 0)}건 / "
+                    f"{digest.change_summary.get('analyst_changed', 0)}건"
+                ),
+                "",
+            ]
+        )
+
+        if digest.changes:
+            for index, report in enumerate(digest.changes[:12], start=1):
+                lines.extend(
+                    [
+                        f"### {index}. {report.display_title}",
+                        f"- 증권사: {report.broker}",
+                        f"- 변화 유형: {', '.join(report.change_reasons)}",
+                    ]
+                )
+                target_line = _format_target_change(report)
+                if target_line:
+                    lines.append(f"- {target_line}")
+                if report.opinion_changed:
+                    lines.append(
+                        f"- 의견 변경: {report.previous_opinion or '-'} → {report.opinion or '-'}"
+                    )
+                if report.analyst_changed:
+                    lines.append(
+                        f"- 애널리스트 변경: {report.previous_analyst or '-'} → {report.analyst or '-'}"
+                    )
+                if report.previous_report_date:
+                    lines.append(f"- 비교 기준일: {report.previous_report_date}")
+                lines.append(f"- 상세 링크: {report.detail_url}")
+                lines.append("")
 
     if digest.rankings:
         lines.extend(["## 카테고리 랭킹", ""])
@@ -504,6 +789,14 @@ def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[
         header.append(f"OpenAI 요약 {digest.stats['llm_summary_reports']}건")
     if digest.keywords:
         header.append(f"키워드: {html.escape(', '.join(digest.keywords[:6]))}")
+    if digest.change_summary.get("changed_reports"):
+        header.append(
+            "변화 감지 "
+            f"{digest.change_summary.get('changed_reports', 0)}건"
+            f" (상향 {digest.change_summary.get('target_price_up', 0)} / "
+            f"하향 {digest.change_summary.get('target_price_down', 0)} / "
+            f"의견 {digest.change_summary.get('opinion_changed', 0)})"
+        )
     header.append("")
     header.append(html.escape(digest.editorial_note))
 
@@ -525,6 +818,29 @@ def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[
         )
     if len(ranking_lines) > 2:
         blocks.append("\n".join(ranking_lines))
+
+    if digest.changes:
+        change_lines = ["", "<b>목표가·의견 변화</b>"]
+        for report in digest.changes[:5]:
+            detail_bits = []
+            target_line = _format_target_change(report)
+            if target_line:
+                detail_bits.append(target_line)
+            if report.opinion_changed:
+                detail_bits.append(
+                    f"의견 {report.previous_opinion or '-'} → {report.opinion or '-'}"
+                )
+            if report.analyst_changed:
+                detail_bits.append(
+                    f"애널리스트 {report.previous_analyst or '-'} → {report.analyst or '-'}"
+                )
+            change_lines.append(
+                f'• <a href="{html.escape(report.detail_url)}">'
+                f"{html.escape(report.display_title)}</a>"
+            )
+            if detail_bits:
+                change_lines.append(html.escape(" / ".join(detail_bits)))
+        blocks.append("\n".join(change_lines))
 
     for index, report in enumerate(digest.must_read[:max_reports], start=1):
         summary = _trim_text(report.summary, 180)
