@@ -195,15 +195,19 @@
       }
 
       .toolbar {
-        position: sticky;
-        top: 16px;
-        z-index: 20;
+        position: relative;
         margin-top: 18px;
         padding: 18px;
         border-radius: 26px;
         background:
           linear-gradient(180deg, rgba(255, 253, 249, 0.94), rgba(248, 243, 235, 0.9)),
           var(--panel-strong);
+      }
+
+      .toolbar.toolbar-pinned {
+        position: sticky;
+        top: 16px;
+        z-index: 20;
       }
 
       .toolbar-grid {
@@ -770,7 +774,7 @@
           grid-template-columns: 1fr;
         }
 
-        .toolbar {
+        .toolbar.toolbar-pinned {
           top: 10px;
         }
       }
@@ -847,6 +851,10 @@
                 <label class="toggle">
                   <input id="changesOnlyToggle" type="checkbox" />
                   <span>변화 감지만</span>
+                </label>
+                <label class="toggle">
+                  <input id="toolbarPinnedToggle" type="checkbox" />
+                  <span>상단 고정</span>
                 </label>
                 <button id="resetFiltersButton" class="ghost-button" type="button">필터 초기화</button>
               </div>
@@ -1050,6 +1058,8 @@
     </main>
 
     <script>
+      const TOOLBAR_PIN_STORAGE_KEY = "broker-report-toolbar-pinned";
+
       const state = {
         index: null,
         subjectIndex: null,
@@ -1062,6 +1072,7 @@
         sortBy: "score",
         priorityOnlyView: false,
         changesOnlyView: false,
+        toolbarPinned: false,
       };
 
       function el(tag, className, text) {
@@ -1189,6 +1200,34 @@
           return item.subject_key.includes(normalizedQuery) || subjectName.includes(normalizedQuery);
         });
         return partial?.subject_key || null;
+      }
+
+      function loadToolbarPinnedPreference() {
+        try {
+          return window.localStorage.getItem(TOOLBAR_PIN_STORAGE_KEY) === "true";
+        } catch (error) {
+          console.error(error);
+          return false;
+        }
+      }
+
+      function saveToolbarPinnedPreference() {
+        try {
+          window.localStorage.setItem(TOOLBAR_PIN_STORAGE_KEY, String(state.toolbarPinned));
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      function applyToolbarPinnedState() {
+        const toolbar = document.querySelector(".toolbar");
+        const toggle = document.getElementById("toolbarPinnedToggle");
+        if (toolbar) {
+          toolbar.classList.toggle("toolbar-pinned", state.toolbarPinned);
+        }
+        if (toggle) {
+          toggle.checked = state.toolbarPinned;
+        }
       }
 
       function populateSubjectSuggestions() {
@@ -2191,9 +2230,13 @@
         const sortSelect = document.getElementById("sortSelect");
         const priorityOnlyToggle = document.getElementById("priorityOnlyToggle");
         const changesOnlyToggle = document.getElementById("changesOnlyToggle");
+        const toolbarPinnedToggle = document.getElementById("toolbarPinnedToggle");
         const subjectSearchInput = document.getElementById("subjectSearchInput");
         const subjectSearchButton = document.getElementById("subjectSearchButton");
         const resetFiltersButton = document.getElementById("resetFiltersButton");
+
+        state.toolbarPinned = loadToolbarPinnedPreference();
+        applyToolbarPinnedState();
 
         searchInput.addEventListener("input", (event) => {
           state.query = normalize(event.target.value.trim());
@@ -2218,6 +2261,12 @@
         changesOnlyToggle.addEventListener("change", (event) => {
           state.changesOnlyView = Boolean(event.target.checked);
           renderAll();
+        });
+
+        toolbarPinnedToggle.addEventListener("change", (event) => {
+          state.toolbarPinned = Boolean(event.target.checked);
+          saveToolbarPinnedPreference();
+          applyToolbarPinnedState();
         });
 
         subjectSearchInput.addEventListener("keydown", async (event) => {
