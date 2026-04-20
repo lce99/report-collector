@@ -1,21 +1,21 @@
 # 2026-04-20 증권사 리포트 데일리
 
 - 요청 기준일: 2026-04-20
-- 생성 시각: 2026-04-20T10:12:26+09:00
+- 생성 시각: 2026-04-20T19:59:56+09:00
 - 대시보드: https://lce99.github.io/report-collector/?date=2026-04-20
-- 수집 건수: 105건
-- PDF 텍스트 보강: 38건
+- 수집 건수: 130건
+- PDF 텍스트 보강: 46건
 - OpenAI 요약 적용: 0건
-- 키워드: 실적, 삼성중공업, 이노션, KIWOOM, 한화비전, 서프라이즈, 예상, PRE
+- 키워드: 실적, 삼성중공업, 이노션, 반도체, KIWOOM, 한화비전, 서프라이즈, 예상
 
 ## 관심 필터
 - 관심 종목: 삼성전자, SK하이닉스, 미래에셋증권, 대한항공, 삼성에스디에스, 이노스페이스
 - 관심 섹터/키워드: 반도체, 방산, 원자력, 로봇, 건설, 우주, 항공
-- 일치 리포트: 48건
+- 일치 리포트: 62건
 - 엄격 필터 모드: 꺼짐
 
 ## 오늘의 한줄
-오늘은 종목분석 리포트가 32건으로 가장 많았습니다. 신한투자증권, 키움증권, 하나증권 발간 비중이 높았고, 우선 확인할 만한 핵심 리포트는 한화비전 - 실적 서프라이즈 예상, 삼성중공업 - 1Q26 Pre: 인건비 정상화만 고려해도, 삼성중공업 - FLNG에 방산까지 다 잡을 한 해입니다.
+오늘은 종목분석 리포트가 38건으로 가장 많았습니다. 신한투자증권, 하나증권, 키움증권 발간 비중이 높았고, 우선 확인할 만한 핵심 리포트는 한화비전 - 실적 서프라이즈 예상, 삼성중공업 - 1Q26 Pre: 인건비 정상화만 고려해도, 삼성중공업 - FLNG에 방산까지 다 잡을 한 해입니다.
 
 ## 카테고리 랭킹
 
@@ -27,32 +27,32 @@
 - 5. HD현대중공업 - 1Q26 Pre: 실적은 좋은데 | 유안타증권 | 점수 11.95
 
 ### 산업 랭킹
-- 1. 기타 - 안녕하세요 위클리에요(로봇/방산/항공/조선/.. | 유진투자증권 | 점수 13.48
-- 2. 반도체 - 실적 시즌 진입. 기대되는 호실적 | 하나증권 | 점수 12.90
-- 3. 건설 - 건설/부동산 Weekly - Captive Premium | 유진투자증권 | 점수 12.89
-- 4. 에너지 - 이번 주가 중요한 분수령 | 하나증권 | 점수 10.38
-- 5. 게임 - [IBKS Daily] 인터넷/게임 | IBK투자증권 | 점수 9.46
+- 1. IT - 2026년 4월 셋째 주 반도체 Weekly | 교보증권 | 점수 14.00
+- 2. 반도체 - 실적 시즌 진입. 기대되는 호실적 | 하나증권 | 점수 14.00
+- 3. 기타 - 안녕하세요 위클리에요(로봇/방산/항공/조선/.. | 유진투자증권 | 점수 13.95
+- 4. 건설 - 건설/부동산 Weekly - Captive Premium | 유진투자증권 | 점수 13.35
+- 5. 음식료 - 우려 속 기회 찾기 | DS투자증권 | 점수 13.10
 
 ### 매크로 랭킹
-- 1. SK증권 아침에 슥_2026.04.20 | SK증권 | 점수 11.93
-- 2. 주간 증시 브리핑 | 유진투자증권 | 점수 11.90
-- 3. 04/20, Kiwoom Morning Letter | 키움증권 | 점수 11.71
-- 4. 국내 주식 마감 시황 - 관망 심리에 신고가 부근 변동.. | 신한투자증권 | 점수 11.61
-- 5. 4/20 KB 리서치 모닝코멘트 | KB증권 | 점수 11.50
+- 1. SK증권 아침에 슥_2026.04.20 | SK증권 | 점수 12.20
+- 2. 04/20, Kiwoom Morning Letter | 키움증권 | 점수 12.19
+- 3. 주간 증시 브리핑 | 유진투자증권 | 점수 12.05
+- 4. Yuanta Morning Snapshot (2026.04.20) | 유안타증권 | 점수 12.00
+- 5. 국내 주식 마감 시황 - 관망 심리에 신고가 부근 변동.. | 신한투자증권 | 점수 11.96
 
 ### 전략 랭킹
-- 1. 04/20, Kiwoom Weekly_"전쟁 VS 실적", 두 변수의 힘 .. | 키움증권 | 점수 14.45
-- 2. [New K-ETF] 채권혼합50: 삼전닉스, KOSPI200액티브 | 하나증권 | 점수 12.69
-- 3. [IBKS Daily] Start with IBKS(2026.04.20) 개방 이후.. | IBK투자증권 | 점수 12.63
-- 4. [The Market Visualized] 시장 데이터와 사뭇 다른 주.. | SK증권 | 점수 12.38
-- 5. [Quant Comment] 국내외 주간 이익 동향 체크 | 하나증권 | 점수 12.31
+- 1. 04/20, Kiwoom Weekly_"전쟁 VS 실적", 두 변수의 힘 .. | 키움증권 | 점수 14.80
+- 2. DS와 함께하는 Weekly TalkTalk Vol. 255 | DS투자증권 | 점수 13.50
+- 3. [New K-ETF] 채권혼합50: 삼전닉스, KOSPI200액티브 | 하나증권 | 점수 13.40
+- 4. [IBKS Daily] Start with IBKS(2026.04.20) 개방 이후.. | IBK투자증권 | 점수 13.20
+- 5. [Quant Comment] 국내외 주간 이익 동향 체크 | 하나증권 | 점수 13.20
 
 ## 꼭 읽을 리포트
 ### 1. [종목분석] 한화비전 - 실적 서프라이즈 예상
 - 증권사: 키움증권
 - 발행일: 2026-04-20
 - 점수: 16.60
-- 선정 이유: 종목분석 카테고리, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(반도체), 목표가 포함
+- 선정 이유: 종목분석 카테고리, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(반도체), 조회수 상위권
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 삼성전자, SK하이닉스 / 키워드 반도체
 - 요약: 한화비전의 1Q26 실적이 매출액 4,427억원(-4%QoQ)과 영업이익 185억원(+4%QoQ)으로, 당사의 기존 전망치(매출액 4,027억원, 영업이익 80억원)를 크게 상회할 것으로 예상된다. 유럽 지역으로의 CCTV 판매량이 크게 증가하고, 연결 법인인 한화세미텍의 수익성이 개선될 것으로 판단하기 때문이다. 이에 더해, 원/달러 환율 및 원/유로 환율의 상승도 1Q26 실적 호조에 긍정적으로 작용할 것이다.
@@ -63,7 +63,7 @@
 - 증권사: 유안타증권
 - 발행일: 2026-04-20
 - 점수: 15.05
-- 선정 이유: 종목분석 카테고리, 관심 종목(삼성전자), 관심 섹터/키워드(방산), 목표가 포함
+- 선정 이유: 종목분석 카테고리, 관심 종목(삼성전자), 관심 섹터/키워드(방산), 조회수 상위권
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 삼성전자 / 키워드 방산
 - 요약: 컨센서스 (3,400억) 대비 높은 영업이익 추정치는 1) 4Q25 대비 큰 변동이 없는 조업일수, 2) 그럼에도 4Q25중 저선가 LNGC 4척, 컨테이너선 2척 인도로 인한 1Q26 고선가 물량 매출인식 비중 확대, 3) 4Q25 급여 관련 일회성 비용의 정상화에 근거. 동사의 4Q25 임직원 급여총액은 3,530억으로 1Q25-3Q25 평균 (2,540억) 대비 1,000억가량 상승. 외주용역비까지 감안한다면 4Q25 대비 급여 비용의 정상화로 인해 연간 기본급여 상승률을 고려하고도 1Q26 GPM은 17.3% (vs.
@@ -74,7 +74,7 @@
 - 증권사: DS투자증권
 - 발행일: 2026-04-20
 - 점수: 14.95
-- 선정 이유: 종목분석 카테고리, 관심 종목(삼성전자), 관심 섹터/키워드(방산), 목표가 포함
+- 선정 이유: 종목분석 카테고리, 관심 종목(삼성전자), 관심 섹터/키워드(방산), 조회수 상위권
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 삼성전자 / 키워드 방산
 - 요약: 1Q26 Preview: 무난한 실적과 성공적인 수주 1Q26F 매출액 2.8조원(+15.5% 이하 YoY), 영업이익 3,454억원(+180.6%, OPM 12.0%)으로 영업이익 컨센서스에 부합할 전망이다. 4분기 대비 선종 포트폴리오와 조업일수 변화가 적어 4분기와 유사한 실적이 예상되나 반복 건조 효과 및 FLNG 매출 확대로 수익성 개선은 지속될 전망이다.
@@ -92,21 +92,21 @@
 - 상세 링크: https://finance.naver.com/research/company_read.naver?nid=91701&page=1
 - PDF: https://stock.pstatic.net/stock-research/company/15/20260420_company_988412000.pdf
 
-### 5. [산업분석] 기타 - 안녕하세요 위클리에요(로봇/방산/항공/조선/..
-- 증권사: 유진투자증권
+### 5. [산업분석] IT - 2026년 4월 셋째 주 반도체 Weekly
+- 증권사: 교보증권
 - 발행일: 2026-04-20
-- 점수: 13.48
-- 선정 이유: 산업분석 카테고리, 관심 종목(대한항공), 관심 섹터/키워드(방산, 로봇, 우주), 핵심 키워드(방산)
+- 점수: 14.00
+- 선정 이유: 산업분석 카테고리, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(반도체), 핵심 키워드(반도체, weekly)
 - 요약 엔진: rule
-- 관심 필터 일치: 종목 대한항공 / 키워드 방산, 로봇, 우주, 항공
-- 요약: What’s new? - 로봇 산업 주요 이슈 & 스터디 시리즈(122) [중국 휴머노이드 하프 마라톤]
-- 상세 링크: https://finance.naver.com/research/industry_read.naver?nid=44270&page=1
-- PDF: https://stock.pstatic.net/stock-research/industry/63/20260420_industry_716328000.pdf
+- 관심 필터 일치: 종목 삼성전자, SK하이닉스 / 키워드 반도체
+- 요약: 교보증권 리서치 반도체 코멘트 - TSMC 1Q26 매출액 1.13조 대만달러(YoY +35%), GPM 66.2%로 컨센서스 상회 : 에이전트 AI 명령, 실행 모드 전환으로 다시 한번 토큰 소비량 급증.
+- 상세 링크: https://finance.naver.com/research/industry_read.naver?nid=44282&page=1
+- PDF: https://stock.pstatic.net/stock-research/industry/62/20260420_industry_443303000.pdf
 
 ### 6. [산업분석] 반도체 - 실적 시즌 진입. 기대되는 호실적
 - 증권사: 하나증권
 - 발행일: 2026-04-20
-- 점수: 12.90
+- 점수: 14.00
 - 선정 이유: 산업분석 카테고리, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(반도체), 우선 추적 증권사
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 삼성전자, SK하이닉스 / 키워드 반도체
@@ -117,7 +117,7 @@
 ### 7. [투자정보] 04/20, Kiwoom Weekly_"전쟁 VS 실적", 두 변수의 힘 ..
 - 증권사: 키움증권
 - 발행일: 2026-04-20
-- 점수: 14.45
+- 점수: 14.80
 - 선정 이유: 투자정보 카테고리, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(반도체, 방산, 건설), 우선 추적 증권사
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 삼성전자, SK하이닉스 / 키워드 반도체, 방산, 건설
@@ -125,21 +125,21 @@
 - 상세 링크: https://finance.naver.com/research/invest_read.naver?nid=38573&page=1
 - PDF: https://stock.pstatic.net/stock-research/invest/39/20260420_invest_656619000.pdf
 
-### 8. [투자정보] [New K-ETF] 채권혼합50: 삼전닉스, KOSPI200액티브
-- 증권사: 하나증권
+### 8. [투자정보] DS와 함께하는 Weekly TalkTalk Vol. 255
+- 증권사: DS투자증권
 - 발행일: 2026-04-20
-- 점수: 12.69
-- 선정 이유: 투자정보 카테고리, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(반도체), 우선 추적 증권사
+- 점수: 13.50
+- 선정 이유: 투자정보 카테고리, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(반도체, 방산, 로봇), 핵심 키워드(weekly)
 - 요약 엔진: rule
-- 관심 필터 일치: 종목 삼성전자, SK하이닉스 / 키워드 반도체
-- 요약: 신규 상장 ETF(4/21) - KIWOOM 삼성전자&SK하이닉스 채권혼합50, 1Q 200 채권혼합50 액티브 KIWOOM 삼성전자&SK하이닉스 채권혼합50: 우리나라의 대표 반도체 기업인 삼성전자와 SK하이닉스의 주식들과 단기 국고통안채를 함께 조합하여 포트폴리오를 구성하는 채권혼합형 패시브 ETF이다. 삼성전자와 SK하이닉스 주식을 각각 25%의 비중으로 편입하고, 나머지 50% 비중은 단기 국고채와 통안채로 구성한다.
-- 상세 링크: https://finance.naver.com/research/invest_read.naver?nid=38583&page=1
-- PDF: https://stock.pstatic.net/stock-research/invest/57/20260420_invest_298443000.pdf
+- 관심 필터 일치: 종목 삼성전자, SK하이닉스 / 키워드 반도체, 방산, 로봇
+- 요약: 지난 주 Review “'테슬라, 美 태양광에 우방국 참여 요청…한화솔루션·OCI 수주 확대 기대” 미국 정부가 무역확장법 232조를 근거로 수입산 태양광 원재료(폴리실리콘)등에 대한 관세 부과를 검토하는 가운데 미국 전기차 기업 테슬라가 우방국으로부터 공급받는 원재료와 파생상품 별도 지원해야 한다는 취지의 의견서 제출
+- 상세 링크: https://finance.naver.com/research/invest_read.naver?nid=38589&page=1
+- PDF: https://stock.pstatic.net/stock-research/invest/66/20260420_invest_619346000.pdf
 
 ### 9. [경제분석] 04/20, Kiwoom Morning Letter
 - 증권사: 키움증권
 - 발행일: 2026-04-20
-- 점수: 11.71
+- 점수: 12.19
 - 선정 이유: 경제분석 카테고리, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(방산), 우선 추적 증권사
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 삼성전자, SK하이닉스 / 키워드 방산
@@ -147,21 +147,21 @@
 - 상세 링크: https://finance.naver.com/research/economy_read.naver?nid=13245&page=1
 - PDF: https://stock.pstatic.net/stock-research/economy/39/20260420_economy_565061000.pdf
 
-### 10. [경제분석] (Macro Snapshot) 환율: 지정학에서 자산 매력도로
-- 증권사: 키움증권
+### 10. [경제분석] 에너지 쇼크, 파이프라인에 갇힌 인플레이션
+- 증권사: 유안타증권
 - 발행일: 2026-04-20
-- 점수: 7.85
-- 선정 이유: 경제분석 카테고리, 관심 섹터/키워드(반도체), 우선 추적 증권사
+- 점수: 9.05
+- 선정 이유: 경제분석 카테고리, 관심 섹터/키워드(건설, 항공), 우선 추적 증권사, 본문 정보량 풍부
 - 요약 엔진: rule
-- 관심 필터 일치: 종목 없음 / 키워드 반도체
-- 요약: 중동발 지정학적 리스크로 달러/원 환율의 변동성은 확대된 모습이다. 리스크 완화 시 달러 약세와 함께 환율이 하락하고, 불안이 재부각될 경우 상승 압력이 확대되는 흐름이 최근 뚜렷하다. 미국과 이란 간 협상은 기대와 실망이 반복되고 있으나, 최악의 시나리오는 피한 것으로 판단된다.
-- 상세 링크: https://finance.naver.com/research/economy_read.naver?nid=13244&page=1
-- PDF: https://stock.pstatic.net/stock-research/economy/39/20260420_economy_754831000.pdf
+- 관심 필터 일치: 종목 없음 / 키워드 건설, 항공
+- 요약: Summary PPI는 숫자로, 베이지북은 현장의 목소리로, 둘이 가리키는 방향은 일치한다. 금융투자분석사의 확인 및 중요 공시는 Appendix 참조 Summary 3월 PPI와 4월 베이지북은 같은 경제를 서로 다른 렌즈로 포착했다.
+- 상세 링크: https://finance.naver.com/research/economy_read.naver?nid=13246&page=1
+- PDF: https://stock.pstatic.net/stock-research/economy/18/20260420_economy_285333000.pdf
 
 ### 11. [시황정보] SK증권 아침에 슥_2026.04.20
 - 증권사: SK증권
 - 발행일: 2026-04-20
-- 점수: 11.93
+- 점수: 12.20
 - 선정 이유: 시황정보 카테고리, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(반도체, 건설), 본문 정보량 풍부
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 삼성전자, SK하이닉스 / 키워드 반도체, 건설
@@ -172,7 +172,7 @@
 ### 12. [채권분석] [4월 4주] 금리와 주가의 회복 속도가 다른 이유
 - 증권사: 하나증권
 - 발행일: 2026-04-20
-- 점수: 4.98
+- 점수: 6.00
 - 선정 이유: 채권분석 카테고리, 우선 추적 증권사, 핵심 키워드(금리)
 - 요약 엔진: rule
 - 관심 필터 일치: 없음
@@ -185,105 +185,130 @@
 - [종목분석] 한화비전 - 실적 서프라이즈 예상 | 키움증권 | 2026-04-20 | 점수 16.60 | https://finance.naver.com/research/company_read.naver?nid=91695&page=1
 - [종목분석] 삼성중공업 - 1Q26 Pre: 인건비 정상화만 고려해도 | 유안타증권 | 2026-04-20 | 점수 15.05 | https://finance.naver.com/research/company_read.naver?nid=91706&page=1
 - [종목분석] 삼성중공업 - FLNG에 방산까지 다 잡을 한 해 | DS투자증권 | 2026-04-20 | 점수 14.95 | https://finance.naver.com/research/company_read.naver?nid=91709&page=1
-- [투자정보] 04/20, Kiwoom Weekly_"전쟁 VS 실적", 두 변수의 힘 .. | 키움증권 | 2026-04-20 | 점수 14.45 | https://finance.naver.com/research/invest_read.naver?nid=38573&page=1
-- [산업분석] 기타 - 안녕하세요 위클리에요(로봇/방산/항공/조선/.. | 유진투자증권 | 2026-04-20 | 점수 13.48 | https://finance.naver.com/research/industry_read.naver?nid=44270&page=1
+- [투자정보] 04/20, Kiwoom Weekly_"전쟁 VS 실적", 두 변수의 힘 .. | 키움증권 | 2026-04-20 | 점수 14.80 | https://finance.naver.com/research/invest_read.naver?nid=38573&page=1
+- [산업분석] IT - 2026년 4월 셋째 주 반도체 Weekly | 교보증권 | 2026-04-20 | 점수 14.00 | https://finance.naver.com/research/industry_read.naver?nid=44282&page=1
+- [산업분석] 반도체 - 실적 시즌 진입. 기대되는 호실적 | 하나증권 | 2026-04-20 | 점수 14.00 | https://finance.naver.com/research/industry_read.naver?nid=44277&page=1
+- [산업분석] 기타 - 안녕하세요 위클리에요(로봇/방산/항공/조선/.. | 유진투자증권 | 2026-04-20 | 점수 13.95 | https://finance.naver.com/research/industry_read.naver?nid=44270&page=1
+- [투자정보] DS와 함께하는 Weekly TalkTalk Vol. 255 | DS투자증권 | 2026-04-20 | 점수 13.50 | https://finance.naver.com/research/invest_read.naver?nid=38589&page=1
+- [투자정보] [New K-ETF] 채권혼합50: 삼전닉스, KOSPI200액티브 | 하나증권 | 2026-04-20 | 점수 13.40 | https://finance.naver.com/research/invest_read.naver?nid=38583&page=1
+- [산업분석] 건설 - 건설/부동산 Weekly - Captive Premium | 유진투자증권 | 2026-04-20 | 점수 13.35 | https://finance.naver.com/research/industry_read.naver?nid=44265&page=1
+- [투자정보] [IBKS Daily] Start with IBKS(2026.04.20) 개방 이후.. | IBK투자증권 | 2026-04-20 | 점수 13.20 | https://finance.naver.com/research/invest_read.naver?nid=38579&page=1
+- [투자정보] [Quant Comment] 국내외 주간 이익 동향 체크 | 하나증권 | 2026-04-20 | 점수 13.20 | https://finance.naver.com/research/invest_read.naver?nid=38586&page=1
+- [산업분석] 음식료 - 우려 속 기회 찾기 | DS투자증권 | 2026-04-20 | 점수 13.10 | https://finance.naver.com/research/industry_read.naver?nid=44285&page=1
+- [투자정보] 마켓레이더(4월 20일, 오전) | 신한투자증권 | 2026-04-20 | 점수 13.10 | https://finance.naver.com/research/invest_read.naver?nid=38590&page=1
 - [종목분석] 이노션 - Hail Mary도 이노션! | 대신증권 | 2026-04-20 | 점수 12.90 | https://finance.naver.com/research/company_read.naver?nid=91701&page=1
-- [산업분석] 반도체 - 실적 시즌 진입. 기대되는 호실적 | 하나증권 | 2026-04-20 | 점수 12.90 | https://finance.naver.com/research/industry_read.naver?nid=44277&page=1
-- [산업분석] 건설 - 건설/부동산 Weekly - Captive Premium | 유진투자증권 | 2026-04-20 | 점수 12.89 | https://finance.naver.com/research/industry_read.naver?nid=44265&page=1
-- [투자정보] [New K-ETF] 채권혼합50: 삼전닉스, KOSPI200액티브 | 하나증권 | 2026-04-20 | 점수 12.69 | https://finance.naver.com/research/invest_read.naver?nid=38583&page=1
-- [투자정보] [IBKS Daily] Start with IBKS(2026.04.20) 개방 이후.. | IBK투자증권 | 2026-04-20 | 점수 12.63 | https://finance.naver.com/research/invest_read.naver?nid=38579&page=1
-- [투자정보] [The Market Visualized] 시장 데이터와 사뭇 다른 주.. | SK증권 | 2026-04-20 | 점수 12.38 | https://finance.naver.com/research/invest_read.naver?nid=38574&page=1
-- [투자정보] [Quant Comment] 국내외 주간 이익 동향 체크 | 하나증권 | 2026-04-20 | 점수 12.31 | https://finance.naver.com/research/invest_read.naver?nid=38586&page=1
+- [투자정보] [Conviction Call] 호르무즈 해협 재봉쇄, 퀄리티 주.. | 유안타증권 | 2026-04-20 | 점수 12.80 | https://finance.naver.com/research/invest_read.naver?nid=38588&page=1
+- [투자정보] [The Market Visualized] 시장 데이터와 사뭇 다른 주.. | SK증권 | 2026-04-20 | 점수 12.75 | https://finance.naver.com/research/invest_read.naver?nid=38574&page=1
+- [시황정보] SK증권 아침에 슥_2026.04.20 | SK증권 | 2026-04-20 | 점수 12.20 | https://finance.naver.com/research/market_info_read.naver?nid=35765&page=1
+- [경제분석] 04/20, Kiwoom Morning Letter | 키움증권 | 2026-04-20 | 점수 12.19 | https://finance.naver.com/research/economy_read.naver?nid=13245&page=1
+- [산업분석] 반도체 - Memory Watch - Semiconductor: From Cyclica.. | 유진투자증권 | 2026-04-20 | 점수 12.15 | https://finance.naver.com/research/industry_read.naver?nid=44281&page=1
+- [시황정보] 주간 증시 브리핑 | 유진투자증권 | 2026-04-20 | 점수 12.05 | https://finance.naver.com/research/market_info_read.naver?nid=35760&page=1
+- [시황정보] Yuanta Morning Snapshot (2026.04.20) | 유안타증권 | 2026-04-20 | 점수 12.00 | https://finance.naver.com/research/market_info_read.naver?nid=35773&page=1
+- [시황정보] 국내 주식 마감 시황 - 관망 심리에 신고가 부근 변동.. | 신한투자증권 | 2026-04-20 | 점수 11.96 | https://finance.naver.com/research/market_info_read.naver?nid=35758&page=1
 - [종목분석] HD현대중공업 - 1Q26 Pre: 실적은 좋은데 | 유안타증권 | 2026-04-20 | 점수 11.95 | https://finance.naver.com/research/company_read.naver?nid=91705&page=1
-- [시황정보] SK증권 아침에 슥_2026.04.20 | SK증권 | 2026-04-20 | 점수 11.93 | https://finance.naver.com/research/market_info_read.naver?nid=35765&page=1
-- [시황정보] 주간 증시 브리핑 | 유진투자증권 | 2026-04-20 | 점수 11.90 | https://finance.naver.com/research/market_info_read.naver?nid=35760&page=1
-- [경제분석] 04/20, Kiwoom Morning Letter | 키움증권 | 2026-04-20 | 점수 11.71 | https://finance.naver.com/research/economy_read.naver?nid=13245&page=1
-- [시황정보] 국내 주식 마감 시황 - 관망 심리에 신고가 부근 변동.. | 신한투자증권 | 2026-04-20 | 점수 11.61 | https://finance.naver.com/research/market_info_read.naver?nid=35758&page=1
-- [시황정보] 4/20 KB 리서치 모닝코멘트 | KB증권 | 2026-04-20 | 점수 11.50 | https://finance.naver.com/research/market_info_read.naver?nid=35763&page=1
+- [시황정보] [Morning Brief] 호르무즈 해협 개방 기대감에 미 증.. | iM증권 | 2026-04-20 | 점수 11.83 | https://finance.naver.com/research/market_info_read.naver?nid=35767&page=1
+- [시황정보] 국내주식 마감 시황 (26.04.17) - 3거래일 연속 상승 .. | 유안타증권 | 2026-04-20 | 점수 11.75 | https://finance.naver.com/research/market_info_read.naver?nid=35770&page=1
+- [시황정보] 4/20 KB 리서치 모닝코멘트 | KB증권 | 2026-04-20 | 점수 11.55 | https://finance.naver.com/research/market_info_read.naver?nid=35763&page=1
 - [종목분석] 현대건설 - 시대정신을 이끄는 No.1 원전 시공사 | 키움증권 | 2026-04-20 | 점수 11.35 | https://finance.naver.com/research/company_read.naver?nid=91696&page=1
-- [시황정보] [Morning Brief] 호르무즈 해협 개방 기대감에 미 증.. | iM증권 | 2026-04-20 | 점수 11.17 | https://finance.naver.com/research/market_info_read.naver?nid=35767&page=1
-- [산업분석] 에너지 - 이번 주가 중요한 분수령 | 하나증권 | 2026-04-20 | 점수 10.38 | https://finance.naver.com/research/industry_read.naver?nid=44276&page=1
+- [산업분석] 에너지 - 이번 주가 중요한 분수령 | 하나증권 | 2026-04-20 | 점수 11.25 | https://finance.naver.com/research/industry_read.naver?nid=44276&page=1
+- [시황정보] [IBKS Daily] Morning Brief(260420) | IBK투자증권 | 2026-04-20 | 점수 10.70 | https://finance.naver.com/research/market_info_read.naver?nid=35764&page=1
 - [종목분석] HL만도 - 지금 보이는 게 다가 아니야 | 한화투자증권 | 2026-04-20 | 점수 10.35 | https://finance.naver.com/research/company_read.naver?nid=91711&page=1
-- [시황정보] [IBKS Daily] Morning Brief(260420) | IBK투자증권 | 2026-04-20 | 점수 10.33 | https://finance.naver.com/research/market_info_read.naver?nid=35764&page=1
-- [투자정보] [Hana China Weekly] 알리바바, 과금체계 개편 통한 .. | 하나증권 | 2026-04-20 | 점수 9.52 | https://finance.naver.com/research/invest_read.naver?nid=38582&page=1
-- [산업분석] 게임 - [IBKS Daily] 인터넷/게임 | IBK투자증권 | 2026-04-20 | 점수 9.46 | https://finance.naver.com/research/industry_read.naver?nid=44263&page=1
-- [종목분석] 한섬 - 1Q26 Preview : 사명 그대로 ‘Handsome’ | 한화투자증권 | 2026-04-20 | 점수 9.32 | https://finance.naver.com/research/company_read.naver?nid=91710&page=1
+- [투자정보] [Hana China Weekly] 알리바바, 과금체계 개편 통한 .. | 하나증권 | 2026-04-20 | 점수 10.25 | https://finance.naver.com/research/invest_read.naver?nid=38582&page=1
+- [산업분석] 게임 - [IBKS Daily] 인터넷/게임 | IBK투자증권 | 2026-04-20 | 점수 9.90 | https://finance.naver.com/research/industry_read.naver?nid=44263&page=1
+- [투자정보] 미국과 이란의 2 차 협상 대기하며 숨고르기 | 대신증권 | 2026-04-20 | 점수 9.50 | https://finance.naver.com/research/invest_read.naver?nid=38575&page=1
+- [산업분석] 건설 - 신한 건설 Weekly(4월 4주차) | 신한투자증권 | 2026-04-20 | 점수 9.35 | https://finance.naver.com/research/industry_read.naver?nid=44271&page=1
+- [산업분석] 미디어 - 신한 플랫폼 Weekly; 돈이 되는 오지랖(4월 3.. | 신한투자증권 | 2026-04-20 | 점수 9.35 | https://finance.naver.com/research/industry_read.naver?nid=44280&page=1
+- [산업분석] 에너지 - Next Energy(Power & Battery Weekly) - 한화.. | 유진투자증권 | 2026-04-20 | 점수 9.35 | https://finance.naver.com/research/industry_read.naver?nid=44267&page=1
+- [종목분석] 한섬 - 1Q26 Preview : 사명 그대로 ‘Handsome’ | 한화투자증권 | 2026-04-20 | 점수 9.35 | https://finance.naver.com/research/company_read.naver?nid=91710&page=1
+- [산업분석] 철강금속 - Steel Weekly (4월 3주차) | iM증권 | 2026-04-20 | 점수 9.15 | https://finance.naver.com/research/industry_read.naver?nid=44260&page=1
 - [종목분석] 유한양행 - 유럽 마일스톤 이연으로 하회 전망 | 키움증권 | 2026-04-20 | 점수 9.15 | https://finance.naver.com/research/company_read.naver?nid=91692&page=1
 - [종목분석] 녹십자 - 중동 물류 이연, 알리글로로 상쇄 전망 | 키움증권 | 2026-04-20 | 점수 9.15 | https://finance.naver.com/research/company_read.naver?nid=91693&page=1
-- [산업분석] 에너지 - Next Energy(Power & Battery Weekly) - 한화.. | 유진투자증권 | 2026-04-20 | 점수 8.97 | https://finance.naver.com/research/industry_read.naver?nid=44267&page=1
-- [산업분석] 철강금속 - 신한 자동차/철강금속 Weekly(2026.04.17) | 신한투자증권 | 2026-04-20 | 점수 8.95 | https://finance.naver.com/research/industry_read.naver?nid=44255&page=1
-- [투자정보] 미국과 이란의 2 차 협상 대기하며 숨고르기 | 대신증권 | 2026-04-20 | 점수 8.94 | https://finance.naver.com/research/invest_read.naver?nid=38575&page=1
+- [산업분석] 항공운송 - 신한 운송 Weekly T.M.I; 연료유 현황 중간 .. | 신한투자증권 | 2026-04-20 | 점수 9.10 | https://finance.naver.com/research/industry_read.naver?nid=44261&page=1
+- [산업분석] 철강금속 - 신한 자동차/철강금속 Weekly(2026.04.17) | 신한투자증권 | 2026-04-20 | 점수 9.10 | https://finance.naver.com/research/industry_read.naver?nid=44255&page=2
+- [경제분석] 에너지 쇼크, 파이프라인에 갇힌 인플레이션 | 유안타증권 | 2026-04-20 | 점수 9.05 | https://finance.naver.com/research/economy_read.naver?nid=13246&page=1
+- [투자정보] 화수분전략 | 하나증권 | 2026-04-20 | 점수 9.05 | https://finance.naver.com/research/invest_read.naver?nid=38584&page=1
+- [투자정보] Shinhan China Weekly(4월 3주차) | 신한투자증권 | 2026-04-20 | 점수 8.95 | https://finance.naver.com/research/invest_read.naver?nid=38568&page=1
+- [산업분석] 기타 - Arsenal of Democracy | 하나증권 | 2026-04-20 | 점수 8.95 | https://finance.naver.com/research/industry_read.naver?nid=44274&page=1
 - [종목분석] 비에이치 - 1Q 깜작 실적을 예상! 폴더블폰, 피지컬AI에 .. | 대신증권 | 2026-04-20 | 점수 8.90 | https://finance.naver.com/research/company_read.naver?nid=91702&page=1
 - [종목분석] 한화오션 - 상선의 견인으로 성장 | 대신증권 | 2026-04-20 | 점수 8.90 | https://finance.naver.com/research/company_read.naver?nid=91700&page=1
-- [산업분석] 철강금속 - Steel Weekly (4월 3주차) | iM증권 | 2026-04-20 | 점수 8.87 | https://finance.naver.com/research/industry_read.naver?nid=44260&page=1
+- [산업분석] 스티펠 - 응용기술:EDA/IP 섹터 실적 프리뷰: CDNS, SNPS, CEVA | 한국투자증권 | 2026-04-20 | 점수 8.90 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=154442
 - [종목분석] 이마트 - 무난한 실적 | IBK투자증권 | 2026-04-20 | 점수 8.85 | https://finance.naver.com/research/company_read.naver?nid=91690&page=1
-- [산업분석] 항공운송 - 신한 운송 Weekly T.M.I; 연료유 현황 중간 .. | 신한투자증권 | 2026-04-20 | 점수 8.79 | https://finance.naver.com/research/industry_read.naver?nid=44261&page=1
+- [산업분석] 스티펠 - 응용 기술:EMS 섹터 실적 프리뷰: CLS, FLEX, PLXS, TTMI | 한국투자증권 | 2026-04-20 | 점수 8.85 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=154441
+- [시황정보] [Market Nowcast] 앞서간 가격 | SK증권 | 2026-04-20 | 점수 8.65 | https://finance.naver.com/research/market_info_read.naver?nid=35762&page=1
 - [종목분석] 보로노이 - 더 좋아진 결과 | 유안타증권 | 2026-04-20 | 점수 8.65 | https://finance.naver.com/research/company_read.naver?nid=91704&page=1
 - [종목분석] SK텔레콤 - 반영한다고 했제 | 유안타증권 | 2026-04-20 | 점수 8.65 | https://finance.naver.com/research/company_read.naver?nid=91703&page=1
 - [종목분석] 엘티씨 - [AI] 반도체 및 디스플레이 습식 세정 장비 .. | 한국IR협의회 | 2026-04-20 | 점수 8.65 | https://finance.naver.com/research/company_read.naver?nid=91688&page=1
 - [종목분석] 유니셈 - [AI] 반도체 유해가스 및 온도 제어 장비 전.. | 한국IR협의회 | 2026-04-20 | 점수 8.65 | https://finance.naver.com/research/company_read.naver?nid=91686&page=1
-- [산업분석] 건설 - 신한 건설 Weekly(4월 4주차) | 신한투자증권 | 2026-04-20 | 점수 8.57 | https://finance.naver.com/research/industry_read.naver?nid=44271&page=1
-- [투자정보] Shinhan China Weekly(4월 3주차) | 신한투자증권 | 2026-04-20 | 점수 8.56 | https://finance.naver.com/research/invest_read.naver?nid=38568&page=1
-- [시황정보] [Market Nowcast] 앞서간 가격 | SK증권 | 2026-04-20 | 점수 8.42 | https://finance.naver.com/research/market_info_read.naver?nid=35762&page=1
-- [투자정보] 화수분전략 | 하나증권 | 2026-04-20 | 점수 8.23 | https://finance.naver.com/research/invest_read.naver?nid=38584&page=1
+- [투자정보] [전략 COMMENT] 미국 신고가, 여전히 매력적인 주도주.. | SK증권 | 2026-04-20 | 점수 8.55 | https://finance.naver.com/research/invest_read.naver?nid=38587&page=1
+- [경제분석] (Macro Snapshot) 환율: 지정학에서 자산 매력도로 | 키움증권 | 2026-04-20 | 점수 8.25 | https://finance.naver.com/research/economy_read.naver?nid=13244&page=1
+- [산업분석] 건설 - HBM과 원전의 공통점 | IBK투자증권 | 2026-04-20 | 점수 8.15 | https://finance.naver.com/research/industry_read.naver?nid=44266&page=1
 - [산업분석] 조선 - 한수위: 바르질라의 데이터센터향 납품이 만.. | SK증권 | 2026-04-20 | 점수 8.15 | https://finance.naver.com/research/industry_read.naver?nid=44257&page=1
-- [산업분석] 기타 - Arsenal of Democracy | 하나증권 | 2026-04-20 | 점수 8.08 | https://finance.naver.com/research/industry_read.naver?nid=44274&page=1
+- [산업분석] 기타 - 앞서 나가는 중국 로봇, 대항마로 떠오를 한.. | 유진투자증권 | 2026-04-20 | 점수 8.15 | https://finance.naver.com/research/industry_read.naver?nid=44268&page=1
 - [종목분석] GS피앤엘 - 흔들림 없는 펀더멘털, 외형 성장은 지속된다 | 키움증권 | 2026-04-20 | 점수 8.05 | https://finance.naver.com/research/company_read.naver?nid=91694&page=1
-- [종목분석] 팬오션 - 1Q26 Pre: 혼란한 해운 시황, 그러나 잘 버텨.. | 하나증권 | 2026-04-20 | 점수 7.93 | https://finance.naver.com/research/company_read.naver?nid=91707&page=1
+- [시황정보] 신한 해외주식 Weekly (4월 17일) | 신한투자증권 | 2026-04-20 | 점수 7.95 | https://finance.naver.com/research/market_info_read.naver?nid=35759&page=1
+- [투자정보] Equity Strategy - Stagflation은 없다 | 유진투자증권 | 2026-04-20 | 점수 7.95 | https://finance.naver.com/research/invest_read.naver?nid=38571&page=1
+- [종목분석] 팬오션 - 1Q26 Pre: 혼란한 해운 시황, 그러나 잘 버텨.. | 하나증권 | 2026-04-20 | 점수 7.95 | https://finance.naver.com/research/company_read.naver?nid=91707&page=1
+- [종목분석] 국태해통증권 - 베이팡화창(002371 CHN):2026 선단공정 장비 침투율 지속 상승 전망 | 한국투자증권 | 2026-04-20 | 점수 7.95 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=154430
 - [종목분석] 현대코퍼레이션 - 견조한 외형 성장 기조 | 신한투자증권 | 2026-04-20 | 점수 7.90 | https://finance.naver.com/research/company_read.naver?nid=91697&page=1
 - [종목분석] 삼성SDI - 턴어라운드 기대감 부각 | 신한투자증권 | 2026-04-20 | 점수 7.90 | https://finance.naver.com/research/company_read.naver?nid=91698&page=1
-- [산업분석] 기타 - 앞서 나가는 중국 로봇, 대항마로 떠오를 한.. | 유진투자증권 | 2026-04-20 | 점수 7.87 | https://finance.naver.com/research/industry_read.naver?nid=44268&page=1
-- [경제분석] (Macro Snapshot) 환율: 지정학에서 자산 매력도로 | 키움증권 | 2026-04-20 | 점수 7.85 | https://finance.naver.com/research/economy_read.naver?nid=13244&page=1
-- [산업분석] 건설 - HBM과 원전의 공통점 | IBK투자증권 | 2026-04-20 | 점수 7.84 | https://finance.naver.com/research/industry_read.naver?nid=44266&page=1
-- [시황정보] 신한 해외주식 Weekly (4월 17일) | 신한투자증권 | 2026-04-20 | 점수 7.68 | https://finance.naver.com/research/market_info_read.naver?nid=35759&page=1
-- [투자정보] [전략 COMMENT] 미국 신고가, 여전히 매력적인 주도주.. | SK증권 | 2026-04-20 | 점수 7.55 | https://finance.naver.com/research/invest_read.naver?nid=38587&page=1
-- [투자정보] Equity Strategy - Stagflation은 없다 | 유진투자증권 | 2026-04-20 | 점수 7.55 | https://finance.naver.com/research/invest_read.naver?nid=38571&page=1
+- [산업분석] 반도체 - Be strong | SK증권 | 2026-04-20 | 점수 7.85 | https://finance.naver.com/research/industry_read.naver?nid=44278&page=1
+- [산업분석] 음식료 - 키움 음식료 Weekly (4/20) | 키움증권 | 2026-04-20 | 점수 7.75 | https://finance.naver.com/research/industry_read.naver?nid=44259&page=1
+- [시황정보] [DS 시황 데일리] 현시점 2026-04-20 | DS투자증권 | 2026-04-20 | 점수 7.65 | https://finance.naver.com/research/market_info_read.naver?nid=35771&page=1
+- [시황정보] Daily Market Digest (4월 20일) | 신한투자증권 | 2026-04-20 | 점수 7.60 | https://finance.naver.com/research/market_info_read.naver?nid=35769&page=1
 - [종목분석] 스티펠 - 엔라이트(LASR USA):투자자 미팅 후기: PoR 전환과 프라임 지위 부각, 목표가 상향 | 한국투자증권 | 2026-04-20 | 점수 7.50 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=154424
-- [산업분석] 음식료 - 키움 음식료 Weekly (4/20) | 키움증권 | 2026-04-20 | 점수 7.39 | https://finance.naver.com/research/industry_read.naver?nid=44259&page=1
+- [산업분석] 철강금속 - WSA, 올해 전세계 철강 수요 소폭 증가 전망 | 하나증권 | 2026-04-20 | 점수 7.45 | https://finance.naver.com/research/industry_read.naver?nid=44275&page=1
 - [종목분석] 한올바이오파마 - NDR 후기: 기다림의 구간 | 유진투자증권 | 2026-04-20 | 점수 7.35 | https://finance.naver.com/research/company_read.naver?nid=91699&page=1
+- [투자정보] 04/20 Commodity Weekly | 키움증권 | 2026-04-20 | 점수 7.35 | https://finance.naver.com/research/invest_read.naver?nid=38577&page=1
+- [산업분석] 보험 - 손해율, 추세적 하락은 아니었음 | 대신증권 | 2026-04-20 | 점수 7.30 | https://finance.naver.com/research/industry_read.naver?nid=44262&page=1
+- [시황정보] 4/17 KB 리서치 장마감코멘트 | KB증권 | 2026-04-20 | 점수 7.07 | https://finance.naver.com/research/market_info_read.naver?nid=35756&page=1
 - [종목분석] 크래프톤 - 배틀로얄 장르를 넘어선 PUBG의 성장이 시작.. | 교보증권 | 2026-04-20 | 점수 7.05 | https://finance.naver.com/research/company_read.naver?nid=91708&page=1
-- [시황정보] Daily Market Digest (4월 20일) | 신한투자증권 | 2026-04-20 | 점수 7.01 | https://finance.naver.com/research/market_info_read.naver?nid=35769&page=1
-- [산업분석] 보험 - 손해율, 추세적 하락은 아니었음 | 대신증권 | 2026-04-20 | 점수 6.92 | https://finance.naver.com/research/industry_read.naver?nid=44262&page=1
-- [시황정보] 4/17 KB 리서치 장마감코멘트 | KB증권 | 2026-04-20 | 점수 6.81 | https://finance.naver.com/research/market_info_read.naver?nid=35756&page=1
-- [투자정보] 04/20 Commodity Weekly | 키움증권 | 2026-04-20 | 점수 6.73 | https://finance.naver.com/research/invest_read.naver?nid=38577&page=1
-- [산업분석] 제약 - 제약/바이오/의료기기: Kiwoom Healthcare 종.. | 키움증권 | 2026-04-20 | 점수 6.70 | https://finance.naver.com/research/industry_read.naver?nid=44258&page=1
+- [투자정보] 04/20 달러, 중동 이슈 속 약보합 | 키움증권 | 2026-04-20 | 점수 6.95 | https://finance.naver.com/research/invest_read.naver?nid=38572&page=1
+- [투자정보] 월간 자산배분_인플레이션과 AI모멘텀 민감 구간 | 키움증권 | 2026-04-20 | 점수 6.95 | https://finance.naver.com/research/invest_read.naver?nid=38578&page=1
+- [투자정보] [주간 퀀틴전시 플랜] 종전, 실적 방향성에 집중할 때.. | 대신증권 | 2026-04-20 | 점수 6.90 | https://finance.naver.com/research/invest_read.naver?nid=38576&page=1
+- [산업분석] 에너지 - Re-NEWable Weekly: 4월 4주차 | 교보증권 | 2026-04-20 | 점수 6.75 | https://finance.naver.com/research/industry_read.naver?nid=44283&page=1
+- [산업분석] 제약 - 제약/바이오/의료기기: Kiwoom Healthcare 종.. | 키움증권 | 2026-04-20 | 점수 6.75 | https://finance.naver.com/research/industry_read.naver?nid=44258&page=1
+- [종목분석] 디오 - 성큼 다가온 실적개선으로 저평가 탈피될 듯 | iM증권 | 2026-04-20 | 점수 6.65 | https://finance.naver.com/research/company_read.naver?nid=91713&page=1
+- [종목분석] 태웅 - 올해 실적개선 및 원전 성장성 가속화 | iM증권 | 2026-04-20 | 점수 6.65 | https://finance.naver.com/research/company_read.naver?nid=91712&page=1
+- [투자정보] [디지털자산] Weekly 온체인: 하반기 상승을 앞두고 .. | 하나증권 | 2026-04-20 | 점수 6.65 | https://finance.naver.com/research/invest_read.naver?nid=38585&page=1
+- [산업분석] 음식료 - 오리온 간담회 시사점 | 하나증권 | 2026-04-20 | 점수 6.65 | https://finance.naver.com/research/industry_read.naver?nid=44273&page=1
 - [종목분석] 한국정보통신 - [AI] 전자결제 및 VAN 서비스 전문기업 | 한국IR협의회 | 2026-04-20 | 점수 6.65 | https://finance.naver.com/research/company_read.naver?nid=91687&page=1
 - [종목분석] 휴메딕스 - 스킨부스터로 넓히고, 복합필러로 점프한다 | 한국IR협의회 | 2026-04-20 | 점수 6.65 | https://finance.naver.com/research/company_read.naver?nid=91691&page=1
-- [산업분석] 철강금속 - WSA, 올해 전세계 철강 수요 소폭 증가 전망 | 하나증권 | 2026-04-20 | 점수 6.58 | https://finance.naver.com/research/industry_read.naver?nid=44275&page=1
-- [투자정보] 04/20 달러, 중동 이슈 속 약보합 | 키움증권 | 2026-04-20 | 점수 6.48 | https://finance.naver.com/research/invest_read.naver?nid=38572&page=1
-- [산업분석] 반도체 - Be strong | SK증권 | 2026-04-20 | 점수 6.45 | https://finance.naver.com/research/industry_read.naver?nid=44278&page=1
-- [투자정보] [주간 퀀틴전시 플랜] 종전, 실적 방향성에 집중할 때.. | 대신증권 | 2026-04-20 | 점수 6.45 | https://finance.naver.com/research/invest_read.naver?nid=38576&page=1
+- [산업분석] 기타 - 2차전지 섹터 비중확대 유지, 다만 선별적 대.. | 유안타증권 | 2026-04-20 | 점수 6.45 | https://finance.naver.com/research/industry_read.naver?nid=44284&page=1
 - [종목분석] 스티펠 - 캠텍(CAMT USA):실적 전망은 유지하나 밸류에이션 관점에서 투자의견 하향 | 한국투자증권 | 2026-04-20 | 점수 6.45 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=154426
-- [투자정보] 월간 자산배분_인플레이션과 AI모멘텀 민감 구간 | 키움증권 | 2026-04-20 | 점수 6.41 | https://finance.naver.com/research/invest_read.naver?nid=38578&page=1
-- [산업분석] 석유화학 - 기름뿜뿜 Weekly: 현 고유가에도 과거와는 사.. | iM증권 | 2026-04-20 | 점수 6.15 | https://finance.naver.com/research/industry_read.naver?nid=44256&page=1
-- [산업분석] 전기전자 - Power Trio(MLCC, 기판, 소켓) | 신한투자증권 | 2026-04-20 | 점수 6.15 | https://finance.naver.com/research/industry_read.naver?nid=44264&page=1
-- [산업분석] 음식료 - 오리온 간담회 시사점 | 하나증권 | 2026-04-20 | 점수 5.96 | https://finance.naver.com/research/industry_read.naver?nid=44273&page=1
-- [투자정보] Weekly Guide Book(2026/4/17); 중동 지정학 위험에 .. | 신한투자증권 | 2026-04-20 | 점수 5.95 | https://finance.naver.com/research/invest_read.naver?nid=38570&page=1
-- [투자정보] [디지털자산] Weekly 온체인: 하반기 상승을 앞두고 .. | 하나증권 | 2026-04-20 | 점수 5.84 | https://finance.naver.com/research/invest_read.naver?nid=38585&page=1
+- [투자정보] Tech&Stock Weekly: 아마존, 위성 통신 기업 Globalst.. | 하나증권 | 2026-04-20 | 점수 6.35 | https://finance.naver.com/research/invest_read.naver?nid=38581&page=1
+- [산업분석] 은행 - 자본규제 추가 완화로 2분기 CET 1 상당폭 상.. | 하나증권 | 2026-04-20 | 점수 6.35 | https://finance.naver.com/research/industry_read.naver?nid=44279&page=1
+- [산업분석] 은행 - 2월 연체율: 1월보다는 나쁘고, 근 3년래에선.. | 한화투자증권 | 2026-04-20 | 점수 6.35 | https://finance.naver.com/research/industry_read.naver?nid=44286&page=1
+- [산업분석] 전기전자 - Power Trio(MLCC, 기판, 소켓) | 신한투자증권 | 2026-04-20 | 점수 6.30 | https://finance.naver.com/research/industry_read.naver?nid=44264&page=1
+- [투자정보] Weekly Guide Book(2026/4/17); 중동 지정학 위험에 .. | 신한투자증권 | 2026-04-20 | 점수 6.30 | https://finance.naver.com/research/invest_read.naver?nid=38570&page=1
+- [산업분석] 석유화학 - 기름뿜뿜 Weekly: 현 고유가에도 과거와는 사.. | iM증권 | 2026-04-20 | 점수 6.15 | https://finance.naver.com/research/industry_read.naver?nid=44256&page=2
+- [종목분석] 스티펠 - 노르웨이지안 크루즈(NCLH USA):[Preview] RCL보다 더 우려스럽다 | 한국투자증권 | 2026-04-20 | 점수 6.10 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=154440
+- [채권분석] [4월 4주] 금리와 주가의 회복 속도가 다른 이유 | 하나증권 | 2026-04-20 | 점수 6.00 | https://finance.naver.com/research/debenture_read.naver?nid=10670&page=1
+- [투자정보] 비상장기업 투자동향(2026-04) | 유진투자증권 | 2026-04-20 | 점수 5.95 | https://finance.naver.com/research/invest_read.naver?nid=38569&page=1
+- [경제분석] 신한 FX Check-up | 신한투자증권 | 2026-04-20 | 점수 5.90 | https://finance.naver.com/research/economy_read.naver?nid=13241&page=1
+- [경제분석] 신한 Econ Check-up | 신한투자증권 | 2026-04-20 | 점수 5.89 | https://finance.naver.com/research/economy_read.naver?nid=13240&page=1
+- [산업분석] 제약 - 제약/바이오 : Weekly Bio Insight | SK증권 | 2026-04-20 | 점수 5.85 | https://finance.naver.com/research/industry_read.naver?nid=44272&page=1
 - [종목분석] 토모큐브 - [AI] 3D 홀로그래픽 현미경 기반 생명과학 연.. | 한국IR협의회 | 2026-04-20 | 점수 5.75 | https://finance.naver.com/research/company_read.naver?nid=91685&page=1
-- [종목분석] KT지니뮤직 - [AI] 디지털 음악 스트리밍 및 콘텐츠 플랫폼.. | 한국IR협의회 | 2026-04-20 | 점수 5.75 | https://finance.naver.com/research/company_read.naver?nid=91683&page=1
+- [종목분석] KT지니뮤직 - [AI] 디지털 음악 스트리밍 및 콘텐츠 플랫폼.. | 한국IR협의회 | 2026-04-20 | 점수 5.75 | https://finance.naver.com/research/company_read.naver?nid=91683&page=2
 - [종목분석] 동양이엔피 - [AI] 전자부품 제조 및 공급 전문기업 | 한국IR협의회 | 2026-04-20 | 점수 5.75 | https://finance.naver.com/research/company_read.naver?nid=91684&page=1
 - [종목분석] 성일하이텍 - [AI] 폐배터리 재활용을 통한 2차전지 원료 .. | 한국IR협의회 | 2026-04-20 | 점수 5.75 | https://finance.naver.com/research/company_read.naver?nid=91689&page=1
-- [투자정보] 비상장기업 투자동향(2026-04) | 유진투자증권 | 2026-04-20 | 점수 5.62 | https://finance.naver.com/research/invest_read.naver?nid=38569&page=1
-- [투자정보] Tech&Stock Weekly: 아마존, 위성 통신 기업 Globalst.. | 하나증권 | 2026-04-20 | 점수 5.62 | https://finance.naver.com/research/invest_read.naver?nid=38581&page=1
-- [경제분석] 신한 FX Check-up | 신한투자증권 | 2026-04-20 | 점수 5.50 | https://finance.naver.com/research/economy_read.naver?nid=13241&page=1
-- [경제분석] 신한 Econ Check-up | 신한투자증권 | 2026-04-20 | 점수 5.44 | https://finance.naver.com/research/economy_read.naver?nid=13240&page=1
-- [시황정보] 글로벌 소비재 Weekly(4월 3주차); 경기소비재 강한 .. | 신한투자증권 | 2026-04-20 | 점수 5.27 | https://finance.naver.com/research/market_info_read.naver?nid=35757&page=1
-- [산업분석] 제약 - 제약/바이오 : Weekly Bio Insight | SK증권 | 2026-04-20 | 점수 5.20 | https://finance.naver.com/research/industry_read.naver?nid=44272&page=1
-- [산업분석] 지주회사 - 지배구조 변화의 서막(주주총회 Review 및 향.. | iM증권 | 2026-04-20 | 점수 5.06 | https://finance.naver.com/research/industry_read.naver?nid=44269&page=1
-- [채권분석] [4월 4주] 금리와 주가의 회복 속도가 다른 이유 | 하나증권 | 2026-04-20 | 점수 4.98 | https://finance.naver.com/research/debenture_read.naver?nid=10670&page=1
-- [채권분석] 04/20 Kiwoom Fixed Income Weekly Review | 키움증권 | 2026-04-20 | 점수 4.80 | https://finance.naver.com/research/debenture_read.naver?nid=10665&page=1
-- [경제분석] 금융시장은 이미 종전 출구 앞까지 왔는데 | iM증권 | 2026-04-20 | 점수 4.66 | https://finance.naver.com/research/economy_read.naver?nid=13243&page=1
-- [시황정보] SK증권 Global Carbon Market Daily_260420 | SK증권 | 2026-04-20 | 점수 4.54 | https://finance.naver.com/research/market_info_read.naver?nid=35761&page=1
-- [경제분석] 출구 앞에서 대기 중인 미국과 이란 | iM증권 | 2026-04-20 | 점수 4.54 | https://finance.naver.com/research/economy_read.naver?nid=13242&page=1
+- [시황정보] 글로벌 소비재 Weekly(4월 3주차); 경기소비재 강한 .. | 신한투자증권 | 2026-04-20 | 점수 5.58 | https://finance.naver.com/research/market_info_read.naver?nid=35757&page=1
+- [산업분석] 지주회사 - 지배구조 변화의 서막(주주총회 Review 및 향.. | iM증권 | 2026-04-20 | 점수 5.45 | https://finance.naver.com/research/industry_read.naver?nid=44269&page=1
+- [채권분석] 04/20 Kiwoom Fixed Income Weekly Review | 키움증권 | 2026-04-20 | 점수 5.26 | https://finance.naver.com/research/debenture_read.naver?nid=10665&page=1
+- [채권분석] [4월] ‘중동’이란 안개 속에서 진행될 통화정책 | 하나증권 | 2026-04-20 | 점수 5.24 | https://finance.naver.com/research/debenture_read.naver?nid=10669&page=1
+- [산업분석] 스티펠 - 유전 서비스 & 장비:이란 전쟁: 단기 실적 부담 vs 중기 업황 개선, 레버리지 기업에 기회 | 한국투자증권 | 2026-04-20 | 점수 5.10 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=154443
+- [투자정보] Back to US: 종전은 트럼프 불확실성 피크아웃을 의미 | iM증권 | 2026-04-20 | 점수 5.05 | https://finance.naver.com/research/invest_read.naver?nid=38580&page=1
+- [시황정보] Daily 신한생각 (4월 20일) | 신한투자증권 | 2026-04-20 | 점수 5.00 | https://finance.naver.com/research/market_info_read.naver?nid=35768&page=1
+- [경제분석] 금융시장은 이미 종전 출구 앞까지 왔는데 | iM증권 | 2026-04-20 | 점수 4.85 | https://finance.naver.com/research/economy_read.naver?nid=13243&page=1
+- [경제분석] 출구 앞에서 대기 중인 미국과 이란 | iM증권 | 2026-04-20 | 점수 4.85 | https://finance.naver.com/research/economy_read.naver?nid=13242&page=1
+- [시황정보] SK증권 Global Carbon Market Daily_260420 | SK증권 | 2026-04-20 | 점수 4.80 | https://finance.naver.com/research/market_info_read.naver?nid=35761&page=1
+- [채권분석] Eugenes FICC Update | 유진투자증권 | 2026-04-20 | 점수 4.71 | https://finance.naver.com/research/debenture_read.naver?nid=10666&page=1
+- [종목분석] 스티펠 - 제눅스 테라퓨틱스(JANX USA):묻고 더블로 가! JANX014 임상 투여 개시 | 한국투자증권 | 2026-04-20 | 점수 4.70 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=154439
+- [채권분석] [FI Weekly] WGBI 편입효과 점검 | 한화투자증권 | 2026-04-20 | 점수 4.54 | https://finance.naver.com/research/debenture_read.naver?nid=10671&page=1
+- [종목분석] 국태해통증권 - 목원식품(002714 CHN):사육 원가 경쟁력 업계 최고, 돼지고기 가격 반등을 기다릴 시점 | 한국투자증권 | 2026-04-20 | 점수 4.45 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=154429
 - [종목분석] 스티펠 - 배저 미터(BMI USA):[Review] 단기 수주는 과거 추세에 부합, 여전히 증명 필요 | 한국투자증권 | 2026-04-20 | 점수 4.45 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=154425
-- [채권분석] [4월] ‘중동’이란 안개 속에서 진행될 통화정책 | 하나증권 | 2026-04-20 | 점수 4.43 | https://finance.naver.com/research/debenture_read.naver?nid=10669&page=1
-- [투자정보] Back to US: 종전은 트럼프 불확실성 피크아웃을 의미 | iM증권 | 2026-04-20 | 점수 4.41 | https://finance.naver.com/research/invest_read.naver?nid=38580&page=1
-- [시황정보] Daily 신한생각 (4월 20일) | 신한투자증권 | 2026-04-20 | 점수 4.33 | https://finance.naver.com/research/market_info_read.naver?nid=35768&page=1
+- [시황정보] Daily Bond Morning Brief(2026.04.20) | 다올투자증권 | 2026-04-20 | 점수 4.33 | https://finance.naver.com/research/market_info_read.naver?nid=35766&page=1
+- [채권분석] 인상 가능성 열어두기 | 유진투자증권 | 2026-04-20 | 점수 4.33 | https://finance.naver.com/research/debenture_read.naver?nid=10667&page=1
 - [산업분석] 스티펠 - 매크로 & 포트폴리오 전략:전쟁 리스크 프리미엄 하락이 주가 상승을 견인 | 한국투자증권 | 2026-04-20 | 점수 4.20 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=154428
-- [채권분석] Eugenes FICC Update | 유진투자증권 | 2026-04-20 | 점수 4.17 | https://finance.naver.com/research/debenture_read.naver?nid=10666&page=1
 - [산업분석] 2026년 4월 20일 한눈에 투데이 | 한국투자증권 | 2026-04-20 | 점수 3.95 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=154418
 - [산업분석] 스티펠 - 소프트웨어:소프트웨어 산업 동향: DDOG, CRWD, ZS, TWLO, GWRE, QTWO | 한국투자증권 | 2026-04-20 | 점수 3.95 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=154427
-- [시황정보] Daily Bond Morning Brief(2026.04.20) | 다올투자증권 | 2026-04-20 | 점수 3.87 | https://finance.naver.com/research/market_info_read.naver?nid=35766&page=1
-- [채권분석] 인상 가능성 열어두기 | 유진투자증권 | 2026-04-20 | 점수 3.81 | https://finance.naver.com/research/debenture_read.naver?nid=10667&page=1
-- [채권분석] [FI Weekly] WGBI 편입효과 점검 | 한화투자증권 | 2026-04-20 | 점수 3.61 | https://finance.naver.com/research/debenture_read.naver?nid=10671&page=1
+- [시황정보] [DS Defense Daily] 2026-04-20 | DS투자증권 | 2026-04-20 | 점수 3.90 | https://finance.naver.com/research/market_info_read.naver?nid=35772&page=1
