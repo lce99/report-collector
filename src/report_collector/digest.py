@@ -9,6 +9,13 @@ import re
 
 from report_collector.config import Settings
 from report_collector.models import DailyDigest, Report
+from report_collector.normalization import (
+    annotate_report_normalized_fields,
+    normalize_opinion_value as normalize_opinion_token,
+    normalize_subject_key,
+    opinion_change_direction,
+    parse_target_price_value,
+)
 from report_collector.sources.common import normalize_report_key
 
 
@@ -264,7 +271,7 @@ def _report_history_key(
     subject: str | None,
 ) -> str | None:
     normalized_broker = normalize_report_key(broker or "")
-    normalized_subject = normalize_report_key(subject or "")
+    normalized_subject = normalize_subject_key(subject)
     if not normalized_broker or not normalized_subject:
         return None
     return f"{normalized_broker}:{normalized_subject}"
@@ -343,6 +350,7 @@ def _build_previous_report_lookup(
 
 def _change_sort_key(report: Report) -> tuple[int, int, float, float, str]:
     return (
+        1 if report.coverage_initiated else 0,
         1 if report.opinion_changed else 0,
         1 if report.target_price_change else 0,
         abs(report.target_price_change_pct or 0.0),
@@ -363,7 +371,10 @@ def _annotate_changes(
         "target_price_up": 0,
         "target_price_down": 0,
         "opinion_changed": 0,
+        "opinion_up": 0,
+        "opinion_down": 0,
         "analyst_changed": 0,
+        "coverage_initiated": 0,
     }
 
     history_lookup = _build_previous_report_lookup(settings.archive_root, current_date)
@@ -381,7 +392,10 @@ def _annotate_changes(
         report.target_price_change = None
         report.target_price_change_pct = None
         report.opinion_changed = False
+        report.opinion_change_direction = None
         report.analyst_changed = False
+        report.coverage_initiated = False
+        report.change_types = []
         report.change_reasons = []
 
         key = _report_history_key(report.broker, report.subject)
@@ -390,6 +404,17 @@ def _annotate_changes(
 
         previous = history_lookup.get(key)
         if not previous:
+            if (
+                report.category == "company"
+                and report.subject_key
+                and (report.target_price_value is not None or report.opinion_normalized)
+            ):
+                report.coverage_initiated = True
+                report.change_types.append("coverage_initiated")
+                report.change_reasons.append("신규 커버리지")
+                summary["coverage_initiated"] = int(summary["coverage_initiated"]) + 1
+            if report.has_change_signal:
+                changed_reports.append(report)
             continue
 
         report.previous_report_date = str(previous.get("published_date") or "") or None
@@ -397,8 +422,10 @@ def _annotate_changes(
         report.previous_opinion = str(previous.get("opinion") or "") or None
         report.previous_analyst = str(previous.get("analyst") or "") or None
 
-        current_target = _parse_target_price(report.target_price)
-        previous_target = _parse_target_price(report.previous_target_price)
+        current_target = report.target_price_value
+        previous_target = previous.get("target_price_value")
+        if previous_target is None:
+            previous_target = _parse_target_price(report.previous_target_price)
         if (
             current_target is not None
             and previous_target is not None
@@ -412,15 +439,31 @@ def _annotate_changes(
                 )
             if report.target_price_change == "up":
                 report.change_reasons.append("목표가 상향")
+                report.change_types.append("target_up")
                 summary["target_price_up"] = int(summary["target_price_up"]) + 1
             else:
                 report.change_reasons.append("목표가 하향")
+                report.change_types.append("target_down")
                 summary["target_price_down"] = int(summary["target_price_down"]) + 1
 
-        current_opinion = _normalize_opinion_value(report.opinion)
-        previous_opinion = _normalize_opinion_value(report.previous_opinion)
+        current_opinion = report.opinion_normalized or _normalize_opinion_value(report.opinion)
+        previous_opinion = previous.get("opinion_normalized")
+        if previous_opinion is None:
+            previous_opinion = _normalize_opinion_value(report.previous_opinion)
         if current_opinion and previous_opinion and current_opinion != previous_opinion:
             report.opinion_changed = True
+            report.opinion_change_direction = opinion_change_direction(
+                current_opinion,
+                previous_opinion,
+            )
+            if report.opinion_change_direction == "up":
+                report.change_types.append("opinion_up")
+                summary["opinion_up"] = int(summary["opinion_up"]) + 1
+            elif report.opinion_change_direction == "down":
+                report.change_types.append("opinion_down")
+                summary["opinion_down"] = int(summary["opinion_down"]) + 1
+            else:
+                report.change_types.append("opinion_changed")
             report.change_reasons.append("의견 변경")
             summary["opinion_changed"] = int(summary["opinion_changed"]) + 1
 
@@ -428,6 +471,7 @@ def _annotate_changes(
         previous_analyst = _normalize_space(report.previous_analyst or "")
         if current_analyst and previous_analyst and current_analyst != previous_analyst:
             report.analyst_changed = True
+            report.change_types.append("analyst_changed")
             report.change_reasons.append("애널리스트 변경")
             summary["analyst_changed"] = int(summary["analyst_changed"]) + 1
 
@@ -597,6 +641,7 @@ def enrich_and_build_digest(
             settings.preview_char_limit,
         )
         report.summary_engine = "rule"
+        annotate_report_normalized_fields(report)
         _annotate_priority_matches(report, settings)
         report.score, report.score_reasons = _score_report(report, settings)
 

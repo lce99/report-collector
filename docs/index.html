@@ -268,8 +268,12 @@
       }
 
       .ghost-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         padding: 0 16px;
         font-weight: 700;
+        text-decoration: none;
         cursor: pointer;
         transition: transform 160ms ease, border-color 160ms ease;
       }
@@ -296,6 +300,27 @@
         border: 1px solid var(--line);
         font-size: 13px;
         color: var(--muted);
+      }
+
+      .subject-jump {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+      }
+
+      .subject-jump .control {
+        flex: 1 1 300px;
+      }
+
+      .chip-link {
+        text-decoration: none;
+      }
+
+      .chip-link:hover {
+        border-color: rgba(17, 97, 73, 0.3);
+        color: var(--accent-deep);
       }
 
       .layout-top {
@@ -831,10 +856,29 @@
         <div id="activeFilterBar" class="toolbar-foot">
           <span class="hint-chip">필터 준비 중</span>
         </div>
+        <div class="toolbar-foot">
+          <div class="field" style="width: 100%">
+            <label for="subjectSearchInput">종목 바로가기</label>
+            <div class="subject-jump">
+              <input
+                id="subjectSearchInput"
+                class="control"
+                type="search"
+                list="subjectSuggestions"
+                placeholder="종목명을 입력하고 Enter"
+              />
+              <button id="subjectSearchButton" class="ghost-button" type="button">종목 열기</button>
+              <span id="subjectSearchMeta" class="section-meta"></span>
+            </div>
+            <datalist id="subjectSuggestions"></datalist>
+          </div>
+        </div>
+        <div id="subjectQuickLinks" class="toolbar-foot"></div>
       </section>
 
-      <section class="layout-top">
-        <article class="card section">
+      <div id="dailyView">
+        <section class="layout-top">
+          <article class="card section">
           <div class="section-head">
             <div class="section-title-group">
               <h2>오늘의 메모</h2>
@@ -854,9 +898,9 @@
             <h3>핵심 키워드</h3>
             <div id="keywordChips" class="chips"></div>
           </div>
-        </article>
+          </article>
 
-        <article class="card section">
+          <article class="card section">
           <div class="section-head">
             <div class="section-title-group">
               <h2>오늘의 판</h2>
@@ -874,12 +918,12 @@
               <div id="brokerBreakdown" class="count-list"></div>
             </section>
           </div>
-        </article>
-      </section>
+          </article>
+        </section>
 
-      <section class="layout-main">
-        <div class="stack">
-          <article class="card section">
+        <section class="layout-main">
+          <div class="stack">
+            <article class="card section">
             <div class="section-head">
               <div class="section-title-group">
                 <h2>꼭 읽을 리포트</h2>
@@ -888,9 +932,9 @@
               <span id="mustReadMeta" class="section-meta"></span>
             </div>
             <div id="mustReadList" class="report-stack featured"></div>
-          </article>
+            </article>
 
-          <article class="card section">
+            <article class="card section">
             <div class="section-head">
               <div class="section-title-group">
                 <h2>전체 수집 결과</h2>
@@ -899,11 +943,11 @@
               <span id="reportMeta" class="section-meta"></span>
             </div>
             <div id="reportList" class="report-stack"></div>
-          </article>
-        </div>
+            </article>
+          </div>
 
-        <div class="stack">
-          <article class="card section">
+          <div class="stack">
+            <article class="card section">
             <div class="section-head">
               <div class="section-title-group">
                 <h2>목표가·의견 변화</h2>
@@ -913,9 +957,9 @@
             </div>
             <div id="signalSummary" class="signal-summary"></div>
             <div id="changeList" class="signal-stack"></div>
-          </article>
+            </article>
 
-          <article class="card section">
+            <article class="card section">
             <div class="section-head">
               <div class="section-title-group">
                 <h2>카테고리 랭킹</h2>
@@ -923,16 +967,96 @@
               </div>
             </div>
             <div id="rankingGrid" class="ranking-grid"></div>
-          </article>
-        </div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <section id="subjectView" class="stack" hidden>
+        <article class="card section">
+          <div class="section-head">
+            <div class="section-title-group">
+              <h2 id="subjectTitle">종목 상세</h2>
+              <span id="subjectMeta" class="section-meta"></span>
+            </div>
+            <a id="subjectBackLink" class="ghost-button" href="?">일별 대시보드로 돌아가기</a>
+          </div>
+          <p id="subjectSummary" class="lead"></p>
+          <div id="subjectStats" class="stats-grid"></div>
+          <div class="subgroup">
+            <h3>현재 컨센서스 스냅샷</h3>
+            <div id="subjectTargetChips" class="chips"></div>
+          </div>
+        </article>
+
+        <section class="layout-main">
+          <div class="stack">
+            <article class="card section">
+              <div class="section-head">
+                <div class="section-title-group">
+                  <h2>증권사별 최신 리포트</h2>
+                  <span class="section-meta">같은 종목에 대한 각 증권사의 가장 최근 리포트입니다.</span>
+                </div>
+                <span id="subjectBrokerMeta" class="section-meta"></span>
+              </div>
+              <div id="subjectBrokerLatest" class="report-stack"></div>
+            </article>
+
+            <article class="card section">
+              <div class="section-head">
+                <div class="section-title-group">
+                  <h2>전체 타임라인</h2>
+                  <span class="section-meta">현재 필터와 정렬을 그대로 적용해 히스토리를 탐색할 수 있습니다.</span>
+                </div>
+                <span id="subjectTimelineMeta" class="section-meta"></span>
+              </div>
+              <div id="subjectTimeline" class="report-stack"></div>
+            </article>
+          </div>
+
+          <div class="stack">
+            <article class="card section">
+              <div class="section-head">
+                <div class="section-title-group">
+                  <h2>최근 변화</h2>
+                  <span class="section-meta">목표가, 의견, 애널리스트, 신규 커버리지 변화를 우선 노출합니다.</span>
+                </div>
+                <span id="subjectChangeMeta" class="section-meta"></span>
+              </div>
+              <div id="subjectChangeSummary" class="signal-summary"></div>
+              <div id="subjectRecentChanges" class="signal-stack"></div>
+            </article>
+
+            <article class="card section">
+              <div class="section-head">
+                <div class="section-title-group">
+                  <h2>구성 요약</h2>
+                  <span class="section-meta">최신 의견 분포와 브로커 활동량을 함께 보여줍니다.</span>
+                </div>
+              </div>
+              <div id="subjectOpinionChips" class="chips"></div>
+              <div class="subgroup">
+                <h3>브로커 활동량</h3>
+                <div id="subjectBrokerBreakdown" class="count-list"></div>
+              </div>
+              <div class="subgroup">
+                <h3>카테고리 분포</h3>
+                <div id="subjectCategoryBreakdown" class="count-list"></div>
+              </div>
+            </article>
+          </div>
+        </section>
       </section>
     </main>
 
     <script>
       const state = {
         index: null,
+        subjectIndex: null,
         digest: null,
+        subjectDetail: null,
         selectedDate: null,
+        selectedSubjectKey: null,
         query: "",
         selectedCategory: "all",
         sortBy: "score",
@@ -994,6 +1118,112 @@
           month: "long",
           day: "numeric",
           weekday: "short",
+        });
+      }
+
+      function formatTargetValue(value) {
+        if (value === null || value === undefined || Number.isNaN(Number(value))) {
+          return "-";
+        }
+        return formatNumber(value);
+      }
+
+      function buildDailyHref(date) {
+        const params = new URLSearchParams(window.location.search);
+        params.delete("subject");
+        if (date) {
+          params.set("date", date);
+        }
+        const query = params.toString();
+        return query ? `${window.location.pathname}?${query}` : window.location.pathname;
+      }
+
+      function buildSubjectHref(subjectKey) {
+        if (!subjectKey) {
+          return "#";
+        }
+        const params = new URLSearchParams(window.location.search);
+        if (state.selectedDate) {
+          params.set("date", state.selectedDate);
+        }
+        params.set("subject", subjectKey);
+        return `${window.location.pathname}?${params.toString()}`;
+      }
+
+      function getRequestedSubject() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get("subject");
+      }
+
+      function syncSubjectInUrl(subjectKey) {
+        const params = new URLSearchParams(window.location.search);
+        if (state.selectedDate) {
+          params.set("date", state.selectedDate);
+        }
+        if (subjectKey) {
+          params.set("subject", subjectKey);
+        } else {
+          params.delete("subject");
+        }
+        const query = params.toString();
+        const next = query ? `${window.location.pathname}?${query}` : window.location.pathname;
+        window.history.replaceState({}, "", next);
+      }
+
+      function resolveSubjectKey(query) {
+        const normalizedQuery = normalize(query).replace(/\s+/g, "");
+        if (!normalizedQuery || !state.subjectIndex?.subjects?.length) {
+          return null;
+        }
+
+        const exact = state.subjectIndex.subjects.find((item) => {
+          const subjectName = normalize(item.subject_name).replace(/\s+/g, "");
+          return item.subject_key === normalizedQuery || subjectName === normalizedQuery;
+        });
+        if (exact) {
+          return exact.subject_key;
+        }
+
+        const partial = state.subjectIndex.subjects.find((item) => {
+          const subjectName = normalize(item.subject_name).replace(/\s+/g, "");
+          return item.subject_key.includes(normalizedQuery) || subjectName.includes(normalizedQuery);
+        });
+        return partial?.subject_key || null;
+      }
+
+      function populateSubjectSuggestions() {
+        const datalist = document.getElementById("subjectSuggestions");
+        const quickLinks = document.getElementById("subjectQuickLinks");
+        datalist.innerHTML = "";
+        quickLinks.innerHTML = "";
+
+        if (!state.subjectIndex?.subjects?.length) {
+          quickLinks.appendChild(el("span", "hint-chip", "종목 인덱스를 아직 불러오지 못했습니다."));
+          return;
+        }
+
+        state.subjectIndex.subjects.slice(0, 200).forEach((item) => {
+          const option = el("option");
+          option.value = item.subject_name || item.subject_key;
+          option.label = `${item.subject_name || item.subject_key} · ${formatNumber(item.report_count || 0)}건`;
+          datalist.appendChild(option);
+        });
+
+        const featured = [...state.subjectIndex.subjects]
+          .sort((left, right) => {
+            const changeGap = Number(right.changed_reports || 0) - Number(left.changed_reports || 0);
+            if (changeGap !== 0) {
+              return changeGap;
+            }
+            return Number(right.report_count || 0) - Number(left.report_count || 0);
+          })
+          .slice(0, 8);
+
+        featured.forEach((item) => {
+          const link = el("a", "hint-chip chip-link");
+          link.href = buildSubjectHref(item.subject_key);
+          link.textContent = `${item.subject_name} · ${formatNumber(item.changed_reports || 0)}건 변화`;
+          quickLinks.appendChild(link);
         });
       }
 
@@ -1117,12 +1347,30 @@
         return sortReports((state.digest?.reports || []).filter(reportMatchesFilters));
       }
 
+      function getFilteredSubjectReports() {
+        return sortReports((state.subjectDetail?.timeline || []).filter(reportMatchesFilters));
+      }
+
+      function isSubjectMode() {
+        return Boolean(state.selectedSubjectKey && state.subjectDetail);
+      }
+
       function buildBadge(text, tone = "default") {
         return el("span", `badge badge-${tone}`, text);
       }
 
       function buildDatum(label, value) {
         return el("span", "datum", `${label} ${value}`);
+      }
+
+      function buildSubjectDatum(report) {
+        if (!report?.subject || !report?.subject_key) {
+          return null;
+        }
+        const link = el("a", "datum");
+        link.href = buildSubjectHref(report.subject_key);
+        link.textContent = `종목 ${report.subject}`;
+        return link;
       }
 
       function buildReportCard(report, featured = false) {
@@ -1159,7 +1407,10 @@
 
         const data = el("div", "report-data");
         data.appendChild(buildDatum("점수", Number(report.score || 0).toFixed(2)));
-        if (report.subject) {
+        const subjectDatum = buildSubjectDatum(report);
+        if (subjectDatum) {
+          data.appendChild(subjectDatum);
+        } else if (report.subject) {
           data.appendChild(buildDatum("주제", report.subject));
         }
         if (report.target_price) {
@@ -1200,6 +1451,13 @@
         detailLink.rel = "noreferrer";
         detailLink.textContent = "상세 보기";
         actions.appendChild(detailLink);
+
+        if (report.subject_key && !isSubjectMode()) {
+          const subjectLink = el("a");
+          subjectLink.href = buildSubjectHref(report.subject_key);
+          subjectLink.textContent = "종목 히스토리";
+          actions.appendChild(subjectLink);
+        }
 
         if (report.pdf_url) {
           const pdfLink = el("a");
@@ -1254,6 +1512,10 @@
         article.appendChild(el("p", "report-summary", reasons));
 
         const data = el("div", "report-data");
+        const subjectDatum = buildSubjectDatum(report);
+        if (subjectDatum) {
+          data.appendChild(subjectDatum);
+        }
         const targetChange = formatTargetChange(report);
         if (targetChange) {
           data.appendChild(buildDatum("변화", targetChange));
@@ -1278,6 +1540,12 @@
         detailLink.rel = "noreferrer";
         detailLink.textContent = "원문 보기";
         actions.appendChild(detailLink);
+        if (report.subject_key && !isSubjectMode()) {
+          const subjectLink = el("a");
+          subjectLink.href = buildSubjectHref(report.subject_key);
+          subjectLink.textContent = "종목 상세";
+          actions.appendChild(subjectLink);
+        }
         footer.appendChild(actions);
         article.appendChild(footer);
 
@@ -1330,6 +1598,9 @@
         bar.innerHTML = "";
 
         const hints = [`표시 ${formatNumber(totalVisible)} / 전체 ${formatNumber(totalReports)}건`];
+        if (state.subjectDetail?.subject_name) {
+          hints.push(`종목: ${state.subjectDetail.subject_name}`);
+        }
         if (state.query) {
           hints.push(`검색: "${state.query}"`);
         }
@@ -1627,10 +1898,180 @@
         select.value = state.selectedCategory;
       }
 
+      function setViewMode(mode) {
+        document.getElementById("dailyView").hidden = mode !== "daily";
+        document.getElementById("subjectView").hidden = mode !== "subject";
+        document.getElementById("subjectBackLink").href = buildDailyHref(state.selectedDate);
+      }
+
+      function renderSubjectHero(detail) {
+        const summary = detail.change_summary || {};
+        document.getElementById("heroSummary").classList.remove("loading");
+        document.getElementById("heroSummary").textContent =
+          `${detail.subject_name} 관련 리포트 ${formatNumber(detail.report_count || 0)}건을 누적 추적 중입니다. 최근 업데이트는 ${
+            detail.latest_report_date || "-"
+          }이며, 변화 감지 ${formatNumber(summary.changed_reports || 0)}건을 함께 확인할 수 있습니다.`;
+        document.getElementById("heroGeneratedAt").textContent = detail.latest_report_date || "-";
+        document.getElementById("heroDateMeta").textContent = `${detail.subject_name || "종목"} 히스토리`;
+        document.getElementById("heroMustReadCount").textContent = formatNumber(detail.report_count || 0);
+        document.getElementById("heroMustReadMeta").textContent = `활동 증권사 ${formatNumber(
+          detail.active_broker_count || 0
+        )}곳`;
+        document.getElementById("heroChangeCount").textContent = formatNumber(summary.changed_reports || 0);
+        document.getElementById("heroChangeMeta").textContent = `목표가 상향 ${formatNumber(
+          summary.target_price_up || 0
+        )} · 하향 ${formatNumber(summary.target_price_down || 0)} · 신규 커버리지 ${formatNumber(
+          summary.coverage_initiated || 0
+        )}`;
+      }
+
+      function renderSubjectChangeSummary(detail) {
+        const container = document.getElementById("subjectChangeSummary");
+        container.innerHTML = "";
+        const summary = detail.change_summary || {};
+        const cards = [
+          { label: "변화 감지", value: summary.changed_reports || 0 },
+          { label: "목표가 상향", value: summary.target_price_up || 0 },
+          { label: "목표가 하향", value: summary.target_price_down || 0 },
+          { label: "의견 변경", value: summary.opinion_changed || 0 },
+          { label: "의견 상향", value: summary.opinion_up || 0 },
+          { label: "신규 커버리지", value: summary.coverage_initiated || 0 },
+        ];
+
+        cards.forEach((card) => {
+          const node = el("div", "signal-stat");
+          node.appendChild(el("span", null, card.label));
+          node.appendChild(el("strong", null, formatNumber(card.value)));
+          container.appendChild(node);
+        });
+      }
+
+      function renderSubjectView() {
+        const detail = state.subjectDetail;
+        if (!detail) {
+          return;
+        }
+
+        setViewMode("subject");
+        renderSubjectHero(detail);
+
+        document.getElementById("subjectTitle").textContent = detail.subject_name || "종목 상세";
+        document.getElementById("subjectMeta").textContent = `최근 업데이트 ${detail.latest_report_date || "-"} · 누적 ${
+          formatNumber(detail.report_count || 0)
+        }건 · 활동 증권사 ${formatNumber(detail.active_broker_count || 0)}곳`;
+        document.getElementById("subjectSummary").textContent =
+          `${detail.subject_name} 관련 리포트의 최신 브로커별 시각과 전체 타임라인을 한 화면에서 볼 수 있습니다. 목표가/의견 변화는 우측 패널에서 우선 확인하세요.`;
+        document.getElementById("subjectBackLink").href = buildDailyHref(state.selectedDate);
+
+        const stats = document.getElementById("subjectStats");
+        stats.innerHTML = "";
+        const targetSummary = detail.target_summary || {};
+        [
+          { label: "누적 리포트", value: formatNumber(detail.report_count || 0), body: "아카이브 전체 기준" },
+          {
+            label: "활동 증권사",
+            value: formatNumber(detail.active_broker_count || 0),
+            body: "같은 종목을 다룬 브로커 수",
+          },
+          {
+            label: "변화 감지",
+            value: formatNumber(detail.change_summary?.changed_reports || 0),
+            body: "목표가·의견·애널리스트·신규 커버리지",
+          },
+          {
+            label: "평균 목표가",
+            value: formatTargetValue(targetSummary.avg),
+            body: `최신 브로커값 ${formatNumber(targetSummary.count || 0)}건 기준`,
+          },
+        ].forEach((card) => {
+          const node = el("article", "stat-card");
+          node.appendChild(el("span", null, card.label));
+          node.appendChild(el("strong", null, card.value));
+          node.appendChild(el("small", null, card.body));
+          stats.appendChild(node);
+        });
+
+        const targetChips = document.getElementById("subjectTargetChips");
+        targetChips.innerHTML = "";
+        [
+          `평균 ${formatTargetValue(targetSummary.avg)}`,
+          `최고 ${formatTargetValue(targetSummary.high)}`,
+          `최저 ${formatTargetValue(targetSummary.low)}`,
+          `최신 기준 ${formatNumber(targetSummary.count || 0)}건`,
+        ].forEach((label) => {
+          targetChips.appendChild(el("span", "chip", label));
+        });
+
+        const brokerLatest = sortReports((detail.latest_by_broker || []).filter(reportMatchesFilters));
+        document.getElementById("subjectBrokerMeta").textContent = `현재 필터 기준 ${formatNumber(
+          brokerLatest.length
+        )}건`;
+        const brokerContainer = document.getElementById("subjectBrokerLatest");
+        brokerContainer.innerHTML = "";
+        if (!brokerLatest.length) {
+          brokerContainer.appendChild(el("div", "empty", "현재 필터 조건에 맞는 최신 브로커 리포트가 없습니다."));
+        } else {
+          brokerLatest.forEach((report) => {
+            brokerContainer.appendChild(buildReportCard(report));
+          });
+        }
+
+        const recentChanges = sortReports((detail.recent_changes || []).filter(reportMatchesFilters));
+        document.getElementById("subjectChangeMeta").textContent = `현재 필터 기준 ${formatNumber(
+          recentChanges.length
+        )}건`;
+        renderSubjectChangeSummary(detail);
+        const changeContainer = document.getElementById("subjectRecentChanges");
+        changeContainer.innerHTML = "";
+        if (!recentChanges.length) {
+          changeContainer.appendChild(el("div", "empty", "이 종목에는 현재 필터 기준 변화 감지가 없습니다."));
+        } else {
+          recentChanges.forEach((report) => {
+            changeContainer.appendChild(buildChangeCard(report));
+          });
+        }
+
+        const opinionChips = document.getElementById("subjectOpinionChips");
+        opinionChips.innerHTML = "";
+        if ((detail.opinion_summary || []).length) {
+          detail.opinion_summary.forEach((item) => {
+            opinionChips.appendChild(el("span", "chip", `${item.label} ${formatNumber(item.count)}건`));
+          });
+        } else {
+          opinionChips.appendChild(el("span", "chip", "의견 정보 없음"));
+        }
+
+        renderCountBreakdown(detail.broker_summary || [], "subjectBrokerBreakdown", "name");
+        renderCountBreakdown(detail.category_summary || [], "subjectCategoryBreakdown", "label");
+
+        const timeline = getFilteredSubjectReports();
+        document.getElementById("subjectTimelineMeta").textContent = `현재 필터 기준 ${formatNumber(
+          timeline.length
+        )}건`;
+        const timelineContainer = document.getElementById("subjectTimeline");
+        timelineContainer.innerHTML = "";
+        if (!timeline.length) {
+          timelineContainer.appendChild(el("div", "empty", "현재 필터 조건에 맞는 타임라인이 없습니다."));
+        } else {
+          timeline.forEach((report) => {
+            timelineContainer.appendChild(buildReportCard(report));
+          });
+        }
+      }
+
       function renderAll() {
         if (!state.digest) {
           return;
         }
+        if (isSubjectMode()) {
+          renderSubjectView();
+          renderHintBar(
+            (state.subjectDetail?.timeline || []).filter(reportMatchesFilters).length,
+            state.subjectDetail?.report_count || 0
+          );
+          return;
+        }
+        setViewMode("daily");
         renderHero(state.digest);
         renderNotes(state.digest);
         renderStats(state.digest);
@@ -1647,6 +2088,7 @@
           state.digest = digest;
           state.selectedDate = digest.date;
           syncSelectedDate(digest.date);
+          populateSubjectSuggestions();
           populateCategoryOptions(digest);
           renderAll();
         } catch (error) {
@@ -1656,6 +2098,7 @@
             state.digest = latest;
             state.selectedDate = latest.date;
             syncSelectedDate(latest.date);
+            populateSubjectSuggestions();
             populateCategoryOptions(latest);
             renderAll();
           } catch (fallbackError) {
@@ -1666,6 +2109,44 @@
               "대시보드 데이터 로딩에 실패했습니다. 잠시 후 다시 시도해 주세요.";
           }
         }
+      }
+
+      async function loadSubjectDetail(subjectKey) {
+        if (!subjectKey) {
+          state.selectedSubjectKey = null;
+          state.subjectDetail = null;
+          document.getElementById("subjectSearchMeta").textContent = "";
+          renderAll();
+          return;
+        }
+
+        try {
+          const detail = await fetchJson(`./data/subjects/${subjectKey}.json`);
+          state.selectedSubjectKey = subjectKey;
+          state.subjectDetail = detail;
+          document.getElementById("subjectSearchInput").value = detail.subject_name || "";
+          document.getElementById("subjectSearchMeta").textContent = `${
+            detail.subject_name || subjectKey
+          } · ${formatNumber(detail.report_count || 0)}건`;
+          syncSubjectInUrl(subjectKey);
+          renderAll();
+        } catch (error) {
+          console.error(error);
+          state.selectedSubjectKey = null;
+          state.subjectDetail = null;
+          document.getElementById("subjectSearchMeta").textContent = "해당 종목 상세를 불러오지 못했습니다.";
+          renderAll();
+        }
+      }
+
+      async function openSubjectByQuery() {
+        const input = document.getElementById("subjectSearchInput");
+        const subjectKey = resolveSubjectKey(input.value);
+        if (!subjectKey) {
+          document.getElementById("subjectSearchMeta").textContent = "일치하는 종목을 찾지 못했습니다.";
+          return;
+        }
+        await loadSubjectDetail(subjectKey);
       }
 
       function getRequestedDate(days) {
@@ -1710,6 +2191,8 @@
         const sortSelect = document.getElementById("sortSelect");
         const priorityOnlyToggle = document.getElementById("priorityOnlyToggle");
         const changesOnlyToggle = document.getElementById("changesOnlyToggle");
+        const subjectSearchInput = document.getElementById("subjectSearchInput");
+        const subjectSearchButton = document.getElementById("subjectSearchButton");
         const resetFiltersButton = document.getElementById("resetFiltersButton");
 
         searchInput.addEventListener("input", (event) => {
@@ -1737,21 +2220,46 @@
           renderAll();
         });
 
+        subjectSearchInput.addEventListener("keydown", async (event) => {
+          if (event.key !== "Enter") {
+            return;
+          }
+          event.preventDefault();
+          await openSubjectByQuery();
+        });
+
+        subjectSearchButton.addEventListener("click", async () => {
+          await openSubjectByQuery();
+        });
+
         resetFiltersButton.addEventListener("click", resetFilters);
 
         try {
           const index = await fetchJson("./data/index.json");
           state.index = index;
+          try {
+            state.subjectIndex = await fetchJson("./data/subjects/index.json");
+          } catch (subjectIndexError) {
+            console.error(subjectIndexError);
+          }
           const days = index.days || [];
+          const requestedSubject = getRequestedSubject();
 
           if (days.length) {
             populateDateOptions(days);
             const initialDate = getRequestedDate(days);
             dateSelect.value = initialDate;
             dateSelect.addEventListener("change", async (event) => {
+              if (state.selectedSubjectKey) {
+                window.location.href = buildDailyHref(event.target.value);
+                return;
+              }
               await loadDigest(event.target.value);
             });
             await loadDigest(initialDate);
+            if (requestedSubject) {
+              await loadSubjectDetail(requestedSubject);
+            }
             return;
           }
 
@@ -1759,8 +2267,12 @@
           state.digest = latest;
           state.selectedDate = latest.date;
           syncSelectedDate(latest.date);
+          populateSubjectSuggestions();
           populateCategoryOptions(latest);
           renderAll();
+          if (requestedSubject) {
+            await loadSubjectDetail(requestedSubject);
+          }
         } catch (error) {
           console.error(error);
           try {
@@ -1768,8 +2280,13 @@
             state.digest = latest;
             state.selectedDate = latest.date;
             syncSelectedDate(latest.date);
+            populateSubjectSuggestions();
             populateCategoryOptions(latest);
             renderAll();
+            const requestedSubject = getRequestedSubject();
+            if (requestedSubject) {
+              await loadSubjectDetail(requestedSubject);
+            }
           } catch (fallbackError) {
             console.error(fallbackError);
             document.getElementById("heroSummary").textContent =

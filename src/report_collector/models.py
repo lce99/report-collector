@@ -16,10 +16,13 @@ class Report:
     detail_url: str
     pdf_url: str | None = None
     subject: str | None = None
+    subject_key: str | None = None
     views: int = 0
     analyst: str | None = None
     target_price: str | None = None
+    target_price_value: int | None = None
     opinion: str | None = None
+    opinion_normalized: str | None = None
     body: str = ""
     pdf_text: str = ""
     excerpt: str = ""
@@ -36,7 +39,10 @@ class Report:
     target_price_change: str | None = None
     target_price_change_pct: float | None = None
     opinion_changed: bool = False
+    opinion_change_direction: str | None = None
     analyst_changed: bool = False
+    coverage_initiated: bool = False
+    change_types: list[str] = field(default_factory=list)
     change_reasons: list[str] = field(default_factory=list)
 
     @property
@@ -55,7 +61,7 @@ class Report:
 
     @property
     def has_change_signal(self) -> bool:
-        return bool(self.change_reasons)
+        return bool(self.change_reasons or self.change_types)
 
     @property
     def content_sources(self) -> list[str]:
@@ -85,10 +91,13 @@ class Report:
             "detail_url": self.detail_url,
             "pdf_url": self.pdf_url,
             "subject": self.subject,
+            "subject_key": self.subject_key,
             "views": self.views,
             "analyst": self.analyst,
             "target_price": self.target_price,
+            "target_price_value": self.target_price_value,
             "opinion": self.opinion,
+            "opinion_normalized": self.opinion_normalized,
             "has_pdf_text": self.has_pdf_text,
             "content_sources": self.content_sources,
             "excerpt": self.excerpt,
@@ -106,7 +115,10 @@ class Report:
             "target_price_change": self.target_price_change,
             "target_price_change_pct": self.target_price_change_pct,
             "opinion_changed": self.opinion_changed,
+            "opinion_change_direction": self.opinion_change_direction,
             "analyst_changed": self.analyst_changed,
+            "coverage_initiated": self.coverage_initiated,
+            "change_types": self.change_types,
             "change_reasons": self.change_reasons,
             "has_change_signal": self.has_change_signal,
         }
