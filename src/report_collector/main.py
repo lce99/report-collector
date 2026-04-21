@@ -42,13 +42,48 @@ def _report_preference(report: Report) -> tuple[int, int, int, int]:
     )
 
 
+def _merge_duplicate_reports(current: Report, candidate: Report) -> Report:
+    preferred = current
+    fallback = candidate
+    if _report_preference(candidate) > _report_preference(current):
+        preferred = candidate
+        fallback = current
+
+    preferred.views = max(preferred.views, fallback.views)
+
+    if not preferred.pdf_url and fallback.pdf_url:
+        preferred.pdf_url = fallback.pdf_url
+    if not preferred.subject and fallback.subject:
+        preferred.subject = fallback.subject
+    if not preferred.subject_key and fallback.subject_key:
+        preferred.subject_key = fallback.subject_key
+    if not preferred.analyst and fallback.analyst:
+        preferred.analyst = fallback.analyst
+    if not preferred.target_price and fallback.target_price:
+        preferred.target_price = fallback.target_price
+    if preferred.target_price_value is None and fallback.target_price_value is not None:
+        preferred.target_price_value = fallback.target_price_value
+    if not preferred.opinion and fallback.opinion:
+        preferred.opinion = fallback.opinion
+    if not preferred.opinion_normalized and fallback.opinion_normalized:
+        preferred.opinion_normalized = fallback.opinion_normalized
+    if not preferred.body and fallback.body:
+        preferred.body = fallback.body
+    if not preferred.pdf_text and fallback.pdf_text:
+        preferred.pdf_text = fallback.pdf_text
+
+    return preferred
+
+
 def _dedupe_reports(reports: list[Report]) -> list[Report]:
     selected: dict[tuple[str, str], Report] = {}
     for report in reports:
         key = _report_dedupe_key(report)
         current = selected.get(key)
-        if current is None or _report_preference(report) > _report_preference(current):
+        if current is None:
             selected[key] = report
+            continue
+        selected[key] = _merge_duplicate_reports(current, report)
     return list(selected.values())
 
 
