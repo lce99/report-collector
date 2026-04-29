@@ -11,7 +11,7 @@ from report_collector.config import Settings
 from report_collector.models import DailyDigest, Report
 from report_collector.normalization import (
     annotate_report_normalized_fields,
-    normalize_opinion_value as normalize_opinion_token,
+    normalize_opinion_value,
     normalize_subject_key,
     opinion_change_direction,
     parse_target_price_value,
@@ -94,23 +94,6 @@ STOPWORDS = {
 }
 
 SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?])\s+")
-OPINION_ALIASES = {
-    "buy": "buy",
-    "매수": "buy",
-    "strongbuy": "strong_buy",
-    "적극매수": "strong_buy",
-    "hold": "hold",
-    "neutral": "hold",
-    "중립": "hold",
-    "marketperform": "hold",
-    "marketperformer": "hold",
-    "tradingbuy": "trading_buy",
-    "reduce": "sell",
-    "underperform": "sell",
-    "sell": "sell",
-    "매도": "sell",
-    "outperform": "outperform",
-}
 
 
 def _normalize_space(value: str) -> str:
@@ -277,31 +260,14 @@ def _report_history_key(
     return f"{normalized_broker}:{normalized_subject}"
 
 
-def _parse_target_price(value: str | None) -> int | None:
-    if not value:
+def _load_previous_digest(digest_path) -> dict[str, object] | None:
+    try:
+        payload = json.loads(digest_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
         return None
-
-    cleaned = _normalize_space(value).lower().replace(",", "")
-    match = re.search(r"\d+(?:\.\d+)?", cleaned)
-    if not match:
+    if not isinstance(payload, dict):
         return None
-
-    amount = float(match.group(0))
-    if "만원" in cleaned:
-        amount *= 10000
-    elif "천원" in cleaned:
-        amount *= 1000
-
-    return int(round(amount))
-
-
-def _normalize_opinion_value(value: str | None) -> str | None:
-    if not value:
-        return None
-
-    cleaned = _normalize_space(value).lower()
-    token = re.sub(r"[\s/_-]+", "", cleaned)
-    return OPINION_ALIASES.get(token, token or None)
+    return payload
 
 
 def _iter_previous_reports(
@@ -320,12 +286,18 @@ def _iter_previous_reports(
         if not digest_path.exists():
             continue
 
-        payload = json.loads(digest_path.read_text(encoding="utf-8"))
+        payload = _load_previous_digest(digest_path)
+        if not payload:
+            continue
         payload_date = str(payload.get("date", ""))
         if not payload_date or payload_date >= current_date:
             continue
 
-        for report in payload.get("reports", []):
+        reports_payload = payload.get("reports", [])
+        if not isinstance(reports_payload, list):
+            continue
+
+        for report in reports_payload:
             if isinstance(report, dict):
                 previous_reports.append(report)
 
@@ -348,7 +320,7 @@ def _build_previous_report_lookup(
     return lookup
 
 
-def _change_sort_key(report: Report) -> tuple[int, int, float, float, str]:
+def _change_sort_key(report: Report) -> tuple[int, int, int, float, float, str]:
     return (
         1 if report.coverage_initiated else 0,
         1 if report.opinion_changed else 0,
@@ -423,9 +395,16 @@ def _annotate_changes(
         report.previous_analyst = str(previous.get("analyst") or "") or None
 
         current_target = report.target_price_value
-        previous_target = previous.get("target_price_value")
-        if previous_target is None:
-            previous_target = _parse_target_price(report.previous_target_price)
+        previous_target_raw = previous.get("target_price_value")
+        previous_target = (
+            previous_target_raw
+            if isinstance(previous_target_raw, int)
+            else parse_target_price_value(
+                str(previous_target_raw)
+                if previous_target_raw is not None
+                else report.previous_target_price
+            )
+        )
         if (
             current_target is not None
             and previous_target is not None
@@ -446,10 +425,11 @@ def _annotate_changes(
                 report.change_types.append("target_down")
                 summary["target_price_down"] = int(summary["target_price_down"]) + 1
 
-        current_opinion = report.opinion_normalized or _normalize_opinion_value(report.opinion)
-        previous_opinion = previous.get("opinion_normalized")
+        current_opinion = report.opinion_normalized or normalize_opinion_value(report.opinion)
+        previous_opinion_raw = previous.get("opinion_normalized")
+        previous_opinion = str(previous_opinion_raw) if previous_opinion_raw else None
         if previous_opinion is None:
-            previous_opinion = _normalize_opinion_value(report.previous_opinion)
+            previous_opinion = normalize_opinion_value(report.previous_opinion)
         if current_opinion and previous_opinion and current_opinion != previous_opinion:
             report.opinion_changed = True
             report.opinion_change_direction = opinion_change_direction(

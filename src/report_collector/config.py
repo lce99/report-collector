@@ -36,6 +36,9 @@ DEFAULT_CATEGORIES = (
     "debenture",
 )
 
+TRUE_VALUES = {"1", "true", "yes", "y", "on"}
+FALSE_VALUES = {"0", "false", "no", "n", "off"}
+
 
 def _parse_csv(value: str | None, default: tuple[str, ...]) -> tuple[str, ...]:
     if not value:
@@ -47,7 +50,14 @@ def _parse_csv(value: str | None, default: tuple[str, ...]) -> tuple[str, ...]:
 def _parse_bool(value: str | None, default: bool) -> bool:
     if value is None:
         return default
-    return value.strip().lower() in {"1", "true", "yes", "y", "on"}
+    cleaned = value.strip().lower()
+    if not cleaned:
+        return default
+    if cleaned in TRUE_VALUES:
+        return True
+    if cleaned in FALSE_VALUES:
+        return False
+    return default
 
 
 def _parse_int(value: str | None, default: int) -> int:
@@ -56,7 +66,10 @@ def _parse_int(value: str | None, default: int) -> int:
     cleaned = value.strip()
     if not cleaned:
         return default
-    return int(cleaned)
+    try:
+        return int(cleaned)
+    except ValueError:
+        return default
 
 
 def _normalize_site_url(value: str | None) -> str | None:
@@ -215,7 +228,9 @@ class Settings:
                 os.getenv("OPENAI_SUMMARY_CHAR_LIMIT"),
                 6000,
             ),
-            openai_reasoning_effort=(os.getenv("OPENAI_REASONING_EFFORT") or None),
+            openai_reasoning_effort=(
+                (os.getenv("OPENAI_REASONING_EFFORT") or "").strip() or None
+            ),
             telegram_bot_token=os.getenv("TELEGRAM_BOT_TOKEN"),
             telegram_chat_id=os.getenv("TELEGRAM_CHAT_ID"),
             send_telegram=_parse_bool(os.getenv("SEND_TELEGRAM"), True),

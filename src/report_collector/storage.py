@@ -27,10 +27,16 @@ def _write_text(path: Path, content: str) -> None:
     path.write_text(content, encoding="utf-8")
 
 
-def _load_json(path: Path) -> dict | None:
+def _load_json(path: Path) -> dict[str, Any] | None:
     if not path.exists():
         return None
-    return json.loads(path.read_text(encoding="utf-8"))
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+    if not isinstance(payload, dict):
+        return None
+    return payload
 
 
 def _remove_tree(path: Path) -> None:
@@ -157,7 +163,9 @@ def _build_subject_payloads(archive_root: Path) -> tuple[dict[str, Any], dict[st
             if not digest_path.exists():
                 continue
 
-            payload = json.loads(digest_path.read_text(encoding="utf-8"))
+            payload = _load_json(digest_path)
+            if not payload:
+                continue
             for report in payload.get("reports", []):
                 if not isinstance(report, dict):
                     continue
@@ -301,8 +309,8 @@ def publish_digest(
     _sync_subject_payloads(docs_data_root, archive_root)
 
 
-def _build_index(archive_root: Path) -> dict:
-    days: list[dict] = []
+def _build_index(archive_root: Path) -> dict[str, list[dict[str, Any]]]:
+    days: list[dict[str, Any]] = []
     if not archive_root.exists():
         return {"days": days}
 
@@ -313,15 +321,25 @@ def _build_index(archive_root: Path) -> dict:
         digest_path = day_dir / "digest.json"
         if not digest_path.exists():
             continue
-        payload = json.loads(digest_path.read_text(encoding="utf-8"))
+        payload = _load_json(digest_path)
+        if not payload:
+            continue
+        stats = payload.get("stats", {})
+        if not isinstance(stats, dict):
+            stats = {}
+        must_read = payload.get("must_read", [])
+        if not isinstance(must_read, list):
+            must_read = []
         days.append(
             {
-                "date": payload["date"],
-                "generated_at": payload["generated_at"],
-                "total_reports": payload["stats"]["total_reports"],
+                "date": str(payload.get("date") or day_dir.name),
+                "generated_at": str(payload.get("generated_at") or ""),
+                "total_reports": int(stats.get("total_reports") or 0),
                 "keywords": payload.get("keywords", []),
                 "top_titles": [
-                    item["display_title"] for item in payload.get("must_read", [])[:3]
+                    str(item.get("display_title") or "")
+                    for item in must_read[:3]
+                    if isinstance(item, dict)
                 ],
             }
         )

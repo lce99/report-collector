@@ -69,6 +69,12 @@ python -m pip install -r requirements.txt
 python run_daily.py --skip-telegram
 ```
 
+간단한 회귀 테스트는 아래처럼 실행합니다.
+
+```bash
+python -m unittest discover -s tests
+```
+
 특정 날짜를 다시 생성하려면:
 
 ```bash

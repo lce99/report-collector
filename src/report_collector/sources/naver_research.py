@@ -4,7 +4,6 @@ from dataclasses import dataclass
 from datetime import date
 from typing import Iterable
 from urllib.parse import parse_qs, urljoin, urlparse
-from urllib.request import Request, urlopen
 import re
 
 from bs4 import BeautifulSoup
@@ -12,6 +11,7 @@ from bs4 import BeautifulSoup
 from report_collector.config import Settings
 from report_collector.models import Report
 from report_collector.pdf_text import extract_pdf_text
+from report_collector.sources.common import fetch_html, normalize_space, parse_int
 
 
 @dataclass(frozen=True, slots=True)
@@ -119,12 +119,8 @@ BODY_END_MARKERS = (
 )
 
 
-def _normalize_space(value: str) -> str:
-    return re.sub(r"\s+", " ", value).strip()
-
-
 def _parse_short_date(value: str) -> date:
-    cleaned = _normalize_space(value).replace(" ", "")
+    cleaned = normalize_space(value).replace(" ", "")
     parts = cleaned.split(".")
     if len(parts) != 3:
         raise ValueError(f"Unexpected date format: {value}")
@@ -136,15 +132,10 @@ def _parse_short_date(value: str) -> date:
     return date(year, month, day_value)
 
 
-def _parse_int(value: str) -> int:
-    digits = re.sub(r"[^\d]", "", value)
-    return int(digits) if digits else 0
-
-
 def _clean_optional_value(value: str | None) -> str | None:
     if value is None:
         return None
-    cleaned = _normalize_space(value)
+    cleaned = normalize_space(value)
     if cleaned.lower() in {"없음", "-", "n/a", "na"}:
         return None
     return cleaned
@@ -194,18 +185,12 @@ class NaverResearchCollector:
         )
 
     def _fetch_html(self, url: str) -> str:
-        request = Request(
+        return fetch_html(
             url,
-            headers={
-                "User-Agent": self.settings.user_agent,
-                "Referer": self.settings.base_url,
-            },
+            settings=self.settings,
+            encoding="euc-kr",
+            referer=self.settings.base_url,
         )
-        with urlopen(
-            request,
-            timeout=self.settings.request_timeout_seconds,
-        ) as response:
-            return response.read().decode("euc-kr", errors="ignore")
 
     def _parse_list_page(
         self,
@@ -255,7 +240,7 @@ class NaverResearchCollector:
 
         subject = None
         if config.subject_index is not None:
-            subject = _normalize_space(columns[config.subject_index].get_text(" ", strip=True))
+            subject = normalize_space(columns[config.subject_index].get_text(" ", strip=True))
 
         pdf_anchor = columns[config.file_index].find("a", href=True)
         pdf_url = urljoin(self.settings.base_url, pdf_anchor["href"]) if pdf_anchor else None
@@ -269,13 +254,13 @@ class NaverResearchCollector:
             category=config.key,
             category_label=config.label,
             report_id=report_id,
-            title=_normalize_space(detail_anchor.get_text(" ", strip=True)),
-            broker=_normalize_space(columns[config.broker_index].get_text(" ", strip=True)),
+            title=normalize_space(detail_anchor.get_text(" ", strip=True)),
+            broker=normalize_space(columns[config.broker_index].get_text(" ", strip=True)),
             published_date=published_date,
             detail_url=detail_url,
             pdf_url=pdf_url,
             subject=subject or None,
-            views=_parse_int(columns[config.views_index].get_text(" ", strip=True)),
+            views=parse_int(columns[config.views_index].get_text(" ", strip=True)),
         )
 
     def _hydrate_detail(self, report: Report) -> None:
@@ -290,7 +275,7 @@ class NaverResearchCollector:
             return
 
         lines = [
-            _normalize_space(line)
+            normalize_space(line)
             for line in main_table.get_text("\n", strip=True).splitlines()
         ]
         lines = [line for line in lines if line and line != "|"]
@@ -304,7 +289,7 @@ class NaverResearchCollector:
             None,
         )
         if detail_views:
-            report.views = max(report.views, _parse_int(detail_views))
+            report.views = max(report.views, parse_int(detail_views))
 
         report.body = self._extract_body(lines)
         if (
