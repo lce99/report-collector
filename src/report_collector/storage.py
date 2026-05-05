@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from collections import Counter, defaultdict
+from datetime import date, timedelta
 from pathlib import Path
 import json
 from typing import Any
@@ -12,6 +13,8 @@ from report_collector.normalization import (
     normalize_subject_name,
     parse_target_price_value,
 )
+
+PERFORMANCE_HORIZONS = (1, 7, 30)
 
 
 def _write_json(path: Path, payload: dict) -> None:
@@ -151,6 +154,76 @@ def _build_target_summary(reports: list[dict[str, Any]]) -> dict[str, int | None
     }
 
 
+def _parse_date(value: object) -> date | None:
+    try:
+        return date.fromisoformat(str(value or ""))
+    except ValueError:
+        return None
+
+
+def _chart_report_point(report: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "date": report.get("published_date"),
+        "broker": report.get("broker"),
+        "title": report.get("display_title") or report.get("title"),
+        "detail_url": report.get("detail_url"),
+        "target_price": report.get("target_price"),
+        "target_price_value": report.get("target_price_value"),
+        "opinion": report.get("opinion"),
+        "opinion_normalized": report.get("opinion_normalized"),
+        "score": report.get("score"),
+        "has_change_signal": bool(report.get("has_change_signal")),
+    }
+
+
+def _build_subject_chart_payload(
+    timeline: list[dict[str, Any]],
+    latest_by_broker: list[dict[str, Any]],
+    latest_report_date: object,
+) -> dict[str, Any]:
+    target_price_history = [
+        _chart_report_point(report)
+        for report in timeline
+        if report.get("target_price_value") is not None
+    ]
+    target_price_history.sort(key=lambda item: (str(item.get("date") or ""), str(item.get("broker") or "")))
+
+    opinion_counter = Counter(
+        str(report.get("opinion_normalized") or report.get("opinion") or "")
+        for report in latest_by_broker
+        if report.get("opinion_normalized") or report.get("opinion")
+    )
+    opinion_distribution = [
+        {"label": label, "count": count}
+        for label, count in opinion_counter.most_common()
+        if label
+    ]
+
+    latest_date = _parse_date(latest_report_date)
+    if latest_date:
+        window_start = latest_date - timedelta(days=14)
+        recent_reports = [
+            report
+            for report in timeline
+            if (report_date := _parse_date(report.get("published_date")))
+            and report_date >= window_start
+        ]
+    else:
+        recent_reports = timeline[:40]
+
+    broker_timeline = [_chart_report_point(report) for report in sorted(
+        recent_reports,
+        key=_report_sort_key,
+    )]
+
+    return {
+        "target_price_history": target_price_history[-80:],
+        "opinion_distribution": opinion_distribution,
+        "broker_timeline": broker_timeline[-80:],
+        "window_days": 14,
+    }
+
+
 def _build_subject_payloads(archive_root: Path) -> tuple[dict[str, Any], dict[str, dict[str, Any]]]:
     grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
 
@@ -195,6 +268,11 @@ def _build_subject_payloads(archive_root: Path) -> tuple[dict[str, Any], dict[st
 
         change_summary = _build_subject_change_summary(timeline)
         target_summary = _build_target_summary(latest_by_broker)
+        chart_payload = _build_subject_chart_payload(
+            timeline,
+            latest_by_broker,
+            latest_report.get("published_date"),
+        )
         opinion_counter = Counter(
             str(report.get("opinion_normalized") or "")
             for report in latest_by_broker
@@ -219,6 +297,10 @@ def _build_subject_payloads(archive_root: Path) -> tuple[dict[str, Any], dict[st
                 {"label": label, "count": count}
                 for label, count in opinion_counter.most_common()
             ],
+            "charts": chart_payload,
+            "target_price_history": chart_payload["target_price_history"],
+            "opinion_distribution": chart_payload["opinion_distribution"],
+            "broker_timeline": chart_payload["broker_timeline"],
             "broker_summary": [
                 {"name": name, "count": count}
                 for name, count in broker_counter.most_common(12)
@@ -284,6 +366,119 @@ def _sync_subject_payloads(
     _write_json(subjects_root / "index.json", subject_index)
 
 
+def _selection_key(digest_date: str, report: dict[str, Any]) -> str:
+    return f"{digest_date}:{report.get('report_id') or report.get('detail_url') or report.get('display_title')}"
+
+
+def _due_date(digest_date: str, days: int) -> str:
+    parsed = _parse_date(digest_date)
+    if not parsed:
+        return ""
+    return (parsed + timedelta(days=days)).isoformat()
+
+
+def _build_selection_record(
+    digest_payload: dict[str, Any],
+    report: dict[str, Any],
+) -> dict[str, Any]:
+    digest_date = str(digest_payload.get("date") or "")
+    return {
+        "key": _selection_key(digest_date, report),
+        "selected_date": digest_date,
+        "report_id": report.get("report_id"),
+        "display_title": report.get("display_title") or report.get("title"),
+        "subject": report.get("subject"),
+        "subject_key": report.get("subject_key"),
+        "broker": report.get("broker"),
+        "category": report.get("category"),
+        "category_label": report.get("category_label"),
+        "score": report.get("score"),
+        "score_reasons": list(report.get("score_reasons") or []),
+        "detail_url": report.get("detail_url"),
+        "target_price": report.get("target_price"),
+        "opinion": report.get("opinion"),
+        "horizons": {
+            f"{days}d": {
+                "days": days,
+                "due_date": _due_date(digest_date, days),
+                "status": "pending",
+                "price_return_pct": None,
+                "volume_change_pct": None,
+                "news_count": None,
+            }
+            for days in PERFORMANCE_HORIZONS
+        },
+    }
+
+
+def _build_performance_summary(records: list[dict[str, Any]]) -> dict[str, Any]:
+    pending_by_horizon: dict[str, int] = Counter()
+    completed_by_horizon: dict[str, int] = Counter()
+    for record in records:
+        horizons = record.get("horizons")
+        if not isinstance(horizons, dict):
+            continue
+        for horizon, payload in horizons.items():
+            if not isinstance(payload, dict):
+                continue
+            status = str(payload.get("status") or "pending")
+            if status == "completed":
+                completed_by_horizon[horizon] += 1
+            else:
+                pending_by_horizon[horizon] += 1
+
+    return {
+        "tracked_selections": len(records),
+        "pending_by_horizon": dict(pending_by_horizon),
+        "completed_by_horizon": dict(completed_by_horizon),
+        "horizons": [f"{days}d" for days in PERFORMANCE_HORIZONS],
+    }
+
+
+def _sync_selection_performance(
+    docs_data_root: Path,
+    digest_payload: dict[str, Any],
+) -> dict[str, Any]:
+    performance_root = docs_data_root / "performance"
+    ledger_path = performance_root / "selection_outcomes.json"
+    existing_payload = _load_json(ledger_path) or {}
+    existing_records = existing_payload.get("selections", [])
+    if not isinstance(existing_records, list):
+        existing_records = []
+
+    records_by_key = {
+        str(record.get("key")): record
+        for record in existing_records
+        if isinstance(record, dict) and record.get("key")
+    }
+
+    for report in digest_payload.get("must_read", []):
+        if not isinstance(report, dict):
+            continue
+        key = _selection_key(str(digest_payload.get("date") or ""), report)
+        if key not in records_by_key:
+            records_by_key[key] = _build_selection_record(digest_payload, report)
+
+    records = sorted(
+        records_by_key.values(),
+        key=lambda item: (
+            str(item.get("selected_date") or ""),
+            float(item.get("score") or 0.0),
+            str(item.get("display_title") or ""),
+        ),
+        reverse=True,
+    )
+    summary = _build_performance_summary(records)
+    payload = {
+        "updated_at": digest_payload.get("generated_at"),
+        "summary": summary,
+        "selections": records[:500],
+    }
+    _write_json(ledger_path, payload)
+    _write_json(performance_root / "latest.json", payload)
+    return payload
+
+
 def publish_digest(
     digest: DailyDigest,
     *,
@@ -293,11 +488,14 @@ def publish_digest(
 ) -> None:
     archive_day_dir = archive_root / digest.date
     digest_payload = digest.to_public_dict()
+    docs_data_root = docs_root / "data"
+    performance_payload = _sync_selection_performance(docs_data_root, digest_payload)
+    if isinstance(digest_payload.get("stats"), dict):
+        digest_payload["stats"]["selection_performance"] = performance_payload.get("summary", {})
 
     _write_json(archive_day_dir / "digest.json", digest_payload)
     _write_text(archive_day_dir / "summary.md", markdown_content)
 
-    docs_data_root = docs_root / "data"
     _write_json(docs_data_root / "days" / f"{digest.date}.json", digest_payload)
     _write_json(docs_data_root / "latest.json", digest_payload)
     _cleanup_stale_requested_day(

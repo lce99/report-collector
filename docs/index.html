@@ -741,6 +741,118 @@
         background: linear-gradient(90deg, rgba(13, 104, 102, 0.82), rgba(13, 104, 102, 0.34));
       }
 
+      .source-health-panel {
+        margin-top: 16px;
+        padding: 18px;
+        border-radius: var(--radius-md);
+        border: 1px solid rgba(24, 36, 45, 0.08);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(245, 239, 231, 0.82));
+      }
+
+      .source-health-list {
+        display: grid;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .source-alert-list {
+        display: grid;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .source-alert-list:empty {
+        display: none;
+      }
+
+      .source-alert-item {
+        display: grid;
+        gap: 5px;
+        padding: 12px 14px;
+        border-radius: 14px;
+        border: 1px solid rgba(177, 63, 71, 0.18);
+        background: rgba(255, 245, 241, 0.82);
+      }
+
+      .source-alert-title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--rose);
+        font-weight: 900;
+      }
+
+      .source-alert-message {
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.45;
+      }
+
+      .source-health-item {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 14px;
+        border-radius: 14px;
+        border: 1px solid rgba(24, 36, 45, 0.08);
+        background: rgba(255, 255, 255, 0.74);
+      }
+
+      .source-health-main {
+        display: grid;
+        gap: 5px;
+        min-width: 0;
+      }
+
+      .source-health-title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        min-width: 0;
+        font-weight: 800;
+      }
+
+      .source-health-title span:last-child {
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .status-dot {
+        width: 9px;
+        height: 9px;
+        flex: 0 0 auto;
+        border-radius: 999px;
+        background: var(--muted);
+      }
+
+      .status-ok {
+        background: var(--accent);
+      }
+
+      .status-empty {
+        background: var(--sky);
+      }
+
+      .status-failed {
+        background: var(--rose);
+      }
+
+      .source-health-detail {
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.45;
+      }
+
+      .source-health-count {
+        color: var(--ink);
+        font-weight: 800;
+        text-align: right;
+        white-space: nowrap;
+      }
+
       .signal-summary {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -766,6 +878,84 @@
         display: block;
         margin-top: 7px;
         font-size: 1.3rem;
+      }
+
+      .chart-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .chart-panel {
+        min-width: 0;
+      }
+
+      .chart-panel h3 {
+        margin: 0 0 10px;
+        font-size: 0.98rem;
+      }
+
+      .target-chart {
+        display: grid;
+        gap: 8px;
+      }
+
+      .target-chart-row {
+        display: grid;
+        grid-template-columns: 86px minmax(0, 1fr) 76px;
+        align-items: center;
+        gap: 9px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .target-chart-track,
+      .opinion-bar-track {
+        height: 9px;
+        border-radius: 999px;
+        background: rgba(24, 36, 45, 0.08);
+        overflow: hidden;
+      }
+
+      .target-chart-fill,
+      .opinion-bar-fill {
+        height: 100%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, rgba(13, 104, 102, 0.82), rgba(49, 94, 123, 0.5));
+      }
+
+      .opinion-chart {
+        display: grid;
+        gap: 10px;
+      }
+
+      .opinion-row {
+        display: grid;
+        grid-template-columns: 86px minmax(0, 1fr) 42px;
+        align-items: center;
+        gap: 9px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .broker-timeline {
+        display: grid;
+        gap: 10px;
+      }
+
+      .broker-timeline-item {
+        display: grid;
+        grid-template-columns: 72px minmax(0, 1fr);
+        gap: 10px;
+        padding-left: 10px;
+        border-left: 2px solid rgba(13, 104, 102, 0.28);
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.45;
+      }
+
+      .broker-timeline-item strong {
+        color: var(--text);
       }
 
       .report-stack,
@@ -898,6 +1088,40 @@
         color: var(--muted);
         font-size: 0.96rem;
         line-height: 1.75;
+      }
+
+      .report-memo {
+        display: grid;
+        gap: 10px;
+        margin-top: 16px;
+        padding-top: 14px;
+        border-top: 1px solid rgba(24, 36, 45, 0.08);
+      }
+
+      .report-memo-title {
+        color: var(--ink);
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      .report-memo-line {
+        display: grid;
+        grid-template-columns: 72px minmax(0, 1fr);
+        gap: 10px;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.55;
+      }
+
+      .report-memo-line strong {
+        color: var(--text);
+      }
+
+      .report-memo-action {
+        margin: 0;
+        color: var(--text);
+        font-size: 13px;
+        line-height: 1.62;
       }
 
       .report-data {
@@ -1071,7 +1295,8 @@
 
         .stats-grid,
         .dual-list,
-        .signal-summary {
+        .signal-summary,
+        .chart-grid {
           grid-template-columns: 1fr;
         }
 
@@ -1270,6 +1495,17 @@
               <div id="brokerBreakdown" class="count-list"></div>
             </section>
           </div>
+          <section class="source-health-panel">
+            <div class="section-head">
+              <div class="section-title-group">
+                <span class="section-kicker">Source Health</span>
+                <h3>수집 소스 상태</h3>
+                <span id="sourceHealthMeta" class="section-meta">수집기 상태를 불러오는 중입니다.</span>
+              </div>
+            </div>
+            <div id="sourceAlertList" class="source-alert-list"></div>
+            <div id="sourceHealthList" class="source-health-list"></div>
+          </section>
           </article>
         </section>
 
@@ -1343,6 +1579,30 @@
           <div class="subgroup">
             <h3>현재 컨센서스 스냅샷</h3>
             <div id="subjectTargetChips" class="chips"></div>
+          </div>
+        </article>
+
+        <article class="card section section-subject-charts">
+          <div class="section-head">
+            <div class="section-title-group">
+              <span class="section-kicker">Broker View Shift</span>
+              <h2>최근 2주 증권사 시각 변화</h2>
+              <span class="section-meta">목표가, 의견 분포, 브로커 업데이트 흐름을 히스토리로 봅니다.</span>
+            </div>
+          </div>
+          <div class="chart-grid">
+            <section class="chart-panel">
+              <h3>목표가 추이</h3>
+              <div id="subjectTargetChart" class="target-chart"></div>
+            </section>
+            <section class="chart-panel">
+              <h3>의견 분포</h3>
+              <div id="subjectOpinionChart" class="opinion-chart"></div>
+            </section>
+            <section class="chart-panel">
+              <h3>브로커 타임라인</h3>
+              <div id="subjectBrokerTimelineChart" class="broker-timeline"></div>
+            </section>
           </div>
         </article>
 
@@ -1452,6 +1712,37 @@
           return "-";
         }
         return new Intl.NumberFormat("ko-KR").format(Number(value));
+      }
+
+      function formatDuration(value) {
+        const seconds = Number(value || 0);
+        if (!Number.isFinite(seconds)) {
+          return "0.00초";
+        }
+        return `${seconds.toFixed(2)}초`;
+      }
+
+      function sourceStatusLabel(status) {
+        if (status === "ok") {
+          return "정상";
+        }
+        if (status === "empty") {
+          return "무출력";
+        }
+        if (status === "failed") {
+          return "실패";
+        }
+        return "확인 필요";
+      }
+
+      function alertSeverityLabel(severity) {
+        if (severity === "critical") {
+          return "긴급";
+        }
+        if (severity === "warning") {
+          return "주의";
+        }
+        return "확인";
       }
 
       function formatShortDateTime(value) {
@@ -1683,6 +1974,7 @@
           report.opinion,
           report.previous_opinion,
           report.previous_analyst,
+          investmentMemoText(report.investment_memo),
           ...(report.score_reasons || []),
           ...(report.priority_subject_matches || []),
           ...(report.priority_keyword_matches || []),
@@ -1765,6 +2057,94 @@
         return link;
       }
 
+      function investmentMemoText(memo) {
+        if (!memo || typeof memo !== "object") {
+          return "";
+        }
+        return [
+          memo.stance,
+          memo.confidence,
+          memo.action,
+          ...(memo.thesis || []),
+          ...(memo.catalysts || []),
+          ...(memo.risks || []),
+          ...(memo.numbers || []),
+        ]
+          .map(normalize)
+          .join(" ");
+      }
+
+      function hasInvestmentMemo(report) {
+        return Boolean(investmentMemoText(report?.investment_memo));
+      }
+
+      function memoStanceLabel(stance) {
+        if (stance === "positive") {
+          return "긍정";
+        }
+        if (stance === "neutral") {
+          return "중립";
+        }
+        if (stance === "negative") {
+          return "부정";
+        }
+        return "관찰";
+      }
+
+      function memoConfidenceLabel(confidence) {
+        if (confidence === "high") {
+          return "높음";
+        }
+        if (confidence === "medium") {
+          return "보통";
+        }
+        return "낮음";
+      }
+
+      function buildMemoLine(label, values) {
+        const cleaned = (values || []).filter(Boolean);
+        if (!cleaned.length) {
+          return null;
+        }
+        const row = el("div", "report-memo-line");
+        row.appendChild(el("strong", null, label));
+        row.appendChild(el("span", null, cleaned.slice(0, 3).join(" · ")));
+        return row;
+      }
+
+      function buildInvestmentMemo(report) {
+        const memo = report?.investment_memo || {};
+        if (!hasInvestmentMemo(report)) {
+          return null;
+        }
+
+        const node = el("div", "report-memo");
+        node.appendChild(el("div", "report-memo-title", "LLM 투자 메모"));
+
+        const meta = el("div", "report-kicker");
+        meta.appendChild(buildBadge(`톤 ${memoStanceLabel(memo.stance)}`, "accent"));
+        meta.appendChild(buildBadge(`신뢰도 ${memoConfidenceLabel(memo.confidence)}`));
+        node.appendChild(meta);
+
+        if (memo.action) {
+          node.appendChild(el("p", "report-memo-action", memo.action));
+        }
+
+        [
+          ["핵심", memo.thesis],
+          ["촉매", memo.catalysts],
+          ["리스크", memo.risks],
+          ["숫자", memo.numbers],
+        ].forEach(([label, values]) => {
+          const line = buildMemoLine(label, values);
+          if (line) {
+            node.appendChild(line);
+          }
+        });
+
+        return node;
+      }
+
       function buildReportCard(report, featured = false) {
         const article = el("article", "report-card");
         const kicker = el("div", "report-kicker");
@@ -1781,6 +2161,9 @@
         if (report.has_pdf_text) {
           kicker.appendChild(buildBadge("PDF 본문 확보", "sky"));
         }
+        if (hasInvestmentMemo(report)) {
+          kicker.appendChild(buildBadge("LLM 투자 메모", "accent"));
+        }
 
         kicker.appendChild(buildBadge(report.category_label || "카테고리 없음"));
         kicker.appendChild(buildBadge(report.broker || "증권사 없음"));
@@ -1796,6 +2179,10 @@
         article.appendChild(title);
 
         article.appendChild(el("p", "report-summary", compactText(report.summary || report.excerpt, featured ? 220 : 180)));
+        const memo = buildInvestmentMemo(report);
+        if (memo && featured) {
+          article.appendChild(memo);
+        }
 
         const data = el("div", "report-data");
         data.appendChild(buildDatum("점수", Number(report.score || 0).toFixed(2)));
@@ -2101,6 +2488,63 @@
         });
       }
 
+      function renderSourceHealth(digest) {
+        const container = document.getElementById("sourceHealthList");
+        const alertContainer = document.getElementById("sourceAlertList");
+        const meta = document.getElementById("sourceHealthMeta");
+        const health = digest.stats?.collector_health || [];
+        const summary = digest.stats?.collector_health_summary || {};
+        const alerts = digest.stats?.collector_alerts || [];
+        container.innerHTML = "";
+        alertContainer.innerHTML = "";
+
+        if (!health.length) {
+          meta.textContent = "이번 데이터에는 소스 상태 정보가 없습니다.";
+          container.appendChild(el("div", "empty", "소스 헬스체크 정보가 아직 저장되지 않았습니다."));
+          return;
+        }
+
+        meta.textContent =
+          `정상 ${formatNumber(summary.ok_sources || 0)}개 · ` +
+          `무출력 ${formatNumber(summary.empty_sources || 0)}개 · ` +
+          `실패 ${formatNumber(summary.failed_sources || 0)}개 · ` +
+          `알림 ${formatNumber(alerts.length)}건`;
+
+        alerts.slice(0, 5).forEach((item) => {
+          const row = el("div", "source-alert-item");
+          const title = el("div", "source-alert-title");
+          title.appendChild(el("span", null, alertSeverityLabel(item.severity)));
+          title.appendChild(el("strong", null, item.title || item.label || "-"));
+          row.appendChild(title);
+          row.appendChild(el("div", "source-alert-message", compactText(item.message, 120)));
+          alertContainer.appendChild(row);
+        });
+
+        health.forEach((item) => {
+          const row = el("div", "source-health-item");
+          const main = el("div", "source-health-main");
+          const title = el("div", "source-health-title");
+          const dot = el("span", `status-dot status-${item.status || "unknown"}`);
+          title.appendChild(dot);
+          title.appendChild(el("span", null, item.label || item.source || "-"));
+          main.appendChild(title);
+
+          const detailParts = [
+            sourceStatusLabel(item.status),
+            item.collector || "",
+            formatDuration(item.duration_seconds),
+          ].filter(Boolean);
+          if (item.message && item.status !== "ok") {
+            detailParts.push(compactText(item.message, 90));
+          }
+          main.appendChild(el("div", "source-health-detail", detailParts.join(" · ")));
+
+          row.appendChild(main);
+          row.appendChild(el("strong", "source-health-count", `${formatNumber(item.report_count || 0)}건`));
+          container.appendChild(row);
+        });
+      }
+
       function renderStats(digest) {
         const statsGrid = document.getElementById("statsGrid");
         statsGrid.innerHTML = "";
@@ -2108,6 +2552,8 @@
         const categories = digest.stats?.categories || [];
         const brokers = digest.stats?.brokers || [];
         const changeSummary = digest.change_summary || {};
+        const collectorSummary = digest.stats?.collector_health_summary || {};
+        const collectorAlertSummary = digest.stats?.collector_alert_summary || {};
 
         const cards = [
           {
@@ -2126,6 +2572,11 @@
             body: "PDF에서 텍스트까지 읽은 리포트",
           },
           {
+            label: "LLM 투자 메모",
+            value: formatNumber(digest.stats?.llm_investment_memo_reports || 0),
+            body: "구조화된 투자 메모가 붙은 리포트",
+          },
+          {
             label: "변화 감지",
             value: formatNumber(changeSummary.changed_reports || 0),
             body: "목표가, 의견, 애널리스트 변경",
@@ -2140,6 +2591,20 @@
             value: brokers[0]?.name || "-",
             body: `${formatNumber(brokers[0]?.count || 0)}건`,
           },
+          {
+            label: "소스 상태",
+            value: `${formatNumber(collectorSummary.failed_sources || 0)} 실패`,
+            body: `정상 ${formatNumber(collectorSummary.ok_sources || 0)} · 무출력 ${formatNumber(
+              collectorSummary.empty_sources || 0
+            )}`,
+          },
+          {
+            label: "운영 알림",
+            value: `${formatNumber(collectorAlertSummary.total_alerts || 0)}건`,
+            body: `긴급 ${formatNumber(collectorAlertSummary.critical_alerts || 0)} · 주의 ${formatNumber(
+              collectorAlertSummary.warning_alerts || 0
+            )}`,
+          },
         ];
 
         cards.forEach((card) => {
@@ -2152,6 +2617,7 @@
 
         renderCountBreakdown(categories, "categoryBreakdown", "label");
         renderCountBreakdown(brokers, "brokerBreakdown", "name");
+        renderSourceHealth(digest);
       }
 
       function renderSignalSummary(digest, filteredChanges) {
@@ -2338,6 +2804,72 @@
         });
       }
 
+      function renderSubjectCharts(detail) {
+        const targetContainer = document.getElementById("subjectTargetChart");
+        const opinionContainer = document.getElementById("subjectOpinionChart");
+        const timelineContainer = document.getElementById("subjectBrokerTimelineChart");
+        targetContainer.innerHTML = "";
+        opinionContainer.innerHTML = "";
+        timelineContainer.innerHTML = "";
+
+        const targetHistory = (detail.target_price_history || detail.charts?.target_price_history || [])
+          .filter((item) => item && item.target_price_value !== null && item.target_price_value !== undefined)
+          .slice(-10);
+        if (!targetHistory.length) {
+          targetContainer.appendChild(el("div", "empty", "목표가 히스토리가 아직 없습니다."));
+        } else {
+          const values = targetHistory.map((item) => Number(item.target_price_value || 0));
+          const min = Math.min(...values);
+          const max = Math.max(...values);
+          const span = Math.max(max - min, 1);
+          targetHistory.forEach((item) => {
+            const row = el("div", "target-chart-row");
+            row.appendChild(el("span", null, item.date || "-"));
+            const track = el("div", "target-chart-track");
+            const fill = el("div", "target-chart-fill");
+            fill.style.width = `${Math.max(((Number(item.target_price_value || 0) - min) / span) * 100, 8)}%`;
+            track.title = `${item.broker || "-"} ${formatTargetValue(item.target_price_value)}`;
+            track.appendChild(fill);
+            row.appendChild(track);
+            row.appendChild(el("strong", null, formatTargetValue(item.target_price_value)));
+            targetContainer.appendChild(row);
+          });
+        }
+
+        const opinions = detail.opinion_distribution || detail.charts?.opinion_distribution || detail.opinion_summary || [];
+        if (!opinions.length) {
+          opinionContainer.appendChild(el("div", "empty", "의견 정보가 아직 없습니다."));
+        } else {
+          const maxCount = Math.max(...opinions.map((item) => Number(item.count || 0)), 1);
+          opinions.forEach((item) => {
+            const row = el("div", "opinion-row");
+            row.appendChild(el("span", null, item.label || "-"));
+            const track = el("div", "opinion-bar-track");
+            const fill = el("div", "opinion-bar-fill");
+            fill.style.width = `${Math.max((Number(item.count || 0) / maxCount) * 100, 8)}%`;
+            track.appendChild(fill);
+            row.appendChild(track);
+            row.appendChild(el("strong", null, formatNumber(item.count || 0)));
+            opinionContainer.appendChild(row);
+          });
+        }
+
+        const timeline = (detail.broker_timeline || detail.charts?.broker_timeline || []).slice(-8).reverse();
+        if (!timeline.length) {
+          timelineContainer.appendChild(el("div", "empty", "최근 2주 브로커 업데이트가 없습니다."));
+        } else {
+          timeline.forEach((item) => {
+            const row = el("div", "broker-timeline-item");
+            row.appendChild(el("span", null, item.date || "-"));
+            const body = el("div");
+            body.appendChild(el("strong", null, item.broker || "-"));
+            body.appendChild(el("div", null, compactText(item.title || "-", 90)));
+            row.appendChild(body);
+            timelineContainer.appendChild(row);
+          });
+        }
+      }
+
       function renderSubjectView() {
         const detail = state.subjectDetail;
         if (!detail) {
@@ -2346,6 +2878,7 @@
 
         setViewMode("subject");
         renderSubjectHero(detail);
+        renderSubjectCharts(detail);
 
         document.getElementById("subjectTitle").textContent = detail.subject_name || "종목 상세";
         document.getElementById("subjectMeta").textContent = `최근 업데이트 ${detail.latest_report_date || "-"} · 누적 ${

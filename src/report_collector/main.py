@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from argparse import ArgumentParser
 from datetime import date, datetime, timedelta
+from time import perf_counter
 from zoneinfo import ZoneInfo
 
 from report_collector.config import Settings
@@ -16,9 +17,18 @@ from report_collector.models import Report
 from report_collector.sources.korea_investment import KoreaInvestmentCollector
 from report_collector.sources.mirae_asset import MiraeAssetCollector
 from report_collector.sources.naver_research import NaverResearchCollector
+from report_collector.sources.shinhan_investment import ShinhanInvestmentCollector
 from report_collector.sources.common import normalize_report_key
 from report_collector.storage import publish_digest
 from report_collector.telegram_bot import send_messages
+
+
+COLLECTOR_SPECS = (
+    ("naver_research", "네이버 금융 리서치", NaverResearchCollector),
+    ("mirae_asset_official", "미래에셋증권 공식", MiraeAssetCollector),
+    ("korea_investment_official", "한국투자증권 공식", KoreaInvestmentCollector),
+    ("shinhan_investment_official", "신한투자증권 공식", ShinhanInvestmentCollector),
+)
 
 
 def _report_dedupe_key(report: Report) -> tuple[str, str]:
@@ -30,7 +40,8 @@ def _report_dedupe_key(report: Report) -> tuple[str, str]:
 
 def _report_preference(report: Report) -> tuple[int, int, int, int]:
     source_rank = {
-        "mirae_asset_official": 3,
+        "mirae_asset_official": 4,
+        "shinhan_investment_official": 3,
         "korea_investment_official": 2,
         "naver_research": 1,
     }.get(report.source, 0)
@@ -87,20 +98,72 @@ def _dedupe_reports(reports: list[Report]) -> list[Report]:
     return list(selected.values())
 
 
-def _collect_reports(target_date: date, settings: Settings) -> list[Report]:
-    collectors = [
-        NaverResearchCollector(settings),
-        MiraeAssetCollector(settings),
-        KoreaInvestmentCollector(settings),
-    ]
+def _trim_error_message(exc: Exception, limit: int = 180) -> str:
+    message = f"{exc.__class__.__name__}: {exc}"
+    if len(message) <= limit:
+        return message
+    return message[: limit - 1].rstrip() + "…"
+
+
+def _run_collector(
+    collector,
+    *,
+    target_date: date,
+    source: str,
+    label: str,
+) -> tuple[list[Report], dict[str, object]]:
+    started_at = perf_counter()
+    try:
+        reports = list(collector.collect(target_date))
+    except Exception as exc:
+        elapsed = round(perf_counter() - started_at, 2)
+        message = _trim_error_message(exc)
+        print(f"[warn] {collector.__class__.__name__} failed: {exc}")
+        return [], {
+            "source": source,
+            "label": label,
+            "collector": collector.__class__.__name__,
+            "status": "failed",
+            "report_count": 0,
+            "duration_seconds": elapsed,
+            "message": message,
+        }
+
+    elapsed = round(perf_counter() - started_at, 2)
+    return reports, {
+        "source": source,
+        "label": label,
+        "collector": collector.__class__.__name__,
+        "status": "ok" if reports else "empty",
+        "report_count": len(reports),
+        "duration_seconds": elapsed,
+        "message": "" if reports else "정상 종료됐지만 해당 날짜 리포트가 없습니다.",
+    }
+
+
+def _collect_reports(
+    target_date: date,
+    settings: Settings,
+) -> tuple[list[Report], dict[str, object]]:
     reports: list[Report] = []
-    for collector in collectors:
-        try:
-            reports.extend(collector.collect(target_date))
-        except Exception as exc:
-            print(f"[warn] {collector.__class__.__name__} failed: {exc}")
-            continue
-    return _dedupe_reports(reports)
+    collector_health: list[dict[str, object]] = []
+    for source, label, collector_class in COLLECTOR_SPECS:
+        collector_reports, health = _run_collector(
+            collector_class(settings),
+            target_date=target_date,
+            source=source,
+            label=label,
+        )
+        reports.extend(collector_reports)
+        collector_health.append(health)
+
+    deduped_reports = _dedupe_reports(reports)
+    return deduped_reports, {
+        "date": target_date.isoformat(),
+        "raw_report_count": len(reports),
+        "deduped_report_count": len(deduped_reports),
+        "collectors": collector_health,
+    }
 
 
 def _parse_args() -> ArgumentParser:
@@ -129,17 +192,19 @@ def _resolve_target_date(value: str | None, timezone_name: str) -> date:
 def _collect_with_fallback(
     requested_date: date,
     settings: Settings,
-) -> tuple[date, list, str]:
-    reports = _collect_reports(requested_date, settings)
+) -> tuple[date, list[Report], str, list[dict[str, object]]]:
+    reports, attempt = _collect_reports(requested_date, settings)
+    attempts = [attempt]
     if reports:
-        return requested_date, reports, ""
+        return requested_date, reports, "", attempts
 
     if not settings.enable_date_fallback:
-        return requested_date, reports, ""
+        return requested_date, reports, "", attempts
 
     for days_back in range(1, settings.max_date_fallback_days + 1):
         candidate_date = requested_date - timedelta(days=days_back)
-        candidate_reports = _collect_reports(candidate_date, settings)
+        candidate_reports, candidate_attempt = _collect_reports(candidate_date, settings)
+        attempts.append(candidate_attempt)
         if candidate_reports:
             return (
                 candidate_date,
@@ -148,6 +213,7 @@ def _collect_with_fallback(
                     f"{requested_date.isoformat()} 기준 리포트가 없어 "
                     f"{candidate_date.isoformat()} 자료로 대체했습니다."
                 ),
+                attempts,
             )
 
     return (
@@ -157,6 +223,7 @@ def _collect_with_fallback(
             f"{requested_date.isoformat()} 기준 리포트가 없어 "
             f"최근 {settings.max_date_fallback_days}일 내 자료도 찾지 못했습니다."
         ),
+        attempts,
     )
 
 
@@ -167,10 +234,12 @@ def main() -> int:
     settings = Settings.from_env()
     requested_date = _resolve_target_date(args.target_date, settings.timezone)
 
-    effective_date, reports, collection_note = _collect_with_fallback(
-        requested_date,
-        settings,
-    )
+    (
+        effective_date,
+        reports,
+        collection_note,
+        collection_attempts,
+    ) = _collect_with_fallback(requested_date, settings)
 
     digest = enrich_and_build_digest(
         reports,
@@ -178,6 +247,7 @@ def main() -> int:
         requested_date=requested_date.isoformat(),
         generated_at=now_iso_string(settings.timezone),
         collection_note=collection_note,
+        collection_attempts=collection_attempts,
         settings=settings,
     )
     enhance_digest_summaries(digest, settings)

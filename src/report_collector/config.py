@@ -115,6 +115,7 @@ class Settings:
     priority_subjects: tuple[str, ...]
     priority_keywords: tuple[str, ...]
     priority_only: bool
+    openai_summary_enabled_flag: bool
     openai_api_key: str | None
     openai_model: str
     openai_summary_max_reports: int
@@ -142,7 +143,8 @@ class Settings:
     @property
     def openai_summary_enabled(self) -> bool:
         return bool(
-            self.openai_api_key
+            self.openai_summary_enabled_flag
+            and self.openai_api_key
             and self.openai_summary_max_reports > 0
         )
 
@@ -214,6 +216,10 @@ class Settings:
                 (),
             ),
             priority_only=_parse_bool(os.getenv("PRIORITY_ONLY"), False),
+            openai_summary_enabled_flag=_parse_bool(
+                os.getenv("OPENAI_SUMMARY_ENABLED"),
+                False,
+            ),
             openai_api_key=os.getenv("OPENAI_API_KEY"),
             openai_model=os.getenv("OPENAI_MODEL", "gpt-5-mini"),
             openai_summary_max_reports=_parse_int(

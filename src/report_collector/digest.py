@@ -28,6 +28,13 @@ CATEGORY_WEIGHTS = {
     "debenture": 1.7,
 }
 
+SOURCE_WEIGHTS = {
+    "mirae_asset_official": 0.45,
+    "shinhan_investment_official": 0.45,
+    "korea_investment_official": 0.4,
+    "naver_research": 0.1,
+}
+
 TITLE_KEYWORD_BOOSTS = {
     "preview": 1.4,
     "프리뷰": 1.4,
@@ -61,12 +68,21 @@ MUST_READ_QUOTAS = (
     ("debenture", 1),
 )
 
+MUST_READ_BROKER_SOFT_LIMIT = 3
+MUST_READ_SIGNAL_LIMIT = 3
+
 RANKING_GROUPS = (
     ("company", "종목 랭킹", {"company"}),
     ("industry", "산업 랭킹", {"industry"}),
     ("macro", "매크로 랭킹", {"economy", "market", "debenture"}),
     ("strategy", "전략 랭킹", {"invest"}),
 )
+
+COLLECTOR_HISTORY_LIMIT = 5
+MIN_SOURCE_BASELINE_COUNT = 3.0
+MIN_TOTAL_BASELINE_COUNT = 20.0
+SOURCE_DROP_RATIO_THRESHOLD = 0.45
+TOTAL_DROP_RATIO_THRESHOLD = 0.55
 
 STOPWORDS = {
     "리포트",
@@ -171,6 +187,12 @@ def _score_report(report: Report, settings: Settings) -> tuple[float, list[str]]
     score = CATEGORY_WEIGHTS.get(report.category, 1.4)
     reasons: list[str] = [f"{report.category_label} 카테고리"]
 
+    source_boost = SOURCE_WEIGHTS.get(report.source, 0.0)
+    if source_boost:
+        score += source_boost
+        if report.source != "naver_research":
+            reasons.append("공식 소스")
+
     if report.priority_subject_matches:
         score += 4.0 + max(0.0, (len(report.priority_subject_matches) - 1) * 0.35)
         reasons.append(f"관심 종목({', '.join(report.priority_subject_matches[:3])})")
@@ -191,6 +213,28 @@ def _score_report(report: Report, settings: Settings) -> tuple[float, list[str]]
         reasons.append("투자의견 포함")
     if report.analyst:
         score += 0.2
+
+    if report.target_price_change == "up":
+        score += 2.2
+        reasons.append("목표가 상향")
+    elif report.target_price_change == "down":
+        score += 1.25
+        reasons.append("목표가 하향")
+    if report.target_price_change_pct is not None:
+        score += min(1.2, abs(report.target_price_change_pct) / 12)
+    if report.opinion_changed:
+        score += 1.6
+        if report.opinion_change_direction == "up":
+            reasons.append("의견 상향")
+        elif report.opinion_change_direction == "down":
+            reasons.append("의견 하향")
+        else:
+            reasons.append("의견 변경")
+    if report.coverage_initiated:
+        score += 1.2
+        reasons.append("신규 커버리지")
+    if report.analyst_changed:
+        score += 0.45
 
     broker_index = None
     for index, broker in enumerate(settings.broker_priority):
@@ -224,9 +268,10 @@ def _score_report(report: Report, settings: Settings) -> tuple[float, list[str]]
         score += 0.25
 
     if report.has_pdf_text:
-        score += 0.2
+        score += 0.35
+        reasons.append("PDF 본문 확보")
 
-    return round(score, 2), reasons[:4]
+    return round(score, 2), list(dict.fromkeys(reasons))[:5]
 
 
 def _extract_keywords(reports: list[Report], limit: int = 8) -> list[str]:
@@ -268,6 +313,37 @@ def _load_previous_digest(digest_path) -> dict[str, object] | None:
     if not isinstance(payload, dict):
         return None
     return payload
+
+
+def _iter_previous_digests(
+    archive_root,
+    current_date: str,
+    limit: int = COLLECTOR_HISTORY_LIMIT,
+) -> list[dict[str, object]]:
+    if not archive_root or not archive_root.exists():
+        return []
+
+    previous_digests: list[dict[str, object]] = []
+    for day_dir in sorted(
+        (path for path in archive_root.iterdir() if path.is_dir()),
+        reverse=True,
+    ):
+        digest_path = day_dir / "digest.json"
+        if not digest_path.exists():
+            continue
+
+        payload = _load_previous_digest(digest_path)
+        if not payload:
+            continue
+        payload_date = str(payload.get("date", ""))
+        if not payload_date or payload_date >= current_date:
+            continue
+
+        previous_digests.append(payload)
+        if len(previous_digests) >= limit:
+            break
+
+    return previous_digests
 
 
 def _iter_previous_reports(
@@ -463,7 +539,32 @@ def _annotate_changes(
     return summary, changed_reports
 
 
-def _select_must_read(reports: list[Report], limit: int) -> list[Report]:
+def _safe_int(value: object, default: int = 0) -> int:
+    try:
+        return int(value or default)
+    except (TypeError, ValueError):
+        return default
+
+
+def _safe_float(value: object, default: float = 0.0) -> float:
+    try:
+        return float(value or default)
+    except (TypeError, ValueError):
+        return default
+
+
+def _must_read_identity_key(report: Report) -> str:
+    if report.subject_key:
+        return f"subject:{report.subject_key}"
+    return f"title:{normalize_report_key(report.display_title or report.title)}"
+
+
+def _select_must_read(
+    reports: list[Report],
+    limit: int,
+    *,
+    changed_reports: list[Report] | None = None,
+) -> list[Report]:
     if not reports:
         return []
 
@@ -473,22 +574,48 @@ def _select_must_read(reports: list[Report], limit: int) -> list[Report]:
 
     selected: list[Report] = []
     seen_ids: set[str] = set()
+    seen_identity_keys: set[str] = set()
+    broker_counts: Counter[str] = Counter()
+
+    def add_candidate(report: Report, *, enforce_diversity: bool) -> bool:
+        if report.report_id in seen_ids or len(selected) >= limit:
+            return False
+
+        identity_key = _must_read_identity_key(report)
+        if enforce_diversity:
+            if identity_key in seen_identity_keys:
+                return False
+            if broker_counts[report.broker] >= MUST_READ_BROKER_SOFT_LIMIT:
+                return False
+
+        selected.append(report)
+        seen_ids.add(report.report_id)
+        seen_identity_keys.add(identity_key)
+        broker_counts[report.broker] += 1
+        return True
+
+    signal_candidates = changed_reports or []
+    signal_target = min(MUST_READ_SIGNAL_LIMIT, limit)
+    for report in signal_candidates:
+        if len(selected) >= signal_target:
+            break
+        add_candidate(report, enforce_diversity=True)
 
     for category, quota in MUST_READ_QUOTAS:
-        for report in grouped.get(category, [])[:quota]:
-            if report.report_id in seen_ids or len(selected) >= limit:
-                continue
-            selected.append(report)
-            seen_ids.add(report.report_id)
+        category_count = sum(1 for report in selected if report.category == category)
+        for report in grouped.get(category, []):
+            if category_count >= quota or len(selected) >= limit:
+                break
+            if add_candidate(report, enforce_diversity=True):
+                category_count += 1
 
     if len(selected) < limit:
         for report in reports:
-            if report.report_id in seen_ids:
-                continue
-            selected.append(report)
-            seen_ids.add(report.report_id)
-            if len(selected) >= limit:
-                break
+            add_candidate(report, enforce_diversity=True)
+
+    if len(selected) < limit:
+        for report in reports:
+            add_candidate(report, enforce_diversity=False)
 
     return selected[:limit]
 
@@ -497,18 +624,41 @@ def _build_stats(
     reports: list[Report],
     keywords: list[str],
     change_summary: dict[str, object],
+    collection_attempts: list[dict[str, object]] | None = None,
+    *,
+    archive_root=None,
+    current_date: str = "",
 ) -> dict[str, object]:
     category_counts = Counter(report.category_label for report in reports)
     broker_counts = Counter(report.broker for report in reports)
     priority_count = sum(1 for report in reports if report.is_priority_match)
     pdf_text_count = sum(1 for report in reports if report.has_pdf_text)
+    active_attempt = _active_collection_attempt(collection_attempts)
+    collector_health = _collector_health_items(active_attempt)
+    collector_summary = _build_collector_health_summary(
+        collection_attempts or [],
+        collector_health,
+    )
+    collector_alerts = _build_collector_alerts(
+        collection_attempts or [],
+        collector_health,
+        archive_root=archive_root,
+        current_date=current_date,
+    )
+    collector_alert_summary = _build_collector_alert_summary(collector_alerts)
 
     return {
         "total_reports": len(reports),
         "priority_match_reports": priority_count,
         "pdf_text_reports": pdf_text_count,
         "llm_summary_reports": 0,
+        "llm_investment_memo_reports": 0,
         "changed_reports": change_summary.get("changed_reports", 0),
+        "collector_health": collector_health,
+        "collector_health_summary": collector_summary,
+        "collector_health_attempts": collection_attempts or [],
+        "collector_alerts": collector_alerts,
+        "collector_alert_summary": collector_alert_summary,
         "categories": [
             {"label": label, "count": count}
             for label, count in category_counts.most_common()
@@ -518,6 +668,272 @@ def _build_stats(
             for broker, count in broker_counts.most_common(10)
         ],
         "keywords": keywords,
+    }
+
+
+def _active_collection_attempt(
+    collection_attempts: list[dict[str, object]] | None,
+) -> dict[str, object] | None:
+    if not collection_attempts:
+        return None
+    for attempt in reversed(collection_attempts):
+        if _safe_int(attempt.get("deduped_report_count")) > 0:
+            return attempt
+    return collection_attempts[-1]
+
+
+def _collector_health_items(
+    active_attempt: dict[str, object] | None,
+) -> list[dict[str, object]]:
+    if not active_attempt:
+        return []
+    collectors = active_attempt.get("collectors")
+    if not isinstance(collectors, list):
+        return []
+    return [item for item in collectors if isinstance(item, dict)]
+
+
+def _build_collector_health_summary(
+    collection_attempts: list[dict[str, object]],
+    collector_health: list[dict[str, object]],
+) -> dict[str, object]:
+    status_counts = Counter(str(item.get("status") or "unknown") for item in collector_health)
+    active_attempt = _active_collection_attempt(collection_attempts)
+    return {
+        "available": bool(collector_health),
+        "active_date": str(active_attempt.get("date") or "") if active_attempt else "",
+        "attempt_count": len(collection_attempts),
+        "ok_sources": status_counts.get("ok", 0),
+        "empty_sources": status_counts.get("empty", 0),
+        "failed_sources": status_counts.get("failed", 0),
+        "raw_report_count": _safe_int(active_attempt.get("raw_report_count"))
+        if active_attempt
+        else 0,
+        "deduped_report_count": _safe_int(active_attempt.get("deduped_report_count"))
+        if active_attempt
+        else 0,
+    }
+
+
+def _source_counts_from_digest(payload: dict[str, object]) -> dict[str, int]:
+    stats = payload.get("stats")
+    if isinstance(stats, dict):
+        collector_health = stats.get("collector_health")
+        if isinstance(collector_health, list):
+            counts: dict[str, int] = {}
+            for item in collector_health:
+                if not isinstance(item, dict):
+                    continue
+                source = str(item.get("source") or "")
+                if not source:
+                    continue
+                counts[source] = _safe_int(item.get("report_count"))
+            if counts:
+                return counts
+
+    counts = Counter()
+    reports_payload = payload.get("reports")
+    if isinstance(reports_payload, list):
+        for report in reports_payload:
+            if isinstance(report, dict):
+                source = str(report.get("source") or "")
+                if source:
+                    counts[source] += 1
+    return dict(counts)
+
+
+def _total_count_from_digest(payload: dict[str, object]) -> int:
+    stats = payload.get("stats")
+    if isinstance(stats, dict):
+        collector_summary = stats.get("collector_health_summary")
+        if isinstance(collector_summary, dict):
+            total = _safe_int(collector_summary.get("deduped_report_count"))
+            if total:
+                return total
+        total = _safe_int(stats.get("total_reports"))
+        if total:
+            return total
+
+    reports_payload = payload.get("reports")
+    if isinstance(reports_payload, list):
+        return len(reports_payload)
+    return 0
+
+
+def _collector_history_baselines(
+    archive_root,
+    current_date: str,
+) -> dict[str, object]:
+    previous_digests = _iter_previous_digests(archive_root, current_date)
+    source_counts: dict[str, list[int]] = defaultdict(list)
+    total_counts: list[int] = []
+
+    for payload in previous_digests:
+        total_count = _total_count_from_digest(payload)
+        if total_count:
+            total_counts.append(total_count)
+        for source, count in _source_counts_from_digest(payload).items():
+            source_counts[source].append(count)
+
+    source_baselines = {
+        source: {
+            "average_report_count": round(sum(counts) / len(counts), 1),
+            "sample_days": len(counts),
+            "max_report_count": max(counts),
+        }
+        for source, counts in source_counts.items()
+        if counts
+    }
+
+    total_average = round(sum(total_counts) / len(total_counts), 1) if total_counts else 0.0
+    return {
+        "source": source_baselines,
+        "total": {
+            "average_report_count": total_average,
+            "sample_days": len(total_counts),
+            "max_report_count": max(total_counts) if total_counts else 0,
+        },
+    }
+
+
+def _build_collector_alerts(
+    collection_attempts: list[dict[str, object]],
+    collector_health: list[dict[str, object]],
+    *,
+    archive_root=None,
+    current_date: str = "",
+) -> list[dict[str, object]]:
+    alerts: list[dict[str, object]] = []
+    active_attempt = _active_collection_attempt(collection_attempts)
+    baselines = (
+        _collector_history_baselines(archive_root, current_date)
+        if archive_root and current_date
+        else {"source": {}, "total": {}}
+    )
+
+    total_baseline = baselines.get("total", {})
+    total_average = _safe_float(
+        total_baseline.get("average_report_count") if isinstance(total_baseline, dict) else 0
+    )
+    current_total = (
+        _safe_int(active_attempt.get("deduped_report_count")) if active_attempt else 0
+    )
+    if (
+        total_average >= MIN_TOTAL_BASELINE_COUNT
+        and current_total <= total_average * TOTAL_DROP_RATIO_THRESHOLD
+    ):
+        alerts.append(
+            {
+                "type": "total_volume_drop",
+                "severity": "warning",
+                "source": "__total__",
+                "label": "전체 수집량",
+                "title": "전체 수집량 급감",
+                "message": (
+                    f"오늘 {current_total}건으로 최근 평균 {total_average:.1f}건 대비 낮습니다."
+                ),
+                "current_count": current_total,
+                "average_count": total_average,
+                "sample_days": _safe_int(
+                    total_baseline.get("sample_days") if isinstance(total_baseline, dict) else 0
+                ),
+            }
+        )
+
+    source_baselines = baselines.get("source", {})
+    if not isinstance(source_baselines, dict):
+        source_baselines = {}
+
+    for item in collector_health:
+        source = str(item.get("source") or "")
+        label = str(item.get("label") or source or "-")
+        status = str(item.get("status") or "unknown")
+        current_count = _safe_int(item.get("report_count"))
+        baseline = source_baselines.get(source)
+        average_count = (
+            _safe_float(baseline.get("average_report_count"))
+            if isinstance(baseline, dict)
+            else 0.0
+        )
+        sample_days = (
+            _safe_int(baseline.get("sample_days"))
+            if isinstance(baseline, dict)
+            else 0
+        )
+
+        if status == "failed":
+            alerts.append(
+                {
+                    "type": "collector_failed",
+                    "severity": "critical",
+                    "source": source,
+                    "label": label,
+                    "title": f"{label} 수집 실패",
+                    "message": str(item.get("message") or "수집기가 실패했습니다."),
+                    "current_count": current_count,
+                    "average_count": average_count,
+                    "sample_days": sample_days,
+                }
+            )
+            continue
+
+        if average_count < MIN_SOURCE_BASELINE_COUNT:
+            continue
+
+        if status == "empty":
+            alerts.append(
+                {
+                    "type": "collector_empty",
+                    "severity": "warning",
+                    "source": source,
+                    "label": label,
+                    "title": f"{label} 무출력",
+                    "message": (
+                        f"오늘 0건입니다. 최근 평균은 {average_count:.1f}건입니다."
+                    ),
+                    "current_count": current_count,
+                    "average_count": average_count,
+                    "sample_days": sample_days,
+                }
+            )
+            continue
+
+        if current_count <= average_count * SOURCE_DROP_RATIO_THRESHOLD:
+            alerts.append(
+                {
+                    "type": "collector_volume_drop",
+                    "severity": "warning",
+                    "source": source,
+                    "label": label,
+                    "title": f"{label} 수집량 급감",
+                    "message": (
+                        f"오늘 {current_count}건으로 최근 평균 {average_count:.1f}건 대비 낮습니다."
+                    ),
+                    "current_count": current_count,
+                    "average_count": average_count,
+                    "sample_days": sample_days,
+                }
+            )
+
+    return alerts
+
+
+def _build_collector_alert_summary(
+    collector_alerts: list[dict[str, object]],
+) -> dict[str, object]:
+    severity_counts = Counter(str(item.get("severity") or "unknown") for item in collector_alerts)
+    type_counts = Counter(str(item.get("type") or "unknown") for item in collector_alerts)
+    return {
+        "available": bool(collector_alerts),
+        "total_alerts": len(collector_alerts),
+        "critical_alerts": severity_counts.get("critical", 0),
+        "warning_alerts": severity_counts.get("warning", 0),
+        "failed_sources": type_counts.get("collector_failed", 0),
+        "empty_sources": type_counts.get("collector_empty", 0),
+        "volume_drop_alerts": (
+            type_counts.get("collector_volume_drop", 0)
+            + type_counts.get("total_volume_drop", 0)
+        ),
     }
 
 
@@ -590,6 +1006,65 @@ def _build_dashboard_url(site_url: str | None, date_text: str) -> str | None:
     return f"{site_url}{separator}date={date_text}"
 
 
+def _format_collector_status(status: object) -> str:
+    return {
+        "ok": "정상",
+        "empty": "무출력",
+        "failed": "실패",
+    }.get(str(status or ""), "확인 필요")
+
+
+def _format_alert_severity(severity: object) -> str:
+    return {
+        "critical": "긴급",
+        "warning": "주의",
+    }.get(str(severity or ""), "확인")
+
+
+def _format_memo_stance(stance: object) -> str:
+    return {
+        "positive": "긍정",
+        "neutral": "중립",
+        "negative": "부정",
+        "watch": "관찰",
+    }.get(str(stance or ""), "관찰")
+
+
+def _format_memo_confidence(confidence: object) -> str:
+    return {
+        "high": "높음",
+        "medium": "보통",
+        "low": "낮음",
+    }.get(str(confidence or ""), "낮음")
+
+
+def _memo_list(value: object) -> list[str]:
+    if not isinstance(value, list):
+        return []
+    return [_normalize_space(str(item or "")) for item in value if _normalize_space(str(item or ""))]
+
+
+def _has_investment_memo(report: Report) -> bool:
+    memo = report.investment_memo
+    if not isinstance(memo, dict) or not memo:
+        return False
+    return bool(
+        _memo_list(memo.get("thesis"))
+        or _memo_list(memo.get("catalysts"))
+        or _memo_list(memo.get("risks"))
+        or _memo_list(memo.get("numbers"))
+        or _normalize_space(str(memo.get("action") or ""))
+    )
+
+
+def _format_duration(seconds: object) -> str:
+    try:
+        numeric = float(seconds or 0)
+    except (TypeError, ValueError):
+        numeric = 0.0
+    return f"{numeric:.2f}초"
+
+
 def _format_target_change(report: Report) -> str | None:
     if not report.target_price_change:
         return None
@@ -604,6 +1079,29 @@ def _format_target_change(report: Report) -> str | None:
     )
 
 
+def _collector_problem_items(digest: DailyDigest) -> list[dict[str, object]]:
+    collector_health = digest.stats.get("collector_health", [])
+    if not isinstance(collector_health, list):
+        return []
+
+    collector_alerts = digest.stats.get("collector_alerts", [])
+    alert_sources = {
+        str(item.get("source") or "")
+        for item in collector_alerts
+        if isinstance(item, dict)
+    }
+
+    problem_items: list[dict[str, object]] = []
+    for item in collector_health:
+        if not isinstance(item, dict):
+            continue
+        status = str(item.get("status") or "")
+        source = str(item.get("source") or "")
+        if status != "ok" or source in alert_sources:
+            problem_items.append(item)
+    return problem_items
+
+
 def enrich_and_build_digest(
     reports: list[Report],
     *,
@@ -611,6 +1109,7 @@ def enrich_and_build_digest(
     requested_date: str,
     generated_at: str,
     collection_note: str,
+    collection_attempts: list[dict[str, object]] | None = None,
     settings: Settings,
 ) -> DailyDigest:
     for report in reports:
@@ -637,9 +1136,24 @@ def enrich_and_build_digest(
         if matched_reports:
             selection_pool = matched_reports
 
-    must_read = _select_must_read(selection_pool, settings.must_read_limit)
+    selection_ids = {report.report_id for report in selection_pool}
+    selection_changes = [
+        report for report in changed_reports if report.report_id in selection_ids
+    ]
+    must_read = _select_must_read(
+        selection_pool,
+        settings.must_read_limit,
+        changed_reports=selection_changes,
+    )
     keywords = _extract_keywords(must_read or reports)
-    stats = _build_stats(reports, keywords, change_summary)
+    stats = _build_stats(
+        reports,
+        keywords,
+        change_summary,
+        collection_attempts,
+        archive_root=settings.archive_root,
+        current_date=target_date,
+    )
     priority_filters = _build_priority_filters(reports, must_read, settings)
     editorial_note = _build_editorial_note(reports, must_read, change_summary)
     rankings = _build_rankings(reports, settings.ranking_limit)
@@ -673,12 +1187,45 @@ def render_markdown(digest: DailyDigest) -> str:
         f"- 수집 건수: {digest.stats['total_reports']}건",
         f"- PDF 텍스트 보강: {digest.stats.get('pdf_text_reports', 0)}건",
         f"- OpenAI 요약 적용: {digest.stats.get('llm_summary_reports', 0)}건",
+        f"- LLM 투자 메모: {digest.stats.get('llm_investment_memo_reports', 0)}건",
         f"- 키워드: {', '.join(digest.keywords) if digest.keywords else '없음'}",
         "",
     ]
 
     if digest.collection_note:
         lines.extend(["## 수집 메모", digest.collection_note, ""])
+
+    collector_alerts = digest.stats.get("collector_alerts", [])
+    if isinstance(collector_alerts, list) and collector_alerts:
+        lines.extend(["## 운영 알림", ""])
+        for item in collector_alerts:
+            if not isinstance(item, dict):
+                continue
+            lines.append(
+                "- "
+                f"[{_format_alert_severity(item.get('severity'))}] "
+                f"{item.get('title') or item.get('label')}: "
+                f"{item.get('message') or ''}"
+            )
+        lines.append("")
+
+    collector_health = digest.stats.get("collector_health", [])
+    if isinstance(collector_health, list) and collector_health:
+        lines.extend(["## 수집 소스 상태", ""])
+        for item in collector_health:
+            if not isinstance(item, dict):
+                continue
+            status = _format_collector_status(item.get("status"))
+            message = str(item.get("message") or "")
+            line = (
+                f"- {item.get('label') or item.get('source')}: {status}, "
+                f"{item.get('report_count', 0)}건, "
+                f"{_format_duration(item.get('duration_seconds'))}"
+            )
+            if message:
+                line += f" - {message}"
+            lines.append(line)
+        lines.append("")
 
     if digest.priority_filters["enabled"]:
         lines.extend(
@@ -779,9 +1326,29 @@ def render_markdown(digest: DailyDigest) -> str:
                 f"- 요약: {report.summary}",
                 f"- 상세 링크: {report.detail_url}",
                 f"- PDF: {report.pdf_url or '없음'}",
-                "",
             ]
         )
+        if _has_investment_memo(report):
+            memo = report.investment_memo
+            lines.extend(
+                [
+                    "- 투자 메모:",
+                    f"  - 톤: {_format_memo_stance(memo.get('stance'))} / 신뢰도 {_format_memo_confidence(memo.get('confidence'))}",
+                ]
+            )
+            action = _normalize_space(str(memo.get("action") or ""))
+            if action:
+                lines.append(f"  - 액션: {action}")
+            for label, key in (
+                ("핵심 논지", "thesis"),
+                ("촉매", "catalysts"),
+                ("리스크", "risks"),
+                ("숫자", "numbers"),
+            ):
+                values = _memo_list(memo.get(key))
+                if values:
+                    lines.append(f"  - {label}: {' / '.join(values)}")
+        lines.append("")
 
     lines.extend(["## 전체 수집 결과", ""])
     for report in digest.reports:
@@ -812,6 +1379,24 @@ def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[
         header.append(f"PDF 보강 {digest.stats['pdf_text_reports']}건")
     if digest.stats.get("llm_summary_reports"):
         header.append(f"OpenAI 요약 {digest.stats['llm_summary_reports']}건")
+    if digest.stats.get("llm_investment_memo_reports"):
+        header.append(f"LLM 투자 메모 {digest.stats['llm_investment_memo_reports']}건")
+    collector_summary = digest.stats.get("collector_health_summary", {})
+    if isinstance(collector_summary, dict) and collector_summary.get("available"):
+        header.append(
+            "소스 상태 "
+            f"정상 {collector_summary.get('ok_sources', 0)} / "
+            f"무출력 {collector_summary.get('empty_sources', 0)} / "
+            f"실패 {collector_summary.get('failed_sources', 0)}"
+        )
+    collector_alert_summary = digest.stats.get("collector_alert_summary", {})
+    if isinstance(collector_alert_summary, dict) and collector_alert_summary.get("available"):
+        header.append(
+            "운영 알림 "
+            f"{collector_alert_summary.get('total_alerts', 0)}건"
+            f" (긴급 {collector_alert_summary.get('critical_alerts', 0)} / "
+            f"주의 {collector_alert_summary.get('warning_alerts', 0)})"
+        )
     if digest.keywords:
         header.append(f"키워드: {html.escape(', '.join(digest.keywords[:6]))}")
     if digest.change_summary.get("changed_reports"):
@@ -826,6 +1411,36 @@ def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[
     header.append(html.escape(digest.editorial_note))
 
     blocks = ["\n".join(header)]
+
+    collector_alerts = digest.stats.get("collector_alerts", [])
+    if isinstance(collector_alerts, list) and collector_alerts:
+        alert_lines = ["", "<b>운영 알림</b>"]
+        for item in collector_alerts[:6]:
+            if not isinstance(item, dict):
+                continue
+            alert_lines.append(
+                f"{html.escape(_format_alert_severity(item.get('severity')))} · "
+                f"{html.escape(str(item.get('title') or item.get('label') or '-'))}\n"
+                f"{html.escape(_trim_text(str(item.get('message') or ''), 140))}"
+            )
+        blocks.append("\n".join(alert_lines))
+
+    problem_health = _collector_problem_items(digest)
+    if problem_health:
+        health_lines = ["", "<b>점검 필요한 소스</b>"]
+        for item in problem_health[:6]:
+            status = _format_collector_status(item.get("status"))
+            message = str(item.get("message") or "")
+            line = (
+                f"{html.escape(str(item.get('label') or item.get('source') or '-'))}: "
+                f"{html.escape(status)} · "
+                f"{html.escape(str(item.get('report_count', 0)))}건 · "
+                f"{html.escape(_format_duration(item.get('duration_seconds')))}"
+            )
+            if message and item.get("status") != "ok":
+                line += f"\n{html.escape(_trim_text(message, 120))}"
+            health_lines.append(line)
+        blocks.append("\n".join(health_lines))
 
     ranking_lines = ["", "<b>카테고리 랭킹</b>"]
     for key in ("company", "industry", "macro", "strategy"):
@@ -868,14 +1483,34 @@ def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[
         blocks.append("\n".join(change_lines))
 
     for index, report in enumerate(digest.must_read[:max_reports], start=1):
-        summary = _trim_text(report.summary, 180)
+        summary = _trim_text(report.summary, 160)
+        meta_bits = [report.broker, f"점수 {report.score:.2f}"]
+        if report.target_price:
+            meta_bits.append(f"목표가 {report.target_price}")
+        if report.opinion:
+            meta_bits.append(f"의견 {report.opinion}")
         parts = [
             "",
             f"<b>{index}. [{html.escape(report.category_label)}] "
             f'<a href="{html.escape(report.detail_url)}">'
             f"{html.escape(report.display_title)}</a></b>",
-            f"{html.escape(report.broker)} | 점수 {report.score:.2f}",
+            html.escape(" · ".join(meta_bits)),
         ]
+        if report.change_reasons:
+            parts.append(html.escape("변화: " + ", ".join(report.change_reasons[:2])))
+        if _has_investment_memo(report):
+            memo = report.investment_memo
+            action = _normalize_space(str(memo.get("action") or ""))
+            thesis = _memo_list(memo.get("thesis"))
+            memo_bits = [
+                f"톤 {_format_memo_stance(memo.get('stance'))}",
+                f"신뢰 {_format_memo_confidence(memo.get('confidence'))}",
+            ]
+            if action:
+                memo_bits.append(action)
+            elif thesis:
+                memo_bits.append(thesis[0])
+            parts.append("투자 메모: " + html.escape(" · ".join(memo_bits)))
         if report.is_priority_match:
             parts.append(
                 "관심 일치: "
