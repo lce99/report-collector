@@ -9,20 +9,21 @@ from report_collector.models import DailyDigest, Report
 
 
 SYSTEM_PROMPT = """
-You are a Korean equity research digest editor.
+You are a Korean equity research digest editor and investment memo formatter.
 Return JSON only.
 
-Write concise Korean summaries for sell-side research reports.
+Write concise Korean summaries and structured investment memos for sell-side research reports.
 Focus on:
 - the core thesis
 - important numbers, estimates, or target-price changes when present
 - what changed or why the report matters today
+- catalysts, risks, and practical follow-up actions for an investor
 
 Do not invent facts.
 Do not use markdown.
 """.strip()
 
-SUMMARY_SCHEMA: dict[str, Any] = {
+INVESTMENT_MEMO_SCHEMA: dict[str, Any] = {
     "type": "object",
     "additionalProperties": False,
     "properties": {
@@ -34,8 +35,64 @@ SUMMARY_SCHEMA: dict[str, Any] = {
             "type": "string",
             "description": "A one-sentence Korean preview under 110 characters.",
         },
+        "investment_memo": {
+            "type": "object",
+            "additionalProperties": False,
+            "properties": {
+                "stance": {
+                    "type": "string",
+                    "enum": ["positive", "neutral", "negative", "watch"],
+                    "description": (
+                        "Investment tone implied by the report. Use watch when the report "
+                        "is informative but not directional."
+                    ),
+                },
+                "thesis": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "One to three Korean bullet points for the core thesis.",
+                    "maxItems": 3,
+                },
+                "catalysts": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "Zero to three Korean catalysts or events to watch.",
+                    "maxItems": 3,
+                },
+                "risks": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "Zero to three Korean risk factors or blind spots.",
+                    "maxItems": 3,
+                },
+                "numbers": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "Important figures exactly grounded in the report.",
+                    "maxItems": 4,
+                },
+                "action": {
+                    "type": "string",
+                    "description": "A short Korean follow-up action for an investor.",
+                },
+                "confidence": {
+                    "type": "string",
+                    "enum": ["low", "medium", "high"],
+                    "description": "Confidence that the memo captures the report without missing context.",
+                },
+            },
+            "required": [
+                "stance",
+                "thesis",
+                "catalysts",
+                "risks",
+                "numbers",
+                "action",
+                "confidence",
+            ],
+        },
     },
-    "required": ["summary", "excerpt"],
+    "required": ["summary", "excerpt", "investment_memo"],
 }
 
 
@@ -91,7 +148,8 @@ def _build_prompt(report: Report, settings: Settings) -> str:
 
     return "\n".join(
         [
-            "아래 증권사 리포트를 읽고 JSON으로 요약해 주세요.",
+            "아래 증권사 리포트를 읽고 JSON으로 요약과 투자 메모를 작성해 주세요.",
+            "투자 메모는 원문에 있는 근거만 사용하고, 추정이 필요한 항목은 비워두거나 watch/low로 낮춰 주세요.",
             "",
             *metadata_lines,
             "",
@@ -118,6 +176,50 @@ def _parse_json_payload(raw_text: str) -> dict[str, Any] | None:
     return parsed
 
 
+def _clean_string_list(value: Any, limit: int) -> list[str]:
+    if not isinstance(value, list):
+        return []
+    cleaned: list[str] = []
+    for item in value:
+        text = _normalize_space(str(item or ""))
+        if not text:
+            continue
+        cleaned.append(text)
+        if len(cleaned) >= limit:
+            break
+    return cleaned
+
+
+def _clean_investment_memo(value: Any) -> dict[str, Any]:
+    if not isinstance(value, dict):
+        return {}
+
+    stance = _normalize_space(str(value.get("stance") or "watch")).lower()
+    if stance not in {"positive", "neutral", "negative", "watch"}:
+        stance = "watch"
+
+    confidence = _normalize_space(str(value.get("confidence") or "low")).lower()
+    if confidence not in {"low", "medium", "high"}:
+        confidence = "low"
+
+    memo = {
+        "stance": stance,
+        "thesis": _clean_string_list(value.get("thesis"), 3),
+        "catalysts": _clean_string_list(value.get("catalysts"), 3),
+        "risks": _clean_string_list(value.get("risks"), 3),
+        "numbers": _clean_string_list(value.get("numbers"), 4),
+        "action": _normalize_space(str(value.get("action") or "")),
+        "confidence": confidence,
+    }
+
+    if not any(
+        memo[key]
+        for key in ("thesis", "catalysts", "risks", "numbers", "action")
+    ):
+        return {}
+    return memo
+
+
 def _apply_summary(report: Report, payload: dict[str, Any]) -> bool:
     summary = _normalize_space(str(payload.get("summary", "")))
     excerpt = _normalize_space(str(payload.get("excerpt", "")))
@@ -127,11 +229,13 @@ def _apply_summary(report: Report, payload: dict[str, Any]) -> bool:
     report.summary = summary
     report.excerpt = excerpt or _trim_text(summary, 110)
     report.summary_engine = "openai"
+    report.investment_memo = _clean_investment_memo(payload.get("investment_memo"))
     return True
 
 
 def enhance_digest_summaries(digest: DailyDigest, settings: Settings) -> int:
     digest.stats["llm_summary_reports"] = 0
+    digest.stats["llm_investment_memo_reports"] = 0
     if not settings.openai_summary_enabled:
         return 0
 
@@ -146,6 +250,7 @@ def enhance_digest_summaries(digest: DailyDigest, settings: Settings) -> int:
 
     client = OpenAI(api_key=settings.openai_api_key)
     enhanced = 0
+    memo_enhanced = 0
 
     for report in candidates:
         request_kwargs: dict[str, Any] = {
@@ -155,9 +260,9 @@ def enhance_digest_summaries(digest: DailyDigest, settings: Settings) -> int:
             "text": {
                 "format": {
                     "type": "json_schema",
-                    "name": "broker_report_summary",
+                    "name": "broker_report_investment_memo",
                     "strict": True,
-                    "schema": SUMMARY_SCHEMA,
+                    "schema": INVESTMENT_MEMO_SCHEMA,
                 }
             },
         }
@@ -176,6 +281,9 @@ def enhance_digest_summaries(digest: DailyDigest, settings: Settings) -> int:
             continue
         if _apply_summary(report, payload):
             enhanced += 1
+            if report.investment_memo:
+                memo_enhanced += 1
 
     digest.stats["llm_summary_reports"] = enhanced
+    digest.stats["llm_investment_memo_reports"] = memo_enhanced
     return enhanced

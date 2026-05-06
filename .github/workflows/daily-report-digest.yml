@@ -23,6 +23,7 @@ jobs:
       PDF_TEXT_PAGE_LIMIT: ${{ vars.PDF_TEXT_PAGE_LIMIT || '8' }}
       PDF_TEXT_CHAR_LIMIT: ${{ vars.PDF_TEXT_CHAR_LIMIT || '12000' }}
       PDF_TEXT_MIN_BODY_CHARS: ${{ vars.PDF_TEXT_MIN_BODY_CHARS || '500' }}
+      OPENAI_SUMMARY_ENABLED: ${{ vars.OPENAI_SUMMARY_ENABLED || 'false' }}
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5-mini' }}
       OPENAI_SUMMARY_MAX_REPORTS: ${{ vars.OPENAI_SUMMARY_MAX_REPORTS || '8' }}

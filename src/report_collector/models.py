@@ -28,6 +28,7 @@ class Report:
     excerpt: str = ""
     summary: str = ""
     summary_engine: str = "rule"
+    investment_memo: dict[str, Any] = field(default_factory=dict)
     score: float = 0.0
     score_reasons: list[str] = field(default_factory=list)
     priority_subject_matches: list[str] = field(default_factory=list)
@@ -103,6 +104,7 @@ class Report:
             "excerpt": self.excerpt,
             "summary": self.summary,
             "summary_engine": self.summary_engine,
+            "investment_memo": self.investment_memo,
             "score": self.score,
             "score_reasons": self.score_reasons,
             "priority_subject_matches": self.priority_subject_matches,
