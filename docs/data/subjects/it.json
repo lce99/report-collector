@@ -1,10 +1,11 @@
 {
   "subject_key": "it",
   "subject_name": "IT",
-  "latest_report_date": "2026-05-06",
-  "report_count": 6,
-  "active_broker_count": 2,
+  "latest_report_date": "2026-05-12",
+  "report_count": 7,
+  "active_broker_count": 3,
   "active_brokers": [
+    "SK증권",
     "교보증권",
     "신한투자증권"
   ],
@@ -30,30 +31,6 @@
     "opinion_distribution": [],
     "broker_timeline": [
       {
-        "date": "2026-04-22",
-        "broker": "교보증권",
-        "title": "IT - 2026년 4월 넷째 주 전기전자 Weekly",
-        "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44306&page=1",
-        "target_price": null,
-        "target_price_value": null,
-        "opinion": null,
-        "opinion_normalized": null,
-        "score": 9.15,
-        "has_change_signal": true
-      },
-      {
-        "date": "2026-04-27",
-        "broker": "교보증권",
-        "title": "IT - 2026년 4월 넷째 주 반도체 Weekly",
-        "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44351&page=1",
-        "target_price": null,
-        "target_price_value": null,
-        "opinion": null,
-        "opinion_normalized": null,
-        "score": 14.0,
-        "has_change_signal": true
-      },
-      {
         "date": "2026-05-04",
         "broker": "교보증권",
         "title": "IT - 2026년 5월 째 주 반도체 Weekly",
@@ -76,6 +53,18 @@
         "opinion_normalized": null,
         "score": 9.4,
         "has_change_signal": true
+      },
+      {
+        "date": "2026-05-12",
+        "broker": "SK증권",
+        "title": "IT - 대덕전자, 기판 증설 관련 코멘트",
+        "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44496&page=1",
+        "target_price": null,
+        "target_price_value": null,
+        "opinion": null,
+        "opinion_normalized": null,
+        "score": 6.2,
+        "has_change_signal": false
       }
     ],
     "window_days": 14
@@ -83,30 +72,6 @@
   "target_price_history": [],
   "opinion_distribution": [],
   "broker_timeline": [
-    {
-      "date": "2026-04-22",
-      "broker": "교보증권",
-      "title": "IT - 2026년 4월 넷째 주 전기전자 Weekly",
-      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44306&page=1",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "score": 9.15,
-      "has_change_signal": true
-    },
-    {
-      "date": "2026-04-27",
-      "broker": "교보증권",
-      "title": "IT - 2026년 4월 넷째 주 반도체 Weekly",
-      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44351&page=1",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "score": 14.0,
-      "has_change_signal": true
-    },
     {
       "date": "2026-05-04",
       "broker": "교보증권",
@@ -130,12 +95,28 @@
       "opinion_normalized": null,
       "score": 9.4,
       "has_change_signal": true
+    },
+    {
+      "date": "2026-05-12",
+      "broker": "SK증권",
+      "title": "IT - 대덕전자, 기판 증설 관련 코멘트",
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44496&page=1",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "score": 6.2,
+      "has_change_signal": false
     }
   ],
   "broker_summary": [
     {
       "name": "교보증권",
       "count": 5
+    },
+    {
+      "name": "SK증권",
+      "count": 1
     },
     {
       "name": "신한투자증권",
@@ -145,10 +126,60 @@
   "category_summary": [
     {
       "label": "산업분석",
-      "count": 6
+      "count": 7
     }
   ],
   "latest_by_broker": [
+    {
+      "source": "naver_research",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "44496",
+      "title": "대덕전자, 기판 증설 관련 코멘트",
+      "display_title": "IT - 대덕전자, 기판 증설 관련 코멘트",
+      "broker": "SK증권",
+      "published_date": "2026-05-12",
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44496&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/industry/64/20260512_industry_334866000.pdf",
+      "subject": "IT",
+      "subject_key": "it",
+      "views": 389,
+      "analyst": "박형우",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "신규 시설 투자 공시(2026/05/11) - 투자금액 2,130 억원",
+      "summary": "신규 시설 투자 공시(2026/05/11) - 투자금액 2,130 억원 - 투자기간 2026년 5월 ~ 2027년 12월",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 6.2,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "PDF 본문 확보"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
     {
       "source": "naver_research",
       "category": "industry",
@@ -426,6 +457,56 @@
     }
   ],
   "timeline": [
+    {
+      "source": "naver_research",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "44496",
+      "title": "대덕전자, 기판 증설 관련 코멘트",
+      "display_title": "IT - 대덕전자, 기판 증설 관련 코멘트",
+      "broker": "SK증권",
+      "published_date": "2026-05-12",
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44496&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/industry/64/20260512_industry_334866000.pdf",
+      "subject": "IT",
+      "subject_key": "it",
+      "views": 389,
+      "analyst": "박형우",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "신규 시설 투자 공시(2026/05/11) - 투자금액 2,130 억원",
+      "summary": "신규 시설 투자 공시(2026/05/11) - 투자금액 2,130 억원 - 투자기간 2026년 5월 ~ 2027년 12월",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 6.2,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "PDF 본문 확보"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
     {
       "source": "naver_research",
       "category": "industry",
