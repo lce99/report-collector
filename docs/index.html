@@ -1341,7 +1341,7 @@
             <span class="eyebrow">Daily Research Digest</span>
             <h1>Broker Report Radar</h1>
             <p id="heroSummary" class="hero-summary loading">
-              오늘 리포트 분위기와 필독 포인트를 불러오는 중입니다.
+              오늘 리포트 분위기와 우선 검토 포인트를 불러오는 중입니다.
             </p>
             <div class="hero-pills" aria-hidden="true">
               <span class="hero-pill">Morning brief</span>
@@ -1356,9 +1356,9 @@
               <small id="heroDateMeta">기준일 정보를 불러오는 중입니다.</small>
             </article>
             <article class="hero-meta-card">
-              <span>필독 후보</span>
+              <span>검토 후보</span>
               <strong id="heroMustReadCount">-</strong>
-              <small id="heroMustReadMeta">랭킹과 관심 필터를 합쳐 만든 상위 리포트</small>
+              <small id="heroMustReadMeta">점수, 변화 신호, 관심 필터로 추린 후보</small>
             </article>
             <article class="hero-meta-card">
               <span>변화 감지</span>
@@ -1400,7 +1400,7 @@
           <div class="field">
             <label for="sortSelect">정렬</label>
             <select id="sortSelect" class="control">
-              <option value="score">점수 높은 순</option>
+              <option value="score">우선순위 점수 높은 순</option>
               <option value="changes">변화 있는 리포트 우선</option>
               <option value="views">조회수 높은 순</option>
               <option value="latest">최신순</option>
@@ -1515,8 +1515,8 @@
             <div class="section-head">
               <div class="section-title-group">
                 <span class="section-kicker">Spotlight</span>
-                <h2>꼭 읽을 리포트</h2>
-                <span class="section-meta">필독 후보와 현재 필터를 반영한 상위 리포트입니다.</span>
+                <h2>우선 검토 후보</h2>
+                <span class="section-meta">점수, 변화 신호, 관심 일치 기준으로 먼저 열어볼 리포트입니다.</span>
               </div>
               <span id="mustReadMeta" class="section-meta"></span>
             </div>
@@ -1555,7 +1555,7 @@
               <div class="section-title-group">
                 <span class="section-kicker">Category Lens</span>
                 <h2>카테고리 랭킹</h2>
-                <span class="section-meta">카테고리별 상위 점수 리포트를 따로 볼 수 있습니다.</span>
+                <span class="section-meta">카테고리별 우선순위 상위 리포트를 따로 볼 수 있습니다.</span>
               </div>
             </div>
             <div id="rankingGrid" class="ranking-grid"></div>
@@ -2047,6 +2047,31 @@
         return el("span", "datum", `${label} ${value}`);
       }
 
+      function getReportPrimaryUrl(report) {
+        return report?.primary_url || report?.pdf_url || report?.detail_url || "#";
+      }
+
+      function getReportPrimaryLabel(report) {
+        if (report?.primary_url_label === "PDF" || report?.pdf_url) {
+          return "PDF 바로 열기";
+        }
+        return "원문 보기";
+      }
+
+      function decorateExternalLink(link, url) {
+        link.href = url || "#";
+        link.target = "_blank";
+        link.rel = "noreferrer";
+        return link;
+      }
+
+      function appendReportLink(actions, text, url) {
+        if (!url) {
+          return;
+        }
+        actions.appendChild(decorateExternalLink(el("a", null, text), url));
+      }
+
       function buildSubjectDatum(report) {
         if (!report?.subject || !report?.subject_key) {
           return null;
@@ -2150,7 +2175,7 @@
         const kicker = el("div", "report-kicker");
 
         if (featured) {
-          kicker.appendChild(buildBadge("필독 후보", "signal"));
+          kicker.appendChild(buildBadge("우선 검토 후보", "signal"));
         }
         if (report.is_priority_match) {
           kicker.appendChild(buildBadge("관심 일치", "accent"));
@@ -2171,9 +2196,7 @@
 
         const title = el("h3", "report-title");
         const titleLink = el("a");
-        titleLink.href = report.detail_url || "#";
-        titleLink.target = "_blank";
-        titleLink.rel = "noreferrer";
+        decorateExternalLink(titleLink, getReportPrimaryUrl(report));
         titleLink.textContent = report.display_title || report.title || "제목 없음";
         title.appendChild(titleLink);
         article.appendChild(title);
@@ -2185,7 +2208,7 @@
         }
 
         const data = el("div", "report-data");
-        data.appendChild(buildDatum("점수", Number(report.score || 0).toFixed(2)));
+        data.appendChild(buildDatum("우선순위", Number(report.score || 0).toFixed(2)));
         const subjectDatum = buildSubjectDatum(report);
         if (subjectDatum) {
           data.appendChild(subjectDatum);
@@ -2220,31 +2243,22 @@
             `일치: ${[...(report.priority_subject_matches || []), ...(report.priority_keyword_matches || [])].join(", ")}`
           );
         }
-        reasons.textContent = reasonParts.join(" / ") || "세부 근거 정보 없음";
+        reasons.textContent = reasonParts.length
+          ? `선정 근거: ${reasonParts.join(" / ")}`
+          : "선정 근거 정보 없음";
         footer.appendChild(reasons);
 
         const actions = el("div", "report-actions");
-        const detailLink = el("a");
-        detailLink.href = report.detail_url || "#";
-        detailLink.target = "_blank";
-        detailLink.rel = "noreferrer";
-        detailLink.textContent = "상세 보기";
-        actions.appendChild(detailLink);
+        appendReportLink(actions, getReportPrimaryLabel(report), getReportPrimaryUrl(report));
+        if (report.pdf_url && report.detail_url) {
+          appendReportLink(actions, "상세 페이지", report.detail_url);
+        }
 
         if (report.subject_key && !isSubjectMode()) {
           const subjectLink = el("a");
           subjectLink.href = buildSubjectHref(report.subject_key);
           subjectLink.textContent = "종목 히스토리";
           actions.appendChild(subjectLink);
-        }
-
-        if (report.pdf_url) {
-          const pdfLink = el("a");
-          pdfLink.href = report.pdf_url;
-          pdfLink.target = "_blank";
-          pdfLink.rel = "noreferrer";
-          pdfLink.textContent = "PDF";
-          actions.appendChild(pdfLink);
         }
 
         footer.appendChild(actions);
@@ -2278,9 +2292,7 @@
 
         const title = el("h3", "report-title");
         const titleLink = el("a");
-        titleLink.href = report.detail_url || "#";
-        titleLink.target = "_blank";
-        titleLink.rel = "noreferrer";
+        decorateExternalLink(titleLink, getReportPrimaryUrl(report));
         titleLink.textContent = report.display_title || report.title || "제목 없음";
         title.appendChild(titleLink);
         article.appendChild(title);
@@ -2313,12 +2325,10 @@
         const footer = el("div", "report-footer");
         footer.appendChild(el("div", "report-reasons", compactText(report.summary || report.excerpt, 140)));
         const actions = el("div", "report-actions");
-        const detailLink = el("a");
-        detailLink.href = report.detail_url || "#";
-        detailLink.target = "_blank";
-        detailLink.rel = "noreferrer";
-        detailLink.textContent = "원문 보기";
-        actions.appendChild(detailLink);
+        appendReportLink(actions, getReportPrimaryLabel(report), getReportPrimaryUrl(report));
+        if (report.pdf_url && report.detail_url) {
+          appendReportLink(actions, "상세 페이지", report.detail_url);
+        }
         if (report.subject_key && !isSubjectMode()) {
           const subjectLink = el("a");
           subjectLink.href = buildSubjectHref(report.subject_key);
@@ -2340,9 +2350,7 @@
           const item = el("div", "ranking-item");
           const strong = el("strong");
           const link = el("a");
-          link.href = report.detail_url || "#";
-          link.target = "_blank";
-          link.rel = "noreferrer";
+          decorateExternalLink(link, getReportPrimaryUrl(report));
           link.textContent = `${index + 1}. ${report.display_title || report.title || "제목 없음"}`;
           strong.appendChild(link);
           item.appendChild(strong);
@@ -2350,7 +2358,7 @@
             el(
               "small",
               null,
-              `${report.broker || "증권사 없음"} · 점수 ${Number(report.score || 0).toFixed(2)}${
+              `${report.broker || "증권사 없음"} · 우선순위 ${Number(report.score || 0).toFixed(2)}${
                 report.views ? ` · 조회수 ${formatNumber(report.views)}` : ""
               }`
             )
@@ -2365,7 +2373,7 @@
       function renderLoadingState() {
         document.getElementById("heroSummary").textContent = "데이터를 불러오는 중입니다.";
         document.getElementById("editorialNote").textContent = "편집 메모를 불러오는 중입니다.";
-        document.getElementById("mustReadList").innerHTML = '<div class="loading">필독 후보를 정리하는 중입니다.</div>';
+        document.getElementById("mustReadList").innerHTML = '<div class="loading">우선 검토 후보를 정리하는 중입니다.</div>';
         document.getElementById("reportList").innerHTML = '<div class="loading">리포트 목록을 불러오는 중입니다.</div>';
         document.getElementById("changeList").innerHTML = '<div class="loading">변화 감지 정보를 준비하는 중입니다.</div>';
         document.getElementById("rankingGrid").innerHTML = '<div class="loading">랭킹을 계산하는 중입니다.</div>';
@@ -2442,7 +2450,7 @@
           state.priorityOnlyView = false;
         } else {
           document.getElementById("priorityOnlyToggle").disabled = false;
-          priorityCopy.textContent = `관심 필터 일치 리포트 ${formatNumber(priority.matched_reports || 0)}건, 필독 후보 ${formatNumber(
+          priorityCopy.textContent = `관심 필터 일치 리포트 ${formatNumber(priority.matched_reports || 0)}건, 우선 검토 후보 ${formatNumber(
             priority.matched_must_read || 0
           )}건입니다.`;
 
@@ -2699,7 +2707,7 @@
         meta.textContent = `현재 필터 기준 ${formatNumber(mustRead.length)}건`;
 
         if (!mustRead.length) {
-          container.appendChild(el("div", "empty", "현재 조건에서는 필독 후보가 없습니다."));
+          container.appendChild(el("div", "empty", "현재 조건에서는 우선 검토 후보가 없습니다."));
           return;
         }
 

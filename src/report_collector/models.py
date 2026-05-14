@@ -65,6 +65,14 @@ class Report:
         return bool(self.change_reasons or self.change_types)
 
     @property
+    def primary_url(self) -> str:
+        return self.pdf_url or self.detail_url
+
+    @property
+    def primary_url_label(self) -> str:
+        return "PDF" if self.pdf_url else "상세"
+
+    @property
     def content_sources(self) -> list[str]:
         sources: list[str] = []
         if self.body:
@@ -91,6 +99,8 @@ class Report:
             "published_date": self.published_date,
             "detail_url": self.detail_url,
             "pdf_url": self.pdf_url,
+            "primary_url": self.primary_url,
+            "primary_url_label": self.primary_url_label,
             "subject": self.subject,
             "subject_key": self.subject_key,
             "views": self.views,

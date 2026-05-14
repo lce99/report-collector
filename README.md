@@ -6,13 +6,13 @@
 
 - 네이버 금융 리서치와 일부 증권사 공식 리서치 페이지를 함께 수집합니다.
 - 날짜별로 `storage/archive/YYYY-MM-DD/` 아래에 저장합니다.
-- 리포트별 메타데이터, 링크, 짧은 요약, 옵션형 LLM 투자 메모, 필독 점수를 만듭니다.
-- 꼭 읽을 리포트를 자동 선별해서 텔레그램으로 보냅니다.
+- 리포트별 메타데이터, 링크, 짧은 요약, 옵션형 LLM 투자 메모, 우선순위 점수를 만듭니다.
+- 우선 검토 후보 리포트를 자동 선별해서 텔레그램으로 보냅니다.
 - 같은 데이터를 `docs/`에도 생성해서 GitHub Pages로 웹에서 다시 볼 수 있게 합니다.
 - 수집 소스별 성공/무출력/실패 상태와 소요 시간을 기록해서 운영 이상 징후를 확인합니다.
 - 실패한 소스와 최근 평균 대비 수집량이 급감한 소스를 운영 알림으로 노출합니다.
 - 종목별 JSON에는 목표가 추이, 의견 분포, 최근 2주 증권사 타임라인용 차트 데이터가 포함됩니다.
-- 필독으로 선정된 리포트는 1일/7일/30일 성과 추적 원장에 기록됩니다.
+- 우선 검토 후보로 선정된 리포트는 1일/7일/30일 성과 추적 원장에 기록됩니다.
 
 중요: 저작권과 저장소 용량을 고려해서 원문 PDF나 본문 전체를 저장하지 않고, 메타데이터와 짧은 요약 중심으로 보관합니다.
 
@@ -150,12 +150,12 @@ python scripts/get_telegram_chat_id.py
 환경 변수로 아래 항목을 조정할 수 있습니다.
 
 - `REPORT_PAGE_DEPTH`: 카테고리별로 몇 페이지까지 볼지
-- `MUST_READ_LIMIT`: 필독 후보 개수
+- `MUST_READ_LIMIT`: 우선 검토 후보 개수
 - `REPORT_CATEGORIES`: `company,industry,economy,invest,market,debenture`
 - `BROKER_PRIORITY`: 우선순위를 높게 둘 증권사 목록
 - `PRIORITY_SUBJECTS`: 관심 종목명 목록
 - `PRIORITY_KEYWORDS`: 관심 섹터/테마 키워드 목록
-- `PRIORITY_ONLY`: `true`면 필독/텔레그램을 관심 일치 리포트 중심으로 더 강하게 좁힘
+- `PRIORITY_ONLY`: `true`면 우선 검토 후보/텔레그램을 관심 일치 리포트 중심으로 더 강하게 좁힘
 - `REPORT_TIMEZONE`: 기본 `Asia/Seoul`
 - `OPENAI_SUMMARY_ENABLED`: 기본 `false`; `true`로 켜야 LLM 요약과 구조화 투자 메모가 실행됨
 - `OPENAI_API_KEY`: `OPENAI_SUMMARY_ENABLED=true`일 때 사용할 OpenAI API 키
@@ -171,9 +171,9 @@ PRIORITY_ONLY=false
 
 이 값을 넣으면 관심 종목/섹터가 제목이나 본문에 들어간 리포트가 더 높은 점수를 받고, 웹 화면에서도 `관심 항목만 보기`로 바로 좁혀볼 수 있습니다.
 
-## 필독 선정 기준
+## 우선 검토 후보 선정 기준
 
-현재는 완전한 AI 리서처가 아니라 규칙 기반 우선순위입니다.
+현재는 완전한 AI 리서처가 아니라 규칙 기반 우선순위입니다. PDF 링크가 확보된 리포트는 대시보드와 텔레그램에서 PDF를 대표 링크로 먼저 사용하고, 상세 페이지 링크는 보조로 남깁니다.
 
 - 카테고리 가중치
 - 조회수
@@ -184,8 +184,8 @@ PRIORITY_ONLY=false
 - 본문 길이
 - 목표가/의견/애널리스트 변화 감지 여부
 - 공식 소스 여부와 PDF 본문 확보 여부
-- 동일 종목과 특정 증권사 쏠림을 줄이는 필독 다양성 규칙
-- 필독 선정 결과의 1일/7일/30일 성과 추적 원장
+- 동일 종목과 특정 증권사 쏠림을 줄이는 다양성 규칙
+- 우선 검토 후보 선정 결과의 1일/7일/30일 성과 추적 원장
 
 ## 텔레그램 명령어 봇
 
@@ -197,7 +197,7 @@ python scripts/telegram_command_bot.py --timeout 20
 
 지원 명령어:
 
-- `/today`: 최신 데일리 필독 후보
+- `/today`: 최신 데일리 우선 검토 후보
 - `/changes`: 목표가/의견/애널리스트 변화 감지 리포트
 - `/subject 삼성전자`: 종목별 최근 2주 증권사 타임라인과 최신 리포트
 - `/source`: 수집 소스 상태와 운영 알림
@@ -207,7 +207,7 @@ python scripts/telegram_command_bot.py --timeout 20
 
 ## 선정 성과 추적
 
-필독 후보는 `docs/data/performance/selection_outcomes.json`에 누적됩니다. 현재는 각 리포트에 대해 1일/7일/30일 horizon과 due date를 `pending` 상태로 남기는 원장까지 구현되어 있습니다. 이후 주가/거래량/뉴스 공급원을 붙이면 `price_return_pct`, `volume_change_pct`, `news_count`를 채워 점수 로직 개선 데이터로 쓸 수 있습니다.
+우선 검토 후보는 `docs/data/performance/selection_outcomes.json`에 누적됩니다. 현재는 각 리포트에 대해 1일/7일/30일 horizon과 due date를 `pending` 상태로 남기는 원장까지 구현되어 있습니다. 이후 주가/거래량/뉴스 공급원을 붙이면 `price_return_pct`, `volume_change_pct`, `news_count`를 채워 점수 로직 개선 데이터로 쓸 수 있습니다.
 
 즉시 쓸 수 있는 버전으로는 충분하지만, 나중에는 다음 확장이 좋습니다.
 

@@ -58,6 +58,42 @@ class ConfigParsingTests(unittest.TestCase):
             self.assertTrue(Settings.from_env().openai_summary_enabled)
 
 
+class ReportLinkTests(unittest.TestCase):
+    def test_primary_url_prefers_pdf_when_available(self) -> None:
+        report = Report(
+            source="naver_research",
+            category="company",
+            category_label="Company",
+            report_id="r1",
+            title="Earnings review",
+            broker="Fake증권",
+            published_date="2026-04-20",
+            detail_url="https://finance.naver.com/research/company_read.naver?nid=1",
+            pdf_url="https://stock.pstatic.net/stock-research/company/report.pdf",
+        )
+
+        payload = report.to_public_dict()
+
+        self.assertEqual(report.primary_url, report.pdf_url)
+        self.assertEqual(payload["primary_url"], report.pdf_url)
+        self.assertEqual(payload["primary_url_label"], "PDF")
+
+    def test_primary_url_falls_back_to_detail_page(self) -> None:
+        report = Report(
+            source="korea_investment_official",
+            category="company",
+            category_label="Company",
+            report_id="r2",
+            title="Earnings review",
+            broker="Fake증권",
+            published_date="2026-04-20",
+            detail_url="https://example.com/detail",
+        )
+
+        self.assertEqual(report.primary_url, report.detail_url)
+        self.assertEqual(report.to_public_dict()["primary_url_label"], "상세")
+
+
 class DedupeMergeTests(unittest.TestCase):
     def test_official_report_keeps_priority_and_backfills_naver_metadata(self) -> None:
         official = Report(
@@ -548,6 +584,7 @@ class TelegramRenderingTests(unittest.TestCase):
             broker="Fake",
             published_date="2026-04-20",
             detail_url="https://example.com/report",
+            pdf_url="https://example.com/report.pdf",
             summary="실적이 개선됐습니다.",
         )
         report.score = 9.2
@@ -598,6 +635,8 @@ class TelegramRenderingTests(unittest.TestCase):
         self.assertIn("LLM 투자 메모 1건", rendered)
         self.assertIn("투자 메모", rendered)
         self.assertIn("실적 추정 상향 여부를 확인", rendered)
+        self.assertIn("https://example.com/report.pdf", rendered)
+        self.assertNotIn('<a href="https://example.com/report">', rendered)
 
     def test_command_renderer_returns_subject_history(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -616,6 +655,7 @@ class TelegramRenderingTests(unittest.TestCase):
                                 "broker": "Fake증권",
                                 "score": 9.2,
                                 "detail_url": "https://example.com/r1",
+                                "pdf_url": "https://example.com/r1.pdf",
                             }
                         ],
                         "changes": [],
@@ -670,6 +710,8 @@ class TelegramRenderingTests(unittest.TestCase):
             subject = render_command_response("/subject 삼성전자", docs_root)
 
         self.assertIn("데일리 리포트", today)
+        self.assertIn("https://example.com/r1.pdf", today)
+        self.assertNotIn('<a href="https://example.com/r1">', today)
         self.assertIn("삼성전자", subject)
         self.assertIn("최근 2주", subject)
 

@@ -94,8 +94,10 @@ def _format_report_line(report: dict, index: int | None = None) -> str:
     title = html.escape(str(report.get("display_title") or report.get("title") or "제목 없음"))
     broker = html.escape(str(report.get("broker") or "-"))
     score = report.get("score")
-    score_text = f" · 점수 {float(score):.2f}" if isinstance(score, (int, float)) else ""
-    url = html.escape(str(report.get("detail_url") or ""))
+    score_text = f" · 우선순위 {float(score):.2f}" if isinstance(score, (int, float)) else ""
+    url = html.escape(
+        str(report.get("primary_url") or report.get("pdf_url") or report.get("detail_url") or "")
+    )
     if url:
         return f'{prefix}<a href="{url}">{title}</a>\n   {broker}{score_text}'
     return f"{prefix}{title}\n   {broker}{score_text}"
@@ -109,7 +111,7 @@ def _format_today(docs_root: Path) -> str:
         f"<b>{html.escape(str(digest.get('date') or '-'))} 데일리 리포트</b>",
         html.escape(str(digest.get("editorial_note") or "")),
         "",
-        "<b>필독 후보</b>",
+        "<b>우선 검토 후보</b>",
     ]
     for index, report in enumerate((digest.get("must_read") or [])[:6], start=1):
         if isinstance(report, dict):

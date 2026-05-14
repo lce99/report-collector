@@ -167,6 +167,8 @@ def _chart_report_point(report: dict[str, Any]) -> dict[str, Any]:
         "broker": report.get("broker"),
         "title": report.get("display_title") or report.get("title"),
         "detail_url": report.get("detail_url"),
+        "pdf_url": report.get("pdf_url"),
+        "primary_url": report.get("primary_url") or report.get("pdf_url") or report.get("detail_url"),
         "target_price": report.get("target_price"),
         "target_price_value": report.get("target_price_value"),
         "opinion": report.get("opinion"),
@@ -395,6 +397,8 @@ def _build_selection_record(
         "score": report.get("score"),
         "score_reasons": list(report.get("score_reasons") or []),
         "detail_url": report.get("detail_url"),
+        "pdf_url": report.get("pdf_url"),
+        "primary_url": report.get("primary_url") or report.get("pdf_url") or report.get("detail_url"),
         "target_price": report.get("target_price"),
         "opinion": report.get("opinion"),
         "horizons": {

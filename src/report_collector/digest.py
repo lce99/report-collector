@@ -1285,7 +1285,7 @@ def render_markdown(digest: DailyDigest) -> str:
                     )
                 if report.previous_report_date:
                     lines.append(f"- 비교 기준일: {report.previous_report_date}")
-                lines.append(f"- 상세 링크: {report.detail_url}")
+                lines.append(f"- 대표 링크: {report.primary_url}")
                 lines.append("")
 
     if digest.rankings:
@@ -1298,13 +1298,13 @@ def render_markdown(digest: DailyDigest) -> str:
             else:
                 for index, report in enumerate(reports, start=1):
                     lines.append(
-                        f"- {index}. {report.display_title} | {report.broker} | 점수 {report.score:.2f}"
+                        f"- {index}. {report.display_title} | {report.broker} | 우선순위 {report.score:.2f}"
                     )
             lines.append("")
 
-    lines.append("## 꼭 읽을 리포트")
+    lines.append("## 우선 검토 후보")
     if not digest.must_read:
-        lines.extend(["- 꼭 읽을 리포트로 선정된 항목이 없습니다.", ""])
+        lines.extend(["- 우선 검토 후보로 선정된 항목이 없습니다.", ""])
 
     for index, report in enumerate(digest.must_read, start=1):
         reasons = ", ".join(report.score_reasons) if report.score_reasons else "자동 선정"
@@ -1313,8 +1313,8 @@ def render_markdown(digest: DailyDigest) -> str:
                 f"### {index}. [{report.category_label}] {report.display_title}",
                 f"- 증권사: {report.broker}",
                 f"- 발행일: {report.published_date}",
-                f"- 점수: {report.score:.2f}",
-                f"- 선정 이유: {reasons}",
+                f"- 우선순위 점수: {report.score:.2f}",
+                f"- 선정 근거: {reasons}",
                 f"- 요약 엔진: {report.summary_engine}",
                 (
                     "- 관심 필터 일치: "
@@ -1324,10 +1324,11 @@ def render_markdown(digest: DailyDigest) -> str:
                 if report.is_priority_match
                 else "- 관심 필터 일치: 없음",
                 f"- 요약: {report.summary}",
-                f"- 상세 링크: {report.detail_url}",
-                f"- PDF: {report.pdf_url or '없음'}",
+                f"- 대표 링크: {report.primary_url}",
             ]
         )
+        if report.pdf_url:
+            lines.append(f"- 상세 페이지: {report.detail_url}")
         if _has_investment_memo(report):
             memo = report.investment_memo
             lines.extend(
@@ -1354,7 +1355,7 @@ def render_markdown(digest: DailyDigest) -> str:
     for report in digest.reports:
         lines.append(
             f"- [{report.category_label}] {report.display_title} | {report.broker} | "
-            f"{report.published_date} | 점수 {report.score:.2f} | {report.detail_url}"
+            f"{report.published_date} | 우선순위 {report.score:.2f} | {report.primary_url}"
         )
 
     return "\n".join(lines).strip() + "\n"
@@ -1453,7 +1454,7 @@ def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[
         top_report = reports[0]
         ranking_lines.append(
             f"{html.escape(str(ranking['label']))}: "
-            f'<a href="{html.escape(top_report.detail_url)}">'
+            f'<a href="{html.escape(top_report.primary_url)}">'
             f"{html.escape(top_report.display_title)}</a>"
         )
     if len(ranking_lines) > 2:
@@ -1475,7 +1476,7 @@ def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[
                     f"애널리스트 {report.previous_analyst or '-'} → {report.analyst or '-'}"
                 )
             change_lines.append(
-                f'• <a href="{html.escape(report.detail_url)}">'
+                f'• <a href="{html.escape(report.primary_url)}">'
                 f"{html.escape(report.display_title)}</a>"
             )
             if detail_bits:
@@ -1484,7 +1485,7 @@ def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[
 
     for index, report in enumerate(digest.must_read[:max_reports], start=1):
         summary = _trim_text(report.summary, 160)
-        meta_bits = [report.broker, f"점수 {report.score:.2f}"]
+        meta_bits = [report.broker, f"우선순위 {report.score:.2f}"]
         if report.target_price:
             meta_bits.append(f"목표가 {report.target_price}")
         if report.opinion:
@@ -1492,7 +1493,7 @@ def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[
         parts = [
             "",
             f"<b>{index}. [{html.escape(report.category_label)}] "
-            f'<a href="{html.escape(report.detail_url)}">'
+            f'<a href="{html.escape(report.primary_url)}">'
             f"{html.escape(report.display_title)}</a></b>",
             html.escape(" · ".join(meta_bits)),
         ]
