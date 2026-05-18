@@ -1128,6 +1128,30 @@
         margin-top: 16px;
       }
 
+      .score-breakdown {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+      }
+
+      .score-part {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 7px 10px;
+        border-radius: 999px;
+        background: rgba(13, 104, 102, 0.08);
+        color: var(--accent-deep);
+        font-size: 12px;
+        font-weight: 800;
+      }
+
+      .score-part-penalty {
+        background: rgba(177, 63, 71, 0.08);
+        color: var(--rose);
+      }
+
       .datum {
         display: inline-flex;
         align-items: center;
@@ -2072,6 +2096,55 @@
         actions.appendChild(decorateExternalLink(el("a", null, text), url));
       }
 
+      function getLinkHealth(report) {
+        if (report?.link_health?.status) {
+          return report.link_health;
+        }
+        if (report?.pdf_url) {
+          return { status: "pdf_preferred" };
+        }
+        if (report?.detail_url) {
+          return { status: "detail_only" };
+        }
+        return { status: "missing" };
+      }
+
+      function linkHealthLabel(report) {
+        const status = getLinkHealth(report).status;
+        if (status === "pdf_preferred") {
+          return "PDF 우선";
+        }
+        if (status === "detail_only") {
+          return "상세만";
+        }
+        if (status === "missing") {
+          return "링크 없음";
+        }
+        return "";
+      }
+
+      function buildScoreBreakdown(report) {
+        const parts = (report?.score_breakdown || [])
+          .filter((item) => item && Number(item.value || 0) !== 0)
+          .slice(0, 4);
+        if (!parts.length) {
+          return null;
+        }
+
+        const node = el("div", "score-breakdown");
+        parts.forEach((item) => {
+          const value = Number(item.value || 0);
+          const sign = value > 0 ? "+" : "";
+          const part = el(
+            "span",
+            `score-part ${value < 0 ? "score-part-penalty" : ""}`,
+            `${item.label || "점수"} ${sign}${value.toFixed(2)}`
+          );
+          node.appendChild(part);
+        });
+        return node;
+      }
+
       function buildSubjectDatum(report) {
         if (!report?.subject || !report?.subject_key) {
           return null;
@@ -2186,6 +2259,11 @@
         if (report.has_pdf_text) {
           kicker.appendChild(buildBadge("PDF 본문 확보", "sky"));
         }
+        const linkHealth = getLinkHealth(report);
+        const linkLabel = linkHealthLabel(report);
+        if (linkLabel) {
+          kicker.appendChild(buildBadge(linkLabel, linkHealth.status === "pdf_preferred" ? "sky" : "default"));
+        }
         if (hasInvestmentMemo(report)) {
           kicker.appendChild(buildBadge("LLM 투자 메모", "accent"));
         }
@@ -2228,6 +2306,10 @@
           data.appendChild(buildDatum("조회수", formatNumber(report.views)));
         }
         article.appendChild(data);
+        const scoreBreakdown = buildScoreBreakdown(report);
+        if (scoreBreakdown) {
+          article.appendChild(scoreBreakdown);
+        }
 
         const footer = el("div", "report-footer");
         const reasons = el("div", "report-reasons");
@@ -2562,6 +2644,24 @@
         const changeSummary = digest.change_summary || {};
         const collectorSummary = digest.stats?.collector_health_summary || {};
         const collectorAlertSummary = digest.stats?.collector_alert_summary || {};
+        let linkHealth = digest.stats?.link_health || {};
+        if (!linkHealth.total) {
+          linkHealth = (digest.reports || []).reduce(
+            (counts, report) => {
+              const status = getLinkHealth(report).status;
+              counts[status] = (counts[status] || 0) + 1;
+              counts.total += 1;
+              return counts;
+            },
+            { pdf_preferred: 0, detail_only: 0, missing: 0, total: 0 }
+          );
+        }
+        const performance = digest.stats?.selection_performance || {};
+        const completedPerformance = Object.values(performance.completed_by_horizon || {}).reduce(
+          (sum, value) => sum + Number(value || 0),
+          0
+        );
+        const diversity = digest.stats?.must_read_diversity || {};
 
         const cards = [
           {
@@ -2578,6 +2678,11 @@
             label: "PDF 본문 확보",
             value: formatNumber(digest.stats?.pdf_text_reports || 0),
             body: "PDF에서 텍스트까지 읽은 리포트",
+          },
+          {
+            label: "PDF 우선 링크",
+            value: formatNumber(linkHealth.pdf_preferred || 0),
+            body: `상세만 ${formatNumber(linkHealth.detail_only || 0)} · 누락 ${formatNumber(linkHealth.missing || 0)}`,
           },
           {
             label: "LLM 투자 메모",
@@ -2612,6 +2717,18 @@
             body: `긴급 ${formatNumber(collectorAlertSummary.critical_alerts || 0)} · 주의 ${formatNumber(
               collectorAlertSummary.warning_alerts || 0
             )}`,
+          },
+          {
+            label: "성과 추적",
+            value: `${formatNumber(completedPerformance)} 완료`,
+            body: `추적 후보 ${formatNumber(performance.tracked_selections || 0)}건`,
+          },
+          {
+            label: "후보 다양성",
+            value: `${formatNumber(diversity.unique_subject_or_title || 0)}개 주제`,
+            body: `증권사 ${formatNumber(diversity.unique_brokers || 0)}곳 · 최대 ${formatNumber(
+              diversity.max_broker_count || 0
+            )}건`,
           },
         ];
 

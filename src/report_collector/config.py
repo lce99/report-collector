@@ -101,6 +101,9 @@ class Settings:
     request_timeout_seconds: int
     page_depth: int
     must_read_limit: int
+    must_read_broker_soft_limit: int
+    must_read_broker_hard_limit: int
+    must_read_subject_hard_limit: int
     preview_char_limit: int
     summary_sentence_count: int
     ranking_limit: int
@@ -172,6 +175,18 @@ class Settings:
             ),
             page_depth=_parse_int(os.getenv("REPORT_PAGE_DEPTH"), 4),
             must_read_limit=_parse_int(os.getenv("MUST_READ_LIMIT"), 12),
+            must_read_broker_soft_limit=_parse_int(
+                os.getenv("MUST_READ_BROKER_SOFT_LIMIT"),
+                3,
+            ),
+            must_read_broker_hard_limit=_parse_int(
+                os.getenv("MUST_READ_BROKER_HARD_LIMIT"),
+                5,
+            ),
+            must_read_subject_hard_limit=_parse_int(
+                os.getenv("MUST_READ_SUBJECT_HARD_LIMIT"),
+                2,
+            ),
             preview_char_limit=_parse_int(os.getenv("PREVIEW_CHAR_LIMIT"), 240),
             summary_sentence_count=_parse_int(
                 os.getenv("SUMMARY_SENTENCE_COUNT"),

@@ -77,6 +77,7 @@ class ReportLinkTests(unittest.TestCase):
         self.assertEqual(report.primary_url, report.pdf_url)
         self.assertEqual(payload["primary_url"], report.pdf_url)
         self.assertEqual(payload["primary_url_label"], "PDF")
+        self.assertEqual(payload["link_health"]["status"], "pdf_preferred")
 
     def test_primary_url_falls_back_to_detail_page(self) -> None:
         report = Report(
@@ -92,6 +93,7 @@ class ReportLinkTests(unittest.TestCase):
 
         self.assertEqual(report.primary_url, report.detail_url)
         self.assertEqual(report.to_public_dict()["primary_url_label"], "상세")
+        self.assertEqual(report.to_public_dict()["link_health"]["status"], "detail_only")
 
 
 class DedupeMergeTests(unittest.TestCase):
@@ -392,6 +394,28 @@ class MustReadSelectionTests(unittest.TestCase):
 
         self.assertIs(selected[0], changed)
 
+    def test_must_read_relaxed_backfill_still_caps_subject_and_broker_skew(self) -> None:
+        reports = [
+            self._report("a1", broker="Broker A", subject="Alpha", score=20),
+            self._report("a2", broker="Broker A", subject="Alpha", score=19),
+            self._report("a3", broker="Broker A", subject="Alpha", score=18),
+            self._report("b1", broker="Broker A", subject="Beta", score=17),
+            self._report("c1", broker="Broker B", subject="Gamma", score=16),
+            self._report("d1", broker="Broker C", subject="Delta", score=15),
+        ]
+
+        selected = _select_must_read(
+            reports,
+            4,
+            broker_soft_limit=1,
+            broker_hard_limit=2,
+            identity_hard_limit=2,
+        )
+
+        self.assertEqual(len(selected), 4)
+        self.assertLessEqual(sum(1 for report in selected if report.broker == "Broker A"), 2)
+        self.assertLessEqual(sum(1 for report in selected if report.subject == "Alpha"), 2)
+
 
 class ScoringTests(unittest.TestCase):
     def test_score_rewards_official_source_and_change_signals(self) -> None:
@@ -432,6 +456,8 @@ class ScoringTests(unittest.TestCase):
         self.assertGreater(changed_score, base_score + 5.0)
         self.assertIn("공식 소스", reasons)
         self.assertTrue(any("목표가" in reason and "상향" in reason for reason in reasons))
+        self.assertTrue(changed.score_breakdown)
+        self.assertIn("목표가 상향", {item["label"] for item in changed.score_breakdown})
 
 
 class SubjectHistoryTests(unittest.TestCase):
@@ -484,6 +510,7 @@ class SubjectHistoryTests(unittest.TestCase):
     def test_selection_performance_ledger_adds_pending_horizons_without_duplicates(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             docs_data_root = Path(tmp) / "docs" / "data"
+            archive_root = Path(tmp) / "storage" / "archive"
             digest_payload = {
                 "date": "2026-04-20",
                 "generated_at": "2026-04-20T18:00:00+09:00",
@@ -503,8 +530,16 @@ class SubjectHistoryTests(unittest.TestCase):
                 ],
             }
 
-            first = _sync_selection_performance(docs_data_root, digest_payload)
-            second = _sync_selection_performance(docs_data_root, digest_payload)
+            first = _sync_selection_performance(
+                docs_data_root,
+                digest_payload,
+                archive_root=archive_root,
+            )
+            second = _sync_selection_performance(
+                docs_data_root,
+                digest_payload,
+                archive_root=archive_root,
+            )
 
         self.assertEqual(first["summary"]["tracked_selections"], 1)
         self.assertEqual(second["summary"]["tracked_selections"], 1)
@@ -512,6 +547,74 @@ class SubjectHistoryTests(unittest.TestCase):
         self.assertEqual(set(selection["horizons"]), {"1d", "7d", "30d"})
         self.assertEqual(selection["horizons"]["7d"]["due_date"], "2026-04-27")
         self.assertEqual(selection["horizons"]["7d"]["status"], "pending")
+
+    def test_selection_performance_completes_due_horizons_from_archive(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            docs_data_root = Path(tmp) / "docs" / "data"
+            archive_root = Path(tmp) / "storage" / "archive"
+            selected_payload = {
+                "date": "2026-04-20",
+                "generated_at": "2026-04-20T18:00:00+09:00",
+                "must_read": [
+                    {
+                        "report_id": "r1",
+                        "display_title": "삼성전자 - Earnings review",
+                        "subject": "삼성전자",
+                        "subject_key": "samsung",
+                        "broker": "Fake증권",
+                        "category": "company",
+                        "category_label": "Company",
+                        "score": 9.5,
+                        "score_reasons": ["목표가 상향"],
+                        "detail_url": "https://example.com/r1",
+                        "target_price_value": 100000,
+                    }
+                ],
+            }
+            _sync_selection_performance(
+                docs_data_root,
+                selected_payload,
+                archive_root=archive_root,
+            )
+            follow_up_dir = archive_root / "2026-04-21"
+            follow_up_dir.mkdir(parents=True)
+            (follow_up_dir / "digest.json").write_text(
+                json.dumps(
+                    {
+                        "date": "2026-04-21",
+                        "reports": [
+                            {
+                                "report_id": "r2",
+                                "display_title": "삼성전자 - Follow up",
+                                "subject": "삼성전자",
+                                "subject_key": "samsung",
+                                "broker": "Other증권",
+                                "published_date": "2026-04-21",
+                                "score": 8.1,
+                                "target_price": "110,000원",
+                                "target_price_value": 110000,
+                                "opinion": "매수",
+                                "has_change_signal": True,
+                            }
+                        ],
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+
+            result = _sync_selection_performance(
+                docs_data_root,
+                {"date": "2026-04-28", "generated_at": "2026-04-28T18:00:00+09:00", "must_read": []},
+                archive_root=archive_root,
+            )
+
+        selection = result["selections"][0]
+        self.assertEqual(selection["horizons"]["1d"]["status"], "completed")
+        self.assertEqual(selection["horizons"]["1d"]["follow_up_report_count"], 1)
+        self.assertEqual(selection["horizons"]["1d"]["follow_up_change_count"], 1)
+        self.assertEqual(selection["horizons"]["1d"]["target_price_delta_pct"], 10.0)
+        self.assertEqual(selection["horizons"]["30d"]["status"], "pending")
 
 
 class TelegramRenderingTests(unittest.TestCase):

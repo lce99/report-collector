@@ -151,6 +151,9 @@ python scripts/get_telegram_chat_id.py
 
 - `REPORT_PAGE_DEPTH`: 카테고리별로 몇 페이지까지 볼지
 - `MUST_READ_LIMIT`: 우선 검토 후보 개수
+- `MUST_READ_BROKER_SOFT_LIMIT`: 우선 검토 후보를 처음 채울 때 한 증권사에 허용할 기본 상한
+- `MUST_READ_BROKER_HARD_LIMIT`: 후보가 부족할 때도 넘기지 않을 증권사별 보조 상한
+- `MUST_READ_SUBJECT_HARD_LIMIT`: 후보가 부족할 때도 넘기지 않을 동일 종목/제목별 보조 상한
 - `REPORT_CATEGORIES`: `company,industry,economy,invest,market,debenture`
 - `BROKER_PRIORITY`: 우선순위를 높게 둘 증권사 목록
 - `PRIORITY_SUBJECTS`: 관심 종목명 목록
@@ -185,6 +188,7 @@ PRIORITY_ONLY=false
 - 목표가/의견/애널리스트 변화 감지 여부
 - 공식 소스 여부와 PDF 본문 확보 여부
 - 동일 종목과 특정 증권사 쏠림을 줄이는 다양성 규칙
+- 점수 분해 내역과 링크 상태를 대시보드에 노출
 - 우선 검토 후보 선정 결과의 1일/7일/30일 성과 추적 원장
 
 ## 텔레그램 명령어 봇
@@ -207,7 +211,7 @@ python scripts/telegram_command_bot.py --timeout 20
 
 ## 선정 성과 추적
 
-우선 검토 후보는 `docs/data/performance/selection_outcomes.json`에 누적됩니다. 현재는 각 리포트에 대해 1일/7일/30일 horizon과 due date를 `pending` 상태로 남기는 원장까지 구현되어 있습니다. 이후 주가/거래량/뉴스 공급원을 붙이면 `price_return_pct`, `volume_change_pct`, `news_count`를 채워 점수 로직 개선 데이터로 쓸 수 있습니다.
+우선 검토 후보는 `docs/data/performance/selection_outcomes.json`에 누적됩니다. 각 리포트에 대해 1일/7일/30일 horizon과 due date를 남기고, due date가 지나면 보유 아카이브에서 같은 종목/제목의 후속 리포트, 변화 감지 수, 최신 목표가/의견을 자동으로 채웁니다. 아직 별도 시세 공급원은 붙지 않았으므로 `price_return_pct`, `volume_change_pct`, `news_count`는 외부 데이터 연결 전까지 `null`로 유지됩니다.
 
 즉시 쓸 수 있는 버전으로는 충분하지만, 나중에는 다음 확장이 좋습니다.
 

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from typing import Any
+from urllib.parse import urlparse
 
 
 @dataclass(slots=True)
@@ -31,6 +32,7 @@ class Report:
     investment_memo: dict[str, Any] = field(default_factory=dict)
     score: float = 0.0
     score_reasons: list[str] = field(default_factory=list)
+    score_breakdown: list[dict[str, Any]] = field(default_factory=list)
     priority_subject_matches: list[str] = field(default_factory=list)
     priority_keyword_matches: list[str] = field(default_factory=list)
     previous_report_date: str | None = None
@@ -71,6 +73,31 @@ class Report:
     @property
     def primary_url_label(self) -> str:
         return "PDF" if self.pdf_url else "상세"
+
+    @property
+    def link_health(self) -> dict[str, Any]:
+        primary_kind = "pdf" if self.pdf_url else "detail"
+        detail_host = urlparse(self.detail_url).netloc if self.detail_url else ""
+        pdf_host = urlparse(self.pdf_url).netloc if self.pdf_url else ""
+        if self.pdf_url:
+            status = "pdf_preferred"
+            note = "PDF 링크를 대표 링크로 사용합니다."
+        elif self.detail_url:
+            status = "detail_only"
+            note = "상세 페이지 링크만 확보됐습니다."
+        else:
+            status = "missing"
+            note = "사용 가능한 링크가 없습니다."
+
+        return {
+            "status": status,
+            "primary_kind": primary_kind,
+            "has_pdf": bool(self.pdf_url),
+            "has_detail": bool(self.detail_url),
+            "detail_host": detail_host,
+            "pdf_host": pdf_host,
+            "note": note,
+        }
 
     @property
     def content_sources(self) -> list[str]:
@@ -117,6 +144,8 @@ class Report:
             "investment_memo": self.investment_memo,
             "score": self.score,
             "score_reasons": self.score_reasons,
+            "score_breakdown": self.score_breakdown,
+            "link_health": self.link_health,
             "priority_subject_matches": self.priority_subject_matches,
             "priority_keyword_matches": self.priority_keyword_matches,
             "is_priority_match": self.is_priority_match,

@@ -69,6 +69,8 @@ MUST_READ_QUOTAS = (
 )
 
 MUST_READ_BROKER_SOFT_LIMIT = 3
+MUST_READ_BROKER_HARD_LIMIT = 5
+MUST_READ_IDENTITY_HARD_LIMIT = 2
 MUST_READ_SIGNAL_LIMIT = 3
 
 RANKING_GROUPS = (
@@ -184,57 +186,80 @@ def _annotate_priority_matches(report: Report, settings: Settings) -> None:
 
 
 def _score_report(report: Report, settings: Settings) -> tuple[float, list[str]]:
-    score = CATEGORY_WEIGHTS.get(report.category, 1.4)
-    reasons: list[str] = [f"{report.category_label} 카테고리"]
+    score = 0.0
+    reasons: list[str] = []
+    breakdown: list[dict[str, object]] = []
+
+    def add_score(label: str, value: float, *, reason: str | None = None) -> None:
+        nonlocal score
+        if value == 0:
+            return
+        score += value
+        breakdown.append(
+            {
+                "label": label,
+                "value": round(value, 2),
+                "kind": "penalty" if value < 0 else "boost",
+            }
+        )
+        if reason:
+            reasons.append(reason)
+
+    add_score(
+        f"{report.category_label} 카테고리",
+        CATEGORY_WEIGHTS.get(report.category, 1.4),
+        reason=f"{report.category_label} 카테고리",
+    )
 
     source_boost = SOURCE_WEIGHTS.get(report.source, 0.0)
     if source_boost:
-        score += source_boost
+        reason = None
         if report.source != "naver_research":
-            reasons.append("공식 소스")
+            reason = "공식 소스"
+        add_score("소스 가중치", source_boost, reason=reason)
 
     if report.priority_subject_matches:
-        score += 4.0 + max(0.0, (len(report.priority_subject_matches) - 1) * 0.35)
-        reasons.append(f"관심 종목({', '.join(report.priority_subject_matches[:3])})")
+        add_score(
+            "관심 종목",
+            4.0 + max(0.0, (len(report.priority_subject_matches) - 1) * 0.35),
+            reason=f"관심 종목({', '.join(report.priority_subject_matches[:3])})",
+        )
 
     if report.priority_keyword_matches:
-        score += 2.4 + max(0.0, (len(report.priority_keyword_matches) - 1) * 0.2)
-        reasons.append(f"관심 섹터/키워드({', '.join(report.priority_keyword_matches[:3])})")
+        add_score(
+            "관심 섹터/키워드",
+            2.4 + max(0.0, (len(report.priority_keyword_matches) - 1) * 0.2),
+            reason=f"관심 섹터/키워드({', '.join(report.priority_keyword_matches[:3])})",
+        )
 
-    score += min(2.3, math.log10(max(report.views, 1)))
+    add_score("조회수", min(2.3, math.log10(max(report.views, 1))))
     if report.views >= 1000:
         reasons.append("조회수 상위권")
 
     if report.target_price:
-        score += 0.7
-        reasons.append("목표가 포함")
+        add_score("목표가", 0.7, reason="목표가 포함")
     if report.opinion:
-        score += 0.6
-        reasons.append("투자의견 포함")
+        add_score("투자의견", 0.6, reason="투자의견 포함")
     if report.analyst:
-        score += 0.2
+        add_score("애널리스트", 0.2)
 
     if report.target_price_change == "up":
-        score += 2.2
-        reasons.append("목표가 상향")
+        add_score("목표가 상향", 2.2, reason="목표가 상향")
     elif report.target_price_change == "down":
-        score += 1.25
-        reasons.append("목표가 하향")
+        add_score("목표가 하향", 1.25, reason="목표가 하향")
     if report.target_price_change_pct is not None:
-        score += min(1.2, abs(report.target_price_change_pct) / 12)
+        add_score("목표가 변화폭", min(1.2, abs(report.target_price_change_pct) / 12))
     if report.opinion_changed:
-        score += 1.6
         if report.opinion_change_direction == "up":
-            reasons.append("의견 상향")
+            add_score("의견 상향", 1.6, reason="의견 상향")
         elif report.opinion_change_direction == "down":
-            reasons.append("의견 하향")
+            add_score("의견 하향", 1.6, reason="의견 하향")
         else:
-            reasons.append("의견 변경")
+            add_score("의견 변경", 1.6, reason="의견 변경")
     if report.coverage_initiated:
-        score += 1.2
-        reasons.append("신규 커버리지")
+        add_score("신규 커버리지", 1.2, reason="신규 커버리지")
     if report.analyst_changed:
-        score += 0.45
+        add_score("애널리스트 변경", 0.45)
 
     broker_index = None
     for index, broker in enumerate(settings.broker_priority):
@@ -242,35 +267,41 @@ def _score_report(report: Report, settings: Settings) -> tuple[float, list[str]]
             broker_index = index
             break
     if broker_index is not None:
-        score += max(0.25, 1.2 - broker_index * 0.05)
-        reasons.append("우선 추적 증권사")
+        add_score(
+            "우선 추적 증권사",
+            max(0.25, 1.2 - broker_index * 0.05),
+            reason="우선 추적 증권사",
+        )
 
     title_lower = report.title.lower()
     matched_keywords: list[str] = []
     for keyword, boost in TITLE_KEYWORD_BOOSTS.items():
         if keyword in title_lower or keyword in report.title:
-            score += boost
+            add_score(f"제목 키워드: {keyword}", boost)
             matched_keywords.append(keyword)
     if matched_keywords:
         reasons.append(f"핵심 키워드({', '.join(matched_keywords[:3])})")
 
     for keyword, penalty in TITLE_KEYWORD_PENALTIES.items():
         if keyword in title_lower or keyword in report.title:
-            score += penalty
+            add_score(f"제목 패널티: {keyword}", penalty)
 
     text_length = _report_text_length(report)
     if text_length >= 2500:
-        score += 0.95
-        reasons.append("본문 정보량 풍부")
+        add_score("본문 정보량", 0.95, reason="본문 정보량 풍부")
     elif text_length >= 1000:
-        score += 0.55
+        add_score("본문 정보량", 0.55)
     elif text_length >= 400:
-        score += 0.25
+        add_score("본문 정보량", 0.25)
 
     if report.has_pdf_text:
-        score += 0.35
-        reasons.append("PDF 본문 확보")
+        add_score("PDF 본문", 0.35, reason="PDF 본문 확보")
 
+    report.score_breakdown = sorted(
+        breakdown,
+        key=lambda item: abs(float(item.get("value") or 0.0)),
+        reverse=True,
+    )
     return round(score, 2), list(dict.fromkeys(reasons))[:5]
 
 
@@ -553,6 +584,34 @@ def _safe_float(value: object, default: float = 0.0) -> float:
         return default
 
 
+def _build_link_health_summary(reports: list[Report]) -> dict[str, object]:
+    status_counts = Counter(report.link_health["status"] for report in reports)
+    return {
+        "pdf_preferred": status_counts.get("pdf_preferred", 0),
+        "detail_only": status_counts.get("detail_only", 0),
+        "missing": status_counts.get("missing", 0),
+        "total": len(reports),
+    }
+
+
+def _build_must_read_diversity(
+    must_read: list[Report],
+    settings: Settings,
+) -> dict[str, object]:
+    broker_counts = Counter(report.broker for report in must_read if report.broker)
+    identity_counts = Counter(_must_read_identity_key(report) for report in must_read)
+    return {
+        "selected": len(must_read),
+        "unique_subject_or_title": len(identity_counts),
+        "unique_brokers": len(broker_counts),
+        "max_broker_count": max(broker_counts.values(), default=0),
+        "max_subject_or_title_count": max(identity_counts.values(), default=0),
+        "broker_soft_limit": settings.must_read_broker_soft_limit,
+        "broker_hard_limit": settings.must_read_broker_hard_limit,
+        "subject_hard_limit": settings.must_read_subject_hard_limit,
+    }
+
+
 def _must_read_identity_key(report: Report) -> str:
     if report.subject_key:
         return f"subject:{report.subject_key}"
@@ -564,6 +623,9 @@ def _select_must_read(
     limit: int,
     *,
     changed_reports: list[Report] | None = None,
+    broker_soft_limit: int = MUST_READ_BROKER_SOFT_LIMIT,
+    broker_hard_limit: int = MUST_READ_BROKER_HARD_LIMIT,
+    identity_hard_limit: int = MUST_READ_IDENTITY_HARD_LIMIT,
 ) -> list[Report]:
     if not reports:
         return []
@@ -575,22 +637,29 @@ def _select_must_read(
     selected: list[Report] = []
     seen_ids: set[str] = set()
     seen_identity_keys: set[str] = set()
+    identity_counts: Counter[str] = Counter()
     broker_counts: Counter[str] = Counter()
 
-    def add_candidate(report: Report, *, enforce_diversity: bool) -> bool:
+    def add_candidate(report: Report, *, diversity: str) -> bool:
         if report.report_id in seen_ids or len(selected) >= limit:
             return False
 
         identity_key = _must_read_identity_key(report)
-        if enforce_diversity:
+        if diversity == "strict":
             if identity_key in seen_identity_keys:
                 return False
-            if broker_counts[report.broker] >= MUST_READ_BROKER_SOFT_LIMIT:
+            if broker_counts[report.broker] >= broker_soft_limit:
+                return False
+        elif diversity == "relaxed":
+            if identity_counts[identity_key] >= identity_hard_limit:
+                return False
+            if broker_counts[report.broker] >= broker_hard_limit:
                 return False
 
         selected.append(report)
         seen_ids.add(report.report_id)
         seen_identity_keys.add(identity_key)
+        identity_counts[identity_key] += 1
         broker_counts[report.broker] += 1
         return True
 
@@ -599,23 +668,23 @@ def _select_must_read(
     for report in signal_candidates:
         if len(selected) >= signal_target:
             break
-        add_candidate(report, enforce_diversity=True)
+        add_candidate(report, diversity="strict")
 
     for category, quota in MUST_READ_QUOTAS:
         category_count = sum(1 for report in selected if report.category == category)
         for report in grouped.get(category, []):
             if category_count >= quota or len(selected) >= limit:
                 break
-            if add_candidate(report, enforce_diversity=True):
+            if add_candidate(report, diversity="strict"):
                 category_count += 1
 
     if len(selected) < limit:
         for report in reports:
-            add_candidate(report, enforce_diversity=True)
+            add_candidate(report, diversity="relaxed")
 
     if len(selected) < limit:
         for report in reports:
-            add_candidate(report, enforce_diversity=False)
+            add_candidate(report, diversity="none")
 
     return selected[:limit]
 
@@ -628,6 +697,8 @@ def _build_stats(
     *,
     archive_root=None,
     current_date: str = "",
+    must_read: list[Report] | None = None,
+    settings: Settings | None = None,
 ) -> dict[str, object]:
     category_counts = Counter(report.category_label for report in reports)
     broker_counts = Counter(report.broker for report in reports)
@@ -659,6 +730,10 @@ def _build_stats(
         "collector_health_attempts": collection_attempts or [],
         "collector_alerts": collector_alerts,
         "collector_alert_summary": collector_alert_summary,
+        "link_health": _build_link_health_summary(reports),
+        "must_read_diversity": _build_must_read_diversity(must_read or [], settings)
+        if settings
+        else {},
         "categories": [
             {"label": label, "count": count}
             for label, count in category_counts.most_common()
@@ -1144,6 +1219,9 @@ def enrich_and_build_digest(
         selection_pool,
         settings.must_read_limit,
         changed_reports=selection_changes,
+        broker_soft_limit=settings.must_read_broker_soft_limit,
+        broker_hard_limit=settings.must_read_broker_hard_limit,
+        identity_hard_limit=settings.must_read_subject_hard_limit,
     )
     keywords = _extract_keywords(must_read or reports)
     stats = _build_stats(
@@ -1153,6 +1231,8 @@ def enrich_and_build_digest(
         collection_attempts,
         archive_root=settings.archive_root,
         current_date=target_date,
+        must_read=must_read,
+        settings=settings,
     )
     priority_filters = _build_priority_filters(reports, must_read, settings)
     editorial_note = _build_editorial_note(reports, must_read, change_summary)

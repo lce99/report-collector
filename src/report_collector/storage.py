@@ -400,6 +400,7 @@ def _build_selection_record(
         "pdf_url": report.get("pdf_url"),
         "primary_url": report.get("primary_url") or report.get("pdf_url") or report.get("detail_url"),
         "target_price": report.get("target_price"),
+        "target_price_value": report.get("target_price_value"),
         "opinion": report.get("opinion"),
         "horizons": {
             f"{days}d": {
@@ -413,6 +414,110 @@ def _build_selection_record(
             for days in PERFORMANCE_HORIZONS
         },
     }
+
+
+def _report_matches_selection(report: dict[str, Any], record: dict[str, Any]) -> bool:
+    subject_key = str(record.get("subject_key") or "")
+    if subject_key and str(report.get("subject_key") or "") == subject_key:
+        return True
+
+    selected_title = str(record.get("display_title") or "")
+    report_title = str(report.get("display_title") or report.get("title") or "")
+    if selected_title and report_title and selected_title == report_title:
+        return True
+
+    return False
+
+
+def _follow_up_reports_for_record(
+    archive_root: Path,
+    record: dict[str, Any],
+    due_date: date,
+) -> list[dict[str, Any]]:
+    selected_date = _parse_date(record.get("selected_date"))
+    if not selected_date or not archive_root.exists():
+        return []
+
+    matches: list[dict[str, Any]] = []
+    for day_dir in sorted(path for path in archive_root.iterdir() if path.is_dir()):
+        day = _parse_date(day_dir.name)
+        if not day or day <= selected_date or day > due_date:
+            continue
+        payload = _load_json(day_dir / "digest.json")
+        if not payload:
+            continue
+        for report in payload.get("reports", []):
+            if not isinstance(report, dict):
+                continue
+            if _report_matches_selection(report, record):
+                matches.append(report)
+
+    matches.sort(
+        key=lambda item: (
+            str(item.get("published_date") or ""),
+            float(item.get("score") or 0.0),
+        ),
+        reverse=True,
+    )
+    return matches
+
+
+def _target_price_delta_pct(
+    selected_value: object,
+    latest_value: object,
+) -> float | None:
+    try:
+        selected = float(selected_value)
+        latest = float(latest_value)
+    except (TypeError, ValueError):
+        return None
+    if selected <= 0:
+        return None
+    return round(((latest - selected) / selected) * 100, 2)
+
+
+def _complete_due_horizons(
+    records: list[dict[str, Any]],
+    *,
+    archive_root: Path,
+    as_of_date: date | None,
+) -> None:
+    if not as_of_date:
+        return
+
+    for record in records:
+        horizons = record.get("horizons")
+        if not isinstance(horizons, dict):
+            continue
+        for horizon in horizons.values():
+            if not isinstance(horizon, dict):
+                continue
+            due_date = _parse_date(horizon.get("due_date"))
+            if not due_date or due_date > as_of_date:
+                continue
+            if str(horizon.get("status") or "") == "completed":
+                continue
+
+            follow_ups = _follow_up_reports_for_record(archive_root, record, due_date)
+            latest = follow_ups[0] if follow_ups else {}
+            horizon["status"] = "completed"
+            horizon["completed_at"] = as_of_date.isoformat()
+            horizon["follow_up_report_count"] = len(follow_ups)
+            horizon["follow_up_change_count"] = sum(
+                1 for report in follow_ups if bool(report.get("has_change_signal"))
+            )
+            horizon["latest_report_date"] = latest.get("published_date")
+            horizon["latest_report_title"] = latest.get("display_title") or latest.get("title")
+            horizon["latest_broker"] = latest.get("broker")
+            horizon["latest_score"] = latest.get("score")
+            horizon["latest_target_price"] = latest.get("target_price")
+            horizon["latest_target_price_value"] = latest.get("target_price_value")
+            horizon["latest_opinion"] = latest.get("opinion")
+            horizon["target_price_delta_pct"] = _target_price_delta_pct(
+                record.get("target_price_value"),
+                latest.get("target_price_value"),
+            )
+            horizon["outcome_source"] = "archived_follow_up_reports"
 
 
 def _build_performance_summary(records: list[dict[str, Any]]) -> dict[str, Any]:
@@ -442,6 +547,8 @@ def _build_performance_summary(records: list[dict[str, Any]]) -> dict[str, Any]:
 def _sync_selection_performance(
     docs_data_root: Path,
     digest_payload: dict[str, Any],
+    *,
+    archive_root: Path,
 ) -> dict[str, Any]:
     performance_root = docs_data_root / "performance"
     ledger_path = performance_root / "selection_outcomes.json"
@@ -462,6 +569,12 @@ def _sync_selection_performance(
         key = _selection_key(str(digest_payload.get("date") or ""), report)
         if key not in records_by_key:
             records_by_key[key] = _build_selection_record(digest_payload, report)
+
+    _complete_due_horizons(
+        list(records_by_key.values()),
+        archive_root=archive_root,
+        as_of_date=_parse_date(digest_payload.get("date")),
+    )
 
     records = sorted(
         records_by_key.values(),
@@ -493,7 +606,11 @@ def publish_digest(
     archive_day_dir = archive_root / digest.date
     digest_payload = digest.to_public_dict()
     docs_data_root = docs_root / "data"
-    performance_payload = _sync_selection_performance(docs_data_root, digest_payload)
+    performance_payload = _sync_selection_performance(
+        docs_data_root,
+        digest_payload,
+        archive_root=archive_root,
+    )
     if isinstance(digest_payload.get("stats"), dict):
         digest_payload["stats"]["selection_performance"] = performance_payload.get("summary", {})
 
