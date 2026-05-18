@@ -2661,6 +2661,13 @@
           (sum, value) => sum + Number(value || 0),
           0
         );
+        const pricedPerformance = Object.values(performance.priced_by_horizon || {}).reduce(
+          (sum, value) => sum + Number(value || 0),
+          0
+        );
+        const averageReturns = performance.average_price_return_by_horizon || {};
+        const headlineReturn =
+          averageReturns["7d"] ?? averageReturns["1d"] ?? averageReturns["30d"];
         const diversity = digest.stats?.must_read_diversity || {};
 
         const cards = [
@@ -2721,7 +2728,9 @@
           {
             label: "성과 추적",
             value: `${formatNumber(completedPerformance)} 완료`,
-            body: `추적 후보 ${formatNumber(performance.tracked_selections || 0)}건`,
+            body: `시세 ${formatNumber(pricedPerformance)}건${
+              headlineReturn !== undefined ? ` · 평균 ${Number(headlineReturn).toFixed(2)}%` : ""
+            } · 추적 후보 ${formatNumber(performance.tracked_selections || 0)}건`,
           },
           {
             label: "후보 다양성",

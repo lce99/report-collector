@@ -13,6 +13,7 @@ from report_collector.digest import (
     render_telegram_messages,
 )
 from report_collector.llm import enhance_digest_summaries
+from report_collector.market_data import NaverDailyPriceProvider
 from report_collector.models import Report
 from report_collector.sources.korea_investment import KoreaInvestmentCollector
 from report_collector.sources.mirae_asset import MiraeAssetCollector
@@ -68,6 +69,8 @@ def _merge_duplicate_reports(current: Report, candidate: Report) -> Report:
         preferred.subject = fallback.subject
     if not preferred.subject_key and fallback.subject_key:
         preferred.subject_key = fallback.subject_key
+    if not preferred.ticker and fallback.ticker:
+        preferred.ticker = fallback.ticker
     if not preferred.analyst and fallback.analyst:
         preferred.analyst = fallback.analyst
     if not preferred.target_price and fallback.target_price:
@@ -253,11 +256,21 @@ def main() -> int:
     enhance_digest_summaries(digest, settings)
     markdown = render_markdown(digest)
 
+    market_data_provider = None
+    if settings.market_data_enabled and settings.market_data_source == "naver":
+        market_data_provider = NaverDailyPriceProvider(
+            user_agent=settings.user_agent,
+            timeout_seconds=settings.request_timeout_seconds,
+            max_pages=settings.market_data_max_pages,
+        )
+
     publish_digest(
         digest,
         archive_root=settings.archive_root,
         docs_root=settings.docs_root,
         markdown_content=markdown,
+        market_data_provider=market_data_provider,
+        subject_ticker_map=settings.subject_ticker_map,
     )
 
     if settings.telegram_enabled and not args.skip_telegram:

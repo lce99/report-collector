@@ -12,13 +12,14 @@ from pathlib import Path
 from types import SimpleNamespace
 from unittest.mock import patch
 
+from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from report_collector.config import Settings, _parse_bool, _parse_int
+from report_collector.config import Settings, _parse_bool, _parse_int, _parse_mapping
 from report_collector.digest import (
     _build_stats,
     _iter_previous_reports,
@@ -28,7 +29,9 @@ from report_collector.digest import (
 )
 from report_collector.llm import _apply_summary
 from report_collector.main import _merge_duplicate_reports, _run_collector
+from report_collector.market_data import NaverDailyPriceProvider, parse_naver_daily_price_html
 from report_collector.models import DailyDigest, Report
+from report_collector.sources.naver_research import CATEGORY_CONFIGS, NaverResearchCollector
 from report_collector.sources.shinhan_investment import ShinhanBoardConfig, _parse_item
 from report_collector.storage import (
     _build_index,
@@ -45,6 +48,10 @@ class ConfigParsingTests(unittest.TestCase):
         self.assertTrue(_parse_bool("true", False))
         self.assertFalse(_parse_bool("false", True))
         self.assertTrue(_parse_bool("unknown", True))
+        self.assertEqual(
+            _parse_mapping("삼성전자=005930,NAVER=035420"),
+            {"삼성전자": "005930", "NAVER": "035420"},
+        )
 
     def test_openai_summary_requires_explicit_enable_flag(self) -> None:
         with patch.dict(os.environ, {"OPENAI_API_KEY": "sk-test"}, clear=True):
@@ -96,6 +103,58 @@ class ReportLinkTests(unittest.TestCase):
         self.assertEqual(report.to_public_dict()["link_health"]["status"], "detail_only")
 
 
+class MarketDataTests(unittest.TestCase):
+    def test_naver_price_provider_calculates_close_to_close_return(self) -> None:
+        html = """
+        <table class="type2">
+          <tr><td>2026.04.28</td><td>110,000</td><td></td><td></td><td></td><td></td><td>200</td></tr>
+          <tr><td>2026.04.20</td><td>100,000</td><td></td><td></td><td></td><td></td><td>100</td></tr>
+        </table>
+        """
+        points = parse_naver_daily_price_html(html)
+        self.assertEqual([point.date.isoformat() for point in points], ["2026-04-28", "2026-04-20"])
+
+        provider = NaverDailyPriceProvider(
+            user_agent="test",
+            timeout_seconds=1,
+            fetch_html=lambda url: html,
+        )
+        result = provider.calculate_return("005930", date(2026, 4, 20), date(2026, 4, 28))
+
+        self.assertIsNotNone(result)
+        assert result is not None
+        self.assertEqual(result["ticker"], "005930")
+        self.assertEqual(result["price_return_pct"], 10.0)
+        self.assertEqual(result["volume_change_pct"], 100.0)
+
+
+class NaverResearchCollectorTests(unittest.TestCase):
+    def test_parse_list_row_keeps_subject_ticker(self) -> None:
+        html = """
+        <table><tr>
+          <td><a href="/item/main.naver?code=005930">삼성전자</a></td>
+          <td><a href="/research/company_read.naver?nid=1&page=1">Earnings review</a></td>
+          <td>Fake증권</td>
+          <td><a href="/stock-research/company/report.pdf">PDF</a></td>
+          <td>26.04.20</td>
+          <td>1,234</td>
+        </tr></table>
+        """
+        soup = BeautifulSoup(html, "html.parser")
+        row = soup.find("tr")
+        assert row is not None
+        collector = NaverResearchCollector(
+            SimpleNamespace(base_url="https://finance.naver.com/research/")
+        )
+
+        report = collector._parse_list_row(row.find_all("td"), CATEGORY_CONFIGS["company"])
+
+        self.assertIsNotNone(report)
+        assert report is not None
+        self.assertEqual(report.subject, "삼성전자")
+        self.assertEqual(report.ticker, "005930")
+
+
 class DedupeMergeTests(unittest.TestCase):
     def test_official_report_keeps_priority_and_backfills_naver_metadata(self) -> None:
         official = Report(
@@ -119,6 +178,7 @@ class DedupeMergeTests(unittest.TestCase):
             detail_url="https://example.com/naver",
             pdf_url="https://example.com/report.pdf",
             subject="ExampleCo",
+            ticker="005930",
             views=1250,
             analyst="Analyst",
             target_price="10,000",
@@ -132,6 +192,7 @@ class DedupeMergeTests(unittest.TestCase):
         self.assertEqual(merged.views, 1250)
         self.assertEqual(merged.pdf_url, naver.pdf_url)
         self.assertEqual(merged.subject, naver.subject)
+        self.assertEqual(merged.ticker, naver.ticker)
         self.assertEqual(merged.analyst, naver.analyst)
         self.assertEqual(merged.target_price, naver.target_price)
         self.assertEqual(merged.opinion, naver.opinion)
@@ -549,9 +610,28 @@ class SubjectHistoryTests(unittest.TestCase):
         self.assertEqual(selection["horizons"]["7d"]["status"], "pending")
 
     def test_selection_performance_completes_due_horizons_from_archive(self) -> None:
+        class FakeMarketDataProvider:
+            source_name = "fake_market_data"
+
+            def calculate_return(self, ticker: str, selected_date: date, due_date: date):
+                self.last_request = (ticker, selected_date, due_date)
+                return {
+                    "ticker": ticker,
+                    "price_source": self.source_name,
+                    "entry_price_date": selected_date.isoformat(),
+                    "entry_close": 100000,
+                    "exit_price_date": due_date.isoformat(),
+                    "exit_close": 112000,
+                    "price_return_pct": 12.0,
+                    "entry_volume": 100,
+                    "exit_volume": 150,
+                    "volume_change_pct": 50.0,
+                }
+
         with tempfile.TemporaryDirectory() as tmp:
             docs_data_root = Path(tmp) / "docs" / "data"
             archive_root = Path(tmp) / "storage" / "archive"
+            market_provider = FakeMarketDataProvider()
             selected_payload = {
                 "date": "2026-04-20",
                 "generated_at": "2026-04-20T18:00:00+09:00",
@@ -607,6 +687,8 @@ class SubjectHistoryTests(unittest.TestCase):
                 docs_data_root,
                 {"date": "2026-04-28", "generated_at": "2026-04-28T18:00:00+09:00", "must_read": []},
                 archive_root=archive_root,
+                market_data_provider=market_provider,
+                subject_ticker_map={"samsung": "005930"},
             )
 
         selection = result["selections"][0]
@@ -614,6 +696,11 @@ class SubjectHistoryTests(unittest.TestCase):
         self.assertEqual(selection["horizons"]["1d"]["follow_up_report_count"], 1)
         self.assertEqual(selection["horizons"]["1d"]["follow_up_change_count"], 1)
         self.assertEqual(selection["horizons"]["1d"]["target_price_delta_pct"], 10.0)
+        self.assertEqual(selection["ticker"], "005930")
+        self.assertEqual(selection["horizons"]["1d"]["price_return_pct"], 12.0)
+        self.assertEqual(selection["horizons"]["1d"]["volume_change_pct"], 50.0)
+        self.assertEqual(result["summary"]["priced_by_horizon"]["1d"], 1)
+        self.assertEqual(result["summary"]["average_price_return_by_horizon"]["1d"], 12.0)
         self.assertEqual(selection["horizons"]["30d"]["status"], "pending")
 
 

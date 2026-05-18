@@ -154,6 +154,10 @@ python scripts/get_telegram_chat_id.py
 - `MUST_READ_BROKER_SOFT_LIMIT`: 우선 검토 후보를 처음 채울 때 한 증권사에 허용할 기본 상한
 - `MUST_READ_BROKER_HARD_LIMIT`: 후보가 부족할 때도 넘기지 않을 증권사별 보조 상한
 - `MUST_READ_SUBJECT_HARD_LIMIT`: 후보가 부족할 때도 넘기지 않을 동일 종목/제목별 보조 상한
+- `MARKET_DATA_ENABLED`: 기본 `true`; 후보 성과 추적에 종가/거래량 데이터를 연결
+- `MARKET_DATA_SOURCE`: 기본 `naver`; 현재는 네이버 일별 시세를 사용
+- `MARKET_DATA_MAX_PAGES`: 종목별 일별 시세를 몇 페이지까지 조회할지
+- `SUBJECT_TICKER_MAP`: 공식 리포트처럼 종목코드가 없는 후보를 보강하는 매핑. 예: `삼성전자=005930,NAVER=035420`
 - `REPORT_CATEGORIES`: `company,industry,economy,invest,market,debenture`
 - `BROKER_PRIORITY`: 우선순위를 높게 둘 증권사 목록
 - `PRIORITY_SUBJECTS`: 관심 종목명 목록
@@ -211,7 +215,7 @@ python scripts/telegram_command_bot.py --timeout 20
 
 ## 선정 성과 추적
 
-우선 검토 후보는 `docs/data/performance/selection_outcomes.json`에 누적됩니다. 각 리포트에 대해 1일/7일/30일 horizon과 due date를 남기고, due date가 지나면 보유 아카이브에서 같은 종목/제목의 후속 리포트, 변화 감지 수, 최신 목표가/의견을 자동으로 채웁니다. 아직 별도 시세 공급원은 붙지 않았으므로 `price_return_pct`, `volume_change_pct`, `news_count`는 외부 데이터 연결 전까지 `null`로 유지됩니다.
+우선 검토 후보는 `docs/data/performance/selection_outcomes.json`에 누적됩니다. 각 리포트에 대해 1일/7일/30일 horizon과 due date를 남기고, due date가 지나면 보유 아카이브에서 같은 종목/제목의 후속 리포트, 변화 감지 수, 최신 목표가/의견을 자동으로 채웁니다. 종목코드가 확보된 후보는 네이버 일별 시세에서 entry/exit 종가와 거래량을 조회해 `price_return_pct`, `volume_change_pct`도 함께 채웁니다. 종목코드가 없는 공식 리포트는 `SUBJECT_TICKER_MAP`으로 보강할 수 있고, `news_count`는 별도 뉴스 공급원 연결 전까지 `null`로 유지됩니다.
 
 즉시 쓸 수 있는 버전으로는 충분하지만, 나중에는 다음 확장이 좋습니다.
 

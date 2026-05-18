@@ -18,6 +18,7 @@ class Report:
     pdf_url: str | None = None
     subject: str | None = None
     subject_key: str | None = None
+    ticker: str | None = None
     views: int = 0
     analyst: str | None = None
     target_price: str | None = None
@@ -130,6 +131,7 @@ class Report:
             "primary_url_label": self.primary_url_label,
             "subject": self.subject,
             "subject_key": self.subject_key,
+            "ticker": self.ticker,
             "views": self.views,
             "analyst": self.analyst,
             "target_price": self.target_price,

@@ -9,6 +9,7 @@ import re
 from bs4 import BeautifulSoup
 
 from report_collector.config import Settings
+from report_collector.market_data import normalize_ticker
 from report_collector.models import Report
 from report_collector.pdf_text import extract_pdf_text
 from report_collector.sources.common import fetch_html, normalize_space, parse_int
@@ -141,6 +142,14 @@ def _clean_optional_value(value: str | None) -> str | None:
     return cleaned
 
 
+def _extract_ticker_from_cell(cell) -> str | None:
+    for anchor in cell.find_all("a", href=True):
+        ticker = normalize_ticker(anchor["href"])
+        if ticker:
+            return ticker
+    return None
+
+
 class NaverResearchCollector:
     def __init__(self, settings: Settings) -> None:
         self.settings = settings
@@ -239,8 +248,11 @@ class NaverResearchCollector:
             return None
 
         subject = None
+        ticker = None
         if config.subject_index is not None:
-            subject = normalize_space(columns[config.subject_index].get_text(" ", strip=True))
+            subject_cell = columns[config.subject_index]
+            subject = normalize_space(subject_cell.get_text(" ", strip=True))
+            ticker = _extract_ticker_from_cell(subject_cell)
 
         pdf_anchor = columns[config.file_index].find("a", href=True)
         pdf_url = urljoin(self.settings.base_url, pdf_anchor["href"]) if pdf_anchor else None
@@ -260,6 +272,7 @@ class NaverResearchCollector:
             detail_url=detail_url,
             pdf_url=pdf_url,
             subject=subject or None,
+            ticker=ticker,
             views=parse_int(columns[config.views_index].get_text(" ", strip=True)),
         )
 

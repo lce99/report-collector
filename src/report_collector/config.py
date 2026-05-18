@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
+import json
 import os
 
 
@@ -72,6 +73,35 @@ def _parse_int(value: str | None, default: int) -> int:
         return default
 
 
+def _parse_mapping(value: str | None) -> dict[str, str]:
+    if not value:
+        return {}
+    cleaned = value.strip()
+    if not cleaned:
+        return {}
+    try:
+        payload = json.loads(cleaned)
+    except json.JSONDecodeError:
+        payload = None
+    if isinstance(payload, dict):
+        return {
+            str(key).strip(): str(item).strip()
+            for key, item in payload.items()
+            if str(key).strip() and str(item).strip()
+        }
+
+    parsed: dict[str, str] = {}
+    for item in cleaned.split(","):
+        key, separator, ticker = item.partition("=")
+        if not separator:
+            continue
+        key = key.strip()
+        ticker = ticker.strip()
+        if key and ticker:
+            parsed[key] = ticker
+    return parsed
+
+
 def _normalize_site_url(value: str | None) -> str | None:
     if not value:
         return None
@@ -113,6 +143,10 @@ class Settings:
     pdf_text_min_body_chars: int
     enable_date_fallback: bool
     max_date_fallback_days: int
+    market_data_enabled: bool
+    market_data_source: str
+    market_data_max_pages: int
+    subject_ticker_map: dict[str, str]
     categories: tuple[str, ...]
     broker_priority: tuple[str, ...]
     priority_subjects: tuple[str, ...]
@@ -214,6 +248,10 @@ class Settings:
                 os.getenv("MAX_DATE_FALLBACK_DAYS"),
                 3,
             ),
+            market_data_enabled=_parse_bool(os.getenv("MARKET_DATA_ENABLED"), True),
+            market_data_source=os.getenv("MARKET_DATA_SOURCE", "naver").strip().lower(),
+            market_data_max_pages=_parse_int(os.getenv("MARKET_DATA_MAX_PAGES"), 8),
+            subject_ticker_map=_parse_mapping(os.getenv("SUBJECT_TICKER_MAP")),
             categories=_parse_csv(
                 os.getenv("REPORT_CATEGORIES"),
                 DEFAULT_CATEGORIES,

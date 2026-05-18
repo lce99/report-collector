@@ -6,6 +6,7 @@ from pathlib import Path
 import json
 from typing import Any
 
+from report_collector.market_data import normalize_ticker
 from report_collector.models import DailyDigest
 from report_collector.normalization import (
     normalize_opinion_value,
@@ -96,6 +97,7 @@ def _normalize_subject_report(report: dict[str, Any]) -> dict[str, Any] | None:
     payload = dict(report)
     payload["subject"] = subject_name
     payload["subject_key"] = report.get("subject_key") or normalize_subject_key(subject_name)
+    payload["ticker"] = _resolve_report_ticker(payload)
     payload["target_price_value"] = report.get("target_price_value")
     if payload["target_price_value"] is None:
         payload["target_price_value"] = parse_target_price_value(
@@ -166,6 +168,7 @@ def _chart_report_point(report: dict[str, Any]) -> dict[str, Any]:
         "date": report.get("published_date"),
         "broker": report.get("broker"),
         "title": report.get("display_title") or report.get("title"),
+        "ticker": report.get("ticker"),
         "detail_url": report.get("detail_url"),
         "pdf_url": report.get("pdf_url"),
         "primary_url": report.get("primary_url") or report.get("pdf_url") or report.get("detail_url"),
@@ -384,6 +387,7 @@ def _build_selection_record(
     report: dict[str, Any],
 ) -> dict[str, Any]:
     digest_date = str(digest_payload.get("date") or "")
+    ticker = _resolve_report_ticker(report)
     return {
         "key": _selection_key(digest_date, report),
         "selected_date": digest_date,
@@ -391,6 +395,7 @@ def _build_selection_record(
         "display_title": report.get("display_title") or report.get("title"),
         "subject": report.get("subject"),
         "subject_key": report.get("subject_key"),
+        "ticker": ticker,
         "broker": report.get("broker"),
         "category": report.get("category"),
         "category_label": report.get("category_label"),
@@ -414,6 +419,54 @@ def _build_selection_record(
             for days in PERFORMANCE_HORIZONS
         },
     }
+
+
+def _resolve_report_ticker(report: dict[str, Any]) -> str | None:
+    for key in ("ticker", "stock_code", "code"):
+        ticker = normalize_ticker(report.get(key))
+        if ticker:
+            return ticker
+    return normalize_ticker(
+        " ".join(
+            str(report.get(key) or "")
+            for key in ("display_title", "title", "subject", "subject_key")
+        )
+    )
+
+
+def _build_ticker_lookup(subject_ticker_map: dict[str, str] | None) -> dict[str, str]:
+    lookup: dict[str, str] = {}
+    for key, value in (subject_ticker_map or {}).items():
+        ticker = normalize_ticker(value)
+        if not ticker:
+            continue
+        raw_key = str(key or "").strip()
+        normalized_key = normalize_subject_key(raw_key)
+        if raw_key:
+            lookup[raw_key] = ticker
+        if normalized_key:
+            lookup[normalized_key] = ticker
+    return lookup
+
+
+def _resolve_record_ticker(
+    record: dict[str, Any],
+    ticker_lookup: dict[str, str],
+) -> str | None:
+    ticker = normalize_ticker(record.get("ticker"))
+    if ticker:
+        return ticker
+    for key in ("subject_key", "subject", "display_title"):
+        value = str(record.get(key) or "").strip()
+        if not value:
+            continue
+        mapped = ticker_lookup.get(value)
+        if mapped:
+            return mapped
+        normalized = normalize_subject_key(value)
+        if normalized and ticker_lookup.get(normalized):
+            return ticker_lookup[normalized]
+    return _resolve_report_ticker(record)
 
 
 def _report_matches_selection(report: dict[str, Any], record: dict[str, Any]) -> bool:
@@ -481,11 +534,17 @@ def _complete_due_horizons(
     *,
     archive_root: Path,
     as_of_date: date | None,
+    market_data_provider: Any | None = None,
+    subject_ticker_map: dict[str, str] | None = None,
 ) -> None:
     if not as_of_date:
         return
 
+    ticker_lookup = _build_ticker_lookup(subject_ticker_map)
     for record in records:
+        record_ticker = _resolve_record_ticker(record, ticker_lookup)
+        if record_ticker and not record.get("ticker"):
+            record["ticker"] = record_ticker
         horizons = record.get("horizons")
         if not isinstance(horizons, dict):
             continue
@@ -518,11 +577,56 @@ def _complete_due_horizons(
                 latest.get("target_price_value"),
             )
             horizon["outcome_source"] = "archived_follow_up_reports"
+            _attach_market_return(
+                horizon,
+                record,
+                record_ticker,
+                market_data_provider,
+            )
+
+
+def _attach_market_return(
+    horizon: dict[str, Any],
+    record: dict[str, Any],
+    ticker: str | None,
+    market_data_provider: Any | None,
+) -> None:
+    if market_data_provider is None:
+        return
+
+    selected_date = _parse_date(record.get("selected_date"))
+    due_date = _parse_date(horizon.get("due_date"))
+    if not selected_date or not due_date:
+        return
+
+    if not ticker:
+        horizon["price_return_status"] = "missing_ticker"
+        return
+
+    try:
+        result = market_data_provider.calculate_return(ticker, selected_date, due_date)
+    except Exception as exc:
+        horizon["ticker"] = ticker
+        horizon["price_source"] = getattr(market_data_provider, "source_name", "market_data")
+        horizon["price_return_status"] = f"failed:{exc.__class__.__name__}"
+        return
+
+    horizon["ticker"] = ticker
+    if not result:
+        horizon["price_source"] = getattr(market_data_provider, "source_name", "market_data")
+        horizon["price_return_status"] = "price_unavailable"
+        return
+
+    horizon.update(result)
+    horizon["price_return_status"] = "ok"
 
 
 def _build_performance_summary(records: list[dict[str, Any]]) -> dict[str, Any]:
     pending_by_horizon: dict[str, int] = Counter()
     completed_by_horizon: dict[str, int] = Counter()
+    priced_by_horizon: dict[str, int] = Counter()
+    price_source_counts: dict[str, int] = Counter()
+    returns_by_horizon: dict[str, list[float]] = defaultdict(list)
     for record in records:
         horizons = record.get("horizons")
         if not isinstance(horizons, dict):
@@ -533,13 +637,32 @@ def _build_performance_summary(records: list[dict[str, Any]]) -> dict[str, Any]:
             status = str(payload.get("status") or "pending")
             if status == "completed":
                 completed_by_horizon[horizon] += 1
+                price_return = payload.get("price_return_pct")
+                if price_return is not None:
+                    priced_by_horizon[horizon] += 1
+                    try:
+                        returns_by_horizon[horizon].append(float(price_return))
+                    except (TypeError, ValueError):
+                        pass
+                price_source = str(payload.get("price_source") or "")
+                if price_source:
+                    price_source_counts[price_source] += 1
             else:
                 pending_by_horizon[horizon] += 1
+
+    average_return_by_horizon = {
+        horizon: round(sum(values) / len(values), 2)
+        for horizon, values in returns_by_horizon.items()
+        if values
+    }
 
     return {
         "tracked_selections": len(records),
         "pending_by_horizon": dict(pending_by_horizon),
         "completed_by_horizon": dict(completed_by_horizon),
+        "priced_by_horizon": dict(priced_by_horizon),
+        "average_price_return_by_horizon": average_return_by_horizon,
+        "price_source_counts": dict(price_source_counts),
         "horizons": [f"{days}d" for days in PERFORMANCE_HORIZONS],
     }
 
@@ -549,6 +672,8 @@ def _sync_selection_performance(
     digest_payload: dict[str, Any],
     *,
     archive_root: Path,
+    market_data_provider: Any | None = None,
+    subject_ticker_map: dict[str, str] | None = None,
 ) -> dict[str, Any]:
     performance_root = docs_data_root / "performance"
     ledger_path = performance_root / "selection_outcomes.json"
@@ -574,6 +699,8 @@ def _sync_selection_performance(
         list(records_by_key.values()),
         archive_root=archive_root,
         as_of_date=_parse_date(digest_payload.get("date")),
+        market_data_provider=market_data_provider,
+        subject_ticker_map=subject_ticker_map,
     )
 
     records = sorted(
@@ -602,6 +729,8 @@ def publish_digest(
     archive_root: Path,
     docs_root: Path,
     markdown_content: str,
+    market_data_provider: Any | None = None,
+    subject_ticker_map: dict[str, str] | None = None,
 ) -> None:
     archive_day_dir = archive_root / digest.date
     digest_payload = digest.to_public_dict()
@@ -610,6 +739,8 @@ def publish_digest(
         docs_data_root,
         digest_payload,
         archive_root=archive_root,
+        market_data_provider=market_data_provider,
+        subject_ticker_map=subject_ticker_map,
     )
     if isinstance(digest_payload.get("stats"), dict):
         digest_payload["stats"]["selection_performance"] = performance_payload.get("summary", {})
