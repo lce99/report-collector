@@ -1,8 +1,8 @@
 {
   "subject_key": "증권",
   "subject_name": "증권",
-  "latest_report_date": "2026-05-22",
-  "report_count": 9,
+  "latest_report_date": "2026-05-26",
+  "report_count": 10,
   "active_broker_count": 6,
   "active_brokers": [
     "SK증권",
@@ -23,10 +23,10 @@
     "coverage_initiated": 0
   },
   "target_summary": {
-    "count": 1,
-    "high": 160000,
-    "low": 160000,
-    "avg": 160000
+    "count": 0,
+    "high": null,
+    "low": null,
+    "avg": null
   },
   "opinion_summary": [],
   "charts": {
@@ -92,6 +92,21 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 11.95,
+        "has_change_signal": false
+      },
+      {
+        "date": "2026-05-26",
+        "broker": "신한투자증권",
+        "title": "증권 - KOSPI, 지붕 뚫고 하이킥",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44656&page=1",
+        "pdf_url": null,
+        "primary_url": "https://finance.naver.com/research/industry_read.naver?nid=44656&page=1",
+        "target_price": null,
+        "target_price_value": null,
+        "opinion": null,
+        "opinion_normalized": null,
+        "score": 9.34,
         "has_change_signal": false
       }
     ],
@@ -160,9 +175,28 @@
       "opinion_normalized": null,
       "score": 11.95,
       "has_change_signal": false
+    },
+    {
+      "date": "2026-05-26",
+      "broker": "신한투자증권",
+      "title": "증권 - KOSPI, 지붕 뚫고 하이킥",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44656&page=1",
+      "pdf_url": null,
+      "primary_url": "https://finance.naver.com/research/industry_read.naver?nid=44656&page=1",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "score": 9.34,
+      "has_change_signal": false
     }
   ],
   "broker_summary": [
+    {
+      "name": "신한투자증권",
+      "count": 2
+    },
     {
       "name": "키움증권",
       "count": 2
@@ -176,10 +210,6 @@
       "count": 2
     },
     {
-      "name": "신한투자증권",
-      "count": 1
-    },
-    {
       "name": "유안타증권",
       "count": 1
     },
@@ -191,10 +221,111 @@
   "category_summary": [
     {
       "label": "산업분석",
-      "count": 9
+      "count": 10
     }
   ],
   "latest_by_broker": [
+    {
+      "source": "naver_research",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "44656",
+      "title": "KOSPI, 지붕 뚫고 하이킥",
+      "display_title": "증권 - KOSPI, 지붕 뚫고 하이킥",
+      "broker": "신한투자증권",
+      "published_date": "2026-05-26",
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44656&page=1",
+      "pdf_url": null,
+      "primary_url": "https://finance.naver.com/research/industry_read.naver?nid=44656&page=1",
+      "primary_url_label": "상세",
+      "subject": "증권",
+      "subject_key": "증권",
+      "ticker": null,
+      "views": 193,
+      "analyst": "임희연",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "Investment Summary 증권업은 사상 유례 없는 호황기를 맞이했다.",
+      "summary": "Investment Summary 증권업은 사상 유례 없는 호황기를 맞이했다. 반도체 업황 개선, 부동산 금융 축소, 상법 개정을 비롯한 주식시장 부양 정책 등에 힘입어 증시 유동성 유입이 가팔라졌다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 9.34,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "관심 섹터/키워드(반도체)",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.29,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.55,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "detail_only",
+        "primary_kind": "detail",
+        "has_pdf": false,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "",
+        "note": "상세 페이지 링크만 확보됐습니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": "2026-05-19",
+      "previous_target_price": "16만원",
+      "previous_opinion": null,
+      "previous_analyst": "임희연",
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
     {
       "source": "naver_research",
       "category": "industry",
@@ -418,123 +549,6 @@
       "has_change_signal": false
     },
     {
-      "source": "shinhan_investment_official",
-      "category": "industry",
-      "category_label": "산업분석",
-      "report_id": "shinhan-giindustry-936595",
-      "title": "증권; 일평균 거래대금 100조원 시대",
-      "display_title": "증권 - 증권; 일평균 거래대금 100조원 시대",
-      "broker": "신한투자증권",
-      "published_date": "2026-05-19",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=giindustry&messageId=936595",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351534",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351534",
-      "primary_url_label": "PDF",
-      "subject": "증권",
-      "subject_key": "증권",
-      "ticker": null,
-      "views": 392,
-      "analyst": "임희연",
-      "target_price": "16만원",
-      "target_price_value": 160000,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "신한생각: 이 유동성 실화냐 하반기 거래대금 추정치 변경에 따라 이익 추정치 및 목표주가 상향",
-      "summary": "신한생각: 이 유동성 실화냐 하반기 거래대금 추정치 변경에 따라 이익 추정치 및 목표주가 상향 신한생각: 이 유동성 실화냐",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "score": 15.1,
-      "score_reasons": [
-        "산업분석 카테고리",
-        "공식 소스",
-        "관심 종목(삼성전자, SK하이닉스, 미래에셋증권)",
-        "관심 섹터/키워드(반도체)",
-        "목표가 포함"
-      ],
-      "score_breakdown": [
-        {
-          "label": "관심 종목",
-          "value": 4.7,
-          "kind": "boost"
-        },
-        {
-          "label": "산업분석 카테고리",
-          "value": 2.7,
-          "kind": "boost"
-        },
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.4,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 2.3,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "목표가",
-          "value": 0.7,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [
-        "삼성전자",
-        "SK하이닉스",
-        "미래에셋증권"
-      ],
-      "priority_keyword_matches": [
-        "반도체"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
-    },
-    {
       "source": "naver_research",
       "category": "industry",
       "category_label": "산업분석",
@@ -689,6 +703,107 @@
   ],
   "recent_changes": [],
   "timeline": [
+    {
+      "source": "naver_research",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "44656",
+      "title": "KOSPI, 지붕 뚫고 하이킥",
+      "display_title": "증권 - KOSPI, 지붕 뚫고 하이킥",
+      "broker": "신한투자증권",
+      "published_date": "2026-05-26",
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44656&page=1",
+      "pdf_url": null,
+      "primary_url": "https://finance.naver.com/research/industry_read.naver?nid=44656&page=1",
+      "primary_url_label": "상세",
+      "subject": "증권",
+      "subject_key": "증권",
+      "ticker": null,
+      "views": 193,
+      "analyst": "임희연",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "Investment Summary 증권업은 사상 유례 없는 호황기를 맞이했다.",
+      "summary": "Investment Summary 증권업은 사상 유례 없는 호황기를 맞이했다. 반도체 업황 개선, 부동산 금융 축소, 상법 개정을 비롯한 주식시장 부양 정책 등에 힘입어 증시 유동성 유입이 가팔라졌다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 9.34,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "관심 섹터/키워드(반도체)",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.29,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.55,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "detail_only",
+        "primary_kind": "detail",
+        "has_pdf": false,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "",
+        "note": "상세 페이지 링크만 확보됐습니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": "2026-05-19",
+      "previous_target_price": "16만원",
+      "previous_opinion": null,
+      "previous_analyst": "임희연",
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
     {
       "source": "naver_research",
       "category": "industry",
