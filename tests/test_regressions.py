@@ -27,6 +27,7 @@ from report_collector.digest import (
     _select_must_read,
     render_telegram_messages,
 )
+from report_collector.estimates import extract_estimate_metrics, extract_estimate_signal_types
 from report_collector.llm import _apply_summary
 from report_collector.main import _merge_duplicate_reports, _run_collector
 from report_collector.market_data import NaverDailyPriceProvider, parse_naver_daily_price_html
@@ -521,6 +522,25 @@ class ScoringTests(unittest.TestCase):
         self.assertIn("목표가 상향", {item["label"] for item in changed.score_breakdown})
 
 
+class EstimateExtractionTests(unittest.TestCase):
+    def test_extracts_profit_margin_metrics_and_signals(self) -> None:
+        text = (
+            "1Q26 영업이익은 294억원(+52%QoQ)으로 컨센서스를 상회할 전망입니다. "
+            "이익 전망치를 상향하고 OPM 5.5%(+1.2%p)로 마진 개선이 예상됩니다."
+        )
+
+        metrics = extract_estimate_metrics(text)
+        signals = extract_estimate_signal_types(text)
+
+        profit = next(item for item in metrics if item["metric"] == "operating_profit")
+        margin = next(item for item in metrics if item["metric"] == "operating_margin")
+        self.assertEqual(profit["value_krw_100m"], 294)
+        self.assertEqual(margin["value_pct"], 5.5)
+        self.assertEqual(margin["change_pctp"], 1.2)
+        self.assertIn("earnings_estimate_up", signals)
+        self.assertIn("margin_estimate_up", signals)
+
+
 class SubjectHistoryTests(unittest.TestCase):
     def test_subject_chart_payload_tracks_targets_opinions_and_recent_timeline(self) -> None:
         timeline = [
@@ -537,6 +557,16 @@ class SubjectHistoryTests(unittest.TestCase):
                 "title": "raise",
                 "target_price_value": 100000,
                 "opinion_normalized": "buy",
+                "estimate_metrics": [
+                    {
+                        "metric": "operating_profit",
+                        "metric_group": "earnings",
+                        "label": "영업이익",
+                        "value": 294,
+                        "unit": "억원",
+                        "value_krw_100m": 294,
+                    }
+                ],
                 "score": 8,
             },
             {
@@ -545,6 +575,16 @@ class SubjectHistoryTests(unittest.TestCase):
                 "title": "hold",
                 "target_price_value": 95000,
                 "opinion_normalized": "hold",
+                "estimate_metrics": [
+                    {
+                        "metric": "operating_margin",
+                        "metric_group": "margin",
+                        "label": "OPM",
+                        "value": 5.5,
+                        "unit": "%",
+                        "value_pct": 5.5,
+                    }
+                ],
                 "score": 7,
             },
         ]
@@ -566,6 +606,10 @@ class SubjectHistoryTests(unittest.TestCase):
         self.assertEqual(
             [item["title"] for item in payload["broker_timeline"]],
             ["raise", "hold"],
+        )
+        self.assertEqual(
+            [item["metric"] for item in payload["estimate_metric_history"]],
+            ["operating_profit", "operating_margin"],
         )
 
     def test_selection_performance_ledger_adds_pending_horizons_without_duplicates(self) -> None:

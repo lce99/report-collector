@@ -6,6 +6,11 @@ from pathlib import Path
 import json
 from typing import Any
 
+from report_collector.estimates import (
+    estimate_reasons_for_types,
+    extract_estimate_metrics,
+    extract_estimate_signal_types,
+)
 from report_collector.market_data import normalize_ticker
 from report_collector.models import DailyDigest
 from report_collector.normalization import (
@@ -106,14 +111,62 @@ def _normalize_subject_report(report: dict[str, Any]) -> dict[str, Any] | None:
     payload["opinion_normalized"] = report.get("opinion_normalized") or normalize_opinion_value(
         str(report.get("opinion") or "") or None
     )
-    payload["change_types"] = list(report.get("change_types") or [])
-    payload["change_reasons"] = list(report.get("change_reasons") or [])
+    estimate_text = _report_estimate_text(payload)
+    estimate_metrics = list(report.get("estimate_metrics") or [])
+    if not estimate_metrics:
+        estimate_metrics = extract_estimate_metrics(estimate_text)
+    estimate_signal_types = list(report.get("estimate_signal_types") or [])
+    if not estimate_signal_types:
+        estimate_signal_types = extract_estimate_signal_types(estimate_text)
+    estimate_reasons = list(report.get("estimate_reasons") or [])
+    if not estimate_reasons:
+        estimate_reasons = estimate_reasons_for_types(estimate_signal_types)
+
+    payload["estimate_metrics"] = estimate_metrics
+    payload["estimate_signal_types"] = estimate_signal_types
+    payload["estimate_reasons"] = estimate_reasons
+    payload["change_types"] = _unique_strings(
+        list(report.get("change_types") or []) + estimate_signal_types
+    )
+    payload["change_reasons"] = _unique_strings(
+        list(report.get("change_reasons") or []) + estimate_reasons
+    )
     payload["has_change_signal"] = bool(
         report.get("has_change_signal")
         or payload["change_types"]
         or payload["change_reasons"]
+        or payload["estimate_signal_types"]
+        or payload["estimate_reasons"]
     )
     return payload
+
+
+def _unique_strings(values: list[Any]) -> list[str]:
+    result: list[str] = []
+    seen: set[str] = set()
+    for value in values:
+        text = str(value or "").strip()
+        if not text or text in seen:
+            continue
+        result.append(text)
+        seen.add(text)
+    return result
+
+
+def _report_estimate_text(report: dict[str, Any]) -> str:
+    memo = report.get("investment_memo")
+    memo_parts: list[str] = []
+    if isinstance(memo, dict):
+        for key in ("thesis", "catalysts", "risks", "numbers"):
+            values = memo.get(key)
+            if isinstance(values, list):
+                memo_parts.extend(str(item or "") for item in values)
+        memo_parts.append(str(memo.get("action") or ""))
+
+    return " ".join(
+        str(report.get(key) or "")
+        for key in ("display_title", "title", "subject", "summary", "excerpt")
+    ) + " " + " ".join(memo_parts)
 
 
 def _build_subject_change_summary(reports: list[dict[str, Any]]) -> dict[str, int]:
@@ -135,6 +188,29 @@ def _build_subject_change_summary(reports: list[dict[str, Any]]) -> dict[str, in
         "analyst_changed": sum(1 for report in reports if bool(report.get("analyst_changed"))),
         "coverage_initiated": sum(
             1 for report in reports if bool(report.get("coverage_initiated"))
+        ),
+        "estimate_signal_reports": sum(
+            1 for report in reports if report.get("estimate_signal_types")
+        ),
+        "earnings_estimate_up": sum(
+            1
+            for report in reports
+            if "earnings_estimate_up" in set(report.get("estimate_signal_types") or [])
+        ),
+        "earnings_estimate_down": sum(
+            1
+            for report in reports
+            if "earnings_estimate_down" in set(report.get("estimate_signal_types") or [])
+        ),
+        "margin_estimate_up": sum(
+            1
+            for report in reports
+            if "margin_estimate_up" in set(report.get("estimate_signal_types") or [])
+        ),
+        "margin_estimate_down": sum(
+            1
+            for report in reports
+            if "margin_estimate_down" in set(report.get("estimate_signal_types") or [])
         ),
     }
 
@@ -178,7 +254,29 @@ def _chart_report_point(report: dict[str, Any]) -> dict[str, Any]:
         "opinion_normalized": report.get("opinion_normalized"),
         "score": report.get("score"),
         "has_change_signal": bool(report.get("has_change_signal")),
+        "estimate_signal_types": list(report.get("estimate_signal_types") or []),
+        "estimate_reasons": list(report.get("estimate_reasons") or []),
     }
+
+
+def _chart_estimate_point(report: dict[str, Any], metric: dict[str, Any]) -> dict[str, Any]:
+    point = _chart_report_point(report)
+    point.update(
+        {
+            "metric": metric.get("metric"),
+            "metric_group": metric.get("metric_group"),
+            "label": metric.get("label"),
+            "period": metric.get("period"),
+            "value": metric.get("value"),
+            "unit": metric.get("unit"),
+            "value_krw_100m": metric.get("value_krw_100m"),
+            "value_pct": metric.get("value_pct"),
+            "value_won": metric.get("value_won"),
+            "change_pctp": metric.get("change_pctp"),
+            "source_excerpt": metric.get("source_excerpt"),
+        }
+    )
+    return point
 
 
 def _build_subject_chart_payload(
@@ -192,6 +290,20 @@ def _build_subject_chart_payload(
         if report.get("target_price_value") is not None
     ]
     target_price_history.sort(key=lambda item: (str(item.get("date") or ""), str(item.get("broker") or "")))
+
+    estimate_metric_history = [
+        _chart_estimate_point(report, metric)
+        for report in timeline
+        for metric in (report.get("estimate_metrics") or [])
+        if isinstance(metric, dict)
+    ]
+    estimate_metric_history.sort(
+        key=lambda item: (
+            str(item.get("date") or ""),
+            str(item.get("metric") or ""),
+            str(item.get("broker") or ""),
+        )
+    )
 
     opinion_counter = Counter(
         str(report.get("opinion_normalized") or report.get("opinion") or "")
@@ -223,6 +335,7 @@ def _build_subject_chart_payload(
 
     return {
         "target_price_history": target_price_history[-80:],
+        "estimate_metric_history": estimate_metric_history[-120:],
         "opinion_distribution": opinion_distribution,
         "broker_timeline": broker_timeline[-80:],
         "window_days": 14,
@@ -304,6 +417,7 @@ def _build_subject_payloads(archive_root: Path) -> tuple[dict[str, Any], dict[st
             ],
             "charts": chart_payload,
             "target_price_history": chart_payload["target_price_history"],
+            "estimate_metric_history": chart_payload["estimate_metric_history"],
             "opinion_distribution": chart_payload["opinion_distribution"],
             "broker_timeline": chart_payload["broker_timeline"],
             "broker_summary": [

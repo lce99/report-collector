@@ -882,7 +882,7 @@
 
       .chart-grid {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 16px;
       }
 
@@ -898,6 +898,49 @@
       .target-chart {
         display: grid;
         gap: 8px;
+      }
+
+      .estimate-line-chart {
+        display: grid;
+        gap: 10px;
+      }
+
+      .estimate-line-chart svg {
+        width: 100%;
+        height: 168px;
+        overflow: visible;
+      }
+
+      .estimate-line-grid {
+        stroke: rgba(24, 36, 45, 0.1);
+        stroke-width: 1;
+      }
+
+      .estimate-line-path {
+        fill: none;
+        stroke: var(--accent);
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .estimate-line-dot {
+        fill: var(--paper);
+        stroke: var(--accent);
+        stroke-width: 2;
+      }
+
+      .estimate-line-axis,
+      .estimate-line-meta {
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.45;
+      }
+
+      .estimate-line-axis {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
       }
 
       .target-chart-row {
@@ -1387,7 +1430,7 @@
             <article class="hero-meta-card">
               <span>변화 감지</span>
               <strong id="heroChangeCount">-</strong>
-              <small id="heroChangeMeta">목표가, 의견, 애널리스트 비교 결과</small>
+              <small id="heroChangeMeta">이익 추정, 마진율, 목표가 변화 신호</small>
             </article>
           </div>
         </div>
@@ -1565,8 +1608,8 @@
             <div class="section-head">
               <div class="section-title-group">
                 <span class="section-kicker">Signal Watch</span>
-                <h2>목표가·의견 변화</h2>
-                <span class="section-meta">같은 증권사와 종목 기준으로 직전 리포트와 비교한 결과입니다.</span>
+                <h2>이익·마진 변화</h2>
+                <span class="section-meta">추정 이익 상향, 마진 개선, 목표가·의견 변화를 함께 봅니다.</span>
               </div>
               <span id="changeMeta" class="section-meta"></span>
             </div>
@@ -1601,7 +1644,7 @@
           <p id="subjectSummary" class="lead"></p>
           <div id="subjectStats" class="stats-grid"></div>
           <div class="subgroup">
-            <h3>현재 컨센서스 스냅샷</h3>
+            <h3>추정치 스냅샷</h3>
             <div id="subjectTargetChips" class="chips"></div>
           </div>
         </article>
@@ -1610,14 +1653,18 @@
           <div class="section-head">
             <div class="section-title-group">
               <span class="section-kicker">Broker View Shift</span>
-              <h2>최근 2주 증권사 시각 변화</h2>
-              <span class="section-meta">목표가, 의견 분포, 브로커 업데이트 흐름을 히스토리로 봅니다.</span>
+              <h2>이익·마진 추정 흐름</h2>
+              <span class="section-meta">리포트에 적힌 영업이익, 순이익, OPM 숫자를 시간순으로 봅니다.</span>
             </div>
           </div>
           <div class="chart-grid">
             <section class="chart-panel">
-              <h3>목표가 추이</h3>
-              <div id="subjectTargetChart" class="target-chart"></div>
+              <h3>이익 추정 선그래프</h3>
+              <div id="subjectProfitEstimateChart" class="estimate-line-chart"></div>
+            </section>
+            <section class="chart-panel">
+              <h3>마진율 추정 선그래프</h3>
+              <div id="subjectMarginEstimateChart" class="estimate-line-chart"></div>
             </section>
             <section class="chart-panel">
               <h3>의견 분포</h3>
@@ -1663,7 +1710,7 @@
                 <div class="section-title-group">
                   <span class="section-kicker">Recent Changes</span>
                   <h2>최근 변화</h2>
-                  <span class="section-meta">목표가, 의견, 애널리스트, 신규 커버리지 변화를 우선 노출합니다.</span>
+                  <span class="section-meta">이익 추정, 마진율, 목표가, 의견 변화를 우선 노출합니다.</span>
                 </div>
                 <span id="subjectChangeMeta" class="section-meta"></span>
               </div>
@@ -1959,7 +2006,9 @@
             (report.target_price_change ||
               report.opinion_changed ||
               report.analyst_changed ||
-              (report.change_reasons && report.change_reasons.length))
+              (report.change_reasons && report.change_reasons.length) ||
+              (report.estimate_signal_types && report.estimate_signal_types.length) ||
+              (report.estimate_reasons && report.estimate_reasons.length))
         );
       }
 
@@ -1998,6 +2047,9 @@
           report.opinion,
           report.previous_opinion,
           report.previous_analyst,
+          estimateMetricsText(report.estimate_metrics),
+          ...(report.estimate_reasons || []),
+          ...(report.estimate_signal_types || []),
           investmentMemoText(report.investment_memo),
           ...(report.score_reasons || []),
           ...(report.priority_subject_matches || []),
@@ -2069,6 +2121,271 @@
 
       function buildDatum(label, value) {
         return el("span", "datum", `${label} ${value}`);
+      }
+
+      function estimateMetricsText(metrics) {
+        return (metrics || [])
+          .map((metric) =>
+            [
+              metric.label,
+              metric.period,
+              formatEstimateMetric(metric),
+              metric.source_excerpt,
+            ]
+              .filter(Boolean)
+              .join(" ")
+          )
+          .join(" ");
+      }
+
+      function estimateMetricValue(metric, group) {
+        if (!metric) {
+          return null;
+        }
+        if (group === "margin") {
+          return metric.value_pct ?? metric.value;
+        }
+        return metric.value_krw_100m ?? metric.value_won ?? metric.value;
+      }
+
+      function estimateMetricUnit(metric, group) {
+        if (group === "margin") {
+          return "%";
+        }
+        if (metric?.value_krw_100m !== null && metric?.value_krw_100m !== undefined) {
+          return "억원";
+        }
+        return metric?.unit || "";
+      }
+
+      function formatEstimateMetric(metric) {
+        if (!metric) {
+          return "-";
+        }
+        if (metric.value_krw_100m !== null && metric.value_krw_100m !== undefined) {
+          return `${formatNumber(metric.value_krw_100m)}억원`;
+        }
+        if (metric.value_won !== null && metric.value_won !== undefined) {
+          return `${formatNumber(metric.value_won)}원`;
+        }
+        if (metric.value_pct !== null && metric.value_pct !== undefined) {
+          return `${Number(metric.value_pct).toFixed(1)}%`;
+        }
+        if (metric.value !== null && metric.value !== undefined) {
+          return `${formatNumber(metric.value)}${metric.unit || ""}`;
+        }
+        return "-";
+      }
+
+      function formatEstimateAxisValue(value, unit) {
+        if (value === null || value === undefined || Number.isNaN(Number(value))) {
+          return "-";
+        }
+        const numeric = Number(value);
+        if (unit === "%") {
+          return `${numeric.toFixed(1)}%`;
+        }
+        return `${formatNumber(Math.round(numeric * 10) / 10)}${unit}`;
+      }
+
+      function svgEl(tag, attrs = {}) {
+        const node = document.createElementNS("http://www.w3.org/2000/svg", tag);
+        Object.entries(attrs).forEach(([key, value]) => {
+          node.setAttribute(key, String(value));
+        });
+        return node;
+      }
+
+      function selectEstimateSeries(history, group) {
+        const points = (history || []).filter((item) => {
+          const value = estimateMetricValue(item, group);
+          return item?.metric_group === group && value !== null && value !== undefined && Number.isFinite(Number(value));
+        });
+        if (group !== "earnings" || points.length <= 1) {
+          return points.slice(-12);
+        }
+
+        const counts = points.reduce((acc, item) => {
+          acc[item.metric] = (acc[item.metric] || 0) + 1;
+          return acc;
+        }, {});
+        const preferredMetric =
+          ["operating_profit", "net_profit", "eps"].find((metric) => counts[metric] >= 2) ||
+          ["operating_profit", "net_profit", "eps"].find((metric) => counts[metric]) ||
+          points[0]?.metric;
+        return points.filter((item) => item.metric === preferredMetric).slice(-12);
+      }
+
+      function estimateValueTo100m(value, unit) {
+        const numeric = Number(String(value || "").replace(/,/g, ""));
+        if (!Number.isFinite(numeric)) {
+          return null;
+        }
+        if (unit === "조원") {
+          return numeric * 10000;
+        }
+        if (unit === "십억원") {
+          return numeric * 10;
+        }
+        if (unit === "억원") {
+          return numeric;
+        }
+        return null;
+      }
+
+      function parseEstimateMetricsFromText(text) {
+        const source = String(text || "").replace(/\s+/g, " ").trim();
+        if (!source) {
+          return [];
+        }
+        const metrics = [];
+        const profitLabels = {
+          OP: ["operating_profit", "영업이익"],
+          영업이익: ["operating_profit", "영업이익"],
+          순이익: ["net_profit", "순이익"],
+          지배순이익: ["net_profit", "지배순이익"],
+          지배주주순이익: ["net_profit", "지배주주순이익"],
+          EPS: ["eps", "EPS"],
+        };
+        const profitRe =
+          /((?:(?:[12]\d{3}|[’']?\d{2})\s*(?:년|F|E)?|[1-4]Q\s*(?:\d{2,4})?|[1-4]분기)?)\s*(지배주주순이익|지배순이익|영업이익|순이익|EPS|OP)(?:은|는|이|가|을|를|:|의|으로)?\s*(?:약|전망|추정|예상|기록|컨센서스|시장 기대치|당사 추정치)?\s*([+-]?\d+(?:,\d{3})*(?:\.\d+)?)\s*(조원|억원|십억원|원)/gi;
+        let match;
+        while ((match = profitRe.exec(source)) && metrics.length < 8) {
+          const rawLabel = match[2].toUpperCase() === "OP" ? "OP" : match[2];
+          const [metric, label] = profitLabels[rawLabel] || [rawLabel, rawLabel];
+          const value = Number(match[3].replace(/,/g, ""));
+          const unit = match[4];
+          const item = {
+            metric,
+            metric_group: "earnings",
+            label,
+            period: match[1]?.trim() || null,
+            value,
+            unit,
+          };
+          const value100m = estimateValueTo100m(match[3], unit);
+          if (value100m !== null) {
+            item.value_krw_100m = Math.round(value100m * 100) / 100;
+          }
+          if (unit === "원") {
+            item.value_won = value;
+          }
+          metrics.push(item);
+        }
+
+        const marginRe = /(OPM|영업이익률|영업마진|마진율|순이익률)(?:은|는|이|가|:|의)?\s*([+-]?\d+(?:,\d{3})*(?:\.\d+)?)\s*%/gi;
+        while ((match = marginRe.exec(source)) && metrics.length < 12) {
+          const value = Number(match[2].replace(/,/g, ""));
+          metrics.push({
+            metric: "operating_margin",
+            metric_group: "margin",
+            label: match[1].toUpperCase() === "OPM" ? "OPM" : match[1],
+            period: null,
+            value,
+            unit: "%",
+            value_pct: value,
+          });
+        }
+        const seen = new Set();
+        return metrics.filter((metric) => {
+          const key = [metric.metric, metric.period || "", metric.value, metric.unit].join("|");
+          if (seen.has(key)) {
+            return false;
+          }
+          seen.add(key);
+          return true;
+        });
+      }
+
+      function estimateHistoryFromDetail(detail) {
+        const direct = detail.estimate_metric_history || detail.charts?.estimate_metric_history || [];
+        if (direct.length) {
+          return direct;
+        }
+        return (detail.timeline || []).flatMap((report) => {
+          const metrics =
+            report.estimate_metrics?.length
+              ? report.estimate_metrics
+              : parseEstimateMetricsFromText(
+                  [report.display_title, report.title, report.summary, report.excerpt, investmentMemoText(report.investment_memo)]
+                    .filter(Boolean)
+                    .join(" ")
+                );
+          return metrics.map((metric) => ({
+            date: report.published_date,
+            broker: report.broker,
+            title: report.display_title || report.title,
+            primary_url: getReportPrimaryUrl(report),
+            ...metric,
+          }));
+        });
+      }
+
+      function renderEstimateLineChart(container, points, group, emptyText) {
+        container.innerHTML = "";
+        if (!points.length) {
+          container.appendChild(el("div", "empty", emptyText));
+          return;
+        }
+
+        const width = 360;
+        const height = 168;
+        const pad = { left: 48, right: 18, top: 16, bottom: 34 };
+        const values = points.map((item) => Number(estimateMetricValue(item, group)));
+        const unit = estimateMetricUnit(points[0], group);
+        let min = Math.min(...values);
+        let max = Math.max(...values);
+        if (min === max) {
+          min -= 1;
+          max += 1;
+        }
+        const span = max - min || 1;
+        const plotWidth = width - pad.left - pad.right;
+        const plotHeight = height - pad.top - pad.bottom;
+        const coords = points.map((item, index) => {
+          const value = Number(estimateMetricValue(item, group));
+          const x = pad.left + (points.length === 1 ? plotWidth / 2 : (index / (points.length - 1)) * plotWidth);
+          const y = pad.top + (1 - (value - min) / span) * plotHeight;
+          return { item, value, x, y };
+        });
+
+        const svg = svgEl("svg", { viewBox: `0 0 ${width} ${height}`, role: "img" });
+        [0, 0.5, 1].forEach((ratio) => {
+          const y = pad.top + ratio * plotHeight;
+          svg.appendChild(svgEl("line", { class: "estimate-line-grid", x1: pad.left, y1: y, x2: width - pad.right, y2: y }));
+        });
+
+        if (coords.length > 1) {
+          const path = coords.map((point, index) => `${index === 0 ? "M" : "L"}${point.x.toFixed(1)} ${point.y.toFixed(1)}`).join(" ");
+          svg.appendChild(svgEl("path", { class: "estimate-line-path", d: path }));
+        }
+
+        coords.forEach((point) => {
+          const dot = svgEl("circle", {
+            class: "estimate-line-dot",
+            cx: point.x.toFixed(1),
+            cy: point.y.toFixed(1),
+            r: 4.5,
+          });
+          const title = svgEl("title");
+          title.textContent = `${point.item.date || "-"} ${point.item.broker || ""} ${point.item.label || ""} ${formatEstimateAxisValue(point.value, unit)}`;
+          dot.appendChild(title);
+          svg.appendChild(dot);
+        });
+
+        container.appendChild(svg);
+        const axis = el("div", "estimate-line-axis");
+        axis.appendChild(el("span", null, points[0]?.date || "-"));
+        axis.appendChild(el("span", null, `${formatEstimateAxisValue(max, unit)} / ${formatEstimateAxisValue(min, unit)}`));
+        axis.appendChild(el("span", null, points[points.length - 1]?.date || "-"));
+        container.appendChild(axis);
+        container.appendChild(
+          el(
+            "div",
+            "estimate-line-meta",
+            `${points[0]?.label || "추정치"} ${points.length}개 포인트 · ${points[points.length - 1]?.broker || "증권사"} 최신`
+          )
+        );
       }
 
       function getReportPrimaryUrl(report) {
@@ -2256,6 +2573,12 @@
         if (hasChangeSignal(report)) {
           kicker.appendChild(buildBadge("변화 감지", "rose"));
         }
+        if (report.estimate_signal_types?.includes("earnings_estimate_up")) {
+          kicker.appendChild(buildBadge("이익 추정↑", "accent"));
+        }
+        if (report.estimate_signal_types?.includes("margin_estimate_up")) {
+          kicker.appendChild(buildBadge("마진 개선", "signal"));
+        }
         if (report.has_pdf_text) {
           kicker.appendChild(buildBadge("PDF 본문 확보", "sky"));
         }
@@ -2296,6 +2619,9 @@
         if (report.target_price) {
           data.appendChild(buildDatum("목표가", report.target_price));
         }
+        (report.estimate_metrics || []).slice(0, 2).forEach((metric) => {
+          data.appendChild(buildDatum(metric.label || "추정치", formatEstimateMetric(metric)));
+        });
         if (report.opinion) {
           data.appendChild(buildDatum("의견", report.opinion));
         }
@@ -2393,6 +2719,9 @@
         if (targetChange) {
           data.appendChild(buildDatum("변화", targetChange));
         }
+        (report.estimate_metrics || []).slice(0, 2).forEach((metric) => {
+          data.appendChild(buildDatum(metric.label || "추정치", formatEstimateMetric(metric)));
+        });
         if (report.opinion_changed) {
           data.appendChild(buildDatum("의견", `${report.previous_opinion || "-"} → ${report.opinion || "-"}`));
         }
@@ -2503,9 +2832,9 @@
 
         const changeSummary = digest.change_summary || {};
         document.getElementById("heroChangeMeta").textContent = changeSummary.available
-          ? `상향 ${formatNumber(changeSummary.target_price_up || 0)} · 하향 ${formatNumber(
-              changeSummary.target_price_down || 0
-            )} · 의견 변경 ${formatNumber(changeSummary.opinion_changed || 0)}`
+          ? `이익↑ ${formatNumber(changeSummary.earnings_estimate_up || 0)} · 마진↑ ${formatNumber(
+              changeSummary.margin_estimate_up || 0
+            )} · 목표가↑ ${formatNumber(changeSummary.target_price_up || 0)}`
           : "과거 아카이브가 충분하지 않아 변화 비교가 제한됩니다.";
       }
 
@@ -2699,7 +3028,14 @@
           {
             label: "변화 감지",
             value: formatNumber(changeSummary.changed_reports || 0),
-            body: "목표가, 의견, 애널리스트 변경",
+            body: `이익↑ ${formatNumber(changeSummary.earnings_estimate_up || 0)} · 마진↑ ${formatNumber(
+              changeSummary.margin_estimate_up || 0
+            )} · 목표가↑ ${formatNumber(changeSummary.target_price_up || 0)}`,
+          },
+          {
+            label: "추정치 숫자",
+            value: formatNumber(digest.stats?.estimate_metric_reports || 0),
+            body: "영업이익, 순이익, EPS, OPM을 읽은 리포트",
           },
           {
             label: "최다 카테고리",
@@ -2769,8 +3105,9 @@
         meta.textContent = `현재 필터 기준 ${formatNumber(filteredChanges.length)}건 표시`;
         const stats = [
           { label: "변화 감지", value: summary.changed_reports || 0 },
+          { label: "이익 추정 상향", value: summary.earnings_estimate_up || 0 },
+          { label: "마진 개선", value: summary.margin_estimate_up || 0 },
           { label: "목표가 상향", value: summary.target_price_up || 0 },
-          { label: "목표가 하향", value: summary.target_price_down || 0 },
           { label: "의견 변경", value: summary.opinion_changed || 0 },
         ];
 
@@ -2910,10 +3247,10 @@
           detail.active_broker_count || 0
         )}곳`;
         document.getElementById("heroChangeCount").textContent = formatNumber(summary.changed_reports || 0);
-        document.getElementById("heroChangeMeta").textContent = `목표가 상향 ${formatNumber(
+        document.getElementById("heroChangeMeta").textContent = `이익↑ ${formatNumber(
+          summary.earnings_estimate_up || 0
+        )} · 마진↑ ${formatNumber(summary.margin_estimate_up || 0)} · 목표가↑ ${formatNumber(
           summary.target_price_up || 0
-        )} · 하향 ${formatNumber(summary.target_price_down || 0)} · 신규 커버리지 ${formatNumber(
-          summary.coverage_initiated || 0
         )}`;
       }
 
@@ -2923,10 +3260,10 @@
         const summary = detail.change_summary || {};
         const cards = [
           { label: "변화 감지", value: summary.changed_reports || 0 },
+          { label: "이익 추정 상향", value: summary.earnings_estimate_up || 0 },
+          { label: "마진 개선", value: summary.margin_estimate_up || 0 },
           { label: "목표가 상향", value: summary.target_price_up || 0 },
-          { label: "목표가 하향", value: summary.target_price_down || 0 },
           { label: "의견 변경", value: summary.opinion_changed || 0 },
-          { label: "의견 상향", value: summary.opinion_up || 0 },
           { label: "신규 커버리지", value: summary.coverage_initiated || 0 },
         ];
 
@@ -2939,36 +3276,28 @@
       }
 
       function renderSubjectCharts(detail) {
-        const targetContainer = document.getElementById("subjectTargetChart");
+        const profitContainer = document.getElementById("subjectProfitEstimateChart");
+        const marginContainer = document.getElementById("subjectMarginEstimateChart");
         const opinionContainer = document.getElementById("subjectOpinionChart");
         const timelineContainer = document.getElementById("subjectBrokerTimelineChart");
-        targetContainer.innerHTML = "";
+        profitContainer.innerHTML = "";
+        marginContainer.innerHTML = "";
         opinionContainer.innerHTML = "";
         timelineContainer.innerHTML = "";
 
-        const targetHistory = (detail.target_price_history || detail.charts?.target_price_history || [])
-          .filter((item) => item && item.target_price_value !== null && item.target_price_value !== undefined)
-          .slice(-10);
-        if (!targetHistory.length) {
-          targetContainer.appendChild(el("div", "empty", "목표가 히스토리가 아직 없습니다."));
-        } else {
-          const values = targetHistory.map((item) => Number(item.target_price_value || 0));
-          const min = Math.min(...values);
-          const max = Math.max(...values);
-          const span = Math.max(max - min, 1);
-          targetHistory.forEach((item) => {
-            const row = el("div", "target-chart-row");
-            row.appendChild(el("span", null, item.date || "-"));
-            const track = el("div", "target-chart-track");
-            const fill = el("div", "target-chart-fill");
-            fill.style.width = `${Math.max(((Number(item.target_price_value || 0) - min) / span) * 100, 8)}%`;
-            track.title = `${item.broker || "-"} ${formatTargetValue(item.target_price_value)}`;
-            track.appendChild(fill);
-            row.appendChild(track);
-            row.appendChild(el("strong", null, formatTargetValue(item.target_price_value)));
-            targetContainer.appendChild(row);
-          });
-        }
+        const estimateHistory = estimateHistoryFromDetail(detail);
+        renderEstimateLineChart(
+          profitContainer,
+          selectEstimateSeries(estimateHistory, "earnings"),
+          "earnings",
+          "아직 이익 추정치 숫자를 찾지 못했습니다."
+        );
+        renderEstimateLineChart(
+          marginContainer,
+          selectEstimateSeries(estimateHistory, "margin"),
+          "margin",
+          "아직 마진율 추정치 숫자를 찾지 못했습니다."
+        );
 
         const opinions = detail.opinion_distribution || detail.charts?.opinion_distribution || detail.opinion_summary || [];
         if (!opinions.length) {
@@ -3019,12 +3348,16 @@
           formatNumber(detail.report_count || 0)
         }건 · 활동 증권사 ${formatNumber(detail.active_broker_count || 0)}곳`;
         document.getElementById("subjectSummary").textContent =
-          `${detail.subject_name} 관련 리포트의 최신 브로커별 시각과 전체 타임라인을 한 화면에서 볼 수 있습니다. 목표가/의견 변화는 우측 패널에서 우선 확인하세요.`;
+          `${detail.subject_name} 관련 리포트의 이익 추정, 마진율, 브로커별 최신 시각을 한 화면에서 볼 수 있습니다. 변화 신호는 우측 패널에서 우선 확인하세요.`;
         document.getElementById("subjectBackLink").href = buildDailyHref(state.selectedDate);
 
         const stats = document.getElementById("subjectStats");
         stats.innerHTML = "";
         const targetSummary = detail.target_summary || {};
+        const changeSummary = detail.change_summary || {};
+        const estimateHistory = estimateHistoryFromDetail(detail);
+        const profitSeries = selectEstimateSeries(estimateHistory, "earnings");
+        const marginSeries = selectEstimateSeries(estimateHistory, "margin");
         [
           { label: "누적 리포트", value: formatNumber(detail.report_count || 0), body: "아카이브 전체 기준" },
           {
@@ -3035,12 +3368,14 @@
           {
             label: "변화 감지",
             value: formatNumber(detail.change_summary?.changed_reports || 0),
-            body: "목표가·의견·애널리스트·신규 커버리지",
+            body: `이익↑ ${formatNumber(changeSummary.earnings_estimate_up || 0)} · 마진↑ ${formatNumber(
+              changeSummary.margin_estimate_up || 0
+            )} · 목표가↑ ${formatNumber(changeSummary.target_price_up || 0)}`,
           },
           {
-            label: "평균 목표가",
-            value: formatTargetValue(targetSummary.avg),
-            body: `최신 브로커값 ${formatNumber(targetSummary.count || 0)}건 기준`,
+            label: "추정치 포인트",
+            value: formatNumber(estimateHistory.length || 0),
+            body: `이익 ${formatNumber(profitSeries.length)} · 마진 ${formatNumber(marginSeries.length)}`,
           },
         ].forEach((card) => {
           const node = el("article", "stat-card");
@@ -3053,10 +3388,10 @@
         const targetChips = document.getElementById("subjectTargetChips");
         targetChips.innerHTML = "";
         [
-          `평균 ${formatTargetValue(targetSummary.avg)}`,
-          `최고 ${formatTargetValue(targetSummary.high)}`,
-          `최저 ${formatTargetValue(targetSummary.low)}`,
-          `최신 기준 ${formatNumber(targetSummary.count || 0)}건`,
+          `이익 추정 상향 ${formatNumber(changeSummary.earnings_estimate_up || 0)}건`,
+          `마진 개선 ${formatNumber(changeSummary.margin_estimate_up || 0)}건`,
+          `목표가 평균 ${formatTargetValue(targetSummary.avg)}`,
+          `최신 목표가 ${formatNumber(targetSummary.count || 0)}건`,
         ].forEach((label) => {
           targetChips.appendChild(el("span", "chip", label));
         });

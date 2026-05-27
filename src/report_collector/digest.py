@@ -8,6 +8,7 @@ import math
 import re
 
 from report_collector.config import Settings
+from report_collector.estimates import annotate_report_estimates
 from report_collector.models import DailyDigest, Report
 from report_collector.normalization import (
     annotate_report_normalized_fields,
@@ -243,6 +244,21 @@ def _score_report(report: Report, settings: Settings) -> tuple[float, list[str]]
     if report.analyst:
         add_score("애널리스트", 0.2)
 
+    if report.estimate_metrics:
+        add_score(
+            "실적/마진 추정치",
+            min(1.2, 0.35 + len(report.estimate_metrics) * 0.12),
+            reason="실적/마진 추정치 포함",
+        )
+    if "earnings_estimate_up" in report.estimate_signal_types:
+        add_score("이익 추정 상향", 1.8, reason="이익 추정 상향/증가")
+    if "margin_estimate_up" in report.estimate_signal_types:
+        add_score("마진율 개선", 1.5, reason="마진율 추정 상승/개선")
+    if "earnings_estimate_down" in report.estimate_signal_types:
+        add_score("이익 추정 하향", 1.1, reason="이익 추정 하향/감소")
+    if "margin_estimate_down" in report.estimate_signal_types:
+        add_score("마진율 악화", 0.9, reason="마진율 추정 하락/악화")
+
     if report.target_price_change == "up":
         add_score("목표가 상향", 2.2, reason="목표가 상향")
     elif report.target_price_change == "down":
@@ -427,8 +443,10 @@ def _build_previous_report_lookup(
     return lookup
 
 
-def _change_sort_key(report: Report) -> tuple[int, int, int, float, float, str]:
+def _change_sort_key(report: Report) -> tuple[object, ...]:
     return (
+        1 if "earnings_estimate_up" in report.estimate_signal_types else 0,
+        1 if "margin_estimate_up" in report.estimate_signal_types else 0,
         1 if report.coverage_initiated else 0,
         1 if report.opinion_changed else 0,
         1 if report.target_price_change else 0,
@@ -436,6 +454,30 @@ def _change_sort_key(report: Report) -> tuple[int, int, int, float, float, str]:
         report.score,
         report.display_title,
     )
+
+
+def _append_unique(target: list[str], values: list[str]) -> None:
+    seen = set(target)
+    for value in values:
+        if value and value not in seen:
+            target.append(value)
+            seen.add(value)
+
+
+def _append_estimate_change_signals(
+    report: Report,
+    summary: dict[str, object],
+) -> None:
+    if not report.estimate_signal_types:
+        return
+
+    summary["estimate_signal_reports"] = int(summary["estimate_signal_reports"]) + 1
+    for signal_type in report.estimate_signal_types:
+        if signal_type in summary:
+            summary[signal_type] = int(summary[signal_type]) + 1
+
+    _append_unique(report.change_types, report.estimate_signal_types)
+    _append_unique(report.change_reasons, report.estimate_reasons)
 
 
 def _annotate_changes(
@@ -454,13 +496,15 @@ def _annotate_changes(
         "opinion_down": 0,
         "analyst_changed": 0,
         "coverage_initiated": 0,
+        "estimate_signal_reports": 0,
+        "earnings_estimate_up": 0,
+        "earnings_estimate_down": 0,
+        "margin_estimate_up": 0,
+        "margin_estimate_down": 0,
     }
 
     history_lookup = _build_previous_report_lookup(settings.archive_root, current_date)
-    if not history_lookup:
-        return summary, []
-
-    summary["available"] = True
+    summary["available"] = bool(history_lookup)
     changed_reports: list[Report] = []
 
     for report in reports:
@@ -476,9 +520,17 @@ def _annotate_changes(
         report.coverage_initiated = False
         report.change_types = []
         report.change_reasons = []
+        _append_estimate_change_signals(report, summary)
 
         key = _report_history_key(report.broker, report.subject)
         if not key:
+            if report.has_change_signal:
+                changed_reports.append(report)
+            continue
+
+        if not history_lookup:
+            if report.has_change_signal:
+                changed_reports.append(report)
             continue
 
         previous = history_lookup.get(key)
@@ -567,6 +619,7 @@ def _annotate_changes(
 
     changed_reports.sort(key=_change_sort_key, reverse=True)
     summary["changed_reports"] = len(changed_reports)
+    summary["available"] = bool(summary["available"] or changed_reports)
     return summary, changed_reports
 
 
@@ -722,6 +775,12 @@ def _build_stats(
         "total_reports": len(reports),
         "priority_match_reports": priority_count,
         "pdf_text_reports": pdf_text_count,
+        "estimate_metric_reports": sum(1 for report in reports if report.estimate_metrics),
+        "estimate_signal_reports": change_summary.get("estimate_signal_reports", 0),
+        "earnings_estimate_up": change_summary.get("earnings_estimate_up", 0),
+        "earnings_estimate_down": change_summary.get("earnings_estimate_down", 0),
+        "margin_estimate_up": change_summary.get("margin_estimate_up", 0),
+        "margin_estimate_down": change_summary.get("margin_estimate_down", 0),
         "llm_summary_reports": 0,
         "llm_investment_memo_reports": 0,
         "changed_reports": change_summary.get("changed_reports", 0),
@@ -1043,6 +1102,10 @@ def _build_editorial_note(
     must_read_titles = ", ".join(report.display_title for report in must_read[:3])
 
     change_bits: list[str] = []
+    if change_summary.get("earnings_estimate_up"):
+        change_bits.append("이익 추정 상향 {}건".format(change_summary["earnings_estimate_up"]))
+    if change_summary.get("margin_estimate_up"):
+        change_bits.append("마진 개선 {}건".format(change_summary["margin_estimate_up"]))
     if change_summary.get("target_price_up"):
         change_bits.append("\ubaa9\ud45c\uac00 \uc0c1\ud5a5 {}\uac74".format(change_summary["target_price_up"]))
     if change_summary.get("target_price_down"):
@@ -1196,6 +1259,7 @@ def enrich_and_build_digest(
         )
         report.summary_engine = "rule"
         annotate_report_normalized_fields(report)
+        annotate_report_estimates(report)
         _annotate_priority_matches(report, settings)
         report.score, report.score_reasons = _score_report(report, settings)
 
@@ -1327,8 +1391,18 @@ def render_markdown(digest: DailyDigest) -> str:
     if digest.change_summary.get("available"):
         lines.extend(
             [
-                "## 목표가·의견 변화",
+                "## 이익·마진 추정 변화",
                 f"- 변화 감지 리포트: {digest.change_summary.get('changed_reports', 0)}건",
+                (
+                    f"- 이익 추정 상향/하향: "
+                    f"{digest.change_summary.get('earnings_estimate_up', 0)}건 / "
+                    f"{digest.change_summary.get('earnings_estimate_down', 0)}건"
+                ),
+                (
+                    f"- 마진 개선/악화: "
+                    f"{digest.change_summary.get('margin_estimate_up', 0)}건 / "
+                    f"{digest.change_summary.get('margin_estimate_down', 0)}건"
+                ),
                 (
                     f"- 목표가 상향/하향: "
                     f"{digest.change_summary.get('target_price_up', 0)}건 / "
@@ -1484,8 +1558,9 @@ def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[
         header.append(
             "변화 감지 "
             f"{digest.change_summary.get('changed_reports', 0)}건"
-            f" (상향 {digest.change_summary.get('target_price_up', 0)} / "
-            f"하향 {digest.change_summary.get('target_price_down', 0)} / "
+            f" (이익↑ {digest.change_summary.get('earnings_estimate_up', 0)} / "
+            f"마진↑ {digest.change_summary.get('margin_estimate_up', 0)} / "
+            f"목표가↑ {digest.change_summary.get('target_price_up', 0)} / "
             f"의견 {digest.change_summary.get('opinion_changed', 0)})"
         )
     header.append("")
@@ -1541,7 +1616,7 @@ def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[
         blocks.append("\n".join(ranking_lines))
 
     if digest.changes:
-        change_lines = ["", "<b>목표가·의견 변화</b>"]
+        change_lines = ["", "<b>이익·마진 추정 변화</b>"]
         for report in digest.changes[:5]:
             detail_bits = []
             target_line = _format_target_change(report)
