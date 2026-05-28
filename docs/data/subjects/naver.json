@@ -20,7 +20,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 6
+    "coverage_initiated": 6,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 1,
+    "earnings_estimate_down": 3,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 2
   },
   "target_summary": {
     "count": 6,
@@ -49,7 +54,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -64,7 +71,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -79,7 +92,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -94,7 +109,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -109,7 +126,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-22",
@@ -124,7 +149,245 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-04",
+        "broker": "유안타증권",
+        "title": "NAVER - AI 에이전트와 해외 C2C에 대한 도전",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92382&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260504_company_578863000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260504_company_578863000.pdf",
+        "target_price": "290,000",
+        "target_price_value": 290000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.9,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배순이익",
+        "period": null,
+        "value": 2853.0,
+        "unit": "억원",
+        "value_krw_100m": 2853.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%, 지배순이익 2,853억원 YoY -32."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "하나증권",
+        "title": "NAVER - 본업은 기본, 하반기 알파를 기대",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92402&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_779642000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_779642000.pdf",
+        "target_price": "350,000",
+        "target_price_value": 350000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 16.7,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 16.7,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3%, OPM 16.7%)으로 컨센서스에 부합하는 실적을 기록했다."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "유안타증권",
+        "title": "NAVER - AI 에이전트와 해외 C2C에 대한 도전",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92382&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260504_company_578863000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260504_company_578863000.pdf",
+        "target_price": "290,000",
+        "target_price_value": 290000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.9,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 5418.0,
+        "unit": "억원",
+        "value_krw_100m": 5418.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3%, 영업이익 5,418억원 YoY +7."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "유진투자증권",
+        "title": "NAVER - 하반기 AI 수익화 성과가 중요",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92353&page=4",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260504_company_743134000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260504_company_743134000.pdf",
+        "target_price": "320,000",
+        "target_price_value": 320000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 5418.0,
+        "unit": "억원",
+        "value_krw_100m": 5418.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3%yoy), 영업이익 5,418억원(+7."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "하나증권",
+        "title": "NAVER - 본업은 기본, 하반기 알파를 기대",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92402&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_779642000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_779642000.pdf",
+        "target_price": "350,000",
+        "target_price_value": 350000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 5418.0,
+        "unit": "억원",
+        "value_krw_100m": 5418.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4%), 영업이익 5,418억원(YoY +7."
+      },
+      {
+        "date": "2026-05-22",
+        "broker": "미래에셋증권",
+        "title": "NAVER - 트래픽 감소 우려",
+        "ticker": "035420",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93214&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260522_company_254399000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260522_company_254399000.pdf",
+        "target_price": "280,000",
+        "target_price_value": 280000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.25,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 16.7,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 16.7,
+        "value_won": null,
+        "change_pctp": 1.4,
+        "source_excerpt": "영업이익률은 16.7%로 YoY 1."
+      },
+      {
+        "date": "2026-05-22",
+        "broker": "미래에셋증권",
+        "title": "NAVER - 트래픽 감소 우려",
+        "ticker": "035420",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93214&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260522_company_254399000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260522_company_254399000.pdf",
+        "target_price": "280,000",
+        "target_price_value": 280000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.25,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 5420.0,
+        "unit": "억원",
+        "value_krw_100m": 5420.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "NAVER - 트래픽 감소 우려 트래픽 감소 우려 NAVER 26년 수익성 악화는 불가피 1불기 매출액 3조 2,410억원(+16% YoY), 영업이익 5,420억원(+7% YoY)으로 매출액은 컨센서스를 3% 상회, 영업이익은 3% 하회했다."
       }
     ],
     "opinion_distribution": [
@@ -147,7 +410,19 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       }
     ],
     "window_days": 14
@@ -166,7 +441,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -181,7 +458,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -196,7 +479,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -211,7 +496,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -226,7 +513,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-22",
@@ -241,7 +536,245 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-04",
+      "broker": "유안타증권",
+      "title": "NAVER - AI 에이전트와 해외 C2C에 대한 도전",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92382&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260504_company_578863000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260504_company_578863000.pdf",
+      "target_price": "290,000",
+      "target_price_value": 290000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.9,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배순이익",
+      "period": null,
+      "value": 2853.0,
+      "unit": "억원",
+      "value_krw_100m": 2853.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%, 지배순이익 2,853억원 YoY -32."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "하나증권",
+      "title": "NAVER - 본업은 기본, 하반기 알파를 기대",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92402&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_779642000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_779642000.pdf",
+      "target_price": "350,000",
+      "target_price_value": 350000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 16.7,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 16.7,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3%, OPM 16.7%)으로 컨센서스에 부합하는 실적을 기록했다."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "유안타증권",
+      "title": "NAVER - AI 에이전트와 해외 C2C에 대한 도전",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92382&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260504_company_578863000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260504_company_578863000.pdf",
+      "target_price": "290,000",
+      "target_price_value": 290000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.9,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 5418.0,
+      "unit": "억원",
+      "value_krw_100m": 5418.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3%, 영업이익 5,418억원 YoY +7."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "유진투자증권",
+      "title": "NAVER - 하반기 AI 수익화 성과가 중요",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92353&page=4",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260504_company_743134000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260504_company_743134000.pdf",
+      "target_price": "320,000",
+      "target_price_value": 320000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 5418.0,
+      "unit": "억원",
+      "value_krw_100m": 5418.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3%yoy), 영업이익 5,418억원(+7."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "하나증권",
+      "title": "NAVER - 본업은 기본, 하반기 알파를 기대",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92402&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_779642000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_779642000.pdf",
+      "target_price": "350,000",
+      "target_price_value": 350000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 5418.0,
+      "unit": "억원",
+      "value_krw_100m": 5418.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4%), 영업이익 5,418억원(YoY +7."
+    },
+    {
+      "date": "2026-05-22",
+      "broker": "미래에셋증권",
+      "title": "NAVER - 트래픽 감소 우려",
+      "ticker": "035420",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93214&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260522_company_254399000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260522_company_254399000.pdf",
+      "target_price": "280,000",
+      "target_price_value": 280000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.25,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 16.7,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 16.7,
+      "value_won": null,
+      "change_pctp": 1.4,
+      "source_excerpt": "영업이익률은 16.7%로 YoY 1."
+    },
+    {
+      "date": "2026-05-22",
+      "broker": "미래에셋증권",
+      "title": "NAVER - 트래픽 감소 우려",
+      "ticker": "035420",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93214&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260522_company_254399000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260522_company_254399000.pdf",
+      "target_price": "280,000",
+      "target_price_value": 280000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.25,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 5420.0,
+      "unit": "억원",
+      "value_krw_100m": 5420.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "NAVER - 트래픽 감소 우려 트래픽 감소 우려 NAVER 26년 수익성 악화는 불가피 1불기 매출액 3조 2,410억원(+16% YoY), 영업이익 5,420억원(+7% YoY)으로 매출액은 컨센서스를 3% 상회, 영업이익은 3% 하회했다."
     }
   ],
   "opinion_distribution": [
@@ -264,7 +797,19 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "broker_summary": [
@@ -404,12 +949,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5420.0,
+          "unit": "억원",
+          "source_excerpt": "NAVER - 트래픽 감소 우려 트래픽 감소 우려 NAVER 26년 수익성 악화는 불가피 1불기 매출액 3조 2,410억원(+16% YoY), 영업이익 5,420억원(+7% YoY)으로 매출액은 컨센서스를 3% 상회, 영업이익은 3% 하회했다.",
+          "value_krw_100m": 5420.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 16.7,
+          "unit": "%",
+          "value_pct": 16.7,
+          "source_excerpt": "영업이익률은 16.7%로 YoY 1.",
+          "change_pctp": 1.4
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -461,13 +1049,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5418.0,
+          "unit": "억원",
+          "source_excerpt": "3%, 영업이익 5,418억원 YoY +7.",
+          "value_krw_100m": 5418.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": null,
+          "value": 2853.0,
+          "unit": "억원",
+          "source_excerpt": "2%, 지배순이익 2,853억원 YoY -32.",
+          "value_krw_100m": 2853.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -519,13 +1137,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -582,7 +1213,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5418.0,
+          "unit": "억원",
+          "source_excerpt": "4%), 영업이익 5,418억원(YoY +7.",
+          "value_krw_100m": 5418.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 16.7,
+          "unit": "%",
+          "value_pct": 16.7,
+          "source_excerpt": "3%, OPM 16.7%)으로 컨센서스에 부합하는 실적을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -638,7 +1293,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5418.0,
+          "unit": "억원",
+          "source_excerpt": "3%yoy), 영업이익 5,418억원(+7.",
+          "value_krw_100m": 5418.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -694,7 +1363,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -802,12 +1474,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5420.0,
+          "unit": "억원",
+          "source_excerpt": "NAVER - 트래픽 감소 우려 트래픽 감소 우려 NAVER 26년 수익성 악화는 불가피 1불기 매출액 3조 2,410억원(+16% YoY), 영업이익 5,420억원(+7% YoY)으로 매출액은 컨센서스를 3% 상회, 영업이익은 3% 하회했다.",
+          "value_krw_100m": 5420.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 16.7,
+          "unit": "%",
+          "value_pct": 16.7,
+          "source_excerpt": "영업이익률은 16.7%로 YoY 1.",
+          "change_pctp": 1.4
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -859,13 +1574,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5418.0,
+          "unit": "억원",
+          "source_excerpt": "3%, 영업이익 5,418억원 YoY +7.",
+          "value_krw_100m": 5418.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": null,
+          "value": 2853.0,
+          "unit": "억원",
+          "source_excerpt": "2%, 지배순이익 2,853억원 YoY -32.",
+          "value_krw_100m": 2853.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -917,13 +1662,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -980,7 +1738,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5418.0,
+          "unit": "억원",
+          "source_excerpt": "4%), 영업이익 5,418억원(YoY +7.",
+          "value_krw_100m": 5418.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 16.7,
+          "unit": "%",
+          "value_pct": 16.7,
+          "source_excerpt": "3%, OPM 16.7%)으로 컨센서스에 부합하는 실적을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1036,7 +1818,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5418.0,
+          "unit": "억원",
+          "source_excerpt": "3%yoy), 영업이익 5,418억원(+7.",
+          "value_krw_100m": 5418.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1092,7 +1888,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -1200,12 +1999,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5420.0,
+          "unit": "억원",
+          "source_excerpt": "NAVER - 트래픽 감소 우려 트래픽 감소 우려 NAVER 26년 수익성 악화는 불가피 1불기 매출액 3조 2,410억원(+16% YoY), 영업이익 5,420억원(+7% YoY)으로 매출액은 컨센서스를 3% 상회, 영업이익은 3% 하회했다.",
+          "value_krw_100m": 5420.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 16.7,
+          "unit": "%",
+          "value_pct": 16.7,
+          "source_excerpt": "영업이익률은 16.7%로 YoY 1.",
+          "change_pctp": 1.4
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1257,13 +2099,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5418.0,
+          "unit": "억원",
+          "source_excerpt": "3%, 영업이익 5,418억원 YoY +7.",
+          "value_krw_100m": 5418.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": null,
+          "value": 2853.0,
+          "unit": "억원",
+          "source_excerpt": "2%, 지배순이익 2,853억원 YoY -32.",
+          "value_krw_100m": 2853.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1315,13 +2187,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1378,7 +2263,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5418.0,
+          "unit": "억원",
+          "source_excerpt": "4%), 영업이익 5,418억원(YoY +7.",
+          "value_krw_100m": 5418.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 16.7,
+          "unit": "%",
+          "value_pct": 16.7,
+          "source_excerpt": "3%, OPM 16.7%)으로 컨센서스에 부합하는 실적을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1434,7 +2343,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5418.0,
+          "unit": "억원",
+          "source_excerpt": "3%yoy), 영업이익 5,418억원(+7.",
+          "value_krw_100m": 5418.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1490,7 +2413,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

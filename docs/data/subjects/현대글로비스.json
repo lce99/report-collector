@@ -20,7 +20,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 6
+    "coverage_initiated": 6,
+    "estimate_signal_reports": 4,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 3,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 6,
@@ -49,7 +54,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-24",
@@ -64,7 +71,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-24",
@@ -79,7 +92,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.3,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-24",
@@ -94,7 +109,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.65,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-04-24",
@@ -109,7 +136,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-24",
@@ -124,7 +159,197 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-24",
+        "broker": "유안타증권",
+        "title": "현대글로비스 - 해운이 견인한 실적, 하반기 회복 기대",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91902&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260424_company_645953000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260424_company_645953000.pdf",
+        "target_price": "320,000",
+        "target_price_value": 320000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.65,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 6.7,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 6.7,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9%, OPM 6.7%)으로, 영업이익 기준 컨센서스를 -1."
+      },
+      {
+        "date": "2026-04-24",
+        "broker": "유안타증권",
+        "title": "현대글로비스 - 해운이 견인한 실적, 하반기 회복 기대",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91902&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260424_company_645953000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260424_company_645953000.pdf",
+        "target_price": "320,000",
+        "target_price_value": 320000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.65,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 13.3,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 13.3,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4%, OPM 13.3%)으로 전사 실적 성장을 견인."
+      },
+      {
+        "date": "2026-04-24",
+        "broker": "미래에셋증권",
+        "title": "현대글로비스 - 다시 한번 증명한 펀더멘털",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91837&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260424_company_895120000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260424_company_895120000.pdf",
+        "target_price": "310,000",
+        "target_price_value": 310000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.8,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 5215.0,
+        "unit": "억원",
+        "value_krw_100m": 5215.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "현대글로비스 - 다시 한번 증명한 펀더멘털 다시 한번 증명한 펀더멘털 현대글로비스 1Q26 Review: 영업이익 5,215억원, 여전히 탄탄한 펀더멘털 현대글로비스의 1Q26 매출액은 7조 8,127억 원(+8."
+      },
+      {
+        "date": "2026-04-24",
+        "broker": "유안타증권",
+        "title": "현대글로비스 - 해운이 견인한 실적, 하반기 회복 기대",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91902&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260424_company_645953000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260424_company_645953000.pdf",
+        "target_price": "320,000",
+        "target_price_value": 320000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.65,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1926.0,
+        "unit": "억원",
+        "value_krw_100m": 1926.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5%), 영업이익 1,926억원(YoY +40."
+      },
+      {
+        "date": "2026-04-24",
+        "broker": "한화투자증권",
+        "title": "현대글로비스 - 중동 이슈 상에서도 성장성 이상 무",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91901&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260424_company_981150000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260424_company_981150000.pdf",
+        "target_price": "370,000",
+        "target_price_value": 370000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 5215.0,
+        "unit": "억원",
+        "value_krw_100m": 5215.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%, 이하 YoY), 영업이익은 5,215억원(+3."
       }
     ],
     "opinion_distribution": [
@@ -147,7 +372,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-24",
@@ -162,7 +395,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-24",
@@ -177,7 +416,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.65,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-04-24",
@@ -192,7 +443,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-24",
@@ -207,7 +466,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.3,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-24",
@@ -222,7 +483,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -241,7 +504,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-24",
@@ -256,7 +521,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-24",
@@ -271,7 +542,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.3,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-24",
@@ -286,7 +559,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.65,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-04-24",
@@ -301,7 +586,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-24",
@@ -316,7 +609,197 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-24",
+      "broker": "유안타증권",
+      "title": "현대글로비스 - 해운이 견인한 실적, 하반기 회복 기대",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91902&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260424_company_645953000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260424_company_645953000.pdf",
+      "target_price": "320,000",
+      "target_price_value": 320000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.65,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 6.7,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 6.7,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9%, OPM 6.7%)으로, 영업이익 기준 컨센서스를 -1."
+    },
+    {
+      "date": "2026-04-24",
+      "broker": "유안타증권",
+      "title": "현대글로비스 - 해운이 견인한 실적, 하반기 회복 기대",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91902&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260424_company_645953000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260424_company_645953000.pdf",
+      "target_price": "320,000",
+      "target_price_value": 320000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.65,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 13.3,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 13.3,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4%, OPM 13.3%)으로 전사 실적 성장을 견인."
+    },
+    {
+      "date": "2026-04-24",
+      "broker": "미래에셋증권",
+      "title": "현대글로비스 - 다시 한번 증명한 펀더멘털",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91837&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260424_company_895120000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260424_company_895120000.pdf",
+      "target_price": "310,000",
+      "target_price_value": 310000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.8,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 5215.0,
+      "unit": "억원",
+      "value_krw_100m": 5215.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "현대글로비스 - 다시 한번 증명한 펀더멘털 다시 한번 증명한 펀더멘털 현대글로비스 1Q26 Review: 영업이익 5,215억원, 여전히 탄탄한 펀더멘털 현대글로비스의 1Q26 매출액은 7조 8,127억 원(+8."
+    },
+    {
+      "date": "2026-04-24",
+      "broker": "유안타증권",
+      "title": "현대글로비스 - 해운이 견인한 실적, 하반기 회복 기대",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91902&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260424_company_645953000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260424_company_645953000.pdf",
+      "target_price": "320,000",
+      "target_price_value": 320000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.65,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1926.0,
+      "unit": "억원",
+      "value_krw_100m": 1926.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5%), 영업이익 1,926억원(YoY +40."
+    },
+    {
+      "date": "2026-04-24",
+      "broker": "한화투자증권",
+      "title": "현대글로비스 - 중동 이슈 상에서도 성장성 이상 무",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91901&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260424_company_981150000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260424_company_981150000.pdf",
+      "target_price": "370,000",
+      "target_price_value": 370000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 5215.0,
+      "unit": "억원",
+      "value_krw_100m": 5215.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%, 이하 YoY), 영업이익은 5,215억원(+3."
     }
   ],
   "opinion_distribution": [
@@ -339,7 +822,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-24",
@@ -354,7 +845,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-24",
@@ -369,7 +866,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.65,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-04-24",
@@ -384,7 +893,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-24",
@@ -399,7 +916,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.3,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-24",
@@ -414,7 +933,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -507,7 +1028,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -564,7 +1088,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -614,13 +1141,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -669,13 +1209,65 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1926.0,
+          "unit": "억원",
+          "source_excerpt": "5%), 영업이익 1,926억원(YoY +40.",
+          "value_krw_100m": 1926.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 6.7,
+          "unit": "%",
+          "value_pct": 6.7,
+          "source_excerpt": "9%, OPM 6.7%)으로, 영업이익 기준 컨센서스를 -1."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 13.3,
+          "unit": "%",
+          "value_pct": 13.3,
+          "source_excerpt": "4%, OPM 13.3%)으로 전사 실적 성장을 견인."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -724,13 +1316,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5215.0,
+          "unit": "억원",
+          "source_excerpt": "현대글로비스 - 다시 한번 증명한 펀더멘털 다시 한번 증명한 펀더멘털 현대글로비스 1Q26 Review: 영업이익 5,215억원, 여전히 탄탄한 펀더멘털 현대글로비스의 1Q26 매출액은 7조 8,127억 원(+8.",
+          "value_krw_100m": 5215.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -778,13 +1390,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5215.0,
+          "unit": "억원",
+          "source_excerpt": "2%, 이하 YoY), 영업이익은 5,215억원(+3.",
+          "value_krw_100m": 5215.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "recent_changes": [
@@ -845,7 +1481,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -902,7 +1541,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -952,13 +1594,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1007,13 +1662,65 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1926.0,
+          "unit": "억원",
+          "source_excerpt": "5%), 영업이익 1,926억원(YoY +40.",
+          "value_krw_100m": 1926.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 6.7,
+          "unit": "%",
+          "value_pct": 6.7,
+          "source_excerpt": "9%, OPM 6.7%)으로, 영업이익 기준 컨센서스를 -1."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 13.3,
+          "unit": "%",
+          "value_pct": 13.3,
+          "source_excerpt": "4%, OPM 13.3%)으로 전사 실적 성장을 견인."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1062,13 +1769,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5215.0,
+          "unit": "억원",
+          "source_excerpt": "현대글로비스 - 다시 한번 증명한 펀더멘털 다시 한번 증명한 펀더멘털 현대글로비스 1Q26 Review: 영업이익 5,215억원, 여전히 탄탄한 펀더멘털 현대글로비스의 1Q26 매출액은 7조 8,127억 원(+8.",
+          "value_krw_100m": 5215.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1116,13 +1843,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5215.0,
+          "unit": "억원",
+          "source_excerpt": "2%, 이하 YoY), 영업이익은 5,215억원(+3.",
+          "value_krw_100m": 5215.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "timeline": [
@@ -1183,7 +1934,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1240,7 +1994,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1290,13 +2047,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1345,13 +2115,65 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1926.0,
+          "unit": "억원",
+          "source_excerpt": "5%), 영업이익 1,926억원(YoY +40.",
+          "value_krw_100m": 1926.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 6.7,
+          "unit": "%",
+          "value_pct": 6.7,
+          "source_excerpt": "9%, OPM 6.7%)으로, 영업이익 기준 컨센서스를 -1."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 13.3,
+          "unit": "%",
+          "value_pct": 13.3,
+          "source_excerpt": "4%, OPM 13.3%)으로 전사 실적 성장을 견인."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1400,13 +2222,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5215.0,
+          "unit": "억원",
+          "source_excerpt": "현대글로비스 - 다시 한번 증명한 펀더멘털 다시 한번 증명한 펀더멘털 현대글로비스 1Q26 Review: 영업이익 5,215억원, 여전히 탄탄한 펀더멘털 현대글로비스의 1Q26 매출액은 7조 8,127억 원(+8.",
+          "value_krw_100m": 5215.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1454,13 +2296,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5215.0,
+          "unit": "억원",
+          "source_excerpt": "2%, 이하 YoY), 영업이익은 5,215억원(+3.",
+          "value_krw_100m": 5215.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ]
 }

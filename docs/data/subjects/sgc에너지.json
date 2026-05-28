@@ -17,7 +17,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 3,
+    "estimate_signal_reports": 1,
+    "earnings_estimate_up": 1,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 3,
@@ -46,7 +51,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-22",
@@ -61,7 +68,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-24",
@@ -76,7 +89,39 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-22",
+        "broker": "DS투자증권",
+        "title": "SGC에너지 - 유틸리티에서 AI인프라 사업자로 변신",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91801&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260422_company_197739000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260422_company_197739000.pdf",
+        "target_price": "83,000",
+        "target_price_value": 83000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 10.55,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 356.0,
+        "unit": "억원",
+        "value_krw_100m": 356.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0% YoY)과 영업이익 356억원(+102."
       }
     ],
     "opinion_distribution": [
@@ -99,7 +144,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-22",
@@ -114,7 +161,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-24",
@@ -129,7 +182,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -148,7 +203,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-22",
@@ -163,7 +220,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-24",
@@ -178,7 +241,39 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-22",
+      "broker": "DS투자증권",
+      "title": "SGC에너지 - 유틸리티에서 AI인프라 사업자로 변신",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91801&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260422_company_197739000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260422_company_197739000.pdf",
+      "target_price": "83,000",
+      "target_price_value": 83000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 10.55,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 356.0,
+      "unit": "억원",
+      "value_krw_100m": 356.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0% YoY)과 영업이익 356억원(+102."
     }
   ],
   "opinion_distribution": [
@@ -201,7 +296,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-22",
@@ -216,7 +313,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-24",
@@ -231,7 +334,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -309,7 +414,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -361,13 +469,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -426,7 +543,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 356.0,
+          "unit": "억원",
+          "source_excerpt": "0% YoY)과 영업이익 356억원(+102.",
+          "value_krw_100m": 356.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -484,7 +615,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -536,13 +670,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -601,7 +744,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 356.0,
+          "unit": "억원",
+          "source_excerpt": "0% YoY)과 영업이익 356억원(+102.",
+          "value_krw_100m": 356.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -659,7 +816,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -711,13 +871,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -776,7 +945,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 356.0,
+          "unit": "억원",
+          "source_excerpt": "0% YoY)과 영업이익 356억원(+102.",
+          "value_krw_100m": 356.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

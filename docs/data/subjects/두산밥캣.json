@@ -16,7 +16,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 2
+    "coverage_initiated": 2,
+    "estimate_signal_reports": 2,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 2,
@@ -45,7 +50,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -60,7 +71,119 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-29",
+        "broker": "키움증권",
+        "title": "두산밥캣 - 일회성 환입을 고려해도 긍정적인 실적 달성",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92113&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_440262000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_440262000.pdf",
+        "target_price": "96,000",
+        "target_price_value": 96000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 12.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 9.2,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 9.2,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5%, OPM 9.2%)을 달성하며 시장 기대치(1,565억원)와 당사 추정치(1,628억원)을 큰 폭으로 상회하였다."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "키움증권",
+        "title": "두산밥캣 - 일회성 환입을 고려해도 긍정적인 실적 달성",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92113&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_440262000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_440262000.pdf",
+        "target_price": "96,000",
+        "target_price_value": 96000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 12.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1분기",
+        "value": 2070.0,
+        "unit": "억원",
+        "value_krw_100m": 2070.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "두산밥캣 - 일회성 환입을 고려해도 긍정적인 실적 달성 일회성 환입을 고려해도 긍정적인 실적 달성 두산밥캣 1분기 영업이익 2,070억원, 어닝 서프라이즈 시현 1분기 매출액 2조 2,473억원(yoy +7."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "키움증권",
+        "title": "두산밥캣 - 일회성 환입을 고려해도 긍정적인 실적 달성",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92113&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_440262000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_440262000.pdf",
+        "target_price": "96,000",
+        "target_price_value": 96000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 12.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2070.0,
+        "unit": "억원",
+        "value_krw_100m": 2070.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "1%), 영업이익 2,070억원(yoy +3."
       }
     ],
     "opinion_distribution": [
@@ -83,7 +206,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -98,7 +227,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -117,7 +254,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -132,7 +275,119 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-29",
+      "broker": "키움증권",
+      "title": "두산밥캣 - 일회성 환입을 고려해도 긍정적인 실적 달성",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92113&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_440262000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_440262000.pdf",
+      "target_price": "96,000",
+      "target_price_value": 96000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 12.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 9.2,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 9.2,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5%, OPM 9.2%)을 달성하며 시장 기대치(1,565억원)와 당사 추정치(1,628억원)을 큰 폭으로 상회하였다."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "키움증권",
+      "title": "두산밥캣 - 일회성 환입을 고려해도 긍정적인 실적 달성",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92113&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_440262000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_440262000.pdf",
+      "target_price": "96,000",
+      "target_price_value": 96000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 12.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1분기",
+      "value": 2070.0,
+      "unit": "억원",
+      "value_krw_100m": 2070.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "두산밥캣 - 일회성 환입을 고려해도 긍정적인 실적 달성 일회성 환입을 고려해도 긍정적인 실적 달성 두산밥캣 1분기 영업이익 2,070억원, 어닝 서프라이즈 시현 1분기 매출액 2조 2,473억원(yoy +7."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "키움증권",
+      "title": "두산밥캣 - 일회성 환입을 고려해도 긍정적인 실적 달성",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92113&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_440262000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_440262000.pdf",
+      "target_price": "96,000",
+      "target_price_value": 96000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 12.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2070.0,
+      "unit": "억원",
+      "value_krw_100m": 2070.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "1%), 영업이익 2,070억원(yoy +3."
     }
   ],
   "opinion_distribution": [
@@ -155,7 +410,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -170,7 +431,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -243,13 +512,57 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 2070.0,
+          "unit": "억원",
+          "source_excerpt": "두산밥캣 - 일회성 환입을 고려해도 긍정적인 실적 달성 일회성 환입을 고려해도 긍정적인 실적 달성 두산밥캣 1분기 영업이익 2,070억원, 어닝 서프라이즈 시현 1분기 매출액 2조 2,473억원(yoy +7.",
+          "value_krw_100m": 2070.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2070.0,
+          "unit": "억원",
+          "source_excerpt": "1%), 영업이익 2,070억원(yoy +3.",
+          "value_krw_100m": 2070.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 9.2,
+          "unit": "%",
+          "value_pct": 9.2,
+          "source_excerpt": "5%, OPM 9.2%)을 달성하며 시장 기대치(1,565억원)와 당사 추정치(1,628억원)을 큰 폭으로 상회하였다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -298,13 +611,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
@@ -361,13 +683,57 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 2070.0,
+          "unit": "억원",
+          "source_excerpt": "두산밥캣 - 일회성 환입을 고려해도 긍정적인 실적 달성 일회성 환입을 고려해도 긍정적인 실적 달성 두산밥캣 1분기 영업이익 2,070억원, 어닝 서프라이즈 시현 1분기 매출액 2조 2,473억원(yoy +7.",
+          "value_krw_100m": 2070.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2070.0,
+          "unit": "억원",
+          "source_excerpt": "1%), 영업이익 2,070억원(yoy +3.",
+          "value_krw_100m": 2070.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 9.2,
+          "unit": "%",
+          "value_pct": 9.2,
+          "source_excerpt": "5%, OPM 9.2%)을 달성하며 시장 기대치(1,565억원)와 당사 추정치(1,628억원)을 큰 폭으로 상회하였다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -416,13 +782,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -479,13 +854,57 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 2070.0,
+          "unit": "억원",
+          "source_excerpt": "두산밥캣 - 일회성 환입을 고려해도 긍정적인 실적 달성 일회성 환입을 고려해도 긍정적인 실적 달성 두산밥캣 1분기 영업이익 2,070억원, 어닝 서프라이즈 시현 1분기 매출액 2조 2,473억원(yoy +7.",
+          "value_krw_100m": 2070.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2070.0,
+          "unit": "억원",
+          "source_excerpt": "1%), 영업이익 2,070억원(yoy +3.",
+          "value_krw_100m": 2070.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 9.2,
+          "unit": "%",
+          "value_pct": 9.2,
+          "source_excerpt": "5%, OPM 9.2%)을 달성하며 시장 기대치(1,565억원)와 당사 추정치(1,628억원)을 큰 폭으로 상회하였다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -534,13 +953,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ]
 }

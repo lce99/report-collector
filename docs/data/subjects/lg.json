@@ -10,14 +10,19 @@
     "하나증권"
   ],
   "change_summary": {
-    "changed_reports": 3,
+    "changed_reports": 4,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 3,
+    "estimate_signal_reports": 4,
+    "earnings_estimate_up": 1,
+    "earnings_estimate_down": 3,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 3,
@@ -46,7 +51,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.99,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -61,7 +72,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.7,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-18",
@@ -76,7 +93,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.75,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-19",
@@ -91,7 +114,85 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-19",
+        "broker": "SK증권",
+        "title": "LG - 추가적인 주주환원 기대",
+        "ticker": "003550",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93135&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_452289000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_452289000.pdf",
+        "target_price": "140,000",
+        "target_price_value": 140000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": -7819.0,
+        "unit": "억원",
+        "value_krw_100m": -7819.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%(이하 YoY) 감소했고, LG 화학의 대규모 적자(순이익 -7,819 억원) 영향으로 지분법이익이 47."
+      },
+      {
+        "date": "2026-05-19",
+        "broker": "SK증권",
+        "title": "LG - 추가적인 주주환원 기대",
+        "ticker": "003550",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93135&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_452289000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_452289000.pdf",
+        "target_price": "140,000",
+        "target_price_value": 140000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1.5,
+        "unit": "조원",
+        "value_krw_100m": 15000.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7%)로 연결 영업이익은 1.5 조원(+65."
       }
     ],
     "opinion_distribution": [
@@ -114,7 +215,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.99,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -129,7 +236,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.7,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-18",
@@ -144,7 +257,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.75,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-19",
@@ -159,7 +278,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       }
     ],
     "window_days": 14
@@ -178,7 +305,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.99,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -193,7 +326,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.7,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-18",
@@ -208,7 +347,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.75,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-19",
@@ -223,7 +368,85 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-19",
+      "broker": "SK증권",
+      "title": "LG - 추가적인 주주환원 기대",
+      "ticker": "003550",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93135&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_452289000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_452289000.pdf",
+      "target_price": "140,000",
+      "target_price_value": 140000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": -7819.0,
+      "unit": "억원",
+      "value_krw_100m": -7819.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%(이하 YoY) 감소했고, LG 화학의 대규모 적자(순이익 -7,819 억원) 영향으로 지분법이익이 47."
+    },
+    {
+      "date": "2026-05-19",
+      "broker": "SK증권",
+      "title": "LG - 추가적인 주주환원 기대",
+      "ticker": "003550",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93135&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_452289000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_452289000.pdf",
+      "target_price": "140,000",
+      "target_price_value": 140000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1.5,
+      "unit": "조원",
+      "value_krw_100m": 15000.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7%)로 연결 영업이익은 1.5 조원(+65."
     }
   ],
   "opinion_distribution": [
@@ -246,7 +469,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.99,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -261,7 +490,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.7,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-18",
@@ -276,7 +511,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.75,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-19",
@@ -291,7 +532,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "broker_summary": [
@@ -414,12 +663,46 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": -7819.0,
+          "unit": "억원",
+          "source_excerpt": "2%(이하 YoY) 감소했고, LG 화학의 대규모 적자(순이익 -7,819 억원) 영향으로 지분법이익이 47.",
+          "value_krw_100m": -7819.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1.5,
+          "unit": "조원",
+          "source_excerpt": "7%)로 연결 영업이익은 1.5 조원(+65.",
+          "value_krw_100m": 15000.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -473,10 +756,21 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -526,13 +820,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "recent_changes": [
@@ -635,12 +938,114 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": -7819.0,
+          "unit": "억원",
+          "source_excerpt": "2%(이하 YoY) 감소했고, LG 화학의 대규모 적자(순이익 -7,819 억원) 영향으로 지분법이익이 47.",
+          "value_krw_100m": -7819.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1.5,
+          "unit": "조원",
+          "source_excerpt": "7%)로 연결 영업이익은 1.5 조원(+65.",
+          "value_krw_100m": 15000.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "93049",
+      "title": "지분법 기저효과로 이익 감소, 주주환원 기조..",
+      "display_title": "LG - 지분법 기저효과로 이익 감소, 주주환원 기조..",
+      "broker": "대신증권",
+      "published_date": "2026-05-18",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93049&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260518_company_742779000.pdf",
+      "subject": "LG",
+      "subject_key": "lg",
+      "views": 496,
+      "analyst": null,
+      "target_price": "130,000",
+      "target_price_value": 130000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "투자의견 매수, 목표주가 130,000원으로 18.2% 상향 목표주가 상향은 LG화학, LG전자 등 상장 자회사 주가 상승에 따른 NAV 증가를 반영.",
+      "summary": "투자의견 매수, 목표주가 130,000원으로 18.2% 상향 목표주가 상향은 LG화학, LG전자 등 상장 자회사 주가 상승에 따른 NAV 증가를 반영. NAV 대비 Target 할인율은 40% 적용.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 11.75,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 섹터/키워드(반도체, 방산)",
+        "목표가 포함",
+        "투자의견 포함",
+        "우선 추적 증권사"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체",
+        "방산"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": "2026-05-11",
+      "previous_target_price": "130,000",
+      "previous_opinion": "Buy",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -695,13 +1100,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -751,13 +1165,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "timeline": [
@@ -860,12 +1283,46 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": -7819.0,
+          "unit": "억원",
+          "source_excerpt": "2%(이하 YoY) 감소했고, LG 화학의 대규모 적자(순이익 -7,819 억원) 영향으로 지분법이익이 47.",
+          "value_krw_100m": -7819.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1.5,
+          "unit": "조원",
+          "source_excerpt": "7%)로 연결 영업이익은 1.5 조원(+65.",
+          "value_krw_100m": 15000.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -919,10 +1376,21 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -977,13 +1445,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1033,13 +1510,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     }
   ]
 }

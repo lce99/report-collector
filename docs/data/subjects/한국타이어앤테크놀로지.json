@@ -10,14 +10,19 @@
     "한화투자증권"
   ],
   "change_summary": {
-    "changed_reports": 3,
+    "changed_reports": 4,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 3,
+    "estimate_signal_reports": 2,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 3,
@@ -46,7 +51,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-11",
@@ -61,7 +68,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -76,7 +91,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-20",
@@ -91,7 +112,229 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-29",
+        "broker": "유진투자증권",
+        "title": "한국타이어앤테크놀로지 - 1Q26 Preview: 공급 리스크는 기회 요인",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92120&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260429_company_310420000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260429_company_310420000.pdf",
+        "target_price": "80,000",
+        "target_price_value": 80000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 10.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 10.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6%yoy, OPM 10.0%), 지배이익 3,330억원(+4."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "유진투자증권",
+        "title": "한국타이어앤테크놀로지 - 1Q26 Preview: 공급 리스크는 기회 요인",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92120&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260429_company_310420000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260429_company_310420000.pdf",
+        "target_price": "80,000",
+        "target_price_value": 80000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 5160.0,
+        "unit": "억원",
+        "value_krw_100m": 5160.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0%yoy), 영업이익 5,160억원(+45."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "대신증권",
+        "title": "한국타이어앤테크놀로지 - 안 좋을 때 좋은 주식",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92704&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_421837000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_421837000.pdf",
+        "target_price": "93,000",
+        "target_price_value": 93000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "eps",
+        "metric_group": "earnings",
+        "label": "EPS",
+        "period": "2026년",
+        "value": 10791.0,
+        "unit": "원",
+        "value_krw_100m": null,
+        "value_pct": null,
+        "value_won": 10791.0,
+        "change_pctp": null,
+        "source_excerpt": "3만원은 2026년 EPS 10,791원에 목표배수 8."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "유진투자증권",
+        "title": "한국타이어앤테크놀로지 - 1Q26 Review: 수익성 방어 문제없다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92680&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_295463000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_295463000.pdf",
+        "target_price": "80,000",
+        "target_price_value": 80000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 9.5,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 9.5,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0%yoy, OPM 9.5%), 지배이익 3,460억원(+8."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "유진투자증권",
+        "title": "한국타이어앤테크놀로지 - 1Q26 Review: 수익성 방어 문제없다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92680&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_295463000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_295463000.pdf",
+        "target_price": "80,000",
+        "target_price_value": 80000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 17.1,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 17.1,
+        "value_won": null,
+        "change_pctp": 2.9,
+        "source_excerpt": "2%yoy), 영업이익률 17.1%(+2."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "유진투자증권",
+        "title": "한국타이어앤테크놀로지 - 1Q26 Review: 수익성 방어 문제없다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92680&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_295463000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_295463000.pdf",
+        "target_price": "80,000",
+        "target_price_value": 80000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 5070.0,
+        "unit": "억원",
+        "value_krw_100m": 5070.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "1%yoy), 영업이익 5,070억원(+43."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "유진투자증권",
+        "title": "한국타이어앤테크놀로지 - 1Q26 Review: 수익성 방어 문제없다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92680&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_295463000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_295463000.pdf",
+        "target_price": "80,000",
+        "target_price_value": 80000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 4375.0,
+        "unit": "억원",
+        "value_krw_100m": 4375.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3%yoy), 영업이익 4,375억원(+31."
       }
     ],
     "opinion_distribution": [
@@ -114,7 +357,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -129,7 +378,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-20",
@@ -144,7 +401,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -163,7 +422,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-11",
@@ -178,7 +439,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -193,7 +462,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-20",
@@ -208,7 +483,229 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-29",
+      "broker": "유진투자증권",
+      "title": "한국타이어앤테크놀로지 - 1Q26 Preview: 공급 리스크는 기회 요인",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92120&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260429_company_310420000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260429_company_310420000.pdf",
+      "target_price": "80,000",
+      "target_price_value": 80000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 10.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 10.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6%yoy, OPM 10.0%), 지배이익 3,330억원(+4."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "유진투자증권",
+      "title": "한국타이어앤테크놀로지 - 1Q26 Preview: 공급 리스크는 기회 요인",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92120&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260429_company_310420000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260429_company_310420000.pdf",
+      "target_price": "80,000",
+      "target_price_value": 80000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 5160.0,
+      "unit": "억원",
+      "value_krw_100m": 5160.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0%yoy), 영업이익 5,160억원(+45."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "대신증권",
+      "title": "한국타이어앤테크놀로지 - 안 좋을 때 좋은 주식",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92704&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_421837000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_421837000.pdf",
+      "target_price": "93,000",
+      "target_price_value": 93000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "eps",
+      "metric_group": "earnings",
+      "label": "EPS",
+      "period": "2026년",
+      "value": 10791.0,
+      "unit": "원",
+      "value_krw_100m": null,
+      "value_pct": null,
+      "value_won": 10791.0,
+      "change_pctp": null,
+      "source_excerpt": "3만원은 2026년 EPS 10,791원에 목표배수 8."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "유진투자증권",
+      "title": "한국타이어앤테크놀로지 - 1Q26 Review: 수익성 방어 문제없다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92680&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_295463000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_295463000.pdf",
+      "target_price": "80,000",
+      "target_price_value": 80000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 9.5,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 9.5,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0%yoy, OPM 9.5%), 지배이익 3,460억원(+8."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "유진투자증권",
+      "title": "한국타이어앤테크놀로지 - 1Q26 Review: 수익성 방어 문제없다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92680&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_295463000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_295463000.pdf",
+      "target_price": "80,000",
+      "target_price_value": 80000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 17.1,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 17.1,
+      "value_won": null,
+      "change_pctp": 2.9,
+      "source_excerpt": "2%yoy), 영업이익률 17.1%(+2."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "유진투자증권",
+      "title": "한국타이어앤테크놀로지 - 1Q26 Review: 수익성 방어 문제없다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92680&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_295463000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_295463000.pdf",
+      "target_price": "80,000",
+      "target_price_value": 80000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 5070.0,
+      "unit": "억원",
+      "value_krw_100m": 5070.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "1%yoy), 영업이익 5,070억원(+43."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "유진투자증권",
+      "title": "한국타이어앤테크놀로지 - 1Q26 Review: 수익성 방어 문제없다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92680&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_295463000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_295463000.pdf",
+      "target_price": "80,000",
+      "target_price_value": 80000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 4375.0,
+      "unit": "억원",
+      "value_krw_100m": 4375.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3%yoy), 영업이익 4,375억원(+31."
     }
   ],
   "opinion_distribution": [
@@ -231,7 +728,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -246,7 +749,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-20",
@@ -261,7 +772,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -381,7 +894,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -433,13 +949,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": "2026년",
+          "value": 10791.0,
+          "unit": "원",
+          "source_excerpt": "3만원은 2026년 EPS 10,791원에 목표배수 8.",
+          "value_won": 10791.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -487,10 +1027,63 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5070.0,
+          "unit": "억원",
+          "source_excerpt": "1%yoy), 영업이익 5,070억원(+43.",
+          "value_krw_100m": 5070.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 4375.0,
+          "unit": "억원",
+          "source_excerpt": "3%yoy), 영업이익 4,375억원(+31.",
+          "value_krw_100m": 4375.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 9.5,
+          "unit": "%",
+          "value_pct": 9.5,
+          "source_excerpt": "0%yoy, OPM 9.5%), 지배이익 3,460억원(+8."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 17.1,
+          "unit": "%",
+          "value_pct": 17.1,
+          "source_excerpt": "2%yoy), 영업이익률 17.1%(+2.",
+          "change_pctp": 2.9
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
@@ -590,7 +1183,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -642,13 +1238,141 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": "2026년",
+          "value": 10791.0,
+          "unit": "원",
+          "source_excerpt": "3만원은 2026년 EPS 10,791원에 목표배수 8.",
+          "value_won": 10791.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92680",
+      "title": "1Q26 Review: 수익성 방어 문제없다",
+      "display_title": "한국타이어앤테크놀로지 - 1Q26 Review: 수익성 방어 문제없다",
+      "broker": "유진투자증권",
+      "published_date": "2026-05-11",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92680&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_295463000.pdf",
+      "subject": "한국타이어앤테크놀로지",
+      "subject_key": "한국타이어앤테크놀로지",
+      "views": 485,
+      "analyst": null,
+      "target_price": "80,000",
+      "target_price_value": 80000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "\" 동사의 1분기 실적은 매출액 5.3조원(+7.1%yoy), 영업이익 5,070억원(+43.0%yoy, OPM 9.5%), 지배이익 3,460억원(+8.3%yoy)을 기록해 시장 컨센서스에 부합하는 양호한 실적 시현 \" 타이어 부문: 매출액 2조 5,657억원(+9.3%yoy), 영업이익 4,375억원(+31.2%yoy), 영업이익률 17.1%(+2.9%p) 기록.",
+      "summary": "\" 동사의 1분기 실적은 매출액 5.3조원(+7.1%yoy), 영업이익 5,070억원(+43.0%yoy, OPM 9.5%), 지배이익 3,460억원(+8.3%yoy)을 기록해 시장 컨센서스에 부합하는 양호한 실적 시현 \" 타이어 부문: 매출액 2조 5,657억원(+9.3%yoy), 영업이익 4,375억원(+31.2%yoy), 영업이익률 17.1%(+2.9%p) 기록. 환율 상승 효과와 고부가가치 타이어 믹스 개선, 원자재 가격하락이 매출과 이익률 상승의 주요 원인.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 7.45,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-04-29",
+      "previous_target_price": "80,000",
+      "previous_opinion": "Buy",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5070.0,
+          "unit": "억원",
+          "source_excerpt": "1%yoy), 영업이익 5,070억원(+43.",
+          "value_krw_100m": 5070.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 4375.0,
+          "unit": "억원",
+          "source_excerpt": "3%yoy), 영업이익 4,375억원(+31.",
+          "value_krw_100m": 4375.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 9.5,
+          "unit": "%",
+          "value_pct": 9.5,
+          "source_excerpt": "0%yoy, OPM 9.5%), 지배이익 3,460억원(+8."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 17.1,
+          "unit": "%",
+          "value_pct": 17.1,
+          "source_excerpt": "2%yoy), 영업이익률 17.1%(+2.",
+          "change_pctp": 2.9
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -703,7 +1427,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5160.0,
+          "unit": "억원",
+          "source_excerpt": "0%yoy), 영업이익 5,160억원(+45.",
+          "value_krw_100m": 5160.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 10.0,
+          "unit": "%",
+          "value_pct": 10.0,
+          "source_excerpt": "6%yoy, OPM 10.0%), 지배이익 3,330억원(+4."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -803,7 +1551,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -855,13 +1606,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": "2026년",
+          "value": 10791.0,
+          "unit": "원",
+          "source_excerpt": "3만원은 2026년 EPS 10,791원에 목표배수 8.",
+          "value_won": 10791.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -909,10 +1684,63 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5070.0,
+          "unit": "억원",
+          "source_excerpt": "1%yoy), 영업이익 5,070억원(+43.",
+          "value_krw_100m": 5070.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 4375.0,
+          "unit": "억원",
+          "source_excerpt": "3%yoy), 영업이익 4,375억원(+31.",
+          "value_krw_100m": 4375.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 9.5,
+          "unit": "%",
+          "value_pct": 9.5,
+          "source_excerpt": "0%yoy, OPM 9.5%), 지배이익 3,460억원(+8."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 17.1,
+          "unit": "%",
+          "value_pct": 17.1,
+          "source_excerpt": "2%yoy), 영업이익률 17.1%(+2.",
+          "change_pctp": 2.9
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -967,7 +1795,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5160.0,
+          "unit": "억원",
+          "source_excerpt": "0%yoy), 영업이익 5,160억원(+45.",
+          "value_krw_100m": 5160.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 10.0,
+          "unit": "%",
+          "value_pct": 10.0,
+          "source_excerpt": "6%yoy, OPM 10.0%), 지배이익 3,330억원(+4."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

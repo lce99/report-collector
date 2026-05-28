@@ -1,38 +1,40 @@
 {
   "subject_key": "녹십자",
   "subject_name": "녹십자",
-  "latest_report_date": "2026-05-11",
-  "report_count": 3,
-  "active_broker_count": 3,
+  "latest_report_date": "2026-05-28",
+  "report_count": 5,
+  "active_broker_count": 4,
   "active_brokers": [
+    "DS투자증권",
     "iM증권",
     "미래에셋증권",
     "키움증권"
   ],
   "change_summary": {
-    "changed_reports": 2,
-    "target_price_up": 0,
+    "changed_reports": 5,
+    "target_price_up": 1,
     "target_price_down": 0,
-    "opinion_changed": 0,
+    "opinion_changed": 1,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 2
+    "coverage_initiated": 3,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 1,
+    "earnings_estimate_down": 3,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 2
   },
   "target_summary": {
-    "count": 3,
+    "count": 4,
     "high": 220000,
-    "low": 180000,
-    "avg": 206667
+    "low": 200000,
+    "avg": 212500
   },
   "opinion_summary": [
     {
       "label": "buy",
-      "count": 2
-    },
-    {
-      "label": "outperform",
-      "count": 1
+      "count": 4
     }
   ],
   "charts": {
@@ -50,7 +52,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.5,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-20",
@@ -65,7 +73,15 @@
         "opinion": "OutPerform",
         "opinion_normalized": "outperform",
         "score": 9.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -80,34 +96,233 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      },
+      {
+        "date": "2026-05-28",
+        "broker": "DS투자증권",
+        "title": "녹십자 - 큐레보 매각: 장기 성장 동력 확보",
+        "ticker": "006280",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93336&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_256751000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_256751000.pdf",
+        "target_price": "200,000",
+        "target_price_value": 200000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      },
+      {
+        "date": "2026-05-28",
+        "broker": "키움증권",
+        "title": "녹십자 - 릴리의 선택. 단순 일회성이 아닌 선순환의 ..",
+        "ticker": "006280",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93306&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260528_company_568457000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260528_company_568457000.pdf",
+        "target_price": "210,000",
+        "target_price_value": 210000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 14.5,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-17",
+        "broker": "iM증권",
+        "title": "녹십자 - 뼈대는 그대로, 덩치는 커지는",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91669&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260417_company_342930000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260417_company_342930000.pdf",
+        "target_price": "220,000",
+        "target_price_value": 220000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.5,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 3.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 3.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "녹십자 - 뼈대는 그대로, 덩치는 커지는 뼈대는 그대로, 덩치는 커지는 녹십자 알리글로의 성장 추이가 1분기에도 보일 것으로 전망 동사의 연결 기준 1분기 매출은 4,355억원(YoY +14%), 영업이익은 118억원(YoY +48%, OPM 3%)으로 전망한다."
+      },
+      {
+        "date": "2026-04-17",
+        "broker": "iM증권",
+        "title": "녹십자 - 뼈대는 그대로, 덩치는 커지는",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91669&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260417_company_342930000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260417_company_342930000.pdf",
+        "target_price": "220,000",
+        "target_price_value": 220000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.5,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 118.0,
+        "unit": "억원",
+        "value_krw_100m": 118.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "녹십자 - 뼈대는 그대로, 덩치는 커지는 뼈대는 그대로, 덩치는 커지는 녹십자 알리글로의 성장 추이가 1분기에도 보일 것으로 전망 동사의 연결 기준 1분기 매출은 4,355억원(YoY +14%), 영업이익은 118억원(YoY +48%, OPM 3%)으로 전망한다."
+      },
+      {
+        "date": "2026-04-20",
+        "broker": "키움증권",
+        "title": "녹십자 - 중동 물류 이연, 알리글로로 상쇄 전망",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91693&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260420_company_13148000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260420_company_13148000.pdf",
+        "target_price": "180,000",
+        "target_price_value": 180000,
+        "opinion": "OutPerform",
+        "opinion_normalized": "outperform",
+        "score": 9.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 2.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 2.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "녹십자 - 중동 물류 이연, 알리글로로 상쇄 전망 중동 물류 이연, 알리글로로 상쇄 전망 녹십자 고마진 제품 이연 영향, 알리글로 성장으로 일부 상쇄 전망 1분기 매출액은 4,405억 원(YoY +15%, QoQ -12%), 영업이익 107억 원(YoY +35%, QoQ +133%,…"
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "미래에셋증권",
+        "title": "녹십자 - 1Q26 Review: 알리글로 실적은 기대 이상",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92702&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_427793000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_427793000.pdf",
+        "target_price": "220,000",
+        "target_price_value": 220000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.8,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 117.0,
+        "unit": "억원",
+        "value_krw_100m": 117.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5% YoY), 영업이익 117억원(+47% YoY) 녹십자 1Q26 실적은 매출액 4,355억원(+13."
       }
     ],
     "opinion_distribution": [
       {
         "label": "buy",
-        "count": 2
-      },
-      {
-        "label": "outperform",
-        "count": 1
+        "count": 4
       }
     ],
     "broker_timeline": [
       {
-        "date": "2026-05-11",
-        "broker": "미래에셋증권",
-        "title": "녹십자 - 1Q26 Review: 알리글로 실적은 기대 이상",
-        "ticker": null,
-        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92702&page=1",
-        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_427793000.pdf",
-        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_427793000.pdf",
-        "target_price": "220,000",
-        "target_price_value": 220000,
+        "date": "2026-05-28",
+        "broker": "DS투자증권",
+        "title": "녹십자 - 큐레보 매각: 장기 성장 동력 확보",
+        "ticker": "006280",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93336&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_256751000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_256751000.pdf",
+        "target_price": "200,000",
+        "target_price_value": 200000,
         "opinion": "매수",
         "opinion_normalized": "buy",
-        "score": 8.8,
-        "has_change_signal": true
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      },
+      {
+        "date": "2026-05-28",
+        "broker": "키움증권",
+        "title": "녹십자 - 릴리의 선택. 단순 일회성이 아닌 선순환의 ..",
+        "ticker": "006280",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93306&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260528_company_568457000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260528_company_568457000.pdf",
+        "target_price": "210,000",
+        "target_price_value": 210000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 14.5,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       }
     ],
     "window_days": 14
@@ -126,7 +341,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.5,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-20",
@@ -141,7 +362,15 @@
       "opinion": "OutPerform",
       "opinion_normalized": "outperform",
       "score": 9.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -156,43 +385,246 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "date": "2026-05-28",
+      "broker": "DS투자증권",
+      "title": "녹십자 - 큐레보 매각: 장기 성장 동력 확보",
+      "ticker": "006280",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93336&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_256751000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_256751000.pdf",
+      "target_price": "200,000",
+      "target_price_value": 200000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "date": "2026-05-28",
+      "broker": "키움증권",
+      "title": "녹십자 - 릴리의 선택. 단순 일회성이 아닌 선순환의 ..",
+      "ticker": "006280",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93306&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260528_company_568457000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260528_company_568457000.pdf",
+      "target_price": "210,000",
+      "target_price_value": 210000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 14.5,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-17",
+      "broker": "iM증권",
+      "title": "녹십자 - 뼈대는 그대로, 덩치는 커지는",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91669&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260417_company_342930000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260417_company_342930000.pdf",
+      "target_price": "220,000",
+      "target_price_value": 220000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.5,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 3.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 3.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "녹십자 - 뼈대는 그대로, 덩치는 커지는 뼈대는 그대로, 덩치는 커지는 녹십자 알리글로의 성장 추이가 1분기에도 보일 것으로 전망 동사의 연결 기준 1분기 매출은 4,355억원(YoY +14%), 영업이익은 118억원(YoY +48%, OPM 3%)으로 전망한다."
+    },
+    {
+      "date": "2026-04-17",
+      "broker": "iM증권",
+      "title": "녹십자 - 뼈대는 그대로, 덩치는 커지는",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91669&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260417_company_342930000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260417_company_342930000.pdf",
+      "target_price": "220,000",
+      "target_price_value": 220000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.5,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 118.0,
+      "unit": "억원",
+      "value_krw_100m": 118.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "녹십자 - 뼈대는 그대로, 덩치는 커지는 뼈대는 그대로, 덩치는 커지는 녹십자 알리글로의 성장 추이가 1분기에도 보일 것으로 전망 동사의 연결 기준 1분기 매출은 4,355억원(YoY +14%), 영업이익은 118억원(YoY +48%, OPM 3%)으로 전망한다."
+    },
+    {
+      "date": "2026-04-20",
+      "broker": "키움증권",
+      "title": "녹십자 - 중동 물류 이연, 알리글로로 상쇄 전망",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91693&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260420_company_13148000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260420_company_13148000.pdf",
+      "target_price": "180,000",
+      "target_price_value": 180000,
+      "opinion": "OutPerform",
+      "opinion_normalized": "outperform",
+      "score": 9.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 2.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 2.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "녹십자 - 중동 물류 이연, 알리글로로 상쇄 전망 중동 물류 이연, 알리글로로 상쇄 전망 녹십자 고마진 제품 이연 영향, 알리글로 성장으로 일부 상쇄 전망 1분기 매출액은 4,405억 원(YoY +15%, QoQ -12%), 영업이익 107억 원(YoY +35%, QoQ +133%,…"
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "미래에셋증권",
+      "title": "녹십자 - 1Q26 Review: 알리글로 실적은 기대 이상",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92702&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_427793000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_427793000.pdf",
+      "target_price": "220,000",
+      "target_price_value": 220000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.8,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 117.0,
+      "unit": "억원",
+      "value_krw_100m": 117.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5% YoY), 영업이익 117억원(+47% YoY) 녹십자 1Q26 실적은 매출액 4,355억원(+13."
     }
   ],
   "opinion_distribution": [
     {
       "label": "buy",
-      "count": 2
-    },
-    {
-      "label": "outperform",
-      "count": 1
+      "count": 4
     }
   ],
   "broker_timeline": [
     {
-      "date": "2026-05-11",
-      "broker": "미래에셋증권",
-      "title": "녹십자 - 1Q26 Review: 알리글로 실적은 기대 이상",
-      "ticker": null,
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92702&page=1",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_427793000.pdf",
-      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_427793000.pdf",
-      "target_price": "220,000",
-      "target_price_value": 220000,
+      "date": "2026-05-28",
+      "broker": "DS투자증권",
+      "title": "녹십자 - 큐레보 매각: 장기 성장 동력 확보",
+      "ticker": "006280",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93336&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_256751000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_256751000.pdf",
+      "target_price": "200,000",
+      "target_price_value": 200000,
       "opinion": "매수",
       "opinion_normalized": "buy",
-      "score": 8.8,
-      "has_change_signal": true
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "date": "2026-05-28",
+      "broker": "키움증권",
+      "title": "녹십자 - 릴리의 선택. 단순 일회성이 아닌 선순환의 ..",
+      "ticker": "006280",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93306&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260528_company_568457000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260528_company_568457000.pdf",
+      "target_price": "210,000",
+      "target_price_value": 210000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 14.5,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "broker_summary": [
     {
-      "name": "미래에셋증권",
+      "name": "키움증권",
+      "count": 2
+    },
+    {
+      "name": "DS투자증권",
       "count": 1
     },
     {
-      "name": "키움증권",
+      "name": "미래에셋증권",
       "count": 1
     },
     {
@@ -203,7 +635,7 @@
   "category_summary": [
     {
       "label": "종목분석",
-      "count": 3
+      "count": 5
     }
   ],
   "latest_by_broker": [
@@ -211,6 +643,262 @@
       "source": "naver_research",
       "category": "company",
       "category_label": "종목분석",
+      "report_id": "93306",
+      "title": "릴리의 선택. 단순 일회성이 아닌 선순환의 ..",
+      "display_title": "녹십자 - 릴리의 선택. 단순 일회성이 아닌 선순환의 ..",
+      "broker": "키움증권",
+      "published_date": "2026-05-28",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93306&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260528_company_568457000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260528_company_568457000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "녹십자",
+      "subject_key": "녹십자",
+      "ticker": "006280",
+      "views": 661,
+      "analyst": null,
+      "target_price": "210,000",
+      "target_price_value": 210000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "5/26일 릴리는 녹십자의 관계사인 미국 백신 개발 전문 바이오텍 큐레보(Curevo)를 최대 15억 달러(약 2.3조원) 규모로 인수 발표했다. GC녹십자의 큐레보 주식 양도 예정일이 8/24일로 3Q26 약 3천억원 현금 유입이 전망된다.",
+      "summary": "5/26일 릴리는 녹십자의 관계사인 미국 백신 개발 전문 바이오텍 큐레보(Curevo)를 최대 15억 달러(약 2.3조원) 규모로 인수 발표했다. GC녹십자의 큐레보 주식 양도 예정일이 8/24일로 3Q26 약 3천억원 현금 유입이 전망된다. 이번 인수로 기존 큐레보와의 계약이 승계되어, 지분 매각 대금 외에도 구속력 있는 CMO 계약과 글로벌 매출에 연동된 로열티를 받게 된다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "score": 14.5,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "score_breakdown": [
+        {
+          "label": "종목분석 카테고리",
+          "value": 3.2,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 개선",
+          "value": 1.5,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 하향",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 1.0,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.95,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 악화",
+          "value": 0.9,
+          "kind": "boost"
+        },
+        {
+          "label": "목표가",
+          "value": 0.7,
+          "kind": "boost"
+        },
+        {
+          "label": "투자의견",
+          "value": 0.6,
+          "kind": "boost"
+        },
+        {
+          "label": "PDF 본문",
+          "value": 0.35,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-04-20",
+      "previous_target_price": "180,000",
+      "previous_opinion": "OutPerform",
+      "previous_analyst": null,
+      "target_price_change": "up",
+      "target_price_change_pct": 16.7,
+      "opinion_changed": true,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "target_up",
+        "opinion_changed"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "목표가 상향",
+        "의견 변경"
+      ],
+      "has_change_signal": true
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "93336",
+      "title": "큐레보 매각: 장기 성장 동력 확보",
+      "display_title": "녹십자 - 큐레보 매각: 장기 성장 동력 확보",
+      "broker": "DS투자증권",
+      "published_date": "2026-05-28",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93336&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_256751000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_256751000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "녹십자",
+      "subject_key": "녹십자",
+      "ticker": "006280",
+      "views": 1015,
+      "analyst": null,
+      "target_price": "200,000",
+      "target_price_value": 200000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "큐레보 매각: 장기 성장 동력 확보 27일, 녹십자의 미국 관계사 Curevo Vaccine이 일라이 릴리에게 총 $1.5bn에 매각되었다.",
+      "summary": "큐레보 매각: 장기 성장 동력 확보 27일, 녹십자의 미국 관계사 Curevo Vaccine이 일라이 릴리에게 총 $1.5bn에 매각되었다. 이에 큐레보 지분 약 20.3%를 보유한 녹십자는 릴리로부터 계약금 $203mn(한화 약 3,066억원) 및 상업화 마일스톤 $101mn(한화 약 1,533억원)을 포함하여 약 $304mn(한화 약 4,599억원)을 받을 수 있다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "score": 7.15,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "score_breakdown": [
+        {
+          "label": "종목분석 카테고리",
+          "value": 3.2,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "목표가",
+          "value": 0.7,
+          "kind": "boost"
+        },
+        {
+          "label": "투자의견",
+          "value": 0.6,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": true,
+      "change_types": [
+        "coverage_initiated"
+      ],
+      "change_reasons": [
+        "신규 커버리지"
+      ],
+      "has_change_signal": true
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
       "report_id": "92702",
       "title": "1Q26 Review: 알리글로 실적은 기대 이상",
       "display_title": "녹십자 - 1Q26 Review: 알리글로 실적은 기대 이상",
@@ -262,62 +950,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
-    },
-    {
-      "source": "naver_research",
-      "category": "company",
-      "category_label": "종목분석",
-      "report_id": "91693",
-      "title": "중동 물류 이연, 알리글로로 상쇄 전망",
-      "display_title": "녹십자 - 중동 물류 이연, 알리글로로 상쇄 전망",
-      "broker": "키움증권",
-      "published_date": "2026-04-20",
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91693&page=1",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260420_company_13148000.pdf",
-      "subject": "녹십자",
-      "subject_key": "녹십자",
-      "views": 997,
-      "analyst": null,
-      "target_price": "180,000",
-      "target_price_value": 180000,
-      "opinion": "OutPerform",
-      "opinion_normalized": "outperform",
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 117.0,
+          "unit": "억원",
+          "source_excerpt": "5% YoY), 영업이익 117억원(+47% YoY) 녹십자 1Q26 실적은 매출액 4,355억원(+13.",
+          "value_krw_100m": 117.0
+        }
       ],
-      "excerpt": "고마진 제품 이연 영향, 알리글로 성장으로 일부 상쇄 전망 1분기 매출액은 4,405억 원(YoY +15%, QoQ -12%), 영업이익 107억 원(YoY +35%, QoQ +133%, OPM +2%)으로 전망되어, 시장 컨센서스 매출액 4,360억 원에 부합할 것으로 보이며, 컨센서스 영업이익 120억 원에는 소폭 하회가 예상된다.",
-      "summary": "고마진 제품 이연 영향, 알리글로 성장으로 일부 상쇄 전망 1분기 매출액은 4,405억 원(YoY +15%, QoQ -12%), 영업이익 107억 원(YoY +35%, QoQ +133%, OPM +2%)으로 전망되어, 시장 컨센서스 매출액 4,360억 원에 부합할 것으로 보이며, 컨센서스 영업이익 120억 원에는 소폭 하회가 예상된다. 베리셀라 수두백신과 헌터라제의 물량이 이용 중인 중동 공항의 영향으로 2분기와 하반기로 이연될 것으로 예상된다.",
-      "summary_engine": "rule",
-      "score": 9.15,
-      "score_reasons": [
-        "종목분석 카테고리",
-        "목표가 포함",
-        "투자의견 포함",
-        "우선 추적 증권사"
-      ],
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": true,
-      "change_types": [
-        "coverage_initiated"
-      ],
-      "change_reasons": [
-        "신규 커버리지"
-      ],
-      "has_change_signal": true,
-      "ticker": null
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -356,9 +1003,41 @@
       "ticker": null,
       "target_price_value": 220000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 118.0,
+          "unit": "억원",
+          "source_excerpt": "녹십자 - 뼈대는 그대로, 덩치는 커지는 뼈대는 그대로, 덩치는 커지는 녹십자 알리글로의 성장 추이가 1분기에도 보일 것으로 전망 동사의 연결 기준 1분기 매출은 4,355억원(YoY +14%), 영업이익은 118억원(YoY +48%, OPM 3%)으로 전망한다.",
+          "value_krw_100m": 118.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 3.0,
+          "unit": "%",
+          "value_pct": 3.0,
+          "source_excerpt": "녹십자 - 뼈대는 그대로, 덩치는 커지는 뼈대는 그대로, 덩치는 커지는 녹십자 알리글로의 성장 추이가 1분기에도 보일 것으로 전망 동사의 연결 기준 1분기 매출은 4,355억원(YoY +14%), 영업이익은 118억원(YoY +48%, OPM 3%)으로 전망한다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "change_types": [
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true
     }
   ],
   "recent_changes": [
@@ -366,6 +1045,262 @@
       "source": "naver_research",
       "category": "company",
       "category_label": "종목분석",
+      "report_id": "93306",
+      "title": "릴리의 선택. 단순 일회성이 아닌 선순환의 ..",
+      "display_title": "녹십자 - 릴리의 선택. 단순 일회성이 아닌 선순환의 ..",
+      "broker": "키움증권",
+      "published_date": "2026-05-28",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93306&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260528_company_568457000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260528_company_568457000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "녹십자",
+      "subject_key": "녹십자",
+      "ticker": "006280",
+      "views": 661,
+      "analyst": null,
+      "target_price": "210,000",
+      "target_price_value": 210000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "5/26일 릴리는 녹십자의 관계사인 미국 백신 개발 전문 바이오텍 큐레보(Curevo)를 최대 15억 달러(약 2.3조원) 규모로 인수 발표했다. GC녹십자의 큐레보 주식 양도 예정일이 8/24일로 3Q26 약 3천억원 현금 유입이 전망된다.",
+      "summary": "5/26일 릴리는 녹십자의 관계사인 미국 백신 개발 전문 바이오텍 큐레보(Curevo)를 최대 15억 달러(약 2.3조원) 규모로 인수 발표했다. GC녹십자의 큐레보 주식 양도 예정일이 8/24일로 3Q26 약 3천억원 현금 유입이 전망된다. 이번 인수로 기존 큐레보와의 계약이 승계되어, 지분 매각 대금 외에도 구속력 있는 CMO 계약과 글로벌 매출에 연동된 로열티를 받게 된다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "score": 14.5,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "score_breakdown": [
+        {
+          "label": "종목분석 카테고리",
+          "value": 3.2,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 개선",
+          "value": 1.5,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 하향",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 1.0,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.95,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 악화",
+          "value": 0.9,
+          "kind": "boost"
+        },
+        {
+          "label": "목표가",
+          "value": 0.7,
+          "kind": "boost"
+        },
+        {
+          "label": "투자의견",
+          "value": 0.6,
+          "kind": "boost"
+        },
+        {
+          "label": "PDF 본문",
+          "value": 0.35,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-04-20",
+      "previous_target_price": "180,000",
+      "previous_opinion": "OutPerform",
+      "previous_analyst": null,
+      "target_price_change": "up",
+      "target_price_change_pct": 16.7,
+      "opinion_changed": true,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "target_up",
+        "opinion_changed"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "목표가 상향",
+        "의견 변경"
+      ],
+      "has_change_signal": true
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "93336",
+      "title": "큐레보 매각: 장기 성장 동력 확보",
+      "display_title": "녹십자 - 큐레보 매각: 장기 성장 동력 확보",
+      "broker": "DS투자증권",
+      "published_date": "2026-05-28",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93336&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_256751000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_256751000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "녹십자",
+      "subject_key": "녹십자",
+      "ticker": "006280",
+      "views": 1015,
+      "analyst": null,
+      "target_price": "200,000",
+      "target_price_value": 200000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "큐레보 매각: 장기 성장 동력 확보 27일, 녹십자의 미국 관계사 Curevo Vaccine이 일라이 릴리에게 총 $1.5bn에 매각되었다.",
+      "summary": "큐레보 매각: 장기 성장 동력 확보 27일, 녹십자의 미국 관계사 Curevo Vaccine이 일라이 릴리에게 총 $1.5bn에 매각되었다. 이에 큐레보 지분 약 20.3%를 보유한 녹십자는 릴리로부터 계약금 $203mn(한화 약 3,066억원) 및 상업화 마일스톤 $101mn(한화 약 1,533억원)을 포함하여 약 $304mn(한화 약 4,599억원)을 받을 수 있다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "score": 7.15,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "score_breakdown": [
+        {
+          "label": "종목분석 카테고리",
+          "value": 3.2,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "목표가",
+          "value": 0.7,
+          "kind": "boost"
+        },
+        {
+          "label": "투자의견",
+          "value": 0.6,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": true,
+      "change_types": [
+        "coverage_initiated"
+      ],
+      "change_reasons": [
+        "신규 커버리지"
+      ],
+      "has_change_signal": true
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
       "report_id": "92702",
       "title": "1Q26 Review: 알리글로 실적은 기대 이상",
       "display_title": "녹십자 - 1Q26 Review: 알리글로 실적은 기대 이상",
@@ -417,7 +1352,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 117.0,
+          "unit": "억원",
+          "source_excerpt": "5% YoY), 영업이익 117억원(+47% YoY) 녹십자 1Q26 실적은 매출액 4,355억원(+13.",
+          "value_krw_100m": 117.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -466,127 +1415,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
-    }
-  ],
-  "timeline": [
-    {
-      "source": "naver_research",
-      "category": "company",
-      "category_label": "종목분석",
-      "report_id": "92702",
-      "title": "1Q26 Review: 알리글로 실적은 기대 이상",
-      "display_title": "녹십자 - 1Q26 Review: 알리글로 실적은 기대 이상",
-      "broker": "미래에셋증권",
-      "published_date": "2026-05-11",
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92702&page=1",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_427793000.pdf",
-      "subject": "녹십자",
-      "subject_key": "녹십자",
-      "views": 270,
-      "analyst": null,
-      "target_price": "220,000",
-      "target_price_value": 220000,
-      "opinion": "매수",
-      "opinion_normalized": "buy",
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.0,
+          "unit": "%",
+          "value_pct": 2.0,
+          "source_excerpt": "녹십자 - 중동 물류 이연, 알리글로로 상쇄 전망 중동 물류 이연, 알리글로로 상쇄 전망 녹십자 고마진 제품 이연 영향, 알리글로 성장으로 일부 상쇄 전망 1분기 매출액은 4,405억 원(YoY +15%, QoQ -12%), 영업이익 107억 원(YoY +35%, QoQ +133%,…"
+        }
       ],
-      "excerpt": "1Q26 매출액 4,355억원(+13.5% YoY), 영업이익 117억원(+47% YoY) 녹십자 1Q26 실적은 매출액 4,355억원(+13.5% YoY), 영업이익 117억원(+47% YoY)으로 시장 기대치에 부합했다.",
-      "summary": "1Q26 매출액 4,355억원(+13.5% YoY), 영업이익 117억원(+47% YoY) 녹십자 1Q26 실적은 매출액 4,355억원(+13.5% YoY), 영업이익 117억원(+47% YoY)으로 시장 기대치에 부합했다. 녹십자웰빙 지분 전량을 녹십자홀딩스에 매각함에 따라 매각차익 약 300억원이 영업외수익으로 반영되었다.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "score": 8.8,
-      "score_reasons": [
-        "종목분석 카테고리",
-        "목표가 포함",
-        "투자의견 포함",
-        "우선 추적 증권사",
-        "핵심 키워드(실적)"
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": true,
-      "change_types": [
-        "coverage_initiated"
-      ],
-      "change_reasons": [
-        "신규 커버리지"
-      ],
-      "has_change_signal": true,
-      "ticker": null
-    },
-    {
-      "source": "naver_research",
-      "category": "company",
-      "category_label": "종목분석",
-      "report_id": "91693",
-      "title": "중동 물류 이연, 알리글로로 상쇄 전망",
-      "display_title": "녹십자 - 중동 물류 이연, 알리글로로 상쇄 전망",
-      "broker": "키움증권",
-      "published_date": "2026-04-20",
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91693&page=1",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260420_company_13148000.pdf",
-      "subject": "녹십자",
-      "subject_key": "녹십자",
-      "views": 997,
-      "analyst": null,
-      "target_price": "180,000",
-      "target_price_value": 180000,
-      "opinion": "OutPerform",
-      "opinion_normalized": "outperform",
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "고마진 제품 이연 영향, 알리글로 성장으로 일부 상쇄 전망 1분기 매출액은 4,405억 원(YoY +15%, QoQ -12%), 영업이익 107억 원(YoY +35%, QoQ +133%, OPM +2%)으로 전망되어, 시장 컨센서스 매출액 4,360억 원에 부합할 것으로 보이며, 컨센서스 영업이익 120억 원에는 소폭 하회가 예상된다.",
-      "summary": "고마진 제품 이연 영향, 알리글로 성장으로 일부 상쇄 전망 1분기 매출액은 4,405억 원(YoY +15%, QoQ -12%), 영업이익 107억 원(YoY +35%, QoQ +133%, OPM +2%)으로 전망되어, 시장 컨센서스 매출액 4,360억 원에 부합할 것으로 보이며, 컨센서스 영업이익 120억 원에는 소폭 하회가 예상된다. 베리셀라 수두백신과 헌터라제의 물량이 이용 중인 중동 공항의 영향으로 2분기와 하반기로 이연될 것으로 예상된다.",
-      "summary_engine": "rule",
-      "score": 9.15,
-      "score_reasons": [
-        "종목분석 카테고리",
-        "목표가 포함",
-        "투자의견 포함",
-        "우선 추적 증권사"
-      ],
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": true,
-      "change_types": [
-        "coverage_initiated"
-      ],
-      "change_reasons": [
-        "신규 커버리지"
-      ],
-      "has_change_signal": true,
-      "ticker": null
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -625,9 +1484,522 @@
       "ticker": null,
       "target_price_value": 220000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 118.0,
+          "unit": "억원",
+          "source_excerpt": "녹십자 - 뼈대는 그대로, 덩치는 커지는 뼈대는 그대로, 덩치는 커지는 녹십자 알리글로의 성장 추이가 1분기에도 보일 것으로 전망 동사의 연결 기준 1분기 매출은 4,355억원(YoY +14%), 영업이익은 118억원(YoY +48%, OPM 3%)으로 전망한다.",
+          "value_krw_100m": 118.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 3.0,
+          "unit": "%",
+          "value_pct": 3.0,
+          "source_excerpt": "녹십자 - 뼈대는 그대로, 덩치는 커지는 뼈대는 그대로, 덩치는 커지는 녹십자 알리글로의 성장 추이가 1분기에도 보일 것으로 전망 동사의 연결 기준 1분기 매출은 4,355억원(YoY +14%), 영업이익은 118억원(YoY +48%, OPM 3%)으로 전망한다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "change_types": [
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true
+    }
+  ],
+  "timeline": [
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "93306",
+      "title": "릴리의 선택. 단순 일회성이 아닌 선순환의 ..",
+      "display_title": "녹십자 - 릴리의 선택. 단순 일회성이 아닌 선순환의 ..",
+      "broker": "키움증권",
+      "published_date": "2026-05-28",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93306&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260528_company_568457000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260528_company_568457000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "녹십자",
+      "subject_key": "녹십자",
+      "ticker": "006280",
+      "views": 661,
+      "analyst": null,
+      "target_price": "210,000",
+      "target_price_value": 210000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "5/26일 릴리는 녹십자의 관계사인 미국 백신 개발 전문 바이오텍 큐레보(Curevo)를 최대 15억 달러(약 2.3조원) 규모로 인수 발표했다. GC녹십자의 큐레보 주식 양도 예정일이 8/24일로 3Q26 약 3천억원 현금 유입이 전망된다.",
+      "summary": "5/26일 릴리는 녹십자의 관계사인 미국 백신 개발 전문 바이오텍 큐레보(Curevo)를 최대 15억 달러(약 2.3조원) 규모로 인수 발표했다. GC녹십자의 큐레보 주식 양도 예정일이 8/24일로 3Q26 약 3천억원 현금 유입이 전망된다. 이번 인수로 기존 큐레보와의 계약이 승계되어, 지분 매각 대금 외에도 구속력 있는 CMO 계약과 글로벌 매출에 연동된 로열티를 받게 된다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "score": 14.5,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "score_breakdown": [
+        {
+          "label": "종목분석 카테고리",
+          "value": 3.2,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 개선",
+          "value": 1.5,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 하향",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 1.0,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.95,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 악화",
+          "value": 0.9,
+          "kind": "boost"
+        },
+        {
+          "label": "목표가",
+          "value": 0.7,
+          "kind": "boost"
+        },
+        {
+          "label": "투자의견",
+          "value": 0.6,
+          "kind": "boost"
+        },
+        {
+          "label": "PDF 본문",
+          "value": 0.35,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-04-20",
+      "previous_target_price": "180,000",
+      "previous_opinion": "OutPerform",
+      "previous_analyst": null,
+      "target_price_change": "up",
+      "target_price_change_pct": 16.7,
+      "opinion_changed": true,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "target_up",
+        "opinion_changed"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "목표가 상향",
+        "의견 변경"
+      ],
+      "has_change_signal": true
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "93336",
+      "title": "큐레보 매각: 장기 성장 동력 확보",
+      "display_title": "녹십자 - 큐레보 매각: 장기 성장 동력 확보",
+      "broker": "DS투자증권",
+      "published_date": "2026-05-28",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93336&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_256751000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_256751000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "녹십자",
+      "subject_key": "녹십자",
+      "ticker": "006280",
+      "views": 1015,
+      "analyst": null,
+      "target_price": "200,000",
+      "target_price_value": 200000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "큐레보 매각: 장기 성장 동력 확보 27일, 녹십자의 미국 관계사 Curevo Vaccine이 일라이 릴리에게 총 $1.5bn에 매각되었다.",
+      "summary": "큐레보 매각: 장기 성장 동력 확보 27일, 녹십자의 미국 관계사 Curevo Vaccine이 일라이 릴리에게 총 $1.5bn에 매각되었다. 이에 큐레보 지분 약 20.3%를 보유한 녹십자는 릴리로부터 계약금 $203mn(한화 약 3,066억원) 및 상업화 마일스톤 $101mn(한화 약 1,533억원)을 포함하여 약 $304mn(한화 약 4,599억원)을 받을 수 있다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "score": 7.15,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "score_breakdown": [
+        {
+          "label": "종목분석 카테고리",
+          "value": 3.2,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "목표가",
+          "value": 0.7,
+          "kind": "boost"
+        },
+        {
+          "label": "투자의견",
+          "value": 0.6,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": true,
+      "change_types": [
+        "coverage_initiated"
+      ],
+      "change_reasons": [
+        "신규 커버리지"
+      ],
+      "has_change_signal": true
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92702",
+      "title": "1Q26 Review: 알리글로 실적은 기대 이상",
+      "display_title": "녹십자 - 1Q26 Review: 알리글로 실적은 기대 이상",
+      "broker": "미래에셋증권",
+      "published_date": "2026-05-11",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92702&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_427793000.pdf",
+      "subject": "녹십자",
+      "subject_key": "녹십자",
+      "views": 270,
+      "analyst": null,
+      "target_price": "220,000",
+      "target_price_value": 220000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "1Q26 매출액 4,355억원(+13.5% YoY), 영업이익 117억원(+47% YoY) 녹십자 1Q26 실적은 매출액 4,355억원(+13.5% YoY), 영업이익 117억원(+47% YoY)으로 시장 기대치에 부합했다.",
+      "summary": "1Q26 매출액 4,355억원(+13.5% YoY), 영업이익 117억원(+47% YoY) 녹십자 1Q26 실적은 매출액 4,355억원(+13.5% YoY), 영업이익 117억원(+47% YoY)으로 시장 기대치에 부합했다. 녹십자웰빙 지분 전량을 녹십자홀딩스에 매각함에 따라 매각차익 약 300억원이 영업외수익으로 반영되었다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 8.8,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "우선 추적 증권사",
+        "핵심 키워드(실적)"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": true,
+      "change_types": [
+        "coverage_initiated"
+      ],
+      "change_reasons": [
+        "신규 커버리지"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 117.0,
+          "unit": "억원",
+          "source_excerpt": "5% YoY), 영업이익 117억원(+47% YoY) 녹십자 1Q26 실적은 매출액 4,355억원(+13.",
+          "value_krw_100m": 117.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91693",
+      "title": "중동 물류 이연, 알리글로로 상쇄 전망",
+      "display_title": "녹십자 - 중동 물류 이연, 알리글로로 상쇄 전망",
+      "broker": "키움증권",
+      "published_date": "2026-04-20",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91693&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260420_company_13148000.pdf",
+      "subject": "녹십자",
+      "subject_key": "녹십자",
+      "views": 997,
+      "analyst": null,
+      "target_price": "180,000",
+      "target_price_value": 180000,
+      "opinion": "OutPerform",
+      "opinion_normalized": "outperform",
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "고마진 제품 이연 영향, 알리글로 성장으로 일부 상쇄 전망 1분기 매출액은 4,405억 원(YoY +15%, QoQ -12%), 영업이익 107억 원(YoY +35%, QoQ +133%, OPM +2%)으로 전망되어, 시장 컨센서스 매출액 4,360억 원에 부합할 것으로 보이며, 컨센서스 영업이익 120억 원에는 소폭 하회가 예상된다.",
+      "summary": "고마진 제품 이연 영향, 알리글로 성장으로 일부 상쇄 전망 1분기 매출액은 4,405억 원(YoY +15%, QoQ -12%), 영업이익 107억 원(YoY +35%, QoQ +133%, OPM +2%)으로 전망되어, 시장 컨센서스 매출액 4,360억 원에 부합할 것으로 보이며, 컨센서스 영업이익 120억 원에는 소폭 하회가 예상된다. 베리셀라 수두백신과 헌터라제의 물량이 이용 중인 중동 공항의 영향으로 2분기와 하반기로 이연될 것으로 예상된다.",
+      "summary_engine": "rule",
+      "score": 9.15,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "우선 추적 증권사"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": true,
+      "change_types": [
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "change_reasons": [
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.0,
+          "unit": "%",
+          "value_pct": 2.0,
+          "source_excerpt": "녹십자 - 중동 물류 이연, 알리글로로 상쇄 전망 중동 물류 이연, 알리글로로 상쇄 전망 녹십자 고마진 제품 이연 영향, 알리글로 성장으로 일부 상쇄 전망 1분기 매출액은 4,405억 원(YoY +15%, QoQ -12%), 영업이익 107억 원(YoY +35%, QoQ +133%,…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91669",
+      "title": "뼈대는 그대로, 덩치는 커지는",
+      "display_title": "녹십자 - 뼈대는 그대로, 덩치는 커지는",
+      "broker": "iM증권",
+      "published_date": "2026-04-17",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91669&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260417_company_342930000.pdf",
+      "subject": "녹십자",
+      "views": 2582,
+      "analyst": null,
+      "target_price": "220,000",
+      "opinion": "Buy",
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "알리글로의 성장 추이가 1분기에도 보일 것으로 전망 동사의 연결 기준 1분기 매출은 4,355억원(YoY +14%), 영업이익은 118억원(YoY +48%, OPM 3%)으로 전망한다.",
+      "summary": "알리글로의 성장 추이가 1분기에도 보일 것으로 전망 동사의 연결 기준 1분기 매출은 4,355억원(YoY +14%), 영업이익은 118억원(YoY +48%, OPM 3%)으로 전망한다. 매출은 시장의 기대치에 부합하나 영업이익은 하회하는 실적이다.",
+      "summary_engine": "rule",
+      "score": 7.5,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "subject_key": "녹십자",
+      "ticker": null,
+      "target_price_value": 220000,
+      "opinion_normalized": "buy",
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 118.0,
+          "unit": "억원",
+          "source_excerpt": "녹십자 - 뼈대는 그대로, 덩치는 커지는 뼈대는 그대로, 덩치는 커지는 녹십자 알리글로의 성장 추이가 1분기에도 보일 것으로 전망 동사의 연결 기준 1분기 매출은 4,355억원(YoY +14%), 영업이익은 118억원(YoY +48%, OPM 3%)으로 전망한다.",
+          "value_krw_100m": 118.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 3.0,
+          "unit": "%",
+          "value_pct": 3.0,
+          "source_excerpt": "녹십자 - 뼈대는 그대로, 덩치는 커지는 뼈대는 그대로, 덩치는 커지는 녹십자 알리글로의 성장 추이가 1분기에도 보일 것으로 전망 동사의 연결 기준 1분기 매출은 4,355억원(YoY +14%), 영업이익은 118억원(YoY +48%, OPM 3%)으로 전망한다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "change_types": [
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true
     }
   ]
 }

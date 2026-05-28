@@ -16,7 +16,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 2
+    "coverage_initiated": 2,
+    "estimate_signal_reports": 2,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 2,
@@ -45,7 +50,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-04-28",
@@ -60,7 +77,89 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-22",
+        "broker": "키움증권",
+        "title": "동아에스티 - 비용 감소로 실적 기대치 상회 전망",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91762&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260422_company_843092000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260422_company_843092000.pdf",
+        "target_price": "60,000",
+        "target_price_value": 60000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 6.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 6.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "동아에스티 - 비용 감소로 실적 기대치 상회 전망 비용 감소로 실적 기대치 상회 전망 동아에스티 계절적 비용 집행 감소 영향으로 기대치 상회 전망 1분기 별도 매출액은 1,863억 원(YoY +10%, QoQ -7%), 영업이익 102억 원(YoY +45%, QoQ 흑전, OPM +6…"
+      },
+      {
+        "date": "2026-04-28",
+        "broker": "유안타증권",
+        "title": "동아에스티 - 1Q26Re: 비용 통제로 이익 개선",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92077&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260428_company_40449000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260428_company_40449000.pdf",
+        "target_price": "60,000",
+        "target_price_value": 60000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 108.0,
+        "unit": "억원",
+        "value_krw_100m": 108.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7%YoY, 이하 YoY 생략), 영업이익 108억원(+53."
       }
     ],
     "opinion_distribution": [
@@ -83,7 +182,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-04-28",
@@ -98,7 +209,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -117,7 +236,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-04-28",
@@ -132,7 +263,89 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-22",
+      "broker": "키움증권",
+      "title": "동아에스티 - 비용 감소로 실적 기대치 상회 전망",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91762&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260422_company_843092000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260422_company_843092000.pdf",
+      "target_price": "60,000",
+      "target_price_value": 60000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 6.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 6.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "동아에스티 - 비용 감소로 실적 기대치 상회 전망 비용 감소로 실적 기대치 상회 전망 동아에스티 계절적 비용 집행 감소 영향으로 기대치 상회 전망 1분기 별도 매출액은 1,863억 원(YoY +10%, QoQ -7%), 영업이익 102억 원(YoY +45%, QoQ 흑전, OPM +6…"
+    },
+    {
+      "date": "2026-04-28",
+      "broker": "유안타증권",
+      "title": "동아에스티 - 1Q26Re: 비용 통제로 이익 개선",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92077&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260428_company_40449000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260428_company_40449000.pdf",
+      "target_price": "60,000",
+      "target_price_value": 60000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 108.0,
+      "unit": "억원",
+      "value_krw_100m": 108.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7%YoY, 이하 YoY 생략), 영업이익 108억원(+53."
     }
   ],
   "opinion_distribution": [
@@ -155,7 +368,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-04-28",
@@ -170,7 +395,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -237,13 +470,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 108.0,
+          "unit": "억원",
+          "source_excerpt": "7%YoY, 이하 YoY 생략), 영업이익 108억원(+53.",
+          "value_krw_100m": 108.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -292,13 +549,45 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 6.0,
+          "unit": "%",
+          "value_pct": 6.0,
+          "source_excerpt": "동아에스티 - 비용 감소로 실적 기대치 상회 전망 비용 감소로 실적 기대치 상회 전망 동아에스티 계절적 비용 집행 감소 영향으로 기대치 상회 전망 1분기 별도 매출액은 1,863억 원(YoY +10%, QoQ -7%), 영업이익 102억 원(YoY +45%, QoQ 흑전, OPM +6…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "recent_changes": [
@@ -349,13 +638,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 108.0,
+          "unit": "억원",
+          "source_excerpt": "7%YoY, 이하 YoY 생략), 영업이익 108억원(+53.",
+          "value_krw_100m": 108.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -404,13 +717,45 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 6.0,
+          "unit": "%",
+          "value_pct": 6.0,
+          "source_excerpt": "동아에스티 - 비용 감소로 실적 기대치 상회 전망 비용 감소로 실적 기대치 상회 전망 동아에스티 계절적 비용 집행 감소 영향으로 기대치 상회 전망 1분기 별도 매출액은 1,863억 원(YoY +10%, QoQ -7%), 영업이익 102억 원(YoY +45%, QoQ 흑전, OPM +6…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "timeline": [
@@ -461,13 +806,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 108.0,
+          "unit": "억원",
+          "source_excerpt": "7%YoY, 이하 YoY 생략), 영업이익 108억원(+53.",
+          "value_krw_100m": 108.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -516,13 +885,45 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 6.0,
+          "unit": "%",
+          "value_pct": 6.0,
+          "source_excerpt": "동아에스티 - 비용 감소로 실적 기대치 상회 전망 비용 감소로 실적 기대치 상회 전망 동아에스티 계절적 비용 집행 감소 영향으로 기대치 상회 전망 1분기 별도 매출액은 1,863억 원(YoY +10%, QoQ -7%), 영업이익 102억 원(YoY +45%, QoQ 흑전, OPM +6…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ]
 }

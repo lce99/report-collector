@@ -10,14 +10,19 @@
     "미래에셋증권"
   ],
   "change_summary": {
-    "changed_reports": 2,
+    "changed_reports": 3,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 2
+    "coverage_initiated": 2,
+    "estimate_signal_reports": 2,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 2,
@@ -46,7 +51,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -61,7 +72,145 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-27",
+        "broker": "SK증권",
+        "title": "한화엔진 - 미국 DC향 4행정 엔진 수주 기대",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91946&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260427_company_637859000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260427_company_637859000.pdf",
+        "target_price": "100,000",
+        "target_price_value": 100000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 10.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 514.0,
+        "unit": "억원",
+        "value_krw_100m": 514.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2% QoQ), 영업이익 514 억원(+130."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "미래에셋증권",
+        "title": "한화엔진 - 4행정 중속엔진 적시의 재개",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92174&page=4",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260430_company_300337000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260430_company_300337000.pdf",
+        "target_price": null,
+        "target_price_value": null,
+        "opinion": null,
+        "opinion_normalized": null,
+        "score": 6.5,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 15.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 15.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "한화엔진 - 4행정 중속엔진 적시의 재개 4행정 중속엔진 적시의 재개 한화엔진 1Q26 Review: 순수 피지컬로 일궈낸 OPM 15% 1Q26 매출액은 8."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "미래에셋증권",
+        "title": "한화엔진 - 4행정 중속엔진 적시의 재개",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92174&page=4",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260430_company_300337000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260430_company_300337000.pdf",
+        "target_price": null,
+        "target_price_value": null,
+        "opinion": null,
+        "opinion_normalized": null,
+        "score": 6.5,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 14.9,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 14.9,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4% YoY)으로 OPM 14.9%을 달성했다."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "미래에셋증권",
+        "title": "한화엔진 - 4행정 중속엔진 적시의 재개",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92174&page=4",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260430_company_300337000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260430_company_300337000.pdf",
+        "target_price": null,
+        "target_price_value": null,
+        "opinion": null,
+        "opinion_normalized": null,
+        "score": 6.5,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 514.0,
+        "unit": "억원",
+        "value_krw_100m": 514.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5% YoY 증가한 3,452억원, 영업이익 514 억원(130."
       }
     ],
     "opinion_distribution": [
@@ -84,7 +233,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -99,7 +254,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-30",
@@ -114,7 +271,15 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 6.5,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -133,7 +298,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -148,7 +319,145 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-27",
+      "broker": "SK증권",
+      "title": "한화엔진 - 미국 DC향 4행정 엔진 수주 기대",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91946&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260427_company_637859000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260427_company_637859000.pdf",
+      "target_price": "100,000",
+      "target_price_value": 100000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 10.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 514.0,
+      "unit": "억원",
+      "value_krw_100m": 514.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2% QoQ), 영업이익 514 억원(+130."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "미래에셋증권",
+      "title": "한화엔진 - 4행정 중속엔진 적시의 재개",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92174&page=4",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260430_company_300337000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260430_company_300337000.pdf",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "score": 6.5,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 15.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 15.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "한화엔진 - 4행정 중속엔진 적시의 재개 4행정 중속엔진 적시의 재개 한화엔진 1Q26 Review: 순수 피지컬로 일궈낸 OPM 15% 1Q26 매출액은 8."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "미래에셋증권",
+      "title": "한화엔진 - 4행정 중속엔진 적시의 재개",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92174&page=4",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260430_company_300337000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260430_company_300337000.pdf",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "score": 6.5,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 14.9,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 14.9,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4% YoY)으로 OPM 14.9%을 달성했다."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "미래에셋증권",
+      "title": "한화엔진 - 4행정 중속엔진 적시의 재개",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92174&page=4",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260430_company_300337000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260430_company_300337000.pdf",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "score": 6.5,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 514.0,
+      "unit": "억원",
+      "value_krw_100m": 514.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5% YoY 증가한 3,452억원, 영업이익 514 억원(130."
     }
   ],
   "opinion_distribution": [
@@ -171,7 +480,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -186,7 +501,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-30",
@@ -201,7 +518,15 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 6.5,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -270,10 +595,56 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 514.0,
+          "unit": "억원",
+          "source_excerpt": "5% YoY 증가한 3,452억원, 영업이익 514 억원(130.",
+          "value_krw_100m": 514.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.0,
+          "unit": "%",
+          "value_pct": 15.0,
+          "source_excerpt": "한화엔진 - 4행정 중속엔진 적시의 재개 4행정 중속엔진 적시의 재개 한화엔진 1Q26 Review: 순수 피지컬로 일궈낸 OPM 15% 1Q26 매출액은 8."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 14.9,
+          "unit": "%",
+          "value_pct": 14.9,
+          "source_excerpt": "4% YoY)으로 OPM 14.9%을 달성했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -328,7 +699,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -380,13 +754,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 514.0,
+          "unit": "억원",
+          "source_excerpt": "2% QoQ), 영업이익 514 억원(+130.",
+          "value_krw_100m": 514.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
@@ -394,6 +788,102 @@
       "source": "naver_research",
       "category": "company",
       "category_label": "종목분석",
+      "report_id": "92174",
+      "title": "4행정 중속엔진 적시의 재개",
+      "display_title": "한화엔진 - 4행정 중속엔진 적시의 재개",
+      "broker": "미래에셋증권",
+      "published_date": "2026-04-30",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92174&page=4",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260430_company_300337000.pdf",
+      "subject": "한화엔진",
+      "subject_key": "한화엔진",
+      "views": 1669,
+      "analyst": null,
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "1Q26 Review: 순수 피지컬로 일궈낸 OPM 15% 1Q26 매출액은 8.5% YoY 증가한 3,452억원, 영업이익 514 억원(130.4% YoY)으로 OPM 14.9%을 달성했다.",
+      "summary": "1Q26 Review: 순수 피지컬로 일궈낸 OPM 15% 1Q26 매출액은 8.5% YoY 증가한 3,452억원, 영업이익 514 억원(130.4% YoY)으로 OPM 14.9%을 달성했다. 1분기 납품대수는 29대로 역산 ASP 개선분(0.4% QoQ)대비 OPM 상승세가 가파르다.",
+      "summary_engine": "rule",
+      "score": 6.5,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "우선 추적 증권사"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 514.0,
+          "unit": "억원",
+          "source_excerpt": "5% YoY 증가한 3,452억원, 영업이익 514 억원(130.",
+          "value_krw_100m": 514.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.0,
+          "unit": "%",
+          "value_pct": 15.0,
+          "source_excerpt": "한화엔진 - 4행정 중속엔진 적시의 재개 4행정 중속엔진 적시의 재개 한화엔진 1Q26 Review: 순수 피지컬로 일궈낸 OPM 15% 1Q26 매출액은 8."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 14.9,
+          "unit": "%",
+          "value_pct": 14.9,
+          "source_excerpt": "4% YoY)으로 OPM 14.9%을 달성했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
       "report_id": "92114",
       "title": "1Q26 NDR 후기: 늦지 않았으니 매수",
       "display_title": "한화엔진 - 1Q26 NDR 후기: 늦지 않았으니 매수",
@@ -443,7 +933,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -495,13 +988,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 514.0,
+          "unit": "억원",
+          "source_excerpt": "2% QoQ), 영업이익 514 억원(+130.",
+          "value_krw_100m": 514.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -550,10 +1063,56 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 514.0,
+          "unit": "억원",
+          "source_excerpt": "5% YoY 증가한 3,452억원, 영업이익 514 억원(130.",
+          "value_krw_100m": 514.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.0,
+          "unit": "%",
+          "value_pct": 15.0,
+          "source_excerpt": "한화엔진 - 4행정 중속엔진 적시의 재개 4행정 중속엔진 적시의 재개 한화엔진 1Q26 Review: 순수 피지컬로 일궈낸 OPM 15% 1Q26 매출액은 8."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 14.9,
+          "unit": "%",
+          "value_pct": 14.9,
+          "source_excerpt": "4% YoY)으로 OPM 14.9%을 달성했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -608,7 +1167,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -660,13 +1222,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 514.0,
+          "unit": "억원",
+          "source_excerpt": "2% QoQ), 영업이익 514 억원(+130.",
+          "value_krw_100m": 514.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ]
 }

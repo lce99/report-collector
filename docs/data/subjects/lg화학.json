@@ -10,14 +10,19 @@
     "한화투자증권"
   ],
   "change_summary": {
-    "changed_reports": 3,
+    "changed_reports": 4,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 3,
+    "estimate_signal_reports": 4,
+    "earnings_estimate_up": 4,
+    "earnings_estimate_down": 2,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 3,
@@ -50,7 +55,17 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -65,7 +80,15 @@
         "opinion": "Neutral",
         "opinion_normalized": "hold",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -80,7 +103,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-06",
@@ -95,7 +124,85 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-04",
+        "broker": "하나증권",
+        "title": "LG화학 - 하반기 추정치, LGES/석유화학 하향 vs. 첨단..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92398&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_654094000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_654094000.pdf",
+        "target_price": "360,000",
+        "target_price_value": 360000,
+        "opinion": "Neutral",
+        "opinion_normalized": "hold",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1Q26",
+        "value": -497.0,
+        "unit": "억원",
+        "value_krw_100m": -497.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "LG화학 1Q26 영업이익은 -497억원(QoQ 적지, YoY 적전)으로 컨센(-1,679억원)을 대폭 상회했다."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "하나증권",
+        "title": "LG화학 - 하반기 추정치, LGES/석유화학 하향 vs. 첨단..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92398&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_654094000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_654094000.pdf",
+        "target_price": "360,000",
+        "target_price_value": 360000,
+        "opinion": "Neutral",
+        "opinion_normalized": "hold",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": -2078.0,
+        "unit": "억원",
+        "value_krw_100m": -2078.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "LGES 영업이익은 -2,078억원(QoQ -858억원)으로 적자폭을 확대했다."
       }
     ],
     "opinion_distribution": [
@@ -122,7 +229,17 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -137,7 +254,15 @@
         "opinion": "Neutral",
         "opinion_normalized": "hold",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -152,7 +277,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-06",
@@ -167,7 +298,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -186,7 +325,17 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -201,7 +350,15 @@
       "opinion": "Neutral",
       "opinion_normalized": "hold",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -216,7 +373,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-06",
@@ -231,7 +394,85 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-04",
+      "broker": "하나증권",
+      "title": "LG화학 - 하반기 추정치, LGES/석유화학 하향 vs. 첨단..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92398&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_654094000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_654094000.pdf",
+      "target_price": "360,000",
+      "target_price_value": 360000,
+      "opinion": "Neutral",
+      "opinion_normalized": "hold",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1Q26",
+      "value": -497.0,
+      "unit": "억원",
+      "value_krw_100m": -497.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "LG화학 1Q26 영업이익은 -497억원(QoQ 적지, YoY 적전)으로 컨센(-1,679억원)을 대폭 상회했다."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "하나증권",
+      "title": "LG화학 - 하반기 추정치, LGES/석유화학 하향 vs. 첨단..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92398&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_654094000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_654094000.pdf",
+      "target_price": "360,000",
+      "target_price_value": 360000,
+      "opinion": "Neutral",
+      "opinion_normalized": "hold",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": -2078.0,
+      "unit": "억원",
+      "value_krw_100m": -2078.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "LGES 영업이익은 -2,078억원(QoQ -858억원)으로 적자폭을 확대했다."
     }
   ],
   "opinion_distribution": [
@@ -258,7 +499,17 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -273,7 +524,15 @@
       "opinion": "Neutral",
       "opinion_normalized": "hold",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -288,7 +547,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-06",
@@ -303,7 +568,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -378,13 +651,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -435,10 +721,21 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -489,13 +786,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q26",
+          "value": -497.0,
+          "unit": "억원",
+          "source_excerpt": "LG화학 1Q26 영업이익은 -497억원(QoQ 적지, YoY 적전)으로 컨센(-1,679억원)을 대폭 상회했다.",
+          "value_krw_100m": -497.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -2078.0,
+          "unit": "억원",
+          "source_excerpt": "LGES 영업이익은 -2,078억원(QoQ -858억원)으로 적자폭을 확대했다.",
+          "value_krw_100m": -2078.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
@@ -550,13 +881,91 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92440",
+      "title": "배터리의 가파른 회복, 하반기 석유화학이 관..",
+      "display_title": "LG화학 - 배터리의 가파른 회복, 하반기 석유화학이 관..",
+      "broker": "한화투자증권",
+      "published_date": "2026-05-04",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92440&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260504_company_163595000.pdf",
+      "subject": "LG화학",
+      "subject_key": "lg화학",
+      "views": 3290,
+      "analyst": null,
+      "target_price": "470,000",
+      "target_price_value": 470000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1분기: 석유화학 부문의 선전 동사의 1분기 실적은 매출액 12.2조 원, 영업적자 497억 원(LGES 제외 시 1,581억 원 적자)을 기록했다.",
+      "summary": "1분기: 석유화학 부문의 선전 동사의 1분기 실적은 매출액 12.2조 원, 영업적자 497억 원(LGES 제외 시 1,581억 원 적자)을 기록했다. 비록 적자를 기록했으나, LGES을 제외한 본업 기준으로는 시장 컨센서스를 상회하는 수치다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 8.2,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함",
+        "본문 정보량 풍부"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-04-22",
+      "previous_target_price": "470,000",
+      "previous_opinion": "Buy",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -607,13 +1016,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q26",
+          "value": -497.0,
+          "unit": "억원",
+          "source_excerpt": "LG화학 1Q26 영업이익은 -497억원(QoQ 적지, YoY 적전)으로 컨센(-1,679억원)을 대폭 상회했다.",
+          "value_krw_100m": -497.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -2078.0,
+          "unit": "억원",
+          "source_excerpt": "LGES 영업이익은 -2,078억원(QoQ -858억원)으로 적자폭을 확대했다.",
+          "value_krw_100m": -2078.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -663,13 +1106,30 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "timeline": [
@@ -724,13 +1184,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -781,10 +1254,21 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -835,13 +1319,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q26",
+          "value": -497.0,
+          "unit": "억원",
+          "source_excerpt": "LG화학 1Q26 영업이익은 -497억원(QoQ 적지, YoY 적전)으로 컨센(-1,679억원)을 대폭 상회했다.",
+          "value_krw_100m": -497.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -2078.0,
+          "unit": "억원",
+          "source_excerpt": "LGES 영업이익은 -2,078억원(QoQ -858억원)으로 적자폭을 확대했다.",
+          "value_krw_100m": -2078.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -891,13 +1409,30 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ]
 }

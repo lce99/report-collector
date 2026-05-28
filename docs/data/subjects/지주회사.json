@@ -1,8 +1,8 @@
 {
   "subject_key": "지주회사",
   "subject_name": "지주회사",
-  "latest_report_date": "2026-05-27",
-  "report_count": 7,
+  "latest_report_date": "2026-05-28",
+  "report_count": 8,
   "active_broker_count": 4,
   "active_brokers": [
     "SK증권",
@@ -11,14 +11,19 @@
     "신한투자증권"
   ],
   "change_summary": {
-    "changed_reports": 0,
+    "changed_reports": 1,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 0
+    "coverage_initiated": 0,
+    "estimate_signal_reports": 1,
+    "earnings_estimate_up": 1,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 0,
@@ -29,6 +34,7 @@
   "opinion_summary": [],
   "charts": {
     "target_price_history": [],
+    "estimate_metric_history": [],
     "opinion_distribution": [],
     "broker_timeline": [
       {
@@ -44,7 +50,9 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 14.15,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-19",
@@ -59,7 +67,9 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 13.75,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-22",
@@ -74,7 +84,9 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 14.15,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-26",
@@ -89,7 +101,9 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 6.5,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-26",
@@ -104,7 +118,9 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 9.35,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-27",
@@ -119,12 +135,36 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 14.15,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      },
+      {
+        "date": "2026-05-28",
+        "broker": "SK증권",
+        "title": "지주회사 - 할인율이 사라진다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44751&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/industry/64/20260528_industry_236057000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/industry/64/20260528_industry_236057000.pdf",
+        "target_price": null,
+        "target_price_value": null,
+        "opinion": null,
+        "opinion_normalized": null,
+        "score": 7.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
   },
   "target_price_history": [],
+  "estimate_metric_history": [],
   "opinion_distribution": [],
   "broker_timeline": [
     {
@@ -140,7 +180,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 14.15,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-19",
@@ -155,7 +197,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 13.75,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-22",
@@ -170,7 +214,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 14.15,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-26",
@@ -185,7 +231,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 6.5,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-26",
@@ -200,7 +248,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 9.35,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-27",
@@ -215,7 +265,30 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 14.15,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "date": "2026-05-28",
+      "broker": "SK증권",
+      "title": "지주회사 - 할인율이 사라진다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44751&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/industry/64/20260528_industry_236057000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/industry/64/20260528_industry_236057000.pdf",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "score": 7.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -224,11 +297,11 @@
       "count": 4
     },
     {
-      "name": "신한투자증권",
-      "count": 1
+      "name": "SK증권",
+      "count": 2
     },
     {
-      "name": "SK증권",
+      "name": "신한투자증권",
       "count": 1
     },
     {
@@ -239,10 +312,114 @@
   "category_summary": [
     {
       "label": "산업분석",
-      "count": 7
+      "count": 8
     }
   ],
   "latest_by_broker": [
+    {
+      "source": "naver_research",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "44751",
+      "title": "할인율이 사라진다",
+      "display_title": "지주회사 - 할인율이 사라진다",
+      "broker": "SK증권",
+      "published_date": "2026-05-28",
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44751&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/industry/64/20260528_industry_236057000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/industry/64/20260528_industry_236057000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "지주회사",
+      "subject_key": "지주회사",
+      "ticker": null,
+      "views": 316,
+      "analyst": "최관순",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "지주회사: 할인율이 사라진다 최관순 / ks1.choi@sks.co.kr/ 3773-8812",
+      "summary": "지주회사: 할인율이 사라진다 최관순 / ks1.choi@sks.co.kr/ 3773-8812 전통적으로 방어주라는 인식과는 달리 NAV 대비 할인율 축소와 베타 상승으로 코스피 상승기 지주회사도 양호한 주가수익률을 기록했다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "score": 7.35,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "이익 추정 상향/증가"
+      ],
+      "score_breakdown": [
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-05-19",
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": "최관순",
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
+    },
     {
       "source": "naver_research",
       "category": "industry",
@@ -358,7 +535,10 @@
       "coverage_initiated": false,
       "change_types": [],
       "change_reasons": [],
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -459,121 +639,10 @@
       "coverage_initiated": false,
       "change_types": [],
       "change_reasons": [],
-      "has_change_signal": false
-    },
-    {
-      "source": "naver_research",
-      "category": "industry",
-      "category_label": "산업분석",
-      "report_id": "44570",
-      "title": "[ESG/지주회사] 할인율이 사라진다",
-      "display_title": "지주회사 - [ESG/지주회사] 할인율이 사라진다",
-      "broker": "SK증권",
-      "published_date": "2026-05-19",
-      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44570&page=1",
-      "pdf_url": "https://stock.pstatic.net/stock-research/industry/64/20260519_industry_581288000.pdf",
-      "primary_url": "https://stock.pstatic.net/stock-research/industry/64/20260519_industry_581288000.pdf",
-      "primary_url_label": "PDF",
-      "subject": "지주회사",
-      "subject_key": "지주회사",
-      "ticker": null,
-      "views": 398,
-      "analyst": "최관순",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": true,
-      "content_sources": [
-        "html",
-        "pdf"
-      ],
-      "excerpt": "할인율 축소와 베타 상승 지주회사에 대한 밸류에이션은 보유 순자산(NAV) 가치 대비 할인율로 평가할 수 있다.",
-      "summary": "할인율 축소와 베타 상승 지주회사에 대한 밸류에이션은 보유 순자산(NAV) 가치 대비 할인율로 평가할 수 있다. 24 년 밸류업 프로그램, 25 년 상법개정을 거치면서 지주회사 할인율은 축소되었고 베타가 상승하면서 코스피 상승기 지주회사의 주가 수익률도 시장 대비 대체로 양호했다.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "score": 13.75,
-      "score_reasons": [
-        "산업분석 카테고리",
-        "관심 종목(삼성전자, 삼성에스디에스)",
-        "관심 섹터/키워드(반도체, 로봇, 건설)",
-        "본문 정보량 풍부",
-        "PDF 본문 확보"
-      ],
-      "score_breakdown": [
-        {
-          "label": "관심 종목",
-          "value": 4.35,
-          "kind": "boost"
-        },
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.8,
-          "kind": "boost"
-        },
-        {
-          "label": "산업분석 카테고리",
-          "value": 2.7,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 2.3,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.95,
-          "kind": "boost"
-        },
-        {
-          "label": "PDF 본문",
-          "value": 0.35,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.1,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "finance.naver.com",
-        "pdf_host": "stock.pstatic.net",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [
-        "삼성전자",
-        "삼성에스디에스"
-      ],
-      "priority_keyword_matches": [
-        "반도체",
-        "로봇",
-        "건설"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -621,11 +690,223 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
-  "recent_changes": [],
+  "recent_changes": [
+    {
+      "source": "naver_research",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "44751",
+      "title": "할인율이 사라진다",
+      "display_title": "지주회사 - 할인율이 사라진다",
+      "broker": "SK증권",
+      "published_date": "2026-05-28",
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44751&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/industry/64/20260528_industry_236057000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/industry/64/20260528_industry_236057000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "지주회사",
+      "subject_key": "지주회사",
+      "ticker": null,
+      "views": 316,
+      "analyst": "최관순",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "지주회사: 할인율이 사라진다 최관순 / ks1.choi@sks.co.kr/ 3773-8812",
+      "summary": "지주회사: 할인율이 사라진다 최관순 / ks1.choi@sks.co.kr/ 3773-8812 전통적으로 방어주라는 인식과는 달리 NAV 대비 할인율 축소와 베타 상승으로 코스피 상승기 지주회사도 양호한 주가수익률을 기록했다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "score": 7.35,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "이익 추정 상향/증가"
+      ],
+      "score_breakdown": [
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-05-19",
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": "최관순",
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
+    }
+  ],
   "timeline": [
+    {
+      "source": "naver_research",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "44751",
+      "title": "할인율이 사라진다",
+      "display_title": "지주회사 - 할인율이 사라진다",
+      "broker": "SK증권",
+      "published_date": "2026-05-28",
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44751&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/industry/64/20260528_industry_236057000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/industry/64/20260528_industry_236057000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "지주회사",
+      "subject_key": "지주회사",
+      "ticker": null,
+      "views": 316,
+      "analyst": "최관순",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "지주회사: 할인율이 사라진다 최관순 / ks1.choi@sks.co.kr/ 3773-8812",
+      "summary": "지주회사: 할인율이 사라진다 최관순 / ks1.choi@sks.co.kr/ 3773-8812 전통적으로 방어주라는 인식과는 달리 NAV 대비 할인율 축소와 베타 상승으로 코스피 상승기 지주회사도 양호한 주가수익률을 기록했다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "score": 7.35,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "이익 추정 상향/증가"
+      ],
+      "score_breakdown": [
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-05-19",
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": "최관순",
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
+    },
     {
       "source": "naver_research",
       "category": "industry",
@@ -741,7 +1022,10 @@
       "coverage_initiated": false,
       "change_types": [],
       "change_reasons": [],
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -842,7 +1126,10 @@
       "coverage_initiated": false,
       "change_types": [],
       "change_reasons": [],
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -935,7 +1222,10 @@
       "coverage_initiated": false,
       "change_types": [],
       "change_reasons": [],
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1052,7 +1342,10 @@
       "coverage_initiated": false,
       "change_types": [],
       "change_reasons": [],
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1166,7 +1459,10 @@
       "coverage_initiated": false,
       "change_types": [],
       "change_reasons": [],
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1225,7 +1521,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1273,7 +1572,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

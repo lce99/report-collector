@@ -18,7 +18,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 4
+    "coverage_initiated": 4,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 2,
+    "margin_estimate_up": 3,
+    "margin_estimate_down": 2
   },
   "target_summary": {
     "count": 4,
@@ -47,7 +52,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-04-28",
@@ -62,7 +79,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.65,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-28",
@@ -77,7 +102,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-20",
@@ -92,7 +129,231 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-22",
+        "broker": "키움증권",
+        "title": "에스티팜 - 1분기부터 제품믹스가 된다면, 기대해 볼만하..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91763&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260422_company_194107000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260422_company_194107000.pdf",
+        "target_price": "190,000",
+        "target_price_value": 190000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 15.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 15.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "에스티팜 제품믹스 개선으로 이익 시장 기대치 상회 전망 1분기 연결 매출액 648억원(YoY +24%, QoQ -50%), 영업이익 100억원(YoY +876%, QoQ -62%, OPM +15%)으로 매출액은 시장 컨센서스 717억원을 소폭 하회할 것으로 예상되나, 영업이익은 컨센서…"
+      },
+      {
+        "date": "2026-04-22",
+        "broker": "키움증권",
+        "title": "에스티팜 - 1분기부터 제품믹스가 된다면, 기대해 볼만하..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91763&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260422_company_194107000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260422_company_194107000.pdf",
+        "target_price": "190,000",
+        "target_price_value": 190000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 100.0,
+        "unit": "억원",
+        "value_krw_100m": 100.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "에스티팜 제품믹스 개선으로 이익 시장 기대치 상회 전망 1분기 연결 매출액 648억원(YoY +24%, QoQ -50%), 영업이익 100억원(YoY +876%, QoQ -62%, OPM +15%)으로 매출액은 시장 컨센서스 717억원을 소폭 하회할 것으로 예상되나, 영업이익은 컨센서…"
+      },
+      {
+        "date": "2026-04-28",
+        "broker": "유안타증권",
+        "title": "에스티팜 - 1Q26Re: 안정적인 수주 잔고",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92076&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260428_company_355457000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260428_company_355457000.pdf",
+        "target_price": "200,000",
+        "target_price_value": 200000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.65,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 17.2,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 17.2,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6%, OPM 17.2%)로 컨센서스를 상회하는 실적 기록."
+      },
+      {
+        "date": "2026-04-28",
+        "broker": "하나증권",
+        "title": "에스티팜 - 1Q26 Re: 아주 좋은 시작, 기대할만한 한 해",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92085&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260428_company_524634000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260428_company_524634000.pdf",
+        "target_price": "210,000",
+        "target_price_value": 210000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 17.2,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 17.2,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6%, OPM 17.2%)으로, 매출은 컨센서스 대비 -4."
+      },
+      {
+        "date": "2026-04-28",
+        "broker": "유안타증권",
+        "title": "에스티팜 - 1Q26Re: 안정적인 수주 잔고",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92076&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260428_company_355457000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260428_company_355457000.pdf",
+        "target_price": "200,000",
+        "target_price_value": 200000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.65,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 115.0,
+        "unit": "억원",
+        "value_krw_100m": 115.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7%YoY, 이하 YoY 생략), 영업이익 115억원(+1,024."
+      },
+      {
+        "date": "2026-04-28",
+        "broker": "하나증권",
+        "title": "에스티팜 - 1Q26 Re: 아주 좋은 시작, 기대할만한 한 해",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92085&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260428_company_524634000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260428_company_524634000.pdf",
+        "target_price": "210,000",
+        "target_price_value": 210000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 115.0,
+        "unit": "억원",
+        "value_krw_100m": 115.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7%), 영업이익 115억원(YoY+1024."
       }
     ],
     "opinion_distribution": [
@@ -115,7 +376,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -134,7 +397,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-04-28",
@@ -149,7 +424,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.65,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-28",
@@ -164,7 +447,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-20",
@@ -179,7 +474,231 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-22",
+      "broker": "키움증권",
+      "title": "에스티팜 - 1분기부터 제품믹스가 된다면, 기대해 볼만하..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91763&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260422_company_194107000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260422_company_194107000.pdf",
+      "target_price": "190,000",
+      "target_price_value": 190000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 15.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 15.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "에스티팜 제품믹스 개선으로 이익 시장 기대치 상회 전망 1분기 연결 매출액 648억원(YoY +24%, QoQ -50%), 영업이익 100억원(YoY +876%, QoQ -62%, OPM +15%)으로 매출액은 시장 컨센서스 717억원을 소폭 하회할 것으로 예상되나, 영업이익은 컨센서…"
+    },
+    {
+      "date": "2026-04-22",
+      "broker": "키움증권",
+      "title": "에스티팜 - 1분기부터 제품믹스가 된다면, 기대해 볼만하..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91763&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260422_company_194107000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260422_company_194107000.pdf",
+      "target_price": "190,000",
+      "target_price_value": 190000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 100.0,
+      "unit": "억원",
+      "value_krw_100m": 100.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "에스티팜 제품믹스 개선으로 이익 시장 기대치 상회 전망 1분기 연결 매출액 648억원(YoY +24%, QoQ -50%), 영업이익 100억원(YoY +876%, QoQ -62%, OPM +15%)으로 매출액은 시장 컨센서스 717억원을 소폭 하회할 것으로 예상되나, 영업이익은 컨센서…"
+    },
+    {
+      "date": "2026-04-28",
+      "broker": "유안타증권",
+      "title": "에스티팜 - 1Q26Re: 안정적인 수주 잔고",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92076&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260428_company_355457000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260428_company_355457000.pdf",
+      "target_price": "200,000",
+      "target_price_value": 200000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.65,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 17.2,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 17.2,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6%, OPM 17.2%)로 컨센서스를 상회하는 실적 기록."
+    },
+    {
+      "date": "2026-04-28",
+      "broker": "하나증권",
+      "title": "에스티팜 - 1Q26 Re: 아주 좋은 시작, 기대할만한 한 해",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92085&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260428_company_524634000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260428_company_524634000.pdf",
+      "target_price": "210,000",
+      "target_price_value": 210000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 17.2,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 17.2,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6%, OPM 17.2%)으로, 매출은 컨센서스 대비 -4."
+    },
+    {
+      "date": "2026-04-28",
+      "broker": "유안타증권",
+      "title": "에스티팜 - 1Q26Re: 안정적인 수주 잔고",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92076&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260428_company_355457000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260428_company_355457000.pdf",
+      "target_price": "200,000",
+      "target_price_value": 200000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.65,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 115.0,
+      "unit": "억원",
+      "value_krw_100m": 115.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7%YoY, 이하 YoY 생략), 영업이익 115억원(+1,024."
+    },
+    {
+      "date": "2026-04-28",
+      "broker": "하나증권",
+      "title": "에스티팜 - 1Q26 Re: 아주 좋은 시작, 기대할만한 한 해",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92085&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260428_company_524634000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260428_company_524634000.pdf",
+      "target_price": "210,000",
+      "target_price_value": 210000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 115.0,
+      "unit": "억원",
+      "value_krw_100m": 115.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7%), 영업이익 115억원(YoY+1024."
     }
   ],
   "opinion_distribution": [
@@ -202,7 +721,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -339,7 +860,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -389,13 +913,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 115.0,
+          "unit": "억원",
+          "source_excerpt": "7%), 영업이익 115억원(YoY+1024.",
+          "value_krw_100m": 115.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 17.2,
+          "unit": "%",
+          "value_pct": 17.2,
+          "source_excerpt": "6%, OPM 17.2%)으로, 매출은 컨센서스 대비 -4."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -445,13 +1011,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 115.0,
+          "unit": "억원",
+          "source_excerpt": "7%YoY, 이하 YoY 생략), 영업이익 115억원(+1,024.",
+          "value_krw_100m": 115.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 17.2,
+          "unit": "%",
+          "value_pct": 17.2,
+          "source_excerpt": "6%, OPM 17.2%)로 컨센서스를 상회하는 실적 기록."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -501,13 +1101,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 100.0,
+          "unit": "억원",
+          "source_excerpt": "에스티팜 제품믹스 개선으로 이익 시장 기대치 상회 전망 1분기 연결 매출액 648억원(YoY +24%, QoQ -50%), 영업이익 100억원(YoY +876%, QoQ -62%, OPM +15%)으로 매출액은 시장 컨센서스 717억원을 소폭 하회할 것으로 예상되나, 영업이익은 컨센서…",
+          "value_krw_100m": 100.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.0,
+          "unit": "%",
+          "value_pct": 15.0,
+          "source_excerpt": "에스티팜 제품믹스 개선으로 이익 시장 기대치 상회 전망 1분기 연결 매출액 648억원(YoY +24%, QoQ -50%), 영업이익 100억원(YoY +876%, QoQ -62%, OPM +15%)으로 매출액은 시장 컨센서스 717억원을 소폭 하회할 것으로 예상되나, 영업이익은 컨센서…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "recent_changes": [
@@ -620,7 +1262,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -670,13 +1315,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 115.0,
+          "unit": "억원",
+          "source_excerpt": "7%), 영업이익 115억원(YoY+1024.",
+          "value_krw_100m": 115.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 17.2,
+          "unit": "%",
+          "value_pct": 17.2,
+          "source_excerpt": "6%, OPM 17.2%)으로, 매출은 컨센서스 대비 -4."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -726,13 +1413,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 115.0,
+          "unit": "억원",
+          "source_excerpt": "7%YoY, 이하 YoY 생략), 영업이익 115억원(+1,024.",
+          "value_krw_100m": 115.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 17.2,
+          "unit": "%",
+          "value_pct": 17.2,
+          "source_excerpt": "6%, OPM 17.2%)로 컨센서스를 상회하는 실적 기록."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -782,13 +1503,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 100.0,
+          "unit": "억원",
+          "source_excerpt": "에스티팜 제품믹스 개선으로 이익 시장 기대치 상회 전망 1분기 연결 매출액 648억원(YoY +24%, QoQ -50%), 영업이익 100억원(YoY +876%, QoQ -62%, OPM +15%)으로 매출액은 시장 컨센서스 717억원을 소폭 하회할 것으로 예상되나, 영업이익은 컨센서…",
+          "value_krw_100m": 100.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.0,
+          "unit": "%",
+          "value_pct": 15.0,
+          "source_excerpt": "에스티팜 제품믹스 개선으로 이익 시장 기대치 상회 전망 1분기 연결 매출액 648억원(YoY +24%, QoQ -50%), 영업이익 100억원(YoY +876%, QoQ -62%, OPM +15%)으로 매출액은 시장 컨센서스 717억원을 소폭 하회할 것으로 예상되나, 영업이익은 컨센서…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "timeline": [
@@ -901,7 +1664,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -951,13 +1717,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 115.0,
+          "unit": "억원",
+          "source_excerpt": "7%), 영업이익 115억원(YoY+1024.",
+          "value_krw_100m": 115.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 17.2,
+          "unit": "%",
+          "value_pct": 17.2,
+          "source_excerpt": "6%, OPM 17.2%)으로, 매출은 컨센서스 대비 -4."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1007,13 +1815,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 115.0,
+          "unit": "억원",
+          "source_excerpt": "7%YoY, 이하 YoY 생략), 영업이익 115억원(+1,024.",
+          "value_krw_100m": 115.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 17.2,
+          "unit": "%",
+          "value_pct": 17.2,
+          "source_excerpt": "6%, OPM 17.2%)로 컨센서스를 상회하는 실적 기록."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1063,13 +1905,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 100.0,
+          "unit": "억원",
+          "source_excerpt": "에스티팜 제품믹스 개선으로 이익 시장 기대치 상회 전망 1분기 연결 매출액 648억원(YoY +24%, QoQ -50%), 영업이익 100억원(YoY +876%, QoQ -62%, OPM +15%)으로 매출액은 시장 컨센서스 717억원을 소폭 하회할 것으로 예상되나, 영업이익은 컨센서…",
+          "value_krw_100m": 100.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.0,
+          "unit": "%",
+          "value_pct": 15.0,
+          "source_excerpt": "에스티팜 제품믹스 개선으로 이익 시장 기대치 상회 전망 1분기 연결 매출액 648억원(YoY +24%, QoQ -50%), 영업이익 100억원(YoY +876%, QoQ -62%, OPM +15%)으로 매출액은 시장 컨센서스 717억원을 소폭 하회할 것으로 예상되나, 영업이익은 컨센서…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ]
 }

@@ -16,7 +16,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 2
+    "coverage_initiated": 2,
+    "estimate_signal_reports": 2,
+    "earnings_estimate_up": 1,
+    "earnings_estimate_down": 2,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 2,
@@ -45,7 +50,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-27",
@@ -60,7 +73,119 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-18",
+        "broker": "대신증권",
+        "title": "SBS - 시청률이 전부는 아닙니다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93045&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260518_company_650273000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260518_company_650273000.pdf",
+        "target_price": "21,000",
+        "target_price_value": 21000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "25년",
+        "value": 131.0,
+        "unit": "억원",
+        "value_krw_100m": 131.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "SBS - 시청률이 전부는 아닙니다 시청률이 전부는 아닙니다 SBS 투자의견 매수(Buy) 유지, 목표주가는 21,000원으로 -16% 하향 26년 예상 EPS와 유사한 수준을 달성했던 과거(11~15) PER band의 하단 16배 대비 추가 10% 할인 적용 25년 OP 131억원…"
+      },
+      {
+        "date": "2026-05-18",
+        "broker": "대신증권",
+        "title": "SBS - 시청률이 전부는 아닙니다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93045&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260518_company_650273000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260518_company_650273000.pdf",
+        "target_price": "21,000",
+        "target_price_value": 21000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "26E",
+        "value": 415.0,
+        "unit": "억원",
+        "value_krw_100m": 415.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "SBS - 시청률이 전부는 아닙니다 시청률이 전부는 아닙니다 SBS 투자의견 매수(Buy) 유지, 목표주가는 21,000원으로 -16% 하향 26년 예상 EPS와 유사한 수준을 달성했던 과거(11~15) PER band의 하단 16배 대비 추가 10% 할인 적용 25년 OP 131억원…"
+      },
+      {
+        "date": "2026-05-27",
+        "broker": "DS투자증권",
+        "title": "SBS - 콘텐츠로 광고 부진 방어",
+        "ticker": "034120",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93290&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260527_company_51761000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260527_company_51761000.pdf",
+        "target_price": "20,000",
+        "target_price_value": 20000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": -9.3,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": -9.3,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "SBS - 콘텐츠로 광고 부진 방어 콘텐츠로 광고 부진 방어 SBS 1Q26Re: 광고 수익 부진으로 전체 실적 부진하나 비용 통제 지속 SBS의 26년 1분기 실적은 연결 매출액 1,904억원(-8% YoY), 영업손실 -176억원(적자지속, OPM -9.3%)을 기록했다."
       }
     ],
     "opinion_distribution": [
@@ -83,7 +208,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-27",
@@ -98,7 +231,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       }
     ],
     "window_days": 14
@@ -117,7 +258,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-27",
@@ -132,7 +281,119 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-18",
+      "broker": "대신증권",
+      "title": "SBS - 시청률이 전부는 아닙니다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93045&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260518_company_650273000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260518_company_650273000.pdf",
+      "target_price": "21,000",
+      "target_price_value": 21000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "25년",
+      "value": 131.0,
+      "unit": "억원",
+      "value_krw_100m": 131.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "SBS - 시청률이 전부는 아닙니다 시청률이 전부는 아닙니다 SBS 투자의견 매수(Buy) 유지, 목표주가는 21,000원으로 -16% 하향 26년 예상 EPS와 유사한 수준을 달성했던 과거(11~15) PER band의 하단 16배 대비 추가 10% 할인 적용 25년 OP 131억원…"
+    },
+    {
+      "date": "2026-05-18",
+      "broker": "대신증권",
+      "title": "SBS - 시청률이 전부는 아닙니다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93045&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260518_company_650273000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260518_company_650273000.pdf",
+      "target_price": "21,000",
+      "target_price_value": 21000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "26E",
+      "value": 415.0,
+      "unit": "억원",
+      "value_krw_100m": 415.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "SBS - 시청률이 전부는 아닙니다 시청률이 전부는 아닙니다 SBS 투자의견 매수(Buy) 유지, 목표주가는 21,000원으로 -16% 하향 26년 예상 EPS와 유사한 수준을 달성했던 과거(11~15) PER band의 하단 16배 대비 추가 10% 할인 적용 25년 OP 131억원…"
+    },
+    {
+      "date": "2026-05-27",
+      "broker": "DS투자증권",
+      "title": "SBS - 콘텐츠로 광고 부진 방어",
+      "ticker": "034120",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93290&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260527_company_51761000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260527_company_51761000.pdf",
+      "target_price": "20,000",
+      "target_price_value": 20000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": -9.3,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": -9.3,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "SBS - 콘텐츠로 광고 부진 방어 콘텐츠로 광고 부진 방어 SBS 1Q26Re: 광고 수익 부진으로 전체 실적 부진하나 비용 통제 지속 SBS의 26년 1분기 실적은 연결 매출액 1,904억원(-8% YoY), 영업손실 -176억원(적자지속, OPM -9.3%)을 기록했다."
     }
   ],
   "opinion_distribution": [
@@ -155,7 +416,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-27",
@@ -170,7 +439,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "broker_summary": [
@@ -289,12 +566,36 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": -9.3,
+          "unit": "%",
+          "value_pct": -9.3,
+          "source_excerpt": "SBS - 콘텐츠로 광고 부진 방어 콘텐츠로 광고 부진 방어 SBS 1Q26Re: 광고 수익 부진으로 전체 실적 부진하나 비용 통제 지속 SBS의 26년 1분기 실적은 연결 매출액 1,904억원(-8% YoY), 영업손실 -176억원(적자지속, OPM -9.3%)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -346,13 +647,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "25년",
+          "value": 131.0,
+          "unit": "억원",
+          "source_excerpt": "SBS - 시청률이 전부는 아닙니다 시청률이 전부는 아닙니다 SBS 투자의견 매수(Buy) 유지, 목표주가는 21,000원으로 -16% 하향 26년 예상 EPS와 유사한 수준을 달성했던 과거(11~15) PER band의 하단 16배 대비 추가 10% 할인 적용 25년 OP 131억원…",
+          "value_krw_100m": 131.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "26E",
+          "value": 415.0,
+          "unit": "억원",
+          "source_excerpt": "SBS - 시청률이 전부는 아닙니다 시청률이 전부는 아닙니다 SBS 투자의견 매수(Buy) 유지, 목표주가는 21,000원으로 -16% 하향 26년 예상 EPS와 유사한 수준을 달성했던 과거(11~15) PER band의 하단 16배 대비 추가 10% 할인 적용 25년 OP 131억원…",
+          "value_krw_100m": 415.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "recent_changes": [
@@ -455,12 +790,36 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": -9.3,
+          "unit": "%",
+          "value_pct": -9.3,
+          "source_excerpt": "SBS - 콘텐츠로 광고 부진 방어 콘텐츠로 광고 부진 방어 SBS 1Q26Re: 광고 수익 부진으로 전체 실적 부진하나 비용 통제 지속 SBS의 26년 1분기 실적은 연결 매출액 1,904억원(-8% YoY), 영업손실 -176억원(적자지속, OPM -9.3%)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -512,13 +871,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "25년",
+          "value": 131.0,
+          "unit": "억원",
+          "source_excerpt": "SBS - 시청률이 전부는 아닙니다 시청률이 전부는 아닙니다 SBS 투자의견 매수(Buy) 유지, 목표주가는 21,000원으로 -16% 하향 26년 예상 EPS와 유사한 수준을 달성했던 과거(11~15) PER band의 하단 16배 대비 추가 10% 할인 적용 25년 OP 131억원…",
+          "value_krw_100m": 131.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "26E",
+          "value": 415.0,
+          "unit": "억원",
+          "source_excerpt": "SBS - 시청률이 전부는 아닙니다 시청률이 전부는 아닙니다 SBS 투자의견 매수(Buy) 유지, 목표주가는 21,000원으로 -16% 하향 26년 예상 EPS와 유사한 수준을 달성했던 과거(11~15) PER band의 하단 16배 대비 추가 10% 할인 적용 25년 OP 131억원…",
+          "value_krw_100m": 415.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "timeline": [
@@ -621,12 +1014,36 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": -9.3,
+          "unit": "%",
+          "value_pct": -9.3,
+          "source_excerpt": "SBS - 콘텐츠로 광고 부진 방어 콘텐츠로 광고 부진 방어 SBS 1Q26Re: 광고 수익 부진으로 전체 실적 부진하나 비용 통제 지속 SBS의 26년 1분기 실적은 연결 매출액 1,904억원(-8% YoY), 영업손실 -176억원(적자지속, OPM -9.3%)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -678,13 +1095,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "25년",
+          "value": 131.0,
+          "unit": "억원",
+          "source_excerpt": "SBS - 시청률이 전부는 아닙니다 시청률이 전부는 아닙니다 SBS 투자의견 매수(Buy) 유지, 목표주가는 21,000원으로 -16% 하향 26년 예상 EPS와 유사한 수준을 달성했던 과거(11~15) PER band의 하단 16배 대비 추가 10% 할인 적용 25년 OP 131억원…",
+          "value_krw_100m": 131.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "26E",
+          "value": 415.0,
+          "unit": "억원",
+          "source_excerpt": "SBS - 시청률이 전부는 아닙니다 시청률이 전부는 아닙니다 SBS 투자의견 매수(Buy) 유지, 목표주가는 21,000원으로 -16% 하향 26년 예상 EPS와 유사한 수준을 달성했던 과거(11~15) PER band의 하단 16배 대비 추가 10% 할인 적용 25년 OP 131억원…",
+          "value_krw_100m": 415.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ]
 }

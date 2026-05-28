@@ -16,7 +16,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 1
+    "coverage_initiated": 1,
+    "estimate_signal_reports": 1,
+    "earnings_estimate_up": 0,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 1,
@@ -45,7 +50,47 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-19",
+        "broker": "유진투자증권",
+        "title": "SAMG엔터 - 고민될수록 내실을 다시 보자",
+        "ticker": "419530",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93124&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260519_company_805784000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260519_company_805784000.pdf",
+        "target_price": "50,000",
+        "target_price_value": 50000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 39.0,
+        "unit": "억원",
+        "value_krw_100m": 39.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5%yoy), 영업이익은 39억원(-38."
       }
     ],
     "opinion_distribution": [
@@ -68,7 +113,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       }
     ],
     "window_days": 14
@@ -87,7 +138,47 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-19",
+      "broker": "유진투자증권",
+      "title": "SAMG엔터 - 고민될수록 내실을 다시 보자",
+      "ticker": "419530",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93124&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260519_company_805784000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260519_company_805784000.pdf",
+      "target_price": "50,000",
+      "target_price_value": 50000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 39.0,
+      "unit": "억원",
+      "value_krw_100m": 39.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5%yoy), 영업이익은 39억원(-38."
     }
   ],
   "opinion_distribution": [
@@ -110,7 +201,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "broker_summary": [
@@ -221,12 +318,32 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 39.0,
+          "unit": "억원",
+          "source_excerpt": "5%yoy), 영업이익은 39억원(-38.",
+          "value_krw_100m": 39.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -276,7 +393,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -371,12 +491,32 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 39.0,
+          "unit": "억원",
+          "source_excerpt": "5%yoy), 영업이익은 39억원(-38.",
+          "value_krw_100m": 39.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "timeline": [
@@ -471,12 +611,32 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 39.0,
+          "unit": "억원",
+          "source_excerpt": "5%yoy), 영업이익은 39억원(-38.",
+          "value_krw_100m": 39.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -526,7 +686,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

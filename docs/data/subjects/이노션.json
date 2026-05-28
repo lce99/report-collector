@@ -18,7 +18,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 4
+    "coverage_initiated": 4,
+    "estimate_signal_reports": 2,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 4,
@@ -47,7 +52,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-21",
@@ -62,7 +69,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-11",
@@ -77,7 +86,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 13.06,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-11",
@@ -92,7 +103,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -107,7 +124,163 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-20",
+        "broker": "대신증권",
+        "title": "이노션 - Hail Mary도 이노션!",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91701&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260420_company_988412000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260420_company_988412000.pdf",
+        "target_price": "27,000",
+        "target_price_value": 27000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 12.9,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "eps",
+        "metric_group": "earnings",
+        "label": "EPS",
+        "period": null,
+        "value": 2794.0,
+        "unit": "원",
+        "value_krw_100m": null,
+        "value_pct": null,
+        "value_won": 2794.0,
+        "change_pctp": null,
+        "source_excerpt": "이노션 - Hail Mary도 이노션! Hail Mary도 이노션! 이노션 투자의견 매수(Buy), 목표주가 27,000원 유지 12M FWD EPS 2,794원에 PER 10배 적용(최근 5년(21~25) 평균 하단) 기업분석 2026."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "대신증권",
+        "title": "이노션 - 적극적인 광고주 발굴",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92707&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_552650000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_552650000.pdf",
+        "target_price": "27,000",
+        "target_price_value": 27000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 13.06,
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "eps",
+        "metric_group": "earnings",
+        "label": "EPS",
+        "period": null,
+        "value": 2865.0,
+        "unit": "원",
+        "value_krw_100m": null,
+        "value_pct": null,
+        "value_won": 2865.0,
+        "change_pctp": null,
+        "source_excerpt": "이노션 - 적극적인 광고주 발굴 적극적인 광고주 발굴 이노션 투자의견 매수(Buy), 목표주가 27,000원 유지 12M FWD EPS 2,865원에 PER 10배 적용(최근 5년(21~25) 평균 하단) 기업분석 2026."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "대신증권",
+        "title": "이노션 - 적극적인 광고주 발굴",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92707&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_552650000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_552650000.pdf",
+        "target_price": "27,000",
+        "target_price_value": 27000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 13.06,
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 398.0,
+        "unit": "억원",
+        "value_krw_100m": 398.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5천억원(+8% yoy), OP 398억원(+33% yoy)  본사는 CX 관련 대형 프로젝트 진행."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "유진투자증권",
+        "title": "이노션 - 찾았다, 중장기 성장 동력",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92684&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/26/20260511_company_543222000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/26/20260511_company_543222000.pdf",
+        "target_price": "26,000",
+        "target_price_value": 26000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 398.0,
+        "unit": "억원",
+        "value_krw_100m": 398.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7%yoy), 영업이익 398억원(+33."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "키움증권",
+        "title": "이노션 - CX와 스포츠로 증명한 차별화된 성장성",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92891&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260514_company_614387000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260514_company_614387000.pdf",
+        "target_price": "26,000",
+        "target_price_value": 26000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 398.0,
+        "unit": "억원",
+        "value_krw_100m": 398.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "이노션 - CX와 스포츠로 증명한 차별화된 성장성 CX와 스포츠로 증명한 차별화된 성장성 이노션 1Q26 Review: CX 부문 약진과 AI를 통한 수익 개선 매출총이익 2,501억원(QoQ -7%, YoY +8%), 영업이익 398억원(QoQ -13%, YoY +33%)을 기록하며…"
       }
     ],
     "opinion_distribution": [
@@ -130,7 +303,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -145,7 +324,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 13.06,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-14",
@@ -160,7 +341,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -179,7 +366,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-21",
@@ -194,7 +383,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-11",
@@ -209,7 +400,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 13.06,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-11",
@@ -224,7 +417,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -239,7 +438,163 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-20",
+      "broker": "대신증권",
+      "title": "이노션 - Hail Mary도 이노션!",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91701&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260420_company_988412000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260420_company_988412000.pdf",
+      "target_price": "27,000",
+      "target_price_value": 27000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 12.9,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "eps",
+      "metric_group": "earnings",
+      "label": "EPS",
+      "period": null,
+      "value": 2794.0,
+      "unit": "원",
+      "value_krw_100m": null,
+      "value_pct": null,
+      "value_won": 2794.0,
+      "change_pctp": null,
+      "source_excerpt": "이노션 - Hail Mary도 이노션! Hail Mary도 이노션! 이노션 투자의견 매수(Buy), 목표주가 27,000원 유지 12M FWD EPS 2,794원에 PER 10배 적용(최근 5년(21~25) 평균 하단) 기업분석 2026."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "대신증권",
+      "title": "이노션 - 적극적인 광고주 발굴",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92707&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_552650000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_552650000.pdf",
+      "target_price": "27,000",
+      "target_price_value": 27000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 13.06,
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "eps",
+      "metric_group": "earnings",
+      "label": "EPS",
+      "period": null,
+      "value": 2865.0,
+      "unit": "원",
+      "value_krw_100m": null,
+      "value_pct": null,
+      "value_won": 2865.0,
+      "change_pctp": null,
+      "source_excerpt": "이노션 - 적극적인 광고주 발굴 적극적인 광고주 발굴 이노션 투자의견 매수(Buy), 목표주가 27,000원 유지 12M FWD EPS 2,865원에 PER 10배 적용(최근 5년(21~25) 평균 하단) 기업분석 2026."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "대신증권",
+      "title": "이노션 - 적극적인 광고주 발굴",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92707&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_552650000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_552650000.pdf",
+      "target_price": "27,000",
+      "target_price_value": 27000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 13.06,
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 398.0,
+      "unit": "억원",
+      "value_krw_100m": 398.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5천억원(+8% yoy), OP 398억원(+33% yoy)  본사는 CX 관련 대형 프로젝트 진행."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "유진투자증권",
+      "title": "이노션 - 찾았다, 중장기 성장 동력",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92684&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/26/20260511_company_543222000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/26/20260511_company_543222000.pdf",
+      "target_price": "26,000",
+      "target_price_value": 26000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 398.0,
+      "unit": "억원",
+      "value_krw_100m": 398.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7%yoy), 영업이익 398억원(+33."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "키움증권",
+      "title": "이노션 - CX와 스포츠로 증명한 차별화된 성장성",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92891&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260514_company_614387000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260514_company_614387000.pdf",
+      "target_price": "26,000",
+      "target_price_value": 26000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 398.0,
+      "unit": "억원",
+      "value_krw_100m": 398.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "이노션 - CX와 스포츠로 증명한 차별화된 성장성 CX와 스포츠로 증명한 차별화된 성장성 이노션 1Q26 Review: CX 부문 약진과 AI를 통한 수익 개선 매출총이익 2,501억원(QoQ -7%, YoY +8%), 영업이익 398억원(QoQ -13%, YoY +33%)을 기록하며…"
     }
   ],
   "opinion_distribution": [
@@ -262,7 +617,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -277,7 +638,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 13.06,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-14",
@@ -292,7 +655,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -368,13 +737,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 398.0,
+          "unit": "억원",
+          "source_excerpt": "이노션 - CX와 스포츠로 증명한 차별화된 성장성 CX와 스포츠로 증명한 차별화된 성장성 이노션 1Q26 Review: CX 부문 약진과 AI를 통한 수익 개선 매출총이익 2,501억원(QoQ -7%, YoY +8%), 영업이익 398억원(QoQ -13%, YoY +33%)을 기록하며…",
+          "value_krw_100m": 398.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -430,7 +819,31 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": null,
+          "value": 2865.0,
+          "unit": "원",
+          "source_excerpt": "이노션 - 적극적인 광고주 발굴 적극적인 광고주 발굴 이노션 투자의견 매수(Buy), 목표주가 27,000원 유지 12M FWD EPS 2,865원에 PER 10배 적용(최근 5년(21~25) 평균 하단) 기업분석 2026.",
+          "value_won": 2865.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 398.0,
+          "unit": "억원",
+          "source_excerpt": "5천억원(+8% yoy), OP 398억원(+33% yoy)  본사는 CX 관련 대형 프로젝트 진행.",
+          "value_krw_100m": 398.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -479,13 +892,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 398.0,
+          "unit": "억원",
+          "source_excerpt": "7%yoy), 영업이익 398억원(+33.",
+          "value_krw_100m": 398.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -541,7 +974,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -593,13 +1029,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 398.0,
+          "unit": "억원",
+          "source_excerpt": "이노션 - CX와 스포츠로 증명한 차별화된 성장성 CX와 스포츠로 증명한 차별화된 성장성 이노션 1Q26 Review: CX 부문 약진과 AI를 통한 수익 개선 매출총이익 2,501억원(QoQ -7%, YoY +8%), 영업이익 398억원(QoQ -13%, YoY +33%)을 기록하며…",
+          "value_krw_100m": 398.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -648,13 +1104,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 398.0,
+          "unit": "억원",
+          "source_excerpt": "7%yoy), 영업이익 398억원(+33.",
+          "value_krw_100m": 398.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -710,7 +1186,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -768,7 +1247,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": null,
+          "value": 2794.0,
+          "unit": "원",
+          "source_excerpt": "이노션 - Hail Mary도 이노션! Hail Mary도 이노션! 이노션 투자의견 매수(Buy), 목표주가 27,000원 유지 12M FWD EPS 2,794원에 PER 10배 적용(최근 5년(21~25) 평균 하단) 기업분석 2026.",
+          "value_won": 2794.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -820,13 +1313,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 398.0,
+          "unit": "억원",
+          "source_excerpt": "이노션 - CX와 스포츠로 증명한 차별화된 성장성 CX와 스포츠로 증명한 차별화된 성장성 이노션 1Q26 Review: CX 부문 약진과 AI를 통한 수익 개선 매출총이익 2,501억원(QoQ -7%, YoY +8%), 영업이익 398억원(QoQ -13%, YoY +33%)을 기록하며…",
+          "value_krw_100m": 398.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -882,7 +1395,31 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": null,
+          "value": 2865.0,
+          "unit": "원",
+          "source_excerpt": "이노션 - 적극적인 광고주 발굴 적극적인 광고주 발굴 이노션 투자의견 매수(Buy), 목표주가 27,000원 유지 12M FWD EPS 2,865원에 PER 10배 적용(최근 5년(21~25) 평균 하단) 기업분석 2026.",
+          "value_won": 2865.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 398.0,
+          "unit": "억원",
+          "source_excerpt": "5천억원(+8% yoy), OP 398억원(+33% yoy)  본사는 CX 관련 대형 프로젝트 진행.",
+          "value_krw_100m": 398.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -931,13 +1468,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 398.0,
+          "unit": "억원",
+          "source_excerpt": "7%yoy), 영업이익 398억원(+33.",
+          "value_krw_100m": 398.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -993,7 +1550,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1051,7 +1611,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": null,
+          "value": 2794.0,
+          "unit": "원",
+          "source_excerpt": "이노션 - Hail Mary도 이노션! Hail Mary도 이노션! 이노션 투자의견 매수(Buy), 목표주가 27,000원 유지 12M FWD EPS 2,794원에 PER 10배 적용(최근 5년(21~25) 평균 하단) 기업분석 2026.",
+          "value_won": 2794.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

@@ -9,14 +9,19 @@
     "삼성증권"
   ],
   "change_summary": {
-    "changed_reports": 1,
+    "changed_reports": 3,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 1
+    "coverage_initiated": 1,
+    "estimate_signal_reports": 2,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 2,
@@ -45,7 +50,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-22",
@@ -60,7 +73,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-14",
@@ -75,7 +90,147 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-16",
+        "broker": "삼성증권",
+        "title": "감성코퍼레이션 - 낮은 기저+날씨 효과, 무난한 서프라이즈",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91640&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_552411000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_552411000.pdf",
+        "target_price": "7,000",
+        "target_price_value": 7000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 16.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 16.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "감성코퍼레이션 - 낮은 기저+날씨 효과, 무난한 서프라이즈 낮은 기저+날씨 효과, 무난한 서프라이즈 감성코퍼레이션 1분기 영업이익 컨센서스 10% 상회 기대: 동사는 1분기 매출액 555억원(+19% y-y), 영업이익 88억원(+28%, OPM 16%)을 기록하며, 영업이익 기준 컨…"
+      },
+      {
+        "date": "2026-04-16",
+        "broker": "삼성증권",
+        "title": "감성코퍼레이션 - 낮은 기저+날씨 효과, 무난한 서프라이즈",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91640&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_552411000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_552411000.pdf",
+        "target_price": "7,000",
+        "target_price_value": 7000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 88.0,
+        "unit": "억원",
+        "value_krw_100m": 88.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "감성코퍼레이션 - 낮은 기저+날씨 효과, 무난한 서프라이즈 낮은 기저+날씨 효과, 무난한 서프라이즈 감성코퍼레이션 1분기 영업이익 컨센서스 10% 상회 기대: 동사는 1분기 매출액 555억원(+19% y-y), 영업이익 88억원(+28%, OPM 16%)을 기록하며, 영업이익 기준 컨…"
+      },
+      {
+        "date": "2026-04-22",
+        "broker": "SK증권",
+        "title": "감성코퍼레이션 - 본격적인 중국 시장 침투 시작",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91769&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260422_company_159082000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260422_company_159082000.pdf",
+        "target_price": "8,100",
+        "target_price_value": 8100,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 16.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 16.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4%, OPM 16.0%) 기록한 것으로 보는데, 어패럴 매출이 +24."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "SK증권",
+        "title": "감성코퍼레이션 - 수출 모멘텀에 비해 저평가된 주가",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92913&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260514_company_658829000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260514_company_658829000.pdf",
+        "target_price": "8,100",
+        "target_price_value": 8100,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 17.9,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 17.9,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5%, OPM 17.9%) 기록해 당사 추정치 대비 영업이익 14% 상회하는 호실적 기록 - 어패럴 부문 매출 +27."
       }
     ],
     "opinion_distribution": [
@@ -98,7 +253,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -117,7 +280,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-22",
@@ -132,7 +303,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-14",
@@ -147,7 +320,147 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-16",
+      "broker": "삼성증권",
+      "title": "감성코퍼레이션 - 낮은 기저+날씨 효과, 무난한 서프라이즈",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91640&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_552411000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_552411000.pdf",
+      "target_price": "7,000",
+      "target_price_value": 7000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 16.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 16.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "감성코퍼레이션 - 낮은 기저+날씨 효과, 무난한 서프라이즈 낮은 기저+날씨 효과, 무난한 서프라이즈 감성코퍼레이션 1분기 영업이익 컨센서스 10% 상회 기대: 동사는 1분기 매출액 555억원(+19% y-y), 영업이익 88억원(+28%, OPM 16%)을 기록하며, 영업이익 기준 컨…"
+    },
+    {
+      "date": "2026-04-16",
+      "broker": "삼성증권",
+      "title": "감성코퍼레이션 - 낮은 기저+날씨 효과, 무난한 서프라이즈",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91640&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_552411000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_552411000.pdf",
+      "target_price": "7,000",
+      "target_price_value": 7000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 88.0,
+      "unit": "억원",
+      "value_krw_100m": 88.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "감성코퍼레이션 - 낮은 기저+날씨 효과, 무난한 서프라이즈 낮은 기저+날씨 효과, 무난한 서프라이즈 감성코퍼레이션 1분기 영업이익 컨센서스 10% 상회 기대: 동사는 1분기 매출액 555억원(+19% y-y), 영업이익 88억원(+28%, OPM 16%)을 기록하며, 영업이익 기준 컨…"
+    },
+    {
+      "date": "2026-04-22",
+      "broker": "SK증권",
+      "title": "감성코퍼레이션 - 본격적인 중국 시장 침투 시작",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91769&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260422_company_159082000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260422_company_159082000.pdf",
+      "target_price": "8,100",
+      "target_price_value": 8100,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 16.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 16.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4%, OPM 16.0%) 기록한 것으로 보는데, 어패럴 매출이 +24."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "SK증권",
+      "title": "감성코퍼레이션 - 수출 모멘텀에 비해 저평가된 주가",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92913&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260514_company_658829000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260514_company_658829000.pdf",
+      "target_price": "8,100",
+      "target_price_value": 8100,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 17.9,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 17.9,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5%, OPM 17.9%) 기록해 당사 추정치 대비 영업이익 14% 상회하는 호실적 기록 - 어패럴 부문 매출 +27."
     }
   ],
   "opinion_distribution": [
@@ -170,7 +483,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -239,10 +560,36 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 17.9,
+          "unit": "%",
+          "value_pct": 17.9,
+          "source_excerpt": "5%, OPM 17.9%) 기록해 당사 추정치 대비 영업이익 14% 상회하는 호실적 기록 - 어패럴 부문 매출 +27."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -282,12 +629,128 @@
       "ticker": null,
       "target_price_value": 7000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 88.0,
+          "unit": "억원",
+          "source_excerpt": "감성코퍼레이션 - 낮은 기저+날씨 효과, 무난한 서프라이즈 낮은 기저+날씨 효과, 무난한 서프라이즈 감성코퍼레이션 1분기 영업이익 컨센서스 10% 상회 기대: 동사는 1분기 매출액 555억원(+19% y-y), 영업이익 88억원(+28%, OPM 16%)을 기록하며, 영업이익 기준 컨…",
+          "value_krw_100m": 88.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 16.0,
+          "unit": "%",
+          "value_pct": 16.0,
+          "source_excerpt": "감성코퍼레이션 - 낮은 기저+날씨 효과, 무난한 서프라이즈 낮은 기저+날씨 효과, 무난한 서프라이즈 감성코퍼레이션 1분기 영업이익 컨센서스 10% 상회 기대: 동사는 1분기 매출액 555억원(+19% y-y), 영업이익 88억원(+28%, OPM 16%)을 기록하며, 영업이익 기준 컨…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true
     }
   ],
   "recent_changes": [
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92913",
+      "title": "수출 모멘텀에 비해 저평가된 주가",
+      "display_title": "감성코퍼레이션 - 수출 모멘텀에 비해 저평가된 주가",
+      "broker": "SK증권",
+      "published_date": "2026-05-14",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92913&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260514_company_658829000.pdf",
+      "subject": "감성코퍼레이션",
+      "subject_key": "감성코퍼레이션",
+      "views": 584,
+      "analyst": null,
+      "target_price": "8,100",
+      "target_price_value": 8100,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1Q26 Review: 당사 추정치 상회하는 영업이익 기록 - 1분기 매출액 586억 원(+25.5% YoY, 이하 YoY 생략), 영업이익105억 원(+53.5%, OPM 17.9%) 기록해 당사 추정치 대비 영업이익 14% 상회하는 호실적 기록",
+      "summary": "1Q26 Review: 당사 추정치 상회하는 영업이익 기록 - 1분기 매출액 586억 원(+25.5% YoY, 이하 YoY 생략), 영업이익105억 원(+53.5%, OPM 17.9%) 기록해 당사 추정치 대비 영업이익 14% 상회하는 호실적 기록 - 어패럴 부문 매출 +27.0% 성장해 실적 견인.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 8.2,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "본문 정보량 풍부",
+        "PDF 본문 확보"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-04-22",
+      "previous_target_price": "8,100",
+      "previous_opinion": "매수",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 17.9,
+          "unit": "%",
+          "value_pct": 17.9,
+          "source_excerpt": "5%, OPM 17.9%) 기록해 당사 추정치 대비 영업이익 14% 상회하는 호실적 기록 - 어패럴 부문 매출 +27."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    },
     {
       "source": "naver_research",
       "category": "company",
@@ -342,7 +805,99 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 16.0,
+          "unit": "%",
+          "value_pct": 16.0,
+          "source_excerpt": "4%, OPM 16.0%) 기록한 것으로 보는데, 어패럴 매출이 +24."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91640",
+      "title": "낮은 기저+날씨 효과, 무난한 서프라이즈",
+      "display_title": "감성코퍼레이션 - 낮은 기저+날씨 효과, 무난한 서프라이즈",
+      "broker": "삼성증권",
+      "published_date": "2026-04-16",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91640&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_552411000.pdf",
+      "subject": "감성코퍼레이션",
+      "views": 910,
+      "analyst": null,
+      "target_price": "7,000",
+      "opinion": "Buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1분기 영업이익 컨센서스 10% 상회 기대: 동사는 1분기 매출액 555억원(+19% y-y), 영업이익 88억원(+28%, OPM 16%)을 기록하며, 영업이익 기준 컨센서스를 10% 상회할 것으로 전망. 특히 1~2월 국내 의류 소매 판매 성장률은 각각 +10% y-y를 기록하며 약 3년 만에 두 자릿수 성장률을 회복.",
+      "summary": "1분기 영업이익 컨센서스 10% 상회 기대: 동사는 1분기 매출액 555억원(+19% y-y), 영업이익 88억원(+28%, OPM 16%)을 기록하며, 영업이익 기준 컨센서스를 10% 상회할 것으로 전망. 특히 1~2월 국내 의류 소매 판매 성장률은 각각 +10% y-y를 기록하며 약 3년 만에 두 자릿수 성장률을 회복. 이는 (1) ’25년의 낮은 기저(’24년 12월 계엄 이후 소비 둔화 영향), (2) 추위가 2월까지 지속된 우호적인 날씨 환경에 기인.",
+      "summary_engine": "rule",
+      "score": 9.1,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "우선 추적 증권사"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "subject_key": "감성코퍼레이션",
+      "ticker": null,
+      "target_price_value": 7000,
+      "opinion_normalized": "buy",
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 88.0,
+          "unit": "억원",
+          "source_excerpt": "감성코퍼레이션 - 낮은 기저+날씨 효과, 무난한 서프라이즈 낮은 기저+날씨 효과, 무난한 서프라이즈 감성코퍼레이션 1분기 영업이익 컨센서스 10% 상회 기대: 동사는 1분기 매출액 555억원(+19% y-y), 영업이익 88억원(+28%, OPM 16%)을 기록하며, 영업이익 기준 컨…",
+          "value_krw_100m": 88.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 16.0,
+          "unit": "%",
+          "value_pct": 16.0,
+          "source_excerpt": "감성코퍼레이션 - 낮은 기저+날씨 효과, 무난한 서프라이즈 낮은 기저+날씨 효과, 무난한 서프라이즈 감성코퍼레이션 1분기 영업이익 컨센서스 10% 상회 기대: 동사는 1분기 매출액 555억원(+19% y-y), 영업이익 88억원(+28%, OPM 16%)을 기록하며, 영업이익 기준 컨…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true
     }
   ],
   "timeline": [
@@ -395,10 +950,36 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 17.9,
+          "unit": "%",
+          "value_pct": 17.9,
+          "source_excerpt": "5%, OPM 17.9%) 기록해 당사 추정치 대비 영업이익 14% 상회하는 호실적 기록 - 어패럴 부문 매출 +27."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -454,7 +1035,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 16.0,
+          "unit": "%",
+          "value_pct": 16.0,
+          "source_excerpt": "4%, OPM 16.0%) 기록한 것으로 보는데, 어패럴 매출이 +24."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -494,9 +1089,45 @@
       "ticker": null,
       "target_price_value": 7000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 88.0,
+          "unit": "억원",
+          "source_excerpt": "감성코퍼레이션 - 낮은 기저+날씨 효과, 무난한 서프라이즈 낮은 기저+날씨 효과, 무난한 서프라이즈 감성코퍼레이션 1분기 영업이익 컨센서스 10% 상회 기대: 동사는 1분기 매출액 555억원(+19% y-y), 영업이익 88억원(+28%, OPM 16%)을 기록하며, 영업이익 기준 컨…",
+          "value_krw_100m": 88.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 16.0,
+          "unit": "%",
+          "value_pct": 16.0,
+          "source_excerpt": "감성코퍼레이션 - 낮은 기저+날씨 효과, 무난한 서프라이즈 낮은 기저+날씨 효과, 무난한 서프라이즈 감성코퍼레이션 1분기 영업이익 컨센서스 10% 상회 기대: 동사는 1분기 매출액 555억원(+19% y-y), 영업이익 88억원(+28%, OPM 16%)을 기록하며, 영업이익 기준 컨…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true
     }
   ]
 }

@@ -21,7 +21,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 6
+    "coverage_initiated": 6,
+    "estimate_signal_reports": 6,
+    "earnings_estimate_up": 5,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 7,
@@ -50,7 +55,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.55,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-22",
@@ -65,7 +72,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-22",
@@ -80,7 +93,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-22",
@@ -95,7 +110,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-22",
@@ -110,7 +131,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-22",
@@ -125,7 +152,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.65,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-22",
@@ -140,7 +175,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-22",
@@ -155,7 +198,365 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-22",
+        "broker": "SK증권",
+        "title": "LS ELECTRIC - 숫자로 증명하는 배전 사이클, 실질 OPM 10% ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91787&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260422_company_995691000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260422_company_995691000.pdf",
+        "target_price": "240,000",
+        "target_price_value": 240000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 10.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 10.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 10.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "LS ELECTRIC - 숫자로 증명하는 배전 사이클, 실질 OPM 10% ."
+      },
+      {
+        "date": "2026-04-22",
+        "broker": "SK증권",
+        "title": "LS ELECTRIC - 숫자로 증명하는 배전 사이클, 실질 OPM 10% ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91787&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260422_company_995691000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260422_company_995691000.pdf",
+        "target_price": "240,000",
+        "target_price_value": 240000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 10.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 9.2,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 9.2,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0%, OPM 9.2%)을 기록했다."
+      },
+      {
+        "date": "2026-04-22",
+        "broker": "교보증권",
+        "title": "LS ELECTRIC - 1Q26 Review: 떠오르는 글로벌 배전 시장의 ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91799&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260422_company_926341000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260422_company_926341000.pdf",
+        "target_price": "240,000",
+        "target_price_value": 240000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 8.6,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 8.6,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6% YoY, OPM 8.6%)로 컨센서스(Fnguide 매출액 1."
+      },
+      {
+        "date": "2026-04-22",
+        "broker": "유안타증권",
+        "title": "LS ELECTRIC - 데이터센터 수요, 실적 반영 본격화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91789&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260422_company_818069000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260422_company_818069000.pdf",
+        "target_price": "260,000",
+        "target_price_value": 260000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.65,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 9.2,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 9.2,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4%, OPM 9.2%)으로 컨센서스에 부합했다."
+      },
+      {
+        "date": "2026-04-22",
+        "broker": "유안타증권",
+        "title": "LS ELECTRIC - 데이터센터 수요, 실적 반영 본격화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91789&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260422_company_818069000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260422_company_818069000.pdf",
+        "target_price": "260,000",
+        "target_price_value": 260000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.65,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 10.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 10.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "약 100억원 중반 수준의 일회성 인건비가 반영됐으며, 이를 제외하면 실질 영업이익률은 10%를 상회하는 수준이다."
+      },
+      {
+        "date": "2026-04-22",
+        "broker": "SK증권",
+        "title": "LS ELECTRIC - 숫자로 증명하는 배전 사이클, 실질 OPM 10% ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91787&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260422_company_995691000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260422_company_995691000.pdf",
+        "target_price": "240,000",
+        "target_price_value": 240000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 10.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1266.0,
+        "unit": "억원",
+        "value_krw_100m": 1266.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4%), 영업이익 1,266 억원(YoY +45."
+      },
+      {
+        "date": "2026-04-22",
+        "broker": "교보증권",
+        "title": "LS ELECTRIC - 1Q26 Review: 떠오르는 글로벌 배전 시장의 ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91799&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260422_company_926341000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260422_company_926341000.pdf",
+        "target_price": "240,000",
+        "target_price_value": 240000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1302.0,
+        "unit": "억원",
+        "value_krw_100m": 1302.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9% YoY), 영업이익 1,302억원(+8."
+      },
+      {
+        "date": "2026-04-22",
+        "broker": "교보증권",
+        "title": "LS ELECTRIC - 1Q26 Review: 떠오르는 글로벌 배전 시장의 ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91799&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260422_company_926341000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260422_company_926341000.pdf",
+        "target_price": "240,000",
+        "target_price_value": 240000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1083.0,
+        "unit": "억원",
+        "value_krw_100m": 1083.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4조원, 영업이익 1,083억원) 대비 부합."
+      },
+      {
+        "date": "2026-04-22",
+        "broker": "유안타증권",
+        "title": "LS ELECTRIC - 데이터센터 수요, 실적 반영 본격화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91789&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260422_company_818069000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260422_company_818069000.pdf",
+        "target_price": "260,000",
+        "target_price_value": 260000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.65,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1266.0,
+        "unit": "억원",
+        "value_krw_100m": 1266.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7%), 영업이익은 1,266억원(YoY +45."
+      },
+      {
+        "date": "2026-04-22",
+        "broker": "유진투자증권",
+        "title": "LS ELECTRIC - 수주잔고 넘어의 미래",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91770&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260422_company_402235000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260422_company_402235000.pdf",
+        "target_price": "200,000",
+        "target_price_value": 200000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1266.0,
+        "unit": "억원",
+        "value_krw_100m": 1266.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4% yoy), 영업이익 1,266억원(+45% yoy) 기록, 매출액은 시장 기대치를 소폭 상회(+4%) 했지만 영업이익은 소폭 하회(-4%), 매출액의 성장에도 이익이 시장기대치에 미치지 못했던 원인은 두가지."
+      },
+      {
+        "date": "2026-04-22",
+        "broker": "유진투자증권",
+        "title": "LS ELECTRIC - 수주잔고 넘어의 미래",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91770&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260422_company_402235000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260422_company_402235000.pdf",
+        "target_price": "200,000",
+        "target_price_value": 200000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1.5,
+        "unit": "조원",
+        "value_krw_100m": 15000.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "1) 주식가격과 연동된 과거 임직원 성과급 지급에 따른 일회성 비용(현재는 폐지된 제도) 인식과, 2) 미국과 한국의 상이한 매출 인식기준에 따른 연결조정 \" 국내에서 진행률 기준으로 인식 후 미국 내에서 분기 내 인도되지 않으며 매출 인식하지 못한 경우가 해당, 미국자회사로 인도되며…"
       }
     ],
     "opinion_distribution": [
@@ -178,7 +579,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.55,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-22",
@@ -193,7 +596,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-22",
@@ -208,7 +619,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-22",
@@ -223,7 +640,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.65,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-22",
@@ -238,7 +663,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-22",
@@ -253,7 +684,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-22",
@@ -268,7 +701,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-22",
@@ -283,7 +722,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -302,7 +747,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.55,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-22",
@@ -317,7 +764,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-22",
@@ -332,7 +785,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-22",
@@ -347,7 +802,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-22",
@@ -362,7 +823,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-22",
@@ -377,7 +844,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.65,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-22",
@@ -392,7 +867,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-22",
@@ -407,7 +890,365 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-22",
+      "broker": "SK증권",
+      "title": "LS ELECTRIC - 숫자로 증명하는 배전 사이클, 실질 OPM 10% ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91787&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260422_company_995691000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260422_company_995691000.pdf",
+      "target_price": "240,000",
+      "target_price_value": 240000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 10.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 10.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 10.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "LS ELECTRIC - 숫자로 증명하는 배전 사이클, 실질 OPM 10% ."
+    },
+    {
+      "date": "2026-04-22",
+      "broker": "SK증권",
+      "title": "LS ELECTRIC - 숫자로 증명하는 배전 사이클, 실질 OPM 10% ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91787&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260422_company_995691000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260422_company_995691000.pdf",
+      "target_price": "240,000",
+      "target_price_value": 240000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 10.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 9.2,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 9.2,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0%, OPM 9.2%)을 기록했다."
+    },
+    {
+      "date": "2026-04-22",
+      "broker": "교보증권",
+      "title": "LS ELECTRIC - 1Q26 Review: 떠오르는 글로벌 배전 시장의 ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91799&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260422_company_926341000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260422_company_926341000.pdf",
+      "target_price": "240,000",
+      "target_price_value": 240000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 8.6,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 8.6,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6% YoY, OPM 8.6%)로 컨센서스(Fnguide 매출액 1."
+    },
+    {
+      "date": "2026-04-22",
+      "broker": "유안타증권",
+      "title": "LS ELECTRIC - 데이터센터 수요, 실적 반영 본격화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91789&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260422_company_818069000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260422_company_818069000.pdf",
+      "target_price": "260,000",
+      "target_price_value": 260000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.65,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 9.2,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 9.2,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4%, OPM 9.2%)으로 컨센서스에 부합했다."
+    },
+    {
+      "date": "2026-04-22",
+      "broker": "유안타증권",
+      "title": "LS ELECTRIC - 데이터센터 수요, 실적 반영 본격화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91789&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260422_company_818069000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260422_company_818069000.pdf",
+      "target_price": "260,000",
+      "target_price_value": 260000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.65,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 10.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 10.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "약 100억원 중반 수준의 일회성 인건비가 반영됐으며, 이를 제외하면 실질 영업이익률은 10%를 상회하는 수준이다."
+    },
+    {
+      "date": "2026-04-22",
+      "broker": "SK증권",
+      "title": "LS ELECTRIC - 숫자로 증명하는 배전 사이클, 실질 OPM 10% ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91787&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260422_company_995691000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260422_company_995691000.pdf",
+      "target_price": "240,000",
+      "target_price_value": 240000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 10.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1266.0,
+      "unit": "억원",
+      "value_krw_100m": 1266.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4%), 영업이익 1,266 억원(YoY +45."
+    },
+    {
+      "date": "2026-04-22",
+      "broker": "교보증권",
+      "title": "LS ELECTRIC - 1Q26 Review: 떠오르는 글로벌 배전 시장의 ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91799&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260422_company_926341000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260422_company_926341000.pdf",
+      "target_price": "240,000",
+      "target_price_value": 240000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1302.0,
+      "unit": "억원",
+      "value_krw_100m": 1302.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9% YoY), 영업이익 1,302억원(+8."
+    },
+    {
+      "date": "2026-04-22",
+      "broker": "교보증권",
+      "title": "LS ELECTRIC - 1Q26 Review: 떠오르는 글로벌 배전 시장의 ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91799&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260422_company_926341000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260422_company_926341000.pdf",
+      "target_price": "240,000",
+      "target_price_value": 240000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1083.0,
+      "unit": "억원",
+      "value_krw_100m": 1083.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4조원, 영업이익 1,083억원) 대비 부합."
+    },
+    {
+      "date": "2026-04-22",
+      "broker": "유안타증권",
+      "title": "LS ELECTRIC - 데이터센터 수요, 실적 반영 본격화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91789&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260422_company_818069000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260422_company_818069000.pdf",
+      "target_price": "260,000",
+      "target_price_value": 260000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.65,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1266.0,
+      "unit": "억원",
+      "value_krw_100m": 1266.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7%), 영업이익은 1,266억원(YoY +45."
+    },
+    {
+      "date": "2026-04-22",
+      "broker": "유진투자증권",
+      "title": "LS ELECTRIC - 수주잔고 넘어의 미래",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91770&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260422_company_402235000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260422_company_402235000.pdf",
+      "target_price": "200,000",
+      "target_price_value": 200000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1266.0,
+      "unit": "억원",
+      "value_krw_100m": 1266.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4% yoy), 영업이익 1,266억원(+45% yoy) 기록, 매출액은 시장 기대치를 소폭 상회(+4%) 했지만 영업이익은 소폭 하회(-4%), 매출액의 성장에도 이익이 시장기대치에 미치지 못했던 원인은 두가지."
+    },
+    {
+      "date": "2026-04-22",
+      "broker": "유진투자증권",
+      "title": "LS ELECTRIC - 수주잔고 넘어의 미래",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91770&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260422_company_402235000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260422_company_402235000.pdf",
+      "target_price": "200,000",
+      "target_price_value": 200000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1.5,
+      "unit": "조원",
+      "value_krw_100m": 15000.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "1) 주식가격과 연동된 과거 임직원 성과급 지급에 따른 일회성 비용(현재는 폐지된 제도) 인식과, 2) 미국과 한국의 상이한 매출 인식기준에 따른 연결조정 \" 국내에서 진행률 기준으로 인식 후 미국 내에서 분기 내 인도되지 않으며 매출 인식하지 못한 경우가 해당, 미국자회사로 인도되며…"
     }
   ],
   "opinion_distribution": [
@@ -430,7 +1271,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.55,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-22",
@@ -445,7 +1288,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-22",
@@ -460,7 +1311,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-22",
@@ -475,7 +1332,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.65,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-22",
@@ -490,7 +1355,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-22",
@@ -505,7 +1376,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-22",
@@ -520,7 +1393,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-22",
@@ -535,7 +1414,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -625,13 +1510,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -683,13 +1577,53 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1266.0,
+          "unit": "억원",
+          "source_excerpt": "4%), 영업이익 1,266 억원(YoY +45.",
+          "value_krw_100m": 1266.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 10.0,
+          "unit": "%",
+          "value_pct": 10.0,
+          "source_excerpt": "LS ELECTRIC - 숫자로 증명하는 배전 사이클, 실질 OPM 10% ."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 9.2,
+          "unit": "%",
+          "value_pct": 9.2,
+          "source_excerpt": "0%, OPM 9.2%)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -746,7 +1680,41 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1302.0,
+          "unit": "억원",
+          "source_excerpt": "9% YoY), 영업이익 1,302억원(+8.",
+          "value_krw_100m": 1302.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1083.0,
+          "unit": "억원",
+          "source_excerpt": "4조원, 영업이익 1,083억원) 대비 부합.",
+          "value_krw_100m": 1083.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 8.6,
+          "unit": "%",
+          "value_pct": 8.6,
+          "source_excerpt": "6% YoY, OPM 8.6%)로 컨센서스(Fnguide 매출액 1."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -795,13 +1763,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -850,13 +1827,57 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1266.0,
+          "unit": "억원",
+          "source_excerpt": "7%), 영업이익은 1,266억원(YoY +45.",
+          "value_krw_100m": 1266.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 9.2,
+          "unit": "%",
+          "value_pct": 9.2,
+          "source_excerpt": "4%, OPM 9.2%)으로 컨센서스에 부합했다."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 10.0,
+          "unit": "%",
+          "value_pct": 10.0,
+          "source_excerpt": "약 100억원 중반 수준의 일회성 인건비가 반영됐으며, 이를 제외하면 실질 영업이익률은 10%를 상회하는 수준이다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -905,13 +1926,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -959,13 +1989,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1266.0,
+          "unit": "억원",
+          "source_excerpt": "4% yoy), 영업이익 1,266억원(+45% yoy) 기록, 매출액은 시장 기대치를 소폭 상회(+4%) 했지만 영업이익은 소폭 하회(-4%), 매출액의 성장에도 이익이 시장기대치에 미치지 못했던 원인은 두가지.",
+          "value_krw_100m": 1266.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1.5,
+          "unit": "조원",
+          "source_excerpt": "1) 주식가격과 연동된 과거 임직원 성과급 지급에 따른 일회성 비용(현재는 폐지된 제도) 인식과, 2) 미국과 한국의 상이한 매출 인식기준에 따른 연결조정 \" 국내에서 진행률 기준으로 인식 후 미국 내에서 분기 내 인도되지 않으며 매출 인식하지 못한 경우가 해당, 미국자회사로 인도되며…",
+          "value_krw_100m": 15000.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "recent_changes": [
@@ -1019,13 +2083,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1077,13 +2150,53 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1266.0,
+          "unit": "억원",
+          "source_excerpt": "4%), 영업이익 1,266 억원(YoY +45.",
+          "value_krw_100m": 1266.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 10.0,
+          "unit": "%",
+          "value_pct": 10.0,
+          "source_excerpt": "LS ELECTRIC - 숫자로 증명하는 배전 사이클, 실질 OPM 10% ."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 9.2,
+          "unit": "%",
+          "value_pct": 9.2,
+          "source_excerpt": "0%, OPM 9.2%)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1140,7 +2253,41 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1302.0,
+          "unit": "억원",
+          "source_excerpt": "9% YoY), 영업이익 1,302억원(+8.",
+          "value_krw_100m": 1302.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1083.0,
+          "unit": "억원",
+          "source_excerpt": "4조원, 영업이익 1,083억원) 대비 부합.",
+          "value_krw_100m": 1083.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 8.6,
+          "unit": "%",
+          "value_pct": 8.6,
+          "source_excerpt": "6% YoY, OPM 8.6%)로 컨센서스(Fnguide 매출액 1."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1189,13 +2336,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1244,13 +2400,57 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1266.0,
+          "unit": "억원",
+          "source_excerpt": "7%), 영업이익은 1,266억원(YoY +45.",
+          "value_krw_100m": 1266.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 9.2,
+          "unit": "%",
+          "value_pct": 9.2,
+          "source_excerpt": "4%, OPM 9.2%)으로 컨센서스에 부합했다."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 10.0,
+          "unit": "%",
+          "value_pct": 10.0,
+          "source_excerpt": "약 100억원 중반 수준의 일회성 인건비가 반영됐으며, 이를 제외하면 실질 영업이익률은 10%를 상회하는 수준이다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1299,13 +2499,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1353,13 +2562,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1266.0,
+          "unit": "억원",
+          "source_excerpt": "4% yoy), 영업이익 1,266억원(+45% yoy) 기록, 매출액은 시장 기대치를 소폭 상회(+4%) 했지만 영업이익은 소폭 하회(-4%), 매출액의 성장에도 이익이 시장기대치에 미치지 못했던 원인은 두가지.",
+          "value_krw_100m": 1266.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1.5,
+          "unit": "조원",
+          "source_excerpt": "1) 주식가격과 연동된 과거 임직원 성과급 지급에 따른 일회성 비용(현재는 폐지된 제도) 인식과, 2) 미국과 한국의 상이한 매출 인식기준에 따른 연결조정 \" 국내에서 진행률 기준으로 인식 후 미국 내에서 분기 내 인도되지 않으며 매출 인식하지 못한 경우가 해당, 미국자회사로 인도되며…",
+          "value_krw_100m": 15000.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "timeline": [
@@ -1413,13 +2656,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1471,13 +2723,53 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1266.0,
+          "unit": "억원",
+          "source_excerpt": "4%), 영업이익 1,266 억원(YoY +45.",
+          "value_krw_100m": 1266.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 10.0,
+          "unit": "%",
+          "value_pct": 10.0,
+          "source_excerpt": "LS ELECTRIC - 숫자로 증명하는 배전 사이클, 실질 OPM 10% ."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 9.2,
+          "unit": "%",
+          "value_pct": 9.2,
+          "source_excerpt": "0%, OPM 9.2%)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1534,7 +2826,41 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1302.0,
+          "unit": "억원",
+          "source_excerpt": "9% YoY), 영업이익 1,302억원(+8.",
+          "value_krw_100m": 1302.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1083.0,
+          "unit": "억원",
+          "source_excerpt": "4조원, 영업이익 1,083억원) 대비 부합.",
+          "value_krw_100m": 1083.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 8.6,
+          "unit": "%",
+          "value_pct": 8.6,
+          "source_excerpt": "6% YoY, OPM 8.6%)로 컨센서스(Fnguide 매출액 1."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1583,13 +2909,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1638,13 +2973,57 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1266.0,
+          "unit": "억원",
+          "source_excerpt": "7%), 영업이익은 1,266억원(YoY +45.",
+          "value_krw_100m": 1266.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 9.2,
+          "unit": "%",
+          "value_pct": 9.2,
+          "source_excerpt": "4%, OPM 9.2%)으로 컨센서스에 부합했다."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 10.0,
+          "unit": "%",
+          "value_pct": 10.0,
+          "source_excerpt": "약 100억원 중반 수준의 일회성 인건비가 반영됐으며, 이를 제외하면 실질 영업이익률은 10%를 상회하는 수준이다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1693,13 +3072,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1747,13 +3135,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1266.0,
+          "unit": "억원",
+          "source_excerpt": "4% yoy), 영업이익 1,266억원(+45% yoy) 기록, 매출액은 시장 기대치를 소폭 상회(+4%) 했지만 영업이익은 소폭 하회(-4%), 매출액의 성장에도 이익이 시장기대치에 미치지 못했던 원인은 두가지.",
+          "value_krw_100m": 1266.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1.5,
+          "unit": "조원",
+          "source_excerpt": "1) 주식가격과 연동된 과거 임직원 성과급 지급에 따른 일회성 비용(현재는 폐지된 제도) 인식과, 2) 미국과 한국의 상이한 매출 인식기준에 따른 연결조정 \" 국내에서 진행률 기준으로 인식 후 미국 내에서 분기 내 인도되지 않으며 매출 인식하지 못한 경우가 해당, 미국자회사로 인도되며…",
+          "value_krw_100m": 15000.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1793,6 +3215,9 @@
       "ticker": null,
       "target_price_value": 220000,
       "opinion_normalized": "buy",
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false

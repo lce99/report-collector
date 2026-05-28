@@ -15,14 +15,19 @@
     "한화투자증권"
   ],
   "change_summary": {
-    "changed_reports": 8,
+    "changed_reports": 9,
     "target_price_up": 1,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 7
+    "coverage_initiated": 7,
+    "estimate_signal_reports": 7,
+    "earnings_estimate_up": 7,
+    "earnings_estimate_down": 2,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 8,
@@ -51,7 +56,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.55,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-21",
@@ -66,7 +79,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -81,7 +96,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-14",
@@ -96,7 +113,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -111,7 +134,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 12.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -126,7 +155,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -141,7 +178,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -156,7 +201,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.2,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-14",
@@ -171,7 +218,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -186,7 +239,431 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-16",
+        "broker": "SK증권",
+        "title": "NC - 이제부터 본 게임",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91619&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260416_company_444028000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260416_company_444028000.pdf",
+        "target_price": "360,000",
+        "target_price_value": 360000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.55,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배주주순이익",
+        "period": null,
+        "value": 819.0,
+        "unit": "억원",
+        "value_krw_100m": 819.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9% QoQ), 지배주주순이익 819억원(+116."
+      },
+      {
+        "date": "2026-04-16",
+        "broker": "SK증권",
+        "title": "NC - 이제부터 본 게임",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91619&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260416_company_444028000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260416_company_444028000.pdf",
+        "target_price": "360,000",
+        "target_price_value": 360000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.55,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 876.0,
+        "unit": "억원",
+        "value_krw_100m": 876.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3% QoQ), 영업이익 876 억원(+1,578."
+      },
+      {
+        "date": "2026-04-21",
+        "broker": "교보증권",
+        "title": "NC - 캐주얼 게임을 통한 소수 라인업 의존도 감소..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91747&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260421_company_567564000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260421_company_567564000.pdf",
+        "target_price": "340,000",
+        "target_price_value": 340000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 843.0,
+        "unit": "억원",
+        "value_krw_100m": 843.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6%), 영업이익은 843억원으로 자사주 처분에 따른 비용을 1Q26부터 반영한다고 가정하였기에 해당 사항을 고려시 영업이익 기준 시장 예상치(매출 5,180억원, 영익 936억원) 부합 전망."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "키움증권",
+        "title": "NC - 정반합 결과치",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92327&page=4",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260504_company_552665000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260504_company_552665000.pdf",
+        "target_price": "430,000",
+        "target_price_value": 430000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배주주순이익",
+        "period": "26E",
+        "value": 6182.0,
+        "unit": "억원",
+        "value_krw_100m": 6182.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "목표주가는 26E 지배주주순이익 6,182억원에 타겟 PER 15배를 적용한 결과다."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "유안타증권",
+        "title": "NC - 높아진 실적 체력",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92943&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260514_company_776643000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260514_company_776643000.pdf",
+        "target_price": "360,000",
+        "target_price_value": 360000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.8,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배순이익",
+        "period": null,
+        "value": 1488.0,
+        "unit": "억원",
+        "value_krw_100m": 1488.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "NC - 높아진 실적 체력 높아진 실적 체력 NC 1Q26 Review 매출액 5,574억원 YoY +55%, 영업이익 1,133억원 YoY +2,070%, 지배순이익 1,488억원 YoY +294%으로 컨센 상회 2/11 출시한 ‘리니지 클래식’ 매출 1,088억원(회계매출 835억…"
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "키움증권",
+        "title": "NC - 종합적 변수 고려",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92890&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260514_company_787451000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260514_company_787451000.pdf",
+        "target_price": "430,000",
+        "target_price_value": 430000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.2,
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배주주순이익",
+        "period": "26E",
+        "value": 6180.0,
+        "unit": "억원",
+        "value_krw_100m": 6180.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "목표주가는 26E 지배주주순이익 6,180억원에 타겟 PER 15배를 적용한 결과다."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "유진투자증권",
+        "title": "NC - NC IP POWER",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92904&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_61537000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_61537000.pdf",
+        "target_price": "380,000",
+        "target_price_value": 380000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 20.3,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 20.3,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "NC - NC IP POWER NC IP POWER NC \" 1분기 매출액 5,574억원(+55%yoy, +38%qoq), 영업이익 1,133억원(+2,070%yoy, OPM 20.3%)으로 컨센서스(946억원) 상회."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "교보증권",
+        "title": "NC - 특기인 MMORPG 성공중에 캐주얼 엔진 장착",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92945&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260514_company_978483000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260514_company_978483000.pdf",
+        "target_price": "375,000",
+        "target_price_value": 375000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1133.0,
+        "unit": "억원",
+        "value_krw_100m": 1133.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9%), 영업이익은 1,133억원(YoY +2,070%)으로 시장 예상치(매출 5,244원, 영익 946억원) 상회."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "미래에셋증권",
+        "title": "NC - 매수 타이밍. 모멘텀 구간 진입",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92877&page=4",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260514_company_308677000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260514_company_308677000.pdf",
+        "target_price": "400,000",
+        "target_price_value": 400000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 12.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1130.0,
+        "unit": "억원",
+        "value_krw_100m": 1130.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "모멘텀 구간 진입 NC 1Q26 Review: 컨센서스 상회 매출액 5,570억원(+55% YoY), 영업이익 1,130억원으로 컨센서스(매출액 5,240억원, 영업이익 950억원)를 각 6%, 20% 상회했다."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "미래에셋증권",
+        "title": "NC - 매수 타이밍. 모멘텀 구간 진입",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92877&page=4",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260514_company_308677000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260514_company_308677000.pdf",
+        "target_price": "400,000",
+        "target_price_value": 400000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 12.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 950.0,
+        "unit": "억원",
+        "value_krw_100m": 950.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "모멘텀 구간 진입 NC 1Q26 Review: 컨센서스 상회 매출액 5,570억원(+55% YoY), 영업이익 1,130억원으로 컨센서스(매출액 5,240억원, 영업이익 950억원)를 각 6%, 20% 상회했다."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "유안타증권",
+        "title": "NC - 높아진 실적 체력",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92943&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260514_company_776643000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260514_company_776643000.pdf",
+        "target_price": "360,000",
+        "target_price_value": 360000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.8,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1133.0,
+        "unit": "억원",
+        "value_krw_100m": 1133.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "NC - 높아진 실적 체력 높아진 실적 체력 NC 1Q26 Review 매출액 5,574억원 YoY +55%, 영업이익 1,133억원 YoY +2,070%, 지배순이익 1,488억원 YoY +294%으로 컨센 상회 2/11 출시한 ‘리니지 클래식’ 매출 1,088억원(회계매출 835억…"
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "유진투자증권",
+        "title": "NC - NC IP POWER",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92904&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_61537000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_61537000.pdf",
+        "target_price": "380,000",
+        "target_price_value": 380000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1133.0,
+        "unit": "억원",
+        "value_krw_100m": 1133.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "NC - NC IP POWER NC IP POWER NC \" 1분기 매출액 5,574억원(+55%yoy, +38%qoq), 영업이익 1,133억원(+2,070%yoy, OPM 20."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "하나증권",
+        "title": "NC - 단순 모멘텀이 아닌 구조적 성장 구간. 사야..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92926&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_208629000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_208629000.pdf",
+        "target_price": "420,000",
+        "target_price_value": 420000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1133.0,
+        "unit": "억원",
+        "value_krw_100m": 1133.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9%QoQ), 영업이익 1,133억원(+3,388."
       }
     ],
     "opinion_distribution": [
@@ -209,7 +686,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-14",
@@ -224,7 +703,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -239,7 +724,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -254,7 +747,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -269,7 +768,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -284,7 +789,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.2,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-14",
@@ -299,7 +806,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -314,7 +829,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 12.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -333,7 +854,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.55,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-21",
@@ -348,7 +877,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -363,7 +894,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-14",
@@ -378,7 +911,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -393,7 +932,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 12.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -408,7 +953,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -423,7 +976,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -438,7 +999,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.2,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-14",
@@ -453,7 +1016,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -468,7 +1037,431 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-16",
+      "broker": "SK증권",
+      "title": "NC - 이제부터 본 게임",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91619&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260416_company_444028000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260416_company_444028000.pdf",
+      "target_price": "360,000",
+      "target_price_value": 360000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.55,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배주주순이익",
+      "period": null,
+      "value": 819.0,
+      "unit": "억원",
+      "value_krw_100m": 819.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9% QoQ), 지배주주순이익 819억원(+116."
+    },
+    {
+      "date": "2026-04-16",
+      "broker": "SK증권",
+      "title": "NC - 이제부터 본 게임",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91619&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260416_company_444028000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260416_company_444028000.pdf",
+      "target_price": "360,000",
+      "target_price_value": 360000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.55,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 876.0,
+      "unit": "억원",
+      "value_krw_100m": 876.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3% QoQ), 영업이익 876 억원(+1,578."
+    },
+    {
+      "date": "2026-04-21",
+      "broker": "교보증권",
+      "title": "NC - 캐주얼 게임을 통한 소수 라인업 의존도 감소..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91747&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260421_company_567564000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260421_company_567564000.pdf",
+      "target_price": "340,000",
+      "target_price_value": 340000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 843.0,
+      "unit": "억원",
+      "value_krw_100m": 843.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6%), 영업이익은 843억원으로 자사주 처분에 따른 비용을 1Q26부터 반영한다고 가정하였기에 해당 사항을 고려시 영업이익 기준 시장 예상치(매출 5,180억원, 영익 936억원) 부합 전망."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "키움증권",
+      "title": "NC - 정반합 결과치",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92327&page=4",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260504_company_552665000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260504_company_552665000.pdf",
+      "target_price": "430,000",
+      "target_price_value": 430000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배주주순이익",
+      "period": "26E",
+      "value": 6182.0,
+      "unit": "억원",
+      "value_krw_100m": 6182.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "목표주가는 26E 지배주주순이익 6,182억원에 타겟 PER 15배를 적용한 결과다."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "유안타증권",
+      "title": "NC - 높아진 실적 체력",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92943&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260514_company_776643000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260514_company_776643000.pdf",
+      "target_price": "360,000",
+      "target_price_value": 360000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.8,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배순이익",
+      "period": null,
+      "value": 1488.0,
+      "unit": "억원",
+      "value_krw_100m": 1488.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "NC - 높아진 실적 체력 높아진 실적 체력 NC 1Q26 Review 매출액 5,574억원 YoY +55%, 영업이익 1,133억원 YoY +2,070%, 지배순이익 1,488억원 YoY +294%으로 컨센 상회 2/11 출시한 ‘리니지 클래식’ 매출 1,088억원(회계매출 835억…"
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "키움증권",
+      "title": "NC - 종합적 변수 고려",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92890&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260514_company_787451000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260514_company_787451000.pdf",
+      "target_price": "430,000",
+      "target_price_value": 430000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.2,
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배주주순이익",
+      "period": "26E",
+      "value": 6180.0,
+      "unit": "억원",
+      "value_krw_100m": 6180.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "목표주가는 26E 지배주주순이익 6,180억원에 타겟 PER 15배를 적용한 결과다."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "유진투자증권",
+      "title": "NC - NC IP POWER",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92904&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_61537000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_61537000.pdf",
+      "target_price": "380,000",
+      "target_price_value": 380000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 20.3,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 20.3,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "NC - NC IP POWER NC IP POWER NC \" 1분기 매출액 5,574억원(+55%yoy, +38%qoq), 영업이익 1,133억원(+2,070%yoy, OPM 20.3%)으로 컨센서스(946억원) 상회."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "교보증권",
+      "title": "NC - 특기인 MMORPG 성공중에 캐주얼 엔진 장착",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92945&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260514_company_978483000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260514_company_978483000.pdf",
+      "target_price": "375,000",
+      "target_price_value": 375000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1133.0,
+      "unit": "억원",
+      "value_krw_100m": 1133.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9%), 영업이익은 1,133억원(YoY +2,070%)으로 시장 예상치(매출 5,244원, 영익 946억원) 상회."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "미래에셋증권",
+      "title": "NC - 매수 타이밍. 모멘텀 구간 진입",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92877&page=4",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260514_company_308677000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260514_company_308677000.pdf",
+      "target_price": "400,000",
+      "target_price_value": 400000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 12.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1130.0,
+      "unit": "억원",
+      "value_krw_100m": 1130.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "모멘텀 구간 진입 NC 1Q26 Review: 컨센서스 상회 매출액 5,570억원(+55% YoY), 영업이익 1,130억원으로 컨센서스(매출액 5,240억원, 영업이익 950억원)를 각 6%, 20% 상회했다."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "미래에셋증권",
+      "title": "NC - 매수 타이밍. 모멘텀 구간 진입",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92877&page=4",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260514_company_308677000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260514_company_308677000.pdf",
+      "target_price": "400,000",
+      "target_price_value": 400000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 12.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 950.0,
+      "unit": "억원",
+      "value_krw_100m": 950.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "모멘텀 구간 진입 NC 1Q26 Review: 컨센서스 상회 매출액 5,570억원(+55% YoY), 영업이익 1,130억원으로 컨센서스(매출액 5,240억원, 영업이익 950억원)를 각 6%, 20% 상회했다."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "유안타증권",
+      "title": "NC - 높아진 실적 체력",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92943&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260514_company_776643000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260514_company_776643000.pdf",
+      "target_price": "360,000",
+      "target_price_value": 360000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.8,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1133.0,
+      "unit": "억원",
+      "value_krw_100m": 1133.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "NC - 높아진 실적 체력 높아진 실적 체력 NC 1Q26 Review 매출액 5,574억원 YoY +55%, 영업이익 1,133억원 YoY +2,070%, 지배순이익 1,488억원 YoY +294%으로 컨센 상회 2/11 출시한 ‘리니지 클래식’ 매출 1,088억원(회계매출 835억…"
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "유진투자증권",
+      "title": "NC - NC IP POWER",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92904&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_61537000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_61537000.pdf",
+      "target_price": "380,000",
+      "target_price_value": 380000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1133.0,
+      "unit": "억원",
+      "value_krw_100m": 1133.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "NC - NC IP POWER NC IP POWER NC \" 1분기 매출액 5,574억원(+55%yoy, +38%qoq), 영업이익 1,133억원(+2,070%yoy, OPM 20."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "하나증권",
+      "title": "NC - 단순 모멘텀이 아닌 구조적 성장 구간. 사야..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92926&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_208629000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_208629000.pdf",
+      "target_price": "420,000",
+      "target_price_value": 420000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1133.0,
+      "unit": "억원",
+      "value_krw_100m": 1133.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9%QoQ), 영업이익 1,133억원(+3,388."
     }
   ],
   "opinion_distribution": [
@@ -491,7 +1484,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-14",
@@ -506,7 +1501,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -521,7 +1522,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -536,7 +1545,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -551,7 +1566,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -566,7 +1587,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.2,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-14",
@@ -581,7 +1604,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -596,7 +1627,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 12.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -692,13 +1729,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1130.0,
+          "unit": "억원",
+          "source_excerpt": "모멘텀 구간 진입 NC 1Q26 Review: 컨센서스 상회 매출액 5,570억원(+55% YoY), 영업이익 1,130억원으로 컨센서스(매출액 5,240억원, 영업이익 950억원)를 각 6%, 20% 상회했다.",
+          "value_krw_100m": 1130.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 950.0,
+          "unit": "억원",
+          "source_excerpt": "모멘텀 구간 진입 NC 1Q26 Review: 컨센서스 상회 매출액 5,570억원(+55% YoY), 영업이익 1,130억원으로 컨센서스(매출액 5,240억원, 영업이익 950억원)를 각 6%, 20% 상회했다.",
+          "value_krw_100m": 950.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -750,13 +1817,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1133.0,
+          "unit": "억원",
+          "source_excerpt": "NC - 높아진 실적 체력 높아진 실적 체력 NC 1Q26 Review 매출액 5,574억원 YoY +55%, 영업이익 1,133억원 YoY +2,070%, 지배순이익 1,488억원 YoY +294%으로 컨센 상회 2/11 출시한 ‘리니지 클래식’ 매출 1,088억원(회계매출 835억…",
+          "value_krw_100m": 1133.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": null,
+          "value": 1488.0,
+          "unit": "억원",
+          "source_excerpt": "NC - 높아진 실적 체력 높아진 실적 체력 NC 1Q26 Review 매출액 5,574억원 YoY +55%, 영업이익 1,133억원 YoY +2,070%, 지배순이익 1,488억원 YoY +294%으로 컨센 상회 2/11 출시한 ‘리니지 클래식’ 매출 1,088억원(회계매출 835억…",
+          "value_krw_100m": 1488.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -810,7 +1911,21 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "26E",
+          "value": 6180.0,
+          "unit": "억원",
+          "source_excerpt": "목표주가는 26E 지배주주순이익 6,180억원에 타겟 PER 15배를 적용한 결과다.",
+          "value_krw_100m": 6180.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -862,13 +1977,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -918,13 +2042,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1133.0,
+          "unit": "억원",
+          "source_excerpt": "9%QoQ), 영업이익 1,133억원(+3,388.",
+          "value_krw_100m": 1133.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -973,13 +2117,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1133.0,
+          "unit": "억원",
+          "source_excerpt": "NC - NC IP POWER NC IP POWER NC \" 1분기 매출액 5,574억원(+55%yoy, +38%qoq), 영업이익 1,133억원(+2,070%yoy, OPM 20.",
+          "value_krw_100m": 1133.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 20.3,
+          "unit": "%",
+          "value_pct": 20.3,
+          "source_excerpt": "NC - NC IP POWER NC IP POWER NC \" 1분기 매출액 5,574억원(+55%yoy, +38%qoq), 영업이익 1,133억원(+2,070%yoy, OPM 20.3%)으로 컨센서스(946억원) 상회."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1028,13 +2206,33 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1133.0,
+          "unit": "억원",
+          "source_excerpt": "9%), 영업이익은 1,133억원(YoY +2,070%)으로 시장 예상치(매출 5,244원, 영익 946억원) 상회.",
+          "value_krw_100m": 1133.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1074,9 +2272,45 @@
       "ticker": null,
       "target_price_value": 360000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 876.0,
+          "unit": "억원",
+          "source_excerpt": "3% QoQ), 영업이익 876 억원(+1,578.",
+          "value_krw_100m": 876.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 819.0,
+          "unit": "억원",
+          "source_excerpt": "9% QoQ), 지배주주순이익 819억원(+116.",
+          "value_krw_100m": 819.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true
     }
   ],
   "recent_changes": [
@@ -1132,13 +2366,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1130.0,
+          "unit": "억원",
+          "source_excerpt": "모멘텀 구간 진입 NC 1Q26 Review: 컨센서스 상회 매출액 5,570억원(+55% YoY), 영업이익 1,130억원으로 컨센서스(매출액 5,240억원, 영업이익 950억원)를 각 6%, 20% 상회했다.",
+          "value_krw_100m": 1130.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 950.0,
+          "unit": "억원",
+          "source_excerpt": "모멘텀 구간 진입 NC 1Q26 Review: 컨센서스 상회 매출액 5,570억원(+55% YoY), 영업이익 1,130억원으로 컨센서스(매출액 5,240억원, 영업이익 950억원)를 각 6%, 20% 상회했다.",
+          "value_krw_100m": 950.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1190,13 +2454,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1133.0,
+          "unit": "억원",
+          "source_excerpt": "NC - 높아진 실적 체력 높아진 실적 체력 NC 1Q26 Review 매출액 5,574억원 YoY +55%, 영업이익 1,133억원 YoY +2,070%, 지배순이익 1,488억원 YoY +294%으로 컨센 상회 2/11 출시한 ‘리니지 클래식’ 매출 1,088억원(회계매출 835억…",
+          "value_krw_100m": 1133.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": null,
+          "value": 1488.0,
+          "unit": "억원",
+          "source_excerpt": "NC - 높아진 실적 체력 높아진 실적 체력 NC 1Q26 Review 매출액 5,574억원 YoY +55%, 영업이익 1,133억원 YoY +2,070%, 지배순이익 1,488억원 YoY +294%으로 컨센 상회 2/11 출시한 ‘리니지 클래식’ 매출 1,088억원(회계매출 835억…",
+          "value_krw_100m": 1488.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1248,13 +2546,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1304,13 +2611,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1133.0,
+          "unit": "억원",
+          "source_excerpt": "9%QoQ), 영업이익 1,133억원(+3,388.",
+          "value_krw_100m": 1133.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1359,13 +2686,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1133.0,
+          "unit": "억원",
+          "source_excerpt": "NC - NC IP POWER NC IP POWER NC \" 1분기 매출액 5,574억원(+55%yoy, +38%qoq), 영업이익 1,133억원(+2,070%yoy, OPM 20.",
+          "value_krw_100m": 1133.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 20.3,
+          "unit": "%",
+          "value_pct": 20.3,
+          "source_excerpt": "NC - NC IP POWER NC IP POWER NC \" 1분기 매출액 5,574억원(+55%yoy, +38%qoq), 영업이익 1,133억원(+2,070%yoy, OPM 20.3%)으로 컨센서스(946억원) 상회."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1414,13 +2775,33 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1133.0,
+          "unit": "억원",
+          "source_excerpt": "9%), 영업이익은 1,133억원(YoY +2,070%)으로 시장 예상치(매출 5,244원, 영익 946억원) 상회.",
+          "value_krw_100m": 1133.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1477,7 +2858,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "26E",
+          "value": 6182.0,
+          "unit": "억원",
+          "source_excerpt": "목표주가는 26E 지배주주순이익 6,182억원에 타겟 PER 15배를 적용한 결과다.",
+          "value_krw_100m": 6182.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1532,7 +2927,99 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 843.0,
+          "unit": "억원",
+          "source_excerpt": "6%), 영업이익은 843억원으로 자사주 처분에 따른 비용을 1Q26부터 반영한다고 가정하였기에 해당 사항을 고려시 영업이익 기준 시장 예상치(매출 5,180억원, 영익 936억원) 부합 전망.",
+          "value_krw_100m": 843.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91619",
+      "title": "이제부터 본 게임",
+      "display_title": "NC - 이제부터 본 게임",
+      "broker": "SK증권",
+      "published_date": "2026-04-16",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91619&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260416_company_444028000.pdf",
+      "subject": "NC",
+      "views": 1911,
+      "analyst": null,
+      "target_price": "360,000",
+      "opinion": "매수",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1Q26 Preview 매출액 4,944 억원(+37.2% YoY, +22.3% QoQ), 영업이익 876 억원(+1,578.1% YoY, +2,597.9% QoQ), 지배주주순이익 819억원(+116.8% YoY, 흑전 QoQ)으로 영업이익은 컨센서스에 부합하는 실적을 기록할 것으로 전망한다.",
+      "summary": "1Q26 Preview 매출액 4,944 억원(+37.2% YoY, +22.3% QoQ), 영업이익 876 억원(+1,578.1% YoY, +2,597.9% QoQ), 지배주주순이익 819억원(+116.8% YoY, 흑전 QoQ)으로 영업이익은 컨센서스에 부합하는 실적을 기록할 것으로 전망한다. 기존작들의 매출은 전분기대비 감소하나 PC 에서는 <아이온 2>와 <리니지클래식>의 성과가 반영되고, 모바일에서는 인수한 캐주얼 회사인 리후후와 스프링컴즈의 실적이 연결 반영되며 전체 매출액은 전분기대비 성장한다.",
+      "summary_engine": "rule",
+      "score": 8.55,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "subject_key": "nc",
+      "ticker": null,
+      "target_price_value": 360000,
+      "opinion_normalized": "buy",
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 876.0,
+          "unit": "억원",
+          "source_excerpt": "3% QoQ), 영업이익 876 억원(+1,578.",
+          "value_krw_100m": 876.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 819.0,
+          "unit": "억원",
+          "source_excerpt": "9% QoQ), 지배주주순이익 819억원(+116.",
+          "value_krw_100m": 819.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true
     }
   ],
   "timeline": [
@@ -1588,13 +3075,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1130.0,
+          "unit": "억원",
+          "source_excerpt": "모멘텀 구간 진입 NC 1Q26 Review: 컨센서스 상회 매출액 5,570억원(+55% YoY), 영업이익 1,130억원으로 컨센서스(매출액 5,240억원, 영업이익 950억원)를 각 6%, 20% 상회했다.",
+          "value_krw_100m": 1130.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 950.0,
+          "unit": "억원",
+          "source_excerpt": "모멘텀 구간 진입 NC 1Q26 Review: 컨센서스 상회 매출액 5,570억원(+55% YoY), 영업이익 1,130억원으로 컨센서스(매출액 5,240억원, 영업이익 950억원)를 각 6%, 20% 상회했다.",
+          "value_krw_100m": 950.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1646,13 +3163,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1133.0,
+          "unit": "억원",
+          "source_excerpt": "NC - 높아진 실적 체력 높아진 실적 체력 NC 1Q26 Review 매출액 5,574억원 YoY +55%, 영업이익 1,133억원 YoY +2,070%, 지배순이익 1,488억원 YoY +294%으로 컨센 상회 2/11 출시한 ‘리니지 클래식’ 매출 1,088억원(회계매출 835억…",
+          "value_krw_100m": 1133.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": null,
+          "value": 1488.0,
+          "unit": "억원",
+          "source_excerpt": "NC - 높아진 실적 체력 높아진 실적 체력 NC 1Q26 Review 매출액 5,574억원 YoY +55%, 영업이익 1,133억원 YoY +2,070%, 지배순이익 1,488억원 YoY +294%으로 컨센 상회 2/11 출시한 ‘리니지 클래식’ 매출 1,088억원(회계매출 835억…",
+          "value_krw_100m": 1488.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1706,7 +3257,21 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "26E",
+          "value": 6180.0,
+          "unit": "억원",
+          "source_excerpt": "목표주가는 26E 지배주주순이익 6,180억원에 타겟 PER 15배를 적용한 결과다.",
+          "value_krw_100m": 6180.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1758,13 +3323,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1814,13 +3388,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1133.0,
+          "unit": "억원",
+          "source_excerpt": "9%QoQ), 영업이익 1,133억원(+3,388.",
+          "value_krw_100m": 1133.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1869,13 +3463,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1133.0,
+          "unit": "억원",
+          "source_excerpt": "NC - NC IP POWER NC IP POWER NC \" 1분기 매출액 5,574억원(+55%yoy, +38%qoq), 영업이익 1,133억원(+2,070%yoy, OPM 20.",
+          "value_krw_100m": 1133.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 20.3,
+          "unit": "%",
+          "value_pct": 20.3,
+          "source_excerpt": "NC - NC IP POWER NC IP POWER NC \" 1분기 매출액 5,574억원(+55%yoy, +38%qoq), 영업이익 1,133억원(+2,070%yoy, OPM 20.3%)으로 컨센서스(946억원) 상회."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1924,13 +3552,33 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1133.0,
+          "unit": "억원",
+          "source_excerpt": "9%), 영업이익은 1,133억원(YoY +2,070%)으로 시장 예상치(매출 5,244원, 영익 946억원) 상회.",
+          "value_krw_100m": 1133.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1987,7 +3635,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "26E",
+          "value": 6182.0,
+          "unit": "억원",
+          "source_excerpt": "목표주가는 26E 지배주주순이익 6,182억원에 타겟 PER 15배를 적용한 결과다.",
+          "value_krw_100m": 6182.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -2042,7 +3704,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 843.0,
+          "unit": "억원",
+          "source_excerpt": "6%), 영업이익은 843억원으로 자사주 처분에 따른 비용을 1Q26부터 반영한다고 가정하였기에 해당 사항을 고려시 영업이익 기준 시장 예상치(매출 5,180억원, 영익 936억원) 부합 전망.",
+          "value_krw_100m": 843.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -2082,9 +3758,45 @@
       "ticker": null,
       "target_price_value": 360000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 876.0,
+          "unit": "억원",
+          "source_excerpt": "3% QoQ), 영업이익 876 억원(+1,578.",
+          "value_krw_100m": 876.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 819.0,
+          "unit": "억원",
+          "source_excerpt": "9% QoQ), 지배주주순이익 819억원(+116.",
+          "value_krw_100m": 819.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true
     }
   ]
 }

@@ -19,7 +19,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 5
+    "coverage_initiated": 5,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 5,
@@ -48,7 +53,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-08",
@@ -63,7 +70,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -78,7 +91,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-08",
@@ -93,7 +108,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -108,7 +129,179 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 13.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-08",
+        "broker": "유진투자증권",
+        "title": "씨에스윈드 - 비교업체들 대비 저평가 여전, 목표주가 상향",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92593&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260508_company_392641000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260508_company_392641000.pdf",
+        "target_price": "80,000",
+        "target_price_value": 80000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 743.0,
+        "unit": "억원",
+        "value_krw_100m": 743.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "씨에스윈드 - 비교업체들 대비 저평가 여전, 목표주가 상향 비교업체들 대비 저평가 여전, 목표주가 상향 씨에스윈드 \" 1분기 미국 매출 증가로 예상 부합한 실적 씨에스윈드의 1분기 매출액과 영업이익은 각각 7,111억원, 영업이익 743억원으로 컨센서스(7,210억원, 751억원)에…"
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "키움증권",
+        "title": "씨에스윈드 - 점차 선명해지는 그림",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92565&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_289894000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_289894000.pdf",
+        "target_price": "76,000",
+        "target_price_value": 76000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 743.0,
+        "unit": "억원",
+        "value_krw_100m": 743.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "씨에스윈드 - 점차 선명해지는 그림 점차 선명해지는 그림 씨에스윈드 1Q26 매출액 7,111억원(-21%YoY), 영업이익 743억원(-41%YoY)으로, 시장 기대치(751억원)에 부합하는 실적을 기록했다."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "삼성증권",
+        "title": "씨에스윈드 - 1Q26 Review; 타워 부문 수익성 개선 본격화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92965&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_726137000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_726137000.pdf",
+        "target_price": "79,000",
+        "target_price_value": 79000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 13.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 19.7,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 19.7,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7%)로 영업이익은 컨센서스(751억원, Fnguide)에 부합 씨에스윈드 (112610) 1Q26 Review; 타워 부문 수익성 개선 본격화 • 씨에스윈드 1분기 영업이익은 743억원으로 컨센서스(751억원)에 부합 • 작년 4분기 인식 예정이었던 미국 타워 매출이 1분기로 이연되…"
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "삼성증권",
+        "title": "씨에스윈드 - 1Q26 Review; 타워 부문 수익성 개선 본격화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92965&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_726137000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_726137000.pdf",
+        "target_price": "79,000",
+        "target_price_value": 79000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 13.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 8.7,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 8.7,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8%), 영업이익률 8.7%(4Q25 2."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "삼성증권",
+        "title": "씨에스윈드 - 1Q26 Review; 타워 부문 수익성 개선 본격화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92965&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_726137000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_726137000.pdf",
+        "target_price": "79,000",
+        "target_price_value": 79000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 13.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1분기",
+        "value": 743.0,
+        "unit": "억원",
+        "value_krw_100m": 743.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7%)로 영업이익은 컨센서스(751억원, Fnguide)에 부합 씨에스윈드 (112610) 1Q26 Review; 타워 부문 수익성 개선 본격화 • 씨에스윈드 1분기 영업이익은 743억원으로 컨센서스(751억원)에 부합 • 작년 4분기 인식 예정이었던 미국 타워 매출이 1분기로 이연되…"
       }
     ],
     "opinion_distribution": [
@@ -131,7 +324,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -146,7 +345,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-08",
@@ -161,7 +362,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -176,7 +383,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-14",
@@ -191,7 +400,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 13.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -210,7 +427,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-08",
@@ -225,7 +444,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -240,7 +465,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-08",
@@ -255,7 +482,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -270,7 +503,179 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 13.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-08",
+      "broker": "유진투자증권",
+      "title": "씨에스윈드 - 비교업체들 대비 저평가 여전, 목표주가 상향",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92593&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260508_company_392641000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260508_company_392641000.pdf",
+      "target_price": "80,000",
+      "target_price_value": 80000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 743.0,
+      "unit": "억원",
+      "value_krw_100m": 743.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "씨에스윈드 - 비교업체들 대비 저평가 여전, 목표주가 상향 비교업체들 대비 저평가 여전, 목표주가 상향 씨에스윈드 \" 1분기 미국 매출 증가로 예상 부합한 실적 씨에스윈드의 1분기 매출액과 영업이익은 각각 7,111억원, 영업이익 743억원으로 컨센서스(7,210억원, 751억원)에…"
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "키움증권",
+      "title": "씨에스윈드 - 점차 선명해지는 그림",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92565&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_289894000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_289894000.pdf",
+      "target_price": "76,000",
+      "target_price_value": 76000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 743.0,
+      "unit": "억원",
+      "value_krw_100m": 743.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "씨에스윈드 - 점차 선명해지는 그림 점차 선명해지는 그림 씨에스윈드 1Q26 매출액 7,111억원(-21%YoY), 영업이익 743억원(-41%YoY)으로, 시장 기대치(751억원)에 부합하는 실적을 기록했다."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "삼성증권",
+      "title": "씨에스윈드 - 1Q26 Review; 타워 부문 수익성 개선 본격화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92965&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_726137000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_726137000.pdf",
+      "target_price": "79,000",
+      "target_price_value": 79000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 13.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 19.7,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 19.7,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7%)로 영업이익은 컨센서스(751억원, Fnguide)에 부합 씨에스윈드 (112610) 1Q26 Review; 타워 부문 수익성 개선 본격화 • 씨에스윈드 1분기 영업이익은 743억원으로 컨센서스(751억원)에 부합 • 작년 4분기 인식 예정이었던 미국 타워 매출이 1분기로 이연되…"
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "삼성증권",
+      "title": "씨에스윈드 - 1Q26 Review; 타워 부문 수익성 개선 본격화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92965&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_726137000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_726137000.pdf",
+      "target_price": "79,000",
+      "target_price_value": 79000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 13.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 8.7,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 8.7,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8%), 영업이익률 8.7%(4Q25 2."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "삼성증권",
+      "title": "씨에스윈드 - 1Q26 Review; 타워 부문 수익성 개선 본격화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92965&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_726137000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_726137000.pdf",
+      "target_price": "79,000",
+      "target_price_value": 79000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 13.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1분기",
+      "value": 743.0,
+      "unit": "억원",
+      "value_krw_100m": 743.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7%)로 영업이익은 컨센서스(751억원, Fnguide)에 부합 씨에스윈드 (112610) 1Q26 Review; 타워 부문 수익성 개선 본격화 • 씨에스윈드 1분기 영업이익은 743억원으로 컨센서스(751억원)에 부합 • 작년 4분기 인식 예정이었던 미국 타워 매출이 1분기로 이연되…"
     }
   ],
   "opinion_distribution": [
@@ -293,7 +698,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -308,7 +719,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-08",
@@ -323,7 +736,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -338,7 +757,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-14",
@@ -353,7 +774,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 13.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -437,13 +866,57 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 743.0,
+          "unit": "억원",
+          "source_excerpt": "7%)로 영업이익은 컨센서스(751억원, Fnguide)에 부합 씨에스윈드 (112610) 1Q26 Review; 타워 부문 수익성 개선 본격화 • 씨에스윈드 1분기 영업이익은 743억원으로 컨센서스(751억원)에 부합 • 작년 4분기 인식 예정이었던 미국 타워 매출이 1분기로 이연되…",
+          "value_krw_100m": 743.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 19.7,
+          "unit": "%",
+          "value_pct": 19.7,
+          "source_excerpt": "7%)로 영업이익은 컨센서스(751억원, Fnguide)에 부합 씨에스윈드 (112610) 1Q26 Review; 타워 부문 수익성 개선 본격화 • 씨에스윈드 1분기 영업이익은 743억원으로 컨센서스(751억원)에 부합 • 작년 4분기 인식 예정이었던 미국 타워 매출이 1분기로 이연되…"
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 8.7,
+          "unit": "%",
+          "value_pct": 8.7,
+          "source_excerpt": "8%), 영업이익률 8.7%(4Q25 2."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -501,7 +974,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 743.0,
+          "unit": "억원",
+          "source_excerpt": "씨에스윈드 - 점차 선명해지는 그림 점차 선명해지는 그림 씨에스윈드 1Q26 매출액 7,111억원(-21%YoY), 영업이익 743억원(-41%YoY)으로, 시장 기대치(751억원)에 부합하는 실적을 기록했다.",
+          "value_krw_100m": 743.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -553,13 +1040,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -617,7 +1113,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -666,13 +1165,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 743.0,
+          "unit": "억원",
+          "source_excerpt": "씨에스윈드 - 비교업체들 대비 저평가 여전, 목표주가 상향 비교업체들 대비 저평가 여전, 목표주가 상향 씨에스윈드 \" 1분기 미국 매출 증가로 예상 부합한 실적 씨에스윈드의 1분기 매출액과 영업이익은 각각 7,111억원, 영업이익 743억원으로 컨센서스(7,210억원, 751억원)에…",
+          "value_krw_100m": 743.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
@@ -728,13 +1247,57 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 743.0,
+          "unit": "억원",
+          "source_excerpt": "7%)로 영업이익은 컨센서스(751억원, Fnguide)에 부합 씨에스윈드 (112610) 1Q26 Review; 타워 부문 수익성 개선 본격화 • 씨에스윈드 1분기 영업이익은 743억원으로 컨센서스(751억원)에 부합 • 작년 4분기 인식 예정이었던 미국 타워 매출이 1분기로 이연되…",
+          "value_krw_100m": 743.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 19.7,
+          "unit": "%",
+          "value_pct": 19.7,
+          "source_excerpt": "7%)로 영업이익은 컨센서스(751억원, Fnguide)에 부합 씨에스윈드 (112610) 1Q26 Review; 타워 부문 수익성 개선 본격화 • 씨에스윈드 1분기 영업이익은 743억원으로 컨센서스(751억원)에 부합 • 작년 4분기 인식 예정이었던 미국 타워 매출이 1분기로 이연되…"
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 8.7,
+          "unit": "%",
+          "value_pct": 8.7,
+          "source_excerpt": "8%), 영업이익률 8.7%(4Q25 2."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -792,7 +1355,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 743.0,
+          "unit": "억원",
+          "source_excerpt": "씨에스윈드 - 점차 선명해지는 그림 점차 선명해지는 그림 씨에스윈드 1Q26 매출액 7,111억원(-21%YoY), 영업이익 743억원(-41%YoY)으로, 시장 기대치(751억원)에 부합하는 실적을 기록했다.",
+          "value_krw_100m": 743.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -844,13 +1421,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -908,7 +1494,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -957,13 +1546,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 743.0,
+          "unit": "억원",
+          "source_excerpt": "씨에스윈드 - 비교업체들 대비 저평가 여전, 목표주가 상향 비교업체들 대비 저평가 여전, 목표주가 상향 씨에스윈드 \" 1분기 미국 매출 증가로 예상 부합한 실적 씨에스윈드의 1분기 매출액과 영업이익은 각각 7,111억원, 영업이익 743억원으로 컨센서스(7,210억원, 751억원)에…",
+          "value_krw_100m": 743.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -1019,13 +1628,57 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 743.0,
+          "unit": "억원",
+          "source_excerpt": "7%)로 영업이익은 컨센서스(751억원, Fnguide)에 부합 씨에스윈드 (112610) 1Q26 Review; 타워 부문 수익성 개선 본격화 • 씨에스윈드 1분기 영업이익은 743억원으로 컨센서스(751억원)에 부합 • 작년 4분기 인식 예정이었던 미국 타워 매출이 1분기로 이연되…",
+          "value_krw_100m": 743.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 19.7,
+          "unit": "%",
+          "value_pct": 19.7,
+          "source_excerpt": "7%)로 영업이익은 컨센서스(751억원, Fnguide)에 부합 씨에스윈드 (112610) 1Q26 Review; 타워 부문 수익성 개선 본격화 • 씨에스윈드 1분기 영업이익은 743억원으로 컨센서스(751억원)에 부합 • 작년 4분기 인식 예정이었던 미국 타워 매출이 1분기로 이연되…"
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 8.7,
+          "unit": "%",
+          "value_pct": 8.7,
+          "source_excerpt": "8%), 영업이익률 8.7%(4Q25 2."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1083,7 +1736,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 743.0,
+          "unit": "억원",
+          "source_excerpt": "씨에스윈드 - 점차 선명해지는 그림 점차 선명해지는 그림 씨에스윈드 1Q26 매출액 7,111억원(-21%YoY), 영업이익 743억원(-41%YoY)으로, 시장 기대치(751억원)에 부합하는 실적을 기록했다.",
+          "value_krw_100m": 743.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1135,13 +1802,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1199,7 +1875,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1248,13 +1927,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 743.0,
+          "unit": "억원",
+          "source_excerpt": "씨에스윈드 - 비교업체들 대비 저평가 여전, 목표주가 상향 비교업체들 대비 저평가 여전, 목표주가 상향 씨에스윈드 \" 1분기 미국 매출 증가로 예상 부합한 실적 씨에스윈드의 1분기 매출액과 영업이익은 각각 7,111억원, 영업이익 743억원으로 컨센서스(7,210억원, 751억원)에…",
+          "value_krw_100m": 743.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ]
 }

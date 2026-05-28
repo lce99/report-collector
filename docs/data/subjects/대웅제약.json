@@ -18,7 +18,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 4
+    "coverage_initiated": 4,
+    "estimate_signal_reports": 4,
+    "earnings_estimate_up": 0,
+    "earnings_estimate_down": 4,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 3
   },
   "target_summary": {
     "count": 4,
@@ -47,7 +52,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -62,7 +75,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-15",
@@ -77,7 +98,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-22",
@@ -92,7 +119,153 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-13",
+        "broker": "교보증권",
+        "title": "대웅제약 - ETC 조정 완료 시 매려적 구간 진입",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92846&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_599306000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_599306000.pdf",
+        "target_price": "200,000",
+        "target_price_value": 200000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 5.9,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 5.9,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6%, OPM 5.9%)으로 컨센서스 하회 내년부터 진행될 약가 인하에 대한 선제적 대응으로서 유통 채널 간소화 전략 진행 중임에 따라 매출 감소."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "키움증권",
+        "title": "대웅제약 - 기습 동면에 들어간 곰",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92804&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_795934000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_795934000.pdf",
+        "target_price": "190,000",
+        "target_price_value": 190000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 5.9,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 5.9,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8%, 영업이익률 5.9%; 컨센서스 -45% 하회, 추정치 -42% 하회)을 기록했다."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "교보증권",
+        "title": "대웅제약 - ETC 조정 완료 시 매려적 구간 진입",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92846&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_599306000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_599306000.pdf",
+        "target_price": "200,000",
+        "target_price_value": 200000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 222.0,
+        "unit": "억원",
+        "value_krw_100m": 222.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0%), 영업이익 222억원 (YoY -42."
+      },
+      {
+        "date": "2026-05-22",
+        "broker": "DS투자증권",
+        "title": "대웅제약 - 1Q26 Re: 하반기를 기대해보자",
+        "ticker": "069620",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93233&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260522_company_617023000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260522_company_617023000.pdf",
+        "target_price": "190,000",
+        "target_price_value": 190000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 3357.0,
+        "unit": "억원",
+        "value_krw_100m": 3357.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "대웅제약 - 1Q26 Re: 하반기를 기대해보자 1Q26 Re: 하반기를 기대해보자 대웅제약 1Q26 Review: 하반기를 기대해보자 별도기준 대웅제약 1Q26 매출액 및 영업이익은 약 3,357억원(+6."
       }
     ],
     "opinion_distribution": [
@@ -115,7 +288,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -130,7 +311,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-15",
@@ -145,7 +334,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-22",
@@ -160,7 +355,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       }
     ],
     "window_days": 14
@@ -179,7 +382,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -194,7 +405,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-15",
@@ -209,7 +428,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-22",
@@ -224,7 +449,153 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-13",
+      "broker": "교보증권",
+      "title": "대웅제약 - ETC 조정 완료 시 매려적 구간 진입",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92846&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_599306000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_599306000.pdf",
+      "target_price": "200,000",
+      "target_price_value": 200000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 5.9,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 5.9,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6%, OPM 5.9%)으로 컨센서스 하회 내년부터 진행될 약가 인하에 대한 선제적 대응으로서 유통 채널 간소화 전략 진행 중임에 따라 매출 감소."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "키움증권",
+      "title": "대웅제약 - 기습 동면에 들어간 곰",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92804&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_795934000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_795934000.pdf",
+      "target_price": "190,000",
+      "target_price_value": 190000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 5.9,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 5.9,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8%, 영업이익률 5.9%; 컨센서스 -45% 하회, 추정치 -42% 하회)을 기록했다."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "교보증권",
+      "title": "대웅제약 - ETC 조정 완료 시 매려적 구간 진입",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92846&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_599306000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_599306000.pdf",
+      "target_price": "200,000",
+      "target_price_value": 200000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 222.0,
+      "unit": "억원",
+      "value_krw_100m": 222.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0%), 영업이익 222억원 (YoY -42."
+    },
+    {
+      "date": "2026-05-22",
+      "broker": "DS투자증권",
+      "title": "대웅제약 - 1Q26 Re: 하반기를 기대해보자",
+      "ticker": "069620",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93233&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260522_company_617023000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260522_company_617023000.pdf",
+      "target_price": "190,000",
+      "target_price_value": 190000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 3357.0,
+      "unit": "억원",
+      "value_krw_100m": 3357.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "대웅제약 - 1Q26 Re: 하반기를 기대해보자 1Q26 Re: 하반기를 기대해보자 대웅제약 1Q26 Review: 하반기를 기대해보자 별도기준 대웅제약 1Q26 매출액 및 영업이익은 약 3,357억원(+6."
     }
   ],
   "opinion_distribution": [
@@ -247,7 +618,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -262,7 +641,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-15",
@@ -277,7 +664,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-22",
@@ -292,7 +685,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "broker_summary": [
@@ -419,12 +820,36 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3357.0,
+          "unit": "억원",
+          "source_excerpt": "대웅제약 - 1Q26 Re: 하반기를 기대해보자 1Q26 Re: 하반기를 기대해보자 대웅제약 1Q26 Review: 하반기를 기대해보자 별도기준 대웅제약 1Q26 매출액 및 영업이익은 약 3,357억원(+6.",
+          "value_krw_100m": 3357.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -474,13 +899,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -530,13 +964,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 5.9,
+          "unit": "%",
+          "value_pct": 5.9,
+          "source_excerpt": "8%, 영업이익률 5.9%; 컨센서스 -45% 하회, 추정치 -42% 하회)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -585,13 +1043,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 222.0,
+          "unit": "억원",
+          "source_excerpt": "0%), 영업이익 222억원 (YoY -42.",
+          "value_krw_100m": 222.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 5.9,
+          "unit": "%",
+          "value_pct": 5.9,
+          "source_excerpt": "6%, OPM 5.9%)으로 컨센서스 하회 내년부터 진행될 약가 인하에 대한 선제적 대응으로서 유통 채널 간소화 전략 진행 중임에 따라 매출 감소."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "recent_changes": [
@@ -694,12 +1186,36 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3357.0,
+          "unit": "억원",
+          "source_excerpt": "대웅제약 - 1Q26 Re: 하반기를 기대해보자 1Q26 Re: 하반기를 기대해보자 대웅제약 1Q26 Review: 하반기를 기대해보자 별도기준 대웅제약 1Q26 매출액 및 영업이익은 약 3,357억원(+6.",
+          "value_krw_100m": 3357.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -749,13 +1265,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -805,13 +1330,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 5.9,
+          "unit": "%",
+          "value_pct": 5.9,
+          "source_excerpt": "8%, 영업이익률 5.9%; 컨센서스 -45% 하회, 추정치 -42% 하회)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -860,13 +1409,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 222.0,
+          "unit": "억원",
+          "source_excerpt": "0%), 영업이익 222억원 (YoY -42.",
+          "value_krw_100m": 222.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 5.9,
+          "unit": "%",
+          "value_pct": 5.9,
+          "source_excerpt": "6%, OPM 5.9%)으로 컨센서스 하회 내년부터 진행될 약가 인하에 대한 선제적 대응으로서 유통 채널 간소화 전략 진행 중임에 따라 매출 감소."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "timeline": [
@@ -969,12 +1552,36 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3357.0,
+          "unit": "억원",
+          "source_excerpt": "대웅제약 - 1Q26 Re: 하반기를 기대해보자 1Q26 Re: 하반기를 기대해보자 대웅제약 1Q26 Review: 하반기를 기대해보자 별도기준 대웅제약 1Q26 매출액 및 영업이익은 약 3,357억원(+6.",
+          "value_krw_100m": 3357.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1024,13 +1631,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1080,13 +1696,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 5.9,
+          "unit": "%",
+          "value_pct": 5.9,
+          "source_excerpt": "8%, 영업이익률 5.9%; 컨센서스 -45% 하회, 추정치 -42% 하회)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1135,13 +1775,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 222.0,
+          "unit": "억원",
+          "source_excerpt": "0%), 영업이익 222억원 (YoY -42.",
+          "value_krw_100m": 222.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 5.9,
+          "unit": "%",
+          "value_pct": 5.9,
+          "source_excerpt": "6%, OPM 5.9%)으로 컨센서스 하회 내년부터 진행될 약가 인하에 대한 선제적 대응으로서 유통 채널 간소화 전략 진행 중임에 따라 매출 감소."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ]
 }

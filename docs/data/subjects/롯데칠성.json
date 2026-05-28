@@ -19,7 +19,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 5
+    "coverage_initiated": 5,
+    "estimate_signal_reports": 4,
+    "earnings_estimate_up": 4,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 5,
@@ -48,7 +53,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-06",
@@ -63,7 +76,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-06",
@@ -78,7 +97,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-06",
@@ -93,7 +114,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-06",
@@ -108,7 +137,117 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-04",
+        "broker": "한화투자증권",
+        "title": "롯데칠성 - 비우호적인 환경에서도 확인된 이익 방어력",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92444&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260504_company_591195000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260504_company_591195000.pdf",
+        "target_price": "160,000",
+        "target_price_value": 160000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 478.0,
+        "unit": "억원",
+        "value_krw_100m": 478.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5% QoQ), 영업이익은 478억원(+91."
+      },
+      {
+        "date": "2026-05-06",
+        "broker": "키움증권",
+        "title": "롯데칠성 - 신제품 성과가 필요한 때",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92450&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260506_company_696963000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260506_company_696963000.pdf",
+        "target_price": "170,000",
+        "target_price_value": 170000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1분기",
+        "value": 478.0,
+        "unit": "억원",
+        "value_krw_100m": 478.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "롯데칠성 - 신제품 성과가 필요한 때 신제품 성과가 필요한 때 롯데칠성 1분기 영업이익 478억원으로 시장 기대치 상회 롯데칠성의 1분기 연결기준 영업이익은 478억원(+91% YoY)으로 시장 기대치를 상회하였다."
+      },
+      {
+        "date": "2026-05-06",
+        "broker": "키움증권",
+        "title": "롯데칠성 - 신제품 성과가 필요한 때",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92450&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260506_company_696963000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260506_company_696963000.pdf",
+        "target_price": "170,000",
+        "target_price_value": 170000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 478.0,
+        "unit": "억원",
+        "value_krw_100m": 478.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "롯데칠성 - 신제품 성과가 필요한 때 신제품 성과가 필요한 때 롯데칠성 1분기 영업이익 478억원으로 시장 기대치 상회 롯데칠성의 1분기 연결기준 영업이익은 478억원(+91% YoY)으로 시장 기대치를 상회하였다."
       }
     ],
     "opinion_distribution": [
@@ -131,7 +270,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-06",
@@ -146,7 +293,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-06",
@@ -161,7 +314,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-06",
@@ -176,7 +335,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-06",
@@ -191,7 +352,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -210,7 +379,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-06",
@@ -225,7 +402,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-06",
@@ -240,7 +423,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-06",
@@ -255,7 +440,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-06",
@@ -270,7 +463,117 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-04",
+      "broker": "한화투자증권",
+      "title": "롯데칠성 - 비우호적인 환경에서도 확인된 이익 방어력",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92444&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260504_company_591195000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260504_company_591195000.pdf",
+      "target_price": "160,000",
+      "target_price_value": 160000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 478.0,
+      "unit": "억원",
+      "value_krw_100m": 478.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5% QoQ), 영업이익은 478억원(+91."
+    },
+    {
+      "date": "2026-05-06",
+      "broker": "키움증권",
+      "title": "롯데칠성 - 신제품 성과가 필요한 때",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92450&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260506_company_696963000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260506_company_696963000.pdf",
+      "target_price": "170,000",
+      "target_price_value": 170000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1분기",
+      "value": 478.0,
+      "unit": "억원",
+      "value_krw_100m": 478.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "롯데칠성 - 신제품 성과가 필요한 때 신제품 성과가 필요한 때 롯데칠성 1분기 영업이익 478억원으로 시장 기대치 상회 롯데칠성의 1분기 연결기준 영업이익은 478억원(+91% YoY)으로 시장 기대치를 상회하였다."
+    },
+    {
+      "date": "2026-05-06",
+      "broker": "키움증권",
+      "title": "롯데칠성 - 신제품 성과가 필요한 때",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92450&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260506_company_696963000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260506_company_696963000.pdf",
+      "target_price": "170,000",
+      "target_price_value": 170000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 478.0,
+      "unit": "억원",
+      "value_krw_100m": 478.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "롯데칠성 - 신제품 성과가 필요한 때 신제품 성과가 필요한 때 롯데칠성 1분기 영업이익 478억원으로 시장 기대치 상회 롯데칠성의 1분기 연결기준 영업이익은 478억원(+91% YoY)으로 시장 기대치를 상회하였다."
     }
   ],
   "opinion_distribution": [
@@ -293,7 +596,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-06",
@@ -308,7 +619,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-06",
@@ -323,7 +640,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-06",
@@ -338,7 +661,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-06",
@@ -353,7 +678,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -435,13 +768,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 478.0,
+          "unit": "억원",
+          "source_excerpt": "롯데칠성 - 신제품 성과가 필요한 때 신제품 성과가 필요한 때 롯데칠성 1분기 영업이익 478억원으로 시장 기대치 상회 롯데칠성의 1분기 연결기준 영업이익은 478억원(+91% YoY)으로 시장 기대치를 상회하였다.",
+          "value_krw_100m": 478.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 478.0,
+          "unit": "억원",
+          "source_excerpt": "롯데칠성 - 신제품 성과가 필요한 때 신제품 성과가 필요한 때 롯데칠성 1분기 영업이익 478억원으로 시장 기대치 상회 롯데칠성의 1분기 연결기준 영업이익은 478억원(+91% YoY)으로 시장 기대치를 상회하였다.",
+          "value_krw_100m": 478.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -498,7 +865,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -549,13 +919,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -605,13 +984,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -661,13 +1049,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 478.0,
+          "unit": "억원",
+          "source_excerpt": "5% QoQ), 영업이익은 478억원(+91.",
+          "value_krw_100m": 478.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "recent_changes": [
@@ -721,13 +1133,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 478.0,
+          "unit": "억원",
+          "source_excerpt": "롯데칠성 - 신제품 성과가 필요한 때 신제품 성과가 필요한 때 롯데칠성 1분기 영업이익 478억원으로 시장 기대치 상회 롯데칠성의 1분기 연결기준 영업이익은 478억원(+91% YoY)으로 시장 기대치를 상회하였다.",
+          "value_krw_100m": 478.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 478.0,
+          "unit": "억원",
+          "source_excerpt": "롯데칠성 - 신제품 성과가 필요한 때 신제품 성과가 필요한 때 롯데칠성 1분기 영업이익 478억원으로 시장 기대치 상회 롯데칠성의 1분기 연결기준 영업이익은 478억원(+91% YoY)으로 시장 기대치를 상회하였다.",
+          "value_krw_100m": 478.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -784,7 +1230,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -835,13 +1284,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -891,13 +1349,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -947,13 +1414,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 478.0,
+          "unit": "억원",
+          "source_excerpt": "5% QoQ), 영업이익은 478억원(+91.",
+          "value_krw_100m": 478.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "timeline": [
@@ -1007,13 +1498,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 478.0,
+          "unit": "억원",
+          "source_excerpt": "롯데칠성 - 신제품 성과가 필요한 때 신제품 성과가 필요한 때 롯데칠성 1분기 영업이익 478억원으로 시장 기대치 상회 롯데칠성의 1분기 연결기준 영업이익은 478억원(+91% YoY)으로 시장 기대치를 상회하였다.",
+          "value_krw_100m": 478.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 478.0,
+          "unit": "억원",
+          "source_excerpt": "롯데칠성 - 신제품 성과가 필요한 때 신제품 성과가 필요한 때 롯데칠성 1분기 영업이익 478억원으로 시장 기대치 상회 롯데칠성의 1분기 연결기준 영업이익은 478억원(+91% YoY)으로 시장 기대치를 상회하였다.",
+          "value_krw_100m": 478.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -1070,7 +1595,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1121,13 +1649,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1177,13 +1714,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1233,13 +1779,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 478.0,
+          "unit": "억원",
+          "source_excerpt": "5% QoQ), 영업이익은 478억원(+91.",
+          "value_krw_100m": 478.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ]
 }

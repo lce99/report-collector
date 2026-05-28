@@ -13,14 +13,19 @@
     "한화투자증권"
   ],
   "change_summary": {
-    "changed_reports": 5,
+    "changed_reports": 6,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 5
+    "coverage_initiated": 5,
+    "estimate_signal_reports": 4,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 6,
@@ -49,7 +54,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.0,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -64,7 +75,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -79,7 +98,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -94,7 +119,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -109,7 +140,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-06",
@@ -124,7 +157,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.05,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-21",
@@ -139,7 +174,197 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-16",
+        "broker": "삼성증권",
+        "title": "F&F - 실적은 무난, 기대감은 낮아진 국면",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91638&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_110383000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_110383000.pdf",
+        "target_price": "85,000",
+        "target_price_value": 85000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.0,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1342.0,
+        "unit": "억원",
+        "value_krw_100m": 1342.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "F&F - 실적은 무난, 기대감은 낮아진 국면 실적은 무난, 기대감은 낮아진 국면 F&F 1Q26 컨센서스 부합 전망: 동사는 1분기 매출액 5,350억원(+6% y-y), 영업이익 1,342억원(+9%)을 기록하며, 매출액과 영업이익 모두 컨센서스에 부합할 전망."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "SK증권",
+        "title": "F&F - 국내와 중국 모두 좋았다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92351&page=4",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260504_company_431267000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260504_company_431267000.pdf",
+        "target_price": "94,000",
+        "target_price_value": 94000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 27.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 27.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "F&F - 국내와 중국 모두 좋았다 국내와 중국 모두 좋았다 F&F 1Q26 Review: 영업이익 시장 컨센서스 상회 F&F 는 1 분기에 매출액 5,609 억 원(+11% YoY, 이하 YoY 생략), 영업이익 1,535억 원(+24%, OPM 27%) 기록해 영업이익 기준 시장…"
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "미래에셋증권",
+        "title": "F&F - 외국인이 견인하는 레버리지",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92372&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_165461000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_165461000.pdf",
+        "target_price": "100,000",
+        "target_price_value": 100000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.9,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 27.4,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 27.4,
+        "value_won": null,
+        "change_pctp": 2.9,
+        "source_excerpt": "주력 브랜드 MLB의 외국인 수요 채널이(인바운드 외국인 상권 매장 YoY +70%이상, 중국 수출 YoY +17%) 매출 성장을 주도하였으며, 고마진 채널과 제품 믹스 상승으로 이어져 이익 레버리지가 확인되었다(OPM 27.4%, YoY +2."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "미래에셋증권",
+        "title": "F&F - 외국인이 견인하는 레버리지",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92372&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_165461000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_165461000.pdf",
+        "target_price": "100,000",
+        "target_price_value": 100000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.9,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1535.0,
+        "unit": "억원",
+        "value_krw_100m": 1535.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "F&F - 외국인이 견인하는 레버리지 외국인이 견인하는 레버리지 F&F 1Q26 Review: 외국인 수요 채널 호조 F&F의 1Q26 실적은 매출액 5,609억원(YoY +11%), 영업이익 1,535억원(YoY +24%)으로 기대치를 상회하였다."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "한화투자증권",
+        "title": "F&F - 1Q26 Review : 국내외에서 확인된 MLB의 브랜..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92430&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260504_company_272333000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260504_company_272333000.pdf",
+        "target_price": "105,000",
+        "target_price_value": 105000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1535.0,
+        "unit": "억원",
+        "value_krw_100m": 1535.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9% YoY), 영업이익 1,535억원(+24."
+      },
+      {
+        "date": "2026-05-21",
+        "broker": "유진투자증권",
+        "title": "F&F - 1Q26 Review: 외국인 관광객 고맙습니다",
+        "ticker": "383220",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93191&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260521_company_986541000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260521_company_986541000.pdf",
+        "target_price": "100,000",
+        "target_price_value": 100000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1535.0,
+        "unit": "억원",
+        "value_krw_100m": 1535.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9%, 이하 yoy), 영업이익 1,535억원(+24."
       }
     ],
     "opinion_distribution": [
@@ -162,7 +387,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -181,7 +408,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.0,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -196,7 +429,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -211,7 +452,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -226,7 +473,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -241,7 +494,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-06",
@@ -256,7 +511,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.05,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-21",
@@ -271,7 +528,197 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-16",
+      "broker": "삼성증권",
+      "title": "F&F - 실적은 무난, 기대감은 낮아진 국면",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91638&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_110383000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_110383000.pdf",
+      "target_price": "85,000",
+      "target_price_value": 85000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.0,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1342.0,
+      "unit": "억원",
+      "value_krw_100m": 1342.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "F&F - 실적은 무난, 기대감은 낮아진 국면 실적은 무난, 기대감은 낮아진 국면 F&F 1Q26 컨센서스 부합 전망: 동사는 1분기 매출액 5,350억원(+6% y-y), 영업이익 1,342억원(+9%)을 기록하며, 매출액과 영업이익 모두 컨센서스에 부합할 전망."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "SK증권",
+      "title": "F&F - 국내와 중국 모두 좋았다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92351&page=4",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260504_company_431267000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260504_company_431267000.pdf",
+      "target_price": "94,000",
+      "target_price_value": 94000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 27.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 27.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "F&F - 국내와 중국 모두 좋았다 국내와 중국 모두 좋았다 F&F 1Q26 Review: 영업이익 시장 컨센서스 상회 F&F 는 1 분기에 매출액 5,609 억 원(+11% YoY, 이하 YoY 생략), 영업이익 1,535억 원(+24%, OPM 27%) 기록해 영업이익 기준 시장…"
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "미래에셋증권",
+      "title": "F&F - 외국인이 견인하는 레버리지",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92372&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_165461000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_165461000.pdf",
+      "target_price": "100,000",
+      "target_price_value": 100000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.9,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 27.4,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 27.4,
+      "value_won": null,
+      "change_pctp": 2.9,
+      "source_excerpt": "주력 브랜드 MLB의 외국인 수요 채널이(인바운드 외국인 상권 매장 YoY +70%이상, 중국 수출 YoY +17%) 매출 성장을 주도하였으며, 고마진 채널과 제품 믹스 상승으로 이어져 이익 레버리지가 확인되었다(OPM 27.4%, YoY +2."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "미래에셋증권",
+      "title": "F&F - 외국인이 견인하는 레버리지",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92372&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_165461000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_165461000.pdf",
+      "target_price": "100,000",
+      "target_price_value": 100000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.9,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1535.0,
+      "unit": "억원",
+      "value_krw_100m": 1535.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "F&F - 외국인이 견인하는 레버리지 외국인이 견인하는 레버리지 F&F 1Q26 Review: 외국인 수요 채널 호조 F&F의 1Q26 실적은 매출액 5,609억원(YoY +11%), 영업이익 1,535억원(YoY +24%)으로 기대치를 상회하였다."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "한화투자증권",
+      "title": "F&F - 1Q26 Review : 국내외에서 확인된 MLB의 브랜..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92430&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260504_company_272333000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260504_company_272333000.pdf",
+      "target_price": "105,000",
+      "target_price_value": 105000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1535.0,
+      "unit": "억원",
+      "value_krw_100m": 1535.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9% YoY), 영업이익 1,535억원(+24."
+    },
+    {
+      "date": "2026-05-21",
+      "broker": "유진투자증권",
+      "title": "F&F - 1Q26 Review: 외국인 관광객 고맙습니다",
+      "ticker": "383220",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93191&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260521_company_986541000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260521_company_986541000.pdf",
+      "target_price": "100,000",
+      "target_price_value": 100000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1535.0,
+      "unit": "억원",
+      "value_krw_100m": 1535.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9%, 이하 yoy), 영업이익 1,535억원(+24."
     }
   ],
   "opinion_distribution": [
@@ -294,7 +741,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -426,7 +875,21 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1535.0,
+          "unit": "억원",
+          "source_excerpt": "9%, 이하 yoy), 영업이익 1,535억원(+24.",
+          "value_krw_100m": 1535.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -480,7 +943,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -531,13 +997,44 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1535.0,
+          "unit": "억원",
+          "source_excerpt": "F&F - 외국인이 견인하는 레버리지 외국인이 견인하는 레버리지 F&F 1Q26 Review: 외국인 수요 채널 호조 F&F의 1Q26 실적은 매출액 5,609억원(YoY +11%), 영업이익 1,535억원(YoY +24%)으로 기대치를 상회하였다.",
+          "value_krw_100m": 1535.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 27.4,
+          "unit": "%",
+          "value_pct": 27.4,
+          "source_excerpt": "주력 브랜드 MLB의 외국인 수요 채널이(인바운드 외국인 상권 매장 YoY +70%이상, 중국 수출 YoY +17%) 매출 성장을 주도하였으며, 고마진 채널과 제품 믹스 상승으로 이어져 이익 레버리지가 확인되었다(OPM 27.4%, YoY +2.",
+          "change_pctp": 2.9
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -593,7 +1090,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1535.0,
+          "unit": "억원",
+          "source_excerpt": "9% YoY), 영업이익 1,535억원(+24.",
+          "value_krw_100m": 1535.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -643,13 +1154,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 27.0,
+          "unit": "%",
+          "value_pct": 27.0,
+          "source_excerpt": "F&F - 국내와 중국 모두 좋았다 국내와 중국 모두 좋았다 F&F 1Q26 Review: 영업이익 시장 컨센서스 상회 F&F 는 1 분기에 매출액 5,609 억 원(+11% YoY, 이하 YoY 생략), 영업이익 1,535억 원(+24%, OPM 27%) 기록해 영업이익 기준 시장…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -689,9 +1224,31 @@
       "ticker": null,
       "target_price_value": 85000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1342.0,
+          "unit": "억원",
+          "source_excerpt": "F&F - 실적은 무난, 기대감은 낮아진 국면 실적은 무난, 기대감은 낮아진 국면 F&F 1Q26 컨센서스 부합 전망: 동사는 1분기 매출액 5,350억원(+6% y-y), 영업이익 1,342억원(+9%)을 기록하며, 매출액과 영업이익 모두 컨센서스에 부합할 전망.",
+          "value_krw_100m": 1342.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "change_types": [
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true
     }
   ],
   "recent_changes": [
@@ -791,7 +1348,21 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1535.0,
+          "unit": "억원",
+          "source_excerpt": "9%, 이하 yoy), 영업이익 1,535억원(+24.",
+          "value_krw_100m": 1535.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -843,13 +1414,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -900,13 +1480,44 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1535.0,
+          "unit": "억원",
+          "source_excerpt": "F&F - 외국인이 견인하는 레버리지 외국인이 견인하는 레버리지 F&F 1Q26 Review: 외국인 수요 채널 호조 F&F의 1Q26 실적은 매출액 5,609억원(YoY +11%), 영업이익 1,535억원(YoY +24%)으로 기대치를 상회하였다.",
+          "value_krw_100m": 1535.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 27.4,
+          "unit": "%",
+          "value_pct": 27.4,
+          "source_excerpt": "주력 브랜드 MLB의 외국인 수요 채널이(인바운드 외국인 상권 매장 YoY +70%이상, 중국 수출 YoY +17%) 매출 성장을 주도하였으며, 고마진 채널과 제품 믹스 상승으로 이어져 이익 레버리지가 확인되었다(OPM 27.4%, YoY +2.",
+          "change_pctp": 2.9
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -962,7 +1573,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1535.0,
+          "unit": "억원",
+          "source_excerpt": "9% YoY), 영업이익 1,535억원(+24.",
+          "value_krw_100m": 1535.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1012,13 +1637,101 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 27.0,
+          "unit": "%",
+          "value_pct": 27.0,
+          "source_excerpt": "F&F - 국내와 중국 모두 좋았다 국내와 중국 모두 좋았다 F&F 1Q26 Review: 영업이익 시장 컨센서스 상회 F&F 는 1 분기에 매출액 5,609 억 원(+11% YoY, 이하 YoY 생략), 영업이익 1,535억 원(+24%, OPM 27%) 기록해 영업이익 기준 시장…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91638",
+      "title": "실적은 무난, 기대감은 낮아진 국면",
+      "display_title": "F&F - 실적은 무난, 기대감은 낮아진 국면",
+      "broker": "삼성증권",
+      "published_date": "2026-04-16",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91638&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_110383000.pdf",
+      "subject": "F&F",
+      "views": 844,
+      "analyst": null,
+      "target_price": "85,000",
+      "opinion": "Buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1Q26 컨센서스 부합 전망: 동사는 1분기 매출액 5,350억원(+6% y-y), 영업이익 1,342억원(+9%)을 기록하며, 매출액과 영업이익 모두 컨센서스에 부합할 전망. 사업부별로는 (1) MLB 성인(국내+면세) 852억원(+1%), (2) MLB 키즈(국내+면세) 194억원(+2%), (3) 디스커버리 840억원(flat), (4) F&F 중국 2,792억원(+8%) 전망.",
+      "summary": "1Q26 컨센서스 부합 전망: 동사는 1분기 매출액 5,350억원(+6% y-y), 영업이익 1,342억원(+9%)을 기록하며, 매출액과 영업이익 모두 컨센서스에 부합할 전망. 사업부별로는 (1) MLB 성인(국내+면세) 852억원(+1%), (2) MLB 키즈(국내+면세) 194억원(+2%), (3) 디스커버리 840억원(flat), (4) F&F 중국 2,792억원(+8%) 전망. 26년 1~2월 국내 및 중국 의류 소매 판매는 월별 약 10% 성장률을 기록, 이에 따라 동사의 국내 및 중국 사업부 모두 안정적인 외형 성장 지속 전망.",
+      "summary_engine": "rule",
+      "score": 10.0,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "우선 추적 증권사"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "subject_key": "f-f",
+      "ticker": null,
+      "target_price_value": 85000,
+      "opinion_normalized": "buy",
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1342.0,
+          "unit": "억원",
+          "source_excerpt": "F&F - 실적은 무난, 기대감은 낮아진 국면 실적은 무난, 기대감은 낮아진 국면 F&F 1Q26 컨센서스 부합 전망: 동사는 1분기 매출액 5,350억원(+6% y-y), 영업이익 1,342억원(+9%)을 기록하며, 매출액과 영업이익 모두 컨센서스에 부합할 전망.",
+          "value_krw_100m": 1342.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "change_types": [
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true
     }
   ],
   "timeline": [
@@ -1118,7 +1831,21 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1535.0,
+          "unit": "억원",
+          "source_excerpt": "9%, 이하 yoy), 영업이익 1,535억원(+24.",
+          "value_krw_100m": 1535.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1172,7 +1899,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1224,13 +1954,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1281,13 +2020,44 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1535.0,
+          "unit": "억원",
+          "source_excerpt": "F&F - 외국인이 견인하는 레버리지 외국인이 견인하는 레버리지 F&F 1Q26 Review: 외국인 수요 채널 호조 F&F의 1Q26 실적은 매출액 5,609억원(YoY +11%), 영업이익 1,535억원(YoY +24%)으로 기대치를 상회하였다.",
+          "value_krw_100m": 1535.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 27.4,
+          "unit": "%",
+          "value_pct": 27.4,
+          "source_excerpt": "주력 브랜드 MLB의 외국인 수요 채널이(인바운드 외국인 상권 매장 YoY +70%이상, 중국 수출 YoY +17%) 매출 성장을 주도하였으며, 고마진 채널과 제품 믹스 상승으로 이어져 이익 레버리지가 확인되었다(OPM 27.4%, YoY +2.",
+          "change_pctp": 2.9
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1343,7 +2113,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1535.0,
+          "unit": "억원",
+          "source_excerpt": "9% YoY), 영업이익 1,535억원(+24.",
+          "value_krw_100m": 1535.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1393,13 +2177,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 27.0,
+          "unit": "%",
+          "value_pct": 27.0,
+          "source_excerpt": "F&F - 국내와 중국 모두 좋았다 국내와 중국 모두 좋았다 F&F 1Q26 Review: 영업이익 시장 컨센서스 상회 F&F 는 1 분기에 매출액 5,609 억 원(+11% YoY, 이하 YoY 생략), 영업이익 1,535억 원(+24%, OPM 27%) 기록해 영업이익 기준 시장…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1439,9 +2247,31 @@
       "ticker": null,
       "target_price_value": 85000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1342.0,
+          "unit": "억원",
+          "source_excerpt": "F&F - 실적은 무난, 기대감은 낮아진 국면 실적은 무난, 기대감은 낮아진 국면 F&F 1Q26 컨센서스 부합 전망: 동사는 1분기 매출액 5,350억원(+6% y-y), 영업이익 1,342억원(+9%)을 기록하며, 매출액과 영업이익 모두 컨센서스에 부합할 전망.",
+          "value_krw_100m": 1342.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "change_types": [
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true
     }
   ]
 }

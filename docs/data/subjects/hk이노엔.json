@@ -16,7 +16,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 2
+    "coverage_initiated": 2,
+    "estimate_signal_reports": 2,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 2,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 2,
@@ -45,7 +50,17 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -60,7 +75,131 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-29",
+        "broker": "iM증권",
+        "title": "HK이노엔 - 편안하게 봐도 좋은 시점",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92101&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260429_company_831308000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260429_company_831308000.pdf",
+        "target_price": "70,000",
+        "target_price_value": 70000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 13.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 13.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "HK이노엔 - 편안하게 봐도 좋은 시점 편안하게 봐도 좋은 시점 HK이노엔 회계처리 기준 변경에 따른 영업이익 컨센서스 상회 동사의 1분기 매출 및 영업이익은 각각 2,587억원(YoY +5%) 및 332억원(YoY +31%, OPM 13%)이다."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "키움증권",
+        "title": "HK이노엔 - 신호등 바뀌었어 Green Green",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92098&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_882072000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_882072000.pdf",
+        "target_price": "69,000",
+        "target_price_value": 69000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 12.8,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 12.8,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%, 영업이익률 12.8%; 컨센서스 대비 +12."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "iM증권",
+        "title": "HK이노엔 - 편안하게 봐도 좋은 시점",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92101&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260429_company_831308000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260429_company_831308000.pdf",
+        "target_price": "70,000",
+        "target_price_value": 70000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 295.0,
+        "unit": "억원",
+        "value_krw_100m": 295.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "시장 컨센서스(매출 2,637억원, 영업이익 295억원) 대비 매출은 하회했고 이익은 상회했다."
       }
     ],
     "opinion_distribution": [
@@ -83,7 +222,17 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -98,7 +247,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       }
     ],
     "window_days": 14
@@ -117,7 +278,17 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -132,7 +303,131 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-29",
+      "broker": "iM증권",
+      "title": "HK이노엔 - 편안하게 봐도 좋은 시점",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92101&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260429_company_831308000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260429_company_831308000.pdf",
+      "target_price": "70,000",
+      "target_price_value": 70000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 13.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 13.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "HK이노엔 - 편안하게 봐도 좋은 시점 편안하게 봐도 좋은 시점 HK이노엔 회계처리 기준 변경에 따른 영업이익 컨센서스 상회 동사의 1분기 매출 및 영업이익은 각각 2,587억원(YoY +5%) 및 332억원(YoY +31%, OPM 13%)이다."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "키움증권",
+      "title": "HK이노엔 - 신호등 바뀌었어 Green Green",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92098&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_882072000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_882072000.pdf",
+      "target_price": "69,000",
+      "target_price_value": 69000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 12.8,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 12.8,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%, 영업이익률 12.8%; 컨센서스 대비 +12."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "iM증권",
+      "title": "HK이노엔 - 편안하게 봐도 좋은 시점",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92101&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260429_company_831308000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260429_company_831308000.pdf",
+      "target_price": "70,000",
+      "target_price_value": 70000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 295.0,
+      "unit": "억원",
+      "value_krw_100m": 295.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "시장 컨센서스(매출 2,637억원, 영업이익 295억원) 대비 매출은 하회했고 이익은 상회했다."
     }
   ],
   "opinion_distribution": [
@@ -155,7 +450,17 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -170,7 +475,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "broker_summary": [
@@ -238,13 +555,45 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 12.8,
+          "unit": "%",
+          "value_pct": 12.8,
+          "source_excerpt": "2%, 영업이익률 12.8%; 컨센서스 대비 +12."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -292,13 +641,51 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 295.0,
+          "unit": "억원",
+          "source_excerpt": "시장 컨센서스(매출 2,637억원, 영업이익 295억원) 대비 매출은 하회했고 이익은 상회했다.",
+          "value_krw_100m": 295.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 13.0,
+          "unit": "%",
+          "value_pct": 13.0,
+          "source_excerpt": "HK이노엔 - 편안하게 봐도 좋은 시점 편안하게 봐도 좋은 시점 HK이노엔 회계처리 기준 변경에 따른 영업이익 컨센서스 상회 동사의 1분기 매출 및 영업이익은 각각 2,587억원(YoY +5%) 및 332억원(YoY +31%, OPM 13%)이다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "recent_changes": [
@@ -350,13 +737,45 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 12.8,
+          "unit": "%",
+          "value_pct": 12.8,
+          "source_excerpt": "2%, 영업이익률 12.8%; 컨센서스 대비 +12."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -404,13 +823,51 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 295.0,
+          "unit": "억원",
+          "source_excerpt": "시장 컨센서스(매출 2,637억원, 영업이익 295억원) 대비 매출은 하회했고 이익은 상회했다.",
+          "value_krw_100m": 295.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 13.0,
+          "unit": "%",
+          "value_pct": 13.0,
+          "source_excerpt": "HK이노엔 - 편안하게 봐도 좋은 시점 편안하게 봐도 좋은 시점 HK이노엔 회계처리 기준 변경에 따른 영업이익 컨센서스 상회 동사의 1분기 매출 및 영업이익은 각각 2,587억원(YoY +5%) 및 332억원(YoY +31%, OPM 13%)이다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "timeline": [
@@ -462,13 +919,45 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 12.8,
+          "unit": "%",
+          "value_pct": 12.8,
+          "source_excerpt": "2%, 영업이익률 12.8%; 컨센서스 대비 +12."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -516,13 +1005,51 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 295.0,
+          "unit": "억원",
+          "source_excerpt": "시장 컨센서스(매출 2,637억원, 영업이익 295억원) 대비 매출은 하회했고 이익은 상회했다.",
+          "value_krw_100m": 295.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 13.0,
+          "unit": "%",
+          "value_pct": 13.0,
+          "source_excerpt": "HK이노엔 - 편안하게 봐도 좋은 시점 편안하게 봐도 좋은 시점 HK이노엔 회계처리 기준 변경에 따른 영업이익 컨센서스 상회 동사의 1분기 매출 및 영업이익은 각각 2,587억원(YoY +5%) 및 332억원(YoY +31%, OPM 13%)이다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ]
     }
   ]
 }

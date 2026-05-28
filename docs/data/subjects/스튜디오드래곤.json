@@ -13,14 +13,19 @@
     "하나증권"
   ],
   "change_summary": {
-    "changed_reports": 6,
+    "changed_reports": 7,
     "target_price_up": 0,
     "target_price_down": 1,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 5
+    "coverage_initiated": 5,
+    "estimate_signal_reports": 5,
+    "earnings_estimate_up": 5,
+    "earnings_estimate_down": 4,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 6,
@@ -49,7 +54,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -64,7 +75,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-08",
@@ -79,7 +92,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -94,7 +115,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.33,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -109,7 +138,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.49,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-11",
@@ -124,7 +155,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -139,7 +178,183 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-16",
+        "broker": "삼성증권",
+        "title": "스튜디오드래곤 - 회복을 향한 빌드업 진행 중",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91643&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_548224000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_548224000.pdf",
+        "target_price": "51,000",
+        "target_price_value": 51000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 96.0,
+        "unit": "억원",
+        "value_krw_100m": 96.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5% YoY), 영업이익은 96억원(+125."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "유진투자증권",
+        "title": "스튜디오드래곤 - 최선을 다하고 있기는 한데",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92588&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260508_company_270582000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260508_company_270582000.pdf",
+        "target_price": "48,000",
+        "target_price_value": 48000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 64.0,
+        "unit": "억원",
+        "value_krw_100m": 64.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0%yoy), 영업이익은 64억원(+50."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "대신증권",
+        "title": "스튜디오드래곤 - 우선 외형은 회복했습니다.",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92711&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_20268000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_20268000.pdf",
+        "target_price": "54,000",
+        "target_price_value": 54000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.49,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 64.0,
+        "unit": "억원",
+        "value_krw_100m": 64.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6천억원(+16% yoy), OP 64억원(+50% yoy) 달성  1Q26 회차 수 91회차로 21~23년 전성기 수준에 근접  21~23년 대비 작품 20% 정도 부족."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "키움증권",
+        "title": "스튜디오드래곤 - 일시 비용 부담으로 컨센 하회",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92664&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_345751000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_345751000.pdf",
+        "target_price": "50,000",
+        "target_price_value": 50000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 64.0,
+        "unit": "억원",
+        "value_krw_100m": 64.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0%), 영업이익은 64억원(QoQ -83."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "삼성증권",
+        "title": "스튜디오드래곤 - 회복은 맞지만, 속도는 기대 이하",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92963&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_538180000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_538180000.pdf",
+        "target_price": "47,000",
+        "target_price_value": 47000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 64.0,
+        "unit": "억원",
+        "value_krw_100m": 64.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0% YoY), 영업이익 64억원(+50."
       }
     ],
     "opinion_distribution": [
@@ -162,7 +377,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -177,7 +400,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-08",
@@ -192,7 +417,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.33,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -207,7 +440,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -222,7 +463,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.49,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-14",
@@ -237,7 +480,17 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       }
     ],
     "window_days": 14
@@ -256,7 +509,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -271,7 +530,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-08",
@@ -286,7 +547,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -301,7 +570,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.33,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -316,7 +593,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.49,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-11",
@@ -331,7 +610,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -346,7 +633,183 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-16",
+      "broker": "삼성증권",
+      "title": "스튜디오드래곤 - 회복을 향한 빌드업 진행 중",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91643&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_548224000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_548224000.pdf",
+      "target_price": "51,000",
+      "target_price_value": 51000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 96.0,
+      "unit": "억원",
+      "value_krw_100m": 96.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5% YoY), 영업이익은 96억원(+125."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "유진투자증권",
+      "title": "스튜디오드래곤 - 최선을 다하고 있기는 한데",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92588&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260508_company_270582000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260508_company_270582000.pdf",
+      "target_price": "48,000",
+      "target_price_value": 48000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 64.0,
+      "unit": "억원",
+      "value_krw_100m": 64.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0%yoy), 영업이익은 64억원(+50."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "대신증권",
+      "title": "스튜디오드래곤 - 우선 외형은 회복했습니다.",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92711&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_20268000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_20268000.pdf",
+      "target_price": "54,000",
+      "target_price_value": 54000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.49,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 64.0,
+      "unit": "억원",
+      "value_krw_100m": 64.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6천억원(+16% yoy), OP 64억원(+50% yoy) 달성  1Q26 회차 수 91회차로 21~23년 전성기 수준에 근접  21~23년 대비 작품 20% 정도 부족."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "키움증권",
+      "title": "스튜디오드래곤 - 일시 비용 부담으로 컨센 하회",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92664&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_345751000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_345751000.pdf",
+      "target_price": "50,000",
+      "target_price_value": 50000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 64.0,
+      "unit": "억원",
+      "value_krw_100m": 64.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0%), 영업이익은 64억원(QoQ -83."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "삼성증권",
+      "title": "스튜디오드래곤 - 회복은 맞지만, 속도는 기대 이하",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92963&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_538180000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_538180000.pdf",
+      "target_price": "47,000",
+      "target_price_value": 47000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 64.0,
+      "unit": "억원",
+      "value_krw_100m": 64.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0% YoY), 영업이익 64억원(+50."
     }
   ],
   "opinion_distribution": [
@@ -369,7 +832,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -384,7 +855,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-08",
@@ -399,7 +872,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.33,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -414,7 +895,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -429,7 +918,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.49,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-14",
@@ -444,7 +935,17 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "broker_summary": [
@@ -532,13 +1033,41 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_down"
+        "target_down",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "목표가 하향"
+        "목표가 하향",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 64.0,
+          "unit": "억원",
+          "source_excerpt": "0% YoY), 영업이익 64억원(+50.",
+          "value_krw_100m": 64.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -598,7 +1127,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 64.0,
+          "unit": "억원",
+          "source_excerpt": "6천억원(+16% yoy), OP 64억원(+50% yoy) 달성  1Q26 회차 수 91회차로 21~23년 전성기 수준에 근접  21~23년 대비 작품 20% 정도 부족.",
+          "value_krw_100m": 64.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -648,13 +1191,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 64.0,
+          "unit": "억원",
+          "source_excerpt": "0%), 영업이익은 64억원(QoQ -83.",
+          "value_krw_100m": 64.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -708,13 +1275,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -771,7 +1351,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -820,13 +1403,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 64.0,
+          "unit": "억원",
+          "source_excerpt": "0%yoy), 영업이익은 64억원(+50.",
+          "value_krw_100m": 64.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "recent_changes": [
@@ -882,13 +1489,41 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_down"
+        "target_down",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "목표가 하향"
+        "목표가 하향",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 64.0,
+          "unit": "억원",
+          "source_excerpt": "0% YoY), 영업이익 64억원(+50.",
+          "value_krw_100m": 64.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -948,7 +1583,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 64.0,
+          "unit": "억원",
+          "source_excerpt": "6천억원(+16% yoy), OP 64억원(+50% yoy) 달성  1Q26 회차 수 91회차로 21~23년 전성기 수준에 근접  21~23년 대비 작품 20% 정도 부족.",
+          "value_krw_100m": 64.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -998,13 +1647,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 64.0,
+          "unit": "억원",
+          "source_excerpt": "0%), 영업이익은 64억원(QoQ -83.",
+          "value_krw_100m": 64.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1058,13 +1731,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -1121,7 +1807,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1170,13 +1859,101 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 64.0,
+          "unit": "억원",
+          "source_excerpt": "0%yoy), 영업이익은 64억원(+50.",
+          "value_krw_100m": 64.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91643",
+      "title": "회복을 향한 빌드업 진행 중",
+      "display_title": "스튜디오드래곤 - 회복을 향한 빌드업 진행 중",
+      "broker": "삼성증권",
+      "published_date": "2026-04-16",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91643&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_548224000.pdf",
+      "subject": "스튜디오드래곤",
+      "views": 1103,
+      "analyst": null,
+      "target_price": "51,000",
+      "opinion": "Buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1Q26 실적 프리뷰- 컨센서스 부합 예상: 1분기 매출액은 1,465억원(+9.5% YoY), 영업이익은 96억원(+125.1% YoY)으로 컨센서스에 부합할 것으로 예상된다. 방영회차는 82회(TV 64회, OTT 18회)로 전년 동기(59회) 대비 증가할 전망이다.",
+      "summary": "1Q26 실적 프리뷰- 컨센서스 부합 예상: 1분기 매출액은 1,465억원(+9.5% YoY), 영업이익은 96억원(+125.1% YoY)으로 컨센서스에 부합할 것으로 예상된다. 방영회차는 82회(TV 64회, OTT 18회)로 전년 동기(59회) 대비 증가할 전망이다. TV향으로는 tvN 주말 1.5편, 월화 1편, 수목 1편, KBS 주말 1편이 방영됐으며, 글로벌 OTT 향으로는 디즈니+ ‘골드랜드’, 넷플릭스 일본 드라마 ‘소울메이트’를 납품한 것으로 파악된다(표3).",
+      "summary_engine": "rule",
+      "score": 9.1,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "subject_key": "스튜디오드래곤",
+      "ticker": null,
+      "target_price_value": 51000,
+      "opinion_normalized": "buy",
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 96.0,
+          "unit": "억원",
+          "source_excerpt": "5% YoY), 영업이익은 96억원(+125.",
+          "value_krw_100m": 96.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
     }
   ],
   "timeline": [
@@ -1232,13 +2009,41 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_down"
+        "target_down",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "목표가 하향"
+        "목표가 하향",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 64.0,
+          "unit": "억원",
+          "source_excerpt": "0% YoY), 영업이익 64억원(+50.",
+          "value_krw_100m": 64.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1298,7 +2103,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 64.0,
+          "unit": "억원",
+          "source_excerpt": "6천억원(+16% yoy), OP 64억원(+50% yoy) 달성  1Q26 회차 수 91회차로 21~23년 전성기 수준에 근접  21~23년 대비 작품 20% 정도 부족.",
+          "value_krw_100m": 64.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1348,13 +2167,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 64.0,
+          "unit": "억원",
+          "source_excerpt": "0%), 영업이익은 64억원(QoQ -83.",
+          "value_krw_100m": 64.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1408,13 +2251,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -1471,7 +2327,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1520,13 +2379,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 64.0,
+          "unit": "억원",
+          "source_excerpt": "0%yoy), 영업이익은 64억원(+50.",
+          "value_krw_100m": 64.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1566,9 +2449,31 @@
       "ticker": null,
       "target_price_value": 51000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 96.0,
+          "unit": "억원",
+          "source_excerpt": "5% YoY), 영업이익은 96억원(+125.",
+          "value_krw_100m": 96.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
     }
   ]
 }

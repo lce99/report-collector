@@ -18,7 +18,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 3,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 3,
@@ -47,7 +52,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -62,7 +75,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 11.5,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -77,7 +96,75 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-14",
+        "broker": "유진투자증권",
+        "title": "달바글로벌 - 1Q26 Review: 대장 따라간다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92902&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_369672000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_369672000.pdf",
+        "target_price": "320,000",
+        "target_price_value": 320000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 451.0,
+        "unit": "억원",
+        "value_krw_100m": 451.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4%, 이하 yoy), 영업이익 451억원(+49."
+      },
+      {
+        "date": "2026-05-26",
+        "broker": "유안타증권",
+        "title": "달바글로벌 - Corporate Day 후기: 확장과 다변화",
+        "ticker": "483650",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93263&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260526_company_838219000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260526_company_838219000.pdf",
+        "target_price": null,
+        "target_price_value": null,
+        "opinion": null,
+        "opinion_normalized": null,
+        "score": 7.6,
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 25.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 25.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "동사는 2026년 연간 매출액 7,000억원, 영업이익률(OPM) 21% 가이던스를 유지하고 있으며, 내년 매출 1조 원, 중장기 OPM 25% 달성을 목표로 제시하였다."
       }
     ],
     "opinion_distribution": [
@@ -100,7 +187,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -115,7 +210,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 11.5,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -130,7 +231,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-26",
@@ -145,7 +252,9 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 7.6,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -164,7 +273,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -179,7 +296,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 11.5,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -194,7 +317,75 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-14",
+      "broker": "유진투자증권",
+      "title": "달바글로벌 - 1Q26 Review: 대장 따라간다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92902&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_369672000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_369672000.pdf",
+      "target_price": "320,000",
+      "target_price_value": 320000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 451.0,
+      "unit": "억원",
+      "value_krw_100m": 451.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4%, 이하 yoy), 영업이익 451억원(+49."
+    },
+    {
+      "date": "2026-05-26",
+      "broker": "유안타증권",
+      "title": "달바글로벌 - Corporate Day 후기: 확장과 다변화",
+      "ticker": "483650",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93263&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260526_company_838219000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260526_company_838219000.pdf",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "score": 7.6,
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 25.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 25.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "동사는 2026년 연간 매출액 7,000억원, 영업이익률(OPM) 21% 가이던스를 유지하고 있으며, 내년 매출 1조 원, 중장기 OPM 25% 달성을 목표로 제시하였다."
     }
   ],
   "opinion_distribution": [
@@ -217,7 +408,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -232,7 +431,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 11.5,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -247,7 +452,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-26",
@@ -262,7 +473,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 7.6,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -385,7 +598,21 @@
       "coverage_initiated": false,
       "change_types": [],
       "change_reasons": [],
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 25.0,
+          "unit": "%",
+          "value_pct": 25.0,
+          "source_excerpt": "동사는 2026년 연간 매출액 7,000억원, 영업이익률(OPM) 21% 가이던스를 유지하고 있으며, 내년 매출 1조 원, 중장기 OPM 25% 달성을 목표로 제시하였다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -434,13 +661,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 451.0,
+          "unit": "억원",
+          "source_excerpt": "4%, 이하 yoy), 영업이익 451억원(+49.",
+          "value_krw_100m": 451.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -493,13 +740,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -548,13 +804,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "recent_changes": [
@@ -605,13 +874,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 451.0,
+          "unit": "억원",
+          "source_excerpt": "4%, 이하 yoy), 영업이익 451억원(+49.",
+          "value_krw_100m": 451.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -664,13 +953,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -719,13 +1017,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "timeline": [
@@ -824,7 +1135,21 @@
       "coverage_initiated": false,
       "change_types": [],
       "change_reasons": [],
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 25.0,
+          "unit": "%",
+          "value_pct": 25.0,
+          "source_excerpt": "동사는 2026년 연간 매출액 7,000억원, 영업이익률(OPM) 21% 가이던스를 유지하고 있으며, 내년 매출 1조 원, 중장기 OPM 25% 달성을 목표로 제시하였다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -873,13 +1198,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 451.0,
+          "unit": "억원",
+          "source_excerpt": "4%, 이하 yoy), 영업이익 451억원(+49.",
+          "value_krw_100m": 451.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -932,13 +1277,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -987,13 +1341,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ]
 }

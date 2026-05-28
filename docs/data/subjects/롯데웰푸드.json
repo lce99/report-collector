@@ -17,7 +17,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 3,
+    "estimate_signal_reports": 4,
+    "earnings_estimate_up": 4,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 3,
@@ -46,7 +51,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -61,7 +72,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -76,7 +93,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -91,7 +116,179 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.69,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-24",
+        "broker": "한화투자증권",
+        "title": "롯데웰푸드 - 턴어라운드의 시작",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91903&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260424_company_729803000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260424_company_729803000.pdf",
+        "target_price": "170,000",
+        "target_price_value": 170000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 265.0,
+        "unit": "억원",
+        "value_krw_100m": 265.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8% QoQ), 영업이익은 265억원(+61."
+      },
+      {
+        "date": "2026-04-24",
+        "broker": "한화투자증권",
+        "title": "롯데웰푸드 - 턴어라운드의 시작",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91903&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260424_company_729803000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260424_company_729803000.pdf",
+        "target_price": "170,000",
+        "target_price_value": 170000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 150.0,
+        "unit": "억원",
+        "value_krw_100m": 150.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9% YoY)으로 기존 예상치에 부합한 것으로 추정되나, 영업이익은 150억원(+103."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "키움증권",
+        "title": "롯데웰푸드 - 수익성 반등 본격화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92660&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_932959000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_932959000.pdf",
+        "target_price": "170,000",
+        "target_price_value": 170000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1분기",
+        "value": 358.0,
+        "unit": "억원",
+        "value_krw_100m": 358.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "롯데웰푸드 - 수익성 반등 본격화 수익성 반등 본격화 롯데웰푸드 1분기 영업이익 358억원으로 시장 기대치 상회 롯데웰푸드의 1분기 연결기준 영업이익은 358억원(+118% YoY)으로 시장 기대치를 상회하였다."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "키움증권",
+        "title": "롯데웰푸드 - 수익성 반등 본격화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92660&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_932959000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_932959000.pdf",
+        "target_price": "170,000",
+        "target_price_value": 170000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 358.0,
+        "unit": "억원",
+        "value_krw_100m": 358.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "롯데웰푸드 - 수익성 반등 본격화 수익성 반등 본격화 롯데웰푸드 1분기 영업이익 358억원으로 시장 기대치 상회 롯데웰푸드의 1분기 연결기준 영업이익은 358억원(+118% YoY)으로 시장 기대치를 상회하였다."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "한화투자증권",
+        "title": "롯데웰푸드 - 산뜻한 출발",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92729&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260511_company_249348000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260511_company_249348000.pdf",
+        "target_price": "190,000",
+        "target_price_value": 190000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.69,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 358.0,
+        "unit": "억원",
+        "value_krw_100m": 358.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7% QoQ), 영업이익은 358억원(+118."
       }
     ],
     "opinion_distribution": [
@@ -114,7 +311,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.69,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -129,7 +332,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -144,7 +353,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -163,7 +380,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -178,7 +401,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -193,7 +422,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -208,7 +445,179 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.69,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-24",
+      "broker": "한화투자증권",
+      "title": "롯데웰푸드 - 턴어라운드의 시작",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91903&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260424_company_729803000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260424_company_729803000.pdf",
+      "target_price": "170,000",
+      "target_price_value": 170000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 265.0,
+      "unit": "억원",
+      "value_krw_100m": 265.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8% QoQ), 영업이익은 265억원(+61."
+    },
+    {
+      "date": "2026-04-24",
+      "broker": "한화투자증권",
+      "title": "롯데웰푸드 - 턴어라운드의 시작",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91903&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260424_company_729803000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260424_company_729803000.pdf",
+      "target_price": "170,000",
+      "target_price_value": 170000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 150.0,
+      "unit": "억원",
+      "value_krw_100m": 150.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9% YoY)으로 기존 예상치에 부합한 것으로 추정되나, 영업이익은 150억원(+103."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "키움증권",
+      "title": "롯데웰푸드 - 수익성 반등 본격화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92660&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_932959000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_932959000.pdf",
+      "target_price": "170,000",
+      "target_price_value": 170000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1분기",
+      "value": 358.0,
+      "unit": "억원",
+      "value_krw_100m": 358.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "롯데웰푸드 - 수익성 반등 본격화 수익성 반등 본격화 롯데웰푸드 1분기 영업이익 358억원으로 시장 기대치 상회 롯데웰푸드의 1분기 연결기준 영업이익은 358억원(+118% YoY)으로 시장 기대치를 상회하였다."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "키움증권",
+      "title": "롯데웰푸드 - 수익성 반등 본격화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92660&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_932959000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_932959000.pdf",
+      "target_price": "170,000",
+      "target_price_value": 170000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 358.0,
+      "unit": "억원",
+      "value_krw_100m": 358.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "롯데웰푸드 - 수익성 반등 본격화 수익성 반등 본격화 롯데웰푸드 1분기 영업이익 358억원으로 시장 기대치 상회 롯데웰푸드의 1분기 연결기준 영업이익은 358억원(+118% YoY)으로 시장 기대치를 상회하였다."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "한화투자증권",
+      "title": "롯데웰푸드 - 산뜻한 출발",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92729&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260511_company_249348000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260511_company_249348000.pdf",
+      "target_price": "190,000",
+      "target_price_value": 190000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.69,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 358.0,
+      "unit": "억원",
+      "value_krw_100m": 358.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7% QoQ), 영업이익은 358억원(+118."
     }
   ],
   "opinion_distribution": [
@@ -231,7 +640,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.69,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -246,7 +661,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -261,7 +682,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -335,13 +764,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 358.0,
+          "unit": "억원",
+          "source_excerpt": "롯데웰푸드 - 수익성 반등 본격화 수익성 반등 본격화 롯데웰푸드 1분기 영업이익 358억원으로 시장 기대치 상회 롯데웰푸드의 1분기 연결기준 영업이익은 358억원(+118% YoY)으로 시장 기대치를 상회하였다.",
+          "value_krw_100m": 358.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 358.0,
+          "unit": "억원",
+          "source_excerpt": "롯데웰푸드 - 수익성 반등 본격화 수익성 반등 본격화 롯데웰푸드 1분기 영업이익 358억원으로 시장 기대치 상회 롯데웰푸드의 1분기 연결기준 영업이익은 358억원(+118% YoY)으로 시장 기대치를 상회하였다.",
+          "value_krw_100m": 358.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -392,13 +855,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -450,13 +922,33 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 358.0,
+          "unit": "억원",
+          "source_excerpt": "7% QoQ), 영업이익은 358억원(+118.",
+          "value_krw_100m": 358.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
@@ -510,13 +1002,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 358.0,
+          "unit": "억원",
+          "source_excerpt": "롯데웰푸드 - 수익성 반등 본격화 수익성 반등 본격화 롯데웰푸드 1분기 영업이익 358억원으로 시장 기대치 상회 롯데웰푸드의 1분기 연결기준 영업이익은 358억원(+118% YoY)으로 시장 기대치를 상회하였다.",
+          "value_krw_100m": 358.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 358.0,
+          "unit": "억원",
+          "source_excerpt": "롯데웰푸드 - 수익성 반등 본격화 수익성 반등 본격화 롯데웰푸드 1분기 영업이익 358억원으로 시장 기대치 상회 롯데웰푸드의 1분기 연결기준 영업이익은 358억원(+118% YoY)으로 시장 기대치를 상회하였다.",
+          "value_krw_100m": 358.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -567,13 +1093,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -625,13 +1160,33 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 358.0,
+          "unit": "억원",
+          "source_excerpt": "7% QoQ), 영업이익은 358억원(+118.",
+          "value_krw_100m": 358.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -681,13 +1236,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 265.0,
+          "unit": "억원",
+          "source_excerpt": "8% QoQ), 영업이익은 265억원(+61.",
+          "value_krw_100m": 265.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 150.0,
+          "unit": "억원",
+          "source_excerpt": "9% YoY)으로 기존 예상치에 부합한 것으로 추정되나, 영업이익은 150억원(+103.",
+          "value_krw_100m": 150.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -741,13 +1326,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 358.0,
+          "unit": "억원",
+          "source_excerpt": "롯데웰푸드 - 수익성 반등 본격화 수익성 반등 본격화 롯데웰푸드 1분기 영업이익 358억원으로 시장 기대치 상회 롯데웰푸드의 1분기 연결기준 영업이익은 358억원(+118% YoY)으로 시장 기대치를 상회하였다.",
+          "value_krw_100m": 358.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 358.0,
+          "unit": "억원",
+          "source_excerpt": "롯데웰푸드 - 수익성 반등 본격화 수익성 반등 본격화 롯데웰푸드 1분기 영업이익 358억원으로 시장 기대치 상회 롯데웰푸드의 1분기 연결기준 영업이익은 358억원(+118% YoY)으로 시장 기대치를 상회하였다.",
+          "value_krw_100m": 358.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -798,13 +1417,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -856,13 +1484,33 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 358.0,
+          "unit": "억원",
+          "source_excerpt": "7% QoQ), 영업이익은 358억원(+118.",
+          "value_krw_100m": 358.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -912,13 +1560,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 265.0,
+          "unit": "억원",
+          "source_excerpt": "8% QoQ), 영업이익은 265억원(+61.",
+          "value_krw_100m": 265.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 150.0,
+          "unit": "억원",
+          "source_excerpt": "9% YoY)으로 기존 예상치에 부합한 것으로 추정되나, 영업이익은 150억원(+103.",
+          "value_krw_100m": 150.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ]
 }

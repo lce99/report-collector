@@ -18,7 +18,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 4
+    "coverage_initiated": 4,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 4,
@@ -47,7 +52,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -62,7 +75,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -77,7 +92,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -92,7 +109,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -107,7 +132,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -122,7 +153,207 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-22",
+        "broker": "교보증권",
+        "title": "심텍 - 레버리지 효과에 대한 근거 확보",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91796&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260422_company_749352000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260422_company_749352000.pdf",
+        "target_price": "100,000",
+        "target_price_value": 100000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 2.9,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 2.9,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%), 영업이익 123억원(YoY 흑자전환, OPM 2.9%)을 기록할 것으로 전망."
+      },
+      {
+        "date": "2026-04-22",
+        "broker": "교보증권",
+        "title": "심텍 - 레버리지 효과에 대한 근거 확보",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91796&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260422_company_749352000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260422_company_749352000.pdf",
+        "target_price": "100,000",
+        "target_price_value": 100000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 123.0,
+        "unit": "억원",
+        "value_krw_100m": 123.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "심텍 - 레버리지 효과에 대한 근거 확보 레버리지 효과에 대한 근거 확보 심텍 261QPreview: 매출액 4,195억원, 영업이익 123억원 2026년 1분기 연결 기준 심텍의 실적은 매출액 4,195억원(YoY +38."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "iM증권",
+        "title": "심텍 - 판가도, 가동률도, 그리고 SOCAMM도",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92511&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260507_company_437001000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260507_company_437001000.pdf",
+        "target_price": "135,000",
+        "target_price_value": 135000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "eps",
+        "metric_group": "earnings",
+        "label": "EPS",
+        "period": "27년",
+        "value": 4685.0,
+        "unit": "원",
+        "value_krw_100m": null,
+        "value_pct": null,
+        "value_won": 4685.0,
+        "change_pctp": null,
+        "source_excerpt": "‘27년 EPS 4,685원에 해외 Peer의 ‘27년 평균 P/E인 41배를 30% 할인한 28."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "교보증권",
+        "title": "심텍 - 이익 정상화의 원년",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92545&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_622018000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_622018000.pdf",
+        "target_price": "135,000",
+        "target_price_value": 135000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 3.2,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 3.2,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "1%), 영업이익 137억원(YoY 흑자전환, OPM 3.2%)을 시현."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "교보증권",
+        "title": "심텍 - 이익 정상화의 원년",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92545&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_622018000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_622018000.pdf",
+        "target_price": "135,000",
+        "target_price_value": 135000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 137.0,
+        "unit": "억원",
+        "value_krw_100m": 137.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "심텍 - 이익 정상화의 원년 이익 정상화의 원년 심텍 1Q26 Review: 매출액 4,224억원, 영업이익 137억원 심텍의 2026년 1분기 연결 실적은 매출액 4,224억원(YoY +39."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "대신증권",
+        "title": "심텍 - 1Q 호조, 소캠2 매출 시작!",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92534&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260507_company_993592000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260507_company_993592000.pdf",
+        "target_price": "105,000",
+        "target_price_value": 105000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 137.0,
+        "unit": "억원",
+        "value_krw_100m": 137.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4% qoq), 영업이익은 137억원(흑전 yoy/33."
       }
     ],
     "opinion_distribution": [
@@ -145,7 +376,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -160,7 +393,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -175,7 +414,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -190,7 +437,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -205,7 +454,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -224,7 +475,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -239,7 +498,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -254,7 +515,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -269,7 +532,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -284,7 +555,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -299,7 +576,207 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-22",
+      "broker": "교보증권",
+      "title": "심텍 - 레버리지 효과에 대한 근거 확보",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91796&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260422_company_749352000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260422_company_749352000.pdf",
+      "target_price": "100,000",
+      "target_price_value": 100000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 2.9,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 2.9,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%), 영업이익 123억원(YoY 흑자전환, OPM 2.9%)을 기록할 것으로 전망."
+    },
+    {
+      "date": "2026-04-22",
+      "broker": "교보증권",
+      "title": "심텍 - 레버리지 효과에 대한 근거 확보",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91796&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260422_company_749352000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260422_company_749352000.pdf",
+      "target_price": "100,000",
+      "target_price_value": 100000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 123.0,
+      "unit": "억원",
+      "value_krw_100m": 123.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "심텍 - 레버리지 효과에 대한 근거 확보 레버리지 효과에 대한 근거 확보 심텍 261QPreview: 매출액 4,195억원, 영업이익 123억원 2026년 1분기 연결 기준 심텍의 실적은 매출액 4,195억원(YoY +38."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "iM증권",
+      "title": "심텍 - 판가도, 가동률도, 그리고 SOCAMM도",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92511&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260507_company_437001000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260507_company_437001000.pdf",
+      "target_price": "135,000",
+      "target_price_value": 135000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "eps",
+      "metric_group": "earnings",
+      "label": "EPS",
+      "period": "27년",
+      "value": 4685.0,
+      "unit": "원",
+      "value_krw_100m": null,
+      "value_pct": null,
+      "value_won": 4685.0,
+      "change_pctp": null,
+      "source_excerpt": "‘27년 EPS 4,685원에 해외 Peer의 ‘27년 평균 P/E인 41배를 30% 할인한 28."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "교보증권",
+      "title": "심텍 - 이익 정상화의 원년",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92545&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_622018000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_622018000.pdf",
+      "target_price": "135,000",
+      "target_price_value": 135000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 3.2,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 3.2,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "1%), 영업이익 137억원(YoY 흑자전환, OPM 3.2%)을 시현."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "교보증권",
+      "title": "심텍 - 이익 정상화의 원년",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92545&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_622018000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_622018000.pdf",
+      "target_price": "135,000",
+      "target_price_value": 135000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 137.0,
+      "unit": "억원",
+      "value_krw_100m": 137.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "심텍 - 이익 정상화의 원년 이익 정상화의 원년 심텍 1Q26 Review: 매출액 4,224억원, 영업이익 137억원 심텍의 2026년 1분기 연결 실적은 매출액 4,224억원(YoY +39."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "대신증권",
+      "title": "심텍 - 1Q 호조, 소캠2 매출 시작!",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92534&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260507_company_993592000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260507_company_993592000.pdf",
+      "target_price": "105,000",
+      "target_price_value": 105000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 137.0,
+      "unit": "억원",
+      "value_krw_100m": 137.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4% qoq), 영업이익은 137억원(흑전 yoy/33."
     }
   ],
   "opinion_distribution": [
@@ -322,7 +799,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -337,7 +816,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -352,7 +837,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -367,7 +860,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -382,7 +877,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -467,7 +964,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": "27년",
+          "value": 4685.0,
+          "unit": "원",
+          "source_excerpt": "‘27년 EPS 4,685원에 해외 Peer의 ‘27년 평균 P/E인 41배를 30% 할인한 28.",
+          "value_won": 4685.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "shinhan_investment_official",
@@ -524,7 +1035,10 @@
         "목표가 하향"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -576,13 +1090,47 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 137.0,
+          "unit": "억원",
+          "source_excerpt": "심텍 - 이익 정상화의 원년 이익 정상화의 원년 심텍 1Q26 Review: 매출액 4,224억원, 영업이익 137억원 심텍의 2026년 1분기 연결 실적은 매출액 4,224억원(YoY +39.",
+          "value_krw_100m": 137.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 3.2,
+          "unit": "%",
+          "value_pct": 3.2,
+          "source_excerpt": "1%), 영업이익 137억원(YoY 흑자전환, OPM 3.2%)을 시현."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -632,13 +1180,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 137.0,
+          "unit": "억원",
+          "source_excerpt": "4% qoq), 영업이익은 137억원(흑전 yoy/33.",
+          "value_krw_100m": 137.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
@@ -699,7 +1267,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": "27년",
+          "value": 4685.0,
+          "unit": "원",
+          "source_excerpt": "‘27년 EPS 4,685원에 해외 Peer의 ‘27년 평균 P/E인 41배를 30% 할인한 28.",
+          "value_won": 4685.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "shinhan_investment_official",
@@ -756,7 +1338,10 @@
         "목표가 하향"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -808,13 +1393,47 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 137.0,
+          "unit": "억원",
+          "source_excerpt": "심텍 - 이익 정상화의 원년 이익 정상화의 원년 심텍 1Q26 Review: 매출액 4,224억원, 영업이익 137억원 심텍의 2026년 1분기 연결 실적은 매출액 4,224억원(YoY +39.",
+          "value_krw_100m": 137.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 3.2,
+          "unit": "%",
+          "value_pct": 3.2,
+          "source_excerpt": "1%), 영업이익 137억원(YoY 흑자전환, OPM 3.2%)을 시현."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -864,13 +1483,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 137.0,
+          "unit": "억원",
+          "source_excerpt": "4% qoq), 영업이익은 137억원(흑전 yoy/33.",
+          "value_krw_100m": 137.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -925,7 +1564,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -975,13 +1617,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 123.0,
+          "unit": "억원",
+          "source_excerpt": "심텍 - 레버리지 효과에 대한 근거 확보 레버리지 효과에 대한 근거 확보 심텍 261QPreview: 매출액 4,195억원, 영업이익 123억원 2026년 1분기 연결 기준 심텍의 실적은 매출액 4,195억원(YoY +38.",
+          "value_krw_100m": 123.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.9,
+          "unit": "%",
+          "value_pct": 2.9,
+          "source_excerpt": "2%), 영업이익 123억원(YoY 흑자전환, OPM 2.9%)을 기록할 것으로 전망."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "timeline": [
@@ -1042,7 +1718,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": "27년",
+          "value": 4685.0,
+          "unit": "원",
+          "source_excerpt": "‘27년 EPS 4,685원에 해외 Peer의 ‘27년 평균 P/E인 41배를 30% 할인한 28.",
+          "value_won": 4685.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "shinhan_investment_official",
@@ -1099,7 +1789,10 @@
         "목표가 하향"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1151,13 +1844,47 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 137.0,
+          "unit": "억원",
+          "source_excerpt": "심텍 - 이익 정상화의 원년 이익 정상화의 원년 심텍 1Q26 Review: 매출액 4,224억원, 영업이익 137억원 심텍의 2026년 1분기 연결 실적은 매출액 4,224억원(YoY +39.",
+          "value_krw_100m": 137.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 3.2,
+          "unit": "%",
+          "value_pct": 3.2,
+          "source_excerpt": "1%), 영업이익 137억원(YoY 흑자전환, OPM 3.2%)을 시현."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1207,13 +1934,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 137.0,
+          "unit": "억원",
+          "source_excerpt": "4% qoq), 영업이익은 137억원(흑전 yoy/33.",
+          "value_krw_100m": 137.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1268,7 +2015,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1318,13 +2068,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 123.0,
+          "unit": "억원",
+          "source_excerpt": "심텍 - 레버리지 효과에 대한 근거 확보 레버리지 효과에 대한 근거 확보 심텍 261QPreview: 매출액 4,195억원, 영업이익 123억원 2026년 1분기 연결 기준 심텍의 실적은 매출액 4,195억원(YoY +38.",
+          "value_krw_100m": 123.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.9,
+          "unit": "%",
+          "value_pct": 2.9,
+          "source_excerpt": "2%), 영업이익 123억원(YoY 흑자전환, OPM 2.9%)을 기록할 것으로 전망."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ]
 }

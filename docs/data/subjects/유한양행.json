@@ -17,7 +17,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 3,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 0,
+    "earnings_estimate_down": 3,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 2
   },
   "target_summary": {
     "count": 3,
@@ -46,7 +51,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-06",
@@ -61,7 +74,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -76,7 +95,119 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-20",
+        "broker": "키움증권",
+        "title": "유한양행 - 유럽 마일스톤 이연으로 하회 전망",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91692&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260420_company_598018000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260420_company_598018000.pdf",
+        "target_price": "120,000",
+        "target_price_value": 120000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 2.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 2.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "유한양행 - 유럽 마일스톤 이연으로 하회 전망 유럽 마일스톤 이연으로 하회 전망 유한양행 유럽 마일스톤 소식 부재로 시장 기대치 하회 전망 1Q26 연결 매출액 5,259억 원(YoY +7%, QoQ -4%), 영업이익은 85억 원(YoY +33%, QoQ -67%, OPM +2%)로…"
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "교보증권",
+        "title": "유한양행 - 아직은 쉬어가는 중",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92549&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_920012000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_920012000.pdf",
+        "target_price": "130,000",
+        "target_price_value": 130000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 1.7,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 1.7,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3%, OPM 1.7%) 기록하며 컨센서스 대비 하회."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "교보증권",
+        "title": "유한양행 - 아직은 쉬어가는 중",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92549&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_920012000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_920012000.pdf",
+        "target_price": "130,000",
+        "target_price_value": 130000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 88.0,
+        "unit": "억원",
+        "value_krw_100m": 88.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%), 영업이익 88억원 (YoY +36."
       }
     ],
     "opinion_distribution": [
@@ -99,7 +230,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -114,7 +251,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       }
     ],
     "window_days": 14
@@ -133,7 +278,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-06",
@@ -148,7 +301,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -163,7 +322,119 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-20",
+      "broker": "키움증권",
+      "title": "유한양행 - 유럽 마일스톤 이연으로 하회 전망",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91692&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260420_company_598018000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260420_company_598018000.pdf",
+      "target_price": "120,000",
+      "target_price_value": 120000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 2.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 2.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "유한양행 - 유럽 마일스톤 이연으로 하회 전망 유럽 마일스톤 이연으로 하회 전망 유한양행 유럽 마일스톤 소식 부재로 시장 기대치 하회 전망 1Q26 연결 매출액 5,259억 원(YoY +7%, QoQ -4%), 영업이익은 85억 원(YoY +33%, QoQ -67%, OPM +2%)로…"
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "교보증권",
+      "title": "유한양행 - 아직은 쉬어가는 중",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92549&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_920012000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_920012000.pdf",
+      "target_price": "130,000",
+      "target_price_value": 130000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 1.7,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 1.7,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3%, OPM 1.7%) 기록하며 컨센서스 대비 하회."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "교보증권",
+      "title": "유한양행 - 아직은 쉬어가는 중",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92549&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_920012000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_920012000.pdf",
+      "target_price": "130,000",
+      "target_price_value": 130000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 88.0,
+      "unit": "억원",
+      "value_krw_100m": 88.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%), 영업이익 88억원 (YoY +36."
     }
   ],
   "opinion_distribution": [
@@ -186,7 +457,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -201,7 +478,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "broker_summary": [
@@ -272,13 +557,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 88.0,
+          "unit": "억원",
+          "source_excerpt": "2%), 영업이익 88억원 (YoY +36.",
+          "value_krw_100m": 88.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 1.7,
+          "unit": "%",
+          "value_pct": 1.7,
+          "source_excerpt": "3%, OPM 1.7%) 기록하며 컨센서스 대비 하회."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -329,13 +648,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -384,13 +712,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.0,
+          "unit": "%",
+          "value_pct": 2.0,
+          "source_excerpt": "유한양행 - 유럽 마일스톤 이연으로 하회 전망 유럽 마일스톤 이연으로 하회 전망 유한양행 유럽 마일스톤 소식 부재로 시장 기대치 하회 전망 1Q26 연결 매출액 5,259억 원(YoY +7%, QoQ -4%), 영업이익은 85억 원(YoY +33%, QoQ -67%, OPM +2%)로…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "recent_changes": [
@@ -441,13 +793,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 88.0,
+          "unit": "억원",
+          "source_excerpt": "2%), 영업이익 88억원 (YoY +36.",
+          "value_krw_100m": 88.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 1.7,
+          "unit": "%",
+          "value_pct": 1.7,
+          "source_excerpt": "3%, OPM 1.7%) 기록하며 컨센서스 대비 하회."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -498,13 +884,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -553,13 +948,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.0,
+          "unit": "%",
+          "value_pct": 2.0,
+          "source_excerpt": "유한양행 - 유럽 마일스톤 이연으로 하회 전망 유럽 마일스톤 이연으로 하회 전망 유한양행 유럽 마일스톤 소식 부재로 시장 기대치 하회 전망 1Q26 연결 매출액 5,259억 원(YoY +7%, QoQ -4%), 영업이익은 85억 원(YoY +33%, QoQ -67%, OPM +2%)로…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "timeline": [
@@ -610,13 +1029,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 88.0,
+          "unit": "억원",
+          "source_excerpt": "2%), 영업이익 88억원 (YoY +36.",
+          "value_krw_100m": 88.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 1.7,
+          "unit": "%",
+          "value_pct": 1.7,
+          "source_excerpt": "3%, OPM 1.7%) 기록하며 컨센서스 대비 하회."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -667,13 +1120,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -722,13 +1184,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.0,
+          "unit": "%",
+          "value_pct": 2.0,
+          "source_excerpt": "유한양행 - 유럽 마일스톤 이연으로 하회 전망 유럽 마일스톤 이연으로 하회 전망 유한양행 유럽 마일스톤 소식 부재로 시장 기대치 하회 전망 1Q26 연결 매출액 5,259억 원(YoY +7%, QoQ -4%), 영업이익은 85억 원(YoY +33%, QoQ -67%, OPM +2%)로…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ]
 }

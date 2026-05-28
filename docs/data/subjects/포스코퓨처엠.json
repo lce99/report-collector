@@ -14,14 +14,19 @@
     "한화투자증권"
   ],
   "change_summary": {
-    "changed_reports": 6,
+    "changed_reports": 7,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 6
+    "coverage_initiated": 6,
+    "estimate_signal_reports": 6,
+    "earnings_estimate_up": 5,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 7,
@@ -58,7 +63,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -73,7 +84,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -88,7 +105,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -103,7 +122,13 @@
         "opinion": "Trading BUY",
         "opinion_normalized": "trading_buy",
         "score": 9.7,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -118,7 +143,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -133,7 +166,13 @@
         "opinion": "Hold",
         "opinion_normalized": "hold",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -148,7 +187,181 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-16",
+        "broker": "삼성증권",
+        "title": "포스코퓨처엠 - 위기와 기회",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91644&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_578359000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_578359000.pdf",
+        "target_price": "271,000",
+        "target_price_value": 271000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 41.0,
+        "unit": "억원",
+        "value_krw_100m": 41.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "포스코퓨처엠 - 위기와 기회 위기와 기회 포스코퓨처엠 1분기 프리뷰, 시장 예상치 하회 전망: 1분기 연결 기준 실적은 매출 5,884억원, 영업이익은 41억원으로 시장 컨센서스(영업익 기준 63억원, FnGuide)보다는 하회 예상."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "하나증권",
+        "title": "포스코퓨처엠 - 프리미엄 정당화 가능",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92395&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_399002000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_399002000.pdf",
+        "target_price": "294,000",
+        "target_price_value": 294000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배주주순이익",
+        "period": null,
+        "value": 27.0,
+        "unit": "억원",
+        "value_krw_100m": 27.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6%p)), 지배주주순이익 27억원(YoY -95%, QoQ 흑자전환)으로 전분기 대비 실적이 크게 개선됐다."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "하나증권",
+        "title": "포스코퓨처엠 - 프리미엄 정당화 가능",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92395&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_399002000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_399002000.pdf",
+        "target_price": "294,000",
+        "target_price_value": 294000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 2.3,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 2.3,
+        "value_won": null,
+        "change_pctp": 11.6,
+        "source_excerpt": "포스코퓨처엠 - 프리미엄 정당화 가능 프리미엄 정당화 가능 포스코퓨처엠 1Q26 Review : 양극재 출하 회복세 포스코퓨처엠 1Q26 연결 실적은 매출 7,575억원(YoY -10%, QoQ +36%), 영업이익 177억원(YoY +3%, QoQ 흑자전환, OPM 2.3%(QoQ…"
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "DS투자증권",
+        "title": "포스코퓨처엠 - 회복세 돌입 기대",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92427&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260504_company_676945000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260504_company_676945000.pdf",
+        "target_price": "290,000",
+        "target_price_value": 290000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 177.0,
+        "unit": "억원",
+        "value_krw_100m": 177.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4% YoY), 영업이익 177억원(+흑전 QoQ, +3."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "하나증권",
+        "title": "포스코퓨처엠 - 프리미엄 정당화 가능",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92395&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_399002000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_399002000.pdf",
+        "target_price": "294,000",
+        "target_price_value": 294000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 177.0,
+        "unit": "억원",
+        "value_krw_100m": 177.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "포스코퓨처엠 - 프리미엄 정당화 가능 프리미엄 정당화 가능 포스코퓨처엠 1Q26 Review : 양극재 출하 회복세 포스코퓨처엠 1Q26 연결 실적은 매출 7,575억원(YoY -10%, QoQ +36%), 영업이익 177억원(YoY +3%, QoQ 흑자전환, OPM 2."
       }
     ],
     "opinion_distribution": [
@@ -179,7 +392,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -194,7 +415,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -209,7 +436,13 @@
         "opinion": "Hold",
         "opinion_normalized": "hold",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -224,7 +457,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -239,7 +474,13 @@
         "opinion": "Trading BUY",
         "opinion_normalized": "trading_buy",
         "score": 9.7,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -254,7 +495,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -273,7 +520,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -288,7 +541,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -303,7 +562,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -318,7 +579,13 @@
       "opinion": "Trading BUY",
       "opinion_normalized": "trading_buy",
       "score": 9.7,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -333,7 +600,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -348,7 +623,13 @@
       "opinion": "Hold",
       "opinion_normalized": "hold",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -363,7 +644,181 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-16",
+      "broker": "삼성증권",
+      "title": "포스코퓨처엠 - 위기와 기회",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91644&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_578359000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_578359000.pdf",
+      "target_price": "271,000",
+      "target_price_value": 271000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 41.0,
+      "unit": "억원",
+      "value_krw_100m": 41.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "포스코퓨처엠 - 위기와 기회 위기와 기회 포스코퓨처엠 1분기 프리뷰, 시장 예상치 하회 전망: 1분기 연결 기준 실적은 매출 5,884억원, 영업이익은 41억원으로 시장 컨센서스(영업익 기준 63억원, FnGuide)보다는 하회 예상."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "하나증권",
+      "title": "포스코퓨처엠 - 프리미엄 정당화 가능",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92395&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_399002000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_399002000.pdf",
+      "target_price": "294,000",
+      "target_price_value": 294000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배주주순이익",
+      "period": null,
+      "value": 27.0,
+      "unit": "억원",
+      "value_krw_100m": 27.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6%p)), 지배주주순이익 27억원(YoY -95%, QoQ 흑자전환)으로 전분기 대비 실적이 크게 개선됐다."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "하나증권",
+      "title": "포스코퓨처엠 - 프리미엄 정당화 가능",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92395&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_399002000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_399002000.pdf",
+      "target_price": "294,000",
+      "target_price_value": 294000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 2.3,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 2.3,
+      "value_won": null,
+      "change_pctp": 11.6,
+      "source_excerpt": "포스코퓨처엠 - 프리미엄 정당화 가능 프리미엄 정당화 가능 포스코퓨처엠 1Q26 Review : 양극재 출하 회복세 포스코퓨처엠 1Q26 연결 실적은 매출 7,575억원(YoY -10%, QoQ +36%), 영업이익 177억원(YoY +3%, QoQ 흑자전환, OPM 2.3%(QoQ…"
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "DS투자증권",
+      "title": "포스코퓨처엠 - 회복세 돌입 기대",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92427&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260504_company_676945000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260504_company_676945000.pdf",
+      "target_price": "290,000",
+      "target_price_value": 290000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 177.0,
+      "unit": "억원",
+      "value_krw_100m": 177.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4% YoY), 영업이익 177억원(+흑전 QoQ, +3."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "하나증권",
+      "title": "포스코퓨처엠 - 프리미엄 정당화 가능",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92395&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_399002000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_399002000.pdf",
+      "target_price": "294,000",
+      "target_price_value": 294000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 177.0,
+      "unit": "억원",
+      "value_krw_100m": 177.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "포스코퓨처엠 - 프리미엄 정당화 가능 프리미엄 정당화 가능 포스코퓨처엠 1Q26 Review : 양극재 출하 회복세 포스코퓨처엠 1Q26 연결 실적은 매출 7,575억원(YoY -10%, QoQ +36%), 영업이익 177억원(YoY +3%, QoQ 흑자전환, OPM 2."
     }
   ],
   "opinion_distribution": [
@@ -394,7 +849,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -409,7 +872,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -424,7 +893,13 @@
       "opinion": "Hold",
       "opinion_normalized": "hold",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -439,7 +914,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -454,7 +931,13 @@
       "opinion": "Trading BUY",
       "opinion_normalized": "trading_buy",
       "score": 9.7,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -469,7 +952,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -556,13 +1045,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -613,13 +1111,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -677,7 +1184,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -729,13 +1239,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -787,13 +1306,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 177.0,
+          "unit": "억원",
+          "source_excerpt": "4% YoY), 영업이익 177억원(+흑전 QoQ, +3.",
+          "value_krw_100m": 177.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -844,13 +1383,58 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 177.0,
+          "unit": "억원",
+          "source_excerpt": "포스코퓨처엠 - 프리미엄 정당화 가능 프리미엄 정당화 가능 포스코퓨처엠 1Q26 Review : 양극재 출하 회복세 포스코퓨처엠 1Q26 연결 실적은 매출 7,575억원(YoY -10%, QoQ +36%), 영업이익 177억원(YoY +3%, QoQ 흑자전환, OPM 2.",
+          "value_krw_100m": 177.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 27.0,
+          "unit": "억원",
+          "source_excerpt": "6%p)), 지배주주순이익 27억원(YoY -95%, QoQ 흑자전환)으로 전분기 대비 실적이 크게 개선됐다.",
+          "value_krw_100m": 27.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.3,
+          "unit": "%",
+          "value_pct": 2.3,
+          "source_excerpt": "포스코퓨처엠 - 프리미엄 정당화 가능 프리미엄 정당화 가능 포스코퓨처엠 1Q26 Review : 양극재 출하 회복세 포스코퓨처엠 1Q26 연결 실적은 매출 7,575억원(YoY -10%, QoQ +36%), 영업이익 177억원(YoY +3%, QoQ 흑자전환, OPM 2.3%(QoQ…",
+          "change_pctp": 11.6
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -890,9 +1474,31 @@
       "ticker": null,
       "target_price_value": 271000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 41.0,
+          "unit": "억원",
+          "source_excerpt": "포스코퓨처엠 - 위기와 기회 위기와 기회 포스코퓨처엠 1분기 프리뷰, 시장 예상치 하회 전망: 1분기 연결 기준 실적은 매출 5,884억원, 영업이익은 41억원으로 시장 컨센서스(영업익 기준 63억원, FnGuide)보다는 하회 예상.",
+          "value_krw_100m": 41.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "change_types": [
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true
     }
   ],
   "recent_changes": [
@@ -943,13 +1549,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -1000,13 +1615,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1064,7 +1688,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1116,13 +1743,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1174,13 +1810,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 177.0,
+          "unit": "억원",
+          "source_excerpt": "4% YoY), 영업이익 177억원(+흑전 QoQ, +3.",
+          "value_krw_100m": 177.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1231,13 +1887,122 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 177.0,
+          "unit": "억원",
+          "source_excerpt": "포스코퓨처엠 - 프리미엄 정당화 가능 프리미엄 정당화 가능 포스코퓨처엠 1Q26 Review : 양극재 출하 회복세 포스코퓨처엠 1Q26 연결 실적은 매출 7,575억원(YoY -10%, QoQ +36%), 영업이익 177억원(YoY +3%, QoQ 흑자전환, OPM 2.",
+          "value_krw_100m": 177.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 27.0,
+          "unit": "억원",
+          "source_excerpt": "6%p)), 지배주주순이익 27억원(YoY -95%, QoQ 흑자전환)으로 전분기 대비 실적이 크게 개선됐다.",
+          "value_krw_100m": 27.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.3,
+          "unit": "%",
+          "value_pct": 2.3,
+          "source_excerpt": "포스코퓨처엠 - 프리미엄 정당화 가능 프리미엄 정당화 가능 포스코퓨처엠 1Q26 Review : 양극재 출하 회복세 포스코퓨처엠 1Q26 연결 실적은 매출 7,575억원(YoY -10%, QoQ +36%), 영업이익 177억원(YoY +3%, QoQ 흑자전환, OPM 2.3%(QoQ…",
+          "change_pctp": 11.6
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91644",
+      "title": "위기와 기회",
+      "display_title": "포스코퓨처엠 - 위기와 기회",
+      "broker": "삼성증권",
+      "published_date": "2026-04-16",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91644&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_578359000.pdf",
+      "subject": "포스코퓨처엠",
+      "views": 1834,
+      "analyst": null,
+      "target_price": "271,000",
+      "opinion": "Buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1분기 프리뷰, 시장 예상치 하회 전망: 1분기 연결 기준 실적은 매출 5,884억원, 영업이익은 41억원으로 시장 컨센서스(영업익 기준 63억원, FnGuide)보다는 하회 예상. 양극재 출하는 기존 예상보다 줄어들 전망(8,500톤 → 7,500톤).",
+      "summary": "1분기 프리뷰, 시장 예상치 하회 전망: 1분기 연결 기준 실적은 매출 5,884억원, 영업이익은 41억원으로 시장 컨센서스(영업익 기준 63억원, FnGuide)보다는 하회 예상. 양극재 출하는 기존 예상보다 줄어들 전망(8,500톤 → 7,500톤). 전분기 대비로는 25% 늘어났지만 양극재 부문 흑자는 어려울 듯.",
+      "summary_engine": "rule",
+      "score": 9.1,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "subject_key": "포스코퓨처엠",
+      "ticker": null,
+      "target_price_value": 271000,
+      "opinion_normalized": "buy",
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 41.0,
+          "unit": "억원",
+          "source_excerpt": "포스코퓨처엠 - 위기와 기회 위기와 기회 포스코퓨처엠 1분기 프리뷰, 시장 예상치 하회 전망: 1분기 연결 기준 실적은 매출 5,884억원, 영업이익은 41억원으로 시장 컨센서스(영업익 기준 63억원, FnGuide)보다는 하회 예상.",
+          "value_krw_100m": 41.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "change_types": [
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true
     }
   ],
   "timeline": [
@@ -1288,13 +2053,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -1345,13 +2119,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1409,7 +2192,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1461,13 +2247,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1519,13 +2314,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 177.0,
+          "unit": "억원",
+          "source_excerpt": "4% YoY), 영업이익 177억원(+흑전 QoQ, +3.",
+          "value_krw_100m": 177.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1576,13 +2391,58 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 177.0,
+          "unit": "억원",
+          "source_excerpt": "포스코퓨처엠 - 프리미엄 정당화 가능 프리미엄 정당화 가능 포스코퓨처엠 1Q26 Review : 양극재 출하 회복세 포스코퓨처엠 1Q26 연결 실적은 매출 7,575억원(YoY -10%, QoQ +36%), 영업이익 177억원(YoY +3%, QoQ 흑자전환, OPM 2.",
+          "value_krw_100m": 177.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 27.0,
+          "unit": "억원",
+          "source_excerpt": "6%p)), 지배주주순이익 27억원(YoY -95%, QoQ 흑자전환)으로 전분기 대비 실적이 크게 개선됐다.",
+          "value_krw_100m": 27.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.3,
+          "unit": "%",
+          "value_pct": 2.3,
+          "source_excerpt": "포스코퓨처엠 - 프리미엄 정당화 가능 프리미엄 정당화 가능 포스코퓨처엠 1Q26 Review : 양극재 출하 회복세 포스코퓨처엠 1Q26 연결 실적은 매출 7,575억원(YoY -10%, QoQ +36%), 영업이익 177억원(YoY +3%, QoQ 흑자전환, OPM 2.3%(QoQ…",
+          "change_pctp": 11.6
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1622,9 +2482,31 @@
       "ticker": null,
       "target_price_value": 271000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 41.0,
+          "unit": "억원",
+          "source_excerpt": "포스코퓨처엠 - 위기와 기회 위기와 기회 포스코퓨처엠 1분기 프리뷰, 시장 예상치 하회 전망: 1분기 연결 기준 실적은 매출 5,884억원, 영업이익은 41억원으로 시장 컨센서스(영업익 기준 63억원, FnGuide)보다는 하회 예상.",
+          "value_krw_100m": 41.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "change_types": [
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true
     }
   ]
 }

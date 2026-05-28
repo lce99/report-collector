@@ -15,14 +15,19 @@
     "한화투자증권"
   ],
   "change_summary": {
-    "changed_reports": 8,
+    "changed_reports": 10,
     "target_price_up": 1,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 7
+    "coverage_initiated": 7,
+    "estimate_signal_reports": 7,
+    "earnings_estimate_up": 4,
+    "earnings_estimate_down": 3,
+    "margin_estimate_up": 4,
+    "margin_estimate_down": 3
   },
   "target_summary": {
     "count": 8,
@@ -55,7 +60,17 @@
         "opinion": "MarketPerform",
         "opinion_normalized": "hold",
         "score": 9.15,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-20",
@@ -70,7 +85,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-24",
@@ -85,7 +102,17 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -100,7 +127,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-30",
@@ -115,7 +144,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -130,7 +167,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 11.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-30",
@@ -145,7 +184,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.55,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -160,7 +207,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -175,7 +228,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -190,7 +249,383 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-20",
+        "broker": "한화투자증권",
+        "title": "HL만도 - 지금 보이는 게 다가 아니야",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91711&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260420_company_361811000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260420_company_361811000.pdf",
+        "target_price": "83,000",
+        "target_price_value": 83000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 849.0,
+        "unit": "억원",
+        "value_krw_100m": 849.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "1% YoY), 영업이익 849억원(+7."
+      },
+      {
+        "date": "2026-04-24",
+        "broker": "유진투자증권",
+        "title": "HL만도 - 1Q26 Preview: 북미 EV 시장 둔화의 영향",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91875&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260424_company_552547000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260424_company_552547000.pdf",
+        "target_price": "75,000",
+        "target_price_value": 75000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 3.5,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 3.5,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6%yoy, OPM 3.5%), 지배이익 320억원(+14."
+      },
+      {
+        "date": "2026-04-24",
+        "broker": "유진투자증권",
+        "title": "HL만도 - 1Q26 Preview: 북미 EV 시장 둔화의 영향",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91875&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260424_company_552547000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260424_company_552547000.pdf",
+        "target_price": "75,000",
+        "target_price_value": 75000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 820.0,
+        "unit": "억원",
+        "value_krw_100m": 820.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%yoy), 영업이익 820억원(+3."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "교보증권",
+        "title": "HL만도 - 1Q26 Review: 수주로 보여주는 경쟁력",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92257&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260430_company_644012000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260430_company_644012000.pdf",
+        "target_price": "77,000",
+        "target_price_value": 77000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 4.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 4.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8% YoY, OPM 4.0%)으로 컨센서스(Fnguide 매출액 2."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "유진투자증권",
+        "title": "HL만도 - 1Q26 Review: 선방한 실적, 원가 보전이 관건",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92203&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_191108000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_191108000.pdf",
+        "target_price": "75,000",
+        "target_price_value": 75000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.55,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 4.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 4.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%yoy, OPM 4.0%), 지배이익 410억원(+45."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "유진투자증권",
+        "title": "HL만도 - 1Q26 Review: 선방한 실적, 원가 보전이 관건",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92203&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_191108000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_191108000.pdf",
+        "target_price": "75,000",
+        "target_price_value": 75000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.55,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 3.6,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 3.6,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "해외 고객사 물량 차질 관련 일회성 보상비 100억원 반영되었으며 이를 제외시, 영업이익은 840억원 수준(OPM 3.6%) \" 선방한 실적: 해외 고객사 물량 차질 관련 일회성 보상비를 제외할 경우, 전년대비 영업이익 증가폭은 크지 않았음."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "iM증권",
+        "title": "HL만도 - 가까워지는 로보택시와 액츄에이터",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92196&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260430_company_840180000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260430_company_840180000.pdf",
+        "target_price": "80,000",
+        "target_price_value": 80000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 936.0,
+        "unit": "억원",
+        "value_krw_100m": 936.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3%), 영업이익 936억원 (+18."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "교보증권",
+        "title": "HL만도 - 1Q26 Review: 수주로 보여주는 경쟁력",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92257&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260430_company_644012000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260430_company_644012000.pdf",
+        "target_price": "77,000",
+        "target_price_value": 77000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 936.0,
+        "unit": "억원",
+        "value_krw_100m": 936.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8% YoY), 영업이익 936억원(+12."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "교보증권",
+        "title": "HL만도 - 1Q26 Review: 수주로 보여주는 경쟁력",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92257&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260430_company_644012000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260430_company_644012000.pdf",
+        "target_price": "77,000",
+        "target_price_value": 77000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 892.0,
+        "unit": "억원",
+        "value_krw_100m": 892.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4조원, 영업이익 892억원) 대비 상회."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "유진투자증권",
+        "title": "HL만도 - 1Q26 Review: 선방한 실적, 원가 보전이 관건",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92203&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_191108000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_191108000.pdf",
+        "target_price": "75,000",
+        "target_price_value": 75000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.55,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 940.0,
+        "unit": "억원",
+        "value_krw_100m": 940.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8%yoy), 영업이익 940억원(+18."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "유진투자증권",
+        "title": "HL만도 - 1Q26 Review: 선방한 실적, 원가 보전이 관건",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92203&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_191108000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_191108000.pdf",
+        "target_price": "75,000",
+        "target_price_value": 75000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.55,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 840.0,
+        "unit": "억원",
+        "value_krw_100m": 840.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "해외 고객사 물량 차질 관련 일회성 보상비 100억원 반영되었으며 이를 제외시, 영업이익은 840억원 수준(OPM 3."
       }
     ],
     "opinion_distribution": [
@@ -217,7 +652,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-24",
@@ -232,7 +669,17 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -247,7 +694,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -262,7 +715,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -277,7 +738,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-30",
@@ -292,7 +755,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -307,7 +776,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.55,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -322,7 +799,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 11.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -337,7 +816,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       }
     ],
     "window_days": 14
@@ -356,7 +843,17 @@
       "opinion": "MarketPerform",
       "opinion_normalized": "hold",
       "score": 9.15,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-20",
@@ -371,7 +868,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-24",
@@ -386,7 +885,17 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -401,7 +910,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-30",
@@ -416,7 +927,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -431,7 +950,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 11.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-30",
@@ -446,7 +967,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.55,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -461,7 +990,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -476,7 +1011,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -491,7 +1032,383 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-20",
+      "broker": "한화투자증권",
+      "title": "HL만도 - 지금 보이는 게 다가 아니야",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91711&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260420_company_361811000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260420_company_361811000.pdf",
+      "target_price": "83,000",
+      "target_price_value": 83000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 849.0,
+      "unit": "억원",
+      "value_krw_100m": 849.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "1% YoY), 영업이익 849억원(+7."
+    },
+    {
+      "date": "2026-04-24",
+      "broker": "유진투자증권",
+      "title": "HL만도 - 1Q26 Preview: 북미 EV 시장 둔화의 영향",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91875&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260424_company_552547000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260424_company_552547000.pdf",
+      "target_price": "75,000",
+      "target_price_value": 75000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 3.5,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 3.5,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6%yoy, OPM 3.5%), 지배이익 320억원(+14."
+    },
+    {
+      "date": "2026-04-24",
+      "broker": "유진투자증권",
+      "title": "HL만도 - 1Q26 Preview: 북미 EV 시장 둔화의 영향",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91875&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260424_company_552547000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260424_company_552547000.pdf",
+      "target_price": "75,000",
+      "target_price_value": 75000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 820.0,
+      "unit": "억원",
+      "value_krw_100m": 820.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%yoy), 영업이익 820억원(+3."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "교보증권",
+      "title": "HL만도 - 1Q26 Review: 수주로 보여주는 경쟁력",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92257&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260430_company_644012000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260430_company_644012000.pdf",
+      "target_price": "77,000",
+      "target_price_value": 77000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 4.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 4.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8% YoY, OPM 4.0%)으로 컨센서스(Fnguide 매출액 2."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "유진투자증권",
+      "title": "HL만도 - 1Q26 Review: 선방한 실적, 원가 보전이 관건",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92203&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_191108000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_191108000.pdf",
+      "target_price": "75,000",
+      "target_price_value": 75000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.55,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 4.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 4.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%yoy, OPM 4.0%), 지배이익 410억원(+45."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "유진투자증권",
+      "title": "HL만도 - 1Q26 Review: 선방한 실적, 원가 보전이 관건",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92203&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_191108000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_191108000.pdf",
+      "target_price": "75,000",
+      "target_price_value": 75000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.55,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 3.6,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 3.6,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "해외 고객사 물량 차질 관련 일회성 보상비 100억원 반영되었으며 이를 제외시, 영업이익은 840억원 수준(OPM 3.6%) \" 선방한 실적: 해외 고객사 물량 차질 관련 일회성 보상비를 제외할 경우, 전년대비 영업이익 증가폭은 크지 않았음."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "iM증권",
+      "title": "HL만도 - 가까워지는 로보택시와 액츄에이터",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92196&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260430_company_840180000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260430_company_840180000.pdf",
+      "target_price": "80,000",
+      "target_price_value": 80000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 936.0,
+      "unit": "억원",
+      "value_krw_100m": 936.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3%), 영업이익 936억원 (+18."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "교보증권",
+      "title": "HL만도 - 1Q26 Review: 수주로 보여주는 경쟁력",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92257&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260430_company_644012000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260430_company_644012000.pdf",
+      "target_price": "77,000",
+      "target_price_value": 77000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 936.0,
+      "unit": "억원",
+      "value_krw_100m": 936.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8% YoY), 영업이익 936억원(+12."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "교보증권",
+      "title": "HL만도 - 1Q26 Review: 수주로 보여주는 경쟁력",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92257&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260430_company_644012000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260430_company_644012000.pdf",
+      "target_price": "77,000",
+      "target_price_value": 77000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 892.0,
+      "unit": "억원",
+      "value_krw_100m": 892.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4조원, 영업이익 892억원) 대비 상회."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "유진투자증권",
+      "title": "HL만도 - 1Q26 Review: 선방한 실적, 원가 보전이 관건",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92203&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_191108000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_191108000.pdf",
+      "target_price": "75,000",
+      "target_price_value": 75000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.55,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 940.0,
+      "unit": "억원",
+      "value_krw_100m": 940.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8%yoy), 영업이익 940억원(+18."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "유진투자증권",
+      "title": "HL만도 - 1Q26 Review: 선방한 실적, 원가 보전이 관건",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92203&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_191108000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_191108000.pdf",
+      "target_price": "75,000",
+      "target_price_value": 75000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.55,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 840.0,
+      "unit": "억원",
+      "value_krw_100m": 840.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "해외 고객사 물량 차질 관련 일회성 보상비 100억원 반영되었으며 이를 제외시, 영업이익은 840억원 수준(OPM 3."
     }
   ],
   "opinion_distribution": [
@@ -518,7 +1435,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-24",
@@ -533,7 +1452,17 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -548,7 +1477,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -563,7 +1498,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -578,7 +1521,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-30",
@@ -593,7 +1538,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -608,7 +1559,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.55,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -623,7 +1582,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 11.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -638,7 +1599,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "broker_summary": [
@@ -734,13 +1703,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -797,7 +1779,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -848,10 +1833,66 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 940.0,
+          "unit": "억원",
+          "source_excerpt": "8%yoy), 영업이익 940억원(+18.",
+          "value_krw_100m": 940.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 840.0,
+          "unit": "억원",
+          "source_excerpt": "해외 고객사 물량 차질 관련 일회성 보상비 100억원 반영되었으며 이를 제외시, 영업이익은 840억원 수준(OPM 3.",
+          "value_krw_100m": 840.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 4.0,
+          "unit": "%",
+          "value_pct": 4.0,
+          "source_excerpt": "2%yoy, OPM 4.0%), 지배이익 410억원(+45."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 3.6,
+          "unit": "%",
+          "value_pct": 3.6,
+          "source_excerpt": "해외 고객사 물량 차질 관련 일회성 보상비 100억원 반영되었으며 이를 제외시, 영업이익은 840억원 수준(OPM 3.6%) \" 선방한 실적: 해외 고객사 물량 차질 관련 일회성 보상비를 제외할 경우, 전년대비 영업이익 증가폭은 크지 않았음."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -902,13 +1943,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -965,7 +2015,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 936.0,
+          "unit": "억원",
+          "source_excerpt": "3%), 영업이익 936억원 (+18.",
+          "value_krw_100m": 936.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1016,13 +2080,57 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 936.0,
+          "unit": "억원",
+          "source_excerpt": "8% YoY), 영업이익 936억원(+12.",
+          "value_krw_100m": 936.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 892.0,
+          "unit": "억원",
+          "source_excerpt": "4조원, 영업이익 892억원) 대비 상회.",
+          "value_krw_100m": 892.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 4.0,
+          "unit": "%",
+          "value_pct": 4.0,
+          "source_excerpt": "8% YoY, OPM 4.0%)으로 컨센서스(Fnguide 매출액 2."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1071,13 +2179,22 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1116,9 +2233,28 @@
       "ticker": null,
       "target_price_value": 55000,
       "opinion_normalized": "hold",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
+      ],
+      "change_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true
     }
   ],
   "recent_changes": [
@@ -1174,13 +2310,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1237,7 +2386,120 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92203",
+      "title": "1Q26 Review: 선방한 실적, 원가 보전이 관건",
+      "display_title": "HL만도 - 1Q26 Review: 선방한 실적, 원가 보전이 관건",
+      "broker": "유진투자증권",
+      "published_date": "2026-04-30",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92203&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_191108000.pdf",
+      "subject": "HL만도",
+      "subject_key": "hl만도",
+      "views": 1518,
+      "analyst": null,
+      "target_price": "75,000",
+      "target_price_value": 75000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "\" 동사는 1분기 매출액 2.3조원(+1.8%yoy), 영업이익 940억원(+18.2%yoy, OPM 4.0%), 지배이익 410억원(+45.2%yoy)를 기록. 해외 고객사 물량 차질 관련 일회성 보상비 100억원 반영되었으며 이를 제외시, 영업이익은 840억원 수준(OPM 3.6%)",
+      "summary": "\" 동사는 1분기 매출액 2.3조원(+1.8%yoy), 영업이익 940억원(+18.2%yoy, OPM 4.0%), 지배이익 410억원(+45.2%yoy)를 기록. 해외 고객사 물량 차질 관련 일회성 보상비 100억원 반영되었으며 이를 제외시, 영업이익은 840억원 수준(OPM 3.6%) \" 선방한 실적: 해외 고객사 물량 차질 관련 일회성 보상비를 제외할 경우, 전년대비 영업이익 증가폭은 크지 않았음.",
+      "summary_engine": "rule",
+      "score": 10.55,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 섹터/키워드(반도체, 로봇)",
+        "조회수 상위권",
+        "목표가 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체",
+        "로봇"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": "2026-04-24",
+      "previous_target_price": "75,000",
+      "previous_opinion": "Buy",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 940.0,
+          "unit": "억원",
+          "source_excerpt": "8%yoy), 영업이익 940억원(+18.",
+          "value_krw_100m": 940.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 840.0,
+          "unit": "억원",
+          "source_excerpt": "해외 고객사 물량 차질 관련 일회성 보상비 100억원 반영되었으며 이를 제외시, 영업이익은 840억원 수준(OPM 3.",
+          "value_krw_100m": 840.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 4.0,
+          "unit": "%",
+          "value_pct": 4.0,
+          "source_excerpt": "2%yoy, OPM 4.0%), 지배이익 410억원(+45."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 3.6,
+          "unit": "%",
+          "value_pct": 3.6,
+          "source_excerpt": "해외 고객사 물량 차질 관련 일회성 보상비 100억원 반영되었으며 이를 제외시, 영업이익은 840억원 수준(OPM 3.6%) \" 선방한 실적: 해외 고객사 물량 차질 관련 일회성 보상비를 제외할 경우, 전년대비 영업이익 증가폭은 크지 않았음."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1288,13 +2550,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1351,7 +2622,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 936.0,
+          "unit": "억원",
+          "source_excerpt": "3%), 영업이익 936억원 (+18.",
+          "value_krw_100m": 936.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1402,13 +2687,57 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 936.0,
+          "unit": "억원",
+          "source_excerpt": "8% YoY), 영업이익 936억원(+12.",
+          "value_krw_100m": 936.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 892.0,
+          "unit": "억원",
+          "source_excerpt": "4조원, 영업이익 892억원) 대비 상회.",
+          "value_krw_100m": 892.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 4.0,
+          "unit": "%",
+          "value_pct": 4.0,
+          "source_excerpt": "8% YoY, OPM 4.0%)으로 컨센서스(Fnguide 매출액 2."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1457,13 +2786,22 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1515,13 +2853,51 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 820.0,
+          "unit": "억원",
+          "source_excerpt": "2%yoy), 영업이익 820억원(+3.",
+          "value_krw_100m": 820.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 3.5,
+          "unit": "%",
+          "value_pct": 3.5,
+          "source_excerpt": "6%yoy, OPM 3.5%), 지배이익 320억원(+14."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1579,7 +2955,81 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 849.0,
+          "unit": "억원",
+          "source_excerpt": "1% YoY), 영업이익 849억원(+7.",
+          "value_krw_100m": 849.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91614",
+      "title": "저성장 전망 속 부담스러워진 멀티플",
+      "display_title": "HL만도 - 저성장 전망 속 부담스러워진 멀티플",
+      "broker": "키움증권",
+      "published_date": "2026-04-16",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91614&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260416_company_195813000.pdf",
+      "subject": "HL만도",
+      "views": 1807,
+      "analyst": null,
+      "target_price": "55,000",
+      "opinion": "MarketPerform",
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "1Q26 Preview: 구조적으로 반복되는 수익성 눈높이 하향 매출액 2.3조 원(+2.1% YoY, -5.8% QoQ), 영업이익 804억 원(+1.5% YoY, +0.9% QoQ)을 기록하며 시장 기대치(매출액 2.3조 원, 영업이익 904억 원)를 수익성에서 하회할 전망이다.",
+      "summary": "1Q26 Preview: 구조적으로 반복되는 수익성 눈높이 하향 매출액 2.3조 원(+2.1% YoY, -5.8% QoQ), 영업이익 804억 원(+1.5% YoY, +0.9% QoQ)을 기록하며 시장 기대치(매출액 2.3조 원, 영업이익 904억 원)를 수익성에서 하회할 전망이다. 특히 주요 고객사들의 볼륨 성장 부진에 따른 고정비 완화 효과를 기대하기 어려운 가운데 USD로 매입되는 ADAS 제품용 반도체 원재료비 매입원가 상승 부담이 더해지면서 수익성 개선에 제약으로 작용했을 것으로 추정한다.",
+      "summary_engine": "rule",
+      "score": 9.15,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "subject_key": "hl만도",
+      "ticker": null,
+      "target_price_value": 55000,
+      "opinion_normalized": "hold",
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
+      ],
+      "change_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true
     }
   ],
   "timeline": [
@@ -1635,13 +3085,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1698,7 +3161,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1749,10 +3215,66 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 940.0,
+          "unit": "억원",
+          "source_excerpt": "8%yoy), 영업이익 940억원(+18.",
+          "value_krw_100m": 940.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 840.0,
+          "unit": "억원",
+          "source_excerpt": "해외 고객사 물량 차질 관련 일회성 보상비 100억원 반영되었으며 이를 제외시, 영업이익은 840억원 수준(OPM 3.",
+          "value_krw_100m": 840.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 4.0,
+          "unit": "%",
+          "value_pct": 4.0,
+          "source_excerpt": "2%yoy, OPM 4.0%), 지배이익 410억원(+45."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 3.6,
+          "unit": "%",
+          "value_pct": 3.6,
+          "source_excerpt": "해외 고객사 물량 차질 관련 일회성 보상비 100억원 반영되었으며 이를 제외시, 영업이익은 840억원 수준(OPM 3.6%) \" 선방한 실적: 해외 고객사 물량 차질 관련 일회성 보상비를 제외할 경우, 전년대비 영업이익 증가폭은 크지 않았음."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1803,13 +3325,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1866,7 +3397,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 936.0,
+          "unit": "억원",
+          "source_excerpt": "3%), 영업이익 936억원 (+18.",
+          "value_krw_100m": 936.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1917,13 +3462,57 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 936.0,
+          "unit": "억원",
+          "source_excerpt": "8% YoY), 영업이익 936억원(+12.",
+          "value_krw_100m": 936.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 892.0,
+          "unit": "억원",
+          "source_excerpt": "4조원, 영업이익 892억원) 대비 상회.",
+          "value_krw_100m": 892.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 4.0,
+          "unit": "%",
+          "value_pct": 4.0,
+          "source_excerpt": "8% YoY, OPM 4.0%)으로 컨센서스(Fnguide 매출액 2."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1972,13 +3561,22 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -2030,13 +3628,51 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 820.0,
+          "unit": "억원",
+          "source_excerpt": "2%yoy), 영업이익 820억원(+3.",
+          "value_krw_100m": 820.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 3.5,
+          "unit": "%",
+          "value_pct": 3.5,
+          "source_excerpt": "6%yoy, OPM 3.5%), 지배이익 320억원(+14."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -2094,7 +3730,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 849.0,
+          "unit": "억원",
+          "source_excerpt": "1% YoY), 영업이익 849억원(+7.",
+          "value_krw_100m": 849.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -2133,9 +3783,28 @@
       "ticker": null,
       "target_price_value": 55000,
       "opinion_normalized": "hold",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
+      ],
+      "change_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true
     }
   ]
 }

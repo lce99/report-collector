@@ -19,7 +19,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 5
+    "coverage_initiated": 5,
+    "estimate_signal_reports": 5,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 5,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 5,
@@ -48,7 +53,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -63,7 +74,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -78,7 +97,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.3,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -93,7 +124,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -108,7 +145,193 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-13",
+        "broker": "교보증권",
+        "title": "CJ제일제당 - 바이오 진짜 저점 통과",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92850&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260513_company_644367000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260513_company_644367000.pdf",
+        "target_price": "270,000",
+        "target_price_value": 270000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1430.0,
+        "unit": "억원",
+        "value_krw_100m": 1430.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0조원(YoY 4%), 영업이익 1,430억원(YoY 11%) 시현."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "키움증권",
+        "title": "CJ제일제당 - 바이오 부문 중심의 수익성 반등 전망",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92807&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_664945000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_664945000.pdf",
+        "target_price": "310,000",
+        "target_price_value": 310000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.3,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1분기",
+        "value": 2381.0,
+        "unit": "억원",
+        "value_krw_100m": 2381.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "CJ제일제당 - 바이오 부문 중심의 수익성 반등 전망 바이오 부문 중심의 수익성 반등 전망 CJ제일제당 1분기 영업이익 2,381억원으로 시장 기대치 하회 CJ제일제당의 1분기 연결기준 영업이익은 2,381억원(-19."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "키움증권",
+        "title": "CJ제일제당 - 바이오 부문 중심의 수익성 반등 전망",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92807&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_664945000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_664945000.pdf",
+        "target_price": "310,000",
+        "target_price_value": 310000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.3,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2381.0,
+        "unit": "억원",
+        "value_krw_100m": 2381.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "CJ제일제당 - 바이오 부문 중심의 수익성 반등 전망 바이오 부문 중심의 수익성 반등 전망 CJ제일제당 1분기 영업이익 2,381억원으로 시장 기대치 하회 CJ제일제당의 1분기 연결기준 영업이익은 2,381억원(-19."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "키움증권",
+        "title": "CJ제일제당 - 바이오 부문 중심의 수익성 반등 전망",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92807&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_664945000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_664945000.pdf",
+        "target_price": "310,000",
+        "target_price_value": 310000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.3,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1485.0,
+        "unit": "억원",
+        "value_krw_100m": 1485.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5% YoY)으로 시장 기대치를 하회하였으나, 대한통운 제외기준 영업이익은 1,485억원(-26% YoY)으로 당사 기대치에 부합하였다."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "한화투자증권",
+        "title": "CJ제일제당 - 속도는 더디지만, 방향성은 확인",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92858&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260513_company_118436000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260513_company_118436000.pdf",
+        "target_price": "300,000",
+        "target_price_value": 300000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1485.0,
+        "unit": "억원",
+        "value_krw_100m": 1485.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3% QoQ), 영업이익은 1,485억원(-26."
       }
     ],
     "opinion_distribution": [
@@ -131,7 +354,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -146,7 +375,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -161,7 +396,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -176,7 +419,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -191,7 +440,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.3,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -210,7 +471,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -225,7 +492,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -240,7 +515,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.3,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -255,7 +542,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -270,7 +563,193 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-13",
+      "broker": "교보증권",
+      "title": "CJ제일제당 - 바이오 진짜 저점 통과",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92850&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260513_company_644367000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260513_company_644367000.pdf",
+      "target_price": "270,000",
+      "target_price_value": 270000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1430.0,
+      "unit": "억원",
+      "value_krw_100m": 1430.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0조원(YoY 4%), 영업이익 1,430억원(YoY 11%) 시현."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "키움증권",
+      "title": "CJ제일제당 - 바이오 부문 중심의 수익성 반등 전망",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92807&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_664945000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_664945000.pdf",
+      "target_price": "310,000",
+      "target_price_value": 310000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.3,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1분기",
+      "value": 2381.0,
+      "unit": "억원",
+      "value_krw_100m": 2381.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "CJ제일제당 - 바이오 부문 중심의 수익성 반등 전망 바이오 부문 중심의 수익성 반등 전망 CJ제일제당 1분기 영업이익 2,381억원으로 시장 기대치 하회 CJ제일제당의 1분기 연결기준 영업이익은 2,381억원(-19."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "키움증권",
+      "title": "CJ제일제당 - 바이오 부문 중심의 수익성 반등 전망",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92807&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_664945000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_664945000.pdf",
+      "target_price": "310,000",
+      "target_price_value": 310000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.3,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2381.0,
+      "unit": "억원",
+      "value_krw_100m": 2381.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "CJ제일제당 - 바이오 부문 중심의 수익성 반등 전망 바이오 부문 중심의 수익성 반등 전망 CJ제일제당 1분기 영업이익 2,381억원으로 시장 기대치 하회 CJ제일제당의 1분기 연결기준 영업이익은 2,381억원(-19."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "키움증권",
+      "title": "CJ제일제당 - 바이오 부문 중심의 수익성 반등 전망",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92807&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_664945000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_664945000.pdf",
+      "target_price": "310,000",
+      "target_price_value": 310000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.3,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1485.0,
+      "unit": "억원",
+      "value_krw_100m": 1485.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5% YoY)으로 시장 기대치를 하회하였으나, 대한통운 제외기준 영업이익은 1,485억원(-26% YoY)으로 당사 기대치에 부합하였다."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "한화투자증권",
+      "title": "CJ제일제당 - 속도는 더디지만, 방향성은 확인",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92858&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260513_company_118436000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260513_company_118436000.pdf",
+      "target_price": "300,000",
+      "target_price_value": 300000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1485.0,
+      "unit": "억원",
+      "value_krw_100m": 1485.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3% QoQ), 영업이익은 1,485억원(-26."
     }
   ],
   "opinion_distribution": [
@@ -293,7 +772,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -308,7 +793,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -323,7 +814,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -338,7 +837,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -353,7 +858,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.3,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -435,13 +952,65 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 2381.0,
+          "unit": "억원",
+          "source_excerpt": "CJ제일제당 - 바이오 부문 중심의 수익성 반등 전망 바이오 부문 중심의 수익성 반등 전망 CJ제일제당 1분기 영업이익 2,381억원으로 시장 기대치 하회 CJ제일제당의 1분기 연결기준 영업이익은 2,381억원(-19.",
+          "value_krw_100m": 2381.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2381.0,
+          "unit": "억원",
+          "source_excerpt": "CJ제일제당 - 바이오 부문 중심의 수익성 반등 전망 바이오 부문 중심의 수익성 반등 전망 CJ제일제당 1분기 영업이익 2,381억원으로 시장 기대치 하회 CJ제일제당의 1분기 연결기준 영업이익은 2,381억원(-19.",
+          "value_krw_100m": 2381.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1485.0,
+          "unit": "억원",
+          "source_excerpt": "5% YoY)으로 시장 기대치를 하회하였으나, 대한통운 제외기준 영업이익은 1,485억원(-26% YoY)으로 당사 기대치에 부합하였다.",
+          "value_krw_100m": 1485.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -491,13 +1060,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -547,13 +1125,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -602,13 +1193,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1485.0,
+          "unit": "억원",
+          "source_excerpt": "3% QoQ), 영업이익은 1,485억원(-26.",
+          "value_krw_100m": 1485.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -657,13 +1268,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1430.0,
+          "unit": "억원",
+          "source_excerpt": "0조원(YoY 4%), 영업이익 1,430억원(YoY 11%) 시현.",
+          "value_krw_100m": 1430.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "recent_changes": [
@@ -717,13 +1348,65 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 2381.0,
+          "unit": "억원",
+          "source_excerpt": "CJ제일제당 - 바이오 부문 중심의 수익성 반등 전망 바이오 부문 중심의 수익성 반등 전망 CJ제일제당 1분기 영업이익 2,381억원으로 시장 기대치 하회 CJ제일제당의 1분기 연결기준 영업이익은 2,381억원(-19.",
+          "value_krw_100m": 2381.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2381.0,
+          "unit": "억원",
+          "source_excerpt": "CJ제일제당 - 바이오 부문 중심의 수익성 반등 전망 바이오 부문 중심의 수익성 반등 전망 CJ제일제당 1분기 영업이익 2,381억원으로 시장 기대치 하회 CJ제일제당의 1분기 연결기준 영업이익은 2,381억원(-19.",
+          "value_krw_100m": 2381.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1485.0,
+          "unit": "억원",
+          "source_excerpt": "5% YoY)으로 시장 기대치를 하회하였으나, 대한통운 제외기준 영업이익은 1,485억원(-26% YoY)으로 당사 기대치에 부합하였다.",
+          "value_krw_100m": 1485.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -773,13 +1456,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -829,13 +1521,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -884,13 +1589,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1485.0,
+          "unit": "억원",
+          "source_excerpt": "3% QoQ), 영업이익은 1,485억원(-26.",
+          "value_krw_100m": 1485.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -939,13 +1664,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1430.0,
+          "unit": "억원",
+          "source_excerpt": "0조원(YoY 4%), 영업이익 1,430억원(YoY 11%) 시현.",
+          "value_krw_100m": 1430.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "timeline": [
@@ -999,13 +1744,65 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 2381.0,
+          "unit": "억원",
+          "source_excerpt": "CJ제일제당 - 바이오 부문 중심의 수익성 반등 전망 바이오 부문 중심의 수익성 반등 전망 CJ제일제당 1분기 영업이익 2,381억원으로 시장 기대치 하회 CJ제일제당의 1분기 연결기준 영업이익은 2,381억원(-19.",
+          "value_krw_100m": 2381.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2381.0,
+          "unit": "억원",
+          "source_excerpt": "CJ제일제당 - 바이오 부문 중심의 수익성 반등 전망 바이오 부문 중심의 수익성 반등 전망 CJ제일제당 1분기 영업이익 2,381억원으로 시장 기대치 하회 CJ제일제당의 1분기 연결기준 영업이익은 2,381억원(-19.",
+          "value_krw_100m": 2381.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1485.0,
+          "unit": "억원",
+          "source_excerpt": "5% YoY)으로 시장 기대치를 하회하였으나, 대한통운 제외기준 영업이익은 1,485억원(-26% YoY)으로 당사 기대치에 부합하였다.",
+          "value_krw_100m": 1485.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1055,13 +1852,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1111,13 +1917,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1166,13 +1985,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1485.0,
+          "unit": "억원",
+          "source_excerpt": "3% QoQ), 영업이익은 1,485억원(-26.",
+          "value_krw_100m": 1485.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1221,13 +2060,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1430.0,
+          "unit": "억원",
+          "source_excerpt": "0조원(YoY 4%), 영업이익 1,430억원(YoY 11%) 시현.",
+          "value_krw_100m": 1430.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     }
   ]
 }

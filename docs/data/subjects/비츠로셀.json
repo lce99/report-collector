@@ -8,14 +8,19 @@
     "신한투자증권"
   ],
   "change_summary": {
-    "changed_reports": 1,
+    "changed_reports": 2,
     "target_price_up": 1,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 0
+    "coverage_initiated": 0,
+    "estimate_signal_reports": 2,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 1,
@@ -44,7 +49,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -59,7 +72,85 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.4,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-17",
+        "broker": "신한투자증권",
+        "title": "비츠로셀 - 비상(飛上)",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91673&page=1",
+        "pdf_url": null,
+        "primary_url": "https://finance.naver.com/research/company_read.naver?nid=91673&page=1",
+        "target_price": "65,000",
+        "target_price_value": 65000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.9,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 10.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 10.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "근거는 1) 고온전지 부문 글로벌 리더, 2) 매출 고성장세의 방산 부문 프리미엄 부여, 3) 열전지 글로벌 리더 기업 대부분이 비상장 기업, 직접투자가 가능한 열전지 전문 상장사로 희소성 부각, 4) 경쟁사 대비 높은 수익성(영업이익률 10% vs 30%) 확보 주가의 상방이 열리다…"
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "신한투자증권",
+        "title": "비츠로셀 - 성장주 프리미엄 강화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92812&page=3",
+        "pdf_url": null,
+        "primary_url": "https://finance.naver.com/research/company_read.naver?nid=92812&page=3",
+        "target_price": "70,000",
+        "target_price_value": 70000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 10.4,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 30.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 30.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "매출액 성장률과 영업이익률이 30%에 근접, 2026년 주당순이익(EPS) 7."
       }
     ],
     "opinion_distribution": [
@@ -82,7 +173,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.4,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -101,7 +200,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -116,7 +223,85 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.4,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-17",
+      "broker": "신한투자증권",
+      "title": "비츠로셀 - 비상(飛上)",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91673&page=1",
+      "pdf_url": null,
+      "primary_url": "https://finance.naver.com/research/company_read.naver?nid=91673&page=1",
+      "target_price": "65,000",
+      "target_price_value": 65000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.9,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 10.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 10.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "근거는 1) 고온전지 부문 글로벌 리더, 2) 매출 고성장세의 방산 부문 프리미엄 부여, 3) 열전지 글로벌 리더 기업 대부분이 비상장 기업, 직접투자가 가능한 열전지 전문 상장사로 희소성 부각, 4) 경쟁사 대비 높은 수익성(영업이익률 10% vs 30%) 확보 주가의 상방이 열리다…"
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "신한투자증권",
+      "title": "비츠로셀 - 성장주 프리미엄 강화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92812&page=3",
+      "pdf_url": null,
+      "primary_url": "https://finance.naver.com/research/company_read.naver?nid=92812&page=3",
+      "target_price": "70,000",
+      "target_price_value": 70000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 10.4,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 30.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 30.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "매출액 성장률과 영업이익률이 30%에 근접, 2026년 주당순이익(EPS) 7."
     }
   ],
   "opinion_distribution": [
@@ -139,7 +324,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.4,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -206,13 +399,37 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 30.0,
+          "unit": "%",
+          "value_pct": 30.0,
+          "source_excerpt": "매출액 성장률과 영업이익률이 30%에 근접, 2026년 주당순이익(EPS) 7."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "recent_changes": [
@@ -267,13 +484,104 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 30.0,
+          "unit": "%",
+          "value_pct": 30.0,
+          "source_excerpt": "매출액 성장률과 영업이익률이 30%에 근접, 2026년 주당순이익(EPS) 7."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91673",
+      "title": "비상(飛上)",
+      "display_title": "비츠로셀 - 비상(飛上)",
+      "broker": "신한투자증권",
+      "published_date": "2026-04-17",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91673&page=1",
+      "pdf_url": null,
+      "subject": "비츠로셀",
+      "views": 3791,
+      "analyst": null,
+      "target_price": "65,000",
+      "opinion": "매수",
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "주가의 상방이 열리다 저평가 해소 국면, 목표주가 155% 상향.",
+      "summary": "주가의 상방이 열리다 저평가 해소 국면, 목표주가 155% 상향. 근거는 1) 고온전지 부문 글로벌 리더, 2) 매출 고성장세의 방산 부문 프리미엄 부여, 3) 열전지 글로벌 리더 기업 대부분이 비상장 기업, 직접투자가 가능한 열전지 전문 상장사로 희소성 부각, 4) 경쟁사 대비 높은 수익성(영업이익률 10% vs 30%) 확보",
+      "summary_engine": "rule",
+      "score": 7.9,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "subject_key": "비츠로셀",
+      "ticker": null,
+      "target_price_value": 65000,
+      "opinion_normalized": "buy",
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 10.0,
+          "unit": "%",
+          "value_pct": 10.0,
+          "source_excerpt": "근거는 1) 고온전지 부문 글로벌 리더, 2) 매출 고성장세의 방산 부문 프리미엄 부여, 3) 열전지 글로벌 리더 기업 대부분이 비상장 기업, 직접투자가 가능한 열전지 전문 상장사로 희소성 부각, 4) 경쟁사 대비 높은 수익성(영업이익률 10% vs 30%) 확보 주가의 상방이 열리다…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true
     }
   ],
   "timeline": [
@@ -328,13 +636,37 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 30.0,
+          "unit": "%",
+          "value_pct": 30.0,
+          "source_excerpt": "매출액 성장률과 영업이익률이 30%에 근접, 2026년 주당순이익(EPS) 7."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -373,9 +705,35 @@
       "ticker": null,
       "target_price_value": 65000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 10.0,
+          "unit": "%",
+          "value_pct": 10.0,
+          "source_excerpt": "근거는 1) 고온전지 부문 글로벌 리더, 2) 매출 고성장세의 방산 부문 프리미엄 부여, 3) 열전지 글로벌 리더 기업 대부분이 비상장 기업, 직접투자가 가능한 열전지 전문 상장사로 희소성 부각, 4) 경쟁사 대비 높은 수익성(영업이익률 10% vs 30%) 확보 주가의 상방이 열리다…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true
     }
   ]
 }

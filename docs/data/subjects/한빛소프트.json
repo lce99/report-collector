@@ -15,7 +15,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 0
+    "coverage_initiated": 0,
+    "estimate_signal_reports": 0,
+    "earnings_estimate_up": 0,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 0,
@@ -26,6 +31,7 @@
   "opinion_summary": [],
   "charts": {
     "target_price_history": [],
+    "estimate_metric_history": [],
     "opinion_distribution": [],
     "broker_timeline": [
       {
@@ -41,12 +47,15 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 9.3,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
   },
   "target_price_history": [],
+  "estimate_metric_history": [],
   "opinion_distribution": [],
   "broker_timeline": [
     {
@@ -62,7 +71,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 9.3,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -131,7 +142,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [],
@@ -189,7 +203,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

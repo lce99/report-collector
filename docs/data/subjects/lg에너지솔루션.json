@@ -22,7 +22,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 8
+    "coverage_initiated": 8,
+    "estimate_signal_reports": 5,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 3,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 8,
@@ -51,7 +56,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -66,7 +77,19 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -81,7 +104,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -96,7 +121,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -111,7 +142,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -126,7 +163,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-06",
@@ -141,7 +180,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -156,7 +201,181 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-04",
+        "broker": "IBK투자증권",
+        "title": "LG에너지솔루션 - 매 분기 성장 예정",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92346&page=4",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260504_company_923835000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260504_company_923835000.pdf",
+        "target_price": "560,000",
+        "target_price_value": 560000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": -3.2,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": -3.2,
+        "value_won": null,
+        "change_pctp": -1.3,
+        "source_excerpt": "2%), 영업이익 -2,078억원(QoQ 적전, AMPC 1,897억원 반영), OPM -3.2%(QoQ -1."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "교보증권",
+        "title": "LG에너지솔루션 - 1Q26 Review ESS 체질 전환 가속화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92420&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260504_company_487421000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260504_company_487421000.pdf",
+        "target_price": "570,000",
+        "target_price_value": 570000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": -3.2,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": -3.2,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%), 영업이익 -2,078억원(OPM -3.2%)을 기록."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "IBK투자증권",
+        "title": "LG에너지솔루션 - 매 분기 성장 예정",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92346&page=4",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260504_company_923835000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260504_company_923835000.pdf",
+        "target_price": "560,000",
+        "target_price_value": 560000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": -2078.0,
+        "unit": "억원",
+        "value_krw_100m": -2078.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%), 영업이익 -2,078억원(QoQ 적전, AMPC 1,897억원 반영), OPM -3."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "IBK투자증권",
+        "title": "LG에너지솔루션 - 매 분기 성장 예정",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92346&page=4",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260504_company_923835000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260504_company_923835000.pdf",
+        "target_price": "560,000",
+        "target_price_value": 560000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": -1400.0,
+        "unit": "억원",
+        "value_krw_100m": -1400.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9조원, 영업이익 -1,400억원)를 상회했다."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "교보증권",
+        "title": "LG에너지솔루션 - 1Q26 Review ESS 체질 전환 가속화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92420&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260504_company_487421000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260504_company_487421000.pdf",
+        "target_price": "570,000",
+        "target_price_value": 570000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": -2078.0,
+        "unit": "억원",
+        "value_krw_100m": -2078.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%), 영업이익 -2,078억원(OPM -3."
       }
     ],
     "opinion_distribution": [
@@ -179,7 +398,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -194,7 +419,19 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -209,7 +446,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -224,7 +463,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -239,7 +484,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -254,7 +501,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-06",
@@ -269,7 +522,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -284,7 +543,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -303,7 +564,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -318,7 +585,19 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -333,7 +612,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -348,7 +629,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -363,7 +650,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -378,7 +671,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-06",
@@ -393,7 +688,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -408,7 +709,181 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-04",
+      "broker": "IBK투자증권",
+      "title": "LG에너지솔루션 - 매 분기 성장 예정",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92346&page=4",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260504_company_923835000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260504_company_923835000.pdf",
+      "target_price": "560,000",
+      "target_price_value": 560000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": -3.2,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": -3.2,
+      "value_won": null,
+      "change_pctp": -1.3,
+      "source_excerpt": "2%), 영업이익 -2,078억원(QoQ 적전, AMPC 1,897억원 반영), OPM -3.2%(QoQ -1."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "교보증권",
+      "title": "LG에너지솔루션 - 1Q26 Review ESS 체질 전환 가속화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92420&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260504_company_487421000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260504_company_487421000.pdf",
+      "target_price": "570,000",
+      "target_price_value": 570000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": -3.2,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": -3.2,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%), 영업이익 -2,078억원(OPM -3.2%)을 기록."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "IBK투자증권",
+      "title": "LG에너지솔루션 - 매 분기 성장 예정",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92346&page=4",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260504_company_923835000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260504_company_923835000.pdf",
+      "target_price": "560,000",
+      "target_price_value": 560000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": -2078.0,
+      "unit": "억원",
+      "value_krw_100m": -2078.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%), 영업이익 -2,078억원(QoQ 적전, AMPC 1,897억원 반영), OPM -3."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "IBK투자증권",
+      "title": "LG에너지솔루션 - 매 분기 성장 예정",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92346&page=4",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260504_company_923835000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260504_company_923835000.pdf",
+      "target_price": "560,000",
+      "target_price_value": 560000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": -1400.0,
+      "unit": "억원",
+      "value_krw_100m": -1400.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9조원, 영업이익 -1,400억원)를 상회했다."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "교보증권",
+      "title": "LG에너지솔루션 - 1Q26 Review ESS 체질 전환 가속화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92420&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260504_company_487421000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260504_company_487421000.pdf",
+      "target_price": "570,000",
+      "target_price_value": 570000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": -2078.0,
+      "unit": "억원",
+      "value_krw_100m": -2078.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%), 영업이익 -2,078억원(OPM -3."
     }
   ],
   "opinion_distribution": [
@@ -431,7 +906,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -446,7 +927,19 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -461,7 +954,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -476,7 +971,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -491,7 +992,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -506,7 +1009,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-06",
@@ -521,7 +1030,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -536,7 +1051,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -634,7 +1151,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -685,13 +1205,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -742,13 +1271,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -806,7 +1344,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -858,13 +1399,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -922,7 +1472,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -2078.0,
+          "unit": "억원",
+          "source_excerpt": "2%), 영업이익 -2,078억원(OPM -3.",
+          "value_krw_100m": -2078.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": -3.2,
+          "unit": "%",
+          "value_pct": -3.2,
+          "source_excerpt": "2%), 영업이익 -2,078억원(OPM -3.2%)을 기록."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -974,13 +1548,66 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -2078.0,
+          "unit": "억원",
+          "source_excerpt": "2%), 영업이익 -2,078억원(QoQ 적전, AMPC 1,897억원 반영), OPM -3.",
+          "value_krw_100m": -2078.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -1400.0,
+          "unit": "억원",
+          "source_excerpt": "9조원, 영업이익 -1,400억원)를 상회했다.",
+          "value_krw_100m": -1400.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": -3.2,
+          "unit": "%",
+          "value_pct": -3.2,
+          "source_excerpt": "2%), 영업이익 -2,078억원(QoQ 적전, AMPC 1,897억원 반영), OPM -3.2%(QoQ -1.",
+          "change_pctp": -1.3
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1031,13 +1658,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "recent_changes": [
@@ -1095,7 +1731,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1146,13 +1785,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1203,13 +1851,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1267,7 +1924,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1319,13 +1979,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1383,7 +2052,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -2078.0,
+          "unit": "억원",
+          "source_excerpt": "2%), 영업이익 -2,078억원(OPM -3.",
+          "value_krw_100m": -2078.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": -3.2,
+          "unit": "%",
+          "value_pct": -3.2,
+          "source_excerpt": "2%), 영업이익 -2,078억원(OPM -3.2%)을 기록."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1435,13 +2128,66 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -2078.0,
+          "unit": "억원",
+          "source_excerpt": "2%), 영업이익 -2,078억원(QoQ 적전, AMPC 1,897억원 반영), OPM -3.",
+          "value_krw_100m": -2078.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -1400.0,
+          "unit": "억원",
+          "source_excerpt": "9조원, 영업이익 -1,400억원)를 상회했다.",
+          "value_krw_100m": -1400.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": -3.2,
+          "unit": "%",
+          "value_pct": -3.2,
+          "source_excerpt": "2%), 영업이익 -2,078억원(QoQ 적전, AMPC 1,897억원 반영), OPM -3.2%(QoQ -1.",
+          "change_pctp": -1.3
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1492,13 +2238,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "timeline": [
@@ -1556,7 +2311,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1607,13 +2365,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1664,13 +2431,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1728,7 +2504,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1780,13 +2559,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1844,7 +2632,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -2078.0,
+          "unit": "억원",
+          "source_excerpt": "2%), 영업이익 -2,078억원(OPM -3.",
+          "value_krw_100m": -2078.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": -3.2,
+          "unit": "%",
+          "value_pct": -3.2,
+          "source_excerpt": "2%), 영업이익 -2,078억원(OPM -3.2%)을 기록."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1896,13 +2708,66 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -2078.0,
+          "unit": "억원",
+          "source_excerpt": "2%), 영업이익 -2,078억원(QoQ 적전, AMPC 1,897억원 반영), OPM -3.",
+          "value_krw_100m": -2078.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -1400.0,
+          "unit": "억원",
+          "source_excerpt": "9조원, 영업이익 -1,400억원)를 상회했다.",
+          "value_krw_100m": -1400.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": -3.2,
+          "unit": "%",
+          "value_pct": -3.2,
+          "source_excerpt": "2%), 영업이익 -2,078억원(QoQ 적전, AMPC 1,897억원 반영), OPM -3.2%(QoQ -1.",
+          "change_pctp": -1.3
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1953,13 +2818,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     }
   ]
 }

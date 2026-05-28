@@ -23,7 +23,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 8
+    "coverage_initiated": 8,
+    "estimate_signal_reports": 7,
+    "earnings_estimate_up": 7,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 9,
@@ -52,7 +57,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.3,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-13",
@@ -67,7 +74,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -82,7 +95,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -97,7 +118,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -112,7 +139,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -127,7 +160,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-13",
@@ -142,7 +177,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-13",
@@ -157,7 +194,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -172,7 +221,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -187,7 +242,385 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 13.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-13",
+        "broker": "키움증권",
+        "title": "신세계 - 실적도 신세계",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92806&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_830194000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_830194000.pdf",
+        "target_price": "600,000",
+        "target_price_value": 600000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배주주순이익",
+        "period": null,
+        "value": 1202.0,
+        "unit": "억원",
+        "value_krw_100m": 1202.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "신세계 - 실적도 신세계 실적도 신세계 신세계 1분기 영업이익 1,978억원으로 시장 기대치 상회 신세계의 1분기 연결기준 영업이익은 1,978억원(+50% YoY), 지배주주순이익은 1,202억원(+109% YoY)으로 시장 컨센서스를 각각 +18%, +53% 상회하였다."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "교보증권",
+        "title": "신세계 - 1Q26 Review: 우아한 샤넬, 우아한 프라다, ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92851&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_197496000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_197496000.pdf",
+        "target_price": "600,000",
+        "target_price_value": 600000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 10.7,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 10.7,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5%, OPM 10.7%)로 영업이익 기준 시장 기대치(Fnguide 기준 1,682억원) 큰 폭 상회 ① 백화점: 총매출액 2조 257억원 (YoY +13."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "교보증권",
+        "title": "신세계 - 1Q26 Review: 우아한 샤넬, 우아한 프라다, ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92851&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_197496000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_197496000.pdf",
+        "target_price": "600,000",
+        "target_price_value": 600000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 7.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 7.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7%, OPM 7.0%) 기록."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "교보증권",
+        "title": "신세계 - 1Q26 Review: 우아한 샤넬, 우아한 프라다, ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92851&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_197496000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_197496000.pdf",
+        "target_price": "600,000",
+        "target_price_value": 600000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1978.0,
+        "unit": "억원",
+        "value_krw_100m": 1978.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9%), 영업이익 1,978억원(YoY +49."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "교보증권",
+        "title": "신세계 - 1Q26 Review: 우아한 샤넬, 우아한 프라다, ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92851&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_197496000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_197496000.pdf",
+        "target_price": "600,000",
+        "target_price_value": 600000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1410.0,
+        "unit": "억원",
+        "value_krw_100m": 1410.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0%), 영업이익 1,410억원 (YoY +30."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "미래에셋증권",
+        "title": "신세계 - 만점짜리 실적",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92844&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260513_company_478718000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260513_company_478718000.pdf",
+        "target_price": "600,000",
+        "target_price_value": 600000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.8,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1978.0,
+        "unit": "억원",
+        "value_krw_100m": 1978.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "신세계 - 만점짜리 실적 만점짜리 실적 신세계 1Q26 Review: 백화점 호조 + 면세점 서프 신세계의 1Q26 실적은 매출액 18,471억원(YoY +11%), 영업이익 1,978억원(YoY +49%)으로 기대치를 큰 폭으로 상회했다."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "유진투자증권",
+        "title": "신세계 - 1Q26 Review: 이런 실적, 안 보고 배겨요?",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92824&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260513_company_55287000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260513_company_55287000.pdf",
+        "target_price": "560,000",
+        "target_price_value": 560000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1978.0,
+        "unit": "억원",
+        "value_krw_100m": 1978.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9%, 이하 yoy), 영업이익 1,978억원(+49."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "유진투자증권",
+        "title": "신세계 - 1Q26 Review: 이런 실적, 안 보고 배겨요?",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92824&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260513_company_55287000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260513_company_55287000.pdf",
+        "target_price": "560,000",
+        "target_price_value": 560000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1410.0,
+        "unit": "억원",
+        "value_krw_100m": 1410.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0%, 이하 yoy), 영업이익 1,410억원(+30."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "키움증권",
+        "title": "신세계 - 실적도 신세계",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92806&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_830194000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_830194000.pdf",
+        "target_price": "600,000",
+        "target_price_value": 600000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1분기",
+        "value": 1978.0,
+        "unit": "억원",
+        "value_krw_100m": 1978.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "신세계 - 실적도 신세계 실적도 신세계 신세계 1분기 영업이익 1,978억원으로 시장 기대치 상회 신세계의 1분기 연결기준 영업이익은 1,978억원(+50% YoY), 지배주주순이익은 1,202억원(+109% YoY)으로 시장 컨센서스를 각각 +18%, +53% 상회하였다."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "키움증권",
+        "title": "신세계 - 실적도 신세계",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92806&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_830194000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_830194000.pdf",
+        "target_price": "600,000",
+        "target_price_value": 600000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1978.0,
+        "unit": "억원",
+        "value_krw_100m": 1978.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "신세계 - 실적도 신세계 실적도 신세계 신세계 1분기 영업이익 1,978억원으로 시장 기대치 상회 신세계의 1분기 연결기준 영업이익은 1,978억원(+50% YoY), 지배주주순이익은 1,202억원(+109% YoY)으로 시장 컨센서스를 각각 +18%, +53% 상회하였다."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "한화투자증권",
+        "title": "신세계 - 1Q26 Review : LVMH가 주목한 백화점",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92860&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260513_company_126819000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260513_company_126819000.pdf",
+        "target_price": "660,000",
+        "target_price_value": 660000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1978.0,
+        "unit": "억원",
+        "value_krw_100m": 1978.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7% YoY), 영업이익 1,978억원(+49."
       }
     ],
     "opinion_distribution": [
@@ -210,7 +643,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -225,7 +664,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -240,7 +687,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -255,7 +708,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-13",
@@ -270,7 +725,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-13",
@@ -285,7 +742,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -300,7 +763,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -315,7 +784,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -330,7 +811,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 13.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -349,7 +836,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.3,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-13",
@@ -364,7 +853,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -379,7 +874,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -394,7 +897,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -409,7 +918,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -424,7 +939,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-13",
@@ -439,7 +956,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-13",
@@ -454,7 +973,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -469,7 +1000,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -484,7 +1021,385 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 13.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-13",
+      "broker": "키움증권",
+      "title": "신세계 - 실적도 신세계",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92806&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_830194000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_830194000.pdf",
+      "target_price": "600,000",
+      "target_price_value": 600000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배주주순이익",
+      "period": null,
+      "value": 1202.0,
+      "unit": "억원",
+      "value_krw_100m": 1202.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "신세계 - 실적도 신세계 실적도 신세계 신세계 1분기 영업이익 1,978억원으로 시장 기대치 상회 신세계의 1분기 연결기준 영업이익은 1,978억원(+50% YoY), 지배주주순이익은 1,202억원(+109% YoY)으로 시장 컨센서스를 각각 +18%, +53% 상회하였다."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "교보증권",
+      "title": "신세계 - 1Q26 Review: 우아한 샤넬, 우아한 프라다, ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92851&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_197496000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_197496000.pdf",
+      "target_price": "600,000",
+      "target_price_value": 600000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 10.7,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 10.7,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5%, OPM 10.7%)로 영업이익 기준 시장 기대치(Fnguide 기준 1,682억원) 큰 폭 상회 ① 백화점: 총매출액 2조 257억원 (YoY +13."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "교보증권",
+      "title": "신세계 - 1Q26 Review: 우아한 샤넬, 우아한 프라다, ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92851&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_197496000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_197496000.pdf",
+      "target_price": "600,000",
+      "target_price_value": 600000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 7.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 7.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7%, OPM 7.0%) 기록."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "교보증권",
+      "title": "신세계 - 1Q26 Review: 우아한 샤넬, 우아한 프라다, ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92851&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_197496000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_197496000.pdf",
+      "target_price": "600,000",
+      "target_price_value": 600000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1978.0,
+      "unit": "억원",
+      "value_krw_100m": 1978.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9%), 영업이익 1,978억원(YoY +49."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "교보증권",
+      "title": "신세계 - 1Q26 Review: 우아한 샤넬, 우아한 프라다, ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92851&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_197496000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260513_company_197496000.pdf",
+      "target_price": "600,000",
+      "target_price_value": 600000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1410.0,
+      "unit": "억원",
+      "value_krw_100m": 1410.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0%), 영업이익 1,410억원 (YoY +30."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "미래에셋증권",
+      "title": "신세계 - 만점짜리 실적",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92844&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260513_company_478718000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260513_company_478718000.pdf",
+      "target_price": "600,000",
+      "target_price_value": 600000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.8,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1978.0,
+      "unit": "억원",
+      "value_krw_100m": 1978.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "신세계 - 만점짜리 실적 만점짜리 실적 신세계 1Q26 Review: 백화점 호조 + 면세점 서프 신세계의 1Q26 실적은 매출액 18,471억원(YoY +11%), 영업이익 1,978억원(YoY +49%)으로 기대치를 큰 폭으로 상회했다."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "유진투자증권",
+      "title": "신세계 - 1Q26 Review: 이런 실적, 안 보고 배겨요?",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92824&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260513_company_55287000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260513_company_55287000.pdf",
+      "target_price": "560,000",
+      "target_price_value": 560000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1978.0,
+      "unit": "억원",
+      "value_krw_100m": 1978.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9%, 이하 yoy), 영업이익 1,978억원(+49."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "유진투자증권",
+      "title": "신세계 - 1Q26 Review: 이런 실적, 안 보고 배겨요?",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92824&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260513_company_55287000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260513_company_55287000.pdf",
+      "target_price": "560,000",
+      "target_price_value": 560000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1410.0,
+      "unit": "억원",
+      "value_krw_100m": 1410.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0%, 이하 yoy), 영업이익 1,410억원(+30."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "키움증권",
+      "title": "신세계 - 실적도 신세계",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92806&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_830194000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_830194000.pdf",
+      "target_price": "600,000",
+      "target_price_value": 600000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1분기",
+      "value": 1978.0,
+      "unit": "억원",
+      "value_krw_100m": 1978.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "신세계 - 실적도 신세계 실적도 신세계 신세계 1분기 영업이익 1,978억원으로 시장 기대치 상회 신세계의 1분기 연결기준 영업이익은 1,978억원(+50% YoY), 지배주주순이익은 1,202억원(+109% YoY)으로 시장 컨센서스를 각각 +18%, +53% 상회하였다."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "키움증권",
+      "title": "신세계 - 실적도 신세계",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92806&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_830194000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260513_company_830194000.pdf",
+      "target_price": "600,000",
+      "target_price_value": 600000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1978.0,
+      "unit": "억원",
+      "value_krw_100m": 1978.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "신세계 - 실적도 신세계 실적도 신세계 신세계 1분기 영업이익 1,978억원으로 시장 기대치 상회 신세계의 1분기 연결기준 영업이익은 1,978억원(+50% YoY), 지배주주순이익은 1,202억원(+109% YoY)으로 시장 컨센서스를 각각 +18%, +53% 상회하였다."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "한화투자증권",
+      "title": "신세계 - 1Q26 Review : LVMH가 주목한 백화점",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92860&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260513_company_126819000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260513_company_126819000.pdf",
+      "target_price": "660,000",
+      "target_price_value": 660000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1978.0,
+      "unit": "억원",
+      "value_krw_100m": 1978.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7% YoY), 영업이익 1,978억원(+49."
     }
   ],
   "opinion_distribution": [
@@ -507,7 +1422,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -522,7 +1443,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -537,7 +1466,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -552,7 +1487,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-13",
@@ -567,7 +1504,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-13",
@@ -582,7 +1521,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -597,7 +1542,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -612,7 +1563,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -627,7 +1590,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 13.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -727,13 +1696,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -785,13 +1763,65 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 1978.0,
+          "unit": "억원",
+          "source_excerpt": "신세계 - 실적도 신세계 실적도 신세계 신세계 1분기 영업이익 1,978억원으로 시장 기대치 상회 신세계의 1분기 연결기준 영업이익은 1,978억원(+50% YoY), 지배주주순이익은 1,202억원(+109% YoY)으로 시장 컨센서스를 각각 +18%, +53% 상회하였다.",
+          "value_krw_100m": 1978.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1978.0,
+          "unit": "억원",
+          "source_excerpt": "신세계 - 실적도 신세계 실적도 신세계 신세계 1분기 영업이익 1,978억원으로 시장 기대치 상회 신세계의 1분기 연결기준 영업이익은 1,978억원(+50% YoY), 지배주주순이익은 1,202억원(+109% YoY)으로 시장 컨센서스를 각각 +18%, +53% 상회하였다.",
+          "value_krw_100m": 1978.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 1202.0,
+          "unit": "억원",
+          "source_excerpt": "신세계 - 실적도 신세계 실적도 신세계 신세계 1분기 영업이익 1,978억원으로 시장 기대치 상회 신세계의 1분기 연결기준 영업이익은 1,978억원(+50% YoY), 지배주주순이익은 1,202억원(+109% YoY)으로 시장 컨센서스를 각각 +18%, +53% 상회하였다.",
+          "value_krw_100m": 1202.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -843,13 +1873,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -900,13 +1939,33 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1978.0,
+          "unit": "억원",
+          "source_excerpt": "신세계 - 만점짜리 실적 만점짜리 실적 신세계 1Q26 Review: 백화점 호조 + 면세점 서프 신세계의 1Q26 실적은 매출액 18,471억원(YoY +11%), 영업이익 1,978억원(YoY +49%)으로 기대치를 큰 폭으로 상회했다.",
+          "value_krw_100m": 1978.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -962,7 +2021,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1978.0,
+          "unit": "억원",
+          "source_excerpt": "9%, 이하 yoy), 영업이익 1,978억원(+49.",
+          "value_krw_100m": 1978.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1410.0,
+          "unit": "억원",
+          "source_excerpt": "0%, 이하 yoy), 영업이익 1,410억원(+30.",
+          "value_krw_100m": 1410.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1018,7 +2101,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1067,13 +2153,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1122,13 +2217,67 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1978.0,
+          "unit": "억원",
+          "source_excerpt": "9%), 영업이익 1,978억원(YoY +49.",
+          "value_krw_100m": 1978.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1410.0,
+          "unit": "억원",
+          "source_excerpt": "0%), 영업이익 1,410억원 (YoY +30.",
+          "value_krw_100m": 1410.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 10.7,
+          "unit": "%",
+          "value_pct": 10.7,
+          "source_excerpt": "5%, OPM 10.7%)로 영업이익 기준 시장 기대치(Fnguide 기준 1,682억원) 큰 폭 상회 ① 백화점: 총매출액 2조 257억원 (YoY +13."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 7.0,
+          "unit": "%",
+          "value_pct": 7.0,
+          "source_excerpt": "7%, OPM 7.0%) 기록."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1177,13 +2326,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1978.0,
+          "unit": "억원",
+          "source_excerpt": "7% YoY), 영업이익 1,978억원(+49.",
+          "value_krw_100m": 1978.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
@@ -1239,13 +2408,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1297,13 +2475,65 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 1978.0,
+          "unit": "억원",
+          "source_excerpt": "신세계 - 실적도 신세계 실적도 신세계 신세계 1분기 영업이익 1,978억원으로 시장 기대치 상회 신세계의 1분기 연결기준 영업이익은 1,978억원(+50% YoY), 지배주주순이익은 1,202억원(+109% YoY)으로 시장 컨센서스를 각각 +18%, +53% 상회하였다.",
+          "value_krw_100m": 1978.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1978.0,
+          "unit": "억원",
+          "source_excerpt": "신세계 - 실적도 신세계 실적도 신세계 신세계 1분기 영업이익 1,978억원으로 시장 기대치 상회 신세계의 1분기 연결기준 영업이익은 1,978억원(+50% YoY), 지배주주순이익은 1,202억원(+109% YoY)으로 시장 컨센서스를 각각 +18%, +53% 상회하였다.",
+          "value_krw_100m": 1978.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 1202.0,
+          "unit": "억원",
+          "source_excerpt": "신세계 - 실적도 신세계 실적도 신세계 신세계 1분기 영업이익 1,978억원으로 시장 기대치 상회 신세계의 1분기 연결기준 영업이익은 1,978억원(+50% YoY), 지배주주순이익은 1,202억원(+109% YoY)으로 시장 컨센서스를 각각 +18%, +53% 상회하였다.",
+          "value_krw_100m": 1202.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1355,13 +2585,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1412,13 +2651,33 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1978.0,
+          "unit": "억원",
+          "source_excerpt": "신세계 - 만점짜리 실적 만점짜리 실적 신세계 1Q26 Review: 백화점 호조 + 면세점 서프 신세계의 1Q26 실적은 매출액 18,471억원(YoY +11%), 영업이익 1,978억원(YoY +49%)으로 기대치를 큰 폭으로 상회했다.",
+          "value_krw_100m": 1978.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1474,7 +2733,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1978.0,
+          "unit": "억원",
+          "source_excerpt": "9%, 이하 yoy), 영업이익 1,978억원(+49.",
+          "value_krw_100m": 1978.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1410.0,
+          "unit": "억원",
+          "source_excerpt": "0%, 이하 yoy), 영업이익 1,410억원(+30.",
+          "value_krw_100m": 1410.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1530,7 +2813,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1579,13 +2865,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1634,13 +2929,67 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1978.0,
+          "unit": "억원",
+          "source_excerpt": "9%), 영업이익 1,978억원(YoY +49.",
+          "value_krw_100m": 1978.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1410.0,
+          "unit": "억원",
+          "source_excerpt": "0%), 영업이익 1,410억원 (YoY +30.",
+          "value_krw_100m": 1410.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 10.7,
+          "unit": "%",
+          "value_pct": 10.7,
+          "source_excerpt": "5%, OPM 10.7%)로 영업이익 기준 시장 기대치(Fnguide 기준 1,682억원) 큰 폭 상회 ① 백화점: 총매출액 2조 257억원 (YoY +13."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 7.0,
+          "unit": "%",
+          "value_pct": 7.0,
+          "source_excerpt": "7%, OPM 7.0%) 기록."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1689,13 +3038,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1978.0,
+          "unit": "억원",
+          "source_excerpt": "7% YoY), 영업이익 1,978억원(+49.",
+          "value_krw_100m": 1978.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -1751,13 +3120,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1809,13 +3187,65 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 1978.0,
+          "unit": "억원",
+          "source_excerpt": "신세계 - 실적도 신세계 실적도 신세계 신세계 1분기 영업이익 1,978억원으로 시장 기대치 상회 신세계의 1분기 연결기준 영업이익은 1,978억원(+50% YoY), 지배주주순이익은 1,202억원(+109% YoY)으로 시장 컨센서스를 각각 +18%, +53% 상회하였다.",
+          "value_krw_100m": 1978.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1978.0,
+          "unit": "억원",
+          "source_excerpt": "신세계 - 실적도 신세계 실적도 신세계 신세계 1분기 영업이익 1,978억원으로 시장 기대치 상회 신세계의 1분기 연결기준 영업이익은 1,978억원(+50% YoY), 지배주주순이익은 1,202억원(+109% YoY)으로 시장 컨센서스를 각각 +18%, +53% 상회하였다.",
+          "value_krw_100m": 1978.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 1202.0,
+          "unit": "억원",
+          "source_excerpt": "신세계 - 실적도 신세계 실적도 신세계 신세계 1분기 영업이익 1,978억원으로 시장 기대치 상회 신세계의 1분기 연결기준 영업이익은 1,978억원(+50% YoY), 지배주주순이익은 1,202억원(+109% YoY)으로 시장 컨센서스를 각각 +18%, +53% 상회하였다.",
+          "value_krw_100m": 1202.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1867,13 +3297,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1924,13 +3363,33 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1978.0,
+          "unit": "억원",
+          "source_excerpt": "신세계 - 만점짜리 실적 만점짜리 실적 신세계 1Q26 Review: 백화점 호조 + 면세점 서프 신세계의 1Q26 실적은 매출액 18,471억원(YoY +11%), 영업이익 1,978억원(YoY +49%)으로 기대치를 큰 폭으로 상회했다.",
+          "value_krw_100m": 1978.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1986,7 +3445,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1978.0,
+          "unit": "억원",
+          "source_excerpt": "9%, 이하 yoy), 영업이익 1,978억원(+49.",
+          "value_krw_100m": 1978.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1410.0,
+          "unit": "억원",
+          "source_excerpt": "0%, 이하 yoy), 영업이익 1,410억원(+30.",
+          "value_krw_100m": 1410.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -2042,7 +3525,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -2091,13 +3577,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -2146,13 +3641,67 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1978.0,
+          "unit": "억원",
+          "source_excerpt": "9%), 영업이익 1,978억원(YoY +49.",
+          "value_krw_100m": 1978.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1410.0,
+          "unit": "억원",
+          "source_excerpt": "0%), 영업이익 1,410억원 (YoY +30.",
+          "value_krw_100m": 1410.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 10.7,
+          "unit": "%",
+          "value_pct": 10.7,
+          "source_excerpt": "5%, OPM 10.7%)로 영업이익 기준 시장 기대치(Fnguide 기준 1,682억원) 큰 폭 상회 ① 백화점: 총매출액 2조 257억원 (YoY +13."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 7.0,
+          "unit": "%",
+          "value_pct": 7.0,
+          "source_excerpt": "7%, OPM 7.0%) 기록."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -2201,13 +3750,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1978.0,
+          "unit": "억원",
+          "source_excerpt": "7% YoY), 영업이익 1,978억원(+49.",
+          "value_krw_100m": 1978.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -2247,6 +3816,9 @@
       "ticker": null,
       "target_price_value": 450000,
       "opinion_normalized": "buy",
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false

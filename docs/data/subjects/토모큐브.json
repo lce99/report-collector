@@ -16,7 +16,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 1
+    "coverage_initiated": 1,
+    "estimate_signal_reports": 1,
+    "earnings_estimate_up": 0,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 1,
@@ -45,7 +50,51 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-22",
+        "broker": "키움증권",
+        "title": "토모큐브 - 낭중지추(囊中之錐)",
+        "ticker": "475960",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93220&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260522_company_731014000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260522_company_731014000.pdf",
+        "target_price": "76,000",
+        "target_price_value": 76000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": -67.9,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": -67.9,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7% 하회), 영업이익 -19억(YoY 적지, QoQ 적전, 영업이익률 -67.9%; 당사 추정치 -10억 하회)을 기록했다."
       }
     ],
     "opinion_distribution": [
@@ -68,7 +117,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       }
     ],
     "window_days": 14
@@ -87,7 +144,51 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-22",
+      "broker": "키움증권",
+      "title": "토모큐브 - 낭중지추(囊中之錐)",
+      "ticker": "475960",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93220&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260522_company_731014000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260522_company_731014000.pdf",
+      "target_price": "76,000",
+      "target_price_value": 76000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": -67.9,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": -67.9,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7% 하회), 영업이익 -19억(YoY 적지, QoQ 적전, 영업이익률 -67.9%; 당사 추정치 -10억 하회)을 기록했다."
     }
   ],
   "opinion_distribution": [
@@ -110,7 +211,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "broker_summary": [
@@ -234,12 +343,36 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": -67.9,
+          "unit": "%",
+          "value_pct": -67.9,
+          "source_excerpt": "7% 하회), 영업이익 -19억(YoY 적지, QoQ 적전, 영업이익률 -67.9%; 당사 추정치 -10억 하회)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -288,7 +421,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -396,12 +532,36 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": -67.9,
+          "unit": "%",
+          "value_pct": -67.9,
+          "source_excerpt": "7% 하회), 영업이익 -19억(YoY 적지, QoQ 적전, 영업이익률 -67.9%; 당사 추정치 -10억 하회)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "timeline": [
@@ -509,12 +669,36 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": -67.9,
+          "unit": "%",
+          "value_pct": -67.9,
+          "source_excerpt": "7% 하회), 영업이익 -19억(YoY 적지, QoQ 적전, 영업이익률 -67.9%; 당사 추정치 -10억 하회)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -563,7 +747,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

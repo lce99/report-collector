@@ -16,7 +16,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 2
+    "coverage_initiated": 2,
+    "estimate_signal_reports": 2,
+    "earnings_estimate_up": 1,
+    "earnings_estimate_down": 2,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 2
   },
   "target_summary": {
     "count": 2,
@@ -45,7 +50,19 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-26",
@@ -60,7 +77,233 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-19",
+        "broker": "SK증권",
+        "title": "대원제약 - 1Q26 Re : 컨센 하회, 수익성 개선에 주목",
+        "ticker": "003220",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93139&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_715197000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_715197000.pdf",
+        "target_price": "15,000",
+        "target_price_value": 15000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 2.8,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 2.8,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5%QoQ, OPM 2.8%)으로 컨센서스 매출액 1,640 억원과 영업이익 60 억원을 하회하는 실적을 발표했다."
+      },
+      {
+        "date": "2026-05-19",
+        "broker": "SK증권",
+        "title": "대원제약 - 1Q26 Re : 컨센 하회, 수익성 개선에 주목",
+        "ticker": "003220",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93139&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_715197000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_715197000.pdf",
+        "target_price": "15,000",
+        "target_price_value": 15000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 43.8,
+        "unit": "억원",
+        "value_krw_100m": 43.8,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%QoQ), 영업이익은 43.8 억원(-53."
+      },
+      {
+        "date": "2026-05-19",
+        "broker": "SK증권",
+        "title": "대원제약 - 1Q26 Re : 컨센 하회, 수익성 개선에 주목",
+        "ticker": "003220",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93139&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_715197000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_715197000.pdf",
+        "target_price": "15,000",
+        "target_price_value": 15000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 60.0,
+        "unit": "억원",
+        "value_krw_100m": 60.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8%)으로 컨센서스 매출액 1,640 억원과 영업이익 60 억원을 하회하는 실적을 발표했다."
+      },
+      {
+        "date": "2026-05-26",
+        "broker": "DS투자증권",
+        "title": "대원제약 - 견조한 성장 흐름 유지",
+        "ticker": "003220",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93273&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_643989000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_643989000.pdf",
+        "target_price": "16,000",
+        "target_price_value": 16000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 2.8,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 2.8,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5% QoQ, OPM 2.8%)으로 컨센서스 매출액 약 1,640억원 및 영업이익 약 60억원을 하회하였다."
+      },
+      {
+        "date": "2026-05-26",
+        "broker": "DS투자증권",
+        "title": "대원제약 - 견조한 성장 흐름 유지",
+        "ticker": "003220",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93273&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_643989000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_643989000.pdf",
+        "target_price": "16,000",
+        "target_price_value": 16000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 44.0,
+        "unit": "억원",
+        "value_krw_100m": 44.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2% QoQ), 영업이익 약 44억원(-53."
+      },
+      {
+        "date": "2026-05-26",
+        "broker": "DS투자증권",
+        "title": "대원제약 - 견조한 성장 흐름 유지",
+        "ticker": "003220",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93273&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_643989000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_643989000.pdf",
+        "target_price": "16,000",
+        "target_price_value": 16000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 60.0,
+        "unit": "억원",
+        "value_krw_100m": 60.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8%)으로 컨센서스 매출액 약 1,640억원 및 영업이익 약 60억원을 하회하였다."
       }
     ],
     "opinion_distribution": [
@@ -83,7 +326,19 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-26",
@@ -98,7 +353,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       }
     ],
     "window_days": 14
@@ -117,7 +380,19 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-26",
@@ -132,7 +407,233 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-19",
+      "broker": "SK증권",
+      "title": "대원제약 - 1Q26 Re : 컨센 하회, 수익성 개선에 주목",
+      "ticker": "003220",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93139&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_715197000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_715197000.pdf",
+      "target_price": "15,000",
+      "target_price_value": 15000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 2.8,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 2.8,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5%QoQ, OPM 2.8%)으로 컨센서스 매출액 1,640 억원과 영업이익 60 억원을 하회하는 실적을 발표했다."
+    },
+    {
+      "date": "2026-05-19",
+      "broker": "SK증권",
+      "title": "대원제약 - 1Q26 Re : 컨센 하회, 수익성 개선에 주목",
+      "ticker": "003220",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93139&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_715197000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_715197000.pdf",
+      "target_price": "15,000",
+      "target_price_value": 15000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 43.8,
+      "unit": "억원",
+      "value_krw_100m": 43.8,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%QoQ), 영업이익은 43.8 억원(-53."
+    },
+    {
+      "date": "2026-05-19",
+      "broker": "SK증권",
+      "title": "대원제약 - 1Q26 Re : 컨센 하회, 수익성 개선에 주목",
+      "ticker": "003220",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93139&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_715197000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_715197000.pdf",
+      "target_price": "15,000",
+      "target_price_value": 15000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 60.0,
+      "unit": "억원",
+      "value_krw_100m": 60.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8%)으로 컨센서스 매출액 1,640 억원과 영업이익 60 억원을 하회하는 실적을 발표했다."
+    },
+    {
+      "date": "2026-05-26",
+      "broker": "DS투자증권",
+      "title": "대원제약 - 견조한 성장 흐름 유지",
+      "ticker": "003220",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93273&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_643989000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_643989000.pdf",
+      "target_price": "16,000",
+      "target_price_value": 16000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 2.8,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 2.8,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5% QoQ, OPM 2.8%)으로 컨센서스 매출액 약 1,640억원 및 영업이익 약 60억원을 하회하였다."
+    },
+    {
+      "date": "2026-05-26",
+      "broker": "DS투자증권",
+      "title": "대원제약 - 견조한 성장 흐름 유지",
+      "ticker": "003220",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93273&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_643989000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_643989000.pdf",
+      "target_price": "16,000",
+      "target_price_value": 16000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 44.0,
+      "unit": "억원",
+      "value_krw_100m": 44.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2% QoQ), 영업이익 약 44억원(-53."
+    },
+    {
+      "date": "2026-05-26",
+      "broker": "DS투자증권",
+      "title": "대원제약 - 견조한 성장 흐름 유지",
+      "ticker": "003220",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93273&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_643989000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_643989000.pdf",
+      "target_price": "16,000",
+      "target_price_value": 16000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 60.0,
+      "unit": "억원",
+      "value_krw_100m": 60.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8%)으로 컨센서스 매출액 약 1,640억원 및 영업이익 약 60억원을 하회하였다."
     }
   ],
   "opinion_distribution": [
@@ -155,7 +656,19 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-26",
@@ -170,7 +683,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "broker_summary": [
@@ -282,12 +803,56 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 44.0,
+          "unit": "억원",
+          "source_excerpt": "2% QoQ), 영업이익 약 44억원(-53.",
+          "value_krw_100m": 44.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 60.0,
+          "unit": "억원",
+          "source_excerpt": "8%)으로 컨센서스 매출액 약 1,640억원 및 영업이익 약 60억원을 하회하였다.",
+          "value_krw_100m": 60.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.8,
+          "unit": "%",
+          "value_pct": 2.8,
+          "source_excerpt": "5% QoQ, OPM 2.8%)으로 컨센서스 매출액 약 1,640억원 및 영업이익 약 60억원을 하회하였다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -388,12 +953,64 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 43.8,
+          "unit": "억원",
+          "source_excerpt": "2%QoQ), 영업이익은 43.8 억원(-53.",
+          "value_krw_100m": 43.8
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 60.0,
+          "unit": "억원",
+          "source_excerpt": "8%)으로 컨센서스 매출액 1,640 억원과 영업이익 60 억원을 하회하는 실적을 발표했다.",
+          "value_krw_100m": 60.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.8,
+          "unit": "%",
+          "value_pct": 2.8,
+          "source_excerpt": "5%QoQ, OPM 2.8%)으로 컨센서스 매출액 1,640 억원과 영업이익 60 억원을 하회하는 실적을 발표했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "recent_changes": [
@@ -489,12 +1106,56 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 44.0,
+          "unit": "억원",
+          "source_excerpt": "2% QoQ), 영업이익 약 44억원(-53.",
+          "value_krw_100m": 44.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 60.0,
+          "unit": "억원",
+          "source_excerpt": "8%)으로 컨센서스 매출액 약 1,640억원 및 영업이익 약 60억원을 하회하였다.",
+          "value_krw_100m": 60.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.8,
+          "unit": "%",
+          "value_pct": 2.8,
+          "source_excerpt": "5% QoQ, OPM 2.8%)으로 컨센서스 매출액 약 1,640억원 및 영업이익 약 60억원을 하회하였다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -595,12 +1256,64 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 43.8,
+          "unit": "억원",
+          "source_excerpt": "2%QoQ), 영업이익은 43.8 억원(-53.",
+          "value_krw_100m": 43.8
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 60.0,
+          "unit": "억원",
+          "source_excerpt": "8%)으로 컨센서스 매출액 1,640 억원과 영업이익 60 억원을 하회하는 실적을 발표했다.",
+          "value_krw_100m": 60.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.8,
+          "unit": "%",
+          "value_pct": 2.8,
+          "source_excerpt": "5%QoQ, OPM 2.8%)으로 컨센서스 매출액 1,640 억원과 영업이익 60 억원을 하회하는 실적을 발표했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "timeline": [
@@ -696,12 +1409,56 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 44.0,
+          "unit": "억원",
+          "source_excerpt": "2% QoQ), 영업이익 약 44억원(-53.",
+          "value_krw_100m": 44.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 60.0,
+          "unit": "억원",
+          "source_excerpt": "8%)으로 컨센서스 매출액 약 1,640억원 및 영업이익 약 60억원을 하회하였다.",
+          "value_krw_100m": 60.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.8,
+          "unit": "%",
+          "value_pct": 2.8,
+          "source_excerpt": "5% QoQ, OPM 2.8%)으로 컨센서스 매출액 약 1,640억원 및 영업이익 약 60억원을 하회하였다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -802,12 +1559,64 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 43.8,
+          "unit": "억원",
+          "source_excerpt": "2%QoQ), 영업이익은 43.8 억원(-53.",
+          "value_krw_100m": 43.8
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 60.0,
+          "unit": "억원",
+          "source_excerpt": "8%)으로 컨센서스 매출액 1,640 억원과 영업이익 60 억원을 하회하는 실적을 발표했다.",
+          "value_krw_100m": 60.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.8,
+          "unit": "%",
+          "value_pct": 2.8,
+          "source_excerpt": "5%QoQ, OPM 2.8%)으로 컨센서스 매출액 1,640 억원과 영업이익 60 억원을 하회하는 실적을 발표했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ]
 }

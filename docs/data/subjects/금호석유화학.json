@@ -19,7 +19,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 5
+    "coverage_initiated": 5,
+    "estimate_signal_reports": 4,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 3,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 5,
@@ -48,7 +53,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-08",
@@ -63,7 +70,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 15.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선",
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -78,7 +93,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-08",
@@ -93,7 +110,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.07,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -108,7 +133,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -123,7 +160,331 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.3,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-08",
+        "broker": "하나증권",
+        "title": "금호석유화학 - 전쟁으로 사이클은 더욱 빠르게 돌아선다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92625&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_206678000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_206678000.pdf",
+        "target_price": "180,000",
+        "target_price_value": 180000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.07,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배순이익",
+        "period": null,
+        "value": 963.0,
+        "unit": "억원",
+        "value_krw_100m": 963.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "금융비용 발생이 전무한 상황에서 지분법이익 368억원 반영으로 지배순이익은 963억원으로 컨센(782억원)을 23% 상회했다."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "하나증권",
+        "title": "금호석유화학 - 전쟁으로 사이클은 더욱 빠르게 돌아선다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92625&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_206678000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_206678000.pdf",
+        "target_price": "180,000",
+        "target_price_value": 180000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.07,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1Q26",
+        "value": 594.0,
+        "unit": "억원",
+        "value_krw_100m": 594.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "금호석유화학 - 전쟁으로 사이클은 더욱 빠르게 돌아선다 전쟁으로 사이클은 더욱 빠르게 돌아선다 금호석유화학 순이익은 컨센 23% 상회 1Q26 영업이익은 594억원(QoQ +3,734%, YoY -51%)으로 컨센(670억원)을 11% 하회했다."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "유진투자증권",
+        "title": "금호석유화학 - 안정적인 실적 성장 국면",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92692&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_246681000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_246681000.pdf",
+        "target_price": "177,000",
+        "target_price_value": 177000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": 963.0,
+        "unit": "억원",
+        "value_krw_100m": 963.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8조원(+12%qoq, -7%yoy), 영업이익 594억원(+12%qoq, -7%yoy), 당기순이익 963억원(+6,576%qoq, -23%yoy)으로 시장 컨센서스와 당사 추정을 하회하는 부진한 실적 기록."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "유진투자증권",
+        "title": "금호석유화학 - 안정적인 실적 성장 국면",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92692&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_246681000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_246681000.pdf",
+        "target_price": "177,000",
+        "target_price_value": 177000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 16.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 16.0,
+        "value_won": null,
+        "change_pctp": 5.0,
+        "source_excerpt": "EPDM은 자동차 부문 수요 증가로 영업이익 311억원을 기록해 손익의 절반을 차지했으며, 수익성도 영업이익률 16%로 전분기대비 +5%p 개선."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "유진투자증권",
+        "title": "금호석유화학 - 안정적인 실적 성장 국면",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92692&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_246681000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_246681000.pdf",
+        "target_price": "177,000",
+        "target_price_value": 177000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 594.0,
+        "unit": "억원",
+        "value_krw_100m": 594.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8조원(+12%qoq, -7%yoy), 영업이익 594억원(+12%qoq, -7%yoy), 당기순이익 963억원(+6,576%qoq, -23%yoy)으로 시장 컨센서스와 당사 추정을 하회하는 부진한 실적 기록."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "유진투자증권",
+        "title": "금호석유화학 - 안정적인 실적 성장 국면",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92692&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_246681000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_246681000.pdf",
+        "target_price": "177,000",
+        "target_price_value": 177000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 311.0,
+        "unit": "억원",
+        "value_krw_100m": 311.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "EPDM은 자동차 부문 수요 증가로 영업이익 311억원을 기록해 손익의 절반을 차지했으며, 수익성도 영업이익률 16%로 전분기대비 +5%p 개선."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "삼성증권",
+        "title": "금호석유화학 - 1Q26 review - 다음 분기 어닝 서프라이즈 전..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92960&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_519349000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_519349000.pdf",
+        "target_price": "175,000",
+        "target_price_value": 175000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.3,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 2.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 2.0,
+        "value_won": null,
+        "change_pctp": -0.6,
+        "source_excerpt": "합성고무 및 합성수지 영업이익은 각각 149억원(OPM 2.0%; -0."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "삼성증권",
+        "title": "금호석유화학 - 1Q26 review - 다음 분기 어닝 서프라이즈 전..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92960&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_519349000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_519349000.pdf",
+        "target_price": "175,000",
+        "target_price_value": 175000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.3,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": -0.7,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": -0.7,
+        "value_won": null,
+        "change_pctp": 2.9,
+        "source_excerpt": "6%pQoQ) 및 -22억원(OPM -0.7%; +2."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "삼성증권",
+        "title": "금호석유화학 - 1Q26 review - 다음 분기 어닝 서프라이즈 전..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92960&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_519349000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_519349000.pdf",
+        "target_price": "175,000",
+        "target_price_value": 175000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.3,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1Q",
+        "value": 594.0,
+        "unit": "억원",
+        "value_krw_100m": 594.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "금호석유화학 1Q26 review, 당사 추정 부합: 1Q 영업이익은 594억원(+3,716%QoQ)으로 컨센서스(682억원/-13%, FnGuide) 하회했으나, 당사 추정치(604억원/-2%)에는 부합."
       }
     ],
     "opinion_distribution": [
@@ -146,7 +507,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-08",
@@ -161,7 +524,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-08",
@@ -176,7 +541,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.07,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -191,7 +564,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 15.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선",
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -206,7 +587,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -221,7 +614,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.3,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       }
     ],
     "window_days": 14
@@ -240,7 +639,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-08",
@@ -255,7 +656,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 15.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -270,7 +679,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-08",
@@ -285,7 +696,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.07,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -300,7 +719,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -315,7 +746,331 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.3,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-08",
+      "broker": "하나증권",
+      "title": "금호석유화학 - 전쟁으로 사이클은 더욱 빠르게 돌아선다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92625&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_206678000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_206678000.pdf",
+      "target_price": "180,000",
+      "target_price_value": 180000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.07,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배순이익",
+      "period": null,
+      "value": 963.0,
+      "unit": "억원",
+      "value_krw_100m": 963.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "금융비용 발생이 전무한 상황에서 지분법이익 368억원 반영으로 지배순이익은 963억원으로 컨센(782억원)을 23% 상회했다."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "하나증권",
+      "title": "금호석유화학 - 전쟁으로 사이클은 더욱 빠르게 돌아선다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92625&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_206678000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_206678000.pdf",
+      "target_price": "180,000",
+      "target_price_value": 180000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.07,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1Q26",
+      "value": 594.0,
+      "unit": "억원",
+      "value_krw_100m": 594.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "금호석유화학 - 전쟁으로 사이클은 더욱 빠르게 돌아선다 전쟁으로 사이클은 더욱 빠르게 돌아선다 금호석유화학 순이익은 컨센 23% 상회 1Q26 영업이익은 594억원(QoQ +3,734%, YoY -51%)으로 컨센(670억원)을 11% 하회했다."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "유진투자증권",
+      "title": "금호석유화학 - 안정적인 실적 성장 국면",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92692&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_246681000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_246681000.pdf",
+      "target_price": "177,000",
+      "target_price_value": 177000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": 963.0,
+      "unit": "억원",
+      "value_krw_100m": 963.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8조원(+12%qoq, -7%yoy), 영업이익 594억원(+12%qoq, -7%yoy), 당기순이익 963억원(+6,576%qoq, -23%yoy)으로 시장 컨센서스와 당사 추정을 하회하는 부진한 실적 기록."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "유진투자증권",
+      "title": "금호석유화학 - 안정적인 실적 성장 국면",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92692&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_246681000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_246681000.pdf",
+      "target_price": "177,000",
+      "target_price_value": 177000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 16.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 16.0,
+      "value_won": null,
+      "change_pctp": 5.0,
+      "source_excerpt": "EPDM은 자동차 부문 수요 증가로 영업이익 311억원을 기록해 손익의 절반을 차지했으며, 수익성도 영업이익률 16%로 전분기대비 +5%p 개선."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "유진투자증권",
+      "title": "금호석유화학 - 안정적인 실적 성장 국면",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92692&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_246681000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_246681000.pdf",
+      "target_price": "177,000",
+      "target_price_value": 177000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 594.0,
+      "unit": "억원",
+      "value_krw_100m": 594.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8조원(+12%qoq, -7%yoy), 영업이익 594억원(+12%qoq, -7%yoy), 당기순이익 963억원(+6,576%qoq, -23%yoy)으로 시장 컨센서스와 당사 추정을 하회하는 부진한 실적 기록."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "유진투자증권",
+      "title": "금호석유화학 - 안정적인 실적 성장 국면",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92692&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_246681000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_246681000.pdf",
+      "target_price": "177,000",
+      "target_price_value": 177000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 311.0,
+      "unit": "억원",
+      "value_krw_100m": 311.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "EPDM은 자동차 부문 수요 증가로 영업이익 311억원을 기록해 손익의 절반을 차지했으며, 수익성도 영업이익률 16%로 전분기대비 +5%p 개선."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "삼성증권",
+      "title": "금호석유화학 - 1Q26 review - 다음 분기 어닝 서프라이즈 전..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92960&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_519349000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_519349000.pdf",
+      "target_price": "175,000",
+      "target_price_value": 175000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.3,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 2.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 2.0,
+      "value_won": null,
+      "change_pctp": -0.6,
+      "source_excerpt": "합성고무 및 합성수지 영업이익은 각각 149억원(OPM 2.0%; -0."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "삼성증권",
+      "title": "금호석유화학 - 1Q26 review - 다음 분기 어닝 서프라이즈 전..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92960&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_519349000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_519349000.pdf",
+      "target_price": "175,000",
+      "target_price_value": 175000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.3,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": -0.7,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": -0.7,
+      "value_won": null,
+      "change_pctp": 2.9,
+      "source_excerpt": "6%pQoQ) 및 -22억원(OPM -0.7%; +2."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "삼성증권",
+      "title": "금호석유화학 - 1Q26 review - 다음 분기 어닝 서프라이즈 전..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92960&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_519349000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_519349000.pdf",
+      "target_price": "175,000",
+      "target_price_value": 175000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.3,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1Q",
+      "value": 594.0,
+      "unit": "억원",
+      "value_krw_100m": 594.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "금호석유화학 1Q26 review, 당사 추정 부합: 1Q 영업이익은 594억원(+3,716%QoQ)으로 컨센서스(682억원/-13%, FnGuide) 하회했으나, 당사 추정치(604억원/-2%)에는 부합."
     }
   ],
   "opinion_distribution": [
@@ -338,7 +1093,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-08",
@@ -353,7 +1110,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-08",
@@ -368,7 +1127,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.07,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -383,7 +1150,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 15.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -398,7 +1173,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -413,7 +1200,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.3,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "broker_summary": [
@@ -493,13 +1286,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q",
+          "value": 594.0,
+          "unit": "억원",
+          "source_excerpt": "금호석유화학 1Q26 review, 당사 추정 부합: 1Q 영업이익은 594억원(+3,716%QoQ)으로 컨센서스(682억원/-13%, FnGuide) 하회했으나, 당사 추정치(604억원/-2%)에는 부합.",
+          "value_krw_100m": 594.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.0,
+          "unit": "%",
+          "value_pct": 2.0,
+          "source_excerpt": "합성고무 및 합성수지 영업이익은 각각 149억원(OPM 2.0%; -0.",
+          "change_pctp": -0.6
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": -0.7,
+          "unit": "%",
+          "value_pct": -0.7,
+          "source_excerpt": "6%pQoQ) 및 -22억원(OPM -0.7%; +2.",
+          "change_pctp": 2.9
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -549,13 +1384,76 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 594.0,
+          "unit": "억원",
+          "source_excerpt": "8조원(+12%qoq, -7%yoy), 영업이익 594억원(+12%qoq, -7%yoy), 당기순이익 963억원(+6,576%qoq, -23%yoy)으로 시장 컨센서스와 당사 추정을 하회하는 부진한 실적 기록.",
+          "value_krw_100m": 594.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 963.0,
+          "unit": "억원",
+          "source_excerpt": "8조원(+12%qoq, -7%yoy), 영업이익 594억원(+12%qoq, -7%yoy), 당기순이익 963억원(+6,576%qoq, -23%yoy)으로 시장 컨센서스와 당사 추정을 하회하는 부진한 실적 기록.",
+          "value_krw_100m": 963.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 311.0,
+          "unit": "억원",
+          "source_excerpt": "EPDM은 자동차 부문 수요 증가로 영업이익 311억원을 기록해 손익의 절반을 차지했으며, 수익성도 영업이익률 16%로 전분기대비 +5%p 개선.",
+          "value_krw_100m": 311.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 16.0,
+          "unit": "%",
+          "value_pct": 16.0,
+          "source_excerpt": "EPDM은 자동차 부문 수요 증가로 영업이익 311억원을 기록해 손익의 절반을 차지했으며, 수익성도 영업이익률 16%로 전분기대비 +5%p 개선.",
+          "change_pctp": 5.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -611,13 +1509,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -669,13 +1580,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q26",
+          "value": 594.0,
+          "unit": "억원",
+          "source_excerpt": "금호석유화학 - 전쟁으로 사이클은 더욱 빠르게 돌아선다 전쟁으로 사이클은 더욱 빠르게 돌아선다 금호석유화학 순이익은 컨센 23% 상회 1Q26 영업이익은 594억원(QoQ +3,734%, YoY -51%)으로 컨센(670억원)을 11% 하회했다.",
+          "value_krw_100m": 594.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": null,
+          "value": 963.0,
+          "unit": "억원",
+          "source_excerpt": "금융비용 발생이 전무한 상황에서 지분법이익 368억원 반영으로 지배순이익은 963억원으로 컨센(782억원)을 23% 상회했다.",
+          "value_krw_100m": 963.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -728,7 +1673,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -780,13 +1728,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q",
+          "value": 594.0,
+          "unit": "억원",
+          "source_excerpt": "금호석유화학 1Q26 review, 당사 추정 부합: 1Q 영업이익은 594억원(+3,716%QoQ)으로 컨센서스(682억원/-13%, FnGuide) 하회했으나, 당사 추정치(604억원/-2%)에는 부합.",
+          "value_krw_100m": 594.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.0,
+          "unit": "%",
+          "value_pct": 2.0,
+          "source_excerpt": "합성고무 및 합성수지 영업이익은 각각 149억원(OPM 2.0%; -0.",
+          "change_pctp": -0.6
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": -0.7,
+          "unit": "%",
+          "value_pct": -0.7,
+          "source_excerpt": "6%pQoQ) 및 -22억원(OPM -0.7%; +2.",
+          "change_pctp": 2.9
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -836,13 +1826,76 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 594.0,
+          "unit": "억원",
+          "source_excerpt": "8조원(+12%qoq, -7%yoy), 영업이익 594억원(+12%qoq, -7%yoy), 당기순이익 963억원(+6,576%qoq, -23%yoy)으로 시장 컨센서스와 당사 추정을 하회하는 부진한 실적 기록.",
+          "value_krw_100m": 594.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 963.0,
+          "unit": "억원",
+          "source_excerpt": "8조원(+12%qoq, -7%yoy), 영업이익 594억원(+12%qoq, -7%yoy), 당기순이익 963억원(+6,576%qoq, -23%yoy)으로 시장 컨센서스와 당사 추정을 하회하는 부진한 실적 기록.",
+          "value_krw_100m": 963.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 311.0,
+          "unit": "억원",
+          "source_excerpt": "EPDM은 자동차 부문 수요 증가로 영업이익 311억원을 기록해 손익의 절반을 차지했으며, 수익성도 영업이익률 16%로 전분기대비 +5%p 개선.",
+          "value_krw_100m": 311.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 16.0,
+          "unit": "%",
+          "value_pct": 16.0,
+          "source_excerpt": "EPDM은 자동차 부문 수요 증가로 영업이익 311억원을 기록해 손익의 절반을 차지했으며, 수익성도 영업이익률 16%로 전분기대비 +5%p 개선.",
+          "change_pctp": 5.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -898,13 +1951,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -956,13 +2022,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q26",
+          "value": 594.0,
+          "unit": "억원",
+          "source_excerpt": "금호석유화학 - 전쟁으로 사이클은 더욱 빠르게 돌아선다 전쟁으로 사이클은 더욱 빠르게 돌아선다 금호석유화학 순이익은 컨센 23% 상회 1Q26 영업이익은 594억원(QoQ +3,734%, YoY -51%)으로 컨센(670억원)을 11% 하회했다.",
+          "value_krw_100m": 594.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": null,
+          "value": 963.0,
+          "unit": "억원",
+          "source_excerpt": "금융비용 발생이 전무한 상황에서 지분법이익 368억원 반영으로 지배순이익은 963억원으로 컨센(782억원)을 23% 상회했다.",
+          "value_krw_100m": 963.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1017,7 +2117,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -1069,13 +2172,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q",
+          "value": 594.0,
+          "unit": "억원",
+          "source_excerpt": "금호석유화학 1Q26 review, 당사 추정 부합: 1Q 영업이익은 594억원(+3,716%QoQ)으로 컨센서스(682억원/-13%, FnGuide) 하회했으나, 당사 추정치(604억원/-2%)에는 부합.",
+          "value_krw_100m": 594.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.0,
+          "unit": "%",
+          "value_pct": 2.0,
+          "source_excerpt": "합성고무 및 합성수지 영업이익은 각각 149억원(OPM 2.0%; -0.",
+          "change_pctp": -0.6
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": -0.7,
+          "unit": "%",
+          "value_pct": -0.7,
+          "source_excerpt": "6%pQoQ) 및 -22억원(OPM -0.7%; +2.",
+          "change_pctp": 2.9
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1125,13 +2270,76 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 594.0,
+          "unit": "억원",
+          "source_excerpt": "8조원(+12%qoq, -7%yoy), 영업이익 594억원(+12%qoq, -7%yoy), 당기순이익 963억원(+6,576%qoq, -23%yoy)으로 시장 컨센서스와 당사 추정을 하회하는 부진한 실적 기록.",
+          "value_krw_100m": 594.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 963.0,
+          "unit": "억원",
+          "source_excerpt": "8조원(+12%qoq, -7%yoy), 영업이익 594억원(+12%qoq, -7%yoy), 당기순이익 963억원(+6,576%qoq, -23%yoy)으로 시장 컨센서스와 당사 추정을 하회하는 부진한 실적 기록.",
+          "value_krw_100m": 963.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 311.0,
+          "unit": "억원",
+          "source_excerpt": "EPDM은 자동차 부문 수요 증가로 영업이익 311억원을 기록해 손익의 절반을 차지했으며, 수익성도 영업이익률 16%로 전분기대비 +5%p 개선.",
+          "value_krw_100m": 311.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 16.0,
+          "unit": "%",
+          "value_pct": 16.0,
+          "source_excerpt": "EPDM은 자동차 부문 수요 증가로 영업이익 311억원을 기록해 손익의 절반을 차지했으며, 수익성도 영업이익률 16%로 전분기대비 +5%p 개선.",
+          "change_pctp": 5.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1187,13 +2395,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1245,13 +2466,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q26",
+          "value": 594.0,
+          "unit": "억원",
+          "source_excerpt": "금호석유화학 - 전쟁으로 사이클은 더욱 빠르게 돌아선다 전쟁으로 사이클은 더욱 빠르게 돌아선다 금호석유화학 순이익은 컨센 23% 상회 1Q26 영업이익은 594억원(QoQ +3,734%, YoY -51%)으로 컨센(670억원)을 11% 하회했다.",
+          "value_krw_100m": 594.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": null,
+          "value": 963.0,
+          "unit": "억원",
+          "source_excerpt": "금융비용 발생이 전무한 상황에서 지분법이익 368억원 반영으로 지배순이익은 963억원으로 컨센(782억원)을 23% 상회했다.",
+          "value_krw_100m": 963.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -1304,7 +2559,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1359,7 +2617,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

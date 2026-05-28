@@ -19,7 +19,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 5
+    "coverage_initiated": 5,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 5,
@@ -52,7 +57,9 @@
         "opinion": "Hold",
         "opinion_normalized": "hold",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -67,7 +74,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -82,7 +95,15 @@
         "opinion": "MarketPerform",
         "opinion_normalized": "hold",
         "score": 10.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -97,7 +118,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -112,7 +139,103 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-06",
+        "broker": "한화투자증권",
+        "title": "카카오뱅크 - 성장 동력의 둔화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92500&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260506_company_919687000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260506_company_919687000.pdf",
+        "target_price": "26,000",
+        "target_price_value": 26000,
+        "opinion": "Hold",
+        "opinion_normalized": "hold",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": 1873.0,
+        "unit": "억원",
+        "value_krw_100m": 1873.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "카카오뱅크 - 성장 동력의 둔화 성장 동력의 둔화 카카오뱅크 1Q26 당기순이익 1,873억원(+36% YoY), 기대치 부합 카카오뱅크의 1Q26 당기순이익은 1,873억원(+36% YoY)으로 당사 추정치 및 컨센서스와 유사한 실적을 기록."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "교보증권",
+        "title": "카카오뱅크 - 1Q26 Review: 지속적인 고객 확대를 통한 성..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92552&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_454888000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_454888000.pdf",
+        "target_price": "32,000",
+        "target_price_value": 32000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": 1873.0,
+        "unit": "억원",
+        "value_krw_100m": 1873.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "카카오뱅크 2026년 1분기 당기순이익 1,873억원, QoQ 78."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "신한투자증권",
+        "title": "카카오뱅크 - 카카오뱅크; 자본효율성 제고 노력 지속",
+        "ticker": null,
+        "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=936029",
+        "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351253",
+        "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351253",
+        "target_price": "29,000원",
+        "target_price_value": 29000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.8,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": "26F",
+        "value": 6035.0,
+        "unit": "억원",
+        "value_krw_100m": 6035.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "카카오뱅크 - 카카오뱅크; 자본효율성 제고 노력 지속 카카오뱅크; 자본효율성 제고 노력 지속 카카오뱅크 신한생각: 비은행 계열사 확대 기대감 유효 1Q26 Review: 대규모 일회성 이익 발생 Valuation & Risk: FY26F 순이익 6,035억원(+25."
       }
     ],
     "opinion_distribution": [
@@ -139,7 +262,9 @@
         "opinion": "Hold",
         "opinion_normalized": "hold",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -154,7 +279,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -169,7 +300,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -184,7 +321,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -199,7 +338,15 @@
         "opinion": "MarketPerform",
         "opinion_normalized": "hold",
         "score": 10.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -218,7 +365,9 @@
       "opinion": "Hold",
       "opinion_normalized": "hold",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -233,7 +382,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -248,7 +403,15 @@
       "opinion": "MarketPerform",
       "opinion_normalized": "hold",
       "score": 10.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -263,7 +426,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -278,7 +447,103 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-06",
+      "broker": "한화투자증권",
+      "title": "카카오뱅크 - 성장 동력의 둔화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92500&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260506_company_919687000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260506_company_919687000.pdf",
+      "target_price": "26,000",
+      "target_price_value": 26000,
+      "opinion": "Hold",
+      "opinion_normalized": "hold",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": 1873.0,
+      "unit": "억원",
+      "value_krw_100m": 1873.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "카카오뱅크 - 성장 동력의 둔화 성장 동력의 둔화 카카오뱅크 1Q26 당기순이익 1,873억원(+36% YoY), 기대치 부합 카카오뱅크의 1Q26 당기순이익은 1,873억원(+36% YoY)으로 당사 추정치 및 컨센서스와 유사한 실적을 기록."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "교보증권",
+      "title": "카카오뱅크 - 1Q26 Review: 지속적인 고객 확대를 통한 성..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92552&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_454888000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_454888000.pdf",
+      "target_price": "32,000",
+      "target_price_value": 32000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": 1873.0,
+      "unit": "억원",
+      "value_krw_100m": 1873.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "카카오뱅크 2026년 1분기 당기순이익 1,873억원, QoQ 78."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "신한투자증권",
+      "title": "카카오뱅크 - 카카오뱅크; 자본효율성 제고 노력 지속",
+      "ticker": null,
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=936029",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351253",
+      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351253",
+      "target_price": "29,000원",
+      "target_price_value": 29000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.8,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": "26F",
+      "value": 6035.0,
+      "unit": "억원",
+      "value_krw_100m": 6035.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "카카오뱅크 - 카카오뱅크; 자본효율성 제고 노력 지속 카카오뱅크; 자본효율성 제고 노력 지속 카카오뱅크 신한생각: 비은행 계열사 확대 기대감 유효 1Q26 Review: 대규모 일회성 이익 발생 Valuation & Risk: FY26F 순이익 6,035억원(+25."
     }
   ],
   "opinion_distribution": [
@@ -305,7 +570,9 @@
       "opinion": "Hold",
       "opinion_normalized": "hold",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -320,7 +587,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -335,7 +608,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -350,7 +629,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -365,7 +646,15 @@
       "opinion": "MarketPerform",
       "opinion_normalized": "hold",
       "score": 10.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -447,13 +736,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -510,7 +812,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "shinhan_investment_official",
@@ -561,13 +866,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": "26F",
+          "value": 6035.0,
+          "unit": "억원",
+          "source_excerpt": "카카오뱅크 - 카카오뱅크; 자본효율성 제고 노력 지속 카카오뱅크; 자본효율성 제고 노력 지속 카카오뱅크 신한생각: 비은행 계열사 확대 기대감 유효 1Q26 Review: 대규모 일회성 이익 발생 Valuation & Risk: FY26F 순이익 6,035억원(+25.",
+          "value_krw_100m": 6035.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -616,13 +941,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 1873.0,
+          "unit": "억원",
+          "source_excerpt": "카카오뱅크 2026년 1분기 당기순이익 1,873억원, QoQ 78.",
+          "value_krw_100m": 1873.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -678,7 +1023,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 1873.0,
+          "unit": "억원",
+          "source_excerpt": "카카오뱅크 - 성장 동력의 둔화 성장 동력의 둔화 카카오뱅크 1Q26 당기순이익 1,873억원(+36% YoY), 기대치 부합 카카오뱅크의 1Q26 당기순이익은 1,873억원(+36% YoY)으로 당사 추정치 및 컨센서스와 유사한 실적을 기록.",
+          "value_krw_100m": 1873.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -732,13 +1091,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -795,7 +1167,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "shinhan_investment_official",
@@ -846,13 +1221,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": "26F",
+          "value": 6035.0,
+          "unit": "억원",
+          "source_excerpt": "카카오뱅크 - 카카오뱅크; 자본효율성 제고 노력 지속 카카오뱅크; 자본효율성 제고 노력 지속 카카오뱅크 신한생각: 비은행 계열사 확대 기대감 유효 1Q26 Review: 대규모 일회성 이익 발생 Valuation & Risk: FY26F 순이익 6,035억원(+25.",
+          "value_krw_100m": 6035.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -901,13 +1296,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 1873.0,
+          "unit": "억원",
+          "source_excerpt": "카카오뱅크 2026년 1분기 당기순이익 1,873억원, QoQ 78.",
+          "value_krw_100m": 1873.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -963,7 +1378,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 1873.0,
+          "unit": "억원",
+          "source_excerpt": "카카오뱅크 - 성장 동력의 둔화 성장 동력의 둔화 카카오뱅크 1Q26 당기순이익 1,873억원(+36% YoY), 기대치 부합 카카오뱅크의 1Q26 당기순이익은 1,873억원(+36% YoY)으로 당사 추정치 및 컨센서스와 유사한 실적을 기록.",
+          "value_krw_100m": 1873.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -1017,13 +1446,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1080,7 +1522,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "shinhan_investment_official",
@@ -1131,13 +1576,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": "26F",
+          "value": 6035.0,
+          "unit": "억원",
+          "source_excerpt": "카카오뱅크 - 카카오뱅크; 자본효율성 제고 노력 지속 카카오뱅크; 자본효율성 제고 노력 지속 카카오뱅크 신한생각: 비은행 계열사 확대 기대감 유효 1Q26 Review: 대규모 일회성 이익 발생 Valuation & Risk: FY26F 순이익 6,035억원(+25.",
+          "value_krw_100m": 6035.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1186,13 +1651,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 1873.0,
+          "unit": "억원",
+          "source_excerpt": "카카오뱅크 2026년 1분기 당기순이익 1,873억원, QoQ 78.",
+          "value_krw_100m": 1873.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1248,7 +1733,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 1873.0,
+          "unit": "억원",
+          "source_excerpt": "카카오뱅크 - 성장 동력의 둔화 성장 동력의 둔화 카카오뱅크 1Q26 당기순이익 1,873억원(+36% YoY), 기대치 부합 카카오뱅크의 1Q26 당기순이익은 1,873억원(+36% YoY)으로 당사 추정치 및 컨센서스와 유사한 실적을 기록.",
+          "value_krw_100m": 1873.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

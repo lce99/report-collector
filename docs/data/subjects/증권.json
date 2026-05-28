@@ -1,8 +1,8 @@
 {
   "subject_key": "증권",
   "subject_name": "증권",
-  "latest_report_date": "2026-05-27",
-  "report_count": 11,
+  "latest_report_date": "2026-05-28",
+  "report_count": 12,
   "active_broker_count": 7,
   "active_brokers": [
     "SK증권",
@@ -14,14 +14,19 @@
     "하나증권"
   ],
   "change_summary": {
-    "changed_reports": 0,
+    "changed_reports": 5,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 0
+    "coverage_initiated": 0,
+    "estimate_signal_reports": 5,
+    "earnings_estimate_up": 5,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 0,
@@ -45,7 +50,83 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 15.1,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-27",
+        "broker": "대신증권",
+        "title": "증권 - 거부할 수 없는 흐름",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44724&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/industry/15/20260527_industry_694760000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/industry/15/20260527_industry_694760000.pdf",
+        "target_price": null,
+        "target_price_value": null,
+        "opinion": null,
+        "opinion_normalized": null,
+        "score": 10.5,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": 10.0,
+        "unit": "조원",
+        "value_krw_100m": 100000.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "증권 - 거부할 수 없는 흐름 거부할 수 없는 흐름 증권 [실적전망] ‘26년 커버리지 5사 합산 순이익 10조원 상회할 전망 - ’26년 커버리지 5사 합산 순이익 10."
+      },
+      {
+        "date": "2026-05-27",
+        "broker": "대신증권",
+        "title": "증권 - 거부할 수 없는 흐름",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44724&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/industry/15/20260527_industry_694760000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/industry/15/20260527_industry_694760000.pdf",
+        "target_price": null,
+        "target_price_value": null,
+        "opinion": null,
+        "opinion_normalized": null,
+        "score": 10.5,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": 10.5,
+        "unit": "조원",
+        "value_krw_100m": 105000.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "증권 - 거부할 수 없는 흐름 거부할 수 없는 흐름 증권 [실적전망] ‘26년 커버리지 5사 합산 순이익 10조원 상회할 전망 - ’26년 커버리지 5사 합산 순이익 10.5조원(+55."
       }
     ],
     "opinion_distribution": [],
@@ -63,7 +144,13 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 15.1,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-20",
@@ -78,7 +165,13 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 13.35,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-22",
@@ -93,7 +186,13 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 11.95,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-26",
@@ -108,7 +207,9 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 9.35,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-27",
@@ -123,7 +224,36 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 10.5,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
+      },
+      {
+        "date": "2026-05-28",
+        "broker": "SK증권",
+        "title": "증권 - 증권의 한계를 그은 건 어쩌면 나일지도?",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44735&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/industry/64/20260528_industry_178467000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/industry/64/20260528_industry_178467000.pdf",
+        "target_price": null,
+        "target_price_value": null,
+        "opinion": null,
+        "opinion_normalized": null,
+        "score": 9.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -142,7 +272,83 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 15.1,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-27",
+      "broker": "대신증권",
+      "title": "증권 - 거부할 수 없는 흐름",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44724&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/industry/15/20260527_industry_694760000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/industry/15/20260527_industry_694760000.pdf",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "score": 10.5,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": 10.0,
+      "unit": "조원",
+      "value_krw_100m": 100000.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "증권 - 거부할 수 없는 흐름 거부할 수 없는 흐름 증권 [실적전망] ‘26년 커버리지 5사 합산 순이익 10조원 상회할 전망 - ’26년 커버리지 5사 합산 순이익 10."
+    },
+    {
+      "date": "2026-05-27",
+      "broker": "대신증권",
+      "title": "증권 - 거부할 수 없는 흐름",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44724&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/industry/15/20260527_industry_694760000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/industry/15/20260527_industry_694760000.pdf",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "score": 10.5,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": 10.5,
+      "unit": "조원",
+      "value_krw_100m": 105000.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "증권 - 거부할 수 없는 흐름 거부할 수 없는 흐름 증권 [실적전망] ‘26년 커버리지 5사 합산 순이익 10조원 상회할 전망 - ’26년 커버리지 5사 합산 순이익 10.5조원(+55."
     }
   ],
   "opinion_distribution": [],
@@ -160,7 +366,13 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 15.1,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-20",
@@ -175,7 +387,13 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 13.35,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-22",
@@ -190,7 +408,13 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 11.95,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-26",
@@ -205,7 +429,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 9.35,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-27",
@@ -220,10 +446,43 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 10.5,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
+    },
+    {
+      "date": "2026-05-28",
+      "broker": "SK증권",
+      "title": "증권 - 증권의 한계를 그은 건 어쩌면 나일지도?",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44735&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/industry/64/20260528_industry_178467000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/industry/64/20260528_industry_178467000.pdf",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "score": 9.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
+    {
+      "name": "SK증권",
+      "count": 2
+    },
     {
       "name": "신한투자증권",
       "count": 2
@@ -247,19 +506,127 @@
     {
       "name": "유안타증권",
       "count": 1
-    },
-    {
-      "name": "SK증권",
-      "count": 1
     }
   ],
   "category_summary": [
     {
       "label": "산업분석",
-      "count": 11
+      "count": 12
     }
   ],
   "latest_by_broker": [
+    {
+      "source": "naver_research",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "44735",
+      "title": "증권의 한계를 그은 건 어쩌면 나일지도?",
+      "display_title": "증권 - 증권의 한계를 그은 건 어쩌면 나일지도?",
+      "broker": "SK증권",
+      "published_date": "2026-05-28",
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44735&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/industry/64/20260528_industry_178467000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/industry/64/20260528_industry_178467000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "증권",
+      "subject_key": "증권",
+      "ticker": null,
+      "views": 380,
+      "analyst": "장영임",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "1. Summary",
+      "summary": "1. Summary 지난 1 분기 유례없는 증시 상승에 따라 KOSPI 6,000pt 를 돌파, 일평균 거래대금은 66.6 조원을 기록하였다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "score": 9.75,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "관심 섹터/키워드(반도체)",
+        "이익 추정 상향/증가"
+      ],
+      "score_breakdown": [
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": "2026-05-06",
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": "장영임",
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
+    },
     {
       "source": "naver_research",
       "category": "industry",
@@ -357,9 +724,45 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 10.0,
+          "unit": "조원",
+          "source_excerpt": "증권 - 거부할 수 없는 흐름 거부할 수 없는 흐름 증권 [실적전망] ‘26년 커버리지 5사 합산 순이익 10조원 상회할 전망 - ’26년 커버리지 5사 합산 순이익 10.",
+          "value_krw_100m": 100000.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 10.5,
+          "unit": "조원",
+          "source_excerpt": "증권 - 거부할 수 없는 흐름 거부할 수 없는 흐름 증권 [실적전망] ‘26년 커버리지 5사 합산 순이익 10조원 상회할 전망 - ’26년 커버리지 5사 합산 순이익 10.5조원(+55.",
+          "value_krw_100m": 105000.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -460,7 +863,10 @@
       "coverage_initiated": false,
       "change_types": [],
       "change_reasons": [],
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -568,9 +974,20 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -680,9 +1097,20 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -732,7 +1160,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -785,22 +1216,30 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
-    },
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "recent_changes": [
     {
       "source": "naver_research",
       "category": "industry",
       "category_label": "산업분석",
-      "report_id": "44425",
-      "title": "4월 거래대금 지표 견조. 외국인 통합계좌 효..",
-      "display_title": "증권 - 4월 거래대금 지표 견조. 외국인 통합계좌 효..",
+      "report_id": "44735",
+      "title": "증권의 한계를 그은 건 어쩌면 나일지도?",
+      "display_title": "증권 - 증권의 한계를 그은 건 어쩌면 나일지도?",
       "broker": "SK증권",
-      "published_date": "2026-05-06",
-      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44425&page=1",
-      "pdf_url": "https://stock.pstatic.net/stock-research/industry/64/20260506_industry_562804000.pdf",
+      "published_date": "2026-05-28",
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44735&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/industry/64/20260528_industry_178467000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/industry/64/20260528_industry_178467000.pdf",
+      "primary_url_label": "PDF",
       "subject": "증권",
       "subject_key": "증권",
-      "views": 773,
+      "ticker": null,
+      "views": 380,
       "analyst": "장영임",
       "target_price": null,
       "target_price_value": null,
@@ -810,35 +1249,92 @@
       "content_sources": [
         "html"
       ],
-      "excerpt": "4 월 일평균 거래대금은 67.8 조원을 기록하며 높은 수준 유지 중 4월 일평균 거래대금은 67.8조원(KRX 43.6조원, NXT 24.2조원)으로 전월(69.0 조원) 대비 -1.7% 감소하였으나, 1분기(66.6조원) 대비해서는 소폭 증가하였다.",
-      "summary": "4 월 일평균 거래대금은 67.8 조원을 기록하며 높은 수준 유지 중 4월 일평균 거래대금은 67.8조원(KRX 43.6조원, NXT 24.2조원)으로 전월(69.0 조원) 대비 -1.7% 감소하였으나, 1분기(66.6조원) 대비해서는 소폭 증가하였다. 증권업 피크아웃에 대한 우려가 여전히 존재하나, 일평균 거래대금이 60조원대 후반을 유지하며 견조한 모습을 시현하고 있다.",
+      "excerpt": "1. Summary",
+      "summary": "1. Summary 지난 1 분기 유례없는 증시 상승에 따라 KOSPI 6,000pt 를 돌파, 일평균 거래대금은 66.6 조원을 기록하였다.",
       "summary_engine": "rule",
       "investment_memo": {},
-      "score": 5.55,
-      "score_reasons": [
-        "산업분석 카테고리"
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
       ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "score": 9.75,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "관심 섹터/키워드(반도체)",
+        "이익 추정 상향/증가"
+      ],
+      "score_breakdown": [
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
       "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": "2026-05-06",
       "previous_target_price": null,
       "previous_opinion": null,
-      "previous_analyst": null,
+      "previous_analyst": "장영임",
       "target_price_change": null,
       "target_price_change_pct": null,
       "opinion_changed": false,
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
-    }
-  ],
-  "recent_changes": [],
-  "timeline": [
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
+    },
     {
       "source": "naver_research",
       "category": "industry",
@@ -936,110 +1432,45 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
-    },
-    {
-      "source": "naver_research",
-      "category": "industry",
-      "category_label": "산업분석",
-      "report_id": "44656",
-      "title": "KOSPI, 지붕 뚫고 하이킥",
-      "display_title": "증권 - KOSPI, 지붕 뚫고 하이킥",
-      "broker": "신한투자증권",
-      "published_date": "2026-05-26",
-      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44656&page=2",
-      "pdf_url": null,
-      "primary_url": "https://finance.naver.com/research/industry_read.naver?nid=44656&page=2",
-      "primary_url_label": "상세",
-      "subject": "증권",
-      "subject_key": "증권",
-      "ticker": null,
-      "views": 422,
-      "analyst": "임희연",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
-      "excerpt": "Investment Summary 증권업은 사상 유례 없는 호황기를 맞이했다.",
-      "summary": "Investment Summary 증권업은 사상 유례 없는 호황기를 맞이했다. 반도체 업황 개선, 부동산 금융 축소, 상법 개정을 비롯한 주식시장 부양 정책 등에 힘입어 증시 유동성 유입이 가팔라졌다.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "score": 9.35,
-      "score_reasons": [
-        "산업분석 카테고리",
-        "관심 섹터/키워드(반도체)",
-        "우선 추적 증권사"
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
-      "score_breakdown": [
+      "has_change_signal": true,
+      "estimate_metrics": [
         {
-          "label": "산업분석 카테고리",
-          "value": 2.7,
-          "kind": "boost"
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 10.0,
+          "unit": "조원",
+          "source_excerpt": "증권 - 거부할 수 없는 흐름 거부할 수 없는 흐름 증권 [실적전망] ‘26년 커버리지 5사 합산 순이익 10조원 상회할 전망 - ’26년 커버리지 5사 합산 순이익 10.",
+          "value_krw_100m": 100000.0
         },
         {
-          "label": "관심 섹터/키워드",
-          "value": 2.4,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 2.3,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.1,
-          "kind": "boost"
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 10.5,
+          "unit": "조원",
+          "source_excerpt": "증권 - 거부할 수 없는 흐름 거부할 수 없는 흐름 증권 [실적전망] ‘26년 커버리지 5사 합산 순이익 10조원 상회할 전망 - ’26년 커버리지 5사 합산 순이익 10.5조원(+55.",
+          "value_krw_100m": 105000.0
         }
       ],
-      "link_health": {
-        "status": "detail_only",
-        "primary_kind": "detail",
-        "has_pdf": false,
-        "has_detail": true,
-        "detail_host": "finance.naver.com",
-        "pdf_host": "",
-        "note": "상세 페이지 링크만 확보됐습니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [
-        "반도체"
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
-      "is_priority_match": true,
-      "previous_report_date": "2026-05-19",
-      "previous_target_price": "16만원",
-      "previous_opinion": null,
-      "previous_analyst": "임희연",
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1147,9 +1578,20 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1259,9 +1701,20 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -1376,9 +1829,747 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "source": "naver_research",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "44735",
+      "title": "증권의 한계를 그은 건 어쩌면 나일지도?",
+      "display_title": "증권 - 증권의 한계를 그은 건 어쩌면 나일지도?",
+      "broker": "SK증권",
+      "published_date": "2026-05-28",
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44735&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/industry/64/20260528_industry_178467000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/industry/64/20260528_industry_178467000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "증권",
+      "subject_key": "증권",
+      "ticker": null,
+      "views": 380,
+      "analyst": "장영임",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "1. Summary",
+      "summary": "1. Summary 지난 1 분기 유례없는 증시 상승에 따라 KOSPI 6,000pt 를 돌파, 일평균 거래대금은 66.6 조원을 기록하였다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "score": 9.75,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "관심 섹터/키워드(반도체)",
+        "이익 추정 상향/증가"
+      ],
+      "score_breakdown": [
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": "2026-05-06",
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": "장영임",
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
+    },
+    {
+      "source": "naver_research",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "44724",
+      "title": "거부할 수 없는 흐름",
+      "display_title": "증권 - 거부할 수 없는 흐름",
+      "broker": "대신증권",
+      "published_date": "2026-05-27",
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44724&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/industry/15/20260527_industry_694760000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/industry/15/20260527_industry_694760000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "증권",
+      "subject_key": "증권",
+      "ticker": null,
+      "views": 577,
+      "analyst": "박혜진",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "[실적전망] ‘26년 커버리지 5사 합산 순이익 10조원 상회할 전망 - ’26년 커버리지 5사 합산 순이익 10.5조원(+55.2%)으로 사상 최대 실적 기록 전망",
+      "summary": "[실적전망] ‘26년 커버리지 5사 합산 순이익 10조원 상회할 전망 - ’26년 커버리지 5사 합산 순이익 10.5조원(+55.2%)으로 사상 최대 실적 기록 전망 - 실적호조는 거래대금 급증에 따른 브로커리지 수수료수익 증가(합산 7.7조원 +68.7%)와 초대형사 중심 평가이익 폭증에 따른 상품운용 수익(합산 7조원, +52.7%) 개선에 기인",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 10.5,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "관심 종목(미래에셋증권)",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "관심 종목",
+          "value": 4.0,
+          "kind": "boost"
+        },
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 0.95,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [
+        "미래에셋증권"
+      ],
+      "priority_keyword_matches": [],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 10.0,
+          "unit": "조원",
+          "source_excerpt": "증권 - 거부할 수 없는 흐름 거부할 수 없는 흐름 증권 [실적전망] ‘26년 커버리지 5사 합산 순이익 10조원 상회할 전망 - ’26년 커버리지 5사 합산 순이익 10.",
+          "value_krw_100m": 100000.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 10.5,
+          "unit": "조원",
+          "source_excerpt": "증권 - 거부할 수 없는 흐름 거부할 수 없는 흐름 증권 [실적전망] ‘26년 커버리지 5사 합산 순이익 10조원 상회할 전망 - ’26년 커버리지 5사 합산 순이익 10.5조원(+55.",
+          "value_krw_100m": 105000.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "44656",
+      "title": "KOSPI, 지붕 뚫고 하이킥",
+      "display_title": "증권 - KOSPI, 지붕 뚫고 하이킥",
+      "broker": "신한투자증권",
+      "published_date": "2026-05-26",
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44656&page=2",
+      "pdf_url": null,
+      "primary_url": "https://finance.naver.com/research/industry_read.naver?nid=44656&page=2",
+      "primary_url_label": "상세",
+      "subject": "증권",
+      "subject_key": "증권",
+      "ticker": null,
+      "views": 422,
+      "analyst": "임희연",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "Investment Summary 증권업은 사상 유례 없는 호황기를 맞이했다.",
+      "summary": "Investment Summary 증권업은 사상 유례 없는 호황기를 맞이했다. 반도체 업황 개선, 부동산 금융 축소, 상법 개정을 비롯한 주식시장 부양 정책 등에 힘입어 증시 유동성 유입이 가팔라졌다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 9.35,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "관심 섹터/키워드(반도체)",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.55,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "detail_only",
+        "primary_kind": "detail",
+        "has_pdf": false,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "",
+        "note": "상세 페이지 링크만 확보됐습니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": "2026-05-19",
+      "previous_target_price": "16만원",
+      "previous_opinion": null,
+      "previous_analyst": "임희연",
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
       "change_types": [],
       "change_reasons": [],
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "source": "naver_research",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "44609",
+      "title": "멀티플의 벽을 깨라",
+      "display_title": "증권 - 멀티플의 벽을 깨라",
+      "broker": "키움증권",
+      "published_date": "2026-05-22",
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44609&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/industry/39/20260522_industry_515031000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/industry/39/20260522_industry_515031000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "증권",
+      "subject_key": "증권",
+      "ticker": null,
+      "views": 2983,
+      "analyst": "안영준",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "증권: 실적 초과 상승은 멀티플 상향 필요 상반기 증권 업종의 상승 배경에는 국내 증시 활황 및 큰 폭의 거래대금 증가가 있었다.",
+      "summary": "증권: 실적 초과 상승은 멀티플 상향 필요 상반기 증권 업종의 상승 배경에는 국내 증시 활황 및 큰 폭의 거래대금 증가가 있었다. 거래대금은 연일 최고치를 경신하고 있고, 주요 지표 모두 양호한 흐름을 보이고 있어 하반기에도 증권 업종은 브로커리지 중심의 좋은 실적 기조를 이어갈 것으로 전망한다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 11.95,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "관심 종목(삼성전자, 미래에셋증권)",
+        "조회수 상위권",
+        "우선 추적 증권사",
+        "본문 정보량 풍부"
+      ],
+      "score_breakdown": [
+        {
+          "label": "관심 종목",
+          "value": 4.35,
+          "kind": "boost"
+        },
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 1.0,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.95,
+          "kind": "boost"
+        },
+        {
+          "label": "PDF 본문",
+          "value": 0.35,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [
+        "삼성전자",
+        "미래에셋증권"
+      ],
+      "priority_keyword_matches": [],
+      "is_priority_match": true,
+      "previous_report_date": "2026-05-06",
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": "안영준",
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "44595",
+      "title": "냉탕과 열탕",
+      "display_title": "증권 - 냉탕과 열탕",
+      "broker": "iM증권",
+      "published_date": "2026-05-20",
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44595&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/industry/61/20260520_industry_176750000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/industry/61/20260520_industry_176750000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "증권",
+      "subject_key": "증권",
+      "ticker": null,
+      "views": 583,
+      "analyst": "설용진",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "[증권] 돌아온 천수답 1.",
+      "summary": "[증권] 돌아온 천수답 1. 1Q26 커버리지 증권업종의 실적은 1) 거래대금 확대에 기반한 브로커리지 손익 개선, 2) 위험자산 가격 상승, 배당 확대 등에 따른 운용손익 개선 등에 힘입어 합산 기준 3조3,140억원(+135% YoY)를 기록하며 큰 폭의 이익 상승을 시현했다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 13.35,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "관심 종목(삼성전자, 미래에셋증권)",
+        "관심 섹터/키워드(반도체)",
+        "본문 정보량 풍부",
+        "PDF 본문 확보"
+      ],
+      "score_breakdown": [
+        {
+          "label": "관심 종목",
+          "value": 4.35,
+          "kind": "boost"
+        },
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.95,
+          "kind": "boost"
+        },
+        {
+          "label": "PDF 본문",
+          "value": 0.35,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [
+        "삼성전자",
+        "미래에셋증권"
+      ],
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": "2026-05-06",
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": "설용진",
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    },
+    {
+      "source": "shinhan_investment_official",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "shinhan-giindustry-936595",
+      "title": "증권; 일평균 거래대금 100조원 시대",
+      "display_title": "증권 - 증권; 일평균 거래대금 100조원 시대",
+      "broker": "신한투자증권",
+      "published_date": "2026-05-19",
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=giindustry&messageId=936595",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351534",
+      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351534",
+      "primary_url_label": "PDF",
+      "subject": "증권",
+      "subject_key": "증권",
+      "ticker": null,
+      "views": 392,
+      "analyst": "임희연",
+      "target_price": "16만원",
+      "target_price_value": 160000,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "신한생각: 이 유동성 실화냐 하반기 거래대금 추정치 변경에 따라 이익 추정치 및 목표주가 상향",
+      "summary": "신한생각: 이 유동성 실화냐 하반기 거래대금 추정치 변경에 따라 이익 추정치 및 목표주가 상향 신한생각: 이 유동성 실화냐",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 15.1,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "공식 소스",
+        "관심 종목(삼성전자, SK하이닉스, 미래에셋증권)",
+        "관심 섹터/키워드(반도체)",
+        "목표가 포함"
+      ],
+      "score_breakdown": [
+        {
+          "label": "관심 종목",
+          "value": 4.7,
+          "kind": "boost"
+        },
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "목표가",
+          "value": 0.7,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.55,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "bbs2.shinhansec.com",
+        "pdf_host": "bbs2.shinhansec.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [
+        "삼성전자",
+        "SK하이닉스",
+        "미래에셋증권"
+      ],
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1428,7 +2619,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1481,7 +2675,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1535,7 +2732,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1586,7 +2786,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1635,7 +2838,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1684,7 +2890,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

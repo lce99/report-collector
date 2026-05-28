@@ -12,14 +12,19 @@
     "하나증권"
   ],
   "change_summary": {
-    "changed_reports": 6,
+    "changed_reports": 7,
     "target_price_up": 2,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 4
+    "coverage_initiated": 4,
+    "estimate_signal_reports": 6,
+    "earnings_estimate_up": 6,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 5,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 5,
@@ -48,7 +53,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.2,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-24",
@@ -63,7 +70,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선",
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -78,7 +93,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -93,7 +116,17 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.3,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -108,7 +141,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -123,7 +164,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -138,7 +187,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-11",
@@ -153,7 +204,187 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-30",
+        "broker": "DS투자증권",
+        "title": "두산 - 천장이 보이지 않는 실적 곡선",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92276&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260430_company_840407000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260430_company_840407000.pdf",
+        "target_price": "2,400,000",
+        "target_price_value": 2400000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 30.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 30.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "최근 5% 내외 단가 인하에도 불구하고 엔비디아향 매출이 분기 최대치를 기록하면서 영업이익률은 30%로 당사 영업이익률 추정치를 크게 상회했다."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "대신증권",
+        "title": "두산 - 사업부문 성장과 보유지분 가치 상승의 콜라..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92230&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260430_company_275451000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260430_company_275451000.pdf",
+        "target_price": "1,920,000",
+        "target_price_value": 1920000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.3,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 6.7,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 6.7,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "두산 투자의견 매수, 목표주가 1,920,000원 유지 2026년 1분기 연결 영업이익은 3,408억 원(OPM 6.7%)으로 당사 추정 및 시장 기대치를 모두 상회."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "유진투자증권",
+        "title": "두산 - 다 해줬잖아",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92215&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_466173000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_466173000.pdf",
+        "target_price": "2,200,000",
+        "target_price_value": 2200000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 30.1,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 30.1,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "두산 - 다 해줬잖아 다 해줬잖아 두산 \" 1Q26 Review: 두산 전자BG의 1분기 실적은 매출액 6,173억원(YoY +53%, QoQ +11%), 영업이익 1,856억원(YoY +60%, QoQ +40%, OPM 30.1%)으로 당초 추정치 대비 매출액과 수익성 모두 크게 상…"
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "DS투자증권",
+        "title": "두산 - 천장이 보이지 않는 실적 곡선",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92276&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260430_company_840407000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260430_company_840407000.pdf",
+        "target_price": "2,400,000",
+        "target_price_value": 2400000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1856.0,
+        "unit": "억원",
+        "value_krw_100m": 1856.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2% YoY), 영업이익 1,856억원(+59."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "유진투자증권",
+        "title": "두산 - 다 해줬잖아",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92215&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_466173000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_466173000.pdf",
+        "target_price": "2,200,000",
+        "target_price_value": 2200000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1856.0,
+        "unit": "억원",
+        "value_krw_100m": 1856.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "두산 - 다 해줬잖아 다 해줬잖아 두산 \" 1Q26 Review: 두산 전자BG의 1분기 실적은 매출액 6,173억원(YoY +53%, QoQ +11%), 영업이익 1,856억원(YoY +60%, QoQ +40%, OPM 30."
       }
     ],
     "opinion_distribution": [
@@ -176,7 +407,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-30",
@@ -191,7 +424,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -206,7 +447,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -221,7 +470,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -236,7 +493,17 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.3,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -251,7 +518,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -270,7 +543,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.2,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-24",
@@ -285,7 +560,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -300,7 +583,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -315,7 +606,17 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.3,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -330,7 +631,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -345,7 +654,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -360,7 +677,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-11",
@@ -375,7 +694,187 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-30",
+      "broker": "DS투자증권",
+      "title": "두산 - 천장이 보이지 않는 실적 곡선",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92276&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260430_company_840407000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260430_company_840407000.pdf",
+      "target_price": "2,400,000",
+      "target_price_value": 2400000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 30.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 30.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "최근 5% 내외 단가 인하에도 불구하고 엔비디아향 매출이 분기 최대치를 기록하면서 영업이익률은 30%로 당사 영업이익률 추정치를 크게 상회했다."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "대신증권",
+      "title": "두산 - 사업부문 성장과 보유지분 가치 상승의 콜라..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92230&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260430_company_275451000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260430_company_275451000.pdf",
+      "target_price": "1,920,000",
+      "target_price_value": 1920000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.3,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 6.7,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 6.7,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "두산 투자의견 매수, 목표주가 1,920,000원 유지 2026년 1분기 연결 영업이익은 3,408억 원(OPM 6.7%)으로 당사 추정 및 시장 기대치를 모두 상회."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "유진투자증권",
+      "title": "두산 - 다 해줬잖아",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92215&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_466173000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_466173000.pdf",
+      "target_price": "2,200,000",
+      "target_price_value": 2200000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 30.1,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 30.1,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "두산 - 다 해줬잖아 다 해줬잖아 두산 \" 1Q26 Review: 두산 전자BG의 1분기 실적은 매출액 6,173억원(YoY +53%, QoQ +11%), 영업이익 1,856억원(YoY +60%, QoQ +40%, OPM 30.1%)으로 당초 추정치 대비 매출액과 수익성 모두 크게 상…"
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "DS투자증권",
+      "title": "두산 - 천장이 보이지 않는 실적 곡선",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92276&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260430_company_840407000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260430_company_840407000.pdf",
+      "target_price": "2,400,000",
+      "target_price_value": 2400000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1856.0,
+      "unit": "억원",
+      "value_krw_100m": 1856.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2% YoY), 영업이익 1,856억원(+59."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "유진투자증권",
+      "title": "두산 - 다 해줬잖아",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92215&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_466173000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_466173000.pdf",
+      "target_price": "2,200,000",
+      "target_price_value": 2200000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1856.0,
+      "unit": "억원",
+      "value_krw_100m": 1856.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "두산 - 다 해줬잖아 다 해줬잖아 두산 \" 1Q26 Review: 두산 전자BG의 1분기 실적은 매출액 6,173억원(YoY +53%, QoQ +11%), 영업이익 1,856억원(YoY +60%, QoQ +40%, OPM 30."
     }
   ],
   "opinion_distribution": [
@@ -398,7 +897,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-30",
@@ -413,7 +914,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -428,7 +937,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -443,7 +960,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -458,7 +983,17 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.3,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -473,7 +1008,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -553,13 +1094,22 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -610,10 +1160,40 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 6.7,
+          "unit": "%",
+          "value_pct": 6.7,
+          "source_excerpt": "두산 투자의견 매수, 목표주가 1,920,000원 유지 2026년 1분기 연결 영업이익은 3,408억 원(OPM 6.7%)으로 당사 추정 및 시장 기대치를 모두 상회."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -663,13 +1243,47 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1856.0,
+          "unit": "억원",
+          "source_excerpt": "2% YoY), 영업이익 1,856억원(+59.",
+          "value_krw_100m": 1856.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 30.0,
+          "unit": "%",
+          "value_pct": 30.0,
+          "source_excerpt": "최근 5% 내외 단가 인하에도 불구하고 엔비디아향 매출이 분기 최대치를 기록하면서 영업이익률은 30%로 당사 영업이익률 추정치를 크게 상회했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -718,13 +1332,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -779,7 +1406,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -831,13 +1461,106 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92230",
+      "title": "사업부문 성장과 보유지분 가치 상승의 콜라..",
+      "display_title": "두산 - 사업부문 성장과 보유지분 가치 상승의 콜라..",
+      "broker": "대신증권",
+      "published_date": "2026-04-30",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92230&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260430_company_275451000.pdf",
+      "subject": "두산",
+      "subject_key": "두산",
+      "views": 1733,
+      "analyst": null,
+      "target_price": "1,920,000",
+      "target_price_value": 1920000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "투자의견 매수, 목표주가 1,920,000원 유지 2026년 1분기 연결 영업이익은 3,408억 원(OPM 6.7%)으로 당사 추정 및 시장 기대치를 모두 상회.",
+      "summary": "투자의견 매수, 목표주가 1,920,000원 유지 2026년 1분기 연결 영업이익은 3,408억 원(OPM 6.7%)으로 당사 추정 및 시장 기대치를 모두 상회. 연결 자회사인 두산에너빌리티는 매출액 4조 2,611억 원(+13.7% YoY), 영업이익 2,335억 원(+63.9% YoY)으로 컨센서스를 상회했으나, 두산로보틱스는 매출액 153억 원, 영업이익과 순이익 적자로 부진.",
+      "summary_engine": "rule",
+      "score": 11.3,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 섹터/키워드(반도체)",
+        "조회수 상위권",
+        "목표가 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": "2026-04-24",
+      "previous_target_price": "1,920,000",
+      "previous_opinion": "Buy",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 6.7,
+          "unit": "%",
+          "value_pct": 6.7,
+          "source_excerpt": "두산 투자의견 매수, 목표주가 1,920,000원 유지 2026년 1분기 연결 영업이익은 3,408억 원(OPM 6.7%)으로 당사 추정 및 시장 기대치를 모두 상회."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -888,13 +1611,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1856.0,
+          "unit": "억원",
+          "source_excerpt": "두산 - 다 해줬잖아 다 해줬잖아 두산 \" 1Q26 Review: 두산 전자BG의 1분기 실적은 매출액 6,173억원(YoY +53%, QoQ +11%), 영업이익 1,856억원(YoY +60%, QoQ +40%, OPM 30.",
+          "value_krw_100m": 1856.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 30.1,
+          "unit": "%",
+          "value_pct": 30.1,
+          "source_excerpt": "두산 - 다 해줬잖아 다 해줬잖아 두산 \" 1Q26 Review: 두산 전자BG의 1분기 실적은 매출액 6,173억원(YoY +53%, QoQ +11%), 영업이익 1,856억원(YoY +60%, QoQ +40%, OPM 30.1%)으로 당초 추정치 대비 매출액과 수익성 모두 크게 상…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -944,13 +1701,47 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1856.0,
+          "unit": "억원",
+          "source_excerpt": "2% YoY), 영업이익 1,856억원(+59.",
+          "value_krw_100m": 1856.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 30.0,
+          "unit": "%",
+          "value_pct": 30.0,
+          "source_excerpt": "최근 5% 내외 단가 인하에도 불구하고 엔비디아향 매출이 분기 최대치를 기록하면서 영업이익률은 30%로 당사 영업이익률 추정치를 크게 상회했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -999,13 +1790,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1060,7 +1864,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1110,13 +1917,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -1168,13 +1988,22 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1225,10 +2054,40 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 6.7,
+          "unit": "%",
+          "value_pct": 6.7,
+          "source_excerpt": "두산 투자의견 매수, 목표주가 1,920,000원 유지 2026년 1분기 연결 영업이익은 3,408억 원(OPM 6.7%)으로 당사 추정 및 시장 기대치를 모두 상회."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1279,13 +2138,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1856.0,
+          "unit": "억원",
+          "source_excerpt": "두산 - 다 해줬잖아 다 해줬잖아 두산 \" 1Q26 Review: 두산 전자BG의 1분기 실적은 매출액 6,173억원(YoY +53%, QoQ +11%), 영업이익 1,856억원(YoY +60%, QoQ +40%, OPM 30.",
+          "value_krw_100m": 1856.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 30.1,
+          "unit": "%",
+          "value_pct": 30.1,
+          "source_excerpt": "두산 - 다 해줬잖아 다 해줬잖아 두산 \" 1Q26 Review: 두산 전자BG의 1분기 실적은 매출액 6,173억원(YoY +53%, QoQ +11%), 영업이익 1,856억원(YoY +60%, QoQ +40%, OPM 30.1%)으로 당초 추정치 대비 매출액과 수익성 모두 크게 상…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1335,13 +2228,47 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1856.0,
+          "unit": "억원",
+          "source_excerpt": "2% YoY), 영업이익 1,856억원(+59.",
+          "value_krw_100m": 1856.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 30.0,
+          "unit": "%",
+          "value_pct": 30.0,
+          "source_excerpt": "최근 5% 내외 단가 인하에도 불구하고 엔비디아향 매출이 분기 최대치를 기록하면서 영업이익률은 30%로 당사 영업이익률 추정치를 크게 상회했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1390,13 +2317,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1451,7 +2391,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1501,13 +2444,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1547,6 +2503,9 @@
       "ticker": null,
       "target_price_value": 2000000,
       "opinion_normalized": "buy",
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false

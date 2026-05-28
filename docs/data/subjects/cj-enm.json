@@ -12,14 +12,19 @@
     "하나증권"
   ],
   "change_summary": {
-    "changed_reports": 5,
+    "changed_reports": 6,
     "target_price_up": 0,
     "target_price_down": 1,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 4
+    "coverage_initiated": 4,
+    "estimate_signal_reports": 6,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 6,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 2
   },
   "target_summary": {
     "count": 5,
@@ -48,7 +53,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -63,7 +76,17 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -78,7 +101,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.93,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -93,7 +122,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.13,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -108,7 +145,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -123,7 +168,155 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.3,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-16",
+        "broker": "삼성증권",
+        "title": "CJ ENM - 단기 실적보다 방향성에 주목",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91637&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_186019000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_186019000.pdf",
+        "target_price": "80,000",
+        "target_price_value": 80000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 192.0,
+        "unit": "억원",
+        "value_krw_100m": 192.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4% YoY), 영업이익은 192억원(+2,622."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "유진투자증권",
+        "title": "CJ ENM - 이제 믿을 곳은 티빙",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92587&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260508_company_105521000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260508_company_105521000.pdf",
+        "target_price": "70,000",
+        "target_price_value": 70000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 15.0,
+        "unit": "억원",
+        "value_krw_100m": 15.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8%yoy), 영업이익 15억원(+107."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "키움증권",
+        "title": "CJ ENM - 투자 비용 확대로 어닝 쇼크 기록",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92661&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_783184000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_783184000.pdf",
+        "target_price": "70,000",
+        "target_price_value": 70000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 15.0,
+        "unit": "억원",
+        "value_krw_100m": 15.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8%), 영업이익은 15억원(QoQ -95."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "삼성증권",
+        "title": "CJ ENM - 엇갈린 흐름 속에서도 남아있는 기대",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92958&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_871506000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_871506000.pdf",
+        "target_price": "71,000",
+        "target_price_value": 71000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.3,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 15.0,
+        "unit": "억원",
+        "value_krw_100m": 15.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8% YoY, 이하 YoY), 영업이익 15억원(+107."
       }
     ],
     "opinion_distribution": [
@@ -146,7 +339,17 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -161,7 +364,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.93,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -176,7 +385,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -191,7 +408,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.13,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -206,7 +431,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.3,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -225,7 +458,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -240,7 +481,17 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -255,7 +506,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.93,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -270,7 +527,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.13,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -285,7 +550,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -300,7 +573,155 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.3,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-16",
+      "broker": "삼성증권",
+      "title": "CJ ENM - 단기 실적보다 방향성에 주목",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91637&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_186019000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_186019000.pdf",
+      "target_price": "80,000",
+      "target_price_value": 80000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 192.0,
+      "unit": "억원",
+      "value_krw_100m": 192.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4% YoY), 영업이익은 192억원(+2,622."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "유진투자증권",
+      "title": "CJ ENM - 이제 믿을 곳은 티빙",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92587&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260508_company_105521000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260508_company_105521000.pdf",
+      "target_price": "70,000",
+      "target_price_value": 70000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 15.0,
+      "unit": "억원",
+      "value_krw_100m": 15.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8%yoy), 영업이익 15억원(+107."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "키움증권",
+      "title": "CJ ENM - 투자 비용 확대로 어닝 쇼크 기록",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92661&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_783184000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_783184000.pdf",
+      "target_price": "70,000",
+      "target_price_value": 70000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 15.0,
+      "unit": "억원",
+      "value_krw_100m": 15.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8%), 영업이익은 15억원(QoQ -95."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "삼성증권",
+      "title": "CJ ENM - 엇갈린 흐름 속에서도 남아있는 기대",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92958&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_871506000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_871506000.pdf",
+      "target_price": "71,000",
+      "target_price_value": 71000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.3,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 15.0,
+      "unit": "억원",
+      "value_krw_100m": 15.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8% YoY, 이하 YoY), 영업이익 15억원(+107."
     }
   ],
   "opinion_distribution": [
@@ -323,7 +744,17 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -338,7 +769,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.93,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -353,7 +790,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -368,7 +813,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.13,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -383,7 +836,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.3,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -463,13 +924,37 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_down"
+        "target_down",
+        "earnings_estimate_down",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 하향"
+        "목표가 하향",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 15.0,
+          "unit": "억원",
+          "source_excerpt": "8% YoY, 이하 YoY), 영업이익 15억원(+107.",
+          "value_krw_100m": 15.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -521,13 +1006,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -577,13 +1075,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 15.0,
+          "unit": "억원",
+          "source_excerpt": "8%), 영업이익은 15억원(QoQ -95.",
+          "value_krw_100m": 15.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -635,13 +1157,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -690,13 +1221,41 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 15.0,
+          "unit": "억원",
+          "source_excerpt": "8%yoy), 영업이익 15억원(+107.",
+          "value_krw_100m": 15.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "recent_changes": [
@@ -748,13 +1307,37 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_down"
+        "target_down",
+        "earnings_estimate_down",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 하향"
+        "목표가 하향",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 15.0,
+          "unit": "억원",
+          "source_excerpt": "8% YoY, 이하 YoY), 영업이익 15억원(+107.",
+          "value_krw_100m": 15.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -806,13 +1389,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -862,13 +1458,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 15.0,
+          "unit": "억원",
+          "source_excerpt": "8%), 영업이익은 15억원(QoQ -95.",
+          "value_krw_100m": 15.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -920,13 +1540,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -975,13 +1604,108 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 15.0,
+          "unit": "억원",
+          "source_excerpt": "8%yoy), 영업이익 15억원(+107.",
+          "value_krw_100m": 15.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91637",
+      "title": "단기 실적보다 방향성에 주목",
+      "display_title": "CJ ENM - 단기 실적보다 방향성에 주목",
+      "broker": "삼성증권",
+      "published_date": "2026-04-16",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91637&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_186019000.pdf",
+      "subject": "CJ ENM",
+      "views": 847,
+      "analyst": null,
+      "target_price": "80,000",
+      "opinion": "Buy",
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "1Q26 실적 프리뷰- 컨센서스 하회 예상: 1분기 연결 매출액은 1조 2,450억원(+9.4% YoY), 영업이익은 192억원(+2,622.1% YoY)으로 컨센서스(320억원)를 밑돌 것으로 예상된다. 미디어플랫폼 부문의 수익성이 당초 기대보다 부진할 것으로 보이는데, TV 광고 매출 감소와 티빙의 콘텐츠 수급 비용이 주요 요인으로 작용할 전망이다.",
+      "summary": "1Q26 실적 프리뷰- 컨센서스 하회 예상: 1분기 연결 매출액은 1조 2,450억원(+9.4% YoY), 영업이익은 192억원(+2,622.1% YoY)으로 컨센서스(320억원)를 밑돌 것으로 예상된다. 미디어플랫폼 부문의 수익성이 당초 기대보다 부진할 것으로 보이는데, TV 광고 매출 감소와 티빙의 콘텐츠 수급 비용이 주요 요인으로 작용할 전망이다. 동계 올림픽과 글로벌 분쟁 장기화에 따른 시청 수요가 보도 채널에 집중되면서 TV 광고 실적이 위축된 것으로 파악된다.",
+      "summary_engine": "rule",
+      "score": 9.1,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "우선 추적 증권사"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "subject_key": "cj-enm",
+      "ticker": null,
+      "target_price_value": 80000,
+      "opinion_normalized": "buy",
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 192.0,
+          "unit": "억원",
+          "source_excerpt": "4% YoY), 영업이익은 192억원(+2,622.",
+          "value_krw_100m": 192.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "change_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "has_change_signal": true
     }
   ],
   "timeline": [
@@ -1033,13 +1757,37 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_down"
+        "target_down",
+        "earnings_estimate_down",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 하향"
+        "목표가 하향",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 15.0,
+          "unit": "억원",
+          "source_excerpt": "8% YoY, 이하 YoY), 영업이익 15억원(+107.",
+          "value_krw_100m": 15.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1091,13 +1839,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1147,13 +1908,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 15.0,
+          "unit": "억원",
+          "source_excerpt": "8%), 영업이익은 15억원(QoQ -95.",
+          "value_krw_100m": 15.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1205,13 +1990,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1260,13 +2054,41 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 15.0,
+          "unit": "억원",
+          "source_excerpt": "8%yoy), 영업이익 15억원(+107.",
+          "value_krw_100m": 15.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1305,9 +2127,35 @@
       "ticker": null,
       "target_price_value": 80000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 192.0,
+          "unit": "억원",
+          "source_excerpt": "4% YoY), 영업이익은 192억원(+2,622.",
+          "value_krw_100m": 192.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "change_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "has_change_signal": true
     }
   ]
 }

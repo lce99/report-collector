@@ -23,7 +23,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 8
+    "coverage_initiated": 8,
+    "estimate_signal_reports": 4,
+    "earnings_estimate_up": 4,
+    "earnings_estimate_down": 2,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 9,
@@ -52,7 +57,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.7,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-27",
@@ -67,7 +74,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -82,7 +101,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -97,7 +122,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 11.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -112,7 +143,17 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -127,7 +168,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-27",
@@ -142,7 +185,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-29",
@@ -157,7 +202,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -172,7 +219,449 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-27",
+        "broker": "iM증권",
+        "title": "현대로템 - 1Q26: 지금 사야 한다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91947&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_676432000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_676432000.pdf",
+        "target_price": "320,000",
+        "target_price_value": 320000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 15.4,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 15.4,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "현대로템 - 1Q26: 지금 사야 한다 1Q26: 지금 사야 한다 현대로템 1분기 매출 1조 4,575억원/영업이익 2,242억원 현대로템의 26년 1분기 매출은 1조 4,575억원/영업이익은 2,242억원(OPM 15.4%)로 컨센서스(1조 4,006억원/2,206억원) 보다 매출…"
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "iM증권",
+        "title": "현대로템 - 1Q26: 지금 사야 한다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91947&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_676432000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_676432000.pdf",
+        "target_price": "320,000",
+        "target_price_value": 320000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 27.2,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 27.2,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "이번 분기부터 부문별 영업이익률이 공개되었으며 디펜스솔루션부문은 OPM 27.2%, 레일솔루션부문 0."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "유안타증권",
+        "title": "현대로템 - 1Q26 Review 양호한 실적",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91995&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260427_company_151807000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260427_company_151807000.pdf",
+        "target_price": "300,000",
+        "target_price_value": 300000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 12.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 15.4,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 15.4,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2% OPM 15.4%)로 컨센서스 대비 매출액과 영업이익은 각각 +4."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "한화투자증권",
+        "title": "현대로템 - [1Q26 Review] 여전히 우리는 전차가 많이 필..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92023&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260427_company_521404000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260427_company_521404000.pdf",
+        "target_price": "320,000",
+        "target_price_value": 320000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 15.4,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 15.4,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5%, OPM 15.4%)을 시현하며 OP 기준 컨센서스에 부합했다."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "한화투자증권",
+        "title": "현대로템 - [1Q26 Review] 여전히 우리는 전차가 많이 필..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92023&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260427_company_521404000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260427_company_521404000.pdf",
+        "target_price": "320,000",
+        "target_price_value": 320000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 27.2,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 27.2,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%), 영업이익 2,188억원(OPM 27.2%)을 기록했다."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "iM증권",
+        "title": "현대로템 - 1Q26: 지금 사야 한다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91947&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_676432000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_676432000.pdf",
+        "target_price": "320,000",
+        "target_price_value": 320000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2242.0,
+        "unit": "억원",
+        "value_krw_100m": 2242.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "현대로템 - 1Q26: 지금 사야 한다 1Q26: 지금 사야 한다 현대로템 1분기 매출 1조 4,575억원/영업이익 2,242억원 현대로템의 26년 1분기 매출은 1조 4,575억원/영업이익은 2,242억원(OPM 15."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "유안타증권",
+        "title": "현대로템 - 1Q26 Review 양호한 실적",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91995&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260427_company_151807000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260427_company_151807000.pdf",
+        "target_price": "300,000",
+        "target_price_value": 300000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 12.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2242.0,
+        "unit": "억원",
+        "value_krw_100m": 2242.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3%), 영업이익 2,242억원(YoY +10."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "한화투자증권",
+        "title": "현대로템 - [1Q26 Review] 여전히 우리는 전차가 많이 필..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92023&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260427_company_521404000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260427_company_521404000.pdf",
+        "target_price": "320,000",
+        "target_price_value": 320000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2242.0,
+        "unit": "억원",
+        "value_krw_100m": 2242.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9%, 이하 YoY), 영업이익 2,242억원(+10."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "한화투자증권",
+        "title": "현대로템 - [1Q26 Review] 여전히 우리는 전차가 많이 필..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92023&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260427_company_521404000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260427_company_521404000.pdf",
+        "target_price": "320,000",
+        "target_price_value": 320000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2188.0,
+        "unit": "억원",
+        "value_krw_100m": 2188.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%), 영업이익 2,188억원(OPM 27."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "키움증권",
+        "title": "현대로템 - 점점 선명해지는 수주 타임 라인",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92105&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_107217000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_107217000.pdf",
+        "target_price": "340,000",
+        "target_price_value": 340000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 15.4,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 15.4,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5%, OPM 15.4%)를 달성하며 시장 기대치(2,223억원)와 당사 추정치(2,180억원)에 부합하였다."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "키움증권",
+        "title": "현대로템 - 점점 선명해지는 수주 타임 라인",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92105&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_107217000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_107217000.pdf",
+        "target_price": "340,000",
+        "target_price_value": 340000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 27.2,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 27.2,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8%, OPM 27.2%)로 견조하였다."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "키움증권",
+        "title": "현대로템 - 점점 선명해지는 수주 타임 라인",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92105&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_107217000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_107217000.pdf",
+        "target_price": "340,000",
+        "target_price_value": 340000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1분기",
+        "value": 2242.0,
+        "unit": "억원",
+        "value_krw_100m": 2242.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "현대로템 - 점점 선명해지는 수주 타임 라인 점점 선명해지는 수주 타임 라인 현대로템 1분기 영업이익 2,242억원, 컨센서스 부합 1분기 매출액 1조 4,575억원(yoy +23."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "키움증권",
+        "title": "현대로템 - 점점 선명해지는 수주 타임 라인",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92105&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_107217000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_107217000.pdf",
+        "target_price": "340,000",
+        "target_price_value": 340000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2242.0,
+        "unit": "억원",
+        "value_krw_100m": 2242.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9%), 영업이익 2,242억원(yoy +10."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "키움증권",
+        "title": "현대로템 - 점점 선명해지는 수주 타임 라인",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92105&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_107217000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_107217000.pdf",
+        "target_price": "340,000",
+        "target_price_value": 340000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2188.0,
+        "unit": "억원",
+        "value_krw_100m": 2188.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5%), 영업이익 2,188억원(yoy +12."
       }
     ],
     "opinion_distribution": [
@@ -195,7 +684,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -210,7 +711,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-27",
@@ -225,7 +728,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 11.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -240,7 +749,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-27",
@@ -255,7 +766,17 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -270,7 +791,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -285,7 +812,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -300,7 +829,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -319,7 +850,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.7,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-27",
@@ -334,7 +867,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -349,7 +894,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -364,7 +915,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 11.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -379,7 +936,17 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -394,7 +961,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-27",
@@ -409,7 +978,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-29",
@@ -424,7 +995,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -439,7 +1012,449 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-27",
+      "broker": "iM증권",
+      "title": "현대로템 - 1Q26: 지금 사야 한다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91947&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_676432000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_676432000.pdf",
+      "target_price": "320,000",
+      "target_price_value": 320000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 15.4,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 15.4,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "현대로템 - 1Q26: 지금 사야 한다 1Q26: 지금 사야 한다 현대로템 1분기 매출 1조 4,575억원/영업이익 2,242억원 현대로템의 26년 1분기 매출은 1조 4,575억원/영업이익은 2,242억원(OPM 15.4%)로 컨센서스(1조 4,006억원/2,206억원) 보다 매출…"
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "iM증권",
+      "title": "현대로템 - 1Q26: 지금 사야 한다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91947&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_676432000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_676432000.pdf",
+      "target_price": "320,000",
+      "target_price_value": 320000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 27.2,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 27.2,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "이번 분기부터 부문별 영업이익률이 공개되었으며 디펜스솔루션부문은 OPM 27.2%, 레일솔루션부문 0."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "유안타증권",
+      "title": "현대로템 - 1Q26 Review 양호한 실적",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91995&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260427_company_151807000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260427_company_151807000.pdf",
+      "target_price": "300,000",
+      "target_price_value": 300000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 12.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 15.4,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 15.4,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2% OPM 15.4%)로 컨센서스 대비 매출액과 영업이익은 각각 +4."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "한화투자증권",
+      "title": "현대로템 - [1Q26 Review] 여전히 우리는 전차가 많이 필..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92023&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260427_company_521404000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260427_company_521404000.pdf",
+      "target_price": "320,000",
+      "target_price_value": 320000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 15.4,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 15.4,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5%, OPM 15.4%)을 시현하며 OP 기준 컨센서스에 부합했다."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "한화투자증권",
+      "title": "현대로템 - [1Q26 Review] 여전히 우리는 전차가 많이 필..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92023&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260427_company_521404000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260427_company_521404000.pdf",
+      "target_price": "320,000",
+      "target_price_value": 320000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 27.2,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 27.2,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%), 영업이익 2,188억원(OPM 27.2%)을 기록했다."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "iM증권",
+      "title": "현대로템 - 1Q26: 지금 사야 한다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91947&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_676432000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_676432000.pdf",
+      "target_price": "320,000",
+      "target_price_value": 320000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2242.0,
+      "unit": "억원",
+      "value_krw_100m": 2242.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "현대로템 - 1Q26: 지금 사야 한다 1Q26: 지금 사야 한다 현대로템 1분기 매출 1조 4,575억원/영업이익 2,242억원 현대로템의 26년 1분기 매출은 1조 4,575억원/영업이익은 2,242억원(OPM 15."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "유안타증권",
+      "title": "현대로템 - 1Q26 Review 양호한 실적",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91995&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260427_company_151807000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260427_company_151807000.pdf",
+      "target_price": "300,000",
+      "target_price_value": 300000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 12.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2242.0,
+      "unit": "억원",
+      "value_krw_100m": 2242.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3%), 영업이익 2,242억원(YoY +10."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "한화투자증권",
+      "title": "현대로템 - [1Q26 Review] 여전히 우리는 전차가 많이 필..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92023&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260427_company_521404000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260427_company_521404000.pdf",
+      "target_price": "320,000",
+      "target_price_value": 320000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2242.0,
+      "unit": "억원",
+      "value_krw_100m": 2242.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9%, 이하 YoY), 영업이익 2,242억원(+10."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "한화투자증권",
+      "title": "현대로템 - [1Q26 Review] 여전히 우리는 전차가 많이 필..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92023&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260427_company_521404000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260427_company_521404000.pdf",
+      "target_price": "320,000",
+      "target_price_value": 320000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2188.0,
+      "unit": "억원",
+      "value_krw_100m": 2188.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%), 영업이익 2,188억원(OPM 27."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "키움증권",
+      "title": "현대로템 - 점점 선명해지는 수주 타임 라인",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92105&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_107217000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_107217000.pdf",
+      "target_price": "340,000",
+      "target_price_value": 340000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 15.4,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 15.4,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5%, OPM 15.4%)를 달성하며 시장 기대치(2,223억원)와 당사 추정치(2,180억원)에 부합하였다."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "키움증권",
+      "title": "현대로템 - 점점 선명해지는 수주 타임 라인",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92105&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_107217000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_107217000.pdf",
+      "target_price": "340,000",
+      "target_price_value": 340000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 27.2,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 27.2,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8%, OPM 27.2%)로 견조하였다."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "키움증권",
+      "title": "현대로템 - 점점 선명해지는 수주 타임 라인",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92105&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_107217000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_107217000.pdf",
+      "target_price": "340,000",
+      "target_price_value": 340000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1분기",
+      "value": 2242.0,
+      "unit": "억원",
+      "value_krw_100m": 2242.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "현대로템 - 점점 선명해지는 수주 타임 라인 점점 선명해지는 수주 타임 라인 현대로템 1분기 영업이익 2,242억원, 컨센서스 부합 1분기 매출액 1조 4,575억원(yoy +23."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "키움증권",
+      "title": "현대로템 - 점점 선명해지는 수주 타임 라인",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92105&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_107217000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_107217000.pdf",
+      "target_price": "340,000",
+      "target_price_value": 340000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2242.0,
+      "unit": "억원",
+      "value_krw_100m": 2242.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9%), 영업이익 2,242억원(yoy +10."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "키움증권",
+      "title": "현대로템 - 점점 선명해지는 수주 타임 라인",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92105&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_107217000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_107217000.pdf",
+      "target_price": "340,000",
+      "target_price_value": 340000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2188.0,
+      "unit": "억원",
+      "value_krw_100m": 2188.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5%), 영업이익 2,188억원(yoy +12."
     }
   ],
   "opinion_distribution": [
@@ -462,7 +1477,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -477,7 +1504,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-27",
@@ -492,7 +1521,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 11.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -507,7 +1542,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-27",
@@ -522,7 +1559,17 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -537,7 +1584,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -552,7 +1605,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -567,7 +1622,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -669,7 +1726,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -724,7 +1784,61 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 2242.0,
+          "unit": "억원",
+          "source_excerpt": "현대로템 - 점점 선명해지는 수주 타임 라인 점점 선명해지는 수주 타임 라인 현대로템 1분기 영업이익 2,242억원, 컨센서스 부합 1분기 매출액 1조 4,575억원(yoy +23.",
+          "value_krw_100m": 2242.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2242.0,
+          "unit": "억원",
+          "source_excerpt": "9%), 영업이익 2,242억원(yoy +10.",
+          "value_krw_100m": 2242.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2188.0,
+          "unit": "억원",
+          "source_excerpt": "5%), 영업이익 2,188억원(yoy +12.",
+          "value_krw_100m": 2188.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.4,
+          "unit": "%",
+          "value_pct": 15.4,
+          "source_excerpt": "5%, OPM 15.4%)를 달성하며 시장 기대치(2,223억원)와 당사 추정치(2,180억원)에 부합하였다."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 27.2,
+          "unit": "%",
+          "value_pct": 27.2,
+          "source_excerpt": "8%, OPM 27.2%)로 견조하였다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -776,13 +1890,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -835,13 +1958,51 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2242.0,
+          "unit": "억원",
+          "source_excerpt": "3%), 영업이익 2,242억원(YoY +10.",
+          "value_krw_100m": 2242.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.4,
+          "unit": "%",
+          "value_pct": 15.4,
+          "source_excerpt": "2% OPM 15.4%)로 컨센서스 대비 매출액과 영업이익은 각각 +4."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -899,7 +2060,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -950,13 +2114,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1014,7 +2187,51 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2242.0,
+          "unit": "억원",
+          "source_excerpt": "9%, 이하 YoY), 영업이익 2,242억원(+10.",
+          "value_krw_100m": 2242.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2188.0,
+          "unit": "억원",
+          "source_excerpt": "2%), 영업이익 2,188억원(OPM 27.",
+          "value_krw_100m": 2188.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.4,
+          "unit": "%",
+          "value_pct": 15.4,
+          "source_excerpt": "5%, OPM 15.4%)을 시현하며 OP 기준 컨센서스에 부합했다."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 27.2,
+          "unit": "%",
+          "value_pct": 27.2,
+          "source_excerpt": "2%), 영업이익 2,188억원(OPM 27.2%)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1063,13 +2280,65 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2242.0,
+          "unit": "억원",
+          "source_excerpt": "현대로템 - 1Q26: 지금 사야 한다 1Q26: 지금 사야 한다 현대로템 1분기 매출 1조 4,575억원/영업이익 2,242억원 현대로템의 26년 1분기 매출은 1조 4,575억원/영업이익은 2,242억원(OPM 15.",
+          "value_krw_100m": 2242.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.4,
+          "unit": "%",
+          "value_pct": 15.4,
+          "source_excerpt": "현대로템 - 1Q26: 지금 사야 한다 1Q26: 지금 사야 한다 현대로템 1분기 매출 1조 4,575억원/영업이익 2,242억원 현대로템의 26년 1분기 매출은 1조 4,575억원/영업이익은 2,242억원(OPM 15.4%)로 컨센서스(1조 4,006억원/2,206억원) 보다 매출…"
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 27.2,
+          "unit": "%",
+          "value_pct": 27.2,
+          "source_excerpt": "이번 분기부터 부문별 영업이익률이 공개되었으며 디펜스솔루션부문은 OPM 27.2%, 레일솔루션부문 0."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1109,6 +2378,9 @@
       "ticker": null,
       "target_price_value": 292000,
       "opinion_normalized": "buy",
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false
@@ -1169,7 +2441,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1224,7 +2499,61 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 2242.0,
+          "unit": "억원",
+          "source_excerpt": "현대로템 - 점점 선명해지는 수주 타임 라인 점점 선명해지는 수주 타임 라인 현대로템 1분기 영업이익 2,242억원, 컨센서스 부합 1분기 매출액 1조 4,575억원(yoy +23.",
+          "value_krw_100m": 2242.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2242.0,
+          "unit": "억원",
+          "source_excerpt": "9%), 영업이익 2,242억원(yoy +10.",
+          "value_krw_100m": 2242.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2188.0,
+          "unit": "억원",
+          "source_excerpt": "5%), 영업이익 2,188억원(yoy +12.",
+          "value_krw_100m": 2188.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.4,
+          "unit": "%",
+          "value_pct": 15.4,
+          "source_excerpt": "5%, OPM 15.4%)를 달성하며 시장 기대치(2,223억원)와 당사 추정치(2,180억원)에 부합하였다."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 27.2,
+          "unit": "%",
+          "value_pct": 27.2,
+          "source_excerpt": "8%, OPM 27.2%)로 견조하였다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1276,13 +2605,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1335,13 +2673,51 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2242.0,
+          "unit": "억원",
+          "source_excerpt": "3%), 영업이익 2,242억원(YoY +10.",
+          "value_krw_100m": 2242.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.4,
+          "unit": "%",
+          "value_pct": 15.4,
+          "source_excerpt": "2% OPM 15.4%)로 컨센서스 대비 매출액과 영업이익은 각각 +4."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1399,7 +2775,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1450,13 +2829,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1514,7 +2902,51 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2242.0,
+          "unit": "억원",
+          "source_excerpt": "9%, 이하 YoY), 영업이익 2,242억원(+10.",
+          "value_krw_100m": 2242.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2188.0,
+          "unit": "억원",
+          "source_excerpt": "2%), 영업이익 2,188억원(OPM 27.",
+          "value_krw_100m": 2188.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.4,
+          "unit": "%",
+          "value_pct": 15.4,
+          "source_excerpt": "5%, OPM 15.4%)을 시현하며 OP 기준 컨센서스에 부합했다."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 27.2,
+          "unit": "%",
+          "value_pct": 27.2,
+          "source_excerpt": "2%), 영업이익 2,188억원(OPM 27.2%)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1563,13 +2995,65 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2242.0,
+          "unit": "억원",
+          "source_excerpt": "현대로템 - 1Q26: 지금 사야 한다 1Q26: 지금 사야 한다 현대로템 1분기 매출 1조 4,575억원/영업이익 2,242억원 현대로템의 26년 1분기 매출은 1조 4,575억원/영업이익은 2,242억원(OPM 15.",
+          "value_krw_100m": 2242.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.4,
+          "unit": "%",
+          "value_pct": 15.4,
+          "source_excerpt": "현대로템 - 1Q26: 지금 사야 한다 1Q26: 지금 사야 한다 현대로템 1분기 매출 1조 4,575억원/영업이익 2,242억원 현대로템의 26년 1분기 매출은 1조 4,575억원/영업이익은 2,242억원(OPM 15.4%)로 컨센서스(1조 4,006억원/2,206억원) 보다 매출…"
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 27.2,
+          "unit": "%",
+          "value_pct": 27.2,
+          "source_excerpt": "이번 분기부터 부문별 영업이익률이 공개되었으며 디펜스솔루션부문은 OPM 27.2%, 레일솔루션부문 0."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "timeline": [
@@ -1627,7 +3111,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1682,7 +3169,61 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 2242.0,
+          "unit": "억원",
+          "source_excerpt": "현대로템 - 점점 선명해지는 수주 타임 라인 점점 선명해지는 수주 타임 라인 현대로템 1분기 영업이익 2,242억원, 컨센서스 부합 1분기 매출액 1조 4,575억원(yoy +23.",
+          "value_krw_100m": 2242.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2242.0,
+          "unit": "억원",
+          "source_excerpt": "9%), 영업이익 2,242억원(yoy +10.",
+          "value_krw_100m": 2242.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2188.0,
+          "unit": "억원",
+          "source_excerpt": "5%), 영업이익 2,188억원(yoy +12.",
+          "value_krw_100m": 2188.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.4,
+          "unit": "%",
+          "value_pct": 15.4,
+          "source_excerpt": "5%, OPM 15.4%)를 달성하며 시장 기대치(2,223억원)와 당사 추정치(2,180억원)에 부합하였다."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 27.2,
+          "unit": "%",
+          "value_pct": 27.2,
+          "source_excerpt": "8%, OPM 27.2%)로 견조하였다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1734,13 +3275,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1793,13 +3343,51 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2242.0,
+          "unit": "억원",
+          "source_excerpt": "3%), 영업이익 2,242억원(YoY +10.",
+          "value_krw_100m": 2242.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.4,
+          "unit": "%",
+          "value_pct": 15.4,
+          "source_excerpt": "2% OPM 15.4%)로 컨센서스 대비 매출액과 영업이익은 각각 +4."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1857,7 +3445,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1908,13 +3499,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1972,7 +3572,51 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2242.0,
+          "unit": "억원",
+          "source_excerpt": "9%, 이하 YoY), 영업이익 2,242억원(+10.",
+          "value_krw_100m": 2242.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2188.0,
+          "unit": "억원",
+          "source_excerpt": "2%), 영업이익 2,188억원(OPM 27.",
+          "value_krw_100m": 2188.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.4,
+          "unit": "%",
+          "value_pct": 15.4,
+          "source_excerpt": "5%, OPM 15.4%)을 시현하며 OP 기준 컨센서스에 부합했다."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 27.2,
+          "unit": "%",
+          "value_pct": 27.2,
+          "source_excerpt": "2%), 영업이익 2,188억원(OPM 27.2%)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -2021,13 +3665,65 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2242.0,
+          "unit": "억원",
+          "source_excerpt": "현대로템 - 1Q26: 지금 사야 한다 1Q26: 지금 사야 한다 현대로템 1분기 매출 1조 4,575억원/영업이익 2,242억원 현대로템의 26년 1분기 매출은 1조 4,575억원/영업이익은 2,242억원(OPM 15.",
+          "value_krw_100m": 2242.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.4,
+          "unit": "%",
+          "value_pct": 15.4,
+          "source_excerpt": "현대로템 - 1Q26: 지금 사야 한다 1Q26: 지금 사야 한다 현대로템 1분기 매출 1조 4,575억원/영업이익 2,242억원 현대로템의 26년 1분기 매출은 1조 4,575억원/영업이익은 2,242억원(OPM 15.4%)로 컨센서스(1조 4,006억원/2,206억원) 보다 매출…"
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 27.2,
+          "unit": "%",
+          "value_pct": 27.2,
+          "source_excerpt": "이번 분기부터 부문별 영업이익률이 공개되었으며 디펜스솔루션부문은 OPM 27.2%, 레일솔루션부문 0."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -2067,6 +3763,9 @@
       "ticker": null,
       "target_price_value": 292000,
       "opinion_normalized": "buy",
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false

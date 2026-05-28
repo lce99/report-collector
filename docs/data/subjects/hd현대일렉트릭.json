@@ -21,7 +21,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 7
+    "coverage_initiated": 7,
+    "estimate_signal_reports": 5,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 3,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 7,
@@ -50,7 +55,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -65,7 +76,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-29",
@@ -80,7 +93,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.7,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -95,7 +114,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -110,7 +135,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.65,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-29",
@@ -125,7 +152,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -140,7 +179,147 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-29",
+        "broker": "유안타증권",
+        "title": "HD현대일렉트릭 - 초고압 수주 레벨업 + 엔진 발전 확장",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92150&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260429_company_202706000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260429_company_202706000.pdf",
+        "target_price": "1,450,000",
+        "target_price_value": 1450000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.65,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 24.9,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 24.9,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5%, OPM 24.9%)을 기록하며 컨센서스 및 당사 추정치에 부합했다."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "유진투자증권",
+        "title": "HD현대일렉트릭 - 이젠 전 사업부문이 AI 인프라 구축에 동원",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92125&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260429_company_586063000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260429_company_586063000.pdf",
+        "target_price": "1,500,000",
+        "target_price_value": 1500000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 24.9,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 24.9,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5%로 지난분기에 이어 높은 수준 기록했으며 전사 OPM은 24.9%를 기록 \" 작년 4분기와 유사한 수준의 북미 매출비중에도 낮은 영업이익률(4Q25 OPM 27."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "유진투자증권",
+        "title": "HD현대일렉트릭 - 이젠 전 사업부문이 AI 인프라 구축에 동원",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92125&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260429_company_586063000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260429_company_586063000.pdf",
+        "target_price": "1,500,000",
+        "target_price_value": 1500000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 27.6,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 27.6,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9%를 기록 \" 작년 4분기와 유사한 수준의 북미 매출비중에도 낮은 영업이익률(4Q25 OPM 27.6%)의 원인은 애틀랜타 법인의 재고자산 증가, 해당 물량은 향후 프로젝트 납기 일정에 따라 연결조정 없는 고마진 매출액으로 인식 예정이라 지난 분기처럼 종속법인 매출비중과 전사이익률…"
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "유안타증권",
+        "title": "HD현대일렉트릭 - 초고압 수주 레벨업 + 엔진 발전 확장",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92150&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260429_company_202706000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260429_company_202706000.pdf",
+        "target_price": "1,450,000",
+        "target_price_value": 1450000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.65,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2583.0,
+        "unit": "억원",
+        "value_krw_100m": 2583.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9%), 영업이익은 2,583억원(YoY +18."
       }
     ],
     "opinion_distribution": [
@@ -163,7 +342,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -178,7 +363,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -193,7 +390,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.65,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-29",
@@ -208,7 +407,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -223,7 +428,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-29",
@@ -238,7 +445,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.7,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -253,7 +466,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -272,7 +491,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -287,7 +512,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-29",
@@ -302,7 +529,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.7,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -317,7 +550,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -332,7 +571,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.65,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-29",
@@ -347,7 +588,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -362,7 +615,147 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-29",
+      "broker": "유안타증권",
+      "title": "HD현대일렉트릭 - 초고압 수주 레벨업 + 엔진 발전 확장",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92150&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260429_company_202706000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260429_company_202706000.pdf",
+      "target_price": "1,450,000",
+      "target_price_value": 1450000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.65,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 24.9,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 24.9,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5%, OPM 24.9%)을 기록하며 컨센서스 및 당사 추정치에 부합했다."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "유진투자증권",
+      "title": "HD현대일렉트릭 - 이젠 전 사업부문이 AI 인프라 구축에 동원",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92125&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260429_company_586063000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260429_company_586063000.pdf",
+      "target_price": "1,500,000",
+      "target_price_value": 1500000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 24.9,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 24.9,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5%로 지난분기에 이어 높은 수준 기록했으며 전사 OPM은 24.9%를 기록 \" 작년 4분기와 유사한 수준의 북미 매출비중에도 낮은 영업이익률(4Q25 OPM 27."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "유진투자증권",
+      "title": "HD현대일렉트릭 - 이젠 전 사업부문이 AI 인프라 구축에 동원",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92125&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260429_company_586063000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260429_company_586063000.pdf",
+      "target_price": "1,500,000",
+      "target_price_value": 1500000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 27.6,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 27.6,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9%를 기록 \" 작년 4분기와 유사한 수준의 북미 매출비중에도 낮은 영업이익률(4Q25 OPM 27.6%)의 원인은 애틀랜타 법인의 재고자산 증가, 해당 물량은 향후 프로젝트 납기 일정에 따라 연결조정 없는 고마진 매출액으로 인식 예정이라 지난 분기처럼 종속법인 매출비중과 전사이익률…"
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "유안타증권",
+      "title": "HD현대일렉트릭 - 초고압 수주 레벨업 + 엔진 발전 확장",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92150&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260429_company_202706000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260429_company_202706000.pdf",
+      "target_price": "1,450,000",
+      "target_price_value": 1450000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.65,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2583.0,
+      "unit": "억원",
+      "value_krw_100m": 2583.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9%), 영업이익은 2,583억원(YoY +18."
     }
   ],
   "opinion_distribution": [
@@ -385,7 +778,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -400,7 +799,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -415,7 +826,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.65,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-29",
@@ -430,7 +843,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -445,7 +864,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-29",
@@ -460,7 +881,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.7,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -475,7 +902,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -565,13 +998,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -622,13 +1064,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -685,7 +1136,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -734,13 +1188,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -796,7 +1259,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2583.0,
+          "unit": "억원",
+          "source_excerpt": "9%), 영업이익은 2,583억원(YoY +18.",
+          "value_krw_100m": 2583.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 24.9,
+          "unit": "%",
+          "value_pct": 24.9,
+          "source_excerpt": "5%, OPM 24.9%)을 기록하며 컨센서스 및 당사 추정치에 부합했다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -844,13 +1331,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 24.9,
+          "unit": "%",
+          "value_pct": 24.9,
+          "source_excerpt": "5%로 지난분기에 이어 높은 수준 기록했으며 전사 OPM은 24.9%를 기록 \" 작년 4분기와 유사한 수준의 북미 매출비중에도 낮은 영업이익률(4Q25 OPM 27."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 27.6,
+          "unit": "%",
+          "value_pct": 27.6,
+          "source_excerpt": "9%를 기록 \" 작년 4분기와 유사한 수준의 북미 매출비중에도 낮은 영업이익률(4Q25 OPM 27.6%)의 원인은 애틀랜타 법인의 재고자산 증가, 해당 물량은 향후 프로젝트 납기 일정에 따라 연결조정 없는 고마진 매출액으로 인식 예정이라 지난 분기처럼 종속법인 매출비중과 전사이익률…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -898,13 +1427,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "recent_changes": [
@@ -958,13 +1496,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1015,13 +1562,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1078,7 +1634,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1127,13 +1686,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1189,7 +1757,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2583.0,
+          "unit": "억원",
+          "source_excerpt": "9%), 영업이익은 2,583억원(YoY +18.",
+          "value_krw_100m": 2583.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 24.9,
+          "unit": "%",
+          "value_pct": 24.9,
+          "source_excerpt": "5%, OPM 24.9%)을 기록하며 컨센서스 및 당사 추정치에 부합했다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1237,13 +1829,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 24.9,
+          "unit": "%",
+          "value_pct": 24.9,
+          "source_excerpt": "5%로 지난분기에 이어 높은 수준 기록했으며 전사 OPM은 24.9%를 기록 \" 작년 4분기와 유사한 수준의 북미 매출비중에도 낮은 영업이익률(4Q25 OPM 27."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 27.6,
+          "unit": "%",
+          "value_pct": 27.6,
+          "source_excerpt": "9%를 기록 \" 작년 4분기와 유사한 수준의 북미 매출비중에도 낮은 영업이익률(4Q25 OPM 27.6%)의 원인은 애틀랜타 법인의 재고자산 증가, 해당 물량은 향후 프로젝트 납기 일정에 따라 연결조정 없는 고마진 매출액으로 인식 예정이라 지난 분기처럼 종속법인 매출비중과 전사이익률…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1291,13 +1925,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "timeline": [
@@ -1351,13 +1994,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1408,13 +2060,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1471,7 +2132,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1520,13 +2184,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1582,7 +2255,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2583.0,
+          "unit": "억원",
+          "source_excerpt": "9%), 영업이익은 2,583억원(YoY +18.",
+          "value_krw_100m": 2583.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 24.9,
+          "unit": "%",
+          "value_pct": 24.9,
+          "source_excerpt": "5%, OPM 24.9%)을 기록하며 컨센서스 및 당사 추정치에 부합했다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1630,13 +2327,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 24.9,
+          "unit": "%",
+          "value_pct": 24.9,
+          "source_excerpt": "5%로 지난분기에 이어 높은 수준 기록했으며 전사 OPM은 24.9%를 기록 \" 작년 4분기와 유사한 수준의 북미 매출비중에도 낮은 영업이익률(4Q25 OPM 27."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 27.6,
+          "unit": "%",
+          "value_pct": 27.6,
+          "source_excerpt": "9%를 기록 \" 작년 4분기와 유사한 수준의 북미 매출비중에도 낮은 영업이익률(4Q25 OPM 27.6%)의 원인은 애틀랜타 법인의 재고자산 증가, 해당 물량은 향후 프로젝트 납기 일정에 따라 연결조정 없는 고마진 매출액으로 인식 예정이라 지난 분기처럼 종속법인 매출비중과 전사이익률…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1684,13 +2423,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     }
   ]
 }

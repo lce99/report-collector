@@ -20,7 +20,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 5
+    "coverage_initiated": 5,
+    "estimate_signal_reports": 2,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 6,
@@ -49,7 +54,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -64,7 +71,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -79,7 +88,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -94,7 +111,17 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -109,7 +136,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-15",
@@ -124,7 +153,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-20",
@@ -139,7 +170,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-27",
@@ -154,7 +187,293 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-16",
+        "broker": "신한투자증권",
+        "title": "셀트리온 - 좋아질 일만 남았다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91616&page=2",
+        "pdf_url": null,
+        "primary_url": "https://finance.naver.com/research/company_read.naver?nid=91616&page=2",
+        "target_price": "290,000",
+        "target_price_value": 290000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.9,
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 27.6,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 27.6,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3%, 영업이익률 27.6%)로 컨센서스 부합 전망."
+      },
+      {
+        "date": "2026-04-16",
+        "broker": "신한투자증권",
+        "title": "셀트리온 - 좋아질 일만 남았다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91616&page=2",
+        "pdf_url": null,
+        "primary_url": "https://finance.naver.com/research/company_read.naver?nid=91616&page=2",
+        "target_price": "290,000",
+        "target_price_value": 290000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.9,
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 3112.0,
+        "unit": "억원",
+        "value_krw_100m": 3112.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0%), 영업이익 3,112억원(YoY +108."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "DS투자증권",
+        "title": "셀트리온 - 인상적인 옴니클로와 스토보클로의 성장",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92550&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260507_company_796792000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260507_company_796792000.pdf",
+        "target_price": "320,000",
+        "target_price_value": 320000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 28.1,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 28.1,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5% YoY, OPM 28.1%)으로 호실적을 달성하였다."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "IBK투자증권",
+        "title": "셀트리온 - 바이오시밀러 신제품 효과는 이제 시작!",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92507&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260507_company_792361000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260507_company_792361000.pdf",
+        "target_price": "250,000",
+        "target_price_value": 250000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 28.1,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 28.1,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "셀트리온 - 바이오시밀러 신제품 효과는 이제 시작! 바이오시밀러 신제품 효과는 이제 시작! 셀트리온 신규 바이오시밀러 매출 확대로 영업이익률 28.1% 달성 셀트리온의 2026년 1분기 연결 매출액은 1조 1,450억 원(+36."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "SK증권",
+        "title": "셀트리온 - 수익성 개선의 본격화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92517&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260507_company_372607000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260507_company_372607000.pdf",
+        "target_price": "260,000",
+        "target_price_value": 260000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 28.1,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 28.1,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3%QoQ, OPM 28.1%)으로 컨센서스 매출액 1 조 1,262억원과 컨센서스 영업이익 3,168 억원에 부합하는 실적을 발표했다."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "유안타증권",
+        "title": "셀트리온 - 성장 이끄는 신규 시밀러",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92538&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_805616000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_805616000.pdf",
+        "target_price": "270,000",
+        "target_price_value": 270000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 28.1,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 28.1,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5%, OPM 28.1%)로 컨센서스에 부합하는 실적 기록."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "SK증권",
+        "title": "셀트리온 - 수익성 개선의 본격화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92517&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260507_company_372607000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260507_company_372607000.pdf",
+        "target_price": "260,000",
+        "target_price_value": 260000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 3219.0,
+        "unit": "억원",
+        "value_krw_100m": 3219.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9%QoQ), 영업이익은 3,219 억원(+115."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "SK증권",
+        "title": "셀트리온 - 수익성 개선의 본격화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92517&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260507_company_372607000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260507_company_372607000.pdf",
+        "target_price": "260,000",
+        "target_price_value": 260000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 3168.0,
+        "unit": "억원",
+        "value_krw_100m": 3168.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "1%)으로 컨센서스 매출액 1 조 1,262억원과 컨센서스 영업이익 3,168 억원에 부합하는 실적을 발표했다."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "유안타증권",
+        "title": "셀트리온 - 성장 이끄는 신규 시밀러",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92538&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_805616000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_805616000.pdf",
+        "target_price": "270,000",
+        "target_price_value": 270000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 3219.0,
+        "unit": "억원",
+        "value_krw_100m": 3219.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0%YoY, 이하 YoY 생략), 영업이익 3,219억원(+115."
       }
     ],
     "opinion_distribution": [
@@ -177,7 +496,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-20",
@@ -192,7 +513,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-27",
@@ -207,7 +530,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -226,7 +551,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -241,7 +568,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -256,7 +585,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -271,7 +608,17 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -286,7 +633,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-15",
@@ -301,7 +650,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-20",
@@ -316,7 +667,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-27",
@@ -331,7 +684,293 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-16",
+      "broker": "신한투자증권",
+      "title": "셀트리온 - 좋아질 일만 남았다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91616&page=2",
+      "pdf_url": null,
+      "primary_url": "https://finance.naver.com/research/company_read.naver?nid=91616&page=2",
+      "target_price": "290,000",
+      "target_price_value": 290000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.9,
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 27.6,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 27.6,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3%, 영업이익률 27.6%)로 컨센서스 부합 전망."
+    },
+    {
+      "date": "2026-04-16",
+      "broker": "신한투자증권",
+      "title": "셀트리온 - 좋아질 일만 남았다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91616&page=2",
+      "pdf_url": null,
+      "primary_url": "https://finance.naver.com/research/company_read.naver?nid=91616&page=2",
+      "target_price": "290,000",
+      "target_price_value": 290000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.9,
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 3112.0,
+      "unit": "억원",
+      "value_krw_100m": 3112.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0%), 영업이익 3,112억원(YoY +108."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "DS투자증권",
+      "title": "셀트리온 - 인상적인 옴니클로와 스토보클로의 성장",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92550&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260507_company_796792000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260507_company_796792000.pdf",
+      "target_price": "320,000",
+      "target_price_value": 320000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 28.1,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 28.1,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5% YoY, OPM 28.1%)으로 호실적을 달성하였다."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "IBK투자증권",
+      "title": "셀트리온 - 바이오시밀러 신제품 효과는 이제 시작!",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92507&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260507_company_792361000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260507_company_792361000.pdf",
+      "target_price": "250,000",
+      "target_price_value": 250000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 28.1,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 28.1,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "셀트리온 - 바이오시밀러 신제품 효과는 이제 시작! 바이오시밀러 신제품 효과는 이제 시작! 셀트리온 신규 바이오시밀러 매출 확대로 영업이익률 28.1% 달성 셀트리온의 2026년 1분기 연결 매출액은 1조 1,450억 원(+36."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "SK증권",
+      "title": "셀트리온 - 수익성 개선의 본격화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92517&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260507_company_372607000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260507_company_372607000.pdf",
+      "target_price": "260,000",
+      "target_price_value": 260000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 28.1,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 28.1,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3%QoQ, OPM 28.1%)으로 컨센서스 매출액 1 조 1,262억원과 컨센서스 영업이익 3,168 억원에 부합하는 실적을 발표했다."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "유안타증권",
+      "title": "셀트리온 - 성장 이끄는 신규 시밀러",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92538&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_805616000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_805616000.pdf",
+      "target_price": "270,000",
+      "target_price_value": 270000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 28.1,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 28.1,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5%, OPM 28.1%)로 컨센서스에 부합하는 실적 기록."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "SK증권",
+      "title": "셀트리온 - 수익성 개선의 본격화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92517&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260507_company_372607000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260507_company_372607000.pdf",
+      "target_price": "260,000",
+      "target_price_value": 260000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 3219.0,
+      "unit": "억원",
+      "value_krw_100m": 3219.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9%QoQ), 영업이익은 3,219 억원(+115."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "SK증권",
+      "title": "셀트리온 - 수익성 개선의 본격화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92517&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260507_company_372607000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260507_company_372607000.pdf",
+      "target_price": "260,000",
+      "target_price_value": 260000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 3168.0,
+      "unit": "억원",
+      "value_krw_100m": 3168.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "1%)으로 컨센서스 매출액 1 조 1,262억원과 컨센서스 영업이익 3,168 억원에 부합하는 실적을 발표했다."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "유안타증권",
+      "title": "셀트리온 - 성장 이끄는 신규 시밀러",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92538&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_805616000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_805616000.pdf",
+      "target_price": "270,000",
+      "target_price_value": 270000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 3219.0,
+      "unit": "억원",
+      "value_krw_100m": 3219.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0%YoY, 이하 YoY 생략), 영업이익 3,219억원(+115."
     }
   ],
   "opinion_distribution": [
@@ -354,7 +993,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-20",
@@ -369,7 +1010,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-27",
@@ -384,7 +1027,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -520,7 +1165,10 @@
       "coverage_initiated": false,
       "change_types": [],
       "change_reasons": [],
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -631,7 +1279,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "shinhan_investment_official",
@@ -684,7 +1335,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -736,13 +1390,61 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3219.0,
+          "unit": "억원",
+          "source_excerpt": "9%QoQ), 영업이익은 3,219 억원(+115.",
+          "value_krw_100m": 3219.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3168.0,
+          "unit": "억원",
+          "source_excerpt": "1%)으로 컨센서스 매출액 1 조 1,262억원과 컨센서스 영업이익 3,168 억원에 부합하는 실적을 발표했다.",
+          "value_krw_100m": 3168.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 28.1,
+          "unit": "%",
+          "value_pct": 28.1,
+          "source_excerpt": "3%QoQ, OPM 28.1%)으로 컨센서스 매출액 1 조 1,262억원과 컨센서스 영업이익 3,168 억원에 부합하는 실적을 발표했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -798,7 +1500,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3219.0,
+          "unit": "억원",
+          "source_excerpt": "0%YoY, 이하 YoY 생략), 영업이익 3,219억원(+115.",
+          "value_krw_100m": 3219.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 28.1,
+          "unit": "%",
+          "value_pct": 28.1,
+          "source_excerpt": "5%, OPM 28.1%)로 컨센서스에 부합하는 실적 기록."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -854,7 +1580,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 28.1,
+          "unit": "%",
+          "value_pct": 28.1,
+          "source_excerpt": "5% YoY, OPM 28.1%)으로 호실적을 달성하였다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -967,7 +1707,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1019,13 +1762,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 28.1,
+          "unit": "%",
+          "value_pct": 28.1,
+          "source_excerpt": "셀트리온 - 바이오시밀러 신제품 효과는 이제 시작! 바이오시밀러 신제품 효과는 이제 시작! 셀트리온 신규 바이오시밀러 매출 확대로 영업이익률 28.1% 달성 셀트리온의 2026년 1분기 연결 매출액은 1조 1,450억 원(+36."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1077,13 +1844,61 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3219.0,
+          "unit": "억원",
+          "source_excerpt": "9%QoQ), 영업이익은 3,219 억원(+115.",
+          "value_krw_100m": 3219.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3168.0,
+          "unit": "억원",
+          "source_excerpt": "1%)으로 컨센서스 매출액 1 조 1,262억원과 컨센서스 영업이익 3,168 억원에 부합하는 실적을 발표했다.",
+          "value_krw_100m": 3168.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 28.1,
+          "unit": "%",
+          "value_pct": 28.1,
+          "source_excerpt": "3%QoQ, OPM 28.1%)으로 컨센서스 매출액 1 조 1,262억원과 컨센서스 영업이익 3,168 억원에 부합하는 실적을 발표했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1139,7 +1954,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3219.0,
+          "unit": "억원",
+          "source_excerpt": "0%YoY, 이하 YoY 생략), 영업이익 3,219억원(+115.",
+          "value_krw_100m": 3219.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 28.1,
+          "unit": "%",
+          "value_pct": 28.1,
+          "source_excerpt": "5%, OPM 28.1%)로 컨센서스에 부합하는 실적 기록."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1195,7 +2034,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 28.1,
+          "unit": "%",
+          "value_pct": 28.1,
+          "source_excerpt": "5% YoY, OPM 28.1%)으로 호실적을 달성하였다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -1299,7 +2152,10 @@
       "coverage_initiated": false,
       "change_types": [],
       "change_reasons": [],
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1410,7 +2266,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "shinhan_investment_official",
@@ -1463,7 +2322,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1515,13 +2377,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 28.1,
+          "unit": "%",
+          "value_pct": 28.1,
+          "source_excerpt": "셀트리온 - 바이오시밀러 신제품 효과는 이제 시작! 바이오시밀러 신제품 효과는 이제 시작! 셀트리온 신규 바이오시밀러 매출 확대로 영업이익률 28.1% 달성 셀트리온의 2026년 1분기 연결 매출액은 1조 1,450억 원(+36."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1573,13 +2459,61 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3219.0,
+          "unit": "억원",
+          "source_excerpt": "9%QoQ), 영업이익은 3,219 억원(+115.",
+          "value_krw_100m": 3219.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3168.0,
+          "unit": "억원",
+          "source_excerpt": "1%)으로 컨센서스 매출액 1 조 1,262억원과 컨센서스 영업이익 3,168 억원에 부합하는 실적을 발표했다.",
+          "value_krw_100m": 3168.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 28.1,
+          "unit": "%",
+          "value_pct": 28.1,
+          "source_excerpt": "3%QoQ, OPM 28.1%)으로 컨센서스 매출액 1 조 1,262억원과 컨센서스 영업이익 3,168 억원에 부합하는 실적을 발표했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1635,7 +2569,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3219.0,
+          "unit": "억원",
+          "source_excerpt": "0%YoY, 이하 YoY 생략), 영업이익 3,219억원(+115.",
+          "value_krw_100m": 3219.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 28.1,
+          "unit": "%",
+          "value_pct": 28.1,
+          "source_excerpt": "5%, OPM 28.1%)로 컨센서스에 부합하는 실적 기록."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1691,7 +2649,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 28.1,
+          "unit": "%",
+          "value_pct": 28.1,
+          "source_excerpt": "5% YoY, OPM 28.1%)으로 호실적을 달성하였다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1730,6 +2702,30 @@
       "ticker": null,
       "target_price_value": 290000,
       "opinion_normalized": "buy",
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3112.0,
+          "unit": "억원",
+          "source_excerpt": "0%), 영업이익 3,112억원(YoY +108.",
+          "value_krw_100m": 3112.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 27.6,
+          "unit": "%",
+          "value_pct": 27.6,
+          "source_excerpt": "3%, 영업이익률 27.6%)로 컨센서스 부합 전망."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false

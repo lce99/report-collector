@@ -18,7 +18,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 4
+    "coverage_initiated": 4,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 4,
@@ -51,7 +56,15 @@
         "opinion": "중립",
         "opinion_normalized": "hold",
         "score": 8.7,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -66,7 +79,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-30",
@@ -81,7 +96,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -96,7 +117,83 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-30",
+        "broker": "미래에셋증권",
+        "title": "LX인터내셔널 - 호실적으로 이어진 원자재 모멘텀",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92178&page=4",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260430_company_55240000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260430_company_55240000.pdf",
+        "target_price": "56,000",
+        "target_price_value": 56000,
+        "opinion": "중립",
+        "opinion_normalized": "hold",
+        "score": 8.7,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1031.0,
+        "unit": "억원",
+        "value_krw_100m": 1031.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "LX인터내셔널 - 호실적으로 이어진 원자재 모멘텀 호실적으로 이어진 원자재 모멘텀 LX인터내셔널 1Q26 Review: 영업이익 1,031억원으로 시장 기대치 상회 LX인터내셔널의 2026년 1분기 매출액은 4조 2,113억원(4% YoY)을 기록했다."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "미래에셋증권",
+        "title": "LX인터내셔널 - 호실적으로 이어진 원자재 모멘텀",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92178&page=4",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260430_company_55240000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260430_company_55240000.pdf",
+        "target_price": "56,000",
+        "target_price_value": 56000,
+        "opinion": "중립",
+        "opinion_normalized": "hold",
+        "score": 8.7,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1089.0,
+        "unit": "억원",
+        "value_krw_100m": 1089.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "영업이익은 1,089억원으로 7% YoY 감소했으나, 당사 추정치(1,031억원) 및 시장 기대치(954억원)를 상회하였다."
       }
     ],
     "opinion_distribution": [
@@ -123,7 +220,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -138,7 +241,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-30",
@@ -153,7 +258,15 @@
         "opinion": "중립",
         "opinion_normalized": "hold",
         "score": 8.7,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -168,7 +281,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -187,7 +306,15 @@
       "opinion": "중립",
       "opinion_normalized": "hold",
       "score": 8.7,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -202,7 +329,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-30",
@@ -217,7 +346,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -232,7 +367,83 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-30",
+      "broker": "미래에셋증권",
+      "title": "LX인터내셔널 - 호실적으로 이어진 원자재 모멘텀",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92178&page=4",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260430_company_55240000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260430_company_55240000.pdf",
+      "target_price": "56,000",
+      "target_price_value": 56000,
+      "opinion": "중립",
+      "opinion_normalized": "hold",
+      "score": 8.7,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1031.0,
+      "unit": "억원",
+      "value_krw_100m": 1031.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "LX인터내셔널 - 호실적으로 이어진 원자재 모멘텀 호실적으로 이어진 원자재 모멘텀 LX인터내셔널 1Q26 Review: 영업이익 1,031억원으로 시장 기대치 상회 LX인터내셔널의 2026년 1분기 매출액은 4조 2,113억원(4% YoY)을 기록했다."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "미래에셋증권",
+      "title": "LX인터내셔널 - 호실적으로 이어진 원자재 모멘텀",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92178&page=4",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260430_company_55240000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260430_company_55240000.pdf",
+      "target_price": "56,000",
+      "target_price_value": 56000,
+      "opinion": "중립",
+      "opinion_normalized": "hold",
+      "score": 8.7,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1089.0,
+      "unit": "억원",
+      "value_krw_100m": 1089.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "영업이익은 1,089억원으로 7% YoY 감소했으나, 당사 추정치(1,031억원) 및 시장 기대치(954억원)를 상회하였다."
     }
   ],
   "opinion_distribution": [
@@ -259,7 +470,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -274,7 +491,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-30",
@@ -289,7 +508,15 @@
       "opinion": "중립",
       "opinion_normalized": "hold",
       "score": 8.7,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -304,7 +531,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -380,13 +613,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -435,13 +677,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1031.0,
+          "unit": "억원",
+          "source_excerpt": "LX인터내셔널 - 호실적으로 이어진 원자재 모멘텀 호실적으로 이어진 원자재 모멘텀 LX인터내셔널 1Q26 Review: 영업이익 1,031억원으로 시장 기대치 상회 LX인터내셔널의 2026년 1분기 매출액은 4조 2,113억원(4% YoY)을 기록했다.",
+          "value_krw_100m": 1031.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1089.0,
+          "unit": "억원",
+          "source_excerpt": "영업이익은 1,089억원으로 7% YoY 감소했으나, 당사 추정치(1,031억원) 및 시장 기대치(954억원)를 상회하였다.",
+          "value_krw_100m": 1089.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -496,7 +772,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -545,13 +824,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
@@ -603,13 +891,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -658,13 +955,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1031.0,
+          "unit": "억원",
+          "source_excerpt": "LX인터내셔널 - 호실적으로 이어진 원자재 모멘텀 호실적으로 이어진 원자재 모멘텀 LX인터내셔널 1Q26 Review: 영업이익 1,031억원으로 시장 기대치 상회 LX인터내셔널의 2026년 1분기 매출액은 4조 2,113억원(4% YoY)을 기록했다.",
+          "value_krw_100m": 1031.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1089.0,
+          "unit": "억원",
+          "source_excerpt": "영업이익은 1,089억원으로 7% YoY 감소했으나, 당사 추정치(1,031억원) 및 시장 기대치(954억원)를 상회하였다.",
+          "value_krw_100m": 1089.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -719,7 +1050,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -768,13 +1102,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -826,13 +1169,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -881,13 +1233,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1031.0,
+          "unit": "억원",
+          "source_excerpt": "LX인터내셔널 - 호실적으로 이어진 원자재 모멘텀 호실적으로 이어진 원자재 모멘텀 LX인터내셔널 1Q26 Review: 영업이익 1,031억원으로 시장 기대치 상회 LX인터내셔널의 2026년 1분기 매출액은 4조 2,113억원(4% YoY)을 기록했다.",
+          "value_krw_100m": 1031.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1089.0,
+          "unit": "억원",
+          "source_excerpt": "영업이익은 1,089억원으로 7% YoY 감소했으나, 당사 추정치(1,031억원) 및 시장 기대치(954억원)를 상회하였다.",
+          "value_krw_100m": 1089.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -942,7 +1328,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -991,13 +1380,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ]
 }

@@ -12,14 +12,19 @@
     "하나증권"
   ],
   "change_summary": {
-    "changed_reports": 4,
+    "changed_reports": 5,
     "target_price_up": 1,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 3,
+    "estimate_signal_reports": 2,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 3,
@@ -48,7 +53,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -63,7 +70,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -78,7 +87,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.5,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-11",
@@ -93,7 +104,75 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-20",
+        "broker": "키움증권",
+        "title": "GS피앤엘 - 흔들림 없는 펀더멘털, 외형 성장은 지속된다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91694&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260420_company_634171000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260420_company_634171000.pdf",
+        "target_price": "67,000",
+        "target_price_value": 67000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 200.0,
+        "unit": "억원",
+        "value_krw_100m": 200.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8%), 영업이익은 200억원(QoQ -36."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "키움증권",
+        "title": "GS피앤엘 - 비수기 증명된 이익 레버리지 효과",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92667&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_601026000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_601026000.pdf",
+        "target_price": "70,000",
+        "target_price_value": 70000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 242.0,
+        "unit": "억원",
+        "value_krw_100m": 242.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0%), 영업이익은 242억원(QoQ -23."
       }
     ],
     "opinion_distribution": [
@@ -116,7 +195,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -131,7 +212,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.5,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-08",
@@ -146,7 +229,13 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 5.85,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -161,7 +250,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -180,7 +275,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -195,7 +292,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -210,7 +309,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.5,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-11",
@@ -225,7 +326,75 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-20",
+      "broker": "키움증권",
+      "title": "GS피앤엘 - 흔들림 없는 펀더멘털, 외형 성장은 지속된다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91694&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260420_company_634171000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260420_company_634171000.pdf",
+      "target_price": "67,000",
+      "target_price_value": 67000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 200.0,
+      "unit": "억원",
+      "value_krw_100m": 200.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8%), 영업이익은 200억원(QoQ -36."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "키움증권",
+      "title": "GS피앤엘 - 비수기 증명된 이익 레버리지 효과",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92667&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_601026000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_601026000.pdf",
+      "target_price": "70,000",
+      "target_price_value": 70000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 242.0,
+      "unit": "억원",
+      "value_krw_100m": 242.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0%), 영업이익은 242억원(QoQ -23."
     }
   ],
   "opinion_distribution": [
@@ -248,7 +417,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -263,7 +434,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.5,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-08",
@@ -278,7 +451,13 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 5.85,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -293,7 +472,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -373,13 +558,33 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 242.0,
+          "unit": "억원",
+          "source_excerpt": "0%), 영업이익은 242억원(QoQ -23.",
+          "value_krw_100m": 242.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -425,10 +630,21 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -488,7 +704,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "shinhan_investment_official",
@@ -545,7 +764,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -595,7 +817,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -647,13 +872,93 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 242.0,
+          "unit": "억원",
+          "source_excerpt": "0%), 영업이익은 242억원(QoQ -23.",
+          "value_krw_100m": 242.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92560",
+      "title": "이변이 없는 펀더멘탈",
+      "display_title": "GS피앤엘 - 이변이 없는 펀더멘탈",
+      "broker": "IBK투자증권",
+      "published_date": "2026-05-08",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92560&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260508_company_277998000.pdf",
+      "subject": "GS피앤엘",
+      "subject_key": "gs피앤엘",
+      "views": 714,
+      "analyst": null,
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "26년 1분기 매출액 1,304억 원, 영업이익 242억 원 매출액은 1,304억 원(전년동기대비 +38.0%), 영업이익 242억 원(전년동기대비 +58.8%)을 기록함.",
+      "summary": "26년 1분기 매출액 1,304억 원, 영업이익 242억 원 매출액은 1,304억 원(전년동기대비 +38.0%), 영업이익 242억 원(전년동기대비 +58.8%)을 기록함. 긍정적 실적을 달성한 이유는 1) 웨스틴 파르나스 정상 운영에 따른 효과와, 2) 방한 외국인 수요 확대에 따른 ADR 상승, 3) 제주호텔 업황 개선으로 인한 이익 증가가 전체 실적을 견인.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 5.85,
+      "score_reasons": [
+        "종목분석 카테고리"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -713,7 +1018,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "shinhan_investment_official",
@@ -770,7 +1078,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -825,7 +1136,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 200.0,
+          "unit": "억원",
+          "source_excerpt": "8%), 영업이익은 200억원(QoQ -36.",
+          "value_krw_100m": 200.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -877,13 +1202,33 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 242.0,
+          "unit": "억원",
+          "source_excerpt": "0%), 영업이익은 242억원(QoQ -23.",
+          "value_krw_100m": 242.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -929,10 +1274,21 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -992,7 +1348,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "shinhan_investment_official",
@@ -1049,7 +1408,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1099,7 +1461,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1154,7 +1519,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 200.0,
+          "unit": "억원",
+          "source_excerpt": "8%), 영업이익은 200억원(QoQ -36.",
+          "value_krw_100m": 200.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

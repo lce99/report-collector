@@ -17,7 +17,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 3,
+    "estimate_signal_reports": 2,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 3,
@@ -46,7 +51,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 14.12,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-18",
@@ -61,7 +68,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-19",
@@ -76,7 +85,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 14.6,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-27",
@@ -91,7 +108,119 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-19",
+        "broker": "SK증권",
+        "title": "SK - 지분가치는 상승, 할인율은 축소",
+        "ticker": "034730",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93126&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_294390000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_294390000.pdf",
+        "target_price": "660,000",
+        "target_price_value": 660000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 14.6,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 19.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 19.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "SK 에코플랜트 1Q26 영업이익률은 19.0%를 기록하며 서프라이즈를 기록했는데 반도체 가격상승에 따른 에센코어가 호실적을 주도하였다."
+      },
+      {
+        "date": "2026-05-19",
+        "broker": "SK증권",
+        "title": "SK - 지분가치는 상승, 할인율은 축소",
+        "ticker": "034730",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93126&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_294390000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_294390000.pdf",
+        "target_price": "660,000",
+        "target_price_value": 660000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 14.6,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 3.67,
+        "unit": "조원",
+        "value_krw_100m": 36700.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "16 조원)으로 연결 영업이익 3.67 조원(+817."
+      },
+      {
+        "date": "2026-05-27",
+        "broker": "SK증권",
+        "title": "SK - 26년엔 SK에코플랜트를 주목하자",
+        "ticker": "034730",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93279&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260527_company_307747000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260527_company_307747000.pdf",
+        "target_price": "800,000",
+        "target_price_value": 800000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 9.55,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 9314.0,
+        "unit": "억원",
+        "value_krw_100m": 9314.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3% 이하 YoY), 영업이익 9,314 억원(+1261."
       }
     ],
     "opinion_distribution": [
@@ -114,7 +243,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-19",
@@ -129,7 +260,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 14.6,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-27",
@@ -144,7 +283,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -163,7 +310,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 14.12,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-18",
@@ -178,7 +327,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-19",
@@ -193,7 +344,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 14.6,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-27",
@@ -208,7 +367,119 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-19",
+      "broker": "SK증권",
+      "title": "SK - 지분가치는 상승, 할인율은 축소",
+      "ticker": "034730",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93126&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_294390000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_294390000.pdf",
+      "target_price": "660,000",
+      "target_price_value": 660000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 14.6,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 19.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 19.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "SK 에코플랜트 1Q26 영업이익률은 19.0%를 기록하며 서프라이즈를 기록했는데 반도체 가격상승에 따른 에센코어가 호실적을 주도하였다."
+    },
+    {
+      "date": "2026-05-19",
+      "broker": "SK증권",
+      "title": "SK - 지분가치는 상승, 할인율은 축소",
+      "ticker": "034730",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93126&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_294390000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_294390000.pdf",
+      "target_price": "660,000",
+      "target_price_value": 660000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 14.6,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 3.67,
+      "unit": "조원",
+      "value_krw_100m": 36700.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "16 조원)으로 연결 영업이익 3.67 조원(+817."
+    },
+    {
+      "date": "2026-05-27",
+      "broker": "SK증권",
+      "title": "SK - 26년엔 SK에코플랜트를 주목하자",
+      "ticker": "034730",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93279&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260527_company_307747000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260527_company_307747000.pdf",
+      "target_price": "800,000",
+      "target_price_value": 800000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 9.55,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 9314.0,
+      "unit": "억원",
+      "value_krw_100m": 9314.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3% 이하 YoY), 영업이익 9,314 억원(+1261."
     }
   ],
   "opinion_distribution": [
@@ -231,7 +502,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-19",
@@ -246,7 +519,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 14.6,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-27",
@@ -261,7 +542,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -385,12 +674,36 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 9314.0,
+          "unit": "억원",
+          "source_excerpt": "3% 이하 YoY), 영업이익 9,314 억원(+1261.",
+          "value_krw_100m": 9314.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -449,7 +762,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -510,7 +826,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -614,12 +933,36 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 9314.0,
+          "unit": "억원",
+          "source_excerpt": "3% 이하 YoY), 영업이익 9,314 억원(+1261.",
+          "value_krw_100m": 9314.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -734,12 +1077,46 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3.67,
+          "unit": "조원",
+          "source_excerpt": "16 조원)으로 연결 영업이익 3.67 조원(+817.",
+          "value_krw_100m": 36700.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 19.0,
+          "unit": "%",
+          "value_pct": 19.0,
+          "source_excerpt": "SK 에코플랜트 1Q26 영업이익률은 19.0%를 기록하며 서프라이즈를 기록했는데 반도체 가격상승에 따른 에센코어가 호실적을 주도하였다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -798,7 +1175,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -859,7 +1239,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -963,12 +1346,36 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 9314.0,
+          "unit": "억원",
+          "source_excerpt": "3% 이하 YoY), 영업이익 9,314 억원(+1261.",
+          "value_krw_100m": 9314.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1083,12 +1490,46 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3.67,
+          "unit": "조원",
+          "source_excerpt": "16 조원)으로 연결 영업이익 3.67 조원(+817.",
+          "value_krw_100m": 36700.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 19.0,
+          "unit": "%",
+          "value_pct": 19.0,
+          "source_excerpt": "SK 에코플랜트 1Q26 영업이익률은 19.0%를 기록하며 서프라이즈를 기록했는데 반도체 가격상승에 따른 에센코어가 호실적을 주도하였다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1147,7 +1588,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1208,7 +1652,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

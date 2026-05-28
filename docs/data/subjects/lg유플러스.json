@@ -1,8 +1,8 @@
 {
   "subject_key": "lg유플러스",
   "subject_name": "LG유플러스",
-  "latest_report_date": "2026-05-11",
-  "report_count": 10,
+  "latest_report_date": "2026-05-28",
+  "report_count": 11,
   "active_broker_count": 7,
   "active_brokers": [
     "IBK투자증권",
@@ -14,14 +14,19 @@
     "하나증권"
   ],
   "change_summary": {
-    "changed_reports": 7,
+    "changed_reports": 9,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 7
+    "coverage_initiated": 7,
+    "estimate_signal_reports": 7,
+    "earnings_estimate_up": 5,
+    "earnings_estimate_down": 3,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 7,
@@ -50,7 +55,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-28",
@@ -65,7 +76,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -80,7 +97,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.45,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -95,7 +118,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -110,7 +139,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-08",
@@ -125,7 +156,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -140,7 +179,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.78,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-08",
@@ -155,7 +196,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.86,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-11",
@@ -170,7 +213,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.09,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-11",
@@ -185,7 +230,244 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      },
+      {
+        "date": "2026-05-28",
+        "broker": "하나증권",
+        "title": "LG유플러스 - 6월 전략 - 8월 보고 미리 보유하세요",
+        "ticker": "032640",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93322&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260528_company_530556000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260528_company_530556000.pdf",
+        "target_price": "20,000",
+        "target_price_value": 20000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 14.87,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-08",
+        "broker": "미래에셋증권",
+        "title": "LG유플러스 - 전 사업 부문 성장. AIDC 수요 증가 지속",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92558&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_356957000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_356957000.pdf",
+        "target_price": "19,000",
+        "target_price_value": 19000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.9,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 7.2,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 7.2,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6% YoY), 영업이익률은 7.2%를 기록하였다."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "유안타증권",
+        "title": "LG유플러스 - 흠잡을 데 없는 실적",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92609&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_563246000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_563246000.pdf",
+        "target_price": "21,000",
+        "target_price_value": 21000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 9.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 9.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6% YoY, OPM 9.0%)으로 시장 컨센서스(3."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "미래에셋증권",
+        "title": "LG유플러스 - 전 사업 부문 성장. AIDC 수요 증가 지속",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92558&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_356957000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_356957000.pdf",
+        "target_price": "19,000",
+        "target_price_value": 19000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.9,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2723.0,
+        "unit": "억원",
+        "value_krw_100m": 2723.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5% YoY), 연결 영업이익은 2,723억원(+6."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "유안타증권",
+        "title": "LG유플러스 - 흠잡을 데 없는 실적",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92609&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_563246000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_563246000.pdf",
+        "target_price": "21,000",
+        "target_price_value": 21000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2723.0,
+        "unit": "억원",
+        "value_krw_100m": 2723.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5% YoY), 영업이익은 2,723억원(+6."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "유진투자증권",
+        "title": "LG유플러스 - 무난한 실적, 저렴해진 구간",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92685&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_474653000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_474653000.pdf",
+        "target_price": "19,000",
+        "target_price_value": 19000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2723.0,
+        "unit": "억원",
+        "value_krw_100m": 2723.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5%yoy), 영업이익 2,723억원(+6."
+      },
+      {
+        "date": "2026-05-28",
+        "broker": "하나증권",
+        "title": "LG유플러스 - 6월 전략 - 8월 보고 미리 보유하세요",
+        "ticker": "032640",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93322&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260528_company_530556000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260528_company_530556000.pdf",
+        "target_price": "20,000",
+        "target_price_value": 20000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 14.87,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2723.0,
+        "unit": "억원",
+        "value_krw_100m": 2723.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2Q 연결영업이익 3천억원 이상 전망, 연간 두 자리 수 이익 성장 기대감 커질 것 2026년 1분기 LGU+는 연결 영업이익 2,723억원(+7% YoY, +60% QoQ) 로 우수한 실적을 기록했다."
       }
     ],
     "opinion_distribution": [
@@ -196,139 +478,31 @@
     ],
     "broker_timeline": [
       {
-        "date": "2026-04-28",
+        "date": "2026-05-28",
         "broker": "하나증권",
-        "title": "LG유플러스 - 5월 전략 - 단기 주가 반등 기대",
-        "ticker": null,
-        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92082&page=1",
-        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260428_company_435019000.pdf",
-        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260428_company_435019000.pdf",
+        "title": "LG유플러스 - 6월 전략 - 8월 보고 미리 보유하세요",
+        "ticker": "032640",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93322&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260528_company_530556000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260528_company_530556000.pdf",
         "target_price": "20,000",
         "target_price_value": 20000,
         "opinion": "Buy",
         "opinion_normalized": "buy",
-        "score": 8.85,
-        "has_change_signal": true
-      },
-      {
-        "date": "2026-05-08",
-        "broker": "미래에셋증권",
-        "title": "LG유플러스 - 전 사업 부문 성장. AIDC 수요 증가 지속",
-        "ticker": null,
-        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92558&page=3",
-        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_356957000.pdf",
-        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_356957000.pdf",
-        "target_price": "19,000",
-        "target_price_value": 19000,
-        "opinion": "매수",
-        "opinion_normalized": "buy",
-        "score": 7.9,
-        "has_change_signal": true
-      },
-      {
-        "date": "2026-05-08",
-        "broker": "유안타증권",
-        "title": "LG유플러스 - 흠잡을 데 없는 실적",
-        "ticker": null,
-        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92609&page=1",
-        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_563246000.pdf",
-        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_563246000.pdf",
-        "target_price": "21,000",
-        "target_price_value": 21000,
-        "opinion": "Buy",
-        "opinion_normalized": "buy",
-        "score": 8.75,
-        "has_change_signal": true
-      },
-      {
-        "date": "2026-05-08",
-        "broker": "신한투자증권",
-        "title": "LG유플러스 - LG유플러스; Waiting for you",
-        "ticker": null,
-        "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=936149",
-        "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351324",
-        "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351324",
-        "target_price": "21,000원",
-        "target_price_value": 21000,
-        "opinion": "매수",
-        "opinion_normalized": "buy",
-        "score": 8.8,
-        "has_change_signal": true
-      },
-      {
-        "date": "2026-05-08",
-        "broker": "하나증권",
-        "title": "LG유플러스 - 2026년 1분기 컨퍼런스콜 요약",
-        "ticker": null,
-        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92627&page=1",
-        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_270619000.pdf",
-        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_270619000.pdf",
-        "target_price": "20,000",
-        "target_price_value": 20000,
-        "opinion": "Buy",
-        "opinion_normalized": "buy",
-        "score": 8.86,
-        "has_change_signal": false
-      },
-      {
-        "date": "2026-05-08",
-        "broker": "하나증권",
-        "title": "LG유플러스 - 1Q 리뷰 - 실적 양호, 올해 유의미한 이익 성..",
-        "ticker": null,
-        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92626&page=1",
-        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_435586000.pdf",
-        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_435586000.pdf",
-        "target_price": "20,000",
-        "target_price_value": 20000,
-        "opinion": "Buy",
-        "opinion_normalized": "buy",
-        "score": 9.78,
-        "has_change_signal": false
-      },
-      {
-        "date": "2026-05-08",
-        "broker": "IBK투자증권",
-        "title": "LG유플러스 - 안정적인 실적 흐름",
-        "ticker": null,
-        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92574&page=3",
-        "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260508_company_189501000.pdf",
-        "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260508_company_189501000.pdf",
-        "target_price": "20,000",
-        "target_price_value": 20000,
-        "opinion": "매수",
-        "opinion_normalized": "buy",
-        "score": 10.45,
-        "has_change_signal": false
-      },
-      {
-        "date": "2026-05-11",
-        "broker": "대신증권",
-        "title": "LG유플러스 - 서두르지 않고 꾸준히 우상향",
-        "ticker": null,
-        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92710&page=1",
-        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_228730000.pdf",
-        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_228730000.pdf",
-        "target_price": "20,000",
-        "target_price_value": 20000,
-        "opinion": "Buy",
-        "opinion_normalized": "buy",
-        "score": 9.09,
-        "has_change_signal": true
-      },
-      {
-        "date": "2026-05-11",
-        "broker": "유진투자증권",
-        "title": "LG유플러스 - 무난한 실적, 저렴해진 구간",
-        "ticker": null,
-        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92685&page=2",
-        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_474653000.pdf",
-        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_474653000.pdf",
-        "target_price": "19,000",
-        "target_price_value": 19000,
-        "opinion": "Buy",
-        "opinion_normalized": "buy",
-        "score": 10.45,
-        "has_change_signal": true
+        "score": 14.87,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       }
     ],
     "window_days": 14
@@ -347,7 +521,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-28",
@@ -362,7 +542,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -377,7 +563,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.45,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -392,7 +584,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -407,7 +605,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-08",
@@ -422,7 +622,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -437,7 +645,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.78,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-08",
@@ -452,7 +662,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.86,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-11",
@@ -467,7 +679,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.09,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-11",
@@ -482,7 +696,244 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    },
+    {
+      "date": "2026-05-28",
+      "broker": "하나증권",
+      "title": "LG유플러스 - 6월 전략 - 8월 보고 미리 보유하세요",
+      "ticker": "032640",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93322&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260528_company_530556000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260528_company_530556000.pdf",
+      "target_price": "20,000",
+      "target_price_value": 20000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 14.87,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-08",
+      "broker": "미래에셋증권",
+      "title": "LG유플러스 - 전 사업 부문 성장. AIDC 수요 증가 지속",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92558&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_356957000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_356957000.pdf",
+      "target_price": "19,000",
+      "target_price_value": 19000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.9,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 7.2,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 7.2,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6% YoY), 영업이익률은 7.2%를 기록하였다."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "유안타증권",
+      "title": "LG유플러스 - 흠잡을 데 없는 실적",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92609&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_563246000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_563246000.pdf",
+      "target_price": "21,000",
+      "target_price_value": 21000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 9.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 9.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6% YoY, OPM 9.0%)으로 시장 컨센서스(3."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "미래에셋증권",
+      "title": "LG유플러스 - 전 사업 부문 성장. AIDC 수요 증가 지속",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92558&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_356957000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_356957000.pdf",
+      "target_price": "19,000",
+      "target_price_value": 19000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.9,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2723.0,
+      "unit": "억원",
+      "value_krw_100m": 2723.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5% YoY), 연결 영업이익은 2,723억원(+6."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "유안타증권",
+      "title": "LG유플러스 - 흠잡을 데 없는 실적",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92609&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_563246000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_563246000.pdf",
+      "target_price": "21,000",
+      "target_price_value": 21000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2723.0,
+      "unit": "억원",
+      "value_krw_100m": 2723.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5% YoY), 영업이익은 2,723억원(+6."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "유진투자증권",
+      "title": "LG유플러스 - 무난한 실적, 저렴해진 구간",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92685&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_474653000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_474653000.pdf",
+      "target_price": "19,000",
+      "target_price_value": 19000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2723.0,
+      "unit": "억원",
+      "value_krw_100m": 2723.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5%yoy), 영업이익 2,723억원(+6."
+    },
+    {
+      "date": "2026-05-28",
+      "broker": "하나증권",
+      "title": "LG유플러스 - 6월 전략 - 8월 보고 미리 보유하세요",
+      "ticker": "032640",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93322&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260528_company_530556000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260528_company_530556000.pdf",
+      "target_price": "20,000",
+      "target_price_value": 20000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 14.87,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2723.0,
+      "unit": "억원",
+      "value_krw_100m": 2723.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2Q 연결영업이익 3천억원 이상 전망, 연간 두 자리 수 이익 성장 기대감 커질 것 2026년 1분기 LGU+는 연결 영업이익 2,723억원(+7% YoY, +60% QoQ) 로 우수한 실적을 기록했다."
     }
   ],
   "opinion_distribution": [
@@ -493,145 +944,37 @@
   ],
   "broker_timeline": [
     {
-      "date": "2026-04-28",
+      "date": "2026-05-28",
       "broker": "하나증권",
-      "title": "LG유플러스 - 5월 전략 - 단기 주가 반등 기대",
-      "ticker": null,
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92082&page=1",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260428_company_435019000.pdf",
-      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260428_company_435019000.pdf",
+      "title": "LG유플러스 - 6월 전략 - 8월 보고 미리 보유하세요",
+      "ticker": "032640",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93322&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260528_company_530556000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260528_company_530556000.pdf",
       "target_price": "20,000",
       "target_price_value": 20000,
       "opinion": "Buy",
       "opinion_normalized": "buy",
-      "score": 8.85,
-      "has_change_signal": true
-    },
-    {
-      "date": "2026-05-08",
-      "broker": "미래에셋증권",
-      "title": "LG유플러스 - 전 사업 부문 성장. AIDC 수요 증가 지속",
-      "ticker": null,
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92558&page=3",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_356957000.pdf",
-      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_356957000.pdf",
-      "target_price": "19,000",
-      "target_price_value": 19000,
-      "opinion": "매수",
-      "opinion_normalized": "buy",
-      "score": 7.9,
-      "has_change_signal": true
-    },
-    {
-      "date": "2026-05-08",
-      "broker": "유안타증권",
-      "title": "LG유플러스 - 흠잡을 데 없는 실적",
-      "ticker": null,
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92609&page=1",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_563246000.pdf",
-      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_563246000.pdf",
-      "target_price": "21,000",
-      "target_price_value": 21000,
-      "opinion": "Buy",
-      "opinion_normalized": "buy",
-      "score": 8.75,
-      "has_change_signal": true
-    },
-    {
-      "date": "2026-05-08",
-      "broker": "신한투자증권",
-      "title": "LG유플러스 - LG유플러스; Waiting for you",
-      "ticker": null,
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=936149",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351324",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351324",
-      "target_price": "21,000원",
-      "target_price_value": 21000,
-      "opinion": "매수",
-      "opinion_normalized": "buy",
-      "score": 8.8,
-      "has_change_signal": true
-    },
-    {
-      "date": "2026-05-08",
-      "broker": "하나증권",
-      "title": "LG유플러스 - 2026년 1분기 컨퍼런스콜 요약",
-      "ticker": null,
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92627&page=1",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_270619000.pdf",
-      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_270619000.pdf",
-      "target_price": "20,000",
-      "target_price_value": 20000,
-      "opinion": "Buy",
-      "opinion_normalized": "buy",
-      "score": 8.86,
-      "has_change_signal": false
-    },
-    {
-      "date": "2026-05-08",
-      "broker": "하나증권",
-      "title": "LG유플러스 - 1Q 리뷰 - 실적 양호, 올해 유의미한 이익 성..",
-      "ticker": null,
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92626&page=1",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_435586000.pdf",
-      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_435586000.pdf",
-      "target_price": "20,000",
-      "target_price_value": 20000,
-      "opinion": "Buy",
-      "opinion_normalized": "buy",
-      "score": 9.78,
-      "has_change_signal": false
-    },
-    {
-      "date": "2026-05-08",
-      "broker": "IBK투자증권",
-      "title": "LG유플러스 - 안정적인 실적 흐름",
-      "ticker": null,
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92574&page=3",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260508_company_189501000.pdf",
-      "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260508_company_189501000.pdf",
-      "target_price": "20,000",
-      "target_price_value": 20000,
-      "opinion": "매수",
-      "opinion_normalized": "buy",
-      "score": 10.45,
-      "has_change_signal": false
-    },
-    {
-      "date": "2026-05-11",
-      "broker": "대신증권",
-      "title": "LG유플러스 - 서두르지 않고 꾸준히 우상향",
-      "ticker": null,
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92710&page=1",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_228730000.pdf",
-      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_228730000.pdf",
-      "target_price": "20,000",
-      "target_price_value": 20000,
-      "opinion": "Buy",
-      "opinion_normalized": "buy",
-      "score": 9.09,
-      "has_change_signal": true
-    },
-    {
-      "date": "2026-05-11",
-      "broker": "유진투자증권",
-      "title": "LG유플러스 - 무난한 실적, 저렴해진 구간",
-      "ticker": null,
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92685&page=2",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_474653000.pdf",
-      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260511_company_474653000.pdf",
-      "target_price": "19,000",
-      "target_price_value": 19000,
-      "opinion": "Buy",
-      "opinion_normalized": "buy",
-      "score": 10.45,
-      "has_change_signal": true
+      "score": 14.87,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "broker_summary": [
     {
       "name": "하나증권",
-      "count": 3
+      "count": 4
     },
     {
       "name": "IBK투자증권",
@@ -661,10 +1004,176 @@
   "category_summary": [
     {
       "label": "종목분석",
-      "count": 10
+      "count": 11
     }
   ],
   "latest_by_broker": [
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "93322",
+      "title": "6월 전략 - 8월 보고 미리 보유하세요",
+      "display_title": "LG유플러스 - 6월 전략 - 8월 보고 미리 보유하세요",
+      "broker": "하나증권",
+      "published_date": "2026-05-28",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93322&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260528_company_530556000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260528_company_530556000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "LG유플러스",
+      "subject_key": "lg유플러스",
+      "ticker": "032640",
+      "views": 814,
+      "analyst": null,
+      "target_price": "20,000",
+      "target_price_value": 20000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "LGU+에 대한 투자의견 매수, 12개월 목표주가를 20,000원을 유지한다. 추천 사유는 1) 1분기에 이어 2분기 실적도 양호할 전망이라 2026년 높은 이익 성장에 대한 투자가들의 신뢰도가 상승할 것이며, 2) 8월 2분기 실적 시즌 우수한 실적 발표와 더불어 2027년 자사주 매입/소각 계획이 윤곽을 드러낼 전망이라 주가 상승의 트리거 역할을 수행할 전망이고, 3) 기대배당수익률, PER, PBR 지표로 보면 통신 3…",
+      "summary": "LGU+에 대한 투자의견 매수, 12개월 목표주가를 20,000원을 유지한다. 추천 사유는 1) 1분기에 이어 2분기 실적도 양호할 전망이라 2026년 높은 이익 성장에 대한 투자가들의 신뢰도가 상승할 것이며, 2) 8월 2분기 실적 시즌 우수한 실적 발표와 더불어 2027년 자사주 매입/소각 계획이 윤곽을 드러낼 전망이라 주가 상승의 트리거 역할을 수행할 전망이고, 3) 기대배당수익률, PER, PBR 지표로 보면 통신 3사 중 가장 저평가된 상황이기 때문이다. 단기 특별한 호재가 보이지 않는 상황이나 3개월 이내 주가 상승을 이끌만한 재료가 나타날 전망이라 중/장기 매수를 추천한다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2723.0,
+          "unit": "억원",
+          "source_excerpt": "2Q 연결영업이익 3천억원 이상 전망, 연간 두 자리 수 이익 성장 기대감 커질 것 2026년 1분기 LGU+는 연결 영업이익 2,723억원(+7% YoY, +60% QoQ) 로 우수한 실적을 기록했다.",
+          "value_krw_100m": 2723.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "score": 14.87,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "실적/마진 추정치 포함",
+        "이익 추정 상향/증가"
+      ],
+      "score_breakdown": [
+        {
+          "label": "종목분석 카테고리",
+          "value": 3.2,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 개선",
+          "value": 1.5,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 하향",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.95,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 악화",
+          "value": 0.9,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 0.9,
+          "kind": "boost"
+        },
+        {
+          "label": "목표가",
+          "value": 0.7,
+          "kind": "boost"
+        },
+        {
+          "label": "투자의견",
+          "value": 0.6,
+          "kind": "boost"
+        },
+        {
+          "label": "실적/마진 추정치",
+          "value": 0.47,
+          "kind": "boost"
+        },
+        {
+          "label": "PDF 본문",
+          "value": 0.35,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-05-08",
+      "previous_target_price": "20,000",
+      "previous_opinion": "Buy",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "has_change_signal": true
+    },
     {
       "source": "naver_research",
       "category": "company",
@@ -716,13 +1225,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2723.0,
+          "unit": "억원",
+          "source_excerpt": "5%yoy), 영업이익 2,723억원(+6.",
+          "value_krw_100m": 2723.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -780,7 +1309,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -832,64 +1364,21 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
-    },
-    {
-      "source": "naver_research",
-      "category": "company",
-      "category_label": "종목분석",
-      "report_id": "92626",
-      "title": "1Q 리뷰 - 실적 양호, 올해 유의미한 이익 성..",
-      "display_title": "LG유플러스 - 1Q 리뷰 - 실적 양호, 올해 유의미한 이익 성..",
-      "broker": "하나증권",
-      "published_date": "2026-05-08",
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92626&page=1",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_435586000.pdf",
-      "subject": "LG유플러스",
-      "subject_key": "lg유플러스",
-      "views": 121,
-      "analyst": null,
-      "target_price": "20,000",
-      "target_price_value": 20000,
-      "opinion": "Buy",
-      "opinion_normalized": "buy",
-      "has_pdf_text": true,
-      "content_sources": [
-        "html",
-        "pdf"
+      "change_types": [
+        "margin_estimate_up"
       ],
-      "excerpt": "투자의견 매수/12개월 목표가 20,000원 유지, 하반기까지 보면 투자 매력적 LGU+에 대한 투자의견 매수, 12개월 목표주가 20,000원을 유지한다.",
-      "summary": "투자의견 매수/12개월 목표가 20,000원 유지, 하반기까지 보면 투자 매력적 LGU+에 대한 투자의견 매수, 12개월 목표주가 20,000원을 유지한다. 추천 사유는 다음과 같다.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "score": 9.78,
-      "score_reasons": [
-        "종목분석 카테고리",
-        "목표가 포함",
-        "투자의견 포함",
-        "우선 추적 증권사",
-        "핵심 키워드(실적)"
+      "change_reasons": [
+        "마진율 추정 상승/개선"
       ],
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": "2026-04-28",
-      "previous_target_price": "20,000",
-      "previous_opinion": "Buy",
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -946,7 +1435,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -997,13 +1489,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2723.0,
+          "unit": "억원",
+          "source_excerpt": "5% YoY), 영업이익은 2,723억원(+6.",
+          "value_krw_100m": 2723.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 9.0,
+          "unit": "%",
+          "value_pct": 9.0,
+          "source_excerpt": "6% YoY, OPM 9.0%)으로 시장 컨센서스(3."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1053,16 +1579,212 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2723.0,
+          "unit": "억원",
+          "source_excerpt": "5% YoY), 연결 영업이익은 2,723억원(+6.",
+          "value_krw_100m": 2723.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 7.2,
+          "unit": "%",
+          "value_pct": 7.2,
+          "source_excerpt": "6% YoY), 영업이익률은 7.2%를 기록하였다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "recent_changes": [
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "93322",
+      "title": "6월 전략 - 8월 보고 미리 보유하세요",
+      "display_title": "LG유플러스 - 6월 전략 - 8월 보고 미리 보유하세요",
+      "broker": "하나증권",
+      "published_date": "2026-05-28",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93322&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260528_company_530556000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260528_company_530556000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "LG유플러스",
+      "subject_key": "lg유플러스",
+      "ticker": "032640",
+      "views": 814,
+      "analyst": null,
+      "target_price": "20,000",
+      "target_price_value": 20000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "LGU+에 대한 투자의견 매수, 12개월 목표주가를 20,000원을 유지한다. 추천 사유는 1) 1분기에 이어 2분기 실적도 양호할 전망이라 2026년 높은 이익 성장에 대한 투자가들의 신뢰도가 상승할 것이며, 2) 8월 2분기 실적 시즌 우수한 실적 발표와 더불어 2027년 자사주 매입/소각 계획이 윤곽을 드러낼 전망이라 주가 상승의 트리거 역할을 수행할 전망이고, 3) 기대배당수익률, PER, PBR 지표로 보면 통신 3…",
+      "summary": "LGU+에 대한 투자의견 매수, 12개월 목표주가를 20,000원을 유지한다. 추천 사유는 1) 1분기에 이어 2분기 실적도 양호할 전망이라 2026년 높은 이익 성장에 대한 투자가들의 신뢰도가 상승할 것이며, 2) 8월 2분기 실적 시즌 우수한 실적 발표와 더불어 2027년 자사주 매입/소각 계획이 윤곽을 드러낼 전망이라 주가 상승의 트리거 역할을 수행할 전망이고, 3) 기대배당수익률, PER, PBR 지표로 보면 통신 3사 중 가장 저평가된 상황이기 때문이다. 단기 특별한 호재가 보이지 않는 상황이나 3개월 이내 주가 상승을 이끌만한 재료가 나타날 전망이라 중/장기 매수를 추천한다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2723.0,
+          "unit": "억원",
+          "source_excerpt": "2Q 연결영업이익 3천억원 이상 전망, 연간 두 자리 수 이익 성장 기대감 커질 것 2026년 1분기 LGU+는 연결 영업이익 2,723억원(+7% YoY, +60% QoQ) 로 우수한 실적을 기록했다.",
+          "value_krw_100m": 2723.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "score": 14.87,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "실적/마진 추정치 포함",
+        "이익 추정 상향/증가"
+      ],
+      "score_breakdown": [
+        {
+          "label": "종목분석 카테고리",
+          "value": 3.2,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 개선",
+          "value": 1.5,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 하향",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.95,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 악화",
+          "value": 0.9,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 0.9,
+          "kind": "boost"
+        },
+        {
+          "label": "목표가",
+          "value": 0.7,
+          "kind": "boost"
+        },
+        {
+          "label": "투자의견",
+          "value": 0.6,
+          "kind": "boost"
+        },
+        {
+          "label": "실적/마진 추정치",
+          "value": 0.47,
+          "kind": "boost"
+        },
+        {
+          "label": "PDF 본문",
+          "value": 0.35,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-05-08",
+      "previous_target_price": "20,000",
+      "previous_opinion": "Buy",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "has_change_signal": true
+    },
     {
       "source": "naver_research",
       "category": "company",
@@ -1114,13 +1836,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2723.0,
+          "unit": "억원",
+          "source_excerpt": "5%yoy), 영업이익 2,723억원(+6.",
+          "value_krw_100m": 2723.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1178,7 +1920,76 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92574",
+      "title": "안정적인 실적 흐름",
+      "display_title": "LG유플러스 - 안정적인 실적 흐름",
+      "broker": "IBK투자증권",
+      "published_date": "2026-05-08",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92574&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260508_company_189501000.pdf",
+      "subject": "LG유플러스",
+      "subject_key": "lg유플러스",
+      "views": 503,
+      "analyst": null,
+      "target_price": "20,000",
+      "target_price_value": 20000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "1분기 연결 매출과 영업이익은 각각 3조 8,037억원(+1.5% yoy), 2,723억원(+6.6% yoy)을 기록하며 컨센서스(3조 8,678억원/2,800억원)와 당사 추정치(3조 9,027억원/2,798억원)에 대체로 부합했다. 모바일을 비롯해 스마트홈, 기업인프라 등 전 사업 부문에서 고른 성장세가 나타났으며, 갤럭시 S26 시리즈 출시 영향으로 마케팅 비용이 6,142억원(+11.7% yoy)까지 증가했음에도 가입…",
+      "summary": "1분기 연결 매출과 영업이익은 각각 3조 8,037억원(+1.5% yoy), 2,723억원(+6.6% yoy)을 기록하며 컨센서스(3조 8,678억원/2,800억원)와 당사 추정치(3조 9,027억원/2,798억원)에 대체로 부합했다. 모바일을 비롯해 스마트홈, 기업인프라 등 전 사업 부문에서 고른 성장세가 나타났으며, 갤럭시 S26 시리즈 출시 영향으로 마케팅 비용이 6,142억원(+11.7% yoy)까지 증가했음에도 가입자 기반 확대와 인건비 등 전반적인 비용 효율화가 이를 상쇄하며 양호한 수익성을 기록했다. 부문별로 모바일 수익은 1조 6,625억원(+3.2% yoy)으로 당사 추정치(1조 6,846억원)에 대체로 부합했다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 10.45,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 섹터/키워드(건설)",
+        "목표가 포함",
+        "투자의견 포함",
+        "핵심 키워드(실적)"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "건설"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": "2026-04-23",
+      "previous_target_price": "20,000",
+      "previous_opinion": "매수",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -1235,7 +2046,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1286,13 +2100,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2723.0,
+          "unit": "억원",
+          "source_excerpt": "5% YoY), 영업이익은 2,723억원(+6.",
+          "value_krw_100m": 2723.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 9.0,
+          "unit": "%",
+          "value_pct": 9.0,
+          "source_excerpt": "6% YoY, OPM 9.0%)으로 시장 컨센서스(3."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1342,13 +2190,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2723.0,
+          "unit": "억원",
+          "source_excerpt": "5% YoY), 연결 영업이익은 2,723억원(+6.",
+          "value_krw_100m": 2723.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 7.2,
+          "unit": "%",
+          "value_pct": 7.2,
+          "source_excerpt": "6% YoY), 영업이익률은 7.2%를 기록하였다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1398,13 +2276,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1456,16 +2343,191 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "93322",
+      "title": "6월 전략 - 8월 보고 미리 보유하세요",
+      "display_title": "LG유플러스 - 6월 전략 - 8월 보고 미리 보유하세요",
+      "broker": "하나증권",
+      "published_date": "2026-05-28",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93322&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260528_company_530556000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260528_company_530556000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "LG유플러스",
+      "subject_key": "lg유플러스",
+      "ticker": "032640",
+      "views": 814,
+      "analyst": null,
+      "target_price": "20,000",
+      "target_price_value": 20000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "LGU+에 대한 투자의견 매수, 12개월 목표주가를 20,000원을 유지한다. 추천 사유는 1) 1분기에 이어 2분기 실적도 양호할 전망이라 2026년 높은 이익 성장에 대한 투자가들의 신뢰도가 상승할 것이며, 2) 8월 2분기 실적 시즌 우수한 실적 발표와 더불어 2027년 자사주 매입/소각 계획이 윤곽을 드러낼 전망이라 주가 상승의 트리거 역할을 수행할 전망이고, 3) 기대배당수익률, PER, PBR 지표로 보면 통신 3…",
+      "summary": "LGU+에 대한 투자의견 매수, 12개월 목표주가를 20,000원을 유지한다. 추천 사유는 1) 1분기에 이어 2분기 실적도 양호할 전망이라 2026년 높은 이익 성장에 대한 투자가들의 신뢰도가 상승할 것이며, 2) 8월 2분기 실적 시즌 우수한 실적 발표와 더불어 2027년 자사주 매입/소각 계획이 윤곽을 드러낼 전망이라 주가 상승의 트리거 역할을 수행할 전망이고, 3) 기대배당수익률, PER, PBR 지표로 보면 통신 3사 중 가장 저평가된 상황이기 때문이다. 단기 특별한 호재가 보이지 않는 상황이나 3개월 이내 주가 상승을 이끌만한 재료가 나타날 전망이라 중/장기 매수를 추천한다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2723.0,
+          "unit": "억원",
+          "source_excerpt": "2Q 연결영업이익 3천억원 이상 전망, 연간 두 자리 수 이익 성장 기대감 커질 것 2026년 1분기 LGU+는 연결 영업이익 2,723억원(+7% YoY, +60% QoQ) 로 우수한 실적을 기록했다.",
+          "value_krw_100m": 2723.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "score": 14.87,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "실적/마진 추정치 포함",
+        "이익 추정 상향/증가"
+      ],
+      "score_breakdown": [
+        {
+          "label": "종목분석 카테고리",
+          "value": 3.2,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 개선",
+          "value": 1.5,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 하향",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.95,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 악화",
+          "value": 0.9,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 0.9,
+          "kind": "boost"
+        },
+        {
+          "label": "목표가",
+          "value": 0.7,
+          "kind": "boost"
+        },
+        {
+          "label": "투자의견",
+          "value": 0.6,
+          "kind": "boost"
+        },
+        {
+          "label": "실적/마진 추정치",
+          "value": 0.47,
+          "kind": "boost"
+        },
+        {
+          "label": "PDF 본문",
+          "value": 0.35,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-05-08",
+      "previous_target_price": "20,000",
+      "previous_opinion": "Buy",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "has_change_signal": true
+    },
     {
       "source": "naver_research",
       "category": "company",
@@ -1517,13 +2579,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2723.0,
+          "unit": "억원",
+          "source_excerpt": "5%yoy), 영업이익 2,723억원(+6.",
+          "value_krw_100m": 2723.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1581,7 +2663,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1633,10 +2718,21 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1690,7 +2786,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1744,7 +2843,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "shinhan_investment_official",
@@ -1801,7 +2903,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1852,13 +2957,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2723.0,
+          "unit": "억원",
+          "source_excerpt": "5% YoY), 영업이익은 2,723억원(+6.",
+          "value_krw_100m": 2723.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 9.0,
+          "unit": "%",
+          "value_pct": 9.0,
+          "source_excerpt": "6% YoY, OPM 9.0%)으로 시장 컨센서스(3."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1908,13 +3047,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2723.0,
+          "unit": "억원",
+          "source_excerpt": "5% YoY), 연결 영업이익은 2,723억원(+6.",
+          "value_krw_100m": 2723.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 7.2,
+          "unit": "%",
+          "value_pct": 7.2,
+          "source_excerpt": "6% YoY), 영업이익률은 7.2%를 기록하였다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1964,13 +3133,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -2022,13 +3200,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ]
 }

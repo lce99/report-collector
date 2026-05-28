@@ -16,7 +16,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 1
+    "coverage_initiated": 1,
+    "estimate_signal_reports": 1,
+    "earnings_estimate_up": 1,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 1,
@@ -45,7 +50,47 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-21",
+        "broker": "대신증권",
+        "title": "명신산업 - 기회와 리스크의 공존",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91736&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260421_company_837267000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260421_company_837267000.pdf",
+        "target_price": "13,000",
+        "target_price_value": 13000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.9,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "eps",
+        "metric_group": "earnings",
+        "label": "EPS",
+        "period": null,
+        "value": 1539.0,
+        "unit": "원",
+        "value_krw_100m": null,
+        "value_pct": null,
+        "value_won": 1539.0,
+        "change_pctp": null,
+        "source_excerpt": "3만원은 2026년 평균 EPS 1,539원에 목표배수 8."
       }
     ],
     "opinion_distribution": [
@@ -68,7 +113,9 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 8.0,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-21",
@@ -83,7 +130,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -102,7 +155,47 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-21",
+      "broker": "대신증권",
+      "title": "명신산업 - 기회와 리스크의 공존",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91736&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260421_company_837267000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260421_company_837267000.pdf",
+      "target_price": "13,000",
+      "target_price_value": 13000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.9,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "eps",
+      "metric_group": "earnings",
+      "label": "EPS",
+      "period": null,
+      "value": 1539.0,
+      "unit": "원",
+      "value_krw_100m": null,
+      "value_pct": null,
+      "value_won": 1539.0,
+      "change_pctp": null,
+      "source_excerpt": "3만원은 2026년 평균 EPS 1,539원에 목표배수 8."
     }
   ],
   "opinion_distribution": [
@@ -125,7 +218,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 8.0,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-21",
@@ -140,7 +235,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -208,13 +309,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": null,
+          "value": 1539.0,
+          "unit": "원",
+          "source_excerpt": "3만원은 2026년 평균 EPS 1,539원에 목표배수 8.",
+          "value_won": 1539.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -253,6 +374,9 @@
       "ticker": null,
       "target_price_value": null,
       "opinion_normalized": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false
@@ -307,13 +431,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": null,
+          "value": 1539.0,
+          "unit": "원",
+          "source_excerpt": "3만원은 2026년 평균 EPS 1,539원에 목표배수 8.",
+          "value_won": 1539.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -365,13 +509,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": null,
+          "value": 1539.0,
+          "unit": "원",
+          "source_excerpt": "3만원은 2026년 평균 EPS 1,539원에 목표배수 8.",
+          "value_won": 1539.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -410,6 +574,9 @@
       "ticker": null,
       "target_price_value": null,
       "opinion_normalized": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false

@@ -21,7 +21,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 7
+    "coverage_initiated": 7,
+    "estimate_signal_reports": 5,
+    "earnings_estimate_up": 5,
+    "earnings_estimate_down": 2,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 7,
@@ -50,7 +55,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-29",
@@ -65,7 +72,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -80,7 +93,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-29",
@@ -95,7 +110,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -110,7 +133,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -125,7 +154,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -140,7 +175,109 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-29",
+        "broker": "iM증권",
+        "title": "iM금융지주 - 핵심이익 긍정적이나 비용 및 자본관리 필요",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92102&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260429_company_371352000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260429_company_371352000.pdf",
+        "target_price": "23,000",
+        "target_price_value": 23000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배순이익",
+        "period": "1Q26",
+        "value": 1545.0,
+        "unit": "억원",
+        "value_krw_100m": 1545.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "iM금융지주 - 핵심이익 긍정적이나 비용 및 자본관리 필요 핵심이익 긍정적이나 비용 및 자본관리 필요 iM금융지주 1Q26 지배순이익 1,545억원(+0."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "교보증권",
+        "title": "iM금융지주 - 1Q26Review: 수익 개선과 비과세 배당 추진 ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92157&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260429_company_29216000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260429_company_29216000.pdf",
+        "target_price": "22,600",
+        "target_price_value": 22600,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": 1545.0,
+        "unit": "억원",
+        "value_krw_100m": 1545.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "iM금융지주 1Q26 연결당기순이익 1,545억원, QoQ 1166."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "키움증권",
+        "title": "iM금융지주 - 비은행 개선, 비과세 배당 추진",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92095&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_90172000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_90172000.pdf",
+        "target_price": "25,500",
+        "target_price_value": 25500,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": 1545.0,
+        "unit": "억원",
+        "value_krw_100m": 1545.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "iM금융지주 - 비은행 개선, 비과세 배당 추진 비은행 개선, 비과세 배당 추진 iM금융지주 연결순이익 소폭 증가한 안정적 실적 2026 년 1 분기 연결순이익은 1,545 억원으로 YoY 0."
       }
     ],
     "opinion_distribution": [
@@ -163,7 +300,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -178,7 +321,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-29",
@@ -193,7 +338,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-29",
@@ -208,7 +355,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -223,7 +378,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -238,7 +399,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -253,7 +420,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       }
     ],
     "window_days": 14
@@ -272,7 +447,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-29",
@@ -287,7 +464,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -302,7 +485,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-29",
@@ -317,7 +502,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -332,7 +525,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -347,7 +546,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -362,7 +567,109 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-29",
+      "broker": "iM증권",
+      "title": "iM금융지주 - 핵심이익 긍정적이나 비용 및 자본관리 필요",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92102&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260429_company_371352000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260429_company_371352000.pdf",
+      "target_price": "23,000",
+      "target_price_value": 23000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배순이익",
+      "period": "1Q26",
+      "value": 1545.0,
+      "unit": "억원",
+      "value_krw_100m": 1545.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "iM금융지주 - 핵심이익 긍정적이나 비용 및 자본관리 필요 핵심이익 긍정적이나 비용 및 자본관리 필요 iM금융지주 1Q26 지배순이익 1,545억원(+0."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "교보증권",
+      "title": "iM금융지주 - 1Q26Review: 수익 개선과 비과세 배당 추진 ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92157&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260429_company_29216000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260429_company_29216000.pdf",
+      "target_price": "22,600",
+      "target_price_value": 22600,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": 1545.0,
+      "unit": "억원",
+      "value_krw_100m": 1545.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "iM금융지주 1Q26 연결당기순이익 1,545억원, QoQ 1166."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "키움증권",
+      "title": "iM금융지주 - 비은행 개선, 비과세 배당 추진",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92095&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_90172000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_90172000.pdf",
+      "target_price": "25,500",
+      "target_price_value": 25500,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": 1545.0,
+      "unit": "억원",
+      "value_krw_100m": 1545.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "iM금융지주 - 비은행 개선, 비과세 배당 추진 비은행 개선, 비과세 배당 추진 iM금융지주 연결순이익 소폭 증가한 안정적 실적 2026 년 1 분기 연결순이익은 1,545 억원으로 YoY 0."
     }
   ],
   "opinion_distribution": [
@@ -385,7 +692,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -400,7 +713,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-29",
@@ -415,7 +730,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-29",
@@ -430,7 +747,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -445,7 +770,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -460,7 +791,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -475,7 +812,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "broker_summary": [
@@ -562,13 +907,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -618,13 +976,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 1545.0,
+          "unit": "억원",
+          "source_excerpt": "iM금융지주 - 비은행 개선, 비과세 배당 추진 비은행 개선, 비과세 배당 추진 iM금융지주 연결순이익 소폭 증가한 안정적 실적 2026 년 1 분기 연결순이익은 1,545 억원으로 YoY 0.",
+          "value_krw_100m": 1545.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -673,13 +1051,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -728,13 +1115,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -790,7 +1190,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -844,7 +1247,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": "1Q26",
+          "value": 1545.0,
+          "unit": "억원",
+          "source_excerpt": "iM금융지주 - 핵심이익 긍정적이나 비용 및 자본관리 필요 핵심이익 긍정적이나 비용 및 자본관리 필요 iM금융지주 1Q26 지배순이익 1,545억원(+0.",
+          "value_krw_100m": 1545.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -892,13 +1309,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 1545.0,
+          "unit": "억원",
+          "source_excerpt": "iM금융지주 1Q26 연결당기순이익 1,545억원, QoQ 1166.",
+          "value_krw_100m": 1545.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
@@ -949,13 +1386,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1005,13 +1455,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 1545.0,
+          "unit": "억원",
+          "source_excerpt": "iM금융지주 - 비은행 개선, 비과세 배당 추진 비은행 개선, 비과세 배당 추진 iM금융지주 연결순이익 소폭 증가한 안정적 실적 2026 년 1 분기 연결순이익은 1,545 억원으로 YoY 0.",
+          "value_krw_100m": 1545.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1060,13 +1530,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1115,13 +1594,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1177,7 +1669,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1231,7 +1726,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": "1Q26",
+          "value": 1545.0,
+          "unit": "억원",
+          "source_excerpt": "iM금융지주 - 핵심이익 긍정적이나 비용 및 자본관리 필요 핵심이익 긍정적이나 비용 및 자본관리 필요 iM금융지주 1Q26 지배순이익 1,545억원(+0.",
+          "value_krw_100m": 1545.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1279,13 +1788,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 1545.0,
+          "unit": "억원",
+          "source_excerpt": "iM금융지주 1Q26 연결당기순이익 1,545억원, QoQ 1166.",
+          "value_krw_100m": 1545.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -1336,13 +1865,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1392,13 +1934,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 1545.0,
+          "unit": "억원",
+          "source_excerpt": "iM금융지주 - 비은행 개선, 비과세 배당 추진 비은행 개선, 비과세 배당 추진 iM금융지주 연결순이익 소폭 증가한 안정적 실적 2026 년 1 분기 연결순이익은 1,545 억원으로 YoY 0.",
+          "value_krw_100m": 1545.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1447,13 +2009,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1502,13 +2073,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1564,7 +2148,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1618,7 +2205,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": "1Q26",
+          "value": 1545.0,
+          "unit": "억원",
+          "source_excerpt": "iM금융지주 - 핵심이익 긍정적이나 비용 및 자본관리 필요 핵심이익 긍정적이나 비용 및 자본관리 필요 iM금융지주 1Q26 지배순이익 1,545억원(+0.",
+          "value_krw_100m": 1545.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1666,13 +2267,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 1545.0,
+          "unit": "억원",
+          "source_excerpt": "iM금융지주 1Q26 연결당기순이익 1,545억원, QoQ 1166.",
+          "value_krw_100m": 1545.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ]
 }

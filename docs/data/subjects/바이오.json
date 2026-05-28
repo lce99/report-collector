@@ -8,14 +8,19 @@
     "하나증권"
   ],
   "change_summary": {
-    "changed_reports": 0,
+    "changed_reports": 1,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 0
+    "coverage_initiated": 0,
+    "estimate_signal_reports": 1,
+    "earnings_estimate_up": 0,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 0,
@@ -26,6 +31,7 @@
   "opinion_summary": [],
   "charts": {
     "target_price_history": [],
+    "estimate_metric_history": [],
     "opinion_distribution": [],
     "broker_timeline": [
       {
@@ -41,7 +47,13 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 6.35,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -56,12 +68,15 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 6.45,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
   },
   "target_price_history": [],
+  "estimate_metric_history": [],
   "opinion_distribution": [],
   "broker_timeline": [
     {
@@ -77,7 +92,13 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 6.35,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -92,7 +113,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 6.45,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -157,10 +180,75 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
-  "recent_changes": [],
+  "recent_changes": [
+    {
+      "source": "naver_research",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "44388",
+      "title": "바이오텍도 YoY 성장 중, IPO에서 찾는 기회",
+      "display_title": "바이오 - 바이오텍도 YoY 성장 중, IPO에서 찾는 기회",
+      "broker": "하나증권",
+      "published_date": "2026-04-30",
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44388&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/industry/57/20260430_industry_28137000.pdf",
+      "subject": "바이오",
+      "subject_key": "바이오",
+      "views": 1735,
+      "analyst": "김선아",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "제약/바이오 섹터는 YoY로 여전히 성장 중, 다만 이벤트 부재가 곧 실적 감소 올해 헬스케어 섹터는 연초대비수익률(YTD) 및 12개월전대비수익률(YoY) 모두 타 섹터 대비 부진한 경향을 보이고 있다.",
+      "summary": "제약/바이오 섹터는 YoY로 여전히 성장 중, 다만 이벤트 부재가 곧 실적 감소 올해 헬스케어 섹터는 연초대비수익률(YTD) 및 12개월전대비수익률(YoY) 모두 타 섹터 대비 부진한 경향을 보이고 있다. 코스피200헬스케어(이하 “코스피H”)는 YTD로 손실이고, 코스닥150헬스케어(이하 “코스닥H”)도 YTD로는 손실을 겨우 면하는 수준이나, 코스닥H 중시가총액 3,500억원이 초과하면서 의료기기/미용을 제외한 순수 제약사/바이오텍(이하 “코스닥H 선별”)의 가중평균수익률은 YoY로 117.1%이다.",
+      "summary_engine": "rule",
+      "score": 6.35,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "조회수 상위권",
+        "우선 추적 증권사"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-04-17",
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": "김선아",
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
+    }
+  ],
   "timeline": [
     {
       "source": "naver_research",
@@ -211,7 +299,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -258,10 +349,21 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -300,6 +402,9 @@
       "ticker": null,
       "target_price_value": null,
       "opinion_normalized": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false

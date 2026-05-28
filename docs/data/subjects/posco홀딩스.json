@@ -19,7 +19,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 5
+    "coverage_initiated": 5,
+    "estimate_signal_reports": 5,
+    "earnings_estimate_up": 5,
+    "earnings_estimate_down": 4,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 2
   },
   "target_summary": {
     "count": 5,
@@ -48,7 +53,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -63,7 +76,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -78,7 +99,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -93,7 +122,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -108,7 +149,259 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-04",
+        "broker": "한화투자증권",
+        "title": "POSCO홀딩스 - 철강 부진, 강해진 자회사, 리튬 재평가의 시..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92434&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260504_company_313308000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260504_company_313308000.pdf",
+        "target_price": "550,000",
+        "target_price_value": 550000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 4.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 4.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5%, OPM 4.0%)으로 컨센서스를 20% 상회했다."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "iM증권",
+        "title": "POSCO홀딩스 - 바닥을 확인한 2차 전지 소재 사업",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92352&page=4",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260504_company_712098000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260504_company_712098000.pdf",
+        "target_price": "540,000",
+        "target_price_value": 540000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 7070.0,
+        "unit": "억원",
+        "value_krw_100m": 7070.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "1Q 실적 [연결 영업이익 7,070억원 (+5,473% QoQ)]은 시장 예상치 [4/30 1개월 시장 컨센서스 영업이익 5,992억원]를 큰 폭으로 상회했다."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "iM증권",
+        "title": "POSCO홀딩스 - 바닥을 확인한 2차 전지 소재 사업",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92352&page=4",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260504_company_712098000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260504_company_712098000.pdf",
+        "target_price": "540,000",
+        "target_price_value": 540000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 5992.0,
+        "unit": "억원",
+        "value_krw_100m": 5992.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "1Q 실적 [연결 영업이익 7,070억원 (+5,473% QoQ)]은 시장 예상치 [4/30 1개월 시장 컨센서스 영업이익 5,992억원]를 큰 폭으로 상회했다."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "iM증권",
+        "title": "POSCO홀딩스 - 바닥을 확인한 2차 전지 소재 사업",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92352&page=4",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260504_company_712098000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260504_company_712098000.pdf",
+        "target_price": "540,000",
+        "target_price_value": 540000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2130.0,
+        "unit": "억원",
+        "value_krw_100m": 2130.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "<표 1> 이는 탄소강 Roll-Margin 축소에 따른 본사 실적 [영업이익 2,130억원 (-36."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "미래에셋증권",
+        "title": "POSCO홀딩스 - 자회사 실적 개선에 기인한 호실적",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92377&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_620148000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_620148000.pdf",
+        "target_price": "620,000",
+        "target_price_value": 620000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 9.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 7070.0,
+        "unit": "억원",
+        "value_krw_100m": 7070.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5%, YoY), 영업이익 7,070억원(+24."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "미래에셋증권",
+        "title": "POSCO홀딩스 - 자회사 실적 개선에 기인한 호실적",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92377&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_620148000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_620148000.pdf",
+        "target_price": "620,000",
+        "target_price_value": 620000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 9.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 5922.0,
+        "unit": "억원",
+        "value_krw_100m": 5922.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3%, YoY)으로 시장 예상치(영업이익 5,922억원, 1개월 기준)를 19% 상회하는 호실적을 기록했다."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "키움증권",
+        "title": "POSCO홀딩스 - 리튬사업에 동이 튼다!",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92505&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260507_company_222462000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260507_company_222462000.pdf",
+        "target_price": "640,000",
+        "target_price_value": 640000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1Q26",
+        "value": 7070.0,
+        "unit": "억원",
+        "value_krw_100m": 7070.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "POSCO홀딩스 - 리튬사업에 동이 튼다! 리튬사업에 동이 튼다! POSCO홀딩스 1분기 실적의 최대 하이라이트는 리튬사업! 1Q26 영업이익은 7,070억원(+5,474%QoQ, +24%YoY)으로 컨센서스 5,950억원과 키움증권 추정치 5,740억원을 크게 상회했다."
       }
     ],
     "opinion_distribution": [
@@ -131,7 +424,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -146,7 +447,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -161,7 +474,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -176,7 +497,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -191,7 +520,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       }
     ],
     "window_days": 14
@@ -210,7 +547,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -225,7 +570,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -240,7 +593,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -255,7 +616,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -270,7 +643,259 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-04",
+      "broker": "한화투자증권",
+      "title": "POSCO홀딩스 - 철강 부진, 강해진 자회사, 리튬 재평가의 시..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92434&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260504_company_313308000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260504_company_313308000.pdf",
+      "target_price": "550,000",
+      "target_price_value": 550000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 4.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 4.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5%, OPM 4.0%)으로 컨센서스를 20% 상회했다."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "iM증권",
+      "title": "POSCO홀딩스 - 바닥을 확인한 2차 전지 소재 사업",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92352&page=4",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260504_company_712098000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260504_company_712098000.pdf",
+      "target_price": "540,000",
+      "target_price_value": 540000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 7070.0,
+      "unit": "억원",
+      "value_krw_100m": 7070.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "1Q 실적 [연결 영업이익 7,070억원 (+5,473% QoQ)]은 시장 예상치 [4/30 1개월 시장 컨센서스 영업이익 5,992억원]를 큰 폭으로 상회했다."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "iM증권",
+      "title": "POSCO홀딩스 - 바닥을 확인한 2차 전지 소재 사업",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92352&page=4",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260504_company_712098000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260504_company_712098000.pdf",
+      "target_price": "540,000",
+      "target_price_value": 540000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 5992.0,
+      "unit": "억원",
+      "value_krw_100m": 5992.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "1Q 실적 [연결 영업이익 7,070억원 (+5,473% QoQ)]은 시장 예상치 [4/30 1개월 시장 컨센서스 영업이익 5,992억원]를 큰 폭으로 상회했다."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "iM증권",
+      "title": "POSCO홀딩스 - 바닥을 확인한 2차 전지 소재 사업",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92352&page=4",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260504_company_712098000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260504_company_712098000.pdf",
+      "target_price": "540,000",
+      "target_price_value": 540000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2130.0,
+      "unit": "억원",
+      "value_krw_100m": 2130.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "<표 1> 이는 탄소강 Roll-Margin 축소에 따른 본사 실적 [영업이익 2,130억원 (-36."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "미래에셋증권",
+      "title": "POSCO홀딩스 - 자회사 실적 개선에 기인한 호실적",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92377&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_620148000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_620148000.pdf",
+      "target_price": "620,000",
+      "target_price_value": 620000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 9.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 7070.0,
+      "unit": "억원",
+      "value_krw_100m": 7070.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5%, YoY), 영업이익 7,070억원(+24."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "미래에셋증권",
+      "title": "POSCO홀딩스 - 자회사 실적 개선에 기인한 호실적",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92377&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_620148000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_620148000.pdf",
+      "target_price": "620,000",
+      "target_price_value": 620000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 9.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 5922.0,
+      "unit": "억원",
+      "value_krw_100m": 5922.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3%, YoY)으로 시장 예상치(영업이익 5,922억원, 1개월 기준)를 19% 상회하는 호실적을 기록했다."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "키움증권",
+      "title": "POSCO홀딩스 - 리튬사업에 동이 튼다!",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92505&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260507_company_222462000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260507_company_222462000.pdf",
+      "target_price": "640,000",
+      "target_price_value": 640000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1Q26",
+      "value": 7070.0,
+      "unit": "억원",
+      "value_krw_100m": 7070.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "POSCO홀딩스 - 리튬사업에 동이 튼다! 리튬사업에 동이 튼다! POSCO홀딩스 1분기 실적의 최대 하이라이트는 리튬사업! 1Q26 영업이익은 7,070억원(+5,474%QoQ, +24%YoY)으로 컨센서스 5,950억원과 키움증권 추정치 5,740억원을 크게 상회했다."
     }
   ],
   "opinion_distribution": [
@@ -293,7 +918,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -308,7 +941,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -323,7 +968,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -338,7 +991,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -353,7 +1014,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "broker_summary": [
@@ -435,13 +1104,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q26",
+          "value": 7070.0,
+          "unit": "억원",
+          "source_excerpt": "POSCO홀딩스 - 리튬사업에 동이 튼다! 리튬사업에 동이 튼다! POSCO홀딩스 1분기 실적의 최대 하이라이트는 리튬사업! 1Q26 영업이익은 7,070억원(+5,474%QoQ, +24%YoY)으로 컨센서스 5,950억원과 키움증권 추정치 5,740억원을 크게 상회했다.",
+          "value_krw_100m": 7070.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -493,13 +1186,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 7070.0,
+          "unit": "억원",
+          "source_excerpt": "5%, YoY), 영업이익 7,070억원(+24.",
+          "value_krw_100m": 7070.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5922.0,
+          "unit": "억원",
+          "source_excerpt": "3%, YoY)으로 시장 예상치(영업이익 5,922억원, 1개월 기준)를 19% 상회하는 호실적을 기록했다.",
+          "value_krw_100m": 5922.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -550,13 +1277,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -606,13 +1346,45 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 4.0,
+          "unit": "%",
+          "value_pct": 4.0,
+          "source_excerpt": "5%, OPM 4.0%)으로 컨센서스를 20% 상회했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -662,13 +1434,57 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 7070.0,
+          "unit": "억원",
+          "source_excerpt": "1Q 실적 [연결 영업이익 7,070억원 (+5,473% QoQ)]은 시장 예상치 [4/30 1개월 시장 컨센서스 영업이익 5,992억원]를 큰 폭으로 상회했다.",
+          "value_krw_100m": 7070.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5992.0,
+          "unit": "억원",
+          "source_excerpt": "1Q 실적 [연결 영업이익 7,070억원 (+5,473% QoQ)]은 시장 예상치 [4/30 1개월 시장 컨센서스 영업이익 5,992억원]를 큰 폭으로 상회했다.",
+          "value_krw_100m": 5992.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2130.0,
+          "unit": "억원",
+          "source_excerpt": "<표 1> 이는 탄소강 Roll-Margin 축소에 따른 본사 실적 [영업이익 2,130억원 (-36.",
+          "value_krw_100m": 2130.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "recent_changes": [
@@ -722,13 +1538,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q26",
+          "value": 7070.0,
+          "unit": "억원",
+          "source_excerpt": "POSCO홀딩스 - 리튬사업에 동이 튼다! 리튬사업에 동이 튼다! POSCO홀딩스 1분기 실적의 최대 하이라이트는 리튬사업! 1Q26 영업이익은 7,070억원(+5,474%QoQ, +24%YoY)으로 컨센서스 5,950억원과 키움증권 추정치 5,740억원을 크게 상회했다.",
+          "value_krw_100m": 7070.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -780,13 +1620,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 7070.0,
+          "unit": "억원",
+          "source_excerpt": "5%, YoY), 영업이익 7,070억원(+24.",
+          "value_krw_100m": 7070.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5922.0,
+          "unit": "억원",
+          "source_excerpt": "3%, YoY)으로 시장 예상치(영업이익 5,922억원, 1개월 기준)를 19% 상회하는 호실적을 기록했다.",
+          "value_krw_100m": 5922.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -837,13 +1711,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -893,13 +1780,45 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 4.0,
+          "unit": "%",
+          "value_pct": 4.0,
+          "source_excerpt": "5%, OPM 4.0%)으로 컨센서스를 20% 상회했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -949,13 +1868,57 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 7070.0,
+          "unit": "억원",
+          "source_excerpt": "1Q 실적 [연결 영업이익 7,070억원 (+5,473% QoQ)]은 시장 예상치 [4/30 1개월 시장 컨센서스 영업이익 5,992억원]를 큰 폭으로 상회했다.",
+          "value_krw_100m": 7070.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5992.0,
+          "unit": "억원",
+          "source_excerpt": "1Q 실적 [연결 영업이익 7,070억원 (+5,473% QoQ)]은 시장 예상치 [4/30 1개월 시장 컨센서스 영업이익 5,992억원]를 큰 폭으로 상회했다.",
+          "value_krw_100m": 5992.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2130.0,
+          "unit": "억원",
+          "source_excerpt": "<표 1> 이는 탄소강 Roll-Margin 축소에 따른 본사 실적 [영업이익 2,130억원 (-36.",
+          "value_krw_100m": 2130.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "timeline": [
@@ -1009,13 +1972,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q26",
+          "value": 7070.0,
+          "unit": "억원",
+          "source_excerpt": "POSCO홀딩스 - 리튬사업에 동이 튼다! 리튬사업에 동이 튼다! POSCO홀딩스 1분기 실적의 최대 하이라이트는 리튬사업! 1Q26 영업이익은 7,070억원(+5,474%QoQ, +24%YoY)으로 컨센서스 5,950억원과 키움증권 추정치 5,740억원을 크게 상회했다.",
+          "value_krw_100m": 7070.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1067,13 +2054,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 7070.0,
+          "unit": "억원",
+          "source_excerpt": "5%, YoY), 영업이익 7,070억원(+24.",
+          "value_krw_100m": 7070.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5922.0,
+          "unit": "억원",
+          "source_excerpt": "3%, YoY)으로 시장 예상치(영업이익 5,922억원, 1개월 기준)를 19% 상회하는 호실적을 기록했다.",
+          "value_krw_100m": 5922.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1124,13 +2145,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1180,13 +2214,45 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 4.0,
+          "unit": "%",
+          "value_pct": 4.0,
+          "source_excerpt": "5%, OPM 4.0%)으로 컨센서스를 20% 상회했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1236,13 +2302,57 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 7070.0,
+          "unit": "억원",
+          "source_excerpt": "1Q 실적 [연결 영업이익 7,070억원 (+5,473% QoQ)]은 시장 예상치 [4/30 1개월 시장 컨센서스 영업이익 5,992억원]를 큰 폭으로 상회했다.",
+          "value_krw_100m": 7070.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5992.0,
+          "unit": "억원",
+          "source_excerpt": "1Q 실적 [연결 영업이익 7,070억원 (+5,473% QoQ)]은 시장 예상치 [4/30 1개월 시장 컨센서스 영업이익 5,992억원]를 큰 폭으로 상회했다.",
+          "value_krw_100m": 5992.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2130.0,
+          "unit": "억원",
+          "source_excerpt": "<표 1> 이는 탄소강 Roll-Margin 축소에 따른 본사 실적 [영업이익 2,130억원 (-36.",
+          "value_krw_100m": 2130.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ]
 }

@@ -14,14 +14,19 @@
     "하나증권"
   ],
   "change_summary": {
-    "changed_reports": 7,
+    "changed_reports": 8,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 7
+    "coverage_initiated": 7,
+    "estimate_signal_reports": 6,
+    "earnings_estimate_up": 6,
+    "earnings_estimate_down": 3,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 7,
@@ -58,7 +63,9 @@
         "opinion": "Hold",
         "opinion_normalized": "hold",
         "score": 13.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-13",
@@ -73,7 +80,15 @@
         "opinion": "MarketPerform",
         "opinion_normalized": "hold",
         "score": 12.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -88,7 +103,13 @@
         "opinion": "Trading BUY",
         "opinion_normalized": "trading_buy",
         "score": 13.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -103,7 +124,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 15.3,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-13",
@@ -118,7 +141,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 14.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -133,7 +164,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-21",
@@ -148,7 +187,171 @@
         "opinion": "중립",
         "opinion_normalized": "hold",
         "score": 12.2,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-13",
+        "broker": "SK증권",
+        "title": "미래에셋증권 - 1Q26 Review: 대규모 평가이익 다음은 미래에..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92808&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260513_company_623167000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260513_company_623167000.pdf",
+        "target_price": null,
+        "target_price_value": null,
+        "opinion": "중립",
+        "opinion_normalized": "hold",
+        "score": 11.5,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배주주순이익",
+        "period": "1Q26",
+        "value": 9962.0,
+        "unit": "억원",
+        "value_krw_100m": 9962.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2% 하회 1Q26 지배주주순이익은 9,962억원(YoY +285."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "신한투자증권",
+        "title": "미래에셋증권 - 미래에셋증권; 원래 명품은 비싸다",
+        "ticker": null,
+        "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=936334",
+        "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351409",
+        "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351409",
+        "target_price": "74,000원",
+        "target_price_value": 74000,
+        "opinion": "Trading BUY",
+        "opinion_normalized": "trading_buy",
+        "score": 13.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배주주순이익",
+        "period": null,
+        "value": 9962.0,
+        "unit": "억원",
+        "value_krw_100m": 9962.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "미래에셋증권 - 미래에셋증권; 원래 명품은 비싸다 미래에셋증권; 원래 명품은 비싸다 미래에셋증권 신한생각: 높은 밸류에이션은 정당화 가능, 다만… 1Q26P Review: 지배주주순이익 9,962억원(+75."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "유안타증권",
+        "title": "미래에셋증권 - 1분기 순이익 1조, 2분기 더 높다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92870&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260513_company_991383000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260513_company_991383000.pdf",
+        "target_price": "93,000",
+        "target_price_value": 93000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 15.3,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배주주순이익",
+        "period": "1Q26",
+        "value": 9962.0,
+        "unit": "억원",
+        "value_krw_100m": 9962.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "미래에셋증권 - 1분기 순이익 1조, 2분기 더 높다 1분기 순이익 1조, 2분기 더 높다 미래에셋증권 미래에셋증권의 1Q26 지배주주순이익은 9,962억원으로 컨센서스 1조원에 부합하였다."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "하나증권",
+        "title": "미래에셋증권 - 1Q26 Re - 이제 시작",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92840&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260513_company_332274000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260513_company_332274000.pdf",
+        "target_price": "95,000",
+        "target_price_value": 95000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 12.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배주주순이익",
+        "period": "1분기",
+        "value": 9962.0,
+        "unit": "억원",
+        "value_krw_100m": 9962.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "미래에셋증권 - 1Q26 Re - 이제 시작 1Q26 Re - 이제 시작 미래에셋증권 2026 1분기 지배순이익은 컨센서스를 7% 하회 1분기 지배주주순이익은 9,962억원으로 컨센서스(10,738억원)를 7."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "하나증권",
+        "title": "미래에셋증권 - 2026년 1분기 컨퍼런스 콜 요약",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92841&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260513_company_814716000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260513_company_814716000.pdf",
+        "target_price": null,
+        "target_price_value": null,
+        "opinion": null,
+        "opinion_normalized": null,
+        "score": 10.75,
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배주주순이익",
+        "period": null,
+        "value": 9962.0,
+        "unit": "억원",
+        "value_krw_100m": 9962.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "1%), 지배주주순이익 9,962억원(YoY +285."
       }
     ],
     "opinion_distribution": [
@@ -179,7 +382,9 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 10.75,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-13",
@@ -194,7 +399,15 @@
         "opinion": "중립",
         "opinion_normalized": "hold",
         "score": 11.5,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -209,7 +422,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -224,7 +445,15 @@
         "opinion": "MarketPerform",
         "opinion_normalized": "hold",
         "score": 12.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -239,7 +468,13 @@
         "opinion": "Trading BUY",
         "opinion_normalized": "trading_buy",
         "score": 13.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -254,7 +489,9 @@
         "opinion": "Hold",
         "opinion_normalized": "hold",
         "score": 13.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-13",
@@ -269,7 +506,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 14.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -284,7 +529,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 15.3,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-21",
@@ -299,7 +546,13 @@
         "opinion": "중립",
         "opinion_normalized": "hold",
         "score": 12.2,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -318,7 +571,9 @@
       "opinion": "Hold",
       "opinion_normalized": "hold",
       "score": 13.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-13",
@@ -333,7 +588,15 @@
       "opinion": "MarketPerform",
       "opinion_normalized": "hold",
       "score": 12.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -348,7 +611,13 @@
       "opinion": "Trading BUY",
       "opinion_normalized": "trading_buy",
       "score": 13.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -363,7 +632,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 15.3,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-13",
@@ -378,7 +649,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 14.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -393,7 +672,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-21",
@@ -408,7 +695,171 @@
       "opinion": "중립",
       "opinion_normalized": "hold",
       "score": 12.2,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-13",
+      "broker": "SK증권",
+      "title": "미래에셋증권 - 1Q26 Review: 대규모 평가이익 다음은 미래에..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92808&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260513_company_623167000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260513_company_623167000.pdf",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": "중립",
+      "opinion_normalized": "hold",
+      "score": 11.5,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배주주순이익",
+      "period": "1Q26",
+      "value": 9962.0,
+      "unit": "억원",
+      "value_krw_100m": 9962.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2% 하회 1Q26 지배주주순이익은 9,962억원(YoY +285."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "신한투자증권",
+      "title": "미래에셋증권 - 미래에셋증권; 원래 명품은 비싸다",
+      "ticker": null,
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=936334",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351409",
+      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351409",
+      "target_price": "74,000원",
+      "target_price_value": 74000,
+      "opinion": "Trading BUY",
+      "opinion_normalized": "trading_buy",
+      "score": 13.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배주주순이익",
+      "period": null,
+      "value": 9962.0,
+      "unit": "억원",
+      "value_krw_100m": 9962.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "미래에셋증권 - 미래에셋증권; 원래 명품은 비싸다 미래에셋증권; 원래 명품은 비싸다 미래에셋증권 신한생각: 높은 밸류에이션은 정당화 가능, 다만… 1Q26P Review: 지배주주순이익 9,962억원(+75."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "유안타증권",
+      "title": "미래에셋증권 - 1분기 순이익 1조, 2분기 더 높다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92870&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260513_company_991383000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260513_company_991383000.pdf",
+      "target_price": "93,000",
+      "target_price_value": 93000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 15.3,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배주주순이익",
+      "period": "1Q26",
+      "value": 9962.0,
+      "unit": "억원",
+      "value_krw_100m": 9962.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "미래에셋증권 - 1분기 순이익 1조, 2분기 더 높다 1분기 순이익 1조, 2분기 더 높다 미래에셋증권 미래에셋증권의 1Q26 지배주주순이익은 9,962억원으로 컨센서스 1조원에 부합하였다."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "하나증권",
+      "title": "미래에셋증권 - 1Q26 Re - 이제 시작",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92840&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260513_company_332274000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260513_company_332274000.pdf",
+      "target_price": "95,000",
+      "target_price_value": 95000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 12.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배주주순이익",
+      "period": "1분기",
+      "value": 9962.0,
+      "unit": "억원",
+      "value_krw_100m": 9962.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "미래에셋증권 - 1Q26 Re - 이제 시작 1Q26 Re - 이제 시작 미래에셋증권 2026 1분기 지배순이익은 컨센서스를 7% 하회 1분기 지배주주순이익은 9,962억원으로 컨센서스(10,738억원)를 7."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "하나증권",
+      "title": "미래에셋증권 - 2026년 1분기 컨퍼런스 콜 요약",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92841&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260513_company_814716000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260513_company_814716000.pdf",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "score": 10.75,
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배주주순이익",
+      "period": null,
+      "value": 9962.0,
+      "unit": "억원",
+      "value_krw_100m": 9962.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "1%), 지배주주순이익 9,962억원(YoY +285."
     }
   ],
   "opinion_distribution": [
@@ -439,7 +890,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 10.75,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-13",
@@ -454,7 +907,15 @@
       "opinion": "중립",
       "opinion_normalized": "hold",
       "score": 11.5,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -469,7 +930,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -484,7 +953,15 @@
       "opinion": "MarketPerform",
       "opinion_normalized": "hold",
       "score": 12.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -499,7 +976,13 @@
       "opinion": "Trading BUY",
       "opinion_normalized": "trading_buy",
       "score": 13.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -514,7 +997,9 @@
       "opinion": "Hold",
       "opinion_normalized": "hold",
       "score": 13.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-13",
@@ -529,7 +1014,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 14.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -544,7 +1037,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 15.3,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-21",
@@ -559,7 +1054,13 @@
       "opinion": "중립",
       "opinion_normalized": "hold",
       "score": 12.2,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -704,9 +1205,20 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -768,7 +1280,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1Q26",
+          "value": 9962.0,
+          "unit": "억원",
+          "source_excerpt": "미래에셋증권 - 1분기 순이익 1조, 2분기 더 높다 1분기 순이익 1조, 2분기 더 높다 미래에셋증권 미래에셋증권의 1Q26 지배주주순이익은 9,962억원으로 컨센서스 1조원에 부합하였다.",
+          "value_krw_100m": 9962.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -822,13 +1348,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -889,7 +1428,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "shinhan_investment_official",
@@ -942,13 +1484,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 9962.0,
+          "unit": "억원",
+          "source_excerpt": "미래에셋증권 - 미래에셋증권; 원래 명품은 비싸다 미래에셋증권; 원래 명품은 비싸다 미래에셋증권 신한생각: 높은 밸류에이션은 정당화 가능, 다만… 1Q26P Review: 지배주주순이익 9,962억원(+75.",
+          "value_krw_100m": 9962.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1001,13 +1563,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1060,13 +1635,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1분기",
+          "value": 9962.0,
+          "unit": "억원",
+          "source_excerpt": "미래에셋증권 - 1Q26 Re - 이제 시작 1Q26 Re - 이제 시작 미래에셋증권 2026 1분기 지배순이익은 컨센서스를 7% 하회 1분기 지배주주순이익은 9,962억원으로 컨센서스(10,738억원)를 7.",
+          "value_krw_100m": 9962.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
@@ -1074,6 +1673,126 @@
       "source": "naver_research",
       "category": "company",
       "category_label": "종목분석",
+      "report_id": "93182",
+      "title": "해외법인 체력 개선 확인. 지속성 검증 구간",
+      "display_title": "미래에셋증권 - 해외법인 체력 개선 확인. 지속성 검증 구간",
+      "broker": "SK증권",
+      "published_date": "2026-05-21",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93182&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260521_company_361743000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260521_company_361743000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "미래에셋증권",
+      "subject_key": "미래에셋증권",
+      "ticker": "006800",
+      "views": 1154,
+      "analyst": null,
+      "target_price": "69,000",
+      "target_price_value": 69000,
+      "opinion": "중립",
+      "opinion_normalized": "hold",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "투자의견 ‘중립’ 유지, 목표주가 69,000 원 제시 미래에셋증권에 대해 투자의견 ‘중립’을 유지하며, 목표주가는 69,000 원을 제시한다.",
+      "summary": "투자의견 ‘중립’ 유지, 목표주가 69,000 원 제시 미래에셋증권에 대해 투자의견 ‘중립’을 유지하며, 목표주가는 69,000 원을 제시한다. 해외법인 실적이 증가한 점은 긍정적이나, 평가이익이 주요하였기 때문에 향후 스페이스 X 주가에 따라 이익 변동성이 높아질 수 있다는 점은 디스카운트 요인으로 작용할 수 있다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 12.2,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 종목(미래에셋증권)",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "score_breakdown": [
+        {
+          "label": "관심 종목",
+          "value": 4.0,
+          "kind": "boost"
+        },
+        {
+          "label": "종목분석 카테고리",
+          "value": 3.2,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.95,
+          "kind": "boost"
+        },
+        {
+          "label": "목표가",
+          "value": 0.7,
+          "kind": "boost"
+        },
+        {
+          "label": "투자의견",
+          "value": 0.6,
+          "kind": "boost"
+        },
+        {
+          "label": "PDF 본문",
+          "value": 0.35,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [
+        "미래에셋증권"
+      ],
+      "priority_keyword_matches": [],
+      "is_priority_match": true,
+      "previous_report_date": "2026-05-13",
+      "previous_target_price": null,
+      "previous_opinion": "중립",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
       "report_id": "92870",
       "title": "1분기 순이익 1조, 2분기 더 높다",
       "display_title": "미래에셋증권 - 1분기 순이익 1조, 2분기 더 높다",
@@ -1130,7 +1849,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1Q26",
+          "value": 9962.0,
+          "unit": "억원",
+          "source_excerpt": "미래에셋증권 - 1분기 순이익 1조, 2분기 더 높다 1분기 순이익 1조, 2분기 더 높다 미래에셋증권 미래에셋증권의 1Q26 지배주주순이익은 9,962억원으로 컨센서스 1조원에 부합하였다.",
+          "value_krw_100m": 9962.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1184,13 +1917,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1251,7 +1997,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "shinhan_investment_official",
@@ -1304,13 +2053,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 9962.0,
+          "unit": "억원",
+          "source_excerpt": "미래에셋증권 - 미래에셋증권; 원래 명품은 비싸다 미래에셋증권; 원래 명품은 비싸다 미래에셋증권 신한생각: 높은 밸류에이션은 정당화 가능, 다만… 1Q26P Review: 지배주주순이익 9,962억원(+75.",
+          "value_krw_100m": 9962.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1363,13 +2132,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1422,13 +2204,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1분기",
+          "value": 9962.0,
+          "unit": "억원",
+          "source_excerpt": "미래에셋증권 - 1Q26 Re - 이제 시작 1Q26 Re - 이제 시작 미래에셋증권 2026 1분기 지배순이익은 컨센서스를 7% 하회 1분기 지배주주순이익은 9,962억원으로 컨센서스(10,738억원)를 7.",
+          "value_krw_100m": 9962.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1482,13 +2288,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1Q26",
+          "value": 9962.0,
+          "unit": "억원",
+          "source_excerpt": "2% 하회 1Q26 지배주주순이익은 9,962억원(YoY +285.",
+          "value_krw_100m": 9962.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -1597,9 +2427,20 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1661,7 +2502,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1Q26",
+          "value": 9962.0,
+          "unit": "억원",
+          "source_excerpt": "미래에셋증권 - 1분기 순이익 1조, 2분기 더 높다 1분기 순이익 1조, 2분기 더 높다 미래에셋증권 미래에셋증권의 1Q26 지배주주순이익은 9,962억원으로 컨센서스 1조원에 부합하였다.",
+          "value_krw_100m": 9962.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1715,13 +2570,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1782,7 +2650,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "shinhan_investment_official",
@@ -1835,13 +2706,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 9962.0,
+          "unit": "억원",
+          "source_excerpt": "미래에셋증권 - 미래에셋증권; 원래 명품은 비싸다 미래에셋증권; 원래 명품은 비싸다 미래에셋증권 신한생각: 높은 밸류에이션은 정당화 가능, 다만… 1Q26P Review: 지배주주순이익 9,962억원(+75.",
+          "value_krw_100m": 9962.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1894,13 +2785,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1953,13 +2857,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1분기",
+          "value": 9962.0,
+          "unit": "억원",
+          "source_excerpt": "미래에셋증권 - 1Q26 Re - 이제 시작 1Q26 Re - 이제 시작 미래에셋증권 2026 1분기 지배순이익은 컨센서스를 7% 하회 1분기 지배주주순이익은 9,962억원으로 컨센서스(10,738억원)를 7.",
+          "value_krw_100m": 9962.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -2013,13 +2941,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1Q26",
+          "value": 9962.0,
+          "unit": "억원",
+          "source_excerpt": "2% 하회 1Q26 지배주주순이익은 9,962억원(YoY +285.",
+          "value_krw_100m": 9962.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -2072,7 +3024,21 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 9962.0,
+          "unit": "억원",
+          "source_excerpt": "1%), 지배주주순이익 9,962억원(YoY +285.",
+          "value_krw_100m": 9962.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

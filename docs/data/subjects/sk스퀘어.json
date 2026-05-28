@@ -16,7 +16,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 2
+    "coverage_initiated": 2,
+    "estimate_signal_reports": 1,
+    "earnings_estimate_up": 1,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 2,
@@ -45,7 +50,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 15.3,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-19",
@@ -60,7 +67,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 12.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-26",
@@ -75,7 +88,75 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 15.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-19",
+        "broker": "SK증권",
+        "title": "SK스퀘어 - 높은 주가 탄력성",
+        "ticker": "402340",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93129&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_72243000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_72243000.pdf",
+        "target_price": "1,450,000",
+        "target_price_value": 1450000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 12.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": "25 년",
+        "value": 42.9,
+        "unit": "조원",
+        "value_krw_100m": 429000.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "25 년 순이익 42.9 조원을 기록한 SK 하이닉스는 26 년 순이익 205 조원(컨센서스 기준)으로 예상되어 SK 스퀘어 연결실적 개선을 견인할 전망이다."
+      },
+      {
+        "date": "2026-05-19",
+        "broker": "SK증권",
+        "title": "SK스퀘어 - 높은 주가 탄력성",
+        "ticker": "402340",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93129&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_72243000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_72243000.pdf",
+        "target_price": "1,450,000",
+        "target_price_value": 1450000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 12.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": "26 년",
+        "value": 205.0,
+        "unit": "조원",
+        "value_krw_100m": 2050000.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9 조원을 기록한 SK 하이닉스는 26 년 순이익 205 조원(컨센서스 기준)으로 예상되어 SK 스퀘어 연결실적 개선을 견인할 전망이다."
       }
     ],
     "opinion_distribution": [
@@ -98,7 +179,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 12.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-26",
@@ -113,7 +200,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 15.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -132,7 +221,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 15.3,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-19",
@@ -147,7 +238,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 12.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-26",
@@ -162,7 +259,75 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 15.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-19",
+      "broker": "SK증권",
+      "title": "SK스퀘어 - 높은 주가 탄력성",
+      "ticker": "402340",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93129&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_72243000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_72243000.pdf",
+      "target_price": "1,450,000",
+      "target_price_value": 1450000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 12.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": "25 년",
+      "value": 42.9,
+      "unit": "조원",
+      "value_krw_100m": 429000.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "25 년 순이익 42.9 조원을 기록한 SK 하이닉스는 26 년 순이익 205 조원(컨센서스 기준)으로 예상되어 SK 스퀘어 연결실적 개선을 견인할 전망이다."
+    },
+    {
+      "date": "2026-05-19",
+      "broker": "SK증권",
+      "title": "SK스퀘어 - 높은 주가 탄력성",
+      "ticker": "402340",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93129&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_72243000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_72243000.pdf",
+      "target_price": "1,450,000",
+      "target_price_value": 1450000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 12.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": "26 년",
+      "value": 205.0,
+      "unit": "조원",
+      "value_krw_100m": 2050000.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9 조원을 기록한 SK 하이닉스는 26 년 순이익 205 조원(컨센서스 기준)으로 예상되어 SK 스퀘어 연결실적 개선을 견인할 전망이다."
     }
   ],
   "opinion_distribution": [
@@ -185,7 +350,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 12.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-26",
@@ -200,7 +371,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 15.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -343,7 +516,10 @@
       "change_reasons": [
         "목표가 상향"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -451,12 +627,42 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": "25 년",
+          "value": 42.9,
+          "unit": "조원",
+          "source_excerpt": "25 년 순이익 42.9 조원을 기록한 SK 하이닉스는 26 년 순이익 205 조원(컨센서스 기준)으로 예상되어 SK 스퀘어 연결실적 개선을 견인할 전망이다.",
+          "value_krw_100m": 429000.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": "26 년",
+          "value": 205.0,
+          "unit": "조원",
+          "source_excerpt": "9 조원을 기록한 SK 하이닉스는 26 년 순이익 205 조원(컨센서스 기준)으로 예상되어 SK 스퀘어 연결실적 개선을 견인할 전망이다.",
+          "value_krw_100m": 2050000.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
@@ -583,7 +789,10 @@
       "change_reasons": [
         "목표가 상향"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -691,12 +900,42 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": "25 년",
+          "value": 42.9,
+          "unit": "조원",
+          "source_excerpt": "25 년 순이익 42.9 조원을 기록한 SK 하이닉스는 26 년 순이익 205 조원(컨센서스 기준)으로 예상되어 SK 스퀘어 연결실적 개선을 견인할 전망이다.",
+          "value_krw_100m": 429000.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": "26 년",
+          "value": 205.0,
+          "unit": "조원",
+          "source_excerpt": "9 조원을 기록한 SK 하이닉스는 26 년 순이익 205 조원(컨센서스 기준)으로 예상되어 SK 스퀘어 연결실적 개선을 견인할 전망이다.",
+          "value_krw_100m": 2050000.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -756,7 +995,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -883,7 +1125,10 @@
       "change_reasons": [
         "목표가 상향"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -991,12 +1236,42 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": "25 년",
+          "value": 42.9,
+          "unit": "조원",
+          "source_excerpt": "25 년 순이익 42.9 조원을 기록한 SK 하이닉스는 26 년 순이익 205 조원(컨센서스 기준)으로 예상되어 SK 스퀘어 연결실적 개선을 견인할 전망이다.",
+          "value_krw_100m": 429000.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": "26 년",
+          "value": 205.0,
+          "unit": "조원",
+          "source_excerpt": "9 조원을 기록한 SK 하이닉스는 26 년 순이익 205 조원(컨센서스 기준)으로 예상되어 SK 스퀘어 연결실적 개선을 견인할 전망이다.",
+          "value_krw_100m": 2050000.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1056,7 +1331,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

@@ -16,7 +16,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 2
+    "coverage_initiated": 2,
+    "estimate_signal_reports": 1,
+    "earnings_estimate_up": 1,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 2,
@@ -45,7 +50,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 11.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-15",
@@ -60,7 +67,47 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-15",
+        "broker": "한화투자증권",
+        "title": "와이씨 - HBM4에서 더 빛날 회사",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93013&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260515_company_624882000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260515_company_624882000.pdf",
+        "target_price": "25,000",
+        "target_price_value": 25000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 12.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2.8,
+        "unit": "억원",
+        "value_krw_100m": 2.8,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "1분기 실적은 테스터 매출의 일부 2분기 이연으로 연결 기준 매출 282억원(YoY -28%, QoQ -67%), 영업이익 2.8억원(YoY 흑자전환, QoQ -97%)을 예상하나 연간 실적은 작년 대비 의미 있게 성장할 것으로 기대."
       }
     ],
     "opinion_distribution": [
@@ -83,7 +130,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -102,7 +155,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 11.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-15",
@@ -117,7 +172,47 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-15",
+      "broker": "한화투자증권",
+      "title": "와이씨 - HBM4에서 더 빛날 회사",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93013&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260515_company_624882000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260515_company_624882000.pdf",
+      "target_price": "25,000",
+      "target_price_value": 25000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 12.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2.8,
+      "unit": "억원",
+      "value_krw_100m": 2.8,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "1분기 실적은 테스터 매출의 일부 2분기 이연으로 연결 기준 매출 282억원(YoY -28%, QoQ -67%), 영업이익 2.8억원(YoY 흑자전환, QoQ -97%)을 예상하나 연간 실적은 작년 대비 의미 있게 성장할 것으로 기대."
     }
   ],
   "opinion_distribution": [
@@ -140,7 +235,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -212,13 +313,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.8,
+          "unit": "억원",
+          "source_excerpt": "1분기 실적은 테스터 매출의 일부 2분기 이연으로 연결 기준 매출 282억원(YoY -28%, QoQ -67%), 영업이익 2.8억원(YoY 흑자전환, QoQ -97%)을 예상하나 연간 실적은 작년 대비 의미 있게 성장할 것으로 기대.",
+          "value_krw_100m": 2.8
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -275,7 +396,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -331,13 +455,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.8,
+          "unit": "억원",
+          "source_excerpt": "1분기 실적은 테스터 매출의 일부 2분기 이연으로 연결 기준 매출 282억원(YoY -28%, QoQ -67%), 영업이익 2.8억원(YoY 흑자전환, QoQ -97%)을 예상하나 연간 실적은 작년 대비 의미 있게 성장할 것으로 기대.",
+          "value_krw_100m": 2.8
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -394,7 +538,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -450,13 +597,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.8,
+          "unit": "억원",
+          "source_excerpt": "1분기 실적은 테스터 매출의 일부 2분기 이연으로 연결 기준 매출 282억원(YoY -28%, QoQ -67%), 영업이익 2.8억원(YoY 흑자전환, QoQ -97%)을 예상하나 연간 실적은 작년 대비 의미 있게 성장할 것으로 기대.",
+          "value_krw_100m": 2.8
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -513,7 +680,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

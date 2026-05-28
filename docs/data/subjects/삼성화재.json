@@ -20,7 +20,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 6
+    "coverage_initiated": 6,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 6,
@@ -53,7 +58,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-15",
@@ -68,7 +81,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-15",
@@ -83,7 +98,9 @@
         "opinion": "중립",
         "opinion_normalized": "hold",
         "score": 12.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-15",
@@ -98,7 +115,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 13.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-15",
@@ -113,7 +132,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 14.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-15",
@@ -128,7 +153,75 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-15",
+        "broker": "신한투자증권",
+        "title": "삼성화재 - 삼성화재; 나도 삼성전자 주식 있어",
+        "ticker": null,
+        "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=936467",
+        "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351466",
+        "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351466",
+        "target_price": "685,000",
+        "target_price_value": 685000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 13.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배주주순이익",
+        "period": null,
+        "value": 6347.0,
+        "unit": "억원",
+        "value_krw_100m": 6347.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "삼성화재 - 삼성화재; 나도 삼성전자 주식 있어 삼성화재; 나도 삼성전자 주식 있어 삼성화재 신한생각: 전자 지분에 가려진 본업가치에 관심 필요 1Q26P 지배주주순이익 6,347억원(+4."
+      },
+      {
+        "date": "2026-05-15",
+        "broker": "한화투자증권",
+        "title": "삼성화재 - 고르게 양호한 실적, ROE 개선은 과제",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93011&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260515_company_131817000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260515_company_131817000.pdf",
+        "target_price": "650,000",
+        "target_price_value": 650000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": 6347.0,
+        "unit": "억원",
+        "value_krw_100m": 6347.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "삼성화재 - 고르게 양호한 실적, ROE 개선은 과제 고르게 양호한 실적, ROE 개선은 과제 삼성화재 1Q26 지배 순이익 6,347억원(+4% YoY), 컨센서스 부합 삼성화재의 1Q26 연결 지배 순이익은 6,347억원(+4% YoY)으로 당사 추정을 8% 상회하고 컨센서스에 부…"
       }
     ],
     "opinion_distribution": [
@@ -155,7 +248,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-15",
@@ -170,7 +269,9 @@
         "opinion": "중립",
         "opinion_normalized": "hold",
         "score": 12.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-15",
@@ -185,7 +286,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-15",
@@ -200,7 +303,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-15",
@@ -215,7 +326,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 13.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-15",
@@ -230,7 +343,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 14.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -249,7 +368,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-15",
@@ -264,7 +391,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-15",
@@ -279,7 +408,9 @@
       "opinion": "중립",
       "opinion_normalized": "hold",
       "score": 12.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-15",
@@ -294,7 +425,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 13.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-15",
@@ -309,7 +442,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 14.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-15",
@@ -324,7 +463,75 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-15",
+      "broker": "신한투자증권",
+      "title": "삼성화재 - 삼성화재; 나도 삼성전자 주식 있어",
+      "ticker": null,
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=936467",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351466",
+      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351466",
+      "target_price": "685,000",
+      "target_price_value": 685000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 13.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배주주순이익",
+      "period": null,
+      "value": 6347.0,
+      "unit": "억원",
+      "value_krw_100m": 6347.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "삼성화재 - 삼성화재; 나도 삼성전자 주식 있어 삼성화재; 나도 삼성전자 주식 있어 삼성화재 신한생각: 전자 지분에 가려진 본업가치에 관심 필요 1Q26P 지배주주순이익 6,347억원(+4."
+    },
+    {
+      "date": "2026-05-15",
+      "broker": "한화투자증권",
+      "title": "삼성화재 - 고르게 양호한 실적, ROE 개선은 과제",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93011&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260515_company_131817000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260515_company_131817000.pdf",
+      "target_price": "650,000",
+      "target_price_value": 650000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": 6347.0,
+      "unit": "억원",
+      "value_krw_100m": 6347.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "삼성화재 - 고르게 양호한 실적, ROE 개선은 과제 고르게 양호한 실적, ROE 개선은 과제 삼성화재 1Q26 지배 순이익 6,347억원(+4% YoY), 컨센서스 부합 삼성화재의 1Q26 연결 지배 순이익은 6,347억원(+4% YoY)으로 당사 추정을 8% 상회하고 컨센서스에 부…"
     }
   ],
   "opinion_distribution": [
@@ -351,7 +558,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-15",
@@ -366,7 +579,9 @@
       "opinion": "중립",
       "opinion_normalized": "hold",
       "score": 12.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-15",
@@ -381,7 +596,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-15",
@@ -396,7 +613,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-15",
@@ -411,7 +636,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 13.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-15",
@@ -426,7 +653,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 14.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -514,13 +747,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -579,7 +821,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 6347.0,
+          "unit": "억원",
+          "source_excerpt": "삼성화재 - 삼성화재; 나도 삼성전자 주식 있어 삼성화재; 나도 삼성전자 주식 있어 삼성화재 신한생각: 전자 지분에 가려진 본업가치에 관심 필요 1Q26P 지배주주순이익 6,347억원(+4.",
+          "value_krw_100m": 6347.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -633,13 +889,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -698,7 +967,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -758,7 +1030,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -808,13 +1083,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 6347.0,
+          "unit": "억원",
+          "source_excerpt": "삼성화재 - 고르게 양호한 실적, ROE 개선은 과제 고르게 양호한 실적, ROE 개선은 과제 삼성화재 1Q26 지배 순이익 6,347억원(+4% YoY), 컨센서스 부합 삼성화재의 1Q26 연결 지배 순이익은 6,347억원(+4% YoY)으로 당사 추정을 8% 상회하고 컨센서스에 부…",
+          "value_krw_100m": 6347.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
@@ -870,13 +1165,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -935,7 +1239,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 6347.0,
+          "unit": "억원",
+          "source_excerpt": "삼성화재 - 삼성화재; 나도 삼성전자 주식 있어 삼성화재; 나도 삼성전자 주식 있어 삼성화재 신한생각: 전자 지분에 가려진 본업가치에 관심 필요 1Q26P 지배주주순이익 6,347억원(+4.",
+          "value_krw_100m": 6347.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -989,13 +1307,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1054,7 +1385,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1114,7 +1448,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1164,13 +1501,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 6347.0,
+          "unit": "억원",
+          "source_excerpt": "삼성화재 - 고르게 양호한 실적, ROE 개선은 과제 고르게 양호한 실적, ROE 개선은 과제 삼성화재 1Q26 지배 순이익 6,347억원(+4% YoY), 컨센서스 부합 삼성화재의 1Q26 연결 지배 순이익은 6,347억원(+4% YoY)으로 당사 추정을 8% 상회하고 컨센서스에 부…",
+          "value_krw_100m": 6347.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -1226,13 +1583,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -1291,7 +1657,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 6347.0,
+          "unit": "억원",
+          "source_excerpt": "삼성화재 - 삼성화재; 나도 삼성전자 주식 있어 삼성화재; 나도 삼성전자 주식 있어 삼성화재 신한생각: 전자 지분에 가려진 본업가치에 관심 필요 1Q26P 지배주주순이익 6,347억원(+4.",
+          "value_krw_100m": 6347.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1345,13 +1725,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1410,7 +1803,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1470,7 +1866,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1520,13 +1919,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 6347.0,
+          "unit": "억원",
+          "source_excerpt": "삼성화재 - 고르게 양호한 실적, ROE 개선은 과제 고르게 양호한 실적, ROE 개선은 과제 삼성화재 1Q26 지배 순이익 6,347억원(+4% YoY), 컨센서스 부합 삼성화재의 1Q26 연결 지배 순이익은 6,347억원(+4% YoY)으로 당사 추정을 8% 상회하고 컨센서스에 부…",
+          "value_krw_100m": 6347.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ]
 }

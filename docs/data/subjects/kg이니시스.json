@@ -16,7 +16,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 1
+    "coverage_initiated": 1,
+    "estimate_signal_reports": 1,
+    "earnings_estimate_up": 1,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 1,
@@ -45,7 +50,85 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-20",
+        "broker": "교보증권",
+        "title": "KG이니시스 - 정상화된 이익 유지 + 렌탈, 할부금융, 글로..",
+        "ticker": "035600",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93172&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260520_company_689286000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260520_company_689286000.pdf",
+        "target_price": "13,000",
+        "target_price_value": 13000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 6.7,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 6.7,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7%, OPM 6.7%)을 기록하며 정상화된 이익 기조를 이어가고 있음."
+      },
+      {
+        "date": "2026-05-20",
+        "broker": "교보증권",
+        "title": "KG이니시스 - 정상화된 이익 유지 + 렌탈, 할부금융, 글로..",
+        "ticker": "035600",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93172&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260520_company_689286000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260520_company_689286000.pdf",
+        "target_price": "13,000",
+        "target_price_value": 13000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 255.0,
+        "unit": "억원",
+        "value_krw_100m": 255.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%), 영업이익 255억원(YoY +4."
       }
     ],
     "opinion_distribution": [
@@ -68,7 +151,9 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 6.9,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-20",
@@ -83,7 +168,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -102,7 +195,85 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-20",
+      "broker": "교보증권",
+      "title": "KG이니시스 - 정상화된 이익 유지 + 렌탈, 할부금융, 글로..",
+      "ticker": "035600",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93172&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260520_company_689286000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260520_company_689286000.pdf",
+      "target_price": "13,000",
+      "target_price_value": 13000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 6.7,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 6.7,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7%, OPM 6.7%)을 기록하며 정상화된 이익 기조를 이어가고 있음."
+    },
+    {
+      "date": "2026-05-20",
+      "broker": "교보증권",
+      "title": "KG이니시스 - 정상화된 이익 유지 + 렌탈, 할부금융, 글로..",
+      "ticker": "035600",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93172&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260520_company_689286000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260520_company_689286000.pdf",
+      "target_price": "13,000",
+      "target_price_value": 13000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 255.0,
+      "unit": "억원",
+      "value_krw_100m": 255.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%), 영업이익 255억원(YoY +4."
     }
   ],
   "opinion_distribution": [
@@ -125,7 +296,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 6.9,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-20",
@@ -140,7 +313,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -259,12 +440,46 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 255.0,
+          "unit": "억원",
+          "source_excerpt": "2%), 영업이익 255억원(YoY +4.",
+          "value_krw_100m": 255.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 6.7,
+          "unit": "%",
+          "value_pct": 6.7,
+          "source_excerpt": "7%, OPM 6.7%)을 기록하며 정상화된 이익 기조를 이어가고 있음."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -317,7 +532,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -420,12 +638,46 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 255.0,
+          "unit": "억원",
+          "source_excerpt": "2%), 영업이익 255억원(YoY +4.",
+          "value_krw_100m": 255.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 6.7,
+          "unit": "%",
+          "value_pct": 6.7,
+          "source_excerpt": "7%, OPM 6.7%)을 기록하며 정상화된 이익 기조를 이어가고 있음."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "timeline": [
@@ -528,12 +780,46 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 255.0,
+          "unit": "억원",
+          "source_excerpt": "2%), 영업이익 255억원(YoY +4.",
+          "value_krw_100m": 255.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 6.7,
+          "unit": "%",
+          "value_pct": 6.7,
+          "source_excerpt": "7%, OPM 6.7%)을 기록하며 정상화된 이익 기조를 이어가고 있음."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -586,7 +872,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

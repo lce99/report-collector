@@ -23,7 +23,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 9
+    "coverage_initiated": 9,
+    "estimate_signal_reports": 6,
+    "earnings_estimate_up": 5,
+    "earnings_estimate_down": 6,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 9,
@@ -52,7 +57,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -67,7 +78,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -82,7 +101,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-27",
@@ -97,7 +118,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-27",
@@ -112,7 +135,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-27",
@@ -127,7 +152,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.65,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -142,7 +175,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -157,7 +198,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -172,7 +221,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -187,7 +244,179 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.9,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-27",
+        "broker": "iM증권",
+        "title": "우리금융지주 - 자본에 펌핑 들어간다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91948&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_364117000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_364117000.pdf",
+        "target_price": "42,000",
+        "target_price_value": 42000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배순이익",
+        "period": "1Q26",
+        "value": 6038.0,
+        "unit": "억원",
+        "value_krw_100m": 6038.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "우리금융지주 - 자본에 펌핑 들어간다 자본에 펌핑 들어간다 우리금융지주 1Q26 지배순이익 6,038억원(-2."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "교보증권",
+        "title": "우리금융지주 - 1Q26 Review: 그룹내 시너지 효과 본격 가시..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92014&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260427_company_139499000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260427_company_139499000.pdf",
+        "target_price": "40,000",
+        "target_price_value": 40000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": 6038.0,
+        "unit": "억원",
+        "value_krw_100m": 6038.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "우리금융지주 1Q26 연결당기순이익 6,038억원, QoQ 74."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "유안타증권",
+        "title": "우리금융지주 - 기업가치 제고를 위해 비은행 자회사 강화 중",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91996&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260427_company_422522000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260427_company_422522000.pdf",
+        "target_price": "48,000",
+        "target_price_value": 48000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.65,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배주주순이익",
+        "period": "1분기",
+        "value": 6038.0,
+        "unit": "억원",
+        "value_krw_100m": 6038.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "우리금융지주 - 기업가치 제고를 위해 비은행 자회사 강화 중 기업가치 제고를 위해 비은행 자회사 강화 중 우리금융지주 우리금융지주의 1분기 지배주주순이익은 6,038억원으로 컨센서스를 22."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "키움증권",
+        "title": "우리금융지주 - 빠른 자본비율 상승, 비은행 강화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91936&page=4",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260427_company_106848000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260427_company_106848000.pdf",
+        "target_price": "48,000",
+        "target_price_value": 48000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": 6038.0,
+        "unit": "억원",
+        "value_krw_100m": 6038.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "우리금융지주 - 빠른 자본비율 상승, 비은행 강화 빠른 자본비율 상승, 비은행 강화 우리금융지주 연결순이익 소폭 감소, 비은행은 개선 2026 년 1 분기 연결순이익은 6,038 억원으로 YoY 2."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "한화투자증권",
+        "title": "우리금융지주 - 자본비율 상승과 비은행 확대를 위한 투자",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92026&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260427_company_218939000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260427_company_218939000.pdf",
+        "target_price": "43,000",
+        "target_price_value": 43000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": 6038.0,
+        "unit": "억원",
+        "value_krw_100m": 6038.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "우리금융지주 - 자본비율 상승과 비은행 확대를 위한 투자 자본비율 상승과 비은행 확대를 위한 투자 우리금융지주 1Q26 지배 순익 6,038억원(-2% YoY), 어닝 쇼크 우리금융지주의 1Q26 지배주주 순이익은 6,038억원(-2% YoY)로 컨센서스를 22% 하회하는 어닝 쇼크를…"
       }
     ],
     "opinion_distribution": [
@@ -210,7 +439,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -225,7 +462,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -240,7 +485,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-27",
@@ -255,7 +502,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-27",
@@ -270,7 +519,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.65,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -285,7 +542,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -300,7 +565,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-27",
@@ -315,7 +582,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -330,7 +605,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -345,7 +626,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.9,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -364,7 +647,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -379,7 +668,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -394,7 +691,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-27",
@@ -409,7 +708,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-27",
@@ -424,7 +725,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-27",
@@ -439,7 +742,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.65,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -454,7 +765,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -469,7 +788,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -484,7 +811,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -499,7 +834,179 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.9,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-27",
+      "broker": "iM증권",
+      "title": "우리금융지주 - 자본에 펌핑 들어간다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91948&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_364117000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_364117000.pdf",
+      "target_price": "42,000",
+      "target_price_value": 42000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배순이익",
+      "period": "1Q26",
+      "value": 6038.0,
+      "unit": "억원",
+      "value_krw_100m": 6038.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "우리금융지주 - 자본에 펌핑 들어간다 자본에 펌핑 들어간다 우리금융지주 1Q26 지배순이익 6,038억원(-2."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "교보증권",
+      "title": "우리금융지주 - 1Q26 Review: 그룹내 시너지 효과 본격 가시..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92014&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260427_company_139499000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260427_company_139499000.pdf",
+      "target_price": "40,000",
+      "target_price_value": 40000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": 6038.0,
+      "unit": "억원",
+      "value_krw_100m": 6038.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "우리금융지주 1Q26 연결당기순이익 6,038억원, QoQ 74."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "유안타증권",
+      "title": "우리금융지주 - 기업가치 제고를 위해 비은행 자회사 강화 중",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91996&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260427_company_422522000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260427_company_422522000.pdf",
+      "target_price": "48,000",
+      "target_price_value": 48000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.65,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배주주순이익",
+      "period": "1분기",
+      "value": 6038.0,
+      "unit": "억원",
+      "value_krw_100m": 6038.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "우리금융지주 - 기업가치 제고를 위해 비은행 자회사 강화 중 기업가치 제고를 위해 비은행 자회사 강화 중 우리금융지주 우리금융지주의 1분기 지배주주순이익은 6,038억원으로 컨센서스를 22."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "키움증권",
+      "title": "우리금융지주 - 빠른 자본비율 상승, 비은행 강화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91936&page=4",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260427_company_106848000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260427_company_106848000.pdf",
+      "target_price": "48,000",
+      "target_price_value": 48000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": 6038.0,
+      "unit": "억원",
+      "value_krw_100m": 6038.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "우리금융지주 - 빠른 자본비율 상승, 비은행 강화 빠른 자본비율 상승, 비은행 강화 우리금융지주 연결순이익 소폭 감소, 비은행은 개선 2026 년 1 분기 연결순이익은 6,038 억원으로 YoY 2."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "한화투자증권",
+      "title": "우리금융지주 - 자본비율 상승과 비은행 확대를 위한 투자",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92026&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260427_company_218939000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260427_company_218939000.pdf",
+      "target_price": "43,000",
+      "target_price_value": 43000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": 6038.0,
+      "unit": "억원",
+      "value_krw_100m": 6038.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "우리금융지주 - 자본비율 상승과 비은행 확대를 위한 투자 자본비율 상승과 비은행 확대를 위한 투자 우리금융지주 1Q26 지배 순익 6,038억원(-2% YoY), 어닝 쇼크 우리금융지주의 1Q26 지배주주 순이익은 6,038억원(-2% YoY)로 컨센서스를 22% 하회하는 어닝 쇼크를…"
     }
   ],
   "opinion_distribution": [
@@ -522,7 +1029,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -537,7 +1052,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -552,7 +1075,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-27",
@@ -567,7 +1092,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-27",
@@ -582,7 +1109,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.65,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -597,7 +1132,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -612,7 +1155,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-27",
@@ -627,7 +1172,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -642,7 +1195,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -657,7 +1216,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.9,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -755,7 +1316,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -807,13 +1371,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": "1Q26",
+          "value": 6038.0,
+          "unit": "억원",
+          "source_excerpt": "우리금융지주 - 자본에 펌핑 들어간다 자본에 펌핑 들어간다 우리금융지주 1Q26 지배순이익 6,038억원(-2.",
+          "value_krw_100m": 6038.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -863,13 +1447,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 6038.0,
+          "unit": "억원",
+          "source_excerpt": "우리금융지주 - 빠른 자본비율 상승, 비은행 강화 빠른 자본비율 상승, 비은행 강화 우리금융지주 연결순이익 소폭 감소, 비은행은 개선 2026 년 1 분기 연결순이익은 6,038 억원으로 YoY 2.",
+          "value_krw_100m": 6038.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -918,13 +1526,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -974,13 +1595,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1분기",
+          "value": 6038.0,
+          "unit": "억원",
+          "source_excerpt": "우리금융지주 - 기업가치 제고를 위해 비은행 자회사 강화 중 기업가치 제고를 위해 비은행 자회사 강화 중 우리금융지주 우리금융지주의 1분기 지배주주순이익은 6,038억원으로 컨센서스를 22.",
+          "value_krw_100m": 6038.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1036,7 +1681,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1091,7 +1739,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1139,13 +1790,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 6038.0,
+          "unit": "억원",
+          "source_excerpt": "우리금융지주 - 자본비율 상승과 비은행 확대를 위한 투자 자본비율 상승과 비은행 확대를 위한 투자 우리금융지주 1Q26 지배 순익 6,038억원(-2% YoY), 어닝 쇼크 우리금융지주의 1Q26 지배주주 순이익은 6,038억원(-2% YoY)로 컨센서스를 22% 하회하는 어닝 쇼크를…",
+          "value_krw_100m": 6038.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1193,13 +1868,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 6038.0,
+          "unit": "억원",
+          "source_excerpt": "우리금융지주 1Q26 연결당기순이익 6,038억원, QoQ 74.",
+          "value_krw_100m": 6038.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "recent_changes": [
@@ -1253,13 +1952,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": "1Q26",
+          "value": 6038.0,
+          "unit": "억원",
+          "source_excerpt": "우리금융지주 - 자본에 펌핑 들어간다 자본에 펌핑 들어간다 우리금융지주 1Q26 지배순이익 6,038억원(-2.",
+          "value_krw_100m": 6038.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1309,13 +2028,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 6038.0,
+          "unit": "억원",
+          "source_excerpt": "우리금융지주 - 빠른 자본비율 상승, 비은행 강화 빠른 자본비율 상승, 비은행 강화 우리금융지주 연결순이익 소폭 감소, 비은행은 개선 2026 년 1 분기 연결순이익은 6,038 억원으로 YoY 2.",
+          "value_krw_100m": 6038.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1371,7 +2114,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1420,13 +2166,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1476,13 +2235,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1분기",
+          "value": 6038.0,
+          "unit": "억원",
+          "source_excerpt": "우리금융지주 - 기업가치 제고를 위해 비은행 자회사 강화 중 기업가치 제고를 위해 비은행 자회사 강화 중 우리금융지주 우리금융지주의 1분기 지배주주순이익은 6,038억원으로 컨센서스를 22.",
+          "value_krw_100m": 6038.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1538,7 +2321,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1593,7 +2379,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1641,13 +2430,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 6038.0,
+          "unit": "억원",
+          "source_excerpt": "우리금융지주 - 자본비율 상승과 비은행 확대를 위한 투자 자본비율 상승과 비은행 확대를 위한 투자 우리금융지주 1Q26 지배 순익 6,038억원(-2% YoY), 어닝 쇼크 우리금융지주의 1Q26 지배주주 순이익은 6,038억원(-2% YoY)로 컨센서스를 22% 하회하는 어닝 쇼크를…",
+          "value_krw_100m": 6038.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1695,13 +2508,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 6038.0,
+          "unit": "억원",
+          "source_excerpt": "우리금융지주 1Q26 연결당기순이익 6,038억원, QoQ 74.",
+          "value_krw_100m": 6038.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "timeline": [
@@ -1755,7 +2592,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1807,13 +2647,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": "1Q26",
+          "value": 6038.0,
+          "unit": "억원",
+          "source_excerpt": "우리금융지주 - 자본에 펌핑 들어간다 자본에 펌핑 들어간다 우리금융지주 1Q26 지배순이익 6,038억원(-2.",
+          "value_krw_100m": 6038.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1863,13 +2723,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 6038.0,
+          "unit": "억원",
+          "source_excerpt": "우리금융지주 - 빠른 자본비율 상승, 비은행 강화 빠른 자본비율 상승, 비은행 강화 우리금융지주 연결순이익 소폭 감소, 비은행은 개선 2026 년 1 분기 연결순이익은 6,038 억원으로 YoY 2.",
+          "value_krw_100m": 6038.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1925,7 +2809,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1974,13 +2861,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -2030,13 +2930,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1분기",
+          "value": 6038.0,
+          "unit": "억원",
+          "source_excerpt": "우리금융지주 - 기업가치 제고를 위해 비은행 자회사 강화 중 기업가치 제고를 위해 비은행 자회사 강화 중 우리금융지주 우리금융지주의 1분기 지배주주순이익은 6,038억원으로 컨센서스를 22.",
+          "value_krw_100m": 6038.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -2092,7 +3016,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -2147,7 +3074,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -2195,13 +3125,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 6038.0,
+          "unit": "억원",
+          "source_excerpt": "우리금융지주 - 자본비율 상승과 비은행 확대를 위한 투자 자본비율 상승과 비은행 확대를 위한 투자 우리금융지주 1Q26 지배 순익 6,038억원(-2% YoY), 어닝 쇼크 우리금융지주의 1Q26 지배주주 순이익은 6,038억원(-2% YoY)로 컨센서스를 22% 하회하는 어닝 쇼크를…",
+          "value_krw_100m": 6038.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -2249,13 +3203,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 6038.0,
+          "unit": "억원",
+          "source_excerpt": "우리금융지주 1Q26 연결당기순이익 6,038억원, QoQ 74.",
+          "value_krw_100m": 6038.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ]
 }

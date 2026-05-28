@@ -17,7 +17,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 3,
+    "estimate_signal_reports": 2,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 3,
@@ -46,7 +51,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-28",
@@ -61,7 +72,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 11.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-26",
@@ -76,7 +89,117 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.5,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-28",
+        "broker": "SK증권",
+        "title": "ISC - AI 러버 소켓의 존재감",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92059&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260428_company_568964000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260428_company_568964000.pdf",
+        "target_price": "280,000",
+        "target_price_value": 280000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 10.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 236.0,
+        "unit": "억원",
+        "value_krw_100m": 236.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "ISC - AI 러버 소켓의 존재감 AI 러버 소켓의 존재감 ISC 1Q26 Review 매출액 683 억원(QoQ -6%, YoY +115%), 영업이익 236 억원(QoQ +8%, YoY +238%)를 기록하며 시장 컨센서스를 상회하였다."
+      },
+      {
+        "date": "2026-05-26",
+        "broker": "한화투자증권",
+        "title": "ISC - AI 내러티브, 실적 성장 모두 완벽",
+        "ticker": "095340",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93265&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260526_company_844350000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260526_company_844350000.pdf",
+        "target_price": "300,000",
+        "target_price_value": 300000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.5,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 34.6,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 34.6,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "동사의 1분기 실적은 매출액 683억원(YoY +115%), 영업이익 236억원으로(YoY +237%, OPM 34.6%) 외형과 수익성이 모두 작년 대비 크게 증가."
+      },
+      {
+        "date": "2026-05-26",
+        "broker": "한화투자증권",
+        "title": "ISC - AI 내러티브, 실적 성장 모두 완벽",
+        "ticker": "095340",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93265&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260526_company_844350000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260526_company_844350000.pdf",
+        "target_price": "300,000",
+        "target_price_value": 300000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.5,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 236.0,
+        "unit": "억원",
+        "value_krw_100m": 236.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "동사의 1분기 실적은 매출액 683억원(YoY +115%), 영업이익 236억원으로(YoY +237%, OPM 34."
       }
     ],
     "opinion_distribution": [
@@ -99,7 +222,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.5,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -118,7 +249,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-28",
@@ -133,7 +270,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 11.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-26",
@@ -148,7 +287,117 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.5,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-28",
+      "broker": "SK증권",
+      "title": "ISC - AI 러버 소켓의 존재감",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92059&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260428_company_568964000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260428_company_568964000.pdf",
+      "target_price": "280,000",
+      "target_price_value": 280000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 10.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 236.0,
+      "unit": "억원",
+      "value_krw_100m": 236.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "ISC - AI 러버 소켓의 존재감 AI 러버 소켓의 존재감 ISC 1Q26 Review 매출액 683 억원(QoQ -6%, YoY +115%), 영업이익 236 억원(QoQ +8%, YoY +238%)를 기록하며 시장 컨센서스를 상회하였다."
+    },
+    {
+      "date": "2026-05-26",
+      "broker": "한화투자증권",
+      "title": "ISC - AI 내러티브, 실적 성장 모두 완벽",
+      "ticker": "095340",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93265&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260526_company_844350000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260526_company_844350000.pdf",
+      "target_price": "300,000",
+      "target_price_value": 300000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.5,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 34.6,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 34.6,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "동사의 1분기 실적은 매출액 683억원(YoY +115%), 영업이익 236억원으로(YoY +237%, OPM 34.6%) 외형과 수익성이 모두 작년 대비 크게 증가."
+    },
+    {
+      "date": "2026-05-26",
+      "broker": "한화투자증권",
+      "title": "ISC - AI 내러티브, 실적 성장 모두 완벽",
+      "ticker": "095340",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93265&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260526_company_844350000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260526_company_844350000.pdf",
+      "target_price": "300,000",
+      "target_price_value": 300000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.5,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 236.0,
+      "unit": "억원",
+      "value_krw_100m": 236.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "동사의 1분기 실적은 매출액 683억원(YoY +115%), 영업이익 236억원으로(YoY +237%, OPM 34."
     }
   ],
   "opinion_distribution": [
@@ -171,7 +420,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.5,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -306,12 +563,46 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 236.0,
+          "unit": "억원",
+          "source_excerpt": "동사의 1분기 실적은 매출액 683억원(YoY +115%), 영업이익 236억원으로(YoY +237%, OPM 34.",
+          "value_krw_100m": 236.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 34.6,
+          "unit": "%",
+          "value_pct": 34.6,
+          "source_excerpt": "동사의 1분기 실적은 매출액 683억원(YoY +115%), 영업이익 236억원으로(YoY +237%, OPM 34.6%) 외형과 수익성이 모두 작년 대비 크게 증가."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -368,7 +659,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -420,13 +714,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 236.0,
+          "unit": "억원",
+          "source_excerpt": "ISC - AI 러버 소켓의 존재감 AI 러버 소켓의 존재감 ISC 1Q26 Review 매출액 683 억원(QoQ -6%, YoY +115%), 영업이익 236 억원(QoQ +8%, YoY +238%)를 기록하며 시장 컨센서스를 상회하였다.",
+          "value_krw_100m": 236.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
@@ -541,12 +855,46 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 236.0,
+          "unit": "억원",
+          "source_excerpt": "동사의 1분기 실적은 매출액 683억원(YoY +115%), 영업이익 236억원으로(YoY +237%, OPM 34.",
+          "value_krw_100m": 236.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 34.6,
+          "unit": "%",
+          "value_pct": 34.6,
+          "source_excerpt": "동사의 1분기 실적은 매출액 683억원(YoY +115%), 영업이익 236억원으로(YoY +237%, OPM 34.6%) 외형과 수익성이 모두 작년 대비 크게 증가."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -603,7 +951,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -655,13 +1006,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 236.0,
+          "unit": "억원",
+          "source_excerpt": "ISC - AI 러버 소켓의 존재감 AI 러버 소켓의 존재감 ISC 1Q26 Review 매출액 683 억원(QoQ -6%, YoY +115%), 영업이익 236 억원(QoQ +8%, YoY +238%)를 기록하며 시장 컨센서스를 상회하였다.",
+          "value_krw_100m": 236.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -776,12 +1147,46 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 236.0,
+          "unit": "억원",
+          "source_excerpt": "동사의 1분기 실적은 매출액 683억원(YoY +115%), 영업이익 236억원으로(YoY +237%, OPM 34.",
+          "value_krw_100m": 236.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 34.6,
+          "unit": "%",
+          "value_pct": 34.6,
+          "source_excerpt": "동사의 1분기 실적은 매출액 683억원(YoY +115%), 영업이익 236억원으로(YoY +237%, OPM 34.6%) 외형과 수익성이 모두 작년 대비 크게 증가."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -838,7 +1243,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -890,13 +1298,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 236.0,
+          "unit": "억원",
+          "source_excerpt": "ISC - AI 러버 소켓의 존재감 AI 러버 소켓의 존재감 ISC 1Q26 Review 매출액 683 억원(QoQ -6%, YoY +115%), 영업이익 236 억원(QoQ +8%, YoY +238%)를 기록하며 시장 컨센서스를 상회하였다.",
+          "value_krw_100m": 236.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ]
 }

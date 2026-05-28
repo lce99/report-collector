@@ -18,7 +18,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 3,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 4,
@@ -47,7 +52,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-08",
@@ -62,7 +69,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -77,7 +90,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -92,7 +113,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.94,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-26",
@@ -107,7 +130,325 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-16",
+        "broker": "하나증권",
+        "title": "SK바이오팜 - 1Q26 Pre: 신약 성과로 주목할 한 해",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91628&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260416_company_23090000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260416_company_23090000.pdf",
+        "target_price": "150,000",
+        "target_price_value": 150000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 36.4,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 36.4,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7%, OPM36.4%)으로 전망된다."
+      },
+      {
+        "date": "2026-04-16",
+        "broker": "하나증권",
+        "title": "SK바이오팜 - 1Q26 Pre: 신약 성과로 주목할 한 해",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91628&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260416_company_23090000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260416_company_23090000.pdf",
+        "target_price": "150,000",
+        "target_price_value": 150000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 771.0,
+        "unit": "억원",
+        "value_krw_100m": 771.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%), 영업이익 771억원(YoY+200."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "SK증권",
+        "title": "SK바이오팜 - 마일스톤 유입으로 컨센 상회",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92600&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260508_company_57118000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260508_company_57118000.pdf",
+        "target_price": "160,000",
+        "target_price_value": 160000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 39.4,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 39.4,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7%YoY, +94%QoQ, OPM 39.4%)으로 컨센서스 매출액 2,130 억원 대비 7%, 컨센서스 영업이익 720 억원 대비 24."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "하나증권",
+        "title": "SK바이오팜 - 실적은 여전히 좋은데",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92631&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_449697000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_449697000.pdf",
+        "target_price": "150,000",
+        "target_price_value": 150000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.94,
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 39.4,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 39.4,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0%, OPM39.4%)이다."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "SK증권",
+        "title": "SK바이오팜 - 마일스톤 유입으로 컨센 상회",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92600&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260508_company_57118000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260508_company_57118000.pdf",
+        "target_price": "160,000",
+        "target_price_value": 160000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 898.0,
+        "unit": "억원",
+        "value_krw_100m": 898.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%QoQ), 영업이익은 898 억원(+249."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "SK증권",
+        "title": "SK바이오팜 - 마일스톤 유입으로 컨센 상회",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92600&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260508_company_57118000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260508_company_57118000.pdf",
+        "target_price": "160,000",
+        "target_price_value": 160000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 720.0,
+        "unit": "억원",
+        "value_krw_100m": 720.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4%)으로 컨센서스 매출액 2,130 억원 대비 7%, 컨센서스 영업이익 720 억원 대비 24."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "하나증권",
+        "title": "SK바이오팜 - 실적은 여전히 좋은데",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92631&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_449697000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_449697000.pdf",
+        "target_price": "150,000",
+        "target_price_value": 150000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.94,
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 898.0,
+        "unit": "억원",
+        "value_krw_100m": 898.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%), 영업이익 898억원(YoY+249."
+      },
+      {
+        "date": "2026-05-26",
+        "broker": "DS투자증권",
+        "title": "SK바이오팜 - 견조한 엑스코프리의 성장세 확인",
+        "ticker": "326030",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93270&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_85885000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_85885000.pdf",
+        "target_price": "145,000",
+        "target_price_value": 145000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 39.4,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 39.4,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4% YoY, OPM 39.4%)을 기록하였다."
+      },
+      {
+        "date": "2026-05-26",
+        "broker": "DS투자증권",
+        "title": "SK바이오팜 - 견조한 엑스코프리의 성장세 확인",
+        "ticker": "326030",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93270&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_85885000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_85885000.pdf",
+        "target_price": "145,000",
+        "target_price_value": 145000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 748.0,
+        "unit": "억원",
+        "value_krw_100m": 748.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "이는 당사 추정치 매출액 약 1,975억원 및 영업이익 약 748억원, 컨센서스 매출액 약 2,130억원 및 영업이익 약 720억원 대비 대폭 상회한 수치다."
+      },
+      {
+        "date": "2026-05-26",
+        "broker": "DS투자증권",
+        "title": "SK바이오팜 - 견조한 엑스코프리의 성장세 확인",
+        "ticker": "326030",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93270&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_85885000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_85885000.pdf",
+        "target_price": "145,000",
+        "target_price_value": 145000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 720.0,
+        "unit": "억원",
+        "value_krw_100m": 720.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "이는 당사 추정치 매출액 약 1,975억원 및 영업이익 약 748억원, 컨센서스 매출액 약 2,130억원 및 영업이익 약 720억원 대비 대폭 상회한 수치다."
       }
     ],
     "opinion_distribution": [
@@ -130,7 +471,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -149,7 +496,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-08",
@@ -164,7 +513,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -179,7 +534,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -194,7 +557,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.94,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-26",
@@ -209,7 +574,325 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-16",
+      "broker": "하나증권",
+      "title": "SK바이오팜 - 1Q26 Pre: 신약 성과로 주목할 한 해",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91628&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260416_company_23090000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260416_company_23090000.pdf",
+      "target_price": "150,000",
+      "target_price_value": 150000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 36.4,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 36.4,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7%, OPM36.4%)으로 전망된다."
+    },
+    {
+      "date": "2026-04-16",
+      "broker": "하나증권",
+      "title": "SK바이오팜 - 1Q26 Pre: 신약 성과로 주목할 한 해",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91628&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260416_company_23090000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260416_company_23090000.pdf",
+      "target_price": "150,000",
+      "target_price_value": 150000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 771.0,
+      "unit": "억원",
+      "value_krw_100m": 771.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%), 영업이익 771억원(YoY+200."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "SK증권",
+      "title": "SK바이오팜 - 마일스톤 유입으로 컨센 상회",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92600&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260508_company_57118000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260508_company_57118000.pdf",
+      "target_price": "160,000",
+      "target_price_value": 160000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 39.4,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 39.4,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7%YoY, +94%QoQ, OPM 39.4%)으로 컨센서스 매출액 2,130 억원 대비 7%, 컨센서스 영업이익 720 억원 대비 24."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "하나증권",
+      "title": "SK바이오팜 - 실적은 여전히 좋은데",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92631&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_449697000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_449697000.pdf",
+      "target_price": "150,000",
+      "target_price_value": 150000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.94,
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 39.4,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 39.4,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0%, OPM39.4%)이다."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "SK증권",
+      "title": "SK바이오팜 - 마일스톤 유입으로 컨센 상회",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92600&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260508_company_57118000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260508_company_57118000.pdf",
+      "target_price": "160,000",
+      "target_price_value": 160000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 898.0,
+      "unit": "억원",
+      "value_krw_100m": 898.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%QoQ), 영업이익은 898 억원(+249."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "SK증권",
+      "title": "SK바이오팜 - 마일스톤 유입으로 컨센 상회",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92600&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260508_company_57118000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260508_company_57118000.pdf",
+      "target_price": "160,000",
+      "target_price_value": 160000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 720.0,
+      "unit": "억원",
+      "value_krw_100m": 720.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4%)으로 컨센서스 매출액 2,130 억원 대비 7%, 컨센서스 영업이익 720 억원 대비 24."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "하나증권",
+      "title": "SK바이오팜 - 실적은 여전히 좋은데",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92631&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_449697000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_449697000.pdf",
+      "target_price": "150,000",
+      "target_price_value": 150000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.94,
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 898.0,
+      "unit": "억원",
+      "value_krw_100m": 898.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%), 영업이익 898억원(YoY+249."
+    },
+    {
+      "date": "2026-05-26",
+      "broker": "DS투자증권",
+      "title": "SK바이오팜 - 견조한 엑스코프리의 성장세 확인",
+      "ticker": "326030",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93270&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_85885000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_85885000.pdf",
+      "target_price": "145,000",
+      "target_price_value": 145000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 39.4,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 39.4,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4% YoY, OPM 39.4%)을 기록하였다."
+    },
+    {
+      "date": "2026-05-26",
+      "broker": "DS투자증권",
+      "title": "SK바이오팜 - 견조한 엑스코프리의 성장세 확인",
+      "ticker": "326030",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93270&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_85885000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_85885000.pdf",
+      "target_price": "145,000",
+      "target_price_value": 145000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 748.0,
+      "unit": "억원",
+      "value_krw_100m": 748.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "이는 당사 추정치 매출액 약 1,975억원 및 영업이익 약 748억원, 컨센서스 매출액 약 2,130억원 및 영업이익 약 720억원 대비 대폭 상회한 수치다."
+    },
+    {
+      "date": "2026-05-26",
+      "broker": "DS투자증권",
+      "title": "SK바이오팜 - 견조한 엑스코프리의 성장세 확인",
+      "ticker": "326030",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93270&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_85885000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260526_company_85885000.pdf",
+      "target_price": "145,000",
+      "target_price_value": 145000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 720.0,
+      "unit": "억원",
+      "value_krw_100m": 720.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "이는 당사 추정치 매출액 약 1,975억원 및 영업이익 약 748억원, 컨센서스 매출액 약 2,130억원 및 영업이익 약 720억원 대비 대폭 상회한 수치다."
     }
   ],
   "opinion_distribution": [
@@ -232,7 +915,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -352,12 +1041,52 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 748.0,
+          "unit": "억원",
+          "source_excerpt": "이는 당사 추정치 매출액 약 1,975억원 및 영업이익 약 748억원, 컨센서스 매출액 약 2,130억원 및 영업이익 약 720억원 대비 대폭 상회한 수치다.",
+          "value_krw_100m": 748.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 720.0,
+          "unit": "억원",
+          "source_excerpt": "이는 당사 추정치 매출액 약 1,975억원 및 영업이익 약 748억원, 컨센서스 매출액 약 2,130억원 및 영업이익 약 720억원 대비 대폭 상회한 수치다.",
+          "value_krw_100m": 720.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 39.4,
+          "unit": "%",
+          "value_pct": 39.4,
+          "source_excerpt": "4% YoY, OPM 39.4%)을 기록하였다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -410,7 +1139,31 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 898.0,
+          "unit": "억원",
+          "source_excerpt": "2%), 영업이익 898억원(YoY+249.",
+          "value_krw_100m": 898.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 39.4,
+          "unit": "%",
+          "value_pct": 39.4,
+          "source_excerpt": "0%, OPM39.4%)이다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -462,13 +1215,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -520,13 +1282,57 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 898.0,
+          "unit": "억원",
+          "source_excerpt": "2%QoQ), 영업이익은 898 억원(+249.",
+          "value_krw_100m": 898.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 720.0,
+          "unit": "억원",
+          "source_excerpt": "4%)으로 컨센서스 매출액 2,130 억원 대비 7%, 컨센서스 영업이익 720 억원 대비 24.",
+          "value_krw_100m": 720.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 39.4,
+          "unit": "%",
+          "value_pct": 39.4,
+          "source_excerpt": "7%YoY, +94%QoQ, OPM 39.4%)으로 컨센서스 매출액 2,130 억원 대비 7%, 컨센서스 영업이익 720 억원 대비 24."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "recent_changes": [
@@ -622,12 +1428,52 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 748.0,
+          "unit": "억원",
+          "source_excerpt": "이는 당사 추정치 매출액 약 1,975억원 및 영업이익 약 748억원, 컨센서스 매출액 약 2,130억원 및 영업이익 약 720억원 대비 대폭 상회한 수치다.",
+          "value_krw_100m": 748.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 720.0,
+          "unit": "억원",
+          "source_excerpt": "이는 당사 추정치 매출액 약 1,975억원 및 영업이익 약 748억원, 컨센서스 매출액 약 2,130억원 및 영업이익 약 720억원 대비 대폭 상회한 수치다.",
+          "value_krw_100m": 720.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 39.4,
+          "unit": "%",
+          "value_pct": 39.4,
+          "source_excerpt": "4% YoY, OPM 39.4%)을 기록하였다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -679,13 +1525,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -737,13 +1592,57 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 898.0,
+          "unit": "억원",
+          "source_excerpt": "2%QoQ), 영업이익은 898 억원(+249.",
+          "value_krw_100m": 898.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 720.0,
+          "unit": "억원",
+          "source_excerpt": "4%)으로 컨센서스 매출액 2,130 억원 대비 7%, 컨센서스 영업이익 720 억원 대비 24.",
+          "value_krw_100m": 720.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 39.4,
+          "unit": "%",
+          "value_pct": 39.4,
+          "source_excerpt": "7%YoY, +94%QoQ, OPM 39.4%)으로 컨센서스 매출액 2,130 억원 대비 7%, 컨센서스 영업이익 720 억원 대비 24."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "timeline": [
@@ -839,12 +1738,52 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 748.0,
+          "unit": "억원",
+          "source_excerpt": "이는 당사 추정치 매출액 약 1,975억원 및 영업이익 약 748억원, 컨센서스 매출액 약 2,130억원 및 영업이익 약 720억원 대비 대폭 상회한 수치다.",
+          "value_krw_100m": 748.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 720.0,
+          "unit": "억원",
+          "source_excerpt": "이는 당사 추정치 매출액 약 1,975억원 및 영업이익 약 748억원, 컨센서스 매출액 약 2,130억원 및 영업이익 약 720억원 대비 대폭 상회한 수치다.",
+          "value_krw_100m": 720.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 39.4,
+          "unit": "%",
+          "value_pct": 39.4,
+          "source_excerpt": "4% YoY, OPM 39.4%)을 기록하였다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -897,7 +1836,31 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 898.0,
+          "unit": "억원",
+          "source_excerpt": "2%), 영업이익 898억원(YoY+249.",
+          "value_krw_100m": 898.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 39.4,
+          "unit": "%",
+          "value_pct": 39.4,
+          "source_excerpt": "0%, OPM39.4%)이다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -949,13 +1912,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1007,13 +1979,57 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 898.0,
+          "unit": "억원",
+          "source_excerpt": "2%QoQ), 영업이익은 898 억원(+249.",
+          "value_krw_100m": 898.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 720.0,
+          "unit": "억원",
+          "source_excerpt": "4%)으로 컨센서스 매출액 2,130 억원 대비 7%, 컨센서스 영업이익 720 억원 대비 24.",
+          "value_krw_100m": 720.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 39.4,
+          "unit": "%",
+          "value_pct": 39.4,
+          "source_excerpt": "7%YoY, +94%QoQ, OPM 39.4%)으로 컨센서스 매출액 2,130 억원 대비 7%, 컨센서스 영업이익 720 억원 대비 24."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1052,6 +2068,30 @@
       "ticker": null,
       "target_price_value": 150000,
       "opinion_normalized": "buy",
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 771.0,
+          "unit": "억원",
+          "source_excerpt": "2%), 영업이익 771억원(YoY+200.",
+          "value_krw_100m": 771.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 36.4,
+          "unit": "%",
+          "value_pct": 36.4,
+          "source_excerpt": "7%, OPM36.4%)으로 전망된다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false

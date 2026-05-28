@@ -19,7 +19,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 5
+    "coverage_initiated": 5,
+    "estimate_signal_reports": 4,
+    "earnings_estimate_up": 1,
+    "earnings_estimate_down": 2,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 3
   },
   "target_summary": {
     "count": 5,
@@ -48,7 +53,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -63,7 +76,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-06",
@@ -78,7 +97,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-06",
@@ -93,7 +120,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-06",
@@ -108,7 +137,237 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-04",
+        "broker": "대신증권",
+        "title": "현대오토에버 - 계절적인 비시즌",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92362&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260504_company_379166000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260504_company_379166000.pdf",
+        "target_price": "560,000",
+        "target_price_value": 560000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.55,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "eps",
+        "metric_group": "earnings",
+        "label": "EPS",
+        "period": "2027년",
+        "value": 10657.0,
+        "unit": "원",
+        "value_krw_100m": null,
+        "value_pct": null,
+        "value_won": 10657.0,
+        "change_pctp": null,
+        "source_excerpt": "현대오토에버 - 계절적인 비시즌 계절적인 비시즌 현대오토에버 투자의견 매수, 목표주가 560,000원 유지 TP 56만원은 2027년 EPS 10,657 원에 Target PER 53배(자율주행 수혜 기대감 반영됐던 2021년 밸류 최상단) 적용."
+      },
+      {
+        "date": "2026-05-06",
+        "broker": "교보증권",
+        "title": "현대오토에버 - 1Q26 Review: 큰 그림은 변함없다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92496&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_461226000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_461226000.pdf",
+        "target_price": "540,000",
+        "target_price_value": 540000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 2.3,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 2.3,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7% YoY, OPM 2.3%)으로 컨센서스(Fnguide 매출액 9,382억원, 영업이익 406억원) 대비 매출액 부합, 수익성 쇼크 기록."
+      },
+      {
+        "date": "2026-05-06",
+        "broker": "유진투자증권",
+        "title": "현대오토에버 - 1Q26 Review: 매출 이연 효과일 뿐 방향성은 ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92461&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_641651000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_641651000.pdf",
+        "target_price": "700,000",
+        "target_price_value": 700000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 2.9,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 2.9,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8%yoy, OPM 2.9%), 지배이익 180억원으로 컨센서스를 하회하는 실적 쇼크를 기록."
+      },
+      {
+        "date": "2026-05-06",
+        "broker": "DS투자증권",
+        "title": "현대오토에버 - 단기 노이즈보다 중기 모멘텀에 주목",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92499&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260506_company_555366000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260506_company_555366000.pdf",
+        "target_price": "530,000",
+        "target_price_value": 530000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 10.8,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 212.0,
+        "unit": "억원",
+        "value_krw_100m": 212.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3% 이하 YoY), 영업이익 212억원(-20."
+      },
+      {
+        "date": "2026-05-06",
+        "broker": "교보증권",
+        "title": "현대오토에버 - 1Q26 Review: 큰 그림은 변함없다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92496&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_461226000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_461226000.pdf",
+        "target_price": "540,000",
+        "target_price_value": 540000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 212.0,
+        "unit": "억원",
+        "value_krw_100m": 212.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3% YoY), 영업이익 212억원(-20."
+      },
+      {
+        "date": "2026-05-06",
+        "broker": "교보증권",
+        "title": "현대오토에버 - 1Q26 Review: 큰 그림은 변함없다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92496&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_461226000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_461226000.pdf",
+        "target_price": "540,000",
+        "target_price_value": 540000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 406.0,
+        "unit": "억원",
+        "value_krw_100m": 406.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3%)으로 컨센서스(Fnguide 매출액 9,382억원, 영업이익 406억원) 대비 매출액 부합, 수익성 쇼크 기록."
+      },
+      {
+        "date": "2026-05-06",
+        "broker": "유진투자증권",
+        "title": "현대오토에버 - 1Q26 Review: 매출 이연 효과일 뿐 방향성은 ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92461&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_641651000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_641651000.pdf",
+        "target_price": "700,000",
+        "target_price_value": 700000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 210.0,
+        "unit": "억원",
+        "value_krw_100m": 210.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3%yoy), 영업이익 210억원(-20."
       }
     ],
     "opinion_distribution": [
@@ -131,7 +390,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -146,7 +411,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-06",
@@ -161,7 +434,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-06",
@@ -176,7 +451,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-06",
@@ -191,7 +474,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       }
     ],
     "window_days": 14
@@ -210,7 +501,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -225,7 +524,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-06",
@@ -240,7 +545,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-06",
@@ -255,7 +568,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-06",
@@ -270,7 +585,237 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-04",
+      "broker": "대신증권",
+      "title": "현대오토에버 - 계절적인 비시즌",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92362&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260504_company_379166000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260504_company_379166000.pdf",
+      "target_price": "560,000",
+      "target_price_value": 560000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.55,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "eps",
+      "metric_group": "earnings",
+      "label": "EPS",
+      "period": "2027년",
+      "value": 10657.0,
+      "unit": "원",
+      "value_krw_100m": null,
+      "value_pct": null,
+      "value_won": 10657.0,
+      "change_pctp": null,
+      "source_excerpt": "현대오토에버 - 계절적인 비시즌 계절적인 비시즌 현대오토에버 투자의견 매수, 목표주가 560,000원 유지 TP 56만원은 2027년 EPS 10,657 원에 Target PER 53배(자율주행 수혜 기대감 반영됐던 2021년 밸류 최상단) 적용."
+    },
+    {
+      "date": "2026-05-06",
+      "broker": "교보증권",
+      "title": "현대오토에버 - 1Q26 Review: 큰 그림은 변함없다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92496&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_461226000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_461226000.pdf",
+      "target_price": "540,000",
+      "target_price_value": 540000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 2.3,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 2.3,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7% YoY, OPM 2.3%)으로 컨센서스(Fnguide 매출액 9,382억원, 영업이익 406억원) 대비 매출액 부합, 수익성 쇼크 기록."
+    },
+    {
+      "date": "2026-05-06",
+      "broker": "유진투자증권",
+      "title": "현대오토에버 - 1Q26 Review: 매출 이연 효과일 뿐 방향성은 ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92461&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_641651000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_641651000.pdf",
+      "target_price": "700,000",
+      "target_price_value": 700000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 2.9,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 2.9,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8%yoy, OPM 2.9%), 지배이익 180억원으로 컨센서스를 하회하는 실적 쇼크를 기록."
+    },
+    {
+      "date": "2026-05-06",
+      "broker": "DS투자증권",
+      "title": "현대오토에버 - 단기 노이즈보다 중기 모멘텀에 주목",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92499&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260506_company_555366000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260506_company_555366000.pdf",
+      "target_price": "530,000",
+      "target_price_value": 530000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 10.8,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 212.0,
+      "unit": "억원",
+      "value_krw_100m": 212.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3% 이하 YoY), 영업이익 212억원(-20."
+    },
+    {
+      "date": "2026-05-06",
+      "broker": "교보증권",
+      "title": "현대오토에버 - 1Q26 Review: 큰 그림은 변함없다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92496&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_461226000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_461226000.pdf",
+      "target_price": "540,000",
+      "target_price_value": 540000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 212.0,
+      "unit": "억원",
+      "value_krw_100m": 212.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3% YoY), 영업이익 212억원(-20."
+    },
+    {
+      "date": "2026-05-06",
+      "broker": "교보증권",
+      "title": "현대오토에버 - 1Q26 Review: 큰 그림은 변함없다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92496&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_461226000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_461226000.pdf",
+      "target_price": "540,000",
+      "target_price_value": 540000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 406.0,
+      "unit": "억원",
+      "value_krw_100m": 406.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3%)으로 컨센서스(Fnguide 매출액 9,382억원, 영업이익 406억원) 대비 매출액 부합, 수익성 쇼크 기록."
+    },
+    {
+      "date": "2026-05-06",
+      "broker": "유진투자증권",
+      "title": "현대오토에버 - 1Q26 Review: 매출 이연 효과일 뿐 방향성은 ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92461&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_641651000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_641651000.pdf",
+      "target_price": "700,000",
+      "target_price_value": 700000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 210.0,
+      "unit": "억원",
+      "value_krw_100m": 210.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3%yoy), 영업이익 210억원(-20."
     }
   ],
   "opinion_distribution": [
@@ -293,7 +838,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -308,7 +859,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-06",
@@ -323,7 +882,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-06",
@@ -338,7 +899,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-06",
@@ -353,7 +922,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "broker_summary": [
@@ -438,13 +1015,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 212.0,
+          "unit": "억원",
+          "source_excerpt": "3% 이하 YoY), 영업이익 212억원(-20.",
+          "value_krw_100m": 212.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -497,13 +1098,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 210.0,
+          "unit": "억원",
+          "source_excerpt": "3%yoy), 영업이익 210억원(-20.",
+          "value_krw_100m": 210.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.9,
+          "unit": "%",
+          "value_pct": 2.9,
+          "source_excerpt": "8%yoy, OPM 2.9%), 지배이익 180억원으로 컨센서스를 하회하는 실적 쇼크를 기록."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -559,7 +1194,41 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 212.0,
+          "unit": "억원",
+          "source_excerpt": "3% YoY), 영업이익 212억원(-20.",
+          "value_krw_100m": 212.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 406.0,
+          "unit": "억원",
+          "source_excerpt": "3%)으로 컨센서스(Fnguide 매출액 9,382억원, 영업이익 406억원) 대비 매출액 부합, 수익성 쇼크 기록.",
+          "value_krw_100m": 406.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.3,
+          "unit": "%",
+          "value_pct": 2.3,
+          "source_excerpt": "7% YoY, OPM 2.3%)으로 컨센서스(Fnguide 매출액 9,382억원, 영업이익 406억원) 대비 매출액 부합, 수익성 쇼크 기록."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -613,13 +1282,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": "2027년",
+          "value": 10657.0,
+          "unit": "원",
+          "source_excerpt": "현대오토에버 - 계절적인 비시즌 계절적인 비시즌 현대오토에버 투자의견 매수, 목표주가 560,000원 유지 TP 56만원은 2027년 EPS 10,657 원에 Target PER 53배(자율주행 수혜 기대감 반영됐던 2021년 밸류 최상단) 적용.",
+          "value_won": 10657.0
+        }
+      ],
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -669,13 +1362,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
@@ -732,13 +1434,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 212.0,
+          "unit": "억원",
+          "source_excerpt": "3% 이하 YoY), 영업이익 212억원(-20.",
+          "value_krw_100m": 212.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -791,13 +1517,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 210.0,
+          "unit": "억원",
+          "source_excerpt": "3%yoy), 영업이익 210억원(-20.",
+          "value_krw_100m": 210.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.9,
+          "unit": "%",
+          "value_pct": 2.9,
+          "source_excerpt": "8%yoy, OPM 2.9%), 지배이익 180억원으로 컨센서스를 하회하는 실적 쇼크를 기록."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -853,7 +1613,41 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 212.0,
+          "unit": "억원",
+          "source_excerpt": "3% YoY), 영업이익 212억원(-20.",
+          "value_krw_100m": 212.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 406.0,
+          "unit": "억원",
+          "source_excerpt": "3%)으로 컨센서스(Fnguide 매출액 9,382억원, 영업이익 406억원) 대비 매출액 부합, 수익성 쇼크 기록.",
+          "value_krw_100m": 406.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.3,
+          "unit": "%",
+          "value_pct": 2.3,
+          "source_excerpt": "7% YoY, OPM 2.3%)으로 컨센서스(Fnguide 매출액 9,382억원, 영업이익 406억원) 대비 매출액 부합, 수익성 쇼크 기록."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -907,13 +1701,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": "2027년",
+          "value": 10657.0,
+          "unit": "원",
+          "source_excerpt": "현대오토에버 - 계절적인 비시즌 계절적인 비시즌 현대오토에버 투자의견 매수, 목표주가 560,000원 유지 TP 56만원은 2027년 EPS 10,657 원에 Target PER 53배(자율주행 수혜 기대감 반영됐던 2021년 밸류 최상단) 적용.",
+          "value_won": 10657.0
+        }
+      ],
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -963,13 +1781,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -1026,13 +1853,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 212.0,
+          "unit": "억원",
+          "source_excerpt": "3% 이하 YoY), 영업이익 212억원(-20.",
+          "value_krw_100m": 212.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1085,13 +1936,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 210.0,
+          "unit": "억원",
+          "source_excerpt": "3%yoy), 영업이익 210억원(-20.",
+          "value_krw_100m": 210.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.9,
+          "unit": "%",
+          "value_pct": 2.9,
+          "source_excerpt": "8%yoy, OPM 2.9%), 지배이익 180억원으로 컨센서스를 하회하는 실적 쇼크를 기록."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1147,7 +2032,41 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 212.0,
+          "unit": "억원",
+          "source_excerpt": "3% YoY), 영업이익 212억원(-20.",
+          "value_krw_100m": 212.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 406.0,
+          "unit": "억원",
+          "source_excerpt": "3%)으로 컨센서스(Fnguide 매출액 9,382억원, 영업이익 406억원) 대비 매출액 부합, 수익성 쇼크 기록.",
+          "value_krw_100m": 406.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.3,
+          "unit": "%",
+          "value_pct": 2.3,
+          "source_excerpt": "7% YoY, OPM 2.3%)으로 컨센서스(Fnguide 매출액 9,382억원, 영업이익 406억원) 대비 매출액 부합, 수익성 쇼크 기록."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1201,13 +2120,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": "2027년",
+          "value": 10657.0,
+          "unit": "원",
+          "source_excerpt": "현대오토에버 - 계절적인 비시즌 계절적인 비시즌 현대오토에버 투자의견 매수, 목표주가 560,000원 유지 TP 56만원은 2027년 EPS 10,657 원에 Target PER 53배(자율주행 수혜 기대감 반영됐던 2021년 밸류 최상단) 적용.",
+          "value_won": 10657.0
+        }
+      ],
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1257,13 +2200,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ]
 }

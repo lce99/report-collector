@@ -10,14 +10,19 @@
     "키움증권"
   ],
   "change_summary": {
-    "changed_reports": 2,
+    "changed_reports": 4,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 2
+    "coverage_initiated": 2,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 2,
@@ -46,7 +51,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.65,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -61,7 +74,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-08",
@@ -76,7 +91,185 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.85,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-21",
+        "broker": "유안타증권",
+        "title": "KT&G - 1Q26 Pre: 실적도, 주당가치도 오른다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91741&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260421_company_285084000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260421_company_285084000.pdf",
+        "target_price": "210,000",
+        "target_price_value": 210000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.65,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 20.6,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 20.6,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "1%, OPM 20.6%)을 기록하며 컨센서스를 소폭 상회할 것으로 전망한다."
+      },
+      {
+        "date": "2026-04-21",
+        "broker": "유안타증권",
+        "title": "KT&G - 1Q26 Pre: 실적도, 주당가치도 오른다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91741&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260421_company_285084000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260421_company_285084000.pdf",
+        "target_price": "210,000",
+        "target_price_value": 210000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.65,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 3516.0,
+        "unit": "억원",
+        "value_krw_100m": 3516.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4%), 영업이익 3,516억원(YoY +23."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "유안타증권",
+        "title": "KT&G - 이익 체력 개선, 다음은 배당 강화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92612&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_821147000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_821147000.pdf",
+        "target_price": "210,000",
+        "target_price_value": 210000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 21.4,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 21.4,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6%, OPM 21.4%)을 기록했다."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "유안타증권",
+        "title": "KT&G - 이익 체력 개선, 다음은 배당 강화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92612&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_821147000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_821147000.pdf",
+        "target_price": "210,000",
+        "target_price_value": 210000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 3645.0,
+        "unit": "억원",
+        "value_krw_100m": 3645.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3%), 영업이익 3,645억원(YoY +27."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "키움증권",
+        "title": "KT&G - 하반기에 발표될 배당 강화 정책에 주목",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92571&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_627874000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_627874000.pdf",
+        "target_price": null,
+        "target_price_value": null,
+        "opinion": null,
+        "opinion_normalized": null,
+        "score": 7.9,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 3645.0,
+        "unit": "억원",
+        "value_krw_100m": 3645.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "KT&G - 하반기에 발표될 배당 강화 정책에 주목 하반기에 발표될 배당 강화 정책에 주목 KT&G ◎ 1분기 연결기준 영업이익 3,645억원으로 시장 컨센서스 소폭 상회 >> 해외궐련 ASP 및 판매량 증가와 담배 원재료 투입단가 상승 부담 둔화로 시장 기대치 소폭 상회 판단 >>…"
       }
     ],
     "opinion_distribution": [
@@ -99,7 +292,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.85,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -114,7 +315,13 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 7.9,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -129,7 +336,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -148,7 +357,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.65,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -163,7 +380,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-08",
@@ -178,7 +397,185 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.85,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-21",
+      "broker": "유안타증권",
+      "title": "KT&G - 1Q26 Pre: 실적도, 주당가치도 오른다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91741&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260421_company_285084000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260421_company_285084000.pdf",
+      "target_price": "210,000",
+      "target_price_value": 210000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.65,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 20.6,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 20.6,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "1%, OPM 20.6%)을 기록하며 컨센서스를 소폭 상회할 것으로 전망한다."
+    },
+    {
+      "date": "2026-04-21",
+      "broker": "유안타증권",
+      "title": "KT&G - 1Q26 Pre: 실적도, 주당가치도 오른다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91741&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260421_company_285084000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260421_company_285084000.pdf",
+      "target_price": "210,000",
+      "target_price_value": 210000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.65,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 3516.0,
+      "unit": "억원",
+      "value_krw_100m": 3516.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4%), 영업이익 3,516억원(YoY +23."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "유안타증권",
+      "title": "KT&G - 이익 체력 개선, 다음은 배당 강화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92612&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_821147000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_821147000.pdf",
+      "target_price": "210,000",
+      "target_price_value": 210000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 21.4,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 21.4,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6%, OPM 21.4%)을 기록했다."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "유안타증권",
+      "title": "KT&G - 이익 체력 개선, 다음은 배당 강화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92612&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_821147000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_821147000.pdf",
+      "target_price": "210,000",
+      "target_price_value": 210000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 3645.0,
+      "unit": "억원",
+      "value_krw_100m": 3645.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3%), 영업이익 3,645억원(YoY +27."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "키움증권",
+      "title": "KT&G - 하반기에 발표될 배당 강화 정책에 주목",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92571&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_627874000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_627874000.pdf",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "score": 7.9,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 3645.0,
+      "unit": "억원",
+      "value_krw_100m": 3645.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "KT&G - 하반기에 발표될 배당 강화 정책에 주목 하반기에 발표될 배당 강화 정책에 주목 KT&G ◎ 1분기 연결기준 영업이익 3,645억원으로 시장 컨센서스 소폭 상회 >> 해외궐련 ASP 및 판매량 증가와 담배 원재료 투입단가 상승 부담 둔화로 시장 기대치 소폭 상회 판단 >>…"
     }
   ],
   "opinion_distribution": [
@@ -201,7 +598,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.85,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -216,7 +621,13 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 7.9,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -231,7 +642,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -309,7 +722,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -359,10 +775,32 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3645.0,
+          "unit": "억원",
+          "source_excerpt": "KT&G - 하반기에 발표될 배당 강화 정책에 주목 하반기에 발표될 배당 강화 정책에 주목 KT&G ◎ 1분기 연결기준 영업이익 3,645억원으로 시장 컨센서스 소폭 상회 >> 해외궐련 ASP 및 판매량 증가와 담배 원재료 투입단가 상승 부담 둔화로 시장 기대치 소폭 상회 판단 >>…",
+          "value_krw_100m": 3645.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -411,10 +849,46 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3645.0,
+          "unit": "억원",
+          "source_excerpt": "3%), 영업이익 3,645억원(YoY +27.",
+          "value_krw_100m": 3645.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 21.4,
+          "unit": "%",
+          "value_pct": 21.4,
+          "source_excerpt": "6%, OPM 21.4%)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "recent_changes": [
@@ -472,7 +946,173 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92571",
+      "title": "하반기에 발표될 배당 강화 정책에 주목",
+      "display_title": "KT&G - 하반기에 발표될 배당 강화 정책에 주목",
+      "broker": "키움증권",
+      "published_date": "2026-05-08",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92571&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_627874000.pdf",
+      "subject": "KT&G",
+      "subject_key": "kt-g",
+      "views": 761,
+      "analyst": null,
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "◎ 1분기 연결기준 영업이익 3,645억원으로 시장 컨센서스 소폭 상회 >> 해외궐련 ASP 및 판매량 증가와 담배 원재료 투입단가 상승 부담 둔화로 시장 기대치 소폭 상회 판단",
+      "summary": "◎ 1분기 연결기준 영업이익 3,645억원으로 시장 컨센서스 소폭 상회 >> 해외궐련 ASP 및 판매량 증가와 담배 원재료 투입단가 상승 부담 둔화로 시장 기대치 소폭 상회 판단 >> 하반기로 갈수록 원재료 투입단가 안정화되고, 해외 생산 비중 확대되면서, 담배 부문의 수익 구조 개선 전망",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 7.9,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "우선 추적 증권사",
+        "본문 정보량 풍부",
+        "PDF 본문 확보"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3645.0,
+          "unit": "억원",
+          "source_excerpt": "KT&G - 하반기에 발표될 배당 강화 정책에 주목 하반기에 발표될 배당 강화 정책에 주목 KT&G ◎ 1분기 연결기준 영업이익 3,645억원으로 시장 컨센서스 소폭 상회 >> 해외궐련 ASP 및 판매량 증가와 담배 원재료 투입단가 상승 부담 둔화로 시장 기대치 소폭 상회 판단 >>…",
+          "value_krw_100m": 3645.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92612",
+      "title": "이익 체력 개선, 다음은 배당 강화",
+      "display_title": "KT&G - 이익 체력 개선, 다음은 배당 강화",
+      "broker": "유안타증권",
+      "published_date": "2026-05-08",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92612&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_821147000.pdf",
+      "subject": "KT&G",
+      "subject_key": "kt-g",
+      "views": 298,
+      "analyst": null,
+      "target_price": "210,000",
+      "target_price_value": 210000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "1Q26 Review: 영업이익 컨센서스 소폭 상회 KT&G는 1Q26 연결 매출액 1조 7,036억원(YoY +14.3%), 영업이익 3,645억원(YoY +27.6%, OPM 21.4%)을 기록했다.",
+      "summary": "1Q26 Review: 영업이익 컨센서스 소폭 상회 KT&G는 1Q26 연결 매출액 1조 7,036억원(YoY +14.3%), 영업이익 3,645억원(YoY +27.6%, OPM 21.4%)을 기록했다. 매출보다 이익 증가율이 높게 나타나며 전사 수익성 개선을 확인했다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 7.85,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "우선 추적 증권사"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-04-21",
+      "previous_target_price": "210,000",
+      "previous_opinion": "Buy",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3645.0,
+          "unit": "억원",
+          "source_excerpt": "3%), 영업이익 3,645억원(YoY +27.",
+          "value_krw_100m": 3645.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 21.4,
+          "unit": "%",
+          "value_pct": 21.4,
+          "source_excerpt": "6%, OPM 21.4%)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -521,13 +1161,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3516.0,
+          "unit": "억원",
+          "source_excerpt": "4%), 영업이익 3,516억원(YoY +23.",
+          "value_krw_100m": 3516.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 20.6,
+          "unit": "%",
+          "value_pct": 20.6,
+          "source_excerpt": "1%, OPM 20.6%)을 기록하며 컨센서스를 소폭 상회할 것으로 전망한다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "timeline": [
@@ -585,7 +1259,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -635,10 +1312,32 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3645.0,
+          "unit": "억원",
+          "source_excerpt": "KT&G - 하반기에 발표될 배당 강화 정책에 주목 하반기에 발표될 배당 강화 정책에 주목 KT&G ◎ 1분기 연결기준 영업이익 3,645억원으로 시장 컨센서스 소폭 상회 >> 해외궐련 ASP 및 판매량 증가와 담배 원재료 투입단가 상승 부담 둔화로 시장 기대치 소폭 상회 판단 >>…",
+          "value_krw_100m": 3645.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -687,10 +1386,46 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3645.0,
+          "unit": "억원",
+          "source_excerpt": "3%), 영업이익 3,645억원(YoY +27.",
+          "value_krw_100m": 3645.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 21.4,
+          "unit": "%",
+          "value_pct": 21.4,
+          "source_excerpt": "6%, OPM 21.4%)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -739,13 +1474,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3516.0,
+          "unit": "억원",
+          "source_excerpt": "4%), 영업이익 3,516억원(YoY +23.",
+          "value_krw_100m": 3516.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 20.6,
+          "unit": "%",
+          "value_pct": 20.6,
+          "source_excerpt": "1%, OPM 20.6%)을 기록하며 컨센서스를 소폭 상회할 것으로 전망한다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ]
 }

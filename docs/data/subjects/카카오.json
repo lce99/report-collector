@@ -19,7 +19,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 5
+    "coverage_initiated": 5,
+    "estimate_signal_reports": 5,
+    "earnings_estimate_up": 5,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 3,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 5,
@@ -48,7 +53,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -63,7 +74,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -78,7 +97,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -93,7 +120,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-22",
@@ -108,7 +143,279 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-08",
+        "broker": "유안타증권",
+        "title": "카카오 - 숫자로 증명한 플랫폼 경쟁력",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92610&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_168218000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_168218000.pdf",
+        "target_price": "80,000",
+        "target_price_value": 80000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배순이익",
+        "period": null,
+        "value": 1717.0,
+        "unit": "억원",
+        "value_krw_100m": 1717.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "카카오 - 숫자로 증명한 플랫폼 경쟁력 숫자로 증명한 플랫폼 경쟁력 카카오 1Q26 Review 매출액 1조 9,421억원 YoY+11%, 영업이익 2,114억원 YoY+66%(게임부문 손실 255억원 연결제외, 톡광고 고성장 등 별도기준 영업이익 154억원 증가), 지배순이익 1,7…"
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "유진투자증권",
+        "title": "카카오 - 유의미한 수익성 개선, AI 성과는 아직",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92575&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260508_company_193313000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260508_company_193313000.pdf",
+        "target_price": "74,000",
+        "target_price_value": 74000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 11.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 11.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "94조원(+11%yoy, -5%qoq), 영업이익 2,114억원(+66% yoy, OPM 11%)으로 시장 컨센서스(1,792억원) 상회."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "하나증권",
+        "title": "카카오 - 하반기 AI 에이전트 대중화가 중요",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92624&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_817732000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_817732000.pdf",
+        "target_price": "75,000",
+        "target_price_value": 75000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 10.9,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 10.9,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "1%QoQ, OPM 10.9%)으로 영업이익 컨센서스를 상회했다."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "유안타증권",
+        "title": "카카오 - 숫자로 증명한 플랫폼 경쟁력",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92610&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_168218000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_168218000.pdf",
+        "target_price": "80,000",
+        "target_price_value": 80000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2114.0,
+        "unit": "억원",
+        "value_krw_100m": 2114.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "카카오 - 숫자로 증명한 플랫폼 경쟁력 숫자로 증명한 플랫폼 경쟁력 카카오 1Q26 Review 매출액 1조 9,421억원 YoY+11%, 영업이익 2,114억원 YoY+66%(게임부문 손실 255억원 연결제외, 톡광고 고성장 등 별도기준 영업이익 154억원 증가), 지배순이익 1,7…"
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "유안타증권",
+        "title": "카카오 - 숫자로 증명한 플랫폼 경쟁력",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92610&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_168218000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_168218000.pdf",
+        "target_price": "80,000",
+        "target_price_value": 80000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 154.0,
+        "unit": "억원",
+        "value_krw_100m": 154.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "카카오 - 숫자로 증명한 플랫폼 경쟁력 숫자로 증명한 플랫폼 경쟁력 카카오 1Q26 Review 매출액 1조 9,421억원 YoY+11%, 영업이익 2,114억원 YoY+66%(게임부문 손실 255억원 연결제외, 톡광고 고성장 등 별도기준 영업이익 154억원 증가), 지배순이익 1,7…"
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "유진투자증권",
+        "title": "카카오 - 유의미한 수익성 개선, AI 성과는 아직",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92575&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260508_company_193313000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260508_company_193313000.pdf",
+        "target_price": "74,000",
+        "target_price_value": 74000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2114.0,
+        "unit": "억원",
+        "value_krw_100m": 2114.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "94조원(+11%yoy, -5%qoq), 영업이익 2,114억원(+66% yoy, OPM 11%)으로 시장 컨센서스(1,792억원) 상회."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "하나증권",
+        "title": "카카오 - 하반기 AI 에이전트 대중화가 중요",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92624&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_817732000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_817732000.pdf",
+        "target_price": "75,000",
+        "target_price_value": 75000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2114.0,
+        "unit": "억원",
+        "value_krw_100m": 2114.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9%QoQ), 영업이익 2,114억원(+66."
+      },
+      {
+        "date": "2026-05-22",
+        "broker": "미래에셋증권",
+        "title": "카카오 - 증명이 필요한 시기",
+        "ticker": "035720",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93215&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260522_company_122394000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260522_company_122394000.pdf",
+        "target_price": "58,000",
+        "target_price_value": 58000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.25,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2110.0,
+        "unit": "억원",
+        "value_krw_100m": 2110.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "카카오 - 증명이 필요한 시기 증명이 필요한 시기 카카오 자회사 정리를 통한 체질 개선 1분기 매출액 1조 9,420억원(+11% YoY)으로 컨센서스에 부합, 영업이익은 2,110억원(+66% YoY)으로 컨센서스를 18% 상회했다."
       }
     ],
     "opinion_distribution": [
@@ -131,7 +438,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -146,7 +461,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -161,7 +482,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -176,7 +505,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-22",
@@ -191,7 +528,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -210,7 +553,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -225,7 +574,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -240,7 +597,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -255,7 +620,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-22",
@@ -270,7 +643,279 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-08",
+      "broker": "유안타증권",
+      "title": "카카오 - 숫자로 증명한 플랫폼 경쟁력",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92610&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_168218000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_168218000.pdf",
+      "target_price": "80,000",
+      "target_price_value": 80000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배순이익",
+      "period": null,
+      "value": 1717.0,
+      "unit": "억원",
+      "value_krw_100m": 1717.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "카카오 - 숫자로 증명한 플랫폼 경쟁력 숫자로 증명한 플랫폼 경쟁력 카카오 1Q26 Review 매출액 1조 9,421억원 YoY+11%, 영업이익 2,114억원 YoY+66%(게임부문 손실 255억원 연결제외, 톡광고 고성장 등 별도기준 영업이익 154억원 증가), 지배순이익 1,7…"
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "유진투자증권",
+      "title": "카카오 - 유의미한 수익성 개선, AI 성과는 아직",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92575&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260508_company_193313000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260508_company_193313000.pdf",
+      "target_price": "74,000",
+      "target_price_value": 74000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 11.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 11.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "94조원(+11%yoy, -5%qoq), 영업이익 2,114억원(+66% yoy, OPM 11%)으로 시장 컨센서스(1,792억원) 상회."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "하나증권",
+      "title": "카카오 - 하반기 AI 에이전트 대중화가 중요",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92624&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_817732000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_817732000.pdf",
+      "target_price": "75,000",
+      "target_price_value": 75000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 10.9,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 10.9,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "1%QoQ, OPM 10.9%)으로 영업이익 컨센서스를 상회했다."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "유안타증권",
+      "title": "카카오 - 숫자로 증명한 플랫폼 경쟁력",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92610&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_168218000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_168218000.pdf",
+      "target_price": "80,000",
+      "target_price_value": 80000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2114.0,
+      "unit": "억원",
+      "value_krw_100m": 2114.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "카카오 - 숫자로 증명한 플랫폼 경쟁력 숫자로 증명한 플랫폼 경쟁력 카카오 1Q26 Review 매출액 1조 9,421억원 YoY+11%, 영업이익 2,114억원 YoY+66%(게임부문 손실 255억원 연결제외, 톡광고 고성장 등 별도기준 영업이익 154억원 증가), 지배순이익 1,7…"
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "유안타증권",
+      "title": "카카오 - 숫자로 증명한 플랫폼 경쟁력",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92610&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_168218000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260508_company_168218000.pdf",
+      "target_price": "80,000",
+      "target_price_value": 80000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 154.0,
+      "unit": "억원",
+      "value_krw_100m": 154.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "카카오 - 숫자로 증명한 플랫폼 경쟁력 숫자로 증명한 플랫폼 경쟁력 카카오 1Q26 Review 매출액 1조 9,421억원 YoY+11%, 영업이익 2,114억원 YoY+66%(게임부문 손실 255억원 연결제외, 톡광고 고성장 등 별도기준 영업이익 154억원 증가), 지배순이익 1,7…"
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "유진투자증권",
+      "title": "카카오 - 유의미한 수익성 개선, AI 성과는 아직",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92575&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260508_company_193313000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260508_company_193313000.pdf",
+      "target_price": "74,000",
+      "target_price_value": 74000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2114.0,
+      "unit": "억원",
+      "value_krw_100m": 2114.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "94조원(+11%yoy, -5%qoq), 영업이익 2,114억원(+66% yoy, OPM 11%)으로 시장 컨센서스(1,792억원) 상회."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "하나증권",
+      "title": "카카오 - 하반기 AI 에이전트 대중화가 중요",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92624&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_817732000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260508_company_817732000.pdf",
+      "target_price": "75,000",
+      "target_price_value": 75000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2114.0,
+      "unit": "억원",
+      "value_krw_100m": 2114.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9%QoQ), 영업이익 2,114억원(+66."
+    },
+    {
+      "date": "2026-05-22",
+      "broker": "미래에셋증권",
+      "title": "카카오 - 증명이 필요한 시기",
+      "ticker": "035720",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93215&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260522_company_122394000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260522_company_122394000.pdf",
+      "target_price": "58,000",
+      "target_price_value": 58000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.25,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2110.0,
+      "unit": "억원",
+      "value_krw_100m": 2110.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "카카오 - 증명이 필요한 시기 증명이 필요한 시기 카카오 자회사 정리를 통한 체질 개선 1분기 매출액 1조 9,420억원(+11% YoY)으로 컨센서스에 부합, 영업이익은 2,110억원(+66% YoY)으로 컨센서스를 18% 상회했다."
     }
   ],
   "opinion_distribution": [
@@ -293,7 +938,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -308,7 +961,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -323,7 +982,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -338,7 +1005,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-22",
@@ -353,7 +1028,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -489,12 +1170,32 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2110.0,
+          "unit": "억원",
+          "source_excerpt": "카카오 - 증명이 필요한 시기 증명이 필요한 시기 카카오 자회사 정리를 통한 체질 개선 1분기 매출액 1조 9,420억원(+11% YoY)으로 컨센서스에 부합, 영업이익은 2,110억원(+66% YoY)으로 컨센서스를 18% 상회했다.",
+          "value_krw_100m": 2110.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -546,13 +1247,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -602,13 +1316,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2114.0,
+          "unit": "억원",
+          "source_excerpt": "9%QoQ), 영업이익 2,114억원(+66.",
+          "value_krw_100m": 2114.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 10.9,
+          "unit": "%",
+          "value_pct": 10.9,
+          "source_excerpt": "1%QoQ, OPM 10.9%)으로 영업이익 컨센서스를 상회했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -658,13 +1406,53 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2114.0,
+          "unit": "억원",
+          "source_excerpt": "카카오 - 숫자로 증명한 플랫폼 경쟁력 숫자로 증명한 플랫폼 경쟁력 카카오 1Q26 Review 매출액 1조 9,421억원 YoY+11%, 영업이익 2,114억원 YoY+66%(게임부문 손실 255억원 연결제외, 톡광고 고성장 등 별도기준 영업이익 154억원 증가), 지배순이익 1,7…",
+          "value_krw_100m": 2114.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 154.0,
+          "unit": "억원",
+          "source_excerpt": "카카오 - 숫자로 증명한 플랫폼 경쟁력 숫자로 증명한 플랫폼 경쟁력 카카오 1Q26 Review 매출액 1조 9,421억원 YoY+11%, 영업이익 2,114억원 YoY+66%(게임부문 손실 255억원 연결제외, 톡광고 고성장 등 별도기준 영업이익 154억원 증가), 지배순이익 1,7…",
+          "value_krw_100m": 154.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": null,
+          "value": 1717.0,
+          "unit": "억원",
+          "source_excerpt": "카카오 - 숫자로 증명한 플랫폼 경쟁력 숫자로 증명한 플랫폼 경쟁력 카카오 1Q26 Review 매출액 1조 9,421억원 YoY+11%, 영업이익 2,114억원 YoY+66%(게임부문 손실 255억원 연결제외, 톡광고 고성장 등 별도기준 영업이익 154억원 증가), 지배순이익 1,7…",
+          "value_krw_100m": 1717.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -713,13 +1501,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2114.0,
+          "unit": "억원",
+          "source_excerpt": "94조원(+11%yoy, -5%qoq), 영업이익 2,114억원(+66% yoy, OPM 11%)으로 시장 컨센서스(1,792억원) 상회.",
+          "value_krw_100m": 2114.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 11.0,
+          "unit": "%",
+          "value_pct": 11.0,
+          "source_excerpt": "94조원(+11%yoy, -5%qoq), 영업이익 2,114억원(+66% yoy, OPM 11%)으로 시장 컨센서스(1,792억원) 상회."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "recent_changes": [
@@ -827,12 +1649,32 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2110.0,
+          "unit": "억원",
+          "source_excerpt": "카카오 - 증명이 필요한 시기 증명이 필요한 시기 카카오 자회사 정리를 통한 체질 개선 1분기 매출액 1조 9,420억원(+11% YoY)으로 컨센서스에 부합, 영업이익은 2,110억원(+66% YoY)으로 컨센서스를 18% 상회했다.",
+          "value_krw_100m": 2110.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -884,13 +1726,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -940,13 +1795,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2114.0,
+          "unit": "억원",
+          "source_excerpt": "9%QoQ), 영업이익 2,114억원(+66.",
+          "value_krw_100m": 2114.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 10.9,
+          "unit": "%",
+          "value_pct": 10.9,
+          "source_excerpt": "1%QoQ, OPM 10.9%)으로 영업이익 컨센서스를 상회했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -996,13 +1885,53 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2114.0,
+          "unit": "억원",
+          "source_excerpt": "카카오 - 숫자로 증명한 플랫폼 경쟁력 숫자로 증명한 플랫폼 경쟁력 카카오 1Q26 Review 매출액 1조 9,421억원 YoY+11%, 영업이익 2,114억원 YoY+66%(게임부문 손실 255억원 연결제외, 톡광고 고성장 등 별도기준 영업이익 154억원 증가), 지배순이익 1,7…",
+          "value_krw_100m": 2114.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 154.0,
+          "unit": "억원",
+          "source_excerpt": "카카오 - 숫자로 증명한 플랫폼 경쟁력 숫자로 증명한 플랫폼 경쟁력 카카오 1Q26 Review 매출액 1조 9,421억원 YoY+11%, 영업이익 2,114억원 YoY+66%(게임부문 손실 255억원 연결제외, 톡광고 고성장 등 별도기준 영업이익 154억원 증가), 지배순이익 1,7…",
+          "value_krw_100m": 154.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": null,
+          "value": 1717.0,
+          "unit": "억원",
+          "source_excerpt": "카카오 - 숫자로 증명한 플랫폼 경쟁력 숫자로 증명한 플랫폼 경쟁력 카카오 1Q26 Review 매출액 1조 9,421억원 YoY+11%, 영업이익 2,114억원 YoY+66%(게임부문 손실 255억원 연결제외, 톡광고 고성장 등 별도기준 영업이익 154억원 증가), 지배순이익 1,7…",
+          "value_krw_100m": 1717.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1051,13 +1980,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2114.0,
+          "unit": "억원",
+          "source_excerpt": "94조원(+11%yoy, -5%qoq), 영업이익 2,114억원(+66% yoy, OPM 11%)으로 시장 컨센서스(1,792억원) 상회.",
+          "value_krw_100m": 2114.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 11.0,
+          "unit": "%",
+          "value_pct": 11.0,
+          "source_excerpt": "94조원(+11%yoy, -5%qoq), 영업이익 2,114억원(+66% yoy, OPM 11%)으로 시장 컨센서스(1,792억원) 상회."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "timeline": [
@@ -1165,12 +2128,32 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2110.0,
+          "unit": "억원",
+          "source_excerpt": "카카오 - 증명이 필요한 시기 증명이 필요한 시기 카카오 자회사 정리를 통한 체질 개선 1분기 매출액 1조 9,420억원(+11% YoY)으로 컨센서스에 부합, 영업이익은 2,110억원(+66% YoY)으로 컨센서스를 18% 상회했다.",
+          "value_krw_100m": 2110.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1222,13 +2205,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1278,13 +2274,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2114.0,
+          "unit": "억원",
+          "source_excerpt": "9%QoQ), 영업이익 2,114억원(+66.",
+          "value_krw_100m": 2114.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 10.9,
+          "unit": "%",
+          "value_pct": 10.9,
+          "source_excerpt": "1%QoQ, OPM 10.9%)으로 영업이익 컨센서스를 상회했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1334,13 +2364,53 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2114.0,
+          "unit": "억원",
+          "source_excerpt": "카카오 - 숫자로 증명한 플랫폼 경쟁력 숫자로 증명한 플랫폼 경쟁력 카카오 1Q26 Review 매출액 1조 9,421억원 YoY+11%, 영업이익 2,114억원 YoY+66%(게임부문 손실 255억원 연결제외, 톡광고 고성장 등 별도기준 영업이익 154억원 증가), 지배순이익 1,7…",
+          "value_krw_100m": 2114.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 154.0,
+          "unit": "억원",
+          "source_excerpt": "카카오 - 숫자로 증명한 플랫폼 경쟁력 숫자로 증명한 플랫폼 경쟁력 카카오 1Q26 Review 매출액 1조 9,421억원 YoY+11%, 영업이익 2,114억원 YoY+66%(게임부문 손실 255억원 연결제외, 톡광고 고성장 등 별도기준 영업이익 154억원 증가), 지배순이익 1,7…",
+          "value_krw_100m": 154.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": null,
+          "value": 1717.0,
+          "unit": "억원",
+          "source_excerpt": "카카오 - 숫자로 증명한 플랫폼 경쟁력 숫자로 증명한 플랫폼 경쟁력 카카오 1Q26 Review 매출액 1조 9,421억원 YoY+11%, 영업이익 2,114억원 YoY+66%(게임부문 손실 255억원 연결제외, 톡광고 고성장 등 별도기준 영업이익 154억원 증가), 지배순이익 1,7…",
+          "value_krw_100m": 1717.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1389,13 +2459,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2114.0,
+          "unit": "억원",
+          "source_excerpt": "94조원(+11%yoy, -5%qoq), 영업이익 2,114억원(+66% yoy, OPM 11%)으로 시장 컨센서스(1,792억원) 상회.",
+          "value_krw_100m": 2114.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 11.0,
+          "unit": "%",
+          "value_pct": 11.0,
+          "source_excerpt": "94조원(+11%yoy, -5%qoq), 영업이익 2,114억원(+66% yoy, OPM 11%)으로 시장 컨센서스(1,792억원) 상회."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ]
 }

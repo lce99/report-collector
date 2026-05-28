@@ -18,7 +18,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 3,
+    "estimate_signal_reports": 0,
+    "earnings_estimate_up": 0,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 4,
@@ -47,7 +52,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.55,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -62,7 +69,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -77,7 +86,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -92,7 +103,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-06",
@@ -107,7 +120,123 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-17",
+        "broker": "SK증권",
+        "title": "산일전기 - 멀티플 리레이팅 이제 시작",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91672&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260417_company_384830000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260417_company_384830000.pdf",
+        "target_price": "250,000",
+        "target_price_value": 250000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.55,
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 36.7,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 36.7,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9%, OPM 36.7%)으로 전망한다."
+      },
+      {
+        "date": "2026-04-17",
+        "broker": "SK증권",
+        "title": "산일전기 - 멀티플 리레이팅 이제 시작",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91672&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260417_company_384830000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260417_company_384830000.pdf",
+        "target_price": "250,000",
+        "target_price_value": 250000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.55,
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 544.0,
+        "unit": "억원",
+        "value_krw_100m": 544.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8%), 영업이익 544억원(YoY +44."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "유안타증권",
+        "title": "산일전기 - 블룸 밸류체인 진입, 멀티플이 바뀐다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92384&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260504_company_844334000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260504_company_844334000.pdf",
+        "target_price": "360,000",
+        "target_price_value": 360000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 36.9,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 36.9,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0%, OPM 36.9%)을 기록하며 4개 분기 연속 최대 실적을 경신했다."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "유안타증권",
+        "title": "산일전기 - 블룸 밸류체인 진입, 멀티플이 바뀐다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92384&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260504_company_844334000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260504_company_844334000.pdf",
+        "target_price": "360,000",
+        "target_price_value": 360000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 555.0,
+        "unit": "억원",
+        "value_krw_100m": 555.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8%), 영업이익 555억원(YoY +47."
       }
     ],
     "opinion_distribution": [
@@ -130,7 +259,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -145,7 +276,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -160,7 +293,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-06",
@@ -175,7 +310,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -194,7 +331,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.55,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -209,7 +348,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -224,7 +365,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -239,7 +382,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-06",
@@ -254,7 +399,123 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-17",
+      "broker": "SK증권",
+      "title": "산일전기 - 멀티플 리레이팅 이제 시작",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91672&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260417_company_384830000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260417_company_384830000.pdf",
+      "target_price": "250,000",
+      "target_price_value": 250000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.55,
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 36.7,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 36.7,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9%, OPM 36.7%)으로 전망한다."
+    },
+    {
+      "date": "2026-04-17",
+      "broker": "SK증권",
+      "title": "산일전기 - 멀티플 리레이팅 이제 시작",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91672&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260417_company_384830000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260417_company_384830000.pdf",
+      "target_price": "250,000",
+      "target_price_value": 250000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.55,
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 544.0,
+      "unit": "억원",
+      "value_krw_100m": 544.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8%), 영업이익 544억원(YoY +44."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "유안타증권",
+      "title": "산일전기 - 블룸 밸류체인 진입, 멀티플이 바뀐다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92384&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260504_company_844334000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260504_company_844334000.pdf",
+      "target_price": "360,000",
+      "target_price_value": 360000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 36.9,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 36.9,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0%, OPM 36.9%)을 기록하며 4개 분기 연속 최대 실적을 경신했다."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "유안타증권",
+      "title": "산일전기 - 블룸 밸류체인 진입, 멀티플이 바뀐다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92384&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260504_company_844334000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260504_company_844334000.pdf",
+      "target_price": "360,000",
+      "target_price_value": 360000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 555.0,
+      "unit": "억원",
+      "value_krw_100m": 555.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8%), 영업이익 555억원(YoY +47."
     }
   ],
   "opinion_distribution": [
@@ -277,7 +538,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -292,7 +555,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -307,7 +572,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-06",
@@ -322,7 +589,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -405,7 +674,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -463,7 +735,10 @@
         "목표가 상향"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -520,7 +795,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 555.0,
+          "unit": "억원",
+          "source_excerpt": "8%), 영업이익 555억원(YoY +47.",
+          "value_krw_100m": 555.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 36.9,
+          "unit": "%",
+          "value_pct": 36.9,
+          "source_excerpt": "0%, OPM 36.9%)을 기록하며 4개 분기 연속 최대 실적을 경신했다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -576,7 +875,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -635,7 +937,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -693,7 +998,10 @@
         "목표가 상향"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -750,7 +1058,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 555.0,
+          "unit": "억원",
+          "source_excerpt": "8%), 영업이익 555억원(YoY +47.",
+          "value_krw_100m": 555.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 36.9,
+          "unit": "%",
+          "value_pct": 36.9,
+          "source_excerpt": "0%, OPM 36.9%)을 기록하며 4개 분기 연속 최대 실적을 경신했다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -806,7 +1138,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -865,7 +1200,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -923,7 +1261,10 @@
         "목표가 상향"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -980,7 +1321,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 555.0,
+          "unit": "억원",
+          "source_excerpt": "8%), 영업이익 555억원(YoY +47.",
+          "value_krw_100m": 555.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 36.9,
+          "unit": "%",
+          "value_pct": 36.9,
+          "source_excerpt": "0%, OPM 36.9%)을 기록하며 4개 분기 연속 최대 실적을 경신했다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1036,7 +1401,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1076,6 +1444,30 @@
       "ticker": null,
       "target_price_value": 250000,
       "opinion_normalized": "buy",
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 544.0,
+          "unit": "억원",
+          "source_excerpt": "8%), 영업이익 544억원(YoY +44.",
+          "value_krw_100m": 544.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 36.7,
+          "unit": "%",
+          "value_pct": 36.7,
+          "source_excerpt": "9%, OPM 36.7%)으로 전망한다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false

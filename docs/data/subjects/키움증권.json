@@ -19,7 +19,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 6
+    "coverage_initiated": 6,
+    "estimate_signal_reports": 2,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 5,
@@ -48,7 +53,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 12.7,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -63,7 +70,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -78,7 +91,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -93,7 +108,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -108,7 +125,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -123,7 +142,107 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-04",
+        "broker": "교보증권",
+        "title": "키움증권 - 1Q26 Review: 역대 최고 분기 실적 시현, 업..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92418&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260504_company_467131000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260504_company_467131000.pdf",
+        "target_price": "600,000",
+        "target_price_value": 600000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": 4774.0,
+        "unit": "억원",
+        "value_krw_100m": 4774.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "키움증권 FY261Q 당기순이익 4,774억원, QoQ 93."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "하나증권",
+        "title": "키움증권 - 1Q26 Re - 트레이딩 부문 실적에 주목",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92411&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_216833000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_216833000.pdf",
+        "target_price": "570,000",
+        "target_price_value": 570000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배주주순이익",
+        "period": null,
+        "value": 4764.0,
+        "unit": "억원",
+        "value_krw_100m": 4764.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "키움증권 - 1Q26 Re - 트레이딩 부문 실적에 주목 1Q26 Re - 트레이딩 부문 실적에 주목 키움증권 2026년 1분기 연결 지배순이익은 컨센서스를 14% 상회 1분기 연결 지배주주순이익은 4,764억원으로 컨센서스(4,179억원)를 14."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "하나증권",
+        "title": "키움증권 - 2026년 1분기 컨퍼런스 콜 요약",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92410&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_425948000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_425948000.pdf",
+        "target_price": "570,000",
+        "target_price_value": 570000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.9,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1분기",
+        "value": 5348.0,
+        "unit": "억원",
+        "value_krw_100m": 5348.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "키움증권 - 2026년 1분기 컨퍼런스 콜 요약 2026년 1분기 컨퍼런스 콜 요약 키움증권 영업상황 및 경영목표 <1분기 실적 브리핑> - 별도 기준 1분기 영업이익 5,348억원 (YoY +81."
       }
     ],
     "opinion_distribution": [
@@ -146,7 +265,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 12.7,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -161,7 +282,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -176,7 +299,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -191,7 +320,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -206,7 +341,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -221,7 +358,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -240,7 +379,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 12.7,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -255,7 +396,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -270,7 +417,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -285,7 +434,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -300,7 +451,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -315,7 +468,107 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-04",
+      "broker": "교보증권",
+      "title": "키움증권 - 1Q26 Review: 역대 최고 분기 실적 시현, 업..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92418&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260504_company_467131000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260504_company_467131000.pdf",
+      "target_price": "600,000",
+      "target_price_value": 600000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": 4774.0,
+      "unit": "억원",
+      "value_krw_100m": 4774.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "키움증권 FY261Q 당기순이익 4,774억원, QoQ 93."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "하나증권",
+      "title": "키움증권 - 1Q26 Re - 트레이딩 부문 실적에 주목",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92411&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_216833000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_216833000.pdf",
+      "target_price": "570,000",
+      "target_price_value": 570000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배주주순이익",
+      "period": null,
+      "value": 4764.0,
+      "unit": "억원",
+      "value_krw_100m": 4764.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "키움증권 - 1Q26 Re - 트레이딩 부문 실적에 주목 1Q26 Re - 트레이딩 부문 실적에 주목 키움증권 2026년 1분기 연결 지배순이익은 컨센서스를 14% 상회 1분기 연결 지배주주순이익은 4,764억원으로 컨센서스(4,179억원)를 14."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "하나증권",
+      "title": "키움증권 - 2026년 1분기 컨퍼런스 콜 요약",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92410&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_425948000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_425948000.pdf",
+      "target_price": "570,000",
+      "target_price_value": 570000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.9,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1분기",
+      "value": 5348.0,
+      "unit": "억원",
+      "value_krw_100m": 5348.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "키움증권 - 2026년 1분기 컨퍼런스 콜 요약 2026년 1분기 컨퍼런스 콜 요약 키움증권 영업상황 및 경영목표 <1분기 실적 브리핑> - 별도 기준 1분기 영업이익 5,348억원 (YoY +81."
     }
   ],
   "opinion_distribution": [
@@ -338,7 +591,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 12.7,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -353,7 +608,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -368,7 +625,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -383,7 +646,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -398,7 +667,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -413,7 +684,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -503,7 +776,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -565,7 +841,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 5348.0,
+          "unit": "억원",
+          "source_excerpt": "키움증권 - 2026년 1분기 컨퍼런스 콜 요약 2026년 1분기 컨퍼런스 콜 요약 키움증권 영업상황 및 경영목표 <1분기 실적 브리핑> - 별도 기준 1분기 영업이익 5,348억원 (YoY +81.",
+          "value_krw_100m": 5348.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -616,13 +906,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 4774.0,
+          "unit": "억원",
+          "source_excerpt": "키움증권 FY261Q 당기순이익 4,774억원, QoQ 93.",
+          "value_krw_100m": 4774.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -679,7 +989,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -737,7 +1050,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -799,7 +1115,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -861,7 +1180,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 5348.0,
+          "unit": "억원",
+          "source_excerpt": "키움증권 - 2026년 1분기 컨퍼런스 콜 요약 2026년 1분기 컨퍼런스 콜 요약 키움증권 영업상황 및 경영목표 <1분기 실적 브리핑> - 별도 기준 1분기 영업이익 5,348억원 (YoY +81.",
+          "value_krw_100m": 5348.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -912,13 +1245,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 4764.0,
+          "unit": "억원",
+          "source_excerpt": "키움증권 - 1Q26 Re - 트레이딩 부문 실적에 주목 1Q26 Re - 트레이딩 부문 실적에 주목 키움증권 2026년 1분기 연결 지배순이익은 컨센서스를 14% 상회 1분기 연결 지배주주순이익은 4,764억원으로 컨센서스(4,179억원)를 14.",
+          "value_krw_100m": 4764.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -969,13 +1322,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 4774.0,
+          "unit": "억원",
+          "source_excerpt": "키움증권 FY261Q 당기순이익 4,774억원, QoQ 93.",
+          "value_krw_100m": 4774.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1032,7 +1405,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1090,7 +1466,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -1152,7 +1531,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1214,7 +1596,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 5348.0,
+          "unit": "억원",
+          "source_excerpt": "키움증권 - 2026년 1분기 컨퍼런스 콜 요약 2026년 1분기 컨퍼런스 콜 요약 키움증권 영업상황 및 경영목표 <1분기 실적 브리핑> - 별도 기준 1분기 영업이익 5,348억원 (YoY +81.",
+          "value_krw_100m": 5348.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1265,13 +1661,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 4764.0,
+          "unit": "억원",
+          "source_excerpt": "키움증권 - 1Q26 Re - 트레이딩 부문 실적에 주목 1Q26 Re - 트레이딩 부문 실적에 주목 키움증권 2026년 1분기 연결 지배순이익은 컨센서스를 14% 상회 1분기 연결 지배주주순이익은 4,764억원으로 컨센서스(4,179억원)를 14.",
+          "value_krw_100m": 4764.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1322,13 +1738,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 4774.0,
+          "unit": "억원",
+          "source_excerpt": "키움증권 FY261Q 당기순이익 4,774억원, QoQ 93.",
+          "value_krw_100m": 4774.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1385,7 +1821,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1443,7 +1882,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

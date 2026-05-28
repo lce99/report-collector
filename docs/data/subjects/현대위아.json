@@ -17,7 +17,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 3,
+    "estimate_signal_reports": 1,
+    "earnings_estimate_up": 0,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 3,
@@ -46,7 +51,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-27",
@@ -61,7 +68,17 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -76,7 +93,147 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-27",
+        "broker": "대신증권",
+        "title": "현대위아 - 방산 사업 매각 방식이 관건",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91984&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260427_company_828282000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260427_company_828282000.pdf",
+        "target_price": "105,000",
+        "target_price_value": 105000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.9,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "eps",
+        "metric_group": "earnings",
+        "label": "EPS",
+        "period": "2026년",
+        "value": 6964.0,
+        "unit": "원",
+        "value_krw_100m": null,
+        "value_pct": null,
+        "value_won": 6964.0,
+        "change_pctp": null,
+        "source_excerpt": "5만원은 2026년 EPS 6,964원에 목표배수 15."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "유진투자증권",
+        "title": "현대위아 - 1Q26 Review: 방산 부문의 호실적",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91991&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260427_company_46322000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260427_company_46322000.pdf",
+        "target_price": "95,000",
+        "target_price_value": 95000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 1.6,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 1.6,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7%yoy, OPM1.6%)."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "유진투자증권",
+        "title": "현대위아 - 1Q26 Review: 방산 부문의 호실적",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91991&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260427_company_46322000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260427_company_46322000.pdf",
+        "target_price": "95,000",
+        "target_price_value": 95000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 520.0,
+        "unit": "억원",
+        "value_krw_100m": 520.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7%yoy), 영업이익 520억원(+6."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "유진투자증권",
+        "title": "현대위아 - 1Q26 Review: 방산 부문의 호실적",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91991&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260427_company_46322000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260427_company_46322000.pdf",
+        "target_price": "95,000",
+        "target_price_value": 95000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 315.0,
+        "unit": "억원",
+        "value_krw_100m": 315.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9%yoy), 영업이익 315억원(-9."
       }
     ],
     "opinion_distribution": [
@@ -99,7 +256,17 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -114,7 +281,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-27",
@@ -129,7 +298,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -148,7 +319,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-27",
@@ -163,7 +336,17 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -178,7 +361,147 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-27",
+      "broker": "대신증권",
+      "title": "현대위아 - 방산 사업 매각 방식이 관건",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91984&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260427_company_828282000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260427_company_828282000.pdf",
+      "target_price": "105,000",
+      "target_price_value": 105000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.9,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "eps",
+      "metric_group": "earnings",
+      "label": "EPS",
+      "period": "2026년",
+      "value": 6964.0,
+      "unit": "원",
+      "value_krw_100m": null,
+      "value_pct": null,
+      "value_won": 6964.0,
+      "change_pctp": null,
+      "source_excerpt": "5만원은 2026년 EPS 6,964원에 목표배수 15."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "유진투자증권",
+      "title": "현대위아 - 1Q26 Review: 방산 부문의 호실적",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91991&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260427_company_46322000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260427_company_46322000.pdf",
+      "target_price": "95,000",
+      "target_price_value": 95000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 1.6,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 1.6,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7%yoy, OPM1.6%)."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "유진투자증권",
+      "title": "현대위아 - 1Q26 Review: 방산 부문의 호실적",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91991&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260427_company_46322000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260427_company_46322000.pdf",
+      "target_price": "95,000",
+      "target_price_value": 95000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 520.0,
+      "unit": "억원",
+      "value_krw_100m": 520.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7%yoy), 영업이익 520억원(+6."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "유진투자증권",
+      "title": "현대위아 - 1Q26 Review: 방산 부문의 호실적",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91991&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260427_company_46322000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260427_company_46322000.pdf",
+      "target_price": "95,000",
+      "target_price_value": 95000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 315.0,
+      "unit": "억원",
+      "value_krw_100m": 315.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9%yoy), 영업이익 315억원(-9."
     }
   ],
   "opinion_distribution": [
@@ -201,7 +524,17 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -216,7 +549,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-27",
@@ -231,7 +566,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -311,7 +648,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": "2026년",
+          "value": 6964.0,
+          "unit": "원",
+          "source_excerpt": "5만원은 2026년 EPS 6,964원에 목표배수 15.",
+          "value_won": 6964.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -370,7 +721,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -422,13 +776,61 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 520.0,
+          "unit": "억원",
+          "source_excerpt": "7%yoy), 영업이익 520억원(+6.",
+          "value_krw_100m": 520.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 315.0,
+          "unit": "억원",
+          "source_excerpt": "9%yoy), 영업이익 315억원(-9.",
+          "value_krw_100m": 315.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 1.6,
+          "unit": "%",
+          "value_pct": 1.6,
+          "source_excerpt": "7%yoy, OPM1.6%)."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "recent_changes": [
@@ -488,7 +890,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": "2026년",
+          "value": 6964.0,
+          "unit": "원",
+          "source_excerpt": "5만원은 2026년 EPS 6,964원에 목표배수 15.",
+          "value_won": 6964.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -547,7 +963,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -599,13 +1018,61 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 520.0,
+          "unit": "억원",
+          "source_excerpt": "7%yoy), 영업이익 520억원(+6.",
+          "value_krw_100m": 520.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 315.0,
+          "unit": "억원",
+          "source_excerpt": "9%yoy), 영업이익 315억원(-9.",
+          "value_krw_100m": 315.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 1.6,
+          "unit": "%",
+          "value_pct": 1.6,
+          "source_excerpt": "7%yoy, OPM1.6%)."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "timeline": [
@@ -665,7 +1132,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": "2026년",
+          "value": 6964.0,
+          "unit": "원",
+          "source_excerpt": "5만원은 2026년 EPS 6,964원에 목표배수 15.",
+          "value_won": 6964.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -724,7 +1205,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -776,13 +1260,61 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 520.0,
+          "unit": "억원",
+          "source_excerpt": "7%yoy), 영업이익 520억원(+6.",
+          "value_krw_100m": 520.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 315.0,
+          "unit": "억원",
+          "source_excerpt": "9%yoy), 영업이익 315억원(-9.",
+          "value_krw_100m": 315.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 1.6,
+          "unit": "%",
+          "value_pct": 1.6,
+          "source_excerpt": "7%yoy, OPM1.6%)."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "마진율 추정 상승/개선"
+      ]
     }
   ]
 }

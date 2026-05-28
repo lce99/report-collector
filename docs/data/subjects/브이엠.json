@@ -9,14 +9,19 @@
     "하나증권"
   ],
   "change_summary": {
-    "changed_reports": 1,
+    "changed_reports": 2,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 1
+    "coverage_initiated": 1,
+    "estimate_signal_reports": 1,
+    "earnings_estimate_up": 1,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 2,
@@ -45,7 +50,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.85,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -60,7 +71,71 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 16.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-16",
+        "broker": "하나증권",
+        "title": "브이엠 - 예상보다 더 좋네요",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91629&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260416_company_267000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260416_company_267000.pdf",
+        "target_price": "84,000",
+        "target_price_value": 84000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 301.0,
+        "unit": "억원",
+        "value_krw_100m": 301.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "브이엠 - 예상보다 더 좋네요 예상보다 더 좋네요 브이엠 1Q26 Review: 서프라이즈 시현 브이엠의 26년 1분기 매출액은 889억원(YoY +397%, QoQ +75%), 영업이익은 301억원(YoY +1,505%, QoQ +223%)을 기록했다."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "대신증권",
+        "title": "브이엠 - 실적은 역대 최대, 주가는 여전히 저렴",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92357&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260504_company_789009000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260504_company_789009000.pdf",
+        "target_price": "80,000",
+        "target_price_value": 80000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 16.8,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "eps",
+        "metric_group": "earnings",
+        "label": "EPS",
+        "period": null,
+        "value": 3197.0,
+        "unit": "원",
+        "value_krw_100m": null,
+        "value_pct": null,
+        "value_won": 3197.0,
+        "change_pctp": null,
+        "source_excerpt": "목표주가는 12개월 선행 EPS 3,197원에 목표 P/E 25배를 적용하여 산출."
       }
     ],
     "opinion_distribution": [
@@ -83,7 +158,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 16.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -102,7 +179,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.85,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -117,7 +200,71 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 16.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-16",
+      "broker": "하나증권",
+      "title": "브이엠 - 예상보다 더 좋네요",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91629&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260416_company_267000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260416_company_267000.pdf",
+      "target_price": "84,000",
+      "target_price_value": 84000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 301.0,
+      "unit": "억원",
+      "value_krw_100m": 301.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "브이엠 - 예상보다 더 좋네요 예상보다 더 좋네요 브이엠 1Q26 Review: 서프라이즈 시현 브이엠의 26년 1분기 매출액은 889억원(YoY +397%, QoQ +75%), 영업이익은 301억원(YoY +1,505%, QoQ +223%)을 기록했다."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "대신증권",
+      "title": "브이엠 - 실적은 역대 최대, 주가는 여전히 저렴",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92357&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260504_company_789009000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260504_company_789009000.pdf",
+      "target_price": "80,000",
+      "target_price_value": 80000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 16.8,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "eps",
+      "metric_group": "earnings",
+      "label": "EPS",
+      "period": null,
+      "value": 3197.0,
+      "unit": "원",
+      "value_krw_100m": null,
+      "value_pct": null,
+      "value_won": 3197.0,
+      "change_pctp": null,
+      "source_excerpt": "목표주가는 12개월 선행 EPS 3,197원에 목표 P/E 25배를 적용하여 산출."
     }
   ],
   "opinion_distribution": [
@@ -140,7 +287,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 16.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -221,7 +370,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": null,
+          "value": 3197.0,
+          "unit": "원",
+          "source_excerpt": "목표주가는 12개월 선행 EPS 3,197원에 목표 P/E 25배를 적용하여 산출.",
+          "value_won": 3197.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -261,9 +424,31 @@
       "ticker": null,
       "target_price_value": 84000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 301.0,
+          "unit": "억원",
+          "source_excerpt": "브이엠 - 예상보다 더 좋네요 예상보다 더 좋네요 브이엠 1Q26 Review: 서프라이즈 시현 브이엠의 26년 1분기 매출액은 889억원(YoY +397%, QoQ +75%), 영업이익은 301억원(YoY +1,505%, QoQ +223%)을 기록했다.",
+          "value_krw_100m": 301.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
     }
   ],
   "recent_changes": [
@@ -328,7 +513,85 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": null,
+          "value": 3197.0,
+          "unit": "원",
+          "source_excerpt": "목표주가는 12개월 선행 EPS 3,197원에 목표 P/E 25배를 적용하여 산출.",
+          "value_won": 3197.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91629",
+      "title": "예상보다 더 좋네요",
+      "display_title": "브이엠 - 예상보다 더 좋네요",
+      "broker": "하나증권",
+      "published_date": "2026-04-16",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91629&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260416_company_267000.pdf",
+      "subject": "브이엠",
+      "views": 1942,
+      "analyst": null,
+      "target_price": "84,000",
+      "opinion": "Buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1Q26 Review: 서프라이즈 시현 브이엠의 26년 1분기 매출액은 889억원(YoY +397%, QoQ +75%), 영업이익은 301억원(YoY +1,505%, QoQ +223%)을 기록했다.",
+      "summary": "1Q26 Review: 서프라이즈 시현 브이엠의 26년 1분기 매출액은 889억원(YoY +397%, QoQ +75%), 영업이익은 301억원(YoY +1,505%, QoQ +223%)을 기록했다. 하나증권의 추정치대비 매출액은 14%, 영업이익은 25% 상회했다.",
+      "summary_engine": "rule",
+      "score": 8.85,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "subject_key": "브이엠",
+      "ticker": null,
+      "target_price_value": 84000,
+      "opinion_normalized": "buy",
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 301.0,
+          "unit": "억원",
+          "source_excerpt": "브이엠 - 예상보다 더 좋네요 예상보다 더 좋네요 브이엠 1Q26 Review: 서프라이즈 시현 브이엠의 26년 1분기 매출액은 889억원(YoY +397%, QoQ +75%), 영업이익은 301억원(YoY +1,505%, QoQ +223%)을 기록했다.",
+          "value_krw_100m": 301.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
     }
   ],
   "timeline": [
@@ -393,7 +656,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": null,
+          "value": 3197.0,
+          "unit": "원",
+          "source_excerpt": "목표주가는 12개월 선행 EPS 3,197원에 목표 P/E 25배를 적용하여 산출.",
+          "value_won": 3197.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -433,9 +710,31 @@
       "ticker": null,
       "target_price_value": 84000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 301.0,
+          "unit": "억원",
+          "source_excerpt": "브이엠 - 예상보다 더 좋네요 예상보다 더 좋네요 브이엠 1Q26 Review: 서프라이즈 시현 브이엠의 26년 1분기 매출액은 889억원(YoY +397%, QoQ +75%), 영업이익은 301억원(YoY +1,505%, QoQ +223%)을 기록했다.",
+          "value_krw_100m": 301.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
     }
   ]
 }

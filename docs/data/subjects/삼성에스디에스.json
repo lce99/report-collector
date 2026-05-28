@@ -20,7 +20,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 6
+    "coverage_initiated": 6,
+    "estimate_signal_reports": 5,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 5,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 6,
@@ -49,7 +54,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-24",
@@ -64,7 +77,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-24",
@@ -79,7 +100,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-24",
@@ -94,7 +121,17 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.3,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -109,7 +146,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 14.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-22",
@@ -124,7 +167,143 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 12.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-24",
+        "broker": "유안타증권",
+        "title": "삼성에스디에스 - AI Full Stack과 새로운 성장",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91899&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260424_company_662793000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260424_company_662793000.pdf",
+        "target_price": "250,000",
+        "target_price_value": 250000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배순이익",
+        "period": null,
+        "value": 924.0,
+        "unit": "억원",
+        "value_krw_100m": 924.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8%, 지배순이익 924억원 YoY -56."
+      },
+      {
+        "date": "2026-04-24",
+        "broker": "유안타증권",
+        "title": "삼성에스디에스 - AI Full Stack과 새로운 성장",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91899&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260424_company_662793000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260424_company_662793000.pdf",
+        "target_price": "250,000",
+        "target_price_value": 250000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 783.0,
+        "unit": "억원",
+        "value_krw_100m": 783.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9%, 임직원 퇴직금 산정 기준 변경에 따른 일회성 퇴직급여비용 1,120억원 반영으로 영업이익 783억원 YoY -70."
+      },
+      {
+        "date": "2026-04-24",
+        "broker": "하나증권",
+        "title": "삼성에스디에스 - 성장과 가치 제고라는 명확한 목표 제시",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91913&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260424_company_138830000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260424_company_138830000.pdf",
+        "target_price": "220,000",
+        "target_price_value": 220000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 783.0,
+        "unit": "억원",
+        "value_krw_100m": 783.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%QoQ), 영업이익 783억원(-70."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "iM증권",
+        "title": "삼성에스디에스 - AI 데이터센터 확보로 성장의 핵심 동력 기반..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91965&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_482728000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_482728000.pdf",
+        "target_price": "220,000",
+        "target_price_value": 220000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 14.9,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 783.0,
+        "unit": "억원",
+        "value_krw_100m": 783.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2% QoQ), 영업이익 783억원(-70."
       }
     ],
     "opinion_distribution": [
@@ -147,7 +326,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 12.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -166,7 +347,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-24",
@@ -181,7 +370,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-24",
@@ -196,7 +393,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-24",
@@ -211,7 +414,17 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.3,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -226,7 +439,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 14.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-22",
@@ -241,7 +460,143 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 12.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-24",
+      "broker": "유안타증권",
+      "title": "삼성에스디에스 - AI Full Stack과 새로운 성장",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91899&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260424_company_662793000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260424_company_662793000.pdf",
+      "target_price": "250,000",
+      "target_price_value": 250000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배순이익",
+      "period": null,
+      "value": 924.0,
+      "unit": "억원",
+      "value_krw_100m": 924.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8%, 지배순이익 924억원 YoY -56."
+    },
+    {
+      "date": "2026-04-24",
+      "broker": "유안타증권",
+      "title": "삼성에스디에스 - AI Full Stack과 새로운 성장",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91899&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260424_company_662793000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260424_company_662793000.pdf",
+      "target_price": "250,000",
+      "target_price_value": 250000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 783.0,
+      "unit": "억원",
+      "value_krw_100m": 783.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9%, 임직원 퇴직금 산정 기준 변경에 따른 일회성 퇴직급여비용 1,120억원 반영으로 영업이익 783억원 YoY -70."
+    },
+    {
+      "date": "2026-04-24",
+      "broker": "하나증권",
+      "title": "삼성에스디에스 - 성장과 가치 제고라는 명확한 목표 제시",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91913&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260424_company_138830000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260424_company_138830000.pdf",
+      "target_price": "220,000",
+      "target_price_value": 220000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 783.0,
+      "unit": "억원",
+      "value_krw_100m": 783.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%QoQ), 영업이익 783억원(-70."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "iM증권",
+      "title": "삼성에스디에스 - AI 데이터센터 확보로 성장의 핵심 동력 기반..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91965&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_482728000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_482728000.pdf",
+      "target_price": "220,000",
+      "target_price_value": 220000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 14.9,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 783.0,
+      "unit": "억원",
+      "value_krw_100m": 783.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2% QoQ), 영업이익 783억원(-70."
     }
   ],
   "opinion_distribution": [
@@ -264,7 +619,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 12.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -416,7 +773,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -472,13 +832,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 783.0,
+          "unit": "억원",
+          "source_excerpt": "2% QoQ), 영업이익 783억원(-70.",
+          "value_krw_100m": 783.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -531,13 +911,30 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -588,13 +985,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 783.0,
+          "unit": "억원",
+          "source_excerpt": "2%QoQ), 영업이익 783억원(-70.",
+          "value_krw_100m": 783.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -645,13 +1062,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 783.0,
+          "unit": "억원",
+          "source_excerpt": "9%, 임직원 퇴직금 산정 기준 변경에 따른 일회성 퇴직급여비용 1,120억원 반영으로 영업이익 783억원 YoY -70.",
+          "value_krw_100m": 783.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": null,
+          "value": 924.0,
+          "unit": "억원",
+          "source_excerpt": "8%, 지배순이익 924억원 YoY -56.",
+          "value_krw_100m": 924.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -702,13 +1153,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "recent_changes": [
@@ -828,7 +1292,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -884,13 +1351,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 783.0,
+          "unit": "억원",
+          "source_excerpt": "2% QoQ), 영업이익 783억원(-70.",
+          "value_krw_100m": 783.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -943,13 +1430,30 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1000,13 +1504,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 783.0,
+          "unit": "억원",
+          "source_excerpt": "2%QoQ), 영업이익 783억원(-70.",
+          "value_krw_100m": 783.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1057,13 +1581,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 783.0,
+          "unit": "억원",
+          "source_excerpt": "9%, 임직원 퇴직금 산정 기준 변경에 따른 일회성 퇴직급여비용 1,120억원 반영으로 영업이익 783억원 YoY -70.",
+          "value_krw_100m": 783.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": null,
+          "value": 924.0,
+          "unit": "억원",
+          "source_excerpt": "8%, 지배순이익 924억원 YoY -56.",
+          "value_krw_100m": 924.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1114,13 +1672,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "timeline": [
@@ -1240,7 +1811,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1296,13 +1870,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 783.0,
+          "unit": "억원",
+          "source_excerpt": "2% QoQ), 영업이익 783억원(-70.",
+          "value_krw_100m": 783.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1355,13 +1949,30 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1412,13 +2023,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 783.0,
+          "unit": "억원",
+          "source_excerpt": "2%QoQ), 영업이익 783억원(-70.",
+          "value_krw_100m": 783.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1469,13 +2100,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 783.0,
+          "unit": "억원",
+          "source_excerpt": "9%, 임직원 퇴직금 산정 기준 변경에 따른 일회성 퇴직급여비용 1,120억원 반영으로 영업이익 783억원 YoY -70.",
+          "value_krw_100m": 783.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": null,
+          "value": 924.0,
+          "unit": "억원",
+          "source_excerpt": "8%, 지배순이익 924억원 YoY -56.",
+          "value_krw_100m": 924.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1526,13 +2191,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ]
 }

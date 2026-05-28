@@ -12,14 +12,19 @@
     "키움증권"
   ],
   "change_summary": {
-    "changed_reports": 4,
+    "changed_reports": 5,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 4
+    "coverage_initiated": 4,
+    "estimate_signal_reports": 4,
+    "earnings_estimate_up": 4,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 3,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 4,
@@ -48,7 +53,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-24",
@@ -63,7 +70,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -78,7 +91,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-28",
@@ -93,7 +114,151 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-24",
+        "broker": "키움증권",
+        "title": "고영 - 빛에 가려진 뇌 수술 로봇, 1Q26 주인공은 AI",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91847&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260424_company_67049000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260424_company_67049000.pdf",
+        "target_price": null,
+        "target_price_value": null,
+        "opinion": null,
+        "opinion_normalized": null,
+        "score": 10.25,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 13.5,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 13.5,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9%, 영업이익률 13.5%; 컨센서스 대비 +45."
+      },
+      {
+        "date": "2026-04-24",
+        "broker": "유진투자증권",
+        "title": "고영 - 1Q26P Review: 분기 사상 최대 매출액 달성",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91890&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260424_company_119185000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260424_company_119185000.pdf",
+        "target_price": "41,000",
+        "target_price_value": 41000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 99.0,
+        "unit": "억원",
+        "value_krw_100m": 99.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "최대 매출 기록 1분기 잠정식정(연결 기준)은 매출액 727억원, 영업이익 99억원으로 전년동기 대비 매출액은 42."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "iM증권",
+        "title": "고영 - AI 인프라 투자 확대 수혜(ft. AI솔루션, 광..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91971&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_638083000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_638083000.pdf",
+        "target_price": "50,000",
+        "target_price_value": 50000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 99.0,
+        "unit": "억원",
+        "value_krw_100m": 99.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2% QoQ), 영업이익 99억원(+209."
+      },
+      {
+        "date": "2026-04-28",
+        "broker": "미래에셋증권",
+        "title": "고영 - AI가 AI했다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92063&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260428_company_29076000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260428_company_29076000.pdf",
+        "target_price": "52,500",
+        "target_price_value": 52500,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 10.8,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 13.6,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 13.6,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "영업이익도 99억원(209% YoY, OPM 13.6%)으로 시장 기대치 상회."
       }
     ],
     "opinion_distribution": [
@@ -116,7 +281,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-24",
@@ -131,7 +302,15 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 10.25,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-24",
@@ -146,7 +325,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-27",
@@ -161,7 +342,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-28",
@@ -176,7 +365,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -195,7 +392,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-24",
@@ -210,7 +409,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -225,7 +430,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-28",
@@ -240,7 +453,151 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-24",
+      "broker": "키움증권",
+      "title": "고영 - 빛에 가려진 뇌 수술 로봇, 1Q26 주인공은 AI",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91847&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260424_company_67049000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260424_company_67049000.pdf",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "score": 10.25,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 13.5,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 13.5,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9%, 영업이익률 13.5%; 컨센서스 대비 +45."
+    },
+    {
+      "date": "2026-04-24",
+      "broker": "유진투자증권",
+      "title": "고영 - 1Q26P Review: 분기 사상 최대 매출액 달성",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91890&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260424_company_119185000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260424_company_119185000.pdf",
+      "target_price": "41,000",
+      "target_price_value": 41000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 99.0,
+      "unit": "억원",
+      "value_krw_100m": 99.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "최대 매출 기록 1분기 잠정식정(연결 기준)은 매출액 727억원, 영업이익 99억원으로 전년동기 대비 매출액은 42."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "iM증권",
+      "title": "고영 - AI 인프라 투자 확대 수혜(ft. AI솔루션, 광..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91971&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_638083000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_638083000.pdf",
+      "target_price": "50,000",
+      "target_price_value": 50000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 99.0,
+      "unit": "억원",
+      "value_krw_100m": 99.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2% QoQ), 영업이익 99억원(+209."
+    },
+    {
+      "date": "2026-04-28",
+      "broker": "미래에셋증권",
+      "title": "고영 - AI가 AI했다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92063&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260428_company_29076000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260428_company_29076000.pdf",
+      "target_price": "52,500",
+      "target_price_value": 52500,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 10.8,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 13.6,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 13.6,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "영업이익도 99억원(209% YoY, OPM 13.6%)으로 시장 기대치 상회."
     }
   ],
   "opinion_distribution": [
@@ -263,7 +620,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-24",
@@ -278,7 +641,15 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 10.25,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-24",
@@ -293,7 +664,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-27",
@@ -308,7 +681,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-28",
@@ -323,7 +704,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -407,13 +796,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 13.6,
+          "unit": "%",
+          "value_pct": 13.6,
+          "source_excerpt": "영업이익도 99억원(209% YoY, OPM 13.6%)으로 시장 기대치 상회."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -464,13 +877,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 99.0,
+          "unit": "억원",
+          "source_excerpt": "2% QoQ), 영업이익 99억원(+209.",
+          "value_krw_100m": 99.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -530,7 +967,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -582,10 +1022,36 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 13.5,
+          "unit": "%",
+          "value_pct": 13.5,
+          "source_excerpt": "9%, 영업이익률 13.5%; 컨센서스 대비 +45."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -637,13 +1103,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 99.0,
+          "unit": "억원",
+          "source_excerpt": "최대 매출 기록 1분기 잠정식정(연결 기준)은 매출액 727억원, 영업이익 99억원으로 전년동기 대비 매출액은 42.",
+          "value_krw_100m": 99.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
@@ -699,13 +1185,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 13.6,
+          "unit": "%",
+          "value_pct": 13.6,
+          "source_excerpt": "영업이익도 99억원(209% YoY, OPM 13.6%)으로 시장 기대치 상회."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -756,13 +1266,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 99.0,
+          "unit": "억원",
+          "source_excerpt": "2% QoQ), 영업이익 99억원(+209.",
+          "value_krw_100m": 99.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -822,7 +1356,91 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91847",
+      "title": "빛에 가려진 뇌 수술 로봇, 1Q26 주인공은 AI",
+      "display_title": "고영 - 빛에 가려진 뇌 수술 로봇, 1Q26 주인공은 AI",
+      "broker": "키움증권",
+      "published_date": "2026-04-24",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91847&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260424_company_67049000.pdf",
+      "subject": "고영",
+      "subject_key": "고영",
+      "views": 1359,
+      "analyst": null,
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1Q26 실적은 매출액 727억 원(YoY +42.3%, QoQ +5.2%; 컨센서스 +13.1% 상회), 영업이익 99억 원(YoY +209.1%, QoQ +41.9%, 영업이익률 13.5%; 컨센서스 대비 +45.6% 상회)을 기록했다. 3Q25부터 이어지던 AI 서버 테스트 수요를 대응하며 좋은 업황에 동조되고 있다.",
+      "summary": "1Q26 실적은 매출액 727억 원(YoY +42.3%, QoQ +5.2%; 컨센서스 +13.1% 상회), 영업이익 99억 원(YoY +209.1%, QoQ +41.9%, 영업이익률 13.5%; 컨센서스 대비 +45.6% 상회)을 기록했다. 3Q25부터 이어지던 AI 서버 테스트 수요를 대응하며 좋은 업황에 동조되고 있다. 또한, AI 고객사들은 비싸더라도 좋은 장비를 선호하는 경향이 있어 매출 믹스 개선에도 도움이 되어 1Q26 매출총이익률이 67.0%(QoQ +4.0%P)을 기록할 것으로 추정한다.",
+      "summary_engine": "rule",
+      "score": 10.25,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 섹터/키워드(반도체, 로봇)",
+        "조회수 상위권",
+        "우선 추적 증권사"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체",
+        "로봇"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 13.5,
+          "unit": "%",
+          "value_pct": 13.5,
+          "source_excerpt": "9%, 영업이익률 13.5%; 컨센서스 대비 +45."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -874,13 +1492,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 99.0,
+          "unit": "억원",
+          "source_excerpt": "최대 매출 기록 1분기 잠정식정(연결 기준)은 매출액 727억원, 영업이익 99억원으로 전년동기 대비 매출액은 42.",
+          "value_krw_100m": 99.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -936,13 +1574,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 13.6,
+          "unit": "%",
+          "value_pct": 13.6,
+          "source_excerpt": "영업이익도 99억원(209% YoY, OPM 13.6%)으로 시장 기대치 상회."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -993,13 +1655,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 99.0,
+          "unit": "억원",
+          "source_excerpt": "2% QoQ), 영업이익 99억원(+209.",
+          "value_krw_100m": 99.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1059,7 +1745,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1111,10 +1800,36 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 13.5,
+          "unit": "%",
+          "value_pct": 13.5,
+          "source_excerpt": "9%, 영업이익률 13.5%; 컨센서스 대비 +45."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1166,13 +1881,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 99.0,
+          "unit": "억원",
+          "source_excerpt": "최대 매출 기록 1분기 잠정식정(연결 기준)은 매출액 727억원, 영업이익 99억원으로 전년동기 대비 매출액은 42.",
+          "value_krw_100m": 99.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ]
 }

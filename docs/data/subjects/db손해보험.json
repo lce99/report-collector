@@ -17,7 +17,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 3,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 1,
+    "earnings_estimate_down": 2,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 3,
@@ -46,7 +51,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-18",
@@ -61,7 +74,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-18",
@@ -76,7 +95,115 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-18",
+        "broker": "iM증권",
+        "title": "DB손해보험 - One-off 요인 대거 반영. 하반기 개선 전망",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93031&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260518_company_507825000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260518_company_507825000.pdf",
+        "target_price": "220,000",
+        "target_price_value": 220000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.55,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": "1Q26",
+        "value": 2685.0,
+        "unit": "억원",
+        "value_krw_100m": 2685.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "하반기 개선 전망 DB손해보험 1Q26 순이익 2,685억원(-39."
+      },
+      {
+        "date": "2026-05-18",
+        "broker": "iM증권",
+        "title": "DB손해보험 - One-off 요인 대거 반영. 하반기 개선 전망",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93031&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260518_company_507825000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260518_company_507825000.pdf",
+        "target_price": "220,000",
+        "target_price_value": 220000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.55,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": 2685.0,
+        "unit": "억원",
+        "value_krw_100m": 2685.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9% YoY)기록 DB손해보험의 1Q26 별도 순이익은 2,685억원(-39."
+      },
+      {
+        "date": "2026-05-18",
+        "broker": "신한투자증권",
+        "title": "DB손해보험 - DB손해보험; 전방위 손해율 악화 구간",
+        "ticker": null,
+        "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=936535",
+        "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351503",
+        "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351503",
+        "target_price": "220,000원",
+        "target_price_value": 220000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.8,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": 2685.0,
+        "unit": "억원",
+        "value_krw_100m": 2685.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "DB손해보험 - DB손해보험; 전방위 손해율 악화 구간 DB손해보험; 전방위 손해율 악화 구간 DB손해보험 신한생각: 봄이 왔는데 손해율은 여전히 겨울 1Q26P 순이익 2,685억원(-39."
       }
     ],
     "opinion_distribution": [
@@ -99,7 +226,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-18",
@@ -114,7 +249,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-18",
@@ -129,7 +270,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 하락/악화"
+        ]
       }
     ],
     "window_days": 14
@@ -148,7 +295,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-18",
@@ -163,7 +318,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-18",
@@ -178,7 +339,115 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-18",
+      "broker": "iM증권",
+      "title": "DB손해보험 - One-off 요인 대거 반영. 하반기 개선 전망",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93031&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260518_company_507825000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260518_company_507825000.pdf",
+      "target_price": "220,000",
+      "target_price_value": 220000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.55,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": "1Q26",
+      "value": 2685.0,
+      "unit": "억원",
+      "value_krw_100m": 2685.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "하반기 개선 전망 DB손해보험 1Q26 순이익 2,685억원(-39."
+    },
+    {
+      "date": "2026-05-18",
+      "broker": "iM증권",
+      "title": "DB손해보험 - One-off 요인 대거 반영. 하반기 개선 전망",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93031&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260518_company_507825000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260518_company_507825000.pdf",
+      "target_price": "220,000",
+      "target_price_value": 220000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.55,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": 2685.0,
+      "unit": "억원",
+      "value_krw_100m": 2685.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9% YoY)기록 DB손해보험의 1Q26 별도 순이익은 2,685억원(-39."
+    },
+    {
+      "date": "2026-05-18",
+      "broker": "신한투자증권",
+      "title": "DB손해보험 - DB손해보험; 전방위 손해율 악화 구간",
+      "ticker": null,
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=936535",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351503",
+      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351503",
+      "target_price": "220,000원",
+      "target_price_value": 220000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.8,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": 2685.0,
+      "unit": "억원",
+      "value_krw_100m": 2685.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "DB손해보험 - DB손해보험; 전방위 손해율 악화 구간 DB손해보험; 전방위 손해율 악화 구간 DB손해보험 신한생각: 봄이 왔는데 손해율은 여전히 겨울 1Q26P 순이익 2,685억원(-39."
     }
   ],
   "opinion_distribution": [
@@ -201,7 +470,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-18",
@@ -216,7 +493,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-18",
@@ -231,7 +514,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "broker_summary": [
@@ -305,13 +594,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -362,13 +660,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 2685.0,
+          "unit": "억원",
+          "source_excerpt": "DB손해보험 - DB손해보험; 전방위 손해율 악화 구간 DB손해보험; 전방위 손해율 악화 구간 DB손해보험 신한생각: 봄이 왔는데 손해율은 여전히 겨울 1Q26P 순이익 2,685억원(-39.",
+          "value_krw_100m": 2685.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -418,13 +736,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": "1Q26",
+          "value": 2685.0,
+          "unit": "억원",
+          "source_excerpt": "하반기 개선 전망 DB손해보험 1Q26 순이익 2,685억원(-39.",
+          "value_krw_100m": 2685.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 2685.0,
+          "unit": "억원",
+          "source_excerpt": "9% YoY)기록 DB손해보험의 1Q26 별도 순이익은 2,685억원(-39.",
+          "value_krw_100m": 2685.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "recent_changes": [
@@ -478,13 +830,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -535,13 +896,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 2685.0,
+          "unit": "억원",
+          "source_excerpt": "DB손해보험 - DB손해보험; 전방위 손해율 악화 구간 DB손해보험; 전방위 손해율 악화 구간 DB손해보험 신한생각: 봄이 왔는데 손해율은 여전히 겨울 1Q26P 순이익 2,685억원(-39.",
+          "value_krw_100m": 2685.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -591,13 +972,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": "1Q26",
+          "value": 2685.0,
+          "unit": "억원",
+          "source_excerpt": "하반기 개선 전망 DB손해보험 1Q26 순이익 2,685억원(-39.",
+          "value_krw_100m": 2685.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 2685.0,
+          "unit": "억원",
+          "source_excerpt": "9% YoY)기록 DB손해보험의 1Q26 별도 순이익은 2,685억원(-39.",
+          "value_krw_100m": 2685.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "timeline": [
@@ -651,13 +1066,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -708,13 +1132,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 2685.0,
+          "unit": "억원",
+          "source_excerpt": "DB손해보험 - DB손해보험; 전방위 손해율 악화 구간 DB손해보험; 전방위 손해율 악화 구간 DB손해보험 신한생각: 봄이 왔는데 손해율은 여전히 겨울 1Q26P 순이익 2,685억원(-39.",
+          "value_krw_100m": 2685.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -764,13 +1208,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": "1Q26",
+          "value": 2685.0,
+          "unit": "억원",
+          "source_excerpt": "하반기 개선 전망 DB손해보험 1Q26 순이익 2,685억원(-39.",
+          "value_krw_100m": 2685.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 2685.0,
+          "unit": "억원",
+          "source_excerpt": "9% YoY)기록 DB손해보험의 1Q26 별도 순이익은 2,685억원(-39.",
+          "value_krw_100m": 2685.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ]
 }

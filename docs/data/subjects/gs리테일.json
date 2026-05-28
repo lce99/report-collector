@@ -17,7 +17,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 3,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 3,
@@ -46,7 +51,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -61,7 +72,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-19",
@@ -76,7 +95,179 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-08",
+        "broker": "미래에셋증권",
+        "title": "GS리테일 - 필수재 채널까지 닿은 소비 호황의 훈풍",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92602&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_474825000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_474825000.pdf",
+        "target_price": "31,000",
+        "target_price_value": 31000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.9,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 583.0,
+        "unit": "억원",
+        "value_krw_100m": 583.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "GS리테일 - 필수재 채널까지 닿은 소비 호황의 훈풍 필수재 채널까지 닿은 소비 호황의 훈풍 GS리테일 1Q26 Review: 전 사업부 견조 GS리테일의 1Q26 실적은 매출액 28,549억원(YoY +4%), 영업이익 583억원(YoY +39%)으로 시장 기대치를 상회하였다."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "키움증권",
+        "title": "GS리테일 - 장사가 잘되요",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92572&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_45855000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_45855000.pdf",
+        "target_price": "30,000",
+        "target_price_value": 30000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1분기",
+        "value": 583.0,
+        "unit": "억원",
+        "value_krw_100m": 583.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "GS리테일 - 장사가 잘되요 장사가 잘되요 GS리테일 1분기 영업이익 583억원으로 시장 컨센서스 상회 GS리테일의 1분기 연결기준 영업이익은 583억원(+39% YoY)으로 시장 컨센서스를 상회하였다."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "키움증권",
+        "title": "GS리테일 - 장사가 잘되요",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92572&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_45855000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_45855000.pdf",
+        "target_price": "30,000",
+        "target_price_value": 30000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 583.0,
+        "unit": "억원",
+        "value_krw_100m": 583.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "GS리테일 - 장사가 잘되요 장사가 잘되요 GS리테일 1분기 영업이익 583억원으로 시장 컨센서스 상회 GS리테일의 1분기 연결기준 영업이익은 583억원(+39% YoY)으로 시장 컨센서스를 상회하였다."
+      },
+      {
+        "date": "2026-05-19",
+        "broker": "유진투자증권",
+        "title": "GS리테일 - 1Q26 Review: Good, So far",
+        "ticker": "007070",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93133&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260519_company_76848000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260519_company_76848000.pdf",
+        "target_price": "34,000",
+        "target_price_value": 34000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.55,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 583.0,
+        "unit": "억원",
+        "value_krw_100m": 583.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8%, 이하 yoy), 영업이익 583억원(+39."
+      },
+      {
+        "date": "2026-05-19",
+        "broker": "유진투자증권",
+        "title": "GS리테일 - 1Q26 Review: Good, So far",
+        "ticker": "007070",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93133&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260519_company_76848000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260519_company_76848000.pdf",
+        "target_price": "34,000",
+        "target_price_value": 34000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.55,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 213.0,
+        "unit": "억원",
+        "value_krw_100m": 213.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7%), 영업이익 213억원(+23."
       }
     ],
     "opinion_distribution": [
@@ -99,7 +290,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -114,7 +311,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-19",
@@ -129,7 +334,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -148,7 +359,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -163,7 +380,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-19",
@@ -178,7 +403,179 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-08",
+      "broker": "미래에셋증권",
+      "title": "GS리테일 - 필수재 채널까지 닿은 소비 호황의 훈풍",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92602&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_474825000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_474825000.pdf",
+      "target_price": "31,000",
+      "target_price_value": 31000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.9,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 583.0,
+      "unit": "억원",
+      "value_krw_100m": 583.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "GS리테일 - 필수재 채널까지 닿은 소비 호황의 훈풍 필수재 채널까지 닿은 소비 호황의 훈풍 GS리테일 1Q26 Review: 전 사업부 견조 GS리테일의 1Q26 실적은 매출액 28,549억원(YoY +4%), 영업이익 583억원(YoY +39%)으로 시장 기대치를 상회하였다."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "키움증권",
+      "title": "GS리테일 - 장사가 잘되요",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92572&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_45855000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_45855000.pdf",
+      "target_price": "30,000",
+      "target_price_value": 30000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1분기",
+      "value": 583.0,
+      "unit": "억원",
+      "value_krw_100m": 583.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "GS리테일 - 장사가 잘되요 장사가 잘되요 GS리테일 1분기 영업이익 583억원으로 시장 컨센서스 상회 GS리테일의 1분기 연결기준 영업이익은 583억원(+39% YoY)으로 시장 컨센서스를 상회하였다."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "키움증권",
+      "title": "GS리테일 - 장사가 잘되요",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92572&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_45855000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_45855000.pdf",
+      "target_price": "30,000",
+      "target_price_value": 30000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 583.0,
+      "unit": "억원",
+      "value_krw_100m": 583.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "GS리테일 - 장사가 잘되요 장사가 잘되요 GS리테일 1분기 영업이익 583억원으로 시장 컨센서스 상회 GS리테일의 1분기 연결기준 영업이익은 583억원(+39% YoY)으로 시장 컨센서스를 상회하였다."
+    },
+    {
+      "date": "2026-05-19",
+      "broker": "유진투자증권",
+      "title": "GS리테일 - 1Q26 Review: Good, So far",
+      "ticker": "007070",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93133&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260519_company_76848000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260519_company_76848000.pdf",
+      "target_price": "34,000",
+      "target_price_value": 34000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.55,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 583.0,
+      "unit": "억원",
+      "value_krw_100m": 583.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8%, 이하 yoy), 영업이익 583억원(+39."
+    },
+    {
+      "date": "2026-05-19",
+      "broker": "유진투자증권",
+      "title": "GS리테일 - 1Q26 Review: Good, So far",
+      "ticker": "007070",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93133&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260519_company_76848000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260519_company_76848000.pdf",
+      "target_price": "34,000",
+      "target_price_value": 34000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.55,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 213.0,
+      "unit": "억원",
+      "value_krw_100m": 213.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7%), 영업이익 213억원(+23."
     }
   ],
   "opinion_distribution": [
@@ -201,7 +598,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -216,7 +619,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-19",
@@ -231,7 +642,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -354,12 +771,42 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 583.0,
+          "unit": "억원",
+          "source_excerpt": "8%, 이하 yoy), 영업이익 583억원(+39.",
+          "value_krw_100m": 583.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 213.0,
+          "unit": "억원",
+          "source_excerpt": "7%), 영업이익 213억원(+23.",
+          "value_krw_100m": 213.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -411,13 +858,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 583.0,
+          "unit": "억원",
+          "source_excerpt": "GS리테일 - 장사가 잘되요 장사가 잘되요 GS리테일 1분기 영업이익 583억원으로 시장 컨센서스 상회 GS리테일의 1분기 연결기준 영업이익은 583억원(+39% YoY)으로 시장 컨센서스를 상회하였다.",
+          "value_krw_100m": 583.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 583.0,
+          "unit": "억원",
+          "source_excerpt": "GS리테일 - 장사가 잘되요 장사가 잘되요 GS리테일 1분기 영업이익 583억원으로 시장 컨센서스 상회 GS리테일의 1분기 연결기준 영업이익은 583억원(+39% YoY)으로 시장 컨센서스를 상회하였다.",
+          "value_krw_100m": 583.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -467,13 +948,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 583.0,
+          "unit": "억원",
+          "source_excerpt": "GS리테일 - 필수재 채널까지 닿은 소비 호황의 훈풍 필수재 채널까지 닿은 소비 호황의 훈풍 GS리테일 1Q26 Review: 전 사업부 견조 GS리테일의 1Q26 실적은 매출액 28,549억원(YoY +4%), 영업이익 583억원(YoY +39%)으로 시장 기대치를 상회하였다.",
+          "value_krw_100m": 583.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
@@ -576,12 +1077,42 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 583.0,
+          "unit": "억원",
+          "source_excerpt": "8%, 이하 yoy), 영업이익 583억원(+39.",
+          "value_krw_100m": 583.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 213.0,
+          "unit": "억원",
+          "source_excerpt": "7%), 영업이익 213억원(+23.",
+          "value_krw_100m": 213.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -633,13 +1164,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 583.0,
+          "unit": "억원",
+          "source_excerpt": "GS리테일 - 장사가 잘되요 장사가 잘되요 GS리테일 1분기 영업이익 583억원으로 시장 컨센서스 상회 GS리테일의 1분기 연결기준 영업이익은 583억원(+39% YoY)으로 시장 컨센서스를 상회하였다.",
+          "value_krw_100m": 583.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 583.0,
+          "unit": "억원",
+          "source_excerpt": "GS리테일 - 장사가 잘되요 장사가 잘되요 GS리테일 1분기 영업이익 583억원으로 시장 컨센서스 상회 GS리테일의 1분기 연결기준 영업이익은 583억원(+39% YoY)으로 시장 컨센서스를 상회하였다.",
+          "value_krw_100m": 583.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -689,13 +1254,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 583.0,
+          "unit": "억원",
+          "source_excerpt": "GS리테일 - 필수재 채널까지 닿은 소비 호황의 훈풍 필수재 채널까지 닿은 소비 호황의 훈풍 GS리테일 1Q26 Review: 전 사업부 견조 GS리테일의 1Q26 실적은 매출액 28,549억원(YoY +4%), 영업이익 583억원(YoY +39%)으로 시장 기대치를 상회하였다.",
+          "value_krw_100m": 583.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -798,12 +1383,42 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 583.0,
+          "unit": "억원",
+          "source_excerpt": "8%, 이하 yoy), 영업이익 583억원(+39.",
+          "value_krw_100m": 583.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 213.0,
+          "unit": "억원",
+          "source_excerpt": "7%), 영업이익 213억원(+23.",
+          "value_krw_100m": 213.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -855,13 +1470,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 583.0,
+          "unit": "억원",
+          "source_excerpt": "GS리테일 - 장사가 잘되요 장사가 잘되요 GS리테일 1분기 영업이익 583억원으로 시장 컨센서스 상회 GS리테일의 1분기 연결기준 영업이익은 583억원(+39% YoY)으로 시장 컨센서스를 상회하였다.",
+          "value_krw_100m": 583.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 583.0,
+          "unit": "억원",
+          "source_excerpt": "GS리테일 - 장사가 잘되요 장사가 잘되요 GS리테일 1분기 영업이익 583억원으로 시장 컨센서스 상회 GS리테일의 1분기 연결기준 영업이익은 583억원(+39% YoY)으로 시장 컨센서스를 상회하였다.",
+          "value_krw_100m": 583.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -911,13 +1560,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 583.0,
+          "unit": "억원",
+          "source_excerpt": "GS리테일 - 필수재 채널까지 닿은 소비 호황의 훈풍 필수재 채널까지 닿은 소비 호황의 훈풍 GS리테일 1Q26 Review: 전 사업부 견조 GS리테일의 1Q26 실적은 매출액 28,549억원(YoY +4%), 영업이익 583억원(YoY +39%)으로 시장 기대치를 상회하였다.",
+          "value_krw_100m": 583.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ]
 }

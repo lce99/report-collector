@@ -11,14 +11,19 @@
     "하나증권"
   ],
   "change_summary": {
-    "changed_reports": 4,
+    "changed_reports": 5,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 4
+    "coverage_initiated": 4,
+    "estimate_signal_reports": 2,
+    "earnings_estimate_up": 0,
+    "earnings_estimate_down": 2,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 2
   },
   "target_summary": {
     "count": 3,
@@ -51,7 +56,15 @@
         "opinion": "Neutral",
         "opinion_normalized": "hold",
         "score": 8.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -66,7 +79,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-14",
@@ -81,7 +96,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-14",
@@ -96,7 +113,153 @@
         "opinion": "Neutral",
         "opinion_normalized": "hold",
         "score": 9.1,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-21",
+        "broker": "하나증권",
+        "title": "HMM - 1Q26 Pre: 전쟁보단 벌크, 벌크보단 현금",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91745&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260421_company_219937000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260421_company_219937000.pdf",
+        "target_price": "21,000",
+        "target_price_value": 21000,
+        "opinion": "Neutral",
+        "opinion_normalized": "hold",
+        "score": 8.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 9.6,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 9.6,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "HMM - 1Q26 Pre: 전쟁보단 벌크, 벌크보단 현금 1Q26 Pre: 전쟁보단 벌크, 벌크보단 현금 HMM 1분기 영업이익 2,570억원(-58% (YoY)) 전망 1분기 HMM의 매출액은 6% (YoY) 감소한 2조 6,750억원, 영업이익은 58% 감소한 2,570억원(영업…"
+      },
+      {
+        "date": "2026-04-21",
+        "broker": "하나증권",
+        "title": "HMM - 1Q26 Pre: 전쟁보단 벌크, 벌크보단 현금",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91745&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260421_company_219937000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260421_company_219937000.pdf",
+        "target_price": "21,000",
+        "target_price_value": 21000,
+        "opinion": "Neutral",
+        "opinion_normalized": "hold",
+        "score": 8.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1분기",
+        "value": 2570.0,
+        "unit": "억원",
+        "value_krw_100m": 2570.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "HMM - 1Q26 Pre: 전쟁보단 벌크, 벌크보단 현금 1Q26 Pre: 전쟁보단 벌크, 벌크보단 현금 HMM 1분기 영업이익 2,570억원(-58% (YoY)) 전망 1분기 HMM의 매출액은 6% (YoY) 감소한 2조 6,750억원, 영업이익은 58% 감소한 2,570억원(영업…"
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "하나증권",
+        "title": "HMM - 1Q26 Re: 단기 Good, 중장기는 아직 우려가 ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92924&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/-/20260514_company_284668000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/-/20260514_company_284668000.pdf",
+        "target_price": "21,000",
+        "target_price_value": 21000,
+        "opinion": "Neutral",
+        "opinion_normalized": "hold",
+        "score": 9.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 9.9,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 9.9,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "HMM 1분기 영업이익 2,691억원(-56% (YoY)) 1분기 HMM의 매출액은 5% (YoY) 감소한 2조 7,187억원, 영업이익은 56% 감소한 2,691억원(영업이익률 9.9%)로 컨센서스에 부합했다."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "하나증권",
+        "title": "HMM - 1Q26 Re: 단기 Good, 중장기는 아직 우려가 ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92924&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/-/20260514_company_284668000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/-/20260514_company_284668000.pdf",
+        "target_price": "21,000",
+        "target_price_value": 21000,
+        "opinion": "Neutral",
+        "opinion_normalized": "hold",
+        "score": 9.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1분기",
+        "value": 2691.0,
+        "unit": "억원",
+        "value_krw_100m": 2691.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "HMM 1분기 영업이익 2,691억원(-56% (YoY)) 1분기 HMM의 매출액은 5% (YoY) 감소한 2조 7,187억원, 영업이익은 56% 감소한 2,691억원(영업이익률 9."
       }
     ],
     "opinion_distribution": [
@@ -123,7 +286,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-14",
@@ -138,7 +303,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-14",
@@ -153,7 +320,9 @@
         "opinion": "중립",
         "opinion_normalized": "hold",
         "score": 8.4,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-14",
@@ -168,7 +337,15 @@
         "opinion": "Neutral",
         "opinion_normalized": "hold",
         "score": 9.1,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       }
     ],
     "window_days": 14
@@ -187,7 +364,15 @@
       "opinion": "Neutral",
       "opinion_normalized": "hold",
       "score": 8.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -202,7 +387,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-14",
@@ -217,7 +404,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-14",
@@ -232,7 +421,153 @@
       "opinion": "Neutral",
       "opinion_normalized": "hold",
       "score": 9.1,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-21",
+      "broker": "하나증권",
+      "title": "HMM - 1Q26 Pre: 전쟁보단 벌크, 벌크보단 현금",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91745&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260421_company_219937000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260421_company_219937000.pdf",
+      "target_price": "21,000",
+      "target_price_value": 21000,
+      "opinion": "Neutral",
+      "opinion_normalized": "hold",
+      "score": 8.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 9.6,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 9.6,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "HMM - 1Q26 Pre: 전쟁보단 벌크, 벌크보단 현금 1Q26 Pre: 전쟁보단 벌크, 벌크보단 현금 HMM 1분기 영업이익 2,570억원(-58% (YoY)) 전망 1분기 HMM의 매출액은 6% (YoY) 감소한 2조 6,750억원, 영업이익은 58% 감소한 2,570억원(영업…"
+    },
+    {
+      "date": "2026-04-21",
+      "broker": "하나증권",
+      "title": "HMM - 1Q26 Pre: 전쟁보단 벌크, 벌크보단 현금",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91745&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260421_company_219937000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260421_company_219937000.pdf",
+      "target_price": "21,000",
+      "target_price_value": 21000,
+      "opinion": "Neutral",
+      "opinion_normalized": "hold",
+      "score": 8.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1분기",
+      "value": 2570.0,
+      "unit": "억원",
+      "value_krw_100m": 2570.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "HMM - 1Q26 Pre: 전쟁보단 벌크, 벌크보단 현금 1Q26 Pre: 전쟁보단 벌크, 벌크보단 현금 HMM 1분기 영업이익 2,570억원(-58% (YoY)) 전망 1분기 HMM의 매출액은 6% (YoY) 감소한 2조 6,750억원, 영업이익은 58% 감소한 2,570억원(영업…"
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "하나증권",
+      "title": "HMM - 1Q26 Re: 단기 Good, 중장기는 아직 우려가 ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92924&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/-/20260514_company_284668000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/-/20260514_company_284668000.pdf",
+      "target_price": "21,000",
+      "target_price_value": 21000,
+      "opinion": "Neutral",
+      "opinion_normalized": "hold",
+      "score": 9.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 9.9,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 9.9,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "HMM 1분기 영업이익 2,691억원(-56% (YoY)) 1분기 HMM의 매출액은 5% (YoY) 감소한 2조 7,187억원, 영업이익은 56% 감소한 2,691억원(영업이익률 9.9%)로 컨센서스에 부합했다."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "하나증권",
+      "title": "HMM - 1Q26 Re: 단기 Good, 중장기는 아직 우려가 ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92924&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/-/20260514_company_284668000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/-/20260514_company_284668000.pdf",
+      "target_price": "21,000",
+      "target_price_value": 21000,
+      "opinion": "Neutral",
+      "opinion_normalized": "hold",
+      "score": 9.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1분기",
+      "value": 2691.0,
+      "unit": "억원",
+      "value_krw_100m": 2691.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "HMM 1분기 영업이익 2,691억원(-56% (YoY)) 1분기 HMM의 매출액은 5% (YoY) 감소한 2조 7,187억원, 영업이익은 56% 감소한 2,691억원(영업이익률 9."
     }
   ],
   "opinion_distribution": [
@@ -259,7 +594,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-14",
@@ -274,7 +611,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-14",
@@ -289,7 +628,9 @@
       "opinion": "중립",
       "opinion_normalized": "hold",
       "score": 8.4,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-14",
@@ -304,7 +645,15 @@
       "opinion": "Neutral",
       "opinion_normalized": "hold",
       "score": 9.1,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "broker_summary": [
@@ -381,10 +730,46 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 2691.0,
+          "unit": "억원",
+          "source_excerpt": "HMM 1분기 영업이익 2,691억원(-56% (YoY)) 1분기 HMM의 매출액은 5% (YoY) 감소한 2조 7,187억원, 영업이익은 56% 감소한 2,691억원(영업이익률 9.",
+          "value_krw_100m": 2691.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 9.9,
+          "unit": "%",
+          "value_pct": 9.9,
+          "source_excerpt": "HMM 1분기 영업이익 2,691억원(-56% (YoY)) 1분기 HMM의 매출액은 5% (YoY) 감소한 2조 7,187억원, 영업이익은 56% 감소한 2,691억원(영업이익률 9.9%)로 컨센서스에 부합했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -440,7 +825,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -496,7 +884,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -551,11 +942,104 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
     {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92924",
+      "title": "1Q26 Re: 단기 Good, 중장기는 아직 우려가 ..",
+      "display_title": "HMM - 1Q26 Re: 단기 Good, 중장기는 아직 우려가 ..",
+      "broker": "하나증권",
+      "published_date": "2026-05-14",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92924&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/-/20260514_company_284668000.pdf",
+      "subject": "HMM",
+      "subject_key": "hmm",
+      "views": 548,
+      "analyst": null,
+      "target_price": "21,000",
+      "target_price_value": 21000,
+      "opinion": "Neutral",
+      "opinion_normalized": "hold",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1분기 영업이익 2,691억원(-56% (YoY)) 1분기 HMM의 매출액은 5% (YoY) 감소한 2조 7,187억원, 영업이익은 56% 감소한 2,691억원(영업이익률 9.9%)로 컨센서스에 부합했다.",
+      "summary": "1분기 영업이익 2,691억원(-56% (YoY)) 1분기 HMM의 매출액은 5% (YoY) 감소한 2조 7,187억원, 영업이익은 56% 감소한 2,691억원(영업이익률 9.9%)로 컨센서스에 부합했다. 중동 전쟁 이후 SCFI와 유류비가 가파르게 상승했으나 1분기 실적 영향은 크지 않았다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 9.1,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "우선 추적 증권사",
+        "본문 정보량 풍부"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-04-21",
+      "previous_target_price": "21,000",
+      "previous_opinion": "Neutral",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 2691.0,
+          "unit": "억원",
+          "source_excerpt": "HMM 1분기 영업이익 2,691억원(-56% (YoY)) 1분기 HMM의 매출액은 5% (YoY) 감소한 2조 7,187억원, 영업이익은 56% 감소한 2,691억원(영업이익률 9.",
+          "value_krw_100m": 2691.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 9.9,
+          "unit": "%",
+          "value_pct": 9.9,
+          "source_excerpt": "HMM 1분기 영업이익 2,691억원(-56% (YoY)) 1분기 HMM의 매출액은 5% (YoY) 감소한 2조 7,187억원, 영업이익은 56% 감소한 2,691억원(영업이익률 9.9%)로 컨센서스에 부합했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
+    },
+    {
       "source": "shinhan_investment_official",
       "category": "company",
       "category_label": "종목분석",
@@ -609,7 +1093,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -665,7 +1152,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -720,7 +1210,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -770,13 +1263,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 2570.0,
+          "unit": "억원",
+          "source_excerpt": "HMM - 1Q26 Pre: 전쟁보단 벌크, 벌크보단 현금 1Q26 Pre: 전쟁보단 벌크, 벌크보단 현금 HMM 1분기 영업이익 2,570억원(-58% (YoY)) 전망 1분기 HMM의 매출액은 6% (YoY) 감소한 2조 6,750억원, 영업이익은 58% 감소한 2,570억원(영업…",
+          "value_krw_100m": 2570.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 9.6,
+          "unit": "%",
+          "value_pct": 9.6,
+          "source_excerpt": "HMM - 1Q26 Pre: 전쟁보단 벌크, 벌크보단 현금 1Q26 Pre: 전쟁보단 벌크, 벌크보단 현금 HMM 1분기 영업이익 2,570억원(-58% (YoY)) 전망 1분기 HMM의 매출액은 6% (YoY) 감소한 2조 6,750억원, 영업이익은 58% 감소한 2,570억원(영업…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "timeline": [
@@ -829,10 +1356,46 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 2691.0,
+          "unit": "억원",
+          "source_excerpt": "HMM 1분기 영업이익 2,691억원(-56% (YoY)) 1분기 HMM의 매출액은 5% (YoY) 감소한 2조 7,187억원, 영업이익은 56% 감소한 2,691억원(영업이익률 9.",
+          "value_krw_100m": 2691.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 9.9,
+          "unit": "%",
+          "value_pct": 9.9,
+          "source_excerpt": "HMM 1분기 영업이익 2,691억원(-56% (YoY)) 1분기 HMM의 매출액은 5% (YoY) 감소한 2조 7,187억원, 영업이익은 56% 감소한 2,691억원(영업이익률 9.9%)로 컨센서스에 부합했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -888,7 +1451,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -944,7 +1510,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -999,7 +1568,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1049,13 +1621,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 2570.0,
+          "unit": "억원",
+          "source_excerpt": "HMM - 1Q26 Pre: 전쟁보단 벌크, 벌크보단 현금 1Q26 Pre: 전쟁보단 벌크, 벌크보단 현금 HMM 1분기 영업이익 2,570억원(-58% (YoY)) 전망 1분기 HMM의 매출액은 6% (YoY) 감소한 2조 6,750억원, 영업이익은 58% 감소한 2,570억원(영업…",
+          "value_krw_100m": 2570.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 9.6,
+          "unit": "%",
+          "value_pct": 9.6,
+          "source_excerpt": "HMM - 1Q26 Pre: 전쟁보단 벌크, 벌크보단 현금 1Q26 Pre: 전쟁보단 벌크, 벌크보단 현금 HMM 1분기 영업이익 2,570억원(-58% (YoY)) 전망 1분기 HMM의 매출액은 6% (YoY) 감소한 2조 6,750억원, 영업이익은 58% 감소한 2,570억원(영업…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ]
 }

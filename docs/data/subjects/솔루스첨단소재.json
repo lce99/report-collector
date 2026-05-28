@@ -10,14 +10,19 @@
     "유진투자증권"
   ],
   "change_summary": {
-    "changed_reports": 3,
+    "changed_reports": 4,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 3,
+    "estimate_signal_reports": 4,
+    "earnings_estimate_up": 4,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 3,
@@ -46,7 +51,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-23",
@@ -61,7 +72,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -76,7 +93,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -91,7 +116,119 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.85,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-29",
+        "broker": "IBK투자증권",
+        "title": "솔루스첨단소재 - 동박 매각! 전지박 순항 중!",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92126&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260429_company_102951000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260429_company_102951000.pdf",
+        "target_price": "20,000",
+        "target_price_value": 20000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": -11.5,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": -11.5,
+        "value_won": null,
+        "change_pctp": 1.4,
+        "source_excerpt": "6%), 영업이익 -220억원(QoQ 적자지속), OPM -11.5%(QoQ +1."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "IBK투자증권",
+        "title": "솔루스첨단소재 - 동박 매각! 전지박 순항 중!",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92126&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260429_company_102951000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260429_company_102951000.pdf",
+        "target_price": "20,000",
+        "target_price_value": 20000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": -220.0,
+        "unit": "억원",
+        "value_krw_100m": -220.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6%), 영업이익 -220억원(QoQ 적자지속), OPM -11."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "IBK투자증권",
+        "title": "솔루스첨단소재 - 동박 매각! 전지박 순항 중!",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92126&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260429_company_102951000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260429_company_102951000.pdf",
+        "target_price": "20,000",
+        "target_price_value": 20000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": -190.0,
+        "unit": "억원",
+        "value_krw_100m": -190.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4%p)로 컨센서스(매출액 1,910억원, 영업이익 -190억원) 수준을 기록했다."
       }
     ],
     "opinion_distribution": [
@@ -114,7 +251,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-23",
@@ -129,7 +272,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -144,7 +293,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -159,7 +316,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.85,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       }
     ],
     "window_days": 14
@@ -178,7 +343,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-23",
@@ -193,7 +364,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -208,7 +385,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -223,7 +408,119 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.85,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-29",
+      "broker": "IBK투자증권",
+      "title": "솔루스첨단소재 - 동박 매각! 전지박 순항 중!",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92126&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260429_company_102951000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260429_company_102951000.pdf",
+      "target_price": "20,000",
+      "target_price_value": 20000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": -11.5,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": -11.5,
+      "value_won": null,
+      "change_pctp": 1.4,
+      "source_excerpt": "6%), 영업이익 -220억원(QoQ 적자지속), OPM -11.5%(QoQ +1."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "IBK투자증권",
+      "title": "솔루스첨단소재 - 동박 매각! 전지박 순항 중!",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92126&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260429_company_102951000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260429_company_102951000.pdf",
+      "target_price": "20,000",
+      "target_price_value": 20000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": -220.0,
+      "unit": "억원",
+      "value_krw_100m": -220.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6%), 영업이익 -220억원(QoQ 적자지속), OPM -11."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "IBK투자증권",
+      "title": "솔루스첨단소재 - 동박 매각! 전지박 순항 중!",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92126&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260429_company_102951000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260429_company_102951000.pdf",
+      "target_price": "20,000",
+      "target_price_value": 20000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": -190.0,
+      "unit": "억원",
+      "value_krw_100m": -190.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4%p)로 컨센서스(매출액 1,910억원, 영업이익 -190억원) 수준을 기록했다."
     }
   ],
   "opinion_distribution": [
@@ -246,7 +543,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-23",
@@ -261,7 +564,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -276,7 +585,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -291,7 +608,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.85,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "broker_summary": [
@@ -362,10 +687,25 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -415,13 +755,58 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -220.0,
+          "unit": "억원",
+          "source_excerpt": "6%), 영업이익 -220억원(QoQ 적자지속), OPM -11.",
+          "value_krw_100m": -220.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -190.0,
+          "unit": "억원",
+          "source_excerpt": "4%p)로 컨센서스(매출액 1,910억원, 영업이익 -190억원) 수준을 기록했다.",
+          "value_krw_100m": -190.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": -11.5,
+          "unit": "%",
+          "value_pct": -11.5,
+          "source_excerpt": "6%), 영업이익 -220억원(QoQ 적자지속), OPM -11.5%(QoQ +1.",
+          "change_pctp": 1.4
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -472,16 +857,92 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92168",
+      "title": "1Q26 실적발표: 하반기 가동률, 풀캐파 자신",
+      "display_title": "솔루스첨단소재 - 1Q26 실적발표: 하반기 가동률, 풀캐파 자신",
+      "broker": "SK증권",
+      "published_date": "2026-04-29",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92168&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260429_company_110595000.pdf",
+      "subject": "솔루스첨단소재",
+      "subject_key": "솔루스첨단소재",
+      "views": 614,
+      "analyst": null,
+      "target_price": "20,000",
+      "target_price_value": 20000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1 분기 매출액은 1,926 억원으로 증가했으나, 영업손익은 -220 억원으로 컨센(-195 억원)을 하회했다. ① 전지박 매출은 610 억원으로 당초 예상치 (450 억원)을 크게 상회했다.",
+      "summary": "1 분기 매출액은 1,926 억원으로 증가했으나, 영업손익은 -220 억원으로 컨센(-195 억원)을 하회했다. ① 전지박 매출은 610 억원으로 당초 예상치 (450 억원)을 크게 상회했다. 고객사들의 주문 회복 효과다.",
+      "summary_engine": "rule",
+      "score": 8.85,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "핵심 키워드(실적)"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-04-23",
+      "previous_target_price": "20,000",
+      "previous_opinion": "매수",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
+    },
     {
       "source": "naver_research",
       "category": "company",
@@ -530,13 +991,58 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -220.0,
+          "unit": "억원",
+          "source_excerpt": "6%), 영업이익 -220억원(QoQ 적자지속), OPM -11.",
+          "value_krw_100m": -220.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -190.0,
+          "unit": "억원",
+          "source_excerpt": "4%p)로 컨센서스(매출액 1,910억원, 영업이익 -190억원) 수준을 기록했다.",
+          "value_krw_100m": -190.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": -11.5,
+          "unit": "%",
+          "value_pct": -11.5,
+          "source_excerpt": "6%), 영업이익 -220억원(QoQ 적자지속), OPM -11.5%(QoQ +1.",
+          "change_pctp": 1.4
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -586,13 +1092,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -643,13 +1158,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -700,10 +1224,25 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -753,13 +1292,58 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -220.0,
+          "unit": "억원",
+          "source_excerpt": "6%), 영업이익 -220억원(QoQ 적자지속), OPM -11.",
+          "value_krw_100m": -220.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -190.0,
+          "unit": "억원",
+          "source_excerpt": "4%p)로 컨센서스(매출액 1,910억원, 영업이익 -190억원) 수준을 기록했다.",
+          "value_krw_100m": -190.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": -11.5,
+          "unit": "%",
+          "value_pct": -11.5,
+          "source_excerpt": "6%), 영업이익 -220억원(QoQ 적자지속), OPM -11.5%(QoQ +1.",
+          "change_pctp": 1.4
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -809,13 +1393,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -866,13 +1459,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ]
 }

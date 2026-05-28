@@ -1,34 +1,40 @@
 {
   "subject_key": "해성디에스",
   "subject_name": "해성디에스",
-  "latest_report_date": "2026-05-06",
-  "report_count": 3,
-  "active_broker_count": 3,
+  "latest_report_date": "2026-05-28",
+  "report_count": 4,
+  "active_broker_count": 4,
   "active_brokers": [
+    "DS투자증권",
     "iM증권",
     "교보증권",
     "유진투자증권"
   ],
   "change_summary": {
-    "changed_reports": 3,
+    "changed_reports": 4,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 4,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 3,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 2
   },
   "target_summary": {
-    "count": 3,
-    "high": 100000,
+    "count": 4,
+    "high": 120000,
     "low": 92500,
-    "avg": 95500
+    "avg": 101625
   },
   "opinion_summary": [
     {
       "label": "buy",
-      "count": 3
+      "count": 4
     }
   ],
   "charts": {
@@ -46,7 +52,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.5,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-06",
@@ -61,7 +75,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-06",
@@ -76,60 +92,329 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
+      },
+      {
+        "date": "2026-05-28",
+        "broker": "DS투자증권",
+        "title": "해성디에스 - 1Q26 Re: 여기도 쇼티지",
+        "ticker": "195870",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93335&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+        "target_price": "120,000",
+        "target_price_value": 120000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 16.61,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-06",
+        "broker": "교보증권",
+        "title": "해성디에스 - 일회성에 불과할 충격",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92494&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_214548000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_214548000.pdf",
+        "target_price": "100,000",
+        "target_price_value": 100000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 5.8,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 5.8,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "1%, OPM 5.8%)을 기록."
+      },
+      {
+        "date": "2026-05-06",
+        "broker": "유진투자증권",
+        "title": "해성디에스 - 수익성 악화는 일시적일 뿐",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92467&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_929528000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_929528000.pdf",
+        "target_price": "94,000",
+        "target_price_value": 94000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.55,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 5.8,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 5.8,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "해성디에스 - 수익성 악화는 일시적일 뿐 수익성 악화는 일시적일 뿐 해성디에스 \" 1Q26 Review: 해성디에스의 1분기 실적은 매출액 1,887억원(YoY +37%, QoQ +5%), 영업이익 110억원(QoQ -50%, OPM 5.8%)으로 매출액은 당초 추정치를 상회했으나,…"
+      },
+      {
+        "date": "2026-05-06",
+        "broker": "교보증권",
+        "title": "해성디에스 - 일회성에 불과할 충격",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92494&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_214548000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_214548000.pdf",
+        "target_price": "100,000",
+        "target_price_value": 100000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 110.0,
+        "unit": "억원",
+        "value_krw_100m": 110.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "해성디에스 - 일회성에 불과할 충격 일회성에 불과할 충격 해성디에스 1Q26 Review: 매출액 1,887억원, 영업이익 110억원 해성디에스의 2026년 1분기 실적은 매출액 1,887억원(YoY +37."
+      },
+      {
+        "date": "2026-05-06",
+        "broker": "유진투자증권",
+        "title": "해성디에스 - 수익성 악화는 일시적일 뿐",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92467&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_929528000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_929528000.pdf",
+        "target_price": "94,000",
+        "target_price_value": 94000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.55,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 110.0,
+        "unit": "억원",
+        "value_krw_100m": 110.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "해성디에스 - 수익성 악화는 일시적일 뿐 수익성 악화는 일시적일 뿐 해성디에스 \" 1Q26 Review: 해성디에스의 1분기 실적은 매출액 1,887억원(YoY +37%, QoQ +5%), 영업이익 110억원(QoQ -50%, OPM 5."
+      },
+      {
+        "date": "2026-05-28",
+        "broker": "DS투자증권",
+        "title": "해성디에스 - 1Q26 Re: 여기도 쇼티지",
+        "ticker": "195870",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93335&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+        "target_price": "120,000",
+        "target_price_value": 120000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 16.61,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "eps",
+        "metric_group": "earnings",
+        "label": "EPS",
+        "period": null,
+        "value": 5626.0,
+        "unit": "원",
+        "value_krw_100m": null,
+        "value_pct": null,
+        "value_won": 5626.0,
+        "change_pctp": null,
+        "source_excerpt": "12MF 추정 EPS 5,626원에 Target P/E 21배를 적용한다."
+      },
+      {
+        "date": "2026-05-28",
+        "broker": "DS투자증권",
+        "title": "해성디에스 - 1Q26 Re: 여기도 쇼티지",
+        "ticker": "195870",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93335&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+        "target_price": "120,000",
+        "target_price_value": 120000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 16.61,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 11.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 11.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "리드프레임 사업부 마진 회복이 크게 나타나며 전사 OPM은 11% 수준까지 회복될 것으로 전망한다."
+      },
+      {
+        "date": "2026-05-28",
+        "broker": "DS투자증권",
+        "title": "해성디에스 - 1Q26 Re: 여기도 쇼티지",
+        "ticker": "195870",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93335&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+        "target_price": "120,000",
+        "target_price_value": 120000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 16.61,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 914.0,
+        "unit": "억원",
+        "value_krw_100m": 914.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "투자의견 매수, 목표주가 12만원 상향 2026년 매출액 8,387억원(+28% YoY), 영업이익 914억원(+97% YoY, OPM 11%)을 전망한다."
       }
     ],
     "opinion_distribution": [
       {
         "label": "buy",
-        "count": 3
+        "count": 4
       }
     ],
     "broker_timeline": [
       {
-        "date": "2026-05-06",
-        "broker": "교보증권",
-        "title": "해성디에스 - 일회성에 불과할 충격",
-        "ticker": null,
-        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92494&page=1",
-        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_214548000.pdf",
-        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_214548000.pdf",
-        "target_price": "100,000",
-        "target_price_value": 100000,
-        "opinion": "Buy",
+        "date": "2026-05-28",
+        "broker": "DS투자증권",
+        "title": "해성디에스 - 1Q26 Re: 여기도 쇼티지",
+        "ticker": "195870",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93335&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+        "target_price": "120,000",
+        "target_price_value": 120000,
+        "opinion": "매수",
         "opinion_normalized": "buy",
-        "score": 8.2,
-        "has_change_signal": true
-      },
-      {
-        "date": "2026-05-06",
-        "broker": "유진투자증권",
-        "title": "해성디에스 - 수익성 악화는 일시적일 뿐",
-        "ticker": null,
-        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92467&page=2",
-        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_929528000.pdf",
-        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_929528000.pdf",
-        "target_price": "94,000",
-        "target_price_value": 94000,
-        "opinion": "Buy",
-        "opinion_normalized": "buy",
-        "score": 9.55,
-        "has_change_signal": true
-      },
-      {
-        "date": "2026-05-06",
-        "broker": "iM증권",
-        "title": "해성디에스 - 2Q26부터 실적 개선세 재개 예상",
-        "ticker": null,
-        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92452&page=2",
-        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260506_company_936410000.pdf",
-        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260506_company_936410000.pdf",
-        "target_price": "92,500",
-        "target_price_value": 92500,
-        "opinion": "Buy",
-        "opinion_normalized": "buy",
-        "score": 11.5,
-        "has_change_signal": true
+        "score": 16.61,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       }
     ],
     "window_days": 14
@@ -148,7 +433,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.5,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-06",
@@ -163,7 +456,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-06",
@@ -178,63 +473,336 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
+    },
+    {
+      "date": "2026-05-28",
+      "broker": "DS투자증권",
+      "title": "해성디에스 - 1Q26 Re: 여기도 쇼티지",
+      "ticker": "195870",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93335&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+      "target_price": "120,000",
+      "target_price_value": 120000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 16.61,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-06",
+      "broker": "교보증권",
+      "title": "해성디에스 - 일회성에 불과할 충격",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92494&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_214548000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_214548000.pdf",
+      "target_price": "100,000",
+      "target_price_value": 100000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 5.8,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 5.8,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "1%, OPM 5.8%)을 기록."
+    },
+    {
+      "date": "2026-05-06",
+      "broker": "유진투자증권",
+      "title": "해성디에스 - 수익성 악화는 일시적일 뿐",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92467&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_929528000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_929528000.pdf",
+      "target_price": "94,000",
+      "target_price_value": 94000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.55,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 5.8,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 5.8,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "해성디에스 - 수익성 악화는 일시적일 뿐 수익성 악화는 일시적일 뿐 해성디에스 \" 1Q26 Review: 해성디에스의 1분기 실적은 매출액 1,887억원(YoY +37%, QoQ +5%), 영업이익 110억원(QoQ -50%, OPM 5.8%)으로 매출액은 당초 추정치를 상회했으나,…"
+    },
+    {
+      "date": "2026-05-06",
+      "broker": "교보증권",
+      "title": "해성디에스 - 일회성에 불과할 충격",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92494&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_214548000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_214548000.pdf",
+      "target_price": "100,000",
+      "target_price_value": 100000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 110.0,
+      "unit": "억원",
+      "value_krw_100m": 110.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "해성디에스 - 일회성에 불과할 충격 일회성에 불과할 충격 해성디에스 1Q26 Review: 매출액 1,887억원, 영업이익 110억원 해성디에스의 2026년 1분기 실적은 매출액 1,887억원(YoY +37."
+    },
+    {
+      "date": "2026-05-06",
+      "broker": "유진투자증권",
+      "title": "해성디에스 - 수익성 악화는 일시적일 뿐",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92467&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_929528000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_929528000.pdf",
+      "target_price": "94,000",
+      "target_price_value": 94000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.55,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 110.0,
+      "unit": "억원",
+      "value_krw_100m": 110.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "해성디에스 - 수익성 악화는 일시적일 뿐 수익성 악화는 일시적일 뿐 해성디에스 \" 1Q26 Review: 해성디에스의 1분기 실적은 매출액 1,887억원(YoY +37%, QoQ +5%), 영업이익 110억원(QoQ -50%, OPM 5."
+    },
+    {
+      "date": "2026-05-28",
+      "broker": "DS투자증권",
+      "title": "해성디에스 - 1Q26 Re: 여기도 쇼티지",
+      "ticker": "195870",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93335&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+      "target_price": "120,000",
+      "target_price_value": 120000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 16.61,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "eps",
+      "metric_group": "earnings",
+      "label": "EPS",
+      "period": null,
+      "value": 5626.0,
+      "unit": "원",
+      "value_krw_100m": null,
+      "value_pct": null,
+      "value_won": 5626.0,
+      "change_pctp": null,
+      "source_excerpt": "12MF 추정 EPS 5,626원에 Target P/E 21배를 적용한다."
+    },
+    {
+      "date": "2026-05-28",
+      "broker": "DS투자증권",
+      "title": "해성디에스 - 1Q26 Re: 여기도 쇼티지",
+      "ticker": "195870",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93335&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+      "target_price": "120,000",
+      "target_price_value": 120000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 16.61,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 11.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 11.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "리드프레임 사업부 마진 회복이 크게 나타나며 전사 OPM은 11% 수준까지 회복될 것으로 전망한다."
+    },
+    {
+      "date": "2026-05-28",
+      "broker": "DS투자증권",
+      "title": "해성디에스 - 1Q26 Re: 여기도 쇼티지",
+      "ticker": "195870",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93335&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+      "target_price": "120,000",
+      "target_price_value": 120000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 16.61,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 914.0,
+      "unit": "억원",
+      "value_krw_100m": 914.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "투자의견 매수, 목표주가 12만원 상향 2026년 매출액 8,387억원(+28% YoY), 영업이익 914억원(+97% YoY, OPM 11%)을 전망한다."
     }
   ],
   "opinion_distribution": [
     {
       "label": "buy",
-      "count": 3
+      "count": 4
     }
   ],
   "broker_timeline": [
     {
-      "date": "2026-05-06",
-      "broker": "교보증권",
-      "title": "해성디에스 - 일회성에 불과할 충격",
-      "ticker": null,
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92494&page=1",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_214548000.pdf",
-      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260506_company_214548000.pdf",
-      "target_price": "100,000",
-      "target_price_value": 100000,
-      "opinion": "Buy",
+      "date": "2026-05-28",
+      "broker": "DS투자증권",
+      "title": "해성디에스 - 1Q26 Re: 여기도 쇼티지",
+      "ticker": "195870",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93335&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+      "target_price": "120,000",
+      "target_price_value": 120000,
+      "opinion": "매수",
       "opinion_normalized": "buy",
-      "score": 8.2,
-      "has_change_signal": true
-    },
-    {
-      "date": "2026-05-06",
-      "broker": "유진투자증권",
-      "title": "해성디에스 - 수익성 악화는 일시적일 뿐",
-      "ticker": null,
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92467&page=2",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_929528000.pdf",
-      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_929528000.pdf",
-      "target_price": "94,000",
-      "target_price_value": 94000,
-      "opinion": "Buy",
-      "opinion_normalized": "buy",
-      "score": 9.55,
-      "has_change_signal": true
-    },
-    {
-      "date": "2026-05-06",
-      "broker": "iM증권",
-      "title": "해성디에스 - 2Q26부터 실적 개선세 재개 예상",
-      "ticker": null,
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92452&page=2",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260506_company_936410000.pdf",
-      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260506_company_936410000.pdf",
-      "target_price": "92,500",
-      "target_price_value": 92500,
-      "opinion": "Buy",
-      "opinion_normalized": "buy",
-      "score": 11.5,
-      "has_change_signal": true
+      "score": 16.61,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "broker_summary": [
+    {
+      "name": "DS투자증권",
+      "count": 1
+    },
     {
       "name": "iM증권",
       "count": 1
@@ -251,7 +819,7 @@
   "category_summary": [
     {
       "label": "종목분석",
-      "count": 3
+      "count": 4
     }
   ],
   "latest_by_broker": [
@@ -259,6 +827,196 @@
       "source": "naver_research",
       "category": "company",
       "category_label": "종목분석",
+      "report_id": "93335",
+      "title": "1Q26 Re: 여기도 쇼티지",
+      "display_title": "해성디에스 - 1Q26 Re: 여기도 쇼티지",
+      "broker": "DS투자증권",
+      "published_date": "2026-05-28",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93335&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "해성디에스",
+      "subject_key": "해성디에스",
+      "ticker": "195870",
+      "views": 1239,
+      "analyst": null,
+      "target_price": "120,000",
+      "target_price_value": 120000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1Q26 Re: 연간 실적의 저점 1Q26 실적은 매출 성장에도 불구하고 LME 구리 가격 급등에 따른 원재료 부담으로 단기 수익성이 훼손되었다.",
+      "summary": "1Q26 Re: 연간 실적의 저점 1Q26 실적은 매출 성장에도 불구하고 LME 구리 가격 급등에 따른 원재료 부담으로 단기 수익성이 훼손되었다. 리드프레임의 판가 인상 반영까지 약 1개 분기 시차가 존재하기 때문이다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 914.0,
+          "unit": "억원",
+          "source_excerpt": "투자의견 매수, 목표주가 12만원 상향 2026년 매출액 8,387억원(+28% YoY), 영업이익 914억원(+97% YoY, OPM 11%)을 전망한다.",
+          "value_krw_100m": 914.0
+        },
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": null,
+          "value": 5626.0,
+          "unit": "원",
+          "source_excerpt": "12MF 추정 EPS 5,626원에 Target P/E 21배를 적용한다.",
+          "value_won": 5626.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 11.0,
+          "unit": "%",
+          "value_pct": 11.0,
+          "source_excerpt": "리드프레임 사업부 마진 회복이 크게 나타나며 전사 OPM은 11% 수준까지 회복될 것으로 전망한다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "score": 16.61,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 섹터/키워드(반도체)",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "score_breakdown": [
+        {
+          "label": "종목분석 카테고리",
+          "value": 3.2,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 개선",
+          "value": 1.5,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 하향",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.95,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 악화",
+          "value": 0.9,
+          "kind": "boost"
+        },
+        {
+          "label": "실적/마진 추정치",
+          "value": 0.71,
+          "kind": "boost"
+        },
+        {
+          "label": "목표가",
+          "value": 0.7,
+          "kind": "boost"
+        },
+        {
+          "label": "투자의견",
+          "value": 0.6,
+          "kind": "boost"
+        },
+        {
+          "label": "PDF 본문",
+          "value": 0.35,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": true,
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "coverage_initiated"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "신규 커버리지"
+      ],
+      "has_change_signal": true
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
       "report_id": "92452",
       "title": "2Q26부터 실적 개선세 재개 예상",
       "display_title": "해성디에스 - 2Q26부터 실적 개선세 재개 예상",
@@ -307,13 +1065,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -366,13 +1137,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 110.0,
+          "unit": "억원",
+          "source_excerpt": "해성디에스 - 수익성 악화는 일시적일 뿐 수익성 악화는 일시적일 뿐 해성디에스 \" 1Q26 Review: 해성디에스의 1분기 실적은 매출액 1,887억원(YoY +37%, QoQ +5%), 영업이익 110억원(QoQ -50%, OPM 5.",
+          "value_krw_100m": 110.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 5.8,
+          "unit": "%",
+          "value_pct": 5.8,
+          "source_excerpt": "해성디에스 - 수익성 악화는 일시적일 뿐 수익성 악화는 일시적일 뿐 해성디에스 \" 1Q26 Review: 해성디에스의 1분기 실적은 매출액 1,887억원(YoY +37%, QoQ +5%), 영업이익 110억원(QoQ -50%, OPM 5.8%)으로 매출액은 당초 추정치를 상회했으나,…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -430,7 +1243,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 110.0,
+          "unit": "억원",
+          "source_excerpt": "해성디에스 - 일회성에 불과할 충격 일회성에 불과할 충격 해성디에스 1Q26 Review: 매출액 1,887억원, 영업이익 110억원 해성디에스의 2026년 1분기 실적은 매출액 1,887억원(YoY +37.",
+          "value_krw_100m": 110.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 5.8,
+          "unit": "%",
+          "value_pct": 5.8,
+          "source_excerpt": "1%, OPM 5.8%)을 기록."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -438,6 +1275,196 @@
       "source": "naver_research",
       "category": "company",
       "category_label": "종목분석",
+      "report_id": "93335",
+      "title": "1Q26 Re: 여기도 쇼티지",
+      "display_title": "해성디에스 - 1Q26 Re: 여기도 쇼티지",
+      "broker": "DS투자증권",
+      "published_date": "2026-05-28",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93335&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "해성디에스",
+      "subject_key": "해성디에스",
+      "ticker": "195870",
+      "views": 1239,
+      "analyst": null,
+      "target_price": "120,000",
+      "target_price_value": 120000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1Q26 Re: 연간 실적의 저점 1Q26 실적은 매출 성장에도 불구하고 LME 구리 가격 급등에 따른 원재료 부담으로 단기 수익성이 훼손되었다.",
+      "summary": "1Q26 Re: 연간 실적의 저점 1Q26 실적은 매출 성장에도 불구하고 LME 구리 가격 급등에 따른 원재료 부담으로 단기 수익성이 훼손되었다. 리드프레임의 판가 인상 반영까지 약 1개 분기 시차가 존재하기 때문이다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 914.0,
+          "unit": "억원",
+          "source_excerpt": "투자의견 매수, 목표주가 12만원 상향 2026년 매출액 8,387억원(+28% YoY), 영업이익 914억원(+97% YoY, OPM 11%)을 전망한다.",
+          "value_krw_100m": 914.0
+        },
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": null,
+          "value": 5626.0,
+          "unit": "원",
+          "source_excerpt": "12MF 추정 EPS 5,626원에 Target P/E 21배를 적용한다.",
+          "value_won": 5626.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 11.0,
+          "unit": "%",
+          "value_pct": 11.0,
+          "source_excerpt": "리드프레임 사업부 마진 회복이 크게 나타나며 전사 OPM은 11% 수준까지 회복될 것으로 전망한다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "score": 16.61,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 섹터/키워드(반도체)",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "score_breakdown": [
+        {
+          "label": "종목분석 카테고리",
+          "value": 3.2,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 개선",
+          "value": 1.5,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 하향",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.95,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 악화",
+          "value": 0.9,
+          "kind": "boost"
+        },
+        {
+          "label": "실적/마진 추정치",
+          "value": 0.71,
+          "kind": "boost"
+        },
+        {
+          "label": "목표가",
+          "value": 0.7,
+          "kind": "boost"
+        },
+        {
+          "label": "투자의견",
+          "value": 0.6,
+          "kind": "boost"
+        },
+        {
+          "label": "PDF 본문",
+          "value": 0.35,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": true,
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "coverage_initiated"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "신규 커버리지"
+      ],
+      "has_change_signal": true
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
       "report_id": "92452",
       "title": "2Q26부터 실적 개선세 재개 예상",
       "display_title": "해성디에스 - 2Q26부터 실적 개선세 재개 예상",
@@ -486,13 +1513,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -545,13 +1585,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 110.0,
+          "unit": "억원",
+          "source_excerpt": "해성디에스 - 수익성 악화는 일시적일 뿐 수익성 악화는 일시적일 뿐 해성디에스 \" 1Q26 Review: 해성디에스의 1분기 실적은 매출액 1,887억원(YoY +37%, QoQ +5%), 영업이익 110억원(QoQ -50%, OPM 5.",
+          "value_krw_100m": 110.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 5.8,
+          "unit": "%",
+          "value_pct": 5.8,
+          "source_excerpt": "해성디에스 - 수익성 악화는 일시적일 뿐 수익성 악화는 일시적일 뿐 해성디에스 \" 1Q26 Review: 해성디에스의 1분기 실적은 매출액 1,887억원(YoY +37%, QoQ +5%), 영업이익 110억원(QoQ -50%, OPM 5.8%)으로 매출액은 당초 추정치를 상회했으나,…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -609,7 +1691,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 110.0,
+          "unit": "억원",
+          "source_excerpt": "해성디에스 - 일회성에 불과할 충격 일회성에 불과할 충격 해성디에스 1Q26 Review: 매출액 1,887억원, 영업이익 110억원 해성디에스의 2026년 1분기 실적은 매출액 1,887억원(YoY +37.",
+          "value_krw_100m": 110.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 5.8,
+          "unit": "%",
+          "value_pct": 5.8,
+          "source_excerpt": "1%, OPM 5.8%)을 기록."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -617,6 +1723,196 @@
       "source": "naver_research",
       "category": "company",
       "category_label": "종목분석",
+      "report_id": "93335",
+      "title": "1Q26 Re: 여기도 쇼티지",
+      "display_title": "해성디에스 - 1Q26 Re: 여기도 쇼티지",
+      "broker": "DS투자증권",
+      "published_date": "2026-05-28",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93335&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_782291000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "해성디에스",
+      "subject_key": "해성디에스",
+      "ticker": "195870",
+      "views": 1239,
+      "analyst": null,
+      "target_price": "120,000",
+      "target_price_value": 120000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1Q26 Re: 연간 실적의 저점 1Q26 실적은 매출 성장에도 불구하고 LME 구리 가격 급등에 따른 원재료 부담으로 단기 수익성이 훼손되었다.",
+      "summary": "1Q26 Re: 연간 실적의 저점 1Q26 실적은 매출 성장에도 불구하고 LME 구리 가격 급등에 따른 원재료 부담으로 단기 수익성이 훼손되었다. 리드프레임의 판가 인상 반영까지 약 1개 분기 시차가 존재하기 때문이다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 914.0,
+          "unit": "억원",
+          "source_excerpt": "투자의견 매수, 목표주가 12만원 상향 2026년 매출액 8,387억원(+28% YoY), 영업이익 914억원(+97% YoY, OPM 11%)을 전망한다.",
+          "value_krw_100m": 914.0
+        },
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": null,
+          "value": 5626.0,
+          "unit": "원",
+          "source_excerpt": "12MF 추정 EPS 5,626원에 Target P/E 21배를 적용한다.",
+          "value_won": 5626.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 11.0,
+          "unit": "%",
+          "value_pct": 11.0,
+          "source_excerpt": "리드프레임 사업부 마진 회복이 크게 나타나며 전사 OPM은 11% 수준까지 회복될 것으로 전망한다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "score": 16.61,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 섹터/키워드(반도체)",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "score_breakdown": [
+        {
+          "label": "종목분석 카테고리",
+          "value": 3.2,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 개선",
+          "value": 1.5,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 하향",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.95,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 악화",
+          "value": 0.9,
+          "kind": "boost"
+        },
+        {
+          "label": "실적/마진 추정치",
+          "value": 0.71,
+          "kind": "boost"
+        },
+        {
+          "label": "목표가",
+          "value": 0.7,
+          "kind": "boost"
+        },
+        {
+          "label": "투자의견",
+          "value": 0.6,
+          "kind": "boost"
+        },
+        {
+          "label": "PDF 본문",
+          "value": 0.35,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": true,
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "coverage_initiated"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "신규 커버리지"
+      ],
+      "has_change_signal": true
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
       "report_id": "92452",
       "title": "2Q26부터 실적 개선세 재개 예상",
       "display_title": "해성디에스 - 2Q26부터 실적 개선세 재개 예상",
@@ -665,13 +1961,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -724,13 +2033,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 110.0,
+          "unit": "억원",
+          "source_excerpt": "해성디에스 - 수익성 악화는 일시적일 뿐 수익성 악화는 일시적일 뿐 해성디에스 \" 1Q26 Review: 해성디에스의 1분기 실적은 매출액 1,887억원(YoY +37%, QoQ +5%), 영업이익 110억원(QoQ -50%, OPM 5.",
+          "value_krw_100m": 110.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 5.8,
+          "unit": "%",
+          "value_pct": 5.8,
+          "source_excerpt": "해성디에스 - 수익성 악화는 일시적일 뿐 수익성 악화는 일시적일 뿐 해성디에스 \" 1Q26 Review: 해성디에스의 1분기 실적은 매출액 1,887억원(YoY +37%, QoQ +5%), 영업이익 110억원(QoQ -50%, OPM 5.8%)으로 매출액은 당초 추정치를 상회했으나,…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -788,7 +2139,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 110.0,
+          "unit": "억원",
+          "source_excerpt": "해성디에스 - 일회성에 불과할 충격 일회성에 불과할 충격 해성디에스 1Q26 Review: 매출액 1,887억원, 영업이익 110억원 해성디에스의 2026년 1분기 실적은 매출액 1,887억원(YoY +37.",
+          "value_krw_100m": 110.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 5.8,
+          "unit": "%",
+          "value_pct": 5.8,
+          "source_excerpt": "1%, OPM 5.8%)을 기록."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

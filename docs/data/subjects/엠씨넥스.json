@@ -16,7 +16,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 2
+    "coverage_initiated": 2,
+    "estimate_signal_reports": 1,
+    "earnings_estimate_up": 0,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 2,
@@ -45,7 +50,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 15.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-18",
@@ -60,7 +71,103 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 14.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-13",
+        "broker": "대신증권",
+        "title": "엠씨넥스 - 신성장(로봇 등) 추진 ~",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92873&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260513_company_705708000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260513_company_705708000.pdf",
+        "target_price": "34,000",
+        "target_price_value": 34000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 15.55,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 114.1,
+        "unit": "억원",
+        "value_krw_100m": 114.1,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "엠씨넥스 - 신성장(로봇 등) 추진 ~ 신성장(로봇 등) 추진 ~ 엠씨넥스 2026년 1Q 매출(3,035억원)과 영업이익 114.1억원은 전년대비 각각 -12."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "대신증권",
+        "title": "엠씨넥스 - 신성장(로봇 등) 추진 ~",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92873&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260513_company_705708000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260513_company_705708000.pdf",
+        "target_price": "34,000",
+        "target_price_value": 34000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 15.55,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 112.0,
+        "unit": "억원",
+        "value_krw_100m": 112.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "종전 추정(매출 3,199억원, 영업이익 112억원)에 부합, 우려대비 선전한 것으로 판단."
+      },
+      {
+        "date": "2026-05-18",
+        "broker": "SK증권",
+        "title": "엠씨넥스 - 모바일 부진은 선반영, 전장 기대감을 반영할..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93064&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260518_company_407778000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260518_company_407778000.pdf",
+        "target_price": "30,000",
+        "target_price_value": 30000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 14.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 114.0,
+        "unit": "억원",
+        "value_krw_100m": 114.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "엠씨넥스 1Q26 Review 1분기 매출액 3,305억원(QoQ +1%, YoY -13%), 영업이익 114억원(QoQ +39%, YoY -46%)를 기록하였다."
       }
     ],
     "opinion_distribution": [
@@ -83,7 +190,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 15.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-18",
@@ -98,7 +211,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 14.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -117,7 +232,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 15.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-18",
@@ -132,7 +253,103 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 14.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-13",
+      "broker": "대신증권",
+      "title": "엠씨넥스 - 신성장(로봇 등) 추진 ~",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92873&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260513_company_705708000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260513_company_705708000.pdf",
+      "target_price": "34,000",
+      "target_price_value": 34000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 15.55,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 114.1,
+      "unit": "억원",
+      "value_krw_100m": 114.1,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "엠씨넥스 - 신성장(로봇 등) 추진 ~ 신성장(로봇 등) 추진 ~ 엠씨넥스 2026년 1Q 매출(3,035억원)과 영업이익 114.1억원은 전년대비 각각 -12."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "대신증권",
+      "title": "엠씨넥스 - 신성장(로봇 등) 추진 ~",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92873&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260513_company_705708000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260513_company_705708000.pdf",
+      "target_price": "34,000",
+      "target_price_value": 34000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 15.55,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 112.0,
+      "unit": "억원",
+      "value_krw_100m": 112.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "종전 추정(매출 3,199억원, 영업이익 112억원)에 부합, 우려대비 선전한 것으로 판단."
+    },
+    {
+      "date": "2026-05-18",
+      "broker": "SK증권",
+      "title": "엠씨넥스 - 모바일 부진은 선반영, 전장 기대감을 반영할..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93064&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260518_company_407778000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260518_company_407778000.pdf",
+      "target_price": "30,000",
+      "target_price_value": 30000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 14.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 114.0,
+      "unit": "억원",
+      "value_krw_100m": 114.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "엠씨넥스 1Q26 Review 1분기 매출액 3,305억원(QoQ +1%, YoY -13%), 영업이익 114억원(QoQ +39%, YoY -46%)를 기록하였다."
     }
   ],
   "opinion_distribution": [
@@ -155,7 +372,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 15.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-18",
@@ -170,7 +393,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 14.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -250,7 +475,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 114.0,
+          "unit": "억원",
+          "source_excerpt": "엠씨넥스 1Q26 Review 1분기 매출액 3,305억원(QoQ +1%, YoY -13%), 영업이익 114억원(QoQ +39%, YoY -46%)를 기록하였다.",
+          "value_krw_100m": 114.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -306,13 +545,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 114.1,
+          "unit": "억원",
+          "source_excerpt": "엠씨넥스 - 신성장(로봇 등) 추진 ~ 신성장(로봇 등) 추진 ~ 엠씨넥스 2026년 1Q 매출(3,035억원)과 영업이익 114.1억원은 전년대비 각각 -12.",
+          "value_krw_100m": 114.1
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 112.0,
+          "unit": "억원",
+          "source_excerpt": "종전 추정(매출 3,199억원, 영업이익 112억원)에 부합, 우려대비 선전한 것으로 판단.",
+          "value_krw_100m": 112.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "recent_changes": [
@@ -376,7 +645,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 114.0,
+          "unit": "억원",
+          "source_excerpt": "엠씨넥스 1Q26 Review 1분기 매출액 3,305억원(QoQ +1%, YoY -13%), 영업이익 114억원(QoQ +39%, YoY -46%)를 기록하였다.",
+          "value_krw_100m": 114.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -432,13 +715,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 114.1,
+          "unit": "억원",
+          "source_excerpt": "엠씨넥스 - 신성장(로봇 등) 추진 ~ 신성장(로봇 등) 추진 ~ 엠씨넥스 2026년 1Q 매출(3,035억원)과 영업이익 114.1억원은 전년대비 각각 -12.",
+          "value_krw_100m": 114.1
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 112.0,
+          "unit": "억원",
+          "source_excerpt": "종전 추정(매출 3,199억원, 영업이익 112억원)에 부합, 우려대비 선전한 것으로 판단.",
+          "value_krw_100m": 112.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "timeline": [
@@ -502,7 +815,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 114.0,
+          "unit": "억원",
+          "source_excerpt": "엠씨넥스 1Q26 Review 1분기 매출액 3,305억원(QoQ +1%, YoY -13%), 영업이익 114억원(QoQ +39%, YoY -46%)를 기록하였다.",
+          "value_krw_100m": 114.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -558,13 +885,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 114.1,
+          "unit": "억원",
+          "source_excerpt": "엠씨넥스 - 신성장(로봇 등) 추진 ~ 신성장(로봇 등) 추진 ~ 엠씨넥스 2026년 1Q 매출(3,035억원)과 영업이익 114.1억원은 전년대비 각각 -12.",
+          "value_krw_100m": 114.1
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 112.0,
+          "unit": "억원",
+          "source_excerpt": "종전 추정(매출 3,199억원, 영업이익 112억원)에 부합, 우려대비 선전한 것으로 판단.",
+          "value_krw_100m": 112.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     }
   ]
 }

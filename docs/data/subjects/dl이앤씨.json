@@ -19,7 +19,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 4
+    "coverage_initiated": 4,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 4,
@@ -48,7 +53,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -63,7 +70,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.65,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -78,7 +91,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.5,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -93,7 +114,147 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-04",
+        "broker": "미래에셋증권",
+        "title": "DL이앤씨 - 어닝 서프라이즈, 기대감을 더하다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92375&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_521721000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_521721000.pdf",
+        "target_price": "128,000",
+        "target_price_value": 128000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 10.65,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1574.0,
+        "unit": "억원",
+        "value_krw_100m": 1574.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6%, YoY), 영업이익 1,574억원(+94."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "미래에셋증권",
+        "title": "DL이앤씨 - 어닝 서프라이즈, 기대감을 더하다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92375&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_521721000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_521721000.pdf",
+        "target_price": "128,000",
+        "target_price_value": 128000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 10.65,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1064.0,
+        "unit": "억원",
+        "value_krw_100m": 1064.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3%, YoY)으로 시장 예상치(영업이익 1,064억원, 1개월 기준)를 48% 상회한 어닝 서프라이즈를 기록했다."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "하나증권",
+        "title": "DL이앤씨 - 주택 마진 서프라이즈",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92392&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_336323000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_336323000.pdf",
+        "target_price": "120,000",
+        "target_price_value": 120000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.5,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1574.0,
+        "unit": "억원",
+        "value_krw_100m": 1574.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6%yoy), 영업이익 1,574억원(+94."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "하나증권",
+        "title": "DL이앤씨 - 주택 마진 서프라이즈",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92392&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_336323000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_336323000.pdf",
+        "target_price": "120,000",
+        "target_price_value": 120000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.5,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1048.0,
+        "unit": "억원",
+        "value_krw_100m": 1048.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3%yoy)으로 컨센서스(OP 1,048억원), 추정치(1,044억원)에 크게 상회했다."
       }
     ],
     "opinion_distribution": [
@@ -116,7 +277,9 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 10.05,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-27",
@@ -131,7 +294,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-04",
@@ -146,7 +311,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -161,7 +332,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.65,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -176,7 +353,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.5,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -195,7 +380,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -210,7 +397,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.65,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -225,7 +418,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.5,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -240,7 +441,147 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-04",
+      "broker": "미래에셋증권",
+      "title": "DL이앤씨 - 어닝 서프라이즈, 기대감을 더하다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92375&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_521721000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_521721000.pdf",
+      "target_price": "128,000",
+      "target_price_value": 128000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 10.65,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1574.0,
+      "unit": "억원",
+      "value_krw_100m": 1574.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6%, YoY), 영업이익 1,574억원(+94."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "미래에셋증권",
+      "title": "DL이앤씨 - 어닝 서프라이즈, 기대감을 더하다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92375&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_521721000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260504_company_521721000.pdf",
+      "target_price": "128,000",
+      "target_price_value": 128000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 10.65,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1064.0,
+      "unit": "억원",
+      "value_krw_100m": 1064.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3%, YoY)으로 시장 예상치(영업이익 1,064억원, 1개월 기준)를 48% 상회한 어닝 서프라이즈를 기록했다."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "하나증권",
+      "title": "DL이앤씨 - 주택 마진 서프라이즈",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92392&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_336323000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_336323000.pdf",
+      "target_price": "120,000",
+      "target_price_value": 120000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.5,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1574.0,
+      "unit": "억원",
+      "value_krw_100m": 1574.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6%yoy), 영업이익 1,574억원(+94."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "하나증권",
+      "title": "DL이앤씨 - 주택 마진 서프라이즈",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92392&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_336323000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260504_company_336323000.pdf",
+      "target_price": "120,000",
+      "target_price_value": 120000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.5,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1048.0,
+      "unit": "억원",
+      "value_krw_100m": 1048.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3%yoy)으로 컨센서스(OP 1,048억원), 추정치(1,044억원)에 크게 상회했다."
     }
   ],
   "opinion_distribution": [
@@ -263,7 +604,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 10.05,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-27",
@@ -278,7 +621,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-04",
@@ -293,7 +638,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -308,7 +659,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.65,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -323,7 +680,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.5,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -407,13 +772,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1574.0,
+          "unit": "억원",
+          "source_excerpt": "6%yoy), 영업이익 1,574억원(+94.",
+          "value_krw_100m": 1574.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1048.0,
+          "unit": "억원",
+          "source_excerpt": "3%yoy)으로 컨센서스(OP 1,048억원), 추정치(1,044억원)에 크게 상회했다.",
+          "value_krw_100m": 1048.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -467,13 +866,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1574.0,
+          "unit": "억원",
+          "source_excerpt": "6%, YoY), 영업이익 1,574억원(+94.",
+          "value_krw_100m": 1574.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1064.0,
+          "unit": "억원",
+          "source_excerpt": "3%, YoY)으로 시장 예상치(영업이익 1,064억원, 1개월 기준)를 48% 상회한 어닝 서프라이즈를 기록했다.",
+          "value_krw_100m": 1064.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -526,13 +955,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -591,7 +1029,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -645,7 +1086,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -701,13 +1145,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1574.0,
+          "unit": "억원",
+          "source_excerpt": "6%yoy), 영업이익 1,574억원(+94.",
+          "value_krw_100m": 1574.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1048.0,
+          "unit": "억원",
+          "source_excerpt": "3%yoy)으로 컨센서스(OP 1,048억원), 추정치(1,044억원)에 크게 상회했다.",
+          "value_krw_100m": 1048.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -761,13 +1239,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1574.0,
+          "unit": "억원",
+          "source_excerpt": "6%, YoY), 영업이익 1,574억원(+94.",
+          "value_krw_100m": 1574.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1064.0,
+          "unit": "억원",
+          "source_excerpt": "3%, YoY)으로 시장 예상치(영업이익 1,064억원, 1개월 기준)를 48% 상회한 어닝 서프라이즈를 기록했다.",
+          "value_krw_100m": 1064.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -820,13 +1328,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -885,7 +1402,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -941,13 +1461,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1574.0,
+          "unit": "억원",
+          "source_excerpt": "6%yoy), 영업이익 1,574억원(+94.",
+          "value_krw_100m": 1574.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1048.0,
+          "unit": "억원",
+          "source_excerpt": "3%yoy)으로 컨센서스(OP 1,048억원), 추정치(1,044억원)에 크게 상회했다.",
+          "value_krw_100m": 1048.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1001,13 +1555,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1574.0,
+          "unit": "억원",
+          "source_excerpt": "6%, YoY), 영업이익 1,574억원(+94.",
+          "value_krw_100m": 1574.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1064.0,
+          "unit": "억원",
+          "source_excerpt": "3%, YoY)으로 시장 예상치(영업이익 1,064억원, 1개월 기준)를 48% 상회한 어닝 서프라이즈를 기록했다.",
+          "value_krw_100m": 1064.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1060,13 +1644,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1125,7 +1718,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1179,7 +1775,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

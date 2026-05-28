@@ -1,34 +1,40 @@
 {
   "subject_key": "유니드",
   "subject_name": "유니드",
-  "latest_report_date": "2026-04-23",
-  "report_count": 3,
-  "active_broker_count": 3,
+  "latest_report_date": "2026-05-28",
+  "report_count": 4,
+  "active_broker_count": 4,
   "active_brokers": [
+    "DS투자증권",
     "iM증권",
     "신한투자증권",
     "하나증권"
   ],
   "change_summary": {
-    "changed_reports": 3,
+    "changed_reports": 4,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 4,
+    "estimate_signal_reports": 1,
+    "earnings_estimate_up": 1,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 1
   },
   "target_summary": {
-    "count": 3,
+    "count": 4,
     "high": 110000,
-    "low": 110000,
-    "avg": 110000
+    "low": 100000,
+    "avg": 107500
   },
   "opinion_summary": [
     {
       "label": "buy",
-      "count": 3
+      "count": 4
     }
   ],
   "charts": {
@@ -46,7 +52,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-23",
@@ -61,7 +69,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-23",
@@ -76,60 +86,319 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      },
+      {
+        "date": "2026-05-28",
+        "broker": "DS투자증권",
+        "title": "유니드 - 26년 중국 법인이 리딩",
+        "ticker": "014830",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93329&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+        "target_price": "100,000",
+        "target_price_value": 100000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 14.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-23",
+        "broker": "하나증권",
+        "title": "유니드 - 요소 비료 강세와 전후 재건 수요의 반사 수..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91825&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260423_company_320657000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260423_company_320657000.pdf",
+        "target_price": "110,000",
+        "target_price_value": 110000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1Q26",
+        "value": 255.0,
+        "unit": "억원",
+        "value_krw_100m": 255.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "유니드 1Q26 영업이익은 255억원(QoQ +236%, YoY -11%)으로 컨센(270억원)에 부합했다."
+      },
+      {
+        "date": "2026-04-23",
+        "broker": "하나증권",
+        "title": "유니드 - 요소 비료 강세와 전후 재건 수요의 반사 수..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91825&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260423_company_320657000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260423_company_320657000.pdf",
+        "target_price": "110,000",
+        "target_price_value": 110000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 123.0,
+        "unit": "억원",
+        "value_krw_100m": 123.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "국내법인 영업이익은 123억원(QoQ +200%)을 기록했다."
+      },
+      {
+        "date": "2026-05-28",
+        "broker": "DS투자증권",
+        "title": "유니드 - 26년 중국 법인이 리딩",
+        "ticker": "014830",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93329&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+        "target_price": "100,000",
+        "target_price_value": 100000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 14.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 7.6,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 7.6,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "국내 화학 영업이익이 123억원 (+200% QoQ, OPM 7.6%), 중국 화학 영업이익은 123억원 (+373%QoQ, OPM 5."
+      },
+      {
+        "date": "2026-05-28",
+        "broker": "DS투자증권",
+        "title": "유니드 - 26년 중국 법인이 리딩",
+        "ticker": "014830",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93329&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+        "target_price": "100,000",
+        "target_price_value": 100000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 14.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 5.4,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 5.4,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6%), 중국 화학 영업이익은 123억원 (+373%QoQ, OPM 5.4%)로 큰 폭의 실적 개선을 보였다."
+      },
+      {
+        "date": "2026-05-28",
+        "broker": "DS투자증권",
+        "title": "유니드 - 26년 중국 법인이 리딩",
+        "ticker": "014830",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93329&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+        "target_price": "100,000",
+        "target_price_value": 100000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 14.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 255.0,
+        "unit": "억원",
+        "value_krw_100m": 255.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "26년 중국 법인이 리딩 유니드 1Q26 매출액 +19% YoY, 영업이익 컨센 소폭 하회 1Q26 연결 매출 3,844억원 (+19% YoY), 영업이익 255억원 (-11% YoY)으로 1분기 기준으로는 역대 최대 매출이다."
+      },
+      {
+        "date": "2026-05-28",
+        "broker": "DS투자증권",
+        "title": "유니드 - 26년 중국 법인이 리딩",
+        "ticker": "014830",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93329&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+        "target_price": "100,000",
+        "target_price_value": 100000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 14.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 270.0,
+        "unit": "억원",
+        "value_krw_100m": 270.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "영업이익은 컨센서스 270억원을 소폭 하회했다."
+      },
+      {
+        "date": "2026-05-28",
+        "broker": "DS투자증권",
+        "title": "유니드 - 26년 중국 법인이 리딩",
+        "ticker": "014830",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93329&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+        "target_price": "100,000",
+        "target_price_value": 100000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 14.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 123.0,
+        "unit": "억원",
+        "value_krw_100m": 123.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "국내 화학 영업이익이 123억원 (+200% QoQ, OPM 7."
       }
     ],
     "opinion_distribution": [
       {
         "label": "buy",
-        "count": 3
+        "count": 4
       }
     ],
     "broker_timeline": [
       {
-        "date": "2026-04-23",
-        "broker": "신한투자증권",
-        "title": "유니드 - 칼륨 업사이클의 수혜주",
-        "ticker": null,
-        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91818&page=1",
-        "pdf_url": null,
-        "primary_url": "https://finance.naver.com/research/company_read.naver?nid=91818&page=1",
-        "target_price": "110,000",
-        "target_price_value": 110000,
+        "date": "2026-05-28",
+        "broker": "DS투자증권",
+        "title": "유니드 - 26년 중국 법인이 리딩",
+        "ticker": "014830",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93329&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+        "target_price": "100,000",
+        "target_price_value": 100000,
         "opinion": "매수",
         "opinion_normalized": "buy",
-        "score": 7.9,
-        "has_change_signal": true
-      },
-      {
-        "date": "2026-04-23",
-        "broker": "iM증권",
-        "title": "유니드 - 26년 기대 이상으로 하드캐리 할 중국법인",
-        "ticker": null,
-        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91807&page=1",
-        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260423_company_248293000.pdf",
-        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260423_company_248293000.pdf",
-        "target_price": "110,000",
-        "target_price_value": 110000,
-        "opinion": "Buy",
-        "opinion_normalized": "buy",
-        "score": 7.95,
-        "has_change_signal": true
-      },
-      {
-        "date": "2026-04-23",
-        "broker": "하나증권",
-        "title": "유니드 - 요소 비료 강세와 전후 재건 수요의 반사 수..",
-        "ticker": null,
-        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91825&page=1",
-        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260423_company_320657000.pdf",
-        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260423_company_320657000.pdf",
-        "target_price": "110,000",
-        "target_price_value": 110000,
-        "opinion": "Buy",
-        "opinion_normalized": "buy",
-        "score": 7.95,
-        "has_change_signal": true
+        "score": 14.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       }
     ],
     "window_days": 14
@@ -148,7 +417,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-23",
@@ -163,7 +434,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-23",
@@ -178,63 +451,326 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "date": "2026-05-28",
+      "broker": "DS투자증권",
+      "title": "유니드 - 26년 중국 법인이 리딩",
+      "ticker": "014830",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93329&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+      "target_price": "100,000",
+      "target_price_value": 100000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 14.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-23",
+      "broker": "하나증권",
+      "title": "유니드 - 요소 비료 강세와 전후 재건 수요의 반사 수..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91825&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260423_company_320657000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260423_company_320657000.pdf",
+      "target_price": "110,000",
+      "target_price_value": 110000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1Q26",
+      "value": 255.0,
+      "unit": "억원",
+      "value_krw_100m": 255.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "유니드 1Q26 영업이익은 255억원(QoQ +236%, YoY -11%)으로 컨센(270억원)에 부합했다."
+    },
+    {
+      "date": "2026-04-23",
+      "broker": "하나증권",
+      "title": "유니드 - 요소 비료 강세와 전후 재건 수요의 반사 수..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91825&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260423_company_320657000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260423_company_320657000.pdf",
+      "target_price": "110,000",
+      "target_price_value": 110000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 123.0,
+      "unit": "억원",
+      "value_krw_100m": 123.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "국내법인 영업이익은 123억원(QoQ +200%)을 기록했다."
+    },
+    {
+      "date": "2026-05-28",
+      "broker": "DS투자증권",
+      "title": "유니드 - 26년 중국 법인이 리딩",
+      "ticker": "014830",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93329&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+      "target_price": "100,000",
+      "target_price_value": 100000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 14.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 7.6,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 7.6,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "국내 화학 영업이익이 123억원 (+200% QoQ, OPM 7.6%), 중국 화학 영업이익은 123억원 (+373%QoQ, OPM 5."
+    },
+    {
+      "date": "2026-05-28",
+      "broker": "DS투자증권",
+      "title": "유니드 - 26년 중국 법인이 리딩",
+      "ticker": "014830",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93329&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+      "target_price": "100,000",
+      "target_price_value": 100000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 14.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 5.4,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 5.4,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6%), 중국 화학 영업이익은 123억원 (+373%QoQ, OPM 5.4%)로 큰 폭의 실적 개선을 보였다."
+    },
+    {
+      "date": "2026-05-28",
+      "broker": "DS투자증권",
+      "title": "유니드 - 26년 중국 법인이 리딩",
+      "ticker": "014830",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93329&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+      "target_price": "100,000",
+      "target_price_value": 100000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 14.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 255.0,
+      "unit": "억원",
+      "value_krw_100m": 255.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "26년 중국 법인이 리딩 유니드 1Q26 매출액 +19% YoY, 영업이익 컨센 소폭 하회 1Q26 연결 매출 3,844억원 (+19% YoY), 영업이익 255억원 (-11% YoY)으로 1분기 기준으로는 역대 최대 매출이다."
+    },
+    {
+      "date": "2026-05-28",
+      "broker": "DS투자증권",
+      "title": "유니드 - 26년 중국 법인이 리딩",
+      "ticker": "014830",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93329&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+      "target_price": "100,000",
+      "target_price_value": 100000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 14.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 270.0,
+      "unit": "억원",
+      "value_krw_100m": 270.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "영업이익은 컨센서스 270억원을 소폭 하회했다."
+    },
+    {
+      "date": "2026-05-28",
+      "broker": "DS투자증권",
+      "title": "유니드 - 26년 중국 법인이 리딩",
+      "ticker": "014830",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93329&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+      "target_price": "100,000",
+      "target_price_value": 100000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 14.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 123.0,
+      "unit": "억원",
+      "value_krw_100m": 123.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "국내 화학 영업이익이 123억원 (+200% QoQ, OPM 7."
     }
   ],
   "opinion_distribution": [
     {
       "label": "buy",
-      "count": 3
+      "count": 4
     }
   ],
   "broker_timeline": [
     {
-      "date": "2026-04-23",
-      "broker": "신한투자증권",
-      "title": "유니드 - 칼륨 업사이클의 수혜주",
-      "ticker": null,
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91818&page=1",
-      "pdf_url": null,
-      "primary_url": "https://finance.naver.com/research/company_read.naver?nid=91818&page=1",
-      "target_price": "110,000",
-      "target_price_value": 110000,
+      "date": "2026-05-28",
+      "broker": "DS투자증권",
+      "title": "유니드 - 26년 중국 법인이 리딩",
+      "ticker": "014830",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93329&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+      "target_price": "100,000",
+      "target_price_value": 100000,
       "opinion": "매수",
       "opinion_normalized": "buy",
-      "score": 7.9,
-      "has_change_signal": true
-    },
-    {
-      "date": "2026-04-23",
-      "broker": "iM증권",
-      "title": "유니드 - 26년 기대 이상으로 하드캐리 할 중국법인",
-      "ticker": null,
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91807&page=1",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260423_company_248293000.pdf",
-      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260423_company_248293000.pdf",
-      "target_price": "110,000",
-      "target_price_value": 110000,
-      "opinion": "Buy",
-      "opinion_normalized": "buy",
-      "score": 7.95,
-      "has_change_signal": true
-    },
-    {
-      "date": "2026-04-23",
-      "broker": "하나증권",
-      "title": "유니드 - 요소 비료 강세와 전후 재건 수요의 반사 수..",
-      "ticker": null,
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91825&page=1",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260423_company_320657000.pdf",
-      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260423_company_320657000.pdf",
-      "target_price": "110,000",
-      "target_price_value": 110000,
-      "opinion": "Buy",
-      "opinion_normalized": "buy",
-      "score": 7.95,
-      "has_change_signal": true
+      "score": 14.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "broker_summary": [
+    {
+      "name": "DS투자증권",
+      "count": 1
+    },
     {
       "name": "하나증권",
       "count": 1
@@ -251,7 +787,7 @@
   "category_summary": [
     {
       "label": "종목분석",
-      "count": 3
+      "count": 4
     }
   ],
   "latest_by_broker": [
@@ -259,6 +795,209 @@
       "source": "naver_research",
       "category": "company",
       "category_label": "종목분석",
+      "report_id": "93329",
+      "title": "26년 중국 법인이 리딩",
+      "display_title": "유니드 - 26년 중국 법인이 리딩",
+      "broker": "DS투자증권",
+      "published_date": "2026-05-28",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93329&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "유니드",
+      "subject_key": "유니드",
+      "ticker": "014830",
+      "views": 831,
+      "analyst": null,
+      "target_price": "100,000",
+      "target_price_value": 100000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1Q26 매출액 +19% YoY, 영업이익 컨센 소폭 하회 1Q26 연결 매출 3,844억원 (+19% YoY), 영업이익 255억원 (-11% YoY)으로 1분기 기준으로는 역대 최대 매출이다.",
+      "summary": "1Q26 매출액 +19% YoY, 영업이익 컨센 소폭 하회 1Q26 연결 매출 3,844억원 (+19% YoY), 영업이익 255억원 (-11% YoY)으로 1분기 기준으로는 역대 최대 매출이다. 영업이익은 컨센서스 270억원을 소폭 하회했다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 255.0,
+          "unit": "억원",
+          "source_excerpt": "26년 중국 법인이 리딩 유니드 1Q26 매출액 +19% YoY, 영업이익 컨센 소폭 하회 1Q26 연결 매출 3,844억원 (+19% YoY), 영업이익 255억원 (-11% YoY)으로 1분기 기준으로는 역대 최대 매출이다.",
+          "value_krw_100m": 255.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 270.0,
+          "unit": "억원",
+          "source_excerpt": "영업이익은 컨센서스 270억원을 소폭 하회했다.",
+          "value_krw_100m": 270.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 123.0,
+          "unit": "억원",
+          "source_excerpt": "국내 화학 영업이익이 123억원 (+200% QoQ, OPM 7.",
+          "value_krw_100m": 123.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 7.6,
+          "unit": "%",
+          "value_pct": 7.6,
+          "source_excerpt": "국내 화학 영업이익이 123억원 (+200% QoQ, OPM 7.6%), 중국 화학 영업이익은 123억원 (+373%QoQ, OPM 5."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 5.4,
+          "unit": "%",
+          "value_pct": 5.4,
+          "source_excerpt": "6%), 중국 화학 영업이익은 123억원 (+373%QoQ, OPM 5.4%)로 큰 폭의 실적 개선을 보였다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "score": 14.45,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "실적/마진 추정치 포함",
+        "이익 추정 상향/증가"
+      ],
+      "score_breakdown": [
+        {
+          "label": "종목분석 카테고리",
+          "value": 3.2,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 개선",
+          "value": 1.5,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 하향",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "실적/마진 추정치",
+          "value": 0.95,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.95,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 악화",
+          "value": 0.9,
+          "kind": "boost"
+        },
+        {
+          "label": "목표가",
+          "value": 0.7,
+          "kind": "boost"
+        },
+        {
+          "label": "투자의견",
+          "value": 0.6,
+          "kind": "boost"
+        },
+        {
+          "label": "PDF 본문",
+          "value": 0.35,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": true,
+      "change_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down",
+        "coverage_initiated"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화",
+        "신규 커버리지"
+      ],
+      "has_change_signal": true
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
       "report_id": "91825",
       "title": "요소 비료 강세와 전후 재건 수요의 반사 수..",
       "display_title": "유니드 - 요소 비료 강세와 전후 재건 수요의 반사 수..",
@@ -308,7 +1047,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q26",
+          "value": 255.0,
+          "unit": "억원",
+          "source_excerpt": "유니드 1Q26 영업이익은 255억원(QoQ +236%, YoY -11%)으로 컨센(270억원)에 부합했다.",
+          "value_krw_100m": 255.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 123.0,
+          "unit": "억원",
+          "source_excerpt": "국내법인 영업이익은 123억원(QoQ +200%)을 기록했다.",
+          "value_krw_100m": 123.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -364,7 +1127,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -419,7 +1185,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -427,6 +1196,209 @@
       "source": "naver_research",
       "category": "company",
       "category_label": "종목분석",
+      "report_id": "93329",
+      "title": "26년 중국 법인이 리딩",
+      "display_title": "유니드 - 26년 중국 법인이 리딩",
+      "broker": "DS투자증권",
+      "published_date": "2026-05-28",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93329&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "유니드",
+      "subject_key": "유니드",
+      "ticker": "014830",
+      "views": 831,
+      "analyst": null,
+      "target_price": "100,000",
+      "target_price_value": 100000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1Q26 매출액 +19% YoY, 영업이익 컨센 소폭 하회 1Q26 연결 매출 3,844억원 (+19% YoY), 영업이익 255억원 (-11% YoY)으로 1분기 기준으로는 역대 최대 매출이다.",
+      "summary": "1Q26 매출액 +19% YoY, 영업이익 컨센 소폭 하회 1Q26 연결 매출 3,844억원 (+19% YoY), 영업이익 255억원 (-11% YoY)으로 1분기 기준으로는 역대 최대 매출이다. 영업이익은 컨센서스 270억원을 소폭 하회했다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 255.0,
+          "unit": "억원",
+          "source_excerpt": "26년 중국 법인이 리딩 유니드 1Q26 매출액 +19% YoY, 영업이익 컨센 소폭 하회 1Q26 연결 매출 3,844억원 (+19% YoY), 영업이익 255억원 (-11% YoY)으로 1분기 기준으로는 역대 최대 매출이다.",
+          "value_krw_100m": 255.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 270.0,
+          "unit": "억원",
+          "source_excerpt": "영업이익은 컨센서스 270억원을 소폭 하회했다.",
+          "value_krw_100m": 270.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 123.0,
+          "unit": "억원",
+          "source_excerpt": "국내 화학 영업이익이 123억원 (+200% QoQ, OPM 7.",
+          "value_krw_100m": 123.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 7.6,
+          "unit": "%",
+          "value_pct": 7.6,
+          "source_excerpt": "국내 화학 영업이익이 123억원 (+200% QoQ, OPM 7.6%), 중국 화학 영업이익은 123억원 (+373%QoQ, OPM 5."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 5.4,
+          "unit": "%",
+          "value_pct": 5.4,
+          "source_excerpt": "6%), 중국 화학 영업이익은 123억원 (+373%QoQ, OPM 5.4%)로 큰 폭의 실적 개선을 보였다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "score": 14.45,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "실적/마진 추정치 포함",
+        "이익 추정 상향/증가"
+      ],
+      "score_breakdown": [
+        {
+          "label": "종목분석 카테고리",
+          "value": 3.2,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 개선",
+          "value": 1.5,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 하향",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "실적/마진 추정치",
+          "value": 0.95,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.95,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 악화",
+          "value": 0.9,
+          "kind": "boost"
+        },
+        {
+          "label": "목표가",
+          "value": 0.7,
+          "kind": "boost"
+        },
+        {
+          "label": "투자의견",
+          "value": 0.6,
+          "kind": "boost"
+        },
+        {
+          "label": "PDF 본문",
+          "value": 0.35,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": true,
+      "change_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down",
+        "coverage_initiated"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화",
+        "신규 커버리지"
+      ],
+      "has_change_signal": true
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
       "report_id": "91825",
       "title": "요소 비료 강세와 전후 재건 수요의 반사 수..",
       "display_title": "유니드 - 요소 비료 강세와 전후 재건 수요의 반사 수..",
@@ -476,7 +1448,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q26",
+          "value": 255.0,
+          "unit": "억원",
+          "source_excerpt": "유니드 1Q26 영업이익은 255억원(QoQ +236%, YoY -11%)으로 컨센(270억원)에 부합했다.",
+          "value_krw_100m": 255.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 123.0,
+          "unit": "억원",
+          "source_excerpt": "국내법인 영업이익은 123억원(QoQ +200%)을 기록했다.",
+          "value_krw_100m": 123.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -532,7 +1528,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -587,7 +1586,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -595,6 +1597,209 @@
       "source": "naver_research",
       "category": "company",
       "category_label": "종목분석",
+      "report_id": "93329",
+      "title": "26년 중국 법인이 리딩",
+      "display_title": "유니드 - 26년 중국 법인이 리딩",
+      "broker": "DS투자증권",
+      "published_date": "2026-05-28",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93329&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260528_company_363589000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "유니드",
+      "subject_key": "유니드",
+      "ticker": "014830",
+      "views": 831,
+      "analyst": null,
+      "target_price": "100,000",
+      "target_price_value": 100000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1Q26 매출액 +19% YoY, 영업이익 컨센 소폭 하회 1Q26 연결 매출 3,844억원 (+19% YoY), 영업이익 255억원 (-11% YoY)으로 1분기 기준으로는 역대 최대 매출이다.",
+      "summary": "1Q26 매출액 +19% YoY, 영업이익 컨센 소폭 하회 1Q26 연결 매출 3,844억원 (+19% YoY), 영업이익 255억원 (-11% YoY)으로 1분기 기준으로는 역대 최대 매출이다. 영업이익은 컨센서스 270억원을 소폭 하회했다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 255.0,
+          "unit": "억원",
+          "source_excerpt": "26년 중국 법인이 리딩 유니드 1Q26 매출액 +19% YoY, 영업이익 컨센 소폭 하회 1Q26 연결 매출 3,844억원 (+19% YoY), 영업이익 255억원 (-11% YoY)으로 1분기 기준으로는 역대 최대 매출이다.",
+          "value_krw_100m": 255.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 270.0,
+          "unit": "억원",
+          "source_excerpt": "영업이익은 컨센서스 270억원을 소폭 하회했다.",
+          "value_krw_100m": 270.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 123.0,
+          "unit": "억원",
+          "source_excerpt": "국내 화학 영업이익이 123억원 (+200% QoQ, OPM 7.",
+          "value_krw_100m": 123.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 7.6,
+          "unit": "%",
+          "value_pct": 7.6,
+          "source_excerpt": "국내 화학 영업이익이 123억원 (+200% QoQ, OPM 7.6%), 중국 화학 영업이익은 123억원 (+373%QoQ, OPM 5."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 5.4,
+          "unit": "%",
+          "value_pct": 5.4,
+          "source_excerpt": "6%), 중국 화학 영업이익은 123억원 (+373%QoQ, OPM 5.4%)로 큰 폭의 실적 개선을 보였다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "score": 14.45,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "실적/마진 추정치 포함",
+        "이익 추정 상향/증가"
+      ],
+      "score_breakdown": [
+        {
+          "label": "종목분석 카테고리",
+          "value": 3.2,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 개선",
+          "value": 1.5,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 하향",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "실적/마진 추정치",
+          "value": 0.95,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.95,
+          "kind": "boost"
+        },
+        {
+          "label": "마진율 악화",
+          "value": 0.9,
+          "kind": "boost"
+        },
+        {
+          "label": "목표가",
+          "value": 0.7,
+          "kind": "boost"
+        },
+        {
+          "label": "투자의견",
+          "value": 0.6,
+          "kind": "boost"
+        },
+        {
+          "label": "PDF 본문",
+          "value": 0.35,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": true,
+      "change_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down",
+        "coverage_initiated"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화",
+        "신규 커버리지"
+      ],
+      "has_change_signal": true
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
       "report_id": "91825",
       "title": "요소 비료 강세와 전후 재건 수요의 반사 수..",
       "display_title": "유니드 - 요소 비료 강세와 전후 재건 수요의 반사 수..",
@@ -644,7 +1849,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q26",
+          "value": 255.0,
+          "unit": "억원",
+          "source_excerpt": "유니드 1Q26 영업이익은 255억원(QoQ +236%, YoY -11%)으로 컨센(270억원)에 부합했다.",
+          "value_krw_100m": 255.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 123.0,
+          "unit": "억원",
+          "source_excerpt": "국내법인 영업이익은 123억원(QoQ +200%)을 기록했다.",
+          "value_krw_100m": 123.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -700,7 +1929,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -755,7 +1987,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

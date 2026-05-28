@@ -14,14 +14,19 @@
     "하나증권"
   ],
   "change_summary": {
-    "changed_reports": 7,
+    "changed_reports": 8,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 7
+    "coverage_initiated": 7,
+    "estimate_signal_reports": 7,
+    "earnings_estimate_up": 7,
+    "earnings_estimate_down": 2,
+    "margin_estimate_up": 4,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 7,
@@ -50,7 +55,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-24",
@@ -65,7 +72,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -80,7 +95,19 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.6,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -95,7 +122,15 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 7.6,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -110,7 +145,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.8,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -125,7 +166,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -140,7 +187,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-15",
@@ -155,7 +210,291 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-12",
+        "broker": "IBK투자증권",
+        "title": "롯데에너지머티리얼즈 - 올해는 ESS와 회로박으로 간다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92755&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260512_company_293260000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260512_company_293260000.pdf",
+        "target_price": "80,000",
+        "target_price_value": 80000,
+        "opinion": null,
+        "opinion_normalized": null,
+        "score": 7.6,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": -3.1,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": -3.1,
+        "value_won": null,
+        "change_pctp": 9.8,
+        "source_excerpt": "5%), 영업이익 -50억원(QoQ 적자지속), OPM -3.1%(QoQ +9."
+      },
+      {
+        "date": "2026-05-12",
+        "broker": "하나증권",
+        "title": "롯데에너지머티리얼즈 - 중장기 실적 회복 가시성 확대",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92778&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_234427000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_234427000.pdf",
+        "target_price": "89,100",
+        "target_price_value": 89100,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.0,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": -3.1,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": -3.1,
+        "value_won": null,
+        "change_pctp": 17.0,
+        "source_excerpt": "롯데에너지머티리얼즈 - 중장기 실적 회복 가시성 확대 중장기 실적 회복 가시성 확대 롯데에너지머티리얼즈 1Q26 Review : 수익성 대폭 개선 롯데에너지머티리얼즈 1Q26 연결 실적은 매출 1,598억원(YoY +1%, QoQ -7%), 영업적자 50억원(YoY 적자지속, QoQ…"
+      },
+      {
+        "date": "2026-05-12",
+        "broker": "DS투자증권",
+        "title": "롯데에너지머티리얼즈 - AI 소재사로서의 리레이팅 구간 도래",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92786&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260512_company_133815000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260512_company_133815000.pdf",
+        "target_price": "100,000",
+        "target_price_value": 100000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 10.6,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": -50.0,
+        "unit": "억원",
+        "value_krw_100m": -50.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2% YoY), 영업이익은 -50억원(적지 QoQ, 적지 YoY)으로 이익 컨센서스를 상회했다."
+      },
+      {
+        "date": "2026-05-12",
+        "broker": "IBK투자증권",
+        "title": "롯데에너지머티리얼즈 - 올해는 ESS와 회로박으로 간다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92755&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260512_company_293260000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260512_company_293260000.pdf",
+        "target_price": "80,000",
+        "target_price_value": 80000,
+        "opinion": null,
+        "opinion_normalized": null,
+        "score": 7.6,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": -50.0,
+        "unit": "억원",
+        "value_krw_100m": -50.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5%), 영업이익 -50억원(QoQ 적자지속), OPM -3."
+      },
+      {
+        "date": "2026-05-12",
+        "broker": "IBK투자증권",
+        "title": "롯데에너지머티리얼즈 - 올해는 ESS와 회로박으로 간다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92755&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260512_company_293260000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260512_company_293260000.pdf",
+        "target_price": "80,000",
+        "target_price_value": 80000,
+        "opinion": null,
+        "opinion_normalized": null,
+        "score": 7.6,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": -230.0,
+        "unit": "억원",
+        "value_krw_100m": -230.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8%p)으로 영업이익 기준 컨센서스(매출액 1,740억원, 영업이익 -230억원)를 상회했다."
+      },
+      {
+        "date": "2026-05-12",
+        "broker": "SK증권",
+        "title": "롯데에너지머티리얼즈 - 회로박 시작, 전지박 가동률이 관건",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92767&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260512_company_238345000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260512_company_238345000.pdf",
+        "target_price": "90,000",
+        "target_price_value": 90000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 10.8,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 57.0,
+        "unit": "억원",
+        "value_krw_100m": 57.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "영업손익 개선의 배경은 ① 구리가격 상승에 따른 원재료 래깅 효과, ② 재고자산 평가 환입, ③ 건설부문 호실적(영업이익 57억원)이다."
+      },
+      {
+        "date": "2026-05-15",
+        "broker": "키움증권",
+        "title": "롯데에너지머티리얼즈 - 고부가 사업 확대로 중장기 성장 모멘텀 강화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92983&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260515_company_700909000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260515_company_700909000.pdf",
+        "target_price": "82,000",
+        "target_price_value": 82000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": -50.0,
+        "unit": "억원",
+        "value_krw_100m": -50.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "롯데에너지머티리얼즈 - 고부가 사업 확대로 중장기 성장 모멘텀 강화 고부가 사업 확대로 중장기 성장 모멘텀 강화 롯데에너지머티리얼즈 롯데에너지머티리얼즈의 1Q26 실적은 매출액 1,598억원(-7%QoQ, +1%YoY), 영업이익 -50억원(적자지속 QoQ, 적자지속 YoY)으로, 시…"
+      },
+      {
+        "date": "2026-05-15",
+        "broker": "키움증권",
+        "title": "롯데에너지머티리얼즈 - 고부가 사업 확대로 중장기 성장 모멘텀 강화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92983&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260515_company_700909000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260515_company_700909000.pdf",
+        "target_price": "82,000",
+        "target_price_value": 82000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": -225.0,
+        "unit": "억원",
+        "value_krw_100m": -225.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "롯데에너지머티리얼즈 - 고부가 사업 확대로 중장기 성장 모멘텀 강화 고부가 사업 확대로 중장기 성장 모멘텀 강화 롯데에너지머티리얼즈 롯데에너지머티리얼즈의 1Q26 실적은 매출액 1,598억원(-7%QoQ, +1%YoY), 영업이익 -50억원(적자지속 QoQ, 적자지속 YoY)으로, 시…"
       }
     ],
     "opinion_distribution": [
@@ -178,7 +517,15 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 7.6,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -193,7 +540,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -208,7 +561,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -223,7 +584,19 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.6,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -238,7 +611,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.8,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-15",
@@ -253,7 +632,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -272,7 +659,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-24",
@@ -287,7 +676,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -302,7 +699,19 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.6,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -317,7 +726,15 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 7.6,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -332,7 +749,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.8,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -347,7 +770,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -362,7 +791,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-15",
@@ -377,7 +814,291 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-12",
+      "broker": "IBK투자증권",
+      "title": "롯데에너지머티리얼즈 - 올해는 ESS와 회로박으로 간다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92755&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260512_company_293260000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260512_company_293260000.pdf",
+      "target_price": "80,000",
+      "target_price_value": 80000,
+      "opinion": null,
+      "opinion_normalized": null,
+      "score": 7.6,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": -3.1,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": -3.1,
+      "value_won": null,
+      "change_pctp": 9.8,
+      "source_excerpt": "5%), 영업이익 -50억원(QoQ 적자지속), OPM -3.1%(QoQ +9."
+    },
+    {
+      "date": "2026-05-12",
+      "broker": "하나증권",
+      "title": "롯데에너지머티리얼즈 - 중장기 실적 회복 가시성 확대",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92778&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_234427000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_234427000.pdf",
+      "target_price": "89,100",
+      "target_price_value": 89100,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.0,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": -3.1,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": -3.1,
+      "value_won": null,
+      "change_pctp": 17.0,
+      "source_excerpt": "롯데에너지머티리얼즈 - 중장기 실적 회복 가시성 확대 중장기 실적 회복 가시성 확대 롯데에너지머티리얼즈 1Q26 Review : 수익성 대폭 개선 롯데에너지머티리얼즈 1Q26 연결 실적은 매출 1,598억원(YoY +1%, QoQ -7%), 영업적자 50억원(YoY 적자지속, QoQ…"
+    },
+    {
+      "date": "2026-05-12",
+      "broker": "DS투자증권",
+      "title": "롯데에너지머티리얼즈 - AI 소재사로서의 리레이팅 구간 도래",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92786&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260512_company_133815000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260512_company_133815000.pdf",
+      "target_price": "100,000",
+      "target_price_value": 100000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 10.6,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": -50.0,
+      "unit": "억원",
+      "value_krw_100m": -50.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2% YoY), 영업이익은 -50억원(적지 QoQ, 적지 YoY)으로 이익 컨센서스를 상회했다."
+    },
+    {
+      "date": "2026-05-12",
+      "broker": "IBK투자증권",
+      "title": "롯데에너지머티리얼즈 - 올해는 ESS와 회로박으로 간다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92755&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260512_company_293260000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260512_company_293260000.pdf",
+      "target_price": "80,000",
+      "target_price_value": 80000,
+      "opinion": null,
+      "opinion_normalized": null,
+      "score": 7.6,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": -50.0,
+      "unit": "억원",
+      "value_krw_100m": -50.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5%), 영업이익 -50억원(QoQ 적자지속), OPM -3."
+    },
+    {
+      "date": "2026-05-12",
+      "broker": "IBK투자증권",
+      "title": "롯데에너지머티리얼즈 - 올해는 ESS와 회로박으로 간다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92755&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260512_company_293260000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260512_company_293260000.pdf",
+      "target_price": "80,000",
+      "target_price_value": 80000,
+      "opinion": null,
+      "opinion_normalized": null,
+      "score": 7.6,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": -230.0,
+      "unit": "억원",
+      "value_krw_100m": -230.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8%p)으로 영업이익 기준 컨센서스(매출액 1,740억원, 영업이익 -230억원)를 상회했다."
+    },
+    {
+      "date": "2026-05-12",
+      "broker": "SK증권",
+      "title": "롯데에너지머티리얼즈 - 회로박 시작, 전지박 가동률이 관건",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92767&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260512_company_238345000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260512_company_238345000.pdf",
+      "target_price": "90,000",
+      "target_price_value": 90000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 10.8,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 57.0,
+      "unit": "억원",
+      "value_krw_100m": 57.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "영업손익 개선의 배경은 ① 구리가격 상승에 따른 원재료 래깅 효과, ② 재고자산 평가 환입, ③ 건설부문 호실적(영업이익 57억원)이다."
+    },
+    {
+      "date": "2026-05-15",
+      "broker": "키움증권",
+      "title": "롯데에너지머티리얼즈 - 고부가 사업 확대로 중장기 성장 모멘텀 강화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92983&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260515_company_700909000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260515_company_700909000.pdf",
+      "target_price": "82,000",
+      "target_price_value": 82000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": -50.0,
+      "unit": "억원",
+      "value_krw_100m": -50.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "롯데에너지머티리얼즈 - 고부가 사업 확대로 중장기 성장 모멘텀 강화 고부가 사업 확대로 중장기 성장 모멘텀 강화 롯데에너지머티리얼즈 롯데에너지머티리얼즈의 1Q26 실적은 매출액 1,598억원(-7%QoQ, +1%YoY), 영업이익 -50억원(적자지속 QoQ, 적자지속 YoY)으로, 시…"
+    },
+    {
+      "date": "2026-05-15",
+      "broker": "키움증권",
+      "title": "롯데에너지머티리얼즈 - 고부가 사업 확대로 중장기 성장 모멘텀 강화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92983&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260515_company_700909000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260515_company_700909000.pdf",
+      "target_price": "82,000",
+      "target_price_value": 82000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": -225.0,
+      "unit": "억원",
+      "value_krw_100m": -225.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "롯데에너지머티리얼즈 - 고부가 사업 확대로 중장기 성장 모멘텀 강화 고부가 사업 확대로 중장기 성장 모멘텀 강화 롯데에너지머티리얼즈 롯데에너지머티리얼즈의 1Q26 실적은 매출액 1,598억원(-7%QoQ, +1%YoY), 영업이익 -50억원(적자지속 QoQ, 적자지속 YoY)으로, 시…"
     }
   ],
   "opinion_distribution": [
@@ -400,7 +1121,15 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 7.6,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -415,7 +1144,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -430,7 +1165,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -445,7 +1188,19 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.6,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -460,7 +1215,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.8,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-15",
@@ -475,7 +1236,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -565,13 +1334,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -50.0,
+          "unit": "억원",
+          "source_excerpt": "롯데에너지머티리얼즈 - 고부가 사업 확대로 중장기 성장 모멘텀 강화 고부가 사업 확대로 중장기 성장 모멘텀 강화 롯데에너지머티리얼즈 롯데에너지머티리얼즈의 1Q26 실적은 매출액 1,598억원(-7%QoQ, +1%YoY), 영업이익 -50억원(적자지속 QoQ, 적자지속 YoY)으로, 시…",
+          "value_krw_100m": -50.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -225.0,
+          "unit": "억원",
+          "source_excerpt": "롯데에너지머티리얼즈 - 고부가 사업 확대로 중장기 성장 모멘텀 강화 고부가 사업 확대로 중장기 성장 모멘텀 강화 롯데에너지머티리얼즈 롯데에너지머티리얼즈의 1Q26 실적은 매출액 1,598억원(-7%QoQ, +1%YoY), 영업이익 -50억원(적자지속 QoQ, 적자지속 YoY)으로, 시…",
+          "value_krw_100m": -225.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -625,10 +1428,32 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 57.0,
+          "unit": "억원",
+          "source_excerpt": "영업손익 개선의 배경은 ① 구리가격 상승에 따른 원재료 래깅 효과, ② 재고자산 평가 환입, ③ 건설부문 호실적(영업이익 57억원)이다.",
+          "value_krw_100m": 57.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -682,13 +1507,45 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -50.0,
+          "unit": "억원",
+          "source_excerpt": "2% YoY), 영업이익은 -50억원(적지 QoQ, 적지 YoY)으로 이익 컨센서스를 상회했다.",
+          "value_krw_100m": -50.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -740,13 +1597,38 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": -3.1,
+          "unit": "%",
+          "value_pct": -3.1,
+          "source_excerpt": "롯데에너지머티리얼즈 - 중장기 실적 회복 가시성 확대 중장기 실적 회복 가시성 확대 롯데에너지머티리얼즈 1Q26 Review : 수익성 대폭 개선 롯데에너지머티리얼즈 1Q26 연결 실적은 매출 1,598억원(YoY +1%, QoQ -7%), 영업적자 50억원(YoY 적자지속, QoQ…",
+          "change_pctp": 17.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -797,13 +1679,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -854,13 +1745,58 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -50.0,
+          "unit": "억원",
+          "source_excerpt": "5%), 영업이익 -50억원(QoQ 적자지속), OPM -3.",
+          "value_krw_100m": -50.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -230.0,
+          "unit": "억원",
+          "source_excerpt": "8%p)으로 영업이익 기준 컨센서스(매출액 1,740억원, 영업이익 -230억원)를 상회했다.",
+          "value_krw_100m": -230.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": -3.1,
+          "unit": "%",
+          "value_pct": -3.1,
+          "source_excerpt": "5%), 영업이익 -50억원(QoQ 적자지속), OPM -3.1%(QoQ +9.",
+          "change_pctp": 9.8
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -917,7 +1853,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -971,420 +1910,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
-    },
-    {
-      "source": "naver_research",
-      "category": "company",
-      "category_label": "종목분석",
-      "report_id": "92786",
-      "title": "AI 소재사로서의 리레이팅 구간 도래",
-      "display_title": "롯데에너지머티리얼즈 - AI 소재사로서의 리레이팅 구간 도래",
-      "broker": "DS투자증권",
-      "published_date": "2026-05-12",
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92786&page=1",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260512_company_133815000.pdf",
-      "subject": "롯데에너지머티리얼즈",
-      "subject_key": "롯데에너지머티리얼즈",
-      "views": 663,
-      "analyst": null,
-      "target_price": "100,000",
-      "target_price_value": 100000,
-      "opinion": "매수",
-      "opinion_normalized": "buy",
-      "has_pdf_text": true,
-      "content_sources": [
-        "html",
-        "pdf"
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -50.0,
+          "unit": "억원",
+          "source_excerpt": "롯데에너지머티리얼즈 - 고부가 사업 확대로 중장기 성장 모멘텀 강화 고부가 사업 확대로 중장기 성장 모멘텀 강화 롯데에너지머티리얼즈 롯데에너지머티리얼즈의 1Q26 실적은 매출액 1,598억원(-7%QoQ, +1%YoY), 영업이익 -50억원(적자지속 QoQ, 적자지속 YoY)으로, 시…",
+          "value_krw_100m": -50.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -225.0,
+          "unit": "억원",
+          "source_excerpt": "롯데에너지머티리얼즈 - 고부가 사업 확대로 중장기 성장 모멘텀 강화 고부가 사업 확대로 중장기 성장 모멘텀 강화 롯데에너지머티리얼즈 롯데에너지머티리얼즈의 1Q26 실적은 매출액 1,598억원(-7%QoQ, +1%YoY), 영업이익 -50억원(적자지속 QoQ, 적자지속 YoY)으로, 시…",
+          "value_krw_100m": -225.0
+        }
       ],
-      "excerpt": "1Q26P Re: 충당금 환입과 원가 스프레드 개선이 견인한 적자 축소 1Q26P 매출액은 1,598억원(-6.5% QoQ, +1.2% YoY), 영업이익은 -50억원(적지 QoQ, 적지 YoY)으로 이익 컨센서스를 상회했다.",
-      "summary": "1Q26P Re: 충당금 환입과 원가 스프레드 개선이 견인한 적자 축소 1Q26P 매출액은 1,598억원(-6.5% QoQ, +1.2% YoY), 영업이익은 -50억원(적지 QoQ, 적지 YoY)으로 이익 컨센서스를 상회했다. 적자 축소에는 구리 가격 급등에 따른 원가-판가 래깅 효과와 생산량 정상화에 기인한 재고자산평가손실 충당금 전액 환입이 주요하다.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "score": 10.6,
-      "score_reasons": [
-        "종목분석 카테고리",
-        "관심 섹터/키워드(건설)",
-        "목표가 포함",
-        "투자의견 포함",
-        "본문 정보량 풍부"
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [
-        "건설"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": true,
-      "change_types": [
-        "coverage_initiated"
-      ],
-      "change_reasons": [
-        "신규 커버리지"
-      ],
-      "has_change_signal": true,
-      "ticker": null
-    },
-    {
-      "source": "naver_research",
-      "category": "company",
-      "category_label": "종목분석",
-      "report_id": "92778",
-      "title": "중장기 실적 회복 가시성 확대",
-      "display_title": "롯데에너지머티리얼즈 - 중장기 실적 회복 가시성 확대",
-      "broker": "하나증권",
-      "published_date": "2026-05-12",
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92778&page=1",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_234427000.pdf",
-      "subject": "롯데에너지머티리얼즈",
-      "subject_key": "롯데에너지머티리얼즈",
-      "views": 530,
-      "analyst": null,
-      "target_price": "89,100",
-      "target_price_value": 89100,
-      "opinion": "Buy",
-      "opinion_normalized": "buy",
-      "has_pdf_text": true,
-      "content_sources": [
-        "html",
-        "pdf"
-      ],
-      "excerpt": "1Q26 Review : 수익성 대폭 개선 롯데에너지머티리얼즈 1Q26 연결 실적은 매출 1,598억원(YoY +1%, QoQ -7%), 영업적자 50억원(YoY 적자지속, QoQ 적자지속), OPM -3.1%(YoY +26%, QoQ +17%p)로 적자 지속됐으나 수익성은 큰 폭으로 개선됐다.",
-      "summary": "1Q26 Review : 수익성 대폭 개선 롯데에너지머티리얼즈 1Q26 연결 실적은 매출 1,598억원(YoY +1%, QoQ -7%), 영업적자 50억원(YoY 적자지속, QoQ 적자지속), OPM -3.1%(YoY +26%, QoQ +17%p)로 적자 지속됐으나 수익성은 큰 폭으로 개선됐다. 구리 가격 반등에 따른 판가 상승과 재고자산평가 손실 환입 효과, 우호적인 환율이 수익성 개선에 기여한 것으로 추정된다.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "score": 10.0,
-      "score_reasons": [
-        "종목분석 카테고리",
-        "목표가 포함",
-        "투자의견 포함",
-        "우선 추적 증권사",
-        "핵심 키워드(실적)"
-      ],
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": true,
-      "change_types": [
-        "coverage_initiated"
-      ],
-      "change_reasons": [
-        "신규 커버리지"
-      ],
-      "has_change_signal": true,
-      "ticker": null
-    },
-    {
-      "source": "shinhan_investment_official",
-      "category": "company",
-      "category_label": "종목분석",
-      "report_id": "shinhan-gicompanyanalyst-936266",
-      "title": "롯데에너지머티리얼즈; 회로박 모멘텀 가속화",
-      "display_title": "롯데에너지머티리얼즈 - 롯데에너지머티리얼즈; 회로박 모멘텀 가속화",
-      "broker": "신한투자증권",
-      "published_date": "2026-05-12",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=936266",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351372",
-      "subject": "롯데에너지머티리얼즈",
-      "subject_key": "롯데에너지머티리얼즈",
-      "views": 764,
-      "analyst": "김명주",
-      "target_price": "92,000원",
-      "target_price_value": 92000,
-      "opinion": "매수",
-      "opinion_normalized": "buy",
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "신한생각: 체질 개선의 성공적 사례 1Q26 Review: 긍정적 래깅효과&재고평가손실 환입으로 호실적 달성",
-      "summary": "신한생각: 체질 개선의 성공적 사례 1Q26 Review: 긍정적 래깅효과&재고평가손실 환입으로 호실적 달성 Valuation & Risk: AI용 회로박에 전고체까지",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "score": 9.1,
-      "score_reasons": [
-        "종목분석 카테고리",
-        "공식 소스",
-        "목표가 포함",
-        "투자의견 포함",
-        "우선 추적 증권사"
-      ],
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": true,
-      "change_types": [
-        "coverage_initiated"
-      ],
-      "change_reasons": [
-        "신규 커버리지"
-      ],
-      "has_change_signal": true,
-      "ticker": null
-    },
-    {
-      "source": "naver_research",
-      "category": "company",
-      "category_label": "종목분석",
-      "report_id": "92755",
-      "title": "올해는 ESS와 회로박으로 간다",
-      "display_title": "롯데에너지머티리얼즈 - 올해는 ESS와 회로박으로 간다",
-      "broker": "IBK투자증권",
-      "published_date": "2026-05-12",
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92755&page=2",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260512_company_293260000.pdf",
-      "subject": "롯데에너지머티리얼즈",
-      "subject_key": "롯데에너지머티리얼즈",
-      "views": 864,
-      "analyst": null,
-      "target_price": "80,000",
-      "target_price_value": 80000,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": true,
-      "content_sources": [
-        "html",
-        "pdf"
-      ],
-      "excerpt": "26년 1분기, 수익성 개선의 분기 롯데에너지머티리얼즈의 1Q26 매출액 1,598억원(QoQ -6.5%), 영업이익 -50억원(QoQ 적자지속), OPM -3.1%(QoQ +9.8%p)으로 영업이익 기준 컨센서스(매출액 1,740억원, 영업이익 -230억원)를 상회했다.",
-      "summary": "26년 1분기, 수익성 개선의 분기 롯데에너지머티리얼즈의 1Q26 매출액 1,598억원(QoQ -6.5%), 영업이익 -50억원(QoQ 적자지속), OPM -3.1%(QoQ +9.8%p)으로 영업이익 기준 컨센서스(매출액 1,740억원, 영업이익 -230억원)를 상회했다. 유럽 물류 지연 영향으로 EV향 전지박 판매가 2분기로 일부 이연되어 1분기 EV향 매출이 감소했으나, 북미향 ESS와 회로박은 견조한 판매를 기록했다.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "score": 7.6,
-      "score_reasons": [
-        "종목분석 카테고리",
-        "목표가 포함",
-        "본문 정보량 풍부",
-        "PDF 본문 확보"
-      ],
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": true,
-      "change_types": [
-        "coverage_initiated"
-      ],
-      "change_reasons": [
-        "신규 커버리지"
-      ],
-      "has_change_signal": true,
-      "ticker": null
-    },
-    {
-      "source": "naver_research",
-      "category": "company",
-      "category_label": "종목분석",
-      "report_id": "91895",
-      "title": "PCB/CCL용 동박 라인전환 본격화",
-      "display_title": "롯데에너지머티리얼즈 - PCB/CCL용 동박 라인전환 본격화",
-      "broker": "SK증권",
-      "published_date": "2026-04-24",
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91895&page=1",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260424_company_122830000.pdf",
-      "subject": "롯데에너지머티리얼즈",
-      "subject_key": "롯데에너지머티리얼즈",
-      "views": 475,
-      "analyst": null,
-      "target_price": "90,000",
-      "target_price_value": 90000,
-      "opinion": "매수",
-      "opinion_normalized": "buy",
-      "has_pdf_text": true,
-      "content_sources": [
-        "html",
-        "pdf"
-      ],
-      "excerpt": "실적개선 시작: 1 분기 서프 & 하반기 가동률 급반등 1 분기 영업손익은 -163 억원으로 컨센(-246 억원) 상회가 예상된다.",
-      "summary": "실적개선 시작: 1 분기 서프 & 하반기 가동률 급반등 1 분기 영업손익은 -163 억원으로 컨센(-246 억원) 상회가 예상된다. (YoY 적자폭 300 억원 축소) 일회성이익, 건설부문호조, 제품믹스개선 효과다.",
-      "summary_engine": "rule",
-      "score": 10.35,
-      "score_reasons": [
-        "종목분석 카테고리",
-        "관심 섹터/키워드(건설)",
-        "목표가 포함",
-        "투자의견 포함"
-      ],
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [
-        "건설"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": true,
-      "change_types": [
-        "coverage_initiated"
-      ],
-      "change_reasons": [
-        "신규 커버리지"
-      ],
-      "has_change_signal": true,
-      "ticker": null
-    },
-    {
-      "source": "naver_research",
-      "category": "company",
-      "category_label": "종목분석",
-      "report_id": "91768",
-      "title": "데이터센터용 회로박 판매 증가와 전고체 모..",
-      "display_title": "롯데에너지머티리얼즈 - 데이터센터용 회로박 판매 증가와 전고체 모..",
-      "broker": "유진투자증권",
-      "published_date": "2026-04-22",
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91768&page=2",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260422_company_681569000.pdf",
-      "subject": "롯데에너지머티리얼즈",
-      "subject_key": "롯데에너지머티리얼즈",
-      "views": 894,
-      "analyst": null,
-      "target_price": "65,000",
-      "target_price_value": 65000,
-      "opinion": "Buy",
-      "opinion_normalized": "buy",
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "\" 1분기 영업적자 폭 축소될 것으로 예상: 롯데에너지머티리얼즈의 1분기 매출액과 영업적자는 각각 1,699억원, -176억원으로 전년대비(1,580억원, -460억원) 매출액은 8% 증가하고 영업적자 폭은 대폭 축소될 것으로 추정됨. 매출액 증가의 대부분은 회로박 부문의 수요 증가 때문으로 판단",
-      "summary": "\" 1분기 영업적자 폭 축소될 것으로 예상: 롯데에너지머티리얼즈의 1분기 매출액과 영업적자는 각각 1,699억원, -176억원으로 전년대비(1,580억원, -460억원) 매출액은 8% 증가하고 영업적자 폭은 대폭 축소될 것으로 추정됨. 매출액 증가의 대부분은 회로박 부문의 수요 증가 때문으로 판단 \" 데이터센터용 회로박 판매량 올 해 전년대비 2배 증가 예상: 동사가 현재 고객사에게 공급하고 있는 회로박은 데이터센터 광통신 모듈향.",
-      "summary_engine": "rule",
-      "score": 9.75,
-      "score_reasons": [
-        "종목분석 카테고리",
-        "관심 섹터/키워드(건설)",
-        "목표가 포함",
-        "투자의견 포함"
-      ],
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [
-        "건설"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": true,
-      "change_types": [
-        "coverage_initiated"
-      ],
-      "change_reasons": [
-        "신규 커버리지"
-      ],
-      "has_change_signal": true,
-      "ticker": null
-    }
-  ],
-  "timeline": [
-    {
-      "source": "naver_research",
-      "category": "company",
-      "category_label": "종목분석",
-      "report_id": "92983",
-      "title": "고부가 사업 확대로 중장기 성장 모멘텀 강화",
-      "display_title": "롯데에너지머티리얼즈 - 고부가 사업 확대로 중장기 성장 모멘텀 강화",
-      "broker": "키움증권",
-      "published_date": "2026-05-15",
-      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92983&page=2",
-      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260515_company_700909000.pdf",
-      "subject": "롯데에너지머티리얼즈",
-      "subject_key": "롯데에너지머티리얼즈",
-      "views": 825,
-      "analyst": null,
-      "target_price": "82,000",
-      "target_price_value": 82000,
-      "opinion": "Buy",
-      "opinion_normalized": "buy",
-      "has_pdf_text": true,
-      "content_sources": [
-        "html",
-        "pdf"
-      ],
-      "excerpt": "롯데에너지머티리얼즈의 1Q26 실적은 매출액 1,598억원(-7%QoQ, +1%YoY), 영업이익 -50억원(적자지속 QoQ, 적자지속 YoY)으로, 시장 컨센서스(영업이익 -225억원)를 상회했다. 회로박 및 ESS용 전지박 판매량은 증가했으나, 유럽 물류 지연 여파로 EV용 전지박 출하량이 감소함에 따라 매출은 전분기 대비 소폭 감소했다.",
-      "summary": "롯데에너지머티리얼즈의 1Q26 실적은 매출액 1,598억원(-7%QoQ, +1%YoY), 영업이익 -50억원(적자지속 QoQ, 적자지속 YoY)으로, 시장 컨센서스(영업이익 -225억원)를 상회했다. 회로박 및 ESS용 전지박 판매량은 증가했으나, 유럽 물류 지연 여파로 EV용 전지박 출하량이 감소함에 따라 매출은 전분기 대비 소폭 감소했다. 수익성의 경우 말레이시아 공장의 생산성 향상과 구리 가격 상승에 따른 원재료 래깅 효과(60억원) 및 재고 평가 환입 영향(120억원)으로 전분기 대비 개선되었으며, 분기 기준 EBITDA 흑자전환을 달성했다.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "score": 9.2,
-      "score_reasons": [
-        "종목분석 카테고리",
-        "목표가 포함",
-        "투자의견 포함",
-        "우선 추적 증권사",
-        "본문 정보량 풍부"
-      ],
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": true,
-      "change_types": [
-        "coverage_initiated"
-      ],
-      "change_reasons": [
-        "신규 커버리지"
-      ],
-      "has_change_signal": true,
-      "ticker": null
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1438,10 +2004,32 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 57.0,
+          "unit": "억원",
+          "source_excerpt": "영업손익 개선의 배경은 ① 구리가격 상승에 따른 원재료 래깅 효과, ② 재고자산 평가 환입, ③ 건설부문 호실적(영업이익 57억원)이다.",
+          "value_krw_100m": 57.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1495,13 +2083,45 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -50.0,
+          "unit": "억원",
+          "source_excerpt": "2% YoY), 영업이익은 -50억원(적지 QoQ, 적지 YoY)으로 이익 컨센서스를 상회했다.",
+          "value_krw_100m": -50.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1553,13 +2173,38 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": -3.1,
+          "unit": "%",
+          "value_pct": -3.1,
+          "source_excerpt": "롯데에너지머티리얼즈 - 중장기 실적 회복 가시성 확대 중장기 실적 회복 가시성 확대 롯데에너지머티리얼즈 1Q26 Review : 수익성 대폭 개선 롯데에너지머티리얼즈 1Q26 연결 실적은 매출 1,598억원(YoY +1%, QoQ -7%), 영업적자 50억원(YoY 적자지속, QoQ…",
+          "change_pctp": 17.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -1610,13 +2255,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1667,13 +2321,58 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -50.0,
+          "unit": "억원",
+          "source_excerpt": "5%), 영업이익 -50억원(QoQ 적자지속), OPM -3.",
+          "value_krw_100m": -50.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -230.0,
+          "unit": "억원",
+          "source_excerpt": "8%p)으로 영업이익 기준 컨센서스(매출액 1,740억원, 영업이익 -230억원)를 상회했다.",
+          "value_krw_100m": -230.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": -3.1,
+          "unit": "%",
+          "value_pct": -3.1,
+          "source_excerpt": "5%), 영업이익 -50억원(QoQ 적자지속), OPM -3.1%(QoQ +9.",
+          "change_pctp": 9.8
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1725,13 +2424,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1788,7 +2500,657 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "timeline": [
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92983",
+      "title": "고부가 사업 확대로 중장기 성장 모멘텀 강화",
+      "display_title": "롯데에너지머티리얼즈 - 고부가 사업 확대로 중장기 성장 모멘텀 강화",
+      "broker": "키움증권",
+      "published_date": "2026-05-15",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92983&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260515_company_700909000.pdf",
+      "subject": "롯데에너지머티리얼즈",
+      "subject_key": "롯데에너지머티리얼즈",
+      "views": 825,
+      "analyst": null,
+      "target_price": "82,000",
+      "target_price_value": 82000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "롯데에너지머티리얼즈의 1Q26 실적은 매출액 1,598억원(-7%QoQ, +1%YoY), 영업이익 -50억원(적자지속 QoQ, 적자지속 YoY)으로, 시장 컨센서스(영업이익 -225억원)를 상회했다. 회로박 및 ESS용 전지박 판매량은 증가했으나, 유럽 물류 지연 여파로 EV용 전지박 출하량이 감소함에 따라 매출은 전분기 대비 소폭 감소했다.",
+      "summary": "롯데에너지머티리얼즈의 1Q26 실적은 매출액 1,598억원(-7%QoQ, +1%YoY), 영업이익 -50억원(적자지속 QoQ, 적자지속 YoY)으로, 시장 컨센서스(영업이익 -225억원)를 상회했다. 회로박 및 ESS용 전지박 판매량은 증가했으나, 유럽 물류 지연 여파로 EV용 전지박 출하량이 감소함에 따라 매출은 전분기 대비 소폭 감소했다. 수익성의 경우 말레이시아 공장의 생산성 향상과 구리 가격 상승에 따른 원재료 래깅 효과(60억원) 및 재고 평가 환입 영향(120억원)으로 전분기 대비 개선되었으며, 분기 기준 EBITDA 흑자전환을 달성했다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 9.2,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "우선 추적 증권사",
+        "본문 정보량 풍부"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": true,
+      "change_types": [
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -50.0,
+          "unit": "억원",
+          "source_excerpt": "롯데에너지머티리얼즈 - 고부가 사업 확대로 중장기 성장 모멘텀 강화 고부가 사업 확대로 중장기 성장 모멘텀 강화 롯데에너지머티리얼즈 롯데에너지머티리얼즈의 1Q26 실적은 매출액 1,598억원(-7%QoQ, +1%YoY), 영업이익 -50억원(적자지속 QoQ, 적자지속 YoY)으로, 시…",
+          "value_krw_100m": -50.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -225.0,
+          "unit": "억원",
+          "source_excerpt": "롯데에너지머티리얼즈 - 고부가 사업 확대로 중장기 성장 모멘텀 강화 고부가 사업 확대로 중장기 성장 모멘텀 강화 롯데에너지머티리얼즈 롯데에너지머티리얼즈의 1Q26 실적은 매출액 1,598억원(-7%QoQ, +1%YoY), 영업이익 -50억원(적자지속 QoQ, 적자지속 YoY)으로, 시…",
+          "value_krw_100m": -225.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92767",
+      "title": "회로박 시작, 전지박 가동률이 관건",
+      "display_title": "롯데에너지머티리얼즈 - 회로박 시작, 전지박 가동률이 관건",
+      "broker": "SK증권",
+      "published_date": "2026-05-12",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92767&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260512_company_238345000.pdf",
+      "subject": "롯데에너지머티리얼즈",
+      "subject_key": "롯데에너지머티리얼즈",
+      "views": 614,
+      "analyst": null,
+      "target_price": "90,000",
+      "target_price_value": 90000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1 분기 리뷰: 일회성 효과로 적자폭 대폭 축소 1 분기 영업손익은 -50 억원(적자축소, 이하 YoY)으로 컨센(-225 억원)을 상회했다.",
+      "summary": "1 분기 리뷰: 일회성 효과로 적자폭 대폭 축소 1 분기 영업손익은 -50 억원(적자축소, 이하 YoY)으로 컨센(-225 억원)을 상회했다. 영업손익 개선의 배경은 ① 구리가격 상승에 따른 원재료 래깅 효과, ② 재고자산 평가 환입, ③ 건설부문 호실적(영업이익 57억원)이다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 10.8,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 섹터/키워드(반도체, 건설)",
+        "목표가 포함",
+        "투자의견 포함",
+        "본문 정보량 풍부"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체",
+        "건설"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": "2026-04-24",
+      "previous_target_price": "90,000",
+      "previous_opinion": "매수",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 57.0,
+          "unit": "억원",
+          "source_excerpt": "영업손익 개선의 배경은 ① 구리가격 상승에 따른 원재료 래깅 효과, ② 재고자산 평가 환입, ③ 건설부문 호실적(영업이익 57억원)이다.",
+          "value_krw_100m": 57.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92786",
+      "title": "AI 소재사로서의 리레이팅 구간 도래",
+      "display_title": "롯데에너지머티리얼즈 - AI 소재사로서의 리레이팅 구간 도래",
+      "broker": "DS투자증권",
+      "published_date": "2026-05-12",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92786&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260512_company_133815000.pdf",
+      "subject": "롯데에너지머티리얼즈",
+      "subject_key": "롯데에너지머티리얼즈",
+      "views": 663,
+      "analyst": null,
+      "target_price": "100,000",
+      "target_price_value": 100000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1Q26P Re: 충당금 환입과 원가 스프레드 개선이 견인한 적자 축소 1Q26P 매출액은 1,598억원(-6.5% QoQ, +1.2% YoY), 영업이익은 -50억원(적지 QoQ, 적지 YoY)으로 이익 컨센서스를 상회했다.",
+      "summary": "1Q26P Re: 충당금 환입과 원가 스프레드 개선이 견인한 적자 축소 1Q26P 매출액은 1,598억원(-6.5% QoQ, +1.2% YoY), 영업이익은 -50억원(적지 QoQ, 적지 YoY)으로 이익 컨센서스를 상회했다. 적자 축소에는 구리 가격 급등에 따른 원가-판가 래깅 효과와 생산량 정상화에 기인한 재고자산평가손실 충당금 전액 환입이 주요하다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 10.6,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 섹터/키워드(건설)",
+        "목표가 포함",
+        "투자의견 포함",
+        "본문 정보량 풍부"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "건설"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": true,
+      "change_types": [
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "change_reasons": [
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -50.0,
+          "unit": "억원",
+          "source_excerpt": "2% YoY), 영업이익은 -50억원(적지 QoQ, 적지 YoY)으로 이익 컨센서스를 상회했다.",
+          "value_krw_100m": -50.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92778",
+      "title": "중장기 실적 회복 가시성 확대",
+      "display_title": "롯데에너지머티리얼즈 - 중장기 실적 회복 가시성 확대",
+      "broker": "하나증권",
+      "published_date": "2026-05-12",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92778&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_234427000.pdf",
+      "subject": "롯데에너지머티리얼즈",
+      "subject_key": "롯데에너지머티리얼즈",
+      "views": 530,
+      "analyst": null,
+      "target_price": "89,100",
+      "target_price_value": 89100,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1Q26 Review : 수익성 대폭 개선 롯데에너지머티리얼즈 1Q26 연결 실적은 매출 1,598억원(YoY +1%, QoQ -7%), 영업적자 50억원(YoY 적자지속, QoQ 적자지속), OPM -3.1%(YoY +26%, QoQ +17%p)로 적자 지속됐으나 수익성은 큰 폭으로 개선됐다.",
+      "summary": "1Q26 Review : 수익성 대폭 개선 롯데에너지머티리얼즈 1Q26 연결 실적은 매출 1,598억원(YoY +1%, QoQ -7%), 영업적자 50억원(YoY 적자지속, QoQ 적자지속), OPM -3.1%(YoY +26%, QoQ +17%p)로 적자 지속됐으나 수익성은 큰 폭으로 개선됐다. 구리 가격 반등에 따른 판가 상승과 재고자산평가 손실 환입 효과, 우호적인 환율이 수익성 개선에 기여한 것으로 추정된다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 10.0,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "우선 추적 증권사",
+        "핵심 키워드(실적)"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": true,
+      "change_types": [
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": -3.1,
+          "unit": "%",
+          "value_pct": -3.1,
+          "source_excerpt": "롯데에너지머티리얼즈 - 중장기 실적 회복 가시성 확대 중장기 실적 회복 가시성 확대 롯데에너지머티리얼즈 1Q26 Review : 수익성 대폭 개선 롯데에너지머티리얼즈 1Q26 연결 실적은 매출 1,598억원(YoY +1%, QoQ -7%), 영업적자 50억원(YoY 적자지속, QoQ…",
+          "change_pctp": 17.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    },
+    {
+      "source": "shinhan_investment_official",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "shinhan-gicompanyanalyst-936266",
+      "title": "롯데에너지머티리얼즈; 회로박 모멘텀 가속화",
+      "display_title": "롯데에너지머티리얼즈 - 롯데에너지머티리얼즈; 회로박 모멘텀 가속화",
+      "broker": "신한투자증권",
+      "published_date": "2026-05-12",
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=936266",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351372",
+      "subject": "롯데에너지머티리얼즈",
+      "subject_key": "롯데에너지머티리얼즈",
+      "views": 764,
+      "analyst": "김명주",
+      "target_price": "92,000원",
+      "target_price_value": 92000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "신한생각: 체질 개선의 성공적 사례 1Q26 Review: 긍정적 래깅효과&재고평가손실 환입으로 호실적 달성",
+      "summary": "신한생각: 체질 개선의 성공적 사례 1Q26 Review: 긍정적 래깅효과&재고평가손실 환입으로 호실적 달성 Valuation & Risk: AI용 회로박에 전고체까지",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 9.1,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "공식 소스",
+        "목표가 포함",
+        "투자의견 포함",
+        "우선 추적 증권사"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": true,
+      "change_types": [
+        "coverage_initiated",
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "신규 커버리지",
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92755",
+      "title": "올해는 ESS와 회로박으로 간다",
+      "display_title": "롯데에너지머티리얼즈 - 올해는 ESS와 회로박으로 간다",
+      "broker": "IBK투자증권",
+      "published_date": "2026-05-12",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92755&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260512_company_293260000.pdf",
+      "subject": "롯데에너지머티리얼즈",
+      "subject_key": "롯데에너지머티리얼즈",
+      "views": 864,
+      "analyst": null,
+      "target_price": "80,000",
+      "target_price_value": 80000,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "26년 1분기, 수익성 개선의 분기 롯데에너지머티리얼즈의 1Q26 매출액 1,598억원(QoQ -6.5%), 영업이익 -50억원(QoQ 적자지속), OPM -3.1%(QoQ +9.8%p)으로 영업이익 기준 컨센서스(매출액 1,740억원, 영업이익 -230억원)를 상회했다.",
+      "summary": "26년 1분기, 수익성 개선의 분기 롯데에너지머티리얼즈의 1Q26 매출액 1,598억원(QoQ -6.5%), 영업이익 -50억원(QoQ 적자지속), OPM -3.1%(QoQ +9.8%p)으로 영업이익 기준 컨센서스(매출액 1,740억원, 영업이익 -230억원)를 상회했다. 유럽 물류 지연 영향으로 EV향 전지박 판매가 2분기로 일부 이연되어 1분기 EV향 매출이 감소했으나, 북미향 ESS와 회로박은 견조한 판매를 기록했다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 7.6,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "본문 정보량 풍부",
+        "PDF 본문 확보"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": true,
+      "change_types": [
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -50.0,
+          "unit": "억원",
+          "source_excerpt": "5%), 영업이익 -50억원(QoQ 적자지속), OPM -3.",
+          "value_krw_100m": -50.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": -230.0,
+          "unit": "억원",
+          "source_excerpt": "8%p)으로 영업이익 기준 컨센서스(매출액 1,740억원, 영업이익 -230억원)를 상회했다.",
+          "value_krw_100m": -230.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": -3.1,
+          "unit": "%",
+          "value_pct": -3.1,
+          "source_excerpt": "5%), 영업이익 -50억원(QoQ 적자지속), OPM -3.1%(QoQ +9.",
+          "change_pctp": 9.8
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91895",
+      "title": "PCB/CCL용 동박 라인전환 본격화",
+      "display_title": "롯데에너지머티리얼즈 - PCB/CCL용 동박 라인전환 본격화",
+      "broker": "SK증권",
+      "published_date": "2026-04-24",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91895&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260424_company_122830000.pdf",
+      "subject": "롯데에너지머티리얼즈",
+      "subject_key": "롯데에너지머티리얼즈",
+      "views": 475,
+      "analyst": null,
+      "target_price": "90,000",
+      "target_price_value": 90000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "실적개선 시작: 1 분기 서프 & 하반기 가동률 급반등 1 분기 영업손익은 -163 억원으로 컨센(-246 억원) 상회가 예상된다.",
+      "summary": "실적개선 시작: 1 분기 서프 & 하반기 가동률 급반등 1 분기 영업손익은 -163 억원으로 컨센(-246 억원) 상회가 예상된다. (YoY 적자폭 300 억원 축소) 일회성이익, 건설부문호조, 제품믹스개선 효과다.",
+      "summary_engine": "rule",
+      "score": 10.35,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 섹터/키워드(건설)",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "건설"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": true,
+      "change_types": [
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91768",
+      "title": "데이터센터용 회로박 판매 증가와 전고체 모..",
+      "display_title": "롯데에너지머티리얼즈 - 데이터센터용 회로박 판매 증가와 전고체 모..",
+      "broker": "유진투자증권",
+      "published_date": "2026-04-22",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91768&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260422_company_681569000.pdf",
+      "subject": "롯데에너지머티리얼즈",
+      "subject_key": "롯데에너지머티리얼즈",
+      "views": 894,
+      "analyst": null,
+      "target_price": "65,000",
+      "target_price_value": 65000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "\" 1분기 영업적자 폭 축소될 것으로 예상: 롯데에너지머티리얼즈의 1분기 매출액과 영업적자는 각각 1,699억원, -176억원으로 전년대비(1,580억원, -460억원) 매출액은 8% 증가하고 영업적자 폭은 대폭 축소될 것으로 추정됨. 매출액 증가의 대부분은 회로박 부문의 수요 증가 때문으로 판단",
+      "summary": "\" 1분기 영업적자 폭 축소될 것으로 예상: 롯데에너지머티리얼즈의 1분기 매출액과 영업적자는 각각 1,699억원, -176억원으로 전년대비(1,580억원, -460억원) 매출액은 8% 증가하고 영업적자 폭은 대폭 축소될 것으로 추정됨. 매출액 증가의 대부분은 회로박 부문의 수요 증가 때문으로 판단 \" 데이터센터용 회로박 판매량 올 해 전년대비 2배 증가 예상: 동사가 현재 고객사에게 공급하고 있는 회로박은 데이터센터 광통신 모듈향.",
+      "summary_engine": "rule",
+      "score": 9.75,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 섹터/키워드(건설)",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "건설"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": true,
+      "change_types": [
+        "coverage_initiated"
+      ],
+      "change_reasons": [
+        "신규 커버리지"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

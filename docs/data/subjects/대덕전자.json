@@ -21,7 +21,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 7
+    "coverage_initiated": 7,
+    "estimate_signal_reports": 6,
+    "earnings_estimate_up": 6,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 4,
+    "margin_estimate_down": 2
   },
   "target_summary": {
     "count": 7,
@@ -54,7 +59,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -69,7 +80,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-30",
@@ -84,7 +97,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -99,7 +120,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 15.3,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -114,7 +141,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -129,7 +164,19 @@
         "opinion": "StrongBuy",
         "opinion_normalized": "strong_buy",
         "score": 10.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -144,7 +191,301 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-30",
+        "broker": "교보증권",
+        "title": "대덕전자 - Full Capa 수준의 수요와 증설 가능성",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92243&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260430_company_406301000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260430_company_406301000.pdf",
+        "target_price": "160,000",
+        "target_price_value": 160000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 14.8,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 14.8,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8%), 영업이익 513억원(YoY 흑자전환, OPM 14.8%)으로 컨센서스를 상회하는 호실적을 기록."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "유안타증권",
+        "title": "대덕전자 - 1Q26 Review: 화려한 서막, 기대되는 본막",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92244&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260430_company_333797000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260430_company_333797000.pdf",
+        "target_price": "170,000",
+        "target_price_value": 170000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 14.8,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 14.8,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9%), 513억원(OPM 14.8% vs 4Q25 9."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "유진투자증권",
+        "title": "대덕전자 - 클 대(大), 덕 덕(德)",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92221&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_312387000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_312387000.pdf",
+        "target_price": "190,000",
+        "target_price_value": 190000,
+        "opinion": "StrongBuy",
+        "opinion_normalized": "strong_buy",
+        "score": 10.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 14.8,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 14.8,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "대덕전자 - 클 대(大), 덕 덕(德) 클 대(大), 덕 덕(德) 대덕전자 \" 1Q26 Review: 대덕전자의 1분기 실적은 매출액 3,464억원(YoY +61%, QoQ +9%), 영업이익 513억원(YoY 흑전, QoQ +77%, OPM 14.8%)으로 당사 기존 추정치와 컨센서…"
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "하나증권",
+        "title": "대덕전자 - 고점은 아직 멀었다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92274&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260430_company_103552000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260430_company_103552000.pdf",
+        "target_price": "170,000",
+        "target_price_value": 170000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 14.8,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 14.8,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "대덕전자 - 고점은 아직 멀었다 고점은 아직 멀었다 대덕전자 1Q26 Review: 좋은 것만 골라먹을 수 있는 업황 26년 1분기 매출 3,463억원(YoY +61%, QoQ +9%), 영업이익 524억원(YoY 흑전, QoQ +77%, OPM 14.8%)을 기록해 매출액과 영업이익…"
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "교보증권",
+        "title": "대덕전자 - Full Capa 수준의 수요와 증설 가능성",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92243&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260430_company_406301000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260430_company_406301000.pdf",
+        "target_price": "160,000",
+        "target_price_value": 160000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 513.0,
+        "unit": "억원",
+        "value_krw_100m": 513.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "대덕전자 - Full Capa 수준의 수요와 증설 가능성 Full Capa 수준의 수요와 증설 가능성 대덕전자 1Q26 Review: 매출액 3,463억원, 영업이익 513억원 대덕전자의 2026년 1분기 매출액은 3,463억원(YoY +60."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "대신증권",
+        "title": "대덕전자 - 1Q 호조, 2Q도 좋다!",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92228&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260430_company_59014000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260430_company_59014000.pdf",
+        "target_price": "130,000",
+        "target_price_value": 130000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 15.3,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1Q",
+        "value": 513.0,
+        "unit": "억원",
+        "value_krw_100m": 513.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2026년 1Q 영업이익은 513억원(77."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "유진투자증권",
+        "title": "대덕전자 - 클 대(大), 덕 덕(德)",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92221&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_312387000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_312387000.pdf",
+        "target_price": "190,000",
+        "target_price_value": 190000,
+        "opinion": "StrongBuy",
+        "opinion_normalized": "strong_buy",
+        "score": 10.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 513.0,
+        "unit": "억원",
+        "value_krw_100m": 513.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "대덕전자 - 클 대(大), 덕 덕(德) 클 대(大), 덕 덕(德) 대덕전자 \" 1Q26 Review: 대덕전자의 1분기 실적은 매출액 3,464억원(YoY +61%, QoQ +9%), 영업이익 513억원(YoY 흑전, QoQ +77%, OPM 14."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "하나증권",
+        "title": "대덕전자 - 고점은 아직 멀었다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92274&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260430_company_103552000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260430_company_103552000.pdf",
+        "target_price": "170,000",
+        "target_price_value": 170000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 524.0,
+        "unit": "억원",
+        "value_krw_100m": 524.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "대덕전자 - 고점은 아직 멀었다 고점은 아직 멀었다 대덕전자 1Q26 Review: 좋은 것만 골라먹을 수 있는 업황 26년 1분기 매출 3,463억원(YoY +61%, QoQ +9%), 영업이익 524억원(YoY 흑전, QoQ +77%, OPM 14."
       }
     ],
     "opinion_distribution": [
@@ -171,7 +512,17 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -186,7 +537,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-30",
@@ -201,7 +554,19 @@
         "opinion": "StrongBuy",
         "opinion_normalized": "strong_buy",
         "score": 10.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선",
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -216,7 +581,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -231,7 +604,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -246,7 +625,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -261,7 +648,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 15.3,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -280,7 +673,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -295,7 +694,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-30",
@@ -310,7 +711,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -325,7 +734,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 15.3,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -340,7 +755,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -355,7 +778,19 @@
       "opinion": "StrongBuy",
       "opinion_normalized": "strong_buy",
       "score": 10.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -370,7 +805,301 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-30",
+      "broker": "교보증권",
+      "title": "대덕전자 - Full Capa 수준의 수요와 증설 가능성",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92243&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260430_company_406301000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260430_company_406301000.pdf",
+      "target_price": "160,000",
+      "target_price_value": 160000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 14.8,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 14.8,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8%), 영업이익 513억원(YoY 흑자전환, OPM 14.8%)으로 컨센서스를 상회하는 호실적을 기록."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "유안타증권",
+      "title": "대덕전자 - 1Q26 Review: 화려한 서막, 기대되는 본막",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92244&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260430_company_333797000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260430_company_333797000.pdf",
+      "target_price": "170,000",
+      "target_price_value": 170000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 14.8,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 14.8,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9%), 513억원(OPM 14.8% vs 4Q25 9."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "유진투자증권",
+      "title": "대덕전자 - 클 대(大), 덕 덕(德)",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92221&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_312387000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_312387000.pdf",
+      "target_price": "190,000",
+      "target_price_value": 190000,
+      "opinion": "StrongBuy",
+      "opinion_normalized": "strong_buy",
+      "score": 10.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 14.8,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 14.8,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "대덕전자 - 클 대(大), 덕 덕(德) 클 대(大), 덕 덕(德) 대덕전자 \" 1Q26 Review: 대덕전자의 1분기 실적은 매출액 3,464억원(YoY +61%, QoQ +9%), 영업이익 513억원(YoY 흑전, QoQ +77%, OPM 14.8%)으로 당사 기존 추정치와 컨센서…"
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "하나증권",
+      "title": "대덕전자 - 고점은 아직 멀었다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92274&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260430_company_103552000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260430_company_103552000.pdf",
+      "target_price": "170,000",
+      "target_price_value": 170000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 14.8,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 14.8,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "대덕전자 - 고점은 아직 멀었다 고점은 아직 멀었다 대덕전자 1Q26 Review: 좋은 것만 골라먹을 수 있는 업황 26년 1분기 매출 3,463억원(YoY +61%, QoQ +9%), 영업이익 524억원(YoY 흑전, QoQ +77%, OPM 14.8%)을 기록해 매출액과 영업이익…"
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "교보증권",
+      "title": "대덕전자 - Full Capa 수준의 수요와 증설 가능성",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92243&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260430_company_406301000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260430_company_406301000.pdf",
+      "target_price": "160,000",
+      "target_price_value": 160000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 513.0,
+      "unit": "억원",
+      "value_krw_100m": 513.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "대덕전자 - Full Capa 수준의 수요와 증설 가능성 Full Capa 수준의 수요와 증설 가능성 대덕전자 1Q26 Review: 매출액 3,463억원, 영업이익 513억원 대덕전자의 2026년 1분기 매출액은 3,463억원(YoY +60."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "대신증권",
+      "title": "대덕전자 - 1Q 호조, 2Q도 좋다!",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92228&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260430_company_59014000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260430_company_59014000.pdf",
+      "target_price": "130,000",
+      "target_price_value": 130000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 15.3,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1Q",
+      "value": 513.0,
+      "unit": "억원",
+      "value_krw_100m": 513.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2026년 1Q 영업이익은 513억원(77."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "유진투자증권",
+      "title": "대덕전자 - 클 대(大), 덕 덕(德)",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92221&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_312387000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260430_company_312387000.pdf",
+      "target_price": "190,000",
+      "target_price_value": 190000,
+      "opinion": "StrongBuy",
+      "opinion_normalized": "strong_buy",
+      "score": 10.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 513.0,
+      "unit": "억원",
+      "value_krw_100m": 513.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "대덕전자 - 클 대(大), 덕 덕(德) 클 대(大), 덕 덕(德) 대덕전자 \" 1Q26 Review: 대덕전자의 1분기 실적은 매출액 3,464억원(YoY +61%, QoQ +9%), 영업이익 513억원(YoY 흑전, QoQ +77%, OPM 14."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "하나증권",
+      "title": "대덕전자 - 고점은 아직 멀었다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92274&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260430_company_103552000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260430_company_103552000.pdf",
+      "target_price": "170,000",
+      "target_price_value": 170000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 524.0,
+      "unit": "억원",
+      "value_krw_100m": 524.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "대덕전자 - 고점은 아직 멀었다 고점은 아직 멀었다 대덕전자 1Q26 Review: 좋은 것만 골라먹을 수 있는 업황 26년 1분기 매출 3,463억원(YoY +61%, QoQ +9%), 영업이익 524억원(YoY 흑전, QoQ +77%, OPM 14."
     }
   ],
   "opinion_distribution": [
@@ -397,7 +1126,17 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -412,7 +1151,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-30",
@@ -427,7 +1168,19 @@
       "opinion": "StrongBuy",
       "opinion_normalized": "strong_buy",
       "score": 10.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -442,7 +1195,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -457,7 +1218,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -472,7 +1239,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -487,7 +1262,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 15.3,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -579,13 +1360,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q",
+          "value": 513.0,
+          "unit": "억원",
+          "source_excerpt": "2026년 1Q 영업이익은 513억원(77.",
+          "value_krw_100m": 513.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -639,13 +1440,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 14.8,
+          "unit": "%",
+          "value_pct": 14.8,
+          "source_excerpt": "9%), 513억원(OPM 14.8% vs 4Q25 9."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -697,13 +1522,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -755,13 +1589,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 513.0,
+          "unit": "억원",
+          "source_excerpt": "대덕전자 - Full Capa 수준의 수요와 증설 가능성 Full Capa 수준의 수요와 증설 가능성 대덕전자 1Q26 Review: 매출액 3,463억원, 영업이익 513억원 대덕전자의 2026년 1분기 매출액은 3,463억원(YoY +60.",
+          "value_krw_100m": 513.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 14.8,
+          "unit": "%",
+          "value_pct": 14.8,
+          "source_excerpt": "8%), 영업이익 513억원(YoY 흑자전환, OPM 14.8%)으로 컨센서스를 상회하는 호실적을 기록."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -814,13 +1682,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 513.0,
+          "unit": "억원",
+          "source_excerpt": "대덕전자 - 클 대(大), 덕 덕(德) 클 대(大), 덕 덕(德) 대덕전자 \" 1Q26 Review: 대덕전자의 1분기 실적은 매출액 3,464억원(YoY +61%, QoQ +9%), 영업이익 513억원(YoY 흑전, QoQ +77%, OPM 14.",
+          "value_krw_100m": 513.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 14.8,
+          "unit": "%",
+          "value_pct": 14.8,
+          "source_excerpt": "대덕전자 - 클 대(大), 덕 덕(德) 클 대(大), 덕 덕(德) 대덕전자 \" 1Q26 Review: 대덕전자의 1분기 실적은 매출액 3,464억원(YoY +61%, QoQ +9%), 영업이익 513억원(YoY 흑전, QoQ +77%, OPM 14.8%)으로 당사 기존 추정치와 컨센서…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -878,7 +1788,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -927,13 +1840,51 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 524.0,
+          "unit": "억원",
+          "source_excerpt": "대덕전자 - 고점은 아직 멀었다 고점은 아직 멀었다 대덕전자 1Q26 Review: 좋은 것만 골라먹을 수 있는 업황 26년 1분기 매출 3,463억원(YoY +61%, QoQ +9%), 영업이익 524억원(YoY 흑전, QoQ +77%, OPM 14.",
+          "value_krw_100m": 524.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 14.8,
+          "unit": "%",
+          "value_pct": 14.8,
+          "source_excerpt": "대덕전자 - 고점은 아직 멀었다 고점은 아직 멀었다 대덕전자 1Q26 Review: 좋은 것만 골라먹을 수 있는 업황 26년 1분기 매출 3,463억원(YoY +61%, QoQ +9%), 영업이익 524억원(YoY 흑전, QoQ +77%, OPM 14.8%)을 기록해 매출액과 영업이익…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "recent_changes": [
@@ -989,13 +1940,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q",
+          "value": 513.0,
+          "unit": "억원",
+          "source_excerpt": "2026년 1Q 영업이익은 513억원(77.",
+          "value_krw_100m": 513.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1049,13 +2020,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 14.8,
+          "unit": "%",
+          "value_pct": 14.8,
+          "source_excerpt": "9%), 513억원(OPM 14.8% vs 4Q25 9."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1107,13 +2102,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1165,13 +2169,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 513.0,
+          "unit": "억원",
+          "source_excerpt": "대덕전자 - Full Capa 수준의 수요와 증설 가능성 Full Capa 수준의 수요와 증설 가능성 대덕전자 1Q26 Review: 매출액 3,463억원, 영업이익 513억원 대덕전자의 2026년 1분기 매출액은 3,463억원(YoY +60.",
+          "value_krw_100m": 513.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 14.8,
+          "unit": "%",
+          "value_pct": 14.8,
+          "source_excerpt": "8%), 영업이익 513억원(YoY 흑자전환, OPM 14.8%)으로 컨센서스를 상회하는 호실적을 기록."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1224,13 +2262,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 513.0,
+          "unit": "억원",
+          "source_excerpt": "대덕전자 - 클 대(大), 덕 덕(德) 클 대(大), 덕 덕(德) 대덕전자 \" 1Q26 Review: 대덕전자의 1분기 실적은 매출액 3,464억원(YoY +61%, QoQ +9%), 영업이익 513억원(YoY 흑전, QoQ +77%, OPM 14.",
+          "value_krw_100m": 513.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 14.8,
+          "unit": "%",
+          "value_pct": 14.8,
+          "source_excerpt": "대덕전자 - 클 대(大), 덕 덕(德) 클 대(大), 덕 덕(德) 대덕전자 \" 1Q26 Review: 대덕전자의 1분기 실적은 매출액 3,464억원(YoY +61%, QoQ +9%), 영업이익 513억원(YoY 흑전, QoQ +77%, OPM 14.8%)으로 당사 기존 추정치와 컨센서…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1288,7 +2368,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1337,13 +2420,51 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 524.0,
+          "unit": "억원",
+          "source_excerpt": "대덕전자 - 고점은 아직 멀었다 고점은 아직 멀었다 대덕전자 1Q26 Review: 좋은 것만 골라먹을 수 있는 업황 26년 1분기 매출 3,463억원(YoY +61%, QoQ +9%), 영업이익 524억원(YoY 흑전, QoQ +77%, OPM 14.",
+          "value_krw_100m": 524.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 14.8,
+          "unit": "%",
+          "value_pct": 14.8,
+          "source_excerpt": "대덕전자 - 고점은 아직 멀었다 고점은 아직 멀었다 대덕전자 1Q26 Review: 좋은 것만 골라먹을 수 있는 업황 26년 1분기 매출 3,463억원(YoY +61%, QoQ +9%), 영업이익 524억원(YoY 흑전, QoQ +77%, OPM 14.8%)을 기록해 매출액과 영업이익…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "timeline": [
@@ -1399,13 +2520,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q",
+          "value": 513.0,
+          "unit": "억원",
+          "source_excerpt": "2026년 1Q 영업이익은 513억원(77.",
+          "value_krw_100m": 513.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1459,13 +2600,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 14.8,
+          "unit": "%",
+          "value_pct": 14.8,
+          "source_excerpt": "9%), 513억원(OPM 14.8% vs 4Q25 9."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1517,13 +2682,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1575,13 +2749,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 513.0,
+          "unit": "억원",
+          "source_excerpt": "대덕전자 - Full Capa 수준의 수요와 증설 가능성 Full Capa 수준의 수요와 증설 가능성 대덕전자 1Q26 Review: 매출액 3,463억원, 영업이익 513억원 대덕전자의 2026년 1분기 매출액은 3,463억원(YoY +60.",
+          "value_krw_100m": 513.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 14.8,
+          "unit": "%",
+          "value_pct": 14.8,
+          "source_excerpt": "8%), 영업이익 513억원(YoY 흑자전환, OPM 14.8%)으로 컨센서스를 상회하는 호실적을 기록."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1634,13 +2842,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 513.0,
+          "unit": "억원",
+          "source_excerpt": "대덕전자 - 클 대(大), 덕 덕(德) 클 대(大), 덕 덕(德) 대덕전자 \" 1Q26 Review: 대덕전자의 1분기 실적은 매출액 3,464억원(YoY +61%, QoQ +9%), 영업이익 513억원(YoY 흑전, QoQ +77%, OPM 14.",
+          "value_krw_100m": 513.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 14.8,
+          "unit": "%",
+          "value_pct": 14.8,
+          "source_excerpt": "대덕전자 - 클 대(大), 덕 덕(德) 클 대(大), 덕 덕(德) 대덕전자 \" 1Q26 Review: 대덕전자의 1분기 실적은 매출액 3,464억원(YoY +61%, QoQ +9%), 영업이익 513억원(YoY 흑전, QoQ +77%, OPM 14.8%)으로 당사 기존 추정치와 컨센서…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1698,7 +2948,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1747,13 +3000,51 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 524.0,
+          "unit": "억원",
+          "source_excerpt": "대덕전자 - 고점은 아직 멀었다 고점은 아직 멀었다 대덕전자 1Q26 Review: 좋은 것만 골라먹을 수 있는 업황 26년 1분기 매출 3,463억원(YoY +61%, QoQ +9%), 영업이익 524억원(YoY 흑전, QoQ +77%, OPM 14.",
+          "value_krw_100m": 524.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 14.8,
+          "unit": "%",
+          "value_pct": 14.8,
+          "source_excerpt": "대덕전자 - 고점은 아직 멀었다 고점은 아직 멀었다 대덕전자 1Q26 Review: 좋은 것만 골라먹을 수 있는 업황 26년 1분기 매출 3,463억원(YoY +61%, QoQ +9%), 영업이익 524억원(YoY 흑전, QoQ +77%, OPM 14.8%)을 기록해 매출액과 영업이익…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ]
 }

@@ -24,7 +24,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 10
+    "coverage_initiated": 10,
+    "estimate_signal_reports": 5,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 3,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 10,
@@ -57,7 +62,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -72,7 +85,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-27",
@@ -87,7 +102,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-27",
@@ -102,7 +119,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.3,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-27",
@@ -117,7 +136,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -132,7 +157,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-27",
@@ -147,7 +174,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -162,7 +201,9 @@
         "opinion": "OutPerform",
         "opinion_normalized": "outperform",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-27",
@@ -177,7 +218,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-27",
@@ -192,7 +239,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -207,7 +260,385 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.55,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-27",
+        "broker": "대신증권",
+        "title": "기아 - 매력적인 투자처",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91985&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260427_company_253416000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260427_company_253416000.pdf",
+        "target_price": "240,000",
+        "target_price_value": 240000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.3,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "eps",
+        "metric_group": "earnings",
+        "label": "EPS",
+        "period": "2026년",
+        "value": 21050.0,
+        "unit": "원",
+        "value_krw_100m": null,
+        "value_pct": null,
+        "value_won": 21050.0,
+        "change_pctp": null,
+        "source_excerpt": "기아 - 매력적인 투자처 매력적인 투자처 기아 투자의견 매수, 목표주가 240,000원 유지 TP 24만원은 2026년 EPS 21,050원에 목표배수 11."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "교보증권",
+        "title": "기아 - 1Q26 Review: 시장보다 강한 수요, 주가보다 ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92016&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260427_company_662005000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260427_company_662005000.pdf",
+        "target_price": "210,000",
+        "target_price_value": 210000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 7.5,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 7.5,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7% YoY, OPM 7.5%)로 컨센서스(Fnguide 매출액 29."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "미래에셋증권",
+        "title": "기아 - 1Q26 리뷰: 가격믹스 긍정적, 전기차 주목",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91967&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260427_company_795962000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260427_company_795962000.pdf",
+        "target_price": "200,000",
+        "target_price_value": 200000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.8,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 7.5,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 7.5,
+        "value_won": null,
+        "change_pctp": -3.3,
+        "source_excerpt": "7%), OPM 7.5%(-3."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "유진투자증권",
+        "title": "기아 - 1Q26 Review: ASP/글로벌 시장 점유율 상승",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91988&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260427_company_907164000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260427_company_907164000.pdf",
+        "target_price": "300,000",
+        "target_price_value": 300000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 7.5,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 7.5,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7%yoy, OPM 7.5%), 지배이익 1."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "DS투자증권",
+        "title": "기아 - 외생변수에 대한 높은 방어력 확인",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92019&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260427_company_839987000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260427_company_839987000.pdf",
+        "target_price": "210,000",
+        "target_price_value": 210000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2.2,
+        "unit": "조원",
+        "value_krw_100m": 22000.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3% 이하 YoY), 영업이익 2.2조원(-26."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "iM증권",
+        "title": "기아 - 신차 효과로 26.2Q의 리스크를 최소화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91943&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_600468000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_600468000.pdf",
+        "target_price": "240,000",
+        "target_price_value": 240000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2.2,
+        "unit": "조원",
+        "value_krw_100m": 22000.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5조원, 영업이익 2.2조원으로 컨센서스 부합 기아 26."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "교보증권",
+        "title": "기아 - 1Q26 Review: 시장보다 강한 수요, 주가보다 ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92016&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260427_company_662005000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260427_company_662005000.pdf",
+        "target_price": "210,000",
+        "target_price_value": 210000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2.2,
+        "unit": "조원",
+        "value_krw_100m": 22000.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3% YoY), 영업이익 2.2조원(-26."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "교보증권",
+        "title": "기아 - 1Q26 Review: 시장보다 강한 수요, 주가보다 ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92016&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260427_company_662005000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260427_company_662005000.pdf",
+        "target_price": "210,000",
+        "target_price_value": 210000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2.3,
+        "unit": "조원",
+        "value_krw_100m": 23000.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4조원, 영업이익 2.3조원) 대비 부합."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "미래에셋증권",
+        "title": "기아 - 1Q26 리뷰: 가격믹스 긍정적, 전기차 주목",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91967&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260427_company_795962000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260427_company_795962000.pdf",
+        "target_price": "200,000",
+        "target_price_value": 200000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.8,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2.2,
+        "unit": "조원",
+        "value_krw_100m": 22000.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3%YoY), 영업이익 2.2조원(-26."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "미래에셋증권",
+        "title": "기아 - 1Q26 리뷰: 가격믹스 긍정적, 전기차 주목",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91967&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260427_company_795962000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260427_company_795962000.pdf",
+        "target_price": "200,000",
+        "target_price_value": 200000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.8,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2.29,
+        "unit": "조원",
+        "value_krw_100m": 22900.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4조원에 부합했고, 영업이익은 컨센서스 2.29조원을 -4% 하회했으나, 최근 낮아진 시장 기대치에 부합하는 수준이다."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "유진투자증권",
+        "title": "기아 - 1Q26 Review: ASP/글로벌 시장 점유율 상승",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91988&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260427_company_907164000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260427_company_907164000.pdf",
+        "target_price": "300,000",
+        "target_price_value": 300000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2.2,
+        "unit": "조원",
+        "value_krw_100m": 22000.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3%yoy), 영업이익 2.2조원(-26."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "대신증권",
+        "title": "기아 - 매력적인 모범생",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92925&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260514_company_734682000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260514_company_734682000.pdf",
+        "target_price": "240,000",
+        "target_price_value": 240000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.55,
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "eps",
+        "metric_group": "earnings",
+        "label": "EPS",
+        "period": "26년",
+        "value": 21050.0,
+        "unit": "원",
+        "value_krw_100m": null,
+        "value_pct": null,
+        "value_won": 21050.0,
+        "change_pctp": null,
+        "source_excerpt": "기아 - 매력적인 모범생 매력적인 모범생 기아 투자의견 매수, 목표주가 240,000원 유지 TP 24만원은 26년 EPS 21,050원에 목표배수 11."
       }
     ],
     "opinion_distribution": [
@@ -234,7 +665,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.55,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -253,7 +686,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -268,7 +709,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-27",
@@ -283,7 +726,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-27",
@@ -298,7 +743,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.3,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-27",
@@ -313,7 +760,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -328,7 +781,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-27",
@@ -343,7 +798,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -358,7 +825,9 @@
       "opinion": "OutPerform",
       "opinion_normalized": "outperform",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-27",
@@ -373,7 +842,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -388,7 +863,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -403,7 +884,385 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.55,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-27",
+      "broker": "대신증권",
+      "title": "기아 - 매력적인 투자처",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91985&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260427_company_253416000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260427_company_253416000.pdf",
+      "target_price": "240,000",
+      "target_price_value": 240000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.3,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "eps",
+      "metric_group": "earnings",
+      "label": "EPS",
+      "period": "2026년",
+      "value": 21050.0,
+      "unit": "원",
+      "value_krw_100m": null,
+      "value_pct": null,
+      "value_won": 21050.0,
+      "change_pctp": null,
+      "source_excerpt": "기아 - 매력적인 투자처 매력적인 투자처 기아 투자의견 매수, 목표주가 240,000원 유지 TP 24만원은 2026년 EPS 21,050원에 목표배수 11."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "교보증권",
+      "title": "기아 - 1Q26 Review: 시장보다 강한 수요, 주가보다 ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92016&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260427_company_662005000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260427_company_662005000.pdf",
+      "target_price": "210,000",
+      "target_price_value": 210000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 7.5,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 7.5,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7% YoY, OPM 7.5%)로 컨센서스(Fnguide 매출액 29."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "미래에셋증권",
+      "title": "기아 - 1Q26 리뷰: 가격믹스 긍정적, 전기차 주목",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91967&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260427_company_795962000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260427_company_795962000.pdf",
+      "target_price": "200,000",
+      "target_price_value": 200000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.8,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 7.5,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 7.5,
+      "value_won": null,
+      "change_pctp": -3.3,
+      "source_excerpt": "7%), OPM 7.5%(-3."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "유진투자증권",
+      "title": "기아 - 1Q26 Review: ASP/글로벌 시장 점유율 상승",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91988&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260427_company_907164000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260427_company_907164000.pdf",
+      "target_price": "300,000",
+      "target_price_value": 300000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 7.5,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 7.5,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7%yoy, OPM 7.5%), 지배이익 1."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "DS투자증권",
+      "title": "기아 - 외생변수에 대한 높은 방어력 확인",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92019&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260427_company_839987000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260427_company_839987000.pdf",
+      "target_price": "210,000",
+      "target_price_value": 210000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2.2,
+      "unit": "조원",
+      "value_krw_100m": 22000.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3% 이하 YoY), 영업이익 2.2조원(-26."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "iM증권",
+      "title": "기아 - 신차 효과로 26.2Q의 리스크를 최소화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91943&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_600468000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260427_company_600468000.pdf",
+      "target_price": "240,000",
+      "target_price_value": 240000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2.2,
+      "unit": "조원",
+      "value_krw_100m": 22000.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5조원, 영업이익 2.2조원으로 컨센서스 부합 기아 26."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "교보증권",
+      "title": "기아 - 1Q26 Review: 시장보다 강한 수요, 주가보다 ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92016&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260427_company_662005000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260427_company_662005000.pdf",
+      "target_price": "210,000",
+      "target_price_value": 210000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2.2,
+      "unit": "조원",
+      "value_krw_100m": 22000.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3% YoY), 영업이익 2.2조원(-26."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "교보증권",
+      "title": "기아 - 1Q26 Review: 시장보다 강한 수요, 주가보다 ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92016&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260427_company_662005000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260427_company_662005000.pdf",
+      "target_price": "210,000",
+      "target_price_value": 210000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2.3,
+      "unit": "조원",
+      "value_krw_100m": 23000.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4조원, 영업이익 2.3조원) 대비 부합."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "미래에셋증권",
+      "title": "기아 - 1Q26 리뷰: 가격믹스 긍정적, 전기차 주목",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91967&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260427_company_795962000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260427_company_795962000.pdf",
+      "target_price": "200,000",
+      "target_price_value": 200000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.8,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2.2,
+      "unit": "조원",
+      "value_krw_100m": 22000.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3%YoY), 영업이익 2.2조원(-26."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "미래에셋증권",
+      "title": "기아 - 1Q26 리뷰: 가격믹스 긍정적, 전기차 주목",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91967&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260427_company_795962000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260427_company_795962000.pdf",
+      "target_price": "200,000",
+      "target_price_value": 200000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.8,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2.29,
+      "unit": "조원",
+      "value_krw_100m": 22900.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4조원에 부합했고, 영업이익은 컨센서스 2.29조원을 -4% 하회했으나, 최근 낮아진 시장 기대치에 부합하는 수준이다."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "유진투자증권",
+      "title": "기아 - 1Q26 Review: ASP/글로벌 시장 점유율 상승",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91988&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260427_company_907164000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260427_company_907164000.pdf",
+      "target_price": "300,000",
+      "target_price_value": 300000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2.2,
+      "unit": "조원",
+      "value_krw_100m": 22000.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3%yoy), 영업이익 2.2조원(-26."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "대신증권",
+      "title": "기아 - 매력적인 모범생",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92925&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260514_company_734682000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260514_company_734682000.pdf",
+      "target_price": "240,000",
+      "target_price_value": 240000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.55,
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "eps",
+      "metric_group": "earnings",
+      "label": "EPS",
+      "period": "26년",
+      "value": 21050.0,
+      "unit": "원",
+      "value_krw_100m": null,
+      "value_pct": null,
+      "value_won": 21050.0,
+      "change_pctp": null,
+      "source_excerpt": "기아 - 매력적인 모범생 매력적인 모범생 기아 투자의견 매수, 목표주가 240,000원 유지 TP 24만원은 26년 EPS 21,050원에 목표배수 11."
     }
   ],
   "opinion_distribution": [
@@ -430,7 +1289,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.55,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -536,7 +1397,21 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": "26년",
+          "value": 21050.0,
+          "unit": "원",
+          "source_excerpt": "기아 - 매력적인 모범생 매력적인 모범생 기아 투자의견 매수, 목표주가 240,000원 유지 TP 24만원은 26년 EPS 21,050원에 목표배수 11.",
+          "value_won": 21050.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -588,13 +1463,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -645,13 +1529,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.2,
+          "unit": "조원",
+          "source_excerpt": "3%yoy), 영업이익 2.2조원(-26.",
+          "value_krw_100m": 22000.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 7.5,
+          "unit": "%",
+          "value_pct": 7.5,
+          "source_excerpt": "7%yoy, OPM 7.5%), 지배이익 1."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -700,13 +1626,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -761,7 +1696,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -811,13 +1749,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.2,
+          "unit": "조원",
+          "source_excerpt": "3% 이하 YoY), 영업이익 2.2조원(-26.",
+          "value_krw_100m": 22000.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -873,7 +1835,41 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.2,
+          "unit": "조원",
+          "source_excerpt": "3% YoY), 영업이익 2.2조원(-26.",
+          "value_krw_100m": 22000.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.3,
+          "unit": "조원",
+          "source_excerpt": "4조원, 영업이익 2.3조원) 대비 부합.",
+          "value_krw_100m": 23000.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 7.5,
+          "unit": "%",
+          "value_pct": 7.5,
+          "source_excerpt": "7% YoY, OPM 7.5%)로 컨센서스(Fnguide 매출액 29."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -928,7 +1924,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -977,13 +1976,54 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.2,
+          "unit": "조원",
+          "source_excerpt": "3%YoY), 영업이익 2.2조원(-26.",
+          "value_krw_100m": 22000.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.29,
+          "unit": "조원",
+          "source_excerpt": "4조원에 부합했고, 영업이익은 컨센서스 2.29조원을 -4% 하회했으나, 최근 낮아진 시장 기대치에 부합하는 수준이다.",
+          "value_krw_100m": 22900.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 7.5,
+          "unit": "%",
+          "value_pct": 7.5,
+          "source_excerpt": "7%), OPM 7.5%(-3.",
+          "change_pctp": -3.3
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1037,7 +2077,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.2,
+          "unit": "조원",
+          "source_excerpt": "5조원, 영업이익 2.2조원으로 컨센서스 부합 기아 26.",
+          "value_krw_100m": 22000.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -1097,7 +2151,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": "2026년",
+          "value": 21050.0,
+          "unit": "원",
+          "source_excerpt": "기아 - 매력적인 투자처 매력적인 투자처 기아 투자의견 매수, 목표주가 240,000원 유지 TP 24만원은 2026년 EPS 21,050원에 목표배수 11.",
+          "value_won": 21050.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1149,13 +2217,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1206,13 +2283,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.2,
+          "unit": "조원",
+          "source_excerpt": "3%yoy), 영업이익 2.2조원(-26.",
+          "value_krw_100m": 22000.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 7.5,
+          "unit": "%",
+          "value_pct": 7.5,
+          "source_excerpt": "7%yoy, OPM 7.5%), 지배이익 1."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1261,13 +2380,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1322,7 +2450,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1372,13 +2503,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.2,
+          "unit": "조원",
+          "source_excerpt": "3% 이하 YoY), 영업이익 2.2조원(-26.",
+          "value_krw_100m": 22000.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1434,7 +2589,41 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.2,
+          "unit": "조원",
+          "source_excerpt": "3% YoY), 영업이익 2.2조원(-26.",
+          "value_krw_100m": 22000.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.3,
+          "unit": "조원",
+          "source_excerpt": "4조원, 영업이익 2.3조원) 대비 부합.",
+          "value_krw_100m": 23000.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 7.5,
+          "unit": "%",
+          "value_pct": 7.5,
+          "source_excerpt": "7% YoY, OPM 7.5%)로 컨센서스(Fnguide 매출액 29."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1489,7 +2678,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1538,13 +2730,54 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.2,
+          "unit": "조원",
+          "source_excerpt": "3%YoY), 영업이익 2.2조원(-26.",
+          "value_krw_100m": 22000.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.29,
+          "unit": "조원",
+          "source_excerpt": "4조원에 부합했고, 영업이익은 컨센서스 2.29조원을 -4% 하회했으나, 최근 낮아진 시장 기대치에 부합하는 수준이다.",
+          "value_krw_100m": 22900.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 7.5,
+          "unit": "%",
+          "value_pct": 7.5,
+          "source_excerpt": "7%), OPM 7.5%(-3.",
+          "change_pctp": -3.3
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1598,7 +2831,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.2,
+          "unit": "조원",
+          "source_excerpt": "5조원, 영업이익 2.2조원으로 컨센서스 부합 기아 26.",
+          "value_krw_100m": 22000.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -1656,7 +2903,21 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": "26년",
+          "value": 21050.0,
+          "unit": "원",
+          "source_excerpt": "기아 - 매력적인 모범생 매력적인 모범생 기아 투자의견 매수, 목표주가 240,000원 유지 TP 24만원은 26년 EPS 21,050원에 목표배수 11.",
+          "value_won": 21050.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1714,7 +2975,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": "2026년",
+          "value": 21050.0,
+          "unit": "원",
+          "source_excerpt": "기아 - 매력적인 투자처 매력적인 투자처 기아 투자의견 매수, 목표주가 240,000원 유지 TP 24만원은 2026년 EPS 21,050원에 목표배수 11.",
+          "value_won": 21050.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1766,13 +3041,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1823,13 +3107,55 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.2,
+          "unit": "조원",
+          "source_excerpt": "3%yoy), 영업이익 2.2조원(-26.",
+          "value_krw_100m": 22000.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 7.5,
+          "unit": "%",
+          "value_pct": 7.5,
+          "source_excerpt": "7%yoy, OPM 7.5%), 지배이익 1."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1878,13 +3204,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1939,7 +3274,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1989,13 +3327,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.2,
+          "unit": "조원",
+          "source_excerpt": "3% 이하 YoY), 영업이익 2.2조원(-26.",
+          "value_krw_100m": 22000.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -2051,7 +3413,41 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.2,
+          "unit": "조원",
+          "source_excerpt": "3% YoY), 영업이익 2.2조원(-26.",
+          "value_krw_100m": 22000.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.3,
+          "unit": "조원",
+          "source_excerpt": "4조원, 영업이익 2.3조원) 대비 부합.",
+          "value_krw_100m": 23000.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 7.5,
+          "unit": "%",
+          "value_pct": 7.5,
+          "source_excerpt": "7% YoY, OPM 7.5%)로 컨센서스(Fnguide 매출액 29."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -2106,7 +3502,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -2155,13 +3554,54 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.2,
+          "unit": "조원",
+          "source_excerpt": "3%YoY), 영업이익 2.2조원(-26.",
+          "value_krw_100m": 22000.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.29,
+          "unit": "조원",
+          "source_excerpt": "4조원에 부합했고, 영업이익은 컨센서스 2.29조원을 -4% 하회했으나, 최근 낮아진 시장 기대치에 부합하는 수준이다.",
+          "value_krw_100m": 22900.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 7.5,
+          "unit": "%",
+          "value_pct": 7.5,
+          "source_excerpt": "7%), OPM 7.5%(-3.",
+          "change_pctp": -3.3
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -2215,7 +3655,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2.2,
+          "unit": "조원",
+          "source_excerpt": "5조원, 영업이익 2.2조원으로 컨센서스 부합 기아 26.",
+          "value_krw_100m": 22000.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

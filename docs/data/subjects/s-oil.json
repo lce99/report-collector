@@ -14,14 +14,19 @@
     "한화투자증권"
   ],
   "change_summary": {
-    "changed_reports": 5,
+    "changed_reports": 7,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 5
+    "coverage_initiated": 5,
+    "estimate_signal_reports": 6,
+    "earnings_estimate_up": 6,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 3,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 7,
@@ -50,7 +55,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.5,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-17",
@@ -65,7 +78,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.25,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-12",
@@ -80,7 +95,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -95,7 +118,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 13.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -110,7 +141,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 11.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-12",
@@ -125,7 +158,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -140,7 +179,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -155,7 +200,111 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-12",
+        "broker": "유진투자증권",
+        "title": "S-Oil - 안정적인 원유 수급 능력",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92762&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260512_company_313202000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260512_company_313202000.pdf",
+        "target_price": "126,000",
+        "target_price_value": 126000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1.2,
+        "unit": "조원",
+        "value_krw_100m": 12000.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5%yoy), 영업이익 1.2조원(+231%qoq, 흑전yoy)으로 당사 추정과 시장 컨센서스를 크게 상회하는 어닝 서프라이즈 기록 \" [투자의견] S-OIL에 대해 투자의견 BUY와 목표주가 126,000원을 유지."
+      },
+      {
+        "date": "2026-05-12",
+        "broker": "하나증권",
+        "title": "S-Oil - 유가 안정화 이후 본격 반등 전망",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92776&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_720605000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_720605000.pdf",
+        "target_price": "130,000",
+        "target_price_value": 130000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1Q26",
+        "value": 1.23,
+        "unit": "조원",
+        "value_krw_100m": 12300.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "S-Oil - 유가 안정화 이후 본격 반등 전망 유가 안정화 이후 본격 반등 전망 S-Oil 1Q26 영업이익은 1.23조원(QoQ +190%, YoY 흑전)으로 컨센(1."
+      },
+      {
+        "date": "2026-05-12",
+        "broker": "하나증권",
+        "title": "S-Oil - 유가 안정화 이후 본격 반등 전망",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92776&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_720605000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_720605000.pdf",
+        "target_price": "130,000",
+        "target_price_value": 130000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1.04,
+        "unit": "조원",
+        "value_krw_100m": 10400.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "정유 영업이익은 1.04조원(QoQ +8,137억원)으로 개선되었다."
       }
     ],
     "opinion_distribution": [
@@ -178,7 +327,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -193,7 +350,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -208,7 +371,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -223,7 +392,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -238,7 +413,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 11.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-12",
@@ -253,7 +430,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 13.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -272,7 +457,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.5,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-17",
@@ -287,7 +480,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.25,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-12",
@@ -302,7 +497,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -317,7 +520,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 13.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -332,7 +543,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 11.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-12",
@@ -347,7 +560,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -362,7 +581,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -377,7 +602,111 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-12",
+      "broker": "유진투자증권",
+      "title": "S-Oil - 안정적인 원유 수급 능력",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92762&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260512_company_313202000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260512_company_313202000.pdf",
+      "target_price": "126,000",
+      "target_price_value": 126000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1.2,
+      "unit": "조원",
+      "value_krw_100m": 12000.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5%yoy), 영업이익 1.2조원(+231%qoq, 흑전yoy)으로 당사 추정과 시장 컨센서스를 크게 상회하는 어닝 서프라이즈 기록 \" [투자의견] S-OIL에 대해 투자의견 BUY와 목표주가 126,000원을 유지."
+    },
+    {
+      "date": "2026-05-12",
+      "broker": "하나증권",
+      "title": "S-Oil - 유가 안정화 이후 본격 반등 전망",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92776&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_720605000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_720605000.pdf",
+      "target_price": "130,000",
+      "target_price_value": 130000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1Q26",
+      "value": 1.23,
+      "unit": "조원",
+      "value_krw_100m": 12300.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "S-Oil - 유가 안정화 이후 본격 반등 전망 유가 안정화 이후 본격 반등 전망 S-Oil 1Q26 영업이익은 1.23조원(QoQ +190%, YoY 흑전)으로 컨센(1."
+    },
+    {
+      "date": "2026-05-12",
+      "broker": "하나증권",
+      "title": "S-Oil - 유가 안정화 이후 본격 반등 전망",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92776&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_720605000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_720605000.pdf",
+      "target_price": "130,000",
+      "target_price_value": 130000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1.04,
+      "unit": "조원",
+      "value_krw_100m": 10400.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "정유 영업이익은 1.04조원(QoQ +8,137억원)으로 개선되었다."
     }
   ],
   "opinion_distribution": [
@@ -400,7 +729,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -415,7 +752,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -430,7 +773,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -445,7 +794,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -460,7 +815,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 11.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-12",
@@ -475,7 +832,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 13.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -567,13 +932,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -632,7 +1010,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -684,13 +1065,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q26",
+          "value": 1.23,
+          "unit": "조원",
+          "source_excerpt": "S-Oil - 유가 안정화 이후 본격 반등 전망 유가 안정화 이후 본격 반등 전망 S-Oil 1Q26 영업이익은 1.23조원(QoQ +190%, YoY 흑전)으로 컨센(1.",
+          "value_krw_100m": 12300.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1.04,
+          "unit": "조원",
+          "source_excerpt": "정유 영업이익은 1.04조원(QoQ +8,137억원)으로 개선되었다.",
+          "value_krw_100m": 10400.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -742,13 +1153,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1.2,
+          "unit": "조원",
+          "source_excerpt": "5%yoy), 영업이익 1.2조원(+231%qoq, 흑전yoy)으로 당사 추정과 시장 컨센서스를 크게 상회하는 어닝 서프라이즈 기록 \" [투자의견] S-OIL에 대해 투자의견 BUY와 목표주가 126,000원을 유지.",
+          "value_krw_100m": 12000.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -799,10 +1230,21 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -854,13 +1296,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -900,9 +1355,24 @@
       "ticker": null,
       "target_price_value": 150000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true
     }
   ],
   "recent_changes": [
@@ -958,13 +1428,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -1023,7 +1506,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1075,13 +1561,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q26",
+          "value": 1.23,
+          "unit": "조원",
+          "source_excerpt": "S-Oil - 유가 안정화 이후 본격 반등 전망 유가 안정화 이후 본격 반등 전망 S-Oil 1Q26 영업이익은 1.23조원(QoQ +190%, YoY 흑전)으로 컨센(1.",
+          "value_krw_100m": 12300.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1.04,
+          "unit": "조원",
+          "source_excerpt": "정유 영업이익은 1.04조원(QoQ +8,137억원)으로 개선되었다.",
+          "value_krw_100m": 10400.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1133,13 +1649,98 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1.2,
+          "unit": "조원",
+          "source_excerpt": "5%yoy), 영업이익 1.2조원(+231%qoq, 흑전yoy)으로 당사 추정과 시장 컨센서스를 크게 상회하는 어닝 서프라이즈 기록 \" [투자의견] S-OIL에 대해 투자의견 BUY와 목표주가 126,000원을 유지.",
+          "value_krw_100m": 12000.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92788",
+      "title": "불확실성을 상쇄하는 원유 수급 안정성 확인",
+      "display_title": "S-Oil - 불확실성을 상쇄하는 원유 수급 안정성 확인",
+      "broker": "한화투자증권",
+      "published_date": "2026-05-12",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92788&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260512_company_14831000.pdf",
+      "subject": "S-Oil",
+      "subject_key": "s-oil",
+      "views": 661,
+      "analyst": null,
+      "target_price": "150,000",
+      "target_price_value": 150000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1분기: 재고평가이익 효과로 실적 반등 동사의 1분기 실적은 매출액 8.9조 원, 영업이익 1.2조 원으로 컨센서스에 부합했다.",
+      "summary": "1분기: 재고평가이익 효과로 실적 반등 동사의 1분기 실적은 매출액 8.9조 원, 영업이익 1.2조 원으로 컨센서스에 부합했다. 1) 정유 부문 영업이익은 1.0조 원(QoQ +8,137억 원)으로 크게 회복되었다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 8.2,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "본문 정보량 풍부",
+        "PDF 본문 확보"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-04-17",
+      "previous_target_price": "150,000",
+      "previous_opinion": "Buy",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1191,13 +1792,83 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91639",
+      "title": "1Q26 preview - 공급 타이트에 힘입은 서프라..",
+      "display_title": "S-Oil - 1Q26 preview - 공급 타이트에 힘입은 서프라..",
+      "broker": "삼성증권",
+      "published_date": "2026-04-16",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91639&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_503719000.pdf",
+      "subject": "S-Oil",
+      "views": 1246,
+      "analyst": null,
+      "target_price": "150,000",
+      "opinion": "Buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "View, 다수 불확실성에도 실보다 득이 클 것: 2026년 이익 전망치 상향을 감안하여 2026년 ROE를 상향(11.7→17.4%)하고, P/B 밸류에이션상 목표주가도 7% 추가 상향(14.0→15.0만원; Target P/B 1.64배는 유지). 예상보다 길어지는 중동 전쟁으로 인해 높아진 국제 가격 기준 마진에도 불구하고,6월 이후 원료 수급 불확실성 및 내수 최고 가격제뿐만 아니라 향후 수출 중단 가능성도 상존.",
+      "summary": "View, 다수 불확실성에도 실보다 득이 클 것: 2026년 이익 전망치 상향을 감안하여 2026년 ROE를 상향(11.7→17.4%)하고, P/B 밸류에이션상 목표주가도 7% 추가 상향(14.0→15.0만원; Target P/B 1.64배는 유지). 예상보다 길어지는 중동 전쟁으로 인해 높아진 국제 가격 기준 마진에도 불구하고,6월 이후 원료 수급 불확실성 및 내수 최고 가격제뿐만 아니라 향후 수출 중단 가능성도 상존. 그럼에도 글로벌 공급 타이트로 실현된 유리한 래깅 효과 및 정제 마진 급등 효과가 부정적 영향보다 궁극적으로 클 것.",
+      "summary_engine": "rule",
+      "score": 10.5,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "subject_key": "s-oil",
+      "ticker": null,
+      "target_price_value": 150000,
+      "opinion_normalized": "buy",
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true
     }
   ],
   "timeline": [
@@ -1253,13 +1924,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -1318,7 +2002,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1370,13 +2057,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q26",
+          "value": 1.23,
+          "unit": "조원",
+          "source_excerpt": "S-Oil - 유가 안정화 이후 본격 반등 전망 유가 안정화 이후 본격 반등 전망 S-Oil 1Q26 영업이익은 1.23조원(QoQ +190%, YoY 흑전)으로 컨센(1.",
+          "value_krw_100m": 12300.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1.04,
+          "unit": "조원",
+          "source_excerpt": "정유 영업이익은 1.04조원(QoQ +8,137억원)으로 개선되었다.",
+          "value_krw_100m": 10400.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1428,13 +2145,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1.2,
+          "unit": "조원",
+          "source_excerpt": "5%yoy), 영업이익 1.2조원(+231%qoq, 흑전yoy)으로 당사 추정과 시장 컨센서스를 크게 상회하는 어닝 서프라이즈 기록 \" [투자의견] S-OIL에 대해 투자의견 BUY와 목표주가 126,000원을 유지.",
+          "value_krw_100m": 12000.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1485,10 +2222,21 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1540,13 +2288,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1586,6 +2347,9 @@
       "ticker": null,
       "target_price_value": 150000,
       "opinion_normalized": "buy",
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false
@@ -1628,9 +2392,24 @@
       "ticker": null,
       "target_price_value": 150000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true
     }
   ]
 }

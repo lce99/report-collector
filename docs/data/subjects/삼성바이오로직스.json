@@ -21,7 +21,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 6
+    "coverage_initiated": 6,
+    "estimate_signal_reports": 2,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 6,
@@ -50,7 +55,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-23",
@@ -65,7 +72,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-23",
@@ -80,7 +93,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-23",
@@ -95,7 +116,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-23",
@@ -110,7 +133,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-20",
@@ -125,7 +150,343 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 15.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-23",
+        "broker": "DS투자증권",
+        "title": "삼성바이오로직스 - 1Q26 Re: 든든한 로직스",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91827&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260423_company_780627000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260423_company_780627000.pdf",
+        "target_price": "2,100,000",
+        "target_price_value": 2100000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 46.2,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 46.2,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "1% YoY, OPM 46.2%)를 달성하여 컨센서스 매출액 약 1조 2,797억원 및 영업이익 약 5,902억원으로 컨센서스 부합하였다."
+      },
+      {
+        "date": "2026-04-23",
+        "broker": "iM증권",
+        "title": "삼성바이오로직스 - 익숙함 속 커져가는 기대감",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91808&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260423_company_786742000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260423_company_786742000.pdf",
+        "target_price": "2,200,000",
+        "target_price_value": 2200000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 46.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 46.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "삼성바이오로직스 - 익숙함 속 커져가는 기대감 익숙함 속 커져가는 기대감 삼성바이오로직스 내용은 그대로, 숫자는 증가 중 동사는 1분기 매출액 1조 2,571억원(YoY +26%), 영업이익 5,808억원(YoY +35%, OPM 46%)을 달성했다."
+      },
+      {
+        "date": "2026-04-23",
+        "broker": "키움증권",
+        "title": "삼성바이오로직스 - 1Q26 Review 실망시키지 않는 실적. 기대치 ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91806&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260423_company_729314000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260423_company_729314000.pdf",
+        "target_price": null,
+        "target_price_value": null,
+        "opinion": null,
+        "opinion_normalized": null,
+        "score": 8.55,
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 46.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 46.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "삼성바이오로직스 ◎ 1분기 실적 기대치에 부합 >> 1분기 연결 매출액 1조 2,571억 원(YoY +26%, QoQ -2%), 영업이익은 5,808억 원(YoY +35%, QoQ +10%, OPM +46%)로 시장 컨센서스 매출액 1조 2,664억 원과 컨센서스 영업이익 5,776억…"
+      },
+      {
+        "date": "2026-04-23",
+        "broker": "하나증권",
+        "title": "삼성바이오로직스 - 1Q26 Re: 사업은 여전히 잘 하고 있다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91824&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260423_company_710809000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260423_company_710809000.pdf",
+        "target_price": "2,050,000",
+        "target_price_value": 2050000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 46.2,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 46.2,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "1%, OPM 46.2%)을 달성하였다."
+      },
+      {
+        "date": "2026-04-23",
+        "broker": "DS투자증권",
+        "title": "삼성바이오로직스 - 1Q26 Re: 든든한 로직스",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91827&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260423_company_780627000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260423_company_780627000.pdf",
+        "target_price": "2,100,000",
+        "target_price_value": 2100000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 5808.0,
+        "unit": "억원",
+        "value_krw_100m": 5808.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8% YoY), 영업이익 약 5,808억원(+35."
+      },
+      {
+        "date": "2026-04-23",
+        "broker": "DS투자증권",
+        "title": "삼성바이오로직스 - 1Q26 Re: 든든한 로직스",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91827&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260423_company_780627000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260423_company_780627000.pdf",
+        "target_price": "2,100,000",
+        "target_price_value": 2100000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 5902.0,
+        "unit": "억원",
+        "value_krw_100m": 5902.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%)를 달성하여 컨센서스 매출액 약 1조 2,797억원 및 영업이익 약 5,902억원으로 컨센서스 부합하였다."
+      },
+      {
+        "date": "2026-04-23",
+        "broker": "iM증권",
+        "title": "삼성바이오로직스 - 익숙함 속 커져가는 기대감",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91808&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260423_company_786742000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260423_company_786742000.pdf",
+        "target_price": "2,200,000",
+        "target_price_value": 2200000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 5808.0,
+        "unit": "억원",
+        "value_krw_100m": 5808.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "삼성바이오로직스 - 익숙함 속 커져가는 기대감 익숙함 속 커져가는 기대감 삼성바이오로직스 내용은 그대로, 숫자는 증가 중 동사는 1분기 매출액 1조 2,571억원(YoY +26%), 영업이익 5,808억원(YoY +35%, OPM 46%)을 달성했다."
+      },
+      {
+        "date": "2026-04-23",
+        "broker": "iM증권",
+        "title": "삼성바이오로직스 - 익숙함 속 커져가는 기대감",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91808&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260423_company_786742000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260423_company_786742000.pdf",
+        "target_price": "2,200,000",
+        "target_price_value": 2200000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 5782.0,
+        "unit": "억원",
+        "value_krw_100m": 5782.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "컨센서스(매출 1조 2,382억원, 영업이익 5,782억원) 및 당사 전망치(매출 1조 2,779억원, 영업이익 6,081억원) 대비 괴리가 미미했다."
+      },
+      {
+        "date": "2026-04-23",
+        "broker": "iM증권",
+        "title": "삼성바이오로직스 - 익숙함 속 커져가는 기대감",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91808&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260423_company_786742000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260423_company_786742000.pdf",
+        "target_price": "2,200,000",
+        "target_price_value": 2200000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 6081.0,
+        "unit": "억원",
+        "value_krw_100m": 6081.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "컨센서스(매출 1조 2,382억원, 영업이익 5,782억원) 및 당사 전망치(매출 1조 2,779억원, 영업이익 6,081억원) 대비 괴리가 미미했다."
+      },
+      {
+        "date": "2026-04-23",
+        "broker": "키움증권",
+        "title": "삼성바이오로직스 - 1Q26 Review 실망시키지 않는 실적. 기대치 ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91806&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260423_company_729314000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260423_company_729314000.pdf",
+        "target_price": null,
+        "target_price_value": null,
+        "opinion": null,
+        "opinion_normalized": null,
+        "score": 8.55,
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 5813.0,
+        "unit": "억원",
+        "value_krw_100m": 5813.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "(당사 추정 매출액 1조 2,813억원, 추정 영업이익 5,813억원에 부합) ◎ 1분기 실적 기대치에 부합 >> 1분기 연결 매출액 1조 2,571억 원(YoY +26%, QoQ -2%), 영업이익은 5,808억 원(YoY +35%, QoQ +10%, OPM +46%)로 시장 컨센서…"
+      },
+      {
+        "date": "2026-04-23",
+        "broker": "하나증권",
+        "title": "삼성바이오로직스 - 1Q26 Re: 사업은 여전히 잘 하고 있다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91824&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260423_company_710809000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260423_company_710809000.pdf",
+        "target_price": "2,050,000",
+        "target_price_value": 2050000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 5807.0,
+        "unit": "억원",
+        "value_krw_100m": 5807.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "삼성바이오로직스 - 1Q26 Re: 사업은 여전히 잘 하고 있다 1Q26 Re: 사업은 여전히 잘 하고 있다 삼성바이오로직스 1Q26 매출 1조2,571억원, 영업이익 5,807억원 (컨센 대비 부합 수준) 1Q26 실적은 매출액 1조2,571억원(YoY+25."
       }
     ],
     "opinion_distribution": [
@@ -148,7 +509,9 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 7.75,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-20",
@@ -163,7 +526,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 15.55,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -182,7 +547,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-23",
@@ -197,7 +564,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-23",
@@ -212,7 +585,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-23",
@@ -227,7 +608,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-23",
@@ -242,7 +625,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-20",
@@ -257,7 +642,343 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 15.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-23",
+      "broker": "DS투자증권",
+      "title": "삼성바이오로직스 - 1Q26 Re: 든든한 로직스",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91827&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260423_company_780627000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260423_company_780627000.pdf",
+      "target_price": "2,100,000",
+      "target_price_value": 2100000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 46.2,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 46.2,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "1% YoY, OPM 46.2%)를 달성하여 컨센서스 매출액 약 1조 2,797억원 및 영업이익 약 5,902억원으로 컨센서스 부합하였다."
+    },
+    {
+      "date": "2026-04-23",
+      "broker": "iM증권",
+      "title": "삼성바이오로직스 - 익숙함 속 커져가는 기대감",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91808&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260423_company_786742000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260423_company_786742000.pdf",
+      "target_price": "2,200,000",
+      "target_price_value": 2200000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 46.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 46.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "삼성바이오로직스 - 익숙함 속 커져가는 기대감 익숙함 속 커져가는 기대감 삼성바이오로직스 내용은 그대로, 숫자는 증가 중 동사는 1분기 매출액 1조 2,571억원(YoY +26%), 영업이익 5,808억원(YoY +35%, OPM 46%)을 달성했다."
+    },
+    {
+      "date": "2026-04-23",
+      "broker": "키움증권",
+      "title": "삼성바이오로직스 - 1Q26 Review 실망시키지 않는 실적. 기대치 ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91806&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260423_company_729314000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260423_company_729314000.pdf",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "score": 8.55,
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 46.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 46.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "삼성바이오로직스 ◎ 1분기 실적 기대치에 부합 >> 1분기 연결 매출액 1조 2,571억 원(YoY +26%, QoQ -2%), 영업이익은 5,808억 원(YoY +35%, QoQ +10%, OPM +46%)로 시장 컨센서스 매출액 1조 2,664억 원과 컨센서스 영업이익 5,776억…"
+    },
+    {
+      "date": "2026-04-23",
+      "broker": "하나증권",
+      "title": "삼성바이오로직스 - 1Q26 Re: 사업은 여전히 잘 하고 있다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91824&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260423_company_710809000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260423_company_710809000.pdf",
+      "target_price": "2,050,000",
+      "target_price_value": 2050000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 46.2,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 46.2,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "1%, OPM 46.2%)을 달성하였다."
+    },
+    {
+      "date": "2026-04-23",
+      "broker": "DS투자증권",
+      "title": "삼성바이오로직스 - 1Q26 Re: 든든한 로직스",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91827&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260423_company_780627000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260423_company_780627000.pdf",
+      "target_price": "2,100,000",
+      "target_price_value": 2100000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 5808.0,
+      "unit": "억원",
+      "value_krw_100m": 5808.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8% YoY), 영업이익 약 5,808억원(+35."
+    },
+    {
+      "date": "2026-04-23",
+      "broker": "DS투자증권",
+      "title": "삼성바이오로직스 - 1Q26 Re: 든든한 로직스",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91827&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260423_company_780627000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260423_company_780627000.pdf",
+      "target_price": "2,100,000",
+      "target_price_value": 2100000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 5902.0,
+      "unit": "억원",
+      "value_krw_100m": 5902.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%)를 달성하여 컨센서스 매출액 약 1조 2,797억원 및 영업이익 약 5,902억원으로 컨센서스 부합하였다."
+    },
+    {
+      "date": "2026-04-23",
+      "broker": "iM증권",
+      "title": "삼성바이오로직스 - 익숙함 속 커져가는 기대감",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91808&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260423_company_786742000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260423_company_786742000.pdf",
+      "target_price": "2,200,000",
+      "target_price_value": 2200000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 5808.0,
+      "unit": "억원",
+      "value_krw_100m": 5808.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "삼성바이오로직스 - 익숙함 속 커져가는 기대감 익숙함 속 커져가는 기대감 삼성바이오로직스 내용은 그대로, 숫자는 증가 중 동사는 1분기 매출액 1조 2,571억원(YoY +26%), 영업이익 5,808억원(YoY +35%, OPM 46%)을 달성했다."
+    },
+    {
+      "date": "2026-04-23",
+      "broker": "iM증권",
+      "title": "삼성바이오로직스 - 익숙함 속 커져가는 기대감",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91808&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260423_company_786742000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260423_company_786742000.pdf",
+      "target_price": "2,200,000",
+      "target_price_value": 2200000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 5782.0,
+      "unit": "억원",
+      "value_krw_100m": 5782.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "컨센서스(매출 1조 2,382억원, 영업이익 5,782억원) 및 당사 전망치(매출 1조 2,779억원, 영업이익 6,081억원) 대비 괴리가 미미했다."
+    },
+    {
+      "date": "2026-04-23",
+      "broker": "iM증권",
+      "title": "삼성바이오로직스 - 익숙함 속 커져가는 기대감",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91808&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260423_company_786742000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260423_company_786742000.pdf",
+      "target_price": "2,200,000",
+      "target_price_value": 2200000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 6081.0,
+      "unit": "억원",
+      "value_krw_100m": 6081.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "컨센서스(매출 1조 2,382억원, 영업이익 5,782억원) 및 당사 전망치(매출 1조 2,779억원, 영업이익 6,081억원) 대비 괴리가 미미했다."
+    },
+    {
+      "date": "2026-04-23",
+      "broker": "키움증권",
+      "title": "삼성바이오로직스 - 1Q26 Review 실망시키지 않는 실적. 기대치 ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91806&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260423_company_729314000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260423_company_729314000.pdf",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "score": 8.55,
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 5813.0,
+      "unit": "억원",
+      "value_krw_100m": 5813.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "(당사 추정 매출액 1조 2,813억원, 추정 영업이익 5,813억원에 부합) ◎ 1분기 실적 기대치에 부합 >> 1분기 연결 매출액 1조 2,571억 원(YoY +26%, QoQ -2%), 영업이익은 5,808억 원(YoY +35%, QoQ +10%, OPM +46%)로 시장 컨센서…"
+    },
+    {
+      "date": "2026-04-23",
+      "broker": "하나증권",
+      "title": "삼성바이오로직스 - 1Q26 Re: 사업은 여전히 잘 하고 있다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91824&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260423_company_710809000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260423_company_710809000.pdf",
+      "target_price": "2,050,000",
+      "target_price_value": 2050000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 5807.0,
+      "unit": "억원",
+      "value_krw_100m": 5807.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "삼성바이오로직스 - 1Q26 Re: 사업은 여전히 잘 하고 있다 1Q26 Re: 사업은 여전히 잘 하고 있다 삼성바이오로직스 1Q26 매출 1조2,571억원, 영업이익 5,807억원 (컨센 대비 부합 수준) 1Q26 실적은 매출액 1조2,571억원(YoY+25."
     }
   ],
   "opinion_distribution": [
@@ -280,7 +1001,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 7.75,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-20",
@@ -295,7 +1018,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 15.55,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -458,7 +1183,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -510,7 +1238,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -565,7 +1296,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5807.0,
+          "unit": "억원",
+          "source_excerpt": "삼성바이오로직스 - 1Q26 Re: 사업은 여전히 잘 하고 있다 1Q26 Re: 사업은 여전히 잘 하고 있다 삼성바이오로직스 1Q26 매출 1조2,571억원, 영업이익 5,807억원 (컨센 대비 부합 수준) 1Q26 실적은 매출액 1조2,571억원(YoY+25.",
+          "value_krw_100m": 5807.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 46.2,
+          "unit": "%",
+          "value_pct": 46.2,
+          "source_excerpt": "1%, OPM 46.2%)을 달성하였다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -615,13 +1370,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -676,7 +1440,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -730,7 +1497,41 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5808.0,
+          "unit": "억원",
+          "source_excerpt": "8% YoY), 영업이익 약 5,808억원(+35.",
+          "value_krw_100m": 5808.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5902.0,
+          "unit": "억원",
+          "source_excerpt": "2%)를 달성하여 컨센서스 매출액 약 1조 2,797억원 및 영업이익 약 5,902억원으로 컨센서스 부합하였다.",
+          "value_krw_100m": 5902.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 46.2,
+          "unit": "%",
+          "value_pct": 46.2,
+          "source_excerpt": "1% YoY, OPM 46.2%)를 달성하여 컨센서스 매출액 약 1조 2,797억원 및 영업이익 약 5,902억원으로 컨센서스 부합하였다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -778,13 +1579,67 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5808.0,
+          "unit": "억원",
+          "source_excerpt": "삼성바이오로직스 - 익숙함 속 커져가는 기대감 익숙함 속 커져가는 기대감 삼성바이오로직스 내용은 그대로, 숫자는 증가 중 동사는 1분기 매출액 1조 2,571억원(YoY +26%), 영업이익 5,808억원(YoY +35%, OPM 46%)을 달성했다.",
+          "value_krw_100m": 5808.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5782.0,
+          "unit": "억원",
+          "source_excerpt": "컨센서스(매출 1조 2,382억원, 영업이익 5,782억원) 및 당사 전망치(매출 1조 2,779억원, 영업이익 6,081억원) 대비 괴리가 미미했다.",
+          "value_krw_100m": 5782.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 6081.0,
+          "unit": "억원",
+          "source_excerpt": "컨센서스(매출 1조 2,382억원, 영업이익 5,782억원) 및 당사 전망치(매출 1조 2,779억원, 영업이익 6,081억원) 대비 괴리가 미미했다.",
+          "value_krw_100m": 6081.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 46.0,
+          "unit": "%",
+          "value_pct": 46.0,
+          "source_excerpt": "삼성바이오로직스 - 익숙함 속 커져가는 기대감 익숙함 속 커져가는 기대감 삼성바이오로직스 내용은 그대로, 숫자는 증가 중 동사는 1분기 매출액 1조 2,571억원(YoY +26%), 영업이익 5,808억원(YoY +35%, OPM 46%)을 달성했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "recent_changes": [
@@ -911,7 +1766,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -966,7 +1824,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5807.0,
+          "unit": "억원",
+          "source_excerpt": "삼성바이오로직스 - 1Q26 Re: 사업은 여전히 잘 하고 있다 1Q26 Re: 사업은 여전히 잘 하고 있다 삼성바이오로직스 1Q26 매출 1조2,571억원, 영업이익 5,807억원 (컨센 대비 부합 수준) 1Q26 실적은 매출액 1조2,571억원(YoY+25.",
+          "value_krw_100m": 5807.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 46.2,
+          "unit": "%",
+          "value_pct": 46.2,
+          "source_excerpt": "1%, OPM 46.2%)을 달성하였다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1016,13 +1898,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1077,7 +1968,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1131,7 +2025,41 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5808.0,
+          "unit": "억원",
+          "source_excerpt": "8% YoY), 영업이익 약 5,808억원(+35.",
+          "value_krw_100m": 5808.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5902.0,
+          "unit": "억원",
+          "source_excerpt": "2%)를 달성하여 컨센서스 매출액 약 1조 2,797억원 및 영업이익 약 5,902억원으로 컨센서스 부합하였다.",
+          "value_krw_100m": 5902.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 46.2,
+          "unit": "%",
+          "value_pct": 46.2,
+          "source_excerpt": "1% YoY, OPM 46.2%)를 달성하여 컨센서스 매출액 약 1조 2,797억원 및 영업이익 약 5,902억원으로 컨센서스 부합하였다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1179,13 +2107,67 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5808.0,
+          "unit": "억원",
+          "source_excerpt": "삼성바이오로직스 - 익숙함 속 커져가는 기대감 익숙함 속 커져가는 기대감 삼성바이오로직스 내용은 그대로, 숫자는 증가 중 동사는 1분기 매출액 1조 2,571억원(YoY +26%), 영업이익 5,808억원(YoY +35%, OPM 46%)을 달성했다.",
+          "value_krw_100m": 5808.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5782.0,
+          "unit": "억원",
+          "source_excerpt": "컨센서스(매출 1조 2,382억원, 영업이익 5,782억원) 및 당사 전망치(매출 1조 2,779억원, 영업이익 6,081억원) 대비 괴리가 미미했다.",
+          "value_krw_100m": 5782.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 6081.0,
+          "unit": "억원",
+          "source_excerpt": "컨센서스(매출 1조 2,382억원, 영업이익 5,782억원) 및 당사 전망치(매출 1조 2,779억원, 영업이익 6,081억원) 대비 괴리가 미미했다.",
+          "value_krw_100m": 6081.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 46.0,
+          "unit": "%",
+          "value_pct": 46.0,
+          "source_excerpt": "삼성바이오로직스 - 익숙함 속 커져가는 기대감 익숙함 속 커져가는 기대감 삼성바이오로직스 내용은 그대로, 숫자는 증가 중 동사는 1분기 매출액 1조 2,571억원(YoY +26%), 영업이익 5,808억원(YoY +35%, OPM 46%)을 달성했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "timeline": [
@@ -1312,7 +2294,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1364,7 +2349,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1416,7 +2404,31 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5813.0,
+          "unit": "억원",
+          "source_excerpt": "(당사 추정 매출액 1조 2,813억원, 추정 영업이익 5,813억원에 부합) ◎ 1분기 실적 기대치에 부합 >> 1분기 연결 매출액 1조 2,571억 원(YoY +26%, QoQ -2%), 영업이익은 5,808억 원(YoY +35%, QoQ +10%, OPM +46%)로 시장 컨센서…",
+          "value_krw_100m": 5813.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 46.0,
+          "unit": "%",
+          "value_pct": 46.0,
+          "source_excerpt": "삼성바이오로직스 ◎ 1분기 실적 기대치에 부합 >> 1분기 연결 매출액 1조 2,571억 원(YoY +26%, QoQ -2%), 영업이익은 5,808억 원(YoY +35%, QoQ +10%, OPM +46%)로 시장 컨센서스 매출액 1조 2,664억 원과 컨센서스 영업이익 5,776억…"
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1471,7 +2483,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5807.0,
+          "unit": "억원",
+          "source_excerpt": "삼성바이오로직스 - 1Q26 Re: 사업은 여전히 잘 하고 있다 1Q26 Re: 사업은 여전히 잘 하고 있다 삼성바이오로직스 1Q26 매출 1조2,571억원, 영업이익 5,807억원 (컨센 대비 부합 수준) 1Q26 실적은 매출액 1조2,571억원(YoY+25.",
+          "value_krw_100m": 5807.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 46.2,
+          "unit": "%",
+          "value_pct": 46.2,
+          "source_excerpt": "1%, OPM 46.2%)을 달성하였다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1521,13 +2557,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1582,7 +2627,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1636,7 +2684,41 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5808.0,
+          "unit": "억원",
+          "source_excerpt": "8% YoY), 영업이익 약 5,808억원(+35.",
+          "value_krw_100m": 5808.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5902.0,
+          "unit": "억원",
+          "source_excerpt": "2%)를 달성하여 컨센서스 매출액 약 1조 2,797억원 및 영업이익 약 5,902억원으로 컨센서스 부합하였다.",
+          "value_krw_100m": 5902.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 46.2,
+          "unit": "%",
+          "value_pct": 46.2,
+          "source_excerpt": "1% YoY, OPM 46.2%)를 달성하여 컨센서스 매출액 약 1조 2,797억원 및 영업이익 약 5,902억원으로 컨센서스 부합하였다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1684,13 +2766,67 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5808.0,
+          "unit": "억원",
+          "source_excerpt": "삼성바이오로직스 - 익숙함 속 커져가는 기대감 익숙함 속 커져가는 기대감 삼성바이오로직스 내용은 그대로, 숫자는 증가 중 동사는 1분기 매출액 1조 2,571억원(YoY +26%), 영업이익 5,808억원(YoY +35%, OPM 46%)을 달성했다.",
+          "value_krw_100m": 5808.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 5782.0,
+          "unit": "억원",
+          "source_excerpt": "컨센서스(매출 1조 2,382억원, 영업이익 5,782억원) 및 당사 전망치(매출 1조 2,779억원, 영업이익 6,081억원) 대비 괴리가 미미했다.",
+          "value_krw_100m": 5782.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 6081.0,
+          "unit": "억원",
+          "source_excerpt": "컨센서스(매출 1조 2,382억원, 영업이익 5,782억원) 및 당사 전망치(매출 1조 2,779억원, 영업이익 6,081억원) 대비 괴리가 미미했다.",
+          "value_krw_100m": 6081.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 46.0,
+          "unit": "%",
+          "value_pct": 46.0,
+          "source_excerpt": "삼성바이오로직스 - 익숙함 속 커져가는 기대감 익숙함 속 커져가는 기대감 삼성바이오로직스 내용은 그대로, 숫자는 증가 중 동사는 1분기 매출액 1조 2,571억원(YoY +26%), 영업이익 5,808억원(YoY +35%, OPM 46%)을 달성했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ]
 }

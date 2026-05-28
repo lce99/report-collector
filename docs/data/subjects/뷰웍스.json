@@ -16,7 +16,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 2
+    "coverage_initiated": 2,
+    "estimate_signal_reports": 2,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 2,
@@ -45,7 +50,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선",
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -60,7 +73,153 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-06",
+        "broker": "유진투자증권",
+        "title": "뷰웍스 - 1Q26P Review: 13분기만 회복한 15%대 OPM",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92462&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_837569000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_837569000.pdf",
+        "target_price": "34,000",
+        "target_price_value": 34000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선",
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 88.0,
+        "unit": "억원",
+        "value_krw_100m": 88.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "전일(05/04) 발표한 2026년 1분기 잠정실적(연결 기준)은 매출액 582억원, 영업이익 88억원으로 매출액은 전년동기 대비 6."
+      },
+      {
+        "date": "2026-05-06",
+        "broker": "유진투자증권",
+        "title": "뷰웍스 - 1Q26P Review: 13분기만 회복한 15%대 OPM",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92462&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_837569000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_837569000.pdf",
+        "target_price": "34,000",
+        "target_price_value": 34000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선",
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 59.0,
+        "unit": "억원",
+        "value_krw_100m": 59.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "시장 컨센서스(매출액 606억원, 영업이익 59억원) 대비 매출액은 부합한 수준이었으나 영업이익은 큰 폭의 어닝서프라이즈를 시현함."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "미래에셋증권",
+        "title": "뷰웍스 - 허리띠 졸라매니 좋아지는 마진",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92554&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260507_company_63968000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260507_company_63968000.pdf",
+        "target_price": "43,000",
+        "target_price_value": 43000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.25,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 15.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 15.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "영업이익 88억원(OPM 15%, 329% YoY)으로 시장 기대치 상회."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "미래에셋증권",
+        "title": "뷰웍스 - 허리띠 졸라매니 좋아지는 마진",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92554&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260507_company_63968000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260507_company_63968000.pdf",
+        "target_price": "43,000",
+        "target_price_value": 43000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.25,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 88.0,
+        "unit": "억원",
+        "value_krw_100m": 88.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "영업이익 88억원(OPM 15%, 329% YoY)으로 시장 기대치 상회."
       }
     ],
     "opinion_distribution": [
@@ -83,7 +242,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선",
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -98,7 +265,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -117,7 +292,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -132,7 +315,153 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-06",
+      "broker": "유진투자증권",
+      "title": "뷰웍스 - 1Q26P Review: 13분기만 회복한 15%대 OPM",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92462&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_837569000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_837569000.pdf",
+      "target_price": "34,000",
+      "target_price_value": 34000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 88.0,
+      "unit": "억원",
+      "value_krw_100m": 88.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "전일(05/04) 발표한 2026년 1분기 잠정실적(연결 기준)은 매출액 582억원, 영업이익 88억원으로 매출액은 전년동기 대비 6."
+    },
+    {
+      "date": "2026-05-06",
+      "broker": "유진투자증권",
+      "title": "뷰웍스 - 1Q26P Review: 13분기만 회복한 15%대 OPM",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92462&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_837569000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260506_company_837569000.pdf",
+      "target_price": "34,000",
+      "target_price_value": 34000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 59.0,
+      "unit": "억원",
+      "value_krw_100m": 59.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "시장 컨센서스(매출액 606억원, 영업이익 59억원) 대비 매출액은 부합한 수준이었으나 영업이익은 큰 폭의 어닝서프라이즈를 시현함."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "미래에셋증권",
+      "title": "뷰웍스 - 허리띠 졸라매니 좋아지는 마진",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92554&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260507_company_63968000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260507_company_63968000.pdf",
+      "target_price": "43,000",
+      "target_price_value": 43000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.25,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 15.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 15.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "영업이익 88억원(OPM 15%, 329% YoY)으로 시장 기대치 상회."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "미래에셋증권",
+      "title": "뷰웍스 - 허리띠 졸라매니 좋아지는 마진",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92554&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260507_company_63968000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260507_company_63968000.pdf",
+      "target_price": "43,000",
+      "target_price_value": 43000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.25,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 88.0,
+      "unit": "억원",
+      "value_krw_100m": 88.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "영업이익 88억원(OPM 15%, 329% YoY)으로 시장 기대치 상회."
     }
   ],
   "opinion_distribution": [
@@ -155,7 +484,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -170,7 +507,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -240,13 +585,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 88.0,
+          "unit": "억원",
+          "source_excerpt": "영업이익 88억원(OPM 15%, 329% YoY)으로 시장 기대치 상회.",
+          "value_krw_100m": 88.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.0,
+          "unit": "%",
+          "value_pct": 15.0,
+          "source_excerpt": "영업이익 88억원(OPM 15%, 329% YoY)으로 시장 기대치 상회."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -296,13 +675,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 88.0,
+          "unit": "억원",
+          "source_excerpt": "전일(05/04) 발표한 2026년 1분기 잠정실적(연결 기준)은 매출액 582억원, 영업이익 88억원으로 매출액은 전년동기 대비 6.",
+          "value_krw_100m": 88.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 59.0,
+          "unit": "억원",
+          "source_excerpt": "시장 컨센서스(매출액 606억원, 영업이익 59억원) 대비 매출액은 부합한 수준이었으나 영업이익은 큰 폭의 어닝서프라이즈를 시현함.",
+          "value_krw_100m": 59.0
+        }
+      ],
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
@@ -356,13 +769,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 88.0,
+          "unit": "억원",
+          "source_excerpt": "영업이익 88억원(OPM 15%, 329% YoY)으로 시장 기대치 상회.",
+          "value_krw_100m": 88.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.0,
+          "unit": "%",
+          "value_pct": 15.0,
+          "source_excerpt": "영업이익 88억원(OPM 15%, 329% YoY)으로 시장 기대치 상회."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -412,13 +859,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 88.0,
+          "unit": "억원",
+          "source_excerpt": "전일(05/04) 발표한 2026년 1분기 잠정실적(연결 기준)은 매출액 582억원, 영업이익 88억원으로 매출액은 전년동기 대비 6.",
+          "value_krw_100m": 88.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 59.0,
+          "unit": "억원",
+          "source_excerpt": "시장 컨센서스(매출액 606억원, 영업이익 59억원) 대비 매출액은 부합한 수준이었으나 영업이익은 큰 폭의 어닝서프라이즈를 시현함.",
+          "value_krw_100m": 59.0
+        }
+      ],
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -472,13 +953,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 88.0,
+          "unit": "억원",
+          "source_excerpt": "영업이익 88억원(OPM 15%, 329% YoY)으로 시장 기대치 상회.",
+          "value_krw_100m": 88.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.0,
+          "unit": "%",
+          "value_pct": 15.0,
+          "source_excerpt": "영업이익 88억원(OPM 15%, 329% YoY)으로 시장 기대치 상회."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -528,13 +1043,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 88.0,
+          "unit": "억원",
+          "source_excerpt": "전일(05/04) 발표한 2026년 1분기 잠정실적(연결 기준)은 매출액 582억원, 영업이익 88억원으로 매출액은 전년동기 대비 6.",
+          "value_krw_100m": 88.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 59.0,
+          "unit": "억원",
+          "source_excerpt": "시장 컨센서스(매출액 606억원, 영업이익 59억원) 대비 매출액은 부합한 수준이었으나 영업이익은 큰 폭의 어닝서프라이즈를 시현함.",
+          "value_krw_100m": 59.0
+        }
+      ],
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "이익 추정 상향/증가"
+      ]
     }
   ]
 }

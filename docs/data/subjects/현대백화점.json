@@ -16,14 +16,19 @@
     "한화투자증권"
   ],
   "change_summary": {
-    "changed_reports": 9,
+    "changed_reports": 10,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 9
+    "coverage_initiated": 9,
+    "estimate_signal_reports": 4,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 3,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 9,
@@ -52,7 +57,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -67,7 +80,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -82,7 +103,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -97,7 +126,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -112,7 +143,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -127,7 +164,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -142,7 +181,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -157,7 +198,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -172,7 +215,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -187,7 +232,403 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-07",
+        "broker": "교보증권",
+        "title": "현대백화점 - 1Q26 Review: 내국인도 외국인도 한도초과",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92546&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_896129000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_896129000.pdf",
+        "target_price": "150,000",
+        "target_price_value": 150000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 4.3,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 4.3,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "1%, OPM 4.3%)으로, 영업이익 기준 시장 기대치(Fnguide 기준 996억원) 부합 ① 백화점: 매출액 6,325억원(YoY +7."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "교보증권",
+        "title": "현대백화점 - 1Q26 Review: 내국인도 외국인도 한도초과",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92546&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_896129000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_896129000.pdf",
+        "target_price": "150,000",
+        "target_price_value": 150000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 7.5,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 7.5,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7%, OPM 7.5%) 기록."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "교보증권",
+        "title": "현대백화점 - 1Q26 Review: 내국인도 외국인도 한도초과",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92546&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_896129000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_896129000.pdf",
+        "target_price": "150,000",
+        "target_price_value": 150000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 988.0,
+        "unit": "억원",
+        "value_krw_100m": 988.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5%), 영업이익 988억원(YoY -12."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "교보증권",
+        "title": "현대백화점 - 1Q26 Review: 내국인도 외국인도 한도초과",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92546&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_896129000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_896129000.pdf",
+        "target_price": "150,000",
+        "target_price_value": 150000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1358.0,
+        "unit": "억원",
+        "value_krw_100m": 1358.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4%), 영업이익 1,358억원(YoY +39."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "미래에셋증권",
+        "title": "현대백화점 - 백화점 레버리지 확인",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92535&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260507_company_665395000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260507_company_665395000.pdf",
+        "target_price": "150,000",
+        "target_price_value": 150000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.9,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 988.0,
+        "unit": "억원",
+        "value_krw_100m": 988.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "현대백화점 - 백화점 레버리지 확인 백화점 레버리지 확인 현대백화점 1Q26 Review: 백화점만 400억 가까이 증익 현대백화점의 1Q26 실적은 순매출액 9,501억원(YoY -13%), 영업이익 988억원(YoY -12%)으로 시장 기대치에 부합하였다."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "유안타증권",
+        "title": "현대백화점 - 본업 경쟁력 강화 지속, 지누스가 할인 요인",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92539&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_72644000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_72644000.pdf",
+        "target_price": "142,000",
+        "target_price_value": 142000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 988.0,
+        "unit": "억원",
+        "value_krw_100m": 988.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "현대백화점 - 본업 경쟁력 강화 지속, 지누스가 할인 요인 본업 경쟁력 강화 지속, 지누스가 할인 요인 현대백화점 1Q26 Review: 지누스만 아니면 완벽한 실적 2026년 1분기 실적은 매출액 9,501억원(-13% YoY) 영업이익 988억원으로 영업이익 시장 기대치 996억원…"
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "유안타증권",
+        "title": "현대백화점 - 본업 경쟁력 강화 지속, 지누스가 할인 요인",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92539&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_72644000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_72644000.pdf",
+        "target_price": "142,000",
+        "target_price_value": 142000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 996.0,
+        "unit": "억원",
+        "value_krw_100m": 996.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "현대백화점 - 본업 경쟁력 강화 지속, 지누스가 할인 요인 본업 경쟁력 강화 지속, 지누스가 할인 요인 현대백화점 1Q26 Review: 지누스만 아니면 완벽한 실적 2026년 1분기 실적은 매출액 9,501억원(-13% YoY) 영업이익 988억원으로 영업이익 시장 기대치 996억원…"
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "유진투자증권",
+        "title": "현대백화점 - 1Q26 Review: 백화점 영업이익 야호!",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92530&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260507_company_262151000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260507_company_262151000.pdf",
+        "target_price": "150,000",
+        "target_price_value": 150000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 988.0,
+        "unit": "억원",
+        "value_krw_100m": 988.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5%, 이하 yoy), 영업이익 988억원(-12."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "유진투자증권",
+        "title": "현대백화점 - 1Q26 Review: 백화점 영업이익 야호!",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92530&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260507_company_262151000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260507_company_262151000.pdf",
+        "target_price": "150,000",
+        "target_price_value": 150000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 958.0,
+        "unit": "억원",
+        "value_krw_100m": 958.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "1Q25 일회성 환입 비용을 제외한 영업이익은 958억원으로 실질 영업이익은 전년대비 +3% 성장."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "유진투자증권",
+        "title": "현대백화점 - 1Q26 Review: 백화점 영업이익 야호!",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92530&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260507_company_262151000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260507_company_262151000.pdf",
+        "target_price": "150,000",
+        "target_price_value": 150000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1358.0,
+        "unit": "억원",
+        "value_krw_100m": 1358.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4% yoy), 영업이익 1,358억원(+39."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "키움증권",
+        "title": "현대백화점 - 백화점이 하드 캐리",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92508&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260507_company_656973000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260507_company_656973000.pdf",
+        "target_price": "147,000",
+        "target_price_value": 147000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1분기",
+        "value": 988.0,
+        "unit": "억원",
+        "value_krw_100m": 988.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "현대백화점 - 백화점이 하드 캐리 백화점이 하드 캐리 현대백화점 1분기 영업이익 988억원으로 시장 기대치 부합 현대백화점의 1Q26 연결기준 영업이익은 988억원(-12% YoY)으로 시장 기대치에 부합하였다."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "키움증권",
+        "title": "현대백화점 - 백화점이 하드 캐리",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92508&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260507_company_656973000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260507_company_656973000.pdf",
+        "target_price": "147,000",
+        "target_price_value": 147000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 988.0,
+        "unit": "억원",
+        "value_krw_100m": 988.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "현대백화점 - 백화점이 하드 캐리 백화점이 하드 캐리 현대백화점 1분기 영업이익 988억원으로 시장 기대치 부합 현대백화점의 1Q26 연결기준 영업이익은 988억원(-12% YoY)으로 시장 기대치에 부합하였다."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "한화투자증권",
+        "title": "현대백화점 - 1Q26 Review : 백화점도 결국 고정비 비즈니..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92553&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260507_company_985739000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260507_company_985739000.pdf",
+        "target_price": "160,000",
+        "target_price_value": 160000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 988.0,
+        "unit": "억원",
+        "value_krw_100m": 988.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7% YoY), 영업이익 988억원(-12."
       }
     ],
     "opinion_distribution": [
@@ -210,7 +651,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -225,7 +668,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -240,7 +691,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -255,7 +714,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -270,7 +731,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -285,7 +748,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -300,7 +769,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -315,7 +786,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-07",
@@ -330,7 +803,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -349,7 +824,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -364,7 +847,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -379,7 +870,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -394,7 +893,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -409,7 +910,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -424,7 +931,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -439,7 +948,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -454,7 +965,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -469,7 +982,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -484,7 +999,403 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-07",
+      "broker": "교보증권",
+      "title": "현대백화점 - 1Q26 Review: 내국인도 외국인도 한도초과",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92546&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_896129000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_896129000.pdf",
+      "target_price": "150,000",
+      "target_price_value": 150000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 4.3,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 4.3,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "1%, OPM 4.3%)으로, 영업이익 기준 시장 기대치(Fnguide 기준 996억원) 부합 ① 백화점: 매출액 6,325억원(YoY +7."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "교보증권",
+      "title": "현대백화점 - 1Q26 Review: 내국인도 외국인도 한도초과",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92546&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_896129000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_896129000.pdf",
+      "target_price": "150,000",
+      "target_price_value": 150000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 7.5,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 7.5,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7%, OPM 7.5%) 기록."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "교보증권",
+      "title": "현대백화점 - 1Q26 Review: 내국인도 외국인도 한도초과",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92546&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_896129000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_896129000.pdf",
+      "target_price": "150,000",
+      "target_price_value": 150000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 988.0,
+      "unit": "억원",
+      "value_krw_100m": 988.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5%), 영업이익 988억원(YoY -12."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "교보증권",
+      "title": "현대백화점 - 1Q26 Review: 내국인도 외국인도 한도초과",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92546&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_896129000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260507_company_896129000.pdf",
+      "target_price": "150,000",
+      "target_price_value": 150000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1358.0,
+      "unit": "억원",
+      "value_krw_100m": 1358.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4%), 영업이익 1,358억원(YoY +39."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "미래에셋증권",
+      "title": "현대백화점 - 백화점 레버리지 확인",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92535&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260507_company_665395000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260507_company_665395000.pdf",
+      "target_price": "150,000",
+      "target_price_value": 150000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.9,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 988.0,
+      "unit": "억원",
+      "value_krw_100m": 988.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "현대백화점 - 백화점 레버리지 확인 백화점 레버리지 확인 현대백화점 1Q26 Review: 백화점만 400억 가까이 증익 현대백화점의 1Q26 실적은 순매출액 9,501억원(YoY -13%), 영업이익 988억원(YoY -12%)으로 시장 기대치에 부합하였다."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "유안타증권",
+      "title": "현대백화점 - 본업 경쟁력 강화 지속, 지누스가 할인 요인",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92539&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_72644000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_72644000.pdf",
+      "target_price": "142,000",
+      "target_price_value": 142000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 988.0,
+      "unit": "억원",
+      "value_krw_100m": 988.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "현대백화점 - 본업 경쟁력 강화 지속, 지누스가 할인 요인 본업 경쟁력 강화 지속, 지누스가 할인 요인 현대백화점 1Q26 Review: 지누스만 아니면 완벽한 실적 2026년 1분기 실적은 매출액 9,501억원(-13% YoY) 영업이익 988억원으로 영업이익 시장 기대치 996억원…"
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "유안타증권",
+      "title": "현대백화점 - 본업 경쟁력 강화 지속, 지누스가 할인 요인",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92539&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_72644000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_72644000.pdf",
+      "target_price": "142,000",
+      "target_price_value": 142000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 996.0,
+      "unit": "억원",
+      "value_krw_100m": 996.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "현대백화점 - 본업 경쟁력 강화 지속, 지누스가 할인 요인 본업 경쟁력 강화 지속, 지누스가 할인 요인 현대백화점 1Q26 Review: 지누스만 아니면 완벽한 실적 2026년 1분기 실적은 매출액 9,501억원(-13% YoY) 영업이익 988억원으로 영업이익 시장 기대치 996억원…"
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "유진투자증권",
+      "title": "현대백화점 - 1Q26 Review: 백화점 영업이익 야호!",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92530&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260507_company_262151000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260507_company_262151000.pdf",
+      "target_price": "150,000",
+      "target_price_value": 150000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 988.0,
+      "unit": "억원",
+      "value_krw_100m": 988.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5%, 이하 yoy), 영업이익 988억원(-12."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "유진투자증권",
+      "title": "현대백화점 - 1Q26 Review: 백화점 영업이익 야호!",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92530&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260507_company_262151000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260507_company_262151000.pdf",
+      "target_price": "150,000",
+      "target_price_value": 150000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 958.0,
+      "unit": "억원",
+      "value_krw_100m": 958.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "1Q25 일회성 환입 비용을 제외한 영업이익은 958억원으로 실질 영업이익은 전년대비 +3% 성장."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "유진투자증권",
+      "title": "현대백화점 - 1Q26 Review: 백화점 영업이익 야호!",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92530&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260507_company_262151000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260507_company_262151000.pdf",
+      "target_price": "150,000",
+      "target_price_value": 150000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1358.0,
+      "unit": "억원",
+      "value_krw_100m": 1358.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4% yoy), 영업이익 1,358억원(+39."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "키움증권",
+      "title": "현대백화점 - 백화점이 하드 캐리",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92508&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260507_company_656973000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260507_company_656973000.pdf",
+      "target_price": "147,000",
+      "target_price_value": 147000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1분기",
+      "value": 988.0,
+      "unit": "억원",
+      "value_krw_100m": 988.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "현대백화점 - 백화점이 하드 캐리 백화점이 하드 캐리 현대백화점 1분기 영업이익 988억원으로 시장 기대치 부합 현대백화점의 1Q26 연결기준 영업이익은 988억원(-12% YoY)으로 시장 기대치에 부합하였다."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "키움증권",
+      "title": "현대백화점 - 백화점이 하드 캐리",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92508&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260507_company_656973000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260507_company_656973000.pdf",
+      "target_price": "147,000",
+      "target_price_value": 147000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 988.0,
+      "unit": "억원",
+      "value_krw_100m": 988.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "현대백화점 - 백화점이 하드 캐리 백화점이 하드 캐리 현대백화점 1분기 영업이익 988억원으로 시장 기대치 부합 현대백화점의 1Q26 연결기준 영업이익은 988억원(-12% YoY)으로 시장 기대치에 부합하였다."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "한화투자증권",
+      "title": "현대백화점 - 1Q26 Review : 백화점도 결국 고정비 비즈니..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92553&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260507_company_985739000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260507_company_985739000.pdf",
+      "target_price": "160,000",
+      "target_price_value": 160000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 988.0,
+      "unit": "억원",
+      "value_krw_100m": 988.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7% YoY), 영업이익 988억원(-12."
     }
   ],
   "opinion_distribution": [
@@ -507,7 +1418,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -522,7 +1435,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -537,7 +1458,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -552,7 +1481,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -567,7 +1498,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -582,7 +1515,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -597,7 +1536,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -612,7 +1553,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-07",
@@ -627,7 +1570,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -731,7 +1676,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 988.0,
+          "unit": "억원",
+          "source_excerpt": "현대백화점 - 백화점이 하드 캐리 백화점이 하드 캐리 현대백화점 1분기 영업이익 988억원으로 시장 기대치 부합 현대백화점의 1Q26 연결기준 영업이익은 988억원(-12% YoY)으로 시장 기대치에 부합하였다.",
+          "value_krw_100m": 988.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 988.0,
+          "unit": "억원",
+          "source_excerpt": "현대백화점 - 백화점이 하드 캐리 백화점이 하드 캐리 현대백화점 1분기 영업이익 988억원으로 시장 기대치 부합 현대백화점의 1Q26 연결기준 영업이익은 988억원(-12% YoY)으로 시장 기대치에 부합하였다.",
+          "value_krw_100m": 988.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -789,7 +1758,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "shinhan_investment_official",
@@ -846,7 +1818,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -896,13 +1871,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 988.0,
+          "unit": "억원",
+          "source_excerpt": "현대백화점 - 백화점 레버리지 확인 백화점 레버리지 확인 현대백화점 1Q26 Review: 백화점만 400억 가까이 증익 현대백화점의 1Q26 실적은 순매출액 9,501억원(YoY -13%), 영업이익 988억원(YoY -12%)으로 시장 기대치에 부합하였다.",
+          "value_krw_100m": 988.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -958,7 +1953,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 988.0,
+          "unit": "억원",
+          "source_excerpt": "현대백화점 - 본업 경쟁력 강화 지속, 지누스가 할인 요인 본업 경쟁력 강화 지속, 지누스가 할인 요인 현대백화점 1Q26 Review: 지누스만 아니면 완벽한 실적 2026년 1분기 실적은 매출액 9,501억원(-13% YoY) 영업이익 988억원으로 영업이익 시장 기대치 996억원…",
+          "value_krw_100m": 988.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 996.0,
+          "unit": "억원",
+          "source_excerpt": "현대백화점 - 본업 경쟁력 강화 지속, 지누스가 할인 요인 본업 경쟁력 강화 지속, 지누스가 할인 요인 현대백화점 1Q26 Review: 지누스만 아니면 완벽한 실적 2026년 1분기 실적은 매출액 9,501억원(-13% YoY) 영업이익 988억원으로 영업이익 시장 기대치 996억원…",
+          "value_krw_100m": 996.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1013,7 +2032,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 988.0,
+          "unit": "억원",
+          "source_excerpt": "7% YoY), 영업이익 988억원(-12.",
+          "value_krw_100m": 988.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1061,10 +2094,25 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1113,13 +2161,67 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 988.0,
+          "unit": "억원",
+          "source_excerpt": "5%), 영업이익 988억원(YoY -12.",
+          "value_krw_100m": 988.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1358.0,
+          "unit": "억원",
+          "source_excerpt": "4%), 영업이익 1,358억원(YoY +39.",
+          "value_krw_100m": 1358.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 4.3,
+          "unit": "%",
+          "value_pct": 4.3,
+          "source_excerpt": "1%, OPM 4.3%)으로, 영업이익 기준 시장 기대치(Fnguide 기준 996억원) 부합 ① 백화점: 매출액 6,325억원(YoY +7."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 7.5,
+          "unit": "%",
+          "value_pct": 7.5,
+          "source_excerpt": "7%, OPM 7.5%) 기록."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1174,7 +2276,41 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 988.0,
+          "unit": "억원",
+          "source_excerpt": "5%, 이하 yoy), 영업이익 988억원(-12.",
+          "value_krw_100m": 988.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 958.0,
+          "unit": "억원",
+          "source_excerpt": "1Q25 일회성 환입 비용을 제외한 영업이익은 958억원으로 실질 영업이익은 전년대비 +3% 성장.",
+          "value_krw_100m": 958.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1358.0,
+          "unit": "억원",
+          "source_excerpt": "4% yoy), 영업이익 1,358억원(+39.",
+          "value_krw_100m": 1358.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -1234,7 +2370,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 988.0,
+          "unit": "억원",
+          "source_excerpt": "현대백화점 - 백화점이 하드 캐리 백화점이 하드 캐리 현대백화점 1분기 영업이익 988억원으로 시장 기대치 부합 현대백화점의 1Q26 연결기준 영업이익은 988억원(-12% YoY)으로 시장 기대치에 부합하였다.",
+          "value_krw_100m": 988.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 988.0,
+          "unit": "억원",
+          "source_excerpt": "현대백화점 - 백화점이 하드 캐리 백화점이 하드 캐리 현대백화점 1분기 영업이익 988억원으로 시장 기대치 부합 현대백화점의 1Q26 연결기준 영업이익은 988억원(-12% YoY)으로 시장 기대치에 부합하였다.",
+          "value_krw_100m": 988.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1292,7 +2452,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "shinhan_investment_official",
@@ -1349,7 +2512,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1399,13 +2565,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 988.0,
+          "unit": "억원",
+          "source_excerpt": "현대백화점 - 백화점 레버리지 확인 백화점 레버리지 확인 현대백화점 1Q26 Review: 백화점만 400억 가까이 증익 현대백화점의 1Q26 실적은 순매출액 9,501억원(YoY -13%), 영업이익 988억원(YoY -12%)으로 시장 기대치에 부합하였다.",
+          "value_krw_100m": 988.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1461,7 +2647,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 988.0,
+          "unit": "억원",
+          "source_excerpt": "현대백화점 - 본업 경쟁력 강화 지속, 지누스가 할인 요인 본업 경쟁력 강화 지속, 지누스가 할인 요인 현대백화점 1Q26 Review: 지누스만 아니면 완벽한 실적 2026년 1분기 실적은 매출액 9,501억원(-13% YoY) 영업이익 988억원으로 영업이익 시장 기대치 996억원…",
+          "value_krw_100m": 988.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 996.0,
+          "unit": "억원",
+          "source_excerpt": "현대백화점 - 본업 경쟁력 강화 지속, 지누스가 할인 요인 본업 경쟁력 강화 지속, 지누스가 할인 요인 현대백화점 1Q26 Review: 지누스만 아니면 완벽한 실적 2026년 1분기 실적은 매출액 9,501억원(-13% YoY) 영업이익 988억원으로 영업이익 시장 기대치 996억원…",
+          "value_krw_100m": 996.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1516,7 +2726,87 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 988.0,
+          "unit": "억원",
+          "source_excerpt": "7% YoY), 영업이익 988억원(-12.",
+          "value_krw_100m": 988.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92510",
+      "title": "하반기 모멘텀 부각",
+      "display_title": "현대백화점 - 하반기 모멘텀 부각",
+      "broker": "IBK투자증권",
+      "published_date": "2026-05-07",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92510&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260507_company_369135000.pdf",
+      "subject": "현대백화점",
+      "subject_key": "현대백화점",
+      "views": 781,
+      "analyst": null,
+      "target_price": "130,000",
+      "target_price_value": 130000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "1분기 실적 Review: 부진했지만, 나쁘지 않은 현대백화점 1분기 연결기준 순매출액은 전년동기대비 -13.5% 감소한 9,501억 원, 영업이익 988억 원(전년동기대비 -12.2%)을 기록하였다.",
+      "summary": "1분기 실적 Review: 부진했지만, 나쁘지 않은 현대백화점 1분기 연결기준 순매출액은 전년동기대비 -13.5% 감소한 9,501억 원, 영업이익 988억 원(전년동기대비 -12.2%)을 기록하였다. 사업부문별로 보면 ▶ 백화점 매출액은 +7.4% 신장하였고, 영업이익은 1,358억 원으로 전년동기대비 +39.7% 증가하였다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 7.15,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-04-22",
+      "previous_target_price": "130,000",
+      "previous_opinion": "매수",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1565,13 +2855,67 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 988.0,
+          "unit": "억원",
+          "source_excerpt": "5%), 영업이익 988억원(YoY -12.",
+          "value_krw_100m": 988.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1358.0,
+          "unit": "억원",
+          "source_excerpt": "4%), 영업이익 1,358억원(YoY +39.",
+          "value_krw_100m": 1358.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 4.3,
+          "unit": "%",
+          "value_pct": 4.3,
+          "source_excerpt": "1%, OPM 4.3%)으로, 영업이익 기준 시장 기대치(Fnguide 기준 996억원) 부합 ① 백화점: 매출액 6,325억원(YoY +7."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 7.5,
+          "unit": "%",
+          "value_pct": 7.5,
+          "source_excerpt": "7%, OPM 7.5%) 기록."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1626,7 +2970,41 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 988.0,
+          "unit": "억원",
+          "source_excerpt": "5%, 이하 yoy), 영업이익 988억원(-12.",
+          "value_krw_100m": 988.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 958.0,
+          "unit": "억원",
+          "source_excerpt": "1Q25 일회성 환입 비용을 제외한 영업이익은 958억원으로 실질 영업이익은 전년대비 +3% 성장.",
+          "value_krw_100m": 958.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1358.0,
+          "unit": "억원",
+          "source_excerpt": "4% yoy), 영업이익 1,358억원(+39.",
+          "value_krw_100m": 1358.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1676,13 +3054,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -1742,7 +3133,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 988.0,
+          "unit": "억원",
+          "source_excerpt": "현대백화점 - 백화점이 하드 캐리 백화점이 하드 캐리 현대백화점 1분기 영업이익 988억원으로 시장 기대치 부합 현대백화점의 1Q26 연결기준 영업이익은 988억원(-12% YoY)으로 시장 기대치에 부합하였다.",
+          "value_krw_100m": 988.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 988.0,
+          "unit": "억원",
+          "source_excerpt": "현대백화점 - 백화점이 하드 캐리 백화점이 하드 캐리 현대백화점 1분기 영업이익 988억원으로 시장 기대치 부합 현대백화점의 1Q26 연결기준 영업이익은 988억원(-12% YoY)으로 시장 기대치에 부합하였다.",
+          "value_krw_100m": 988.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1800,7 +3215,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "shinhan_investment_official",
@@ -1857,7 +3275,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1907,13 +3328,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 988.0,
+          "unit": "억원",
+          "source_excerpt": "현대백화점 - 백화점 레버리지 확인 백화점 레버리지 확인 현대백화점 1Q26 Review: 백화점만 400억 가까이 증익 현대백화점의 1Q26 실적은 순매출액 9,501억원(YoY -13%), 영업이익 988억원(YoY -12%)으로 시장 기대치에 부합하였다.",
+          "value_krw_100m": 988.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1969,7 +3410,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 988.0,
+          "unit": "억원",
+          "source_excerpt": "현대백화점 - 본업 경쟁력 강화 지속, 지누스가 할인 요인 본업 경쟁력 강화 지속, 지누스가 할인 요인 현대백화점 1Q26 Review: 지누스만 아니면 완벽한 실적 2026년 1분기 실적은 매출액 9,501억원(-13% YoY) 영업이익 988억원으로 영업이익 시장 기대치 996억원…",
+          "value_krw_100m": 988.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 996.0,
+          "unit": "억원",
+          "source_excerpt": "현대백화점 - 본업 경쟁력 강화 지속, 지누스가 할인 요인 본업 경쟁력 강화 지속, 지누스가 할인 요인 현대백화점 1Q26 Review: 지누스만 아니면 완벽한 실적 2026년 1분기 실적은 매출액 9,501억원(-13% YoY) 영업이익 988억원으로 영업이익 시장 기대치 996억원…",
+          "value_krw_100m": 996.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -2024,7 +3489,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 988.0,
+          "unit": "억원",
+          "source_excerpt": "7% YoY), 영업이익 988억원(-12.",
+          "value_krw_100m": 988.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -2072,10 +3551,25 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -2124,13 +3618,67 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 988.0,
+          "unit": "억원",
+          "source_excerpt": "5%), 영업이익 988억원(YoY -12.",
+          "value_krw_100m": 988.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1358.0,
+          "unit": "억원",
+          "source_excerpt": "4%), 영업이익 1,358억원(YoY +39.",
+          "value_krw_100m": 1358.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 4.3,
+          "unit": "%",
+          "value_pct": 4.3,
+          "source_excerpt": "1%, OPM 4.3%)으로, 영업이익 기준 시장 기대치(Fnguide 기준 996억원) 부합 ① 백화점: 매출액 6,325억원(YoY +7."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 7.5,
+          "unit": "%",
+          "value_pct": 7.5,
+          "source_excerpt": "7%, OPM 7.5%) 기록."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -2185,7 +3733,41 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 988.0,
+          "unit": "억원",
+          "source_excerpt": "5%, 이하 yoy), 영업이익 988억원(-12.",
+          "value_krw_100m": 988.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 958.0,
+          "unit": "억원",
+          "source_excerpt": "1Q25 일회성 환입 비용을 제외한 영업이익은 958억원으로 실질 영업이익은 전년대비 +3% 성장.",
+          "value_krw_100m": 958.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1358.0,
+          "unit": "억원",
+          "source_excerpt": "4% yoy), 영업이익 1,358억원(+39.",
+          "value_krw_100m": 1358.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -2235,13 +3817,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "이익 추정 상향/증가"
+      ]
     }
   ]
 }

@@ -11,14 +11,19 @@
     "하나증권"
   ],
   "change_summary": {
-    "changed_reports": 0,
+    "changed_reports": 1,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 0
+    "coverage_initiated": 0,
+    "estimate_signal_reports": 1,
+    "earnings_estimate_up": 0,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 0,
@@ -29,6 +34,7 @@
   "opinion_summary": [],
   "charts": {
     "target_price_history": [],
+    "estimate_metric_history": [],
     "opinion_distribution": [],
     "broker_timeline": [
       {
@@ -44,7 +50,9 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 11.95,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-12",
@@ -59,7 +67,9 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 12.25,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-18",
@@ -74,12 +84,15 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 13.45,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
   },
   "target_price_history": [],
+  "estimate_metric_history": [],
   "opinion_distribution": [],
   "broker_timeline": [
     {
@@ -95,7 +108,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 11.95,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-12",
@@ -110,7 +125,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 12.25,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-18",
@@ -125,7 +142,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 13.45,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -208,7 +227,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -263,7 +285,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -318,7 +343,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -374,10 +402,84 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
-  "recent_changes": [],
+  "recent_changes": [
+    {
+      "source": "naver_research",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "44382",
+      "title": "시험대에 오른 항공사들",
+      "display_title": "항공운송 - 시험대에 오른 항공사들",
+      "broker": "유진투자증권",
+      "published_date": "2026-04-30",
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44382&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/industry/63/20260430_industry_402505000.pdf",
+      "subject": "항공운송",
+      "subject_key": "항공운송",
+      "views": 1404,
+      "analyst": "양승윤",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "\" 2월말 이란 사태 발생 이후 국내 주요 항공사의 주가 수익률은 대한항공 -11%, 진에어 -9%, 제주항공 -12% 등 7,000pt의 고지를 바라보는 KOSPI 호황과는 사뭇 다른 분위기. 항공유 급등과 환율 상승에 따른 비용 부담(유류비 등), 그리고 여행 수요 위축 우려가 반영된 결과.",
+      "summary": "\" 2월말 이란 사태 발생 이후 국내 주요 항공사의 주가 수익률은 대한항공 -11%, 진에어 -9%, 제주항공 -12% 등 7,000pt의 고지를 바라보는 KOSPI 호황과는 사뭇 다른 분위기. 항공유 급등과 환율 상승에 따른 비용 부담(유류비 등), 그리고 여행 수요 위축 우려가 반영된 결과. \" 국내 항공사들은 비상 경영 선포 후 저수익 노선 운항 축소 등 방어에 나서고 있으나, 유류비 부담 확대로 단기 수익성 악화는 불가피할 전망.",
+      "summary_engine": "rule",
+      "score": 12.15,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "관심 종목(대한항공)",
+        "관심 섹터/키워드(항공)",
+        "조회수 상위권"
+      ],
+      "priority_subject_matches": [
+        "대한항공"
+      ],
+      "priority_keyword_matches": [
+        "항공"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "change_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
+    }
+  ],
   "timeline": [
     {
       "source": "naver_research",
@@ -434,7 +536,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -489,7 +594,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -544,7 +652,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -596,10 +707,25 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "change_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -655,7 +781,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -708,7 +837,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

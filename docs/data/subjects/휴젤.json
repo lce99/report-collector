@@ -16,7 +16,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 2
+    "coverage_initiated": 2,
+    "estimate_signal_reports": 2,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 2,
@@ -45,7 +50,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -60,7 +71,115 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-08",
+        "broker": "키움증권",
+        "title": "휴젤 - 톡신 경보 톡신 경보 영업인력 총동원",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92564&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_296887000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_296887000.pdf",
+        "target_price": "380,000",
+        "target_price_value": 380000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 40.8,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 40.8,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6%, 영업이익률 40.8%; 컨센서스 대비 +12."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "미래에셋증권",
+        "title": "휴젤 - Big 4 시장에서의 견조한 성장",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92562&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_252281000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_252281000.pdf",
+        "target_price": "350,000",
+        "target_price_value": 350000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.9,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 476.0,
+        "unit": "억원",
+        "value_krw_100m": 476.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7% YoY), 영업이익 476억원(+22."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "미래에셋증권",
+        "title": "휴젤 - Big 4 시장에서의 견조한 성장",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92562&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_252281000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_252281000.pdf",
+        "target_price": "350,000",
+        "target_price_value": 350000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.9,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 422.0,
+        "unit": "억원",
+        "value_krw_100m": 422.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "1% YoY)으로 시장 기대치(매출액 1,110억원, 영업이익 422억원)를 상회했다."
       }
     ],
     "opinion_distribution": [
@@ -83,7 +202,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -98,7 +223,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -117,7 +250,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -132,7 +271,115 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-08",
+      "broker": "키움증권",
+      "title": "휴젤 - 톡신 경보 톡신 경보 영업인력 총동원",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92564&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_296887000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_296887000.pdf",
+      "target_price": "380,000",
+      "target_price_value": 380000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 40.8,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 40.8,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6%, 영업이익률 40.8%; 컨센서스 대비 +12."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "미래에셋증권",
+      "title": "휴젤 - Big 4 시장에서의 견조한 성장",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92562&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_252281000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_252281000.pdf",
+      "target_price": "350,000",
+      "target_price_value": 350000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.9,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 476.0,
+      "unit": "억원",
+      "value_krw_100m": 476.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7% YoY), 영업이익 476억원(+22."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "미래에셋증권",
+      "title": "휴젤 - Big 4 시장에서의 견조한 성장",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92562&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_252281000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260508_company_252281000.pdf",
+      "target_price": "350,000",
+      "target_price_value": 350000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.9,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 422.0,
+      "unit": "억원",
+      "value_krw_100m": 422.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "1% YoY)으로 시장 기대치(매출액 1,110억원, 영업이익 422억원)를 상회했다."
     }
   ],
   "opinion_distribution": [
@@ -155,7 +402,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -170,7 +423,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -238,13 +499,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 40.8,
+          "unit": "%",
+          "value_pct": 40.8,
+          "source_excerpt": "6%, 영업이익률 40.8%; 컨센서스 대비 +12."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -294,13 +579,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 476.0,
+          "unit": "억원",
+          "source_excerpt": "7% YoY), 영업이익 476억원(+22.",
+          "value_krw_100m": 476.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 422.0,
+          "unit": "억원",
+          "source_excerpt": "1% YoY)으로 시장 기대치(매출액 1,110억원, 영업이익 422억원)를 상회했다.",
+          "value_krw_100m": 422.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
@@ -352,13 +667,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 40.8,
+          "unit": "%",
+          "value_pct": 40.8,
+          "source_excerpt": "6%, 영업이익률 40.8%; 컨센서스 대비 +12."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -408,13 +747,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 476.0,
+          "unit": "억원",
+          "source_excerpt": "7% YoY), 영업이익 476억원(+22.",
+          "value_krw_100m": 476.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 422.0,
+          "unit": "억원",
+          "source_excerpt": "1% YoY)으로 시장 기대치(매출액 1,110억원, 영업이익 422억원)를 상회했다.",
+          "value_krw_100m": 422.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -466,13 +835,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 40.8,
+          "unit": "%",
+          "value_pct": 40.8,
+          "source_excerpt": "6%, 영업이익률 40.8%; 컨센서스 대비 +12."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -522,13 +915,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 476.0,
+          "unit": "억원",
+          "source_excerpt": "7% YoY), 영업이익 476억원(+22.",
+          "value_krw_100m": 476.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 422.0,
+          "unit": "억원",
+          "source_excerpt": "1% YoY)으로 시장 기대치(매출액 1,110억원, 영업이익 422억원)를 상회했다.",
+          "value_krw_100m": 422.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ]
 }

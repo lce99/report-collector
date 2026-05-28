@@ -19,7 +19,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 5
+    "coverage_initiated": 5,
+    "estimate_signal_reports": 5,
+    "earnings_estimate_up": 5,
+    "earnings_estimate_down": 3,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 5,
@@ -52,7 +57,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -67,7 +78,15 @@
         "opinion": "Trading BUY",
         "opinion_normalized": "trading_buy",
         "score": 9.7,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -82,7 +101,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -97,7 +124,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -112,7 +145,181 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-13",
+        "broker": "iM증권",
+        "title": "한화생명 - 대체투자 손익에 힘입어 예상치 상회",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92831&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260513_company_465475000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260513_company_465475000.pdf",
+        "target_price": "5,900",
+        "target_price_value": 5900,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": 2479.0,
+        "unit": "억원",
+        "value_krw_100m": 2479.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "한화생명 - 대체투자 손익에 힘입어 예상치 상회 대체투자 손익에 힘입어 예상치 상회 한화생명 1Q26 별도 순이익 2,479억원(+103% YoY) 기록 한화생명의 1Q26 별도 순이익은 2,479억원(+103% YoY)으로 컨센서스를 상회하는 실적을 기록했다."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "신한투자증권",
+        "title": "한화생명 - 한화생명; 투자손익이 견인한 실적 턴어라운드",
+        "ticker": null,
+        "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=936332",
+        "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351407",
+        "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351407",
+        "target_price": "5,300",
+        "target_price_value": 5300,
+        "opinion": "Trading BUY",
+        "opinion_normalized": "trading_buy",
+        "score": 9.7,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": 2478.0,
+        "unit": "억원",
+        "value_krw_100m": 2478.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "한화생명 - 한화생명; 투자손익이 견인한 실적 턴어라운드 한화생명; 투자손익이 견인한 실적 턴어라운드 한화생명 신한생각: 보험 부진을 압도한 투자손익 개선 1Q26P 지배주주 순이익 2,478억원(+103."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "한화투자증권",
+        "title": "한화생명 - 대체투자 평가익으로 어닝 서프라이즈",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92859&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260513_company_519850000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260513_company_519850000.pdf",
+        "target_price": "6,100",
+        "target_price_value": 6100,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": "1Q26",
+        "value": 2478.0,
+        "unit": "억원",
+        "value_krw_100m": 2478.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "한화생명 - 대체투자 평가익으로 어닝 서프라이즈 대체투자 평가익으로 어닝 서프라이즈 한화생명 1Q26 순이익 2,478억원(+103% YoY), 어닝 서프라이즈 한화생명의 1Q26 별도 순이익은 2,478억원(+103% YoY)으로 당사 추정치와 시장 컨센서스를 40% 이상 상회하는…"
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "한화투자증권",
+        "title": "한화생명 - 대체투자 평가익으로 어닝 서프라이즈",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92859&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260513_company_519850000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260513_company_519850000.pdf",
+        "target_price": "6,100",
+        "target_price_value": 6100,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": 2478.0,
+        "unit": "억원",
+        "value_krw_100m": 2478.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "한화생명 - 대체투자 평가익으로 어닝 서프라이즈 대체투자 평가익으로 어닝 서프라이즈 한화생명 1Q26 순이익 2,478억원(+103% YoY), 어닝 서프라이즈 한화생명의 1Q26 별도 순이익은 2,478억원(+103% YoY)으로 당사 추정치와 시장 컨센서스를 40% 이상 상회하는…"
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "하나증권",
+        "title": "한화생명 - 1Q26 Re - 연결 기준 실적도 양호",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92938&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_819170000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_819170000.pdf",
+        "target_price": "7,300",
+        "target_price_value": 7300,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": 2478.0,
+        "unit": "억원",
+        "value_krw_100m": 2478.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "한화생명 - 1Q26 Re - 연결 기준 실적도 양호 1Q26 Re - 연결 기준 실적도 양호 한화생명 2026년 1분기 실적은 컨센서스 47% 상회 1분기 별도 기준 당기순이익은 2,478억원으로 컨센서스(1,682억원)를 47."
       }
     ],
     "opinion_distribution": [
@@ -139,7 +346,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -154,7 +367,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -169,7 +388,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-13",
@@ -184,7 +411,15 @@
         "opinion": "Trading BUY",
         "opinion_normalized": "trading_buy",
         "score": 9.7,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -199,7 +434,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       }
     ],
     "window_days": 14
@@ -218,7 +461,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -233,7 +482,15 @@
       "opinion": "Trading BUY",
       "opinion_normalized": "trading_buy",
       "score": 9.7,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -248,7 +505,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -263,7 +528,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -278,7 +549,181 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-13",
+      "broker": "iM증권",
+      "title": "한화생명 - 대체투자 손익에 힘입어 예상치 상회",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92831&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260513_company_465475000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260513_company_465475000.pdf",
+      "target_price": "5,900",
+      "target_price_value": 5900,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": 2479.0,
+      "unit": "억원",
+      "value_krw_100m": 2479.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "한화생명 - 대체투자 손익에 힘입어 예상치 상회 대체투자 손익에 힘입어 예상치 상회 한화생명 1Q26 별도 순이익 2,479억원(+103% YoY) 기록 한화생명의 1Q26 별도 순이익은 2,479억원(+103% YoY)으로 컨센서스를 상회하는 실적을 기록했다."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "신한투자증권",
+      "title": "한화생명 - 한화생명; 투자손익이 견인한 실적 턴어라운드",
+      "ticker": null,
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=936332",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351407",
+      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351407",
+      "target_price": "5,300",
+      "target_price_value": 5300,
+      "opinion": "Trading BUY",
+      "opinion_normalized": "trading_buy",
+      "score": 9.7,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": 2478.0,
+      "unit": "억원",
+      "value_krw_100m": 2478.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "한화생명 - 한화생명; 투자손익이 견인한 실적 턴어라운드 한화생명; 투자손익이 견인한 실적 턴어라운드 한화생명 신한생각: 보험 부진을 압도한 투자손익 개선 1Q26P 지배주주 순이익 2,478억원(+103."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "한화투자증권",
+      "title": "한화생명 - 대체투자 평가익으로 어닝 서프라이즈",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92859&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260513_company_519850000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260513_company_519850000.pdf",
+      "target_price": "6,100",
+      "target_price_value": 6100,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": "1Q26",
+      "value": 2478.0,
+      "unit": "억원",
+      "value_krw_100m": 2478.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "한화생명 - 대체투자 평가익으로 어닝 서프라이즈 대체투자 평가익으로 어닝 서프라이즈 한화생명 1Q26 순이익 2,478억원(+103% YoY), 어닝 서프라이즈 한화생명의 1Q26 별도 순이익은 2,478억원(+103% YoY)으로 당사 추정치와 시장 컨센서스를 40% 이상 상회하는…"
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "한화투자증권",
+      "title": "한화생명 - 대체투자 평가익으로 어닝 서프라이즈",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92859&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260513_company_519850000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260513_company_519850000.pdf",
+      "target_price": "6,100",
+      "target_price_value": 6100,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": 2478.0,
+      "unit": "억원",
+      "value_krw_100m": 2478.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "한화생명 - 대체투자 평가익으로 어닝 서프라이즈 대체투자 평가익으로 어닝 서프라이즈 한화생명 1Q26 순이익 2,478억원(+103% YoY), 어닝 서프라이즈 한화생명의 1Q26 별도 순이익은 2,478억원(+103% YoY)으로 당사 추정치와 시장 컨센서스를 40% 이상 상회하는…"
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "하나증권",
+      "title": "한화생명 - 1Q26 Re - 연결 기준 실적도 양호",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92938&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_819170000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_819170000.pdf",
+      "target_price": "7,300",
+      "target_price_value": 7300,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": 2478.0,
+      "unit": "억원",
+      "value_krw_100m": 2478.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "한화생명 - 1Q26 Re - 연결 기준 실적도 양호 1Q26 Re - 연결 기준 실적도 양호 한화생명 2026년 1분기 실적은 컨센서스 47% 상회 1분기 별도 기준 당기순이익은 2,478억원으로 컨센서스(1,682억원)를 47."
     }
   ],
   "opinion_distribution": [
@@ -305,7 +750,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -320,7 +771,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -335,7 +792,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -350,7 +815,15 @@
       "opinion": "Trading BUY",
       "opinion_normalized": "trading_buy",
       "score": 9.7,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -365,7 +838,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "broker_summary": [
@@ -446,13 +927,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 2478.0,
+          "unit": "억원",
+          "source_excerpt": "한화생명 - 1Q26 Re - 연결 기준 실적도 양호 1Q26 Re - 연결 기준 실적도 양호 한화생명 2026년 1분기 실적은 컨센서스 47% 상회 1분기 별도 기준 당기순이익은 2,478억원으로 컨센서스(1,682억원)를 47.",
+          "value_krw_100m": 2478.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -503,13 +1008,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 2478.0,
+          "unit": "억원",
+          "source_excerpt": "한화생명 - 한화생명; 투자손익이 견인한 실적 턴어라운드 한화생명; 투자손익이 견인한 실적 턴어라운드 한화생명 신한생각: 보험 부진을 압도한 투자손익 개선 1Q26P 지배주주 순이익 2,478억원(+103.",
+          "value_krw_100m": 2478.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -561,13 +1090,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -616,13 +1158,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 2479.0,
+          "unit": "억원",
+          "source_excerpt": "한화생명 - 대체투자 손익에 힘입어 예상치 상회 대체투자 손익에 힘입어 예상치 상회 한화생명 1Q26 별도 순이익 2,479억원(+103% YoY) 기록 한화생명의 1Q26 별도 순이익은 2,479억원(+103% YoY)으로 컨센서스를 상회하는 실적을 기록했다.",
+          "value_krw_100m": 2479.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -671,13 +1233,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": "1Q26",
+          "value": 2478.0,
+          "unit": "억원",
+          "source_excerpt": "한화생명 - 대체투자 평가익으로 어닝 서프라이즈 대체투자 평가익으로 어닝 서프라이즈 한화생명 1Q26 순이익 2,478억원(+103% YoY), 어닝 서프라이즈 한화생명의 1Q26 별도 순이익은 2,478억원(+103% YoY)으로 당사 추정치와 시장 컨센서스를 40% 이상 상회하는…",
+          "value_krw_100m": 2478.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 2478.0,
+          "unit": "억원",
+          "source_excerpt": "한화생명 - 대체투자 평가익으로 어닝 서프라이즈 대체투자 평가익으로 어닝 서프라이즈 한화생명 1Q26 순이익 2,478억원(+103% YoY), 어닝 서프라이즈 한화생명의 1Q26 별도 순이익은 2,478억원(+103% YoY)으로 당사 추정치와 시장 컨센서스를 40% 이상 상회하는…",
+          "value_krw_100m": 2478.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
@@ -730,13 +1322,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 2478.0,
+          "unit": "억원",
+          "source_excerpt": "한화생명 - 1Q26 Re - 연결 기준 실적도 양호 1Q26 Re - 연결 기준 실적도 양호 한화생명 2026년 1분기 실적은 컨센서스 47% 상회 1분기 별도 기준 당기순이익은 2,478억원으로 컨센서스(1,682억원)를 47.",
+          "value_krw_100m": 2478.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -787,13 +1403,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 2478.0,
+          "unit": "억원",
+          "source_excerpt": "한화생명 - 한화생명; 투자손익이 견인한 실적 턴어라운드 한화생명; 투자손익이 견인한 실적 턴어라운드 한화생명 신한생각: 보험 부진을 압도한 투자손익 개선 1Q26P 지배주주 순이익 2,478억원(+103.",
+          "value_krw_100m": 2478.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -845,13 +1485,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -900,13 +1553,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 2479.0,
+          "unit": "억원",
+          "source_excerpt": "한화생명 - 대체투자 손익에 힘입어 예상치 상회 대체투자 손익에 힘입어 예상치 상회 한화생명 1Q26 별도 순이익 2,479억원(+103% YoY) 기록 한화생명의 1Q26 별도 순이익은 2,479억원(+103% YoY)으로 컨센서스를 상회하는 실적을 기록했다.",
+          "value_krw_100m": 2479.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -955,13 +1628,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": "1Q26",
+          "value": 2478.0,
+          "unit": "억원",
+          "source_excerpt": "한화생명 - 대체투자 평가익으로 어닝 서프라이즈 대체투자 평가익으로 어닝 서프라이즈 한화생명 1Q26 순이익 2,478억원(+103% YoY), 어닝 서프라이즈 한화생명의 1Q26 별도 순이익은 2,478억원(+103% YoY)으로 당사 추정치와 시장 컨센서스를 40% 이상 상회하는…",
+          "value_krw_100m": 2478.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 2478.0,
+          "unit": "억원",
+          "source_excerpt": "한화생명 - 대체투자 평가익으로 어닝 서프라이즈 대체투자 평가익으로 어닝 서프라이즈 한화생명 1Q26 순이익 2,478억원(+103% YoY), 어닝 서프라이즈 한화생명의 1Q26 별도 순이익은 2,478억원(+103% YoY)으로 당사 추정치와 시장 컨센서스를 40% 이상 상회하는…",
+          "value_krw_100m": 2478.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -1014,13 +1717,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 2478.0,
+          "unit": "억원",
+          "source_excerpt": "한화생명 - 1Q26 Re - 연결 기준 실적도 양호 1Q26 Re - 연결 기준 실적도 양호 한화생명 2026년 1분기 실적은 컨센서스 47% 상회 1분기 별도 기준 당기순이익은 2,478억원으로 컨센서스(1,682억원)를 47.",
+          "value_krw_100m": 2478.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -1071,13 +1798,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 2478.0,
+          "unit": "억원",
+          "source_excerpt": "한화생명 - 한화생명; 투자손익이 견인한 실적 턴어라운드 한화생명; 투자손익이 견인한 실적 턴어라운드 한화생명 신한생각: 보험 부진을 압도한 투자손익 개선 1Q26P 지배주주 순이익 2,478억원(+103.",
+          "value_krw_100m": 2478.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1129,13 +1880,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1184,13 +1948,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 2479.0,
+          "unit": "억원",
+          "source_excerpt": "한화생명 - 대체투자 손익에 힘입어 예상치 상회 대체투자 손익에 힘입어 예상치 상회 한화생명 1Q26 별도 순이익 2,479억원(+103% YoY) 기록 한화생명의 1Q26 별도 순이익은 2,479억원(+103% YoY)으로 컨센서스를 상회하는 실적을 기록했다.",
+          "value_krw_100m": 2479.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1239,13 +2023,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": "1Q26",
+          "value": 2478.0,
+          "unit": "억원",
+          "source_excerpt": "한화생명 - 대체투자 평가익으로 어닝 서프라이즈 대체투자 평가익으로 어닝 서프라이즈 한화생명 1Q26 순이익 2,478억원(+103% YoY), 어닝 서프라이즈 한화생명의 1Q26 별도 순이익은 2,478억원(+103% YoY)으로 당사 추정치와 시장 컨센서스를 40% 이상 상회하는…",
+          "value_krw_100m": 2478.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 2478.0,
+          "unit": "억원",
+          "source_excerpt": "한화생명 - 대체투자 평가익으로 어닝 서프라이즈 대체투자 평가익으로 어닝 서프라이즈 한화생명 1Q26 순이익 2,478억원(+103% YoY), 어닝 서프라이즈 한화생명의 1Q26 별도 순이익은 2,478억원(+103% YoY)으로 당사 추정치와 시장 컨센서스를 40% 이상 상회하는…",
+          "value_krw_100m": 2478.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ]
 }

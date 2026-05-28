@@ -12,14 +12,19 @@
     "키움증권"
   ],
   "change_summary": {
-    "changed_reports": 5,
+    "changed_reports": 6,
     "target_price_up": 1,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 4
+    "coverage_initiated": 4,
+    "estimate_signal_reports": 4,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 2,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 5,
@@ -48,7 +53,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-11",
@@ -63,7 +70,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-11",
@@ -78,7 +87,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-11",
@@ -93,7 +104,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 11.5,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -108,7 +125,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.67,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -123,7 +146,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-26",
@@ -138,7 +173,293 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.15,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-17",
+        "broker": "키움증권",
+        "title": "파마리서치 - 꼬마 선장처럼 지금 울고 몇 분 후에 갈게",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91667&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_208769000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_208769000.pdf",
+        "target_price": "410,000",
+        "target_price_value": 410000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.95,
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 37.3,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 37.3,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0%, 영업이익률 37.3%)으로 추정한다."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "대신증권",
+        "title": "파마리서치 - 리쥬란 옥외광고 도배의 이유",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92703&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_868096000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_868096000.pdf",
+        "target_price": "620,000",
+        "target_price_value": 620000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "eps",
+        "metric_group": "earnings",
+        "label": "EPS",
+        "period": "26F",
+        "value": 21831.0,
+        "unit": "원",
+        "value_krw_100m": null,
+        "value_pct": null,
+        "value_won": 21831.0,
+        "change_pctp": null,
+        "source_excerpt": "파마리서치 - 리쥬란 옥외광고 도배의 이유 리쥬란 옥외광고 도배의 이유 파마리서치 투자의견 매수, 목표주가 620,000원 유지 TP는 26F EPS 21,831원에 Target PER 28."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "미래에셋증권",
+        "title": "파마리서치 - 바닥은 확인했고, 리쥬란은 건재하다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92695&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_928729000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_928729000.pdf",
+        "target_price": "600,000",
+        "target_price_value": 600000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.0,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 39.2,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 39.2,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "파마리서치 - 바닥은 확인했고, 리쥬란은 건재하다 바닥은 확인했고, 리쥬란은 건재하다 파마리서치 1Q26 Review: 매출 및 영업이익 시장 기대치 부합 매출 1,461억원(25% YoY)과 영업이익 573억원(28% YoY, OPM 39.2%)으로 시장 기대치에 부합."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "키움증권",
+        "title": "파마리서치 - 흑묘백묘론, 의료기기든 화장품이든 성장만 ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92655&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_830379000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_830379000.pdf",
+        "target_price": "440,000",
+        "target_price_value": 440000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 39.2,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 39.2,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4%, 영업이익률 39.2%; 컨센서스 -2."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "미래에셋증권",
+        "title": "파마리서치 - 바닥은 확인했고, 리쥬란은 건재하다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92695&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_928729000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_928729000.pdf",
+        "target_price": "600,000",
+        "target_price_value": 600000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.0,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 573.0,
+        "unit": "억원",
+        "value_krw_100m": 573.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "파마리서치 - 바닥은 확인했고, 리쥬란은 건재하다 바닥은 확인했고, 리쥬란은 건재하다 파마리서치 1Q26 Review: 매출 및 영업이익 시장 기대치 부합 매출 1,461억원(25% YoY)과 영업이익 573억원(28% YoY, OPM 39."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "유안타증권",
+        "title": "파마리서치 - 화장품 성장 지속, 의료기기 회복 여부가 관..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92726&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260511_company_397747000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260511_company_397747000.pdf",
+        "target_price": "450,000",
+        "target_price_value": 450000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.67,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 573.0,
+        "unit": "억원",
+        "value_krw_100m": 573.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "파마리서치 1Q26 Review: 화장품 성장 vs 의료기기 수출 조정 2026년 1분기 실적은 매출액 1,461억원(+25% YoY, +2% QoQ), 영업이익 573억원(+37% YoY, +5% QoQ)으로 시장기대치 588억원을 하회하였다."
+      },
+      {
+        "date": "2026-05-26",
+        "broker": "대신증권",
+        "title": "파마리서치 - 코스닥을 담는다면 이런 종목부터",
+        "ticker": "214450",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93238&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260526_company_409983000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260526_company_409983000.pdf",
+        "target_price": "620,000",
+        "target_price_value": 620000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 39.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 39.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "파마리서치 - 코스닥을 담는다면 이런 종목부터 코스닥을 담는다면 이런 종목부터 파마리서치 1Q26 매출액 1,461억원(YoY +25%, QoQ +2%), 영업이익 573억원(OPM 39%)으로 사업계획에 부합."
+      },
+      {
+        "date": "2026-05-26",
+        "broker": "대신증권",
+        "title": "파마리서치 - 코스닥을 담는다면 이런 종목부터",
+        "ticker": "214450",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93238&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260526_company_409983000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260526_company_409983000.pdf",
+        "target_price": "620,000",
+        "target_price_value": 620000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 30.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 30.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2026년 연간 매출 YoY +25%, OPM 30% 후반대 목표도 유지 내수 리쥬란 방어, 유럽과 중동 중심의 수출 의료기기 회복, 화장품 업사이드가 주요 관심사."
+      },
+      {
+        "date": "2026-05-26",
+        "broker": "대신증권",
+        "title": "파마리서치 - 코스닥을 담는다면 이런 종목부터",
+        "ticker": "214450",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93238&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260526_company_409983000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260526_company_409983000.pdf",
+        "target_price": "620,000",
+        "target_price_value": 620000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 573.0,
+        "unit": "억원",
+        "value_krw_100m": 573.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "파마리서치 - 코스닥을 담는다면 이런 종목부터 코스닥을 담는다면 이런 종목부터 파마리서치 1Q26 매출액 1,461억원(YoY +25%, QoQ +2%), 영업이익 573억원(OPM 39%)으로 사업계획에 부합."
       }
     ],
     "opinion_distribution": [
@@ -161,7 +482,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.15,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -180,7 +507,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-11",
@@ -195,7 +524,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-11",
@@ -210,7 +541,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-11",
@@ -225,7 +558,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 11.5,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -240,7 +579,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.67,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -255,7 +600,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-26",
@@ -270,7 +627,293 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.15,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-17",
+      "broker": "키움증권",
+      "title": "파마리서치 - 꼬마 선장처럼 지금 울고 몇 분 후에 갈게",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91667&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_208769000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_208769000.pdf",
+      "target_price": "410,000",
+      "target_price_value": 410000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.95,
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 37.3,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 37.3,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0%, 영업이익률 37.3%)으로 추정한다."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "대신증권",
+      "title": "파마리서치 - 리쥬란 옥외광고 도배의 이유",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92703&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_868096000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260511_company_868096000.pdf",
+      "target_price": "620,000",
+      "target_price_value": 620000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "eps",
+      "metric_group": "earnings",
+      "label": "EPS",
+      "period": "26F",
+      "value": 21831.0,
+      "unit": "원",
+      "value_krw_100m": null,
+      "value_pct": null,
+      "value_won": 21831.0,
+      "change_pctp": null,
+      "source_excerpt": "파마리서치 - 리쥬란 옥외광고 도배의 이유 리쥬란 옥외광고 도배의 이유 파마리서치 투자의견 매수, 목표주가 620,000원 유지 TP는 26F EPS 21,831원에 Target PER 28."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "미래에셋증권",
+      "title": "파마리서치 - 바닥은 확인했고, 리쥬란은 건재하다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92695&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_928729000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_928729000.pdf",
+      "target_price": "600,000",
+      "target_price_value": 600000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.0,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 39.2,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 39.2,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "파마리서치 - 바닥은 확인했고, 리쥬란은 건재하다 바닥은 확인했고, 리쥬란은 건재하다 파마리서치 1Q26 Review: 매출 및 영업이익 시장 기대치 부합 매출 1,461억원(25% YoY)과 영업이익 573억원(28% YoY, OPM 39.2%)으로 시장 기대치에 부합."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "키움증권",
+      "title": "파마리서치 - 흑묘백묘론, 의료기기든 화장품이든 성장만 ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92655&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_830379000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_830379000.pdf",
+      "target_price": "440,000",
+      "target_price_value": 440000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 39.2,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 39.2,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4%, 영업이익률 39.2%; 컨센서스 -2."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "미래에셋증권",
+      "title": "파마리서치 - 바닥은 확인했고, 리쥬란은 건재하다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92695&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_928729000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_928729000.pdf",
+      "target_price": "600,000",
+      "target_price_value": 600000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.0,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 573.0,
+      "unit": "억원",
+      "value_krw_100m": 573.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "파마리서치 - 바닥은 확인했고, 리쥬란은 건재하다 바닥은 확인했고, 리쥬란은 건재하다 파마리서치 1Q26 Review: 매출 및 영업이익 시장 기대치 부합 매출 1,461억원(25% YoY)과 영업이익 573억원(28% YoY, OPM 39."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "유안타증권",
+      "title": "파마리서치 - 화장품 성장 지속, 의료기기 회복 여부가 관..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92726&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260511_company_397747000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260511_company_397747000.pdf",
+      "target_price": "450,000",
+      "target_price_value": 450000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.67,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 573.0,
+      "unit": "억원",
+      "value_krw_100m": 573.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "파마리서치 1Q26 Review: 화장품 성장 vs 의료기기 수출 조정 2026년 1분기 실적은 매출액 1,461억원(+25% YoY, +2% QoQ), 영업이익 573억원(+37% YoY, +5% QoQ)으로 시장기대치 588억원을 하회하였다."
+    },
+    {
+      "date": "2026-05-26",
+      "broker": "대신증권",
+      "title": "파마리서치 - 코스닥을 담는다면 이런 종목부터",
+      "ticker": "214450",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93238&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260526_company_409983000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260526_company_409983000.pdf",
+      "target_price": "620,000",
+      "target_price_value": 620000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 39.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 39.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "파마리서치 - 코스닥을 담는다면 이런 종목부터 코스닥을 담는다면 이런 종목부터 파마리서치 1Q26 매출액 1,461억원(YoY +25%, QoQ +2%), 영업이익 573억원(OPM 39%)으로 사업계획에 부합."
+    },
+    {
+      "date": "2026-05-26",
+      "broker": "대신증권",
+      "title": "파마리서치 - 코스닥을 담는다면 이런 종목부터",
+      "ticker": "214450",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93238&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260526_company_409983000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260526_company_409983000.pdf",
+      "target_price": "620,000",
+      "target_price_value": 620000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 30.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 30.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2026년 연간 매출 YoY +25%, OPM 30% 후반대 목표도 유지 내수 리쥬란 방어, 유럽과 중동 중심의 수출 의료기기 회복, 화장품 업사이드가 주요 관심사."
+    },
+    {
+      "date": "2026-05-26",
+      "broker": "대신증권",
+      "title": "파마리서치 - 코스닥을 담는다면 이런 종목부터",
+      "ticker": "214450",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93238&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260526_company_409983000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260526_company_409983000.pdf",
+      "target_price": "620,000",
+      "target_price_value": 620000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 573.0,
+      "unit": "억원",
+      "value_krw_100m": 573.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "파마리서치 - 코스닥을 담는다면 이런 종목부터 코스닥을 담는다면 이런 종목부터 파마리서치 1Q26 매출액 1,461억원(YoY +25%, QoQ +2%), 영업이익 573억원(OPM 39%)으로 사업계획에 부합."
     }
   ],
   "opinion_distribution": [
@@ -293,7 +936,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.15,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -428,9 +1077,51 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "change_types": [
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 573.0,
+          "unit": "억원",
+          "source_excerpt": "파마리서치 - 코스닥을 담는다면 이런 종목부터 코스닥을 담는다면 이런 종목부터 파마리서치 1Q26 매출액 1,461억원(YoY +25%, QoQ +2%), 영업이익 573억원(OPM 39%)으로 사업계획에 부합.",
+          "value_krw_100m": 573.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 39.0,
+          "unit": "%",
+          "value_pct": 39.0,
+          "source_excerpt": "파마리서치 - 코스닥을 담는다면 이런 종목부터 코스닥을 담는다면 이런 종목부터 파마리서치 1Q26 매출액 1,461억원(YoY +25%, QoQ +2%), 영업이익 573억원(OPM 39%)으로 사업계획에 부합."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 30.0,
+          "unit": "%",
+          "value_pct": 30.0,
+          "source_excerpt": "2026년 연간 매출 YoY +25%, OPM 30% 후반대 목표도 유지 내수 리쥬란 방어, 유럽과 중동 중심의 수출 의료기기 회복, 화장품 업사이드가 주요 관심사."
+        }
+      ],
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -483,13 +1174,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -541,13 +1241,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 573.0,
+          "unit": "억원",
+          "source_excerpt": "파마리서치 1Q26 Review: 화장품 성장 vs 의료기기 수출 조정 2026년 1분기 실적은 매출액 1,461억원(+25% YoY, +2% QoQ), 영업이익 573억원(+37% YoY, +5% QoQ)으로 시장기대치 588억원을 하회하였다.",
+          "value_krw_100m": 573.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -598,13 +1318,45 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 39.2,
+          "unit": "%",
+          "value_pct": 39.2,
+          "source_excerpt": "4%, 영업이익률 39.2%; 컨센서스 -2."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -662,10 +1414,183 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 573.0,
+          "unit": "억원",
+          "source_excerpt": "파마리서치 - 바닥은 확인했고, 리쥬란은 건재하다 바닥은 확인했고, 리쥬란은 건재하다 파마리서치 1Q26 Review: 매출 및 영업이익 시장 기대치 부합 매출 1,461억원(25% YoY)과 영업이익 573억원(28% YoY, OPM 39.",
+          "value_krw_100m": 573.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 39.2,
+          "unit": "%",
+          "value_pct": 39.2,
+          "source_excerpt": "파마리서치 - 바닥은 확인했고, 리쥬란은 건재하다 바닥은 확인했고, 리쥬란은 건재하다 파마리서치 1Q26 Review: 매출 및 영업이익 시장 기대치 부합 매출 1,461억원(25% YoY)과 영업이익 573억원(28% YoY, OPM 39.2%)으로 시장 기대치에 부합."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "93238",
+      "title": "코스닥을 담는다면 이런 종목부터",
+      "display_title": "파마리서치 - 코스닥을 담는다면 이런 종목부터",
+      "broker": "대신증권",
+      "published_date": "2026-05-26",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93238&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260526_company_409983000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260526_company_409983000.pdf",
+      "primary_url_label": "PDF",
+      "subject": "파마리서치",
+      "subject_key": "파마리서치",
+      "ticker": "214450",
+      "views": 2643,
+      "analyst": null,
+      "target_price": "620,000",
+      "target_price_value": 620000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1Q26 매출액 1,461억원(YoY +25%, QoQ +2%), 영업이익 573억원(OPM 39%)으로 사업계획에 부합. 2026년 연간 매출 YoY +25%, OPM 30% 후반대 목표도 유지",
+      "summary": "1Q26 매출액 1,461억원(YoY +25%, QoQ +2%), 영업이익 573억원(OPM 39%)으로 사업계획에 부합. 2026년 연간 매출 YoY +25%, OPM 30% 후반대 목표도 유지 내수 리쥬란 방어, 유럽과 중동 중심의 수출 의료기기 회복, 화장품 업사이드가 주요 관심사.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 9.15,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "종목분석 카테고리",
+          "value": 3.2,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 0.95,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.95,
+          "kind": "boost"
+        },
+        {
+          "label": "목표가",
+          "value": 0.7,
+          "kind": "boost"
+        },
+        {
+          "label": "투자의견",
+          "value": 0.6,
+          "kind": "boost"
+        },
+        {
+          "label": "PDF 본문",
+          "value": 0.35,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.1,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "finance.naver.com",
+        "pdf_host": "stock.pstatic.net",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-05-11",
+      "previous_target_price": "620,000",
+      "previous_opinion": "Buy",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 573.0,
+          "unit": "억원",
+          "source_excerpt": "파마리서치 - 코스닥을 담는다면 이런 종목부터 코스닥을 담는다면 이런 종목부터 파마리서치 1Q26 매출액 1,461억원(YoY +25%, QoQ +2%), 영업이익 573억원(OPM 39%)으로 사업계획에 부합.",
+          "value_krw_100m": 573.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 39.0,
+          "unit": "%",
+          "value_pct": 39.0,
+          "source_excerpt": "파마리서치 - 코스닥을 담는다면 이런 종목부터 코스닥을 담는다면 이런 종목부터 파마리서치 1Q26 매출액 1,461억원(YoY +25%, QoQ +2%), 영업이익 573억원(OPM 39%)으로 사업계획에 부합."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 30.0,
+          "unit": "%",
+          "value_pct": 30.0,
+          "source_excerpt": "2026년 연간 매출 YoY +25%, OPM 30% 후반대 목표도 유지 내수 리쥬란 방어, 유럽과 중동 중심의 수출 의료기기 회복, 화장품 업사이드가 주요 관심사."
+        }
+      ],
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
+    },
     {
       "source": "shinhan_investment_official",
       "category": "company",
@@ -717,13 +1642,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -781,7 +1715,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": "26F",
+          "value": 21831.0,
+          "unit": "원",
+          "source_excerpt": "파마리서치 - 리쥬란 옥외광고 도배의 이유 리쥬란 옥외광고 도배의 이유 파마리서치 투자의견 매수, 목표주가 620,000원 유지 TP는 26F EPS 21,831원에 Target PER 28.",
+          "value_won": 21831.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -833,13 +1781,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 573.0,
+          "unit": "억원",
+          "source_excerpt": "파마리서치 1Q26 Review: 화장품 성장 vs 의료기기 수출 조정 2026년 1분기 실적은 매출액 1,461억원(+25% YoY, +2% QoQ), 영업이익 573억원(+37% YoY, +5% QoQ)으로 시장기대치 588억원을 하회하였다.",
+          "value_krw_100m": 573.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -890,13 +1858,45 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 39.2,
+          "unit": "%",
+          "value_pct": 39.2,
+          "source_excerpt": "4%, 영업이익률 39.2%; 컨센서스 -2."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -954,7 +1954,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 573.0,
+          "unit": "억원",
+          "source_excerpt": "파마리서치 - 바닥은 확인했고, 리쥬란은 건재하다 바닥은 확인했고, 리쥬란은 건재하다 파마리서치 1Q26 Review: 매출 및 영업이익 시장 기대치 부합 매출 1,461억원(25% YoY)과 영업이익 573억원(28% YoY, OPM 39.",
+          "value_krw_100m": 573.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 39.2,
+          "unit": "%",
+          "value_pct": 39.2,
+          "source_excerpt": "파마리서치 - 바닥은 확인했고, 리쥬란은 건재하다 바닥은 확인했고, 리쥬란은 건재하다 파마리서치 1Q26 Review: 매출 및 영업이익 시장 기대치 부합 매출 1,461억원(25% YoY)과 영업이익 573억원(28% YoY, OPM 39.2%)으로 시장 기대치에 부합."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -1061,9 +2085,51 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "change_types": [
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 573.0,
+          "unit": "억원",
+          "source_excerpt": "파마리서치 - 코스닥을 담는다면 이런 종목부터 코스닥을 담는다면 이런 종목부터 파마리서치 1Q26 매출액 1,461억원(YoY +25%, QoQ +2%), 영업이익 573억원(OPM 39%)으로 사업계획에 부합.",
+          "value_krw_100m": 573.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 39.0,
+          "unit": "%",
+          "value_pct": 39.0,
+          "source_excerpt": "파마리서치 - 코스닥을 담는다면 이런 종목부터 코스닥을 담는다면 이런 종목부터 파마리서치 1Q26 매출액 1,461억원(YoY +25%, QoQ +2%), 영업이익 573억원(OPM 39%)으로 사업계획에 부합."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 30.0,
+          "unit": "%",
+          "value_pct": 30.0,
+          "source_excerpt": "2026년 연간 매출 YoY +25%, OPM 30% 후반대 목표도 유지 내수 리쥬란 방어, 유럽과 중동 중심의 수출 의료기기 회복, 화장품 업사이드가 주요 관심사."
+        }
+      ],
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -1116,13 +2182,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1180,7 +2255,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "eps",
+          "metric_group": "earnings",
+          "label": "EPS",
+          "period": "26F",
+          "value": 21831.0,
+          "unit": "원",
+          "source_excerpt": "파마리서치 - 리쥬란 옥외광고 도배의 이유 리쥬란 옥외광고 도배의 이유 파마리서치 투자의견 매수, 목표주가 620,000원 유지 TP는 26F EPS 21,831원에 Target PER 28.",
+          "value_won": 21831.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1232,13 +2321,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 573.0,
+          "unit": "억원",
+          "source_excerpt": "파마리서치 1Q26 Review: 화장품 성장 vs 의료기기 수출 조정 2026년 1분기 실적은 매출액 1,461억원(+25% YoY, +2% QoQ), 영업이익 573억원(+37% YoY, +5% QoQ)으로 시장기대치 588억원을 하회하였다.",
+          "value_krw_100m": 573.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1289,13 +2398,45 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 39.2,
+          "unit": "%",
+          "value_pct": 39.2,
+          "source_excerpt": "4%, 영업이익률 39.2%; 컨센서스 -2."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1353,7 +2494,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 573.0,
+          "unit": "억원",
+          "source_excerpt": "파마리서치 - 바닥은 확인했고, 리쥬란은 건재하다 바닥은 확인했고, 리쥬란은 건재하다 파마리서치 1Q26 Review: 매출 및 영업이익 시장 기대치 부합 매출 1,461억원(25% YoY)과 영업이익 573억원(28% YoY, OPM 39.",
+          "value_krw_100m": 573.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 39.2,
+          "unit": "%",
+          "value_pct": 39.2,
+          "source_excerpt": "파마리서치 - 바닥은 확인했고, 리쥬란은 건재하다 바닥은 확인했고, 리쥬란은 건재하다 파마리서치 1Q26 Review: 매출 및 영업이익 시장 기대치 부합 매출 1,461억원(25% YoY)과 영업이익 573억원(28% YoY, OPM 39.2%)으로 시장 기대치에 부합."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1393,6 +2558,20 @@
       "ticker": null,
       "target_price_value": 410000,
       "opinion_normalized": "buy",
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 37.3,
+          "unit": "%",
+          "value_pct": 37.3,
+          "source_excerpt": "0%, 영업이익률 37.3%)으로 추정한다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false

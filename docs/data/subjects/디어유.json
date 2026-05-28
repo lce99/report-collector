@@ -19,7 +19,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 5
+    "coverage_initiated": 5,
+    "estimate_signal_reports": 4,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 5,
@@ -48,7 +53,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-28",
@@ -63,7 +70,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -78,7 +91,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -93,7 +114,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.0,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-11",
@@ -108,7 +131,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -123,7 +154,165 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-27",
+        "broker": "DS투자증권",
+        "title": "디어유 - 순수한 글로벌 팬덤 비즈니스 투자처",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92021&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260427_company_237822000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260427_company_237822000.pdf",
+        "target_price": "50,000",
+        "target_price_value": 50000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 41.2,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 41.2,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "디어유 - 순수한 글로벌 팬덤 비즈니스 투자처 순수한 글로벌 팬덤 비즈니스 투자처 디어유 1Q26Pre: 구독자 수 견조, 긍정적 환율 효과, 해외 로열티까지 디어유의 26년 1분기 실적은 연결 기준 매출액 235억원(+34% YoY), 영업이익 97억원(+77% YoY, OPM 41…"
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "DS투자증권",
+        "title": "디어유 - 순수한 글로벌 팬덤 비즈니스 투자처",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92021&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260427_company_237822000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260427_company_237822000.pdf",
+        "target_price": "50,000",
+        "target_price_value": 50000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 97.0,
+        "unit": "억원",
+        "value_krw_100m": 97.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "디어유 - 순수한 글로벌 팬덤 비즈니스 투자처 순수한 글로벌 팬덤 비즈니스 투자처 디어유 1Q26Pre: 구독자 수 견조, 긍정적 환율 효과, 해외 로열티까지 디어유의 26년 1분기 실적은 연결 기준 매출액 235억원(+34% YoY), 영업이익 97억원(+77% YoY, OPM 41."
+      },
+      {
+        "date": "2026-04-27",
+        "broker": "DS투자증권",
+        "title": "디어유 - 순수한 글로벌 팬덤 비즈니스 투자처",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92021&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260427_company_237822000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260427_company_237822000.pdf",
+        "target_price": "50,000",
+        "target_price_value": 50000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 104.0,
+        "unit": "억원",
+        "value_krw_100m": 104.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%)으로 시장 기대치(OP 104억원)에 부합할 전망이다."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "키움증권",
+        "title": "디어유 - 글로벌 확장에 주목할 시점",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92665&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_98396000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_98396000.pdf",
+        "target_price": "50,000",
+        "target_price_value": 50000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 97.0,
+        "unit": "억원",
+        "value_krw_100m": 97.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4%), 영업이익은 97억원(QoQ -0."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "삼성증권",
+        "title": "디어유 - 다음 스텝을 준비 중",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92962&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_53622000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_53622000.pdf",
+        "target_price": "45,000",
+        "target_price_value": 45000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 97.0,
+        "unit": "억원",
+        "value_krw_100m": 97.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4% YoY), 영업이익 97억원(+76."
       }
     ],
     "opinion_distribution": [
@@ -146,7 +335,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -161,7 +358,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.0,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-11",
@@ -176,7 +375,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -191,7 +398,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       }
     ],
     "window_days": 14
@@ -210,7 +423,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-28",
@@ -225,7 +440,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -240,7 +461,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -255,7 +484,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.0,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-11",
@@ -270,7 +501,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -285,7 +524,165 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-27",
+      "broker": "DS투자증권",
+      "title": "디어유 - 순수한 글로벌 팬덤 비즈니스 투자처",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92021&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260427_company_237822000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260427_company_237822000.pdf",
+      "target_price": "50,000",
+      "target_price_value": 50000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 41.2,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 41.2,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "디어유 - 순수한 글로벌 팬덤 비즈니스 투자처 순수한 글로벌 팬덤 비즈니스 투자처 디어유 1Q26Pre: 구독자 수 견조, 긍정적 환율 효과, 해외 로열티까지 디어유의 26년 1분기 실적은 연결 기준 매출액 235억원(+34% YoY), 영업이익 97억원(+77% YoY, OPM 41…"
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "DS투자증권",
+      "title": "디어유 - 순수한 글로벌 팬덤 비즈니스 투자처",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92021&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260427_company_237822000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260427_company_237822000.pdf",
+      "target_price": "50,000",
+      "target_price_value": 50000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 97.0,
+      "unit": "억원",
+      "value_krw_100m": 97.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "디어유 - 순수한 글로벌 팬덤 비즈니스 투자처 순수한 글로벌 팬덤 비즈니스 투자처 디어유 1Q26Pre: 구독자 수 견조, 긍정적 환율 효과, 해외 로열티까지 디어유의 26년 1분기 실적은 연결 기준 매출액 235억원(+34% YoY), 영업이익 97억원(+77% YoY, OPM 41."
+    },
+    {
+      "date": "2026-04-27",
+      "broker": "DS투자증권",
+      "title": "디어유 - 순수한 글로벌 팬덤 비즈니스 투자처",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92021&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260427_company_237822000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260427_company_237822000.pdf",
+      "target_price": "50,000",
+      "target_price_value": 50000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 104.0,
+      "unit": "억원",
+      "value_krw_100m": 104.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%)으로 시장 기대치(OP 104억원)에 부합할 전망이다."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "키움증권",
+      "title": "디어유 - 글로벌 확장에 주목할 시점",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92665&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_98396000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260511_company_98396000.pdf",
+      "target_price": "50,000",
+      "target_price_value": 50000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 97.0,
+      "unit": "억원",
+      "value_krw_100m": 97.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4%), 영업이익은 97억원(QoQ -0."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "삼성증권",
+      "title": "디어유 - 다음 스텝을 준비 중",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92962&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_53622000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260514_company_53622000.pdf",
+      "target_price": "45,000",
+      "target_price_value": 45000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 97.0,
+      "unit": "억원",
+      "value_krw_100m": 97.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4% YoY), 영업이익 97억원(+76."
     }
   ],
   "opinion_distribution": [
@@ -308,7 +705,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -323,7 +728,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.0,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-11",
@@ -338,7 +745,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -353,7 +768,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "broker_summary": [
@@ -435,13 +856,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 97.0,
+          "unit": "억원",
+          "source_excerpt": "4% YoY), 영업이익 97억원(+76.",
+          "value_krw_100m": 97.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -491,13 +932,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 97.0,
+          "unit": "억원",
+          "source_excerpt": "4%), 영업이익은 97억원(QoQ -0.",
+          "value_krw_100m": 97.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -550,7 +1015,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -599,13 +1067,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -659,7 +1140,41 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 97.0,
+          "unit": "억원",
+          "source_excerpt": "디어유 - 순수한 글로벌 팬덤 비즈니스 투자처 순수한 글로벌 팬덤 비즈니스 투자처 디어유 1Q26Pre: 구독자 수 견조, 긍정적 환율 효과, 해외 로열티까지 디어유의 26년 1분기 실적은 연결 기준 매출액 235억원(+34% YoY), 영업이익 97억원(+77% YoY, OPM 41.",
+          "value_krw_100m": 97.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 104.0,
+          "unit": "억원",
+          "source_excerpt": "2%)으로 시장 기대치(OP 104억원)에 부합할 전망이다.",
+          "value_krw_100m": 104.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 41.2,
+          "unit": "%",
+          "value_pct": 41.2,
+          "source_excerpt": "디어유 - 순수한 글로벌 팬덤 비즈니스 투자처 순수한 글로벌 팬덤 비즈니스 투자처 디어유 1Q26Pre: 구독자 수 견조, 긍정적 환율 효과, 해외 로열티까지 디어유의 26년 1분기 실적은 연결 기준 매출액 235억원(+34% YoY), 영업이익 97억원(+77% YoY, OPM 41…"
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -713,13 +1228,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 97.0,
+          "unit": "억원",
+          "source_excerpt": "4% YoY), 영업이익 97억원(+76.",
+          "value_krw_100m": 97.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -769,13 +1304,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 97.0,
+          "unit": "억원",
+          "source_excerpt": "4%), 영업이익은 97억원(QoQ -0.",
+          "value_krw_100m": 97.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -824,13 +1383,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -879,13 +1451,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -939,7 +1520,41 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 97.0,
+          "unit": "억원",
+          "source_excerpt": "디어유 - 순수한 글로벌 팬덤 비즈니스 투자처 순수한 글로벌 팬덤 비즈니스 투자처 디어유 1Q26Pre: 구독자 수 견조, 긍정적 환율 효과, 해외 로열티까지 디어유의 26년 1분기 실적은 연결 기준 매출액 235억원(+34% YoY), 영업이익 97억원(+77% YoY, OPM 41.",
+          "value_krw_100m": 97.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 104.0,
+          "unit": "억원",
+          "source_excerpt": "2%)으로 시장 기대치(OP 104억원)에 부합할 전망이다.",
+          "value_krw_100m": 104.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 41.2,
+          "unit": "%",
+          "value_pct": 41.2,
+          "source_excerpt": "디어유 - 순수한 글로벌 팬덤 비즈니스 투자처 순수한 글로벌 팬덤 비즈니스 투자처 디어유 1Q26Pre: 구독자 수 견조, 긍정적 환율 효과, 해외 로열티까지 디어유의 26년 1분기 실적은 연결 기준 매출액 235억원(+34% YoY), 영업이익 97억원(+77% YoY, OPM 41…"
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -993,13 +1608,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 97.0,
+          "unit": "억원",
+          "source_excerpt": "4% YoY), 영업이익 97억원(+76.",
+          "value_krw_100m": 97.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1049,13 +1684,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 97.0,
+          "unit": "억원",
+          "source_excerpt": "4%), 영업이익은 97억원(QoQ -0.",
+          "value_krw_100m": 97.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -1108,7 +1767,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1157,13 +1819,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1212,13 +1887,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1272,7 +1956,41 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 97.0,
+          "unit": "억원",
+          "source_excerpt": "디어유 - 순수한 글로벌 팬덤 비즈니스 투자처 순수한 글로벌 팬덤 비즈니스 투자처 디어유 1Q26Pre: 구독자 수 견조, 긍정적 환율 효과, 해외 로열티까지 디어유의 26년 1분기 실적은 연결 기준 매출액 235억원(+34% YoY), 영업이익 97억원(+77% YoY, OPM 41.",
+          "value_krw_100m": 97.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 104.0,
+          "unit": "억원",
+          "source_excerpt": "2%)으로 시장 기대치(OP 104억원)에 부합할 전망이다.",
+          "value_krw_100m": 104.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 41.2,
+          "unit": "%",
+          "value_pct": 41.2,
+          "source_excerpt": "디어유 - 순수한 글로벌 팬덤 비즈니스 투자처 순수한 글로벌 팬덤 비즈니스 투자처 디어유 1Q26Pre: 구독자 수 견조, 긍정적 환율 효과, 해외 로열티까지 디어유의 26년 1분기 실적은 연결 기준 매출액 235억원(+34% YoY), 영업이익 97억원(+77% YoY, OPM 41…"
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

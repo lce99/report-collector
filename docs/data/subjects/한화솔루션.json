@@ -15,14 +15,19 @@
     "한화투자증권"
   ],
   "change_summary": {
-    "changed_reports": 8,
+    "changed_reports": 11,
     "target_price_up": 2,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 6
+    "coverage_initiated": 6,
+    "estimate_signal_reports": 7,
+    "earnings_estimate_up": 7,
+    "earnings_estimate_down": 2,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 8,
@@ -55,7 +60,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-24",
@@ -70,7 +77,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-29",
@@ -85,7 +94,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-29",
@@ -100,7 +111,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -115,7 +134,15 @@
         "opinion": "중립",
         "opinion_normalized": "hold",
         "score": 16.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -130,7 +157,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -145,7 +178,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-29",
@@ -160,7 +195,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -175,7 +216,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -190,7 +237,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -205,7 +258,239 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.6,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-29",
+        "broker": "교보증권",
+        "title": "한화솔루션 - 1Q26 Review & 국제그린에너지엑스포 탐방 후..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92160&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260429_company_181706000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260429_company_181706000.pdf",
+        "target_price": "59,000",
+        "target_price_value": 59000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 2.4,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 2.4,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4% YoY, 이하 YoY), 영업이익 926억원(흑전, OPM 2.4%)을 기록했다."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "교보증권",
+        "title": "한화솔루션 - 1Q26 Review & 국제그린에너지엑스포 탐방 후..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92160&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260429_company_181706000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260429_company_181706000.pdf",
+        "target_price": "59,000",
+        "target_price_value": 59000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 926.0,
+        "unit": "억원",
+        "value_krw_100m": 926.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4% YoY, 이하 YoY), 영업이익 926억원(흑전, OPM 2."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "신한투자증권",
+        "title": "한화솔루션 - 우려 대비 양호한 실적",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92112&page=2",
+        "pdf_url": null,
+        "primary_url": "https://finance.naver.com/research/company_read.naver?nid=92112&page=2",
+        "target_price": "55,000",
+        "target_price_value": 55000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.8,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 6380.0,
+        "unit": "억원",
+        "value_krw_100m": 6380.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "한화솔루션 - 우려 대비 양호한 실적 우려 대비 양호한 실적 한화솔루션 시선은 하반기로 2026년 신재생에너지 영업이익은 6,380억원으로 흑자전환하며 턴어라운드 기대."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "키움증권",
+        "title": "한화솔루션 - 1분기부터 확인된 긍정적인 변화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92100&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_323291000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_323291000.pdf",
+        "target_price": "60,000",
+        "target_price_value": 60000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 926.0,
+        "unit": "억원",
+        "value_krw_100m": 926.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "88조원(+3%QoQ, +25%YoY), 영업이익 926억원(흑전 QoQ, +206%YoY)으로, 당사 추정치(410억원)와 시장 기대치(115억원)를 상회했다."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "키움증권",
+        "title": "한화솔루션 - 1분기부터 확인된 긍정적인 변화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92100&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_323291000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_323291000.pdf",
+        "target_price": "60,000",
+        "target_price_value": 60000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 622.0,
+        "unit": "억원",
+        "value_krw_100m": 622.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "신재생에너지: 미국 통관 정상화에 따른 판매량 회복, 판가 상승 효과 덕분에 영업이익 622억원을 기록했다."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "하나증권",
+        "title": "한화솔루션 - 위기를 기회로 전환하는 것도 능력",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92136&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260429_company_883236000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260429_company_883236000.pdf",
+        "target_price": "60,000",
+        "target_price_value": 60000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1Q26",
+        "value": 926.0,
+        "unit": "억원",
+        "value_krw_100m": 926.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "한화솔루션 - 위기를 기회로 전환하는 것도 능력 위기를 기회로 전환하는 것도 능력 한화솔루션 1Q26 영업이익은 926억원(QoQ 흑전, YoY +206%)으로 컨센(115억원)을 대폭 상회했다."
+      },
+      {
+        "date": "2026-04-29",
+        "broker": "하나증권",
+        "title": "한화솔루션 - 위기를 기회로 전환하는 것도 능력",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92136&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260429_company_883236000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260429_company_883236000.pdf",
+        "target_price": "60,000",
+        "target_price_value": 60000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 622.0,
+        "unit": "억원",
+        "value_krw_100m": 622.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "태양광 영업이익은 622억원(QoQ +4,582억원)으로 대폭 개선되었다."
       }
     ],
     "opinion_distribution": [
@@ -232,7 +517,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -247,7 +540,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -262,7 +561,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-29",
@@ -277,7 +578,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -292,7 +599,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -307,7 +620,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-29",
@@ -322,7 +637,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -337,7 +658,15 @@
         "opinion": "중립",
         "opinion_normalized": "hold",
         "score": 16.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-11",
@@ -352,7 +681,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.6,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -371,7 +702,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-24",
@@ -386,7 +719,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-29",
@@ -401,7 +736,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-29",
@@ -416,7 +753,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -431,7 +776,15 @@
       "opinion": "중립",
       "opinion_normalized": "hold",
       "score": 16.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -446,7 +799,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -461,7 +820,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-29",
@@ -476,7 +837,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -491,7 +858,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -506,7 +879,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -521,7 +900,239 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.6,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-29",
+      "broker": "교보증권",
+      "title": "한화솔루션 - 1Q26 Review & 국제그린에너지엑스포 탐방 후..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92160&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260429_company_181706000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260429_company_181706000.pdf",
+      "target_price": "59,000",
+      "target_price_value": 59000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 2.4,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 2.4,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4% YoY, 이하 YoY), 영업이익 926억원(흑전, OPM 2.4%)을 기록했다."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "교보증권",
+      "title": "한화솔루션 - 1Q26 Review & 국제그린에너지엑스포 탐방 후..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92160&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260429_company_181706000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260429_company_181706000.pdf",
+      "target_price": "59,000",
+      "target_price_value": 59000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 926.0,
+      "unit": "억원",
+      "value_krw_100m": 926.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4% YoY, 이하 YoY), 영업이익 926억원(흑전, OPM 2."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "신한투자증권",
+      "title": "한화솔루션 - 우려 대비 양호한 실적",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92112&page=2",
+      "pdf_url": null,
+      "primary_url": "https://finance.naver.com/research/company_read.naver?nid=92112&page=2",
+      "target_price": "55,000",
+      "target_price_value": 55000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.8,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 6380.0,
+      "unit": "억원",
+      "value_krw_100m": 6380.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "한화솔루션 - 우려 대비 양호한 실적 우려 대비 양호한 실적 한화솔루션 시선은 하반기로 2026년 신재생에너지 영업이익은 6,380억원으로 흑자전환하며 턴어라운드 기대."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "키움증권",
+      "title": "한화솔루션 - 1분기부터 확인된 긍정적인 변화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92100&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_323291000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_323291000.pdf",
+      "target_price": "60,000",
+      "target_price_value": 60000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 926.0,
+      "unit": "억원",
+      "value_krw_100m": 926.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "88조원(+3%QoQ, +25%YoY), 영업이익 926억원(흑전 QoQ, +206%YoY)으로, 당사 추정치(410억원)와 시장 기대치(115억원)를 상회했다."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "키움증권",
+      "title": "한화솔루션 - 1분기부터 확인된 긍정적인 변화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92100&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_323291000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260429_company_323291000.pdf",
+      "target_price": "60,000",
+      "target_price_value": 60000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 622.0,
+      "unit": "억원",
+      "value_krw_100m": 622.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "신재생에너지: 미국 통관 정상화에 따른 판매량 회복, 판가 상승 효과 덕분에 영업이익 622억원을 기록했다."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "하나증권",
+      "title": "한화솔루션 - 위기를 기회로 전환하는 것도 능력",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92136&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260429_company_883236000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260429_company_883236000.pdf",
+      "target_price": "60,000",
+      "target_price_value": 60000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1Q26",
+      "value": 926.0,
+      "unit": "억원",
+      "value_krw_100m": 926.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "한화솔루션 - 위기를 기회로 전환하는 것도 능력 위기를 기회로 전환하는 것도 능력 한화솔루션 1Q26 영업이익은 926억원(QoQ 흑전, YoY +206%)으로 컨센(115억원)을 대폭 상회했다."
+    },
+    {
+      "date": "2026-04-29",
+      "broker": "하나증권",
+      "title": "한화솔루션 - 위기를 기회로 전환하는 것도 능력",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92136&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260429_company_883236000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260429_company_883236000.pdf",
+      "target_price": "60,000",
+      "target_price_value": 60000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 622.0,
+      "unit": "억원",
+      "value_krw_100m": 622.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "태양광 영업이익은 622억원(QoQ +4,582억원)으로 대폭 개선되었다."
     }
   ],
   "opinion_distribution": [
@@ -548,7 +1159,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -563,7 +1182,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -578,7 +1203,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-29",
@@ -593,7 +1220,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -608,7 +1241,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -623,7 +1262,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-29",
@@ -638,7 +1279,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -653,7 +1300,15 @@
       "opinion": "중립",
       "opinion_normalized": "hold",
       "score": 16.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -668,7 +1323,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.6,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -766,7 +1423,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -820,13 +1480,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -877,10 +1550,21 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -937,7 +1621,10 @@
         "목표가 상향"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -986,13 +1673,33 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 6380.0,
+          "unit": "억원",
+          "source_excerpt": "한화솔루션 - 우려 대비 양호한 실적 우려 대비 양호한 실적 한화솔루션 시선은 하반기로 2026년 신재생에너지 영업이익은 6,380억원으로 흑자전환하며 턴어라운드 기대.",
+          "value_krw_100m": 6380.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1041,13 +1748,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 926.0,
+          "unit": "억원",
+          "source_excerpt": "88조원(+3%QoQ, +25%YoY), 영업이익 926억원(흑전 QoQ, +206%YoY)으로, 당사 추정치(410억원)와 시장 기대치(115억원)를 상회했다.",
+          "value_krw_100m": 926.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 622.0,
+          "unit": "억원",
+          "source_excerpt": "신재생에너지: 미국 통관 정상화에 따른 판매량 회복, 판가 상승 효과 덕분에 영업이익 622억원을 기록했다.",
+          "value_krw_100m": 622.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1096,13 +1833,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q26",
+          "value": 926.0,
+          "unit": "억원",
+          "source_excerpt": "한화솔루션 - 위기를 기회로 전환하는 것도 능력 위기를 기회로 전환하는 것도 능력 한화솔루션 1Q26 영업이익은 926억원(QoQ 흑전, YoY +206%)으로 컨센(115억원)을 대폭 상회했다.",
+          "value_krw_100m": 926.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 622.0,
+          "unit": "억원",
+          "source_excerpt": "태양광 영업이익은 622억원(QoQ +4,582억원)으로 대폭 개선되었다.",
+          "value_krw_100m": 622.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1149,10 +1916,46 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 926.0,
+          "unit": "억원",
+          "source_excerpt": "4% YoY, 이하 YoY), 영업이익 926억원(흑전, OPM 2.",
+          "value_krw_100m": 926.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.4,
+          "unit": "%",
+          "value_pct": 2.4,
+          "source_excerpt": "4% YoY, 이하 YoY), 영업이익 926억원(흑전, OPM 2.4%)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "recent_changes": [
@@ -1208,13 +2011,91 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92159",
+      "title": "전 사업부 흑자 전환과 태양광 모멘텀 가시화",
+      "display_title": "한화솔루션 - 전 사업부 흑자 전환과 태양광 모멘텀 가시화",
+      "broker": "한화투자증권",
+      "published_date": "2026-04-29",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92159&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260429_company_602800000.pdf",
+      "subject": "한화솔루션",
+      "subject_key": "한화솔루션",
+      "views": 815,
+      "analyst": null,
+      "target_price": "57,000",
+      "target_price_value": 57000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1분기: 전 사업부의 고른 흑자 전환 1분기 매출액은 3.9조 원, 영업이익은 926억 원을 기록하며 시장 컨센서스(115억 원)를 대폭 상회했다.",
+      "summary": "1분기: 전 사업부의 고른 흑자 전환 1분기 매출액은 3.9조 원, 영업이익은 926억 원을 기록하며 시장 컨센서스(115억 원)를 대폭 상회했다. 모든 사업부가 흑자로 돌아선 것이 주요했다.",
+      "summary_engine": "rule",
+      "score": 10.35,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 섹터/키워드(우주)",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "우주"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": "2026-04-23",
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1271,7 +2152,10 @@
         "목표가 상향"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1320,13 +2204,33 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 6380.0,
+          "unit": "억원",
+          "source_excerpt": "한화솔루션 - 우려 대비 양호한 실적 우려 대비 양호한 실적 한화솔루션 시선은 하반기로 2026년 신재생에너지 영업이익은 6,380억원으로 흑자전환하며 턴어라운드 기대.",
+          "value_krw_100m": 6380.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1375,13 +2279,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 926.0,
+          "unit": "억원",
+          "source_excerpt": "88조원(+3%QoQ, +25%YoY), 영업이익 926억원(흑전 QoQ, +206%YoY)으로, 당사 추정치(410억원)와 시장 기대치(115억원)를 상회했다.",
+          "value_krw_100m": 926.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 622.0,
+          "unit": "억원",
+          "source_excerpt": "신재생에너지: 미국 통관 정상화에 따른 판매량 회복, 판가 상승 효과 덕분에 영업이익 622억원을 기록했다.",
+          "value_krw_100m": 622.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1437,7 +2371,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1486,13 +2423,129 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q26",
+          "value": 926.0,
+          "unit": "억원",
+          "source_excerpt": "한화솔루션 - 위기를 기회로 전환하는 것도 능력 위기를 기회로 전환하는 것도 능력 한화솔루션 1Q26 영업이익은 926억원(QoQ 흑전, YoY +206%)으로 컨센(115억원)을 대폭 상회했다.",
+          "value_krw_100m": 926.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 622.0,
+          "unit": "억원",
+          "source_excerpt": "태양광 영업이익은 622억원(QoQ +4,582억원)으로 대폭 개선되었다.",
+          "value_krw_100m": 622.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92160",
+      "title": "1Q26 Review & 국제그린에너지엑스포 탐방 후..",
+      "display_title": "한화솔루션 - 1Q26 Review & 국제그린에너지엑스포 탐방 후..",
+      "broker": "교보증권",
+      "published_date": "2026-04-29",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92160&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260429_company_181706000.pdf",
+      "subject": "한화솔루션",
+      "subject_key": "한화솔루션",
+      "views": 906,
+      "analyst": null,
+      "target_price": "59,000",
+      "target_price_value": 59000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "케미칼 흑전이 이끈 서프라이즈 한화솔루션은 1분기 매출액 3조 8,820억원(+25.4% YoY, 이하 YoY), 영업이익 926억원(흑전, OPM 2.4%)을 기록했다.",
+      "summary": "케미칼 흑전이 이끈 서프라이즈 한화솔루션은 1분기 매출액 3조 8,820억원(+25.4% YoY, 이하 YoY), 영업이익 926억원(흑전, OPM 2.4%)을 기록했다. 컨센서스(115억원)를 대폭 상회했다.",
+      "summary_engine": "rule",
+      "score": 7.05,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-04-22",
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 926.0,
+          "unit": "억원",
+          "source_excerpt": "4% YoY, 이하 YoY), 영업이익 926억원(흑전, OPM 2.",
+          "value_krw_100m": 926.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.4,
+          "unit": "%",
+          "value_pct": 2.4,
+          "source_excerpt": "4% YoY, 이하 YoY), 영업이익 926억원(흑전, OPM 2.4%)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1547,7 +2600,82 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91828",
+      "title": "유상증자 Comment(2): 유상증자 규모 축소와 ..",
+      "display_title": "한화솔루션 - 유상증자 Comment(2): 유상증자 규모 축소와 ..",
+      "broker": "한화투자증권",
+      "published_date": "2026-04-23",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91828&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260423_company_71811000.pdf",
+      "subject": "한화솔루션",
+      "subject_key": "한화솔루션",
+      "views": 1270,
+      "analyst": null,
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "유상증자 규모 축소 발표 및 자본 확충 계획 - 지난 17일 동사는 시장 의견을 적극 수렴하여 유상증자 규모를 기존 대비 0.6조 원 축소한 1.8조 원으로 최종 결정",
+      "summary": "유상증자 규모 축소 발표 및 자본 확충 계획 - 지난 17일 동사는 시장 의견을 적극 수렴하여 유상증자 규모를 기존 대비 0.6조 원 축소한 1.8조 원으로 최종 결정 - 증자 규모는 조정됐으나, 기존에 제시한 실적 가이던스 및 재무구조 개선 목표치는 그대로 유지할 방침",
+      "summary_engine": "rule",
+      "score": 9.65,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 섹터/키워드(원자력, 건설, 우주)",
+        "조회수 상위권",
+        "본문 정보량 풍부"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "원자력",
+        "건설",
+        "우주",
+        "항공"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1604,7 +2732,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -1662,7 +2793,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1716,13 +2850,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1773,10 +2920,21 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1833,7 +2991,10 @@
         "목표가 상향"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1882,13 +3043,33 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 6380.0,
+          "unit": "억원",
+          "source_excerpt": "한화솔루션 - 우려 대비 양호한 실적 우려 대비 양호한 실적 한화솔루션 시선은 하반기로 2026년 신재생에너지 영업이익은 6,380억원으로 흑자전환하며 턴어라운드 기대.",
+          "value_krw_100m": 6380.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1937,13 +3118,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 926.0,
+          "unit": "억원",
+          "source_excerpt": "88조원(+3%QoQ, +25%YoY), 영업이익 926억원(흑전 QoQ, +206%YoY)으로, 당사 추정치(410억원)와 시장 기대치(115억원)를 상회했다.",
+          "value_krw_100m": 926.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 622.0,
+          "unit": "억원",
+          "source_excerpt": "신재생에너지: 미국 통관 정상화에 따른 판매량 회복, 판가 상승 효과 덕분에 영업이익 622억원을 기록했다.",
+          "value_krw_100m": 622.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1999,7 +3210,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -2048,13 +3262,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q26",
+          "value": 926.0,
+          "unit": "억원",
+          "source_excerpt": "한화솔루션 - 위기를 기회로 전환하는 것도 능력 위기를 기회로 전환하는 것도 능력 한화솔루션 1Q26 영업이익은 926억원(QoQ 흑전, YoY +206%)으로 컨센(115억원)을 대폭 상회했다.",
+          "value_krw_100m": 926.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 622.0,
+          "unit": "억원",
+          "source_excerpt": "태양광 영업이익은 622억원(QoQ +4,582억원)으로 대폭 개선되었다.",
+          "value_krw_100m": 622.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -2101,10 +3345,46 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 926.0,
+          "unit": "억원",
+          "source_excerpt": "4% YoY, 이하 YoY), 영업이익 926억원(흑전, OPM 2.",
+          "value_krw_100m": 926.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 2.4,
+          "unit": "%",
+          "value_pct": 2.4,
+          "source_excerpt": "4% YoY, 이하 YoY), 영업이익 926억원(흑전, OPM 2.4%)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -2159,7 +3439,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -2213,10 +3496,25 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -2273,7 +3571,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -2321,7 +3622,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

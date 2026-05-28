@@ -11,14 +11,19 @@
     "한국투자증권"
   ],
   "change_summary": {
-    "changed_reports": 2,
+    "changed_reports": 3,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 2
+    "coverage_initiated": 2,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 3,
@@ -47,7 +52,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -62,7 +75,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.6,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -77,7 +98,77 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-16",
+        "broker": "한국투자증권",
+        "title": "HD한국조선해양 - 1Q26 Preview: 실적은 기본, 3단계 경로로 지..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91624&page=1",
+        "pdf_url": null,
+        "primary_url": "https://finance.naver.com/research/company_read.naver?nid=91624&page=1",
+        "target_price": null,
+        "target_price_value": null,
+        "opinion": null,
+        "opinion_normalized": null,
+        "score": 9.4,
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 15.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 15.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0% QoQ, OPM +15.0%)으로 추정한다."
+      },
+      {
+        "date": "2026-04-17",
+        "broker": "키움증권",
+        "title": "HD한국조선해양 - 그룹사 해외 조선 사업 확대의 핵심",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91664&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_524361000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_524361000.pdf",
+        "target_price": "600,000",
+        "target_price_value": 600000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 14.6,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 14.6,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7%, OPM 14.6%)를 달성하며 시장 기대치에 부합할 것으로 전망한다."
       }
     ],
     "opinion_distribution": [
@@ -100,7 +191,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -115,7 +212,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.6,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       }
     ],
     "window_days": 14
@@ -134,7 +239,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -149,7 +262,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.6,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -164,7 +285,77 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-16",
+      "broker": "한국투자증권",
+      "title": "HD한국조선해양 - 1Q26 Preview: 실적은 기본, 3단계 경로로 지..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91624&page=1",
+      "pdf_url": null,
+      "primary_url": "https://finance.naver.com/research/company_read.naver?nid=91624&page=1",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "score": 9.4,
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 15.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 15.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0% QoQ, OPM +15.0%)으로 추정한다."
+    },
+    {
+      "date": "2026-04-17",
+      "broker": "키움증권",
+      "title": "HD한국조선해양 - 그룹사 해외 조선 사업 확대의 핵심",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91664&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_524361000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_524361000.pdf",
+      "target_price": "600,000",
+      "target_price_value": 600000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 14.6,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 14.6,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7%, OPM 14.6%)를 달성하며 시장 기대치에 부합할 것으로 전망한다."
     }
   ],
   "opinion_distribution": [
@@ -187,7 +378,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -202,7 +399,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.6,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "broker_summary": [
@@ -282,13 +487,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -340,13 +558,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -386,9 +613,35 @@
       "ticker": null,
       "target_price_value": 600000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 14.6,
+          "unit": "%",
+          "value_pct": 14.6,
+          "source_excerpt": "7%, OPM 14.6%)를 달성하며 시장 기대치에 부합할 것으로 전망한다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true
     },
     {
       "source": "naver_research",
@@ -427,6 +680,20 @@
       "ticker": null,
       "target_price_value": null,
       "opinion_normalized": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.0,
+          "unit": "%",
+          "value_pct": 15.0,
+          "source_excerpt": "0% QoQ, OPM +15.0%)으로 추정한다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false
@@ -485,13 +752,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -543,13 +823,90 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91664",
+      "title": "그룹사 해외 조선 사업 확대의 핵심",
+      "display_title": "HD한국조선해양 - 그룹사 해외 조선 사업 확대의 핵심",
+      "broker": "키움증권",
+      "published_date": "2026-04-17",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91664&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_524361000.pdf",
+      "subject": "HD한국조선해양",
+      "views": 3154,
+      "analyst": null,
+      "target_price": "600,000",
+      "opinion": "Buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1분기 영업이익 1조 1,229억원, 컨센서스 부합 전망 1분기 매출액 7조 6,847억원(yoy +13.5%), 영업이익 1조 1,229억원(yoy +30.7%, OPM 14.6%)를 달성하며 시장 기대치에 부합할 것으로 전망한다.",
+      "summary": "1분기 영업이익 1조 1,229억원, 컨센서스 부합 전망 1분기 매출액 7조 6,847억원(yoy +13.5%), 영업이익 1조 1,229억원(yoy +30.7%, OPM 14.6%)를 달성하며 시장 기대치에 부합할 것으로 전망한다. 핵심 자회사인 HD현대중공업, HD현대삼호중공업의 실적 개선이 지속되며 전사 성장을 이끌 것으로 판단한다.",
+      "summary_engine": "rule",
+      "score": 8.95,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "subject_key": "hd한국조선해양",
+      "ticker": null,
+      "target_price_value": 600000,
+      "opinion_normalized": "buy",
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 14.6,
+          "unit": "%",
+          "value_pct": 14.6,
+          "source_excerpt": "7%, OPM 14.6%)를 달성하며 시장 기대치에 부합할 것으로 전망한다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true
     }
   ],
   "timeline": [
@@ -605,13 +962,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -663,13 +1033,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -709,9 +1088,35 @@
       "ticker": null,
       "target_price_value": 600000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 14.6,
+          "unit": "%",
+          "value_pct": 14.6,
+          "source_excerpt": "7%, OPM 14.6%)를 달성하며 시장 기대치에 부합할 것으로 전망한다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true
     },
     {
       "source": "naver_research",
@@ -750,6 +1155,20 @@
       "ticker": null,
       "target_price_value": null,
       "opinion_normalized": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.0,
+          "unit": "%",
+          "value_pct": 15.0,
+          "source_excerpt": "0% QoQ, OPM +15.0%)으로 추정한다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false

@@ -19,7 +19,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 4
+    "coverage_initiated": 4,
+    "estimate_signal_reports": 6,
+    "earnings_estimate_up": 5,
+    "earnings_estimate_down": 5,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 2
   },
   "target_summary": {
     "count": 5,
@@ -48,7 +53,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-21",
@@ -63,7 +70,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-21",
@@ -78,7 +93,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-04-22",
@@ -93,7 +116,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -108,7 +139,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.5,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -123,7 +162,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -138,7 +185,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-14",
@@ -153,7 +202,339 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.5,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-21",
+        "broker": "유안타증권",
+        "title": "CJ대한통운 - 택배 호실적 전망",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91740&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260421_company_76307000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260421_company_76307000.pdf",
+        "target_price": "150,000",
+        "target_price_value": 150000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 3.3,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 3.3,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0%, OPM 3.3%)으로, 택배 호조에도 불구하고 CL 부진으로 영업이익 기준 컨센서스를 약 -13% 하회할 전망."
+      },
+      {
+        "date": "2026-04-21",
+        "broker": "유안타증권",
+        "title": "CJ대한통운 - 택배 호실적 전망",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91740&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260421_company_76307000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260421_company_76307000.pdf",
+        "target_price": "150,000",
+        "target_price_value": 150000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 4.8,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 4.8,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "1%, OPM 4.8%)으로 전망."
+      },
+      {
+        "date": "2026-04-21",
+        "broker": "미래에셋증권",
+        "title": "CJ대한통운 - 점유율 회복은 지속된다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91719&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260421_company_735018000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260421_company_735018000.pdf",
+        "target_price": "160,000",
+        "target_price_value": 160000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.0,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 937.0,
+        "unit": "억원",
+        "value_krw_100m": 937.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "CJ대한통운 - 점유율 회복은 지속된다 점유율 회복은 지속된다 CJ대한통운 1Q26 Preview: 영업이익 937억원, 시장 기대치 하회 전망 1Q26 CJ대한통운의 매출액은 5."
+      },
+      {
+        "date": "2026-04-22",
+        "broker": "하나증권",
+        "title": "CJ대한통운 - 1Q26 Pre: 택배 MS 상승, but 이익 증가는 더..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91794&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260422_company_772911000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260422_company_772911000.pdf",
+        "target_price": "165,000",
+        "target_price_value": 165000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.25,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 3.2,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 3.2,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "CJ대한통운 1분기 영업이익 991억원(+16%) 전망 1분기 CJ대한통운의 매출액은 4% (YoY) 증가한 3조 970억원, 영업이익은 16% 증가한 991억원(영업이익률 3.2%)으로 전망한다."
+      },
+      {
+        "date": "2026-04-22",
+        "broker": "하나증권",
+        "title": "CJ대한통운 - 1Q26 Pre: 택배 MS 상승, but 이익 증가는 더..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91794&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260422_company_772911000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260422_company_772911000.pdf",
+        "target_price": "165,000",
+        "target_price_value": 165000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.25,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1분기",
+        "value": 991.0,
+        "unit": "억원",
+        "value_krw_100m": 991.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "CJ대한통운 1분기 영업이익 991억원(+16%) 전망 1분기 CJ대한통운의 매출액은 4% (YoY) 증가한 3조 970억원, 영업이익은 16% 증가한 991억원(영업이익률 3."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "하나증권",
+        "title": "CJ대한통운 - 1Q26 Re: 지연된 증익 시점",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92922&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_97450000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_97450000.pdf",
+        "target_price": "120,000",
+        "target_price_value": 120000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.5,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 2.9,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 2.9,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "CJ대한통운 - 1Q26 Re: 지연된 증익 시점 1Q26 Re: 지연된 증익 시점 CJ대한통운 1분기 영업이익 921억원(+5%)로 컨센서스 하회 1분기 CJ대한통운의 매출액은 7% (YoY) 증가한 3조 2,145억원, 영업이익은 921억원(+5%, 영업이익률 2.9%)로 당사 추…"
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "미래에셋증권",
+        "title": "CJ대한통운 - 여전히 주목해야 할 시장 지위 확대",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92879&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260514_company_378011000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260514_company_378011000.pdf",
+        "target_price": "140,000",
+        "target_price_value": 140000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.9,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 921.0,
+        "unit": "억원",
+        "value_krw_100m": 921.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4% YoY)과 영업이익 921억원(7."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "하나증권",
+        "title": "CJ대한통운 - 1Q26 Re: 지연된 증익 시점",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92922&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_97450000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_97450000.pdf",
+        "target_price": "120,000",
+        "target_price_value": 120000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.5,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1분기",
+        "value": 921.0,
+        "unit": "억원",
+        "value_krw_100m": 921.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "CJ대한통운 - 1Q26 Re: 지연된 증익 시점 1Q26 Re: 지연된 증익 시점 CJ대한통운 1분기 영업이익 921억원(+5%)로 컨센서스 하회 1분기 CJ대한통운의 매출액은 7% (YoY) 증가한 3조 2,145억원, 영업이익은 921억원(+5%, 영업이익률 2."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "하나증권",
+        "title": "CJ대한통운 - 1Q26 Re: 지연된 증익 시점",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92922&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_97450000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_97450000.pdf",
+        "target_price": "120,000",
+        "target_price_value": 120000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.5,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 921.0,
+        "unit": "억원",
+        "value_krw_100m": 921.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "CJ대한통운 - 1Q26 Re: 지연된 증익 시점 1Q26 Re: 지연된 증익 시점 CJ대한통운 1분기 영업이익 921억원(+5%)로 컨센서스 하회 1분기 CJ대한통운의 매출액은 7% (YoY) 증가한 3조 2,145억원, 영업이익은 921억원(+5%, 영업이익률 2."
       }
     ],
     "opinion_distribution": [
@@ -176,7 +557,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -191,7 +580,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-14",
@@ -206,7 +597,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.5,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -221,7 +620,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.5,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       }
     ],
     "window_days": 14
@@ -240,7 +651,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-21",
@@ -255,7 +668,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-21",
@@ -270,7 +691,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-04-22",
@@ -285,7 +714,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -300,7 +737,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.5,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -315,7 +760,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -330,7 +783,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-14",
@@ -345,7 +800,339 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.5,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-21",
+      "broker": "유안타증권",
+      "title": "CJ대한통운 - 택배 호실적 전망",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91740&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260421_company_76307000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260421_company_76307000.pdf",
+      "target_price": "150,000",
+      "target_price_value": 150000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 3.3,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 3.3,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0%, OPM 3.3%)으로, 택배 호조에도 불구하고 CL 부진으로 영업이익 기준 컨센서스를 약 -13% 하회할 전망."
+    },
+    {
+      "date": "2026-04-21",
+      "broker": "유안타증권",
+      "title": "CJ대한통운 - 택배 호실적 전망",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91740&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260421_company_76307000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260421_company_76307000.pdf",
+      "target_price": "150,000",
+      "target_price_value": 150000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 4.8,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 4.8,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "1%, OPM 4.8%)으로 전망."
+    },
+    {
+      "date": "2026-04-21",
+      "broker": "미래에셋증권",
+      "title": "CJ대한통운 - 점유율 회복은 지속된다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91719&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260421_company_735018000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260421_company_735018000.pdf",
+      "target_price": "160,000",
+      "target_price_value": 160000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.0,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 937.0,
+      "unit": "억원",
+      "value_krw_100m": 937.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "CJ대한통운 - 점유율 회복은 지속된다 점유율 회복은 지속된다 CJ대한통운 1Q26 Preview: 영업이익 937억원, 시장 기대치 하회 전망 1Q26 CJ대한통운의 매출액은 5."
+    },
+    {
+      "date": "2026-04-22",
+      "broker": "하나증권",
+      "title": "CJ대한통운 - 1Q26 Pre: 택배 MS 상승, but 이익 증가는 더..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91794&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260422_company_772911000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260422_company_772911000.pdf",
+      "target_price": "165,000",
+      "target_price_value": 165000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.25,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 3.2,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 3.2,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "CJ대한통운 1분기 영업이익 991억원(+16%) 전망 1분기 CJ대한통운의 매출액은 4% (YoY) 증가한 3조 970억원, 영업이익은 16% 증가한 991억원(영업이익률 3.2%)으로 전망한다."
+    },
+    {
+      "date": "2026-04-22",
+      "broker": "하나증권",
+      "title": "CJ대한통운 - 1Q26 Pre: 택배 MS 상승, but 이익 증가는 더..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91794&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260422_company_772911000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260422_company_772911000.pdf",
+      "target_price": "165,000",
+      "target_price_value": 165000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.25,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1분기",
+      "value": 991.0,
+      "unit": "억원",
+      "value_krw_100m": 991.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "CJ대한통운 1분기 영업이익 991억원(+16%) 전망 1분기 CJ대한통운의 매출액은 4% (YoY) 증가한 3조 970억원, 영업이익은 16% 증가한 991억원(영업이익률 3."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "하나증권",
+      "title": "CJ대한통운 - 1Q26 Re: 지연된 증익 시점",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92922&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_97450000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_97450000.pdf",
+      "target_price": "120,000",
+      "target_price_value": 120000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.5,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 2.9,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 2.9,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "CJ대한통운 - 1Q26 Re: 지연된 증익 시점 1Q26 Re: 지연된 증익 시점 CJ대한통운 1분기 영업이익 921억원(+5%)로 컨센서스 하회 1분기 CJ대한통운의 매출액은 7% (YoY) 증가한 3조 2,145억원, 영업이익은 921억원(+5%, 영업이익률 2.9%)로 당사 추…"
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "미래에셋증권",
+      "title": "CJ대한통운 - 여전히 주목해야 할 시장 지위 확대",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92879&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260514_company_378011000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260514_company_378011000.pdf",
+      "target_price": "140,000",
+      "target_price_value": 140000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.9,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 921.0,
+      "unit": "억원",
+      "value_krw_100m": 921.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4% YoY)과 영업이익 921억원(7."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "하나증권",
+      "title": "CJ대한통운 - 1Q26 Re: 지연된 증익 시점",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92922&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_97450000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_97450000.pdf",
+      "target_price": "120,000",
+      "target_price_value": 120000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.5,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1분기",
+      "value": 921.0,
+      "unit": "억원",
+      "value_krw_100m": 921.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "CJ대한통운 - 1Q26 Re: 지연된 증익 시점 1Q26 Re: 지연된 증익 시점 CJ대한통운 1분기 영업이익 921억원(+5%)로 컨센서스 하회 1분기 CJ대한통운의 매출액은 7% (YoY) 증가한 3조 2,145억원, 영업이익은 921억원(+5%, 영업이익률 2."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "하나증권",
+      "title": "CJ대한통운 - 1Q26 Re: 지연된 증익 시점",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92922&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_97450000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_97450000.pdf",
+      "target_price": "120,000",
+      "target_price_value": 120000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.5,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 921.0,
+      "unit": "억원",
+      "value_krw_100m": 921.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "CJ대한통운 - 1Q26 Re: 지연된 증익 시점 1Q26 Re: 지연된 증익 시점 CJ대한통운 1분기 영업이익 921억원(+5%)로 컨센서스 하회 1분기 CJ대한통운의 매출액은 7% (YoY) 증가한 3조 2,145억원, 영업이익은 921억원(+5%, 영업이익률 2."
     }
   ],
   "opinion_distribution": [
@@ -368,7 +1155,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -383,7 +1178,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-14",
@@ -398,7 +1195,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.5,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -413,7 +1218,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.5,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "broker_summary": [
@@ -497,13 +1314,65 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_down"
+        "target_down",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "목표가 하향"
+        "목표가 하향",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 921.0,
+          "unit": "억원",
+          "source_excerpt": "CJ대한통운 - 1Q26 Re: 지연된 증익 시점 1Q26 Re: 지연된 증익 시점 CJ대한통운 1분기 영업이익 921억원(+5%)로 컨센서스 하회 1분기 CJ대한통운의 매출액은 7% (YoY) 증가한 3조 2,145억원, 영업이익은 921억원(+5%, 영업이익률 2.",
+          "value_krw_100m": 921.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 921.0,
+          "unit": "억원",
+          "source_excerpt": "CJ대한통운 - 1Q26 Re: 지연된 증익 시점 1Q26 Re: 지연된 증익 시점 CJ대한통운 1분기 영업이익 921억원(+5%)로 컨센서스 하회 1분기 CJ대한통운의 매출액은 7% (YoY) 증가한 3조 2,145억원, 영업이익은 921억원(+5%, 영업이익률 2.",
+          "value_krw_100m": 921.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 2.9,
+          "unit": "%",
+          "value_pct": 2.9,
+          "source_excerpt": "CJ대한통운 - 1Q26 Re: 지연된 증익 시점 1Q26 Re: 지연된 증익 시점 CJ대한통운 1분기 영업이익 921억원(+5%)로 컨센서스 하회 1분기 CJ대한통운의 매출액은 7% (YoY) 증가한 3조 2,145억원, 영업이익은 921억원(+5%, 영업이익률 2.9%)로 당사 추…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -557,13 +1426,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -620,7 +1502,10 @@
         "목표가 하향"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -670,13 +1555,37 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_down"
+        "target_down",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "목표가 하향"
+        "목표가 하향",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 921.0,
+          "unit": "억원",
+          "source_excerpt": "4% YoY)과 영업이익 921억원(7.",
+          "value_krw_100m": 921.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -725,13 +1634,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 3.3,
+          "unit": "%",
+          "value_pct": 3.3,
+          "source_excerpt": "0%, OPM 3.3%)으로, 택배 호조에도 불구하고 CL 부진으로 영업이익 기준 컨센서스를 약 -13% 하회할 전망."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 4.8,
+          "unit": "%",
+          "value_pct": 4.8,
+          "source_excerpt": "1%, OPM 4.8%)으로 전망."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "recent_changes": [
@@ -787,13 +1730,65 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_down"
+        "target_down",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "목표가 하향"
+        "목표가 하향",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 921.0,
+          "unit": "억원",
+          "source_excerpt": "CJ대한통운 - 1Q26 Re: 지연된 증익 시점 1Q26 Re: 지연된 증익 시점 CJ대한통운 1분기 영업이익 921억원(+5%)로 컨센서스 하회 1분기 CJ대한통운의 매출액은 7% (YoY) 증가한 3조 2,145억원, 영업이익은 921억원(+5%, 영업이익률 2.",
+          "value_krw_100m": 921.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 921.0,
+          "unit": "억원",
+          "source_excerpt": "CJ대한통운 - 1Q26 Re: 지연된 증익 시점 1Q26 Re: 지연된 증익 시점 CJ대한통운 1분기 영업이익 921억원(+5%)로 컨센서스 하회 1분기 CJ대한통운의 매출액은 7% (YoY) 증가한 3조 2,145억원, 영업이익은 921억원(+5%, 영업이익률 2.",
+          "value_krw_100m": 921.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 2.9,
+          "unit": "%",
+          "value_pct": 2.9,
+          "source_excerpt": "CJ대한통운 - 1Q26 Re: 지연된 증익 시점 1Q26 Re: 지연된 증익 시점 CJ대한통운 1분기 영업이익 921억원(+5%)로 컨센서스 하회 1분기 CJ대한통운의 매출액은 7% (YoY) 증가한 3조 2,145억원, 영업이익은 921억원(+5%, 영업이익률 2.9%)로 당사 추…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -847,13 +1842,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -910,7 +1918,10 @@
         "목표가 하향"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -960,13 +1971,37 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_down"
+        "target_down",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "목표가 하향"
+        "목표가 하향",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 921.0,
+          "unit": "억원",
+          "source_excerpt": "4% YoY)과 영업이익 921억원(7.",
+          "value_krw_100m": 921.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1018,13 +2053,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 991.0,
+          "unit": "억원",
+          "source_excerpt": "CJ대한통운 1분기 영업이익 991억원(+16%) 전망 1분기 CJ대한통운의 매출액은 4% (YoY) 증가한 3조 970억원, 영업이익은 16% 증가한 991억원(영업이익률 3.",
+          "value_krw_100m": 991.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 3.2,
+          "unit": "%",
+          "value_pct": 3.2,
+          "source_excerpt": "CJ대한통운 1분기 영업이익 991억원(+16%) 전망 1분기 CJ대한통운의 매출액은 4% (YoY) 증가한 3조 970억원, 영업이익은 16% 증가한 991억원(영업이익률 3.2%)으로 전망한다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1073,13 +2142,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 3.3,
+          "unit": "%",
+          "value_pct": 3.3,
+          "source_excerpt": "0%, OPM 3.3%)으로, 택배 호조에도 불구하고 CL 부진으로 영업이익 기준 컨센서스를 약 -13% 하회할 전망."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 4.8,
+          "unit": "%",
+          "value_pct": 4.8,
+          "source_excerpt": "1%, OPM 4.8%)으로 전망."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1129,13 +2232,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 937.0,
+          "unit": "억원",
+          "source_excerpt": "CJ대한통운 - 점유율 회복은 지속된다 점유율 회복은 지속된다 CJ대한통운 1Q26 Preview: 영업이익 937억원, 시장 기대치 하회 전망 1Q26 CJ대한통운의 매출액은 5.",
+          "value_krw_100m": 937.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "timeline": [
@@ -1191,13 +2318,65 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_down"
+        "target_down",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "목표가 하향"
+        "목표가 하향",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 921.0,
+          "unit": "억원",
+          "source_excerpt": "CJ대한통운 - 1Q26 Re: 지연된 증익 시점 1Q26 Re: 지연된 증익 시점 CJ대한통운 1분기 영업이익 921억원(+5%)로 컨센서스 하회 1분기 CJ대한통운의 매출액은 7% (YoY) 증가한 3조 2,145억원, 영업이익은 921억원(+5%, 영업이익률 2.",
+          "value_krw_100m": 921.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 921.0,
+          "unit": "억원",
+          "source_excerpt": "CJ대한통운 - 1Q26 Re: 지연된 증익 시점 1Q26 Re: 지연된 증익 시점 CJ대한통운 1분기 영업이익 921억원(+5%)로 컨센서스 하회 1분기 CJ대한통운의 매출액은 7% (YoY) 증가한 3조 2,145억원, 영업이익은 921억원(+5%, 영업이익률 2.",
+          "value_krw_100m": 921.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 2.9,
+          "unit": "%",
+          "value_pct": 2.9,
+          "source_excerpt": "CJ대한통운 - 1Q26 Re: 지연된 증익 시점 1Q26 Re: 지연된 증익 시점 CJ대한통운 1분기 영업이익 921억원(+5%)로 컨센서스 하회 1분기 CJ대한통운의 매출액은 7% (YoY) 증가한 3조 2,145억원, 영업이익은 921억원(+5%, 영업이익률 2.9%)로 당사 추…"
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1251,13 +2430,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -1314,7 +2506,10 @@
         "목표가 하향"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1364,13 +2559,37 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_down"
+        "target_down",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "목표가 하향"
+        "목표가 하향",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 921.0,
+          "unit": "억원",
+          "source_excerpt": "4% YoY)과 영업이익 921억원(7.",
+          "value_krw_100m": 921.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1422,13 +2641,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 991.0,
+          "unit": "억원",
+          "source_excerpt": "CJ대한통운 1분기 영업이익 991억원(+16%) 전망 1분기 CJ대한통운의 매출액은 4% (YoY) 증가한 3조 970억원, 영업이익은 16% 증가한 991억원(영업이익률 3.",
+          "value_krw_100m": 991.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 3.2,
+          "unit": "%",
+          "value_pct": 3.2,
+          "source_excerpt": "CJ대한통운 1분기 영업이익 991억원(+16%) 전망 1분기 CJ대한통운의 매출액은 4% (YoY) 증가한 3조 970억원, 영업이익은 16% 증가한 991억원(영업이익률 3.2%)으로 전망한다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1477,13 +2730,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 3.3,
+          "unit": "%",
+          "value_pct": 3.3,
+          "source_excerpt": "0%, OPM 3.3%)으로, 택배 호조에도 불구하고 CL 부진으로 영업이익 기준 컨센서스를 약 -13% 하회할 전망."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 4.8,
+          "unit": "%",
+          "value_pct": 4.8,
+          "source_excerpt": "1%, OPM 4.8%)으로 전망."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1533,13 +2820,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 937.0,
+          "unit": "억원",
+          "source_excerpt": "CJ대한통운 - 점유율 회복은 지속된다 점유율 회복은 지속된다 CJ대한통운 1Q26 Preview: 영업이익 937억원, 시장 기대치 하회 전망 1Q26 CJ대한통운의 매출액은 5.",
+          "value_krw_100m": 937.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1578,6 +2889,9 @@
       "ticker": null,
       "target_price_value": 145000,
       "opinion_normalized": "buy",
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false

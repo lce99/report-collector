@@ -9,14 +9,19 @@
     "유안타증권"
   ],
   "change_summary": {
-    "changed_reports": 0,
+    "changed_reports": 1,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 0
+    "coverage_initiated": 0,
+    "estimate_signal_reports": 1,
+    "earnings_estimate_up": 1,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 0,
@@ -27,6 +32,40 @@
   "opinion_summary": [],
   "charts": {
     "target_price_history": [],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-27",
+        "broker": "SK증권",
+        "title": "인텍플러스 - '어드밴스드패키지' 전환 & FCBGA' 증설 수혜",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91951&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260427_company_489403000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260427_company_489403000.pdf",
+        "target_price": null,
+        "target_price_value": null,
+        "opinion": null,
+        "opinion_normalized": null,
+        "score": 9.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 38.0,
+        "unit": "억원",
+        "value_krw_100m": 38.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2026 년 매출액은 1,141 억원 (+27%, YoY), 영업이익 38 억원 (흑자전환)을 전망한다."
+      }
+    ],
     "opinion_distribution": [],
     "broker_timeline": [
       {
@@ -42,7 +81,13 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 9.05,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -57,12 +102,48 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 10.0,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
   },
   "target_price_history": [],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-27",
+      "broker": "SK증권",
+      "title": "인텍플러스 - '어드밴스드패키지' 전환 & FCBGA' 증설 수혜",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91951&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260427_company_489403000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260427_company_489403000.pdf",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "score": 9.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 38.0,
+      "unit": "억원",
+      "value_krw_100m": 38.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2026 년 매출액은 1,141 억원 (+27%, YoY), 영업이익 38 억원 (흑자전환)을 전망한다."
+    }
+  ],
   "opinion_distribution": [],
   "broker_timeline": [
     {
@@ -78,7 +159,13 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 9.05,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -93,7 +180,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 10.0,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -167,7 +256,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -217,13 +309,111 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 38.0,
+          "unit": "억원",
+          "source_excerpt": "2026 년 매출액은 1,141 억원 (+27%, YoY), 영업이익 38 억원 (흑자전환)을 전망한다.",
+          "value_krw_100m": 38.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
-  "recent_changes": [],
+  "recent_changes": [
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91951",
+      "title": "'어드밴스드패키지' 전환 & FCBGA' 증설 수혜",
+      "display_title": "인텍플러스 - '어드밴스드패키지' 전환 & FCBGA' 증설 수혜",
+      "broker": "SK증권",
+      "published_date": "2026-04-27",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91951&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260427_company_489403000.pdf",
+      "subject": "인텍플러스",
+      "subject_key": "인텍플러스",
+      "views": 632,
+      "analyst": null,
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "2026 년 흑자전환: 기대 수주 다수가 실행단계에 진입 하반기부터 회복싸이클에 진입해, 27년 실적은 21년의 역사적 고점을 상회할 전망이다.",
+      "summary": "2026 년 흑자전환: 기대 수주 다수가 실행단계에 진입 하반기부터 회복싸이클에 진입해, 27년 실적은 21년의 역사적 고점을 상회할 전망이다. 2026 년 매출액은 1,141 억원 (+27%, YoY), 영업이익 38 억원 (흑자전환)을 전망한다.",
+      "summary_engine": "rule",
+      "score": 9.05,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 섹터/키워드(반도체)",
+        "본문 정보량 풍부"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 38.0,
+          "unit": "억원",
+          "source_excerpt": "2026 년 매출액은 1,141 억원 (+27%, YoY), 영업이익 38 억원 (흑자전환)을 전망한다.",
+          "value_krw_100m": 38.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
   "timeline": [
     {
       "source": "naver_research",
@@ -279,7 +469,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -329,10 +522,32 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 38.0,
+          "unit": "억원",
+          "source_excerpt": "2026 년 매출액은 1,141 억원 (+27%, YoY), 영업이익 38 억원 (흑자전환)을 전망한다.",
+          "value_krw_100m": 38.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ]
 }

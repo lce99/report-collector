@@ -10,14 +10,19 @@
     "키움증권"
   ],
   "change_summary": {
-    "changed_reports": 4,
+    "changed_reports": 5,
     "target_price_up": 1,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 3,
+    "estimate_signal_reports": 5,
+    "earnings_estimate_up": 5,
+    "earnings_estimate_down": 3,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 3,
@@ -46,7 +51,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.3,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -61,7 +74,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.9,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-18",
@@ -76,7 +97,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-19",
@@ -91,7 +120,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.6,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-22",
@@ -106,7 +141,143 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-19",
+        "broker": "SK증권",
+        "title": "LS - 우호적인 업황 지속",
+        "ticker": "006260",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93132&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_83752000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_83752000.pdf",
+        "target_price": "630,000",
+        "target_price_value": 630000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 10.6,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 4761.0,
+        "unit": "억원",
+        "value_krw_100m": 4761.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5% 이하 YoY), 영업이익 4,761 억원(56."
+      },
+      {
+        "date": "2026-05-22",
+        "broker": "키움증권",
+        "title": "LS - 실적이 끌고 정책은 밀고!",
+        "ticker": "006260",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93221&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260522_company_544740000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260522_company_544740000.pdf",
+        "target_price": "700,000",
+        "target_price_value": 700000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1분기",
+        "value": 4761.0,
+        "unit": "억원",
+        "value_krw_100m": 4761.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "LS - 실적이 끌고 정책은 밀고! 실적이 끌고 정책은 밀고! LS 주가를 이끄는 자회사들의 강력한 실적 모멘텀 1분기 영업이익은 4,761억원(+87%QoQ, +56%YoY)으로 분기기준 사상 최대치를 기록함과 동시에 시장 기대치(컨센서스 3,714억원)를 크게 상회하는 서프라이즈를…"
+      },
+      {
+        "date": "2026-05-22",
+        "broker": "키움증권",
+        "title": "LS - 실적이 끌고 정책은 밀고!",
+        "ticker": "006260",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93221&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260522_company_544740000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260522_company_544740000.pdf",
+        "target_price": "700,000",
+        "target_price_value": 700000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1896.0,
+        "unit": "억원",
+        "value_krw_100m": 1896.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "자회사별로 ① MnM은 귀금속가격과 황산가격 강세에 힘입어 영업이익이 1,896억원 (+68%QoQ, +154%YoY)으로 크게 개선되며 2Q22이후 최대치를 기록했고, ②역대급 수주잔고를 확보중인 전선도 지중·해저 초고압 프로젝트와 부스덕트 수주확대로 질적성장이 본격화되며 영업이익이…"
+      },
+      {
+        "date": "2026-05-22",
+        "broker": "키움증권",
+        "title": "LS - 실적이 끌고 정책은 밀고!",
+        "ticker": "006260",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93221&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260522_company_544740000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260522_company_544740000.pdf",
+        "target_price": "700,000",
+        "target_price_value": 700000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 10.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 971.0,
+        "unit": "억원",
+        "value_krw_100m": 971.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "자회사별로 ① MnM은 귀금속가격과 황산가격 강세에 힘입어 영업이익이 1,896억원 (+68%QoQ, +154%YoY)으로 크게 개선되며 2Q22이후 최대치를 기록했고, ②역대급 수주잔고를 확보중인 전선도 지중·해저 초고압 프로젝트와 부스덕트 수주확대로 질적성장이 본격화되며 영업이익이…"
       }
     ],
     "opinion_distribution": [
@@ -129,7 +300,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-19",
@@ -144,7 +323,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.6,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-22",
@@ -159,7 +344,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -178,7 +369,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.3,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -193,7 +392,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.9,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-18",
@@ -208,7 +415,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-19",
@@ -223,7 +438,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.6,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-22",
@@ -238,7 +459,143 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-19",
+      "broker": "SK증권",
+      "title": "LS - 우호적인 업황 지속",
+      "ticker": "006260",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93132&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_83752000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260519_company_83752000.pdf",
+      "target_price": "630,000",
+      "target_price_value": 630000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 10.6,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 4761.0,
+      "unit": "억원",
+      "value_krw_100m": 4761.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5% 이하 YoY), 영업이익 4,761 억원(56."
+    },
+    {
+      "date": "2026-05-22",
+      "broker": "키움증권",
+      "title": "LS - 실적이 끌고 정책은 밀고!",
+      "ticker": "006260",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93221&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260522_company_544740000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260522_company_544740000.pdf",
+      "target_price": "700,000",
+      "target_price_value": 700000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1분기",
+      "value": 4761.0,
+      "unit": "억원",
+      "value_krw_100m": 4761.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "LS - 실적이 끌고 정책은 밀고! 실적이 끌고 정책은 밀고! LS 주가를 이끄는 자회사들의 강력한 실적 모멘텀 1분기 영업이익은 4,761억원(+87%QoQ, +56%YoY)으로 분기기준 사상 최대치를 기록함과 동시에 시장 기대치(컨센서스 3,714억원)를 크게 상회하는 서프라이즈를…"
+    },
+    {
+      "date": "2026-05-22",
+      "broker": "키움증권",
+      "title": "LS - 실적이 끌고 정책은 밀고!",
+      "ticker": "006260",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93221&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260522_company_544740000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260522_company_544740000.pdf",
+      "target_price": "700,000",
+      "target_price_value": 700000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1896.0,
+      "unit": "억원",
+      "value_krw_100m": 1896.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "자회사별로 ① MnM은 귀금속가격과 황산가격 강세에 힘입어 영업이익이 1,896억원 (+68%QoQ, +154%YoY)으로 크게 개선되며 2Q22이후 최대치를 기록했고, ②역대급 수주잔고를 확보중인 전선도 지중·해저 초고압 프로젝트와 부스덕트 수주확대로 질적성장이 본격화되며 영업이익이…"
+    },
+    {
+      "date": "2026-05-22",
+      "broker": "키움증권",
+      "title": "LS - 실적이 끌고 정책은 밀고!",
+      "ticker": "006260",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93221&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260522_company_544740000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260522_company_544740000.pdf",
+      "target_price": "700,000",
+      "target_price_value": 700000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 10.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 971.0,
+      "unit": "억원",
+      "value_krw_100m": 971.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "자회사별로 ① MnM은 귀금속가격과 황산가격 강세에 힘입어 영업이익이 1,896억원 (+68%QoQ, +154%YoY)으로 크게 개선되며 2Q22이후 최대치를 기록했고, ②역대급 수주잔고를 확보중인 전선도 지중·해저 초고압 프로젝트와 부스덕트 수주확대로 질적성장이 본격화되며 영업이익이…"
     }
   ],
   "opinion_distribution": [
@@ -261,7 +618,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-19",
@@ -276,7 +641,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.6,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-22",
@@ -291,7 +662,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -424,12 +801,52 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 4761.0,
+          "unit": "억원",
+          "source_excerpt": "LS - 실적이 끌고 정책은 밀고! 실적이 끌고 정책은 밀고! LS 주가를 이끄는 자회사들의 강력한 실적 모멘텀 1분기 영업이익은 4,761억원(+87%QoQ, +56%YoY)으로 분기기준 사상 최대치를 기록함과 동시에 시장 기대치(컨센서스 3,714억원)를 크게 상회하는 서프라이즈를…",
+          "value_krw_100m": 4761.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1896.0,
+          "unit": "억원",
+          "source_excerpt": "자회사별로 ① MnM은 귀금속가격과 황산가격 강세에 힘입어 영업이익이 1,896억원 (+68%QoQ, +154%YoY)으로 크게 개선되며 2Q22이후 최대치를 기록했고, ②역대급 수주잔고를 확보중인 전선도 지중·해저 초고압 프로젝트와 부스덕트 수주확대로 질적성장이 본격화되며 영업이익이…",
+          "value_krw_100m": 1896.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 971.0,
+          "unit": "억원",
+          "source_excerpt": "자회사별로 ① MnM은 귀금속가격과 황산가격 강세에 힘입어 영업이익이 1,896억원 (+68%QoQ, +154%YoY)으로 크게 개선되며 2Q22이후 최대치를 기록했고, ②역대급 수주잔고를 확보중인 전선도 지중·해저 초고압 프로젝트와 부스덕트 수주확대로 질적성장이 본격화되며 영업이익이…",
+          "value_krw_100m": 971.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -537,12 +954,32 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 4761.0,
+          "unit": "억원",
+          "source_excerpt": "5% 이하 YoY), 영업이익 4,761 억원(56.",
+          "value_krw_100m": 4761.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -594,13 +1031,26 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "recent_changes": [
@@ -713,12 +1163,52 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 4761.0,
+          "unit": "억원",
+          "source_excerpt": "LS - 실적이 끌고 정책은 밀고! 실적이 끌고 정책은 밀고! LS 주가를 이끄는 자회사들의 강력한 실적 모멘텀 1분기 영업이익은 4,761억원(+87%QoQ, +56%YoY)으로 분기기준 사상 최대치를 기록함과 동시에 시장 기대치(컨센서스 3,714억원)를 크게 상회하는 서프라이즈를…",
+          "value_krw_100m": 4761.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1896.0,
+          "unit": "억원",
+          "source_excerpt": "자회사별로 ① MnM은 귀금속가격과 황산가격 강세에 힘입어 영업이익이 1,896억원 (+68%QoQ, +154%YoY)으로 크게 개선되며 2Q22이후 최대치를 기록했고, ②역대급 수주잔고를 확보중인 전선도 지중·해저 초고압 프로젝트와 부스덕트 수주확대로 질적성장이 본격화되며 영업이익이…",
+          "value_krw_100m": 1896.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 971.0,
+          "unit": "억원",
+          "source_excerpt": "자회사별로 ① MnM은 귀금속가격과 황산가격 강세에 힘입어 영업이익이 1,896억원 (+68%QoQ, +154%YoY)으로 크게 개선되며 2Q22이후 최대치를 기록했고, ②역대급 수주잔고를 확보중인 전선도 지중·해저 초고압 프로젝트와 부스덕트 수주확대로 질적성장이 본격화되며 영업이익이…",
+          "value_krw_100m": 971.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -826,12 +1316,32 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 4761.0,
+          "unit": "억원",
+          "source_excerpt": "5% 이하 YoY), 영업이익 4,761 억원(56.",
+          "value_krw_100m": 4761.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -883,13 +1393,93 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92224",
+      "title": "이제 지주회사 보다는 사업 회사로 재평가해..",
+      "display_title": "LS - 이제 지주회사 보다는 사업 회사로 재평가해..",
+      "broker": "대신증권",
+      "published_date": "2026-04-30",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92224&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260430_company_820341000.pdf",
+      "subject": "LS",
+      "subject_key": "ls",
+      "views": 2281,
+      "analyst": null,
+      "target_price": "460,000",
+      "target_price_value": 460000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "투자의견 '매수' 유지, 목표주가 460,000원으로 상향(기존 대비 +53%) 목표주가를 460,000원으로 기존 대비 53% 상향(목표주가는 적정 순자산가치(NAV) 28.4조원 대비 50% 할인).",
+      "summary": "투자의견 '매수' 유지, 목표주가 460,000원으로 상향(기존 대비 +53%) 목표주가를 460,000원으로 기존 대비 53% 상향(목표주가는 적정 순자산가치(NAV) 28.4조원 대비 50% 할인). 1) 2026년부터 주요 비상장 자회사들의 실적 개선 본격화 및 중장기 성장성 제고, 적정가치 재평가 기대, 2) 3차 상법 개정안 시행으로 자사주 11% 소각 기대, 중복상장 원칙적 금지 등으로 자회사의 적정 가치 할인율 축소 예상.",
+      "summary_engine": "rule",
+      "score": 8.9,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-04-21",
+      "previous_target_price": "460,000",
+      "previous_opinion": "Buy",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -938,13 +1528,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "timeline": [
@@ -1057,12 +1660,52 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 4761.0,
+          "unit": "억원",
+          "source_excerpt": "LS - 실적이 끌고 정책은 밀고! 실적이 끌고 정책은 밀고! LS 주가를 이끄는 자회사들의 강력한 실적 모멘텀 1분기 영업이익은 4,761억원(+87%QoQ, +56%YoY)으로 분기기준 사상 최대치를 기록함과 동시에 시장 기대치(컨센서스 3,714억원)를 크게 상회하는 서프라이즈를…",
+          "value_krw_100m": 4761.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1896.0,
+          "unit": "억원",
+          "source_excerpt": "자회사별로 ① MnM은 귀금속가격과 황산가격 강세에 힘입어 영업이익이 1,896억원 (+68%QoQ, +154%YoY)으로 크게 개선되며 2Q22이후 최대치를 기록했고, ②역대급 수주잔고를 확보중인 전선도 지중·해저 초고압 프로젝트와 부스덕트 수주확대로 질적성장이 본격화되며 영업이익이…",
+          "value_krw_100m": 1896.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 971.0,
+          "unit": "억원",
+          "source_excerpt": "자회사별로 ① MnM은 귀금속가격과 황산가격 강세에 힘입어 영업이익이 1,896억원 (+68%QoQ, +154%YoY)으로 크게 개선되며 2Q22이후 최대치를 기록했고, ②역대급 수주잔고를 확보중인 전선도 지중·해저 초고압 프로젝트와 부스덕트 수주확대로 질적성장이 본격화되며 영업이익이…",
+          "value_krw_100m": 971.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1170,12 +1813,32 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 4761.0,
+          "unit": "억원",
+          "source_excerpt": "5% 이하 YoY), 영업이익 4,761 억원(56.",
+          "value_krw_100m": 4761.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1227,13 +1890,26 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1282,10 +1958,25 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1334,13 +2025,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ]
 }

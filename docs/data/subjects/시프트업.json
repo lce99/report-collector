@@ -18,7 +18,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 4
+    "coverage_initiated": 4,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 0,
+    "earnings_estimate_down": 3,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 4,
@@ -47,7 +52,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -62,7 +73,9 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 7.3,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-12",
@@ -77,7 +90,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -92,7 +111,175 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-21",
+        "broker": "SK증권",
+        "title": "시프트업 - 하반기 신작 정보 공개가 재평가의 트리거",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91725&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260421_company_763158000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260421_company_763158000.pdf",
+        "target_price": "42,000",
+        "target_price_value": 42000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": 273.0,
+        "unit": "억원",
+        "value_krw_100m": 273.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4% QoQ), 순이익 273 억원(+1."
+      },
+      {
+        "date": "2026-04-21",
+        "broker": "SK증권",
+        "title": "시프트업 - 하반기 신작 정보 공개가 재평가의 트리거",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91725&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260421_company_763158000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260421_company_763158000.pdf",
+        "target_price": "42,000",
+        "target_price_value": 42000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 229.0,
+        "unit": "억원",
+        "value_krw_100m": 229.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7% QoQ), 영업이익 229 억원(-12."
+      },
+      {
+        "date": "2026-05-12",
+        "broker": "교보증권",
+        "title": "시프트업 - 차기 파이프라인 정보에 대한 감도가 높아질 ..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92782&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260512_company_599626000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260512_company_599626000.pdf",
+        "target_price": "42,000",
+        "target_price_value": 42000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 215.0,
+        "unit": "억원",
+        "value_krw_100m": 215.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6%), 영업이익은 215억원(YoY -18."
+      },
+      {
+        "date": "2026-05-12",
+        "broker": "미래에셋증권",
+        "title": "시프트업 - 하반기부터는 달라질 것",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92773&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260512_company_358013000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260512_company_358013000.pdf",
+        "target_price": "48,000",
+        "target_price_value": 48000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.25,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 215.0,
+        "unit": "억원",
+        "value_krw_100m": 215.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "시프트업 - 하반기부터는 달라질 것 하반기부터는 달라질 것 시프트업 1Q26 Review: 매출액 부합, 영업이익 하회 매출액 473억원(+12% YoY), 영업이익 215억원(-18% YoY)으로 컨센서스(매출액 458억원, 영업이익 248억원)에 매출액은 부합, 영업이익은 13%…"
+      },
+      {
+        "date": "2026-05-12",
+        "broker": "미래에셋증권",
+        "title": "시프트업 - 하반기부터는 달라질 것",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92773&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260512_company_358013000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260512_company_358013000.pdf",
+        "target_price": "48,000",
+        "target_price_value": 48000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.25,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 248.0,
+        "unit": "억원",
+        "value_krw_100m": 248.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "시프트업 - 하반기부터는 달라질 것 하반기부터는 달라질 것 시프트업 1Q26 Review: 매출액 부합, 영업이익 하회 매출액 473억원(+12% YoY), 영업이익 215억원(-18% YoY)으로 컨센서스(매출액 458억원, 영업이익 248억원)에 매출액은 부합, 영업이익은 13%…"
       }
     ],
     "opinion_distribution": [
@@ -115,7 +302,9 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 7.3,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-12",
@@ -130,7 +319,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -145,7 +340,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       }
     ],
     "window_days": 14
@@ -164,7 +365,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -179,7 +386,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 7.3,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-12",
@@ -194,7 +403,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -209,7 +424,175 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-21",
+      "broker": "SK증권",
+      "title": "시프트업 - 하반기 신작 정보 공개가 재평가의 트리거",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91725&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260421_company_763158000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260421_company_763158000.pdf",
+      "target_price": "42,000",
+      "target_price_value": 42000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": 273.0,
+      "unit": "억원",
+      "value_krw_100m": 273.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4% QoQ), 순이익 273 억원(+1."
+    },
+    {
+      "date": "2026-04-21",
+      "broker": "SK증권",
+      "title": "시프트업 - 하반기 신작 정보 공개가 재평가의 트리거",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91725&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260421_company_763158000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260421_company_763158000.pdf",
+      "target_price": "42,000",
+      "target_price_value": 42000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 229.0,
+      "unit": "억원",
+      "value_krw_100m": 229.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7% QoQ), 영업이익 229 억원(-12."
+    },
+    {
+      "date": "2026-05-12",
+      "broker": "교보증권",
+      "title": "시프트업 - 차기 파이프라인 정보에 대한 감도가 높아질 ..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92782&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260512_company_599626000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260512_company_599626000.pdf",
+      "target_price": "42,000",
+      "target_price_value": 42000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 215.0,
+      "unit": "억원",
+      "value_krw_100m": 215.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6%), 영업이익은 215억원(YoY -18."
+    },
+    {
+      "date": "2026-05-12",
+      "broker": "미래에셋증권",
+      "title": "시프트업 - 하반기부터는 달라질 것",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92773&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260512_company_358013000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260512_company_358013000.pdf",
+      "target_price": "48,000",
+      "target_price_value": 48000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.25,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 215.0,
+      "unit": "억원",
+      "value_krw_100m": 215.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "시프트업 - 하반기부터는 달라질 것 하반기부터는 달라질 것 시프트업 1Q26 Review: 매출액 부합, 영업이익 하회 매출액 473억원(+12% YoY), 영업이익 215억원(-18% YoY)으로 컨센서스(매출액 458억원, 영업이익 248억원)에 매출액은 부합, 영업이익은 13%…"
+    },
+    {
+      "date": "2026-05-12",
+      "broker": "미래에셋증권",
+      "title": "시프트업 - 하반기부터는 달라질 것",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92773&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260512_company_358013000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260512_company_358013000.pdf",
+      "target_price": "48,000",
+      "target_price_value": 48000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.25,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 248.0,
+      "unit": "억원",
+      "value_krw_100m": 248.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "시프트업 - 하반기부터는 달라질 것 하반기부터는 달라질 것 시프트업 1Q26 Review: 매출액 부합, 영업이익 하회 매출액 473억원(+12% YoY), 영업이익 215억원(-18% YoY)으로 컨센서스(매출액 458억원, 영업이익 248억원)에 매출액은 부합, 영업이익은 13%…"
     }
   ],
   "opinion_distribution": [
@@ -232,7 +615,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 7.3,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-12",
@@ -247,7 +632,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -262,7 +653,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "broker_summary": [
@@ -340,13 +737,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 215.0,
+          "unit": "억원",
+          "source_excerpt": "시프트업 - 하반기부터는 달라질 것 하반기부터는 달라질 것 시프트업 1Q26 Review: 매출액 부합, 영업이익 하회 매출액 473억원(+12% YoY), 영업이익 215억원(-18% YoY)으로 컨센서스(매출액 458억원, 영업이익 248억원)에 매출액은 부합, 영업이익은 13%…",
+          "value_krw_100m": 215.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 248.0,
+          "unit": "억원",
+          "source_excerpt": "시프트업 - 하반기부터는 달라질 것 하반기부터는 달라질 것 시프트업 1Q26 Review: 매출액 부합, 영업이익 하회 매출액 473억원(+12% YoY), 영업이익 215억원(-18% YoY)으로 컨센서스(매출액 458억원, 영업이익 248억원)에 매출액은 부합, 영업이익은 13%…",
+          "value_krw_100m": 248.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -395,13 +822,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 215.0,
+          "unit": "억원",
+          "source_excerpt": "6%), 영업이익은 215억원(YoY -18.",
+          "value_krw_100m": 215.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -455,7 +902,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -505,13 +955,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 229.0,
+          "unit": "억원",
+          "source_excerpt": "7% QoQ), 영업이익 229 억원(-12.",
+          "value_krw_100m": 229.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 273.0,
+          "unit": "억원",
+          "source_excerpt": "4% QoQ), 순이익 273 억원(+1.",
+          "value_krw_100m": 273.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "recent_changes": [
@@ -565,13 +1045,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 215.0,
+          "unit": "억원",
+          "source_excerpt": "시프트업 - 하반기부터는 달라질 것 하반기부터는 달라질 것 시프트업 1Q26 Review: 매출액 부합, 영업이익 하회 매출액 473억원(+12% YoY), 영업이익 215억원(-18% YoY)으로 컨센서스(매출액 458억원, 영업이익 248억원)에 매출액은 부합, 영업이익은 13%…",
+          "value_krw_100m": 215.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 248.0,
+          "unit": "억원",
+          "source_excerpt": "시프트업 - 하반기부터는 달라질 것 하반기부터는 달라질 것 시프트업 1Q26 Review: 매출액 부합, 영업이익 하회 매출액 473억원(+12% YoY), 영업이익 215억원(-18% YoY)으로 컨센서스(매출액 458억원, 영업이익 248억원)에 매출액은 부합, 영업이익은 13%…",
+          "value_krw_100m": 248.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -620,13 +1130,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 215.0,
+          "unit": "억원",
+          "source_excerpt": "6%), 영업이익은 215억원(YoY -18.",
+          "value_krw_100m": 215.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -680,7 +1210,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -730,13 +1263,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 229.0,
+          "unit": "억원",
+          "source_excerpt": "7% QoQ), 영업이익 229 억원(-12.",
+          "value_krw_100m": 229.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 273.0,
+          "unit": "억원",
+          "source_excerpt": "4% QoQ), 순이익 273 억원(+1.",
+          "value_krw_100m": 273.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "timeline": [
@@ -790,13 +1353,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 215.0,
+          "unit": "억원",
+          "source_excerpt": "시프트업 - 하반기부터는 달라질 것 하반기부터는 달라질 것 시프트업 1Q26 Review: 매출액 부합, 영업이익 하회 매출액 473억원(+12% YoY), 영업이익 215억원(-18% YoY)으로 컨센서스(매출액 458억원, 영업이익 248억원)에 매출액은 부합, 영업이익은 13%…",
+          "value_krw_100m": 215.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 248.0,
+          "unit": "억원",
+          "source_excerpt": "시프트업 - 하반기부터는 달라질 것 하반기부터는 달라질 것 시프트업 1Q26 Review: 매출액 부합, 영업이익 하회 매출액 473억원(+12% YoY), 영업이익 215억원(-18% YoY)으로 컨센서스(매출액 458억원, 영업이익 248억원)에 매출액은 부합, 영업이익은 13%…",
+          "value_krw_100m": 248.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -845,13 +1438,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 215.0,
+          "unit": "억원",
+          "source_excerpt": "6%), 영업이익은 215억원(YoY -18.",
+          "value_krw_100m": 215.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -905,7 +1518,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -955,13 +1571,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 229.0,
+          "unit": "억원",
+          "source_excerpt": "7% QoQ), 영업이익 229 억원(-12.",
+          "value_krw_100m": 229.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 273.0,
+          "unit": "억원",
+          "source_excerpt": "4% QoQ), 순이익 273 억원(+1.",
+          "value_krw_100m": 273.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     }
   ]
 }

@@ -12,14 +12,19 @@
     "한국투자증권"
   ],
   "change_summary": {
-    "changed_reports": 5,
+    "changed_reports": 6,
     "target_price_up": 2,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 3,
+    "estimate_signal_reports": 6,
+    "earnings_estimate_up": 5,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 3,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 4,
@@ -48,7 +53,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-20",
@@ -63,7 +76,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -78,7 +97,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.6,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -93,7 +118,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -108,7 +141,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -123,7 +164,251 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-17",
+        "broker": "키움증권",
+        "title": "HD현대중공업 - 우호적인 상선 업황과 군함 사업 확대 기대감",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91663&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_981909000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_981909000.pdf",
+        "target_price": "810,000",
+        "target_price_value": 810000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 14.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 14.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0%, OPM 14.0%)를 달성하며 시장 기대치에 부합할 것으로 전망한다."
+      },
+      {
+        "date": "2026-04-17",
+        "broker": "키움증권",
+        "title": "HD현대중공업 - 우호적인 상선 업황과 군함 사업 확대 기대감",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91663&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_981909000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_981909000.pdf",
+        "target_price": "810,000",
+        "target_price_value": 810000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1분기",
+        "value": 7635.0,
+        "unit": "억원",
+        "value_krw_100m": 7635.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "HD현대중공업 - 우호적인 상선 업황과 군함 사업 확대 기대감 우호적인 상선 업황과 군함 사업 확대 기대감 HD현대중공업 1분기 영업이익 7,635억원, 컨센서스 부합 전망 1분기 매출액 5조 4,395억원(yoy +42."
+      },
+      {
+        "date": "2026-04-17",
+        "broker": "키움증권",
+        "title": "HD현대중공업 - 우호적인 상선 업황과 군함 사업 확대 기대감",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91663&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_981909000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_981909000.pdf",
+        "target_price": "810,000",
+        "target_price_value": 810000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 7635.0,
+        "unit": "억원",
+        "value_krw_100m": 7635.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3%), 영업이익 7,635억원(yoy +76."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "키움증권",
+        "title": "HD현대중공업 - 상선, 군함, 엔진을 다 갖춘 만능 조선사",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92569&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_187840000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_187840000.pdf",
+        "target_price": "950,000",
+        "target_price_value": 950000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 12.0,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 15.3,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 15.3,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8%, OPM 15.3%)를 달성하며 시장 기대치(7,967억원)와 당사 추정치(7,635억원)을 상회하였다."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "SK증권",
+        "title": "HD현대중공업 - 안 좋은 사업부문 없고, 더 좋아질 가능성 높..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92586&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260508_company_947365000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260508_company_947365000.pdf",
+        "target_price": "970,000",
+        "target_price_value": 970000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 10.6,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 9054.0,
+        "unit": "억원",
+        "value_krw_100m": 9054.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9% QoQ), 영업이익 9,054억원(+108."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "키움증권",
+        "title": "HD현대중공업 - 상선, 군함, 엔진을 다 갖춘 만능 조선사",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92569&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_187840000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_187840000.pdf",
+        "target_price": "950,000",
+        "target_price_value": 950000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 12.0,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1분기",
+        "value": 9054.0,
+        "unit": "억원",
+        "value_krw_100m": 9054.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "HD현대중공업 - 상선, 군함, 엔진을 다 갖춘 만능 조선사 상선, 군함, 엔진을 다 갖춘 만능 조선사 HD현대중공업 1분기 영업이익 9,054억원, 컨센서스 상회 1분기 매출액 5조 9,163억원(yoy +54."
+      },
+      {
+        "date": "2026-05-08",
+        "broker": "키움증권",
+        "title": "HD현대중공업 - 상선, 군함, 엔진을 다 갖춘 만능 조선사",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92569&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_187840000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_187840000.pdf",
+        "target_price": "950,000",
+        "target_price_value": 950000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 12.0,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 9054.0,
+        "unit": "억원",
+        "value_krw_100m": 9054.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8%), 영업이익 9,054억원(yoy +108."
       }
     ],
     "opinion_distribution": [
@@ -146,7 +431,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -161,7 +454,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -176,7 +475,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.6,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-08",
@@ -191,7 +496,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       }
     ],
     "window_days": 14
@@ -210,7 +523,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-20",
@@ -225,7 +546,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -240,7 +567,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.6,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -255,7 +588,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -270,7 +611,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -285,7 +634,251 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-17",
+      "broker": "키움증권",
+      "title": "HD현대중공업 - 우호적인 상선 업황과 군함 사업 확대 기대감",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91663&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_981909000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_981909000.pdf",
+      "target_price": "810,000",
+      "target_price_value": 810000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 14.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 14.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0%, OPM 14.0%)를 달성하며 시장 기대치에 부합할 것으로 전망한다."
+    },
+    {
+      "date": "2026-04-17",
+      "broker": "키움증권",
+      "title": "HD현대중공업 - 우호적인 상선 업황과 군함 사업 확대 기대감",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91663&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_981909000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_981909000.pdf",
+      "target_price": "810,000",
+      "target_price_value": 810000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1분기",
+      "value": 7635.0,
+      "unit": "억원",
+      "value_krw_100m": 7635.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "HD현대중공업 - 우호적인 상선 업황과 군함 사업 확대 기대감 우호적인 상선 업황과 군함 사업 확대 기대감 HD현대중공업 1분기 영업이익 7,635억원, 컨센서스 부합 전망 1분기 매출액 5조 4,395억원(yoy +42."
+    },
+    {
+      "date": "2026-04-17",
+      "broker": "키움증권",
+      "title": "HD현대중공업 - 우호적인 상선 업황과 군함 사업 확대 기대감",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91663&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_981909000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_981909000.pdf",
+      "target_price": "810,000",
+      "target_price_value": 810000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 7635.0,
+      "unit": "억원",
+      "value_krw_100m": 7635.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3%), 영업이익 7,635억원(yoy +76."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "키움증권",
+      "title": "HD현대중공업 - 상선, 군함, 엔진을 다 갖춘 만능 조선사",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92569&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_187840000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_187840000.pdf",
+      "target_price": "950,000",
+      "target_price_value": 950000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 12.0,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 15.3,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 15.3,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8%, OPM 15.3%)를 달성하며 시장 기대치(7,967억원)와 당사 추정치(7,635억원)을 상회하였다."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "SK증권",
+      "title": "HD현대중공업 - 안 좋은 사업부문 없고, 더 좋아질 가능성 높..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92586&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260508_company_947365000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260508_company_947365000.pdf",
+      "target_price": "970,000",
+      "target_price_value": 970000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 10.6,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 9054.0,
+      "unit": "억원",
+      "value_krw_100m": 9054.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9% QoQ), 영업이익 9,054억원(+108."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "키움증권",
+      "title": "HD현대중공업 - 상선, 군함, 엔진을 다 갖춘 만능 조선사",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92569&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_187840000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_187840000.pdf",
+      "target_price": "950,000",
+      "target_price_value": 950000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 12.0,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1분기",
+      "value": 9054.0,
+      "unit": "억원",
+      "value_krw_100m": 9054.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "HD현대중공업 - 상선, 군함, 엔진을 다 갖춘 만능 조선사 상선, 군함, 엔진을 다 갖춘 만능 조선사 HD현대중공업 1분기 영업이익 9,054억원, 컨센서스 상회 1분기 매출액 5조 9,163억원(yoy +54."
+    },
+    {
+      "date": "2026-05-08",
+      "broker": "키움증권",
+      "title": "HD현대중공업 - 상선, 군함, 엔진을 다 갖춘 만능 조선사",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92569&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_187840000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260508_company_187840000.pdf",
+      "target_price": "950,000",
+      "target_price_value": 950000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 12.0,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 9054.0,
+      "unit": "억원",
+      "value_krw_100m": 9054.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8%), 영업이익 9,054억원(yoy +108."
     }
   ],
   "opinion_distribution": [
@@ -308,7 +901,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -323,7 +924,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -338,7 +945,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.6,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -353,7 +966,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "broker_summary": [
@@ -439,13 +1060,57 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 9054.0,
+          "unit": "억원",
+          "source_excerpt": "HD현대중공업 - 상선, 군함, 엔진을 다 갖춘 만능 조선사 상선, 군함, 엔진을 다 갖춘 만능 조선사 HD현대중공업 1분기 영업이익 9,054억원, 컨센서스 상회 1분기 매출액 5조 9,163억원(yoy +54.",
+          "value_krw_100m": 9054.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 9054.0,
+          "unit": "억원",
+          "source_excerpt": "8%), 영업이익 9,054억원(yoy +108.",
+          "value_krw_100m": 9054.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.3,
+          "unit": "%",
+          "value_pct": 15.3,
+          "source_excerpt": "8%, OPM 15.3%)를 달성하며 시장 기대치(7,967억원)와 당사 추정치(7,635억원)을 상회하였다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -499,13 +1164,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 9054.0,
+          "unit": "억원",
+          "source_excerpt": "9% QoQ), 영업이익 9,054억원(+108.",
+          "value_krw_100m": 9054.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -557,13 +1242,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -615,13 +1309,26 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -671,7 +1378,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -729,13 +1439,57 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 9054.0,
+          "unit": "억원",
+          "source_excerpt": "HD현대중공업 - 상선, 군함, 엔진을 다 갖춘 만능 조선사 상선, 군함, 엔진을 다 갖춘 만능 조선사 HD현대중공업 1분기 영업이익 9,054억원, 컨센서스 상회 1분기 매출액 5조 9,163억원(yoy +54.",
+          "value_krw_100m": 9054.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 9054.0,
+          "unit": "억원",
+          "source_excerpt": "8%), 영업이익 9,054억원(yoy +108.",
+          "value_krw_100m": 9054.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.3,
+          "unit": "%",
+          "value_pct": 15.3,
+          "source_excerpt": "8%, OPM 15.3%)를 달성하며 시장 기대치(7,967억원)와 당사 추정치(7,635억원)을 상회하였다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -789,13 +1543,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 9054.0,
+          "unit": "억원",
+          "source_excerpt": "9% QoQ), 영업이익 9,054억원(+108.",
+          "value_krw_100m": 9054.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -847,13 +1621,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -905,13 +1688,26 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -963,13 +1759,110 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91663",
+      "title": "우호적인 상선 업황과 군함 사업 확대 기대감",
+      "display_title": "HD현대중공업 - 우호적인 상선 업황과 군함 사업 확대 기대감",
+      "broker": "키움증권",
+      "published_date": "2026-04-17",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91663&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_981909000.pdf",
+      "subject": "HD현대중공업",
+      "views": 3861,
+      "analyst": null,
+      "target_price": "810,000",
+      "opinion": "Buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1분기 영업이익 7,635억원, 컨센서스 부합 전망 1분기 매출액 5조 4,395억원(yoy +42.3%), 영업이익 7,635억원(yoy +76.0%, OPM 14.0%)를 달성하며 시장 기대치에 부합할 것으로 전망한다.",
+      "summary": "1분기 영업이익 7,635억원, 컨센서스 부합 전망 1분기 매출액 5조 4,395억원(yoy +42.3%), 영업이익 7,635억원(yoy +76.0%, OPM 14.0%)를 달성하며 시장 기대치에 부합할 것으로 전망한다. HD현대미포의 온기 실적 반영, 제품 믹스 및 생산성 개선 지속, 긍정적인 환율 효과 등이 반영되며 매출과 이익의 개선세가 지속될 것으로 판단한다.",
+      "summary_engine": "rule",
+      "score": 8.95,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "subject_key": "hd현대중공업",
+      "ticker": null,
+      "target_price_value": 810000,
+      "opinion_normalized": "buy",
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 7635.0,
+          "unit": "억원",
+          "source_excerpt": "HD현대중공업 - 우호적인 상선 업황과 군함 사업 확대 기대감 우호적인 상선 업황과 군함 사업 확대 기대감 HD현대중공업 1분기 영업이익 7,635억원, 컨센서스 부합 전망 1분기 매출액 5조 4,395억원(yoy +42.",
+          "value_krw_100m": 7635.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 7635.0,
+          "unit": "억원",
+          "source_excerpt": "3%), 영업이익 7,635억원(yoy +76.",
+          "value_krw_100m": 7635.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 14.0,
+          "unit": "%",
+          "value_pct": 14.0,
+          "source_excerpt": "0%, OPM 14.0%)를 달성하며 시장 기대치에 부합할 것으로 전망한다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true
     }
   ],
   "timeline": [
@@ -1027,13 +1920,57 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 9054.0,
+          "unit": "억원",
+          "source_excerpt": "HD현대중공업 - 상선, 군함, 엔진을 다 갖춘 만능 조선사 상선, 군함, 엔진을 다 갖춘 만능 조선사 HD현대중공업 1분기 영업이익 9,054억원, 컨센서스 상회 1분기 매출액 5조 9,163억원(yoy +54.",
+          "value_krw_100m": 9054.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 9054.0,
+          "unit": "억원",
+          "source_excerpt": "8%), 영업이익 9,054억원(yoy +108.",
+          "value_krw_100m": 9054.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.3,
+          "unit": "%",
+          "value_pct": 15.3,
+          "source_excerpt": "8%, OPM 15.3%)를 달성하며 시장 기대치(7,967억원)와 당사 추정치(7,635억원)을 상회하였다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1087,13 +2024,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 9054.0,
+          "unit": "억원",
+          "source_excerpt": "9% QoQ), 영업이익 9,054억원(+108.",
+          "value_krw_100m": 9054.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1145,13 +2102,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1203,13 +2169,26 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1259,7 +2238,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1311,13 +2293,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1357,9 +2348,55 @@
       "ticker": null,
       "target_price_value": 810000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 7635.0,
+          "unit": "억원",
+          "source_excerpt": "HD현대중공업 - 우호적인 상선 업황과 군함 사업 확대 기대감 우호적인 상선 업황과 군함 사업 확대 기대감 HD현대중공업 1분기 영업이익 7,635억원, 컨센서스 부합 전망 1분기 매출액 5조 4,395억원(yoy +42.",
+          "value_krw_100m": 7635.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 7635.0,
+          "unit": "억원",
+          "source_excerpt": "3%), 영업이익 7,635억원(yoy +76.",
+          "value_krw_100m": 7635.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 14.0,
+          "unit": "%",
+          "value_pct": 14.0,
+          "source_excerpt": "0%, OPM 14.0%)를 달성하며 시장 기대치에 부합할 것으로 전망한다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true
     }
   ]
 }

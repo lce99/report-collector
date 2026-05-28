@@ -17,7 +17,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 3,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 3,
@@ -46,7 +51,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -61,7 +72,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -76,7 +95,117 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-14",
+        "broker": "유진투자증권",
+        "title": "한국가스공사 - 소리 없이 강하다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92912&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_305829000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_305829000.pdf",
+        "target_price": "59,000",
+        "target_price_value": 59000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": 5483.0,
+        "unit": "억원",
+        "value_krw_100m": 5483.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8조원(+31%qoq, -7%yoy), 영업이익 9,100억원(+92%qoq, +9%yoy), 당기순이익 5,483억원(흑전qoq, +49%yoy)으로 당사 추정 및 컨센서스를 상회하는 어닝 서프라이즈 기록 \" 국내 도매(별도) 영업이익은 7,834억원(+8%yoy)으로 연간 적정투자…"
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "유진투자증권",
+        "title": "한국가스공사 - 소리 없이 강하다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92912&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_305829000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_305829000.pdf",
+        "target_price": "59,000",
+        "target_price_value": 59000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 9100.0,
+        "unit": "억원",
+        "value_krw_100m": 9100.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8조원(+31%qoq, -7%yoy), 영업이익 9,100억원(+92%qoq, +9%yoy), 당기순이익 5,483억원(흑전qoq, +49%yoy)으로 당사 추정 및 컨센서스를 상회하는 어닝 서프라이즈 기록 \" 국내 도매(별도) 영업이익은 7,834억원(+8%yoy)으로 연간 적정투자…"
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "유진투자증권",
+        "title": "한국가스공사 - 소리 없이 강하다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92912&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_305829000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_305829000.pdf",
+        "target_price": "59,000",
+        "target_price_value": 59000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 7834.0,
+        "unit": "억원",
+        "value_krw_100m": 7834.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8조원(+31%qoq, -7%yoy), 영업이익 9,100억원(+92%qoq, +9%yoy), 당기순이익 5,483억원(흑전qoq, +49%yoy)으로 당사 추정 및 컨센서스를 상회하는 어닝 서프라이즈 기록 \" 국내 도매(별도) 영업이익은 7,834억원(+8%yoy)으로 연간 적정투자…"
       }
     ],
     "opinion_distribution": [
@@ -99,7 +228,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -114,7 +251,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -129,7 +272,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -148,7 +297,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -163,7 +318,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -178,7 +341,117 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-14",
+      "broker": "유진투자증권",
+      "title": "한국가스공사 - 소리 없이 강하다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92912&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_305829000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_305829000.pdf",
+      "target_price": "59,000",
+      "target_price_value": 59000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": 5483.0,
+      "unit": "억원",
+      "value_krw_100m": 5483.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8조원(+31%qoq, -7%yoy), 영업이익 9,100억원(+92%qoq, +9%yoy), 당기순이익 5,483억원(흑전qoq, +49%yoy)으로 당사 추정 및 컨센서스를 상회하는 어닝 서프라이즈 기록 \" 국내 도매(별도) 영업이익은 7,834억원(+8%yoy)으로 연간 적정투자…"
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "유진투자증권",
+      "title": "한국가스공사 - 소리 없이 강하다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92912&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_305829000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_305829000.pdf",
+      "target_price": "59,000",
+      "target_price_value": 59000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 9100.0,
+      "unit": "억원",
+      "value_krw_100m": 9100.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8조원(+31%qoq, -7%yoy), 영업이익 9,100억원(+92%qoq, +9%yoy), 당기순이익 5,483억원(흑전qoq, +49%yoy)으로 당사 추정 및 컨센서스를 상회하는 어닝 서프라이즈 기록 \" 국내 도매(별도) 영업이익은 7,834억원(+8%yoy)으로 연간 적정투자…"
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "유진투자증권",
+      "title": "한국가스공사 - 소리 없이 강하다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92912&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_305829000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_305829000.pdf",
+      "target_price": "59,000",
+      "target_price_value": 59000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 7834.0,
+      "unit": "억원",
+      "value_krw_100m": 7834.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8조원(+31%qoq, -7%yoy), 영업이익 9,100억원(+92%qoq, +9%yoy), 당기순이익 5,483억원(흑전qoq, +49%yoy)으로 당사 추정 및 컨센서스를 상회하는 어닝 서프라이즈 기록 \" 국내 도매(별도) 영업이익은 7,834억원(+8%yoy)으로 연간 적정투자…"
     }
   ],
   "opinion_distribution": [
@@ -201,7 +474,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -216,7 +497,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -231,7 +518,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -305,13 +598,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -363,13 +665,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -418,13 +729,57 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 9100.0,
+          "unit": "억원",
+          "source_excerpt": "8조원(+31%qoq, -7%yoy), 영업이익 9,100억원(+92%qoq, +9%yoy), 당기순이익 5,483억원(흑전qoq, +49%yoy)으로 당사 추정 및 컨센서스를 상회하는 어닝 서프라이즈 기록 \" 국내 도매(별도) 영업이익은 7,834억원(+8%yoy)으로 연간 적정투자…",
+          "value_krw_100m": 9100.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 5483.0,
+          "unit": "억원",
+          "source_excerpt": "8조원(+31%qoq, -7%yoy), 영업이익 9,100억원(+92%qoq, +9%yoy), 당기순이익 5,483억원(흑전qoq, +49%yoy)으로 당사 추정 및 컨센서스를 상회하는 어닝 서프라이즈 기록 \" 국내 도매(별도) 영업이익은 7,834억원(+8%yoy)으로 연간 적정투자…",
+          "value_krw_100m": 5483.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 7834.0,
+          "unit": "억원",
+          "source_excerpt": "8조원(+31%qoq, -7%yoy), 영업이익 9,100억원(+92%qoq, +9%yoy), 당기순이익 5,483억원(흑전qoq, +49%yoy)으로 당사 추정 및 컨센서스를 상회하는 어닝 서프라이즈 기록 \" 국내 도매(별도) 영업이익은 7,834억원(+8%yoy)으로 연간 적정투자…",
+          "value_krw_100m": 7834.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "recent_changes": [
@@ -478,13 +833,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -536,13 +900,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -591,13 +964,57 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 9100.0,
+          "unit": "억원",
+          "source_excerpt": "8조원(+31%qoq, -7%yoy), 영업이익 9,100억원(+92%qoq, +9%yoy), 당기순이익 5,483억원(흑전qoq, +49%yoy)으로 당사 추정 및 컨센서스를 상회하는 어닝 서프라이즈 기록 \" 국내 도매(별도) 영업이익은 7,834억원(+8%yoy)으로 연간 적정투자…",
+          "value_krw_100m": 9100.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 5483.0,
+          "unit": "억원",
+          "source_excerpt": "8조원(+31%qoq, -7%yoy), 영업이익 9,100억원(+92%qoq, +9%yoy), 당기순이익 5,483억원(흑전qoq, +49%yoy)으로 당사 추정 및 컨센서스를 상회하는 어닝 서프라이즈 기록 \" 국내 도매(별도) 영업이익은 7,834억원(+8%yoy)으로 연간 적정투자…",
+          "value_krw_100m": 5483.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 7834.0,
+          "unit": "억원",
+          "source_excerpt": "8조원(+31%qoq, -7%yoy), 영업이익 9,100억원(+92%qoq, +9%yoy), 당기순이익 5,483억원(흑전qoq, +49%yoy)으로 당사 추정 및 컨센서스를 상회하는 어닝 서프라이즈 기록 \" 국내 도매(별도) 영업이익은 7,834억원(+8%yoy)으로 연간 적정투자…",
+          "value_krw_100m": 7834.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "timeline": [
@@ -651,13 +1068,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -709,13 +1135,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -764,13 +1199,57 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 9100.0,
+          "unit": "억원",
+          "source_excerpt": "8조원(+31%qoq, -7%yoy), 영업이익 9,100억원(+92%qoq, +9%yoy), 당기순이익 5,483억원(흑전qoq, +49%yoy)으로 당사 추정 및 컨센서스를 상회하는 어닝 서프라이즈 기록 \" 국내 도매(별도) 영업이익은 7,834억원(+8%yoy)으로 연간 적정투자…",
+          "value_krw_100m": 9100.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 5483.0,
+          "unit": "억원",
+          "source_excerpt": "8조원(+31%qoq, -7%yoy), 영업이익 9,100억원(+92%qoq, +9%yoy), 당기순이익 5,483억원(흑전qoq, +49%yoy)으로 당사 추정 및 컨센서스를 상회하는 어닝 서프라이즈 기록 \" 국내 도매(별도) 영업이익은 7,834억원(+8%yoy)으로 연간 적정투자…",
+          "value_krw_100m": 5483.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 7834.0,
+          "unit": "억원",
+          "source_excerpt": "8조원(+31%qoq, -7%yoy), 영업이익 9,100억원(+92%qoq, +9%yoy), 당기순이익 5,483억원(흑전qoq, +49%yoy)으로 당사 추정 및 컨센서스를 상회하는 어닝 서프라이즈 기록 \" 국내 도매(별도) 영업이익은 7,834억원(+8%yoy)으로 연간 적정투자…",
+          "value_krw_100m": 7834.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ]
 }

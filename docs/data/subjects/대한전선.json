@@ -17,7 +17,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 3
+    "coverage_initiated": 3,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 2,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 3,
@@ -46,7 +51,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -61,7 +74,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -76,7 +97,151 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-30",
+        "broker": "SK증권",
+        "title": "대한전선 - (실적이) 어안이벙벙",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92212&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260430_company_986612000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260430_company_986612000.pdf",
+        "target_price": "61,000",
+        "target_price_value": 61000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 5.6,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 5.6,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "대한전선 - (실적이) 어안이벙벙 (실적이) 어안이벙벙 대한전선 컨센서스를 대폭 상회한 사상 최대 분기 실적 대한전선의 1Q26 실적은 매출액 1 조 834 억원(YoY +27%), 영업이익 604 억원(YoY +123%, OPM 5.6%)을 기록했다."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "유안타증권",
+        "title": "대한전선 - 서프라이즈로 확인된 구조 변화의 시작",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92245&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260430_company_401057000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260430_company_401057000.pdf",
+        "target_price": "60,000",
+        "target_price_value": 60000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 5.6,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 5.6,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%, OPM 5.6%)으로 컨센서스를 큰 폭 상회했다."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "SK증권",
+        "title": "대한전선 - (실적이) 어안이벙벙",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92212&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260430_company_986612000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260430_company_986612000.pdf",
+        "target_price": "61,000",
+        "target_price_value": 61000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 604.0,
+        "unit": "억원",
+        "value_krw_100m": 604.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "대한전선 - (실적이) 어안이벙벙 (실적이) 어안이벙벙 대한전선 컨센서스를 대폭 상회한 사상 최대 분기 실적 대한전선의 1Q26 실적은 매출액 1 조 834 억원(YoY +27%), 영업이익 604 억원(YoY +123%, OPM 5."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "유안타증권",
+        "title": "대한전선 - 서프라이즈로 확인된 구조 변화의 시작",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92245&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260430_company_401057000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260430_company_401057000.pdf",
+        "target_price": "60,000",
+        "target_price_value": 60000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 604.0,
+        "unit": "억원",
+        "value_krw_100m": 604.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4%), 영업이익은 604억원(YoY +122."
       }
     ],
     "opinion_distribution": [
@@ -99,7 +264,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -114,7 +287,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -129,7 +310,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -148,7 +335,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -163,7 +358,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -178,7 +381,151 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-30",
+      "broker": "SK증권",
+      "title": "대한전선 - (실적이) 어안이벙벙",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92212&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260430_company_986612000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260430_company_986612000.pdf",
+      "target_price": "61,000",
+      "target_price_value": 61000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 5.6,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 5.6,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "대한전선 - (실적이) 어안이벙벙 (실적이) 어안이벙벙 대한전선 컨센서스를 대폭 상회한 사상 최대 분기 실적 대한전선의 1Q26 실적은 매출액 1 조 834 억원(YoY +27%), 영업이익 604 억원(YoY +123%, OPM 5.6%)을 기록했다."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "유안타증권",
+      "title": "대한전선 - 서프라이즈로 확인된 구조 변화의 시작",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92245&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260430_company_401057000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260430_company_401057000.pdf",
+      "target_price": "60,000",
+      "target_price_value": 60000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 5.6,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 5.6,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%, OPM 5.6%)으로 컨센서스를 큰 폭 상회했다."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "SK증권",
+      "title": "대한전선 - (실적이) 어안이벙벙",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92212&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260430_company_986612000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260430_company_986612000.pdf",
+      "target_price": "61,000",
+      "target_price_value": 61000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 604.0,
+      "unit": "억원",
+      "value_krw_100m": 604.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "대한전선 - (실적이) 어안이벙벙 (실적이) 어안이벙벙 대한전선 컨센서스를 대폭 상회한 사상 최대 분기 실적 대한전선의 1Q26 실적은 매출액 1 조 834 억원(YoY +27%), 영업이익 604 억원(YoY +123%, OPM 5."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "유안타증권",
+      "title": "대한전선 - 서프라이즈로 확인된 구조 변화의 시작",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92245&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260430_company_401057000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260430_company_401057000.pdf",
+      "target_price": "60,000",
+      "target_price_value": 60000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 604.0,
+      "unit": "억원",
+      "value_krw_100m": 604.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4%), 영업이익은 604억원(YoY +122."
     }
   ],
   "opinion_distribution": [
@@ -201,7 +548,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -216,7 +571,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -231,7 +594,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -305,13 +674,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -361,13 +739,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 604.0,
+          "unit": "억원",
+          "source_excerpt": "대한전선 - (실적이) 어안이벙벙 (실적이) 어안이벙벙 대한전선 컨센서스를 대폭 상회한 사상 최대 분기 실적 대한전선의 1Q26 실적은 매출액 1 조 834 억원(YoY +27%), 영업이익 604 억원(YoY +123%, OPM 5.",
+          "value_krw_100m": 604.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 5.6,
+          "unit": "%",
+          "value_pct": 5.6,
+          "source_excerpt": "대한전선 - (실적이) 어안이벙벙 (실적이) 어안이벙벙 대한전선 컨센서스를 대폭 상회한 사상 최대 분기 실적 대한전선의 1Q26 실적은 매출액 1 조 834 억원(YoY +27%), 영업이익 604 억원(YoY +123%, OPM 5.6%)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -416,13 +828,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 604.0,
+          "unit": "억원",
+          "source_excerpt": "4%), 영업이익은 604억원(YoY +122.",
+          "value_krw_100m": 604.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 5.6,
+          "unit": "%",
+          "value_pct": 5.6,
+          "source_excerpt": "2%, OPM 5.6%)으로 컨센서스를 큰 폭 상회했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "recent_changes": [
@@ -476,13 +922,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -532,13 +987,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 604.0,
+          "unit": "억원",
+          "source_excerpt": "대한전선 - (실적이) 어안이벙벙 (실적이) 어안이벙벙 대한전선 컨센서스를 대폭 상회한 사상 최대 분기 실적 대한전선의 1Q26 실적은 매출액 1 조 834 억원(YoY +27%), 영업이익 604 억원(YoY +123%, OPM 5.",
+          "value_krw_100m": 604.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 5.6,
+          "unit": "%",
+          "value_pct": 5.6,
+          "source_excerpt": "대한전선 - (실적이) 어안이벙벙 (실적이) 어안이벙벙 대한전선 컨센서스를 대폭 상회한 사상 최대 분기 실적 대한전선의 1Q26 실적은 매출액 1 조 834 억원(YoY +27%), 영업이익 604 억원(YoY +123%, OPM 5.6%)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -587,13 +1076,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 604.0,
+          "unit": "억원",
+          "source_excerpt": "4%), 영업이익은 604억원(YoY +122.",
+          "value_krw_100m": 604.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 5.6,
+          "unit": "%",
+          "value_pct": 5.6,
+          "source_excerpt": "2%, OPM 5.6%)으로 컨센서스를 큰 폭 상회했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ],
   "timeline": [
@@ -647,13 +1170,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -703,13 +1235,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 604.0,
+          "unit": "억원",
+          "source_excerpt": "대한전선 - (실적이) 어안이벙벙 (실적이) 어안이벙벙 대한전선 컨센서스를 대폭 상회한 사상 최대 분기 실적 대한전선의 1Q26 실적은 매출액 1 조 834 억원(YoY +27%), 영업이익 604 억원(YoY +123%, OPM 5.",
+          "value_krw_100m": 604.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 5.6,
+          "unit": "%",
+          "value_pct": 5.6,
+          "source_excerpt": "대한전선 - (실적이) 어안이벙벙 (실적이) 어안이벙벙 대한전선 컨센서스를 대폭 상회한 사상 최대 분기 실적 대한전선의 1Q26 실적은 매출액 1 조 834 억원(YoY +27%), 영업이익 604 억원(YoY +123%, OPM 5.6%)을 기록했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -758,13 +1324,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 604.0,
+          "unit": "억원",
+          "source_excerpt": "4%), 영업이익은 604억원(YoY +122.",
+          "value_krw_100m": 604.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 5.6,
+          "unit": "%",
+          "value_pct": 5.6,
+          "source_excerpt": "2%, OPM 5.6%)으로 컨센서스를 큰 폭 상회했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     }
   ]
 }

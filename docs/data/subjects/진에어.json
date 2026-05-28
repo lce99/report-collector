@@ -16,7 +16,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 2
+    "coverage_initiated": 2,
+    "estimate_signal_reports": 1,
+    "earnings_estimate_up": 1,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 2,
@@ -45,7 +50,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 15.5,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-26",
@@ -60,7 +77,87 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-13",
+        "broker": "하나증권",
+        "title": "진에어 - 1Q26 Re: 내년부터 본게임",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92839&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260513_company_365044000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260513_company_365044000.pdf",
+        "target_price": "7,000",
+        "target_price_value": 7000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 15.5,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "영업이익률",
+        "period": null,
+        "value": 13.6,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 13.6,
+        "value_won": null,
+        "change_pctp": -0.3,
+        "source_excerpt": "진에어 - 1Q26 Re: 내년부터 본게임 1Q26 Re: 내년부터 본게임 진에어 1분기 영업이익 576억원(-1%) 1분기 진에어의 매출액은 1% (YoY) 증가한 4,230억원, 영업이익은 1% 감소한 576억원(영업이익률 13.6% (-0."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "하나증권",
+        "title": "진에어 - 1Q26 Re: 내년부터 본게임",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92839&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260513_company_365044000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260513_company_365044000.pdf",
+        "target_price": "7,000",
+        "target_price_value": 7000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 15.5,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1분기",
+        "value": 576.0,
+        "unit": "억원",
+        "value_krw_100m": 576.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "진에어 - 1Q26 Re: 내년부터 본게임 1Q26 Re: 내년부터 본게임 진에어 1분기 영업이익 576억원(-1%) 1분기 진에어의 매출액은 1% (YoY) 증가한 4,230억원, 영업이익은 1% 감소한 576억원(영업이익률 13."
       }
     ],
     "opinion_distribution": [
@@ -83,7 +180,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 15.5,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-26",
@@ -98,7 +207,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -117,7 +228,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 15.5,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-26",
@@ -132,7 +255,87 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-13",
+      "broker": "하나증권",
+      "title": "진에어 - 1Q26 Re: 내년부터 본게임",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92839&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260513_company_365044000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260513_company_365044000.pdf",
+      "target_price": "7,000",
+      "target_price_value": 7000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 15.5,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "영업이익률",
+      "period": null,
+      "value": 13.6,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 13.6,
+      "value_won": null,
+      "change_pctp": -0.3,
+      "source_excerpt": "진에어 - 1Q26 Re: 내년부터 본게임 1Q26 Re: 내년부터 본게임 진에어 1분기 영업이익 576억원(-1%) 1분기 진에어의 매출액은 1% (YoY) 증가한 4,230억원, 영업이익은 1% 감소한 576억원(영업이익률 13.6% (-0."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "하나증권",
+      "title": "진에어 - 1Q26 Re: 내년부터 본게임",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92839&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260513_company_365044000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260513_company_365044000.pdf",
+      "target_price": "7,000",
+      "target_price_value": 7000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 15.5,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1분기",
+      "value": 576.0,
+      "unit": "억원",
+      "value_krw_100m": 576.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "진에어 - 1Q26 Re: 내년부터 본게임 1Q26 Re: 내년부터 본게임 진에어 1분기 영업이익 576억원(-1%) 1분기 진에어의 매출액은 1% (YoY) 증가한 4,230억원, 영업이익은 1% 감소한 576억원(영업이익률 13."
     }
   ],
   "opinion_distribution": [
@@ -155,7 +358,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 15.5,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-26",
@@ -170,7 +385,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -298,7 +515,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -354,13 +574,56 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 576.0,
+          "unit": "억원",
+          "source_excerpt": "진에어 - 1Q26 Re: 내년부터 본게임 1Q26 Re: 내년부터 본게임 진에어 1분기 영업이익 576억원(-1%) 1분기 진에어의 매출액은 1% (YoY) 증가한 4,230억원, 영업이익은 1% 감소한 576억원(영업이익률 13.",
+          "value_krw_100m": 576.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 13.6,
+          "unit": "%",
+          "value_pct": 13.6,
+          "source_excerpt": "진에어 - 1Q26 Re: 내년부터 본게임 1Q26 Re: 내년부터 본게임 진에어 1분기 영업이익 576억원(-1%) 1분기 진에어의 매출액은 1% (YoY) 증가한 4,230억원, 영업이익은 1% 감소한 576억원(영업이익률 13.6% (-0.",
+          "change_pctp": -0.3
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "recent_changes": [
@@ -472,7 +735,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -528,13 +794,56 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 576.0,
+          "unit": "억원",
+          "source_excerpt": "진에어 - 1Q26 Re: 내년부터 본게임 1Q26 Re: 내년부터 본게임 진에어 1분기 영업이익 576억원(-1%) 1분기 진에어의 매출액은 1% (YoY) 증가한 4,230억원, 영업이익은 1% 감소한 576억원(영업이익률 13.",
+          "value_krw_100m": 576.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 13.6,
+          "unit": "%",
+          "value_pct": 13.6,
+          "source_excerpt": "진에어 - 1Q26 Re: 내년부터 본게임 1Q26 Re: 내년부터 본게임 진에어 1분기 영업이익 576억원(-1%) 1분기 진에어의 매출액은 1% (YoY) 증가한 4,230억원, 영업이익은 1% 감소한 576억원(영업이익률 13.6% (-0.",
+          "change_pctp": -0.3
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "timeline": [
@@ -646,7 +955,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -702,13 +1014,56 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 576.0,
+          "unit": "억원",
+          "source_excerpt": "진에어 - 1Q26 Re: 내년부터 본게임 1Q26 Re: 내년부터 본게임 진에어 1분기 영업이익 576억원(-1%) 1분기 진에어의 매출액은 1% (YoY) 증가한 4,230억원, 영업이익은 1% 감소한 576억원(영업이익률 13.",
+          "value_krw_100m": 576.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "영업이익률",
+          "period": null,
+          "value": 13.6,
+          "unit": "%",
+          "value_pct": 13.6,
+          "source_excerpt": "진에어 - 1Q26 Re: 내년부터 본게임 1Q26 Re: 내년부터 본게임 진에어 1분기 영업이익 576억원(-1%) 1분기 진에어의 매출액은 1% (YoY) 증가한 4,230억원, 영업이익은 1% 감소한 576억원(영업이익률 13.6% (-0.",
+          "change_pctp": -0.3
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ]
 }

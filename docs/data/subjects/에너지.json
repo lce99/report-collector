@@ -12,14 +12,19 @@
     "하나증권"
   ],
   "change_summary": {
-    "changed_reports": 2,
+    "changed_reports": 3,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 2,
-    "coverage_initiated": 0
+    "coverage_initiated": 0,
+    "estimate_signal_reports": 1,
+    "earnings_estimate_up": 1,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 0,
@@ -30,6 +35,7 @@
   "opinion_summary": [],
   "charts": {
     "target_price_history": [],
+    "estimate_metric_history": [],
     "opinion_distribution": [],
     "broker_timeline": [
       {
@@ -45,7 +51,9 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 9.6,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-26",
@@ -60,7 +68,9 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 7.5,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-26",
@@ -75,7 +85,9 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 9.8,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-26",
@@ -90,12 +102,15 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 10.1,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
   },
   "target_price_history": [],
+  "estimate_metric_history": [],
   "opinion_distribution": [],
   "broker_timeline": [
     {
@@ -111,7 +126,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 9.6,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-26",
@@ -126,7 +143,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 7.5,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-26",
@@ -141,7 +160,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 9.8,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-26",
@@ -156,7 +177,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 10.1,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -296,7 +319,10 @@
       "coverage_initiated": false,
       "change_types": [],
       "change_reasons": [],
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -407,7 +433,10 @@
       "coverage_initiated": false,
       "change_types": [],
       "change_reasons": [],
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -463,7 +492,10 @@
         "애널리스트 변경"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -522,7 +554,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -570,7 +605,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -629,7 +667,10 @@
         "애널리스트 변경"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -685,7 +726,63 @@
         "애널리스트 변경"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "source": "naver_research",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "44251",
+      "title": "1Q26 Pre: 내가 웃는게 웃는게 아냐",
+      "display_title": "에너지 - 1Q26 Pre: 내가 웃는게 웃는게 아냐",
+      "broker": "하나증권",
+      "published_date": "2026-04-17",
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=44251&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/industry/57/20260417_industry_398321000.pdf",
+      "subject": "에너지",
+      "views": 2152,
+      "analyst": "윤재성",
+      "target_price": null,
+      "opinion": null,
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1Q26 Pre: 긍정적 래깅 및 재고 효과 등으로 컨센 대폭 상회 이란 전쟁 영향으로 가동률의 전반적인 조정이 나타나고 있음에도 불구하고, 급격한 판가 상승에 따른 긍정적 래깅 효과로 업체 전반 실적은 컨센을 대폭 상회할 전망이다.",
+      "summary": "1Q26 Pre: 긍정적 래깅 및 재고 효과 등으로 컨센 대폭 상회 이란 전쟁 영향으로 가동률의 전반적인 조정이 나타나고 있음에도 불구하고, 급격한 판가 상승에 따른 긍정적 래깅 효과로 업체 전반 실적은 컨센을 대폭 상회할 전망이다. S-Oil/SK이노베이션은 각각 컨센을 +70%/+54% 상회할 전망이다.",
+      "summary_engine": "rule",
+      "score": 7.25,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "조회수 상위권",
+        "우선 추적 증권사",
+        "본문 정보량 풍부"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "subject_key": "에너지",
+      "ticker": null,
+      "target_price_value": null,
+      "opinion_normalized": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
     }
   ],
   "timeline": [
@@ -797,7 +894,10 @@
       "coverage_initiated": false,
       "change_types": [],
       "change_reasons": [],
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -908,7 +1008,10 @@
       "coverage_initiated": false,
       "change_types": [],
       "change_reasons": [],
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1009,7 +1112,10 @@
       "coverage_initiated": false,
       "change_types": [],
       "change_reasons": [],
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1066,7 +1172,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1124,7 +1233,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1181,7 +1293,10 @@
         "애널리스트 변경"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1237,7 +1352,10 @@
         "애널리스트 변경"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1296,7 +1414,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1354,7 +1475,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1405,7 +1529,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1456,7 +1583,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1507,7 +1637,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1557,7 +1690,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1611,7 +1747,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1666,7 +1805,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1715,7 +1857,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1763,7 +1908,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1817,7 +1965,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1872,7 +2023,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1923,7 +2077,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1963,9 +2120,20 @@
       "ticker": null,
       "target_price_value": null,
       "opinion_normalized": null,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
     }
   ]
 }

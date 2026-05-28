@@ -18,7 +18,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 4
+    "coverage_initiated": 4,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 1,
+    "earnings_estimate_down": 3,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 4,
@@ -47,7 +52,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-11",
@@ -62,7 +69,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.91,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -77,7 +90,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -92,7 +111,143 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-21",
+        "broker": "키움증권",
+        "title": "네오위즈 - 신작 경쟁력 확인 필요",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91720&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260421_company_698250000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260421_company_698250000.pdf",
+        "target_price": "30,000",
+        "target_price_value": 30000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배주주순이익",
+        "period": "26E",
+        "value": 324.0,
+        "unit": "억원",
+        "value_krw_100m": 324.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "목표주가는 26E 지배주주순이익 324억원에 목표 PER 20배를 적용한 결과다."
+      },
+      {
+        "date": "2026-05-11",
+        "broker": "미래에셋증권",
+        "title": "네오위즈 - 신작 공백 구간",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92722&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_655243000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_655243000.pdf",
+        "target_price": "26,000",
+        "target_price_value": 26000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.91,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 70.0,
+        "unit": "억원",
+        "value_krw_100m": 70.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "네오위즈 - 신작 공백 구간 신작 공백 구간 네오위즈 1Q26 Review: 매출액 부합, 영업이익 하회 매출액 1,014억원(+14% YoY), 영업이익 70억원(-32% YoY)으로 매출액은 컨센서스에 부합, 영업이익은 16% 하회했다."
+      },
+      {
+        "date": "2026-05-12",
+        "broker": "유진투자증권",
+        "title": "네오위즈 - P의거짓의 그림자",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92768&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260512_company_739750000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260512_company_739750000.pdf",
+        "target_price": "28,000",
+        "target_price_value": 28000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 70.0,
+        "unit": "억원",
+        "value_krw_100m": 70.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "네오위즈 - P의거짓의 그림자 P의거짓의 그림자 네오위즈 \" 1분기 매출액 1,014억원(+14%yoy, -5%qoq), 영업이익 70억원(-32%yoy, +48%qoq)으로 컨센서스(102억원)를 하회 \" PC/콘솔 부문(395억원, +9%yoy, -14%qoq)은 신작이 부재한 가…"
+      },
+      {
+        "date": "2026-05-12",
+        "broker": "하나증권",
+        "title": "네오위즈 - 딥 밸류 구간, 비중 확대 시점",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92779&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_834532000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_834532000.pdf",
+        "target_price": "36,000",
+        "target_price_value": 36000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 70.0,
+        "unit": "억원",
+        "value_krw_100m": 70.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6%QoQ), 영업이익 70억원(-32."
       }
     ],
     "opinion_distribution": [
@@ -115,7 +270,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.91,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -130,7 +291,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -145,7 +312,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       }
     ],
     "window_days": 14
@@ -164,7 +339,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-11",
@@ -179,7 +356,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.91,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -194,7 +377,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -209,7 +398,143 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-21",
+      "broker": "키움증권",
+      "title": "네오위즈 - 신작 경쟁력 확인 필요",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91720&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260421_company_698250000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260421_company_698250000.pdf",
+      "target_price": "30,000",
+      "target_price_value": 30000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배주주순이익",
+      "period": "26E",
+      "value": 324.0,
+      "unit": "억원",
+      "value_krw_100m": 324.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "목표주가는 26E 지배주주순이익 324억원에 목표 PER 20배를 적용한 결과다."
+    },
+    {
+      "date": "2026-05-11",
+      "broker": "미래에셋증권",
+      "title": "네오위즈 - 신작 공백 구간",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92722&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_655243000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/56/20260511_company_655243000.pdf",
+      "target_price": "26,000",
+      "target_price_value": 26000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.91,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 70.0,
+      "unit": "억원",
+      "value_krw_100m": 70.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "네오위즈 - 신작 공백 구간 신작 공백 구간 네오위즈 1Q26 Review: 매출액 부합, 영업이익 하회 매출액 1,014억원(+14% YoY), 영업이익 70억원(-32% YoY)으로 매출액은 컨센서스에 부합, 영업이익은 16% 하회했다."
+    },
+    {
+      "date": "2026-05-12",
+      "broker": "유진투자증권",
+      "title": "네오위즈 - P의거짓의 그림자",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92768&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260512_company_739750000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260512_company_739750000.pdf",
+      "target_price": "28,000",
+      "target_price_value": 28000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 70.0,
+      "unit": "억원",
+      "value_krw_100m": 70.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "네오위즈 - P의거짓의 그림자 P의거짓의 그림자 네오위즈 \" 1분기 매출액 1,014억원(+14%yoy, -5%qoq), 영업이익 70억원(-32%yoy, +48%qoq)으로 컨센서스(102억원)를 하회 \" PC/콘솔 부문(395억원, +9%yoy, -14%qoq)은 신작이 부재한 가…"
+    },
+    {
+      "date": "2026-05-12",
+      "broker": "하나증권",
+      "title": "네오위즈 - 딥 밸류 구간, 비중 확대 시점",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92779&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_834532000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_834532000.pdf",
+      "target_price": "36,000",
+      "target_price_value": 36000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 70.0,
+      "unit": "억원",
+      "value_krw_100m": 70.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6%QoQ), 영업이익 70억원(-32."
     }
   ],
   "opinion_distribution": [
@@ -232,7 +557,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.91,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -247,7 +578,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -262,7 +599,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     }
   ],
   "broker_summary": [
@@ -340,13 +685,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 70.0,
+          "unit": "억원",
+          "source_excerpt": "6%QoQ), 영업이익 70억원(-32.",
+          "value_krw_100m": 70.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -395,13 +764,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 70.0,
+          "unit": "억원",
+          "source_excerpt": "네오위즈 - P의거짓의 그림자 P의거짓의 그림자 네오위즈 \" 1분기 매출액 1,014억원(+14%yoy, -5%qoq), 영업이익 70억원(-32%yoy, +48%qoq)으로 컨센서스(102억원)를 하회 \" PC/콘솔 부문(395억원, +9%yoy, -14%qoq)은 신작이 부재한 가…",
+          "value_krw_100m": 70.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -453,13 +842,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 70.0,
+          "unit": "억원",
+          "source_excerpt": "네오위즈 - 신작 공백 구간 신작 공백 구간 네오위즈 1Q26 Review: 매출액 부합, 영업이익 하회 매출액 1,014억원(+14% YoY), 영업이익 70억원(-32% YoY)으로 매출액은 컨센서스에 부합, 영업이익은 16% 하회했다.",
+          "value_krw_100m": 70.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -515,7 +924,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "26E",
+          "value": 324.0,
+          "unit": "억원",
+          "source_excerpt": "목표주가는 26E 지배주주순이익 324억원에 목표 PER 20배를 적용한 결과다.",
+          "value_krw_100m": 324.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -569,13 +992,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 70.0,
+          "unit": "억원",
+          "source_excerpt": "6%QoQ), 영업이익 70억원(-32.",
+          "value_krw_100m": 70.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -624,13 +1071,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 70.0,
+          "unit": "억원",
+          "source_excerpt": "네오위즈 - P의거짓의 그림자 P의거짓의 그림자 네오위즈 \" 1분기 매출액 1,014억원(+14%yoy, -5%qoq), 영업이익 70억원(-32%yoy, +48%qoq)으로 컨센서스(102억원)를 하회 \" PC/콘솔 부문(395억원, +9%yoy, -14%qoq)은 신작이 부재한 가…",
+          "value_krw_100m": 70.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -682,13 +1149,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 70.0,
+          "unit": "억원",
+          "source_excerpt": "네오위즈 - 신작 공백 구간 신작 공백 구간 네오위즈 1Q26 Review: 매출액 부합, 영업이익 하회 매출액 1,014억원(+14% YoY), 영업이익 70억원(-32% YoY)으로 매출액은 컨센서스에 부합, 영업이익은 16% 하회했다.",
+          "value_krw_100m": 70.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -744,7 +1231,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "26E",
+          "value": 324.0,
+          "unit": "억원",
+          "source_excerpt": "목표주가는 26E 지배주주순이익 324억원에 목표 PER 20배를 적용한 결과다.",
+          "value_krw_100m": 324.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -798,13 +1299,37 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 70.0,
+          "unit": "억원",
+          "source_excerpt": "6%QoQ), 영업이익 70억원(-32.",
+          "value_krw_100m": 70.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -853,13 +1378,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 70.0,
+          "unit": "억원",
+          "source_excerpt": "네오위즈 - P의거짓의 그림자 P의거짓의 그림자 네오위즈 \" 1분기 매출액 1,014억원(+14%yoy, -5%qoq), 영업이익 70억원(-32%yoy, +48%qoq)으로 컨센서스(102억원)를 하회 \" PC/콘솔 부문(395억원, +9%yoy, -14%qoq)은 신작이 부재한 가…",
+          "value_krw_100m": 70.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -911,13 +1456,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 70.0,
+          "unit": "억원",
+          "source_excerpt": "네오위즈 - 신작 공백 구간 신작 공백 구간 네오위즈 1Q26 Review: 매출액 부합, 영업이익 하회 매출액 1,014억원(+14% YoY), 영업이익 70억원(-32% YoY)으로 매출액은 컨센서스에 부합, 영업이익은 16% 하회했다.",
+          "value_krw_100m": 70.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -973,7 +1538,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "26E",
+          "value": 324.0,
+          "unit": "억원",
+          "source_excerpt": "목표주가는 26E 지배주주순이익 324억원에 목표 PER 20배를 적용한 결과다.",
+          "value_krw_100m": 324.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

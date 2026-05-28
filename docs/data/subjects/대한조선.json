@@ -17,7 +17,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 2
+    "coverage_initiated": 2,
+    "estimate_signal_reports": 1,
+    "earnings_estimate_up": 0,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 1
   },
   "target_summary": {
     "count": 2,
@@ -46,7 +51,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -61,7 +72,103 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-30",
+        "broker": "DS투자증권",
+        "title": "대한조선 - 실적, 수주, 주주환원 모두 완벽",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92280&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260430_company_320786000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260430_company_320786000.pdf",
+        "target_price": "131,000",
+        "target_price_value": 131000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 26.8,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 26.8,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4%, OPM 26.8%)으로 컨센서스에 부합한 영업이익을 달성했다."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "유안타증권",
+        "title": "대한조선 - 1Q26 Re: 순수 이익 피지컬 관점의 저평가",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92246&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260430_company_454065000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260430_company_454065000.pdf",
+        "target_price": "172,000",
+        "target_price_value": 172000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 26.8,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 26.8,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0 1Q26 영업이익 826억, OPM 26.8% 3월중 발생한 중대재해로 인해 100억 수준의 매출 지연 발생 (OPM 역산시 27억 수준의 영업이익 인식 지연), 이를 상쇄하기 위한 돌관 관련 비용 분기중 9억 발생."
+      },
+      {
+        "date": "2026-04-30",
+        "broker": "DS투자증권",
+        "title": "대한조선 - 실적, 수주, 주주환원 모두 완벽",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92280&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260430_company_320786000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260430_company_320786000.pdf",
+        "target_price": "131,000",
+        "target_price_value": 131000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 826.0,
+        "unit": "억원",
+        "value_krw_100m": 826.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%), 영업이익 826억원(+18."
       }
     ],
     "opinion_distribution": [
@@ -84,7 +191,9 @@
         "opinion": null,
         "opinion_normalized": null,
         "score": 7.75,
-        "has_change_signal": false
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-30",
@@ -99,7 +208,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-04-30",
@@ -114,7 +229,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -133,7 +250,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -148,7 +271,103 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-30",
+      "broker": "DS투자증권",
+      "title": "대한조선 - 실적, 수주, 주주환원 모두 완벽",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92280&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260430_company_320786000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260430_company_320786000.pdf",
+      "target_price": "131,000",
+      "target_price_value": 131000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 26.8,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 26.8,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4%, OPM 26.8%)으로 컨센서스에 부합한 영업이익을 달성했다."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "유안타증권",
+      "title": "대한조선 - 1Q26 Re: 순수 이익 피지컬 관점의 저평가",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92246&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260430_company_454065000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260430_company_454065000.pdf",
+      "target_price": "172,000",
+      "target_price_value": 172000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 26.8,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 26.8,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0 1Q26 영업이익 826억, OPM 26.8% 3월중 발생한 중대재해로 인해 100억 수준의 매출 지연 발생 (OPM 역산시 27억 수준의 영업이익 인식 지연), 이를 상쇄하기 위한 돌관 관련 비용 분기중 9억 발생."
+    },
+    {
+      "date": "2026-04-30",
+      "broker": "DS투자증권",
+      "title": "대한조선 - 실적, 수주, 주주환원 모두 완벽",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92280&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260430_company_320786000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260430_company_320786000.pdf",
+      "target_price": "131,000",
+      "target_price_value": 131000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 826.0,
+      "unit": "억원",
+      "value_krw_100m": 826.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%), 영업이익 826억원(+18."
     }
   ],
   "opinion_distribution": [
@@ -171,7 +390,9 @@
       "opinion": null,
       "opinion_normalized": null,
       "score": 7.75,
-      "has_change_signal": false
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-30",
@@ -186,7 +407,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -201,7 +428,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -281,7 +510,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 26.8,
+          "unit": "%",
+          "value_pct": 26.8,
+          "source_excerpt": "0 1Q26 영업이익 826억, OPM 26.8% 3월중 발생한 중대재해로 인해 100억 수준의 매출 지연 발생 (OPM 역산시 27억 수준의 영업이익 인식 지연), 이를 상쇄하기 위한 돌관 관련 비용 분기중 9억 발생."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -331,13 +574,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 826.0,
+          "unit": "억원",
+          "source_excerpt": "2%), 영업이익 826억원(+18.",
+          "value_krw_100m": 826.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 26.8,
+          "unit": "%",
+          "value_pct": 26.8,
+          "source_excerpt": "4%, OPM 26.8%)으로 컨센서스에 부합한 영업이익을 달성했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -388,7 +661,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -448,7 +724,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 26.8,
+          "unit": "%",
+          "value_pct": 26.8,
+          "source_excerpt": "0 1Q26 영업이익 826억, OPM 26.8% 3월중 발생한 중대재해로 인해 100억 수준의 매출 지연 발생 (OPM 역산시 27억 수준의 영업이익 인식 지연), 이를 상쇄하기 위한 돌관 관련 비용 분기중 9억 발생."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -498,13 +788,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 826.0,
+          "unit": "억원",
+          "source_excerpt": "2%), 영업이익 826억원(+18.",
+          "value_krw_100m": 826.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 26.8,
+          "unit": "%",
+          "value_pct": 26.8,
+          "source_excerpt": "4%, OPM 26.8%)으로 컨센서스에 부합한 영업이익을 달성했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "timeline": [
@@ -564,7 +884,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 26.8,
+          "unit": "%",
+          "value_pct": 26.8,
+          "source_excerpt": "0 1Q26 영업이익 826억, OPM 26.8% 3월중 발생한 중대재해로 인해 100억 수준의 매출 지연 발생 (OPM 역산시 27억 수준의 영업이익 인식 지연), 이를 상쇄하기 위한 돌관 관련 비용 분기중 9억 발생."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -614,13 +948,43 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 826.0,
+          "unit": "억원",
+          "source_excerpt": "2%), 영업이익 826억원(+18.",
+          "value_krw_100m": 826.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 26.8,
+          "unit": "%",
+          "value_pct": 26.8,
+          "source_excerpt": "4%, OPM 26.8%)으로 컨센서스에 부합한 영업이익을 달성했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -671,7 +1035,10 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

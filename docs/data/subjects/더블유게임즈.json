@@ -12,14 +12,19 @@
     "하나증권"
   ],
   "change_summary": {
-    "changed_reports": 4,
+    "changed_reports": 6,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 4
+    "coverage_initiated": 4,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 5,
@@ -48,7 +53,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.55,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -63,7 +74,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-14",
@@ -78,7 +91,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -93,7 +112,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-14",
@@ -108,7 +129,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-22",
@@ -123,7 +152,235 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-17",
+        "broker": "SK증권",
+        "title": "더블유게임즈 - AI와 DTC 전략의 성과, 숫자로 증명한다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91670&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260417_company_388494000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260417_company_388494000.pdf",
+        "target_price": "62,000",
+        "target_price_value": 62000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.55,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배주주순이익",
+        "period": null,
+        "value": 425.0,
+        "unit": "억원",
+        "value_krw_100m": 425.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4% QoQ), 지배주주순이익 425 억원(+24."
+      },
+      {
+        "date": "2026-04-17",
+        "broker": "SK증권",
+        "title": "더블유게임즈 - AI와 DTC 전략의 성과, 숫자로 증명한다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91670&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260417_company_388494000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260417_company_388494000.pdf",
+        "target_price": "62,000",
+        "target_price_value": 62000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.55,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 667.0,
+        "unit": "억원",
+        "value_krw_100m": 667.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7% QoQ), 영업이익 667억원(+21."
+      },
+      {
+        "date": "2026-04-17",
+        "broker": "SK증권",
+        "title": "더블유게임즈 - AI와 DTC 전략의 성과, 숫자로 증명한다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91670&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260417_company_388494000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260417_company_388494000.pdf",
+        "target_price": "62,000",
+        "target_price_value": 62000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.55,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 640.0,
+        "unit": "억원",
+        "value_krw_100m": 640.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6% QoQ)으로 영업이익은 컨센서스 640 억원을 소폭 상회할 것으로 전망한다."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "하나증권",
+        "title": "더블유게임즈 - 체질 개선 완료",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92928&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_186772000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_186772000.pdf",
+        "target_price": "80,000",
+        "target_price_value": 80000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 33.4,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 33.4,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "1%QoQ, OPM 33.4%)으로 컨센서스를 소폭 상회했다."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "교보증권",
+        "title": "더블유게임즈 - 예상보다 빠른 DTC 비중 증가 + AI 기반 캐주..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92952&page=1",
+        "pdf_url": null,
+        "primary_url": "https://finance.naver.com/research/company_read.naver?nid=92952&page=1",
+        "target_price": "70,000",
+        "target_price_value": 70000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 685.0,
+        "unit": "억원",
+        "value_krw_100m": 685.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6%), 영업이익은 685억원(YoY +25."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "유진투자증권",
+        "title": "더블유게임즈 - 잘한다, 잘한다, 잘한다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92901&page=3",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_179814000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_179814000.pdf",
+        "target_price": "78,000",
+        "target_price_value": 78000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 685.0,
+        "unit": "억원",
+        "value_krw_100m": 685.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6%qoq), 영업이익 685억원(+25."
+      },
+      {
+        "date": "2026-05-14",
+        "broker": "하나증권",
+        "title": "더블유게임즈 - 체질 개선 완료",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92928&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_186772000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_186772000.pdf",
+        "target_price": "80,000",
+        "target_price_value": 80000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 685.0,
+        "unit": "억원",
+        "value_krw_100m": 685.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6%QoQ), 영업이익 685억원(+25."
       }
     ],
     "opinion_distribution": [
@@ -146,7 +403,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-14",
@@ -161,7 +424,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-14",
@@ -176,7 +441,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-05-22",
@@ -191,7 +464,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -210,7 +485,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.55,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -225,7 +506,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-14",
@@ -240,7 +523,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -255,7 +544,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-14",
@@ -270,7 +561,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-22",
@@ -285,7 +584,235 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-17",
+      "broker": "SK증권",
+      "title": "더블유게임즈 - AI와 DTC 전략의 성과, 숫자로 증명한다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91670&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260417_company_388494000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260417_company_388494000.pdf",
+      "target_price": "62,000",
+      "target_price_value": 62000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.55,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배주주순이익",
+      "period": null,
+      "value": 425.0,
+      "unit": "억원",
+      "value_krw_100m": 425.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4% QoQ), 지배주주순이익 425 억원(+24."
+    },
+    {
+      "date": "2026-04-17",
+      "broker": "SK증권",
+      "title": "더블유게임즈 - AI와 DTC 전략의 성과, 숫자로 증명한다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91670&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260417_company_388494000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260417_company_388494000.pdf",
+      "target_price": "62,000",
+      "target_price_value": 62000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.55,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 667.0,
+      "unit": "억원",
+      "value_krw_100m": 667.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7% QoQ), 영업이익 667억원(+21."
+    },
+    {
+      "date": "2026-04-17",
+      "broker": "SK증권",
+      "title": "더블유게임즈 - AI와 DTC 전략의 성과, 숫자로 증명한다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91670&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260417_company_388494000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260417_company_388494000.pdf",
+      "target_price": "62,000",
+      "target_price_value": 62000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.55,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 640.0,
+      "unit": "억원",
+      "value_krw_100m": 640.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6% QoQ)으로 영업이익은 컨센서스 640 억원을 소폭 상회할 것으로 전망한다."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "하나증권",
+      "title": "더블유게임즈 - 체질 개선 완료",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92928&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_186772000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_186772000.pdf",
+      "target_price": "80,000",
+      "target_price_value": 80000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 33.4,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 33.4,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "1%QoQ, OPM 33.4%)으로 컨센서스를 소폭 상회했다."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "교보증권",
+      "title": "더블유게임즈 - 예상보다 빠른 DTC 비중 증가 + AI 기반 캐주..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92952&page=1",
+      "pdf_url": null,
+      "primary_url": "https://finance.naver.com/research/company_read.naver?nid=92952&page=1",
+      "target_price": "70,000",
+      "target_price_value": 70000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 685.0,
+      "unit": "억원",
+      "value_krw_100m": 685.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6%), 영업이익은 685억원(YoY +25."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "유진투자증권",
+      "title": "더블유게임즈 - 잘한다, 잘한다, 잘한다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92901&page=3",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_179814000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260514_company_179814000.pdf",
+      "target_price": "78,000",
+      "target_price_value": 78000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 685.0,
+      "unit": "억원",
+      "value_krw_100m": 685.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6%qoq), 영업이익 685억원(+25."
+    },
+    {
+      "date": "2026-05-14",
+      "broker": "하나증권",
+      "title": "더블유게임즈 - 체질 개선 완료",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92928&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_186772000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260514_company_186772000.pdf",
+      "target_price": "80,000",
+      "target_price_value": 80000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 685.0,
+      "unit": "억원",
+      "value_krw_100m": 685.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6%QoQ), 영업이익 685억원(+25."
     }
   ],
   "opinion_distribution": [
@@ -308,7 +835,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -323,7 +856,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-14",
@@ -338,7 +873,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-05-22",
@@ -353,7 +896,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -493,7 +1038,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -543,13 +1091,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 685.0,
+          "unit": "억원",
+          "source_excerpt": "6%QoQ), 영업이익 685억원(+25.",
+          "value_krw_100m": 685.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 33.4,
+          "unit": "%",
+          "value_pct": 33.4,
+          "source_excerpt": "1%QoQ, OPM 33.4%)으로 컨센서스를 소폭 상회했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -604,7 +1186,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 685.0,
+          "unit": "억원",
+          "source_excerpt": "6%qoq), 영업이익 685억원(+25.",
+          "value_krw_100m": 685.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -652,10 +1248,32 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 685.0,
+          "unit": "억원",
+          "source_excerpt": "6%), 영업이익은 685억원(YoY +25.",
+          "value_krw_100m": 685.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -695,9 +1313,51 @@
       "ticker": null,
       "target_price_value": 62000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 667.0,
+          "unit": "억원",
+          "source_excerpt": "7% QoQ), 영업이익 667억원(+21.",
+          "value_krw_100m": 667.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 425.0,
+          "unit": "억원",
+          "source_excerpt": "4% QoQ), 지배주주순이익 425 억원(+24.",
+          "value_krw_100m": 425.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 640.0,
+          "unit": "억원",
+          "source_excerpt": "6% QoQ)으로 영업이익은 컨센서스 640 억원을 소폭 상회할 것으로 전망한다.",
+          "value_krw_100m": 640.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
     }
   ],
   "recent_changes": [
@@ -809,7 +1469,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -859,13 +1522,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 685.0,
+          "unit": "억원",
+          "source_excerpt": "6%QoQ), 영업이익 685억원(+25.",
+          "value_krw_100m": 685.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 33.4,
+          "unit": "%",
+          "value_pct": 33.4,
+          "source_excerpt": "1%QoQ, OPM 33.4%)으로 컨센서스를 소폭 상회했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -920,7 +1617,94 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 685.0,
+          "unit": "억원",
+          "source_excerpt": "6%qoq), 영업이익 685억원(+25.",
+          "value_krw_100m": 685.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92952",
+      "title": "예상보다 빠른 DTC 비중 증가 + AI 기반 캐주..",
+      "display_title": "더블유게임즈 - 예상보다 빠른 DTC 비중 증가 + AI 기반 캐주..",
+      "broker": "교보증권",
+      "published_date": "2026-05-14",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92952&page=1",
+      "pdf_url": null,
+      "subject": "더블유게임즈",
+      "subject_key": "더블유게임즈",
+      "views": 624,
+      "analyst": null,
+      "target_price": "70,000",
+      "target_price_value": 70000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "1Q26Review: 매출 & 영업이익 컨센서스 상회 더블유게임즈 1Q26 매출은 2,050억원(YoY +26.6%, QoQ +2.6%), 영업이익은 685억원(YoY +25.1%, QoQ +7.1%)로 시장 예상치(매출 2,019억원, 영익 657억원) 소폭 상회.",
+      "summary": "1Q26Review: 매출 & 영업이익 컨센서스 상회 더블유게임즈 1Q26 매출은 2,050억원(YoY +26.6%, QoQ +2.6%), 영업이익은 685억원(YoY +25.1%, QoQ +7.1%)로 시장 예상치(매출 2,019억원, 영익 657억원) 소폭 상회. 소셜카지노 매출은 기존 미국 소셜카지노 라인업(더블다운카지노, 더블유카지노) 매출이 안정적인 흐름을 보이는 가운데 WHOW 인수 효과로 YoY +8.6%, QoQ -1.4%, 슈퍼네이션(iGaming)은 영국 시장 내 마케팅 효율성 개선과 25년 말 신규 런칭한 ‘로스베가스’의 기여로 252억원의 매출(YoY +31.1%, QoQ +8.1%)을 기록.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 7.15,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-04-29",
+      "previous_target_price": "70,000",
+      "previous_opinion": "Buy",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 685.0,
+          "unit": "억원",
+          "source_excerpt": "6%), 영업이익은 685억원(YoY +25.",
+          "value_krw_100m": 685.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -974,7 +1758,94 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91670",
+      "title": "AI와 DTC 전략의 성과, 숫자로 증명한다",
+      "display_title": "더블유게임즈 - AI와 DTC 전략의 성과, 숫자로 증명한다",
+      "broker": "SK증권",
+      "published_date": "2026-04-17",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91670&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260417_company_388494000.pdf",
+      "subject": "더블유게임즈",
+      "views": 2138,
+      "analyst": null,
+      "target_price": "62,000",
+      "opinion": "매수",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1Q26 Preview 매출액 2,032억원(+25.4% YoY, +1.7% QoQ), 영업이익 667억원(+21.8% YoY, +4.4% QoQ), 지배주주순이익 425 억원(+24.1% YoY, +30.6% QoQ)으로 영업이익은 컨센서스 640 억원을 소폭 상회할 것으로 전망한다.",
+      "summary": "1Q26 Preview 매출액 2,032억원(+25.4% YoY, +1.7% QoQ), 영업이익 667억원(+21.8% YoY, +4.4% QoQ), 지배주주순이익 425 억원(+24.1% YoY, +30.6% QoQ)으로 영업이익은 컨센서스 640 억원을 소폭 상회할 것으로 전망한다. 팍시게임즈의 AI 게임 비중이 4Q25 50% 수준에서 1Q26 추가적으로 상승한 것으로 파악된다.",
+      "summary_engine": "rule",
+      "score": 8.55,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "subject_key": "더블유게임즈",
+      "ticker": null,
+      "target_price_value": 62000,
+      "opinion_normalized": "buy",
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 667.0,
+          "unit": "억원",
+          "source_excerpt": "7% QoQ), 영업이익 667억원(+21.",
+          "value_krw_100m": 667.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 425.0,
+          "unit": "억원",
+          "source_excerpt": "4% QoQ), 지배주주순이익 425 억원(+24.",
+          "value_krw_100m": 425.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 640.0,
+          "unit": "억원",
+          "source_excerpt": "6% QoQ)으로 영업이익은 컨센서스 640 억원을 소폭 상회할 것으로 전망한다.",
+          "value_krw_100m": 640.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
     }
   ],
   "timeline": [
@@ -1086,7 +1957,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1136,13 +2010,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 685.0,
+          "unit": "억원",
+          "source_excerpt": "6%QoQ), 영업이익 685억원(+25.",
+          "value_krw_100m": 685.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 33.4,
+          "unit": "%",
+          "value_pct": 33.4,
+          "source_excerpt": "1%QoQ, OPM 33.4%)으로 컨센서스를 소폭 상회했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1197,7 +2105,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 685.0,
+          "unit": "억원",
+          "source_excerpt": "6%qoq), 영업이익 685억원(+25.",
+          "value_krw_100m": 685.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1245,10 +2167,32 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 685.0,
+          "unit": "억원",
+          "source_excerpt": "6%), 영업이익은 685억원(YoY +25.",
+          "value_krw_100m": 685.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1302,7 +2246,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1342,9 +2289,51 @@
       "ticker": null,
       "target_price_value": 62000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 667.0,
+          "unit": "억원",
+          "source_excerpt": "7% QoQ), 영업이익 667억원(+21.",
+          "value_krw_100m": 667.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 425.0,
+          "unit": "억원",
+          "source_excerpt": "4% QoQ), 지배주주순이익 425 억원(+24.",
+          "value_krw_100m": 425.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 640.0,
+          "unit": "억원",
+          "source_excerpt": "6% QoQ)으로 영업이익은 컨센서스 640 억원을 소폭 상회할 것으로 전망한다.",
+          "value_krw_100m": 640.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
     }
   ]
 }

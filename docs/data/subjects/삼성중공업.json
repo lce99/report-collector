@@ -13,14 +13,19 @@
     "한화투자증권"
   ],
   "change_summary": {
-    "changed_reports": 5,
+    "changed_reports": 7,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 5
+    "coverage_initiated": 5,
+    "estimate_signal_reports": 7,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 5,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 3
   },
   "target_summary": {
     "count": 6,
@@ -49,7 +54,17 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-20",
@@ -64,7 +79,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 14.95,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-20",
@@ -79,7 +102,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 15.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -94,7 +123,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 12.2,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -109,7 +146,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -124,7 +167,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 13.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-26",
@@ -139,7 +188,361 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-17",
+        "broker": "키움증권",
+        "title": "삼성중공업 - LNG 공급망의 중심 축",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91665&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_837276000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_837276000.pdf",
+        "target_price": "39,000",
+        "target_price_value": 39000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 11.3,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 11.3,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4%, OPM 11.3%)를 달성하며 시장 기대치를 하회할 것으로 전망한다."
+      },
+      {
+        "date": "2026-04-17",
+        "broker": "키움증권",
+        "title": "삼성중공업 - LNG 공급망의 중심 축",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91665&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_837276000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_837276000.pdf",
+        "target_price": "39,000",
+        "target_price_value": 39000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1분기",
+        "value": 3255.0,
+        "unit": "억원",
+        "value_krw_100m": 3255.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "삼성중공업 - LNG 공급망의 중심 축 LNG 공급망의 중심 축 삼성중공업 1분기 영업이익 3,255억원, 컨센서스 하회 전망 1분기 매출액 2조 8,751억원(yoy +15."
+      },
+      {
+        "date": "2026-04-17",
+        "broker": "키움증권",
+        "title": "삼성중공업 - LNG 공급망의 중심 축",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91665&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_837276000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_837276000.pdf",
+        "target_price": "39,000",
+        "target_price_value": 39000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화",
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 3255.0,
+        "unit": "억원",
+        "value_krw_100m": 3255.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3%), 영업이익 3,255억원(yoy +164."
+      },
+      {
+        "date": "2026-04-20",
+        "broker": "DS투자증권",
+        "title": "삼성중공업 - FLNG에 방산까지 다 잡을 한 해",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91709&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260420_company_267365000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260420_company_267365000.pdf",
+        "target_price": "42,000",
+        "target_price_value": 42000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 14.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 12.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 12.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6%, OPM 12.0%)으로 영업이익 컨센서스에 부합할 전망이다."
+      },
+      {
+        "date": "2026-04-20",
+        "broker": "DS투자증권",
+        "title": "삼성중공업 - FLNG에 방산까지 다 잡을 한 해",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91709&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260420_company_267365000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260420_company_267365000.pdf",
+        "target_price": "42,000",
+        "target_price_value": 42000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 14.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 3454.0,
+        "unit": "억원",
+        "value_krw_100m": 3454.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5% 이하 YoY), 영업이익 3,454억원(+180."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "DS투자증권",
+        "title": "삼성중공업 - 비 온 뒤 땅이 굳고 하늘은 더 맑다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92423&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260504_company_238465000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260504_company_238465000.pdf",
+        "target_price": "42,000",
+        "target_price_value": 42000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 12.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 9.4,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 9.4,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9% YoY, OPM 9.4%)을 기록하며 당사 추정치를 20."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "DS투자증권",
+        "title": "삼성중공업 - 비 온 뒤 땅이 굳고 하늘은 더 맑다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92423&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260504_company_238465000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260504_company_238465000.pdf",
+        "target_price": "42,000",
+        "target_price_value": 42000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 12.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2731.0,
+        "unit": "억원",
+        "value_krw_100m": 2731.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4% YoY), 영업이익은 2,731억원(+121."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "SK증권",
+        "title": "삼성중공업 - 수주&매출 목표 달성 전망, MRO와 FDC는 덤",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92342&page=4",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260504_company_897868000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260504_company_897868000.pdf",
+        "target_price": "40,000",
+        "target_price_value": 40000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.25,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2731.0,
+        "unit": "억원",
+        "value_krw_100m": 2731.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "3% QoQ), 영업이익 2,731억원(+121."
+      },
+      {
+        "date": "2026-05-26",
+        "broker": "한화투자증권",
+        "title": "삼성중공업 - 이제부터가 진짜",
+        "ticker": "010140",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93267&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260526_company_809154000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260526_company_809154000.pdf",
+        "target_price": "40,000",
+        "target_price_value": 40000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 12.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 9.4,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 9.4,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9%, OPM 9.4%)으로 영업이익 기준 컨센서스를 약 20% 하회했다."
+      },
+      {
+        "date": "2026-05-26",
+        "broker": "한화투자증권",
+        "title": "삼성중공업 - 이제부터가 진짜",
+        "ticker": "010140",
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93267&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260526_company_809154000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260526_company_809154000.pdf",
+        "target_price": "40,000",
+        "target_price_value": 40000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 12.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 2731.0,
+        "unit": "억원",
+        "value_krw_100m": 2731.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4%, 이하 YoY), 영업이익 2,731억원(+121."
       }
     ],
     "opinion_distribution": [
@@ -162,7 +565,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소",
+          "마진율 추정 하락/악화"
+        ]
       }
     ],
     "window_days": 14
@@ -181,7 +592,17 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-20",
@@ -196,7 +617,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 14.95,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-20",
@@ -211,7 +640,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 15.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -226,7 +661,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 12.2,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -241,7 +684,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -256,7 +705,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 13.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-26",
@@ -271,7 +726,361 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-17",
+      "broker": "키움증권",
+      "title": "삼성중공업 - LNG 공급망의 중심 축",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91665&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_837276000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_837276000.pdf",
+      "target_price": "39,000",
+      "target_price_value": 39000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 11.3,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 11.3,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4%, OPM 11.3%)를 달성하며 시장 기대치를 하회할 것으로 전망한다."
+    },
+    {
+      "date": "2026-04-17",
+      "broker": "키움증권",
+      "title": "삼성중공업 - LNG 공급망의 중심 축",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91665&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_837276000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_837276000.pdf",
+      "target_price": "39,000",
+      "target_price_value": 39000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1분기",
+      "value": 3255.0,
+      "unit": "억원",
+      "value_krw_100m": 3255.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "삼성중공업 - LNG 공급망의 중심 축 LNG 공급망의 중심 축 삼성중공업 1분기 영업이익 3,255억원, 컨센서스 하회 전망 1분기 매출액 2조 8,751억원(yoy +15."
+    },
+    {
+      "date": "2026-04-17",
+      "broker": "키움증권",
+      "title": "삼성중공업 - LNG 공급망의 중심 축",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91665&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_837276000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_837276000.pdf",
+      "target_price": "39,000",
+      "target_price_value": 39000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 3255.0,
+      "unit": "억원",
+      "value_krw_100m": 3255.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3%), 영업이익 3,255억원(yoy +164."
+    },
+    {
+      "date": "2026-04-20",
+      "broker": "DS투자증권",
+      "title": "삼성중공업 - FLNG에 방산까지 다 잡을 한 해",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91709&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260420_company_267365000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260420_company_267365000.pdf",
+      "target_price": "42,000",
+      "target_price_value": 42000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 14.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 12.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 12.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6%, OPM 12.0%)으로 영업이익 컨센서스에 부합할 전망이다."
+    },
+    {
+      "date": "2026-04-20",
+      "broker": "DS투자증권",
+      "title": "삼성중공업 - FLNG에 방산까지 다 잡을 한 해",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91709&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260420_company_267365000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260420_company_267365000.pdf",
+      "target_price": "42,000",
+      "target_price_value": 42000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 14.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 3454.0,
+      "unit": "억원",
+      "value_krw_100m": 3454.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5% 이하 YoY), 영업이익 3,454억원(+180."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "DS투자증권",
+      "title": "삼성중공업 - 비 온 뒤 땅이 굳고 하늘은 더 맑다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92423&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260504_company_238465000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260504_company_238465000.pdf",
+      "target_price": "42,000",
+      "target_price_value": 42000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 12.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 9.4,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 9.4,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9% YoY, OPM 9.4%)을 기록하며 당사 추정치를 20."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "DS투자증권",
+      "title": "삼성중공업 - 비 온 뒤 땅이 굳고 하늘은 더 맑다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92423&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260504_company_238465000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260504_company_238465000.pdf",
+      "target_price": "42,000",
+      "target_price_value": 42000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 12.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2731.0,
+      "unit": "억원",
+      "value_krw_100m": 2731.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4% YoY), 영업이익은 2,731억원(+121."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "SK증권",
+      "title": "삼성중공업 - 수주&매출 목표 달성 전망, MRO와 FDC는 덤",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92342&page=4",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260504_company_897868000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260504_company_897868000.pdf",
+      "target_price": "40,000",
+      "target_price_value": 40000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.25,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2731.0,
+      "unit": "억원",
+      "value_krw_100m": 2731.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "3% QoQ), 영업이익 2,731억원(+121."
+    },
+    {
+      "date": "2026-05-26",
+      "broker": "한화투자증권",
+      "title": "삼성중공업 - 이제부터가 진짜",
+      "ticker": "010140",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93267&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260526_company_809154000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260526_company_809154000.pdf",
+      "target_price": "40,000",
+      "target_price_value": 40000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 12.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 9.4,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 9.4,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9%, OPM 9.4%)으로 영업이익 기준 컨센서스를 약 20% 하회했다."
+    },
+    {
+      "date": "2026-05-26",
+      "broker": "한화투자증권",
+      "title": "삼성중공업 - 이제부터가 진짜",
+      "ticker": "010140",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93267&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/16/20260526_company_809154000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/16/20260526_company_809154000.pdf",
+      "target_price": "40,000",
+      "target_price_value": 40000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 12.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 2731.0,
+      "unit": "억원",
+      "value_krw_100m": 2731.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4%, 이하 YoY), 영업이익 2,731억원(+121."
     }
   ],
   "opinion_distribution": [
@@ -294,7 +1103,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "broker_summary": [
@@ -436,12 +1253,46 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2731.0,
+          "unit": "억원",
+          "source_excerpt": "4%, 이하 YoY), 영업이익 2,731억원(+121.",
+          "value_krw_100m": 2731.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 9.4,
+          "unit": "%",
+          "value_pct": 9.4,
+          "source_excerpt": "9%, OPM 9.4%)으로 영업이익 기준 컨센서스를 약 20% 하회했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -495,13 +1346,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -554,10 +1414,46 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2731.0,
+          "unit": "억원",
+          "source_excerpt": "4% YoY), 영업이익은 2,731억원(+121.",
+          "value_krw_100m": 2731.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 9.4,
+          "unit": "%",
+          "value_pct": 9.4,
+          "source_excerpt": "9% YoY, OPM 9.4%)을 기록하며 당사 추정치를 20."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -608,13 +1504,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2731.0,
+          "unit": "억원",
+          "source_excerpt": "3% QoQ), 영업이익 2,731억원(+121.",
+          "value_krw_100m": 2731.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -668,13 +1584,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -714,9 +1639,59 @@
       "ticker": null,
       "target_price_value": 39000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 3255.0,
+          "unit": "억원",
+          "source_excerpt": "삼성중공업 - LNG 공급망의 중심 축 LNG 공급망의 중심 축 삼성중공업 1분기 영업이익 3,255억원, 컨센서스 하회 전망 1분기 매출액 2조 8,751억원(yoy +15.",
+          "value_krw_100m": 3255.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3255.0,
+          "unit": "억원",
+          "source_excerpt": "3%), 영업이익 3,255억원(yoy +164.",
+          "value_krw_100m": 3255.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 11.3,
+          "unit": "%",
+          "value_pct": 11.3,
+          "source_excerpt": "4%, OPM 11.3%)를 달성하며 시장 기대치를 하회할 것으로 전망한다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가"
+      ],
+      "change_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
     }
   ],
   "recent_changes": [
@@ -826,12 +1801,46 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2731.0,
+          "unit": "억원",
+          "source_excerpt": "4%, 이하 YoY), 영업이익 2,731억원(+121.",
+          "value_krw_100m": 2731.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 9.4,
+          "unit": "%",
+          "value_pct": 9.4,
+          "source_excerpt": "9%, OPM 9.4%)으로 영업이익 기준 컨센서스를 약 20% 하회했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -885,13 +1894,114 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92423",
+      "title": "비 온 뒤 땅이 굳고 하늘은 더 맑다",
+      "display_title": "삼성중공업 - 비 온 뒤 땅이 굳고 하늘은 더 맑다",
+      "broker": "DS투자증권",
+      "published_date": "2026-05-04",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92423&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260504_company_238465000.pdf",
+      "subject": "삼성중공업",
+      "subject_key": "삼성중공업",
+      "views": 3817,
+      "analyst": null,
+      "target_price": "42,000",
+      "target_price_value": 42000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1Q26 Review: 성과급 영향 있었지만 실질적인 실적은 양호 26년 1분기 매출액은 2.9조원(+16.4% YoY), 영업이익은 2,731억원(+121.9% YoY, OPM 9.4%)을 기록하며 당사 추정치를 20.8% 하회했다.",
+      "summary": "1Q26 Review: 성과급 영향 있었지만 실질적인 실적은 양호 26년 1분기 매출액은 2.9조원(+16.4% YoY), 영업이익은 2,731억원(+121.9% YoY, OPM 9.4%)을 기록하며 당사 추정치를 20.8% 하회했다. 이는 26년부터 예상 성과급을 분기별로 안분 반영하는 회계 정책 변경에 따른 비용 증가에 기인한다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 12.2,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 종목(삼성전자)",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [
+        "삼성전자"
+      ],
+      "priority_keyword_matches": [],
+      "is_priority_match": true,
+      "previous_report_date": "2026-04-20",
+      "previous_target_price": "42,000",
+      "previous_opinion": "매수",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2731.0,
+          "unit": "억원",
+          "source_excerpt": "4% YoY), 영업이익은 2,731억원(+121.",
+          "value_krw_100m": 2731.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 9.4,
+          "unit": "%",
+          "value_pct": 9.4,
+          "source_excerpt": "9% YoY, OPM 9.4%)을 기록하며 당사 추정치를 20."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -942,13 +2052,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2731.0,
+          "unit": "억원",
+          "source_excerpt": "3% QoQ), 영업이익 2,731억원(+121.",
+          "value_krw_100m": 2731.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1002,13 +2132,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1062,13 +2201,139 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3454.0,
+          "unit": "억원",
+          "source_excerpt": "5% 이하 YoY), 영업이익 3,454억원(+180.",
+          "value_krw_100m": 3454.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 12.0,
+          "unit": "%",
+          "value_pct": 12.0,
+          "source_excerpt": "6%, OPM 12.0%)으로 영업이익 컨센서스에 부합할 전망이다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91665",
+      "title": "LNG 공급망의 중심 축",
+      "display_title": "삼성중공업 - LNG 공급망의 중심 축",
+      "broker": "키움증권",
+      "published_date": "2026-04-17",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91665&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_837276000.pdf",
+      "subject": "삼성중공업",
+      "views": 5117,
+      "analyst": null,
+      "target_price": "39,000",
+      "opinion": "Buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1분기 영업이익 3,255억원, 컨센서스 하회 전망 1분기 매출액 2조 8,751억원(yoy +15.3%), 영업이익 3,255억원(yoy +164.4%, OPM 11.3%)를 달성하며 시장 기대치를 하회할 것으로 전망한다.",
+      "summary": "1분기 영업이익 3,255억원, 컨센서스 하회 전망 1분기 매출액 2조 8,751억원(yoy +15.3%), 영업이익 3,255억원(yoy +164.4%, OPM 11.3%)를 달성하며 시장 기대치를 하회할 것으로 전망한다. 이번 분기는 지난 4Q25와 조업일수와 제품 믹스 측면에서 유사하기 때문에 매출과 이익 개선 폭이 제한적일 것으로 판단한다.",
+      "summary_engine": "rule",
+      "score": 8.95,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "subject_key": "삼성중공업",
+      "ticker": null,
+      "target_price_value": 39000,
+      "opinion_normalized": "buy",
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 3255.0,
+          "unit": "억원",
+          "source_excerpt": "삼성중공업 - LNG 공급망의 중심 축 LNG 공급망의 중심 축 삼성중공업 1분기 영업이익 3,255억원, 컨센서스 하회 전망 1분기 매출액 2조 8,751억원(yoy +15.",
+          "value_krw_100m": 3255.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3255.0,
+          "unit": "억원",
+          "source_excerpt": "3%), 영업이익 3,255억원(yoy +164.",
+          "value_krw_100m": 3255.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 11.3,
+          "unit": "%",
+          "value_pct": 11.3,
+          "source_excerpt": "4%, OPM 11.3%)를 달성하며 시장 기대치를 하회할 것으로 전망한다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가"
+      ],
+      "change_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
     }
   ],
   "timeline": [
@@ -1178,12 +2443,46 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2731.0,
+          "unit": "억원",
+          "source_excerpt": "4%, 이하 YoY), 영업이익 2,731억원(+121.",
+          "value_krw_100m": 2731.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 9.4,
+          "unit": "%",
+          "value_pct": 9.4,
+          "source_excerpt": "9%, OPM 9.4%)으로 영업이익 기준 컨센서스를 약 20% 하회했다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1237,13 +2536,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1296,10 +2604,46 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2731.0,
+          "unit": "억원",
+          "source_excerpt": "4% YoY), 영업이익은 2,731억원(+121.",
+          "value_krw_100m": 2731.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 9.4,
+          "unit": "%",
+          "value_pct": 9.4,
+          "source_excerpt": "9% YoY, OPM 9.4%)을 기록하며 당사 추정치를 20."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1350,13 +2694,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 2731.0,
+          "unit": "억원",
+          "source_excerpt": "3% QoQ), 영업이익 2,731억원(+121.",
+          "value_krw_100m": 2731.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1410,13 +2774,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1470,13 +2843,47 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3454.0,
+          "unit": "억원",
+          "source_excerpt": "5% 이하 YoY), 영업이익 3,454억원(+180.",
+          "value_krw_100m": 3454.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 12.0,
+          "unit": "%",
+          "value_pct": 12.0,
+          "source_excerpt": "6%, OPM 12.0%)으로 영업이익 컨센서스에 부합할 전망이다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1516,9 +2923,59 @@
       "ticker": null,
       "target_price_value": 39000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 3255.0,
+          "unit": "억원",
+          "source_excerpt": "삼성중공업 - LNG 공급망의 중심 축 LNG 공급망의 중심 축 삼성중공업 1분기 영업이익 3,255억원, 컨센서스 하회 전망 1분기 매출액 2조 8,751억원(yoy +15.",
+          "value_krw_100m": 3255.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 3255.0,
+          "unit": "억원",
+          "source_excerpt": "3%), 영업이익 3,255억원(yoy +164.",
+          "value_krw_100m": 3255.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 11.3,
+          "unit": "%",
+          "value_pct": 11.3,
+          "source_excerpt": "4%, OPM 11.3%)를 달성하며 시장 기대치를 하회할 것으로 전망한다."
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가"
+      ],
+      "change_types": [
+        "earnings_estimate_down",
+        "margin_estimate_down",
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 하향/감소",
+        "마진율 추정 하락/악화",
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
     }
   ]
 }

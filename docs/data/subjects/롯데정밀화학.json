@@ -9,14 +9,19 @@
     "신한투자증권"
   ],
   "change_summary": {
-    "changed_reports": 1,
+    "changed_reports": 3,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 1
+    "coverage_initiated": 1,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 1,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 2,
@@ -45,7 +50,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.6,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-24",
@@ -60,7 +73,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -75,7 +94,115 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 11.7,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-16",
+        "broker": "삼성증권",
+        "title": "롯데정밀화학 - 1Q26 preview - 예상치 상회 전망",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91641&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_116169000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_116169000.pdf",
+        "target_price": "65,000",
+        "target_price_value": 65000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.6,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1Q",
+        "value": 294.0,
+        "unit": "억원",
+        "value_krw_100m": 294.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "롯데정밀화학 - 1Q26 preview - 예상치 상회 전망 1Q26 preview - 예상치 상회 전망 롯데정밀화학 1Q26 preview, 컨센서스 상회: 1Q 영업이익은 294억원(+52%QoQ)으로 컨센서스(256억원/+15%, FnGuide) 상회 예상."
+      },
+      {
+        "date": "2026-04-16",
+        "broker": "삼성증권",
+        "title": "롯데정밀화학 - 1Q26 preview - 예상치 상회 전망",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91641&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_116169000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_116169000.pdf",
+        "target_price": "65,000",
+        "target_price_value": 65000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.6,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 58.0,
+        "unit": "억원",
+        "value_krw_100m": 58.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "염소 계열 영업이익은 58억원(+206%QoQ)으로 ECH 스프레드 추가 회복에 힘입어 추가 수익성 개선 전망."
+      },
+      {
+        "date": "2026-04-24",
+        "broker": "신한투자증권",
+        "title": "롯데정밀화학 - 히든 밸류, 반도체 호황의 숨은 수혜주",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91873&page=2",
+        "pdf_url": null,
+        "primary_url": "https://finance.naver.com/research/company_read.naver?nid=91873&page=2",
+        "target_price": "100,000",
+        "target_price_value": 100000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 10.8,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "2026년",
+        "value": 1315.0,
+        "unit": "억원",
+        "value_krw_100m": 1315.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "롯데정밀화학 - 히든 밸류, 반도체 호황의 숨은 수혜주 히든 밸류, 반도체 호황의 숨은 수혜주 롯데정밀화학 전 사업부 턴어라운드 속 부각될 반도체 소재 가치 2026년 영업이익 1,315억원(+77%)으로 턴어라운드 기대되며 케미칼(+103%) 및 그린소재(+31%) 공히 반등할 전망."
       }
     ],
     "opinion_distribution": [
@@ -98,7 +225,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.6,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-24",
@@ -113,7 +248,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-04-29",
@@ -128,7 +269,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 11.7,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -147,7 +294,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.6,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-24",
@@ -162,7 +317,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -177,7 +338,115 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 11.7,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-16",
+      "broker": "삼성증권",
+      "title": "롯데정밀화학 - 1Q26 preview - 예상치 상회 전망",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91641&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_116169000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_116169000.pdf",
+      "target_price": "65,000",
+      "target_price_value": 65000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.6,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1Q",
+      "value": 294.0,
+      "unit": "억원",
+      "value_krw_100m": 294.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "롯데정밀화학 - 1Q26 preview - 예상치 상회 전망 1Q26 preview - 예상치 상회 전망 롯데정밀화학 1Q26 preview, 컨센서스 상회: 1Q 영업이익은 294억원(+52%QoQ)으로 컨센서스(256억원/+15%, FnGuide) 상회 예상."
+    },
+    {
+      "date": "2026-04-16",
+      "broker": "삼성증권",
+      "title": "롯데정밀화학 - 1Q26 preview - 예상치 상회 전망",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91641&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_116169000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_116169000.pdf",
+      "target_price": "65,000",
+      "target_price_value": 65000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.6,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 58.0,
+      "unit": "억원",
+      "value_krw_100m": 58.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "염소 계열 영업이익은 58억원(+206%QoQ)으로 ECH 스프레드 추가 회복에 힘입어 추가 수익성 개선 전망."
+    },
+    {
+      "date": "2026-04-24",
+      "broker": "신한투자증권",
+      "title": "롯데정밀화학 - 히든 밸류, 반도체 호황의 숨은 수혜주",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91873&page=2",
+      "pdf_url": null,
+      "primary_url": "https://finance.naver.com/research/company_read.naver?nid=91873&page=2",
+      "target_price": "100,000",
+      "target_price_value": 100000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 10.8,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "2026년",
+      "value": 1315.0,
+      "unit": "억원",
+      "value_krw_100m": 1315.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "롯데정밀화학 - 히든 밸류, 반도체 호황의 숨은 수혜주 히든 밸류, 반도체 호황의 숨은 수혜주 롯데정밀화학 전 사업부 턴어라운드 속 부각될 반도체 소재 가치 2026년 영업이익 1,315억원(+77%)으로 턴어라운드 기대되며 케미칼(+103%) 및 그린소재(+31%) 공히 반등할 전망."
     }
   ],
   "opinion_distribution": [
@@ -200,7 +469,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.6,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-24",
@@ -215,7 +492,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-04-29",
@@ -230,7 +513,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 11.7,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -298,10 +587,21 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -341,12 +641,112 @@
       "ticker": null,
       "target_price_value": 65000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q",
+          "value": 294.0,
+          "unit": "억원",
+          "source_excerpt": "롯데정밀화학 - 1Q26 preview - 예상치 상회 전망 1Q26 preview - 예상치 상회 전망 롯데정밀화학 1Q26 preview, 컨센서스 상회: 1Q 영업이익은 294억원(+52%QoQ)으로 컨센서스(256억원/+15%, FnGuide) 상회 예상.",
+          "value_krw_100m": 294.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 58.0,
+          "unit": "억원",
+          "source_excerpt": "염소 계열 영업이익은 58억원(+206%QoQ)으로 ECH 스프레드 추가 회복에 힘입어 추가 수익성 개선 전망.",
+          "value_krw_100m": 58.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true
     }
   ],
   "recent_changes": [
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92107",
+      "title": "호실적에 반도체 소재 모멘텀까지",
+      "display_title": "롯데정밀화학 - 호실적에 반도체 소재 모멘텀까지",
+      "broker": "신한투자증권",
+      "published_date": "2026-04-29",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92107&page=3",
+      "pdf_url": null,
+      "subject": "롯데정밀화학",
+      "subject_key": "롯데정밀화학",
+      "views": 1112,
+      "analyst": null,
+      "target_price": "100,000",
+      "target_price_value": 100000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "차별화된 실적 및 성장 모멘텀 2026년 영업이익은 케미칼(+125%) 및 그린소재(+30%) 증익에 힘입어 1,475억원(+98%)으로 턴어라운드 기대.",
+      "summary": "차별화된 실적 및 성장 모멘텀 2026년 영업이익은 케미칼(+125%) 및 그린소재(+30%) 증익에 힘입어 1,475억원(+98%)으로 턴어라운드 기대. TMAC는 반도체 호황에 따른 판매량 확대 및 실적 개선(+41%) 전망되며 추가 증설 가능성까지 고려할 경우 성장 모멘텀 더욱 확대될 전망",
+      "summary_engine": "rule",
+      "score": 11.7,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 섹터/키워드(반도체)",
+        "조회수 상위권",
+        "목표가 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": "2026-04-24",
+      "previous_target_price": "100,000",
+      "previous_opinion": "매수",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    },
     {
       "source": "naver_research",
       "category": "company",
@@ -396,13 +796,111 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "2026년",
+          "value": 1315.0,
+          "unit": "억원",
+          "source_excerpt": "롯데정밀화학 - 히든 밸류, 반도체 호황의 숨은 수혜주 히든 밸류, 반도체 호황의 숨은 수혜주 롯데정밀화학 전 사업부 턴어라운드 속 부각될 반도체 소재 가치 2026년 영업이익 1,315억원(+77%)으로 턴어라운드 기대되며 케미칼(+103%) 및 그린소재(+31%) 공히 반등할 전망.",
+          "value_krw_100m": 1315.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91641",
+      "title": "1Q26 preview - 예상치 상회 전망",
+      "display_title": "롯데정밀화학 - 1Q26 preview - 예상치 상회 전망",
+      "broker": "삼성증권",
+      "published_date": "2026-04-16",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91641&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_116169000.pdf",
+      "subject": "롯데정밀화학",
+      "views": 1217,
+      "analyst": null,
+      "target_price": "65,000",
+      "opinion": "Buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1Q26 preview, 컨센서스 상회: 1Q 영업이익은 294억원(+52%QoQ)으로 컨센서스(256억원/+15%, FnGuide) 상회 예상. 염소 계열 영업이익은 58억원(+206%QoQ)으로 ECH 스프레드 추가 회복에 힘입어 추가 수익성 개선 전망.",
+      "summary": "1Q26 preview, 컨센서스 상회: 1Q 영업이익은 294억원(+52%QoQ)으로 컨센서스(256억원/+15%, FnGuide) 상회 예상. 염소 계열 영업이익은 58억원(+206%QoQ)으로 ECH 스프레드 추가 회복에 힘입어 추가 수익성 개선 전망. 1Q26 기준 ECH-프로필렌 스프레드는 +3%QoQ(1,085달러→1,113달러) 추가 상승.",
+      "summary_engine": "rule",
+      "score": 11.6,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "subject_key": "롯데정밀화학",
+      "ticker": null,
+      "target_price_value": 65000,
+      "opinion_normalized": "buy",
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q",
+          "value": 294.0,
+          "unit": "억원",
+          "source_excerpt": "롯데정밀화학 - 1Q26 preview - 예상치 상회 전망 1Q26 preview - 예상치 상회 전망 롯데정밀화학 1Q26 preview, 컨센서스 상회: 1Q 영업이익은 294억원(+52%QoQ)으로 컨센서스(256억원/+15%, FnGuide) 상회 예상.",
+          "value_krw_100m": 294.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 58.0,
+          "unit": "억원",
+          "source_excerpt": "염소 계열 영업이익은 58억원(+206%QoQ)으로 ECH 스프레드 추가 회복에 힘입어 추가 수익성 개선 전망.",
+          "value_krw_100m": 58.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true
     }
   ],
   "timeline": [
@@ -454,10 +952,21 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -508,13 +1017,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "2026년",
+          "value": 1315.0,
+          "unit": "억원",
+          "source_excerpt": "롯데정밀화학 - 히든 밸류, 반도체 호황의 숨은 수혜주 히든 밸류, 반도체 호황의 숨은 수혜주 롯데정밀화학 전 사업부 턴어라운드 속 부각될 반도체 소재 가치 2026년 영업이익 1,315억원(+77%)으로 턴어라운드 기대되며 케미칼(+103%) 및 그린소재(+31%) 공히 반등할 전망.",
+          "value_krw_100m": 1315.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -554,9 +1083,45 @@
       "ticker": null,
       "target_price_value": 65000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1Q",
+          "value": 294.0,
+          "unit": "억원",
+          "source_excerpt": "롯데정밀화학 - 1Q26 preview - 예상치 상회 전망 1Q26 preview - 예상치 상회 전망 롯데정밀화학 1Q26 preview, 컨센서스 상회: 1Q 영업이익은 294억원(+52%QoQ)으로 컨센서스(256억원/+15%, FnGuide) 상회 예상.",
+          "value_krw_100m": 294.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 58.0,
+          "unit": "억원",
+          "source_excerpt": "염소 계열 영업이익은 58억원(+206%QoQ)으로 ECH 스프레드 추가 회복에 힘입어 추가 수익성 개선 전망.",
+          "value_krw_100m": 58.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ],
+      "has_change_signal": true
     }
   ]
 }

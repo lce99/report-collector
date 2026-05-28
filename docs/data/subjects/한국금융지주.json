@@ -11,14 +11,19 @@
     "신한투자증권"
   ],
   "change_summary": {
-    "changed_reports": 4,
+    "changed_reports": 5,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 4
+    "coverage_initiated": 4,
+    "estimate_signal_reports": 4,
+    "earnings_estimate_up": 4,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 4,
@@ -47,7 +52,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 12.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-15",
@@ -62,7 +73,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-15",
@@ -77,7 +94,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-15",
@@ -92,7 +115,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 13.15,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-15",
@@ -107,7 +136,135 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-22",
+        "broker": "대신증권",
+        "title": "한국금융지주 - 브로커리지는 도울 뿐, 진정한 북 비즈니스의..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91777&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260422_company_163687000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260422_company_163687000.pdf",
+        "target_price": "335,000",
+        "target_price_value": 335000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 12.9,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": "1분기",
+        "value": 6703.0,
+        "unit": "억원",
+        "value_krw_100m": 6703.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "한국금융지주 1분기 순이익, 우리의 당초 전망을 상회할 가능성 높음 우리는 지난 14일 발간한 증권업 프리뷰에서 동사의 1분기 순이익을 6,703억원으로 전망한 바 있음."
+      },
+      {
+        "date": "2026-05-15",
+        "broker": "SK증권",
+        "title": "한국금융지주 - 1Q26 Review: 순수 체급으로 '순이익' 9천억..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92988&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260515_company_506695000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260515_company_506695000.pdf",
+        "target_price": "410,000",
+        "target_price_value": 410000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배주주순이익",
+        "period": "1Q26",
+        "value": 9149.0,
+        "unit": "억원",
+        "value_krw_100m": 9149.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "업종 내 최고 수준의 이익 체력 증명 1Q26 지배주주순이익은 9,149 억원(YoY +99."
+      },
+      {
+        "date": "2026-05-15",
+        "broker": "iM증권",
+        "title": "한국금융지주 - 증권업종의 팔방미인",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92986&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260515_company_705746000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260515_company_705746000.pdf",
+        "target_price": "310,000",
+        "target_price_value": 310000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.45,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배순이익",
+        "period": "1Q26",
+        "value": 9149.0,
+        "unit": "억원",
+        "value_krw_100m": 9149.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "한국금융지주 - 증권업종의 팔방미인 증권업종의 팔방미인 한국금융지주 1Q26 지배순이익 9,149억원(+99."
+      },
+      {
+        "date": "2026-05-15",
+        "broker": "신한투자증권",
+        "title": "한국금융지주 - 한국금융지주; All Time Favorite",
+        "ticker": null,
+        "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=936468",
+        "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351467",
+        "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351467",
+        "target_price": "35만원",
+        "target_price_value": 350000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 9.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배주주순이익",
+        "period": null,
+        "value": 9149.0,
+        "unit": "억원",
+        "value_krw_100m": 9149.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "한국금융지주 - 한국금융지주; All Time Favorite 한국금융지주; All Time Favorite 한국금융지주 신한생각: 좋은 줄은 알았는데 더 좋다 1Q26P 지배주주순이익 9,149억원(+99."
       }
     ],
     "opinion_distribution": [
@@ -130,7 +287,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.45,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-15",
@@ -145,7 +308,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-15",
@@ -160,7 +329,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-15",
@@ -175,7 +346,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 13.15,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -194,7 +371,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 12.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-15",
@@ -209,7 +392,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-15",
@@ -224,7 +413,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-15",
@@ -239,7 +434,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 13.15,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-15",
@@ -254,7 +455,135 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-22",
+      "broker": "대신증권",
+      "title": "한국금융지주 - 브로커리지는 도울 뿐, 진정한 북 비즈니스의..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91777&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260422_company_163687000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/15/20260422_company_163687000.pdf",
+      "target_price": "335,000",
+      "target_price_value": 335000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 12.9,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": "1분기",
+      "value": 6703.0,
+      "unit": "억원",
+      "value_krw_100m": 6703.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "한국금융지주 1분기 순이익, 우리의 당초 전망을 상회할 가능성 높음 우리는 지난 14일 발간한 증권업 프리뷰에서 동사의 1분기 순이익을 6,703억원으로 전망한 바 있음."
+    },
+    {
+      "date": "2026-05-15",
+      "broker": "SK증권",
+      "title": "한국금융지주 - 1Q26 Review: 순수 체급으로 '순이익' 9천억..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92988&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260515_company_506695000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260515_company_506695000.pdf",
+      "target_price": "410,000",
+      "target_price_value": 410000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배주주순이익",
+      "period": "1Q26",
+      "value": 9149.0,
+      "unit": "억원",
+      "value_krw_100m": 9149.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "업종 내 최고 수준의 이익 체력 증명 1Q26 지배주주순이익은 9,149 억원(YoY +99."
+    },
+    {
+      "date": "2026-05-15",
+      "broker": "iM증권",
+      "title": "한국금융지주 - 증권업종의 팔방미인",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92986&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260515_company_705746000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260515_company_705746000.pdf",
+      "target_price": "310,000",
+      "target_price_value": 310000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.45,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배순이익",
+      "period": "1Q26",
+      "value": 9149.0,
+      "unit": "억원",
+      "value_krw_100m": 9149.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "한국금융지주 - 증권업종의 팔방미인 증권업종의 팔방미인 한국금융지주 1Q26 지배순이익 9,149억원(+99."
+    },
+    {
+      "date": "2026-05-15",
+      "broker": "신한투자증권",
+      "title": "한국금융지주 - 한국금융지주; All Time Favorite",
+      "ticker": null,
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=936468",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351467",
+      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351467",
+      "target_price": "35만원",
+      "target_price_value": 350000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 9.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배주주순이익",
+      "period": null,
+      "value": 9149.0,
+      "unit": "억원",
+      "value_krw_100m": 9149.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "한국금융지주 - 한국금융지주; All Time Favorite 한국금융지주; All Time Favorite 한국금융지주 신한생각: 좋은 줄은 알았는데 더 좋다 1Q26P 지배주주순이익 9,149억원(+99."
     }
   ],
   "opinion_distribution": [
@@ -277,7 +606,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.45,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-15",
@@ -292,7 +627,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-15",
@@ -307,7 +648,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-15",
@@ -322,7 +665,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 13.15,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -401,10 +750,21 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -461,7 +821,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 9149.0,
+          "unit": "억원",
+          "source_excerpt": "한국금융지주 - 한국금융지주; All Time Favorite 한국금융지주; All Time Favorite 한국금융지주 신한생각: 좋은 줄은 알았는데 더 좋다 1Q26P 지배주주순이익 9,149억원(+99.",
+          "value_krw_100m": 9149.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -513,13 +887,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1Q26",
+          "value": 9149.0,
+          "unit": "억원",
+          "source_excerpt": "업종 내 최고 수준의 이익 체력 증명 1Q26 지배주주순이익은 9,149 억원(YoY +99.",
+          "value_krw_100m": 9149.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -568,17 +962,104 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": "1Q26",
+          "value": 9149.0,
+          "unit": "억원",
+          "source_excerpt": "한국금융지주 - 증권업종의 팔방미인 증권업종의 팔방미인 한국금융지주 1Q26 지배순이익 9,149억원(+99.",
+          "value_krw_100m": 9149.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
     {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "92997",
+      "title": "최선호주로 10년 넘게 유지하는 이유",
+      "display_title": "한국금융지주 - 최선호주로 10년 넘게 유지하는 이유",
+      "broker": "대신증권",
+      "published_date": "2026-05-15",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92997&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/15/20260515_company_846553000.pdf",
+      "subject": "한국금융지주",
+      "subject_key": "한국금융지주",
+      "views": 900,
+      "analyst": null,
+      "target_price": "335,000",
+      "target_price_value": 335000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "투자의견 Buy, 목표주가 335,000원, 업종 내 최선호주 유지 브로커리지수익이 크게 증가하여 많은 증권사들이 1분기 호실적을 기록하고 있음.",
+      "summary": "투자의견 Buy, 목표주가 335,000원, 업종 내 최선호주 유지 브로커리지수익이 크게 증가하여 많은 증권사들이 1분기 호실적을 기록하고 있음. 대형사 기준 대규모 평가이익이 부재하다면 분기 5,000억원 미만 순이익이 통상 능력의 최대치.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "score": 13.15,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 종목(삼성전자)",
+        "목표가 포함",
+        "투자의견 포함",
+        "우선 추적 증권사"
+      ],
+      "priority_subject_matches": [
+        "삼성전자"
+      ],
+      "priority_keyword_matches": [],
+      "is_priority_match": true,
+      "previous_report_date": "2026-04-22",
+      "previous_target_price": "335,000",
+      "previous_opinion": "Buy",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    },
+    {
       "source": "shinhan_investment_official",
       "category": "company",
       "category_label": "종목분석",
@@ -633,7 +1114,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 9149.0,
+          "unit": "억원",
+          "source_excerpt": "한국금융지주 - 한국금융지주; All Time Favorite 한국금융지주; All Time Favorite 한국금융지주 신한생각: 좋은 줄은 알았는데 더 좋다 1Q26P 지배주주순이익 9,149억원(+99.",
+          "value_krw_100m": 9149.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -685,13 +1180,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1Q26",
+          "value": 9149.0,
+          "unit": "억원",
+          "source_excerpt": "업종 내 최고 수준의 이익 체력 증명 1Q26 지배주주순이익은 9,149 억원(YoY +99.",
+          "value_krw_100m": 9149.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -740,13 +1255,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": "1Q26",
+          "value": 9149.0,
+          "unit": "억원",
+          "source_excerpt": "한국금융지주 - 증권업종의 팔방미인 증권업종의 팔방미인 한국금융지주 1Q26 지배순이익 9,149억원(+99.",
+          "value_krw_100m": 9149.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -798,13 +1333,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": "1분기",
+          "value": 6703.0,
+          "unit": "억원",
+          "source_excerpt": "한국금융지주 1분기 순이익, 우리의 당초 전망을 상회할 가능성 높음 우리는 지난 14일 발간한 증권업 프리뷰에서 동사의 1분기 순이익을 6,703억원으로 전망한 바 있음.",
+          "value_krw_100m": 6703.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -859,10 +1414,21 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "shinhan_investment_official",
@@ -919,7 +1485,21 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 9149.0,
+          "unit": "억원",
+          "source_excerpt": "한국금융지주 - 한국금융지주; All Time Favorite 한국금융지주; All Time Favorite 한국금융지주 신한생각: 좋은 줄은 알았는데 더 좋다 1Q26P 지배주주순이익 9,149억원(+99.",
+          "value_krw_100m": 9149.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -971,13 +1551,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1Q26",
+          "value": 9149.0,
+          "unit": "억원",
+          "source_excerpt": "업종 내 최고 수준의 이익 체력 증명 1Q26 지배주주순이익은 9,149 억원(YoY +99.",
+          "value_krw_100m": 9149.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1026,13 +1626,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": "1Q26",
+          "value": 9149.0,
+          "unit": "억원",
+          "source_excerpt": "한국금융지주 - 증권업종의 팔방미인 증권업종의 팔방미인 한국금융지주 1Q26 지배순이익 9,149억원(+99.",
+          "value_krw_100m": 9149.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1084,13 +1704,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": "1분기",
+          "value": 6703.0,
+          "unit": "억원",
+          "source_excerpt": "한국금융지주 1분기 순이익, 우리의 당초 전망을 상회할 가능성 높음 우리는 지난 14일 발간한 증권업 프리뷰에서 동사의 1분기 순이익을 6,703억원으로 전망한 바 있음.",
+          "value_krw_100m": 6703.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ]
 }

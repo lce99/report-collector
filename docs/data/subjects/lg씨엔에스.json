@@ -19,7 +19,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 5
+    "coverage_initiated": 5,
+    "estimate_signal_reports": 2,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 0,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 5,
@@ -48,7 +53,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 11.25,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-30",
@@ -63,7 +70,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-04",
@@ -78,7 +91,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 7.15,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-07",
@@ -93,7 +112,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.7,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-22",
@@ -108,7 +129,155 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.65,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-21",
+        "broker": "SK증권",
+        "title": "LG씨엔에스 - 탄탄한 레퍼런스의 실적화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91730&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260421_company_292349000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260421_company_292349000.pdf",
+        "target_price": "91,000",
+        "target_price_value": 91000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 11.25,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "순이익",
+        "period": null,
+        "value": 735.0,
+        "unit": "억원",
+        "value_krw_100m": 735.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "9%), 지배주주 순이익 735 억원(+29."
+      },
+      {
+        "date": "2026-04-21",
+        "broker": "SK증권",
+        "title": "LG씨엔에스 - 탄탄한 레퍼런스의 실적화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91730&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260421_company_292349000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260421_company_292349000.pdf",
+        "target_price": "91,000",
+        "target_price_value": 91000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 11.25,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1001.0,
+        "unit": "억원",
+        "value_krw_100m": 1001.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8% YoY, 이하 동일), 영업이익 1,001억원(+26."
+      },
+      {
+        "date": "2026-05-04",
+        "broker": "교보증권",
+        "title": "LG씨엔에스 - 26년은 DBS와 스마트 엔지니어링이 성장 견인..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92413&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260504_company_578392000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260504_company_578392000.pdf",
+        "target_price": "89,000",
+        "target_price_value": 89000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.15,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 942.0,
+        "unit": "원",
+        "value_krw_100m": null,
+        "value_pct": null,
+        "value_won": 942.0,
+        "change_pctp": null,
+        "source_excerpt": "6%), 영업이익은 942원(+19."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "유안타증권",
+        "title": "LG씨엔에스 - 전부문 고른 성장",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92537&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_304778000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_304778000.pdf",
+        "target_price": "93,000",
+        "target_price_value": 93000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.7,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배순이익",
+        "period": null,
+        "value": 805.0,
+        "unit": "억원",
+        "value_krw_100m": 805.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4%, 지배순이익 805억원 YoY +41."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "유안타증권",
+        "title": "LG씨엔에스 - 전부문 고른 성장",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92537&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_304778000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_304778000.pdf",
+        "target_price": "93,000",
+        "target_price_value": 93000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.7,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 942.0,
+        "unit": "억원",
+        "value_krw_100m": 942.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6%, 영업이익 942억원 YoY +19."
       }
     ],
     "opinion_distribution": [
@@ -131,7 +300,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.65,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -150,7 +321,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 11.25,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-30",
@@ -165,7 +338,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -180,7 +359,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 7.15,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -195,7 +380,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.7,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-22",
@@ -210,7 +397,155 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.65,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-21",
+      "broker": "SK증권",
+      "title": "LG씨엔에스 - 탄탄한 레퍼런스의 실적화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91730&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260421_company_292349000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260421_company_292349000.pdf",
+      "target_price": "91,000",
+      "target_price_value": 91000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 11.25,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "순이익",
+      "period": null,
+      "value": 735.0,
+      "unit": "억원",
+      "value_krw_100m": 735.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "9%), 지배주주 순이익 735 억원(+29."
+    },
+    {
+      "date": "2026-04-21",
+      "broker": "SK증권",
+      "title": "LG씨엔에스 - 탄탄한 레퍼런스의 실적화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91730&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260421_company_292349000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260421_company_292349000.pdf",
+      "target_price": "91,000",
+      "target_price_value": 91000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 11.25,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1001.0,
+      "unit": "억원",
+      "value_krw_100m": 1001.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8% YoY, 이하 동일), 영업이익 1,001억원(+26."
+    },
+    {
+      "date": "2026-05-04",
+      "broker": "교보증권",
+      "title": "LG씨엔에스 - 26년은 DBS와 스마트 엔지니어링이 성장 견인..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92413&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/62/20260504_company_578392000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/62/20260504_company_578392000.pdf",
+      "target_price": "89,000",
+      "target_price_value": 89000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.15,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 942.0,
+      "unit": "원",
+      "value_krw_100m": null,
+      "value_pct": null,
+      "value_won": 942.0,
+      "change_pctp": null,
+      "source_excerpt": "6%), 영업이익은 942원(+19."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "유안타증권",
+      "title": "LG씨엔에스 - 전부문 고른 성장",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92537&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_304778000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_304778000.pdf",
+      "target_price": "93,000",
+      "target_price_value": 93000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.7,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배순이익",
+      "period": null,
+      "value": 805.0,
+      "unit": "억원",
+      "value_krw_100m": 805.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4%, 지배순이익 805억원 YoY +41."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "유안타증권",
+      "title": "LG씨엔에스 - 전부문 고른 성장",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92537&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_304778000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_304778000.pdf",
+      "target_price": "93,000",
+      "target_price_value": 93000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.7,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 942.0,
+      "unit": "억원",
+      "value_krw_100m": 942.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6%, 영업이익 942억원 YoY +19."
     }
   ],
   "opinion_distribution": [
@@ -233,7 +568,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.65,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -381,7 +718,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -443,7 +783,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 942.0,
+          "unit": "억원",
+          "source_excerpt": "6%, 영업이익 942억원 YoY +19.",
+          "value_krw_100m": 942.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": null,
+          "value": 805.0,
+          "unit": "억원",
+          "source_excerpt": "4%, 지배순이익 805억원 YoY +41.",
+          "value_krw_100m": 805.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -493,13 +857,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 942.0,
+          "unit": "원",
+          "source_excerpt": "6%), 영업이익은 942원(+19.",
+          "value_won": 942.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -549,13 +933,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -613,7 +1006,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1001.0,
+          "unit": "억원",
+          "source_excerpt": "8% YoY, 이하 동일), 영업이익 1,001억원(+26.",
+          "value_krw_100m": 1001.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 735.0,
+          "unit": "억원",
+          "source_excerpt": "9%), 지배주주 순이익 735 억원(+29.",
+          "value_krw_100m": 735.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "recent_changes": [
@@ -733,7 +1150,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -795,7 +1215,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 942.0,
+          "unit": "억원",
+          "source_excerpt": "6%, 영업이익 942억원 YoY +19.",
+          "value_krw_100m": 942.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": null,
+          "value": 805.0,
+          "unit": "억원",
+          "source_excerpt": "4%, 지배순이익 805억원 YoY +41.",
+          "value_krw_100m": 805.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -845,13 +1289,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 942.0,
+          "unit": "원",
+          "source_excerpt": "6%), 영업이익은 942원(+19.",
+          "value_won": 942.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -901,13 +1365,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -965,7 +1438,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1001.0,
+          "unit": "억원",
+          "source_excerpt": "8% YoY, 이하 동일), 영업이익 1,001억원(+26.",
+          "value_krw_100m": 1001.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 735.0,
+          "unit": "억원",
+          "source_excerpt": "9%), 지배주주 순이익 735 억원(+29.",
+          "value_krw_100m": 735.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "timeline": [
@@ -1085,7 +1582,10 @@
       "change_reasons": [
         "신규 커버리지"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1147,7 +1647,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 942.0,
+          "unit": "억원",
+          "source_excerpt": "6%, 영업이익 942억원 YoY +19.",
+          "value_krw_100m": 942.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배순이익",
+          "period": null,
+          "value": 805.0,
+          "unit": "억원",
+          "source_excerpt": "4%, 지배순이익 805억원 YoY +41.",
+          "value_krw_100m": 805.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1197,13 +1721,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 942.0,
+          "unit": "원",
+          "source_excerpt": "6%), 영업이익은 942원(+19.",
+          "value_won": 942.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1253,13 +1797,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1317,7 +1870,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1001.0,
+          "unit": "억원",
+          "source_excerpt": "8% YoY, 이하 동일), 영업이익 1,001억원(+26.",
+          "value_krw_100m": 1001.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "순이익",
+          "period": null,
+          "value": 735.0,
+          "unit": "억원",
+          "source_excerpt": "9%), 지배주주 순이익 735 억원(+29.",
+          "value_krw_100m": 735.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ]
 }

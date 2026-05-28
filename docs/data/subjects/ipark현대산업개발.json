@@ -13,14 +13,19 @@
     "하나증권"
   ],
   "change_summary": {
-    "changed_reports": 6,
+    "changed_reports": 8,
     "target_price_up": 1,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 5
+    "coverage_initiated": 5,
+    "estimate_signal_reports": 7,
+    "earnings_estimate_up": 4,
+    "earnings_estimate_down": 6,
+    "margin_estimate_up": 5,
+    "margin_estimate_down": 4
   },
   "target_summary": {
     "count": 6,
@@ -49,7 +54,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-04-22",
@@ -64,7 +81,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-28",
@@ -79,7 +98,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-28",
@@ -94,7 +119,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-28",
@@ -109,7 +140,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.3,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-28",
@@ -124,7 +163,17 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up",
+          "margin_estimate_down",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-28",
@@ -139,7 +188,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.35,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-04-28",
@@ -154,7 +215,207 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-17",
+        "broker": "키움증권",
+        "title": "IPARK현대산업개발 - 매출액 감소보단 수익성 증가 영향이 큰 상황",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91662&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_95335000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_95335000.pdf",
+        "target_price": "34,000",
+        "target_price_value": 34000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1041.0,
+        "unit": "억원",
+        "value_krw_100m": 1041.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "IPARK현대산업개발 - 매출액 감소보단 수익성 증가 영향이 큰 상황 매출액 감소보단 수익성 증가 영향이 큰 상황 IPARK현대산업개발 1분기 영업이익 시장 컨센서스 부합 IPARK현대산업개발의 1분기 연결 영업이익은 1,041억원(YoY +93%)으로 시장 컨센서스(1,010억원)에…"
+      },
+      {
+        "date": "2026-04-28",
+        "broker": "유진투자증권",
+        "title": "IPARK현대산업개발 - 1Q26 Review: 낮아진 매출보다 높아진 마진에..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92058&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260428_company_214958000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260428_company_214958000.pdf",
+        "target_price": "30,000",
+        "target_price_value": 30000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up",
+          "margin_estimate_down",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 11.9,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 11.9,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "4%yoy, OPM 11.9%)으로 당사 추정치 및 컨센서스 하회."
+      },
+      {
+        "date": "2026-04-28",
+        "broker": "유진투자증권",
+        "title": "IPARK현대산업개발 - 1Q26 Review: 낮아진 매출보다 높아진 마진에..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92058&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260428_company_214958000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260428_company_214958000.pdf",
+        "target_price": "30,000",
+        "target_price_value": 30000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.75,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up",
+          "margin_estimate_down",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 801.0,
+        "unit": "억원",
+        "value_krw_100m": 801.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "6%yoy), 영업이익 801억원(+48."
+      },
+      {
+        "date": "2026-04-28",
+        "broker": "키움증권",
+        "title": "IPARK현대산업개발 - 매출 부진하나 외주주택 수익성 회복 가시화",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92035&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260428_company_663019000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260428_company_663019000.pdf",
+        "target_price": "34,000",
+        "target_price_value": 34000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 11.35,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 801.0,
+        "unit": "억원",
+        "value_krw_100m": 801.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "IPARK현대산업개발 - 매출 부진하나 외주주택 수익성 회복 가시화 매출 부진하나 외주주택 수익성 회복 가시화 IPARK현대산업개발 1분기 영업이익 시장 컨센서스 하회 IPARK현대산업개발의 1분기 연결 영업이익은 801억원(YoY +48%)으로 시장 컨센서스(1,008억원)와 당사…"
+      },
+      {
+        "date": "2026-04-28",
+        "broker": "하나증권",
+        "title": "IPARK현대산업개발 - 외주주택 마진 서프라이즈",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92079&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260428_company_433639000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260428_company_433639000.pdf",
+        "target_price": "29,000",
+        "target_price_value": 29000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 803.0,
+        "unit": "억원",
+        "value_krw_100m": 803.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "2%yoy), 영업이익 803억원(+48."
       }
     ],
     "opinion_distribution": [
@@ -177,7 +438,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.95,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-04-22",
@@ -192,7 +465,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.9,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-04-28",
@@ -207,7 +482,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.85,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       },
       {
         "date": "2026-04-28",
@@ -222,7 +509,17 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.75,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "margin_estimate_up",
+          "margin_estimate_down",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-28",
@@ -237,7 +534,15 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.3,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "마진율 추정 상승/개선"
+        ]
       },
       {
         "date": "2026-04-28",
@@ -252,7 +557,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-28",
@@ -267,7 +578,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 10.35,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-28",
@@ -282,7 +599,19 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 11.35,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down",
+          "margin_estimate_up",
+          "margin_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소",
+          "마진율 추정 상승/개선",
+          "마진율 추정 하락/악화"
+        ]
       }
     ],
     "window_days": 14
@@ -301,7 +630,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-04-22",
@@ -316,7 +657,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-28",
@@ -331,7 +674,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-28",
@@ -346,7 +695,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-28",
@@ -361,7 +716,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.3,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-28",
@@ -376,7 +739,17 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "margin_estimate_down",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-28",
@@ -391,7 +764,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.35,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-04-28",
@@ -406,7 +791,207 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-17",
+      "broker": "키움증권",
+      "title": "IPARK현대산업개발 - 매출액 감소보단 수익성 증가 영향이 큰 상황",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91662&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_95335000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_95335000.pdf",
+      "target_price": "34,000",
+      "target_price_value": 34000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1041.0,
+      "unit": "억원",
+      "value_krw_100m": 1041.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "IPARK현대산업개발 - 매출액 감소보단 수익성 증가 영향이 큰 상황 매출액 감소보단 수익성 증가 영향이 큰 상황 IPARK현대산업개발 1분기 영업이익 시장 컨센서스 부합 IPARK현대산업개발의 1분기 연결 영업이익은 1,041억원(YoY +93%)으로 시장 컨센서스(1,010억원)에…"
+    },
+    {
+      "date": "2026-04-28",
+      "broker": "유진투자증권",
+      "title": "IPARK현대산업개발 - 1Q26 Review: 낮아진 매출보다 높아진 마진에..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92058&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260428_company_214958000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260428_company_214958000.pdf",
+      "target_price": "30,000",
+      "target_price_value": 30000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "margin_estimate_down",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 11.9,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 11.9,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "4%yoy, OPM 11.9%)으로 당사 추정치 및 컨센서스 하회."
+    },
+    {
+      "date": "2026-04-28",
+      "broker": "유진투자증권",
+      "title": "IPARK현대산업개발 - 1Q26 Review: 낮아진 매출보다 높아진 마진에..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92058&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/63/20260428_company_214958000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/63/20260428_company_214958000.pdf",
+      "target_price": "30,000",
+      "target_price_value": 30000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.75,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "margin_estimate_down",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 801.0,
+      "unit": "억원",
+      "value_krw_100m": 801.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "6%yoy), 영업이익 801억원(+48."
+    },
+    {
+      "date": "2026-04-28",
+      "broker": "키움증권",
+      "title": "IPARK현대산업개발 - 매출 부진하나 외주주택 수익성 회복 가시화",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92035&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260428_company_663019000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/39/20260428_company_663019000.pdf",
+      "target_price": "34,000",
+      "target_price_value": 34000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 11.35,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 801.0,
+      "unit": "억원",
+      "value_krw_100m": 801.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "IPARK현대산업개발 - 매출 부진하나 외주주택 수익성 회복 가시화 매출 부진하나 외주주택 수익성 회복 가시화 IPARK현대산업개발 1분기 영업이익 시장 컨센서스 하회 IPARK현대산업개발의 1분기 연결 영업이익은 801억원(YoY +48%)으로 시장 컨센서스(1,008억원)와 당사…"
+    },
+    {
+      "date": "2026-04-28",
+      "broker": "하나증권",
+      "title": "IPARK현대산업개발 - 외주주택 마진 서프라이즈",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92079&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260428_company_433639000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260428_company_433639000.pdf",
+      "target_price": "29,000",
+      "target_price_value": 29000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 803.0,
+      "unit": "억원",
+      "value_krw_100m": 803.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "2%yoy), 영업이익 803억원(+48."
     }
   ],
   "opinion_distribution": [
@@ -429,7 +1014,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.95,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-04-22",
@@ -444,7 +1041,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.9,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-04-28",
@@ -459,7 +1058,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.85,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "date": "2026-04-28",
@@ -474,7 +1085,17 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.75,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "margin_estimate_down",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-28",
@@ -489,7 +1110,15 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.3,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "date": "2026-04-28",
@@ -504,7 +1133,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-28",
@@ -519,7 +1154,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 10.35,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-28",
@@ -534,7 +1175,19 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 11.35,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "broker_summary": [
@@ -619,10 +1272,44 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 801.0,
+          "unit": "억원",
+          "source_excerpt": "IPARK현대산업개발 - 매출 부진하나 외주주택 수익성 회복 가시화 매출 부진하나 외주주택 수익성 회복 가시화 IPARK현대산업개발 1분기 영업이익 시장 컨센서스 하회 IPARK현대산업개발의 1분기 연결 영업이익은 801억원(YoY +48%)으로 시장 컨센서스(1,008억원)와 당사…",
+          "value_krw_100m": 801.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -674,13 +1361,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -732,13 +1428,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -789,13 +1494,26 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -846,13 +1564,51 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up",
+        "margin_estimate_down",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 801.0,
+          "unit": "억원",
+          "source_excerpt": "6%yoy), 영업이익 801억원(+48.",
+          "value_krw_100m": 801.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 11.9,
+          "unit": "%",
+          "value_pct": 11.9,
+          "source_excerpt": "4%yoy, OPM 11.9%)으로 당사 추정치 및 컨센서스 하회."
+        }
+      ],
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "margin_estimate_down",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -902,13 +1658,45 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 803.0,
+          "unit": "억원",
+          "source_excerpt": "2%yoy), 영업이익 803억원(+48.",
+          "value_krw_100m": 803.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     }
   ],
   "recent_changes": [
@@ -916,6 +1704,94 @@
       "source": "naver_research",
       "category": "company",
       "category_label": "종목분석",
+      "report_id": "92035",
+      "title": "매출 부진하나 외주주택 수익성 회복 가시화",
+      "display_title": "IPARK현대산업개발 - 매출 부진하나 외주주택 수익성 회복 가시화",
+      "broker": "키움증권",
+      "published_date": "2026-04-28",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92035&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260428_company_663019000.pdf",
+      "subject": "IPARK현대산업개발",
+      "subject_key": "ipark현대산업개발",
+      "views": 649,
+      "analyst": null,
+      "target_price": "34,000",
+      "target_price_value": 34000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1분기 영업이익 시장 컨센서스 하회 IPARK현대산업개발의 1분기 연결 영업이익은 801억원(YoY +48%)으로 시장 컨센서스(1,008억원)와 당사 추정치(1,040억원)를 하회했다.",
+      "summary": "1분기 영업이익 시장 컨센서스 하회 IPARK현대산업개발의 1분기 연결 영업이익은 801억원(YoY +48%)으로 시장 컨센서스(1,008억원)와 당사 추정치(1,040억원)를 하회했다. 특히, 매출액이 컨센서스 9,585억원을 크게 하회한 6,739억원을 기록한 점이 추정치 하회의 주요 요인으로 파악된다.",
+      "summary_engine": "rule",
+      "score": 11.35,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 섹터/키워드(건설)",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "건설"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": "2026-04-17",
+      "previous_target_price": "34,000",
+      "previous_opinion": "Buy",
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 801.0,
+          "unit": "억원",
+          "source_excerpt": "IPARK현대산업개발 - 매출 부진하나 외주주택 수익성 회복 가시화 매출 부진하나 외주주택 수익성 회복 가시화 IPARK현대산업개발 1분기 영업이익 시장 컨센서스 하회 IPARK현대산업개발의 1분기 연결 영업이익은 801억원(YoY +48%)으로 시장 컨센서스(1,008억원)와 당사…",
+          "value_krw_100m": 801.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
       "report_id": "92030",
       "title": "1Q26 Review: 두 자릿수 영업이익률 시대 진..",
       "display_title": "IPARK현대산업개발 - 1Q26 Review: 두 자릿수 영업이익률 시대 진..",
@@ -962,13 +1838,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1020,13 +1905,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1077,13 +1971,26 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1134,13 +2041,51 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up",
+        "margin_estimate_down",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 801.0,
+          "unit": "억원",
+          "source_excerpt": "6%yoy), 영업이익 801억원(+48.",
+          "value_krw_100m": 801.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 11.9,
+          "unit": "%",
+          "value_pct": 11.9,
+          "source_excerpt": "4%yoy, OPM 11.9%)으로 당사 추정치 및 컨센서스 하회."
+        }
+      ],
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "margin_estimate_down",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1190,13 +2135,45 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 803.0,
+          "unit": "억원",
+          "source_excerpt": "2%yoy), 영업이익 803억원(+48.",
+          "value_krw_100m": 803.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1251,7 +2228,86 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91662",
+      "title": "매출액 감소보단 수익성 증가 영향이 큰 상황",
+      "display_title": "IPARK현대산업개발 - 매출액 감소보단 수익성 증가 영향이 큰 상황",
+      "broker": "키움증권",
+      "published_date": "2026-04-17",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91662&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/39/20260417_company_95335000.pdf",
+      "subject": "IPARK현대산업개발",
+      "views": 2165,
+      "analyst": null,
+      "target_price": "34,000",
+      "opinion": "Buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1분기 영업이익 시장 컨센서스 부합 IPARK현대산업개발의 1분기 연결 영업이익은 1,041억원(YoY +93%)으로 시장 컨센서스(1,010억원)에 부합할 것으로 전망된다.",
+      "summary": "1분기 영업이익 시장 컨센서스 부합 IPARK현대산업개발의 1분기 연결 영업이익은 1,041억원(YoY +93%)으로 시장 컨센서스(1,010억원)에 부합할 것으로 전망된다. 매출액은 작년 반영되었던 수원IPC 인도 매출과 일부 고원가 현장들의 준공에 따라서 감소할 것으로 전망된다.",
+      "summary_engine": "rule",
+      "score": 8.95,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "subject_key": "ipark현대산업개발",
+      "ticker": null,
+      "target_price_value": 34000,
+      "opinion_normalized": "buy",
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1041.0,
+          "unit": "억원",
+          "source_excerpt": "IPARK현대산업개발 - 매출액 감소보단 수익성 증가 영향이 큰 상황 매출액 감소보단 수익성 증가 영향이 큰 상황 IPARK현대산업개발 1분기 영업이익 시장 컨센서스 부합 IPARK현대산업개발의 1분기 연결 영업이익은 1,041억원(YoY +93%)으로 시장 컨센서스(1,010억원)에…",
+          "value_krw_100m": 1041.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "has_change_signal": true
     }
   ],
   "timeline": [
@@ -1304,10 +2360,44 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false,
-      "ticker": null
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "has_change_signal": true,
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 801.0,
+          "unit": "억원",
+          "source_excerpt": "IPARK현대산업개발 - 매출 부진하나 외주주택 수익성 회복 가시화 매출 부진하나 외주주택 수익성 회복 가시화 IPARK현대산업개발 1분기 영업이익 시장 컨센서스 하회 IPARK현대산업개발의 1분기 연결 영업이익은 801억원(YoY +48%)으로 시장 컨센서스(1,008억원)와 당사…",
+          "value_krw_100m": 801.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1359,13 +2449,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1417,13 +2516,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1474,13 +2582,26 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "target_up"
+        "target_up",
+        "earnings_estimate_up",
+        "margin_estimate_up"
       ],
       "change_reasons": [
-        "목표가 상향"
+        "목표가 상향",
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "margin_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "마진율 추정 상승/개선"
+      ]
     },
     {
       "source": "naver_research",
@@ -1531,13 +2652,51 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "margin_estimate_up",
+        "margin_estimate_down",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 801.0,
+          "unit": "억원",
+          "source_excerpt": "6%yoy), 영업이익 801억원(+48.",
+          "value_krw_100m": 801.0
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 11.9,
+          "unit": "%",
+          "value_pct": 11.9,
+          "source_excerpt": "4%yoy, OPM 11.9%)으로 당사 추정치 및 컨센서스 하회."
+        }
+      ],
+      "estimate_signal_types": [
+        "margin_estimate_up",
+        "margin_estimate_down",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1587,13 +2746,45 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 803.0,
+          "unit": "억원",
+          "source_excerpt": "2%yoy), 영업이익 803억원(+48.",
+          "value_krw_100m": 803.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ]
     },
     {
       "source": "naver_research",
@@ -1648,7 +2839,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1688,9 +2882,43 @@
       "ticker": null,
       "target_price_value": 34000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1041.0,
+          "unit": "억원",
+          "source_excerpt": "IPARK현대산업개발 - 매출액 감소보단 수익성 증가 영향이 큰 상황 매출액 감소보단 수익성 증가 영향이 큰 상황 IPARK현대산업개발 1분기 영업이익 시장 컨센서스 부합 IPARK현대산업개발의 1분기 연결 영업이익은 1,041억원(YoY +93%)으로 시장 컨센서스(1,010억원)에…",
+          "value_krw_100m": 1041.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down",
+        "margin_estimate_up",
+        "margin_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소",
+        "마진율 추정 상승/개선",
+        "마진율 추정 하락/악화"
+      ],
+      "has_change_signal": true
     }
   ]
 }

@@ -10,14 +10,19 @@
     "신한투자증권"
   ],
   "change_summary": {
-    "changed_reports": 2,
+    "changed_reports": 3,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 2
+    "coverage_initiated": 2,
+    "estimate_signal_reports": 2,
+    "earnings_estimate_up": 2,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 3,
@@ -46,7 +51,15 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": false
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-18",
@@ -61,7 +74,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.08,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-26",
@@ -76,7 +91,173 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.7,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-04-16",
+        "broker": "삼성증권",
+        "title": "미스토홀딩스 - 미스토 부문 이익 개선 흐름 유효",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91642&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_303861000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_303861000.pdf",
+        "target_price": "54,000",
+        "target_price_value": 54000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1801.0,
+        "unit": "억원",
+        "value_krw_100m": 1801.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "미스토홀딩스 - 미스토 부문 이익 개선 흐름 유효 미스토 부문 이익 개선 흐름 유효 미스토홀딩스 1Q26 영업이익, 컨센서스 하회 전망: 동사는 1분기 매출액 1조 2,697억원(+3% y-y), 영업이익 1,801억원(+11% y-y)을 기록할 것으로 전망."
+      },
+      {
+        "date": "2026-04-16",
+        "broker": "삼성증권",
+        "title": "미스토홀딩스 - 미스토 부문 이익 개선 흐름 유효",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91642&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_303861000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_303861000.pdf",
+        "target_price": "54,000",
+        "target_price_value": 54000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 122.0,
+        "unit": "억원",
+        "value_krw_100m": 122.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "사업부별로는 (1) 미스토 부문 매출액 1,867억원(-14% y-y), 영업이익 122억원(+441%), (2) 아쿠쉬네트 매출액 1조 830억원(+6%), 영업이익 1,679억원(+5%)을 기록할 전망."
+      },
+      {
+        "date": "2026-04-16",
+        "broker": "삼성증권",
+        "title": "미스토홀딩스 - 미스토 부문 이익 개선 흐름 유효",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91642&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_303861000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_303861000.pdf",
+        "target_price": "54,000",
+        "target_price_value": 54000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": null,
+        "value": 1679.0,
+        "unit": "억원",
+        "value_krw_100m": 1679.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "사업부별로는 (1) 미스토 부문 매출액 1,867억원(-14% y-y), 영업이익 122억원(+441%), (2) 아쿠쉬네트 매출액 1조 830억원(+6%), 영업이익 1,679억원(+5%)을 기록할 전망."
+      },
+      {
+        "date": "2026-05-18",
+        "broker": "SK증권",
+        "title": "미스토홀딩스 - 멀리 보자",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93060&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260518_company_944035000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260518_company_944035000.pdf",
+        "target_price": "50,000",
+        "target_price_value": 50000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.08,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 15.0,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 15.0,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "0%, OPM 15.0%) 기록해 영업이익 시장 컨센서스에 부합하는 실적 기록했다."
+      },
+      {
+        "date": "2026-05-18",
+        "broker": "SK증권",
+        "title": "미스토홀딩스 - 멀리 보자",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93060&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260518_company_944035000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260518_company_944035000.pdf",
+        "target_price": "50,000",
+        "target_price_value": 50000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.08,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_margin",
+        "metric_group": "margin",
+        "label": "OPM",
+        "period": null,
+        "value": 11.9,
+        "unit": "%",
+        "value_krw_100m": null,
+        "value_pct": 11.9,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8%, OPM 11.9%) 기록했다."
       }
     ],
     "opinion_distribution": [
@@ -99,7 +280,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 7.08,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-26",
@@ -114,7 +297,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 9.7,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       }
     ],
     "window_days": 14
@@ -133,7 +322,15 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": false
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-18",
@@ -148,7 +345,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.08,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-26",
@@ -163,7 +362,173 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.7,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-04-16",
+      "broker": "삼성증권",
+      "title": "미스토홀딩스 - 미스토 부문 이익 개선 흐름 유효",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91642&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_303861000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_303861000.pdf",
+      "target_price": "54,000",
+      "target_price_value": 54000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1801.0,
+      "unit": "억원",
+      "value_krw_100m": 1801.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "미스토홀딩스 - 미스토 부문 이익 개선 흐름 유효 미스토 부문 이익 개선 흐름 유효 미스토홀딩스 1Q26 영업이익, 컨센서스 하회 전망: 동사는 1분기 매출액 1조 2,697억원(+3% y-y), 영업이익 1,801억원(+11% y-y)을 기록할 것으로 전망."
+    },
+    {
+      "date": "2026-04-16",
+      "broker": "삼성증권",
+      "title": "미스토홀딩스 - 미스토 부문 이익 개선 흐름 유효",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91642&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_303861000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_303861000.pdf",
+      "target_price": "54,000",
+      "target_price_value": 54000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 122.0,
+      "unit": "억원",
+      "value_krw_100m": 122.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "사업부별로는 (1) 미스토 부문 매출액 1,867억원(-14% y-y), 영업이익 122억원(+441%), (2) 아쿠쉬네트 매출액 1조 830억원(+6%), 영업이익 1,679억원(+5%)을 기록할 전망."
+    },
+    {
+      "date": "2026-04-16",
+      "broker": "삼성증권",
+      "title": "미스토홀딩스 - 미스토 부문 이익 개선 흐름 유효",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91642&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_303861000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_303861000.pdf",
+      "target_price": "54,000",
+      "target_price_value": 54000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": null,
+      "value": 1679.0,
+      "unit": "억원",
+      "value_krw_100m": 1679.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "사업부별로는 (1) 미스토 부문 매출액 1,867억원(-14% y-y), 영업이익 122억원(+441%), (2) 아쿠쉬네트 매출액 1조 830억원(+6%), 영업이익 1,679억원(+5%)을 기록할 전망."
+    },
+    {
+      "date": "2026-05-18",
+      "broker": "SK증권",
+      "title": "미스토홀딩스 - 멀리 보자",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93060&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260518_company_944035000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260518_company_944035000.pdf",
+      "target_price": "50,000",
+      "target_price_value": 50000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.08,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 15.0,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 15.0,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "0%, OPM 15.0%) 기록해 영업이익 시장 컨센서스에 부합하는 실적 기록했다."
+    },
+    {
+      "date": "2026-05-18",
+      "broker": "SK증권",
+      "title": "미스토홀딩스 - 멀리 보자",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93060&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260518_company_944035000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260518_company_944035000.pdf",
+      "target_price": "50,000",
+      "target_price_value": 50000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.08,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_margin",
+      "metric_group": "margin",
+      "label": "OPM",
+      "period": null,
+      "value": 11.9,
+      "unit": "%",
+      "value_krw_100m": null,
+      "value_pct": 11.9,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8%, OPM 11.9%) 기록했다."
     }
   ],
   "opinion_distribution": [
@@ -186,7 +551,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 7.08,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-26",
@@ -201,7 +568,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 9.7,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "broker_summary": [
@@ -333,12 +706,21 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -393,7 +775,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.0,
+          "unit": "%",
+          "value_pct": 15.0,
+          "source_excerpt": "0%, OPM 15.0%) 기록해 영업이익 시장 컨센서스에 부합하는 실적 기록했다."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 11.9,
+          "unit": "%",
+          "value_pct": 11.9,
+          "source_excerpt": "8%, OPM 11.9%) 기록했다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -433,9 +839,55 @@
       "ticker": null,
       "target_price_value": 54000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1801.0,
+          "unit": "억원",
+          "source_excerpt": "미스토홀딩스 - 미스토 부문 이익 개선 흐름 유효 미스토 부문 이익 개선 흐름 유효 미스토홀딩스 1Q26 영업이익, 컨센서스 하회 전망: 동사는 1분기 매출액 1조 2,697억원(+3% y-y), 영업이익 1,801억원(+11% y-y)을 기록할 것으로 전망.",
+          "value_krw_100m": 1801.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 122.0,
+          "unit": "억원",
+          "source_excerpt": "사업부별로는 (1) 미스토 부문 매출액 1,867억원(-14% y-y), 영업이익 122억원(+441%), (2) 아쿠쉬네트 매출액 1조 830억원(+6%), 영업이익 1,679억원(+5%)을 기록할 전망.",
+          "value_krw_100m": 122.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1679.0,
+          "unit": "억원",
+          "source_excerpt": "사업부별로는 (1) 미스토 부문 매출액 1,867억원(-14% y-y), 영업이익 122억원(+441%), (2) 아쿠쉬네트 매출액 1조 830억원(+6%), 영업이익 1,679억원(+5%)을 기록할 전망.",
+          "value_krw_100m": 1679.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true
     }
   ],
   "recent_changes": [
@@ -547,12 +999,21 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -607,7 +1068,119 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.0,
+          "unit": "%",
+          "value_pct": 15.0,
+          "source_excerpt": "0%, OPM 15.0%) 기록해 영업이익 시장 컨센서스에 부합하는 실적 기록했다."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 11.9,
+          "unit": "%",
+          "value_pct": 11.9,
+          "source_excerpt": "8%, OPM 11.9%) 기록했다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    },
+    {
+      "source": "naver_research",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "91642",
+      "title": "미스토 부문 이익 개선 흐름 유효",
+      "display_title": "미스토홀딩스 - 미스토 부문 이익 개선 흐름 유효",
+      "broker": "삼성증권",
+      "published_date": "2026-04-16",
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91642&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/78/20260416_company_303861000.pdf",
+      "subject": "미스토홀딩스",
+      "views": 935,
+      "analyst": null,
+      "target_price": "54,000",
+      "opinion": "Buy",
+      "has_pdf_text": true,
+      "content_sources": [
+        "html",
+        "pdf"
+      ],
+      "excerpt": "1Q26 영업이익, 컨센서스 하회 전망: 동사는 1분기 매출액 1조 2,697억원(+3% y-y), 영업이익 1,801억원(+11% y-y)을 기록할 것으로 전망. 매출액은 컨센서스를 +3% 상회하겠으나, 영업이익은 -6% 하회할 것으로 예상.",
+      "summary": "1Q26 영업이익, 컨센서스 하회 전망: 동사는 1분기 매출액 1조 2,697억원(+3% y-y), 영업이익 1,801억원(+11% y-y)을 기록할 것으로 전망. 매출액은 컨센서스를 +3% 상회하겠으나, 영업이익은 -6% 하회할 것으로 예상. 사업부별로는 (1) 미스토 부문 매출액 1,867억원(-14% y-y), 영업이익 122억원(+441%), (2) 아쿠쉬네트 매출액 1조 830억원(+6%), 영업이익 1,679억원(+5%)을 기록할 전망.",
+      "summary_engine": "rule",
+      "score": 9.1,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "우선 추적 증권사"
+      ],
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "subject_key": "미스토홀딩스",
+      "ticker": null,
+      "target_price_value": 54000,
+      "opinion_normalized": "buy",
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1801.0,
+          "unit": "억원",
+          "source_excerpt": "미스토홀딩스 - 미스토 부문 이익 개선 흐름 유효 미스토 부문 이익 개선 흐름 유효 미스토홀딩스 1Q26 영업이익, 컨센서스 하회 전망: 동사는 1분기 매출액 1조 2,697억원(+3% y-y), 영업이익 1,801억원(+11% y-y)을 기록할 것으로 전망.",
+          "value_krw_100m": 1801.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 122.0,
+          "unit": "억원",
+          "source_excerpt": "사업부별로는 (1) 미스토 부문 매출액 1,867억원(-14% y-y), 영업이익 122억원(+441%), (2) 아쿠쉬네트 매출액 1조 830억원(+6%), 영업이익 1,679억원(+5%)을 기록할 전망.",
+          "value_krw_100m": 122.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1679.0,
+          "unit": "억원",
+          "source_excerpt": "사업부별로는 (1) 미스토 부문 매출액 1,867억원(-14% y-y), 영업이익 122억원(+441%), (2) 아쿠쉬네트 매출액 1조 830억원(+6%), 영업이익 1,679억원(+5%)을 기록할 전망.",
+          "value_krw_100m": 1679.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true
     }
   ],
   "timeline": [
@@ -719,12 +1292,21 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -779,7 +1361,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 15.0,
+          "unit": "%",
+          "value_pct": 15.0,
+          "source_excerpt": "0%, OPM 15.0%) 기록해 영업이익 시장 컨센서스에 부합하는 실적 기록했다."
+        },
+        {
+          "metric": "operating_margin",
+          "metric_group": "margin",
+          "label": "OPM",
+          "period": null,
+          "value": 11.9,
+          "unit": "%",
+          "value_pct": 11.9,
+          "source_excerpt": "8%, OPM 11.9%) 기록했다."
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -819,9 +1425,55 @@
       "ticker": null,
       "target_price_value": 54000,
       "opinion_normalized": "buy",
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1801.0,
+          "unit": "억원",
+          "source_excerpt": "미스토홀딩스 - 미스토 부문 이익 개선 흐름 유효 미스토 부문 이익 개선 흐름 유효 미스토홀딩스 1Q26 영업이익, 컨센서스 하회 전망: 동사는 1분기 매출액 1조 2,697억원(+3% y-y), 영업이익 1,801억원(+11% y-y)을 기록할 것으로 전망.",
+          "value_krw_100m": 1801.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 122.0,
+          "unit": "억원",
+          "source_excerpt": "사업부별로는 (1) 미스토 부문 매출액 1,867억원(-14% y-y), 영업이익 122억원(+441%), (2) 아쿠쉬네트 매출액 1조 830억원(+6%), 영업이익 1,679억원(+5%)을 기록할 전망.",
+          "value_krw_100m": 122.0
+        },
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": null,
+          "value": 1679.0,
+          "unit": "억원",
+          "source_excerpt": "사업부별로는 (1) 미스토 부문 매출액 1,867억원(-14% y-y), 영업이익 122억원(+441%), (2) 아쿠쉬네트 매출액 1조 830억원(+6%), 영업이익 1,679억원(+5%)을 기록할 전망.",
+          "value_krw_100m": 1679.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "change_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "has_change_signal": true
     }
   ]
 }

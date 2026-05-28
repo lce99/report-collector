@@ -21,7 +21,12 @@
     "opinion_up": 0,
     "opinion_down": 0,
     "analyst_changed": 0,
-    "coverage_initiated": 8
+    "coverage_initiated": 8,
+    "estimate_signal_reports": 6,
+    "earnings_estimate_up": 6,
+    "earnings_estimate_down": 1,
+    "margin_estimate_up": 0,
+    "margin_estimate_down": 0
   },
   "target_summary": {
     "count": 7,
@@ -54,7 +59,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -69,7 +80,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -84,7 +101,15 @@
         "opinion": "MarketPerform",
         "opinion_normalized": "hold",
         "score": 10.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -99,7 +124,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -114,7 +145,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -129,7 +166,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-12",
@@ -144,7 +183,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-18",
@@ -159,7 +204,163 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
+      }
+    ],
+    "estimate_metric_history": [
+      {
+        "date": "2026-05-12",
+        "broker": "SK증권",
+        "title": "삼성증권 - 1Q26 Review: 10점 만점에 10점",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92771&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260512_company_55190000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260512_company_55190000.pdf",
+        "target_price": "170,000",
+        "target_price_value": 170000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.2,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배주주순이익",
+        "period": "1Q26",
+        "value": 4509.0,
+        "unit": "억원",
+        "value_krw_100m": 4509.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "8% 상회하며 분기 최대 실적 기록 1Q26 지배주주순이익은 4,509억원(YoY +81."
+      },
+      {
+        "date": "2026-05-12",
+        "broker": "신한투자증권",
+        "title": "삼성증권 - 삼성증권; 높아진 눈높이를 상회하는 어닝 서프라이즈",
+        "ticker": null,
+        "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=936268",
+        "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351374",
+        "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351374",
+        "target_price": "15.5만원",
+        "target_price_value": 155000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 8.8,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배주주순이익",
+        "period": "1Q26",
+        "value": 4509.0,
+        "unit": "억원",
+        "value_krw_100m": 4509.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "삼성증권 - 삼성증권; 높아진 눈높이를 상회하는 어닝 서프라이즈 삼성증권; 높아진 눈높이를 상회하는 어닝 서프라이즈 삼성증권 신한생각: 외국인 통합계좌 서비스에 대한 과도한 기대는 경계 필요 1Q26 지배주주순이익 4,509억원(+81."
+      },
+      {
+        "date": "2026-05-12",
+        "broker": "하나증권",
+        "title": "삼성증권 - 2026년 1분기 컨퍼런스 콜 요약",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92775&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_66388000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_66388000.pdf",
+        "target_price": "175,000",
+        "target_price_value": 175000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배주주순이익",
+        "period": "1분기",
+        "value": 4509.0,
+        "unit": "억원",
+        "value_krw_100m": 4509.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "7%) - 연결 기준 1분기 지배주주순이익 4,509억원 (YoY +81."
+      },
+      {
+        "date": "2026-05-12",
+        "broker": "하나증권",
+        "title": "삼성증권 - 1Q26 Re - 리테일 시대 개막",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92781&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_637573000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_637573000.pdf",
+        "target_price": "175,000",
+        "target_price_value": 175000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 8.05,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "net_profit",
+        "metric_group": "earnings",
+        "label": "지배주주순이익",
+        "period": null,
+        "value": 4095.0,
+        "unit": "억원",
+        "value_krw_100m": 4095.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "삼성증권 - 1Q26 Re - 리테일 시대 개막 1Q26 Re - 리테일 시대 개막 삼성증권 2026년 1분기 실적은 컨센서스 16% 상회 2026년 1분기 연결 지배주주순이익은 4,095억원(YoY +81."
+      },
+      {
+        "date": "2026-05-12",
+        "broker": "하나증권",
+        "title": "삼성증권 - 2026년 1분기 컨퍼런스 콜 요약",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92775&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_66388000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_66388000.pdf",
+        "target_price": "175,000",
+        "target_price_value": 175000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 9.1,
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "operating_profit",
+        "metric_group": "earnings",
+        "label": "영업이익",
+        "period": "1분기",
+        "value": 6095.0,
+        "unit": "억원",
+        "value_krw_100m": 6095.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "삼성증권 - 2026년 1분기 컨퍼런스 콜 요약 2026년 1분기 컨퍼런스 콜 요약 삼성증권 <1분기 실적 브리핑> - 연결 기준 1분기 영업이익 6,095억원 (YoY +82."
       }
     ],
     "opinion_distribution": [
@@ -186,7 +387,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -201,7 +408,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -216,7 +429,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 8.2,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -231,7 +450,13 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.8,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -246,7 +471,9 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 9.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       },
       {
         "date": "2026-05-12",
@@ -261,7 +488,15 @@
         "opinion": "MarketPerform",
         "opinion_normalized": "hold",
         "score": 10.05,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-12",
@@ -276,7 +511,13 @@
         "opinion": "Buy",
         "opinion_normalized": "buy",
         "score": 10.1,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ]
       },
       {
         "date": "2026-05-18",
@@ -291,7 +532,9 @@
         "opinion": "매수",
         "opinion_normalized": "buy",
         "score": 8.0,
-        "has_change_signal": true
+        "has_change_signal": true,
+        "estimate_signal_types": [],
+        "estimate_reasons": []
       }
     ],
     "window_days": 14
@@ -310,7 +553,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -325,7 +574,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -340,7 +595,15 @@
       "opinion": "MarketPerform",
       "opinion_normalized": "hold",
       "score": 10.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -355,7 +618,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -370,7 +639,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -385,7 +660,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-12",
@@ -400,7 +677,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-18",
@@ -415,7 +698,163 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
+    }
+  ],
+  "estimate_metric_history": [
+    {
+      "date": "2026-05-12",
+      "broker": "SK증권",
+      "title": "삼성증권 - 1Q26 Review: 10점 만점에 10점",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92771&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260512_company_55190000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260512_company_55190000.pdf",
+      "target_price": "170,000",
+      "target_price_value": 170000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.2,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배주주순이익",
+      "period": "1Q26",
+      "value": 4509.0,
+      "unit": "억원",
+      "value_krw_100m": 4509.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "8% 상회하며 분기 최대 실적 기록 1Q26 지배주주순이익은 4,509억원(YoY +81."
+    },
+    {
+      "date": "2026-05-12",
+      "broker": "신한투자증권",
+      "title": "삼성증권 - 삼성증권; 높아진 눈높이를 상회하는 어닝 서프라이즈",
+      "ticker": null,
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=936268",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351374",
+      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=351374",
+      "target_price": "15.5만원",
+      "target_price_value": 155000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 8.8,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배주주순이익",
+      "period": "1Q26",
+      "value": 4509.0,
+      "unit": "억원",
+      "value_krw_100m": 4509.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "삼성증권 - 삼성증권; 높아진 눈높이를 상회하는 어닝 서프라이즈 삼성증권; 높아진 눈높이를 상회하는 어닝 서프라이즈 삼성증권 신한생각: 외국인 통합계좌 서비스에 대한 과도한 기대는 경계 필요 1Q26 지배주주순이익 4,509억원(+81."
+    },
+    {
+      "date": "2026-05-12",
+      "broker": "하나증권",
+      "title": "삼성증권 - 2026년 1분기 컨퍼런스 콜 요약",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92775&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_66388000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_66388000.pdf",
+      "target_price": "175,000",
+      "target_price_value": 175000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배주주순이익",
+      "period": "1분기",
+      "value": 4509.0,
+      "unit": "억원",
+      "value_krw_100m": 4509.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "7%) - 연결 기준 1분기 지배주주순이익 4,509억원 (YoY +81."
+    },
+    {
+      "date": "2026-05-12",
+      "broker": "하나증권",
+      "title": "삼성증권 - 1Q26 Re - 리테일 시대 개막",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92781&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_637573000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_637573000.pdf",
+      "target_price": "175,000",
+      "target_price_value": 175000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 8.05,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "net_profit",
+      "metric_group": "earnings",
+      "label": "지배주주순이익",
+      "period": null,
+      "value": 4095.0,
+      "unit": "억원",
+      "value_krw_100m": 4095.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "삼성증권 - 1Q26 Re - 리테일 시대 개막 1Q26 Re - 리테일 시대 개막 삼성증권 2026년 1분기 실적은 컨센서스 16% 상회 2026년 1분기 연결 지배주주순이익은 4,095억원(YoY +81."
+    },
+    {
+      "date": "2026-05-12",
+      "broker": "하나증권",
+      "title": "삼성증권 - 2026년 1분기 컨퍼런스 콜 요약",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92775&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_66388000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/57/20260512_company_66388000.pdf",
+      "target_price": "175,000",
+      "target_price_value": 175000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 9.1,
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "operating_profit",
+      "metric_group": "earnings",
+      "label": "영업이익",
+      "period": "1분기",
+      "value": 6095.0,
+      "unit": "억원",
+      "value_krw_100m": 6095.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "삼성증권 - 2026년 1분기 컨퍼런스 콜 요약 2026년 1분기 컨퍼런스 콜 요약 삼성증권 <1분기 실적 브리핑> - 연결 기준 1분기 영업이익 6,095억원 (YoY +82."
     }
   ],
   "opinion_distribution": [
@@ -442,7 +881,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -457,7 +902,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -472,7 +923,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 8.2,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -487,7 +944,13 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.8,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -502,7 +965,9 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 9.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "date": "2026-05-12",
@@ -517,7 +982,15 @@
       "opinion": "MarketPerform",
       "opinion_normalized": "hold",
       "score": 10.05,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -532,7 +1005,13 @@
       "opinion": "Buy",
       "opinion_normalized": "buy",
       "score": 10.1,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "date": "2026-05-18",
@@ -547,7 +1026,9 @@
       "opinion": "매수",
       "opinion_normalized": "buy",
       "score": 8.0,
-      "has_change_signal": true
+      "has_change_signal": true,
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     }
   ],
   "broker_summary": [
@@ -643,7 +1124,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -695,13 +1179,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -753,13 +1246,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -817,7 +1323,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 6095.0,
+          "unit": "억원",
+          "source_excerpt": "삼성증권 - 2026년 1분기 컨퍼런스 콜 요약 2026년 1분기 컨퍼런스 콜 요약 삼성증권 <1분기 실적 브리핑> - 연결 기준 1분기 영업이익 6,095억원 (YoY +82.",
+          "value_krw_100m": 6095.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1분기",
+          "value": 4509.0,
+          "unit": "억원",
+          "source_excerpt": "7%) - 연결 기준 1분기 지배주주순이익 4,509억원 (YoY +81.",
+          "value_krw_100m": 4509.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "shinhan_investment_official",
@@ -868,13 +1398,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1Q26",
+          "value": 4509.0,
+          "unit": "억원",
+          "source_excerpt": "삼성증권 - 삼성증권; 높아진 눈높이를 상회하는 어닝 서프라이즈 삼성증권; 높아진 눈높이를 상회하는 어닝 서프라이즈 삼성증권 신한생각: 외국인 통합계좌 서비스에 대한 과도한 기대는 경계 필요 1Q26 지배주주순이익 4,509억원(+81.",
+          "value_krw_100m": 4509.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -926,13 +1476,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -984,13 +1543,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1Q26",
+          "value": 4509.0,
+          "unit": "억원",
+          "source_excerpt": "8% 상회하며 분기 최대 실적 기록 1Q26 지배주주순이익은 4,509억원(YoY +81.",
+          "value_krw_100m": 4509.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "recent_changes": [
@@ -1050,7 +1629,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1102,13 +1684,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1160,13 +1751,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1224,7 +1828,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 6095.0,
+          "unit": "억원",
+          "source_excerpt": "삼성증권 - 2026년 1분기 컨퍼런스 콜 요약 2026년 1분기 컨퍼런스 콜 요약 삼성증권 <1분기 실적 브리핑> - 연결 기준 1분기 영업이익 6,095억원 (YoY +82.",
+          "value_krw_100m": 6095.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1분기",
+          "value": 4509.0,
+          "unit": "억원",
+          "source_excerpt": "7%) - 연결 기준 1분기 지배주주순이익 4,509억원 (YoY +81.",
+          "value_krw_100m": 4509.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "shinhan_investment_official",
@@ -1275,13 +1903,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1Q26",
+          "value": 4509.0,
+          "unit": "억원",
+          "source_excerpt": "삼성증권 - 삼성증권; 높아진 눈높이를 상회하는 어닝 서프라이즈 삼성증권; 높아진 눈높이를 상회하는 어닝 서프라이즈 삼성증권 신한생각: 외국인 통합계좌 서비스에 대한 과도한 기대는 경계 필요 1Q26 지배주주순이익 4,509억원(+81.",
+          "value_krw_100m": 4509.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1333,13 +1981,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1391,13 +2048,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1Q26",
+          "value": 4509.0,
+          "unit": "억원",
+          "source_excerpt": "8% 상회하며 분기 최대 실적 기록 1Q26 지배주주순이익은 4,509억원(YoY +81.",
+          "value_krw_100m": 4509.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1447,13 +2124,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 4095.0,
+          "unit": "억원",
+          "source_excerpt": "삼성증권 - 1Q26 Re - 리테일 시대 개막 1Q26 Re - 리테일 시대 개막 삼성증권 2026년 1분기 실적은 컨센서스 16% 상회 2026년 1분기 연결 지배주주순이익은 4,095억원(YoY +81.",
+          "value_krw_100m": 4095.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ],
   "timeline": [
@@ -1513,7 +2210,10 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "naver_research",
@@ -1565,13 +2265,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1623,13 +2332,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1687,7 +2409,31 @@
         "신규 커버리지"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "operating_profit",
+          "metric_group": "earnings",
+          "label": "영업이익",
+          "period": "1분기",
+          "value": 6095.0,
+          "unit": "억원",
+          "source_excerpt": "삼성증권 - 2026년 1분기 컨퍼런스 콜 요약 2026년 1분기 컨퍼런스 콜 요약 삼성증권 <1분기 실적 브리핑> - 연결 기준 1분기 영업이익 6,095억원 (YoY +82.",
+          "value_krw_100m": 6095.0
+        },
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1분기",
+          "value": 4509.0,
+          "unit": "억원",
+          "source_excerpt": "7%) - 연결 기준 1분기 지배주주순이익 4,509억원 (YoY +81.",
+          "value_krw_100m": 4509.0
+        }
+      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": []
     },
     {
       "source": "shinhan_investment_official",
@@ -1738,13 +2484,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1Q26",
+          "value": 4509.0,
+          "unit": "억원",
+          "source_excerpt": "삼성증권 - 삼성증권; 높아진 눈높이를 상회하는 어닝 서프라이즈 삼성증권; 높아진 눈높이를 상회하는 어닝 서프라이즈 삼성증권 신한생각: 외국인 통합계좌 서비스에 대한 과도한 기대는 경계 필요 1Q26 지배주주순이익 4,509억원(+81.",
+          "value_krw_100m": 4509.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1796,13 +2562,22 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1854,13 +2629,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": "1Q26",
+          "value": 4509.0,
+          "unit": "억원",
+          "source_excerpt": "8% 상회하며 분기 최대 실적 기록 1Q26 지배주주순이익은 4,509억원(YoY +81.",
+          "value_krw_100m": 4509.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     },
     {
       "source": "naver_research",
@@ -1910,13 +2705,33 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true,
-      "ticker": null
+      "ticker": null,
+      "estimate_metrics": [
+        {
+          "metric": "net_profit",
+          "metric_group": "earnings",
+          "label": "지배주주순이익",
+          "period": null,
+          "value": 4095.0,
+          "unit": "억원",
+          "source_excerpt": "삼성증권 - 1Q26 Re - 리테일 시대 개막 1Q26 Re - 리테일 시대 개막 삼성증권 2026년 1분기 실적은 컨센서스 16% 상회 2026년 1분기 연결 지배주주순이익은 4,095억원(YoY +81.",
+          "value_krw_100m": 4095.0
+        }
+      ],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ]
     }
   ]
 }
