@@ -31,6 +31,28 @@ COLLECTOR_SPECS = (
     ("shinhan_investment_official", "신한투자증권 공식", ShinhanInvestmentCollector),
 )
 
+SOURCE_RANK = {
+    "mirae_asset_official": 4,
+    "shinhan_investment_official": 3,
+    "korea_investment_official": 2,
+    "naver_research": 1,
+}
+
+# Fields copied from the duplicate report when the preferred one lacks a value.
+MERGE_FILL_FIELDS = (
+    "pdf_url",
+    "subject",
+    "subject_key",
+    "ticker",
+    "analyst",
+    "target_price",
+    "target_price_value",
+    "opinion",
+    "opinion_normalized",
+    "body",
+    "pdf_text",
+)
+
 
 def _report_dedupe_key(report: Report) -> tuple[str, str]:
     return (
@@ -40,14 +62,8 @@ def _report_dedupe_key(report: Report) -> tuple[str, str]:
 
 
 def _report_preference(report: Report) -> tuple[int, int, int, int]:
-    source_rank = {
-        "mirae_asset_official": 4,
-        "shinhan_investment_official": 3,
-        "korea_investment_official": 2,
-        "naver_research": 1,
-    }.get(report.source, 0)
     return (
-        source_rank,
+        SOURCE_RANK.get(report.source, 0),
         1 if report.pdf_url else 0,
         len(report.source_text),
         len(report.detail_url),
@@ -63,28 +79,11 @@ def _merge_duplicate_reports(current: Report, candidate: Report) -> Report:
 
     preferred.views = max(preferred.views, fallback.views)
 
-    if not preferred.pdf_url and fallback.pdf_url:
-        preferred.pdf_url = fallback.pdf_url
-    if not preferred.subject and fallback.subject:
-        preferred.subject = fallback.subject
-    if not preferred.subject_key and fallback.subject_key:
-        preferred.subject_key = fallback.subject_key
-    if not preferred.ticker and fallback.ticker:
-        preferred.ticker = fallback.ticker
-    if not preferred.analyst and fallback.analyst:
-        preferred.analyst = fallback.analyst
-    if not preferred.target_price and fallback.target_price:
-        preferred.target_price = fallback.target_price
-    if preferred.target_price_value is None and fallback.target_price_value is not None:
-        preferred.target_price_value = fallback.target_price_value
-    if not preferred.opinion and fallback.opinion:
-        preferred.opinion = fallback.opinion
-    if not preferred.opinion_normalized and fallback.opinion_normalized:
-        preferred.opinion_normalized = fallback.opinion_normalized
-    if not preferred.body and fallback.body:
-        preferred.body = fallback.body
-    if not preferred.pdf_text and fallback.pdf_text:
-        preferred.pdf_text = fallback.pdf_text
+    for field in MERGE_FILL_FIELDS:
+        preferred_value = getattr(preferred, field)
+        fallback_value = getattr(fallback, field)
+        if preferred_value in (None, "") and fallback_value not in (None, ""):
+            setattr(preferred, field, fallback_value)
 
     return preferred
 
@@ -169,7 +168,7 @@ def _collect_reports(
     }
 
 
-def _parse_args() -> ArgumentParser:
+def _build_arg_parser() -> ArgumentParser:
     parser = ArgumentParser(
         description="Collect Korean broker research reports and build a daily digest.",
     )
@@ -231,8 +230,7 @@ def _collect_with_fallback(
 
 
 def main() -> int:
-    parser = _parse_args()
-    args = parser.parse_args()
+    args = _build_arg_parser().parse_args()
 
     settings = Settings.from_env()
     requested_date = _resolve_target_date(args.target_date, settings.timezone)

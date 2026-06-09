@@ -2,20 +2,23 @@ from __future__ import annotations
 
 from collections import Counter, defaultdict
 from datetime import datetime
+from zoneinfo import ZoneInfo
 import html
-import json
 import math
 import re
 
+from report_collector.archive import iter_digest_payloads, iter_payload_reports
 from report_collector.config import Settings
 from report_collector.estimates import annotate_report_estimates
 from report_collector.models import DailyDigest, Report
 from report_collector.normalization import (
     annotate_report_normalized_fields,
     normalize_opinion_value,
+    normalize_space,
     normalize_subject_key,
     opinion_change_direction,
     parse_target_price_value,
+    trim_text,
 )
 from report_collector.sources.common import normalize_report_key
 
@@ -115,25 +118,15 @@ STOPWORDS = {
 SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?])\s+")
 
 
-def _normalize_space(value: str) -> str:
-    return re.sub(r"\s+", " ", value).strip()
-
-
-def _trim_text(value: str, limit: int) -> str:
-    if len(value) <= limit:
-        return value
-    return value[: limit - 1].rstrip() + "…"
-
-
 def _split_sentences(text: str) -> list[str]:
     chunks: list[str] = []
     for line in re.split(r"[\r\n]+", text):
-        line = _normalize_space(line)
+        line = normalize_space(line)
         if not line:
             continue
         parts = SENTENCE_SPLIT_RE.split(line)
         for part in parts:
-            sentence = _normalize_space(part)
+            sentence = normalize_space(part)
             if not sentence:
                 continue
             if sentence.isupper() and len(sentence) < 40:
@@ -145,11 +138,11 @@ def _split_sentences(text: str) -> list[str]:
 def _build_summary(text: str, sentence_count: int, preview_limit: int) -> tuple[str, str]:
     sentences = _split_sentences(text)
     if not sentences:
-        fallback = _trim_text(_normalize_space(text), preview_limit) or "본문 요약을 만들 수 없었습니다."
+        fallback = trim_text(normalize_space(text), preview_limit) or "본문 요약을 만들 수 없었습니다."
         return fallback, fallback
 
     summary = " ".join(sentences[:sentence_count]).strip()
-    excerpt = _trim_text(" ".join(sentences[:2]).strip(), preview_limit)
+    excerpt = trim_text(" ".join(sentences[:2]).strip(), preview_limit)
     return summary or excerpt, excerpt or summary
 
 
@@ -352,36 +345,13 @@ def _report_history_key(
     return f"{normalized_broker}:{normalized_subject}"
 
 
-def _load_previous_digest(digest_path) -> dict[str, object] | None:
-    try:
-        payload = json.loads(digest_path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        return None
-    if not isinstance(payload, dict):
-        return None
-    return payload
-
-
 def _iter_previous_digests(
     archive_root,
     current_date: str,
     limit: int = COLLECTOR_HISTORY_LIMIT,
 ) -> list[dict[str, object]]:
-    if not archive_root or not archive_root.exists():
-        return []
-
     previous_digests: list[dict[str, object]] = []
-    for day_dir in sorted(
-        (path for path in archive_root.iterdir() if path.is_dir()),
-        reverse=True,
-    ):
-        digest_path = day_dir / "digest.json"
-        if not digest_path.exists():
-            continue
-
-        payload = _load_previous_digest(digest_path)
-        if not payload:
-            continue
+    for _, payload in iter_digest_payloads(archive_root):
         payload_date = str(payload.get("date", ""))
         if not payload_date or payload_date >= current_date:
             continue
@@ -397,32 +367,12 @@ def _iter_previous_reports(
     archive_root,
     current_date: str,
 ) -> list[dict[str, object]]:
-    if not archive_root.exists():
-        return []
-
     previous_reports: list[dict[str, object]] = []
-    for day_dir in sorted(
-        (path for path in archive_root.iterdir() if path.is_dir()),
-        reverse=True,
-    ):
-        digest_path = day_dir / "digest.json"
-        if not digest_path.exists():
-            continue
-
-        payload = _load_previous_digest(digest_path)
-        if not payload:
-            continue
+    for _, payload in iter_digest_payloads(archive_root):
         payload_date = str(payload.get("date", ""))
         if not payload_date or payload_date >= current_date:
             continue
-
-        reports_payload = payload.get("reports", [])
-        if not isinstance(reports_payload, list):
-            continue
-
-        for report in reports_payload:
-            if isinstance(report, dict):
-                previous_reports.append(report)
+        previous_reports.extend(iter_payload_reports(payload))
 
     return previous_reports
 
@@ -464,6 +414,10 @@ def _append_unique(target: list[str], values: list[str]) -> None:
             seen.add(value)
 
 
+def _bump(summary: dict[str, object], key: str) -> None:
+    summary[key] = int(summary.get(key) or 0) + 1
+
+
 def _append_estimate_change_signals(
     report: Report,
     summary: dict[str, object],
@@ -471,13 +425,119 @@ def _append_estimate_change_signals(
     if not report.estimate_signal_types:
         return
 
-    summary["estimate_signal_reports"] = int(summary["estimate_signal_reports"]) + 1
+    _bump(summary, "estimate_signal_reports")
     for signal_type in report.estimate_signal_types:
         if signal_type in summary:
-            summary[signal_type] = int(summary[signal_type]) + 1
+            _bump(summary, signal_type)
 
     _append_unique(report.change_types, report.estimate_signal_types)
     _append_unique(report.change_reasons, report.estimate_reasons)
+
+
+def _reset_change_state(report: Report) -> None:
+    report.previous_report_date = None
+    report.previous_target_price = None
+    report.previous_opinion = None
+    report.previous_analyst = None
+    report.target_price_change = None
+    report.target_price_change_pct = None
+    report.opinion_changed = False
+    report.opinion_change_direction = None
+    report.analyst_changed = False
+    report.coverage_initiated = False
+    report.change_types = []
+    report.change_reasons = []
+
+
+def _mark_coverage_initiated(report: Report, summary: dict[str, object]) -> None:
+    if (
+        report.category == "company"
+        and report.subject_key
+        and (report.target_price_value is not None or report.opinion_normalized)
+    ):
+        report.coverage_initiated = True
+        report.change_types.append("coverage_initiated")
+        report.change_reasons.append("신규 커버리지")
+        _bump(summary, "coverage_initiated")
+
+
+def _detect_target_price_change(
+    report: Report,
+    previous: dict[str, object],
+    summary: dict[str, object],
+) -> None:
+    current_target = report.target_price_value
+    previous_target_raw = previous.get("target_price_value")
+    previous_target = (
+        previous_target_raw
+        if isinstance(previous_target_raw, int)
+        else parse_target_price_value(
+            str(previous_target_raw)
+            if previous_target_raw is not None
+            else report.previous_target_price
+        )
+    )
+    if (
+        current_target is None
+        or previous_target is None
+        or current_target == previous_target
+    ):
+        return
+
+    report.target_price_change = "up" if current_target > previous_target else "down"
+    if previous_target > 0:
+        report.target_price_change_pct = round(
+            ((current_target - previous_target) / previous_target) * 100,
+            1,
+        )
+    if report.target_price_change == "up":
+        report.change_reasons.append("목표가 상향")
+        report.change_types.append("target_up")
+        _bump(summary, "target_price_up")
+    else:
+        report.change_reasons.append("목표가 하향")
+        report.change_types.append("target_down")
+        _bump(summary, "target_price_down")
+
+
+def _detect_opinion_change(
+    report: Report,
+    previous: dict[str, object],
+    summary: dict[str, object],
+) -> None:
+    current_opinion = report.opinion_normalized or normalize_opinion_value(report.opinion)
+    previous_opinion_raw = previous.get("opinion_normalized")
+    previous_opinion = str(previous_opinion_raw) if previous_opinion_raw else None
+    if previous_opinion is None:
+        previous_opinion = normalize_opinion_value(report.previous_opinion)
+    if not current_opinion or not previous_opinion or current_opinion == previous_opinion:
+        return
+
+    report.opinion_changed = True
+    report.opinion_change_direction = opinion_change_direction(
+        current_opinion,
+        previous_opinion,
+    )
+    if report.opinion_change_direction == "up":
+        report.change_types.append("opinion_up")
+        _bump(summary, "opinion_up")
+    elif report.opinion_change_direction == "down":
+        report.change_types.append("opinion_down")
+        _bump(summary, "opinion_down")
+    else:
+        report.change_types.append("opinion_changed")
+    report.change_reasons.append("의견 변경")
+    _bump(summary, "opinion_changed")
+
+
+def _detect_analyst_change(report: Report, summary: dict[str, object]) -> None:
+    current_analyst = normalize_space(report.analyst or "")
+    previous_analyst = normalize_space(report.previous_analyst or "")
+    if current_analyst and previous_analyst and current_analyst != previous_analyst:
+        report.analyst_changed = True
+        report.change_types.append("analyst_changed")
+        report.change_reasons.append("애널리스트 변경")
+        _bump(summary, "analyst_changed")
 
 
 def _annotate_changes(
@@ -508,111 +568,22 @@ def _annotate_changes(
     changed_reports: list[Report] = []
 
     for report in reports:
-        report.previous_report_date = None
-        report.previous_target_price = None
-        report.previous_opinion = None
-        report.previous_analyst = None
-        report.target_price_change = None
-        report.target_price_change_pct = None
-        report.opinion_changed = False
-        report.opinion_change_direction = None
-        report.analyst_changed = False
-        report.coverage_initiated = False
-        report.change_types = []
-        report.change_reasons = []
+        _reset_change_state(report)
         _append_estimate_change_signals(report, summary)
 
         key = _report_history_key(report.broker, report.subject)
-        if not key:
-            if report.has_change_signal:
-                changed_reports.append(report)
-            continue
+        previous = history_lookup.get(key) if key else None
+        if previous:
+            report.previous_report_date = str(previous.get("published_date") or "") or None
+            report.previous_target_price = str(previous.get("target_price") or "") or None
+            report.previous_opinion = str(previous.get("opinion") or "") or None
+            report.previous_analyst = str(previous.get("analyst") or "") or None
 
-        if not history_lookup:
-            if report.has_change_signal:
-                changed_reports.append(report)
-            continue
-
-        previous = history_lookup.get(key)
-        if not previous:
-            if (
-                report.category == "company"
-                and report.subject_key
-                and (report.target_price_value is not None or report.opinion_normalized)
-            ):
-                report.coverage_initiated = True
-                report.change_types.append("coverage_initiated")
-                report.change_reasons.append("신규 커버리지")
-                summary["coverage_initiated"] = int(summary["coverage_initiated"]) + 1
-            if report.has_change_signal:
-                changed_reports.append(report)
-            continue
-
-        report.previous_report_date = str(previous.get("published_date") or "") or None
-        report.previous_target_price = str(previous.get("target_price") or "") or None
-        report.previous_opinion = str(previous.get("opinion") or "") or None
-        report.previous_analyst = str(previous.get("analyst") or "") or None
-
-        current_target = report.target_price_value
-        previous_target_raw = previous.get("target_price_value")
-        previous_target = (
-            previous_target_raw
-            if isinstance(previous_target_raw, int)
-            else parse_target_price_value(
-                str(previous_target_raw)
-                if previous_target_raw is not None
-                else report.previous_target_price
-            )
-        )
-        if (
-            current_target is not None
-            and previous_target is not None
-            and current_target != previous_target
-        ):
-            report.target_price_change = "up" if current_target > previous_target else "down"
-            if previous_target > 0:
-                report.target_price_change_pct = round(
-                    ((current_target - previous_target) / previous_target) * 100,
-                    1,
-                )
-            if report.target_price_change == "up":
-                report.change_reasons.append("목표가 상향")
-                report.change_types.append("target_up")
-                summary["target_price_up"] = int(summary["target_price_up"]) + 1
-            else:
-                report.change_reasons.append("목표가 하향")
-                report.change_types.append("target_down")
-                summary["target_price_down"] = int(summary["target_price_down"]) + 1
-
-        current_opinion = report.opinion_normalized or normalize_opinion_value(report.opinion)
-        previous_opinion_raw = previous.get("opinion_normalized")
-        previous_opinion = str(previous_opinion_raw) if previous_opinion_raw else None
-        if previous_opinion is None:
-            previous_opinion = normalize_opinion_value(report.previous_opinion)
-        if current_opinion and previous_opinion and current_opinion != previous_opinion:
-            report.opinion_changed = True
-            report.opinion_change_direction = opinion_change_direction(
-                current_opinion,
-                previous_opinion,
-            )
-            if report.opinion_change_direction == "up":
-                report.change_types.append("opinion_up")
-                summary["opinion_up"] = int(summary["opinion_up"]) + 1
-            elif report.opinion_change_direction == "down":
-                report.change_types.append("opinion_down")
-                summary["opinion_down"] = int(summary["opinion_down"]) + 1
-            else:
-                report.change_types.append("opinion_changed")
-            report.change_reasons.append("의견 변경")
-            summary["opinion_changed"] = int(summary["opinion_changed"]) + 1
-
-        current_analyst = _normalize_space(report.analyst or "")
-        previous_analyst = _normalize_space(report.previous_analyst or "")
-        if current_analyst and previous_analyst and current_analyst != previous_analyst:
-            report.analyst_changed = True
-            report.change_types.append("analyst_changed")
-            report.change_reasons.append("애널리스트 변경")
-            summary["analyst_changed"] = int(summary["analyst_changed"]) + 1
+            _detect_target_price_change(report, previous, summary)
+            _detect_opinion_change(report, previous, summary)
+            _detect_analyst_change(report, summary)
+        elif key and history_lookup:
+            _mark_coverage_initiated(report, summary)
 
         if report.has_change_signal:
             changed_reports.append(report)
@@ -1101,24 +1072,23 @@ def _build_editorial_note(
     active_brokers = ", ".join(broker for broker, _ in broker_counts.most_common(3))
     must_read_titles = ", ".join(report.display_title for report in must_read[:3])
 
-    change_bits: list[str] = []
-    if change_summary.get("earnings_estimate_up"):
-        change_bits.append("이익 추정 상향 {}건".format(change_summary["earnings_estimate_up"]))
-    if change_summary.get("margin_estimate_up"):
-        change_bits.append("마진 개선 {}건".format(change_summary["margin_estimate_up"]))
-    if change_summary.get("target_price_up"):
-        change_bits.append("\ubaa9\ud45c\uac00 \uc0c1\ud5a5 {}\uac74".format(change_summary["target_price_up"]))
-    if change_summary.get("target_price_down"):
-        change_bits.append("\ubaa9\ud45c\uac00 \ud558\ud5a5 {}\uac74".format(change_summary["target_price_down"]))
-    if change_summary.get("opinion_changed"):
-        change_bits.append("\uc758\uacac \ubcc0\uacbd {}\uac74".format(change_summary["opinion_changed"]))
-
-    prefix = f"{', '.join(change_bits)}\uc774 \uac10\uc9c0\ub410\uc2b5\ub2c8\ub2e4. " if change_bits else ""
+    change_labels = (
+        ("earnings_estimate_up", "이익 추정 상향"),
+        ("margin_estimate_up", "마진 개선"),
+        ("target_price_up", "목표가 상향"),
+        ("target_price_down", "목표가 하향"),
+        ("opinion_changed", "의견 변경"),
+    )
+    change_bits = [
+        f"{label} {change_summary[key]}건"
+        for key, label in change_labels
+        if change_summary.get(key)
+    ]
+    prefix = f"{', '.join(change_bits)}이 감지됐습니다. " if change_bits else ""
 
     return (
         prefix
-        + 
-        f"오늘은 {busiest_category} 리포트가 {category_count}건으로 가장 많았습니다. "
+        + f"오늘은 {busiest_category} 리포트가 {category_count}건으로 가장 많았습니다. "
         f"{active_brokers} 발간 비중이 높았고, "
         f"우선 확인할 만한 핵심 리포트는 {must_read_titles}입니다."
     )
@@ -1179,7 +1149,7 @@ def _format_memo_confidence(confidence: object) -> str:
 def _memo_list(value: object) -> list[str]:
     if not isinstance(value, list):
         return []
-    return [_normalize_space(str(item or "")) for item in value if _normalize_space(str(item or ""))]
+    return [normalize_space(str(item or "")) for item in value if normalize_space(str(item or ""))]
 
 
 def _has_investment_memo(report: Report) -> bool:
@@ -1191,7 +1161,7 @@ def _has_investment_memo(report: Report) -> bool:
         or _memo_list(memo.get("catalysts"))
         or _memo_list(memo.get("risks"))
         or _memo_list(memo.get("numbers"))
-        or _normalize_space(str(memo.get("action") or ""))
+        or normalize_space(str(memo.get("action") or ""))
     )
 
 
@@ -1491,7 +1461,7 @@ def render_markdown(digest: DailyDigest) -> str:
                     f"  - 톤: {_format_memo_stance(memo.get('stance'))} / 신뢰도 {_format_memo_confidence(memo.get('confidence'))}",
                 ]
             )
-            action = _normalize_space(str(memo.get("action") or ""))
+            action = normalize_space(str(memo.get("action") or ""))
             if action:
                 lines.append(f"  - 액션: {action}")
             for label, key in (
@@ -1577,7 +1547,7 @@ def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[
             alert_lines.append(
                 f"{html.escape(_format_alert_severity(item.get('severity')))} · "
                 f"{html.escape(str(item.get('title') or item.get('label') or '-'))}\n"
-                f"{html.escape(_trim_text(str(item.get('message') or ''), 140))}"
+                f"{html.escape(trim_text(str(item.get('message') or ''), 140))}"
             )
         blocks.append("\n".join(alert_lines))
 
@@ -1594,7 +1564,7 @@ def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[
                 f"{html.escape(_format_duration(item.get('duration_seconds')))}"
             )
             if message and item.get("status") != "ok":
-                line += f"\n{html.escape(_trim_text(message, 120))}"
+                line += f"\n{html.escape(trim_text(message, 120))}"
             health_lines.append(line)
         blocks.append("\n".join(health_lines))
 
@@ -1639,7 +1609,7 @@ def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[
         blocks.append("\n".join(change_lines))
 
     for index, report in enumerate(digest.must_read[:max_reports], start=1):
-        summary = _trim_text(report.summary, 160)
+        summary = trim_text(report.summary, 160)
         meta_bits = [report.broker, f"우선순위 {report.score:.2f}"]
         if report.target_price:
             meta_bits.append(f"목표가 {report.target_price}")
@@ -1656,7 +1626,7 @@ def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[
             parts.append(html.escape("변화: " + ", ".join(report.change_reasons[:2])))
         if _has_investment_memo(report):
             memo = report.investment_memo
-            action = _normalize_space(str(memo.get("action") or ""))
+            action = normalize_space(str(memo.get("action") or ""))
             thesis = _memo_list(memo.get("thesis"))
             memo_bits = [
                 f"톤 {_format_memo_stance(memo.get('stance'))}",
@@ -1698,6 +1668,4 @@ def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[
 
 
 def now_iso_string(timezone_name: str) -> str:
-    from zoneinfo import ZoneInfo
-
     return datetime.now(ZoneInfo(timezone_name)).replace(microsecond=0).isoformat()

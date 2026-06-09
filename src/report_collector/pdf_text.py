@@ -2,13 +2,10 @@ from __future__ import annotations
 
 from io import BytesIO
 from urllib.request import Request, urlopen
-import re
 
 from pypdf import PdfReader
 
-
-def _normalize_space(value: str) -> str:
-    return re.sub(r"\s+", " ", value).strip()
+from report_collector.normalization import normalize_space
 
 
 def extract_pdf_text(
@@ -41,7 +38,7 @@ def extract_pdf_text(
             text = page.extract_text() or ""
         except Exception:
             continue
-        text = _normalize_space(text)
+        text = normalize_space(text)
         if not text:
             continue
 

@@ -2,7 +2,6 @@ from __future__ import annotations
 
 from datetime import date
 from urllib.parse import urlencode
-from urllib.parse import urljoin
 import re
 
 from bs4 import Tag
@@ -12,6 +11,7 @@ from report_collector.models import Report
 from report_collector.sources.common import (
     build_recent_window,
     category_label,
+    collect_pages_for_date,
     fetch_soup,
     infer_category,
     normalize_space,
@@ -87,26 +87,13 @@ class MiraeAssetCollector:
         self.settings = settings
 
     def collect(self, target_date: date) -> list[Report]:
-        reports_by_id: dict[str, Report] = {}
-
-        for page in range(1, self.settings.page_depth + 1):
-            rows = self._parse_list_page(_build_list_url(target_date, page))
-            if not rows:
-                break
-
-            page_has_target_date = False
-            page_all_older = True
-
-            for report, row_date in rows:
-                if row_date == target_date:
-                    page_has_target_date = True
-                    page_all_older = False
-                    reports_by_id.setdefault(report.report_id, report)
-                elif row_date > target_date:
-                    page_all_older = False
-
-            if not page_has_target_date and page_all_older:
-                break
+        reports_by_id = collect_pages_for_date(
+            target_date,
+            page_depth=self.settings.page_depth,
+            parse_page=lambda page: self._parse_list_page(
+                _build_list_url(target_date, page)
+            ),
+        )
 
         for report in reports_by_id.values():
             self._hydrate_detail(report)

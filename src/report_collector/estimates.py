@@ -4,6 +4,8 @@ from collections.abc import Iterable
 from typing import TYPE_CHECKING, Any
 import re
 
+from report_collector.normalization import normalize_space, trim_text
+
 if TYPE_CHECKING:
     from report_collector.models import Report
 
@@ -55,15 +57,8 @@ UP_TERMS_RE = re.compile(r"(상향|증가|개선|상회|확대|높아|높였|올
 DOWN_TERMS_RE = re.compile(r"(하향|감소|악화|하회|부진|축소|낮아|낮췄|적자전환|적전)")
 
 
-def _normalize_space(value: str) -> str:
-    return re.sub(r"\s+", " ", value).strip()
-
-
-def _trim_text(value: str, limit: int = 160) -> str:
-    cleaned = _normalize_space(value)
-    if len(cleaned) <= limit:
-        return cleaned
-    return cleaned[: limit - 1].rstrip() + "…"
+def _trim_excerpt(value: str, limit: int = 160) -> str:
+    return trim_text(normalize_space(value), limit)
 
 
 def _numeric(value: str) -> float | None:
@@ -94,7 +89,7 @@ def _sentence_for_match(text: str, start: int, end: int) -> str:
 
 def _iter_sentences(text: str) -> Iterable[str]:
     for raw in SENTENCE_SPLIT_RE.split(text):
-        sentence = _normalize_space(raw)
+        sentence = normalize_space(raw)
         if sentence:
             yield sentence
 
@@ -109,7 +104,7 @@ def _metric_key(metric: dict[str, Any]) -> tuple[Any, ...]:
 
 
 def extract_estimate_metrics(text: str, *, limit: int = 12) -> list[dict[str, Any]]:
-    cleaned = _normalize_space(text)
+    cleaned = normalize_space(text)
     if not cleaned:
         return []
 
@@ -132,10 +127,10 @@ def extract_estimate_metrics(text: str, *, limit: int = 12) -> list[dict[str, An
             "metric": metric_name,
             "metric_group": "earnings",
             "label": display_label,
-            "period": _normalize_space(match.group("period") or "") or None,
+            "period": normalize_space(match.group("period") or "") or None,
             "value": value,
             "unit": unit,
-            "source_excerpt": _trim_text(_sentence_for_match(cleaned, match.start(), match.end())),
+            "source_excerpt": _trim_excerpt(_sentence_for_match(cleaned, match.start(), match.end())),
         }
         value_100m = _value_to_100m(value, unit)
         if value_100m is not None:
@@ -164,7 +159,7 @@ def extract_estimate_metrics(text: str, *, limit: int = 12) -> list[dict[str, An
             "value": value,
             "unit": "%",
             "value_pct": round(value, 2),
-            "source_excerpt": _trim_text(_sentence_for_match(cleaned, match.start(), match.end())),
+            "source_excerpt": _trim_excerpt(_sentence_for_match(cleaned, match.start(), match.end())),
         }
         if change_match:
             change_value = _numeric(change_match.group("value"))
