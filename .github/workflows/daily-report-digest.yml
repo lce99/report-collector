@@ -3,7 +3,9 @@ name: Daily Broker Report Digest
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 1 * * 1-5"
+    # Cron runs in UTC. 00:00 UTC = 09:00 KST (collect), 06:30 UTC = 15:30 KST (update).
+    - cron: "0 0 * * 1-5"
+    - cron: "30 6 * * 1-5"
 
 permissions:
   contents: write
