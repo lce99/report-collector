@@ -6,6 +6,11 @@ from pathlib import Path
 import json
 from typing import Any
 
+from report_collector.archive import (
+    iter_digest_payloads,
+    iter_payload_reports,
+    load_json_dict as _load_json,
+)
 from report_collector.estimates import (
     estimate_reasons_for_types,
     extract_estimate_metrics,
@@ -34,18 +39,6 @@ def _write_json(path: Path, payload: dict) -> None:
 def _write_text(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
-
-
-def _load_json(path: Path) -> dict[str, Any] | None:
-    if not path.exists():
-        return None
-    try:
-        payload = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        return None
-    if not isinstance(payload, dict):
-        return None
-    return payload
 
 
 def _remove_tree(path: Path) -> None:
@@ -169,50 +162,55 @@ def _report_estimate_text(report: dict[str, Any]) -> str:
     ) + " " + " ".join(memo_parts)
 
 
+ESTIMATE_SIGNAL_KEYS = (
+    "earnings_estimate_up",
+    "earnings_estimate_down",
+    "margin_estimate_up",
+    "margin_estimate_down",
+)
+
+
 def _build_subject_change_summary(reports: list[dict[str, Any]]) -> dict[str, int]:
-    return {
-        "changed_reports": sum(1 for report in reports if report.get("has_change_signal")),
-        "target_price_up": sum(
-            1 for report in reports if str(report.get("target_price_change") or "") == "up"
-        ),
-        "target_price_down": sum(
-            1 for report in reports if str(report.get("target_price_change") or "") == "down"
-        ),
-        "opinion_changed": sum(1 for report in reports if bool(report.get("opinion_changed"))),
-        "opinion_up": sum(
-            1 for report in reports if str(report.get("opinion_change_direction") or "") == "up"
-        ),
-        "opinion_down": sum(
-            1 for report in reports if str(report.get("opinion_change_direction") or "") == "down"
-        ),
-        "analyst_changed": sum(1 for report in reports if bool(report.get("analyst_changed"))),
-        "coverage_initiated": sum(
-            1 for report in reports if bool(report.get("coverage_initiated"))
-        ),
-        "estimate_signal_reports": sum(
-            1 for report in reports if report.get("estimate_signal_types")
-        ),
-        "earnings_estimate_up": sum(
-            1
-            for report in reports
-            if "earnings_estimate_up" in set(report.get("estimate_signal_types") or [])
-        ),
-        "earnings_estimate_down": sum(
-            1
-            for report in reports
-            if "earnings_estimate_down" in set(report.get("estimate_signal_types") or [])
-        ),
-        "margin_estimate_up": sum(
-            1
-            for report in reports
-            if "margin_estimate_up" in set(report.get("estimate_signal_types") or [])
-        ),
-        "margin_estimate_down": sum(
-            1
-            for report in reports
-            if "margin_estimate_down" in set(report.get("estimate_signal_types") or [])
-        ),
+    summary = {
+        "changed_reports": 0,
+        "target_price_up": 0,
+        "target_price_down": 0,
+        "opinion_changed": 0,
+        "opinion_up": 0,
+        "opinion_down": 0,
+        "analyst_changed": 0,
+        "coverage_initiated": 0,
+        "estimate_signal_reports": 0,
+        **{key: 0 for key in ESTIMATE_SIGNAL_KEYS},
     }
+
+    for report in reports:
+        if report.get("has_change_signal"):
+            summary["changed_reports"] += 1
+
+        target_change = str(report.get("target_price_change") or "")
+        if target_change in ("up", "down"):
+            summary[f"target_price_{target_change}"] += 1
+
+        if report.get("opinion_changed"):
+            summary["opinion_changed"] += 1
+        opinion_direction = str(report.get("opinion_change_direction") or "")
+        if opinion_direction in ("up", "down"):
+            summary[f"opinion_{opinion_direction}"] += 1
+
+        if report.get("analyst_changed"):
+            summary["analyst_changed"] += 1
+        if report.get("coverage_initiated"):
+            summary["coverage_initiated"] += 1
+
+        signal_types = set(report.get("estimate_signal_types") or [])
+        if signal_types:
+            summary["estimate_signal_reports"] += 1
+        for key in ESTIMATE_SIGNAL_KEYS:
+            if key in signal_types:
+                summary[key] += 1
+
+    return summary
 
 
 def _build_target_summary(reports: list[dict[str, Any]]) -> dict[str, int | None]:
@@ -345,28 +343,15 @@ def _build_subject_chart_payload(
 def _build_subject_payloads(archive_root: Path) -> tuple[dict[str, Any], dict[str, dict[str, Any]]]:
     grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
 
-    if archive_root.exists():
-        for day_dir in sorted(
-            (path for path in archive_root.iterdir() if path.is_dir()),
-            reverse=True,
-        ):
-            digest_path = day_dir / "digest.json"
-            if not digest_path.exists():
+    for _, payload in iter_digest_payloads(archive_root):
+        for report in iter_payload_reports(payload):
+            normalized = _normalize_subject_report(report)
+            if not normalized:
                 continue
-
-            payload = _load_json(digest_path)
-            if not payload:
+            subject_key = str(normalized.get("subject_key") or "")
+            if not subject_key:
                 continue
-            for report in payload.get("reports", []):
-                if not isinstance(report, dict):
-                    continue
-                normalized = _normalize_subject_report(report)
-                if not normalized:
-                    continue
-                subject_key = str(normalized.get("subject_key") or "")
-                if not subject_key:
-                    continue
-                grouped[subject_key].append(normalized)
+            grouped[subject_key].append(normalized)
 
     subjects: list[dict[str, Any]] = []
     subject_payloads: dict[str, dict[str, Any]] = {}
@@ -596,28 +581,32 @@ def _report_matches_selection(report: dict[str, Any], record: dict[str, Any]) ->
     return False
 
 
+def _load_archive_reports_by_day(archive_root: Path) -> list[tuple[date, list[dict[str, Any]]]]:
+    days: list[tuple[date, list[dict[str, Any]]]] = []
+    for day_name, payload in iter_digest_payloads(archive_root, newest_first=False):
+        day = _parse_date(day_name)
+        if not day:
+            continue
+        days.append((day, list(iter_payload_reports(payload))))
+    return days
+
+
 def _follow_up_reports_for_record(
-    archive_root: Path,
+    archive_days: list[tuple[date, list[dict[str, Any]]]],
     record: dict[str, Any],
     due_date: date,
 ) -> list[dict[str, Any]]:
     selected_date = _parse_date(record.get("selected_date"))
-    if not selected_date or not archive_root.exists():
+    if not selected_date:
         return []
 
-    matches: list[dict[str, Any]] = []
-    for day_dir in sorted(path for path in archive_root.iterdir() if path.is_dir()):
-        day = _parse_date(day_dir.name)
-        if not day or day <= selected_date or day > due_date:
-            continue
-        payload = _load_json(day_dir / "digest.json")
-        if not payload:
-            continue
-        for report in payload.get("reports", []):
-            if not isinstance(report, dict):
-                continue
-            if _report_matches_selection(report, record):
-                matches.append(report)
+    matches = [
+        report
+        for day, reports in archive_days
+        if selected_date < day <= due_date
+        for report in reports
+        if _report_matches_selection(report, record)
+    ]
 
     matches.sort(
         key=lambda item: (
@@ -655,6 +644,7 @@ def _complete_due_horizons(
         return
 
     ticker_lookup = _build_ticker_lookup(subject_ticker_map)
+    archive_days: list[tuple[date, list[dict[str, Any]]]] | None = None
     for record in records:
         record_ticker = _resolve_record_ticker(record, ticker_lookup)
         if record_ticker and not record.get("ticker"):
@@ -671,7 +661,9 @@ def _complete_due_horizons(
             if str(horizon.get("status") or "") == "completed":
                 continue
 
-            follow_ups = _follow_up_reports_for_record(archive_root, record, due_date)
+            if archive_days is None:
+                archive_days = _load_archive_reports_by_day(archive_root)
+            follow_ups = _follow_up_reports_for_record(archive_days, record, due_date)
             latest = follow_ups[0] if follow_ups else {}
             horizon["status"] = "completed"
             horizon["completed_at"] = as_of_date.isoformat()
@@ -875,19 +867,8 @@ def publish_digest(
 
 def _build_index(archive_root: Path) -> dict[str, list[dict[str, Any]]]:
     days: list[dict[str, Any]] = []
-    if not archive_root.exists():
-        return {"days": days}
 
-    for day_dir in sorted(
-        (path for path in archive_root.iterdir() if path.is_dir()),
-        reverse=True,
-    ):
-        digest_path = day_dir / "digest.json"
-        if not digest_path.exists():
-            continue
-        payload = _load_json(digest_path)
-        if not payload:
-            continue
+    for day_name, payload in iter_digest_payloads(archive_root):
         stats = payload.get("stats", {})
         if not isinstance(stats, dict):
             stats = {}
@@ -896,7 +877,7 @@ def _build_index(archive_root: Path) -> dict[str, list[dict[str, Any]]]:
             must_read = []
         days.append(
             {
-                "date": str(payload.get("date") or day_dir.name),
+                "date": str(payload.get("date") or day_name),
                 "generated_at": str(payload.get("generated_at") or ""),
                 "total_reports": int(stats.get("total_reports") or 0),
                 "keywords": payload.get("keywords", []),

@@ -12,7 +12,12 @@ from report_collector.config import Settings
 from report_collector.market_data import normalize_ticker
 from report_collector.models import Report
 from report_collector.pdf_text import extract_pdf_text
-from report_collector.sources.common import fetch_html, normalize_space, parse_int
+from report_collector.sources.common import (
+    collect_pages_for_date,
+    fetch_html,
+    normalize_space,
+    parse_int,
+)
 
 
 @dataclass(frozen=True, slots=True)
@@ -162,28 +167,20 @@ class NaverResearchCollector:
             if not config:
                 continue
 
-            for page in range(1, self.settings.page_depth + 1):
+            def parse_page(page: int, config: CategoryConfig = config) -> list[tuple[Report, date]]:
                 list_url = urljoin(
                     self.settings.base_url,
                     f"{config.list_path}?page={page}",
                 )
-                rows = self._parse_list_page(list_url, config)
-                if not rows:
-                    break
+                return self._parse_list_page(list_url, config)
 
-                page_has_target_date = False
-                page_all_older = True
-
-                for report, row_date in rows:
-                    if row_date == target_date:
-                        page_has_target_date = True
-                        page_all_older = False
-                        reports_by_id.setdefault(report.report_id, report)
-                    elif row_date > target_date:
-                        page_all_older = False
-
-                if not page_has_target_date and page_all_older:
-                    break
+            category_reports = collect_pages_for_date(
+                target_date,
+                page_depth=self.settings.page_depth,
+                parse_page=parse_page,
+            )
+            for report_id, report in category_reports.items():
+                reports_by_id.setdefault(report_id, report)
 
         for report in reports_by_id.values():
             self._hydrate_detail(report)

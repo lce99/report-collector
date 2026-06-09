@@ -7,24 +7,12 @@ import html
 import json
 import time
 
-from report_collector.normalization import normalize_subject_key
-
-
-def _load_json(path: Path) -> dict | None:
-    if not path.exists():
-        return None
-    try:
-        payload = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        return None
-    return payload if isinstance(payload, dict) else None
+from report_collector.archive import load_json_dict as _load_json
+from report_collector.normalization import normalize_space, normalize_subject_key, trim_text
 
 
 def _trim(value: str, limit: int = 180) -> str:
-    cleaned = " ".join(str(value or "").split())
-    if len(cleaned) <= limit:
-        return cleaned
-    return cleaned[: limit - 1].rstrip() + "…"
+    return trim_text(normalize_space(str(value or "")), limit)
 
 
 def _send_message(bot_token: str, chat_id: str, message: str) -> None:

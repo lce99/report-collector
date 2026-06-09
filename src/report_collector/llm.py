@@ -6,6 +6,7 @@ import re
 
 from report_collector.config import Settings
 from report_collector.models import DailyDigest, Report
+from report_collector.normalization import normalize_space, trim_text
 
 
 SYSTEM_PROMPT = """
@@ -96,16 +97,6 @@ INVESTMENT_MEMO_SCHEMA: dict[str, Any] = {
 }
 
 
-def _normalize_space(value: str) -> str:
-    return re.sub(r"\s+", " ", value).strip()
-
-
-def _trim_text(value: str, limit: int) -> str:
-    if len(value) <= limit:
-        return value
-    return value[: limit - 1].rstrip() + "…"
-
-
 def _candidate_reports(digest: DailyDigest, settings: Settings) -> list[Report]:
     selected: list[Report] = []
     seen_ids: set[str] = set()
@@ -113,7 +104,7 @@ def _candidate_reports(digest: DailyDigest, settings: Settings) -> list[Report]:
     for report in list(digest.must_read) + list(digest.reports):
         if report.report_id in seen_ids:
             continue
-        if len(_normalize_space(report.source_text)) < settings.openai_summary_min_chars:
+        if len(normalize_space(report.source_text)) < settings.openai_summary_min_chars:
             continue
         selected.append(report)
         seen_ids.add(report.report_id)
@@ -144,7 +135,7 @@ def _build_prompt(report: Report, settings: Settings) -> str:
                 f"감지된 변화: {', '.join(report.change_reasons) or '-'}",
             ]
         )
-    content = _trim_text(_normalize_space(report.source_text), settings.openai_summary_char_limit)
+    content = trim_text(normalize_space(report.source_text), settings.openai_summary_char_limit)
 
     return "\n".join(
         [
@@ -181,7 +172,7 @@ def _clean_string_list(value: Any, limit: int) -> list[str]:
         return []
     cleaned: list[str] = []
     for item in value:
-        text = _normalize_space(str(item or ""))
+        text = normalize_space(str(item or ""))
         if not text:
             continue
         cleaned.append(text)
@@ -194,11 +185,11 @@ def _clean_investment_memo(value: Any) -> dict[str, Any]:
     if not isinstance(value, dict):
         return {}
 
-    stance = _normalize_space(str(value.get("stance") or "watch")).lower()
+    stance = normalize_space(str(value.get("stance") or "watch")).lower()
     if stance not in {"positive", "neutral", "negative", "watch"}:
         stance = "watch"
 
-    confidence = _normalize_space(str(value.get("confidence") or "low")).lower()
+    confidence = normalize_space(str(value.get("confidence") or "low")).lower()
     if confidence not in {"low", "medium", "high"}:
         confidence = "low"
 
@@ -208,7 +199,7 @@ def _clean_investment_memo(value: Any) -> dict[str, Any]:
         "catalysts": _clean_string_list(value.get("catalysts"), 3),
         "risks": _clean_string_list(value.get("risks"), 3),
         "numbers": _clean_string_list(value.get("numbers"), 4),
-        "action": _normalize_space(str(value.get("action") or "")),
+        "action": normalize_space(str(value.get("action") or "")),
         "confidence": confidence,
     }
 
@@ -221,13 +212,13 @@ def _clean_investment_memo(value: Any) -> dict[str, Any]:
 
 
 def _apply_summary(report: Report, payload: dict[str, Any]) -> bool:
-    summary = _normalize_space(str(payload.get("summary", "")))
-    excerpt = _normalize_space(str(payload.get("excerpt", "")))
+    summary = normalize_space(str(payload.get("summary", "")))
+    excerpt = normalize_space(str(payload.get("excerpt", "")))
     if not summary:
         return False
 
     report.summary = summary
-    report.excerpt = excerpt or _trim_text(summary, 110)
+    report.excerpt = excerpt or trim_text(summary, 110)
     report.summary_engine = "openai"
     report.investment_memo = _clean_investment_memo(payload.get("investment_memo"))
     return True

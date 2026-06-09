@@ -1,12 +1,17 @@
 from __future__ import annotations
 
 from datetime import date, timedelta
+from typing import TYPE_CHECKING, Callable
 from urllib.request import Request, urlopen
 import re
 
 from bs4 import BeautifulSoup
 
 from report_collector.config import Settings
+from report_collector.normalization import normalize_space
+
+if TYPE_CHECKING:
+    from report_collector.models import Report
 
 
 CATEGORY_LABELS = {
@@ -64,10 +69,6 @@ MARKET_HINTS = (
     "매크로",
     "경제",
 )
-
-
-def normalize_space(value: str) -> str:
-    return re.sub(r"\s+", " ", value).strip()
 
 
 def parse_int(value: str) -> int:
@@ -156,3 +157,38 @@ def category_label(category: str) -> str:
 
 def build_recent_window(target_date: date, days: int = 365) -> tuple[date, date]:
     return target_date - timedelta(days=days), target_date
+
+
+def collect_pages_for_date(
+    target_date: date,
+    *,
+    page_depth: int,
+    parse_page: Callable[[int], list[tuple["Report", date]]],
+) -> dict[str, "Report"]:
+    """Walk paginated list pages, keeping reports published on target_date.
+
+    Stops when a page has no rows, or when it contains no target-date rows
+    and every row is older than the target date.
+    """
+    reports_by_id: dict[str, "Report"] = {}
+
+    for page in range(1, page_depth + 1):
+        rows = parse_page(page)
+        if not rows:
+            break
+
+        page_has_target_date = False
+        page_all_older = True
+
+        for report, row_date in rows:
+            if row_date == target_date:
+                page_has_target_date = True
+                page_all_older = False
+                reports_by_id.setdefault(report.report_id, report)
+            elif row_date > target_date:
+                page_all_older = False
+
+        if not page_has_target_date and page_all_older:
+            break
+
+    return reports_by_id
