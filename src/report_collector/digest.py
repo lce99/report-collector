@@ -9,7 +9,7 @@ import re
 
 from report_collector.archive import iter_digest_payloads, iter_payload_reports
 from report_collector.config import Settings
-from report_collector.estimates import annotate_report_estimates
+from report_collector.estimates import annotate_report_estimates, compare_estimate_metrics
 from report_collector.models import DailyDigest, Report
 from report_collector.normalization import (
     annotate_report_normalized_fields,
@@ -252,6 +252,25 @@ def _score_report(report: Report, settings: Settings) -> tuple[float, list[str]]
     if "margin_estimate_down" in report.estimate_signal_types:
         add_score("마진율 악화", 0.9, reason="마진율 추정 하락/악화")
 
+    revision_up = [
+        item for item in report.estimate_revisions if str(item.get("direction")) == "up"
+    ]
+    revision_down = [
+        item for item in report.estimate_revisions if str(item.get("direction")) == "down"
+    ]
+    if revision_up:
+        add_score(
+            "추정치 수치 상향",
+            2.6 + min(0.6, (len(revision_up) - 1) * 0.3),
+            reason=format_estimate_revision(revision_up[0]),
+        )
+    if revision_down:
+        add_score(
+            "추정치 수치 하향",
+            1.5,
+            reason=format_estimate_revision(revision_down[0]),
+        )
+
     if report.target_price_change == "up":
         add_score("목표가 상향", 2.2, reason="목표가 상향")
     elif report.target_price_change == "down":
@@ -394,7 +413,18 @@ def _build_previous_report_lookup(
 
 
 def _change_sort_key(report: Report) -> tuple[object, ...]:
+    # Numeric estimate revisions (EPS/매출/이익 values moving between reports)
+    # outrank textual signals and target-price changes.
+    max_revision_move = max(
+        (
+            abs(float(revision.get("change_pct") or revision.get("change_pctp") or 0.0))
+            for revision in report.estimate_revisions
+        ),
+        default=0.0,
+    )
     return (
+        1 if report.estimate_revisions else 0,
+        max_revision_move,
         1 if "earnings_estimate_up" in report.estimate_signal_types else 0,
         1 if "margin_estimate_up" in report.estimate_signal_types else 0,
         1 if report.coverage_initiated else 0,
@@ -445,6 +475,7 @@ def _reset_change_state(report: Report) -> None:
     report.opinion_change_direction = None
     report.analyst_changed = False
     report.coverage_initiated = False
+    report.estimate_revisions = []
     report.change_types = []
     report.change_reasons = []
 
@@ -459,6 +490,52 @@ def _mark_coverage_initiated(report: Report, summary: dict[str, object]) -> None
         report.change_types.append("coverage_initiated")
         report.change_reasons.append("신규 커버리지")
         _bump(summary, "coverage_initiated")
+
+
+def format_estimate_revision(revision: dict[str, object]) -> str:
+    label = str(revision.get("label") or revision.get("metric") or "추정치")
+    period = str(revision.get("period") or "").strip()
+    direction = "상향" if revision.get("direction") == "up" else "하향"
+    change_pct = revision.get("change_pct")
+    change_pctp = revision.get("change_pctp")
+    if change_pct is not None:
+        amount = f"{float(change_pct):+.1f}%"
+    elif change_pctp is not None:
+        amount = f"{float(change_pctp):+.2f}%p"
+    else:
+        amount = ""
+    prefix = f"{period} " if period else ""
+    suffix = f" ({amount})" if amount else ""
+    return f"{prefix}{label} 추정 {direction}{suffix}"
+
+
+def _detect_estimate_revisions(
+    report: Report,
+    previous: dict[str, object],
+    summary: dict[str, object],
+) -> None:
+    previous_metrics = previous.get("estimate_metrics")
+    if not isinstance(previous_metrics, list):
+        return
+
+    revisions = compare_estimate_metrics(report.estimate_metrics, previous_metrics)
+    if not revisions:
+        return
+
+    report.estimate_revisions = revisions
+    directions = {str(revision.get("direction")) for revision in revisions}
+    if "up" in directions:
+        _bump(summary, "estimate_revision_up")
+    if "down" in directions:
+        _bump(summary, "estimate_revision_down")
+    _append_unique(
+        report.change_types,
+        [f"estimate_revision_{direction}" for direction in sorted(directions)],
+    )
+    _append_unique(
+        report.change_reasons,
+        [format_estimate_revision(revision) for revision in revisions[:3]],
+    )
 
 
 def _detect_target_price_change(
@@ -561,6 +638,8 @@ def _annotate_changes(
         "earnings_estimate_down": 0,
         "margin_estimate_up": 0,
         "margin_estimate_down": 0,
+        "estimate_revision_up": 0,
+        "estimate_revision_down": 0,
     }
 
     history_lookup = _build_previous_report_lookup(settings.archive_root, current_date)
@@ -579,6 +658,7 @@ def _annotate_changes(
             report.previous_opinion = str(previous.get("opinion") or "") or None
             report.previous_analyst = str(previous.get("analyst") or "") or None
 
+            _detect_estimate_revisions(report, previous, summary)
             _detect_target_price_change(report, previous, summary)
             _detect_opinion_change(report, previous, summary)
             _detect_analyst_change(report, summary)
@@ -588,10 +668,28 @@ def _annotate_changes(
         if report.has_change_signal:
             changed_reports.append(report)
 
-    changed_reports.sort(key=_change_sort_key, reverse=True)
     summary["changed_reports"] = len(changed_reports)
     summary["available"] = bool(summary["available"] or changed_reports)
     return summary, changed_reports
+
+
+def _annotate_stance(report: Report) -> None:
+    """Rule-based stance from detected signals — no LLM required."""
+    up = sum(1 for signal in report.estimate_signal_types if signal.endswith("_up"))
+    down = sum(1 for signal in report.estimate_signal_types if signal.endswith("_down"))
+    up += sum(2 for item in report.estimate_revisions if str(item.get("direction")) == "up")
+    down += sum(2 for item in report.estimate_revisions if str(item.get("direction")) == "down")
+    if report.opinion_change_direction == "up":
+        up += 1
+    elif report.opinion_change_direction == "down":
+        down += 1
+
+    if up > down:
+        report.stance = "positive"
+    elif down > up:
+        report.stance = "negative"
+    else:
+        report.stance = "neutral"
 
 
 def _safe_int(value: object, default: int = 0) -> int:
@@ -752,6 +850,8 @@ def _build_stats(
         "earnings_estimate_down": change_summary.get("earnings_estimate_down", 0),
         "margin_estimate_up": change_summary.get("margin_estimate_up", 0),
         "margin_estimate_down": change_summary.get("margin_estimate_down", 0),
+        "estimate_revision_up": change_summary.get("estimate_revision_up", 0),
+        "estimate_revision_down": change_summary.get("estimate_revision_down", 0),
         "llm_summary_reports": 0,
         "llm_investment_memo_reports": 0,
         "changed_reports": change_summary.get("changed_reports", 0),
@@ -1073,6 +1173,8 @@ def _build_editorial_note(
     must_read_titles = ", ".join(report.display_title for report in must_read[:3])
 
     change_labels = (
+        ("estimate_revision_up", "추정치 상향"),
+        ("estimate_revision_down", "추정치 하향"),
         ("earnings_estimate_up", "이익 추정 상향"),
         ("margin_estimate_up", "마진 개선"),
         ("target_price_up", "목표가 상향"),
@@ -1173,6 +1275,20 @@ def _format_duration(seconds: object) -> str:
     return f"{numeric:.2f}초"
 
 
+def _format_number(value: object) -> str:
+    if isinstance(value, (int, float)):
+        text = f"{value:,.2f}".rstrip("0").rstrip(".")
+        return text or "0"
+    return str(value or "-")
+
+
+def _format_revision_detail(revision: dict[str, object]) -> str:
+    unit = str(revision.get("unit") or "")
+    previous_text = _format_number(revision.get("previous_value")) + unit
+    current_text = _format_number(revision.get("current_value")) + unit
+    return f"{format_estimate_revision(revision)}: {previous_text} → {current_text}"
+
+
 def _format_target_change(report: Report) -> str | None:
     if not report.target_price_change:
         return None
@@ -1231,14 +1347,20 @@ def enrich_and_build_digest(
         annotate_report_normalized_fields(report)
         annotate_report_estimates(report)
         _annotate_priority_matches(report, settings)
-        report.score, report.score_reasons = _score_report(report, settings)
 
-    reports.sort(key=lambda item: (-item.score, item.broker, item.title))
+    # Change detection must run before scoring so revision/target/opinion
+    # change boosts actually apply to the priority score.
     change_summary, changed_reports = _annotate_changes(
         reports,
         current_date=target_date,
         settings=settings,
     )
+    for report in reports:
+        _annotate_stance(report)
+        report.score, report.score_reasons = _score_report(report, settings)
+
+    reports.sort(key=lambda item: (-item.score, item.broker, item.title))
+    changed_reports.sort(key=_change_sort_key, reverse=True)
     selection_pool = reports
     if settings.priority_only:
         matched_reports = [report for report in reports if report.is_priority_match]
@@ -1364,6 +1486,11 @@ def render_markdown(digest: DailyDigest) -> str:
                 "## 이익·마진 추정 변화",
                 f"- 변화 감지 리포트: {digest.change_summary.get('changed_reports', 0)}건",
                 (
+                    f"- 추정치 수치 상향/하향: "
+                    f"{digest.change_summary.get('estimate_revision_up', 0)}건 / "
+                    f"{digest.change_summary.get('estimate_revision_down', 0)}건"
+                ),
+                (
                     f"- 이익 추정 상향/하향: "
                     f"{digest.change_summary.get('earnings_estimate_up', 0)}건 / "
                     f"{digest.change_summary.get('earnings_estimate_down', 0)}건"
@@ -1396,6 +1523,8 @@ def render_markdown(digest: DailyDigest) -> str:
                         f"- 변화 유형: {', '.join(report.change_reasons)}",
                     ]
                 )
+                for revision in report.estimate_revisions[:3]:
+                    lines.append(f"- {_format_revision_detail(revision)}")
                 target_line = _format_target_change(report)
                 if target_line:
                     lines.append(f"- {target_line}")
@@ -1589,6 +1718,8 @@ def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[
         change_lines = ["", "<b>이익·마진 추정 변화</b>"]
         for report in digest.changes[:5]:
             detail_bits = []
+            for revision in report.estimate_revisions[:2]:
+                detail_bits.append(_format_revision_detail(revision))
             target_line = _format_target_change(report)
             if target_line:
                 detail_bits.append(target_line)
@@ -1611,6 +1742,8 @@ def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[
     for index, report in enumerate(digest.must_read[:max_reports], start=1):
         summary = trim_text(report.summary, 160)
         meta_bits = [report.broker, f"우선순위 {report.score:.2f}"]
+        if report.stance != "neutral":
+            meta_bits.append(f"톤 {_format_memo_stance(report.stance)}")
         if report.target_price:
             meta_bits.append(f"목표가 {report.target_price}")
         if report.opinion:
