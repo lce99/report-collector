@@ -21,9 +21,9 @@
     "opinion_down": 0,
     "analyst_changed": 0,
     "coverage_initiated": 5,
-    "estimate_signal_reports": 2,
-    "earnings_estimate_up": 2,
-    "earnings_estimate_down": 0,
+    "estimate_signal_reports": 3,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 2,
     "margin_estimate_up": 2,
     "margin_estimate_down": 1
   },
@@ -115,11 +115,13 @@
         "estimate_signal_types": [
           "earnings_estimate_up",
           "margin_estimate_up",
+          "earnings_estimate_down",
           "margin_estimate_down"
         ],
         "estimate_reasons": [
           "이익 추정 상향/증가",
           "마진율 추정 상승/개선",
+          "이익 추정 하향/감소",
           "마진율 추정 하락/악화"
         ]
       },
@@ -137,8 +139,14 @@
         "opinion_normalized": "buy",
         "score": 7.85,
         "has_change_signal": true,
-        "estimate_signal_types": [],
-        "estimate_reasons": []
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-05-15",
@@ -250,6 +258,34 @@
         "source_excerpt": "0%), 영업이익 3,112억원(YoY +108."
       },
       {
+        "date": "2026-04-16",
+        "broker": "신한투자증권",
+        "title": "셀트리온 - 좋아질 일만 남았다",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91616&page=2",
+        "pdf_url": null,
+        "primary_url": "https://finance.naver.com/research/company_read.naver?nid=91616&page=2",
+        "target_price": "290,000",
+        "target_price_value": 290000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 7.9,
+        "has_change_signal": false,
+        "estimate_signal_types": [],
+        "estimate_reasons": [],
+        "metric": "revenue",
+        "metric_group": "earnings",
+        "label": "매출",
+        "period": null,
+        "value": 1.1,
+        "unit": "조원",
+        "value_krw_100m": 11000.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "셀트리온 - 좋아질 일만 남았다 좋아질 일만 남았다 셀트리온 단기 이슈 해소 후 고마진 신제품 기반 성장 지속 전망 26년 1분기 연결 기준 매출 1.1조원(YoY +34."
+      },
+      {
         "date": "2026-05-07",
         "broker": "DS투자증권",
         "title": "셀트리온 - 인상적인 옴니클로와 스토보클로의 성장",
@@ -328,11 +364,13 @@
         "estimate_signal_types": [
           "earnings_estimate_up",
           "margin_estimate_up",
+          "earnings_estimate_down",
           "margin_estimate_down"
         ],
         "estimate_reasons": [
           "이익 추정 상향/증가",
           "마진율 추정 상승/개선",
+          "이익 추정 하향/감소",
           "마진율 추정 하락/악화"
         ],
         "metric": "operating_margin",
@@ -361,8 +399,14 @@
         "opinion_normalized": "buy",
         "score": 7.85,
         "has_change_signal": true,
-        "estimate_signal_types": [],
-        "estimate_reasons": [],
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
         "metric": "operating_margin",
         "metric_group": "margin",
         "label": "OPM",
@@ -392,11 +436,13 @@
         "estimate_signal_types": [
           "earnings_estimate_up",
           "margin_estimate_up",
+          "earnings_estimate_down",
           "margin_estimate_down"
         ],
         "estimate_reasons": [
           "이익 추정 상향/증가",
           "마진율 추정 상승/개선",
+          "이익 추정 하향/감소",
           "마진율 추정 하락/악화"
         ],
         "metric": "operating_profit",
@@ -428,11 +474,13 @@
         "estimate_signal_types": [
           "earnings_estimate_up",
           "margin_estimate_up",
+          "earnings_estimate_down",
           "margin_estimate_down"
         ],
         "estimate_reasons": [
           "이익 추정 상향/증가",
           "마진율 추정 상승/개선",
+          "이익 추정 하향/감소",
           "마진율 추정 하락/악화"
         ],
         "metric": "operating_profit",
@@ -461,8 +509,14 @@
         "opinion_normalized": "buy",
         "score": 7.85,
         "has_change_signal": true,
-        "estimate_signal_types": [],
-        "estimate_reasons": [],
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
         "metric": "operating_profit",
         "metric_group": "earnings",
         "label": "영업이익",
@@ -474,6 +528,74 @@
         "value_won": null,
         "change_pctp": null,
         "source_excerpt": "0%YoY, 이하 YoY 생략), 영업이익 3,219억원(+115."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "유안타증권",
+        "title": "셀트리온 - 성장 이끄는 신규 시밀러",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92538&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_805616000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_805616000.pdf",
+        "target_price": "270,000",
+        "target_price_value": 270000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "revenue",
+        "metric_group": "earnings",
+        "label": "매출액",
+        "period": null,
+        "value": 3930.0,
+        "unit": "억원",
+        "value_krw_100m": 3930.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "기존 제품(램시마IV, 트룩시마 등) 매출액은 3,930억원(-6."
+      },
+      {
+        "date": "2026-05-07",
+        "broker": "유안타증권",
+        "title": "셀트리온 - 성장 이끄는 신규 시밀러",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92538&page=1",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_805616000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_805616000.pdf",
+        "target_price": "270,000",
+        "target_price_value": 270000,
+        "opinion": "Buy",
+        "opinion_normalized": "buy",
+        "score": 7.85,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ],
+        "metric": "revenue",
+        "metric_group": "earnings",
+        "label": "매출액",
+        "period": null,
+        "value": 5812.0,
+        "unit": "억원",
+        "value_krw_100m": 5812.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "5%)로 소폭 감소했음에도 불구하고 신규 제품(램시마SC, 옴리클로 등) 매출액이 5,812억원(+67."
       }
     ],
     "opinion_distribution": [
@@ -612,11 +734,13 @@
       "estimate_signal_types": [
         "earnings_estimate_up",
         "margin_estimate_up",
+        "earnings_estimate_down",
         "margin_estimate_down"
       ],
       "estimate_reasons": [
         "이익 추정 상향/증가",
         "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
         "마진율 추정 하락/악화"
       ]
     },
@@ -634,8 +758,14 @@
       "opinion_normalized": "buy",
       "score": 7.85,
       "has_change_signal": true,
-      "estimate_signal_types": [],
-      "estimate_reasons": []
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-05-15",
@@ -747,6 +877,34 @@
       "source_excerpt": "0%), 영업이익 3,112억원(YoY +108."
     },
     {
+      "date": "2026-04-16",
+      "broker": "신한투자증권",
+      "title": "셀트리온 - 좋아질 일만 남았다",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=91616&page=2",
+      "pdf_url": null,
+      "primary_url": "https://finance.naver.com/research/company_read.naver?nid=91616&page=2",
+      "target_price": "290,000",
+      "target_price_value": 290000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 7.9,
+      "has_change_signal": false,
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "metric": "revenue",
+      "metric_group": "earnings",
+      "label": "매출",
+      "period": null,
+      "value": 1.1,
+      "unit": "조원",
+      "value_krw_100m": 11000.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "셀트리온 - 좋아질 일만 남았다 좋아질 일만 남았다 셀트리온 단기 이슈 해소 후 고마진 신제품 기반 성장 지속 전망 26년 1분기 연결 기준 매출 1.1조원(YoY +34."
+    },
+    {
       "date": "2026-05-07",
       "broker": "DS투자증권",
       "title": "셀트리온 - 인상적인 옴니클로와 스토보클로의 성장",
@@ -825,11 +983,13 @@
       "estimate_signal_types": [
         "earnings_estimate_up",
         "margin_estimate_up",
+        "earnings_estimate_down",
         "margin_estimate_down"
       ],
       "estimate_reasons": [
         "이익 추정 상향/증가",
         "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
         "마진율 추정 하락/악화"
       ],
       "metric": "operating_margin",
@@ -858,8 +1018,14 @@
       "opinion_normalized": "buy",
       "score": 7.85,
       "has_change_signal": true,
-      "estimate_signal_types": [],
-      "estimate_reasons": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
       "metric": "operating_margin",
       "metric_group": "margin",
       "label": "OPM",
@@ -889,11 +1055,13 @@
       "estimate_signal_types": [
         "earnings_estimate_up",
         "margin_estimate_up",
+        "earnings_estimate_down",
         "margin_estimate_down"
       ],
       "estimate_reasons": [
         "이익 추정 상향/증가",
         "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
         "마진율 추정 하락/악화"
       ],
       "metric": "operating_profit",
@@ -925,11 +1093,13 @@
       "estimate_signal_types": [
         "earnings_estimate_up",
         "margin_estimate_up",
+        "earnings_estimate_down",
         "margin_estimate_down"
       ],
       "estimate_reasons": [
         "이익 추정 상향/증가",
         "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
         "마진율 추정 하락/악화"
       ],
       "metric": "operating_profit",
@@ -958,8 +1128,14 @@
       "opinion_normalized": "buy",
       "score": 7.85,
       "has_change_signal": true,
-      "estimate_signal_types": [],
-      "estimate_reasons": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
       "metric": "operating_profit",
       "metric_group": "earnings",
       "label": "영업이익",
@@ -971,6 +1147,74 @@
       "value_won": null,
       "change_pctp": null,
       "source_excerpt": "0%YoY, 이하 YoY 생략), 영업이익 3,219억원(+115."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "유안타증권",
+      "title": "셀트리온 - 성장 이끄는 신규 시밀러",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92538&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_805616000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_805616000.pdf",
+      "target_price": "270,000",
+      "target_price_value": 270000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "revenue",
+      "metric_group": "earnings",
+      "label": "매출액",
+      "period": null,
+      "value": 3930.0,
+      "unit": "억원",
+      "value_krw_100m": 3930.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "기존 제품(램시마IV, 트룩시마 등) 매출액은 3,930억원(-6."
+    },
+    {
+      "date": "2026-05-07",
+      "broker": "유안타증권",
+      "title": "셀트리온 - 성장 이끄는 신규 시밀러",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92538&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_805616000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/18/20260507_company_805616000.pdf",
+      "target_price": "270,000",
+      "target_price_value": 270000,
+      "opinion": "Buy",
+      "opinion_normalized": "buy",
+      "score": 7.85,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "metric": "revenue",
+      "metric_group": "earnings",
+      "label": "매출액",
+      "period": null,
+      "value": 5812.0,
+      "unit": "억원",
+      "value_krw_100m": 5812.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "5%)로 소폭 감소했음에도 불구하고 신규 제품(램시마SC, 옴리클로 등) 매출액이 5,812억원(+67."
     }
   ],
   "opinion_distribution": [
@@ -1393,12 +1637,14 @@
         "coverage_initiated",
         "earnings_estimate_up",
         "margin_estimate_up",
+        "earnings_estimate_down",
         "margin_estimate_down"
       ],
       "change_reasons": [
         "신규 커버리지",
         "이익 추정 상향/증가",
         "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
         "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
@@ -1438,11 +1684,13 @@
       "estimate_signal_types": [
         "earnings_estimate_up",
         "margin_estimate_up",
+        "earnings_estimate_down",
         "margin_estimate_down"
       ],
       "estimate_reasons": [
         "이익 추정 상향/증가",
         "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
         "마진율 추정 하락/악화"
       ]
     },
@@ -1494,10 +1742,14 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
       "ticker": null,
@@ -1513,6 +1765,26 @@
           "value_krw_100m": 3219.0
         },
         {
+          "metric": "revenue",
+          "metric_group": "earnings",
+          "label": "매출액",
+          "period": null,
+          "value": 3930.0,
+          "unit": "억원",
+          "source_excerpt": "기존 제품(램시마IV, 트룩시마 등) 매출액은 3,930억원(-6.",
+          "value_krw_100m": 3930.0
+        },
+        {
+          "metric": "revenue",
+          "metric_group": "earnings",
+          "label": "매출액",
+          "period": null,
+          "value": 5812.0,
+          "unit": "억원",
+          "source_excerpt": "5%)로 소폭 감소했음에도 불구하고 신규 제품(램시마SC, 옴리클로 등) 매출액이 5,812억원(+67.",
+          "value_krw_100m": 5812.0
+        },
+        {
           "metric": "operating_margin",
           "metric_group": "margin",
           "label": "OPM",
@@ -1523,8 +1795,14 @@
           "source_excerpt": "5%, OPM 28.1%)로 컨센서스에 부합하는 실적 기록."
         }
       ],
-      "estimate_signal_types": [],
-      "estimate_reasons": []
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -1847,12 +2125,14 @@
         "coverage_initiated",
         "earnings_estimate_up",
         "margin_estimate_up",
+        "earnings_estimate_down",
         "margin_estimate_down"
       ],
       "change_reasons": [
         "신규 커버리지",
         "이익 추정 상향/증가",
         "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
         "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
@@ -1892,11 +2172,13 @@
       "estimate_signal_types": [
         "earnings_estimate_up",
         "margin_estimate_up",
+        "earnings_estimate_down",
         "margin_estimate_down"
       ],
       "estimate_reasons": [
         "이익 추정 상향/증가",
         "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
         "마진율 추정 하락/악화"
       ]
     },
@@ -1948,10 +2230,14 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
       "ticker": null,
@@ -1967,6 +2253,26 @@
           "value_krw_100m": 3219.0
         },
         {
+          "metric": "revenue",
+          "metric_group": "earnings",
+          "label": "매출액",
+          "period": null,
+          "value": 3930.0,
+          "unit": "억원",
+          "source_excerpt": "기존 제품(램시마IV, 트룩시마 등) 매출액은 3,930억원(-6.",
+          "value_krw_100m": 3930.0
+        },
+        {
+          "metric": "revenue",
+          "metric_group": "earnings",
+          "label": "매출액",
+          "period": null,
+          "value": 5812.0,
+          "unit": "억원",
+          "source_excerpt": "5%)로 소폭 감소했음에도 불구하고 신규 제품(램시마SC, 옴리클로 등) 매출액이 5,812억원(+67.",
+          "value_krw_100m": 5812.0
+        },
+        {
           "metric": "operating_margin",
           "metric_group": "margin",
           "label": "OPM",
@@ -1977,8 +2283,14 @@
           "source_excerpt": "5%, OPM 28.1%)로 컨센서스에 부합하는 실적 기록."
         }
       ],
-      "estimate_signal_types": [],
-      "estimate_reasons": []
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -2462,12 +2774,14 @@
         "coverage_initiated",
         "earnings_estimate_up",
         "margin_estimate_up",
+        "earnings_estimate_down",
         "margin_estimate_down"
       ],
       "change_reasons": [
         "신규 커버리지",
         "이익 추정 상향/증가",
         "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
         "마진율 추정 하락/악화"
       ],
       "has_change_signal": true,
@@ -2507,11 +2821,13 @@
       "estimate_signal_types": [
         "earnings_estimate_up",
         "margin_estimate_up",
+        "earnings_estimate_down",
         "margin_estimate_down"
       ],
       "estimate_reasons": [
         "이익 추정 상향/증가",
         "마진율 추정 상승/개선",
+        "이익 추정 하향/감소",
         "마진율 추정 하락/악화"
       ]
     },
@@ -2563,10 +2879,14 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
       "ticker": null,
@@ -2582,6 +2902,26 @@
           "value_krw_100m": 3219.0
         },
         {
+          "metric": "revenue",
+          "metric_group": "earnings",
+          "label": "매출액",
+          "period": null,
+          "value": 3930.0,
+          "unit": "억원",
+          "source_excerpt": "기존 제품(램시마IV, 트룩시마 등) 매출액은 3,930억원(-6.",
+          "value_krw_100m": 3930.0
+        },
+        {
+          "metric": "revenue",
+          "metric_group": "earnings",
+          "label": "매출액",
+          "period": null,
+          "value": 5812.0,
+          "unit": "억원",
+          "source_excerpt": "5%)로 소폭 감소했음에도 불구하고 신규 제품(램시마SC, 옴리클로 등) 매출액이 5,812억원(+67.",
+          "value_krw_100m": 5812.0
+        },
+        {
           "metric": "operating_margin",
           "metric_group": "margin",
           "label": "OPM",
@@ -2592,8 +2932,14 @@
           "source_excerpt": "5%, OPM 28.1%)로 컨센서스에 부합하는 실적 기록."
         }
       ],
-      "estimate_signal_types": [],
-      "estimate_reasons": []
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -2703,6 +3049,16 @@
       "target_price_value": 290000,
       "opinion_normalized": "buy",
       "estimate_metrics": [
+        {
+          "metric": "revenue",
+          "metric_group": "earnings",
+          "label": "매출",
+          "period": null,
+          "value": 1.1,
+          "unit": "조원",
+          "source_excerpt": "셀트리온 - 좋아질 일만 남았다 좋아질 일만 남았다 셀트리온 단기 이슈 해소 후 고마진 신제품 기반 성장 지속 전망 26년 1분기 연결 기준 매출 1.1조원(YoY +34.",
+          "value_krw_100m": 11000.0
+        },
         {
           "metric": "operating_profit",
           "metric_group": "earnings",

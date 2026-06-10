@@ -26,9 +26,9 @@
     "opinion_down": 0,
     "analyst_changed": 0,
     "coverage_initiated": 11,
-    "estimate_signal_reports": 10,
-    "earnings_estimate_up": 9,
-    "earnings_estimate_down": 0,
+    "estimate_signal_reports": 11,
+    "earnings_estimate_up": 11,
+    "earnings_estimate_down": 1,
     "margin_estimate_up": 4,
     "margin_estimate_down": 0
   },
@@ -78,9 +78,11 @@
         "score": 7.9,
         "has_change_signal": true,
         "estimate_signal_types": [
+          "earnings_estimate_up",
           "margin_estimate_up"
         ],
         "estimate_reasons": [
+          "이익 추정 상향/증가",
           "마진율 추정 상승/개선"
         ]
       },
@@ -121,8 +123,14 @@
         "opinion_normalized": "buy",
         "score": 10.35,
         "has_change_signal": true,
-        "estimate_signal_types": [],
-        "estimate_reasons": []
+        "estimate_signal_types": [
+          "earnings_estimate_up",
+          "earnings_estimate_down"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가",
+          "이익 추정 하향/감소"
+        ]
       },
       {
         "date": "2026-04-28",
@@ -742,6 +750,38 @@
         "value_won": null,
         "change_pctp": null,
         "source_excerpt": "7 조원, 영업이익 1.5 조원으로 전년 대비 각각 +5%, +33% 증가가 예상된다."
+      },
+      {
+        "date": "2026-05-13",
+        "broker": "SK증권",
+        "title": "LG이노텍 - FCBGA 낙수효과, SiP 쇼티지: 27년 추정치 상..",
+        "ticker": null,
+        "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92832&page=2",
+        "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260513_company_916527000.pdf",
+        "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260513_company_916527000.pdf",
+        "target_price": "1,000,000",
+        "target_price_value": 1000000,
+        "opinion": "매수",
+        "opinion_normalized": "buy",
+        "score": 14.95,
+        "has_change_signal": true,
+        "estimate_signal_types": [
+          "earnings_estimate_up"
+        ],
+        "estimate_reasons": [
+          "이익 추정 상향/증가"
+        ],
+        "metric": "revenue",
+        "metric_group": "earnings",
+        "label": "매출액",
+        "period": null,
+        "value": 25.7,
+        "unit": "조원",
+        "value_krw_100m": 257000.0,
+        "value_pct": null,
+        "value_won": null,
+        "change_pctp": null,
+        "source_excerpt": "매출액 25.7 조원, 영업이익 1."
       }
     ],
     "opinion_distribution": [
@@ -825,9 +865,11 @@
       "score": 7.9,
       "has_change_signal": true,
       "estimate_signal_types": [
+        "earnings_estimate_up",
         "margin_estimate_up"
       ],
       "estimate_reasons": [
+        "이익 추정 상향/증가",
         "마진율 추정 상승/개선"
       ]
     },
@@ -868,8 +910,14 @@
       "opinion_normalized": "buy",
       "score": 10.35,
       "has_change_signal": true,
-      "estimate_signal_types": [],
-      "estimate_reasons": []
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "date": "2026-04-28",
@@ -1489,6 +1537,38 @@
       "value_won": null,
       "change_pctp": null,
       "source_excerpt": "7 조원, 영업이익 1.5 조원으로 전년 대비 각각 +5%, +33% 증가가 예상된다."
+    },
+    {
+      "date": "2026-05-13",
+      "broker": "SK증권",
+      "title": "LG이노텍 - FCBGA 낙수효과, SiP 쇼티지: 27년 추정치 상..",
+      "ticker": null,
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=92832&page=2",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/64/20260513_company_916527000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/64/20260513_company_916527000.pdf",
+      "target_price": "1,000,000",
+      "target_price_value": 1000000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "score": 14.95,
+      "has_change_signal": true,
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "metric": "revenue",
+      "metric_group": "earnings",
+      "label": "매출액",
+      "period": null,
+      "value": 25.7,
+      "unit": "조원",
+      "value_krw_100m": 257000.0,
+      "value_pct": null,
+      "value_won": null,
+      "change_pctp": null,
+      "source_excerpt": "매출액 25.7 조원, 영업이익 1."
     }
   ],
   "opinion_distribution": [
@@ -1776,6 +1856,16 @@
       "has_change_signal": true,
       "ticker": null,
       "estimate_metrics": [
+        {
+          "metric": "revenue",
+          "metric_group": "earnings",
+          "label": "매출액",
+          "period": null,
+          "value": 25.7,
+          "unit": "조원",
+          "source_excerpt": "매출액 25.7 조원, 영업이익 1.",
+          "value_krw_100m": 257000.0
+        },
         {
           "metric": "operating_profit",
           "metric_group": "earnings",
@@ -2066,16 +2156,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
       "ticker": null,
       "estimate_metrics": [],
-      "estimate_signal_types": [],
-      "estimate_reasons": []
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -2674,6 +2774,16 @@
       "ticker": null,
       "estimate_metrics": [
         {
+          "metric": "revenue",
+          "metric_group": "earnings",
+          "label": "매출액",
+          "period": null,
+          "value": 25.7,
+          "unit": "조원",
+          "source_excerpt": "매출액 25.7 조원, 영업이익 1.",
+          "value_krw_100m": 257000.0
+        },
+        {
           "metric": "operating_profit",
           "metric_group": "earnings",
           "label": "영업이익",
@@ -3044,16 +3154,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
       "ticker": null,
       "estimate_metrics": [],
-      "estimate_signal_types": [],
-      "estimate_reasons": []
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -3580,19 +3700,23 @@
       "coverage_initiated": true,
       "change_types": [
         "coverage_initiated",
+        "earnings_estimate_up",
         "margin_estimate_up"
       ],
       "change_reasons": [
         "신규 커버리지",
+        "이익 추정 상향/증가",
         "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
       "ticker": null,
       "estimate_metrics": [],
       "estimate_signal_types": [
+        "earnings_estimate_up",
         "margin_estimate_up"
       ],
       "estimate_reasons": [
+        "이익 추정 상향/증가",
         "마진율 추정 상승/개선"
       ]
     },
@@ -3848,6 +3972,16 @@
       "ticker": null,
       "estimate_metrics": [
         {
+          "metric": "revenue",
+          "metric_group": "earnings",
+          "label": "매출액",
+          "period": null,
+          "value": 25.7,
+          "unit": "조원",
+          "source_excerpt": "매출액 25.7 조원, 영업이익 1.",
+          "value_krw_100m": 257000.0
+        },
+        {
           "metric": "operating_profit",
           "metric_group": "earnings",
           "label": "영업이익",
@@ -4218,16 +4352,26 @@
       "analyst_changed": false,
       "coverage_initiated": true,
       "change_types": [
-        "coverage_initiated"
+        "coverage_initiated",
+        "earnings_estimate_up",
+        "earnings_estimate_down"
       ],
       "change_reasons": [
-        "신규 커버리지"
+        "신규 커버리지",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
       ],
       "has_change_signal": true,
       "ticker": null,
       "estimate_metrics": [],
-      "estimate_signal_types": [],
-      "estimate_reasons": []
+      "estimate_signal_types": [
+        "earnings_estimate_up",
+        "earnings_estimate_down"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ]
     },
     {
       "source": "naver_research",
@@ -4754,19 +4898,23 @@
       "coverage_initiated": true,
       "change_types": [
         "coverage_initiated",
+        "earnings_estimate_up",
         "margin_estimate_up"
       ],
       "change_reasons": [
         "신규 커버리지",
+        "이익 추정 상향/증가",
         "마진율 추정 상승/개선"
       ],
       "has_change_signal": true,
       "ticker": null,
       "estimate_metrics": [],
       "estimate_signal_types": [
+        "earnings_estimate_up",
         "margin_estimate_up"
       ],
       "estimate_reasons": [
+        "이익 추정 상향/증가",
         "마진율 추정 상승/개선"
       ]
     },
