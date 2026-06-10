@@ -33,6 +33,7 @@ jobs:
       MARKET_DATA_ENABLED: ${{ vars.MARKET_DATA_ENABLED || 'true' }}
       MARKET_DATA_SOURCE: ${{ vars.MARKET_DATA_SOURCE || 'naver' }}
       MARKET_DATA_MAX_PAGES: ${{ vars.MARKET_DATA_MAX_PAGES || '8' }}
+      MARKET_BENCHMARK: ${{ vars.MARKET_BENCHMARK || 'KOSPI' }}
       SUBJECT_TICKER_MAP: ${{ vars.SUBJECT_TICKER_MAP || '' }}
       PDF_TEXT_ENABLED: ${{ vars.PDF_TEXT_ENABLED || 'true' }}
       PDF_TEXT_PAGE_LIMIT: ${{ vars.PDF_TEXT_PAGE_LIMIT || '8' }}
@@ -59,6 +60,7 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: "3.11"
+          cache: pip
 
       - name: Install dependencies
         run: python -m pip install --upgrade pip -r requirements.txt

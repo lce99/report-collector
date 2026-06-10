@@ -880,6 +880,67 @@
         font-size: 1.3rem;
       }
 
+      .layout-bottom {
+        margin-top: 24px;
+      }
+
+      .section-performance {
+        --section-accent: var(--sky);
+        --section-accent-soft: rgba(49, 94, 123, 0.16);
+      }
+
+      .perf-tables {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 16px;
+        margin-top: 16px;
+      }
+
+      .perf-panel {
+        min-width: 0;
+      }
+
+      .perf-panel h3 {
+        margin: 0 0 10px;
+        font-size: 0.98rem;
+      }
+
+      .perf-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 12.5px;
+      }
+
+      .perf-table th,
+      .perf-table td {
+        padding: 7px 8px;
+        text-align: right;
+        border-bottom: 1px solid rgba(24, 36, 45, 0.08);
+        white-space: nowrap;
+      }
+
+      .perf-table th:first-child,
+      .perf-table td:first-child {
+        text-align: left;
+        white-space: normal;
+      }
+
+      .perf-table th {
+        color: var(--muted);
+        font-weight: 700;
+        font-size: 11.5px;
+      }
+
+      .perf-positive {
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      .perf-negative {
+        color: var(--rose);
+        font-weight: 700;
+      }
+
       .chart-grid {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1629,6 +1690,36 @@
             </article>
           </div>
         </section>
+
+        <section class="layout-bottom">
+          <article class="card section section-performance">
+            <div class="section-head">
+              <div class="section-title-group">
+                <span class="section-kicker">Selection Scorecard</span>
+                <h2>선정 성과</h2>
+                <span class="section-meta"
+                  >우선 검토 후보의 1/7/30일 주가 성과를 시장(벤치마크) 대비 초과수익으로 평가합니다.</span
+                >
+              </div>
+              <span id="performanceMeta" class="section-meta"></span>
+            </div>
+            <div id="performanceSummary" class="signal-summary"></div>
+            <div class="perf-tables">
+              <section class="perf-panel">
+                <h3>점수 구간별</h3>
+                <div id="perfByScore"></div>
+              </section>
+              <section class="perf-panel">
+                <h3>카테고리별</h3>
+                <div id="perfByCategory"></div>
+              </section>
+              <section class="perf-panel">
+                <h3>증권사별</h3>
+                <div id="perfByBroker"></div>
+              </section>
+            </div>
+          </article>
+        </section>
       </div>
 
       <section id="subjectView" class="stack" hidden>
@@ -1748,6 +1839,7 @@
         index: null,
         subjectIndex: null,
         digest: null,
+        performance: null,
         subjectDetail: null,
         selectedDate: null,
         selectedSubjectKey: null,
@@ -3105,6 +3197,8 @@
         meta.textContent = `현재 필터 기준 ${formatNumber(filteredChanges.length)}건 표시`;
         const stats = [
           { label: "변화 감지", value: summary.changed_reports || 0 },
+          { label: "추정치 상향", value: summary.estimate_revision_up || 0 },
+          { label: "추정치 하향", value: summary.estimate_revision_down || 0 },
           { label: "이익 추정 상향", value: summary.earnings_estimate_up || 0 },
           { label: "마진 개선", value: summary.margin_estimate_up || 0 },
           { label: "목표가 상향", value: summary.target_price_up || 0 },
@@ -3453,6 +3547,141 @@
         }
       }
 
+      function formatSignedPct(value, suffix = "%") {
+        if (value === null || value === undefined) {
+          return "–";
+        }
+        const numeric = Number(value);
+        if (!Number.isFinite(numeric)) {
+          return "–";
+        }
+        return `${numeric > 0 ? "+" : ""}${numeric.toFixed(1)}${suffix}`;
+      }
+
+      function perfCell(value, suffix = "%") {
+        const cell = document.createElement("td");
+        cell.textContent = formatSignedPct(value, suffix);
+        const numeric = Number(value);
+        if (Number.isFinite(numeric) && numeric !== 0 && value !== null && value !== undefined) {
+          cell.className = numeric > 0 ? "perf-positive" : "perf-negative";
+        }
+        return cell;
+      }
+
+      function buildPerformanceTable(rows) {
+        const table = document.createElement("table");
+        table.className = "perf-table";
+        const head = document.createElement("tr");
+        ["구분", "표본", "1d 평균", "7d 평균", "7d 적중률", "7d 초과수익", "30d 평균"].forEach(
+          (label) => {
+            head.appendChild(el("th", null, label));
+          }
+        );
+        table.appendChild(head);
+
+        rows.forEach((row) => {
+          const horizons = row.horizons || {};
+          const day7 = horizons["7d"] || {};
+          const tr = document.createElement("tr");
+          tr.appendChild(el("td", null, row.label || "-"));
+          tr.appendChild(el("td", null, formatNumber(row.priced || 0)));
+          tr.appendChild(perfCell(horizons["1d"]?.avg_return_pct));
+          tr.appendChild(perfCell(day7.avg_return_pct));
+          tr.appendChild(
+            el(
+              "td",
+              null,
+              day7.hit_rate_pct === undefined || day7.hit_rate_pct === null
+                ? "–"
+                : `${day7.hit_rate_pct}%`
+            )
+          );
+          tr.appendChild(perfCell(day7.avg_excess_return_pct));
+          tr.appendChild(perfCell(horizons["30d"]?.avg_return_pct));
+          table.appendChild(tr);
+        });
+        return table;
+      }
+
+      function renderPerformance() {
+        const summaryContainer = document.getElementById("performanceSummary");
+        const meta = document.getElementById("performanceMeta");
+        if (!summaryContainer) {
+          return;
+        }
+        summaryContainer.innerHTML = "";
+        const panels = [
+          ["perfByScore", "by_score_bucket"],
+          ["perfByCategory", "by_category"],
+          ["perfByBroker", "by_broker"],
+        ];
+        panels.forEach(([id]) => {
+          const node = document.getElementById(id);
+          if (node) {
+            node.innerHTML = "";
+          }
+        });
+
+        const summary = state.performance?.summary;
+        if (!summary || !summary.tracked_selections) {
+          meta.textContent = "";
+          summaryContainer.appendChild(
+            el("div", "empty", "추적된 선정 성과 데이터가 아직 없습니다.")
+          );
+          return;
+        }
+
+        const pricedTotal = Object.values(summary.priced_by_horizon || {}).reduce(
+          (acc, value) => acc + Number(value || 0),
+          0
+        );
+        meta.textContent = `누적 ${formatNumber(summary.tracked_selections)}건 추적 · 가격 매칭 ${formatNumber(pricedTotal)}건`;
+
+        const byHorizon = summary.by_horizon || {};
+        ["1d", "7d", "30d"].forEach((horizon) => {
+          const stat = byHorizon[horizon];
+          const node = el("div", "signal-stat");
+          node.appendChild(el("span", null, `${horizon} 평균수익률`));
+          if (!stat || !stat.priced) {
+            node.appendChild(el("strong", null, "–"));
+            node.appendChild(el("span", null, "표본 없음"));
+          } else {
+            const strong = el("strong", null, formatSignedPct(stat.avg_return_pct));
+            if (Number(stat.avg_return_pct) > 0) {
+              strong.classList.add("perf-positive");
+            } else if (Number(stat.avg_return_pct) < 0) {
+              strong.classList.add("perf-negative");
+            }
+            node.appendChild(strong);
+            const excessText =
+              stat.avg_excess_return_pct === null || stat.avg_excess_return_pct === undefined
+                ? ""
+                : ` · 시장 대비 ${formatSignedPct(stat.avg_excess_return_pct)}`;
+            node.appendChild(
+              el(
+                "span",
+                null,
+                `적중률 ${stat.hit_rate_pct}% · ${formatNumber(stat.priced)}건${excessText}`
+              )
+            );
+          }
+          summaryContainer.appendChild(node);
+        });
+
+        panels.forEach(([id, key]) => {
+          const node = document.getElementById(id);
+          if (!node) {
+            return;
+          }
+          const rows = (summary[key] || []).slice(0, 8);
+          if (!rows.length) {
+            node.appendChild(el("div", "empty", "표본이 아직 없습니다."));
+            return;
+          }
+          node.appendChild(buildPerformanceTable(rows));
+        });
+      }
+
       function renderAll() {
         if (!state.digest) {
           return;
@@ -3472,11 +3701,25 @@
         renderChanges(state.digest);
         renderRankings(state.digest);
         renderMustRead(state.digest);
+        renderPerformance();
         renderReports();
+      }
+
+      async function ensurePerformanceLoaded() {
+        if (state.performance !== null) {
+          return;
+        }
+        try {
+          state.performance = await fetchJson("./data/performance/latest.json");
+        } catch (error) {
+          console.error(error);
+          state.performance = { summary: null };
+        }
       }
 
       async function loadDigest(date) {
         renderLoadingState();
+        await ensurePerformanceLoaded();
         try {
           const digest = await fetchJson(`./data/days/${date}.json`);
           state.digest = digest;

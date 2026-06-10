@@ -34,6 +34,8 @@ class Report:
     estimate_metrics: list[dict[str, Any]] = field(default_factory=list)
     estimate_signal_types: list[str] = field(default_factory=list)
     estimate_reasons: list[str] = field(default_factory=list)
+    estimate_revisions: list[dict[str, Any]] = field(default_factory=list)
+    stance: str = "neutral"
     score: float = 0.0
     score_reasons: list[str] = field(default_factory=list)
     score_breakdown: list[dict[str, Any]] = field(default_factory=list)
@@ -73,6 +75,7 @@ class Report:
             or self.change_types
             or self.estimate_reasons
             or self.estimate_signal_types
+            or self.estimate_revisions
         )
 
     @property
@@ -155,6 +158,8 @@ class Report:
             "estimate_metrics": self.estimate_metrics,
             "estimate_signal_types": self.estimate_signal_types,
             "estimate_reasons": self.estimate_reasons,
+            "estimate_revisions": self.estimate_revisions,
+            "stance": self.stance,
             "score": self.score,
             "score_reasons": self.score_reasons,
             "score_breakdown": self.score_breakdown,

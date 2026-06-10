@@ -25,12 +25,21 @@ from report_collector.digest import (
     _iter_previous_reports,
     _score_report,
     _select_must_read,
+    enrich_and_build_digest,
     render_telegram_messages,
 )
-from report_collector.estimates import extract_estimate_metrics, extract_estimate_signal_types
+from report_collector.estimates import (
+    compare_estimate_metrics,
+    extract_estimate_metrics,
+    extract_estimate_signal_types,
+)
 from report_collector.llm import _apply_summary
 from report_collector.main import _merge_duplicate_reports, _run_collector
-from report_collector.market_data import NaverDailyPriceProvider, parse_naver_daily_price_html
+from report_collector.market_data import (
+    NaverDailyPriceProvider,
+    parse_naver_daily_price_html,
+    parse_naver_index_day_html,
+)
 from report_collector.models import DailyDigest, Report
 from report_collector.sources.naver_research import CATEGORY_CONFIGS, NaverResearchCollector
 from report_collector.sources.shinhan_investment import ShinhanBoardConfig, _parse_item
@@ -1033,6 +1042,254 @@ class ArchiveRobustnessTests(unittest.TestCase):
         self.assertEqual(index["days"][0]["date"], "2026-04-20")
         self.assertEqual(index["days"][0]["top_titles"], ["Example report"])
         self.assertEqual(previous_reports, [{"broker": "Mirae", "subject": "ExampleCo"}])
+
+
+class EstimateRevisionTests(unittest.TestCase):
+    def test_extract_estimate_metrics_includes_revenue(self) -> None:
+        metrics = extract_estimate_metrics("2026년 매출액 3.5조원, 영업이익 4,500억원 전망.")
+        names = [item["metric"] for item in metrics]
+        self.assertIn("revenue", names)
+        revenue = next(item for item in metrics if item["metric"] == "revenue")
+        self.assertEqual(revenue["value_krw_100m"], 35000.0)
+
+    def test_compare_estimate_metrics_detects_direction_across_units(self) -> None:
+        previous = [
+            {"metric": "revenue", "label": "매출액", "period": "2026년", "value": 4.0, "unit": "조원", "value_krw_100m": 40000.0},
+            {"metric": "eps", "label": "EPS", "period": "2026년", "value": 5000.0, "unit": "원", "value_won": 5000.0},
+            {"metric": "operating_margin", "label": "OPM", "period": None, "value": 10.0, "unit": "%", "value_pct": 10.0},
+        ]
+        current = [
+            {"metric": "revenue", "label": "매출액", "period": "2026", "value": 38000.0, "unit": "억원", "value_krw_100m": 38000.0},
+            {"metric": "eps", "label": "EPS", "period": "2026년", "value": 5500.0, "unit": "원", "value_won": 5500.0},
+            {"metric": "operating_margin", "label": "OPM", "period": None, "value": 10.5, "unit": "%", "value_pct": 10.5},
+        ]
+
+        revisions = compare_estimate_metrics(current, previous)
+        by_metric = {item["metric"]: item for item in revisions}
+        self.assertEqual(by_metric["revenue"]["direction"], "down")
+        self.assertEqual(by_metric["revenue"]["change_pct"], -5.0)
+        self.assertEqual(by_metric["eps"]["direction"], "up")
+        self.assertEqual(by_metric["eps"]["change_pct"], 10.0)
+        self.assertEqual(by_metric["operating_margin"]["change_pctp"], 0.5)
+        # EPS ordered ahead of profit metrics
+        self.assertEqual(revisions[0]["metric"], "eps")
+
+    def test_compare_estimate_metrics_ignores_noise_below_threshold(self) -> None:
+        previous = [{"metric": "eps", "label": "EPS", "period": "", "value": 5000.0, "unit": "원", "value_won": 5000.0}]
+        current = [{"metric": "eps", "label": "EPS", "period": "", "value": 5020.0, "unit": "원", "value_won": 5020.0}]
+        self.assertEqual(compare_estimate_metrics(current, previous), [])
+
+    def test_compare_estimate_metrics_period_fallback_only_when_unambiguous(self) -> None:
+        previous = [
+            {"metric": "revenue", "label": "매출액", "period": "2026년", "value": 4.0, "unit": "조원", "value_krw_100m": 40000.0},
+        ]
+        current = [
+            {"metric": "revenue", "label": "매출액", "period": None, "value": 4.4, "unit": "조원", "value_krw_100m": 44000.0},
+        ]
+        revisions = compare_estimate_metrics(current, previous)
+        self.assertEqual(len(revisions), 1)
+        self.assertEqual(revisions[0]["change_pct"], 10.0)
+
+        # Two candidate periods on the previous side → ambiguous → no match.
+        ambiguous = previous + [
+            {"metric": "revenue", "label": "매출액", "period": "2027년", "value": 5.0, "unit": "조원", "value_krw_100m": 50000.0},
+        ]
+        self.assertEqual(compare_estimate_metrics(current, ambiguous), [])
+
+    def test_digest_detects_numeric_estimate_revision_and_scores_it(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            archive_root = Path(tmp) / "archive"
+            previous_day = archive_root / "2026-06-08"
+            previous_day.mkdir(parents=True)
+            (previous_day / "digest.json").write_text(
+                json.dumps(
+                    {
+                        "date": "2026-06-08",
+                        "reports": [
+                            {
+                                "broker": "Fake증권",
+                                "subject": "삼성전자",
+                                "published_date": "2026-06-08",
+                                "estimate_metrics": [
+                                    {
+                                        "metric": "eps",
+                                        "label": "EPS",
+                                        "period": "2026년",
+                                        "value": 5000.0,
+                                        "unit": "원",
+                                        "value_won": 5000.0,
+                                    }
+                                ],
+                            }
+                        ],
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+
+            with patch.dict(os.environ, {"ARCHIVE_ROOT": str(archive_root)}, clear=False):
+                settings = Settings.from_env()
+
+            report = Report(
+                source="naver_research",
+                category="company",
+                category_label="종목분석",
+                report_id="r1",
+                title="실적 추정 상향",
+                broker="Fake증권",
+                published_date="2026-06-09",
+                detail_url="https://example.com/r1",
+                subject="삼성전자",
+                body="2026년 EPS 5,500원으로 추정치 상향.",
+            )
+            digest = enrich_and_build_digest(
+                [report],
+                target_date="2026-06-09",
+                requested_date="2026-06-09",
+                generated_at="2026-06-09T18:00:00+09:00",
+                collection_note="",
+                collection_attempts=[],
+                settings=settings,
+            )
+
+        self.assertEqual(len(report.estimate_revisions), 1)
+        revision = report.estimate_revisions[0]
+        self.assertEqual(revision["metric"], "eps")
+        self.assertEqual(revision["direction"], "up")
+        self.assertEqual(revision["change_pct"], 10.0)
+        self.assertIn("estimate_revision_up", report.change_types)
+        self.assertEqual(digest.change_summary["estimate_revision_up"], 1)
+        self.assertEqual(report.stance, "positive")
+        self.assertIn(
+            "추정치 수치 상향",
+            [item["label"] for item in report.score_breakdown],
+        )
+        self.assertIn(report, digest.changes)
+
+
+class MarketBenchmarkTests(unittest.TestCase):
+    INDEX_HTML = """
+    <table class="type_1">
+      <tr><th>날짜</th><th>체결가</th><th>전일비</th><th>등락률</th><th>거래량(천주)</th><th>거래대금(백만)</th></tr>
+      <tr><td class="date">2026.04.27</td><td class="number_1">2,750.50</td><td>5.00</td><td>+0.18%</td><td>350,000</td><td>9,000,000</td></tr>
+      <tr><td class="date">2026.04.21</td><td class="number_1">2,720.00</td><td>3.00</td><td>+0.11%</td><td>340,000</td><td>8,500,000</td></tr>
+      <tr><td class="date">2026.04.20</td><td class="number_1">2,700.00</td><td>1.00</td><td>+0.04%</td><td>330,000</td><td>8,200,000</td></tr>
+      <tr><td class="date">2026.04.13</td><td class="number_1">2,650.00</td><td>2.00</td><td>+0.08%</td><td>320,000</td><td>8,100,000</td></tr>
+    </table>
+    """
+
+    def test_parse_naver_index_day_html_reads_decimal_closes(self) -> None:
+        points = parse_naver_index_day_html(self.INDEX_HTML)
+        self.assertEqual(len(points), 4)
+        self.assertEqual(points[0].close, 2750.50)
+
+    def test_calculate_index_return_uses_cached_pages(self) -> None:
+        fetched_urls: list[str] = []
+
+        def fake_fetch(url: str) -> str:
+            fetched_urls.append(url)
+            if "page=1" in url:
+                return self.INDEX_HTML
+            return "<html></html>"
+
+        provider = NaverDailyPriceProvider(
+            user_agent="test",
+            timeout_seconds=5,
+            fetch_html=fake_fetch,
+        )
+        result = provider.calculate_index_return("KOSPI", date(2026, 4, 20), date(2026, 4, 27))
+        self.assertIsNotNone(result)
+        self.assertEqual(result["index_return_pct"], 1.87)
+        self.assertEqual(result["index_entry_date"], "2026-04-20")
+
+        # Second call within cached range must not refetch.
+        fetch_count = len(fetched_urls)
+        provider.calculate_index_return("KOSPI", date(2026, 4, 21), date(2026, 4, 27))
+        self.assertEqual(len(fetched_urls), fetch_count)
+
+    def test_selection_performance_learns_ticker_and_attaches_excess_return(self) -> None:
+        class FakeProvider:
+            source_name = "fake_market_data"
+
+            def calculate_return(self, ticker: str, selected_date: date, due_date: date):
+                return {
+                    "ticker": ticker,
+                    "price_source": self.source_name,
+                    "price_return_pct": 5.0,
+                }
+
+            def calculate_index_return(self, index_code: str, selected_date: date, due_date: date):
+                return {"index_code": index_code, "index_return_pct": 2.0}
+
+        with tempfile.TemporaryDirectory() as tmp:
+            docs_data_root = Path(tmp) / "docs" / "data"
+            archive_root = Path(tmp) / "storage" / "archive"
+            # Archived Naver report supplies the subject→ticker pair the
+            # official-source selection record is missing.
+            archive_day = archive_root / "2026-04-19"
+            archive_day.mkdir(parents=True)
+            (archive_day / "digest.json").write_text(
+                json.dumps(
+                    {
+                        "date": "2026-04-19",
+                        "reports": [
+                            {
+                                "subject": "삼성전자",
+                                "subject_key": "삼성전자",
+                                "ticker": "005930",
+                                "published_date": "2026-04-19",
+                            }
+                        ],
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+
+            selected_payload = {
+                "date": "2026-04-20",
+                "generated_at": "2026-04-20T18:00:00+09:00",
+                "must_read": [
+                    {
+                        "report_id": "r1",
+                        "display_title": "삼성전자 - 공식 리포트",
+                        "subject": "삼성전자",
+                        "subject_key": "삼성전자",
+                        "broker": "Fake증권",
+                        "category": "company",
+                        "category_label": "Company",
+                        "score": 12.5,
+                        "detail_url": "https://example.com/r1",
+                    }
+                ],
+            }
+            _sync_selection_performance(
+                docs_data_root,
+                selected_payload,
+                archive_root=archive_root,
+            )
+            result = _sync_selection_performance(
+                docs_data_root,
+                {"date": "2026-04-28", "generated_at": "2026-04-28T18:00:00+09:00", "must_read": []},
+                archive_root=archive_root,
+                market_data_provider=FakeProvider(),
+                market_benchmark="KOSPI",
+            )
+
+        selection = result["selections"][0]
+        self.assertEqual(selection["ticker"], "005930")
+        horizon = selection["horizons"]["1d"]
+        self.assertEqual(horizon["price_return_pct"], 5.0)
+        self.assertEqual(horizon["index_return_pct"], 2.0)
+        self.assertEqual(horizon["excess_return_pct"], 3.0)
+
+        summary = result["summary"]
+        self.assertEqual(summary["by_horizon"]["1d"]["hit_rate_pct"], 100.0)
+        self.assertEqual(summary["by_horizon"]["1d"]["avg_excess_return_pct"], 3.0)
+        self.assertEqual(summary["by_score_bucket"][0]["label"], "12 이상")
+        self.assertTrue(summary["by_category"])
+        self.assertTrue(summary["by_broker"])
 
 
 if __name__ == "__main__":

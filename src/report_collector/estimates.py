@@ -17,6 +17,8 @@ PROFIT_LABELS = {
     "지배순이익": ("net_profit", "지배순이익"),
     "지배주주순이익": ("net_profit", "지배주주순이익"),
     "EPS": ("eps", "EPS"),
+    "매출액": ("revenue", "매출액"),
+    "매출": ("revenue", "매출"),
 }
 
 ESTIMATE_SIGNAL_LABELS = {
@@ -34,7 +36,7 @@ NUMBER_RE = r"[+-]?\d+(?:,\d{3})*(?:\.\d+)?"
 
 PROFIT_METRIC_RE = re.compile(
     rf"(?P<period>{PERIOD_RE})\s*"
-    r"(?P<label>지배주주순이익|지배순이익|영업이익|순이익|EPS|OP)"
+    r"(?P<label>지배주주순이익|지배순이익|영업이익|순이익|매출액|매출|EPS|OP)"
     r"(?:은|는|이|가|을|를|:|의|으로)?\s*"
     r"(?:약|전망|추정|예상|기록|컨센서스|시장 기대치|당사 추정치)?\s*"
     rf"(?P<value>{NUMBER_RE})\s*(?P<unit>조원|억원|십억원|원)",
@@ -51,7 +53,7 @@ MARGIN_METRIC_RE = re.compile(
 CHANGE_POINT_RE = re.compile(rf"(?P<value>{NUMBER_RE})\s*%?p", re.IGNORECASE)
 
 SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?。！？])\s+|[\r\n]+")
-EARNINGS_TERMS_RE = re.compile(r"(영업이익|순이익|지배이익|EPS|실적|이익|추정치|전망치|컨센서스)")
+EARNINGS_TERMS_RE = re.compile(r"(영업이익|순이익|지배이익|EPS|실적|이익|매출|추정치|전망치|컨센서스)")
 MARGIN_TERMS_RE = re.compile(r"(마진|수익성|영업이익률|OPM|스프레드)")
 UP_TERMS_RE = re.compile(r"(상향|증가|개선|상회|확대|높아|높였|올려|회복|턴어라운드|흑자전환|흑전)")
 DOWN_TERMS_RE = re.compile(r"(하향|감소|악화|하회|부진|축소|낮아|낮췄|적자전환|적전)")
@@ -195,6 +197,145 @@ def extract_estimate_signal_types(text: str) -> list[str]:
             signal_types.append("margin_estimate_down")
 
     return list(dict.fromkeys(signal_types))
+
+
+# Minimum movement to count as a numeric revision (filters rounding noise).
+REVISION_MIN_CHANGE_PCT = 1.0
+REVISION_MIN_MARGIN_PCTP = 0.1
+
+REVISION_METRIC_ORDER = ("eps", "revenue", "operating_profit", "net_profit", "operating_margin")
+
+
+def _revision_key(metric: dict[str, Any]) -> tuple[str, str] | None:
+    name = str(metric.get("metric") or "")
+    if not name:
+        return None
+    period = re.sub(
+        r"[\s년FE’']+",
+        "",
+        str(metric.get("period") or ""),
+        flags=re.IGNORECASE,
+    )
+    return name, period
+
+
+def _revision_value(metric: dict[str, Any]) -> tuple[float, str] | None:
+    """Return (value, basis) in a unit-independent comparable basis."""
+    for field, basis in (
+        ("value_krw_100m", "krw_100m"),
+        ("value_won", "won"),
+        ("value_pct", "pct"),
+    ):
+        raw = metric.get(field)
+        if raw is None:
+            continue
+        try:
+            return float(raw), basis
+        except (TypeError, ValueError):
+            return None
+    return None
+
+
+def compare_estimate_metrics(
+    current_metrics: Iterable[Any],
+    previous_metrics: Iterable[Any],
+) -> list[dict[str, Any]]:
+    """Detect numeric estimate revisions between two reports' metrics.
+
+    Metrics are matched on (metric name, normalized period) and compared in a
+    shared basis, so '4.5조원' vs '46,000억원' still compare correctly.
+    """
+    previous_by_key: dict[tuple[str, str], tuple[dict[str, Any], tuple[float, str]]] = {}
+    previous_name_counts: dict[str, int] = {}
+    for metric in previous_metrics or []:
+        if not isinstance(metric, dict):
+            continue
+        key = _revision_key(metric)
+        value = _revision_value(metric)
+        if not key or not value:
+            continue
+        previous_name_counts[key[0]] = previous_name_counts.get(key[0], 0) + 1
+        if key not in previous_by_key:
+            previous_by_key[key] = (metric, value)
+
+    current_name_counts: dict[str, int] = {}
+    for metric in current_metrics or []:
+        if not isinstance(metric, dict):
+            continue
+        key = _revision_key(metric)
+        if key and _revision_value(metric):
+            current_name_counts[key[0]] = current_name_counts.get(key[0], 0) + 1
+
+    def _lookup_previous(
+        key: tuple[str, str],
+    ) -> tuple[dict[str, Any], tuple[float, str]] | None:
+        exact = previous_by_key.get(key)
+        if exact:
+            return exact
+        # Period strings often differ in phrasing ('2026년' vs none). When the
+        # metric is unambiguous on both sides, compare it anyway.
+        name = key[0]
+        if current_name_counts.get(name) == 1 and previous_name_counts.get(name) == 1:
+            for previous_key, matched in previous_by_key.items():
+                if previous_key[0] == name:
+                    return matched
+        return None
+
+    revisions: list[dict[str, Any]] = []
+    seen: set[tuple[str, str]] = set()
+    for metric in current_metrics or []:
+        if not isinstance(metric, dict):
+            continue
+        key = _revision_key(metric)
+        value = _revision_value(metric)
+        if not key or not value or key in seen:
+            continue
+        matched = _lookup_previous(key)
+        if not matched:
+            continue
+        previous_metric, (previous_value, previous_basis) = matched
+        current_value, basis = value
+        if basis != previous_basis:
+            continue
+
+        change_pct: float | None = None
+        change_pctp: float | None = None
+        if basis == "pct":
+            change_pctp = round(current_value - previous_value, 2)
+            if abs(change_pctp) < REVISION_MIN_MARGIN_PCTP:
+                continue
+            direction = "up" if change_pctp > 0 else "down"
+        else:
+            if previous_value == 0:
+                continue
+            change_pct = round(
+                ((current_value - previous_value) / abs(previous_value)) * 100,
+                1,
+            )
+            if abs(change_pct) < REVISION_MIN_CHANGE_PCT:
+                continue
+            direction = "up" if change_pct > 0 else "down"
+
+        seen.add(key)
+        revisions.append(
+            {
+                "metric": metric.get("metric"),
+                "label": metric.get("label"),
+                "period": metric.get("period") or previous_metric.get("period"),
+                "unit": metric.get("unit"),
+                "previous_value": previous_metric.get("value"),
+                "current_value": metric.get("value"),
+                "change_pct": change_pct,
+                "change_pctp": change_pctp,
+                "direction": direction,
+            }
+        )
+
+    metric_rank = {name: index for index, name in enumerate(REVISION_METRIC_ORDER)}
+    revisions.sort(
+        key=lambda item: metric_rank.get(str(item.get("metric") or ""), len(metric_rank))
+    )
+    return revisions
 
 
 def estimate_reasons_for_types(signal_types: Iterable[str]) -> list[str]:

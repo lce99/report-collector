@@ -146,6 +146,7 @@ class Settings:
     market_data_enabled: bool
     market_data_source: str
     market_data_max_pages: int
+    market_benchmark: str
     subject_ticker_map: dict[str, str]
     categories: tuple[str, ...]
     broker_priority: tuple[str, ...]
@@ -251,6 +252,7 @@ class Settings:
             market_data_enabled=_parse_bool(os.getenv("MARKET_DATA_ENABLED"), True),
             market_data_source=os.getenv("MARKET_DATA_SOURCE", "naver").strip().lower(),
             market_data_max_pages=_parse_int(os.getenv("MARKET_DATA_MAX_PAGES"), 8),
+            market_benchmark=os.getenv("MARKET_BENCHMARK", "KOSPI").strip().upper(),
             subject_ticker_map=_parse_mapping(os.getenv("SUBJECT_TICKER_MAP")),
             categories=_parse_csv(
                 os.getenv("REPORT_CATEGORIES"),

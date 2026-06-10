@@ -548,6 +548,30 @@ def _build_ticker_lookup(subject_ticker_map: dict[str, str] | None) -> dict[str,
     return lookup
 
 
+def _learn_ticker_lookup(
+    archive_days: list[tuple[date, list[dict[str, Any]]]],
+) -> dict[str, str]:
+    """Learn subject→ticker pairs from archived reports that carry both.
+
+    Naver reports include stock codes; official broker reports usually don't.
+    This lets official-source selections get priced without a manual
+    SUBJECT_TICKER_MAP. Later days win so renamed subjects stay current.
+    """
+    lookup: dict[str, str] = {}
+    for _, reports in archive_days:
+        for report in reports:
+            ticker = normalize_ticker(report.get("ticker"))
+            if not ticker:
+                continue
+            for key in (
+                str(report.get("subject") or "").strip(),
+                str(report.get("subject_key") or "").strip(),
+            ):
+                if key:
+                    lookup[key] = ticker
+    return lookup
+
+
 def _resolve_record_ticker(
     record: dict[str, Any],
     ticker_lookup: dict[str, str],
@@ -639,12 +663,17 @@ def _complete_due_horizons(
     as_of_date: date | None,
     market_data_provider: Any | None = None,
     subject_ticker_map: dict[str, str] | None = None,
+    market_benchmark: str | None = None,
 ) -> None:
     if not as_of_date:
         return
 
-    ticker_lookup = _build_ticker_lookup(subject_ticker_map)
-    archive_days: list[tuple[date, list[dict[str, Any]]]] | None = None
+    archive_days = _load_archive_reports_by_day(archive_root)
+    # Learned pairs first; an explicit SUBJECT_TICKER_MAP entry overrides them.
+    ticker_lookup = {
+        **_learn_ticker_lookup(archive_days),
+        **_build_ticker_lookup(subject_ticker_map),
+    }
     for record in records:
         record_ticker = _resolve_record_ticker(record, ticker_lookup)
         if record_ticker and not record.get("ticker"):
@@ -661,8 +690,6 @@ def _complete_due_horizons(
             if str(horizon.get("status") or "") == "completed":
                 continue
 
-            if archive_days is None:
-                archive_days = _load_archive_reports_by_day(archive_root)
             follow_ups = _follow_up_reports_for_record(archive_days, record, due_date)
             latest = follow_ups[0] if follow_ups else {}
             horizon["status"] = "completed"
@@ -688,6 +715,7 @@ def _complete_due_horizons(
                 record,
                 record_ticker,
                 market_data_provider,
+                market_benchmark=market_benchmark,
             )
 
 
@@ -696,6 +724,8 @@ def _attach_market_return(
     record: dict[str, Any],
     ticker: str | None,
     market_data_provider: Any | None,
+    *,
+    market_benchmark: str | None = None,
 ) -> None:
     if market_data_provider is None:
         return
@@ -725,6 +755,112 @@ def _attach_market_return(
 
     horizon.update(result)
     horizon["price_return_status"] = "ok"
+    _attach_benchmark_return(horizon, market_data_provider, market_benchmark, selected_date, due_date)
+
+
+def _attach_benchmark_return(
+    horizon: dict[str, Any],
+    market_data_provider: Any,
+    market_benchmark: str | None,
+    selected_date: date,
+    due_date: date,
+) -> None:
+    if not market_benchmark or not hasattr(market_data_provider, "calculate_index_return"):
+        return
+    try:
+        index_result = market_data_provider.calculate_index_return(
+            market_benchmark,
+            selected_date,
+            due_date,
+        )
+    except Exception:
+        return
+    if not index_result:
+        return
+
+    horizon.update(index_result)
+    price_return = horizon.get("price_return_pct")
+    index_return = index_result.get("index_return_pct")
+    if price_return is not None and index_return is not None:
+        horizon["excess_return_pct"] = round(float(price_return) - float(index_return), 2)
+
+
+SCORE_BUCKETS = (
+    (12.0, "12 이상"),
+    (10.0, "10–12"),
+    (8.0, "8–10"),
+    (None, "8 미만"),
+)
+
+
+def _score_bucket_label(score: object) -> str:
+    try:
+        numeric = float(score or 0.0)
+    except (TypeError, ValueError):
+        numeric = 0.0
+    for floor, label in SCORE_BUCKETS:
+        if floor is None or numeric >= floor:
+            return label
+    return SCORE_BUCKETS[-1][1]
+
+
+def _safe_optional_float(value: object) -> float | None:
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def _aggregate_priced_samples(
+    samples: list[tuple[float, float | None]],
+) -> dict[str, Any]:
+    returns = [item[0] for item in samples]
+    excess = [item[1] for item in samples if item[1] is not None]
+    aggregate: dict[str, Any] = {
+        "priced": len(returns),
+        "avg_return_pct": round(sum(returns) / len(returns), 2),
+        "hit_rate_pct": round(100.0 * sum(1 for value in returns if value > 0) / len(returns), 1),
+        "avg_excess_return_pct": round(sum(excess) / len(excess), 2) if excess else None,
+    }
+    return aggregate
+
+
+def _build_group_breakdown(
+    samples: list[dict[str, Any]],
+    group_key: str,
+    *,
+    label_order: list[str] | None = None,
+) -> list[dict[str, Any]]:
+    grouped: dict[str, dict[str, list[tuple[float, float | None]]]] = defaultdict(
+        lambda: defaultdict(list)
+    )
+    for sample in samples:
+        label = str(sample.get(group_key) or "-")
+        grouped[label][sample["horizon"]].append(
+            (sample["price_return"], sample["excess_return"])
+        )
+
+    if label_order:
+        ordered_labels = [label for label in label_order if label in grouped]
+        ordered_labels += [label for label in grouped if label not in ordered_labels]
+    else:
+        ordered_labels = sorted(
+            grouped,
+            key=lambda label: sum(len(values) for values in grouped[label].values()),
+            reverse=True,
+        )
+
+    return [
+        {
+            "label": label,
+            "priced": sum(len(values) for values in grouped[label].values()),
+            "horizons": {
+                horizon: _aggregate_priced_samples(values)
+                for horizon, values in grouped[label].items()
+            },
+        }
+        for label in ordered_labels
+    ]
 
 
 def _build_performance_summary(records: list[dict[str, Any]]) -> dict[str, Any]:
@@ -733,6 +869,8 @@ def _build_performance_summary(records: list[dict[str, Any]]) -> dict[str, Any]:
     priced_by_horizon: dict[str, int] = Counter()
     price_source_counts: dict[str, int] = Counter()
     returns_by_horizon: dict[str, list[float]] = defaultdict(list)
+    priced_samples: list[dict[str, Any]] = []
+
     for record in records:
         horizons = record.get("horizons")
         if not isinstance(horizons, dict):
@@ -741,20 +879,30 @@ def _build_performance_summary(records: list[dict[str, Any]]) -> dict[str, Any]:
             if not isinstance(payload, dict):
                 continue
             status = str(payload.get("status") or "pending")
-            if status == "completed":
-                completed_by_horizon[horizon] += 1
-                price_return = payload.get("price_return_pct")
-                if price_return is not None:
-                    priced_by_horizon[horizon] += 1
-                    try:
-                        returns_by_horizon[horizon].append(float(price_return))
-                    except (TypeError, ValueError):
-                        pass
-                price_source = str(payload.get("price_source") or "")
-                if price_source:
-                    price_source_counts[price_source] += 1
-            else:
+            if status != "completed":
                 pending_by_horizon[horizon] += 1
+                continue
+
+            completed_by_horizon[horizon] += 1
+            price_return = _safe_optional_float(payload.get("price_return_pct"))
+            if price_return is not None:
+                priced_by_horizon[horizon] += 1
+                returns_by_horizon[horizon].append(price_return)
+                priced_samples.append(
+                    {
+                        "horizon": horizon,
+                        "price_return": price_return,
+                        "excess_return": _safe_optional_float(payload.get("excess_return_pct")),
+                        "score_bucket": _score_bucket_label(record.get("score")),
+                        "category_label": str(
+                            record.get("category_label") or record.get("category") or "-"
+                        ),
+                        "broker": str(record.get("broker") or "-"),
+                    }
+                )
+            price_source = str(payload.get("price_source") or "")
+            if price_source:
+                price_source_counts[price_source] += 1
 
     average_return_by_horizon = {
         horizon: round(sum(values) / len(values), 2)
@@ -762,6 +910,16 @@ def _build_performance_summary(records: list[dict[str, Any]]) -> dict[str, Any]:
         if values
     }
 
+    by_horizon = {}
+    samples_by_horizon: dict[str, list[tuple[float, float | None]]] = defaultdict(list)
+    for sample in priced_samples:
+        samples_by_horizon[sample["horizon"]].append(
+            (sample["price_return"], sample["excess_return"])
+        )
+    for horizon, values in samples_by_horizon.items():
+        by_horizon[horizon] = _aggregate_priced_samples(values)
+
+    bucket_order = [label for _, label in SCORE_BUCKETS]
     return {
         "tracked_selections": len(records),
         "pending_by_horizon": dict(pending_by_horizon),
@@ -770,6 +928,14 @@ def _build_performance_summary(records: list[dict[str, Any]]) -> dict[str, Any]:
         "average_price_return_by_horizon": average_return_by_horizon,
         "price_source_counts": dict(price_source_counts),
         "horizons": [f"{days}d" for days in PERFORMANCE_HORIZONS],
+        "by_horizon": by_horizon,
+        # Breakdown order is intentional: score buckets and categories first,
+        # broker concentration last.
+        "by_score_bucket": _build_group_breakdown(
+            priced_samples, "score_bucket", label_order=bucket_order
+        ),
+        "by_category": _build_group_breakdown(priced_samples, "category_label"),
+        "by_broker": _build_group_breakdown(priced_samples, "broker"),
     }
 
 
@@ -780,6 +946,7 @@ def _sync_selection_performance(
     archive_root: Path,
     market_data_provider: Any | None = None,
     subject_ticker_map: dict[str, str] | None = None,
+    market_benchmark: str | None = None,
 ) -> dict[str, Any]:
     performance_root = docs_data_root / "performance"
     ledger_path = performance_root / "selection_outcomes.json"
@@ -807,6 +974,7 @@ def _sync_selection_performance(
         as_of_date=_parse_date(digest_payload.get("date")),
         market_data_provider=market_data_provider,
         subject_ticker_map=subject_ticker_map,
+        market_benchmark=market_benchmark,
     )
 
     records = sorted(
@@ -837,6 +1005,7 @@ def publish_digest(
     markdown_content: str,
     market_data_provider: Any | None = None,
     subject_ticker_map: dict[str, str] | None = None,
+    market_benchmark: str | None = None,
 ) -> None:
     archive_day_dir = archive_root / digest.date
     digest_payload = digest.to_public_dict()
@@ -847,6 +1016,7 @@ def publish_digest(
         archive_root=archive_root,
         market_data_provider=market_data_provider,
         subject_ticker_map=subject_ticker_map,
+        market_benchmark=market_benchmark,
     )
     if isinstance(digest_payload.get("stats"), dict):
         digest_payload["stats"]["selection_performance"] = performance_payload.get("summary", {})

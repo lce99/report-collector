@@ -269,6 +269,7 @@ def main() -> int:
         markdown_content=markdown,
         market_data_provider=market_data_provider,
         subject_ticker_map=settings.subject_ticker_map,
+        market_benchmark=settings.market_benchmark,
     )
 
     if settings.telegram_enabled and not args.skip_telegram:

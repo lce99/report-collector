@@ -24,6 +24,48 @@ def normalize_ticker(value: object) -> str | None:
     return match.group(1)
 
 
+INDEX_ROW_DATE_RE = re.compile(r"\d{4}\.\d{2}\.\d{2}")
+
+
+def _parse_float(value: str) -> float | None:
+    cleaned = value.replace(",", "").strip()
+    if not re.fullmatch(r"-?\d+(?:\.\d+)?", cleaned):
+        return None
+    return float(cleaned)
+
+
+def parse_naver_index_day_html(html: str) -> list[PricePoint]:
+    """Parse 일별시세 rows for an index (KOSPI/KOSDAQ).
+
+    Index close prices carry decimals, so this scans for rows whose first
+    cell is a date and second cell is a float, without relying on exact
+    table markup.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    points: list[PricePoint] = []
+
+    for row in soup.find_all("tr"):
+        cells = [cell.get_text(" ", strip=True) for cell in row.find_all("td")]
+        if len(cells) < 2 or not INDEX_ROW_DATE_RE.fullmatch(cells[0]):
+            continue
+        close = _parse_float(cells[1])
+        if close is None or close <= 0:
+            continue
+        try:
+            point_date = date.fromisoformat(cells[0].replace(".", "-"))
+        except ValueError:
+            continue
+        points.append(
+            PricePoint(
+                date=point_date,
+                close=close,
+                volume=_parse_number(cells[-1]) if len(cells) >= 5 else None,
+            )
+        )
+
+    return points
+
+
 def parse_naver_daily_price_html(html: str) -> list[PricePoint]:
     soup = BeautifulSoup(html, "html.parser")
     points: list[PricePoint] = []
@@ -59,12 +101,19 @@ class NaverDailyPriceProvider:
         user_agent: str,
         timeout_seconds: int,
         max_pages: int = 8,
+        index_max_pages: int = 60,
         fetch_html: Callable[[str], str] | None = None,
     ) -> None:
         self.user_agent = user_agent
         self.timeout_seconds = timeout_seconds
         self.max_pages = max(1, max_pages)
+        self.index_max_pages = max(1, index_max_pages)
         self._fetch_html = fetch_html
+        # Index pages are fetched lazily and cached per index code so that one
+        # run prices many selections against the benchmark with few requests.
+        self._index_points: dict[str, dict[date, PricePoint]] = {}
+        self._index_pages_fetched: dict[str, int] = {}
+        self._index_exhausted: set[str] = set()
 
     def calculate_return(
         self,
@@ -128,10 +177,81 @@ class NaverDailyPriceProvider:
 
         return [points_by_date[key] for key in sorted(points_by_date)]
 
+    def calculate_index_return(
+        self,
+        index_code: str,
+        selected_date: date,
+        due_date: date,
+    ) -> dict[str, object] | None:
+        code = str(index_code or "").strip().upper()
+        if not code:
+            return None
+
+        prices = self._fetch_index_prices(
+            code,
+            start=selected_date - timedelta(days=7),
+            end=due_date,
+        )
+        entry = _latest_on_or_before(prices, selected_date)
+        exit_ = _latest_on_or_before(prices, due_date)
+        if entry is None or exit_ is None or entry.close <= 0:
+            return None
+
+        return {
+            "index_code": code,
+            "index_entry_date": entry.date.isoformat(),
+            "index_entry_close": entry.close,
+            "index_exit_date": exit_.date.isoformat(),
+            "index_exit_close": exit_.close,
+            "index_return_pct": round(((exit_.close - entry.close) / entry.close) * 100, 2),
+        }
+
+    def _fetch_index_prices(
+        self,
+        code: str,
+        *,
+        start: date,
+        end: date,
+    ) -> list[PricePoint]:
+        points_by_date = self._index_points.setdefault(code, {})
+
+        def oldest_cached() -> date | None:
+            return min(points_by_date) if points_by_date else None
+
+        while code not in self._index_exhausted:
+            oldest = oldest_cached()
+            if oldest is not None and oldest <= start:
+                break
+            page = self._index_pages_fetched.get(code, 0) + 1
+            if page > self.index_max_pages:
+                break
+            points = parse_naver_index_day_html(self._fetch_index_page(code, page))
+            self._index_pages_fetched[code] = page
+            if not points:
+                self._index_exhausted.add(code)
+                break
+            for point in points:
+                points_by_date[point.date] = point
+
+        return [
+            points_by_date[key]
+            for key in sorted(points_by_date)
+            if start <= key <= end
+        ]
+
+    def _fetch_index_page(self, code: str, page: int) -> str:
+        url = "https://finance.naver.com/sise/sise_index_day.naver?" + urlencode(
+            {"code": code, "page": page}
+        )
+        return self._fetch_page(url)
+
     def _fetch_price_page(self, ticker: str, page: int) -> str:
         url = "https://finance.naver.com/item/sise_day.naver?" + urlencode(
             {"code": ticker, "page": page}
         )
+        return self._fetch_page(url)
+
+    def _fetch_page(self, url: str) -> str:
         if self._fetch_html:
             return self._fetch_html(url)
         request = Request(url, headers={"User-Agent": self.user_agent})

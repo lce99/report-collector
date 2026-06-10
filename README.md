@@ -157,7 +157,8 @@ python scripts/get_telegram_chat_id.py
 - `MARKET_DATA_ENABLED`: 기본 `true`; 후보 성과 추적에 종가/거래량 데이터를 연결
 - `MARKET_DATA_SOURCE`: 기본 `naver`; 현재는 네이버 일별 시세를 사용
 - `MARKET_DATA_MAX_PAGES`: 종목별 일별 시세를 몇 페이지까지 조회할지
-- `SUBJECT_TICKER_MAP`: 공식 리포트처럼 종목코드가 없는 후보를 보강하는 매핑. 예: `삼성전자=005930,NAVER=035420`
+- `MARKET_BENCHMARK`: 기본 `KOSPI`; 후보 수익률과 비교할 벤치마크 지수 (초과수익 계산)
+- `SUBJECT_TICKER_MAP`: 공식 리포트처럼 종목코드가 없는 후보를 보강하는 매핑. 예: `삼성전자=005930,NAVER=035420`. 아카이브에 쌓인 네이버 리포트의 종목코드에서 자동 학습되므로 보통 비워둬도 됩니다.
 - `REPORT_CATEGORIES`: `company,industry,economy,invest,market,debenture`
 - `BROKER_PRIORITY`: 우선순위를 높게 둘 증권사 목록
 - `PRIORITY_SUBJECTS`: 관심 종목명 목록
@@ -189,6 +190,7 @@ PRIORITY_ONLY=false
 - 관심 종목/섹터 일치 여부
 - 제목 키워드
 - 본문 길이
+- EPS/매출/이익 추정치 숫자가 직전 리포트 대비 상향/하향됐는지 (수치 비교 기반, 목표가보다 높은 가중치)
 - 이익 추정 상향, 마진 개선, 목표가/의견/애널리스트 변화 감지 여부
 - 공식 소스 여부와 PDF 본문 확보 여부
 - 동일 종목과 특정 증권사 쏠림을 줄이는 다양성 규칙
@@ -215,7 +217,16 @@ python scripts/telegram_command_bot.py --timeout 20
 
 ## 선정 성과 추적
 
-우선 검토 후보는 `docs/data/performance/selection_outcomes.json`에 누적됩니다. 각 리포트에 대해 1일/7일/30일 horizon과 due date를 남기고, due date가 지나면 보유 아카이브에서 같은 종목/제목의 후속 리포트, 변화 감지 수, 최신 목표가/의견을 자동으로 채웁니다. 종목코드가 확보된 후보는 네이버 일별 시세에서 entry/exit 종가와 거래량을 조회해 `price_return_pct`, `volume_change_pct`도 함께 채웁니다. 종목코드가 없는 공식 리포트는 `SUBJECT_TICKER_MAP`으로 보강할 수 있고, `news_count`는 별도 뉴스 공급원 연결 전까지 `null`로 유지됩니다.
+우선 검토 후보는 `docs/data/performance/selection_outcomes.json`에 누적됩니다. 각 리포트에 대해 1일/7일/30일 horizon과 due date를 남기고, due date가 지나면 보유 아카이브에서 같은 종목/제목의 후속 리포트, 변화 감지 수, 최신 목표가/의견을 자동으로 채웁니다. 종목코드가 확보된 후보는 네이버 일별 시세에서 entry/exit 종가와 거래량을 조회해 `price_return_pct`, `volume_change_pct`도 함께 채웁니다.
+
+- 종목코드가 없는 공식 리포트는 아카이브에 쌓인 네이버 리포트의 종목/코드 쌍에서 자동으로 학습해 보강합니다. 예외적인 경우만 `SUBJECT_TICKER_MAP`으로 직접 지정하면 됩니다.
+- 같은 기간의 `MARKET_BENCHMARK`(기본 KOSPI) 지수 수익률을 함께 조회해 `index_return_pct`와 `excess_return_pct`(시장 대비 초과수익)를 기록합니다.
+- 요약에는 horizon별 평균수익률/적중률/평균 초과수익과 점수 구간별·카테고리별·증권사별 분해가 포함되고, 웹 대시보드 `선정 성과` 섹션에서 바로 볼 수 있습니다.
+- `news_count`는 별도 뉴스 공급원 연결 전까지 `null`로 유지됩니다.
+
+## 추정치 변화 추적 (LLM 없이)
+
+직전 리포트와 같은 (지표, 기간)의 추정치 숫자를 직접 비교해서 EPS/매출액/영업이익/순이익/마진율 추정이 상향됐는지 하향됐는지 감지합니다. 단위가 달라도(조원 vs 억원) 환산 후 비교하고, ±1% 미만(마진은 ±0.1%p 미만)의 잡음은 무시합니다. 감지된 변화는 `estimate_revisions`로 저장되고 우선순위 점수, 변화 감지 목록, 텔레그램 메시지에 반영됩니다. 목표가 변화보다 높은 가중치를 받습니다. 감지된 신호를 종합한 규칙 기반 톤(`stance`: positive/negative/neutral)도 함께 기록되므로 LLM 없이도 리포트 방향성을 볼 수 있습니다.
 
 즉시 쓸 수 있는 버전으로는 충분하지만, 나중에는 다음 확장이 좋습니다.
 
