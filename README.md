@@ -47,6 +47,9 @@
 ├─ docs/
 │  ├─ GITHUB_UPLOAD_CHECKLIST.md
 │  ├─ index.html
+│  ├─ assets/
+│  │  ├─ styles.css
+│  │  └─ app.js
 │  └─ data/
 ├─ scripts/
 │  └─ get_telegram_chat_id.py
@@ -144,6 +147,9 @@ python scripts/get_telegram_chat_id.py
 2. Source를 `Deploy from a branch`로 선택합니다.
 3. Branch는 `main`, 폴더는 `/docs`를 선택합니다.
 4. 저장 후 몇 분 지나면 웹 페이지가 열립니다.
+
+웹 대시보드는 날짜/검색/카테고리/증권사 필터와 다크 모드를 지원합니다.
+다크 모드는 시스템 설정을 따르고, 툴바 토글로 직접 바꾸면 브라우저에 저장됩니다.
 
 ## 커스터마이징 포인트
 
