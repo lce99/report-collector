@@ -340,9 +340,8 @@ def _build_subject_chart_payload(
     }
 
 
-def _build_subject_payloads(archive_root: Path) -> tuple[dict[str, Any], dict[str, dict[str, Any]]]:
+def _group_subject_reports(archive_root: Path) -> dict[str, list[dict[str, Any]]]:
     grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
-
     for _, payload in iter_digest_payloads(archive_root):
         for report in iter_payload_reports(payload):
             normalized = _normalize_subject_report(report)
@@ -352,89 +351,108 @@ def _build_subject_payloads(archive_root: Path) -> tuple[dict[str, Any], dict[st
             if not subject_key:
                 continue
             grouped[subject_key].append(normalized)
+    return grouped
 
+
+def _latest_reports_by_broker(timeline: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    latest_by_broker: list[dict[str, Any]] = []
+    seen_brokers: set[str] = set()
+    for report in timeline:
+        broker = str(report.get("broker") or "")
+        if not broker or broker in seen_brokers:
+            continue
+        latest_by_broker.append(report)
+        seen_brokers.add(broker)
+    return latest_by_broker
+
+
+def _build_subject_detail(
+    subject_key: str,
+    timeline: list[dict[str, Any]],
+) -> dict[str, Any]:
+    latest_report = timeline[0]
+    latest_by_broker = _latest_reports_by_broker(timeline)
+    active_brokers = sorted(
+        str(report.get("broker") or "") for report in latest_by_broker
+    )
+
+    change_summary = _build_subject_change_summary(timeline)
+    target_summary = _build_target_summary(latest_by_broker)
+    chart_payload = _build_subject_chart_payload(
+        timeline,
+        latest_by_broker,
+        latest_report.get("published_date"),
+    )
+    opinion_counter = Counter(
+        str(report.get("opinion_normalized") or "")
+        for report in latest_by_broker
+        if report.get("opinion_normalized")
+    )
+    broker_counter = Counter(str(report.get("broker") or "") for report in timeline)
+    category_counter = Counter(
+        str(report.get("category_label") or report.get("category") or "")
+        for report in timeline
+    )
+
+    return {
+        "subject_key": subject_key,
+        "subject_name": latest_report.get("subject"),
+        "latest_report_date": latest_report.get("published_date"),
+        "report_count": len(timeline),
+        "active_broker_count": len(active_brokers),
+        "active_brokers": active_brokers,
+        "change_summary": change_summary,
+        "target_summary": target_summary,
+        "opinion_summary": [
+            {"label": label, "count": count}
+            for label, count in opinion_counter.most_common()
+        ],
+        "charts": chart_payload,
+        "target_price_history": chart_payload["target_price_history"],
+        "estimate_metric_history": chart_payload["estimate_metric_history"],
+        "opinion_distribution": chart_payload["opinion_distribution"],
+        "broker_timeline": chart_payload["broker_timeline"],
+        "broker_summary": [
+            {"name": name, "count": count}
+            for name, count in broker_counter.most_common(12)
+            if name
+        ],
+        "category_summary": [
+            {"label": label, "count": count}
+            for label, count in category_counter.most_common(8)
+            if label
+        ],
+        "latest_by_broker": latest_by_broker[:20],
+        "recent_changes": [report for report in timeline if report.get("has_change_signal")][:20],
+        "timeline": timeline[:120],
+    }
+
+
+def _build_subject_index_entry(subject_payload: dict[str, Any]) -> dict[str, Any]:
+    latest_report = subject_payload["timeline"][0]
+    return {
+        "subject_key": subject_payload["subject_key"],
+        "subject_name": subject_payload["subject_name"],
+        "latest_report_date": subject_payload["latest_report_date"],
+        "report_count": subject_payload["report_count"],
+        "active_broker_count": subject_payload["active_broker_count"],
+        "changed_reports": subject_payload["change_summary"]["changed_reports"],
+        "target_summary": subject_payload["target_summary"],
+        "top_brokers": [item["name"] for item in subject_payload["broker_summary"][:3]],
+        "top_categories": [item["label"] for item in subject_payload["category_summary"][:3]],
+        "latest_title": latest_report.get("display_title"),
+    }
+
+
+def _build_subject_payloads(archive_root: Path) -> tuple[dict[str, Any], dict[str, dict[str, Any]]]:
     subjects: list[dict[str, Any]] = []
     subject_payloads: dict[str, dict[str, Any]] = {}
 
-    for subject_key, reports in grouped.items():
+    for subject_key, reports in _group_subject_reports(archive_root).items():
         timeline = sorted(reports, key=_report_sort_key, reverse=True)
-        latest_report = timeline[0]
-
-        latest_by_broker: list[dict[str, Any]] = []
-        seen_brokers: set[str] = set()
-        for report in timeline:
-            broker = str(report.get("broker") or "")
-            if not broker or broker in seen_brokers:
-                continue
-            latest_by_broker.append(report)
-            seen_brokers.add(broker)
-
-        change_summary = _build_subject_change_summary(timeline)
-        target_summary = _build_target_summary(latest_by_broker)
-        chart_payload = _build_subject_chart_payload(
-            timeline,
-            latest_by_broker,
-            latest_report.get("published_date"),
-        )
-        opinion_counter = Counter(
-            str(report.get("opinion_normalized") or "")
-            for report in latest_by_broker
-            if report.get("opinion_normalized")
-        )
-        broker_counter = Counter(str(report.get("broker") or "") for report in timeline)
-        category_counter = Counter(
-            str(report.get("category_label") or report.get("category") or "")
-            for report in timeline
-        )
-
-        subject_payload = {
-            "subject_key": subject_key,
-            "subject_name": latest_report.get("subject"),
-            "latest_report_date": latest_report.get("published_date"),
-            "report_count": len(timeline),
-            "active_broker_count": len(seen_brokers),
-            "active_brokers": sorted(seen_brokers),
-            "change_summary": change_summary,
-            "target_summary": target_summary,
-            "opinion_summary": [
-                {"label": label, "count": count}
-                for label, count in opinion_counter.most_common()
-            ],
-            "charts": chart_payload,
-            "target_price_history": chart_payload["target_price_history"],
-            "estimate_metric_history": chart_payload["estimate_metric_history"],
-            "opinion_distribution": chart_payload["opinion_distribution"],
-            "broker_timeline": chart_payload["broker_timeline"],
-            "broker_summary": [
-                {"name": name, "count": count}
-                for name, count in broker_counter.most_common(12)
-                if name
-            ],
-            "category_summary": [
-                {"label": label, "count": count}
-                for label, count in category_counter.most_common(8)
-                if label
-            ],
-            "latest_by_broker": latest_by_broker[:20],
-            "recent_changes": [report for report in timeline if report.get("has_change_signal")][:20],
-            "timeline": timeline[:120],
-        }
+        subject_payload = _build_subject_detail(subject_key, timeline)
         subject_payloads[subject_key] = subject_payload
-
-        subjects.append(
-            {
-                "subject_key": subject_key,
-                "subject_name": latest_report.get("subject"),
-                "latest_report_date": latest_report.get("published_date"),
-                "report_count": len(timeline),
-                "active_broker_count": len(seen_brokers),
-                "changed_reports": change_summary["changed_reports"],
-                "target_summary": target_summary,
-                "top_brokers": [item["name"] for item in subject_payload["broker_summary"][:3]],
-                "top_categories": [item["label"] for item in subject_payload["category_summary"][:3]],
-                "latest_title": latest_report.get("display_title"),
-            }
-        )
+        subjects.append(_build_subject_index_entry(subject_payload))
 
     subjects.sort(
         key=lambda item: (
