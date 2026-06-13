@@ -2,12 +2,12 @@ from __future__ import annotations
 
 from datetime import date, timedelta
 from typing import TYPE_CHECKING, Callable
-from urllib.request import Request, urlopen
 import re
 
 from bs4 import BeautifulSoup
 
 from report_collector.config import Settings
+from report_collector.http import fetch_text
 from report_collector.normalization import normalize_space
 
 if TYPE_CHECKING:
@@ -83,15 +83,13 @@ def fetch_html(
     encoding: str,
     referer: str | None = None,
 ) -> str:
-    request = Request(
+    return fetch_text(
         url,
-        headers={
-            "User-Agent": settings.user_agent,
-            **({"Referer": referer} if referer else {}),
-        },
+        user_agent=settings.user_agent,
+        timeout_seconds=settings.request_timeout_seconds,
+        encoding=encoding,
+        referer=referer,
     )
-    with urlopen(request, timeout=settings.request_timeout_seconds) as response:
-        return response.read().decode(encoding, errors="ignore")
 
 
 def fetch_soup(

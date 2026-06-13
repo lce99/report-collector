@@ -1292,5 +1292,109 @@ class MarketBenchmarkTests(unittest.TestCase):
         self.assertTrue(summary["by_broker"])
 
 
+class HttpRetryTests(unittest.TestCase):
+    def test_fetch_bytes_retries_transient_errors(self) -> None:
+        from io import BytesIO
+        from urllib.error import URLError
+
+        from report_collector.http import fetch_bytes
+
+        attempts: list[int] = []
+
+        class FakeResponse:
+            def __enter__(self):
+                return BytesIO(b"payload")
+
+            def __exit__(self, *args):
+                return False
+
+        def fake_urlopen(request, timeout):
+            attempts.append(timeout)
+            if len(attempts) < 3:
+                raise URLError("connection reset")
+            return FakeResponse()
+
+        with patch("report_collector.http.urlopen", fake_urlopen), patch(
+            "report_collector.http.sleep"
+        ) as fake_sleep:
+            payload = fetch_bytes(
+                "https://example.com/list",
+                user_agent="test-agent",
+                timeout_seconds=7,
+                retries=2,
+                backoff_seconds=1.0,
+            )
+
+        self.assertEqual(payload, b"payload")
+        self.assertEqual(len(attempts), 3)
+        self.assertEqual(
+            [call.args[0] for call in fake_sleep.call_args_list],
+            [1.0, 2.0],
+        )
+
+    def test_fetch_bytes_does_not_retry_client_errors(self) -> None:
+        from urllib.error import HTTPError
+
+        from report_collector.http import fetch_bytes
+
+        attempts: list[str] = []
+
+        def fake_urlopen(request, timeout):
+            attempts.append(request.full_url)
+            raise HTTPError(request.full_url, 404, "not found", {}, None)
+
+        with patch("report_collector.http.urlopen", fake_urlopen), patch(
+            "report_collector.http.sleep"
+        ):
+            with self.assertRaises(HTTPError):
+                fetch_bytes(
+                    "https://example.com/missing",
+                    user_agent="test-agent",
+                    timeout_seconds=7,
+                )
+
+        self.assertEqual(len(attempts), 1)
+
+    def test_fetch_bytes_gives_up_after_retry_budget(self) -> None:
+        from urllib.error import URLError
+
+        from report_collector.http import fetch_bytes
+
+        attempts: list[str] = []
+
+        def fake_urlopen(request, timeout):
+            attempts.append(request.full_url)
+            raise URLError("connection reset")
+
+        with patch("report_collector.http.urlopen", fake_urlopen), patch(
+            "report_collector.http.sleep"
+        ):
+            with self.assertRaises(URLError):
+                fetch_bytes(
+                    "https://example.com/flaky",
+                    user_agent="test-agent",
+                    timeout_seconds=7,
+                    retries=2,
+                )
+
+        self.assertEqual(len(attempts), 3)
+
+    def test_fetch_text_decodes_with_requested_encoding(self) -> None:
+        from report_collector.http import fetch_text
+
+        with patch(
+            "report_collector.http.fetch_bytes",
+            return_value="한국증권".encode("euc-kr"),
+        ):
+            text = fetch_text(
+                "https://example.com/page",
+                user_agent="test-agent",
+                timeout_seconds=7,
+                encoding="euc-kr",
+            )
+
+        self.assertEqual(text, "한국증권")
+
+
 if __name__ == "__main__":
     unittest.main()
