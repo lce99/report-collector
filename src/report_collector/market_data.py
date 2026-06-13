@@ -4,10 +4,11 @@ from dataclasses import dataclass
 from datetime import date, timedelta
 from typing import Callable
 from urllib.parse import urlencode
-from urllib.request import Request, urlopen
 import re
 
 from bs4 import BeautifulSoup
+
+from report_collector.http import fetch_text
 
 
 @dataclass(frozen=True, slots=True)
@@ -254,9 +255,12 @@ class NaverDailyPriceProvider:
     def _fetch_page(self, url: str) -> str:
         if self._fetch_html:
             return self._fetch_html(url)
-        request = Request(url, headers={"User-Agent": self.user_agent})
-        with urlopen(request, timeout=self.timeout_seconds) as response:
-            return response.read().decode("euc-kr", errors="ignore")
+        return fetch_text(
+            url,
+            user_agent=self.user_agent,
+            timeout_seconds=self.timeout_seconds,
+            encoding="euc-kr",
+        )
 
 
 def _parse_number(value: str) -> int | None:

@@ -47,6 +47,9 @@
 ├─ docs/
 │  ├─ GITHUB_UPLOAD_CHECKLIST.md
 │  ├─ index.html
+│  ├─ assets/
+│  │  ├─ styles.css
+│  │  └─ app.js
 │  └─ data/
 ├─ scripts/
 │  └─ get_telegram_chat_id.py
@@ -78,6 +81,14 @@ python run_daily.py --skip-telegram
 
 ```bash
 python -m unittest discover -s tests
+```
+
+웹 대시보드 스모크 테스트(jsdom 기반)는 Node 18+에서 실행합니다.
+
+```bash
+cd tests/ui
+npm install
+npm test
 ```
 
 특정 날짜를 다시 생성하려면:
@@ -144,6 +155,11 @@ python scripts/get_telegram_chat_id.py
 2. Source를 `Deploy from a branch`로 선택합니다.
 3. Branch는 `main`, 폴더는 `/docs`를 선택합니다.
 4. 저장 후 몇 분 지나면 웹 페이지가 열립니다.
+
+웹 대시보드는 날짜/검색/카테고리/증권사 필터와 다크 모드를 지원합니다.
+다크 모드는 시스템 설정을 따르고, 툴바 토글로 직접 바꾸면 브라우저에 저장됩니다.
+필터 상태는 URL 쿼리에 반영되므로 현재 화면 그대로 링크로 공유할 수 있고,
+종목 상세를 열었다가 브라우저 뒤로가기로 일별 화면에 돌아올 수 있습니다.
 
 ## 커스터마이징 포인트
 

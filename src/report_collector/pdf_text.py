@@ -1,10 +1,10 @@
 from __future__ import annotations
 
 from io import BytesIO
-from urllib.request import Request, urlopen
 
 from pypdf import PdfReader
 
+from report_collector.http import fetch_bytes
 from report_collector.normalization import normalize_space
 
 
@@ -17,15 +17,12 @@ def extract_pdf_text(
     char_limit: int,
     referer: str | None = None,
 ) -> str:
-    request = Request(
+    payload = fetch_bytes(
         pdf_url,
-        headers={
-            "User-Agent": user_agent,
-            **({"Referer": referer} if referer else {}),
-        },
+        user_agent=user_agent,
+        timeout_seconds=timeout_seconds,
+        referer=referer,
     )
-    with urlopen(request, timeout=timeout_seconds) as response:
-        payload = response.read()
 
     reader = PdfReader(BytesIO(payload))
     chunks: list[str] = []

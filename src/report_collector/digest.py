@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from collections import Counter, defaultdict
+from collections.abc import Callable
 from datetime import datetime
 from zoneinfo import ZoneInfo
 import html
@@ -179,26 +180,10 @@ def _annotate_priority_matches(report: Report, settings: Settings) -> None:
     ]
 
 
-def _score_report(report: Report, settings: Settings) -> tuple[float, list[str]]:
-    score = 0.0
-    reasons: list[str] = []
-    breakdown: list[dict[str, object]] = []
+AddScore = Callable[..., None]
 
-    def add_score(label: str, value: float, *, reason: str | None = None) -> None:
-        nonlocal score
-        if value == 0:
-            return
-        score += value
-        breakdown.append(
-            {
-                "label": label,
-                "value": round(value, 2),
-                "kind": "penalty" if value < 0 else "boost",
-            }
-        )
-        if reason:
-            reasons.append(reason)
 
+def _score_category_and_source(report: Report, add_score: AddScore) -> None:
     add_score(
         f"{report.category_label} 카테고리",
         CATEGORY_WEIGHTS.get(report.category, 1.4),
@@ -212,6 +197,8 @@ def _score_report(report: Report, settings: Settings) -> tuple[float, list[str]]
             reason = "공식 소스"
         add_score("소스 가중치", source_boost, reason=reason)
 
+
+def _score_priority_matches(report: Report, add_score: AddScore) -> None:
     if report.priority_subject_matches:
         add_score(
             "관심 종목",
@@ -226,6 +213,12 @@ def _score_report(report: Report, settings: Settings) -> tuple[float, list[str]]
             reason=f"관심 섹터/키워드({', '.join(report.priority_keyword_matches[:3])})",
         )
 
+
+def _score_basic_fields(
+    report: Report,
+    add_score: AddScore,
+    reasons: list[str],
+) -> None:
     add_score("조회수", min(2.3, math.log10(max(report.views, 1))))
     if report.views >= 1000:
         reasons.append("조회수 상위권")
@@ -237,6 +230,8 @@ def _score_report(report: Report, settings: Settings) -> tuple[float, list[str]]
     if report.analyst:
         add_score("애널리스트", 0.2)
 
+
+def _score_estimate_signals(report: Report, add_score: AddScore) -> None:
     if report.estimate_metrics:
         add_score(
             "실적/마진 추정치",
@@ -271,6 +266,8 @@ def _score_report(report: Report, settings: Settings) -> tuple[float, list[str]]
             reason=format_estimate_revision(revision_down[0]),
         )
 
+
+def _score_change_signals(report: Report, add_score: AddScore) -> None:
     if report.target_price_change == "up":
         add_score("목표가 상향", 2.2, reason="목표가 상향")
     elif report.target_price_change == "down":
@@ -289,6 +286,12 @@ def _score_report(report: Report, settings: Settings) -> tuple[float, list[str]]
     if report.analyst_changed:
         add_score("애널리스트 변경", 0.45)
 
+
+def _score_broker_priority(
+    report: Report,
+    settings: Settings,
+    add_score: AddScore,
+) -> None:
     broker_index = None
     for index, broker in enumerate(settings.broker_priority):
         if report.broker == broker:
@@ -301,6 +304,12 @@ def _score_report(report: Report, settings: Settings) -> tuple[float, list[str]]
             reason="우선 추적 증권사",
         )
 
+
+def _score_title_keywords(
+    report: Report,
+    add_score: AddScore,
+    reasons: list[str],
+) -> None:
     title_lower = report.title.lower()
     matched_keywords: list[str] = []
     for keyword, boost in TITLE_KEYWORD_BOOSTS.items():
@@ -314,6 +323,8 @@ def _score_report(report: Report, settings: Settings) -> tuple[float, list[str]]
         if keyword in title_lower or keyword in report.title:
             add_score(f"제목 패널티: {keyword}", penalty)
 
+
+def _score_content_depth(report: Report, add_score: AddScore) -> None:
     text_length = _report_text_length(report)
     if text_length >= 2500:
         add_score("본문 정보량", 0.95, reason="본문 정보량 풍부")
@@ -324,6 +335,36 @@ def _score_report(report: Report, settings: Settings) -> tuple[float, list[str]]
 
     if report.has_pdf_text:
         add_score("PDF 본문", 0.35, reason="PDF 본문 확보")
+
+
+def _score_report(report: Report, settings: Settings) -> tuple[float, list[str]]:
+    score = 0.0
+    reasons: list[str] = []
+    breakdown: list[dict[str, object]] = []
+
+    def add_score(label: str, value: float, *, reason: str | None = None) -> None:
+        nonlocal score
+        if value == 0:
+            return
+        score += value
+        breakdown.append(
+            {
+                "label": label,
+                "value": round(value, 2),
+                "kind": "penalty" if value < 0 else "boost",
+            }
+        )
+        if reason:
+            reasons.append(reason)
+
+    _score_category_and_source(report, add_score)
+    _score_priority_matches(report, add_score)
+    _score_basic_fields(report, add_score, reasons)
+    _score_estimate_signals(report, add_score)
+    _score_change_signals(report, add_score)
+    _score_broker_priority(report, settings, add_score)
+    _score_title_keywords(report, add_score, reasons)
+    _score_content_depth(report, add_score)
 
     report.score_breakdown = sorted(
         breakdown,
@@ -1001,6 +1042,31 @@ def _collector_history_baselines(
     }
 
 
+def _make_collector_alert(
+    *,
+    alert_type: str,
+    severity: str,
+    source: str,
+    label: str,
+    title: str,
+    message: str,
+    current_count: int,
+    average_count: float,
+    sample_days: int,
+) -> dict[str, object]:
+    return {
+        "type": alert_type,
+        "severity": severity,
+        "source": source,
+        "label": label,
+        "title": title,
+        "message": message,
+        "current_count": current_count,
+        "average_count": average_count,
+        "sample_days": sample_days,
+    }
+
+
 def _build_collector_alerts(
     collection_attempts: list[dict[str, object]],
     collector_health: list[dict[str, object]],
@@ -1028,21 +1094,21 @@ def _build_collector_alerts(
         and current_total <= total_average * TOTAL_DROP_RATIO_THRESHOLD
     ):
         alerts.append(
-            {
-                "type": "total_volume_drop",
-                "severity": "warning",
-                "source": "__total__",
-                "label": "전체 수집량",
-                "title": "전체 수집량 급감",
-                "message": (
+            _make_collector_alert(
+                alert_type="total_volume_drop",
+                severity="warning",
+                source="__total__",
+                label="전체 수집량",
+                title="전체 수집량 급감",
+                message=(
                     f"오늘 {current_total}건으로 최근 평균 {total_average:.1f}건 대비 낮습니다."
                 ),
-                "current_count": current_total,
-                "average_count": total_average,
-                "sample_days": _safe_int(
+                current_count=current_total,
+                average_count=total_average,
+                sample_days=_safe_int(
                     total_baseline.get("sample_days") if isinstance(total_baseline, dict) else 0
                 ),
-            }
+            )
         )
 
     source_baselines = baselines.get("source", {})
@@ -1066,19 +1132,27 @@ def _build_collector_alerts(
             else 0
         )
 
+        def make_alert(alert_type: str, severity: str, title: str, message: str):
+            return _make_collector_alert(
+                alert_type=alert_type,
+                severity=severity,
+                source=source,
+                label=label,
+                title=title,
+                message=message,
+                current_count=current_count,
+                average_count=average_count,
+                sample_days=sample_days,
+            )
+
         if status == "failed":
             alerts.append(
-                {
-                    "type": "collector_failed",
-                    "severity": "critical",
-                    "source": source,
-                    "label": label,
-                    "title": f"{label} 수집 실패",
-                    "message": str(item.get("message") or "수집기가 실패했습니다."),
-                    "current_count": current_count,
-                    "average_count": average_count,
-                    "sample_days": sample_days,
-                }
+                make_alert(
+                    "collector_failed",
+                    "critical",
+                    f"{label} 수집 실패",
+                    str(item.get("message") or "수집기가 실패했습니다."),
+                )
             )
             continue
 
@@ -1087,37 +1161,23 @@ def _build_collector_alerts(
 
         if status == "empty":
             alerts.append(
-                {
-                    "type": "collector_empty",
-                    "severity": "warning",
-                    "source": source,
-                    "label": label,
-                    "title": f"{label} 무출력",
-                    "message": (
-                        f"오늘 0건입니다. 최근 평균은 {average_count:.1f}건입니다."
-                    ),
-                    "current_count": current_count,
-                    "average_count": average_count,
-                    "sample_days": sample_days,
-                }
+                make_alert(
+                    "collector_empty",
+                    "warning",
+                    f"{label} 무출력",
+                    f"오늘 0건입니다. 최근 평균은 {average_count:.1f}건입니다.",
+                )
             )
             continue
 
         if current_count <= average_count * SOURCE_DROP_RATIO_THRESHOLD:
             alerts.append(
-                {
-                    "type": "collector_volume_drop",
-                    "severity": "warning",
-                    "source": source,
-                    "label": label,
-                    "title": f"{label} 수집량 급감",
-                    "message": (
-                        f"오늘 {current_count}건으로 최근 평균 {average_count:.1f}건 대비 낮습니다."
-                    ),
-                    "current_count": current_count,
-                    "average_count": average_count,
-                    "sample_days": sample_days,
-                }
+                make_alert(
+                    "collector_volume_drop",
+                    "warning",
+                    f"{label} 수집량 급감",
+                    f"오늘 {current_count}건으로 최근 평균 {average_count:.1f}건 대비 낮습니다.",
+                )
             )
 
     return alerts
@@ -1413,7 +1473,7 @@ def enrich_and_build_digest(
     )
 
 
-def render_markdown(digest: DailyDigest) -> str:
+def _markdown_header_lines(digest: DailyDigest) -> list[str]:
     lines = [
         f"# {digest.date} 증권사 리포트 데일리",
         "",
@@ -1430,6 +1490,11 @@ def render_markdown(digest: DailyDigest) -> str:
 
     if digest.collection_note:
         lines.extend(["## 수집 메모", digest.collection_note, ""])
+    return lines
+
+
+def _markdown_operations_lines(digest: DailyDigest) -> list[str]:
+    lines: list[str] = []
 
     collector_alerts = digest.stats.get("collector_alerts", [])
     if isinstance(collector_alerts, list) and collector_alerts:
@@ -1462,100 +1527,109 @@ def render_markdown(digest: DailyDigest) -> str:
                 line += f" - {message}"
             lines.append(line)
         lines.append("")
+    return lines
 
-    if digest.priority_filters["enabled"]:
+
+def _markdown_priority_filter_lines(digest: DailyDigest) -> list[str]:
+    if not digest.priority_filters["enabled"]:
+        return []
+    return [
+        "## 관심 필터",
+        f"- 관심 종목: {', '.join(digest.priority_filters['subjects']) or '없음'}",
+        f"- 관심 섹터/키워드: {', '.join(digest.priority_filters['keywords']) or '없음'}",
+        f"- 일치 리포트: {digest.priority_filters['matched_reports']}건",
+        (
+            "- 엄격 필터 모드: "
+            f"{'켜짐' if digest.priority_filters['priority_only'] else '꺼짐'}"
+        ),
+        "",
+    ]
+
+
+def _markdown_change_lines(digest: DailyDigest) -> list[str]:
+    if not digest.change_summary.get("available"):
+        return []
+
+    lines = [
+        "## 이익·마진 추정 변화",
+        f"- 변화 감지 리포트: {digest.change_summary.get('changed_reports', 0)}건",
+        (
+            f"- 추정치 수치 상향/하향: "
+            f"{digest.change_summary.get('estimate_revision_up', 0)}건 / "
+            f"{digest.change_summary.get('estimate_revision_down', 0)}건"
+        ),
+        (
+            f"- 이익 추정 상향/하향: "
+            f"{digest.change_summary.get('earnings_estimate_up', 0)}건 / "
+            f"{digest.change_summary.get('earnings_estimate_down', 0)}건"
+        ),
+        (
+            f"- 마진 개선/악화: "
+            f"{digest.change_summary.get('margin_estimate_up', 0)}건 / "
+            f"{digest.change_summary.get('margin_estimate_down', 0)}건"
+        ),
+        (
+            f"- 목표가 상향/하향: "
+            f"{digest.change_summary.get('target_price_up', 0)}건 / "
+            f"{digest.change_summary.get('target_price_down', 0)}건"
+        ),
+        (
+            f"- 의견 변경/애널리스트 변경: "
+            f"{digest.change_summary.get('opinion_changed', 0)}건 / "
+            f"{digest.change_summary.get('analyst_changed', 0)}건"
+        ),
+        "",
+    ]
+
+    for index, report in enumerate(digest.changes[:12], start=1):
         lines.extend(
             [
-                "## 관심 필터",
-                f"- 관심 종목: {', '.join(digest.priority_filters['subjects']) or '없음'}",
-                f"- 관심 섹터/키워드: {', '.join(digest.priority_filters['keywords']) or '없음'}",
-                f"- 일치 리포트: {digest.priority_filters['matched_reports']}건",
-                (
-                    "- 엄격 필터 모드: "
-                    f"{'켜짐' if digest.priority_filters['priority_only'] else '꺼짐'}"
-                ),
-                "",
+                f"### {index}. {report.display_title}",
+                f"- 증권사: {report.broker}",
+                f"- 변화 유형: {', '.join(report.change_reasons)}",
             ]
         )
+        for revision in report.estimate_revisions[:3]:
+            lines.append(f"- {_format_revision_detail(revision)}")
+        target_line = _format_target_change(report)
+        if target_line:
+            lines.append(f"- {target_line}")
+        if report.opinion_changed:
+            lines.append(
+                f"- 의견 변경: {report.previous_opinion or '-'} → {report.opinion or '-'}"
+            )
+        if report.analyst_changed:
+            lines.append(
+                f"- 애널리스트 변경: {report.previous_analyst or '-'} → {report.analyst or '-'}"
+            )
+        if report.previous_report_date:
+            lines.append(f"- 비교 기준일: {report.previous_report_date}")
+        lines.append(f"- 대표 링크: {report.primary_url}")
+        lines.append("")
+    return lines
 
-    lines.extend(["## 오늘의 한줄", digest.editorial_note, ""])
 
-    if digest.change_summary.get("available"):
-        lines.extend(
-            [
-                "## 이익·마진 추정 변화",
-                f"- 변화 감지 리포트: {digest.change_summary.get('changed_reports', 0)}건",
-                (
-                    f"- 추정치 수치 상향/하향: "
-                    f"{digest.change_summary.get('estimate_revision_up', 0)}건 / "
-                    f"{digest.change_summary.get('estimate_revision_down', 0)}건"
-                ),
-                (
-                    f"- 이익 추정 상향/하향: "
-                    f"{digest.change_summary.get('earnings_estimate_up', 0)}건 / "
-                    f"{digest.change_summary.get('earnings_estimate_down', 0)}건"
-                ),
-                (
-                    f"- 마진 개선/악화: "
-                    f"{digest.change_summary.get('margin_estimate_up', 0)}건 / "
-                    f"{digest.change_summary.get('margin_estimate_down', 0)}건"
-                ),
-                (
-                    f"- 목표가 상향/하향: "
-                    f"{digest.change_summary.get('target_price_up', 0)}건 / "
-                    f"{digest.change_summary.get('target_price_down', 0)}건"
-                ),
-                (
-                    f"- 의견 변경/애널리스트 변경: "
-                    f"{digest.change_summary.get('opinion_changed', 0)}건 / "
-                    f"{digest.change_summary.get('analyst_changed', 0)}건"
-                ),
-                "",
-            ]
-        )
+def _markdown_ranking_lines(digest: DailyDigest) -> list[str]:
+    if not digest.rankings:
+        return []
 
-        if digest.changes:
-            for index, report in enumerate(digest.changes[:12], start=1):
-                lines.extend(
-                    [
-                        f"### {index}. {report.display_title}",
-                        f"- 증권사: {report.broker}",
-                        f"- 변화 유형: {', '.join(report.change_reasons)}",
-                    ]
+    lines = ["## 카테고리 랭킹", ""]
+    for ranking in digest.rankings.values():
+        lines.append(f"### {ranking['label']}")
+        reports = ranking.get("reports", [])
+        if not reports:
+            lines.append("- 결과 없음")
+        else:
+            for index, report in enumerate(reports, start=1):
+                lines.append(
+                    f"- {index}. {report.display_title} | {report.broker} | 우선순위 {report.score:.2f}"
                 )
-                for revision in report.estimate_revisions[:3]:
-                    lines.append(f"- {_format_revision_detail(revision)}")
-                target_line = _format_target_change(report)
-                if target_line:
-                    lines.append(f"- {target_line}")
-                if report.opinion_changed:
-                    lines.append(
-                        f"- 의견 변경: {report.previous_opinion or '-'} → {report.opinion or '-'}"
-                    )
-                if report.analyst_changed:
-                    lines.append(
-                        f"- 애널리스트 변경: {report.previous_analyst or '-'} → {report.analyst or '-'}"
-                    )
-                if report.previous_report_date:
-                    lines.append(f"- 비교 기준일: {report.previous_report_date}")
-                lines.append(f"- 대표 링크: {report.primary_url}")
-                lines.append("")
+        lines.append("")
+    return lines
 
-    if digest.rankings:
-        lines.extend(["## 카테고리 랭킹", ""])
-        for ranking in digest.rankings.values():
-            lines.append(f"### {ranking['label']}")
-            reports = ranking.get("reports", [])
-            if not reports:
-                lines.append("- 결과 없음")
-            else:
-                for index, report in enumerate(reports, start=1):
-                    lines.append(
-                        f"- {index}. {report.display_title} | {report.broker} | 우선순위 {report.score:.2f}"
-                    )
-            lines.append("")
 
-    lines.append("## 우선 검토 후보")
+def _markdown_must_read_lines(digest: DailyDigest) -> list[str]:
+    lines = ["## 우선 검토 후보"]
     if not digest.must_read:
         lines.extend(["- 우선 검토 후보로 선정된 항목이 없습니다.", ""])
 
@@ -1603,18 +1677,36 @@ def render_markdown(digest: DailyDigest) -> str:
                 if values:
                     lines.append(f"  - {label}: {' / '.join(values)}")
         lines.append("")
+    return lines
 
-    lines.extend(["## 전체 수집 결과", ""])
+
+def _markdown_full_report_lines(digest: DailyDigest) -> list[str]:
+    lines = ["## 전체 수집 결과", ""]
     for report in digest.reports:
         lines.append(
             f"- [{report.category_label}] {report.display_title} | {report.broker} | "
             f"{report.published_date} | 우선순위 {report.score:.2f} | {report.primary_url}"
         )
+    return lines
 
+
+def render_markdown(digest: DailyDigest) -> str:
+    lines = [
+        *_markdown_header_lines(digest),
+        *_markdown_operations_lines(digest),
+        *_markdown_priority_filter_lines(digest),
+        "## 오늘의 한줄",
+        digest.editorial_note,
+        "",
+        *_markdown_change_lines(digest),
+        *_markdown_ranking_lines(digest),
+        *_markdown_must_read_lines(digest),
+        *_markdown_full_report_lines(digest),
+    ]
     return "\n".join(lines).strip() + "\n"
 
 
-def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[str]:
+def _telegram_header_block(digest: DailyDigest) -> str:
     header = [
         f"<b>{html.escape(digest.date)} 증권사 리포트 데일리</b>",
         f"총 {digest.stats['total_reports']}건 수집",
@@ -1664,39 +1756,48 @@ def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[
         )
     header.append("")
     header.append(html.escape(digest.editorial_note))
+    return "\n".join(header)
 
-    blocks = ["\n".join(header)]
 
+def _telegram_alert_block(digest: DailyDigest) -> str | None:
     collector_alerts = digest.stats.get("collector_alerts", [])
-    if isinstance(collector_alerts, list) and collector_alerts:
-        alert_lines = ["", "<b>운영 알림</b>"]
-        for item in collector_alerts[:6]:
-            if not isinstance(item, dict):
-                continue
-            alert_lines.append(
-                f"{html.escape(_format_alert_severity(item.get('severity')))} · "
-                f"{html.escape(str(item.get('title') or item.get('label') or '-'))}\n"
-                f"{html.escape(trim_text(str(item.get('message') or ''), 140))}"
-            )
-        blocks.append("\n".join(alert_lines))
+    if not (isinstance(collector_alerts, list) and collector_alerts):
+        return None
 
+    alert_lines = ["", "<b>운영 알림</b>"]
+    for item in collector_alerts[:6]:
+        if not isinstance(item, dict):
+            continue
+        alert_lines.append(
+            f"{html.escape(_format_alert_severity(item.get('severity')))} · "
+            f"{html.escape(str(item.get('title') or item.get('label') or '-'))}\n"
+            f"{html.escape(trim_text(str(item.get('message') or ''), 140))}"
+        )
+    return "\n".join(alert_lines)
+
+
+def _telegram_health_block(digest: DailyDigest) -> str | None:
     problem_health = _collector_problem_items(digest)
-    if problem_health:
-        health_lines = ["", "<b>점검 필요한 소스</b>"]
-        for item in problem_health[:6]:
-            status = _format_collector_status(item.get("status"))
-            message = str(item.get("message") or "")
-            line = (
-                f"{html.escape(str(item.get('label') or item.get('source') or '-'))}: "
-                f"{html.escape(status)} · "
-                f"{html.escape(str(item.get('report_count', 0)))}건 · "
-                f"{html.escape(_format_duration(item.get('duration_seconds')))}"
-            )
-            if message and item.get("status") != "ok":
-                line += f"\n{html.escape(trim_text(message, 120))}"
-            health_lines.append(line)
-        blocks.append("\n".join(health_lines))
+    if not problem_health:
+        return None
 
+    health_lines = ["", "<b>점검 필요한 소스</b>"]
+    for item in problem_health[:6]:
+        status = _format_collector_status(item.get("status"))
+        message = str(item.get("message") or "")
+        line = (
+            f"{html.escape(str(item.get('label') or item.get('source') or '-'))}: "
+            f"{html.escape(status)} · "
+            f"{html.escape(str(item.get('report_count', 0)))}건 · "
+            f"{html.escape(_format_duration(item.get('duration_seconds')))}"
+        )
+        if message and item.get("status") != "ok":
+            line += f"\n{html.escape(trim_text(message, 120))}"
+        health_lines.append(line)
+    return "\n".join(health_lines)
+
+
+def _telegram_ranking_block(digest: DailyDigest) -> str | None:
     ranking_lines = ["", "<b>카테고리 랭킹</b>"]
     for key in ("company", "industry", "macro", "strategy"):
         ranking = digest.rankings.get(key)
@@ -1711,93 +1812,119 @@ def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[
             f'<a href="{html.escape(top_report.primary_url)}">'
             f"{html.escape(top_report.display_title)}</a>"
         )
-    if len(ranking_lines) > 2:
-        blocks.append("\n".join(ranking_lines))
+    if len(ranking_lines) <= 2:
+        return None
+    return "\n".join(ranking_lines)
 
-    if digest.changes:
-        change_lines = ["", "<b>이익·마진 추정 변화</b>"]
-        for report in digest.changes[:5]:
-            detail_bits = []
-            for revision in report.estimate_revisions[:2]:
-                detail_bits.append(_format_revision_detail(revision))
-            target_line = _format_target_change(report)
-            if target_line:
-                detail_bits.append(target_line)
-            if report.opinion_changed:
-                detail_bits.append(
-                    f"의견 {report.previous_opinion or '-'} → {report.opinion or '-'}"
-                )
-            if report.analyst_changed:
-                detail_bits.append(
-                    f"애널리스트 {report.previous_analyst or '-'} → {report.analyst or '-'}"
-                )
-            change_lines.append(
-                f'• <a href="{html.escape(report.primary_url)}">'
-                f"{html.escape(report.display_title)}</a>"
+
+def _telegram_change_block(digest: DailyDigest) -> str | None:
+    if not digest.changes:
+        return None
+
+    change_lines = ["", "<b>이익·마진 추정 변화</b>"]
+    for report in digest.changes[:5]:
+        detail_bits = []
+        for revision in report.estimate_revisions[:2]:
+            detail_bits.append(_format_revision_detail(revision))
+        target_line = _format_target_change(report)
+        if target_line:
+            detail_bits.append(target_line)
+        if report.opinion_changed:
+            detail_bits.append(
+                f"의견 {report.previous_opinion or '-'} → {report.opinion or '-'}"
             )
-            if detail_bits:
-                change_lines.append(html.escape(" / ".join(detail_bits)))
-        blocks.append("\n".join(change_lines))
+        if report.analyst_changed:
+            detail_bits.append(
+                f"애널리스트 {report.previous_analyst or '-'} → {report.analyst or '-'}"
+            )
+        change_lines.append(
+            f'• <a href="{html.escape(report.primary_url)}">'
+            f"{html.escape(report.display_title)}</a>"
+        )
+        if detail_bits:
+            change_lines.append(html.escape(" / ".join(detail_bits)))
+    return "\n".join(change_lines)
 
-    for index, report in enumerate(digest.must_read[:max_reports], start=1):
-        summary = trim_text(report.summary, 160)
-        meta_bits = [report.broker, f"우선순위 {report.score:.2f}"]
-        if report.stance != "neutral":
-            meta_bits.append(f"톤 {_format_memo_stance(report.stance)}")
-        if report.target_price:
-            meta_bits.append(f"목표가 {report.target_price}")
-        if report.opinion:
-            meta_bits.append(f"의견 {report.opinion}")
-        parts = [
-            "",
-            f"<b>{index}. [{html.escape(report.category_label)}] "
-            f'<a href="{html.escape(report.primary_url)}">'
-            f"{html.escape(report.display_title)}</a></b>",
-            html.escape(" · ".join(meta_bits)),
+
+def _telegram_must_read_block(report: Report, index: int) -> str:
+    summary = trim_text(report.summary, 160)
+    meta_bits = [report.broker, f"우선순위 {report.score:.2f}"]
+    if report.stance != "neutral":
+        meta_bits.append(f"톤 {_format_memo_stance(report.stance)}")
+    if report.target_price:
+        meta_bits.append(f"목표가 {report.target_price}")
+    if report.opinion:
+        meta_bits.append(f"의견 {report.opinion}")
+    parts = [
+        "",
+        f"<b>{index}. [{html.escape(report.category_label)}] "
+        f'<a href="{html.escape(report.primary_url)}">'
+        f"{html.escape(report.display_title)}</a></b>",
+        html.escape(" · ".join(meta_bits)),
+    ]
+    if report.change_reasons:
+        parts.append(html.escape("변화: " + ", ".join(report.change_reasons[:2])))
+    if _has_investment_memo(report):
+        memo = report.investment_memo
+        action = normalize_space(str(memo.get("action") or ""))
+        thesis = _memo_list(memo.get("thesis"))
+        memo_bits = [
+            f"톤 {_format_memo_stance(memo.get('stance'))}",
+            f"신뢰 {_format_memo_confidence(memo.get('confidence'))}",
         ]
-        if report.change_reasons:
-            parts.append(html.escape("변화: " + ", ".join(report.change_reasons[:2])))
-        if _has_investment_memo(report):
-            memo = report.investment_memo
-            action = normalize_space(str(memo.get("action") or ""))
-            thesis = _memo_list(memo.get("thesis"))
-            memo_bits = [
-                f"톤 {_format_memo_stance(memo.get('stance'))}",
-                f"신뢰 {_format_memo_confidence(memo.get('confidence'))}",
-            ]
-            if action:
-                memo_bits.append(action)
-            elif thesis:
-                memo_bits.append(thesis[0])
-            parts.append("투자 메모: " + html.escape(" · ".join(memo_bits)))
-        if report.is_priority_match:
-            parts.append(
-                "관심 일치: "
-                + html.escape(
-                    ", ".join(
-                        report.priority_subject_matches
-                        + report.priority_keyword_matches[:2]
-                    )
+        if action:
+            memo_bits.append(action)
+        elif thesis:
+            memo_bits.append(thesis[0])
+        parts.append("투자 메모: " + html.escape(" · ".join(memo_bits)))
+    if report.is_priority_match:
+        parts.append(
+            "관심 일치: "
+            + html.escape(
+                ", ".join(
+                    report.priority_subject_matches
+                    + report.priority_keyword_matches[:2]
                 )
             )
-        if report.summary_engine != "rule":
-            parts.append(f"요약 엔진: {html.escape(report.summary_engine)}")
-        parts.append(html.escape(summary))
-        blocks.append("\n".join(parts))
+        )
+    if report.summary_engine != "rule":
+        parts.append(f"요약 엔진: {html.escape(report.summary_engine)}")
+    parts.append(html.escape(summary))
+    return "\n".join(parts)
 
+
+def _split_blocks_into_messages(blocks: list[str], char_limit: int = 3500) -> list[str]:
     messages: list[str] = []
     current = ""
     for block in blocks:
         candidate = (current + "\n" + block).strip() if current else block
-        if len(candidate) > 3500 and current:
+        if len(candidate) > char_limit and current:
             messages.append(current.strip())
             current = block.strip()
         else:
             current = candidate
     if current:
         messages.append(current.strip())
-
     return messages
+
+
+def render_telegram_messages(digest: DailyDigest, max_reports: int = 8) -> list[str]:
+    blocks = [_telegram_header_block(digest)]
+    for optional_block in (
+        _telegram_alert_block(digest),
+        _telegram_health_block(digest),
+        _telegram_ranking_block(digest),
+        _telegram_change_block(digest),
+    ):
+        if optional_block is not None:
+            blocks.append(optional_block)
+
+    blocks.extend(
+        _telegram_must_read_block(report, index)
+        for index, report in enumerate(digest.must_read[:max_reports], start=1)
+    )
+
+    return _split_blocks_into_messages(blocks)
 
 
 def now_iso_string(timezone_name: str) -> str:
