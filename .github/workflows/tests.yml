@@ -11,6 +11,8 @@ on:
       - "scripts/**"
       - "run_daily.py"
       - "requirements.txt"
+      - "docs/index.html"
+      - "docs/assets/**"
       - ".github/workflows/tests.yml"
 
 permissions:
@@ -34,3 +36,22 @@ jobs:
 
       - name: Run regression tests
         run: python -m unittest discover -s tests -v
+
+  ui-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      - name: Install UI test dependencies
+        run: npm install --no-audit --no-fund
+        working-directory: tests/ui
+
+      - name: Run dashboard smoke test
+        run: npm test
+        working-directory: tests/ui

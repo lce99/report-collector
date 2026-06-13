@@ -151,6 +151,7 @@ function getRequestedSubject() {
 
 function syncSubjectInUrl(subjectKey) {
   const params = new URLSearchParams(window.location.search);
+  const previousSubject = params.get("subject");
   if (state.selectedDate) {
     params.set("date", state.selectedDate);
   }
@@ -161,7 +162,60 @@ function syncSubjectInUrl(subjectKey) {
   }
   const query = params.toString();
   const next = query ? `${window.location.pathname}?${query}` : window.location.pathname;
-  window.history.replaceState({}, "", next);
+  // Opening a different subject gets a history entry so the back
+  // button returns to the previous view; everything else is replaced.
+  if (subjectKey && previousSubject !== subjectKey) {
+    window.history.pushState({}, "", next);
+  } else {
+    window.history.replaceState({}, "", next);
+  }
+}
+
+const SORT_OPTIONS = new Set(["score", "changes", "views", "latest", "title"]);
+
+const FILTER_PARAM_DEFAULTS = [
+  ["q", () => state.query, ""],
+  ["category", () => state.selectedCategory, "all"],
+  ["broker", () => state.selectedBroker, "all"],
+  ["sort", () => state.sortBy, "score"],
+  ["priority", () => (state.priorityOnlyView ? "1" : ""), ""],
+  ["changes", () => (state.changesOnlyView ? "1" : ""), ""],
+];
+
+function syncFiltersInUrl() {
+  const params = new URLSearchParams(window.location.search);
+  FILTER_PARAM_DEFAULTS.forEach(([key, read, defaultValue]) => {
+    const value = read();
+    if (value && value !== defaultValue) {
+      params.set(key, value);
+    } else {
+      params.delete(key);
+    }
+  });
+  const query = params.toString();
+  const next = query ? `${window.location.pathname}?${query}` : window.location.pathname;
+  if (next !== `${window.location.pathname}${window.location.search}`) {
+    window.history.replaceState({}, "", next);
+  }
+}
+
+function restoreFiltersFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  state.query = normalize((params.get("q") || "").trim());
+  state.selectedCategory = params.get("category") || "all";
+  state.selectedBroker = params.get("broker") || "all";
+  const sort = params.get("sort") || "score";
+  state.sortBy = SORT_OPTIONS.has(sort) ? sort : "score";
+  state.priorityOnlyView = params.get("priority") === "1";
+  state.changesOnlyView = params.get("changes") === "1";
+}
+
+function applyFilterControls() {
+  document.getElementById("searchInput").value = state.query;
+  document.getElementById("sortSelect").value = state.sortBy;
+  document.getElementById("priorityOnlyToggle").checked = state.priorityOnlyView;
+  document.getElementById("changesOnlyToggle").checked = state.changesOnlyView;
+  // category/broker selects sync themselves when their options are populated.
 }
 
 function resolveSubjectKey(query) {
@@ -1933,6 +1987,7 @@ function renderAll() {
   if (!state.digest) {
     return;
   }
+  syncFiltersInUrl();
   if (isSubjectMode()) {
     renderSubjectView();
     renderHintBar(
@@ -1997,7 +2052,7 @@ async function loadDigest(date) {
   }
 }
 
-async function loadSubjectDetail(subjectKey) {
+async function loadSubjectDetail(subjectKey, { syncUrl = true } = {}) {
   if (!subjectKey) {
     state.selectedSubjectKey = null;
     state.subjectDetail = null;
@@ -2014,7 +2069,9 @@ async function loadSubjectDetail(subjectKey) {
     document.getElementById("subjectSearchMeta").textContent = `${
       detail.subject_name || subjectKey
     } · ${formatNumber(detail.report_count || 0)}건`;
-    syncSubjectInUrl(subjectKey);
+    if (syncUrl) {
+      syncSubjectInUrl(subjectKey);
+    }
     renderAll();
   } catch (error) {
     console.error(error);
@@ -2090,6 +2147,19 @@ async function init() {
   applyToolbarPinnedState();
   state.theme = loadThemePreference();
   applyThemeState();
+  restoreFiltersFromUrl();
+  applyFilterControls();
+
+  window.addEventListener("popstate", async () => {
+    restoreFiltersFromUrl();
+    applyFilterControls();
+    const requestedSubject = getRequestedSubject();
+    if ((requestedSubject || null) !== (state.selectedSubjectKey || null)) {
+      await loadSubjectDetail(requestedSubject, { syncUrl: false });
+      return;
+    }
+    renderAll();
+  });
 
   const debouncedRenderAll = debounce(renderAll);
   searchInput.addEventListener("input", (event) => {
