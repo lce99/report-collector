@@ -1,40 +1,39 @@
 # 2026-06-18 증권사 리포트 데일리
 
 - 요청 기준일: 2026-06-18
-- 생성 시각: 2026-06-18T13:21:34+09:00
+- 생성 시각: 2026-06-18T19:58:44+09:00
 - 대시보드: https://lce99.github.io/report-collector/?date=2026-06-18
-- 수집 건수: 89건
+- 수집 건수: 90건
 - PDF 텍스트 보강: 44건
 - OpenAI 요약 적용: 0건
 - LLM 투자 메모: 0건
-- 키워드: 방산, 현대백화점, 외국인, 매출, 성장률, 가팔라졌다, 롯데쇼핑, 백화점이
+- 키워드: IBKS, 현대백화점, 외국인, 매출, 성장률, 가팔라졌다, 롯데쇼핑, 백화점이
 
 ## 운영 알림
 
-- [주의] 미래에셋증권 공식 무출력: 오늘 0건입니다. 최근 평균은 5.4건입니다.
-- [주의] 한국투자증권 공식 수집량 급감: 오늘 6건으로 최근 평균 13.8건 대비 낮습니다.
+- [긴급] 한국투자증권 공식 수집 실패: URLError: <urlopen error timed out>
 
 ## 수집 소스 상태
 
-- 네이버 금융 리서치: 정상, 79건, 96.69초
-- 미래에셋증권 공식: 무출력, 0건, 1.91초 - 정상 종료됐지만 해당 날짜 리포트가 없습니다.
-- 한국투자증권 공식: 정상, 6건, 15.11초
-- 신한투자증권 공식: 정상, 5건, 6.67초
+- 네이버 금융 리서치: 정상, 80건, 121.70초
+- 미래에셋증권 공식: 정상, 5건, 16.26초
+- 한국투자증권 공식: 실패, 0건, 63.18초 - URLError: <urlopen error timed out>
+- 신한투자증권 공식: 정상, 8건, 9.85초
 
 ## 관심 필터
 - 관심 종목: 삼성전자, SK하이닉스, 미래에셋증권, 대한항공, 삼성에스디에스, 이노스페이스
 - 관심 섹터/키워드: 반도체, 방산, 원자력, 로봇, 건설, 우주, 항공
-- 일치 리포트: 43건
+- 일치 리포트: 46건
 - 엄격 필터 모드: 꺼짐
 
 ## 오늘의 한줄
-이익 추정 상향 44건, 마진 개선 20건, 목표가 상향 6건이 감지됐습니다. 오늘은 종목분석 리포트가 20건으로 가장 많았습니다. 신한투자증권, 대신증권, 한화투자증권 발간 비중이 높았고, 우선 확인할 만한 핵심 리포트는 현대백화점 - 외국인 매출 성장률 가팔라졌다, 롯데쇼핑 - 백화점이 이끌고, 계열사가 따라오고, SK스퀘어 - 닉스 보다 빠른 상승입니다.
+이익 추정 상향 42건, 마진 개선 16건, 목표가 상향 6건이 감지됐습니다. 오늘은 시황정보 리포트가 21건으로 가장 많았습니다. 신한투자증권, 대신증권, 미래에셋증권 발간 비중이 높았고, 우선 확인할 만한 핵심 리포트는 현대백화점 - 외국인 매출 성장률 가팔라졌다, 롯데쇼핑 - 백화점이 이끌고, 계열사가 따라오고, SK스퀘어 - 닉스 보다 빠른 상승입니다.
 
 ## 이익·마진 추정 변화
-- 변화 감지 리포트: 53건
+- 변화 감지 리포트: 49건
 - 추정치 수치 상향/하향: 0건 / 0건
-- 이익 추정 상향/하향: 44건 / 24건
-- 마진 개선/악화: 20건 / 9건
+- 이익 추정 상향/하향: 42건 / 24건
+- 마진 개선/악화: 16건 / 10건
 - 목표가 상향/하향: 6건 / 0건
 - 의견 변경/애널리스트 변경: 0건 / 2건
 
@@ -128,17 +127,17 @@
 
 ### 매크로 랭킹
 - 1. 국내주식 마감 시황 (26.06.17) - 250만닉스와 함께 .. | 유안타증권 | 우선순위 15.85
-- 2. 06/18, Kiwoom Morning Letter | 키움증권 | 우선순위 15.45
-- 3. Daily Market Digest (6월 18일) | 신한투자증권 | 우선순위 13.20
-- 4. [IBKS Daily] Morning Brief(260618) | IBK투자증권 | 우선순위 12.73
-- 5. 마켓레이더 - 매파 FOMC vs 종전 MOU 발효, 장중 9천피 근접 (6월 18일) | 신한투자증권 | 우선순위 12.70
+- 2. 06/18, Kiwoom Morning Letter | 키움증권 | 우선순위 15.68
+- 3. Daily Market Digest (6월 18일) | 신한투자증권 | 우선순위 13.30
+- 4. 마켓레이더 - 매파 FOMC vs 종전 MOU 발효, 장중 9천피 근접 (6월 18일) | 신한투자증권 | 우선순위 13.10
+- 5. [IBKS Daily] Morning Brief(260618) | IBK투자증권 | 우선순위 12.85
 
 ### 전략 랭킹
-- 1. 중국의 K자형 경기, 정부의 선택은? | 메리츠증권 | 우선순위 15.13
-- 2. [EPS LIVE #216] 방산, 조선의 가격 매력, 기계(전력).. | 한화투자증권 | 우선순위 14.35
-- 3. [IBKS Daily] Start with IBKS(2026.06.18) 금리 동결.. | IBK투자증권 | 우선순위 14.18
-- 4. FOMC 대기 국면 속 SK 하이닉스 신고가 경신 | 대신증권 | 우선순위 13.93
-- 5. DS Futures Daily | DS투자증권 | 우선순위 12.15
+- 1. 중국의 K자형 경기, 정부의 선택은? | 메리츠증권 | 우선순위 15.30
+- 2. [IBKS Daily] Start with IBKS(2026.06.18) 금리 동결.. | IBK투자증권 | 우선순위 14.40
+- 3. [EPS LIVE #216] 방산, 조선의 가격 매력, 기계(전력).. | 한화투자증권 | 우선순위 14.35
+- 4. FOMC 대기 국면 속 SK 하이닉스 신고가 경신 | 대신증권 | 우선순위 14.10
+- 5. DS Futures Daily | DS투자증권 | 우선순위 12.46
 
 ## 우선 검토 후보
 ### 1. [종목분석] 현대백화점 - 외국인 매출 성장률 가팔라졌다
@@ -210,7 +209,7 @@
 ### 7. [투자정보] 중국의 K자형 경기, 정부의 선택은?
 - 증권사: 메리츠증권
 - 발행일: 2026-06-18
-- 우선순위 점수: 15.13
+- 우선순위 점수: 15.30
 - 선정 근거: 투자정보 카테고리, 관심 섹터/키워드(반도체, 로봇), 이익 추정 상향/증가, 마진율 추정 상승/개선, 이익 추정 하향/감소
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 없음 / 키워드 반도체, 로봇
@@ -218,21 +217,21 @@
 - 대표 링크: https://stock.pstatic.net/stock-research/invest/17/20260618_invest_889155000.pdf
 - 상세 페이지: https://finance.naver.com/research/invest_read.naver?nid=39232&page=1
 
-### 8. [투자정보] [EPS LIVE #216] 방산, 조선의 가격 매력, 기계(전력)..
-- 증권사: 한화투자증권
+### 8. [투자정보] [IBKS Daily] Start with IBKS(2026.06.18) 금리 동결..
+- 증권사: IBK투자증권
 - 발행일: 2026-06-18
-- 우선순위 점수: 14.35
-- 선정 근거: 투자정보 카테고리, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(반도체, 방산, 건설), 핵심 키워드(방산), 본문 정보량 풍부
+- 우선순위 점수: 14.40
+- 선정 근거: 투자정보 카테고리, 관심 종목(삼성전자, SK하이닉스, 미래에셋증권), 관심 섹터/키워드(반도체, 방산, 로봇), 핵심 키워드(금리), 본문 정보량 풍부
 - 요약 엔진: rule
-- 관심 필터 일치: 종목 삼성전자, SK하이닉스 / 키워드 반도체, 방산, 건설, 우주, 항공
-- 요약: 글로벌 신흥국 상위에 삼성생명, SK하이닉스, 셀트리온, LS ELECTRIC, 삼성전자, NAVER 진입. 선진국 상위에 소프트뱅크, 어도비, 미쓰비시상사 진입.
-- 대표 링크: https://stock.pstatic.net/stock-research/invest/16/20260618_invest_519360000.pdf
-- 상세 페이지: https://finance.naver.com/research/invest_read.naver?nid=39236&page=1
+- 관심 필터 일치: 종목 삼성전자, SK하이닉스, 미래에셋증권 / 키워드 반도체, 방산, 로봇, 건설, 우주, 항공
+- 요약: 증시 Comment (전일 아시아 증시) ▶ 한국증시 미국과 이란의 종전 협상 타결에 따른 국제유가 급락으로 에너지발 인플레이션 우려가 완화된 가운데, 케빈 워시 연준 의장의 비둘기 파적 통화정책 기대가 투자심리를 지지하며 전 거래일 대비 1.58% 상승한 8,864.24P로 마감
+- 대표 링크: https://stock.pstatic.net/stock-research/invest/40/20260618_invest_193246000.pdf
+- 상세 페이지: https://finance.naver.com/research/invest_read.naver?nid=39226&page=1
 
 ### 9. [경제분석] 06/18, Kiwoom Morning Letter
 - 증권사: 키움증권
 - 발행일: 2026-06-18
-- 우선순위 점수: 15.45
+- 우선순위 점수: 15.68
 - 선정 근거: 경제분석 카테고리, 관심 종목(삼성전자, SK하이닉스, 미래에셋증권), 관심 섹터/키워드(반도체, 건설), 이익 추정 상향/증가, 우선 추적 증권사
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 삼성전자, SK하이닉스, 미래에셋증권 / 키워드 반도체, 건설
@@ -265,7 +264,7 @@
 ### 12. [채권분석] 6월 FOMC: 연내 인상 가능성 시사. 다만, 실제 인상에..
 - 증권사: 교보증권
 - 발행일: 2026-06-18
-- 우선순위 점수: 7.75
+- 우선순위 점수: 8.07
 - 선정 근거: 채권분석 카테고리, 이익 추정 상향/증가, 이익 추정 하향/감소, 본문 정보량 풍부, PDF 본문 확보
 - 요약 엔진: rule
 - 관심 필터 일치: 없음
@@ -285,82 +284,83 @@
 - [산업분석] IT - PCB : 2Q 호조 / 3Q 확대, 선택과 집중! | 대신증권 | 2026-06-18 | 우선순위 17.65 | https://stock.pstatic.net/stock-research/industry/15/20260618_industry_549129000.pdf
 - [종목분석] 현대백화점 - 외국인 매출 성장률 가팔라졌다 | 대신증권 | 2026-06-18 | 우선순위 16.95 | https://stock.pstatic.net/stock-research/company/15/20260618_company_43441000.pdf
 - [시황정보] 국내주식 마감 시황 (26.06.17) - 250만닉스와 함께 .. | 유안타증권 | 2026-06-18 | 우선순위 15.85 | https://stock.pstatic.net/stock-research/market/18/20260618_market_265805000.pdf
+- [경제분석] 06/18, Kiwoom Morning Letter | 키움증권 | 2026-06-18 | 우선순위 15.68 | https://stock.pstatic.net/stock-research/economy/39/20260618_economy_182970000.pdf
 - [산업분석] 자동차 - 현대차와 기아, 기대감과 실적의 밸런스 | 한화투자증권 | 2026-06-18 | 우선순위 15.67 | https://stock.pstatic.net/stock-research/industry/16/20260618_industry_848348000.pdf
 - [종목분석] 덕양에너젠 - 수소 업스트림의 최강자 | 미래에셋증권 | 2026-06-18 | 우선순위 15.62 | https://stock.pstatic.net/stock-research/company/56/20260618_company_850475000.pdf
-- [경제분석] 06/18, Kiwoom Morning Letter | 키움증권 | 2026-06-18 | 우선순위 15.45 | https://stock.pstatic.net/stock-research/economy/39/20260618_economy_182970000.pdf
-- [투자정보] 중국의 K자형 경기, 정부의 선택은? | 메리츠증권 | 2026-06-18 | 우선순위 15.13 | https://stock.pstatic.net/stock-research/invest/17/20260618_invest_889155000.pdf
+- [투자정보] 중국의 K자형 경기, 정부의 선택은? | 메리츠증권 | 2026-06-18 | 우선순위 15.30 | https://stock.pstatic.net/stock-research/invest/17/20260618_invest_889155000.pdf
+- [투자정보] [IBKS Daily] Start with IBKS(2026.06.18) 금리 동결.. | IBK투자증권 | 2026-06-18 | 우선순위 14.40 | https://stock.pstatic.net/stock-research/invest/40/20260618_invest_193246000.pdf
 - [투자정보] [EPS LIVE #216] 방산, 조선의 가격 매력, 기계(전력).. | 한화투자증권 | 2026-06-18 | 우선순위 14.35 | https://stock.pstatic.net/stock-research/invest/16/20260618_invest_519360000.pdf
-- [투자정보] [IBKS Daily] Start with IBKS(2026.06.18) 금리 동결.. | IBK투자증권 | 2026-06-18 | 우선순위 14.18 | https://stock.pstatic.net/stock-research/invest/40/20260618_invest_193246000.pdf
 - [산업분석] 유틸리티 - 성장성과 밸류에이션 시소게임. 숨은 가치 찾.. | 대신증권 | 2026-06-18 | 우선순위 14.15 | https://stock.pstatic.net/stock-research/industry/15/20260618_industry_264607000.pdf
-- [투자정보] FOMC 대기 국면 속 SK 하이닉스 신고가 경신 | 대신증권 | 2026-06-18 | 우선순위 13.93 | https://stock.pstatic.net/stock-research/invest/15/20260618_invest_208349000.pdf
+- [투자정보] FOMC 대기 국면 속 SK 하이닉스 신고가 경신 | 대신증권 | 2026-06-18 | 우선순위 14.10 | https://stock.pstatic.net/stock-research/invest/15/20260618_invest_208349000.pdf
 - [산업분석] 기타 - 안녕하세요 데일리에요(로봇/방산/조선) | 유진투자증권 | 2026-06-18 | 우선순위 13.80 | https://stock.pstatic.net/stock-research/industry/63/20260618_industry_270624000.pdf
-- [시황정보] Daily Market Digest (6월 18일) | 신한투자증권 | 2026-06-18 | 우선순위 13.20 | https://finance.naver.com/research/market_info_read.naver?nid=36432&page=1
+- [시황정보] Daily Market Digest (6월 18일) | 신한투자증권 | 2026-06-18 | 우선순위 13.30 | https://finance.naver.com/research/market_info_read.naver?nid=36432&page=1
+- [시황정보] 마켓레이더 - 매파 FOMC vs 종전 MOU 발효, 장중 9천피 근접 (6월 18일) | 신한투자증권 | 2026-06-18 | 우선순위 13.10 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352097
 - [산업분석] 기타 - 의료기기 산업: 의료기기여 프리미엄행 급행.. | 키움증권 | 2026-06-18 | 우선순위 12.90 | https://stock.pstatic.net/stock-research/industry/39/20260618_industry_294129000.pdf
-- [시황정보] [IBKS Daily] Morning Brief(260618) | IBK투자증권 | 2026-06-18 | 우선순위 12.73 | https://stock.pstatic.net/stock-research/market/40/20260618_market_494330000.pdf
-- [시황정보] 마켓레이더 - 매파 FOMC vs 종전 MOU 발효, 장중 9천피 근접 (6월 18일) | 신한투자증권 | 2026-06-18 | 우선순위 12.70 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352097
+- [시황정보] [IBKS Daily] Morning Brief(260618) | IBK투자증권 | 2026-06-18 | 우선순위 12.85 | https://stock.pstatic.net/stock-research/market/40/20260618_market_494330000.pdf
 - [시황정보] 마켓레이더 - 매파 FOMC vs 종전 MOU 발효, 장중 9천.. | 신한투자증권 | 2026-06-18 | 우선순위 12.65 | https://finance.naver.com/research/market_info_read.naver?nid=36438&page=1
+- [투자정보] DS Futures Daily | DS투자증권 | 2026-06-18 | 우선순위 12.46 | https://stock.pstatic.net/stock-research/invest/66/20260618_invest_472973000.pdf
+- [시황정보] SK증권 아침에 슥_2026.06.18 | SK증권 | 2026-06-18 | 우선순위 12.45 | https://stock.pstatic.net/stock-research/market/64/20260618_market_596605000.pdf
 - [종목분석] 신세계 - 인바운드 매출 증가에 최대 수혜 기업 | 대신증권 | 2026-06-18 | 우선순위 12.45 | https://stock.pstatic.net/stock-research/company/15/20260618_company_839103000.pdf
-- [시황정보] SK증권 아침에 슥_2026.06.18 | SK증권 | 2026-06-18 | 우선순위 12.44 | https://stock.pstatic.net/stock-research/market/64/20260618_market_596605000.pdf
-- [시황정보] Yuanta Morning Snapshot (2026.06.18) | 유안타증권 | 2026-06-18 | 우선순위 12.33 | https://stock.pstatic.net/stock-research/market/18/20260618_market_769657000.pdf
+- [시황정보] Yuanta Morning Snapshot (2026.06.18) | 유안타증권 | 2026-06-18 | 우선순위 12.45 | https://stock.pstatic.net/stock-research/market/18/20260618_market_769657000.pdf
+- [시황정보] 국내 주식 마감 시황 - 반도체 Melt-up, 신고가 KOSPI.. | 신한투자증권 | 2026-06-18 | 우선순위 12.35 | https://finance.naver.com/research/market_info_read.naver?nid=36423&page=1
+- [시황정보] 국내 주식 마감 시황 - 9,000p(↑)+1,000p(↓)=10,000p(-) (6월 18일) | 신한투자증권 | 2026-06-18 | 우선순위 12.28 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352105
 - [산업분석] 증권 - 다시 높아진 밸류에이션 매력도 | 하나증권 | 2026-06-18 | 우선순위 12.25 | https://stock.pstatic.net/stock-research/industry/57/20260618_industry_723521000.pdf
-- [시황정보] 국내 주식 마감 시황 - 반도체 Melt-up, 신고가 KOSPI.. | 신한투자증권 | 2026-06-18 | 우선순위 12.21 | https://finance.naver.com/research/market_info_read.naver?nid=36423&page=1
 - [종목분석] 비아이매트릭스 - AI는 똑똑하게, 데이터는 안전하게 | IBK투자증권 | 2026-06-18 | 우선순위 12.20 | https://stock.pstatic.net/stock-research/company/40/20260618_company_52817000.pdf
-- [투자정보] DS Futures Daily | DS투자증권 | 2026-06-18 | 우선순위 12.15 | https://stock.pstatic.net/stock-research/invest/66/20260618_invest_472973000.pdf
 - [산업분석] 인터넷포탈 - [IBKS Daily] 인터넷/게임 | IBK투자증권 | 2026-06-18 | 우선순위 11.95 | https://stock.pstatic.net/stock-research/industry/40/20260618_industry_134683000.pdf
-- [시황정보] [Morning Brief] 매파적 6월 FOMC, 미 증시 하락 마감 | iM증권 | 2026-06-18 | 우선순위 11.46 | https://stock.pstatic.net/stock-research/market/61/20260618_market_865709000.pdf
-- [투자정보] 6월 FOMC: 케빈 워시 시대 개막. 치트키(태스크포스).. | 대신증권 | 2026-06-18 | 우선순위 11.22 | https://stock.pstatic.net/stock-research/invest/15/20260618_invest_500244000.pdf
-- [시황정보] 6/17 KB 리서치 장마감코멘트 | KB증권 | 2026-06-18 | 우선순위 11.08 | https://stock.pstatic.net/stock-research/market/58/20260618_market_636006000.pdf
+- [시황정보] [Morning Brief] 매파적 6월 FOMC, 미 증시 하락 마감 | iM증권 | 2026-06-18 | 우선순위 11.50 | https://stock.pstatic.net/stock-research/market/61/20260618_market_865709000.pdf
+- [산업분석] 한국&중국 마켓 클로징(6월 18일) | 미래에셋증권 | 2026-06-18 | 우선순위 11.40 | https://securities.miraeasset.com/bbs/download/2145331.pdf?attachmentId=2145331
+- [투자정보] 6월 FOMC: 케빈 워시 시대 개막. 치트키(태스크포스).. | 대신증권 | 2026-06-18 | 우선순위 11.35 | https://stock.pstatic.net/stock-research/invest/15/20260618_invest_500244000.pdf
+- [산업분석] AI 데일리 글로벌 마켓 브리핑(6월 18일) | 미래에셋증권 | 2026-06-18 | 우선순위 11.25 | https://securities.miraeasset.com/bbs/download/2145319.pdf?attachmentId=2145319
+- [시황정보] 6/17 KB 리서치 장마감코멘트 | KB증권 | 2026-06-18 | 우선순위 11.20 | https://stock.pstatic.net/stock-research/market/58/20260618_market_636006000.pdf
+- [투자정보] China Focus-5월 중국 경제 양극화 심화 | 유진투자증권 | 2026-06-18 | 우선순위 10.92 | https://stock.pstatic.net/stock-research/invest/63/20260618_invest_837374000.pdf
 - [산업분석] 유통 - 외국인 관광객 효과로 ‘경제 인구’가 증가.. | 대신증권 | 2026-06-18 | 우선순위 10.85 | https://stock.pstatic.net/stock-research/industry/15/20260618_industry_434592000.pdf
-- [투자정보] China Focus-5월 중국 경제 양극화 심화 | 유진투자증권 | 2026-06-18 | 우선순위 10.70 | https://stock.pstatic.net/stock-research/invest/63/20260618_invest_837374000.pdf
-- [투자정보] 06/18, 미 증시, 매파적이었던 6월 FOMC 여파로 장 후.. | 키움증권 | 2026-06-18 | 우선순위 10.21 | https://stock.pstatic.net/stock-research/invest/-/20260618_invest_419722000.pdf
+- [투자정보] 06/18, 미 증시, 매파적이었던 6월 FOMC 여파로 장 후.. | 키움증권 | 2026-06-18 | 우선순위 10.35 | https://stock.pstatic.net/stock-research/invest/-/20260618_invest_419722000.pdf
 - [종목분석] HEM파마 - HEM파마; 성공적인 글로벌 진출 첫 걸음 | 신한투자증권 | 2026-06-18 | 우선순위 10.07 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352090
-- [종목분석] 스티펠 - 자빌(JBL USA):[Review] 실적 상회...AI 가시성은 FY28까지 확대 | 한국투자증권 | 2026-06-18 | 우선순위 9.89 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=156421
-- [투자정보] 원유시장, 높아진 공급 정상화 기대 | 키움증권 | 2026-06-18 | 우선순위 9.80 | https://stock.pstatic.net/stock-research/invest/39/20260618_invest_948154000.pdf
-- [시황정보] 일본 주식전략; 신고가 이후의 일본 증시 | 신한투자증권 | 2026-06-18 | 우선순위 9.56 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352092
-- [투자정보] 6월 FOMC회의: 첫 만남은 늘 낯설기 마련 | 유진투자증권 | 2026-06-18 | 우선순위 9.41 | https://stock.pstatic.net/stock-research/invest/63/20260618_invest_729572000.pdf
-- [종목분석] 스티펠 - 페이첵스(PAYX USA):자체 HCM/AI 설문 결과, 4분기 실적 발표를 앞둔 시사점 | 한국투자증권 | 2026-06-18 | 우선순위 9.30 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=156420
+- [투자정보] 원유시장, 높아진 공급 정상화 기대 | 키움증권 | 2026-06-18 | 우선순위 10.06 | https://stock.pstatic.net/stock-research/invest/39/20260618_invest_948154000.pdf
+- [시황정보] 일본 주식전략; 신고가 이후의 일본 증시 | 신한투자증권 | 2026-06-18 | 우선순위 9.78 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352092
+- [투자정보] 6월 FOMC회의: 첫 만남은 늘 낯설기 마련 | 유진투자증권 | 2026-06-18 | 우선순위 9.65 | https://stock.pstatic.net/stock-research/invest/63/20260618_invest_729572000.pdf
 - [경제분석] (매크로 따라잡기) 연준 긴축 우려 확대, 환율 안정 .. | 키움증권 | 2026-06-18 | 우선순위 9.15 | https://stock.pstatic.net/stock-research/economy/39/20260618_economy_369085000.pdf
 - [종목분석] 클로봇 - 챕터 2의 서막 | 미래에셋증권 | 2026-06-18 | 우선순위 9.10 | https://stock.pstatic.net/stock-research/company/56/20260618_company_361731000.pdf
 - [종목분석] 엔에프씨 - 높아지는 ODM 사업가치 | 하나증권 | 2026-06-18 | 우선순위 9.02 | https://stock.pstatic.net/stock-research/company/57/20260618_company_899935000.pdf
 - [시황정보] 엔비디아의 채권시장 복귀전 | 메리츠증권 | 2026-06-18 | 우선순위 8.95 | https://stock.pstatic.net/stock-research/market/17/20260618_market_124210000.pdf
+- [투자정보] 06/18 달러, 매파적 FOMC에 상승 | 키움증권 | 2026-06-18 | 우선순위 8.95 | https://stock.pstatic.net/stock-research/invest/39/20260618_invest_323139000.pdf
+- [채권분석] 6월 FOMC: 점도표로는 ‘매파적’ | 대신증권 | 2026-06-18 | 우선순위 8.83 | https://stock.pstatic.net/stock-research/debenture/15/20260618_debenture_458632000.pdf
 - [시황정보] 6/18 KB 리서치 모닝코멘트 | KB증권 | 2026-06-18 | 우선순위 8.75 | https://stock.pstatic.net/stock-research/market/58/20260618_market_197217000.pdf
-- [투자정보] 06/18 달러, 매파적 FOMC에 상승 | 키움증권 | 2026-06-18 | 우선순위 8.73 | https://stock.pstatic.net/stock-research/invest/39/20260618_invest_323139000.pdf
 - [경제분석] [Global Macro Alert] 6월 FOMC: 케빈 워시보다 다수.. | 하나증권 | 2026-06-18 | 우선순위 8.70 | https://stock.pstatic.net/stock-research/economy/57/20260618_economy_895348000.pdf
-- [채권분석] 6월 FOMC: 점도표로는 ‘매파적’ | 대신증권 | 2026-06-18 | 우선순위 8.62 | https://stock.pstatic.net/stock-research/debenture/15/20260618_debenture_458632000.pdf
-- [투자정보] ETF 수급 Weekly; 전력 ETF: 주도주 방어력을 결정하.. | 신한투자증권 | 2026-06-18 | 우선순위 8.41 | https://finance.naver.com/research/invest_read.naver?nid=39230&page=1
-- [산업분석] 반도체 - Rubin Ultra와 HBM4E의 변화 | iM증권 | 2026-06-18 | 우선순위 8.40 | https://stock.pstatic.net/stock-research/industry/61/20260618_industry_907123000.pdf
+- [투자정보] ETF 수급 Weekly; 전력 ETF: 주도주 방어력을 결정하.. | 신한투자증권 | 2026-06-18 | 우선순위 8.60 | https://finance.naver.com/research/invest_read.naver?nid=39230&page=1
+- [산업분석] 반도체 - Rubin Ultra와 HBM4E의 변화? | iM증권 | 2026-06-18 | 우선순위 8.40 | https://stock.pstatic.net/stock-research/industry/61/20260618_industry_907123000.pdf
 - [산업분석] 에너지 - 대미투자 본격화 관련 코멘트 | 교보증권 | 2026-06-18 | 우선순위 8.40 | https://stock.pstatic.net/stock-research/industry/62/20260618_industry_912705000.pdf
-- [종목분석] 스티펠 - 밸몬트 인더스트리스(VMI USA):Investor Day: 유틸리티 성장에 기반한 29년 목표, 추가 업사이드도 존재 | 한국투자증권 | 2026-06-18 | 우선순위 8.40 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=156418
 - [산업분석] 은행 - JTBC 디폴트 관련 금융업 영향 점검 | 대신증권 | 2026-06-18 | 우선순위 8.30 | https://stock.pstatic.net/stock-research/industry/15/20260618_industry_485880000.pdf
-- [경제분석] 한국 명목 성장률10%의 의미 | 신한투자증권 | 2026-06-18 | 우선순위 8.19 | https://finance.naver.com/research/economy_read.naver?nid=13452&page=1
-- [경제분석] 워시 연준, 익숨함과의 결별 그리고 불친절함 | iM증권 | 2026-06-18 | 우선순위 8.07 | https://stock.pstatic.net/stock-research/economy/61/20260618_economy_290602000.pdf
-- [채권분석] 6월 FOMC: 연내 인상 가능성 시사. 다만, 실제 인상에.. | 교보증권 | 2026-06-18 | 우선순위 7.75 | https://stock.pstatic.net/stock-research/debenture/62/20260618_debenture_934338000.pdf
+- [경제분석] 한국 명목 성장률10%의 의미 | 신한투자증권 | 2026-06-18 | 우선순위 8.20 | https://finance.naver.com/research/economy_read.naver?nid=13452&page=1
+- [경제분석] 워시 연준, 익숨함과의 결별 그리고 불친절함 | iM증권 | 2026-06-18 | 우선순위 8.15 | https://stock.pstatic.net/stock-research/economy/61/20260618_economy_290602000.pdf
+- [채권분석] 6월 FOMC: 연내 인상 가능성 시사. 다만, 실제 인상에.. | 교보증권 | 2026-06-18 | 우선순위 8.07 | https://stock.pstatic.net/stock-research/debenture/62/20260618_debenture_934338000.pdf
 - [산업분석] 유통 - 404 New era: 출산율 반등과 외국인 러쉬 | 유진투자증권 | 2026-06-18 | 우선순위 7.65 | https://stock.pstatic.net/stock-research/industry/63/20260618_industry_589851000.pdf
-- [시황정보] SK증권 Global Carbon Market Daily_260618 | SK증권 | 2026-06-18 | 우선순위 7.26 | https://stock.pstatic.net/stock-research/market/64/20260618_market_434490000.pdf
-- [채권분석] 6월 FOMC Review: 변화의 연준, 금리는 동결 | 키움증권 | 2026-06-18 | 우선순위 7.11 | https://stock.pstatic.net/stock-research/debenture/39/20260618_debenture_131009000.pdf
-- [채권분석] 6월 FOMC 리뷰: 변화의 서막 | 유진투자증권 | 2026-06-18 | 우선순위 6.94 | https://stock.pstatic.net/stock-research/debenture/63/20260618_debenture_928973000.pdf
-- [시황정보] Daily Morning Brief(2026.06.18) | 다올투자증권 | 2026-06-18 | 우선순위 6.89 | https://stock.pstatic.net/stock-research/market/76/20260618_market_837145000.pdf
-- [투자정보] 주식시장, 금리를 배제하라: 2) AI, 주가-금리 동행을.. | 신한투자증권 | 2026-06-18 | 우선순위 6.82 | https://finance.naver.com/research/invest_read.naver?nid=39237&page=1
-- [투자정보] 글로벌 테크 - 네오클라우드: 을에서 갑으로 | 유진투자증권 | 2026-06-18 | 우선순위 6.80 | https://stock.pstatic.net/stock-research/invest/63/20260618_invest_181734000.pdf
+- [시황정보] SK증권 Global Carbon Market Daily_260618 | SK증권 | 2026-06-18 | 우선순위 7.45 | https://stock.pstatic.net/stock-research/market/64/20260618_market_434490000.pdf
+- [채권분석] 6월 FOMC Review: 변화의 연준, 금리는 동결 | 키움증권 | 2026-06-18 | 우선순위 7.31 | https://stock.pstatic.net/stock-research/debenture/39/20260618_debenture_131009000.pdf
+- [채권분석] 6월 FOMC 리뷰: 변화의 서막 | 유진투자증권 | 2026-06-18 | 우선순위 7.14 | https://stock.pstatic.net/stock-research/debenture/63/20260618_debenture_928973000.pdf
+- [시황정보] Daily Morning Brief(2026.06.18) | 다올투자증권 | 2026-06-18 | 우선순위 7.05 | https://stock.pstatic.net/stock-research/market/76/20260618_market_837145000.pdf
+- [산업분석] 은행 - 은행; 4월 은행 연체율 동향 | 신한투자증권 | 2026-06-18 | 우선순위 7.00 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352099
+- [투자정보] 글로벌 테크 - 네오클라우드: 을에서 갑으로 | 유진투자증권 | 2026-06-18 | 우선순위 6.95 | https://stock.pstatic.net/stock-research/invest/63/20260618_invest_181734000.pdf
+- [투자정보] 이슈&ETF | 미래에셋증권 | 2026-06-18 | 우선순위 6.90 | https://securities.miraeasset.com/bbs/download/2145327.pdf?attachmentId=2145327
+- [투자정보] 주식시장, 금리를 배제하라: 2) AI, 주가-금리 동행을.. | 신한투자증권 | 2026-06-18 | 우선순위 6.85 | https://finance.naver.com/research/invest_read.naver?nid=39237&page=1
 - [종목분석] 지씨셀 - NDR 후기: 세포치료제 포트폴리오 확대 | 미래에셋증권 | 2026-06-18 | 우선순위 6.70 | https://stock.pstatic.net/stock-research/company/56/20260618_company_782614000.pdf
 - [산업분석] 은행 - 4월 연체율: 내려올랑 말랑 | 한화투자증권 | 2026-06-18 | 우선순위 6.60 | https://stock.pstatic.net/stock-research/industry/16/20260618_industry_170926000.pdf
-- [종목분석] 스티펠 - 젠섬(THRM USA):경영진 면담 후기: 성장과 마진 확대 기회가 있는 신규 시장 주목 | 한국투자증권 | 2026-06-18 | 우선순위 6.35 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=156419
-- [종목분석] 스티펠 - 인튜이트(INTU USA):멈춰선 듯한 성장 열차, 투자의견 중립으로 하향 | 한국투자증권 | 2026-06-18 | 우선순위 6.20 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=156422
-- [경제분석] 미국 FOMC; 가이던스 없는 물가 우선주의 | 신한투자증권 | 2026-06-18 | 우선순위 6.09 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352093
-- [시황정보] 글로벌 주식전략; 주식시장, 금리를 배제하라: 2)AI, 주가-금리 동행을 유도한다 | 신한투자증권 | 2026-06-18 | 우선순위 5.98 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352096
-- [경제분석] 가이던스 없는 물가 우선주의 | 신한투자증권 | 2026-06-18 | 우선순위 5.95 | https://finance.naver.com/research/economy_read.naver?nid=13456&page=1
-- [채권분석] [IBKS Bond Inside] AI 프로메테우스 대직代職, 매번 .. | IBK투자증권 | 2026-06-18 | 우선순위 5.90 | https://stock.pstatic.net/stock-research/debenture/40/20260618_debenture_847492000.pdf
-- [시황정보] 2026년 6월 18일 한눈에 투데이 | 한국투자증권 | 2026-06-18 | 우선순위 5.85 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=156417
-- [투자정보] 신고가 이후의 일본 증시 | 신한투자증권 | 2026-06-18 | 우선순위 5.76 | https://finance.naver.com/research/invest_read.naver?nid=39229&page=1
-- [경제분석] 5월 미국 소매판매: 수요 우려 완화 | 한화투자증권 | 2026-06-18 | 우선순위 5.66 | https://stock.pstatic.net/stock-research/economy/16/20260618_economy_983680000.pdf
-- [채권분석] [6월 FOMC] 물가안정, 12월 인상, 금리 상승 | 하나증권 | 2026-06-18 | 우선순위 5.46 | https://stock.pstatic.net/stock-research/debenture/57/20260618_debenture_671729000.pdf
-- [경제분석] 6월 FOMC 리뷰: 대화의 방식을 바꾼 연준 | 유안타증권 | 2026-06-18 | 우선순위 5.41 | https://stock.pstatic.net/stock-research/economy/18/20260618_economy_404551000.pdf
-- [채권분석] [FOMC 리뷰] Warsh의 청사진 | 한화투자증권 | 2026-06-18 | 우선순위 4.90 | https://stock.pstatic.net/stock-research/debenture/16/20260618_debenture_601845000.pdf
+- [시황정보] 글로벌 주식전략; 주식시장, 금리를 배제하라: 2)AI, 주가-금리 동행을 유도한다 | 신한투자증권 | 2026-06-18 | 우선순위 6.43 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352096
+- [경제분석] 미국 FOMC; 가이던스 없는 물가 우선주의 | 신한투자증권 | 2026-06-18 | 우선순위 6.26 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352093
+- [채권분석] [IBKS Bond Inside] AI 프로메테우스 대직代職, 매번 .. | IBK투자증권 | 2026-06-18 | 우선순위 6.12 | https://stock.pstatic.net/stock-research/debenture/40/20260618_debenture_847492000.pdf
+- [경제분석] 가이던스 없는 물가 우선주의 | 신한투자증권 | 2026-06-18 | 우선순위 6.05 | https://finance.naver.com/research/economy_read.naver?nid=13456&page=1
+- [투자정보] 신고가 이후의 일본 증시 | 신한투자증권 | 2026-06-18 | 우선순위 6.00 | https://finance.naver.com/research/invest_read.naver?nid=39229&page=1
+- [경제분석] 5월 미국 소매판매: 수요 우려 완화 | 한화투자증권 | 2026-06-18 | 우선순위 6.00 | https://stock.pstatic.net/stock-research/economy/16/20260618_economy_983680000.pdf
+- [채권분석] [6월 FOMC] 물가안정, 12월 인상, 금리 상승 | 하나증권 | 2026-06-18 | 우선순위 5.78 | https://stock.pstatic.net/stock-research/debenture/57/20260618_debenture_671729000.pdf
+- [경제분석] 6월 FOMC 리뷰: 대화의 방식을 바꾼 연준 | 유안타증권 | 2026-06-18 | 우선순위 5.65 | https://stock.pstatic.net/stock-research/economy/18/20260618_economy_404551000.pdf
+- [채권분석] [FOMC 리뷰] Warsh의 청사진 | 한화투자증권 | 2026-06-18 | 우선순위 5.23 | https://stock.pstatic.net/stock-research/debenture/16/20260618_debenture_601845000.pdf
+- [채권분석] Eugenes FICC Update | 유진투자증권 | 2026-06-18 | 우선순위 4.89 | https://stock.pstatic.net/stock-research/debenture/63/20260618_debenture_766646000.pdf
 - [시황정보] Daily 신한생각 (6월 18일) | 신한투자증권 | 2026-06-18 | 우선순위 4.85 | https://finance.naver.com/research/market_info_read.naver?nid=36433&page=1
-- [채권분석] Eugenes FICC Update | 유진투자증권 | 2026-06-18 | 우선순위 4.72 | https://stock.pstatic.net/stock-research/debenture/63/20260618_debenture_766646000.pdf
-- [시황정보] Daily Morning Brief(2026.06.17) | 다올투자증권 | 2026-06-18 | 우선순위 4.45 | https://stock.pstatic.net/stock-research/market/76/20260618_market_670986000.pdf
-- [채권분석] 6월 FOMC: 시장을 먼저 긴축시키다 | iM증권 | 2026-06-18 | 우선순위 4.09 | https://stock.pstatic.net/stock-research/debenture/61/20260618_debenture_744737000.pdf
-- [채권분석] Daily Bond Morning Brief(2026.06.17) | 다올투자증권 | 2026-06-18 | 우선순위 3.87 | https://stock.pstatic.net/stock-research/debenture/76/20260618_debenture_614466000.pdf
-- [채권분석] [6월 FOMC Review] 워시의 연준 개혁, 말이 아닌 ‘말.. | SK증권 | 2026-06-18 | 우선순위 3.81 | https://stock.pstatic.net/stock-research/debenture/64/20260618_debenture_525483000.pdf
-- [채권분석] Daily Bond Morning Brief(2026.06.18) | 다올투자증권 | 2026-06-18 | 우선순위 3.76 | https://stock.pstatic.net/stock-research/debenture/76/20260618_debenture_666610000.pdf
-- [시황정보] [DS Defense Daily] 2026-06-18 | DS투자증권 | 2026-06-18 | 우선순위 3.75 | https://stock.pstatic.net/stock-research/market/66/20260618_market_669985000.pdf
+- [시황정보] Daily Morning Brief(2026.06.17) | 다올투자증권 | 2026-06-18 | 우선순위 4.65 | https://stock.pstatic.net/stock-research/market/76/20260618_market_670986000.pdf
+- [채권분석] 6월 FOMC: 시장을 먼저 긴축시키다 | iM증권 | 2026-06-18 | 우선순위 4.28 | https://stock.pstatic.net/stock-research/debenture/61/20260618_debenture_744737000.pdf
+- [채권분석] Daily Bond Morning Brief(2026.06.17) | 다올투자증권 | 2026-06-18 | 우선순위 4.13 | https://stock.pstatic.net/stock-research/debenture/76/20260618_debenture_614466000.pdf
+- [채권분석] [6월 FOMC Review] 워시의 연준 개혁, 말이 아닌 ‘말.. | SK증권 | 2026-06-18 | 우선순위 4.05 | https://stock.pstatic.net/stock-research/debenture/64/20260618_debenture_525483000.pdf
+- [시황정보] [DS Defense Daily] 2026-06-18 | DS투자증권 | 2026-06-18 | 우선순위 4.00 | https://stock.pstatic.net/stock-research/market/66/20260618_market_669985000.pdf
+- [채권분석] Daily Bond Morning Brief(2026.06.18) | 다올투자증권 | 2026-06-18 | 우선순위 3.98 | https://stock.pstatic.net/stock-research/debenture/76/20260618_debenture_666610000.pdf
+- [투자정보] 넥스트바이오메디컬 (389650/Not Rated) | 미래에셋증권 | 2026-06-18 | 우선순위 3.90 | https://securities.miraeasset.com/bbs/download/2145330.pdf?attachmentId=2145330
+- [시황정보] 마켓 뷰(6월 18일) | 미래에셋증권 | 2026-06-18 | 우선순위 3.20 | https://securities.miraeasset.com/bbs/download/2145323.pdf?attachmentId=2145323
