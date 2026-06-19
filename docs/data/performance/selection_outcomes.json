@@ -1,29 +1,29 @@
 {
-  "updated_at": "2026-06-18T19:58:44+09:00",
+  "updated_at": "2026-06-19T13:50:04+09:00",
   "summary": {
-    "tracked_selections": 389,
+    "tracked_selections": 401,
     "pending_by_horizon": {
-      "1d": 13,
+      "1d": 12,
       "7d": 65,
       "30d": 257
     },
     "completed_by_horizon": {
-      "1d": 376,
-      "7d": 324,
-      "30d": 132
+      "1d": 389,
+      "7d": 336,
+      "30d": 144
     },
     "priced_by_horizon": {
-      "1d": 84,
-      "7d": 67,
-      "30d": 11
+      "1d": 88,
+      "7d": 71,
+      "30d": 14
     },
     "average_price_return_by_horizon": {
-      "1d": -0.54,
-      "7d": 2.4,
-      "30d": 6.97
+      "1d": -0.66,
+      "7d": 1.87,
+      "30d": 3.48
     },
     "price_source_counts": {
-      "naver_daily_price": 162
+      "naver_daily_price": 173
     },
     "horizons": [
       "1d",
@@ -32,52 +32,52 @@
     ],
     "by_horizon": {
       "1d": {
-        "priced": 84,
-        "avg_return_pct": -0.54,
-        "hit_rate_pct": 32.1,
-        "avg_excess_return_pct": -1.29
+        "priced": 88,
+        "avg_return_pct": -0.66,
+        "hit_rate_pct": 31.8,
+        "avg_excess_return_pct": -1.28
       },
       "7d": {
-        "priced": 67,
-        "avg_return_pct": 2.4,
-        "hit_rate_pct": 53.7,
-        "avg_excess_return_pct": -4.26
+        "priced": 71,
+        "avg_return_pct": 1.87,
+        "hit_rate_pct": 50.7,
+        "avg_excess_return_pct": -5.87
       },
       "30d": {
-        "priced": 11,
-        "avg_return_pct": 6.97,
-        "hit_rate_pct": 54.5,
-        "avg_excess_return_pct": -6.28
+        "priced": 14,
+        "avg_return_pct": 3.48,
+        "hit_rate_pct": 50.0,
+        "avg_excess_return_pct": -11.97
       }
     },
     "by_score_bucket": [
       {
         "label": "12 이상",
-        "priced": 144,
+        "priced": 153,
         "horizons": {
           "1d": {
-            "priced": 75,
-            "avg_return_pct": -0.98,
-            "hit_rate_pct": 29.3,
-            "avg_excess_return_pct": -1.29
+            "priced": 79,
+            "avg_return_pct": -1.08,
+            "hit_rate_pct": 29.1,
+            "avg_excess_return_pct": -1.28
           },
           "7d": {
-            "priced": 58,
-            "avg_return_pct": 1.8,
-            "hit_rate_pct": 55.2,
-            "avg_excess_return_pct": -4.26
+            "priced": 62,
+            "avg_return_pct": 1.22,
+            "hit_rate_pct": 51.6,
+            "avg_excess_return_pct": -5.87
           },
           "30d": {
-            "priced": 11,
-            "avg_return_pct": 6.97,
-            "hit_rate_pct": 54.5,
-            "avg_excess_return_pct": -6.28
+            "priced": 12,
+            "avg_return_pct": 6.49,
+            "hit_rate_pct": 58.3,
+            "avg_excess_return_pct": -7.62
           }
         }
       },
       {
         "label": "10–12",
-        "priced": 18,
+        "priced": 20,
         "horizons": {
           "1d": {
             "priced": 9,
@@ -90,6 +90,12 @@
             "avg_return_pct": 6.29,
             "hit_rate_pct": 44.4,
             "avg_excess_return_pct": null
+          },
+          "30d": {
+            "priced": 2,
+            "avg_return_pct": -14.58,
+            "hit_rate_pct": 0.0,
+            "avg_excess_return_pct": -38.08
           }
         }
       }
@@ -97,33 +103,57 @@
     "by_category": [
       {
         "label": "종목분석",
-        "priced": 162,
+        "priced": 173,
         "horizons": {
           "1d": {
-            "priced": 84,
-            "avg_return_pct": -0.54,
-            "hit_rate_pct": 32.1,
-            "avg_excess_return_pct": -1.29
+            "priced": 88,
+            "avg_return_pct": -0.66,
+            "hit_rate_pct": 31.8,
+            "avg_excess_return_pct": -1.28
           },
           "7d": {
-            "priced": 67,
-            "avg_return_pct": 2.4,
-            "hit_rate_pct": 53.7,
-            "avg_excess_return_pct": -4.26
+            "priced": 71,
+            "avg_return_pct": 1.87,
+            "hit_rate_pct": 50.7,
+            "avg_excess_return_pct": -5.87
           },
           "30d": {
-            "priced": 11,
-            "avg_return_pct": 6.97,
-            "hit_rate_pct": 54.5,
-            "avg_excess_return_pct": -6.28
+            "priced": 14,
+            "avg_return_pct": 3.48,
+            "hit_rate_pct": 50.0,
+            "avg_excess_return_pct": -11.97
           }
         }
       }
     ],
     "by_broker": [
       {
+        "label": "하나증권",
+        "priced": 29,
+        "horizons": {
+          "1d": {
+            "priced": 14,
+            "avg_return_pct": -0.72,
+            "hit_rate_pct": 28.6,
+            "avg_excess_return_pct": -0.31
+          },
+          "7d": {
+            "priced": 12,
+            "avg_return_pct": 3.31,
+            "hit_rate_pct": 58.3,
+            "avg_excess_return_pct": -2.71
+          },
+          "30d": {
+            "priced": 3,
+            "avg_return_pct": -17.15,
+            "hit_rate_pct": 0.0,
+            "avg_excess_return_pct": -35.39
+          }
+        }
+      },
+      {
         "label": "키움증권",
-        "priced": 27,
+        "priced": 28,
         "horizons": {
           "1d": {
             "priced": 15,
@@ -132,46 +162,22 @@
             "avg_excess_return_pct": 0.11
           },
           "7d": {
-            "priced": 12,
-            "avg_return_pct": -3.96,
-            "hit_rate_pct": 41.7,
-            "avg_excess_return_pct": -10.02
-          }
-        }
-      },
-      {
-        "label": "하나증권",
-        "priced": 25,
-        "horizons": {
-          "1d": {
             "priced": 13,
-            "avg_return_pct": -0.52,
-            "hit_rate_pct": 30.8,
-            "avg_excess_return_pct": -0.01
-          },
-          "7d": {
-            "priced": 10,
-            "avg_return_pct": 5.19,
-            "hit_rate_pct": 70.0,
-            "avg_excess_return_pct": 2.49
-          },
-          "30d": {
-            "priced": 2,
-            "avg_return_pct": -15.64,
-            "hit_rate_pct": 0.0,
-            "avg_excess_return_pct": -31.27
+            "avg_return_pct": -4.04,
+            "hit_rate_pct": 38.5,
+            "avg_excess_return_pct": -10.53
           }
         }
       },
       {
         "label": "대신증권",
-        "priced": 15,
+        "priced": 19,
         "horizons": {
           "1d": {
-            "priced": 9,
-            "avg_return_pct": 0.01,
+            "priced": 12,
+            "avg_return_pct": -0.72,
             "hit_rate_pct": 33.3,
-            "avg_excess_return_pct": -1.69
+            "avg_excess_return_pct": -1.46
           },
           "7d": {
             "priced": 5,
@@ -180,16 +186,16 @@
             "avg_excess_return_pct": null
           },
           "30d": {
-            "priced": 1,
-            "avg_return_pct": -2.41,
-            "hit_rate_pct": 0.0,
-            "avg_excess_return_pct": -26.47
+            "priced": 2,
+            "avg_return_pct": -0.61,
+            "hit_rate_pct": 50.0,
+            "avg_excess_return_pct": -24.38
           }
         }
       },
       {
         "label": "미래에셋증권",
-        "priced": 15,
+        "priced": 16,
         "horizons": {
           "1d": {
             "priced": 7,
@@ -198,10 +204,10 @@
             "avg_excess_return_pct": 0.0
           },
           "7d": {
-            "priced": 6,
-            "avg_return_pct": 3.65,
-            "hit_rate_pct": 50.0,
-            "avg_excess_return_pct": 0.22
+            "priced": 7,
+            "avg_return_pct": 1.51,
+            "hit_rate_pct": 42.9,
+            "avg_excess_return_pct": -10.34
           },
           "30d": {
             "priced": 2,
@@ -339,7 +345,7 @@
       },
       {
         "label": "교보증권",
-        "priced": 6,
+        "priced": 7,
         "horizons": {
           "1d": {
             "priced": 3,
@@ -352,6 +358,12 @@
             "avg_return_pct": -5.53,
             "hit_rate_pct": 33.3,
             "avg_excess_return_pct": null
+          },
+          "30d": {
+            "priced": 1,
+            "avg_return_pct": -9.01,
+            "hit_rate_pct": 0.0,
+            "avg_excess_return_pct": -32.51
           }
         }
       },
@@ -443,6 +455,625 @@
   },
   "selections": [
     {
+      "key": "2026-06-19:93616",
+      "selected_date": "2026-06-19",
+      "report_id": "93616",
+      "display_title": "삼성물산 - 명확한 배당 Formula, 1차 시총 타겟 100조원",
+      "subject": "삼성물산",
+      "subject_key": "삼성물산",
+      "ticker": "028260",
+      "broker": "DS투자증권",
+      "category": "company",
+      "category_label": "종목분석",
+      "score": 23.65,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 종목(삼성전자, 삼성에스디에스)",
+        "관심 섹터/키워드(건설)",
+        "조회수 상위권",
+        "목표가 포함"
+      ],
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93616&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260619_company_664436000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260619_company_664436000.pdf",
+      "target_price": "620,000",
+      "target_price_value": 620000,
+      "opinion": "매수",
+      "horizons": {
+        "1d": {
+          "days": 1,
+          "due_date": "2026-06-20",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "7d": {
+          "days": 7,
+          "due_date": "2026-06-26",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "30d": {
+          "days": 30,
+          "due_date": "2026-07-19",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        }
+      }
+    },
+    {
+      "key": "2026-06-19:93610",
+      "selected_date": "2026-06-19",
+      "report_id": "93610",
+      "display_title": "대한항공 - 명확한 성장 방향성, 기업 가치도 상승할 것",
+      "subject": "대한항공",
+      "subject_key": "대한항공",
+      "ticker": "003490",
+      "broker": "iM증권",
+      "category": "company",
+      "category_label": "종목분석",
+      "score": 22.7,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "관심 종목(대한항공)",
+        "관심 섹터/키워드(반도체, 건설, 항공)",
+        "조회수 상위권",
+        "목표가 포함"
+      ],
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93610&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/61/20260619_company_736435000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/61/20260619_company_736435000.pdf",
+      "target_price": "40,000",
+      "target_price_value": 40000,
+      "opinion": "Buy",
+      "horizons": {
+        "1d": {
+          "days": 1,
+          "due_date": "2026-06-20",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "7d": {
+          "days": 7,
+          "due_date": "2026-06-26",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "30d": {
+          "days": 30,
+          "due_date": "2026-07-19",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        }
+      }
+    },
+    {
+      "key": "2026-06-19:36457",
+      "selected_date": "2026-06-19",
+      "report_id": "36457",
+      "display_title": "[주식시황 위클리] 주간:知 - 9천피 시대에 코스닥이 ..",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "broker": "유안타증권",
+      "category": "market",
+      "category_label": "시황정보",
+      "score": 16.45,
+      "score_reasons": [
+        "시황정보 카테고리",
+        "관심 종목(삼성전자, SK하이닉스)",
+        "관심 섹터/키워드(반도체, 방산, 로봇)",
+        "이익 추정 상향/증가",
+        "이익 추정 하향/감소"
+      ],
+      "detail_url": "https://finance.naver.com/research/market_info_read.naver?nid=36457&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/market/18/20260619_market_971366000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/market/18/20260619_market_971366000.pdf",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "horizons": {
+        "1d": {
+          "days": 1,
+          "due_date": "2026-06-20",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "7d": {
+          "days": 7,
+          "due_date": "2026-06-26",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "30d": {
+          "days": 30,
+          "due_date": "2026-07-19",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        }
+      }
+    },
+    {
+      "key": "2026-06-19:39239",
+      "selected_date": "2026-06-19",
+      "report_id": "39239",
+      "display_title": "06/19, 미 증시, 6월 FOMC 부담 소화, 반도체주 랠리 ..",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "broker": "키움증권",
+      "category": "invest",
+      "category_label": "투자정보",
+      "score": 15.56,
+      "score_reasons": [
+        "투자정보 카테고리",
+        "관심 종목(삼성전자, SK하이닉스)",
+        "관심 섹터/키워드(반도체, 방산)",
+        "이익 추정 상향/증가",
+        "우선 추적 증권사"
+      ],
+      "detail_url": "https://finance.naver.com/research/invest_read.naver?nid=39239&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/invest/39/20260619_invest_776404000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/invest/39/20260619_invest_776404000.pdf",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "horizons": {
+        "1d": {
+          "days": 1,
+          "due_date": "2026-06-20",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "7d": {
+          "days": 7,
+          "due_date": "2026-06-26",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "30d": {
+          "days": 30,
+          "due_date": "2026-07-19",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        }
+      }
+    },
+    {
+      "key": "2026-06-19:mirae-2340573",
+      "selected_date": "2026-06-19",
+      "report_id": "mirae-2340573",
+      "display_title": "AI 데일리 글로벌 마켓 브리핑(6월 19일)",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "broker": "미래에셋증권",
+      "category": "industry",
+      "category_label": "산업분석",
+      "score": 14.9,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "공식 소스",
+        "관심 종목(삼성전자, SK하이닉스)",
+        "관심 섹터/키워드(반도체, 항공)",
+        "이익 추정 상향/증가"
+      ],
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2340573&messageNumber=2642&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2145332.pdf?attachmentId=2145332",
+      "primary_url": "https://securities.miraeasset.com/bbs/download/2145332.pdf?attachmentId=2145332",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "horizons": {
+        "1d": {
+          "days": 1,
+          "due_date": "2026-06-20",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "7d": {
+          "days": 7,
+          "due_date": "2026-06-26",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "30d": {
+          "days": 30,
+          "due_date": "2026-07-19",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        }
+      }
+    },
+    {
+      "key": "2026-06-19:39240",
+      "selected_date": "2026-06-19",
+      "report_id": "39240",
+      "display_title": "[IBKS Daily] Start with IBKS(2026.06.19) 뉴욕증시,..",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "broker": "IBK투자증권",
+      "category": "invest",
+      "category_label": "투자정보",
+      "score": 14.75,
+      "score_reasons": [
+        "투자정보 카테고리",
+        "관심 종목(삼성전자, SK하이닉스, 미래에셋증권)",
+        "관심 섹터/키워드(반도체, 로봇, 건설)",
+        "이익 추정 상향/증가",
+        "본문 정보량 풍부"
+      ],
+      "detail_url": "https://finance.naver.com/research/invest_read.naver?nid=39240&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/invest/40/20260619_invest_70804000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/invest/40/20260619_invest_70804000.pdf",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "horizons": {
+        "1d": {
+          "days": 1,
+          "due_date": "2026-06-20",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "7d": {
+          "days": 7,
+          "due_date": "2026-06-26",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "30d": {
+          "days": 30,
+          "due_date": "2026-07-19",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        }
+      }
+    },
+    {
+      "key": "2026-06-19:93617",
+      "selected_date": "2026-06-19",
+      "report_id": "93617",
+      "display_title": "KT&G - 외국인이 더 좋아하는 K-담배",
+      "subject": "KT&G",
+      "subject_key": "kt-g",
+      "ticker": "033780",
+      "broker": "DS투자증권",
+      "category": "company",
+      "category_label": "종목분석",
+      "score": 14.27,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "조회수 상위권",
+        "목표가 포함",
+        "투자의견 포함",
+        "실적/마진 추정치 포함"
+      ],
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93617&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/66/20260619_company_91001000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/66/20260619_company_91001000.pdf",
+      "target_price": "240,000",
+      "target_price_value": 240000,
+      "opinion": "매수",
+      "horizons": {
+        "1d": {
+          "days": 1,
+          "due_date": "2026-06-20",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "7d": {
+          "days": 7,
+          "due_date": "2026-06-26",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "30d": {
+          "days": 30,
+          "due_date": "2026-07-19",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        }
+      }
+    },
+    {
+      "key": "2026-06-19:45020",
+      "selected_date": "2026-06-19",
+      "report_id": "45020",
+      "display_title": "기타 - 안녕하세요 데일리에요(로봇/방산/조선)",
+      "subject": "기타",
+      "subject_key": "기타",
+      "ticker": null,
+      "broker": "유진투자증권",
+      "category": "industry",
+      "category_label": "산업분석",
+      "score": 13.8,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "관심 종목(대한항공)",
+        "관심 섹터/키워드(방산, 로봇, 우주)",
+        "핵심 키워드(방산)",
+        "PDF 본문 확보"
+      ],
+      "detail_url": "https://finance.naver.com/research/industry_read.naver?nid=45020&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/industry/63/20260619_industry_584163000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/industry/63/20260619_industry_584163000.pdf",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "horizons": {
+        "1d": {
+          "days": 1,
+          "due_date": "2026-06-20",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "7d": {
+          "days": 7,
+          "due_date": "2026-06-26",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "30d": {
+          "days": 30,
+          "due_date": "2026-07-19",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        }
+      }
+    },
+    {
+      "key": "2026-06-19:13463",
+      "selected_date": "2026-06-19",
+      "report_id": "13463",
+      "display_title": "06/19, Kiwoom Morning Letter",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "broker": "키움증권",
+      "category": "economy",
+      "category_label": "경제분석",
+      "score": 13.71,
+      "score_reasons": [
+        "경제분석 카테고리",
+        "관심 종목(삼성전자, SK하이닉스)",
+        "관심 섹터/키워드(반도체, 건설, 우주)",
+        "우선 추적 증권사",
+        "본문 정보량 풍부"
+      ],
+      "detail_url": "https://finance.naver.com/research/economy_read.naver?nid=13463&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/economy/39/20260619_economy_963718000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/economy/39/20260619_economy_963718000.pdf",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "horizons": {
+        "1d": {
+          "days": 1,
+          "due_date": "2026-06-20",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "7d": {
+          "days": 7,
+          "due_date": "2026-06-26",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "30d": {
+          "days": 30,
+          "due_date": "2026-07-19",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        }
+      }
+    },
+    {
+      "key": "2026-06-19:93609",
+      "selected_date": "2026-06-19",
+      "report_id": "93609",
+      "display_title": "LS에코에너지 - 동남아 데이터센터 수혜 확대 기대",
+      "subject": "LS에코에너지",
+      "subject_key": "ls에코에너지",
+      "ticker": "229640",
+      "broker": "IBK투자증권",
+      "category": "company",
+      "category_label": "종목분석",
+      "score": 12.48,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "목표가 포함",
+        "투자의견 포함",
+        "실적/마진 추정치 포함",
+        "이익 추정 상향/증가"
+      ],
+      "detail_url": "https://finance.naver.com/research/company_read.naver?nid=93609&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/company/40/20260619_company_321815000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/company/40/20260619_company_321815000.pdf",
+      "target_price": "76,000",
+      "target_price_value": 76000,
+      "opinion": "매수",
+      "horizons": {
+        "1d": {
+          "days": 1,
+          "due_date": "2026-06-20",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "7d": {
+          "days": 7,
+          "due_date": "2026-06-26",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "30d": {
+          "days": 30,
+          "due_date": "2026-07-19",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        }
+      }
+    },
+    {
+      "key": "2026-06-19:13462",
+      "selected_date": "2026-06-19",
+      "report_id": "13462",
+      "display_title": "06/19 Weekly Macro",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "broker": "키움증권",
+      "category": "economy",
+      "category_label": "경제분석",
+      "score": 6.12,
+      "score_reasons": [
+        "경제분석 카테고리",
+        "우선 추적 증권사",
+        "핵심 키워드(weekly)"
+      ],
+      "detail_url": "https://finance.naver.com/research/economy_read.naver?nid=13462&page=1",
+      "pdf_url": "https://stock.pstatic.net/stock-research/economy/39/20260619_economy_521842000.pdf",
+      "primary_url": "https://stock.pstatic.net/stock-research/economy/39/20260619_economy_521842000.pdf",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "horizons": {
+        "1d": {
+          "days": 1,
+          "due_date": "2026-06-20",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "7d": {
+          "days": 7,
+          "due_date": "2026-06-26",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "30d": {
+          "days": 30,
+          "due_date": "2026-07-19",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        }
+      }
+    },
+    {
+      "key": "2026-06-19:10897",
+      "selected_date": "2026-06-19",
+      "report_id": "10897",
+      "display_title": "높아진 기대 인플레이션 리스크",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "broker": "신한투자증권",
+      "category": "debenture",
+      "category_label": "채권분석",
+      "score": 5.05,
+      "score_reasons": [
+        "채권분석 카테고리",
+        "우선 추적 증권사"
+      ],
+      "detail_url": "https://finance.naver.com/research/debenture_read.naver?nid=10897&page=1",
+      "pdf_url": null,
+      "primary_url": "https://finance.naver.com/research/debenture_read.naver?nid=10897&page=1",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "horizons": {
+        "1d": {
+          "days": 1,
+          "due_date": "2026-06-20",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "7d": {
+          "days": 7,
+          "due_date": "2026-06-26",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        },
+        "30d": {
+          "days": 30,
+          "due_date": "2026-07-19",
+          "status": "pending",
+          "price_return_pct": null,
+          "volume_change_pct": null,
+          "news_count": null
+        }
+      }
+    },
+    {
       "key": "2026-06-18:93594",
       "selected_date": "2026-06-18",
       "report_id": "93594",
@@ -471,10 +1102,38 @@
         "1d": {
           "days": 1,
           "due_date": "2026-06-19",
-          "status": "pending",
-          "price_return_pct": null,
-          "volume_change_pct": null,
-          "news_count": null
+          "status": "completed",
+          "price_return_pct": -3.31,
+          "volume_change_pct": -20.2,
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "ticker": "005930",
+          "price_source": "naver_daily_price",
+          "entry_price_date": "2026-06-18",
+          "entry_close": 362500.0,
+          "exit_price_date": "2026-06-19",
+          "exit_close": 350500.0,
+          "entry_volume": 32764450,
+          "exit_volume": 26145176,
+          "price_return_status": "ok",
+          "index_code": "KOSPI",
+          "index_entry_date": "2026-06-18",
+          "index_entry_close": 9063.84,
+          "index_exit_date": "2026-06-19",
+          "index_exit_close": 8903.0,
+          "index_return_pct": -1.77,
+          "excess_return_pct": -1.54
         },
         "7d": {
           "days": 7,
@@ -523,10 +1182,38 @@
         "1d": {
           "days": 1,
           "due_date": "2026-06-19",
-          "status": "pending",
-          "price_return_pct": null,
-          "volume_change_pct": null,
-          "news_count": null
+          "status": "completed",
+          "price_return_pct": 2.0,
+          "volume_change_pct": -15.01,
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "ticker": "402340",
+          "price_source": "naver_daily_price",
+          "entry_price_date": "2026-06-18",
+          "entry_close": 1700000.0,
+          "exit_price_date": "2026-06-19",
+          "exit_close": 1734000.0,
+          "entry_volume": 1177611,
+          "exit_volume": 1000850,
+          "price_return_status": "ok",
+          "index_code": "KOSPI",
+          "index_entry_date": "2026-06-18",
+          "index_entry_close": 9063.84,
+          "index_exit_date": "2026-06-19",
+          "index_exit_close": 8903.0,
+          "index_return_pct": -1.77,
+          "excess_return_pct": 3.77
         },
         "7d": {
           "days": 7,
@@ -575,10 +1262,38 @@
         "1d": {
           "days": 1,
           "due_date": "2026-06-19",
-          "status": "pending",
-          "price_return_pct": null,
-          "volume_change_pct": null,
-          "news_count": null
+          "status": "completed",
+          "price_return_pct": -5.09,
+          "volume_change_pct": -37.54,
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "ticker": "023530",
+          "price_source": "naver_daily_price",
+          "entry_price_date": "2026-06-18",
+          "entry_close": 188700.0,
+          "exit_price_date": "2026-06-19",
+          "exit_close": 179100.0,
+          "entry_volume": 138465,
+          "exit_volume": 86484,
+          "price_return_status": "ok",
+          "index_code": "KOSPI",
+          "index_entry_date": "2026-06-18",
+          "index_entry_close": 9063.84,
+          "index_exit_date": "2026-06-19",
+          "index_exit_close": 8903.0,
+          "index_return_pct": -1.77,
+          "excess_return_pct": -3.32
         },
         "7d": {
           "days": 7,
@@ -627,10 +1342,38 @@
         "1d": {
           "days": 1,
           "due_date": "2026-06-19",
-          "status": "pending",
-          "price_return_pct": null,
-          "volume_change_pct": null,
-          "news_count": null
+          "status": "completed",
+          "price_return_pct": -5.69,
+          "volume_change_pct": -9.06,
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "ticker": "069960",
+          "price_source": "naver_daily_price",
+          "entry_price_date": "2026-06-18",
+          "entry_close": 204000.0,
+          "exit_price_date": "2026-06-19",
+          "exit_close": 192400.0,
+          "entry_volume": 181256,
+          "exit_volume": 164829,
+          "price_return_status": "ok",
+          "index_code": "KOSPI",
+          "index_entry_date": "2026-06-18",
+          "index_entry_close": 9063.84,
+          "index_exit_date": "2026-06-19",
+          "index_exit_close": 8903.0,
+          "index_return_pct": -1.77,
+          "excess_return_pct": -3.92
         },
         "7d": {
           "days": 7,
@@ -679,10 +1422,23 @@
         "1d": {
           "days": 1,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         },
         "7d": {
           "days": 7,
@@ -731,10 +1487,23 @@
         "1d": {
           "days": 1,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         },
         "7d": {
           "days": 7,
@@ -783,10 +1552,23 @@
         "1d": {
           "days": 1,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         },
         "7d": {
           "days": 7,
@@ -835,10 +1617,23 @@
         "1d": {
           "days": 1,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         },
         "7d": {
           "days": 7,
@@ -887,10 +1682,23 @@
         "1d": {
           "days": 1,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         },
         "7d": {
           "days": 7,
@@ -939,10 +1747,23 @@
         "1d": {
           "days": 1,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         },
         "7d": {
           "days": 7,
@@ -991,10 +1812,23 @@
         "1d": {
           "days": 1,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         },
         "7d": {
           "days": 7,
@@ -1042,10 +1876,23 @@
         "1d": {
           "days": 1,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         },
         "7d": {
           "days": 7,
@@ -1094,10 +1941,23 @@
         "1d": {
           "days": 1,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         },
         "7d": {
           "days": 7,
@@ -3953,10 +4813,23 @@
         "7d": {
           "days": 7,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 16,
+          "follow_up_change_count": 11,
+          "latest_report_date": "2026-06-18",
+          "latest_report_title": "기타 - 안녕하세요 데일리에요(로봇/방산/조선)",
+          "latest_broker": "유진투자증권",
+          "latest_score": 13.8,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         },
         "30d": {
           "days": 30,
@@ -4033,10 +4906,38 @@
         "7d": {
           "days": 7,
           "due_date": "2026-06-19",
-          "status": "pending",
-          "price_return_pct": null,
-          "volume_change_pct": null,
-          "news_count": null
+          "status": "completed",
+          "price_return_pct": -5.03,
+          "volume_change_pct": -17.09,
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "ticker": "484120",
+          "price_source": "naver_daily_price",
+          "entry_price_date": "2026-06-12",
+          "entry_close": 17680.0,
+          "exit_price_date": "2026-06-19",
+          "exit_close": 16790.0,
+          "entry_volume": 20270,
+          "exit_volume": 16806,
+          "price_return_status": "ok",
+          "index_code": "KOSPI",
+          "index_entry_date": "2026-06-12",
+          "index_entry_close": 8123.62,
+          "index_exit_date": "2026-06-19",
+          "index_exit_close": 8903.0,
+          "index_return_pct": 9.59,
+          "excess_return_pct": -14.62
         },
         "30d": {
           "days": 30,
@@ -4098,10 +4999,23 @@
         "7d": {
           "days": 7,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         },
         "30d": {
           "days": 30,
@@ -4163,10 +5077,23 @@
         "7d": {
           "days": 7,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         },
         "30d": {
           "days": 30,
@@ -4243,10 +5170,38 @@
         "7d": {
           "days": 7,
           "due_date": "2026-06-19",
-          "status": "pending",
-          "price_return_pct": null,
-          "volume_change_pct": null,
-          "news_count": null
+          "status": "completed",
+          "price_return_pct": -11.31,
+          "volume_change_pct": -8.68,
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "ticker": "052400",
+          "price_source": "naver_daily_price",
+          "entry_price_date": "2026-06-12",
+          "entry_close": 49950.0,
+          "exit_price_date": "2026-06-19",
+          "exit_close": 44300.0,
+          "entry_volume": 67860,
+          "exit_volume": 61973,
+          "price_return_status": "ok",
+          "index_code": "KOSPI",
+          "index_entry_date": "2026-06-12",
+          "index_entry_close": 8123.62,
+          "index_exit_date": "2026-06-19",
+          "index_exit_close": 8903.0,
+          "index_return_pct": 9.59,
+          "excess_return_pct": -20.9
         },
         "30d": {
           "days": 30,
@@ -4308,10 +5263,23 @@
         "7d": {
           "days": 7,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         },
         "30d": {
           "days": 30,
@@ -4373,10 +5341,23 @@
         "7d": {
           "days": 7,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         },
         "30d": {
           "days": 30,
@@ -4453,10 +5434,38 @@
         "7d": {
           "days": 7,
           "due_date": "2026-06-19",
-          "status": "pending",
-          "price_return_pct": null,
-          "volume_change_pct": null,
-          "news_count": null
+          "status": "completed",
+          "price_return_pct": -12.08,
+          "volume_change_pct": -40.78,
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "ticker": "456010",
+          "price_source": "naver_daily_price",
+          "entry_price_date": "2026-06-12",
+          "entry_close": 23600.0,
+          "exit_price_date": "2026-06-19",
+          "exit_close": 20750.0,
+          "entry_volume": 537836,
+          "exit_volume": 318498,
+          "price_return_status": "ok",
+          "index_code": "KOSPI",
+          "index_entry_date": "2026-06-12",
+          "index_entry_close": 8123.62,
+          "index_exit_date": "2026-06-19",
+          "index_exit_close": 8903.0,
+          "index_return_pct": 9.59,
+          "excess_return_pct": -21.67
         },
         "30d": {
           "days": 30,
@@ -4533,10 +5542,38 @@
         "7d": {
           "days": 7,
           "due_date": "2026-06-19",
-          "status": "pending",
-          "price_return_pct": null,
-          "volume_change_pct": null,
-          "news_count": null
+          "status": "completed",
+          "price_return_pct": -0.14,
+          "volume_change_pct": -63.07,
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 2,
+          "follow_up_change_count": 2,
+          "latest_report_date": "2026-06-18",
+          "latest_report_title": "신세계 - 인바운드 매출 증가에 최대 수혜 기업",
+          "latest_broker": "대신증권",
+          "latest_score": 12.45,
+          "latest_target_price": "1,000,000",
+          "latest_target_price_value": 1000000,
+          "latest_opinion": "Buy",
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "ticker": "004170",
+          "price_source": "naver_daily_price",
+          "entry_price_date": "2026-06-12",
+          "entry_close": 695000.0,
+          "exit_price_date": "2026-06-19",
+          "exit_close": 694000.0,
+          "entry_volume": 157731,
+          "exit_volume": 58254,
+          "price_return_status": "ok",
+          "index_code": "KOSPI",
+          "index_entry_date": "2026-06-12",
+          "index_entry_close": 8123.62,
+          "index_exit_date": "2026-06-19",
+          "index_exit_close": 8903.0,
+          "index_return_pct": 9.59,
+          "excess_return_pct": -9.73
         },
         "30d": {
           "days": 30,
@@ -4597,10 +5634,23 @@
         "7d": {
           "days": 7,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 1,
+          "follow_up_change_count": 0,
+          "latest_report_date": "2026-06-17",
+          "latest_report_title": "통신 - 통신 Weekly - AIDC 경쟁 우위 지속",
+          "latest_broker": "유안타증권",
+          "latest_score": 6.65,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         },
         "30d": {
           "days": 30,
@@ -4662,10 +5712,23 @@
         "7d": {
           "days": 7,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         },
         "30d": {
           "days": 30,
@@ -4725,10 +5788,23 @@
         "7d": {
           "days": 7,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         },
         "30d": {
           "days": 30,
@@ -20059,10 +21135,38 @@
         "30d": {
           "days": 30,
           "due_date": "2026-06-19",
-          "status": "pending",
-          "price_return_pct": null,
-          "volume_change_pct": null,
-          "news_count": null
+          "status": "completed",
+          "price_return_pct": 1.2,
+          "volume_change_pct": -27.01,
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "ticker": "207940",
+          "price_source": "naver_daily_price",
+          "entry_price_date": "2026-05-20",
+          "entry_close": 1337000.0,
+          "exit_price_date": "2026-06-19",
+          "exit_close": 1353000.0,
+          "entry_volume": 82110,
+          "exit_volume": 59929,
+          "price_return_status": "ok",
+          "index_code": "KOSPI",
+          "index_entry_date": "2026-05-20",
+          "index_entry_close": 7208.95,
+          "index_exit_date": "2026-06-19",
+          "index_exit_close": 8903.0,
+          "index_return_pct": 23.5,
+          "excess_return_pct": -22.3
         }
       }
     },
@@ -20137,10 +21241,23 @@
         "30d": {
           "days": 30,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         }
       }
     },
@@ -20215,10 +21332,23 @@
         "30d": {
           "days": 30,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         }
       }
     },
@@ -20293,10 +21423,23 @@
         "30d": {
           "days": 30,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         }
       }
     },
@@ -20371,10 +21514,23 @@
         "30d": {
           "days": 30,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 9,
+          "follow_up_change_count": 6,
+          "latest_report_date": "2026-06-18",
+          "latest_report_title": "증권 - 다시 높아진 밸류에이션 매력도",
+          "latest_broker": "하나증권",
+          "latest_score": 12.25,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         }
       }
     },
@@ -20449,10 +21605,23 @@
         "30d": {
           "days": 30,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         }
       }
     },
@@ -20527,10 +21696,23 @@
         "30d": {
           "days": 30,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         }
       }
     },
@@ -20605,10 +21787,23 @@
         "30d": {
           "days": 30,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         }
       }
     },
@@ -20699,10 +21894,38 @@
         "30d": {
           "days": 30,
           "due_date": "2026-06-19",
-          "status": "pending",
-          "price_return_pct": null,
-          "volume_change_pct": null,
-          "news_count": null
+          "status": "completed",
+          "price_return_pct": -20.15,
+          "volume_change_pct": -64.15,
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 1,
+          "follow_up_change_count": 1,
+          "latest_report_date": "2026-05-26",
+          "latest_report_title": "쏠리드 - Capex 사이클 및 네트워크 투자 확대 수혜",
+          "latest_broker": "미래에셋증권",
+          "latest_score": 15.35,
+          "latest_target_price": "27,000",
+          "latest_target_price_value": 27000,
+          "latest_opinion": "매수",
+          "target_price_delta_pct": -10.0,
+          "outcome_source": "archived_follow_up_reports",
+          "ticker": "050890",
+          "price_source": "naver_daily_price",
+          "entry_price_date": "2026-05-20",
+          "entry_close": 14790.0,
+          "exit_price_date": "2026-06-19",
+          "exit_close": 11810.0,
+          "entry_volume": 2817593,
+          "exit_volume": 1009998,
+          "price_return_status": "ok",
+          "index_code": "KOSPI",
+          "index_entry_date": "2026-05-20",
+          "index_entry_close": 7208.95,
+          "index_exit_date": "2026-06-19",
+          "index_exit_close": 8903.0,
+          "index_return_pct": 23.5,
+          "excess_return_pct": -43.65
         }
       }
     },
@@ -20793,10 +22016,38 @@
         "30d": {
           "days": 30,
           "due_date": "2026-06-19",
-          "status": "pending",
-          "price_return_pct": null,
-          "volume_change_pct": null,
-          "news_count": null
+          "status": "completed",
+          "price_return_pct": -9.01,
+          "volume_change_pct": 5.33,
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "ticker": "064760",
+          "price_source": "naver_daily_price",
+          "entry_price_date": "2026-05-20",
+          "entry_close": 277500.0,
+          "exit_price_date": "2026-06-19",
+          "exit_close": 252500.0,
+          "entry_volume": 58997,
+          "exit_volume": 62140,
+          "price_return_status": "ok",
+          "index_code": "KOSPI",
+          "index_entry_date": "2026-05-20",
+          "index_entry_close": 7208.95,
+          "index_exit_date": "2026-06-19",
+          "index_exit_close": 8903.0,
+          "index_return_pct": 23.5,
+          "excess_return_pct": -32.51
         }
       }
     },
@@ -20871,10 +22122,23 @@
         "30d": {
           "days": 30,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         }
       }
     },
@@ -20948,10 +22212,23 @@
         "30d": {
           "days": 30,
           "due_date": "2026-06-19",
-          "status": "pending",
+          "status": "completed",
           "price_return_pct": null,
           "volume_change_pct": null,
-          "news_count": null
+          "news_count": null,
+          "completed_at": "2026-06-19",
+          "follow_up_report_count": 0,
+          "follow_up_change_count": 0,
+          "latest_report_date": null,
+          "latest_report_title": null,
+          "latest_broker": null,
+          "latest_score": null,
+          "latest_target_price": null,
+          "latest_target_price_value": null,
+          "latest_opinion": null,
+          "target_price_delta_pct": null,
+          "outcome_source": "archived_follow_up_reports",
+          "price_return_status": "missing_ticker"
         }
       }
     },
