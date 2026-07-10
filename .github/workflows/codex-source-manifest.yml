@@ -1,0 +1,40 @@
+name: Codex temporary source manifest
+
+on:
+  push:
+    branches:
+      - agent/full-code-audit
+
+permissions:
+  contents: write
+
+jobs:
+  manifest:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build tracked-file manifest
+        shell: bash
+        run: |
+          {
+            printf 'path\tbytes\tsha256\n'
+            git ls-files -z |
+              while IFS= read -r -d '' file; do
+                printf '%s\t%s\t%s\n' \
+                  "$file" \
+                  "$(wc -c < "$file")" \
+                  "$(sha256sum "$file" | cut -d ' ' -f 1)"
+              done
+          } > .codex-source-manifest.tsv
+
+      - name: Commit manifest to working branch
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .codex-source-manifest.tsv
+          git commit -m "chore: add temporary source manifest [skip export]"
+          git push
