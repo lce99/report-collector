@@ -1008,7 +1008,10 @@ def _sync_selection_performance(
     payload = {
         "updated_at": digest_payload.get("generated_at"),
         "summary": summary,
-        "selections": records[:500],
+        # This is the canonical cumulative ledger. Retention must be an
+        # explicit policy; silently capping the persisted records makes the
+        # next sync recalculate performance from a smaller sample.
+        "selections": records,
     }
     _write_json(ledger_path, payload)
     _write_json(performance_root / "latest.json", payload)
