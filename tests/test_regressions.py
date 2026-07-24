@@ -662,6 +662,68 @@ class SubjectHistoryTests(unittest.TestCase):
         self.assertEqual(selection["horizons"]["7d"]["due_date"], "2026-04-27")
         self.assertEqual(selection["horizons"]["7d"]["status"], "pending")
 
+    def test_selection_performance_ledger_does_not_shrink_without_expiration(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            docs_data_root = Path(tmp) / "docs" / "data"
+            archive_root = Path(tmp) / "storage" / "archive"
+            ledger_path = docs_data_root / "performance" / "selection_outcomes.json"
+            ledger_path.parent.mkdir(parents=True)
+
+            existing_records = []
+            priced_indices = set(range(4)) | set(range(341, 500))
+            for index in range(500):
+                horizon = {
+                    "days": 1,
+                    "due_date": "2026-05-30",
+                    "status": "completed",
+                }
+                if index in priced_indices:
+                    horizon["price_return_pct"] = 0.0
+                existing_records.append(
+                    {
+                        "key": f"2026-05-29:existing-{index}",
+                        "selected_date": "2026-05-29",
+                        "display_title": f"Existing report {index}",
+                        "score": float(index),
+                        "horizons": {"1d": horizon},
+                    }
+                )
+
+            ledger_path.write_text(
+                json.dumps({"selections": existing_records}),
+                encoding="utf-8",
+            )
+            digest_payload = {
+                "date": "2026-07-24",
+                "generated_at": "2026-07-24T11:58:28+09:00",
+                "must_read": [
+                    {
+                        "report_id": f"new-{index}",
+                        "display_title": f"New report {index}",
+                        "score": 20.0 - index,
+                    }
+                    for index in range(12)
+                ],
+            }
+
+            first = _sync_selection_performance(
+                docs_data_root,
+                digest_payload,
+                archive_root=archive_root,
+            )
+            second = _sync_selection_performance(
+                docs_data_root,
+                digest_payload,
+                archive_root=archive_root,
+            )
+
+        self.assertEqual(first["summary"]["tracked_selections"], 512)
+        self.assertEqual(second["summary"]["tracked_selections"], 512)
+        self.assertEqual(first["summary"]["priced_by_horizon"]["1d"], 163)
+        self.assertEqual(second["summary"]["priced_by_horizon"]["1d"], 163)
+        self.assertEqual(len(first["selections"]), 512)
+        self.assertEqual(len(second["selections"]), 512)
+
     def test_selection_performance_completes_due_horizons_from_archive(self) -> None:
         class FakeMarketDataProvider:
             source_name = "fake_market_data"
