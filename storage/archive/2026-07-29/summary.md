@@ -1,40 +1,35 @@
 # 2026-07-29 증권사 리포트 데일리
 
 - 요청 기준일: 2026-07-29
-- 생성 시각: 2026-07-29T11:55:24+09:00
+- 생성 시각: 2026-07-29T18:25:47+09:00
 - 대시보드: https://lce99.github.io/report-collector/?date=2026-07-29
-- 수집 건수: 118건
-- PDF 텍스트 보강: 58건
+- 수집 건수: 143건
+- PDF 텍스트 보강: 59건
 - OpenAI 요약 적용: 0건
 - LLM 투자 메모: 0건
-- 키워드: 반도체, 코스피, 한미약품, 에페글레나타이드, 출시를, 기다, 한화시스템, 하반기는
-
-## 운영 알림
-
-- [주의] 미래에셋증권 공식 무출력: 오늘 0건입니다. 최근 평균은 3.8건입니다.
-- [주의] 한국투자증권 공식 수집량 급감: 오늘 5건으로 최근 평균 14.4건 대비 낮습니다.
+- 키워드: IBKS, 반도체, 한미약품, 에페글레나타이드, 출시를, 기다, 한화시스템, 하반기는
 
 ## 수집 소스 상태
 
-- 네이버 금융 리서치: 정상, 111건, 128.56초
-- 미래에셋증권 공식: 무출력, 0건, 1.82초 - 정상 종료됐지만 해당 날짜 리포트가 없습니다.
-- 한국투자증권 공식: 정상, 5건, 14.38초
-- 신한투자증권 공식: 정상, 12건, 6.30초
+- 네이버 금융 리서치: 정상, 112건, 141.42초
+- 미래에셋증권 공식: 정상, 13건, 21.40초
+- 한국투자증권 공식: 정상, 14건, 24.38초
+- 신한투자증권 공식: 정상, 14건, 6.47초
 
 ## 관심 필터
 - 관심 종목: 삼성전자, SK하이닉스, 미래에셋증권, 대한항공, 삼성에스디에스, 이노스페이스
 - 관심 섹터/키워드: 반도체, 방산, 원자력, 로봇, 건설, 우주, 항공
-- 일치 리포트: 58건
+- 일치 리포트: 67건
 - 엄격 필터 모드: 꺼짐
 
 ## 오늘의 한줄
-추정치 상향 8건, 추정치 하향 5건, 이익 추정 상향 76건, 마진 개선 56건, 목표가 하향 22건이 감지됐습니다. 오늘은 종목분석 리포트가 64건으로 가장 많았습니다. 하나증권, 신한투자증권, 키움증권 발간 비중이 높았고, 우선 확인할 만한 핵심 리포트는 한미약품 - 2Q26 Review; 에페글레나타이드 출시를 기다.., 한화시스템 - 하반기는 실적보다 수주를 바라보자, 한화오션 - 놀라운 상선 실적 22.7%입니다.
+추정치 상향 8건, 추정치 하향 5건, 이익 추정 상향 90건, 마진 개선 63건, 목표가 하향 22건이 감지됐습니다. 오늘은 종목분석 리포트가 73건으로 가장 많았습니다. 미래에셋증권, 신한투자증권, 하나증권 발간 비중이 높았고, 우선 확인할 만한 핵심 리포트는 한미약품 - 2Q26 Review; 에페글레나타이드 출시를 기다.., 한화시스템 - 하반기는 실적보다 수주를 바라보자, 한화오션 - 놀라운 상선 실적 22.7%입니다.
 
 ## 이익·마진 추정 변화
-- 변화 감지 리포트: 89건
+- 변화 감지 리포트: 105건
 - 추정치 수치 상향/하향: 8건 / 5건
-- 이익 추정 상향/하향: 76건 / 59건
-- 마진 개선/악화: 56건 / 28건
+- 이익 추정 상향/하향: 90건 / 70건
+- 마진 개선/악화: 63건 / 29건
 - 목표가 상향/하향: 0건 / 22건
 - 의견 변경/애널리스트 변경: 0건 / 2건
 
@@ -145,31 +140,31 @@
 
 ### 산업 랭킹
 - 1. 인터넷포탈 - [IBKS Daily] 인터넷/게임 | IBK투자증권 | 우선순위 13.05
-- 2. 통신 - 통신서비스 8월 투자 전략 - 장기 펀더멘털 .. | 하나증권 | 우선순위 12.66
-- 3. 기타 - [ESG] PBR 0.8배법의 그물은 촘촘해야 한다 | 한화투자증권 | 우선순위 12.20
-- 4. 기타 - [ESG] CVC·SPC·친족독립경영, 규제 3곳 동.. | 한화투자증권 | 우선순위 11.71
-- 5. 전기전자 - 2026년 7월 다섯째 주 전기전자 Weekly | 교보증권 | 우선순위 11.11
+- 2. 통신 - 통신서비스 8월 투자 전략 - 장기 펀더멘털 .. | 하나증권 | 우선순위 12.80
+- 3. 기타 - [ESG] PBR 0.8배법의 그물은 촘촘해야 한다 | 한화투자증권 | 우선순위 12.35
+- 4. HD현대일렉트릭 (267260/매수) | 미래에셋증권 | 우선순위 12.04
+- 5. 기타 - [ESG] CVC·SPC·친족독립경영, 규제 3곳 동.. | 한화투자증권 | 우선순위 11.90
 
 ### 매크로 랭킹
-- 1. 07/29, Kiwoom Morning Letter | 키움증권 | 우선순위 16.62
-- 2. [Morning Brief] 반도체 약세 지속되며 뉴욕 3대 지수.. | iM증권 | 우선순위 15.86
+- 1. 07/29, Kiwoom Morning Letter | 키움증권 | 우선순위 16.80
+- 2. [Morning Brief] 반도체 약세 지속되며 뉴욕 3대 지수.. | iM증권 | 우선순위 16.05
 - 3. 국내주식 마감 시황 (26.07.28) - 이란 전쟁, 9·11 .. | 유안타증권 | 우선순위 14.55
 - 4. 유안타 AI 미국 주식시장 마감 시황 (26.07.29) | 유안타증권 | 우선순위 14.20
-- 5. 국내주식전략; 8월 국내 주식시장 전략: 신뢰의 조정 | 신한투자증권 | 우선순위 13.91
+- 5. 국내주식전략; 8월 국내 주식시장 전략: 신뢰의 조정 | 신한투자증권 | 우선순위 14.08
 
 ### 전략 랭킹
-- 1. 07/29, 미 증시, 반도체 투매에도, 유가 및 금리 상승.. | 키움증권 | 우선순위 19.37
-- 2. 코스피 폭락 코멘트: 바닥의 신호 & 반등의 촉매 | 키움증권 | 우선순위 14.20
-- 3. [IBKS Daily] Start with IBKS(2026.07.29) FOMC대기 .. | IBK투자증권 | 우선순위 14.10
-- 4. 신한 Earnings Guide: 하반기로 향하는 시선 | 신한투자증권 | 우선순위 12.08
-- 5. 이번 주 포커 s | 대신증권 | 우선순위 10.37
+- 1. 07/29, 미 증시, 반도체 투매에도, 유가 및 금리 상승.. | 키움증권 | 우선순위 19.60
+- 2. [IBKS Daily] Start with IBKS(2026.07.29) FOMC대기 .. | IBK투자증권 | 우선순위 14.35
+- 3. 코스피 폭락 코멘트: 바닥의 신호 & 반등의 촉매 | 키움증권 | 우선순위 14.30
+- 4. 신한 Earnings Guide: 하반기로 향하는 시선 | 신한투자증권 | 우선순위 12.27
+- 5. 삼성전자 (005930/매수) | 미래에셋증권 | 우선순위 11.64
 
 ## 우선 검토 후보
 ### 1. [종목분석] 한미약품 - 2Q26 Review; 에페글레나타이드 출시를 기다..
 - 증권사: 교보증권
 - 발행일: 2026-07-29
 - 우선순위 점수: 17.90
-- 선정 근거: 종목분석 카테고리, 목표가 포함, 투자의견 포함, 실적/마진 추정치 포함, 이익 추정 상향/증가
+- 선정 근거: 종목분석 카테고리, 조회수 상위권, 목표가 포함, 투자의견 포함, 실적/마진 추정치 포함
 - 요약 엔진: rule
 - 관심 필터 일치: 없음
 - 요약: 2분기 매출액 4,672억원, 영업이익 1,311억원 기록 한미약품 2분기 매출액 4,672억원 (YoY +29.3%), 영업이익 1,311억원 (YoY +117.1%, OPM 28.1%) 기록. 6월 체결된 Eli Lilly와의 소네페글루타이드 계약금 일시에 인식되며 영업이익 컨센서스 상회
@@ -180,7 +175,7 @@
 - 증권사: 키움증권
 - 발행일: 2026-07-29
 - 우선순위 점수: 23.53
-- 선정 근거: 종목분석 카테고리, 관심 섹터/키워드(방산), 목표가 포함, 투자의견 포함, 실적/마진 추정치 포함
+- 선정 근거: 종목분석 카테고리, 관심 섹터/키워드(방산), 조회수 상위권, 목표가 포함, 투자의견 포함
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 없음 / 키워드 방산
 - 요약: 2분기 영업이익 1,037억원, 어닝 서프라이즈 시현 2분기 매출액 1조 1,176억원(yoy +45%), 영업이익 1,037억원(yoy +219%, OPM 9.3%)으로 시장 기대치(582억원)와 당사 추정치(544억원)를 큰 폭으로 상회하였다. 전 사업 부문에서 실적 개선이 나타난 점이 주효했다.
@@ -191,7 +186,7 @@
 - 증권사: 대신증권
 - 발행일: 2026-07-29
 - 우선순위 점수: 17.20
-- 선정 근거: 종목분석 카테고리, 목표가 포함, 투자의견 포함, 실적/마진 추정치 포함, 이익 추정 상향/증가
+- 선정 근거: 종목분석 카테고리, 조회수 상위권, 목표가 포함, 투자의견 포함, 실적/마진 추정치 포함
 - 요약 엔진: rule
 - 관심 필터 일치: 없음
 - 요약: 투자의견 매수, 목표주가 139,000원 유지 2026년 2분기 매출액 5조 4,432억원 (+65.2% yoy, +69.6% qoq), 영업이익 7,361억원(+101.7% yoy, OPM 13.5%)으로 컨센서스 상회. 상선 부문의 고수익 선종 매출 인식 및 원가 절감, 해양 부문의 프로젝트 조기 인식으로 호실적 기록
@@ -202,7 +197,7 @@
 - 증권사: 하나증권
 - 발행일: 2026-07-29
 - 우선순위 점수: 21.61
-- 선정 근거: 종목분석 카테고리, 목표가 포함, 투자의견 포함, 실적/마진 추정치 포함, 이익 추정 상향/증가
+- 선정 근거: 종목분석 카테고리, 조회수 상위권, 목표가 포함, 투자의견 포함, 실적/마진 추정치 포함
 - 요약 엔진: rule
 - 관심 필터 일치: 없음
 - 요약: 일시적 매출원가 상승으로 영업이익 컨센서스 하회 2Q26 실적은 연결 기준 매출액 1,085억원(YoY+59.0%), 영업이익 183억원(YoY+42.0%, OPM 16.9%)으로, 컨센서스 대비 매출 4% 상회, 영업이익 -7% 하회하였다. 이익이 기대치 대비 크게 감소한 것은 일시적으로 매출원가가 크게 상승한 품목이 있었기 때문이다.
@@ -223,7 +218,7 @@
 ### 6. [산업분석] 통신 - 통신서비스 8월 투자 전략 - 장기 펀더멘털 ..
 - 증권사: 하나증권
 - 발행일: 2026-07-29
-- 우선순위 점수: 12.66
+- 우선순위 점수: 12.80
 - 선정 근거: 산업분석 카테고리, 관심 섹터/키워드(로봇), 이익 추정 상향/증가, 이익 추정 하향/감소, 우선 추적 증권사
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 없음 / 키워드 로봇
@@ -234,7 +229,7 @@
 ### 7. [투자정보] 07/29, 미 증시, 반도체 투매에도, 유가 및 금리 상승..
 - 증권사: 키움증권
 - 발행일: 2026-07-29
-- 우선순위 점수: 19.37
+- 우선순위 점수: 19.60
 - 선정 근거: 투자정보 카테고리, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(반도체), 이익 추정 상향/증가, 마진율 추정 상승/개선
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 삼성전자, SK하이닉스 / 키워드 반도체
@@ -242,18 +237,29 @@
 - 대표 링크: https://stock.pstatic.net/stock-research/invest/39/20260729_invest_717971000.pdf
 - 상세 페이지: https://finance.naver.com/research/invest_read.naver?nid=39713&page=1
 
-### 8. [투자정보] 코스피 폭락 코멘트: 바닥의 신호 & 반등의 촉매
+### 8. [투자정보] [IBKS Daily] Start with IBKS(2026.07.29) FOMC대기 ..
+- 증권사: IBK투자증권
+- 발행일: 2026-07-29
+- 우선순위 점수: 14.35
+- 선정 근거: 투자정보 카테고리, 관심 종목(삼성전자, SK하이닉스, 미래에셋증권), 관심 섹터/키워드(반도체, 로봇, 항공), 이익 추정 하향/감소, 본문 정보량 풍부
+- 요약 엔진: rule
+- 관심 필터 일치: 종목 삼성전자, SK하이닉스, 미래에셋증권 / 키워드 반도체, 로봇, 항공
+- 요약: 증시 Comment (전일 아시아 증시) ▶ 한국증시 - 중국 반도체 쇼크에 하락.
+- 대표 링크: https://stock.pstatic.net/stock-research/invest/40/20260729_invest_390065000.pdf
+- 상세 페이지: https://finance.naver.com/research/invest_read.naver?nid=39716&page=1
+
+### 9. [경제분석] 07/29, Kiwoom Morning Letter
 - 증권사: 키움증권
 - 발행일: 2026-07-29
-- 우선순위 점수: 14.20
-- 선정 근거: 투자정보 카테고리, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(반도체), 이익 추정 하향/감소, 우선 추적 증권사
+- 우선순위 점수: 16.80
+- 선정 근거: 경제분석 카테고리, 관심 종목(삼성전자, SK하이닉스, 삼성에스디에스), 관심 섹터/키워드(반도체, 건설), 이익 추정 상향/증가, 이익 추정 하향/감소
 - 요약 엔진: rule
-- 관심 필터 일치: 종목 삼성전자, SK하이닉스 / 키워드 반도체
-- 요약: 또 폭락이었다. 전일(28일) 코스피와 코스닥은 각각 -10.8%, -7.7%를 기록하며 동반 폭락을 했다. 양시장 모두 서킷브레이커가 발동됐는데, 코스피에서만 서킷브레이커가 이달 들어 3번이나 발동됐다.
-- 대표 링크: https://stock.pstatic.net/stock-research/invest/39/20260729_invest_991242000.pdf
-- 상세 페이지: https://finance.naver.com/research/invest_read.naver?nid=39712&page=1
+- 관심 필터 일치: 종목 삼성전자, SK하이닉스, 삼성에스디에스 / 키워드 반도체, 건설
+- 요약: Comment - 28일(화) 코스피는 장 초반 하락세를 키워 장중 6,000선을 내주었으나 소폭 반납하며 마감함(KOSPI -10.84%, KOSDAQ -7.72%). 지수는 전장 대비 하락 개장 후 중국의 반도체 노광장비 개발 소식에 따른 경쟁 심화 우려로 5,992.91까지 내린 뒤 6,023.66으로 마감.
+- 대표 링크: https://stock.pstatic.net/stock-research/economy/39/20260729_economy_127973000.pdf
+- 상세 페이지: https://finance.naver.com/research/economy_read.naver?nid=13612&page=1
 
-### 9. [경제분석] 과거 사례를 볼 때 코스피 하락폭은 과도하다
+### 10. [경제분석] 과거 사례를 볼 때 코스피 하락폭은 과도하다
 - 증권사: iM증권
 - 발행일: 2026-07-29
 - 우선순위 점수: 11.15
@@ -264,21 +270,10 @@
 - 대표 링크: https://stock.pstatic.net/stock-research/economy/61/20260729_economy_213784000.pdf
 - 상세 페이지: https://finance.naver.com/research/economy_read.naver?nid=13611&page=1
 
-### 10. [경제분석] 반도체 사이클 점검
-- 증권사: 한화투자증권
-- 발행일: 2026-07-29
-- 우선순위 점수: 7.75
-- 선정 근거: 경제분석 카테고리, 관심 섹터/키워드(반도체), 핵심 키워드(반도체)
-- 요약 엔진: rule
-- 관심 필터 일치: 종목 없음 / 키워드 반도체
-- 요약: 반도체 수요 견조하지만 상반기 한국 반도체 수출은 지난해 같은 기간 대비 162.6% 늘었고, 경제성장률 또한 2분기 연속 3%를 상회했다. 그러나 주식시장 움직임은 이와 대조적이다.
-- 대표 링크: https://stock.pstatic.net/stock-research/economy/16/20260729_economy_26288000.pdf
-- 상세 페이지: https://finance.naver.com/research/economy_read.naver?nid=13614&page=1
-
 ### 11. [시황정보] [Morning Brief] 반도체 약세 지속되며 뉴욕 3대 지수..
 - 증권사: iM증권
 - 발행일: 2026-07-29
-- 우선순위 점수: 15.86
+- 우선순위 점수: 16.05
 - 선정 근거: 시황정보 카테고리, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(반도체, 건설, 항공), 이익 추정 상향/증가, 마진율 추정 상승/개선
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 삼성전자, SK하이닉스 / 키워드 반도체, 건설, 항공
@@ -289,7 +284,7 @@
 ### 12. [채권분석] 단서는 단기시장에서 찾아야 한다
 - 증권사: 하나증권
 - 발행일: 2026-07-29
-- 우선순위 점수: 9.16
+- 우선순위 점수: 9.63
 - 선정 근거: 채권분석 카테고리, 이익 추정 상향/증가, 마진율 추정 상승/개선, 마진율 추정 하락/악화, 우선 추적 증권사
 - 요약 엔진: rule
 - 관심 필터 일치: 없음
@@ -304,12 +299,13 @@
 - [종목분석] 에스티팜 - 일시적 영향이지만, 돌다리를 두드리며 (2Q26.. | 하나증권 | 2026-07-29 | 우선순위 21.61 | https://stock.pstatic.net/stock-research/company/57/20260729_company_384080000.pdf
 - [종목분석] HD현대일렉트릭 - 주가는 빠졌지만, 실적은 흔들리지 않았다 | 유안타증권 | 2026-07-29 | 우선순위 21.35 | https://stock.pstatic.net/stock-research/company/18/20260729_company_256921000.pdf
 - [종목분석] HD현대일렉트릭 - 무난한 실적발표 | SK증권 | 2026-07-29 | 우선순위 19.96 | https://stock.pstatic.net/stock-research/company/64/20260729_company_490436000.pdf
+- [투자정보] 07/29, 미 증시, 반도체 투매에도, 유가 및 금리 상승.. | 키움증권 | 2026-07-29 | 우선순위 19.60 | https://stock.pstatic.net/stock-research/invest/39/20260729_invest_717971000.pdf
 - [종목분석] 현대위아 - 2Q26 Review: 아쉬운 실적, 방향성은 유효 | 교보증권 | 2026-07-29 | 우선순위 19.40 | https://stock.pstatic.net/stock-research/company/62/20260729_company_518859000.pdf
-- [투자정보] 07/29, 미 증시, 반도체 투매에도, 유가 및 금리 상승.. | 키움증권 | 2026-07-29 | 우선순위 19.37 | https://stock.pstatic.net/stock-research/invest/39/20260729_invest_717971000.pdf
 - [종목분석] HD현대일렉트릭 - 주가는 하락했지만, 펀더멘털은 강화 중 | 대신증권 | 2026-07-29 | 우선순위 19.11 | https://stock.pstatic.net/stock-research/company/15/20260729_company_127201000.pdf
 - [종목분석] 한화시스템 - 우수한 방산, 안정적인 ICT, 개선되는 필리조.. | DS투자증권 | 2026-07-29 | 우선순위 19.10 | https://stock.pstatic.net/stock-research/company/66/20260729_company_747939000.pdf
 - [종목분석] 두산에너빌리티 - 2Q26 Review: 수주는 가이던스 초과를 향해 | 교보증권 | 2026-07-29 | 우선순위 18.60 | https://stock.pstatic.net/stock-research/company/62/20260729_company_733273000.pdf
 - [종목분석] 현대차증권 - 주주환원 정책 의지 강한 증권사 | 한국IR협의회 | 2026-07-29 | 우선순위 18.52 | https://stock.pstatic.net/stock-research/company/74/20260729_company_370118000.pdf
+- [종목분석] SK하이닉스 - 2Q26 Conference call | SK증권 | 2026-07-29 | 우선순위 18.49 | https://stock.pstatic.net/stock-research/company/64/20260729_company_77392000.pdf
 - [종목분석] HD현대일렉트릭 - 2Q26 Review: 데이터센터향 발주 본격화 | 미래에셋증권 | 2026-07-29 | 우선순위 18.43 | https://stock.pstatic.net/stock-research/company/56/20260729_company_771772000.pdf
 - [종목분석] 하이브 - 실적 서프라이즈에도 이해할 수 없는 셀온 | 하나증권 | 2026-07-29 | 우선순위 18.30 | https://stock.pstatic.net/stock-research/company/57/20260729_company_723373000.pdf
 - [종목분석] 에스티팜 - 일시적 원가 부담, 컨센서스 하회 | 대신증권 | 2026-07-29 | 우선순위 17.97 | https://stock.pstatic.net/stock-research/company/15/20260729_company_73200000.pdf
@@ -323,17 +319,18 @@
 - [종목분석] 한화오션 - 놀라운 상선 실적 22.7% | 대신증권 | 2026-07-29 | 우선순위 17.20 | https://stock.pstatic.net/stock-research/company/15/20260729_company_607134000.pdf
 - [종목분석] HD현대일렉트릭 - 성장성은 변함없다 | IBK투자증권 | 2026-07-29 | 우선순위 17.15 | https://stock.pstatic.net/stock-research/company/40/20260729_company_449726000.pdf
 - [종목분석] 고영 - 운기조식(運氣調息) | 키움증권 | 2026-07-29 | 우선순위 16.91 | https://stock.pstatic.net/stock-research/company/39/20260729_company_328993000.pdf
-- [경제분석] 07/29, Kiwoom Morning Letter | 키움증권 | 2026-07-29 | 우선순위 16.62 | https://stock.pstatic.net/stock-research/economy/39/20260729_economy_127973000.pdf
+- [경제분석] 07/29, Kiwoom Morning Letter | 키움증권 | 2026-07-29 | 우선순위 16.80 | https://stock.pstatic.net/stock-research/economy/39/20260729_economy_127973000.pdf
 - [종목분석] KT - 8월 전략 - 당분간 저점 박스권 트레이딩 추.. | 하나증권 | 2026-07-29 | 우선순위 16.49 | https://stock.pstatic.net/stock-research/company/57/20260729_company_442306000.pdf
 - [종목분석] LG유플러스 - 8월 전략 - 단기 한 단계 주가 상승은 가능할.. | 하나증권 | 2026-07-29 | 우선순위 16.37 | https://stock.pstatic.net/stock-research/company/57/20260729_company_585740000.pdf
 - [종목분석] BNK금융지주 - BNK금융지주; 일회성 비용으로 컨센서스 하회 | 신한투자증권 | 2026-07-29 | 우선순위 16.32 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352889
+- [시황정보] [Morning Brief] 반도체 약세 지속되며 뉴욕 3대 지수.. | iM증권 | 2026-07-29 | 우선순위 16.05 | https://stock.pstatic.net/stock-research/market/61/20260729_market_288082000.pdf
 - [종목분석] 하이브 - BTS 투어 위력 입증, 실적 눈높이 상향 조정 | 키움증권 | 2026-07-29 | 우선순위 15.96 | https://stock.pstatic.net/stock-research/company/39/20260729_company_961315000.pdf
 - [종목분석] 한미약품 - 호실적도 있었고, 우려점도 있었다 | iM증권 | 2026-07-29 | 우선순위 15.89 | https://stock.pstatic.net/stock-research/company/61/20260729_company_345789000.pdf
-- [시황정보] [Morning Brief] 반도체 약세 지속되며 뉴욕 3대 지수.. | iM증권 | 2026-07-29 | 우선순위 15.86 | https://stock.pstatic.net/stock-research/market/61/20260729_market_288082000.pdf
 - [종목분석] 하이브 - 실적과 반대로 가는 주가 | 유진투자증권 | 2026-07-29 | 우선순위 15.62 | https://stock.pstatic.net/stock-research/company/63/20260729_company_71179000.pdf
 - [종목분석] 동아에스티 - 조금 더딜 뿐이다 | iM증권 | 2026-07-29 | 우선순위 15.53 | https://stock.pstatic.net/stock-research/company/61/20260729_company_23224000.pdf
 - [종목분석] 한화시스템 - 2Q 어닝 서프, 하반기 실적 보다 수주에 집중 | SK증권 | 2026-07-29 | 우선순위 15.42 | https://stock.pstatic.net/stock-research/company/64/20260729_company_5273000.pdf
 - [종목분석] 에스티팜 - 2Q26Re: 원가율 상승은 일시적 | 유안타증권 | 2026-07-29 | 우선순위 15.40 | https://stock.pstatic.net/stock-research/company/18/20260729_company_29475000.pdf
+- [종목분석] GS건설; 내용은 좋았다 | 신한투자증권 | 2026-07-29 | 우선순위 15.14 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352905
 - [종목분석] 하이브 - 실적은 BTS, 미래는 차세대 IP | SK증권 | 2026-07-29 | 우선순위 15.11 | https://stock.pstatic.net/stock-research/company/64/20260729_company_876942000.pdf
 - [종목분석] HD현대마린엔진 - 컨센서스 하회, 그렇기에 기대되는 하반기 | SK증권 | 2026-07-29 | 우선순위 15.10 | https://stock.pstatic.net/stock-research/company/64/20260729_company_213017000.pdf
 - [종목분석] 한화시스템 - 한화시스템; 수출이 이끈 호조, 미래를 위한 숨고르기 | 신한투자증권 | 2026-07-29 | 우선순위 14.89 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352887
@@ -341,79 +338,102 @@
 - [종목분석] HD현대일렉트릭 - HD현대일렉트릭; 편안한 실적, 더 길어지는 성장 사이클 | 신한투자증권 | 2026-07-29 | 우선순위 14.84 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352885
 - [시황정보] 국내주식 마감 시황 (26.07.28) - 이란 전쟁, 9·11 .. | 유안타증권 | 2026-07-29 | 우선순위 14.55 | https://stock.pstatic.net/stock-research/market/21/20260729_market_754949000.pdf
 - [종목분석] 고영 - 2Q26P Review: 어닝서프라이즈 시현, 최대 실.. | 유진투자증권 | 2026-07-29 | 우선순위 14.55 | https://stock.pstatic.net/stock-research/company/63/20260729_company_654218000.pdf
+- [투자정보] [IBKS Daily] Start with IBKS(2026.07.29) FOMC대기 .. | IBK투자증권 | 2026-07-29 | 우선순위 14.35 | https://stock.pstatic.net/stock-research/invest/40/20260729_invest_390065000.pdf
 - [종목분석] 하이브 - 하이브; 비용 증가를 압도하는 매출 성장 | 신한투자증권 | 2026-07-29 | 우선순위 14.31 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352878
+- [투자정보] 코스피 폭락 코멘트: 바닥의 신호 & 반등의 촉매 | 키움증권 | 2026-07-29 | 우선순위 14.30 | https://stock.pstatic.net/stock-research/invest/39/20260729_invest_991242000.pdf
 - [시황정보] 유안타 AI 미국 주식시장 마감 시황 (26.07.29) | 유안타증권 | 2026-07-29 | 우선순위 14.20 | https://stock.pstatic.net/stock-research/market/18/20260729_market_3008000.pdf
-- [투자정보] 코스피 폭락 코멘트: 바닥의 신호 & 반등의 촉매 | 키움증권 | 2026-07-29 | 우선순위 14.20 | https://stock.pstatic.net/stock-research/invest/39/20260729_invest_991242000.pdf
-- [투자정보] [IBKS Daily] Start with IBKS(2026.07.29) FOMC대기 .. | IBK투자증권 | 2026-07-29 | 우선순위 14.10 | https://stock.pstatic.net/stock-research/invest/40/20260729_invest_390065000.pdf
 - [종목분석] 하이브 - The Show Must Go On! | DS투자증권 | 2026-07-29 | 우선순위 14.09 | https://stock.pstatic.net/stock-research/company/66/20260729_company_875187000.pdf
-- [시황정보] 국내주식전략; 8월 국내 주식시장 전략: 신뢰의 조정 | 신한투자증권 | 2026-07-29 | 우선순위 13.91 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352891
+- [시황정보] 국내주식전략; 8월 국내 주식시장 전략: 신뢰의 조정 | 신한투자증권 | 2026-07-29 | 우선순위 14.08 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352891
 - [종목분석] 칩스앤미디어 - 2Q26P Review: 4분기 연속 로열티 매출 증가 | 유진투자증권 | 2026-07-29 | 우선순위 13.90 | https://stock.pstatic.net/stock-research/company/63/20260729_company_9962000.pdf
 - [종목분석] 하이브 - 2Q26 Review: 보고 있는 것과 봐야 할 것 | 교보증권 | 2026-07-29 | 우선순위 13.85 | https://stock.pstatic.net/stock-research/company/62/20260729_company_404414000.pdf
+- [시황정보] Daily Market Digest (7월 29일) | 신한투자증권 | 2026-07-29 | 우선순위 13.85 | https://finance.naver.com/research/market_info_read.naver?nid=36938&page=1
+- [시황정보] 국내 주식 마감 시황 - 사상 첫 연쇄 서킷에 나온 커피출레이션(7월 29일) | 신한투자증권 | 2026-07-29 | 우선순위 13.81 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352906
 - [종목분석] 기업은행 - 떨어져라 환율아 | 유안타증권 | 2026-07-29 | 우선순위 13.77 | https://stock.pstatic.net/stock-research/company/18/20260729_company_140772000.pdf
 - [종목분석] BNK금융지주 - 일회성비용, 비은행 개선, 주주환원 지속 | 키움증권 | 2026-07-29 | 우선순위 13.77 | https://stock.pstatic.net/stock-research/company/39/20260729_company_432854000.pdf
-- [시황정보] Daily Market Digest (7월 29일) | 신한투자증권 | 2026-07-29 | 우선순위 13.68 | https://finance.naver.com/research/market_info_read.naver?nid=36938&page=1
 - [종목분석] BNK금융지주 - 하반기 이익과 자사주 매입/소각 규모가 관건 | iM증권 | 2026-07-29 | 우선순위 13.52 | https://stock.pstatic.net/stock-research/company/61/20260729_company_321347000.pdf
 - [시황정보] 마켓레이더 - 높았던 기대, 강해진 투매 (7월 29일) | 신한투자증권 | 2026-07-29 | 우선순위 13.52 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352894
 - [시황정보] 7/29 KB 리서치 모닝코멘트 | KB증권 | 2026-07-29 | 우선순위 13.50 | https://stock.pstatic.net/stock-research/market/58/20260729_market_549750000.pdf
 - [종목분석] BNK금융지주 - 주주환원 보다 더 중요한 것은 이익 안정성에.. | 하나증권 | 2026-07-29 | 우선순위 13.50 | https://stock.pstatic.net/stock-research/company/57/20260729_company_711560000.pdf
+- [시황정보] 7/28 KB 리서치 장마감코멘트 | KB증권 | 2026-07-29 | 우선순위 13.35 | https://stock.pstatic.net/stock-research/market/58/20260729_market_621265000.pdf
 - [종목분석] iM금융지주 - 하반기 실적이 중요하다 | 유안타증권 | 2026-07-29 | 우선순위 13.32 | https://stock.pstatic.net/stock-research/company/18/20260729_company_905757000.pdf
-- [시황정보] 7/28 KB 리서치 장마감코멘트 | KB증권 | 2026-07-29 | 우선순위 13.18 | https://stock.pstatic.net/stock-research/market/58/20260729_market_621265000.pdf
+- [시황정보] [IBKS Daily] Morning Brief(260729) | IBK투자증권 | 2026-07-29 | 우선순위 13.20 | https://stock.pstatic.net/stock-research/market/40/20260729_market_329748000.pdf
 - [종목분석] 에스티팜 - 2Q26 Review: 예상하지 못한 일회성 요인 | 미래에셋증권 | 2026-07-29 | 우선순위 13.07 | https://stock.pstatic.net/stock-research/company/56/20260729_company_385750000.pdf
-- [시황정보] [IBKS Daily] Morning Brief(260729) | IBK투자증권 | 2026-07-29 | 우선순위 13.06 | https://stock.pstatic.net/stock-research/market/40/20260729_market_329748000.pdf
 - [산업분석] 인터넷포탈 - [IBKS Daily] 인터넷/게임 | IBK투자증권 | 2026-07-29 | 우선순위 13.05 | https://stock.pstatic.net/stock-research/industry/40/20260729_industry_187940000.pdf
 - [종목분석] 하이브 - 두 자릿수 마진 회복 | iM증권 | 2026-07-29 | 우선순위 12.90 | https://stock.pstatic.net/stock-research/company/61/20260729_company_42873000.pdf
-- [산업분석] 통신 - 통신서비스 8월 투자 전략 - 장기 펀더멘털 .. | 하나증권 | 2026-07-29 | 우선순위 12.66 | https://stock.pstatic.net/stock-research/industry/57/20260729_industry_529065000.pdf
+- [산업분석] 통신 - 통신서비스 8월 투자 전략 - 장기 펀더멘털 .. | 하나증권 | 2026-07-29 | 우선순위 12.80 | https://stock.pstatic.net/stock-research/industry/57/20260729_industry_529065000.pdf
 - [종목분석] HD현대일렉트릭 - 2Q26 Review: 무난함 속에 숨겨진 저력 | 교보증권 | 2026-07-29 | 우선순위 12.48 | https://stock.pstatic.net/stock-research/company/62/20260729_company_681303000.pdf
-- [시황정보] SK증권 아침에슥_2026.07.29 | SK증권 | 2026-07-29 | 우선순위 12.35 | https://stock.pstatic.net/stock-research/market/64/20260729_market_393381000.pdf
+- [시황정보] SK증권 아침에슥_2026.07.29 | SK증권 | 2026-07-29 | 우선순위 12.45 | https://stock.pstatic.net/stock-research/market/64/20260729_market_393381000.pdf
+- [시황정보] Yuanta Morning Snapshot (2026.07.29) | 유안타증권 | 2026-07-29 | 우선순위 12.45 | https://stock.pstatic.net/stock-research/market/18/20260729_market_141101000.pdf
 - [종목분석] SK네트웍스 - SK네트웍스; 본업 눈높이는 낮추고, AI 가치는 높이고 | 신한투자증권 | 2026-07-29 | 우선순위 12.35 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352893
+- [산업분석] 기타 - [ESG] PBR 0.8배법의 그물은 촘촘해야 한다 | 한화투자증권 | 2026-07-29 | 우선순위 12.35 | https://stock.pstatic.net/stock-research/industry/16/20260729_industry_985119000.pdf
+- [투자정보] 신한 Earnings Guide: 하반기로 향하는 시선 | 신한투자증권 | 2026-07-29 | 우선순위 12.27 | https://finance.naver.com/research/invest_read.naver?nid=39717&page=1
 - [종목분석] 고영 - 내년까지 든든한 AI 서버 수요 | 미래에셋증권 | 2026-07-29 | 우선순위 12.26 | https://stock.pstatic.net/stock-research/company/56/20260729_company_847421000.pdf
 - [종목분석] 에코프로비엠 - 수익성 정상화를 넘어 외형 확장 국면 진입 | 한국IR협의회 | 2026-07-29 | 우선순위 12.20 | https://stock.pstatic.net/stock-research/company/74/20260729_company_297467000.pdf
-- [산업분석] 기타 - [ESG] PBR 0.8배법의 그물은 촘촘해야 한다 | 한화투자증권 | 2026-07-29 | 우선순위 12.20 | https://stock.pstatic.net/stock-research/industry/16/20260729_industry_985119000.pdf
-- [투자정보] 신한 Earnings Guide: 하반기로 향하는 시선 | 신한투자증권 | 2026-07-29 | 우선순위 12.08 | https://finance.naver.com/research/invest_read.naver?nid=39717&page=1
-- [시황정보] Yuanta Morning Snapshot (2026.07.29) | 유안타증권 | 2026-07-29 | 우선순위 12.07 | https://stock.pstatic.net/stock-research/market/18/20260729_market_141101000.pdf
+- [산업분석] HD현대일렉트릭 (267260/매수) | 미래에셋증권 | 2026-07-29 | 우선순위 12.04 | https://securities.miraeasset.com/bbs/download/2146161.pdf?attachmentId=2146161
 - [종목분석] 인터로조 - 어두웠던 과거, 밝아질 수 있는 미래 | 키움증권 | 2026-07-29 | 우선순위 12.03 | https://stock.pstatic.net/stock-research/company/39/20260729_company_685112000.pdf
 - [종목분석] BNK금융지주 - 이익 추정치 하향에도 높은 환원 수익률 | 한화투자증권 | 2026-07-29 | 우선순위 11.95 | https://stock.pstatic.net/stock-research/company/16/20260729_company_669964000.pdf
+- [산업분석] 기타 - [ESG] CVC·SPC·친족독립경영, 규제 3곳 동.. | 한화투자증권 | 2026-07-29 | 우선순위 11.90 | https://stock.pstatic.net/stock-research/industry/16/20260729_industry_529527000.pdf
 - [종목분석] KG모빌리티 - P/B 0.3배대를 극복하기 위한 두 가지 조건 | 하나증권 | 2026-07-29 | 우선순위 11.74 | https://stock.pstatic.net/stock-research/company/57/20260729_company_344246000.pdf
-- [산업분석] 기타 - [ESG] CVC·SPC·친족독립경영, 규제 3곳 동.. | 한화투자증권 | 2026-07-29 | 우선순위 11.71 | https://stock.pstatic.net/stock-research/industry/16/20260729_industry_529527000.pdf
+- [투자정보] 삼성전자 (005930/매수) | 미래에셋증권 | 2026-07-29 | 우선순위 11.64 | https://securities.miraeasset.com/bbs/download/2146185.pdf?attachmentId=2146185
+- [투자정보] SK하이닉스 (000660/매수) | 미래에셋증권 | 2026-07-29 | 우선순위 11.52 | https://securities.miraeasset.com/bbs/download/2146158.pdf?attachmentId=2146158
+- [산업분석] 고영 (098460/매수) | 미래에셋증권 | 2026-07-29 | 우선순위 11.50 | https://securities.miraeasset.com/bbs/download/2146165.pdf?attachmentId=2146165
+- [산업분석] 한국 마켓 클로징(7월 29일) | 미래에셋증권 | 2026-07-29 | 우선순위 11.25 | https://securities.miraeasset.com/bbs/download/2146195.pdf?attachmentId=2146195
+- [산업분석] 전기전자 - 2026년 7월 다섯째 주 전기전자 Weekly | 교보증권 | 2026-07-29 | 우선순위 11.20 | https://stock.pstatic.net/stock-research/industry/62/20260729_industry_48620000.pdf
 - [경제분석] 과거 사례를 볼 때 코스피 하락폭은 과도하다 | iM증권 | 2026-07-29 | 우선순위 11.15 | https://stock.pstatic.net/stock-research/economy/61/20260729_economy_213784000.pdf
-- [산업분석] 전기전자 - 2026년 7월 다섯째 주 전기전자 Weekly | 교보증권 | 2026-07-29 | 우선순위 11.11 | https://stock.pstatic.net/stock-research/industry/62/20260729_industry_48620000.pdf
 - [산업분석] 기타 - 박제민QnA.I_Hugging Face 해킹이 촉발한 오.. | SK증권 | 2026-07-29 | 우선순위 11.00 | https://stock.pstatic.net/stock-research/industry/64/20260729_industry_216021000.pdf
 - [종목분석] 한미약품 - 북경한미 회복과 파이프라인 개발 진전에 주.. | 미래에셋증권 | 2026-07-29 | 우선순위 10.97 | https://stock.pstatic.net/stock-research/company/56/20260729_company_754853000.pdf
+- [투자정보] 이번 주 포커 s | 대신증권 | 2026-07-29 | 우선순위 10.75 | https://stock.pstatic.net/stock-research/invest/15/20260729_invest_698917000.pdf
+- [투자정보] [실전 퀀트(Quant MP)] 지수 반등 핵심 요건은? | 하나증권 | 2026-07-29 | 우선순위 10.55 | https://stock.pstatic.net/stock-research/invest/57/20260729_invest_607227000.pdf
+- [투자정보] [중국은 지금] CXMT 상장, 반도체 국산화 가속화 전망 | 키움증권 | 2026-07-29 | 우선순위 10.45 | https://stock.pstatic.net/stock-research/invest/39/20260729_invest_87226000.pdf
 - [종목분석] 스티펠 - 셀레스티카(CLS USA):[Review] 실적 추정치와 목표주가 상향, 2027 전망도 개선 | 한국투자증권 | 2026-07-29 | 우선순위 10.40 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=157670
-- [투자정보] 이번 주 포커 s | 대신증권 | 2026-07-29 | 우선순위 10.37 | https://stock.pstatic.net/stock-research/invest/15/20260729_invest_698917000.pdf
 - [종목분석] BNK금융지주 - 올해 증익은 어려울 것으로 예상 | 미래에셋증권 | 2026-07-29 | 우선순위 10.30 | https://stock.pstatic.net/stock-research/company/56/20260729_company_385306000.pdf
-- [투자정보] [실전 퀀트(Quant MP)] 지수 반등 핵심 요건은? | 하나증권 | 2026-07-29 | 우선순위 10.29 | https://stock.pstatic.net/stock-research/invest/57/20260729_invest_607227000.pdf
-- [투자정보] [중국은 지금] CXMT 상장, 반도체 국산화 가속화 전망 | 키움증권 | 2026-07-29 | 우선순위 10.22 | https://stock.pstatic.net/stock-research/invest/39/20260729_invest_87226000.pdf
+- [투자정보] ETF Weekly Letter 금쪽같은 반도체 | 하나증권 | 2026-07-29 | 우선순위 10.25 | https://stock.pstatic.net/stock-research/invest/57/20260729_invest_990852000.pdf
 - [산업분석] 기타 - 안녕하세요 데일리에요(로봇/방산/조선) | 유진투자증권 | 2026-07-29 | 우선순위 10.00 | https://stock.pstatic.net/stock-research/industry/63/20260729_industry_334802000.pdf
-- [투자정보] ETF Weekly Letter 금쪽같은 반도체 | 하나증권 | 2026-07-29 | 우선순위 9.89 | https://stock.pstatic.net/stock-research/invest/57/20260729_invest_990852000.pdf
+- [종목분석] 스티펠 - 트랜스유니언(TRU USA):[Review] 연중 실적 및 가이던스 상향은 지속될 전망 | 한국투자증권 | 2026-07-29 | 우선순위 10.00 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=157688
+- [채권분석] 단서는 단기시장에서 찾아야 한다 | 하나증권 | 2026-07-29 | 우선순위 9.63 | https://stock.pstatic.net/stock-research/debenture/57/20260729_debenture_21883000.pdf
+- [투자정보] 증시 급락과 함께 나타난 변동성 완화 전조 증상 | 대신증권 | 2026-07-29 | 우선순위 9.55 | https://stock.pstatic.net/stock-research/invest/15/20260729_invest_64559000.pdf
 - [종목분석] 파인엠텍 - Corp Day: "4Q에 집중된다" 성장 재점화 | SK증권 | 2026-07-29 | 우선순위 9.50 | https://stock.pstatic.net/stock-research/company/64/20260729_company_968974000.pdf
 - [종목분석] 스티펠 - UPS(UPS USA):[Review] 물량 축소 완벽 적응, 이제 반격할 시간 | 한국투자증권 | 2026-07-29 | 우선순위 9.50 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=157668
-- [투자정보] 증시 급락과 함께 나타난 변동성 완화 전조 증상 | 대신증권 | 2026-07-29 | 우선순위 9.26 | https://stock.pstatic.net/stock-research/invest/15/20260729_invest_64559000.pdf
+- [종목분석] 스티펠 - 자일럼(XYL USA):[Review] 2Q26 EPS 상회, 2027 성장 모멘텀 강화 | 한국투자증권 | 2026-07-29 | 우선순위 9.50 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=157689
 - [종목분석] 기업은행 - 연간 주당배당금 감소 예상 | 미래에셋증권 | 2026-07-29 | 우선순위 9.20 | https://stock.pstatic.net/stock-research/company/56/20260729_company_790670000.pdf
-- [채권분석] 단서는 단기시장에서 찾아야 한다 | 하나증권 | 2026-07-29 | 우선순위 9.16 | https://stock.pstatic.net/stock-research/debenture/57/20260729_debenture_21883000.pdf
-- [투자정보] 연금 운용의 현주소: 국내 퇴직연금에서 글로벌 연기.. | 키움증권 | 2026-07-29 | 우선순위 8.93 | https://stock.pstatic.net/stock-research/invest/39/20260729_invest_644958000.pdf
-- [투자정보] 반도체 악재의 연쇄, SK 하이닉스가 풀어야 할 반등의.. | 대신증권 | 2026-07-29 | 우선순위 8.90 | https://stock.pstatic.net/stock-research/invest/15/20260729_invest_963113000.pdf
-- [채권분석] Eugenes FICC Update | 유진투자증권 | 2026-07-29 | 우선순위 8.71 | https://stock.pstatic.net/stock-research/debenture/63/20260729_debenture_214990000.pdf
+- [투자정보] 반도체 악재의 연쇄, SK 하이닉스가 풀어야 할 반등의.. | 대신증권 | 2026-07-29 | 우선순위 9.00 | https://stock.pstatic.net/stock-research/invest/15/20260729_invest_963113000.pdf
+- [투자정보] 연금 운용의 현주소: 국내 퇴직연금에서 글로벌 연기.. | 키움증권 | 2026-07-29 | 우선순위 9.00 | https://stock.pstatic.net/stock-research/invest/39/20260729_invest_644958000.pdf
+- [채권분석] Eugenes FICC Update | 유진투자증권 | 2026-07-29 | 우선순위 8.99 | https://stock.pstatic.net/stock-research/debenture/63/20260729_debenture_214990000.pdf
+- [산업분석] BNK금융지주 (138930/매수) | 미래에셋증권 | 2026-07-29 | 우선순위 8.62 | https://securities.miraeasset.com/bbs/download/2146159.pdf?attachmentId=2146159
+- [투자정보] 한미약품 (128940/매수) | 미래에셋증권 | 2026-07-29 | 우선순위 8.42 | https://securities.miraeasset.com/bbs/download/2146162.pdf?attachmentId=2146162
 - [종목분석] 스티펠 - 케이던스 디자인 시스템즈(CDNS USA):[Review] AI 성장축 견조, Intel 14A는 추가 업사이드 | 한국투자증권 | 2026-07-29 | 우선순위 8.40 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=157671
-- [투자정보] [Conviction Calls] 긴급 대응전략: 중장기 진바닥 통.. | 유안타증권 | 2026-07-29 | 우선순위 8.05 | https://stock.pstatic.net/stock-research/invest/15/20260729_invest_489728000.pdf
+- [투자정보] [Conviction Calls] 긴급 대응전략: 중장기 진바닥 통.. | 유안타증권 | 2026-07-29 | 우선순위 8.25 | https://stock.pstatic.net/stock-research/invest/15/20260729_invest_489728000.pdf
+- [투자정보] [IBKS Market Comment] 25일과 -35%가 만났을 때 | IBK투자증권 | 2026-07-29 | 우선순위 7.85 | https://stock.pstatic.net/stock-research/invest/40/20260729_invest_608349000.pdf
+- [경제분석] 반도체 사이클 점검 | 한화투자증권 | 2026-07-29 | 우선순위 7.85 | https://stock.pstatic.net/stock-research/economy/16/20260729_economy_26288000.pdf
 - [시황정보] 2026년 7월 29일 한눈에 투데이 | 한국투자증권 | 2026-07-29 | 우선순위 7.80 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=157663
-- [경제분석] 반도체 사이클 점검 | 한화투자증권 | 2026-07-29 | 우선순위 7.75 | https://stock.pstatic.net/stock-research/economy/16/20260729_economy_26288000.pdf
-- [시황정보] Daily 신한생각 (7월 29일) | 신한투자증권 | 2026-07-29 | 우선순위 7.73 | https://finance.naver.com/research/market_info_read.naver?nid=36939&page=1
+- [시황정보] Daily 신한생각 (7월 29일) | 신한투자증권 | 2026-07-29 | 우선순위 7.75 | https://finance.naver.com/research/market_info_read.naver?nid=36939&page=1
+- [산업분석] 기업은행 (024110/중립) | 미래에셋증권 | 2026-07-29 | 우선순위 7.72 | https://securities.miraeasset.com/bbs/download/2146160.pdf?attachmentId=2146160
 - [산업분석] 은행 - 더욱 확대된 격차 2Q26 Fundamental Scorecar.. | iM증권 | 2026-07-29 | 우선순위 7.65 | https://stock.pstatic.net/stock-research/industry/61/20260729_industry_571493000.pdf
-- [투자정보] [IBKS Market Comment] 25일과 -35%가 만났을 때 | IBK투자증권 | 2026-07-29 | 우선순위 7.60 | https://stock.pstatic.net/stock-research/invest/40/20260729_invest_608349000.pdf
-- [투자정보] 코스피 과매도 | 한화투자증권 | 2026-07-29 | 우선순위 7.38 | https://stock.pstatic.net/stock-research/invest/16/20260729_invest_231620000.pdf
+- [투자정보] 코스피 과매도 | 한화투자증권 | 2026-07-29 | 우선순위 7.55 | https://stock.pstatic.net/stock-research/invest/16/20260729_invest_231620000.pdf
+- [투자정보] 바룬 베버리지 (VBL IN/매수) | 미래에셋증권 | 2026-07-29 | 우선순위 7.35 | https://securities.miraeasset.com/bbs/download/2146178.pdf?attachmentId=2146178
+- [투자정보] 07/29 달러, 유가 하락에 약세 | 키움증권 | 2026-07-29 | 우선순위 7.18 | https://stock.pstatic.net/stock-research/invest/39/20260729_invest_672136000.pdf
+- [시황정보] Daily Morning Brief(2026.07.28) | 다올투자증권 | 2026-07-29 | 우선순위 7.05 | https://stock.pstatic.net/stock-research/market/76/20260729_market_219524000.pdf
+- [산업분석] 기타 - [ESG] 저PBR 기업 공표 제도 잠정안 발표 | 한화투자증권 | 2026-07-29 | 우선순위 7.05 | https://stock.pstatic.net/stock-research/industry/16/20260729_industry_91621000.pdf
 - [산업분석] 화장품 - Weekly Amazon Beauty Check | SK증권 | 2026-07-29 | 우선순위 7.00 | https://stock.pstatic.net/stock-research/industry/64/20260729_industry_26577000.pdf
-- [투자정보] 07/29 달러, 유가 하락에 약세 | 키움증권 | 2026-07-29 | 우선순위 6.93 | https://stock.pstatic.net/stock-research/invest/39/20260729_invest_672136000.pdf
-- [산업분석] 기타 - [ESG] 저PBR 기업 공표 제도 잠정안 발표 | 한화투자증권 | 2026-07-29 | 우선순위 6.89 | https://stock.pstatic.net/stock-research/industry/16/20260729_industry_91621000.pdf
-- [시황정보] 틀린 그림 찾기보다 어려웠던 오른 종목 찾기 | 유진투자증권 | 2026-07-29 | 우선순위 6.73 | https://stock.pstatic.net/stock-research/market/63/20260729_market_825250000.pdf
-- [시황정보] Daily Morning Brief(2026.07.28) | 다올투자증권 | 2026-07-29 | 우선순위 6.71 | https://stock.pstatic.net/stock-research/market/76/20260729_market_219524000.pdf
-- [산업분석] 통신 - 통신 Weekly - The Higher, SK하이퍼 | 유안타증권 | 2026-07-29 | 우선순위 6.53 | https://stock.pstatic.net/stock-research/industry/18/20260729_industry_395424000.pdf
-- [산업분석] 유통 - 콘사이스 유통 산업 투자 가이드: Vol1. 소비.. | 하나증권 | 2026-07-29 | 우선순위 6.27 | https://stock.pstatic.net/stock-research/industry/57/20260729_industry_505259000.pdf
-- [경제분석] 경제분석; 엔 캐리 트레이드 청산 재발 가능성 점검 | 신한투자증권 | 2026-07-29 | 우선순위 5.89 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352883
-- [투자정보] [신흥국 전략] BI 총재 사임, 잡음이 끊이지 않는 인.. | 하나증권 | 2026-07-29 | 우선순위 5.84 | https://stock.pstatic.net/stock-research/invest/57/20260729_invest_581998000.pdf
+- [산업분석] AI 데일리 글로벌 마켓 브리핑(7월 29일) - 미국증시, 반도체주 급락에도 순환매 속 '혼조' | 미래에셋증권 | 2026-07-29 | 우선순위 7.00 | https://securities.miraeasset.com/bbs/download/2146156.pdf?attachmentId=2146156
+- [시황정보] 틀린 그림 찾기보다 어려웠던 오른 종목 찾기 | 유진투자증권 | 2026-07-29 | 우선순위 6.85 | https://stock.pstatic.net/stock-research/market/63/20260729_market_825250000.pdf
+- [산업분석] 통신 - 통신 Weekly - The Higher, SK하이퍼 | 유안타증권 | 2026-07-29 | 우선순위 6.65 | https://stock.pstatic.net/stock-research/industry/18/20260729_industry_395424000.pdf
+- [종목분석] 스티펠 - 비자(V USA):[Review] 소비지출, VAS 성장세 지속 | 한국투자증권 | 2026-07-29 | 우선순위 6.65 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=157687
+- [종목분석] 스티펠 - 아이큐비아 홀딩스(IQV USA):추정치 업데이트, 목표주가 276달러로 상향 | 한국투자증권 | 2026-07-29 | 우선순위 6.65 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=157690
+- [산업분석] 유통 - 콘사이스 유통 산업 투자 가이드: Vol1. 소비.. | 하나증권 | 2026-07-29 | 우선순위 6.45 | https://stock.pstatic.net/stock-research/industry/57/20260729_industry_505259000.pdf
+- [투자정보] [신흥국 전략] BI 총재 사임, 잡음이 끊이지 않는 인.. | 하나증권 | 2026-07-29 | 우선순위 6.35 | https://stock.pstatic.net/stock-research/invest/57/20260729_invest_581998000.pdf
+- [경제분석] 경제분석; 엔 캐리 트레이드 청산 재발 가능성 점검 | 신한투자증권 | 2026-07-29 | 우선순위 6.19 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=352883
 - [경제분석] 엔 캐리 트레이드 청산 재발 가능성 점검 | 신한투자증권 | 2026-07-29 | 우선순위 5.80 | https://finance.naver.com/research/economy_read.naver?nid=13613&page=1
-- [시황정보] 국내 주식 마감 시황 - 양 시장 동반 서킷브레이커(7.. | 신한투자증권 | 2026-07-29 | 우선순위 5.24 | https://finance.naver.com/research/market_info_read.naver?nid=36931&page=1
+- [종목분석] 국태해통증권 - 라오푸골드(06181 HKG):금값 변동성에 2분기 실적 주춤, 브랜드 모멘텀은 견조 | 한국투자증권 | 2026-07-29 | 우선순위 5.75 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=157684
+- [종목분석] JP모간 - Weekly Market Review:주간 시장 요약 | 한국투자증권 | 2026-07-29 | 우선순위 5.50 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=157692
+- [시황정보] 국내 주식 마감 시황 - 양 시장 동반 서킷브레이커(7.. | 신한투자증권 | 2026-07-29 | 우선순위 5.35 | https://finance.naver.com/research/market_info_read.naver?nid=36931&page=1
+- [종목분석] 스티펠 - 로얄 캐리비안 크루즈(RCL USA):[Review] 매출보다 EPS 성장에 주목할 때 | 한국투자증권 | 2026-07-29 | 우선순위 5.10 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=157686
 - [종목분석] 스티펠 - 박스터 인터내셔널(BAX USA):새로운 보고 체계 반영해 모델 업데이트, 추정치는 변화 없음 | 한국투자증권 | 2026-07-29 | 우선순위 5.10 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=157669
-- [시황정보] SK증권 Global Carbon Market Daily_260729 | SK증권 | 2026-07-29 | 우선순위 4.77 | https://stock.pstatic.net/stock-research/market/64/20260729_market_466737000.pdf
-- [시황정보] [DS Defense Daily] 2026-07-29 | DS투자증권 | 2026-07-29 | 우선순위 3.85 | https://stock.pstatic.net/stock-research/market/66/20260729_market_929102000.pdf
-- [채권분석] Daily Bond Morning Brief(2026.07.29) | 다올투자증권 | 2026-07-29 | 우선순위 3.79 | https://stock.pstatic.net/stock-research/debenture/76/20260729_debenture_957436000.pdf
+- [시황정보] SK증권 Global Carbon Market Daily_260729 | SK증권 | 2026-07-29 | 우선순위 5.04 | https://stock.pstatic.net/stock-research/market/64/20260729_market_466737000.pdf
+- [시황정보] Market Issue | 미래에셋증권 | 2026-07-29 | 우선순위 5.00 | https://securities.miraeasset.com/bbs/download/2146179.pdf?attachmentId=2146179
+- [산업분석] 스티펠 - 소프트웨어:소프트웨어 산업 동향: MSFT, CHKP, DT, ESTC | 한국투자증권 | 2026-07-29 | 우선순위 4.35 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=157691
+- [산업분석] 국태해통증권 - 제약:펩타이드 시장 확대가 CDMO 생산능력 확장을 견인 | 한국투자증권 | 2026-07-29 | 우선순위 4.35 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=157685
+- [투자정보] Biotech Investor Primer #4 | 미래에셋증권 | 2026-07-29 | 우선순위 4.15 | https://securities.miraeasset.com/bbs/download/2146180.pdf?attachmentId=2146180
+- [채권분석] Daily Bond Morning Brief(2026.07.29) | 다올투자증권 | 2026-07-29 | 우선순위 4.10 | https://stock.pstatic.net/stock-research/debenture/76/20260729_debenture_957436000.pdf
+- [시황정보] [DS Defense Daily] 2026-07-29 | DS투자증권 | 2026-07-29 | 우선순위 4.00 | https://stock.pstatic.net/stock-research/market/66/20260729_market_929102000.pdf
+- [시황정보] 마켓 뷰(7월 29일) | 미래에셋증권 | 2026-07-29 | 우선순위 3.20 | https://securities.miraeasset.com/bbs/download/2146173.pdf?attachmentId=2146173
