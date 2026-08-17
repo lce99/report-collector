@@ -1,9 +1,9 @@
 # 2026-08-14 증권사 리포트 데일리
 
 - 요청 기준일: 2026-08-17
-- 생성 시각: 2026-08-17T10:32:53+09:00
+- 생성 시각: 2026-08-17T16:38:01+09:00
 - 대시보드: https://lce99.github.io/report-collector/?date=2026-08-14
-- 수집 건수: 173건
+- 수집 건수: 161건
 - PDF 텍스트 보강: 62건
 - OpenAI 요약 적용: 0건
 - LLM 투자 메모: 0건
@@ -12,27 +12,31 @@
 ## 수집 메모
 2026-08-17 기준 리포트가 없어 2026-08-14 자료로 대체했습니다.
 
+## 운영 알림
+
+- [주의] 미래에셋증권 공식 무출력: 오늘 0건입니다. 최근 평균은 7.8건입니다.
+
 ## 수집 소스 상태
 
-- 네이버 금융 리서치: 정상, 137건, 289.30초
-- 미래에셋증권 공식: 정상, 12건, 28.41초
-- 한국투자증권 공식: 정상, 15건, 32.05초
-- 신한투자증권 공식: 정상, 18건, 9.30초
+- 네이버 금융 리서치: 정상, 137건, 196.67초
+- 미래에셋증권 공식: 무출력, 0건, 1.77초 - 정상 종료됐지만 해당 날짜 리포트가 없습니다.
+- 한국투자증권 공식: 정상, 15건, 30.18초
+- 신한투자증권 공식: 정상, 18건, 8.11초
 
 ## 관심 필터
 - 관심 종목: 삼성전자, SK하이닉스, 미래에셋증권, 대한항공, 삼성에스디에스, 이노스페이스
 - 관심 섹터/키워드: 반도체, 방산, 원자력, 로봇, 건설, 우주, 항공
-- 일치 리포트: 83건
+- 일치 리포트: 78건
 - 엄격 필터 모드: 꺼짐
 
 ## 오늘의 한줄
-추정치 상향 12건, 추정치 하향 11건, 이익 추정 상향 101건, 마진 개선 45건, 목표가 상향 8건, 목표가 하향 15건, 의견 변경 2건이 감지됐습니다. 오늘은 종목분석 리포트가 84건으로 가장 많았습니다. 신한투자증권, 미래에셋증권, 하나증권 발간 비중이 높았고, 우선 확인할 만한 핵심 리포트는 이마트 - 2Q26 Review : 아쉬움은 뒤로하고, 내일을 볼.., HMM - 2Q26 Re: 글로벌 정세가 불안정하면 물류는 .., 삼성생명 - 삼성생명; 입금은 확정인데 출금은 아직 미확정입니다.
+추정치 상향 12건, 추정치 하향 11건, 이익 추정 상향 97건, 마진 개선 45건, 목표가 상향 8건, 목표가 하향 15건, 의견 변경 2건이 감지됐습니다. 오늘은 종목분석 리포트가 84건으로 가장 많았습니다. 신한투자증권, 하나증권, 한국투자증권 발간 비중이 높았고, 우선 확인할 만한 핵심 리포트는 이마트 - 2Q26 Review : 아쉬움은 뒤로하고, 내일을 볼.., HMM - 2Q26 Re: 글로벌 정세가 불안정하면 물류는 .., 삼성생명 - 삼성생명; 입금은 확정인데 출금은 아직 미확정입니다.
 
 ## 이익·마진 추정 변화
-- 변화 감지 리포트: 121건
+- 변화 감지 리포트: 115건
 - 추정치 수치 상향/하향: 12건 / 11건
-- 이익 추정 상향/하향: 101건 / 74건
-- 마진 개선/악화: 45건 / 28건
+- 이익 추정 상향/하향: 97건 / 70건
+- 마진 개선/악화: 45건 / 26건
 - 목표가 상향/하향: 8건 / 15건
 - 의견 변경/애널리스트 변경: 2건 / 2건
 
@@ -230,7 +234,7 @@
 - 증권사: 대신증권
 - 발행일: 2026-08-14
 - 우선순위 점수: 16.05
-- 선정 근거: 투자정보 카테고리, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(반도체), 이익 추정 상향/증가, 우선 추적 증권사
+- 선정 근거: 투자정보 카테고리, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(반도체), 조회수 상위권, 이익 추정 상향/증가
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 삼성전자, SK하이닉스 / 키워드 반도체
 - 요약: [Key Point] 수요와 자금이 동시에 확인된 AI 투자 사이클 - AI 관련 기업들의 실적 발표를 통해 AI 인프라 투자와 반도체 수요가 견조하다는 점을 재확인. 이에 대형 반도체뿐만 아니라 반도체 소부장도 동반 강세 전개하며 지수 상승에 기여
@@ -252,7 +256,7 @@
 - 증권사: 키움증권
 - 발행일: 2026-08-14
 - 우선순위 점수: 16.45
-- 선정 근거: 경제분석 카테고리, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(반도체, 건설), 이익 추정 상향/증가, 이익 추정 하향/감소
+- 선정 근거: 경제분석 카테고리, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(반도체, 건설), 조회수 상위권, 이익 추정 상향/증가
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 삼성전자, SK하이닉스 / 키워드 반도체, 건설
 - 요약: Comment - 13일(목) 코스피는 나흘째 상승 마감(KOSPI 3.56%, KOSDAQ 0.29%). 지수는 6,773.92로 강세 출발해 한때 6,900 턱밑까지 올랐으나 장 마감 직전 상승 폭을 조절하며 6,813.34로 마감.
@@ -262,7 +266,7 @@
 ### 10. [경제분석] 신한 Econ Check-up; 정책 이벤트 확인 속 긴축 경로 재점검하는 구간
 - 증권사: 신한투자증권
 - 발행일: 2026-08-14
-- 우선순위 점수: 9.14
+- 우선순위 점수: 9.20
 - 선정 근거: 경제분석 카테고리, 공식 소스, 관심 섹터/키워드(반도체, 건설), 우선 추적 증권사
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 없음 / 키워드 반도체, 건설
@@ -358,7 +362,7 @@
 - [종목분석] 클래시스 - 브라질 정상화가 관건 | 미래에셋증권 | 2026-08-14 | 우선순위 13.16 | https://stock.pstatic.net/stock-research/company/56/20260814_company_401931000.pdf
 - [시황정보] 8/14 KB 리서치 모닝코멘트 | KB증권 | 2026-08-14 | 우선순위 13.10 | https://stock.pstatic.net/stock-research/market/58/20260814_market_611100000.pdf
 - [산업분석] 인터넷포탈 - [IBKS Daily] 인터넷/게임 | IBK투자증권 | 2026-08-14 | 우선순위 13.05 | https://stock.pstatic.net/stock-research/industry/40/20260814_industry_506195000.pdf
-- [시황정보] 국내 주식 마감 시황 - 120일선 돌파 후 7,000p 목전(8월 14일) | 신한투자증권 | 2026-08-14 | 우선순위 12.86 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353370
+- [시황정보] 국내 주식 마감 시황 - 120일선 돌파 후 7,000p 목전(8월 14일) | 신한투자증권 | 2026-08-14 | 우선순위 12.91 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353370
 - [시황정보] 8/13 KB 리서치 장마감코멘트 | KB증권 | 2026-08-14 | 우선순위 12.85 | https://stock.pstatic.net/stock-research/market/58/20260814_market_599821000.pdf
 - [종목분석] 하이트진로 - 비용 절감은 우수, 판매량 회복은 과제 | 신한투자증권 | 2026-08-14 | 우선순위 12.70 | https://finance.naver.com/research/company_read.naver?nid=95608&page=2
 - [종목분석] 삼성화재 - 2Q26 Re - 하반기에도 이어질 배당 모멘텀 | 하나증권 | 2026-08-14 | 우선순위 12.62 | https://stock.pstatic.net/stock-research/company/57/20260814_company_471996000.pdf
@@ -377,8 +381,8 @@
 - [시황정보] 국내 주식 마감 시황 - KOSPI 기술적 강세장 진입(8월.. | 신한투자증권 | 2026-08-14 | 우선순위 11.75 | https://finance.naver.com/research/market_info_read.naver?nid=37140&page=1
 - [종목분석] 삼성화재 - 2Q26 Review: 보험손익 및 투자손익 개선세 .. | 교보증권 | 2026-08-14 | 우선순위 11.72 | https://stock.pstatic.net/stock-research/company/62/20260814_company_988861000.pdf
 - [종목분석] 스티펠 - 스파이어 글로벌(SPIR USA):[Review] 전망 유지, 매출 가시성 제고 | 한국투자증권 | 2026-08-14 | 우선순위 11.50 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=158342
+- [산업분석] 건설리츠 - 건설; 벌써 3번째 주택공급 대책 | 신한투자증권 | 2026-08-14 | 우선순위 11.34 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353337
 - [종목분석] 금강공업 - 강관에서 모듈러까지, 건설·산업 소재의 전 .. | NICE평가정보 | 2026-08-14 | 우선순위 11.30 | https://stock.pstatic.net/stock-research/company/69/20260814_company_762404000.pdf
-- [산업분석] 건설리츠 - 건설; 벌써 3번째 주택공급 대책 | 신한투자증권 | 2026-08-14 | 우선순위 11.30 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353337
 - [종목분석] 메리츠금융지주 - 차별화된 성장세 지속 | 미래에셋증권 | 2026-08-14 | 우선순위 11.25 | https://stock.pstatic.net/stock-research/company/56/20260814_company_385652000.pdf
 - [투자정보] [다음주 시장은?] 반도체 주도력 회복, 비반도체 순환.. | 대신증권 | 2026-08-14 | 우선순위 11.10 | https://stock.pstatic.net/stock-research/invest/15/20260814_invest_591440000.pdf
 - [종목분석] 크라우드웍스 - AI 데이터 구축 역량 기반 사업영역을 확장하.. | 서울평가정보 | 2026-08-14 | 우선순위 11.10 | https://stock.pstatic.net/stock-research/company/75/20260814_company_845645000.pdf
@@ -388,33 +392,30 @@
 - [투자정보] [QWER] 8월 2주차 - KOSDAQ ETF 수급 민감도 | 유안타증권 | 2026-08-14 | 우선순위 10.60 | https://stock.pstatic.net/stock-research/invest/18/20260814_invest_254829000.pdf
 - [종목분석] 삼성생명 - One-off 요인으로 본업 부진. 관건은 주주환.. | iM증권 | 2026-08-14 | 우선순위 10.52 | https://stock.pstatic.net/stock-research/company/61/20260814_company_168059000.pdf
 - [종목분석] 스티펠 - 인튜이티브 머신스(LUNR USA):[Review] 위성 양산 본격화, 매수로 상향 | 한국투자증권 | 2026-08-14 | 우선순위 10.40 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=158354
+- [종목분석] 넥센타이어; 저평가의 이유는 줄고, 재평가의 조건은 쌓인다 | 신한투자증권 | 2026-08-14 | 우선순위 10.36 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353339
 - [종목분석] 달바글로벌 - 북미와 유럽이 견인한 실적 | IBK투자증권 | 2026-08-14 | 우선순위 10.35 | https://stock.pstatic.net/stock-research/company/40/20260814_company_756177000.pdf
-- [종목분석] 넥센타이어; 저평가의 이유는 줄고, 재평가의 조건은 쌓인다 | 신한투자증권 | 2026-08-14 | 우선순위 10.35 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353339
 - [종목분석] 현대리바트 - 2Q26 NDR 후기: 외형 성장 필요 | IBK투자증권 | 2026-08-14 | 우선순위 10.25 | https://stock.pstatic.net/stock-research/company/40/20260814_company_986338000.pdf
 - [종목분석] 삼익제약 - 재도약(Re)으로 더 높이 비상(Leap)하는 3대 .. | NICE평가정보 | 2026-08-14 | 우선순위 10.20 | https://stock.pstatic.net/stock-research/company/69/20260814_company_17203000.pdf
 - [종목분석] 타조이엔터테인먼트 - K-POP 공연기획 역량 기반의 숏폼 콘텐츠 사.. | 서울평가정보 | 2026-08-14 | 우선순위 10.20 | https://stock.pstatic.net/stock-research/company/75/20260814_company_49867000.pdf
 - [종목분석] 덕양에너젠 - 산업용 수소 공급 기업 | 한국IR협의회 | 2026-08-14 | 우선순위 10.20 | https://stock.pstatic.net/stock-research/company/74/20260814_company_453007000.pdf
-- [산업분석] 한국&중국 마켓 클로징(8월 14일) | 미래에셋증권 | 2026-08-14 | 우선순위 10.15 | https://securities.miraeasset.com/bbs/download/2146758.pdf?attachmentId=2146758
+- [시황정보] Shinhan China Weekly(8월 2주차); 업종별 순환매 속 포지션 재구축 | 신한투자증권 | 2026-08-14 | 우선순위 10.18 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353361
 - [산업분석] 스티펠 - 아날로그 반도체:높아진 이익 추정치와 낮아진 밸류에이션으로 뚜렷해진 진입 기회 | 한국투자증권 | 2026-08-14 | 우선순위 10.15 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=158344
-- [시황정보] Shinhan China Weekly(8월 2주차); 업종별 순환매 속 포지션 재구축 | 신한투자증권 | 2026-08-14 | 우선순위 10.14 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353361
 - [투자정보] 08/14 달러, 인플레 부담 완화에 하락 | 키움증권 | 2026-08-14 | 우선순위 10.10 | https://stock.pstatic.net/stock-research/invest/39/20260814_invest_305140000.pdf
-- [시황정보] [국내주식전략] 신한 M.R.I: 칩(Chip)담대가 만드는 AI CapEx의 2막 | 신한투자증권 | 2026-08-14 | 우선순위 10.01 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353340
+- [시황정보] [국내주식전략] 신한 M.R.I: 칩(Chip)담대가 만드는 AI CapEx의 2막 | 신한투자증권 | 2026-08-14 | 우선순위 10.03 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353340
 - [시황정보] Global 산업재 Weekly(8월 2주차) | 신한투자증권 | 2026-08-14 | 우선순위 10.00 | https://finance.naver.com/research/market_info_read.naver?nid=37149&page=1
-- [산업분석] 신한 자동차/철강금속 Weekly (2026.08.14) | 신한투자증권 | 2026-08-14 | 우선순위 9.90 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353362
+- [산업분석] 신한 자동차/철강금속 Weekly (2026.08.14) | 신한투자증권 | 2026-08-14 | 우선순위 9.93 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353362
 - [종목분석] DB손해보험 - DB손해보험; 대규모 환입이 만든 어닝 서프라이즈 | 신한투자증권 | 2026-08-14 | 우선순위 9.81 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353344
 - [종목분석] 넥센타이어 - 저평가의 이유는 줄고, 재평가의 조건은 쌓인.. | 신한투자증권 | 2026-08-14 | 우선순위 9.80 | https://finance.naver.com/research/company_read.naver?nid=95610&page=2
 - [종목분석] 삼성생명 - 2Q26 Review: 견조한 이익을 바탕으로 한 배.. | 교보증권 | 2026-08-14 | 우선순위 9.45 | https://stock.pstatic.net/stock-research/company/62/20260814_company_658060000.pdf
 - [종목분석] 현대해상 - 손에 잡힐 것도 같은 배당 | 미래에셋증권 | 2026-08-14 | 우선순위 9.45 | https://stock.pstatic.net/stock-research/company/56/20260814_company_816592000.pdf
 - [산업분석] 철강금속 - 신한 자동차/철강금속 Weekly (2026.08.14) | 신한투자증권 | 2026-08-14 | 우선순위 9.45 | https://finance.naver.com/research/industry_read.naver?nid=45680&page=1
-- [산업분석] SMIC (00981 HK/매수) | 미래에셋증권 | 2026-08-14 | 우선순위 9.32 | https://securities.miraeasset.com/bbs/download/2146749.pdf?attachmentId=2146749
-- [경제분석] 신한 Econ Check-up; 정책 이벤트 확인 속 긴축 경로 재점검하는 구간 | 신한투자증권 | 2026-08-14 | 우선순위 9.14 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353368
-- [산업분석] 삼성전자 (005930/매수) | 미래에셋증권 | 2026-08-14 | 우선순위 9.12 | https://securities.miraeasset.com/bbs/download/2146686.pdf?attachmentId=2146686
+- [경제분석] 신한 Econ Check-up; 정책 이벤트 확인 속 긴축 경로 재점검하는 구간 | 신한투자증권 | 2026-08-14 | 우선순위 9.20 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353368
 - [종목분석] 한국금융지주 - 한국금융지주; KDB생명 인수 우선협상대상자 선정 | 신한투자증권 | 2026-08-14 | 우선순위 9.10 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353346
-- [경제분석] 신한 FX Check-up; 원/달러 박스권 하단 탐색 | 신한투자증권 | 2026-08-14 | 우선순위 9.02 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353369
+- [경제분석] 신한 FX Check-up; 원/달러 박스권 하단 탐색 | 신한투자증권 | 2026-08-14 | 우선순위 9.06 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353369
 - [종목분석] 스티펠 - 셈텍(SMTC USA):셀률러 모듈 사업 매각으로 전사 마진 구조 개선 | 한국투자증권 | 2026-08-14 | 우선순위 9.00 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=158340
 - [종목분석] 스티펠 - 알파 앤드 오메가 세미컨덕터(AOSL USA):[Review] 6월 실적 상회, PC 부진에 9월 가이던스는 하회 | 한국투자증권 | 2026-08-14 | 우선순위 8.90 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=158341
+- [경제분석] 자산가격 메커니즘 변화 #0; 수요의 문법으로 공급의 시대를 읽을 수 있을까 | 신한투자증권 | 2026-08-14 | 우선순위 8.87 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353353
 - [종목분석] 스티펠 - 코히어런트(COHR USA):[Review] FY27 매출 눈높이 상향, 믹스가 마진 제약 | 한국투자증권 | 2026-08-14 | 우선순위 8.87 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=158343
-- [경제분석] 자산가격 메커니즘 변화 #0; 수요의 문법으로 공급의 시대를 읽을 수 있을까 | 신한투자증권 | 2026-08-14 | 우선순위 8.85 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353353
 - [투자정보] [Hana China Weekly] 중국 휴머노이드 대장주 유니트.. | 하나증권 | 2026-08-14 | 우선순위 8.85 | https://stock.pstatic.net/stock-research/invest/57/20260814_invest_721147000.pdf
 - [시황정보] 마켓레이더 - 칠천피 도달 후 숨고르기 (8월 14일) | 신한투자증권 | 2026-08-14 | 우선순위 8.80 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353360
 - [산업분석] 건설 - 벌써 3번째 주택공급 대책 | 신한투자증권 | 2026-08-14 | 우선순위 8.80 | https://finance.naver.com/research/industry_read.naver?nid=45672&page=1
@@ -427,20 +428,14 @@
 - [종목분석] 스티펠 - 허트플로우(HTFL USA):[Review] 전 사업부 호조와 기대 이상의 가이던스, 목표가 상향 | 한국투자증권 | 2026-08-14 | 우선순위 8.40 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=158355
 - [채권분석] Eugenes FICC Update | 유진투자증권 | 2026-08-14 | 우선순위 8.30 | https://stock.pstatic.net/stock-research/debenture/63/20260814_debenture_382475000.pdf
 - [종목분석] 삼성SDI - 중국 점유율을 뺏어오기 시작할 것 | 미래에셋증권 | 2026-08-14 | 우선순위 8.25 | https://stock.pstatic.net/stock-research/company/56/20260814_company_301562000.pdf
-- [시황정보] SK하이닉스 (000660/매수) | 미래에셋증권 | 2026-08-14 | 우선순위 8.22 | https://securities.miraeasset.com/bbs/download/2146714.pdf?attachmentId=2146714
 - [경제분석] [Global Markets Monitor] 현재 미국 고용 부진을 우.. | IBK투자증권 | 2026-08-14 | 우선순위 8.15 | https://stock.pstatic.net/stock-research/economy/40/20260814_economy_438417000.pdf
 - [시황정보] Japan Weekly(8월 2주차) | 신한투자증권 | 2026-08-14 | 우선순위 8.10 | https://finance.naver.com/research/market_info_read.naver?nid=37147&page=1
-- [산업분석] 현대해상 (001450/중립) | 미래에셋증권 | 2026-08-14 | 우선순위 7.72 | https://securities.miraeasset.com/bbs/download/2146745.pdf?attachmentId=2146745
 - [시황정보] Daily Market Digest (8월 14일) | 신한투자증권 | 2026-08-14 | 우선순위 7.70 | https://finance.naver.com/research/market_info_read.naver?nid=37153&page=1
 - [경제분석] [IBKS Economy Monitor] Focus on Week: 이번 사이클.. | IBK투자증권 | 2026-08-14 | 우선순위 7.65 | https://stock.pstatic.net/stock-research/economy/40/20260814_economy_483116000.pdf
 - [경제분석] 7월 물가: 약해진 인상의 명분 | 유진투자증권 | 2026-08-14 | 우선순위 7.65 | https://stock.pstatic.net/stock-research/economy/63/20260814_economy_530002000.pdf
 - [시황정보] Daily 신한생각 (8월 14일) | 신한투자증권 | 2026-08-14 | 우선순위 7.50 | https://finance.naver.com/research/market_info_read.naver?nid=37155&page=1
 - [시황정보] Global IT H/W Weekly (8월 2주차); AI 수익성과 지속.. | 신한투자증권 | 2026-08-14 | 우선순위 7.50 | https://finance.naver.com/research/market_info_read.naver?nid=37145&page=1
-- [시황정보] AI 데일리 글로벌 마켓 브리핑(8월 14일) | 미래에셋증권 | 2026-08-14 | 우선순위 7.45 | https://securities.miraeasset.com/bbs/download/2146682.pdf?attachmentId=2146682
-- [투자정보] 클래시스 (214150/매수) | 미래에셋증권 | 2026-08-14 | 우선순위 7.40 | https://securities.miraeasset.com/bbs/download/2146684.pdf?attachmentId=2146684
 - [시황정보] Global 에너지 Weekly (8월 2주차) - Vestas가 보여준.. | 신한투자증권 | 2026-08-14 | 우선순위 7.20 | https://finance.naver.com/research/market_info_read.naver?nid=37156&page=1
-- [산업분석] LG (003550/매수) | 미래에셋증권 | 2026-08-14 | 우선순위 7.16 | https://securities.miraeasset.com/bbs/download/2146712.pdf?attachmentId=2146712
-- [투자정보] 덴티움 (145720/매수) | 미래에셋증권 | 2026-08-14 | 우선순위 6.98 | https://securities.miraeasset.com/bbs/download/2146760.pdf?attachmentId=2146760
 - [투자정보] 2Q26 글로벌 헬스케어 실적 리뷰 | 신한투자증권 | 2026-08-14 | 우선순위 6.90 | https://finance.naver.com/research/invest_read.naver?nid=39895&page=1
 - [종목분석] 스티펠 - 예티 홀딩스(YETI USA):[Review] 예상치 상회 및 가이던스 상향, 규모는 제한적 | 한국투자증권 | 2026-08-14 | 우선순위 6.90 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=158352
 - [산업분석] 유틸리티 - 더울 때 시작되는 겨울철 LNG 걱정 | 하나증권 | 2026-08-14 | 우선순위 6.75 | https://stock.pstatic.net/stock-research/industry/57/20260814_industry_312312000.pdf
@@ -464,6 +459,3 @@
 - [산업분석] 국태해통증권 - 임의소비재:WAIC AI 안경 리뷰, 제품은 시나리오별 양산 단계로 진입 | 한국투자증권 | 2026-08-14 | 우선순위 4.35 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=158348
 - [산업분석] 국태해통증권 - 컴퓨터:FDE와 Harness, AI 상용화 안착 지원 | 한국투자증권 | 2026-08-14 | 우선순위 4.35 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=158347
 - [시황정보] [DS Defense Daily] 2026-08-14 | DS투자증권 | 2026-08-14 | 우선순위 4.00 | https://stock.pstatic.net/stock-research/market/66/20260814_market_318203000.pdf
-- [시황정보] Macro Week Ahead | 미래에셋증권 | 2026-08-14 | 우선순위 3.45 | https://securities.miraeasset.com/bbs/download/2146753.pdf?attachmentId=2146753
-- [시황정보] 마켓 뷰(8월 14일) | 미래에셋증권 | 2026-08-14 | 우선순위 3.20 | https://securities.miraeasset.com/bbs/download/2146734.pdf?attachmentId=2146734
-- [시황정보] 월스트리트파인더 Ep.202 | 미래에셋증권 | 2026-08-14 | 우선순위 3.20 | https://securities.miraeasset.com/bbs/download/2146759.pdf?attachmentId=2146759

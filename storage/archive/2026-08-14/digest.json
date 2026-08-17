@@ -1,10 +1,10 @@
 {
   "date": "2026-08-14",
   "requested_date": "2026-08-17",
-  "generated_at": "2026-08-17T10:32:53+09:00",
+  "generated_at": "2026-08-17T16:38:01+09:00",
   "collection_note": "2026-08-17 기준 리포트가 없어 2026-08-14 자료로 대체했습니다.",
   "dashboard_url": "https://lce99.github.io/report-collector/?date=2026-08-14",
-  "editorial_note": "추정치 상향 12건, 추정치 하향 11건, 이익 추정 상향 101건, 마진 개선 45건, 목표가 상향 8건, 목표가 하향 15건, 의견 변경 2건이 감지됐습니다. 오늘은 종목분석 리포트가 84건으로 가장 많았습니다. 신한투자증권, 미래에셋증권, 하나증권 발간 비중이 높았고, 우선 확인할 만한 핵심 리포트는 이마트 - 2Q26 Review : 아쉬움은 뒤로하고, 내일을 볼.., HMM - 2Q26 Re: 글로벌 정세가 불안정하면 물류는 .., 삼성생명 - 삼성생명; 입금은 확정인데 출금은 아직 미확정입니다.",
+  "editorial_note": "추정치 상향 12건, 추정치 하향 11건, 이익 추정 상향 97건, 마진 개선 45건, 목표가 상향 8건, 목표가 하향 15건, 의견 변경 2건이 감지됐습니다. 오늘은 종목분석 리포트가 84건으로 가장 많았습니다. 신한투자증권, 하나증권, 한국투자증권 발간 비중이 높았고, 우선 확인할 만한 핵심 리포트는 이마트 - 2Q26 Review : 아쉬움은 뒤로하고, 내일을 볼.., HMM - 2Q26 Re: 글로벌 정세가 불안정하면 물류는 .., 삼성생명 - 삼성생명; 입금은 확정인데 출금은 아직 미확정입니다.",
   "keywords": [
     "IBKS",
     "삼성생명",
@@ -35,24 +35,24 @@
       "항공"
     ],
     "priority_only": false,
-    "matched_reports": 83,
+    "matched_reports": 78,
     "matched_must_read": 10
   },
   "stats": {
-    "total_reports": 173,
-    "priority_match_reports": 83,
+    "total_reports": 161,
+    "priority_match_reports": 78,
     "pdf_text_reports": 62,
-    "estimate_metric_reports": 60,
-    "estimate_signal_reports": 120,
-    "earnings_estimate_up": 101,
-    "earnings_estimate_down": 74,
+    "estimate_metric_reports": 53,
+    "estimate_signal_reports": 114,
+    "earnings_estimate_up": 97,
+    "earnings_estimate_down": 70,
     "margin_estimate_up": 45,
-    "margin_estimate_down": 28,
+    "margin_estimate_down": 26,
     "estimate_revision_up": 12,
     "estimate_revision_down": 11,
     "llm_summary_reports": 0,
     "llm_investment_memo_reports": 0,
-    "changed_reports": 121,
+    "changed_reports": 115,
     "collector_health": [
       {
         "source": "naver_research",
@@ -60,17 +60,17 @@
         "collector": "NaverResearchCollector",
         "status": "ok",
         "report_count": 137,
-        "duration_seconds": 289.3,
+        "duration_seconds": 196.67,
         "message": ""
       },
       {
         "source": "mirae_asset_official",
         "label": "미래에셋증권 공식",
         "collector": "MiraeAssetCollector",
-        "status": "ok",
-        "report_count": 12,
-        "duration_seconds": 28.41,
-        "message": ""
+        "status": "empty",
+        "report_count": 0,
+        "duration_seconds": 1.77,
+        "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
       },
       {
         "source": "korea_investment_official",
@@ -78,7 +78,7 @@
         "collector": "KoreaInvestmentCollector",
         "status": "ok",
         "report_count": 15,
-        "duration_seconds": 32.05,
+        "duration_seconds": 30.18,
         "message": ""
       },
       {
@@ -87,7 +87,7 @@
         "collector": "ShinhanInvestmentCollector",
         "status": "ok",
         "report_count": 18,
-        "duration_seconds": 9.3,
+        "duration_seconds": 8.11,
         "message": ""
       }
     ],
@@ -95,11 +95,11 @@
       "available": true,
       "active_date": "2026-08-14",
       "attempt_count": 4,
-      "ok_sources": 4,
-      "empty_sources": 0,
+      "ok_sources": 3,
+      "empty_sources": 1,
       "failed_sources": 0,
-      "raw_report_count": 182,
-      "deduped_report_count": 173
+      "raw_report_count": 170,
+      "deduped_report_count": 161
     },
     "collector_health_attempts": [
       {
@@ -113,7 +113,7 @@
             "collector": "NaverResearchCollector",
             "status": "empty",
             "report_count": 0,
-            "duration_seconds": 8.3,
+            "duration_seconds": 7.08,
             "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
           },
           {
@@ -122,7 +122,7 @@
             "collector": "MiraeAssetCollector",
             "status": "empty",
             "report_count": 0,
-            "duration_seconds": 1.83,
+            "duration_seconds": 1.8,
             "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
           },
           {
@@ -131,7 +131,7 @@
             "collector": "KoreaInvestmentCollector",
             "status": "empty",
             "report_count": 0,
-            "duration_seconds": 11.59,
+            "duration_seconds": 10.93,
             "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
           },
           {
@@ -140,7 +140,7 @@
             "collector": "ShinhanInvestmentCollector",
             "status": "empty",
             "report_count": 0,
-            "duration_seconds": 4.79,
+            "duration_seconds": 4.02,
             "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
           }
         ]
@@ -156,7 +156,7 @@
             "collector": "NaverResearchCollector",
             "status": "empty",
             "report_count": 0,
-            "duration_seconds": 6.99,
+            "duration_seconds": 6.09,
             "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
           },
           {
@@ -165,7 +165,7 @@
             "collector": "MiraeAssetCollector",
             "status": "empty",
             "report_count": 0,
-            "duration_seconds": 2.8,
+            "duration_seconds": 3.09,
             "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
           },
           {
@@ -174,7 +174,7 @@
             "collector": "KoreaInvestmentCollector",
             "status": "empty",
             "report_count": 0,
-            "duration_seconds": 11.35,
+            "duration_seconds": 10.76,
             "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
           },
           {
@@ -183,7 +183,7 @@
             "collector": "ShinhanInvestmentCollector",
             "status": "empty",
             "report_count": 0,
-            "duration_seconds": 4.0,
+            "duration_seconds": 3.64,
             "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
           }
         ]
@@ -199,7 +199,7 @@
             "collector": "NaverResearchCollector",
             "status": "empty",
             "report_count": 0,
-            "duration_seconds": 6.81,
+            "duration_seconds": 6.12,
             "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
           },
           {
@@ -208,7 +208,7 @@
             "collector": "MiraeAssetCollector",
             "status": "empty",
             "report_count": 0,
-            "duration_seconds": 2.29,
+            "duration_seconds": 1.59,
             "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
           },
           {
@@ -217,7 +217,7 @@
             "collector": "KoreaInvestmentCollector",
             "status": "empty",
             "report_count": 0,
-            "duration_seconds": 11.12,
+            "duration_seconds": 10.94,
             "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
           },
           {
@@ -226,15 +226,15 @@
             "collector": "ShinhanInvestmentCollector",
             "status": "empty",
             "report_count": 0,
-            "duration_seconds": 4.37,
+            "duration_seconds": 3.77,
             "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
           }
         ]
       },
       {
         "date": "2026-08-14",
-        "raw_report_count": 182,
-        "deduped_report_count": 173,
+        "raw_report_count": 170,
+        "deduped_report_count": 161,
         "collectors": [
           {
             "source": "naver_research",
@@ -242,17 +242,17 @@
             "collector": "NaverResearchCollector",
             "status": "ok",
             "report_count": 137,
-            "duration_seconds": 289.3,
+            "duration_seconds": 196.67,
             "message": ""
           },
           {
             "source": "mirae_asset_official",
             "label": "미래에셋증권 공식",
             "collector": "MiraeAssetCollector",
-            "status": "ok",
-            "report_count": 12,
-            "duration_seconds": 28.41,
-            "message": ""
+            "status": "empty",
+            "report_count": 0,
+            "duration_seconds": 1.77,
+            "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
           },
           {
             "source": "korea_investment_official",
@@ -260,7 +260,7 @@
             "collector": "KoreaInvestmentCollector",
             "status": "ok",
             "report_count": 15,
-            "duration_seconds": 32.05,
+            "duration_seconds": 30.18,
             "message": ""
           },
           {
@@ -269,27 +269,39 @@
             "collector": "ShinhanInvestmentCollector",
             "status": "ok",
             "report_count": 18,
-            "duration_seconds": 9.3,
+            "duration_seconds": 8.11,
             "message": ""
           }
         ]
       }
     ],
-    "collector_alerts": [],
+    "collector_alerts": [
+      {
+        "type": "collector_empty",
+        "severity": "warning",
+        "source": "mirae_asset_official",
+        "label": "미래에셋증권 공식",
+        "title": "미래에셋증권 공식 무출력",
+        "message": "오늘 0건입니다. 최근 평균은 7.8건입니다.",
+        "current_count": 0,
+        "average_count": 7.8,
+        "sample_days": 5
+      }
+    ],
     "collector_alert_summary": {
-      "available": false,
-      "total_alerts": 0,
+      "available": true,
+      "total_alerts": 1,
       "critical_alerts": 0,
-      "warning_alerts": 0,
+      "warning_alerts": 1,
       "failed_sources": 0,
-      "empty_sources": 0,
+      "empty_sources": 1,
       "volume_drop_alerts": 0
     },
     "link_health": {
-      "pdf_preferred": 138,
+      "pdf_preferred": 126,
       "detail_only": 35,
       "missing": 0,
-      "total": 173
+      "total": 161
     },
     "must_read_diversity": {
       "selected": 12,
@@ -308,15 +320,15 @@
       },
       {
         "label": "시황정보",
-        "count": 33
-      },
-      {
-        "label": "산업분석",
-        "count": 23
+        "count": 28
       },
       {
         "label": "투자정보",
-        "count": 20
+        "count": 18
+      },
+      {
+        "label": "산업분석",
+        "count": 18
       },
       {
         "label": "경제분석",
@@ -333,10 +345,6 @@
         "count": 38
       },
       {
-        "name": "미래에셋증권",
-        "count": 22
-      },
-      {
         "name": "하나증권",
         "count": 15
       },
@@ -351,6 +359,10 @@
       {
         "name": "키움증권",
         "count": 11
+      },
+      {
+        "name": "미래에셋증권",
+        "count": 10
       },
       {
         "name": "IBK투자증권",
@@ -943,7 +955,7 @@
   },
   "change_summary": {
     "available": true,
-    "changed_reports": 121,
+    "changed_reports": 115,
     "target_price_up": 8,
     "target_price_down": 15,
     "opinion_changed": 2,
@@ -951,11 +963,11 @@
     "opinion_down": 1,
     "analyst_changed": 2,
     "coverage_initiated": 13,
-    "estimate_signal_reports": 120,
-    "earnings_estimate_up": 101,
-    "earnings_estimate_down": 74,
+    "estimate_signal_reports": 114,
+    "earnings_estimate_up": 97,
+    "earnings_estimate_down": 70,
     "margin_estimate_up": 45,
-    "margin_estimate_down": 28,
+    "margin_estimate_down": 26,
     "estimate_revision_up": 12,
     "estimate_revision_down": 11
   },
@@ -979,7 +991,7 @@
           "subject": "테스",
           "subject_key": "테스",
           "ticker": "095610",
-          "views": 4964,
+          "views": 5145,
           "analyst": null,
           "target_price": "230,000",
           "target_price_value": 230000,
@@ -1214,7 +1226,7 @@
           "subject": "삼성생명",
           "subject_key": "삼성생명",
           "ticker": "032830",
-          "views": 4678,
+          "views": 5006,
           "analyst": null,
           "target_price": "440,000",
           "target_price_value": 440000,
@@ -1408,7 +1420,7 @@
           "subject": "실리콘투",
           "subject_key": "실리콘투",
           "ticker": "257720",
-          "views": 4860,
+          "views": 5225,
           "analyst": null,
           "target_price": "59,000",
           "target_price_value": 59000,
@@ -1654,7 +1666,7 @@
           "subject": "삼성생명",
           "subject_key": "삼성생명",
           "ticker": "032830",
-          "views": 4125,
+          "views": 4270,
           "analyst": "임희연",
           "target_price": "450,000원",
           "target_price_value": 450000,
@@ -1848,7 +1860,7 @@
           "subject": "SK이터닉스",
           "subject_key": "sk이터닉스",
           "ticker": "475150",
-          "views": 5602,
+          "views": 6040,
           "analyst": null,
           "target_price": "66,000",
           "target_price_value": 66000,
@@ -2065,7 +2077,7 @@
           "subject": "인터넷포탈",
           "subject_key": "인터넷포탈",
           "ticker": null,
-          "views": 2392,
+          "views": 2668,
           "analyst": "정해창",
           "target_price": null,
           "target_price_value": null,
@@ -2199,7 +2211,7 @@
           "subject": "반도체",
           "subject_key": "반도체",
           "ticker": null,
-          "views": 2165,
+          "views": 2449,
           "analyst": "류형근",
           "target_price": null,
           "target_price_value": null,
@@ -2328,7 +2340,7 @@
           "subject": "기타",
           "subject_key": "기타",
           "ticker": null,
-          "views": 1917,
+          "views": 2155,
           "analyst": "정의훈",
           "target_price": null,
           "target_price_value": null,
@@ -2475,7 +2487,7 @@
           "subject": "인터넷포탈",
           "subject_key": "인터넷포탈",
           "ticker": null,
-          "views": 1914,
+          "views": 2135,
           "analyst": "이승훈",
           "target_price": null,
           "target_price_value": null,
@@ -2611,7 +2623,7 @@
           "subject": "기타",
           "subject_key": "기타",
           "ticker": null,
-          "views": 2045,
+          "views": 2289,
           "analyst": "엄수진",
           "target_price": null,
           "target_price_value": null,
@@ -2738,7 +2750,7 @@
           "subject": null,
           "subject_key": null,
           "ticker": null,
-          "views": 532,
+          "views": 569,
           "analyst": null,
           "target_price": null,
           "target_price_value": null,
@@ -2916,7 +2928,7 @@
           "subject": null,
           "subject_key": null,
           "ticker": null,
-          "views": 925,
+          "views": 1012,
           "analyst": null,
           "target_price": null,
           "target_price_value": null,
@@ -2947,8 +2959,8 @@
             "경제분석 카테고리",
             "관심 종목(삼성전자, SK하이닉스)",
             "관심 섹터/키워드(반도체, 건설)",
-            "이익 추정 상향/증가",
-            "이익 추정 하향/감소"
+            "조회수 상위권",
+            "이익 추정 상향/증가"
           ],
           "score_breakdown": [
             {
@@ -3061,7 +3073,7 @@
           "subject": null,
           "subject_key": null,
           "ticker": null,
-          "views": 1458,
+          "views": 1608,
           "analyst": null,
           "target_price": null,
           "target_price_value": null,
@@ -3201,7 +3213,7 @@
           "subject": null,
           "subject_key": null,
           "ticker": null,
-          "views": 616,
+          "views": 657,
           "analyst": null,
           "target_price": null,
           "target_price_value": null,
@@ -3362,7 +3374,7 @@
           "subject": null,
           "subject_key": null,
           "ticker": null,
-          "views": 949,
+          "views": 1050,
           "analyst": null,
           "target_price": null,
           "target_price_value": null,
@@ -3391,8 +3403,8 @@
             "시황정보 카테고리",
             "관심 종목(삼성전자, SK하이닉스)",
             "관심 섹터/키워드(반도체, 건설)",
-            "이익 추정 하향/감소",
-            "우선 추적 증권사"
+            "조회수 상위권",
+            "이익 추정 하향/감소"
           ],
           "score_breakdown": [
             {
@@ -3503,7 +3515,7 @@
           "subject": null,
           "subject_key": null,
           "ticker": null,
-          "views": 983,
+          "views": 1080,
           "analyst": null,
           "target_price": null,
           "target_price_value": null,
@@ -3531,8 +3543,8 @@
             "투자정보 카테고리",
             "관심 종목(삼성전자, SK하이닉스)",
             "관심 섹터/키워드(반도체)",
-            "이익 추정 상향/증가",
-            "우선 추적 증권사"
+            "조회수 상위권",
+            "이익 추정 상향/증가"
           ],
           "score_breakdown": [
             {
@@ -3637,7 +3649,7 @@
           "subject": null,
           "subject_key": null,
           "ticker": null,
-          "views": 616,
+          "views": 684,
           "analyst": null,
           "target_price": null,
           "target_price_value": null,
@@ -3766,7 +3778,7 @@
           "subject": null,
           "subject_key": null,
           "ticker": null,
-          "views": 628,
+          "views": 677,
           "analyst": null,
           "target_price": null,
           "target_price_value": null,
@@ -3900,7 +3912,7 @@
           "subject": null,
           "subject_key": null,
           "ticker": null,
-          "views": 678,
+          "views": 725,
           "analyst": null,
           "target_price": null,
           "target_price_value": null,
@@ -4043,7 +4055,7 @@
           "subject": null,
           "subject_key": null,
           "ticker": null,
-          "views": 815,
+          "views": 903,
           "analyst": null,
           "target_price": null,
           "target_price_value": null,
@@ -4187,7 +4199,7 @@
       "subject": "이마트",
       "subject_key": "이마트",
       "ticker": "139480",
-      "views": 4610,
+      "views": 4949,
       "analyst": null,
       "target_price": "100,000",
       "target_price_value": 100000,
@@ -4381,7 +4393,7 @@
       "subject": "HMM",
       "subject_key": "hmm",
       "ticker": "011200",
-      "views": 5107,
+      "views": 5485,
       "analyst": null,
       "target_price": "21,000",
       "target_price_value": 21000,
@@ -4636,7 +4648,7 @@
       "subject": "이마트",
       "subject_key": "이마트",
       "ticker": "139480",
-      "views": 5237,
+      "views": 5747,
       "analyst": null,
       "target_price": "82,000",
       "target_price_value": 82000,
@@ -4845,7 +4857,7 @@
       "subject": "삼성생명",
       "subject_key": "삼성생명",
       "ticker": "032830",
-      "views": 4125,
+      "views": 4270,
       "analyst": "임희연",
       "target_price": "450,000원",
       "target_price_value": 450000,
@@ -5039,7 +5051,7 @@
       "subject": "실리콘투",
       "subject_key": "실리콘투",
       "ticker": "257720",
-      "views": 4673,
+      "views": 5020,
       "analyst": null,
       "target_price": "55,000",
       "target_price_value": 55000,
@@ -5293,7 +5305,7 @@
       "subject": "달바글로벌",
       "subject_key": "달바글로벌",
       "ticker": "483650",
-      "views": 4524,
+      "views": 4860,
       "analyst": null,
       "target_price": "290,000",
       "target_price_value": 290000,
@@ -5491,7 +5503,7 @@
       "subject": "DB손해보험",
       "subject_key": "db손해보험",
       "ticker": "005830",
-      "views": 3982,
+      "views": 4117,
       "analyst": null,
       "target_price": "220,000",
       "target_price_value": 220000,
@@ -5671,7 +5683,7 @@
       "subject": "이마트",
       "subject_key": "이마트",
       "ticker": "139480",
-      "views": 6046,
+      "views": 6611,
       "analyst": null,
       "target_price": "110,000",
       "target_price_value": 110000,
@@ -5919,7 +5931,7 @@
       "subject": "실리콘투",
       "subject_key": "실리콘투",
       "ticker": "257720",
-      "views": 6724,
+      "views": 7397,
       "analyst": null,
       "target_price": "63,000",
       "target_price_value": 63000,
@@ -6093,7 +6105,7 @@
       "subject": "실리콘투",
       "subject_key": "실리콘투",
       "ticker": "257720",
-      "views": 4860,
+      "views": 5225,
       "analyst": null,
       "target_price": "59,000",
       "target_price_value": 59000,
@@ -6339,7 +6351,7 @@
       "subject": "HMM",
       "subject_key": "hmm",
       "ticker": "011200",
-      "views": 4519,
+      "views": 4681,
       "analyst": "최민기",
       "target_price": null,
       "target_price_value": null,
@@ -6531,7 +6543,7 @@
       "subject": "삼성생명",
       "subject_key": "삼성생명",
       "ticker": "032830",
-      "views": 4629,
+      "views": 4971,
       "analyst": null,
       "target_price": "336,000",
       "target_price_value": 336000,
@@ -6710,7 +6722,7 @@
       "subject": "달바글로벌",
       "subject_key": "달바글로벌",
       "ticker": "483650",
-      "views": 4152,
+      "views": 4304,
       "analyst": "박현진",
       "target_price": "310,000",
       "target_price_value": 310000,
@@ -6949,7 +6961,7 @@
       "subject": "달바글로벌",
       "subject_key": "달바글로벌",
       "ticker": "483650",
-      "views": 5737,
+      "views": 6305,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -7166,7 +7178,7 @@
       "subject": "삼성생명",
       "subject_key": "삼성생명",
       "ticker": "032830",
-      "views": 4104,
+      "views": 4242,
       "analyst": null,
       "target_price": "380,000",
       "target_price_value": 380000,
@@ -7315,7 +7327,7 @@
       "subject": "테스",
       "subject_key": "테스",
       "ticker": "095610",
-      "views": 4964,
+      "views": 5145,
       "analyst": null,
       "target_price": "230,000",
       "target_price_value": 230000,
@@ -7550,7 +7562,7 @@
       "subject": "삼성화재",
       "subject_key": "삼성화재",
       "ticker": "000810",
-      "views": 3895,
+      "views": 4021,
       "analyst": null,
       "target_price": "740,000",
       "target_price_value": 740000,
@@ -7722,7 +7734,7 @@
       "subject": "NAVER",
       "subject_key": "naver",
       "ticker": "035420",
-      "views": 6008,
+      "views": 6230,
       "analyst": null,
       "target_price": "320,000",
       "target_price_value": 320000,
@@ -7938,7 +7950,7 @@
       "subject": "제닉",
       "subject_key": "제닉",
       "ticker": "123330",
-      "views": 5349,
+      "views": 5749,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -8156,7 +8168,7 @@
       "subject": "DB손해보험",
       "subject_key": "db손해보험",
       "ticker": "005830",
-      "views": 2063,
+      "views": 2159,
       "analyst": null,
       "target_price": "250,000",
       "target_price_value": 250000,
@@ -8320,7 +8332,7 @@
       "subject": "LG",
       "subject_key": "lg",
       "ticker": "003550",
-      "views": 4482,
+      "views": 4830,
       "analyst": null,
       "target_price": "140,000",
       "target_price_value": 140000,
@@ -8550,7 +8562,7 @@
       "subject": "HMM",
       "subject_key": "hmm",
       "ticker": "011200",
-      "views": 3896,
+      "views": 4037,
       "analyst": null,
       "target_price": "23,000",
       "target_price_value": 23000,
@@ -8777,7 +8789,7 @@
       "subject": "클래시스",
       "subject_key": "클래시스",
       "ticker": "214150",
-      "views": 4967,
+      "views": 5310,
       "analyst": null,
       "target_price": "60,000",
       "target_price_value": 60000,
@@ -9057,7 +9069,7 @@
       "subject": "삼성생명",
       "subject_key": "삼성생명",
       "ticker": "032830",
-      "views": 4678,
+      "views": 5006,
       "analyst": null,
       "target_price": "440,000",
       "target_price_value": 440000,
@@ -9251,7 +9263,7 @@
       "subject": "롯데관광개발",
       "subject_key": "롯데관광개발",
       "ticker": "032350",
-      "views": 5123,
+      "views": 5503,
       "analyst": null,
       "target_price": "21,000",
       "target_price_value": 21000,
@@ -9478,7 +9490,7 @@
       "subject": "삼양엔씨켐",
       "subject_key": "삼양엔씨켐",
       "ticker": "482630",
-      "views": 4540,
+      "views": 4859,
       "analyst": null,
       "target_price": "23,000",
       "target_price_value": 23000,
@@ -9705,7 +9717,7 @@
       "subject": "이마트",
       "subject_key": "이마트",
       "ticker": "139480",
-      "views": 4071,
+      "views": 4205,
       "analyst": null,
       "target_price": "103,000",
       "target_price_value": 103000,
@@ -9907,7 +9919,7 @@
       "subject": "삼성생명",
       "subject_key": "삼성생명",
       "ticker": "032830",
-      "views": 2225,
+      "views": 2325,
       "analyst": null,
       "target_price": "450,000",
       "target_price_value": 450000,
@@ -10069,7 +10081,7 @@
       "subject": "LG",
       "subject_key": "lg",
       "ticker": "003550",
-      "views": 5720,
+      "views": 6292,
       "analyst": null,
       "target_price": "140,000",
       "target_price_value": 140000,
@@ -10247,7 +10259,7 @@
       "subject": "네오위즈",
       "subject_key": "네오위즈",
       "ticker": "095660",
-      "views": 3808,
+      "views": 3938,
       "analyst": null,
       "target_price": "25,000",
       "target_price_value": 25000,
@@ -10427,7 +10439,7 @@
       "subject": "SK이터닉스",
       "subject_key": "sk이터닉스",
       "ticker": "475150",
-      "views": 5602,
+      "views": 6040,
       "analyst": null,
       "target_price": "66,000",
       "target_price_value": 66000,
@@ -10639,7 +10651,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 532,
+      "views": 569,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -10817,7 +10829,7 @@
       "subject": "기타",
       "subject_key": "기타",
       "ticker": null,
-      "views": 1917,
+      "views": 2155,
       "analyst": "정의훈",
       "target_price": null,
       "target_price_value": null,
@@ -10964,7 +10976,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 678,
+      "views": 725,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -11107,7 +11119,7 @@
       "subject": "삼성화재",
       "subject_key": "삼성화재",
       "ticker": "000810",
-      "views": 4416,
+      "views": 4733,
       "analyst": null,
       "target_price": "870,000",
       "target_price_value": 870000,
@@ -11266,7 +11278,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 815,
+      "views": 903,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -11406,7 +11418,7 @@
       "subject": "삼성화재",
       "subject_key": "삼성화재",
       "ticker": "000810",
-      "views": 2110,
+      "views": 2213,
       "analyst": null,
       "target_price": "750,000",
       "target_price_value": 750000,
@@ -11545,7 +11557,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 1011,
+      "views": 1106,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -11681,7 +11693,7 @@
       "subject": "알테오젠",
       "subject_key": "알테오젠",
       "ticker": "196170",
-      "views": 4585,
+      "views": 4791,
       "analyst": null,
       "target_price": "410,000",
       "target_price_value": 410000,
@@ -11851,7 +11863,7 @@
       "subject": "현대건설",
       "subject_key": "현대건설",
       "ticker": "000720",
-      "views": 5109,
+      "views": 5333,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -11977,7 +11989,7 @@
       "subject": "기타",
       "subject_key": "기타",
       "ticker": null,
-      "views": 1932,
+      "views": 2187,
       "analyst": "김다은",
       "target_price": null,
       "target_price_value": null,
@@ -12118,7 +12130,7 @@
       "subject": "현대리바트",
       "subject_key": "현대리바트",
       "ticker": "079430",
-      "views": 4132,
+      "views": 4307,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -12240,7 +12252,7 @@
       "subject": "타조이엔터테인먼트",
       "subject_key": "타조이엔터테인먼트",
       "ticker": "476710",
-      "views": 2587,
+      "views": 2680,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -12359,7 +12371,7 @@
       "subject": "삼익제약",
       "subject_key": "삼익제약",
       "ticker": "014950",
-      "views": 2631,
+      "views": 2731,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -12478,7 +12490,7 @@
       "subject": "덕양에너젠",
       "subject_key": "덕양에너젠",
       "ticker": null,
-      "views": 2490,
+      "views": 2610,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -12967,7 +12979,7 @@
       "subject": "태광",
       "subject_key": "태광",
       "ticker": "023160",
-      "views": 3947,
+      "views": 4097,
       "analyst": "이동헌",
       "target_price": "3,793원",
       "target_price_value": 3793,
@@ -13156,7 +13168,7 @@
       "subject": "삼성화재",
       "subject_key": "삼성화재",
       "ticker": "000810",
-      "views": 5156,
+      "views": 5664,
       "analyst": null,
       "target_price": "785,000",
       "target_price_value": 785000,
@@ -13307,7 +13319,7 @@
       "subject": "LG",
       "subject_key": "lg",
       "ticker": "003550",
-      "views": 3853,
+      "views": 3999,
       "analyst": null,
       "target_price": "140,000",
       "target_price_value": 140000,
@@ -13475,7 +13487,7 @@
       "subject": "삼성화재",
       "subject_key": "삼성화재",
       "ticker": "000810",
-      "views": 5839,
+      "views": 6376,
       "analyst": null,
       "target_price": "800,000",
       "target_price_value": 800000,
@@ -13621,7 +13633,7 @@
       "subject": "메리츠금융지주",
       "subject_key": "메리츠금융지주",
       "ticker": "138040",
-      "views": 2297,
+      "views": 2407,
       "analyst": null,
       "target_price": "161,000",
       "target_price_value": 161000,
@@ -13753,7 +13765,7 @@
       "subject": "DB손해보험",
       "subject_key": "db손해보험",
       "ticker": "005830",
-      "views": 6244,
+      "views": 6819,
       "analyst": null,
       "target_price": "219,000",
       "target_price_value": 219000,
@@ -13890,7 +13902,7 @@
       "subject": "엘티씨",
       "subject_key": "엘티씨",
       "ticker": "170920",
-      "views": 4256,
+      "views": 4397,
       "analyst": null,
       "target_price": "64,000",
       "target_price_value": 64000,
@@ -14021,7 +14033,7 @@
       "subject": "롯데관광개발",
       "subject_key": "롯데관광개발",
       "ticker": "032350",
-      "views": 4007,
+      "views": 4159,
       "analyst": null,
       "target_price": "22,000",
       "target_price_value": 22000,
@@ -14207,7 +14219,7 @@
       "subject": "이마트",
       "subject_key": "이마트",
       "ticker": "139480",
-      "views": 3989,
+      "views": 4129,
       "analyst": "조상훈",
       "target_price": "100,000원",
       "target_price_value": 100000,
@@ -14359,7 +14371,7 @@
       "subject": "JYP Ent.",
       "subject_key": "jyp-ent",
       "ticker": "035900",
-      "views": 4080,
+      "views": 4227,
       "analyst": null,
       "target_price": "60,000",
       "target_price_value": 60000,
@@ -14494,7 +14506,7 @@
       "subject": "삼성화재",
       "subject_key": "삼성화재",
       "ticker": "000810",
-      "views": 3924,
+      "views": 4064,
       "analyst": "임희연",
       "target_price": "85만원",
       "target_price_value": 850000,
@@ -14671,7 +14683,7 @@
       "subject": "이마트",
       "subject_key": "이마트",
       "ticker": "139480",
-      "views": 2306,
+      "views": 2420,
       "analyst": null,
       "target_price": "100,000",
       "target_price_value": 100000,
@@ -14818,7 +14830,7 @@
       "subject": "HMM",
       "subject_key": "hmm",
       "ticker": "011200",
-      "views": 2363,
+      "views": 2464,
       "analyst": null,
       "target_price": "26,000",
       "target_price_value": 26000,
@@ -15020,7 +15032,7 @@
       "subject": "달바글로벌",
       "subject_key": "달바글로벌",
       "ticker": "483650",
-      "views": 5911,
+      "views": 6489,
       "analyst": null,
       "target_price": "310,000",
       "target_price_value": 310000,
@@ -15232,7 +15244,7 @@
       "subject": "아이에스티이",
       "subject_key": "아이에스티이",
       "ticker": "212710",
-      "views": 4906,
+      "views": 5311,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -15436,7 +15448,7 @@
       "subject": "한국공항",
       "subject_key": "한국공항",
       "ticker": "005430",
-      "views": 4759,
+      "views": 4941,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -15590,7 +15602,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 925,
+      "views": 1012,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -15621,8 +15633,8 @@
         "경제분석 카테고리",
         "관심 종목(삼성전자, SK하이닉스)",
         "관심 섹터/키워드(반도체, 건설)",
-        "이익 추정 상향/증가",
-        "이익 추정 하향/감소"
+        "조회수 상위권",
+        "이익 추정 상향/증가"
       ],
       "score_breakdown": [
         {
@@ -15735,7 +15747,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 983,
+      "views": 1080,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -15763,8 +15775,8 @@
         "투자정보 카테고리",
         "관심 종목(삼성전자, SK하이닉스)",
         "관심 섹터/키워드(반도체)",
-        "이익 추정 상향/증가",
-        "우선 추적 증권사"
+        "조회수 상위권",
+        "이익 추정 상향/증가"
       ],
       "score_breakdown": [
         {
@@ -15869,7 +15881,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 1458,
+      "views": 1608,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -16009,7 +16021,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 616,
+      "views": 657,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -16170,7 +16182,7 @@
       "subject": "인터넷포탈",
       "subject_key": "인터넷포탈",
       "ticker": null,
-      "views": 2392,
+      "views": 2668,
       "analyst": "정해창",
       "target_price": null,
       "target_price_value": null,
@@ -16304,7 +16316,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 616,
+      "views": 684,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -16433,7 +16445,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 628,
+      "views": 677,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -16567,7 +16579,7 @@
       "subject": "반도체",
       "subject_key": "반도체",
       "ticker": null,
-      "views": 2165,
+      "views": 2449,
       "analyst": "류형근",
       "target_price": null,
       "target_price_value": null,
@@ -16696,7 +16708,7 @@
       "subject": "LG",
       "subject_key": "lg",
       "ticker": "003550",
-      "views": 4708,
+      "views": 5049,
       "analyst": null,
       "target_price": "130,000",
       "target_price_value": 130000,
@@ -16884,7 +16896,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 535,
+      "views": 571,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -17022,7 +17034,7 @@
       "subject": "인터넷포탈",
       "subject_key": "인터넷포탈",
       "ticker": null,
-      "views": 1914,
+      "views": 2135,
       "analyst": "이승훈",
       "target_price": null,
       "target_price_value": null,
@@ -17158,7 +17170,7 @@
       "subject": "메리츠금융지주",
       "subject_key": "메리츠금융지주",
       "ticker": "138040",
-      "views": 6120,
+      "views": 6576,
       "analyst": null,
       "target_price": "140,000",
       "target_price_value": 140000,
@@ -17308,7 +17320,7 @@
       "subject": "기타",
       "subject_key": "기타",
       "ticker": null,
-      "views": 2045,
+      "views": 2289,
       "analyst": "엄수진",
       "target_price": null,
       "target_price_value": null,
@@ -17430,7 +17442,7 @@
       "subject": "기타",
       "subject_key": "기타",
       "ticker": null,
-      "views": 1992,
+      "views": 2249,
       "analyst": "양승윤",
       "target_price": null,
       "target_price_value": null,
@@ -17702,6 +17714,127 @@
       "has_change_signal": true
     },
     {
+      "source": "shinhan_investment_official",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "shinhan-giindustry-940423",
+      "title": "건설; 벌써 3번째 주택공급 대책",
+      "display_title": "건설리츠 - 건설; 벌써 3번째 주택공급 대책",
+      "broker": "신한투자증권",
+      "published_date": "2026-08-14",
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=giindustry&messageId=940423",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353337",
+      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353337",
+      "primary_url_label": "PDF",
+      "subject": "건설리츠",
+      "subject_key": "건설리츠",
+      "ticker": null,
+      "views": 138,
+      "analyst": "김선미",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "신한생각: 다양해지는 사업기회, 건설업종 비중확대! 근본적 한계에도 점차 구체화되는 공급 계획 및 실행 방안이 긍정적",
+      "summary": "신한생각: 다양해지는 사업기회, 건설업종 비중확대! 근본적 한계에도 점차 구체화되는 공급 계획 및 실행 방안이 긍정적 신한생각: 다양해지는 사업기회, 건설업종 비중확대!",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "estimate_revisions": [],
+      "stance": "positive",
+      "score": 11.34,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "공식 소스",
+        "관심 섹터/키워드(건설)",
+        "이익 추정 상향/증가",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.14,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.55,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "bbs2.shinhansec.com",
+        "pdf_host": "bbs2.shinhansec.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "건설"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": "2026-06-30",
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": "김선미",
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
+    },
+    {
       "source": "naver_research",
       "category": "company",
       "category_label": "종목분석",
@@ -17717,7 +17850,7 @@
       "subject": "금강공업",
       "subject_key": "금강공업",
       "ticker": "014280",
-      "views": 2798,
+      "views": 2896,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -17820,127 +17953,6 @@
       "has_change_signal": true
     },
     {
-      "source": "shinhan_investment_official",
-      "category": "industry",
-      "category_label": "산업분석",
-      "report_id": "shinhan-giindustry-940423",
-      "title": "건설; 벌써 3번째 주택공급 대책",
-      "display_title": "건설리츠 - 건설; 벌써 3번째 주택공급 대책",
-      "broker": "신한투자증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=giindustry&messageId=940423",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353337",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353337",
-      "primary_url_label": "PDF",
-      "subject": "건설리츠",
-      "subject_key": "건설리츠",
-      "ticker": null,
-      "views": 127,
-      "analyst": "김선미",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "신한생각: 다양해지는 사업기회, 건설업종 비중확대! 근본적 한계에도 점차 구체화되는 공급 계획 및 실행 방안이 긍정적",
-      "summary": "신한생각: 다양해지는 사업기회, 건설업종 비중확대! 근본적 한계에도 점차 구체화되는 공급 계획 및 실행 방안이 긍정적 신한생각: 다양해지는 사업기회, 건설업종 비중확대!",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [
-        "earnings_estimate_up"
-      ],
-      "estimate_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "estimate_revisions": [],
-      "stance": "positive",
-      "score": 11.3,
-      "score_reasons": [
-        "산업분석 카테고리",
-        "공식 소스",
-        "관심 섹터/키워드(건설)",
-        "이익 추정 상향/증가",
-        "우선 추적 증권사"
-      ],
-      "score_breakdown": [
-        {
-          "label": "산업분석 카테고리",
-          "value": 2.7,
-          "kind": "boost"
-        },
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.4,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 2.1,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 상향",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [
-        "건설"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": "2026-06-30",
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": "김선미",
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_up"
-      ],
-      "change_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "has_change_signal": true
-    },
-    {
       "source": "naver_research",
       "category": "company",
       "category_label": "종목분석",
@@ -17956,7 +17968,7 @@
       "subject": "크라우드웍스",
       "subject_key": "크라우드웍스",
       "ticker": "355390",
-      "views": 2654,
+      "views": 2754,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -18073,7 +18085,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 778,
+      "views": 862,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -18194,7 +18206,7 @@
       "subject": "삼성화재",
       "subject_key": "삼성화재",
       "ticker": "000810",
-      "views": 2069,
+      "views": 2162,
       "analyst": null,
       "target_price": "600,000",
       "target_price_value": 600000,
@@ -18323,7 +18335,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 1472,
+      "views": 1642,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -18569,7 +18581,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 112,
+      "views": 115,
       "analyst": "박광래",
       "target_price": "10,000원",
       "target_price_value": 10000,
@@ -18592,7 +18604,7 @@
       ],
       "estimate_revisions": [],
       "stance": "positive",
-      "score": 10.35,
+      "score": 10.36,
       "score_reasons": [
         "종목분석 카테고리",
         "공식 소스",
@@ -18608,7 +18620,7 @@
         },
         {
           "label": "조회수",
-          "value": 2.05,
+          "value": 2.06,
           "kind": "boost"
         },
         {
@@ -18678,23 +18690,23 @@
       "has_change_signal": true
     },
     {
-      "source": "mirae_asset_official",
-      "category": "industry",
-      "category_label": "산업분석",
-      "report_id": "mirae-2342082",
-      "title": "한국&중국 마켓 클로징(8월 14일)",
-      "display_title": "한국&중국 마켓 클로징(8월 14일)",
-      "broker": "미래에셋증권",
+      "source": "shinhan_investment_official",
+      "category": "market",
+      "category_label": "시황정보",
+      "report_id": "shinhan-gicomment-940460",
+      "title": "Shinhan China Weekly(8월 2주차); 업종별 순환매 속 포지션 재구축",
+      "display_title": "Shinhan China Weekly(8월 2주차); 업종별 순환매 속 포지션 재구축",
+      "broker": "신한투자증권",
       "published_date": "2026-08-14",
-      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2342082&messageNumber=2576&categoryId=1521",
-      "pdf_url": "https://securities.miraeasset.com/bbs/download/2146758.pdf?attachmentId=2146758",
-      "primary_url": "https://securities.miraeasset.com/bbs/download/2146758.pdf?attachmentId=2146758",
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=940460",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353361",
+      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353361",
       "primary_url_label": "PDF",
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 0,
-      "analyst": "박수진",
+      "views": 60,
+      "analyst": "신승웅",
       "target_price": null,
       "target_price_value": null,
       "opinion": null,
@@ -18703,38 +18715,36 @@
       "content_sources": [
         "html"
       ],
-      "excerpt": "한국&중국 마켓 클로징(8월 14일) 외국인 월간 누적순매수 ''양전''",
-      "summary": "한국&중국 마켓 클로징(8월 14일) 외국인 월간 누적순매수 ''양전'' # 국내 마감",
+      "excerpt": "업종별 순환매 속 포지션 재구축 - 금주 중국 증시는 방향성보다 업종 순환매가 두드러진 흐름.",
+      "summary": "업종별 순환매 속 포지션 재구축 - 금주 중국 증시는 방향성보다 업종 순환매가 두드러진 흐름. 기술주주는 차익실현 압력에도 7월 급락 이후 하방 경직성 확인.",
       "summary_engine": "rule",
       "investment_memo": {},
       "estimate_metrics": [],
       "estimate_signal_types": [
-        "earnings_estimate_up",
-        "earnings_estimate_down"
+        "earnings_estimate_up"
       ],
       "estimate_reasons": [
-        "이익 추정 상향/증가",
-        "이익 추정 하향/감소"
+        "이익 추정 상향/증가"
       ],
       "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 10.15,
+      "stance": "positive",
+      "score": 10.18,
       "score_reasons": [
-        "산업분석 카테고리",
+        "시황정보 카테고리",
         "공식 소스",
-        "관심 섹터/키워드(반도체, 로봇)",
+        "관심 섹터/키워드(반도체)",
         "이익 추정 상향/증가",
-        "이익 추정 하향/감소"
+        "우선 추적 증권사"
       ],
       "score_breakdown": [
         {
-          "label": "산업분석 카테고리",
-          "value": 2.7,
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
           "kind": "boost"
         },
         {
-          "label": "관심 섹터/키워드",
-          "value": 2.6,
+          "label": "시황정보 카테고리",
+          "value": 1.8,
           "kind": "boost"
         },
         {
@@ -18743,23 +18753,28 @@
           "kind": "boost"
         },
         {
-          "label": "이익 추정 하향",
-          "value": 1.1,
+          "label": "조회수",
+          "value": 1.78,
           "kind": "boost"
         },
         {
           "label": "우선 추적 증권사",
-          "value": 0.75,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
+          "value": 1.1,
           "kind": "boost"
         },
         {
           "label": "소스 가중치",
           "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "제목 키워드: weekly",
+          "value": 0.4,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
           "kind": "boost"
         },
         {
@@ -18773,14 +18788,13 @@
         "primary_kind": "pdf",
         "has_pdf": true,
         "has_detail": true,
-        "detail_host": "securities.miraeasset.com",
-        "pdf_host": "securities.miraeasset.com",
+        "detail_host": "bbs2.shinhansec.com",
+        "pdf_host": "bbs2.shinhansec.com",
         "note": "PDF 링크를 대표 링크로 사용합니다."
       },
       "priority_subject_matches": [],
       "priority_keyword_matches": [
-        "반도체",
-        "로봇"
+        "반도체"
       ],
       "is_priority_match": true,
       "previous_report_date": null,
@@ -18794,12 +18808,10 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "earnings_estimate_up",
-        "earnings_estimate_down"
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "이익 추정 상향/증가",
-        "이익 추정 하향/감소"
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true
     },
@@ -18929,132 +18941,6 @@
       "has_change_signal": true
     },
     {
-      "source": "shinhan_investment_official",
-      "category": "market",
-      "category_label": "시황정보",
-      "report_id": "shinhan-gicomment-940460",
-      "title": "Shinhan China Weekly(8월 2주차); 업종별 순환매 속 포지션 재구축",
-      "display_title": "Shinhan China Weekly(8월 2주차); 업종별 순환매 속 포지션 재구축",
-      "broker": "신한투자증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=940460",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353361",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353361",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 55,
-      "analyst": "신승웅",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "업종별 순환매 속 포지션 재구축 - 금주 중국 증시는 방향성보다 업종 순환매가 두드러진 흐름.",
-      "summary": "업종별 순환매 속 포지션 재구축 - 금주 중국 증시는 방향성보다 업종 순환매가 두드러진 흐름. 기술주주는 차익실현 압력에도 7월 급락 이후 하방 경직성 확인.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [
-        "earnings_estimate_up"
-      ],
-      "estimate_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "estimate_revisions": [],
-      "stance": "positive",
-      "score": 10.14,
-      "score_reasons": [
-        "시황정보 카테고리",
-        "공식 소스",
-        "관심 섹터/키워드(반도체)",
-        "이익 추정 상향/증가",
-        "우선 추적 증권사"
-      ],
-      "score_breakdown": [
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.4,
-          "kind": "boost"
-        },
-        {
-          "label": "시황정보 카테고리",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 상향",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 1.74,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "제목 키워드: weekly",
-          "value": 0.4,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.25,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [
-        "반도체"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_up"
-      ],
-      "change_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "has_change_signal": true
-    },
-    {
       "source": "naver_research",
       "category": "invest",
       "category_label": "투자정보",
@@ -19070,7 +18956,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 604,
+      "views": 648,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -19194,7 +19080,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 103,
+      "views": 108,
       "analyst": "강진혁",
       "target_price": null,
       "target_price_value": null,
@@ -19217,7 +19103,7 @@
       ],
       "estimate_revisions": [],
       "stance": "positive",
-      "score": 10.01,
+      "score": 10.03,
       "score_reasons": [
         "시황정보 카테고리",
         "공식 소스",
@@ -19233,7 +19119,7 @@
         },
         {
           "label": "조회수",
-          "value": 2.01,
+          "value": 2.03,
           "kind": "boost"
         },
         {
@@ -19315,7 +19201,7 @@
       "subject": "넥센타이어",
       "subject_key": "넥센타이어",
       "ticker": "002350",
-      "views": 3891,
+      "views": 4032,
       "analyst": null,
       "target_price": "10,000",
       "target_price_value": 10000,
@@ -19398,139 +19284,6 @@
       "previous_report_date": "2026-07-30",
       "previous_target_price": "10,000",
       "previous_opinion": "매수",
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_up"
-      ],
-      "change_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "has_change_signal": true
-    },
-    {
-      "source": "mirae_asset_official",
-      "category": "industry",
-      "category_label": "산업분석",
-      "report_id": "mirae-2342069",
-      "title": "SMIC (00981 HK/매수)",
-      "display_title": "SMIC (00981 HK/매수)",
-      "broker": "미래에셋증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2342069&messageNumber=2574&categoryId=1521",
-      "pdf_url": "https://securities.miraeasset.com/bbs/download/2146749.pdf?attachmentId=2146749",
-      "primary_url": "https://securities.miraeasset.com/bbs/download/2146749.pdf?attachmentId=2146749",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 0,
-      "analyst": "강민희",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "관련종목 목표주가 및 밸류에이션",
-      "summary": "관련종목 목표주가 및 밸류에이션 동사에 대해 ‘매수’의 투자의견과 기존 목표주가 100홍콩달러를 유지한다.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [
-        {
-          "metric": "operating_margin",
-          "metric_group": "margin",
-          "label": "OPM",
-          "period": null,
-          "value": 17.8,
-          "unit": "%",
-          "value_pct": 17.8,
-          "source_excerpt": "영업이익은 $534M(QoQ +116%, YoY +255%), OPM 17.8%(QoQ +7.",
-          "change_pctp": 7.9
-        }
-      ],
-      "estimate_signal_types": [
-        "earnings_estimate_up"
-      ],
-      "estimate_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "estimate_revisions": [],
-      "stance": "positive",
-      "score": 9.32,
-      "score_reasons": [
-        "산업분석 카테고리",
-        "공식 소스",
-        "관심 섹터/키워드(반도체)",
-        "실적/마진 추정치 포함",
-        "이익 추정 상향/증가"
-      ],
-      "score_breakdown": [
-        {
-          "label": "산업분석 카테고리",
-          "value": 2.7,
-          "kind": "boost"
-        },
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.4,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 상향",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 0.75,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "실적/마진 추정치",
-          "value": 0.47,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "securities.miraeasset.com",
-        "pdf_host": "securities.miraeasset.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [
-        "반도체"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
       "previous_analyst": null,
       "target_price_change": null,
       "target_price_change_pct": null,
@@ -19685,7 +19438,7 @@
       "subject": "통신",
       "subject_key": "통신",
       "ticker": null,
-      "views": 2855,
+      "views": 3222,
       "analyst": "김홍식",
       "target_price": null,
       "target_price_value": null,
@@ -19798,7 +19551,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 454,
+      "views": 483,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -19911,7 +19664,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 234,
+      "views": 254,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -20030,7 +19783,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 1039,
+      "views": 1143,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -20127,140 +19880,6 @@
       "has_change_signal": true
     },
     {
-      "source": "mirae_asset_official",
-      "category": "industry",
-      "category_label": "산업분석",
-      "report_id": "mirae-2342065",
-      "title": "현대해상 (001450/중립)",
-      "display_title": "현대해상 (001450/중립)",
-      "broker": "미래에셋증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2342065&messageNumber=2573&categoryId=1521",
-      "pdf_url": "https://securities.miraeasset.com/bbs/download/2146745.pdf?attachmentId=2146745",
-      "primary_url": "https://securities.miraeasset.com/bbs/download/2146745.pdf?attachmentId=2146745",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 0,
-      "analyst": "정태준, CFA",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "관련종목 손에 잡힐 것도 같은 배당",
-      "summary": "관련종목 손에 잡힐 것도 같은 배당 투자의견 중립 유지, 목표주가 41,000원으로 상향",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [
-        {
-          "metric": "net_profit",
-          "metric_group": "earnings",
-          "label": "순이익",
-          "period": "2분기",
-          "value": 3918.0,
-          "unit": "억원",
-          "source_excerpt": "2분기 실적 컨센서스 상회 2분기 순이익은 3,918억원으로, 당사 추정치 3,085억원과 컨센서스 2,683억원을 크게 상회했다.",
-          "value_krw_100m": 3918.0
-        }
-      ],
-      "estimate_signal_types": [
-        "earnings_estimate_up",
-        "earnings_estimate_down"
-      ],
-      "estimate_reasons": [
-        "이익 추정 상향/증가",
-        "이익 추정 하향/감소"
-      ],
-      "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 7.72,
-      "score_reasons": [
-        "산업분석 카테고리",
-        "공식 소스",
-        "실적/마진 추정치 포함",
-        "이익 추정 상향/증가",
-        "이익 추정 하향/감소"
-      ],
-      "score_breakdown": [
-        {
-          "label": "산업분석 카테고리",
-          "value": 2.7,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 상향",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 하향",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 0.75,
-          "kind": "boost"
-        },
-        {
-          "label": "실적/마진 추정치",
-          "value": 0.47,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.25,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "securities.miraeasset.com",
-        "pdf_host": "securities.miraeasset.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_up",
-        "earnings_estimate_down"
-      ],
-      "change_reasons": [
-        "이익 추정 상향/증가",
-        "이익 추정 하향/감소"
-      ],
-      "has_change_signal": true
-    },
-    {
       "source": "naver_research",
       "category": "market",
       "category_label": "시황정보",
@@ -20276,7 +19895,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 616,
+      "views": 664,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -20346,151 +19965,6 @@
         "detail_host": "finance.naver.com",
         "pdf_host": "",
         "note": "상세 페이지 링크만 확보됐습니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_up"
-      ],
-      "change_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "has_change_signal": true
-    },
-    {
-      "source": "mirae_asset_official",
-      "category": "industry",
-      "category_label": "산업분석",
-      "report_id": "mirae-2342040",
-      "title": "LG (003550/매수)",
-      "display_title": "LG (003550/매수)",
-      "broker": "미래에셋증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2342040&messageNumber=2569&categoryId=1521",
-      "pdf_url": "https://securities.miraeasset.com/bbs/download/2146712.pdf?attachmentId=2146712",
-      "primary_url": "https://securities.miraeasset.com/bbs/download/2146712.pdf?attachmentId=2146712",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 0,
-      "analyst": "류제현",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "관련종목 제도로 뒷받침될 매력",
-      "summary": "관련종목 제도로 뒷받침될 매력 2Q26 Review: 자회사와 별도 손익 동시 선전",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [
-        {
-          "metric": "operating_profit",
-          "metric_group": "earnings",
-          "label": "영업이익",
-          "period": null,
-          "value": 5330.0,
-          "unit": "억원",
-          "source_excerpt": "LG (003550/매수) 관련종목 제도로 뒷받침될 매력 2Q26 Review: 자회사와 별도 손익 동시 선전 관련종목 제도로 뒷받침될 매력 관련종목 제도로 뒷받침될 매력 2Q26 Review: 자회사와 별도 손익 동시 선전 2Q26 연결 영업이익은 5,330억원으로 전년동기 대비 9…",
-          "value_krw_100m": 5330.0
-        },
-        {
-          "metric": "net_profit",
-          "metric_group": "earnings",
-          "label": "지배주주순이익",
-          "period": null,
-          "value": 4657.0,
-          "unit": "억원",
-          "source_excerpt": "0%), 지배주주순이익 4,657억원(+127.",
-          "value_krw_100m": 4657.0
-        },
-        {
-          "metric": "operating_profit",
-          "metric_group": "earnings",
-          "label": "영업이익",
-          "period": null,
-          "value": 1279.0,
-          "unit": "억원",
-          "source_excerpt": "연결 종속회사 LG CNS는 매출 1조 5,208억원·영업이익 1,279억원으로 클라우드 전환과 AI 데이터센터 용역이 성장을 이끌었다.",
-          "value_krw_100m": 1279.0
-        }
-      ],
-      "estimate_signal_types": [
-        "earnings_estimate_up"
-      ],
-      "estimate_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "estimate_revisions": [],
-      "stance": "positive",
-      "score": 7.16,
-      "score_reasons": [
-        "산업분석 카테고리",
-        "공식 소스",
-        "실적/마진 추정치 포함",
-        "이익 추정 상향/증가",
-        "우선 추적 증권사"
-      ],
-      "score_breakdown": [
-        {
-          "label": "산업분석 카테고리",
-          "value": 2.7,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 상향",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 0.75,
-          "kind": "boost"
-        },
-        {
-          "label": "실적/마진 추정치",
-          "value": 0.71,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "securities.miraeasset.com",
-        "pdf_host": "securities.miraeasset.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
       },
       "priority_subject_matches": [],
       "priority_keyword_matches": [],
@@ -20750,7 +20224,7 @@
       "subject": "하이트진로",
       "subject_key": "하이트진로",
       "ticker": "000080",
-      "views": 3952,
+      "views": 4086,
       "analyst": null,
       "target_price": "22,000",
       "target_price_value": 22000,
@@ -20889,7 +20363,7 @@
       "subject": "삼성생명",
       "subject_key": "삼성생명",
       "ticker": "032830",
-      "views": 5479,
+      "views": 6016,
       "analyst": null,
       "target_price": "370,000",
       "target_price_value": 370000,
@@ -21040,7 +20514,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 576,
+      "views": 621,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -21274,7 +20748,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 811,
+      "views": 895,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -21382,7 +20856,7 @@
       "subject": "달바글로벌",
       "subject_key": "달바글로벌",
       "ticker": "483650",
-      "views": 2428,
+      "views": 2527,
       "analyst": null,
       "target_price": "320,000",
       "target_price_value": 320000,
@@ -21508,7 +20982,7 @@
       "subject": "현대해상",
       "subject_key": "현대해상",
       "ticker": "001450",
-      "views": 7205,
+      "views": 7956,
       "analyst": null,
       "target_price": "41,000",
       "target_price_value": 41000,
@@ -21629,7 +21103,7 @@
       "subject": "삼성생명",
       "subject_key": "삼성생명",
       "ticker": "032830",
-      "views": 6135,
+      "views": 6708,
       "analyst": null,
       "target_price": "380,000",
       "target_price_value": 380000,
@@ -21750,7 +21224,7 @@
       "subject": "아이에스동서",
       "subject_key": "아이에스동서",
       "ticker": "010780",
-      "views": 4721,
+      "views": 5058,
       "analyst": null,
       "target_price": "30,000",
       "target_price_value": 30000,
@@ -21944,7 +21418,7 @@
       "subject": "클래시스",
       "subject_key": "클래시스",
       "ticker": "214150",
-      "views": 4106,
+      "views": 4250,
       "analyst": null,
       "target_price": "64,000",
       "target_price_value": 64000,
@@ -22121,7 +21595,7 @@
       "subject": "덴티움",
       "subject_key": "덴티움",
       "ticker": "145720",
-      "views": 3800,
+      "views": 3940,
       "analyst": null,
       "target_price": "69,000",
       "target_price_value": 69000,
@@ -22303,7 +21777,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 949,
+      "views": 1050,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -22332,8 +21806,8 @@
         "시황정보 카테고리",
         "관심 종목(삼성전자, SK하이닉스)",
         "관심 섹터/키워드(반도체, 건설)",
-        "이익 추정 하향/감소",
-        "우선 추적 증권사"
+        "조회수 상위권",
+        "이익 추정 하향/감소"
       ],
       "score_breakdown": [
         {
@@ -22439,7 +21913,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 591,
+      "views": 634,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -22565,7 +22039,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 759,
+      "views": 799,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -22689,7 +22163,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 437,
+      "views": 455,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -22807,344 +22281,6 @@
         "이익 추정 하향/감소"
       ],
       "has_change_signal": true
-    },
-    {
-      "source": "mirae_asset_official",
-      "category": "invest",
-      "category_label": "투자정보",
-      "report_id": "mirae-2342039",
-      "title": "클래시스 (214150/매수)",
-      "display_title": "클래시스 (214150/매수)",
-      "broker": "미래에셋증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2342039&messageNumber=2568&categoryId=1521",
-      "pdf_url": "https://securities.miraeasset.com/bbs/download/2146684.pdf?attachmentId=2146684",
-      "primary_url": "https://securities.miraeasset.com/bbs/download/2146684.pdf?attachmentId=2146684",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 0,
-      "analyst": "김충현, CFA",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "관련종목 브라질 정상화가 관건",
-      "summary": "관련종목 브라질 정상화가 관건 2Q26 Review: 매출 및 영업이익 시장 기대치 하회",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [
-        {
-          "metric": "revenue",
-          "metric_group": "earnings",
-          "label": "매출",
-          "period": null,
-          "value": 1055.0,
-          "unit": "억원",
-          "source_excerpt": "클래시스 (214150/매수) 관련종목 브라질 정상화가 관건 2Q26 Review: 매출 및 영업이익 시장 기대치 하회 관련종목 브라질 정상화가 관건 관련종목 브라질 정상화가 관건 2Q26 Review: 매출 및 영업이익 시장 기대치 하회 매출 1,055억원(27% YoY), 영업이익…",
-          "value_krw_100m": 1055.0
-        },
-        {
-          "metric": "operating_profit",
-          "metric_group": "earnings",
-          "label": "영업이익",
-          "period": null,
-          "value": 439.0,
-          "unit": "억원",
-          "source_excerpt": "클래시스 (214150/매수) 관련종목 브라질 정상화가 관건 2Q26 Review: 매출 및 영업이익 시장 기대치 하회 관련종목 브라질 정상화가 관건 관련종목 브라질 정상화가 관건 2Q26 Review: 매출 및 영업이익 시장 기대치 하회 매출 1,055억원(27% YoY), 영업이익…",
-          "value_krw_100m": 439.0
-        },
-        {
-          "metric": "revenue",
-          "metric_group": "earnings",
-          "label": "매출",
-          "period": null,
-          "value": 213.0,
-          "unit": "억원",
-          "source_excerpt": "남미 지역 PMI: 연결 편입효과 151억원 발생(남미 매출 213억원).",
-          "value_krw_100m": 213.0
-        },
-        {
-          "metric": "revenue",
-          "metric_group": "earnings",
-          "label": "매출",
-          "period": null,
-          "value": 4424.0,
-          "unit": "억원",
-          "source_excerpt": "‘26년 예상 실적 및 밸류에이션: 매출 4,424억원(31% YoY), 조정 EBITDA 2,111억원(13% YoY, 마진 47.",
-          "value_krw_100m": 4424.0
-        },
-        {
-          "metric": "operating_margin",
-          "metric_group": "margin",
-          "label": "OPM",
-          "period": null,
-          "value": 41.6,
-          "unit": "%",
-          "value_pct": 41.6,
-          "source_excerpt": "클래시스 (214150/매수) 관련종목 브라질 정상화가 관건 2Q26 Review: 매출 및 영업이익 시장 기대치 하회 관련종목 브라질 정상화가 관건 관련종목 브라질 정상화가 관건 2Q26 Review: 매출 및 영업이익 시장 기대치 하회 매출 1,055억원(27% YoY), 영업이익…"
-        }
-      ],
-      "estimate_signal_types": [
-        "earnings_estimate_down",
-        "margin_estimate_down"
-      ],
-      "estimate_reasons": [
-        "이익 추정 하향/감소",
-        "마진율 추정 하락/악화"
-      ],
-      "estimate_revisions": [],
-      "stance": "negative",
-      "score": 7.4,
-      "score_reasons": [
-        "투자정보 카테고리",
-        "공식 소스",
-        "실적/마진 추정치 포함",
-        "이익 추정 하향/감소",
-        "마진율 추정 하락/악화"
-      ],
-      "score_breakdown": [
-        {
-          "label": "투자정보 카테고리",
-          "value": 2.5,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 하향",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "실적/마진 추정치",
-          "value": 0.95,
-          "kind": "boost"
-        },
-        {
-          "label": "마진율 악화",
-          "value": 0.9,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 0.75,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "securities.miraeasset.com",
-        "pdf_host": "securities.miraeasset.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_down",
-        "margin_estimate_down"
-      ],
-      "change_reasons": [
-        "이익 추정 하향/감소",
-        "마진율 추정 하락/악화"
-      ],
-      "has_change_signal": true
-    },
-    {
-      "source": "mirae_asset_official",
-      "category": "invest",
-      "category_label": "투자정보",
-      "report_id": "mirae-2342038",
-      "title": "덴티움 (145720/매수)",
-      "display_title": "덴티움 (145720/매수)",
-      "broker": "미래에셋증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2342038&messageNumber=2567&categoryId=1521",
-      "pdf_url": "https://securities.miraeasset.com/bbs/download/2146760.pdf?attachmentId=2146760",
-      "primary_url": "https://securities.miraeasset.com/bbs/download/2146760.pdf?attachmentId=2146760",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 0,
-      "analyst": "김충현, CFA",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "관련종목 2Q26 Review: 매출 시장 기대치 부합, 영업이익 시장 기대치 하회",
-      "summary": "관련종목 2Q26 Review: 매출 시장 기대치 부합, 영업이익 시장 기대치 하회 매출 893억원(9% YoY)으로 시장 기대치 부합.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [
-        {
-          "metric": "revenue",
-          "metric_group": "earnings",
-          "label": "매출",
-          "period": null,
-          "value": 893.0,
-          "unit": "억원",
-          "source_excerpt": "덴티움 (145720/매수) 관련종목 2Q26 Review: 매출 시장 기대치 부합, 영업이익 시장 기대치 하회 매출 893억원(9% YoY)으로 시장 기대치 부합.",
-          "value_krw_100m": 893.0
-        },
-        {
-          "metric": "operating_profit",
-          "metric_group": "earnings",
-          "label": "영업이익",
-          "period": null,
-          "value": 147.0,
-          "unit": "억원",
-          "source_excerpt": "영업이익 147억원(-5% YoY, OPM 16.",
-          "value_krw_100m": 147.0
-        },
-        {
-          "metric": "revenue",
-          "metric_group": "earnings",
-          "label": "매출",
-          "period": null,
-          "value": 3707.0,
-          "unit": "억원",
-          "source_excerpt": "‘26년 예상 실적: 매출 3,707억원(+7% YoY), 조정 EBITDA 1,109억원(+12% YoY, 마진 29.",
-          "value_krw_100m": 3707.0
-        },
-        {
-          "metric": "operating_margin",
-          "metric_group": "margin",
-          "label": "OPM",
-          "period": null,
-          "value": 16.5,
-          "unit": "%",
-          "value_pct": 16.5,
-          "source_excerpt": "영업이익 147억원(-5% YoY, OPM 16.5%)으로 시장 기대치 하회."
-        }
-      ],
-      "estimate_signal_types": [
-        "earnings_estimate_down",
-        "margin_estimate_down"
-      ],
-      "estimate_reasons": [
-        "이익 추정 하향/감소",
-        "마진율 추정 하락/악화"
-      ],
-      "estimate_revisions": [],
-      "stance": "negative",
-      "score": 6.98,
-      "score_reasons": [
-        "투자정보 카테고리",
-        "공식 소스",
-        "실적/마진 추정치 포함",
-        "이익 추정 하향/감소",
-        "마진율 추정 하락/악화"
-      ],
-      "score_breakdown": [
-        {
-          "label": "투자정보 카테고리",
-          "value": 2.5,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 하향",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "마진율 악화",
-          "value": 0.9,
-          "kind": "boost"
-        },
-        {
-          "label": "실적/마진 추정치",
-          "value": 0.83,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 0.75,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.25,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "securities.miraeasset.com",
-        "pdf_host": "securities.miraeasset.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_down",
-        "margin_estimate_down"
-      ],
-      "change_reasons": [
-        "이익 추정 하향/감소",
-        "마진율 추정 하락/악화"
-      ],
-      "has_change_signal": true
     }
   ],
   "must_read": [
@@ -23164,7 +22300,7 @@
       "subject": "이마트",
       "subject_key": "이마트",
       "ticker": "139480",
-      "views": 4610,
+      "views": 4949,
       "analyst": null,
       "target_price": "100,000",
       "target_price_value": 100000,
@@ -23358,7 +22494,7 @@
       "subject": "HMM",
       "subject_key": "hmm",
       "ticker": "011200",
-      "views": 5107,
+      "views": 5485,
       "analyst": null,
       "target_price": "21,000",
       "target_price_value": 21000,
@@ -23613,7 +22749,7 @@
       "subject": "삼성생명",
       "subject_key": "삼성생명",
       "ticker": "032830",
-      "views": 4125,
+      "views": 4270,
       "analyst": "임희연",
       "target_price": "450,000원",
       "target_price_value": 450000,
@@ -23807,7 +22943,7 @@
       "subject": "테스",
       "subject_key": "테스",
       "ticker": "095610",
-      "views": 4964,
+      "views": 5145,
       "analyst": null,
       "target_price": "230,000",
       "target_price_value": 230000,
@@ -24042,7 +23178,7 @@
       "subject": "인터넷포탈",
       "subject_key": "인터넷포탈",
       "ticker": null,
-      "views": 2392,
+      "views": 2668,
       "analyst": "정해창",
       "target_price": null,
       "target_price_value": null,
@@ -24176,7 +23312,7 @@
       "subject": "반도체",
       "subject_key": "반도체",
       "ticker": null,
-      "views": 2165,
+      "views": 2449,
       "analyst": "류형근",
       "target_price": null,
       "target_price_value": null,
@@ -24305,7 +23441,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 983,
+      "views": 1080,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -24333,8 +23469,8 @@
         "투자정보 카테고리",
         "관심 종목(삼성전자, SK하이닉스)",
         "관심 섹터/키워드(반도체)",
-        "이익 추정 상향/증가",
-        "우선 추적 증권사"
+        "조회수 상위권",
+        "이익 추정 상향/증가"
       ],
       "score_breakdown": [
         {
@@ -24439,7 +23575,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 628,
+      "views": 677,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -24573,7 +23709,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 925,
+      "views": 1012,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -24604,8 +23740,8 @@
         "경제분석 카테고리",
         "관심 종목(삼성전자, SK하이닉스)",
         "관심 섹터/키워드(반도체, 건설)",
-        "이익 추정 상향/증가",
-        "이익 추정 하향/감소"
+        "조회수 상위권",
+        "이익 추정 상향/증가"
       ],
       "score_breakdown": [
         {
@@ -24718,7 +23854,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 87,
+      "views": 100,
       "analyst": "하건형",
       "target_price": null,
       "target_price_value": null,
@@ -24737,7 +23873,7 @@
       "estimate_reasons": [],
       "estimate_revisions": [],
       "stance": "neutral",
-      "score": 9.14,
+      "score": 9.2,
       "score_reasons": [
         "경제분석 카테고리",
         "공식 소스",
@@ -24757,7 +23893,7 @@
         },
         {
           "label": "조회수",
-          "value": 1.94,
+          "value": 2.0,
           "kind": "boost"
         },
         {
@@ -24826,7 +23962,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 532,
+      "views": 569,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -25004,7 +24140,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 234,
+      "views": 254,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -25125,7 +24261,7 @@
       "subject": "테스",
       "subject_key": "테스",
       "ticker": "095610",
-      "views": 4964,
+      "views": 5145,
       "analyst": null,
       "target_price": "230,000",
       "target_price_value": 230000,
@@ -25360,7 +24496,7 @@
       "subject": "삼성생명",
       "subject_key": "삼성생명",
       "ticker": "032830",
-      "views": 4678,
+      "views": 5006,
       "analyst": null,
       "target_price": "440,000",
       "target_price_value": 440000,
@@ -25554,7 +24690,7 @@
       "subject": "실리콘투",
       "subject_key": "실리콘투",
       "ticker": "257720",
-      "views": 4860,
+      "views": 5225,
       "analyst": null,
       "target_price": "59,000",
       "target_price_value": 59000,
@@ -25800,7 +24936,7 @@
       "subject": "삼성생명",
       "subject_key": "삼성생명",
       "ticker": "032830",
-      "views": 4125,
+      "views": 4270,
       "analyst": "임희연",
       "target_price": "450,000원",
       "target_price_value": 450000,
@@ -25994,7 +25130,7 @@
       "subject": "SK이터닉스",
       "subject_key": "sk이터닉스",
       "ticker": "475150",
-      "views": 5602,
+      "views": 6040,
       "analyst": null,
       "target_price": "66,000",
       "target_price_value": 66000,
@@ -26206,7 +25342,7 @@
       "subject": "삼성생명",
       "subject_key": "삼성생명",
       "ticker": "032830",
-      "views": 2225,
+      "views": 2325,
       "analyst": null,
       "target_price": "450,000",
       "target_price_value": 450000,
@@ -26368,7 +25504,7 @@
       "subject": "이마트",
       "subject_key": "이마트",
       "ticker": "139480",
-      "views": 4071,
+      "views": 4205,
       "analyst": null,
       "target_price": "103,000",
       "target_price_value": 103000,
@@ -26570,7 +25706,7 @@
       "subject": "삼성화재",
       "subject_key": "삼성화재",
       "ticker": "000810",
-      "views": 3924,
+      "views": 4064,
       "analyst": "임희연",
       "target_price": "85만원",
       "target_price_value": 850000,
@@ -26747,7 +25883,7 @@
       "subject": "삼양엔씨켐",
       "subject_key": "삼양엔씨켐",
       "ticker": "482630",
-      "views": 4540,
+      "views": 4859,
       "analyst": null,
       "target_price": "23,000",
       "target_price_value": 23000,
@@ -26974,7 +26110,7 @@
       "subject": "달바글로벌",
       "subject_key": "달바글로벌",
       "ticker": "483650",
-      "views": 4152,
+      "views": 4304,
       "analyst": "박현진",
       "target_price": "310,000",
       "target_price_value": 310000,
@@ -27213,7 +26349,7 @@
       "subject": "롯데관광개발",
       "subject_key": "롯데관광개발",
       "ticker": "032350",
-      "views": 5123,
+      "views": 5503,
       "analyst": null,
       "target_price": "21,000",
       "target_price_value": 21000,
@@ -27440,7 +26576,7 @@
       "subject": "이마트",
       "subject_key": "이마트",
       "ticker": "139480",
-      "views": 5237,
+      "views": 5747,
       "analyst": null,
       "target_price": "82,000",
       "target_price_value": 82000,
@@ -27649,7 +26785,7 @@
       "subject": "LG",
       "subject_key": "lg",
       "ticker": "003550",
-      "views": 5720,
+      "views": 6292,
       "analyst": null,
       "target_price": "140,000",
       "target_price_value": 140000,
@@ -27827,7 +26963,7 @@
       "subject": "HMM",
       "subject_key": "hmm",
       "ticker": "011200",
-      "views": 5107,
+      "views": 5485,
       "analyst": null,
       "target_price": "21,000",
       "target_price_value": 21000,
@@ -28082,7 +27218,7 @@
       "subject": "HMM",
       "subject_key": "hmm",
       "ticker": "011200",
-      "views": 3896,
+      "views": 4037,
       "analyst": null,
       "target_price": "23,000",
       "target_price_value": 23000,
@@ -28309,7 +27445,7 @@
       "subject": "클래시스",
       "subject_key": "클래시스",
       "ticker": "214150",
-      "views": 4967,
+      "views": 5310,
       "analyst": null,
       "target_price": "60,000",
       "target_price_value": 60000,
@@ -28589,7 +27725,7 @@
       "subject": "NAVER",
       "subject_key": "naver",
       "ticker": "035420",
-      "views": 6008,
+      "views": 6230,
       "analyst": null,
       "target_price": "320,000",
       "target_price_value": 320000,
@@ -28805,7 +27941,7 @@
       "subject": "이마트",
       "subject_key": "이마트",
       "ticker": "139480",
-      "views": 6046,
+      "views": 6611,
       "analyst": null,
       "target_price": "110,000",
       "target_price_value": 110000,
@@ -29053,7 +28189,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 532,
+      "views": 569,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -29231,7 +28367,7 @@
       "subject": "태광",
       "subject_key": "태광",
       "ticker": "023160",
-      "views": 3947,
+      "views": 4097,
       "analyst": "이동헌",
       "target_price": "3,793원",
       "target_price_value": 3793,
@@ -29420,7 +28556,7 @@
       "subject": "아이에스티이",
       "subject_key": "아이에스티이",
       "ticker": "212710",
-      "views": 4906,
+      "views": 5311,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -29624,7 +28760,7 @@
       "subject": "제닉",
       "subject_key": "제닉",
       "ticker": "123330",
-      "views": 5349,
+      "views": 5749,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -29842,7 +28978,7 @@
       "subject": "달바글로벌",
       "subject_key": "달바글로벌",
       "ticker": "483650",
-      "views": 5737,
+      "views": 6305,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -30059,7 +29195,7 @@
       "subject": "DB손해보험",
       "subject_key": "db손해보험",
       "ticker": "005830",
-      "views": 2063,
+      "views": 2159,
       "analyst": null,
       "target_price": "250,000",
       "target_price_value": 250000,
@@ -30223,7 +29359,7 @@
       "subject": "이마트",
       "subject_key": "이마트",
       "ticker": "139480",
-      "views": 3989,
+      "views": 4129,
       "analyst": "조상훈",
       "target_price": "100,000원",
       "target_price_value": 100000,
@@ -30375,7 +29511,7 @@
       "subject": "한국공항",
       "subject_key": "한국공항",
       "ticker": "005430",
-      "views": 4759,
+      "views": 4941,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -30529,7 +29665,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 925,
+      "views": 1012,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -30560,8 +29696,8 @@
         "경제분석 카테고리",
         "관심 종목(삼성전자, SK하이닉스)",
         "관심 섹터/키워드(반도체, 건설)",
-        "이익 추정 상향/증가",
-        "이익 추정 하향/감소"
+        "조회수 상위권",
+        "이익 추정 상향/증가"
       ],
       "score_breakdown": [
         {
@@ -30674,7 +29810,7 @@
       "subject": "실리콘투",
       "subject_key": "실리콘투",
       "ticker": "257720",
-      "views": 4673,
+      "views": 5020,
       "analyst": null,
       "target_price": "55,000",
       "target_price_value": 55000,
@@ -30928,7 +30064,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 983,
+      "views": 1080,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -30956,8 +30092,8 @@
         "투자정보 카테고리",
         "관심 종목(삼성전자, SK하이닉스)",
         "관심 섹터/키워드(반도체)",
-        "이익 추정 상향/증가",
-        "우선 추적 증권사"
+        "조회수 상위권",
+        "이익 추정 상향/증가"
       ],
       "score_breakdown": [
         {
@@ -31062,7 +30198,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 1458,
+      "views": 1608,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -31202,7 +30338,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 616,
+      "views": 657,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -31363,7 +30499,7 @@
       "subject": "LG",
       "subject_key": "lg",
       "ticker": "003550",
-      "views": 4482,
+      "views": 4830,
       "analyst": null,
       "target_price": "140,000",
       "target_price_value": 140000,
@@ -31593,7 +30729,7 @@
       "subject": "이마트",
       "subject_key": "이마트",
       "ticker": "139480",
-      "views": 2306,
+      "views": 2420,
       "analyst": null,
       "target_price": "100,000",
       "target_price_value": 100000,
@@ -31740,7 +30876,7 @@
       "subject": "인터넷포탈",
       "subject_key": "인터넷포탈",
       "ticker": null,
-      "views": 2392,
+      "views": 2668,
       "analyst": "정해창",
       "target_price": null,
       "target_price_value": null,
@@ -31874,7 +31010,7 @@
       "subject": "이마트",
       "subject_key": "이마트",
       "ticker": "139480",
-      "views": 4610,
+      "views": 4949,
       "analyst": null,
       "target_price": "100,000",
       "target_price_value": 100000,
@@ -32068,7 +31204,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 616,
+      "views": 684,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -32197,7 +31333,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 628,
+      "views": 677,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -32331,7 +31467,7 @@
       "subject": "삼성화재",
       "subject_key": "삼성화재",
       "ticker": "000810",
-      "views": 3895,
+      "views": 4021,
       "analyst": null,
       "target_price": "740,000",
       "target_price_value": 740000,
@@ -32503,7 +31639,7 @@
       "subject": "반도체",
       "subject_key": "반도체",
       "ticker": null,
-      "views": 2165,
+      "views": 2449,
       "analyst": "류형근",
       "target_price": null,
       "target_price_value": null,
@@ -32632,7 +31768,7 @@
       "subject": "HMM",
       "subject_key": "hmm",
       "ticker": "011200",
-      "views": 2363,
+      "views": 2464,
       "analyst": null,
       "target_price": "26,000",
       "target_price_value": 26000,
@@ -32834,7 +31970,7 @@
       "subject": "아이에스동서",
       "subject_key": "아이에스동서",
       "ticker": "010780",
-      "views": 4721,
+      "views": 5058,
       "analyst": null,
       "target_price": "30,000",
       "target_price_value": 30000,
@@ -33028,7 +32164,7 @@
       "subject": "HMM",
       "subject_key": "hmm",
       "ticker": "011200",
-      "views": 4519,
+      "views": 4681,
       "analyst": "최민기",
       "target_price": null,
       "target_price_value": null,
@@ -33220,7 +32356,7 @@
       "subject": "네오위즈",
       "subject_key": "네오위즈",
       "ticker": "095660",
-      "views": 3808,
+      "views": 3938,
       "analyst": null,
       "target_price": "25,000",
       "target_price_value": 25000,
@@ -33400,7 +32536,7 @@
       "subject": "롯데관광개발",
       "subject_key": "롯데관광개발",
       "ticker": "032350",
-      "views": 4007,
+      "views": 4159,
       "analyst": null,
       "target_price": "22,000",
       "target_price_value": 22000,
@@ -33586,7 +32722,7 @@
       "subject": "LG",
       "subject_key": "lg",
       "ticker": "003550",
-      "views": 4708,
+      "views": 5049,
       "analyst": null,
       "target_price": "130,000",
       "target_price_value": 130000,
@@ -33774,7 +32910,7 @@
       "subject": "기타",
       "subject_key": "기타",
       "ticker": null,
-      "views": 1917,
+      "views": 2155,
       "analyst": "정의훈",
       "target_price": null,
       "target_price_value": null,
@@ -33921,7 +33057,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 678,
+      "views": 725,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -34064,7 +33200,7 @@
       "subject": "삼성생명",
       "subject_key": "삼성생명",
       "ticker": "032830",
-      "views": 4629,
+      "views": 4971,
       "analyst": null,
       "target_price": "336,000",
       "target_price_value": 336000,
@@ -34243,7 +33379,7 @@
       "subject": "엘티씨",
       "subject_key": "엘티씨",
       "ticker": "170920",
-      "views": 4256,
+      "views": 4397,
       "analyst": null,
       "target_price": "64,000",
       "target_price_value": 64000,
@@ -34374,7 +33510,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 949,
+      "views": 1050,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -34403,8 +33539,8 @@
         "시황정보 카테고리",
         "관심 종목(삼성전자, SK하이닉스)",
         "관심 섹터/키워드(반도체, 건설)",
-        "이익 추정 하향/감소",
-        "우선 추적 증권사"
+        "조회수 상위권",
+        "이익 추정 하향/감소"
       ],
       "score_breakdown": [
         {
@@ -34510,7 +33646,7 @@
       "subject": "삼성화재",
       "subject_key": "삼성화재",
       "ticker": "000810",
-      "views": 4416,
+      "views": 4733,
       "analyst": null,
       "target_price": "870,000",
       "target_price_value": 870000,
@@ -34669,7 +33805,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 815,
+      "views": 903,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -34809,7 +33945,7 @@
       "subject": "DB손해보험",
       "subject_key": "db손해보험",
       "ticker": "005830",
-      "views": 3982,
+      "views": 4117,
       "analyst": null,
       "target_price": "220,000",
       "target_price_value": 220000,
@@ -34989,7 +34125,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 535,
+      "views": 571,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -35127,7 +34263,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 591,
+      "views": 634,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -35253,7 +34389,7 @@
       "subject": "삼성화재",
       "subject_key": "삼성화재",
       "ticker": "000810",
-      "views": 2110,
+      "views": 2213,
       "analyst": null,
       "target_price": "750,000",
       "target_price_value": 750000,
@@ -35392,7 +34528,7 @@
       "subject": "덴티움",
       "subject_key": "덴티움",
       "ticker": "145720",
-      "views": 3800,
+      "views": 3940,
       "analyst": null,
       "target_price": "69,000",
       "target_price_value": 69000,
@@ -35574,7 +34710,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 1011,
+      "views": 1106,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -35710,7 +34846,7 @@
       "subject": "달바글로벌",
       "subject_key": "달바글로벌",
       "ticker": "483650",
-      "views": 5911,
+      "views": 6489,
       "analyst": null,
       "target_price": "310,000",
       "target_price_value": 310000,
@@ -35922,7 +35058,7 @@
       "subject": "실리콘투",
       "subject_key": "실리콘투",
       "ticker": "257720",
-      "views": 6724,
+      "views": 7397,
       "analyst": null,
       "target_price": "63,000",
       "target_price_value": 63000,
@@ -36096,7 +35232,7 @@
       "subject": "알테오젠",
       "subject_key": "알테오젠",
       "ticker": "196170",
-      "views": 4585,
+      "views": 4791,
       "analyst": null,
       "target_price": "410,000",
       "target_price_value": 410000,
@@ -36266,7 +35402,7 @@
       "subject": "클래시스",
       "subject_key": "클래시스",
       "ticker": "214150",
-      "views": 4106,
+      "views": 4250,
       "analyst": null,
       "target_price": "64,000",
       "target_price_value": 64000,
@@ -36443,7 +35579,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 759,
+      "views": 799,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -36567,7 +35703,7 @@
       "subject": "인터넷포탈",
       "subject_key": "인터넷포탈",
       "ticker": null,
-      "views": 1914,
+      "views": 2135,
       "analyst": "이승훈",
       "target_price": null,
       "target_price_value": null,
@@ -36703,7 +35839,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 144,
+      "views": 161,
       "analyst": "강진혁",
       "target_price": null,
       "target_price_value": null,
@@ -36722,7 +35858,7 @@
       "estimate_reasons": [],
       "estimate_revisions": [],
       "stance": "neutral",
-      "score": 12.86,
+      "score": 12.91,
       "score_reasons": [
         "시황정보 카테고리",
         "공식 소스",
@@ -36743,7 +35879,7 @@
         },
         {
           "label": "조회수",
-          "value": 2.16,
+          "value": 2.21,
           "kind": "boost"
         },
         {
@@ -36825,7 +35961,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 437,
+      "views": 455,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -36960,7 +36096,7 @@
       "subject": "하이트진로",
       "subject_key": "하이트진로",
       "ticker": "000080",
-      "views": 3952,
+      "views": 4086,
       "analyst": null,
       "target_price": "22,000",
       "target_price_value": 22000,
@@ -37099,7 +36235,7 @@
       "subject": "삼성화재",
       "subject_key": "삼성화재",
       "ticker": "000810",
-      "views": 5156,
+      "views": 5664,
       "analyst": null,
       "target_price": "785,000",
       "target_price_value": 785000,
@@ -37250,7 +36386,7 @@
       "subject": "현대건설",
       "subject_key": "현대건설",
       "ticker": "000720",
-      "views": 5109,
+      "views": 5333,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -37376,7 +36512,7 @@
       "subject": "메리츠금융지주",
       "subject_key": "메리츠금융지주",
       "ticker": "138040",
-      "views": 6120,
+      "views": 6576,
       "analyst": null,
       "target_price": "140,000",
       "target_price_value": 140000,
@@ -37526,7 +36662,7 @@
       "subject": "JYP Ent.",
       "subject_key": "jyp-ent",
       "ticker": "035900",
-      "views": 4080,
+      "views": 4227,
       "analyst": null,
       "target_price": "60,000",
       "target_price_value": 60000,
@@ -37661,7 +36797,7 @@
       "subject": "달바글로벌",
       "subject_key": "달바글로벌",
       "ticker": "483650",
-      "views": 4524,
+      "views": 4860,
       "analyst": null,
       "target_price": "290,000",
       "target_price_value": 290000,
@@ -37859,7 +36995,7 @@
       "subject": "기타",
       "subject_key": "기타",
       "ticker": null,
-      "views": 2045,
+      "views": 2289,
       "analyst": "엄수진",
       "target_price": null,
       "target_price_value": null,
@@ -37981,7 +37117,7 @@
       "subject": "기타",
       "subject_key": "기타",
       "ticker": null,
-      "views": 1992,
+      "views": 2249,
       "analyst": "양승윤",
       "target_price": null,
       "target_price_value": null,
@@ -38138,7 +37274,7 @@
       "subject": "삼성생명",
       "subject_key": "삼성생명",
       "ticker": "032830",
-      "views": 5479,
+      "views": 6016,
       "analyst": null,
       "target_price": "370,000",
       "target_price_value": 370000,
@@ -38289,7 +37425,7 @@
       "subject": "SK하이닉스",
       "subject_key": "sk하이닉스",
       "ticker": "000660",
-      "views": 13428,
+      "views": 14498,
       "analyst": null,
       "target_price": "2,800,000",
       "target_price_value": 2800000,
@@ -38408,7 +37544,7 @@
       "subject": "삼성전자",
       "subject_key": "삼성전자",
       "ticker": "005930",
-      "views": 18187,
+      "views": 19568,
       "analyst": null,
       "target_price": "370,000",
       "target_price_value": 370000,
@@ -38527,7 +37663,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 677,
+      "views": 744,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -38654,7 +37790,7 @@
       "subject": "LG",
       "subject_key": "lg",
       "ticker": "003550",
-      "views": 3853,
+      "views": 3999,
       "analyst": null,
       "target_price": "140,000",
       "target_price_value": 140000,
@@ -38822,7 +37958,7 @@
       "subject": "기타",
       "subject_key": "기타",
       "ticker": null,
-      "views": 1932,
+      "views": 2187,
       "analyst": "김다은",
       "target_price": null,
       "target_price_value": null,
@@ -38963,7 +38099,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 564,
+      "views": 593,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -39077,7 +38213,7 @@
       "subject": "삼성화재",
       "subject_key": "삼성화재",
       "ticker": "000810",
-      "views": 5839,
+      "views": 6376,
       "analyst": null,
       "target_price": "800,000",
       "target_price_value": 800000,
@@ -39338,6 +38474,127 @@
       "has_change_signal": true
     },
     {
+      "source": "shinhan_investment_official",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "shinhan-giindustry-940423",
+      "title": "건설; 벌써 3번째 주택공급 대책",
+      "display_title": "건설리츠 - 건설; 벌써 3번째 주택공급 대책",
+      "broker": "신한투자증권",
+      "published_date": "2026-08-14",
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=giindustry&messageId=940423",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353337",
+      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353337",
+      "primary_url_label": "PDF",
+      "subject": "건설리츠",
+      "subject_key": "건설리츠",
+      "ticker": null,
+      "views": 138,
+      "analyst": "김선미",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "신한생각: 다양해지는 사업기회, 건설업종 비중확대! 근본적 한계에도 점차 구체화되는 공급 계획 및 실행 방안이 긍정적",
+      "summary": "신한생각: 다양해지는 사업기회, 건설업종 비중확대! 근본적 한계에도 점차 구체화되는 공급 계획 및 실행 방안이 긍정적 신한생각: 다양해지는 사업기회, 건설업종 비중확대!",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "estimate_revisions": [],
+      "stance": "positive",
+      "score": 11.34,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "공식 소스",
+        "관심 섹터/키워드(건설)",
+        "이익 추정 상향/증가",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.14,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.55,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "bbs2.shinhansec.com",
+        "pdf_host": "bbs2.shinhansec.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "건설"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": "2026-06-30",
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": "김선미",
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
+    },
+    {
       "source": "naver_research",
       "category": "company",
       "category_label": "종목분석",
@@ -39353,7 +38610,7 @@
       "subject": "금강공업",
       "subject_key": "금강공업",
       "ticker": "014280",
-      "views": 2798,
+      "views": 2896,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -39456,127 +38713,6 @@
       "has_change_signal": true
     },
     {
-      "source": "shinhan_investment_official",
-      "category": "industry",
-      "category_label": "산업분석",
-      "report_id": "shinhan-giindustry-940423",
-      "title": "건설; 벌써 3번째 주택공급 대책",
-      "display_title": "건설리츠 - 건설; 벌써 3번째 주택공급 대책",
-      "broker": "신한투자증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=giindustry&messageId=940423",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353337",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353337",
-      "primary_url_label": "PDF",
-      "subject": "건설리츠",
-      "subject_key": "건설리츠",
-      "ticker": null,
-      "views": 127,
-      "analyst": "김선미",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "신한생각: 다양해지는 사업기회, 건설업종 비중확대! 근본적 한계에도 점차 구체화되는 공급 계획 및 실행 방안이 긍정적",
-      "summary": "신한생각: 다양해지는 사업기회, 건설업종 비중확대! 근본적 한계에도 점차 구체화되는 공급 계획 및 실행 방안이 긍정적 신한생각: 다양해지는 사업기회, 건설업종 비중확대!",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [
-        "earnings_estimate_up"
-      ],
-      "estimate_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "estimate_revisions": [],
-      "stance": "positive",
-      "score": 11.3,
-      "score_reasons": [
-        "산업분석 카테고리",
-        "공식 소스",
-        "관심 섹터/키워드(건설)",
-        "이익 추정 상향/증가",
-        "우선 추적 증권사"
-      ],
-      "score_breakdown": [
-        {
-          "label": "산업분석 카테고리",
-          "value": 2.7,
-          "kind": "boost"
-        },
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.4,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 2.1,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 상향",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [
-        "건설"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": "2026-06-30",
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": "김선미",
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_up"
-      ],
-      "change_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "has_change_signal": true
-    },
-    {
       "source": "naver_research",
       "category": "company",
       "category_label": "종목분석",
@@ -39592,7 +38728,7 @@
       "subject": "메리츠금융지주",
       "subject_key": "메리츠금융지주",
       "ticker": "138040",
-      "views": 2297,
+      "views": 2407,
       "analyst": null,
       "target_price": "161,000",
       "target_price_value": 161000,
@@ -39724,7 +38860,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 778,
+      "views": 862,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -39845,7 +38981,7 @@
       "subject": "크라우드웍스",
       "subject_key": "크라우드웍스",
       "ticker": "355390",
-      "views": 2654,
+      "views": 2754,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -39962,7 +39098,7 @@
       "subject": "삼성화재",
       "subject_key": "삼성화재",
       "ticker": "000810",
-      "views": 2069,
+      "views": 2162,
       "analyst": null,
       "target_price": "600,000",
       "target_price_value": 600000,
@@ -40091,7 +39227,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 1472,
+      "views": 1642,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -40212,7 +39348,7 @@
       "subject": "DB손해보험",
       "subject_key": "db손해보험",
       "ticker": "005830",
-      "views": 6244,
+      "views": 6819,
       "analyst": null,
       "target_price": "219,000",
       "target_price_value": 219000,
@@ -40349,7 +39485,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 650,
+      "views": 731,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -40457,7 +39593,7 @@
       "subject": "삼성생명",
       "subject_key": "삼성생명",
       "ticker": "032830",
-      "views": 4104,
+      "views": 4242,
       "analyst": null,
       "target_price": "380,000",
       "target_price_value": 380000,
@@ -40716,6 +39852,130 @@
       "has_change_signal": true
     },
     {
+      "source": "shinhan_investment_official",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "shinhan-gicompanyanalyst-940425",
+      "title": "넥센타이어; 저평가의 이유는 줄고, 재평가의 조건은 쌓인다",
+      "display_title": "넥센타이어; 저평가의 이유는 줄고, 재평가의 조건은 쌓인다",
+      "broker": "신한투자증권",
+      "published_date": "2026-08-14",
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=940425",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353339",
+      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353339",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 115,
+      "analyst": "박광래",
+      "target_price": "10,000원",
+      "target_price_value": 10000,
+      "opinion": "매수",
+      "opinion_normalized": "buy",
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "신한생각: 이익 저점 통과, 재평가는 시간문제 다음은 북미다",
+      "summary": "신한생각: 이익 저점 통과, 재평가는 시간문제 다음은 북미다 Valuation & Risk: 밸류에이션 갭이 곧 기회의 크기",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "estimate_revisions": [],
+      "stance": "positive",
+      "score": 10.36,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "공식 소스",
+        "목표가 포함",
+        "투자의견 포함",
+        "이익 추정 상향/증가"
+      ],
+      "score_breakdown": [
+        {
+          "label": "종목분석 카테고리",
+          "value": 3.2,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.06,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "목표가",
+          "value": 0.7,
+          "kind": "boost"
+        },
+        {
+          "label": "투자의견",
+          "value": 0.6,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "bbs2.shinhansec.com",
+        "pdf_host": "bbs2.shinhansec.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
+    },
+    {
       "source": "naver_research",
       "category": "company",
       "category_label": "종목분석",
@@ -40731,7 +39991,7 @@
       "subject": "달바글로벌",
       "subject_key": "달바글로벌",
       "ticker": "483650",
-      "views": 2428,
+      "views": 2527,
       "analyst": null,
       "target_price": "320,000",
       "target_price_value": 320000,
@@ -40842,130 +40102,6 @@
       "has_change_signal": true
     },
     {
-      "source": "shinhan_investment_official",
-      "category": "company",
-      "category_label": "종목분석",
-      "report_id": "shinhan-gicompanyanalyst-940425",
-      "title": "넥센타이어; 저평가의 이유는 줄고, 재평가의 조건은 쌓인다",
-      "display_title": "넥센타이어; 저평가의 이유는 줄고, 재평가의 조건은 쌓인다",
-      "broker": "신한투자증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=940425",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353339",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353339",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 112,
-      "analyst": "박광래",
-      "target_price": "10,000원",
-      "target_price_value": 10000,
-      "opinion": "매수",
-      "opinion_normalized": "buy",
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "신한생각: 이익 저점 통과, 재평가는 시간문제 다음은 북미다",
-      "summary": "신한생각: 이익 저점 통과, 재평가는 시간문제 다음은 북미다 Valuation & Risk: 밸류에이션 갭이 곧 기회의 크기",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [
-        "earnings_estimate_up"
-      ],
-      "estimate_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "estimate_revisions": [],
-      "stance": "positive",
-      "score": 10.35,
-      "score_reasons": [
-        "종목분석 카테고리",
-        "공식 소스",
-        "목표가 포함",
-        "투자의견 포함",
-        "이익 추정 상향/증가"
-      ],
-      "score_breakdown": [
-        {
-          "label": "종목분석 카테고리",
-          "value": 3.2,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 2.05,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 상향",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "목표가",
-          "value": 0.7,
-          "kind": "boost"
-        },
-        {
-          "label": "투자의견",
-          "value": 0.6,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.25,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_up"
-      ],
-      "change_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "has_change_signal": true
-    },
-    {
       "source": "naver_research",
       "category": "company",
       "category_label": "종목분석",
@@ -40981,7 +40117,7 @@
       "subject": "현대리바트",
       "subject_key": "현대리바트",
       "ticker": "079430",
-      "views": 4132,
+      "views": 4307,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -41103,7 +40239,7 @@
       "subject": "삼익제약",
       "subject_key": "삼익제약",
       "ticker": "014950",
-      "views": 2631,
+      "views": 2731,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -41222,7 +40358,7 @@
       "subject": "타조이엔터테인먼트",
       "subject_key": "타조이엔터테인먼트",
       "ticker": "476710",
-      "views": 2587,
+      "views": 2680,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -41341,7 +40477,7 @@
       "subject": "덕양에너젠",
       "subject_key": "덕양에너젠",
       "ticker": null,
-      "views": 2490,
+      "views": 2610,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -41445,23 +40581,23 @@
       "has_change_signal": true
     },
     {
-      "source": "mirae_asset_official",
-      "category": "industry",
-      "category_label": "산업분석",
-      "report_id": "mirae-2342082",
-      "title": "한국&중국 마켓 클로징(8월 14일)",
-      "display_title": "한국&중국 마켓 클로징(8월 14일)",
-      "broker": "미래에셋증권",
+      "source": "shinhan_investment_official",
+      "category": "market",
+      "category_label": "시황정보",
+      "report_id": "shinhan-gicomment-940460",
+      "title": "Shinhan China Weekly(8월 2주차); 업종별 순환매 속 포지션 재구축",
+      "display_title": "Shinhan China Weekly(8월 2주차); 업종별 순환매 속 포지션 재구축",
+      "broker": "신한투자증권",
       "published_date": "2026-08-14",
-      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2342082&messageNumber=2576&categoryId=1521",
-      "pdf_url": "https://securities.miraeasset.com/bbs/download/2146758.pdf?attachmentId=2146758",
-      "primary_url": "https://securities.miraeasset.com/bbs/download/2146758.pdf?attachmentId=2146758",
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=940460",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353361",
+      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353361",
       "primary_url_label": "PDF",
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 0,
-      "analyst": "박수진",
+      "views": 60,
+      "analyst": "신승웅",
       "target_price": null,
       "target_price_value": null,
       "opinion": null,
@@ -41470,38 +40606,36 @@
       "content_sources": [
         "html"
       ],
-      "excerpt": "한국&중국 마켓 클로징(8월 14일) 외국인 월간 누적순매수 ''양전''",
-      "summary": "한국&중국 마켓 클로징(8월 14일) 외국인 월간 누적순매수 ''양전'' # 국내 마감",
+      "excerpt": "업종별 순환매 속 포지션 재구축 - 금주 중국 증시는 방향성보다 업종 순환매가 두드러진 흐름.",
+      "summary": "업종별 순환매 속 포지션 재구축 - 금주 중국 증시는 방향성보다 업종 순환매가 두드러진 흐름. 기술주주는 차익실현 압력에도 7월 급락 이후 하방 경직성 확인.",
       "summary_engine": "rule",
       "investment_memo": {},
       "estimate_metrics": [],
       "estimate_signal_types": [
-        "earnings_estimate_up",
-        "earnings_estimate_down"
+        "earnings_estimate_up"
       ],
       "estimate_reasons": [
-        "이익 추정 상향/증가",
-        "이익 추정 하향/감소"
+        "이익 추정 상향/증가"
       ],
       "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 10.15,
+      "stance": "positive",
+      "score": 10.18,
       "score_reasons": [
-        "산업분석 카테고리",
+        "시황정보 카테고리",
         "공식 소스",
-        "관심 섹터/키워드(반도체, 로봇)",
+        "관심 섹터/키워드(반도체)",
         "이익 추정 상향/증가",
-        "이익 추정 하향/감소"
+        "우선 추적 증권사"
       ],
       "score_breakdown": [
         {
-          "label": "산업분석 카테고리",
-          "value": 2.7,
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
           "kind": "boost"
         },
         {
-          "label": "관심 섹터/키워드",
-          "value": 2.6,
+          "label": "시황정보 카테고리",
+          "value": 1.8,
           "kind": "boost"
         },
         {
@@ -41510,23 +40644,28 @@
           "kind": "boost"
         },
         {
-          "label": "이익 추정 하향",
-          "value": 1.1,
+          "label": "조회수",
+          "value": 1.78,
           "kind": "boost"
         },
         {
           "label": "우선 추적 증권사",
-          "value": 0.75,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
+          "value": 1.1,
           "kind": "boost"
         },
         {
           "label": "소스 가중치",
           "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "제목 키워드: weekly",
+          "value": 0.4,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
           "kind": "boost"
         },
         {
@@ -41540,14 +40679,13 @@
         "primary_kind": "pdf",
         "has_pdf": true,
         "has_detail": true,
-        "detail_host": "securities.miraeasset.com",
-        "pdf_host": "securities.miraeasset.com",
+        "detail_host": "bbs2.shinhansec.com",
+        "pdf_host": "bbs2.shinhansec.com",
         "note": "PDF 링크를 대표 링크로 사용합니다."
       },
       "priority_subject_matches": [],
       "priority_keyword_matches": [
-        "반도체",
-        "로봇"
+        "반도체"
       ],
       "is_priority_match": true,
       "previous_report_date": null,
@@ -41561,12 +40699,10 @@
       "analyst_changed": false,
       "coverage_initiated": false,
       "change_types": [
-        "earnings_estimate_up",
-        "earnings_estimate_down"
+        "earnings_estimate_up"
       ],
       "change_reasons": [
-        "이익 추정 상향/증가",
-        "이익 추정 하향/감소"
+        "이익 추정 상향/증가"
       ],
       "has_change_signal": true
     },
@@ -41696,132 +40832,6 @@
       "has_change_signal": true
     },
     {
-      "source": "shinhan_investment_official",
-      "category": "market",
-      "category_label": "시황정보",
-      "report_id": "shinhan-gicomment-940460",
-      "title": "Shinhan China Weekly(8월 2주차); 업종별 순환매 속 포지션 재구축",
-      "display_title": "Shinhan China Weekly(8월 2주차); 업종별 순환매 속 포지션 재구축",
-      "broker": "신한투자증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=940460",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353361",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353361",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 55,
-      "analyst": "신승웅",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "업종별 순환매 속 포지션 재구축 - 금주 중국 증시는 방향성보다 업종 순환매가 두드러진 흐름.",
-      "summary": "업종별 순환매 속 포지션 재구축 - 금주 중국 증시는 방향성보다 업종 순환매가 두드러진 흐름. 기술주주는 차익실현 압력에도 7월 급락 이후 하방 경직성 확인.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [
-        "earnings_estimate_up"
-      ],
-      "estimate_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "estimate_revisions": [],
-      "stance": "positive",
-      "score": 10.14,
-      "score_reasons": [
-        "시황정보 카테고리",
-        "공식 소스",
-        "관심 섹터/키워드(반도체)",
-        "이익 추정 상향/증가",
-        "우선 추적 증권사"
-      ],
-      "score_breakdown": [
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.4,
-          "kind": "boost"
-        },
-        {
-          "label": "시황정보 카테고리",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 상향",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 1.74,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "제목 키워드: weekly",
-          "value": 0.4,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.25,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [
-        "반도체"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_up"
-      ],
-      "change_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "has_change_signal": true
-    },
-    {
       "source": "naver_research",
       "category": "invest",
       "category_label": "투자정보",
@@ -41837,7 +40847,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 604,
+      "views": 648,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -41961,7 +40971,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 103,
+      "views": 108,
       "analyst": "강진혁",
       "target_price": null,
       "target_price_value": null,
@@ -41984,7 +40994,7 @@
       ],
       "estimate_revisions": [],
       "stance": "positive",
-      "score": 10.01,
+      "score": 10.03,
       "score_reasons": [
         "시황정보 카테고리",
         "공식 소스",
@@ -42000,7 +41010,7 @@
         },
         {
           "label": "조회수",
-          "value": 2.01,
+          "value": 2.03,
           "kind": "boost"
         },
         {
@@ -42082,7 +41092,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 576,
+      "views": 621,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -42200,7 +41210,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 127,
+      "views": 135,
       "analyst": "박광래",
       "target_price": null,
       "target_price_value": null,
@@ -42219,7 +41229,7 @@
       "estimate_reasons": [],
       "estimate_revisions": [],
       "stance": "neutral",
-      "score": 9.9,
+      "score": 9.93,
       "score_reasons": [
         "산업분석 카테고리",
         "공식 소스",
@@ -42240,7 +41250,7 @@
         },
         {
           "label": "조회수",
-          "value": 2.1,
+          "value": 2.13,
           "kind": "boost"
         },
         {
@@ -42313,7 +41323,7 @@
       "subject": "DB손해보험",
       "subject_key": "db손해보험",
       "ticker": "005830",
-      "views": 4097,
+      "views": 4241,
       "analyst": "임희연",
       "target_price": "220,000",
       "target_price_value": 220000,
@@ -42460,7 +41470,7 @@
       "subject": "넥센타이어",
       "subject_key": "넥센타이어",
       "ticker": "002350",
-      "views": 3891,
+      "views": 4032,
       "analyst": null,
       "target_price": "10,000",
       "target_price_value": 10000,
@@ -42574,7 +41584,7 @@
       "subject": "삼성생명",
       "subject_key": "삼성생명",
       "ticker": "032830",
-      "views": 6135,
+      "views": 6708,
       "analyst": null,
       "target_price": "380,000",
       "target_price_value": 380000,
@@ -42695,7 +41705,7 @@
       "subject": "현대해상",
       "subject_key": "현대해상",
       "ticker": "001450",
-      "views": 7205,
+      "views": 7956,
       "analyst": null,
       "target_price": "41,000",
       "target_price_value": 41000,
@@ -42816,7 +41826,7 @@
       "subject": "철강금속",
       "subject_key": "철강금속",
       "ticker": null,
-      "views": 2437,
+      "views": 2770,
       "analyst": "박광래",
       "target_price": null,
       "target_price_value": null,
@@ -42914,139 +41924,6 @@
       "has_change_signal": false
     },
     {
-      "source": "mirae_asset_official",
-      "category": "industry",
-      "category_label": "산업분석",
-      "report_id": "mirae-2342069",
-      "title": "SMIC (00981 HK/매수)",
-      "display_title": "SMIC (00981 HK/매수)",
-      "broker": "미래에셋증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2342069&messageNumber=2574&categoryId=1521",
-      "pdf_url": "https://securities.miraeasset.com/bbs/download/2146749.pdf?attachmentId=2146749",
-      "primary_url": "https://securities.miraeasset.com/bbs/download/2146749.pdf?attachmentId=2146749",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 0,
-      "analyst": "강민희",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "관련종목 목표주가 및 밸류에이션",
-      "summary": "관련종목 목표주가 및 밸류에이션 동사에 대해 ‘매수’의 투자의견과 기존 목표주가 100홍콩달러를 유지한다.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [
-        {
-          "metric": "operating_margin",
-          "metric_group": "margin",
-          "label": "OPM",
-          "period": null,
-          "value": 17.8,
-          "unit": "%",
-          "value_pct": 17.8,
-          "source_excerpt": "영업이익은 $534M(QoQ +116%, YoY +255%), OPM 17.8%(QoQ +7.",
-          "change_pctp": 7.9
-        }
-      ],
-      "estimate_signal_types": [
-        "earnings_estimate_up"
-      ],
-      "estimate_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "estimate_revisions": [],
-      "stance": "positive",
-      "score": 9.32,
-      "score_reasons": [
-        "산업분석 카테고리",
-        "공식 소스",
-        "관심 섹터/키워드(반도체)",
-        "실적/마진 추정치 포함",
-        "이익 추정 상향/증가"
-      ],
-      "score_breakdown": [
-        {
-          "label": "산업분석 카테고리",
-          "value": 2.7,
-          "kind": "boost"
-        },
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.4,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 상향",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 0.75,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "실적/마진 추정치",
-          "value": 0.47,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "securities.miraeasset.com",
-        "pdf_host": "securities.miraeasset.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [
-        "반도체"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_up"
-      ],
-      "change_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "has_change_signal": true
-    },
-    {
       "source": "shinhan_investment_official",
       "category": "economy",
       "category_label": "경제분석",
@@ -43062,7 +41939,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 87,
+      "views": 100,
       "analyst": "하건형",
       "target_price": null,
       "target_price_value": null,
@@ -43081,7 +41958,7 @@
       "estimate_reasons": [],
       "estimate_revisions": [],
       "stance": "neutral",
-      "score": 9.14,
+      "score": 9.2,
       "score_reasons": [
         "경제분석 카테고리",
         "공식 소스",
@@ -43101,7 +41978,7 @@
         },
         {
           "label": "조회수",
-          "value": 1.94,
+          "value": 2.0,
           "kind": "boost"
         },
         {
@@ -43155,125 +42032,6 @@
       "has_change_signal": false
     },
     {
-      "source": "mirae_asset_official",
-      "category": "industry",
-      "category_label": "산업분석",
-      "report_id": "mirae-2342041",
-      "title": "삼성전자 (005930/매수)",
-      "display_title": "삼성전자 (005930/매수)",
-      "broker": "미래에셋증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2342041&messageNumber=2570&categoryId=1521",
-      "pdf_url": "https://securities.miraeasset.com/bbs/download/2146686.pdf?attachmentId=2146686",
-      "primary_url": "https://securities.miraeasset.com/bbs/download/2146686.pdf?attachmentId=2146686",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 0,
-      "analyst": "김영건",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "관련종목 사방에서 울리는 낭보들",
-      "summary": "관련종목 사방에서 울리는 낭보들 동사에 대한 투자의견 ''매수'' 및 목표주가 37만원을 유지한다.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [
-        {
-          "metric": "operating_margin",
-          "metric_group": "margin",
-          "label": "OPM",
-          "period": null,
-          "value": 75.0,
-          "unit": "%",
-          "value_pct": 75.0,
-          "source_excerpt": "전일 샌디스크의 Investor Day에서 언급한 바에 따르면, 중장기(FY28~30) 10% 중후반의 매출성장률, OPM 75%을 제시했으며, 이를 기반으로 FCF의 100%를 주주환원 하는 계획을 발표했다."
-        }
-      ],
-      "estimate_signal_types": [],
-      "estimate_reasons": [],
-      "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 9.12,
-      "score_reasons": [
-        "산업분석 카테고리",
-        "공식 소스",
-        "관심 종목(삼성전자)",
-        "실적/마진 추정치 포함",
-        "우선 추적 증권사"
-      ],
-      "score_breakdown": [
-        {
-          "label": "관심 종목",
-          "value": 4.0,
-          "kind": "boost"
-        },
-        {
-          "label": "산업분석 카테고리",
-          "value": 2.7,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 0.75,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "실적/마진 추정치",
-          "value": 0.47,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "securities.miraeasset.com",
-        "pdf_host": "securities.miraeasset.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [
-        "삼성전자"
-      ],
-      "priority_keyword_matches": [],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
-    },
-    {
       "source": "shinhan_investment_official",
       "category": "company",
       "category_label": "종목분석",
@@ -43289,7 +42047,7 @@
       "subject": "한국금융지주",
       "subject_key": "한국금융지주",
       "ticker": "071050",
-      "views": 4333,
+      "views": 4489,
       "analyst": "임희연",
       "target_price": "300,000",
       "target_price_value": 300000,
@@ -43400,7 +42158,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 104,
+      "views": 115,
       "analyst": "이진경",
       "target_price": null,
       "target_price_value": null,
@@ -43419,7 +42177,7 @@
       "estimate_reasons": [],
       "estimate_revisions": [],
       "stance": "neutral",
-      "score": 9.02,
+      "score": 9.06,
       "score_reasons": [
         "경제분석 카테고리",
         "공식 소스",
@@ -43439,7 +42197,7 @@
         },
         {
           "label": "조회수",
-          "value": 2.02,
+          "value": 2.06,
           "kind": "boost"
         },
         {
@@ -43731,6 +42489,113 @@
       "has_change_signal": true
     },
     {
+      "source": "shinhan_investment_official",
+      "category": "economy",
+      "category_label": "경제분석",
+      "report_id": "shinhan-gieconomy-940441",
+      "title": "자산가격 메커니즘 변화 #0; 수요의 문법으로 공급의 시대를 읽을 수 있을까",
+      "display_title": "자산가격 메커니즘 변화 #0; 수요의 문법으로 공급의 시대를 읽을 수 있을까",
+      "broker": "신한투자증권",
+      "published_date": "2026-08-14",
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gieconomy&messageId=940441",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353353",
+      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353353",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 147,
+      "analyst": "리서치센터",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "국가의 귀환, 기술의 물질화는 자본 목적지와 구축되는 생산능력 종류를 바꿔 투자비용은 먼저 발생하지만 생산성과 현금흐름은 최종 귀속에 따라 달라져",
+      "summary": "국가의 귀환, 기술의 물질화는 자본 목적지와 구축되는 생산능력 종류를 바꿔 투자비용은 먼저 발생하지만 생산성과 현금흐름은 최종 귀속에 따라 달라져 기존 지표의 관계를 다시 검증하고 구조 변화 진행 단계와 가격 선반영 구분",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "estimate_revisions": [],
+      "stance": "neutral",
+      "score": 8.87,
+      "score_reasons": [
+        "경제분석 카테고리",
+        "공식 소스",
+        "관심 섹터/키워드(반도체)",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "경제분석 카테고리",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 2.17,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "bbs2.shinhansec.com",
+        "pdf_host": "bbs2.shinhansec.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
+    {
       "source": "korea_investment_official",
       "category": "company",
       "category_label": "종목분석",
@@ -43865,113 +42730,6 @@
       "has_change_signal": true
     },
     {
-      "source": "shinhan_investment_official",
-      "category": "economy",
-      "category_label": "경제분석",
-      "report_id": "shinhan-gieconomy-940441",
-      "title": "자산가격 메커니즘 변화 #0; 수요의 문법으로 공급의 시대를 읽을 수 있을까",
-      "display_title": "자산가격 메커니즘 변화 #0; 수요의 문법으로 공급의 시대를 읽을 수 있을까",
-      "broker": "신한투자증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gieconomy&messageId=940441",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353353",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353353",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 140,
-      "analyst": "리서치센터",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "국가의 귀환, 기술의 물질화는 자본 목적지와 구축되는 생산능력 종류를 바꿔 투자비용은 먼저 발생하지만 생산성과 현금흐름은 최종 귀속에 따라 달라져",
-      "summary": "국가의 귀환, 기술의 물질화는 자본 목적지와 구축되는 생산능력 종류를 바꿔 투자비용은 먼저 발생하지만 생산성과 현금흐름은 최종 귀속에 따라 달라져 기존 지표의 관계를 다시 검증하고 구조 변화 진행 단계와 가격 선반영 구분",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [],
-      "estimate_reasons": [],
-      "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 8.85,
-      "score_reasons": [
-        "경제분석 카테고리",
-        "공식 소스",
-        "관심 섹터/키워드(반도체)",
-        "우선 추적 증권사"
-      ],
-      "score_breakdown": [
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.4,
-          "kind": "boost"
-        },
-        {
-          "label": "경제분석 카테고리",
-          "value": 2.3,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 2.15,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.25,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [
-        "반도체"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
-    },
-    {
       "source": "naver_research",
       "category": "invest",
       "category_label": "투자정보",
@@ -43987,7 +42745,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 950,
+      "views": 1065,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -44010,6 +42768,7 @@
       "score_reasons": [
         "투자정보 카테고리",
         "관심 섹터/키워드(로봇)",
+        "조회수 상위권",
         "우선 추적 증권사",
         "핵심 키워드(weekly)"
       ],
@@ -44094,7 +42853,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 987,
+      "views": 1081,
       "analyst": "강진혁",
       "target_price": null,
       "target_price_value": null,
@@ -44118,6 +42877,7 @@
         "시황정보 카테고리",
         "공식 소스",
         "관심 섹터/키워드(로봇)",
+        "조회수 상위권",
         "우선 추적 증권사"
       ],
       "score_breakdown": [
@@ -44201,7 +42961,7 @@
       "subject": "건설",
       "subject_key": "건설",
       "ticker": null,
-      "views": 1759,
+      "views": 1975,
       "analyst": "김선미",
       "target_price": null,
       "target_price_value": null,
@@ -44303,7 +43063,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 735,
+      "views": 790,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -44404,7 +43164,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 681,
+      "views": 760,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -44507,7 +43267,7 @@
       "subject": "통신",
       "subject_key": "통신",
       "ticker": null,
-      "views": 2855,
+      "views": 3222,
       "analyst": "김홍식",
       "target_price": null,
       "target_price_value": null,
@@ -44620,7 +43380,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 454,
+      "views": 483,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -44733,7 +43493,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 778,
+      "views": 856,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -45065,7 +43825,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 234,
+      "views": 254,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -45184,7 +43944,7 @@
       "subject": "삼성SDI",
       "subject_key": "삼성sdi",
       "ticker": "006400",
-      "views": 5503,
+      "views": 5744,
       "analyst": null,
       "target_price": "1,000,000",
       "target_price_value": 1000000,
@@ -45281,125 +44041,6 @@
       "has_change_signal": false
     },
     {
-      "source": "mirae_asset_official",
-      "category": "market",
-      "category_label": "시황정보",
-      "report_id": "mirae-2342049",
-      "title": "SK하이닉스 (000660/매수)",
-      "display_title": "SK하이닉스 (000660/매수)",
-      "broker": "미래에셋증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2342049&messageNumber=2571&categoryId=1521",
-      "pdf_url": "https://securities.miraeasset.com/bbs/download/2146714.pdf?attachmentId=2146714",
-      "primary_url": "https://securities.miraeasset.com/bbs/download/2146714.pdf?attachmentId=2146714",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 0,
-      "analyst": "김영건",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "관련종목 단번에 풀려가는 매듭들",
-      "summary": "관련종목 단번에 풀려가는 매듭들 동사에 대한 투자의견 ''매수'' 및 목표주가 280만원을 유지한다.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [
-        {
-          "metric": "operating_margin",
-          "metric_group": "margin",
-          "label": "OPM",
-          "period": null,
-          "value": 75.0,
-          "unit": "%",
-          "value_pct": 75.0,
-          "source_excerpt": "전일 샌디스크의 Investor Day에서 언급한 바에 따르면, 중장기(FY28~30) 10% 중후반의 매출성장률, OPM 75%을 제시했으며, 이를 기반으로 FCF의 100%를 주주환원 하는 계획을 발표했다."
-        }
-      ],
-      "estimate_signal_types": [],
-      "estimate_reasons": [],
-      "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 8.22,
-      "score_reasons": [
-        "시황정보 카테고리",
-        "공식 소스",
-        "관심 종목(SK하이닉스)",
-        "실적/마진 추정치 포함",
-        "우선 추적 증권사"
-      ],
-      "score_breakdown": [
-        {
-          "label": "관심 종목",
-          "value": 4.0,
-          "kind": "boost"
-        },
-        {
-          "label": "시황정보 카테고리",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 0.75,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "실적/마진 추정치",
-          "value": 0.47,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "securities.miraeasset.com",
-        "pdf_host": "securities.miraeasset.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [
-        "SK하이닉스"
-      ],
-      "priority_keyword_matches": [],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
-    },
-    {
       "source": "naver_research",
       "category": "economy",
       "category_label": "경제분석",
@@ -45415,7 +44056,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 1039,
+      "views": 1143,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -45527,7 +44168,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 574,
+      "views": 619,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -45614,140 +44255,6 @@
       "has_change_signal": false
     },
     {
-      "source": "mirae_asset_official",
-      "category": "industry",
-      "category_label": "산업분석",
-      "report_id": "mirae-2342065",
-      "title": "현대해상 (001450/중립)",
-      "display_title": "현대해상 (001450/중립)",
-      "broker": "미래에셋증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2342065&messageNumber=2573&categoryId=1521",
-      "pdf_url": "https://securities.miraeasset.com/bbs/download/2146745.pdf?attachmentId=2146745",
-      "primary_url": "https://securities.miraeasset.com/bbs/download/2146745.pdf?attachmentId=2146745",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 0,
-      "analyst": "정태준, CFA",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "관련종목 손에 잡힐 것도 같은 배당",
-      "summary": "관련종목 손에 잡힐 것도 같은 배당 투자의견 중립 유지, 목표주가 41,000원으로 상향",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [
-        {
-          "metric": "net_profit",
-          "metric_group": "earnings",
-          "label": "순이익",
-          "period": "2분기",
-          "value": 3918.0,
-          "unit": "억원",
-          "source_excerpt": "2분기 실적 컨센서스 상회 2분기 순이익은 3,918억원으로, 당사 추정치 3,085억원과 컨센서스 2,683억원을 크게 상회했다.",
-          "value_krw_100m": 3918.0
-        }
-      ],
-      "estimate_signal_types": [
-        "earnings_estimate_up",
-        "earnings_estimate_down"
-      ],
-      "estimate_reasons": [
-        "이익 추정 상향/증가",
-        "이익 추정 하향/감소"
-      ],
-      "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 7.72,
-      "score_reasons": [
-        "산업분석 카테고리",
-        "공식 소스",
-        "실적/마진 추정치 포함",
-        "이익 추정 상향/증가",
-        "이익 추정 하향/감소"
-      ],
-      "score_breakdown": [
-        {
-          "label": "산업분석 카테고리",
-          "value": 2.7,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 상향",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 하향",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 0.75,
-          "kind": "boost"
-        },
-        {
-          "label": "실적/마진 추정치",
-          "value": 0.47,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.25,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "securities.miraeasset.com",
-        "pdf_host": "securities.miraeasset.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_up",
-        "earnings_estimate_down"
-      ],
-      "change_reasons": [
-        "이익 추정 상향/증가",
-        "이익 추정 하향/감소"
-      ],
-      "has_change_signal": true
-    },
-    {
       "source": "naver_research",
       "category": "market",
       "category_label": "시황정보",
@@ -45763,7 +44270,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 764,
+      "views": 842,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -45870,7 +44377,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 859,
+      "views": 946,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -45965,7 +44472,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 842,
+      "views": 921,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -46060,7 +44567,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 883,
+      "views": 972,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -46166,7 +44673,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 616,
+      "views": 664,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -46259,282 +44766,6 @@
       "has_change_signal": true
     },
     {
-      "source": "mirae_asset_official",
-      "category": "market",
-      "category_label": "시황정보",
-      "report_id": "mirae-2342037",
-      "title": "AI 데일리 글로벌 마켓 브리핑(8월 14일)",
-      "display_title": "AI 데일리 글로벌 마켓 브리핑(8월 14일)",
-      "broker": "미래에셋증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2342037&messageNumber=2566&categoryId=1521",
-      "pdf_url": "https://securities.miraeasset.com/bbs/download/2146682.pdf?attachmentId=2146682",
-      "primary_url": "https://securities.miraeasset.com/bbs/download/2146682.pdf?attachmentId=2146682",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 0,
-      "analyst": "김주연",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "고유가, ‘경기 위축→수요 둔화’로 이어질까 우려..유가 하락 미 증시 일제히 상승.",
-      "summary": "고유가, ‘경기 위축→수요 둔화’로 이어질까 우려..유가 하락 미 증시 일제히 상승. 전일 CPI에 이어 7월 PPI도 예상 부합 내지 하회로 나오며 금리 인상 경계감 완화.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [],
-      "estimate_reasons": [],
-      "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 7.45,
-      "score_reasons": [
-        "시황정보 카테고리",
-        "공식 소스",
-        "관심 종목(SK하이닉스)",
-        "우선 추적 증권사"
-      ],
-      "score_breakdown": [
-        {
-          "label": "관심 종목",
-          "value": 4.0,
-          "kind": "boost"
-        },
-        {
-          "label": "시황정보 카테고리",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 0.75,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.25,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "securities.miraeasset.com",
-        "pdf_host": "securities.miraeasset.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [
-        "SK하이닉스"
-      ],
-      "priority_keyword_matches": [],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
-    },
-    {
-      "source": "mirae_asset_official",
-      "category": "invest",
-      "category_label": "투자정보",
-      "report_id": "mirae-2342039",
-      "title": "클래시스 (214150/매수)",
-      "display_title": "클래시스 (214150/매수)",
-      "broker": "미래에셋증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2342039&messageNumber=2568&categoryId=1521",
-      "pdf_url": "https://securities.miraeasset.com/bbs/download/2146684.pdf?attachmentId=2146684",
-      "primary_url": "https://securities.miraeasset.com/bbs/download/2146684.pdf?attachmentId=2146684",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 0,
-      "analyst": "김충현, CFA",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "관련종목 브라질 정상화가 관건",
-      "summary": "관련종목 브라질 정상화가 관건 2Q26 Review: 매출 및 영업이익 시장 기대치 하회",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [
-        {
-          "metric": "revenue",
-          "metric_group": "earnings",
-          "label": "매출",
-          "period": null,
-          "value": 1055.0,
-          "unit": "억원",
-          "source_excerpt": "클래시스 (214150/매수) 관련종목 브라질 정상화가 관건 2Q26 Review: 매출 및 영업이익 시장 기대치 하회 관련종목 브라질 정상화가 관건 관련종목 브라질 정상화가 관건 2Q26 Review: 매출 및 영업이익 시장 기대치 하회 매출 1,055억원(27% YoY), 영업이익…",
-          "value_krw_100m": 1055.0
-        },
-        {
-          "metric": "operating_profit",
-          "metric_group": "earnings",
-          "label": "영업이익",
-          "period": null,
-          "value": 439.0,
-          "unit": "억원",
-          "source_excerpt": "클래시스 (214150/매수) 관련종목 브라질 정상화가 관건 2Q26 Review: 매출 및 영업이익 시장 기대치 하회 관련종목 브라질 정상화가 관건 관련종목 브라질 정상화가 관건 2Q26 Review: 매출 및 영업이익 시장 기대치 하회 매출 1,055억원(27% YoY), 영업이익…",
-          "value_krw_100m": 439.0
-        },
-        {
-          "metric": "revenue",
-          "metric_group": "earnings",
-          "label": "매출",
-          "period": null,
-          "value": 213.0,
-          "unit": "억원",
-          "source_excerpt": "남미 지역 PMI: 연결 편입효과 151억원 발생(남미 매출 213억원).",
-          "value_krw_100m": 213.0
-        },
-        {
-          "metric": "revenue",
-          "metric_group": "earnings",
-          "label": "매출",
-          "period": null,
-          "value": 4424.0,
-          "unit": "억원",
-          "source_excerpt": "‘26년 예상 실적 및 밸류에이션: 매출 4,424억원(31% YoY), 조정 EBITDA 2,111억원(13% YoY, 마진 47.",
-          "value_krw_100m": 4424.0
-        },
-        {
-          "metric": "operating_margin",
-          "metric_group": "margin",
-          "label": "OPM",
-          "period": null,
-          "value": 41.6,
-          "unit": "%",
-          "value_pct": 41.6,
-          "source_excerpt": "클래시스 (214150/매수) 관련종목 브라질 정상화가 관건 2Q26 Review: 매출 및 영업이익 시장 기대치 하회 관련종목 브라질 정상화가 관건 관련종목 브라질 정상화가 관건 2Q26 Review: 매출 및 영업이익 시장 기대치 하회 매출 1,055억원(27% YoY), 영업이익…"
-        }
-      ],
-      "estimate_signal_types": [
-        "earnings_estimate_down",
-        "margin_estimate_down"
-      ],
-      "estimate_reasons": [
-        "이익 추정 하향/감소",
-        "마진율 추정 하락/악화"
-      ],
-      "estimate_revisions": [],
-      "stance": "negative",
-      "score": 7.4,
-      "score_reasons": [
-        "투자정보 카테고리",
-        "공식 소스",
-        "실적/마진 추정치 포함",
-        "이익 추정 하향/감소",
-        "마진율 추정 하락/악화"
-      ],
-      "score_breakdown": [
-        {
-          "label": "투자정보 카테고리",
-          "value": 2.5,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 하향",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "실적/마진 추정치",
-          "value": 0.95,
-          "kind": "boost"
-        },
-        {
-          "label": "마진율 악화",
-          "value": 0.9,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 0.75,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "securities.miraeasset.com",
-        "pdf_host": "securities.miraeasset.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_down",
-        "margin_estimate_down"
-      ],
-      "change_reasons": [
-        "이익 추정 하향/감소",
-        "마진율 추정 하락/악화"
-      ],
-      "has_change_signal": true
-    },
-    {
       "source": "naver_research",
       "category": "market",
       "category_label": "시황정보",
@@ -46550,7 +44781,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 811,
+      "views": 895,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -46643,315 +44874,6 @@
       "has_change_signal": true
     },
     {
-      "source": "mirae_asset_official",
-      "category": "industry",
-      "category_label": "산업분석",
-      "report_id": "mirae-2342040",
-      "title": "LG (003550/매수)",
-      "display_title": "LG (003550/매수)",
-      "broker": "미래에셋증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2342040&messageNumber=2569&categoryId=1521",
-      "pdf_url": "https://securities.miraeasset.com/bbs/download/2146712.pdf?attachmentId=2146712",
-      "primary_url": "https://securities.miraeasset.com/bbs/download/2146712.pdf?attachmentId=2146712",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 0,
-      "analyst": "류제현",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "관련종목 제도로 뒷받침될 매력",
-      "summary": "관련종목 제도로 뒷받침될 매력 2Q26 Review: 자회사와 별도 손익 동시 선전",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [
-        {
-          "metric": "operating_profit",
-          "metric_group": "earnings",
-          "label": "영업이익",
-          "period": null,
-          "value": 5330.0,
-          "unit": "억원",
-          "source_excerpt": "LG (003550/매수) 관련종목 제도로 뒷받침될 매력 2Q26 Review: 자회사와 별도 손익 동시 선전 관련종목 제도로 뒷받침될 매력 관련종목 제도로 뒷받침될 매력 2Q26 Review: 자회사와 별도 손익 동시 선전 2Q26 연결 영업이익은 5,330억원으로 전년동기 대비 9…",
-          "value_krw_100m": 5330.0
-        },
-        {
-          "metric": "net_profit",
-          "metric_group": "earnings",
-          "label": "지배주주순이익",
-          "period": null,
-          "value": 4657.0,
-          "unit": "억원",
-          "source_excerpt": "0%), 지배주주순이익 4,657억원(+127.",
-          "value_krw_100m": 4657.0
-        },
-        {
-          "metric": "operating_profit",
-          "metric_group": "earnings",
-          "label": "영업이익",
-          "period": null,
-          "value": 1279.0,
-          "unit": "억원",
-          "source_excerpt": "연결 종속회사 LG CNS는 매출 1조 5,208억원·영업이익 1,279억원으로 클라우드 전환과 AI 데이터센터 용역이 성장을 이끌었다.",
-          "value_krw_100m": 1279.0
-        }
-      ],
-      "estimate_signal_types": [
-        "earnings_estimate_up"
-      ],
-      "estimate_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "estimate_revisions": [],
-      "stance": "positive",
-      "score": 7.16,
-      "score_reasons": [
-        "산업분석 카테고리",
-        "공식 소스",
-        "실적/마진 추정치 포함",
-        "이익 추정 상향/증가",
-        "우선 추적 증권사"
-      ],
-      "score_breakdown": [
-        {
-          "label": "산업분석 카테고리",
-          "value": 2.7,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 상향",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 0.75,
-          "kind": "boost"
-        },
-        {
-          "label": "실적/마진 추정치",
-          "value": 0.71,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "securities.miraeasset.com",
-        "pdf_host": "securities.miraeasset.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_up"
-      ],
-      "change_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "has_change_signal": true
-    },
-    {
-      "source": "mirae_asset_official",
-      "category": "invest",
-      "category_label": "투자정보",
-      "report_id": "mirae-2342038",
-      "title": "덴티움 (145720/매수)",
-      "display_title": "덴티움 (145720/매수)",
-      "broker": "미래에셋증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2342038&messageNumber=2567&categoryId=1521",
-      "pdf_url": "https://securities.miraeasset.com/bbs/download/2146760.pdf?attachmentId=2146760",
-      "primary_url": "https://securities.miraeasset.com/bbs/download/2146760.pdf?attachmentId=2146760",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 0,
-      "analyst": "김충현, CFA",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "관련종목 2Q26 Review: 매출 시장 기대치 부합, 영업이익 시장 기대치 하회",
-      "summary": "관련종목 2Q26 Review: 매출 시장 기대치 부합, 영업이익 시장 기대치 하회 매출 893억원(9% YoY)으로 시장 기대치 부합.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [
-        {
-          "metric": "revenue",
-          "metric_group": "earnings",
-          "label": "매출",
-          "period": null,
-          "value": 893.0,
-          "unit": "억원",
-          "source_excerpt": "덴티움 (145720/매수) 관련종목 2Q26 Review: 매출 시장 기대치 부합, 영업이익 시장 기대치 하회 매출 893억원(9% YoY)으로 시장 기대치 부합.",
-          "value_krw_100m": 893.0
-        },
-        {
-          "metric": "operating_profit",
-          "metric_group": "earnings",
-          "label": "영업이익",
-          "period": null,
-          "value": 147.0,
-          "unit": "억원",
-          "source_excerpt": "영업이익 147억원(-5% YoY, OPM 16.",
-          "value_krw_100m": 147.0
-        },
-        {
-          "metric": "revenue",
-          "metric_group": "earnings",
-          "label": "매출",
-          "period": null,
-          "value": 3707.0,
-          "unit": "억원",
-          "source_excerpt": "‘26년 예상 실적: 매출 3,707억원(+7% YoY), 조정 EBITDA 1,109억원(+12% YoY, 마진 29.",
-          "value_krw_100m": 3707.0
-        },
-        {
-          "metric": "operating_margin",
-          "metric_group": "margin",
-          "label": "OPM",
-          "period": null,
-          "value": 16.5,
-          "unit": "%",
-          "value_pct": 16.5,
-          "source_excerpt": "영업이익 147억원(-5% YoY, OPM 16.5%)으로 시장 기대치 하회."
-        }
-      ],
-      "estimate_signal_types": [
-        "earnings_estimate_down",
-        "margin_estimate_down"
-      ],
-      "estimate_reasons": [
-        "이익 추정 하향/감소",
-        "마진율 추정 하락/악화"
-      ],
-      "estimate_revisions": [],
-      "stance": "negative",
-      "score": 6.98,
-      "score_reasons": [
-        "투자정보 카테고리",
-        "공식 소스",
-        "실적/마진 추정치 포함",
-        "이익 추정 하향/감소",
-        "마진율 추정 하락/악화"
-      ],
-      "score_breakdown": [
-        {
-          "label": "투자정보 카테고리",
-          "value": 2.5,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 하향",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "마진율 악화",
-          "value": 0.9,
-          "kind": "boost"
-        },
-        {
-          "label": "실적/마진 추정치",
-          "value": 0.83,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 0.75,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.25,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "securities.miraeasset.com",
-        "pdf_host": "securities.miraeasset.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_down",
-        "margin_estimate_down"
-      ],
-      "change_reasons": [
-        "이익 추정 하향/감소",
-        "마진율 추정 하락/악화"
-      ],
-      "has_change_signal": true
-    },
-    {
       "source": "naver_research",
       "category": "invest",
       "category_label": "투자정보",
@@ -46967,7 +44889,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 718,
+      "views": 769,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -47169,7 +45091,7 @@
       "subject": "유틸리티",
       "subject_key": "유틸리티",
       "ticker": null,
-      "views": 2118,
+      "views": 2392,
       "analyst": "유재선",
       "target_price": null,
       "target_price_value": null,
@@ -47268,7 +45190,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 1179,
+      "views": 1323,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -47368,7 +45290,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 1636,
+      "views": 1975,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -47468,7 +45390,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 781,
+      "views": 876,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -47674,7 +45596,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 719,
+      "views": 772,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -47767,7 +45689,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 764,
+      "views": 812,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -47860,7 +45782,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 903,
+      "views": 997,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -47960,7 +45882,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 587,
+      "views": 635,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -48054,7 +45976,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 381,
+      "views": 400,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -48149,7 +46071,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 309,
+      "views": 326,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -48331,7 +46253,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 558,
+      "views": 594,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -48431,7 +46353,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 601,
+      "views": 645,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -48523,7 +46445,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 588,
+      "views": 653,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -48722,7 +46644,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 204,
+      "views": 215,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -49094,7 +47016,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 1372,
+      "views": 1511,
       "analyst": null,
       "target_price": null,
       "target_price_value": null,
@@ -49152,278 +47074,6 @@
         "has_detail": true,
         "detail_host": "finance.naver.com",
         "pdf_host": "stock.pstatic.net",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
-    },
-    {
-      "source": "mirae_asset_official",
-      "category": "market",
-      "category_label": "시황정보",
-      "report_id": "mirae-2342073",
-      "title": "Macro Week Ahead",
-      "display_title": "Macro Week Ahead",
-      "broker": "미래에셋증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2342073&messageNumber=2575&categoryId=1521",
-      "pdf_url": "https://securities.miraeasset.com/bbs/download/2146753.pdf?attachmentId=2146753",
-      "primary_url": "https://securities.miraeasset.com/bbs/download/2146753.pdf?attachmentId=2146753",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 0,
-      "analyst": "미래에셋증권 투자전략팀",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "장기금리 하락을 제한하는 요인들 (8/17~21) [Macro Issues]",
-      "summary": "장기금리 하락을 제한하는 요인들 (8/17~21) [Macro Issues] 7월 미국 CPI, PPI가 예상에 부합하며 연준 금리 인상 우려 완화, 미 국채 금리 하락을 견인.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [],
-      "estimate_reasons": [],
-      "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 3.45,
-      "score_reasons": [
-        "시황정보 카테고리",
-        "공식 소스",
-        "우선 추적 증권사"
-      ],
-      "score_breakdown": [
-        {
-          "label": "시황정보 카테고리",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 0.75,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.25,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "securities.miraeasset.com",
-        "pdf_host": "securities.miraeasset.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
-    },
-    {
-      "source": "mirae_asset_official",
-      "category": "market",
-      "category_label": "시황정보",
-      "report_id": "mirae-2342057",
-      "title": "마켓 뷰(8월 14일)",
-      "display_title": "마켓 뷰(8월 14일)",
-      "broker": "미래에셋증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2342057&messageNumber=2572&categoryId=1521",
-      "pdf_url": "https://securities.miraeasset.com/bbs/download/2146734.pdf?attachmentId=2146734",
-      "primary_url": "https://securities.miraeasset.com/bbs/download/2146734.pdf?attachmentId=2146734",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 0,
-      "analyst": "김주연",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "**** 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
-      "summary": "**** 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [],
-      "estimate_reasons": [],
-      "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 3.2,
-      "score_reasons": [
-        "시황정보 카테고리",
-        "공식 소스",
-        "우선 추적 증권사"
-      ],
-      "score_breakdown": [
-        {
-          "label": "시황정보 카테고리",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 0.75,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "securities.miraeasset.com",
-        "pdf_host": "securities.miraeasset.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
-    },
-    {
-      "source": "mirae_asset_official",
-      "category": "market",
-      "category_label": "시황정보",
-      "report_id": "mirae-2342083",
-      "title": "월스트리트파인더 Ep.202",
-      "display_title": "월스트리트파인더 Ep.202",
-      "broker": "미래에셋증권",
-      "published_date": "2026-08-14",
-      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2342083&messageNumber=2577&categoryId=1521",
-      "pdf_url": "https://securities.miraeasset.com/bbs/download/2146759.pdf?attachmentId=2146759",
-      "primary_url": "https://securities.miraeasset.com/bbs/download/2146759.pdf?attachmentId=2146759",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 0,
-      "analyst": "김석환",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "관련종목 다시 보자, 핵심광물(Critical Minerals)",
-      "summary": "관련종목 다시 보자, 핵심광물(Critical Minerals) 8월 비철금속 섹터 강세는 ‘구조적 변곡점’을 시사",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [],
-      "estimate_reasons": [],
-      "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 3.2,
-      "score_reasons": [
-        "시황정보 카테고리",
-        "공식 소스",
-        "우선 추적 증권사"
-      ],
-      "score_breakdown": [
-        {
-          "label": "시황정보 카테고리",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 0.75,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "securities.miraeasset.com",
-        "pdf_host": "securities.miraeasset.com",
         "note": "PDF 링크를 대표 링크로 사용합니다."
       },
       "priority_subject_matches": [],
