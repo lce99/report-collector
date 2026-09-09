@@ -1,35 +1,39 @@
 # 2026-09-09 증권사 리포트 데일리
 
 - 요청 기준일: 2026-09-09
-- 생성 시각: 2026-09-09T12:51:39+09:00
+- 생성 시각: 2026-09-09T20:46:53+09:00
 - 대시보드: https://lce99.github.io/report-collector/?date=2026-09-09
-- 수집 건수: 67건
+- 수집 건수: 78건
 - PDF 텍스트 보강: 34건
 - OpenAI 요약 적용: 0건
 - LLM 투자 메모: 0건
 - 키워드: 데이터센터, 게임, 뷰티, SK, 텔레콤, 확장이, 주주에게, 호재인
 
+## 운영 알림
+
+- [주의] 미래에셋증권 공식 무출력: 오늘 0건입니다. 최근 평균은 5.4건입니다.
+
 ## 수집 소스 상태
 
-- 네이버 금융 리서치: 정상, 56건, 80.36초
-- 미래에셋증권 공식: 정상, 3건, 7.15초
-- 한국투자증권 공식: 정상, 7건, 17.30초
-- 신한투자증권 공식: 정상, 4건, 5.99초
+- 네이버 금융 리서치: 정상, 56건, 93.78초
+- 미래에셋증권 공식: 무출력, 0건, 1.50초 - 정상 종료됐지만 해당 날짜 리포트가 없습니다.
+- 한국투자증권 공식: 정상, 19건, 30.21초
+- 신한투자증권 공식: 정상, 6건, 5.82초
 
 ## 관심 필터
 - 관심 종목: 삼성전자, SK하이닉스, 미래에셋증권, 대한항공, 삼성에스디에스, 이노스페이스
 - 관심 섹터/키워드: 반도체, 방산, 원자력, 로봇, 건설, 우주, 항공
-- 일치 리포트: 37건
+- 일치 리포트: 40건
 - 엄격 필터 모드: 꺼짐
 
 ## 오늘의 한줄
-추정치 상향 1건, 추정치 하향 1건, 이익 추정 상향 27건, 마진 개선 14건, 목표가 상향 1건, 목표가 하향 1건이 감지됐습니다. 오늘은 종목분석 리포트가 19건으로 가장 많았습니다. 신한투자증권, 한국투자증권, 대신증권 발간 비중이 높았고, 우선 확인할 만한 핵심 리포트는 SK텔레콤 - 데이터센터 확장이 주주에게 호재인 이유, 심텍 - 3Q 실적 상향, 소캠2 매출은 예상 상회, 지엔씨에너지 - AI데이터센터 수주 1번 타자입니다.
+추정치 상향 1건, 추정치 하향 1건, 이익 추정 상향 31건, 마진 개선 15건, 목표가 상향 1건, 목표가 하향 1건이 감지됐습니다. 오늘은 종목분석 리포트가 24건으로 가장 많았습니다. 한국투자증권, 신한투자증권, 대신증권 발간 비중이 높았고, 우선 확인할 만한 핵심 리포트는 SK텔레콤 - 데이터센터 확장이 주주에게 호재인 이유, 심텍 - 3Q 실적 상향, 소캠2 매출은 예상 상회, 지엔씨에너지 - AI데이터센터 수주 1번 타자입니다.
 
 ## 이익·마진 추정 변화
-- 변화 감지 리포트: 33건
+- 변화 감지 리포트: 37건
 - 추정치 수치 상향/하향: 1건 / 1건
-- 이익 추정 상향/하향: 27건 / 12건
-- 마진 개선/악화: 14건 / 9건
+- 이익 추정 상향/하향: 31건 / 12건
+- 마진 개선/악화: 15건 / 9건
 - 목표가 상향/하향: 1건 / 1건
 - 의견 변경/애널리스트 변경: 0건 / 2건
 
@@ -115,23 +119,23 @@
 ### 산업 랭킹
 - 1. 게임 - [IBKS Daily] 인터넷/게임 | IBK투자증권 | 우선순위 15.45
 - 2. 화장품 - 무신사 '뷰티 파머시'가 이어가는 K뷰티 확장.. | IBK투자증권 | 우선순위 12.61
-- 3. 화학; 가격은 반등했다, 주가는 아직 | 신한투자증권 | 우선순위 12.28
+- 3. 화학; 가격은 반등했다, 주가는 아직 | 신한투자증권 | 우선순위 12.53
 - 4. 자동차 - 업사이드 리스크 vs 다운사이드 리스크 | 대신증권 | 우선순위 11.75
 - 5. 전기전자 - 2026년 9월 둘째 주 전기전자 Weekly | 교보증권 | 우선순위 11.67
 
 ### 매크로 랭킹
-- 1. 국내주식 마감 시황 (26.09.08) - 최근 전약후강과 반.. | 유안타증권 | 우선순위 14.54
-- 2. [Morning Brief] 지정학 리스크 증가로 인한 미 증시 .. | iM증권 | 우선순위 14.15
-- 3. 09/09, Kiwoom Morning Letter | 키움증권 | 우선순위 13.53
-- 4. 마켓레이더 - 삼고초려 끝에 7,000p 돌파 (9월 9일) | 신한투자증권 | 우선순위 13.10
+- 1. 국내주식 마감 시황 (26.09.08) - 최근 전약후강과 반.. | 유안타증권 | 우선순위 14.75
+- 2. [Morning Brief] 지정학 리스크 증가로 인한 미 증시 .. | iM증권 | 우선순위 14.25
+- 3. 09/09, Kiwoom Morning Letter | 키움증권 | 우선순위 13.55
+- 4. 마켓레이더 - 삼고초려 끝에 7,000p 돌파 (9월 9일) | 신한투자증권 | 우선순위 13.15
 - 5. 반도체 수급 해석의 변화: 가격과 플로우 채널의 분리 | SK증권 | 우선순위 12.75
 
 ### 전략 랭킹
-- 1. [IBKS Daily] Start with IBKS(2026.09.09) 유가 뛰고.. | IBK투자증권 | 우선순위 13.28
-- 2. 리츠 배당투자 전략 | 대신증권 | 우선순위 11.28
-- 3. 09/09, 미 증시, 반도체주 강세에도 중동 불확실성 재.. | 키움증권 | 우선순위 11.02
-- 4. 이번 주 포커 s | 대신증권 | 우선순위 10.50
-- 5. [실전 퀀트] ‘주도주 장세’ 올 수 있나? | 하나증권 | 우선순위 10.49
+- 1. [IBKS Daily] Start with IBKS(2026.09.09) 유가 뛰고.. | IBK투자증권 | 우선순위 13.45
+- 2. 리츠 배당투자 전략 | 대신증권 | 우선순위 11.35
+- 3. 09/09, 미 증시, 반도체주 강세에도 중동 불확실성 재.. | 키움증권 | 우선순위 11.15
+- 4. 이번 주 포커 s | 대신증권 | 우선순위 10.75
+- 5. [실전 퀀트] ‘주도주 장세’ 올 수 있나? | 하나증권 | 우선순위 10.55
 
 ## 우선 검토 후보
 ### 1. [종목분석] SK텔레콤 - 데이터센터 확장이 주주에게 호재인 이유
@@ -203,7 +207,7 @@
 ### 7. [투자정보] 리츠 배당투자 전략
 - 증권사: 대신증권
 - 발행일: 2026-09-09
-- 우선순위 점수: 11.28
+- 우선순위 점수: 11.35
 - 선정 근거: 투자정보 카테고리, 이익 추정 상향/증가, 마진율 추정 상승/개선, 마진율 추정 하락/악화, 우선 추적 증권사
 - 요약 엔진: rule
 - 관심 필터 일치: 없음
@@ -214,7 +218,7 @@
 ### 8. [투자정보] 09/09, 미 증시, 반도체주 강세에도 중동 불확실성 재..
 - 증권사: 키움증권
 - 발행일: 2026-09-09
-- 우선순위 점수: 11.02
+- 우선순위 점수: 11.15
 - 선정 근거: 투자정보 카테고리, 관심 섹터/키워드(반도체), 이익 추정 상향/증가, 우선 추적 증권사, 핵심 키워드(반도체)
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 없음 / 키워드 반도체
@@ -225,7 +229,7 @@
 ### 9. [경제분석] 09/09, Kiwoom Morning Letter
 - 증권사: 키움증권
 - 발행일: 2026-09-09
-- 우선순위 점수: 13.53
+- 우선순위 점수: 13.55
 - 선정 근거: 경제분석 카테고리, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(반도체, 건설), 우선 추적 증권사, 본문 정보량 풍부
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 삼성전자, SK하이닉스 / 키워드 반도체, 건설
@@ -236,7 +240,7 @@
 ### 10. [시황정보] 국내주식 마감 시황 (26.09.08) - 최근 전약후강과 반..
 - 증권사: 유안타증권
 - 발행일: 2026-09-09
-- 우선순위 점수: 14.54
+- 우선순위 점수: 14.75
 - 선정 근거: 시황정보 카테고리, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(반도체, 건설), 이익 추정 상향/증가, 우선 추적 증권사
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 삼성전자, SK하이닉스 / 키워드 반도체, 건설
@@ -247,7 +251,7 @@
 ### 11. [채권분석] 채권 Daily (2026.09.09)
 - 증권사: 유안타증권
 - 발행일: 2026-09-09
-- 우선순위 점수: 12.01
+- 우선순위 점수: 12.39
 - 선정 근거: 채권분석 카테고리, 관심 종목(대한항공), 관심 섹터/키워드(건설, 우주, 항공), 우선 추적 증권사, 본문 정보량 풍부
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 대한항공 / 키워드 건설, 우주, 항공
@@ -277,61 +281,72 @@
 - [종목분석] SK텔레콤 - 데이터센터 확장이 주주에게 호재인 이유 | 하나증권 | 2026-09-09 | 우선순위 16.37 | https://stock.pstatic.net/stock-research/company/57/20260909_company_414777000.pdf
 - [종목분석] 티엘비 - 3Q실적 호조/소캠2 수혜, 숨은 강자~ | 대신증권 | 2026-09-09 | 우선순위 15.50 | https://stock.pstatic.net/stock-research/company/15/20260909_company_247571000.pdf
 - [산업분석] 게임 - [IBKS Daily] 인터넷/게임 | IBK투자증권 | 2026-09-09 | 우선순위 15.45 | https://stock.pstatic.net/stock-research/industry/40/20260909_industry_690595000.pdf
-- [시황정보] 국내주식 마감 시황 (26.09.08) - 최근 전약후강과 반.. | 유안타증권 | 2026-09-09 | 우선순위 14.54 | https://stock.pstatic.net/stock-research/market/18/20260909_market_906267000.pdf
-- [시황정보] [Morning Brief] 지정학 리스크 증가로 인한 미 증시 .. | iM증권 | 2026-09-09 | 우선순위 14.15 | https://stock.pstatic.net/stock-research/market/61/20260909_market_498395000.pdf
+- [시황정보] 국내주식 마감 시황 (26.09.08) - 최근 전약후강과 반.. | 유안타증권 | 2026-09-09 | 우선순위 14.75 | https://stock.pstatic.net/stock-research/market/18/20260909_market_906267000.pdf
+- [시황정보] [Morning Brief] 지정학 리스크 증가로 인한 미 증시 .. | iM증권 | 2026-09-09 | 우선순위 14.25 | https://stock.pstatic.net/stock-research/market/61/20260909_market_498395000.pdf
 - [종목분석] 대동 - 농기계 제조에서 농업 AI 플랫폼기업으로 도.. | 한국IR협의회 | 2026-09-09 | 우선순위 13.90 | https://stock.pstatic.net/stock-research/company/74/20260909_company_282250000.pdf
-- [경제분석] 09/09, Kiwoom Morning Letter | 키움증권 | 2026-09-09 | 우선순위 13.53 | https://stock.pstatic.net/stock-research/economy/39/20260909_economy_110977000.pdf
+- [경제분석] 09/09, Kiwoom Morning Letter | 키움증권 | 2026-09-09 | 우선순위 13.55 | https://stock.pstatic.net/stock-research/economy/39/20260909_economy_110977000.pdf
+- [투자정보] [IBKS Daily] Start with IBKS(2026.09.09) 유가 뛰고.. | IBK투자증권 | 2026-09-09 | 우선순위 13.45 | https://stock.pstatic.net/stock-research/invest/40/20260909_invest_277248000.pdf
 - [종목분석] 현대퓨처넷 - 주주환원 조기 이행, ROE 개선이 다음 단계 | 한국IR협의회 | 2026-09-09 | 우선순위 13.40 | https://stock.pstatic.net/stock-research/company/74/20260909_company_347215000.pdf
-- [투자정보] [IBKS Daily] Start with IBKS(2026.09.09) 유가 뛰고.. | IBK투자증권 | 2026-09-09 | 우선순위 13.28 | https://stock.pstatic.net/stock-research/invest/40/20260909_invest_277248000.pdf
-- [시황정보] 마켓레이더 - 삼고초려 끝에 7,000p 돌파 (9월 9일) | 신한투자증권 | 2026-09-09 | 우선순위 13.10 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353772
+- [시황정보] 마켓레이더 - 삼고초려 끝에 7,000p 돌파 (9월 9일) | 신한투자증권 | 2026-09-09 | 우선순위 13.15 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353772
 - [시황정보] 반도체 수급 해석의 변화: 가격과 플로우 채널의 분리 | SK증권 | 2026-09-09 | 우선순위 12.75 | https://stock.pstatic.net/stock-research/market/64/20260909_market_222183000.pdf
 - [시황정보] SK증권 아침에 슥_2026.09.09 | SK증권 | 2026-09-09 | 우선순위 12.65 | https://stock.pstatic.net/stock-research/market/64/20260909_market_339375000.pdf
 - [산업분석] 화장품 - 무신사 '뷰티 파머시'가 이어가는 K뷰티 확장.. | IBK투자증권 | 2026-09-09 | 우선순위 12.61 | https://stock.pstatic.net/stock-research/industry/40/20260909_industry_331202000.pdf
-- [시황정보] 국내 주식 마감 시황 - 중동 명분, 60선 저항에 매물 .. | 신한투자증권 | 2026-09-09 | 우선순위 12.29 | https://finance.naver.com/research/market_info_read.naver?nid=37439&page=1
-- [산업분석] 화학; 가격은 반등했다, 주가는 아직 | 신한투자증권 | 2026-09-09 | 우선순위 12.28 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353768
-- [채권분석] 채권 Daily (2026.09.09) | 유안타증권 | 2026-09-09 | 우선순위 12.01 | https://stock.pstatic.net/stock-research/debenture/18/20260909_debenture_417835000.pdf
+- [산업분석] 화학; 가격은 반등했다, 주가는 아직 | 신한투자증권 | 2026-09-09 | 우선순위 12.53 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353768
+- [시황정보] 국내 주식 마감 시황 - 일단 7천피 도착, 관건은 매물대(9월 9일) | 신한투자증권 | 2026-09-09 | 우선순위 12.51 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353779
+- [채권분석] 채권 Daily (2026.09.09) | 유안타증권 | 2026-09-09 | 우선순위 12.39 | https://stock.pstatic.net/stock-research/debenture/18/20260909_debenture_417835000.pdf
+- [시황정보] 국내 주식 마감 시황 - 중동 명분, 60선 저항에 매물 .. | 신한투자증권 | 2026-09-09 | 우선순위 12.30 | https://finance.naver.com/research/market_info_read.naver?nid=37439&page=1
 - [시황정보] 9/8 KB 리서치 장마감코멘트 | KB증권 | 2026-09-09 | 우선순위 11.75 | https://stock.pstatic.net/stock-research/market/58/20260909_market_174858000.pdf
 - [산업분석] 자동차 - 업사이드 리스크 vs 다운사이드 리스크 | 대신증권 | 2026-09-09 | 우선순위 11.75 | https://stock.pstatic.net/stock-research/industry/15/20260909_industry_980535000.pdf
 - [산업분석] 전기전자 - 2026년 9월 둘째 주 전기전자 Weekly | 교보증권 | 2026-09-09 | 우선순위 11.67 | https://stock.pstatic.net/stock-research/industry/62/20260909_industry_903114000.pdf
-- [투자정보] 리츠 배당투자 전략 | 대신증권 | 2026-09-09 | 우선순위 11.28 | https://stock.pstatic.net/stock-research/invest/15/20260909_invest_535922000.pdf
-- [시황정보] Daily Morning Brief(2026.09.09) | 다올투자증권 | 2026-09-09 | 우선순위 11.23 | https://stock.pstatic.net/stock-research/market/76/20260909_market_596075000.pdf
-- [시황정보] [IBKS Daily] Morning Brief(260909) | IBK투자증권 | 2026-09-09 | 우선순위 11.14 | https://stock.pstatic.net/stock-research/market/40/20260909_market_543642000.pdf
-- [투자정보] 09/09, 미 증시, 반도체주 강세에도 중동 불확실성 재.. | 키움증권 | 2026-09-09 | 우선순위 11.02 | https://stock.pstatic.net/stock-research/invest/39/20260909_invest_797124000.pdf
+- [시황정보] Daily Morning Brief(2026.09.09) | 다올투자증권 | 2026-09-09 | 우선순위 11.40 | https://stock.pstatic.net/stock-research/market/76/20260909_market_596075000.pdf
+- [투자정보] 리츠 배당투자 전략 | 대신증권 | 2026-09-09 | 우선순위 11.35 | https://stock.pstatic.net/stock-research/invest/15/20260909_invest_535922000.pdf
+- [시황정보] [IBKS Daily] Morning Brief(260909) | IBK투자증권 | 2026-09-09 | 우선순위 11.25 | https://stock.pstatic.net/stock-research/market/40/20260909_market_543642000.pdf
+- [투자정보] 09/09, 미 증시, 반도체주 강세에도 중동 불확실성 재.. | 키움증권 | 2026-09-09 | 우선순위 11.15 | https://stock.pstatic.net/stock-research/invest/39/20260909_invest_797124000.pdf
 - [종목분석] 메카로 - Control the Heat, Lead the Chip | 한국IR협의회 | 2026-09-09 | 우선순위 10.76 | https://stock.pstatic.net/stock-research/company/74/20260909_company_677393000.pdf
+- [투자정보] 이번 주 포커 s | 대신증권 | 2026-09-09 | 우선순위 10.75 | https://stock.pstatic.net/stock-research/invest/15/20260909_invest_796724000.pdf
+- [시황정보] Eugene Daily Snapshot - 닿을 듯 닿지 않는 7천 | 유진투자증권 | 2026-09-09 | 우선순위 10.75 | https://stock.pstatic.net/stock-research/market/63/20260909_market_527087000.pdf
 - [종목분석] 알테오젠 - 알테오젠; 노바티스 Del-desiran 가치 제외 | 신한투자증권 | 2026-09-09 | 우선순위 10.66 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353765
 - [산업분석] 음식료 - 실적 서프라이즈, 원화 강세 수혜 업체를 찾.. | 교보증권 | 2026-09-09 | 우선순위 10.65 | https://stock.pstatic.net/stock-research/industry/62/20260909_industry_829709000.pdf
-- [시황정보] Eugene Daily Snapshot - 닿을 듯 닿지 않는 7천 | 유진투자증권 | 2026-09-09 | 우선순위 10.65 | https://stock.pstatic.net/stock-research/market/63/20260909_market_527087000.pdf
-- [투자정보] 이번 주 포커 s | 대신증권 | 2026-09-09 | 우선순위 10.50 | https://stock.pstatic.net/stock-research/invest/15/20260909_invest_796724000.pdf
+- [투자정보] [실전 퀀트] ‘주도주 장세’ 올 수 있나? | 하나증권 | 2026-09-09 | 우선순위 10.55 | https://stock.pstatic.net/stock-research/invest/57/20260909_invest_570105000.pdf
 - [산업분석] 은행 - ROE 상승, PBR 상승 | 키움증권 | 2026-09-09 | 우선순위 10.50 | https://stock.pstatic.net/stock-research/industry/39/20260909_industry_262387000.pdf
-- [투자정보] [실전 퀀트] ‘주도주 장세’ 올 수 있나? | 하나증권 | 2026-09-09 | 우선순위 10.49 | https://stock.pstatic.net/stock-research/invest/57/20260909_invest_570105000.pdf
 - [투자정보] 삼성전자와 SK하이닉스, 주주환원의 힘 | 신한투자증권 | 2026-09-09 | 우선순위 10.35 | https://finance.naver.com/research/invest_read.naver?nid=40140&page=1
 - [산업분석] 기타 - 안녕하세요 데일리에요(로봇/방산/조선) | 유진투자증권 | 2026-09-09 | 우선순위 9.80 | https://stock.pstatic.net/stock-research/industry/63/20260909_industry_472587000.pdf
 - [산업분석] 석유화학 - 가격은 반등했다, 주가는 아직 | 신한투자증권 | 2026-09-09 | 우선순위 9.70 | https://finance.naver.com/research/industry_read.naver?nid=46013&page=1
-- [시황정보] 유안타 AI 미국 주식시장 마감 시황 (26.09.09) | 유안타증권 | 2026-09-09 | 우선순위 9.57 | https://stock.pstatic.net/stock-research/market/18/20260909_market_336354000.pdf
+- [시황정보] 유안타 AI 미국 주식시장 마감 시황 (26.09.09) | 유안타증권 | 2026-09-09 | 우선순위 9.70 | https://stock.pstatic.net/stock-research/market/18/20260909_market_336354000.pdf
 - [종목분석] 오름테라퓨틱 - 오름테라퓨틱; 오름차순: DAC로 빅파마 줄세우기 | 신한투자증권 | 2026-09-09 | 우선순위 9.30 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353766
-- [시황정보] Daily 신한생각 (9월 9일) | 신한투자증권 | 2026-09-09 | 우선순위 9.19 | https://finance.naver.com/research/market_info_read.naver?nid=37449&page=1
-- [투자정보] [디지털자산] 흔들리는 달러, 확장되는 달러-디베이스.. | iM증권 | 2026-09-09 | 우선순위 8.51 | https://stock.pstatic.net/stock-research/invest/61/20260909_invest_555874000.pdf
-- [투자정보] [미국은 지금] 데이터센터 규제, 금지에서 조건으로 | 키움증권 | 2026-09-09 | 우선순위 8.46 | https://stock.pstatic.net/stock-research/invest/39/20260909_invest_881007000.pdf
+- [산업분석] 스티펠 - 아날로그 반도체:7월 반도체: 계절성 상회, 범용 아날로그와 ASIC 모두 양호 | 한국투자증권 | 2026-09-09 | 우선순위 9.30 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159145
+- [시황정보] Daily 신한생각 (9월 9일) | 신한투자증권 | 2026-09-09 | 우선순위 9.20 | https://finance.naver.com/research/market_info_read.naver?nid=37449&page=1
+- [종목분석] 국태해통증권 - BILIBILI-W(09626 HKG):실적의 견조한 성장, 신작 게임의 추가 기여 주목 | 한국투자증권 | 2026-09-09 | 우선순위 9.05 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159139
+- [산업분석] 스티펠 - 건자재 & 특수 인프라 서비스:데이터센터 프로젝트: 7월 착공 반등, 텍사스 강세 지속 | 한국투자증권 | 2026-09-09 | 우선순위 8.80 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159138
+- [투자정보] [디지털자산] 흔들리는 달러, 확장되는 달러-디베이스.. | iM증권 | 2026-09-09 | 우선순위 8.60 | https://stock.pstatic.net/stock-research/invest/61/20260909_invest_555874000.pdf
+- [투자정보] [미국은 지금] 데이터센터 규제, 금지에서 조건으로 | 키움증권 | 2026-09-09 | 우선순위 8.55 | https://stock.pstatic.net/stock-research/invest/39/20260909_invest_881007000.pdf
 - [종목분석] 스티펠 - 페이첵스(PAYX USA):FY27 전망은 견조, 연중 성장 가속 가능성 | 한국투자증권 | 2026-09-09 | 우선순위 7.75 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159131
 - [시황정보] 9/9 KB 리서치 모닝코멘트 | KB증권 | 2026-09-09 | 우선순위 7.65 | https://stock.pstatic.net/stock-research/market/58/20260909_market_162607000.pdf
+- [투자정보] 09/09 달러, 주요 통화 강세에 하락 | 키움증권 | 2026-09-09 | 우선순위 7.20 | https://stock.pstatic.net/stock-research/invest/39/20260909_invest_452863000.pdf
+- [채권분석] 민간은 디레버리징, 공공은 리레버리징 | 하나증권 | 2026-09-09 | 우선순위 7.05 | https://stock.pstatic.net/stock-research/debenture/57/20260909_debenture_367551000.pdf
 - [산업분석] 기타 - [ESG] 문 앞의 야생곰들 | 한화투자증권 | 2026-09-09 | 우선순위 7.05 | https://stock.pstatic.net/stock-research/industry/16/20260909_industry_725497000.pdf
 - [산업분석] 화장품 - Weekly Amazon Beauty Check | SK증권 | 2026-09-09 | 우선순위 7.00 | https://stock.pstatic.net/stock-research/industry/64/20260909_industry_332475000.pdf
-- [투자정보] 09/09 달러, 주요 통화 강세에 하락 | 키움증권 | 2026-09-09 | 우선순위 6.98 | https://stock.pstatic.net/stock-research/invest/39/20260909_invest_452863000.pdf
-- [채권분석] 민간은 디레버리징, 공공은 리레버리징 | 하나증권 | 2026-09-09 | 우선순위 6.82 | https://stock.pstatic.net/stock-research/debenture/57/20260909_debenture_367551000.pdf
+- [종목분석] 스티펠 - 글로벌파운드리스(GFS USA):아부다비에 이어 워싱턴도 주주로 합류 | 한국투자증권 | 2026-09-09 | 우선순위 6.90 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159142
 - [경제분석] [Global Markets Monitor] 중간선거 앞둔 트럼프, 유.. | IBK투자증권 | 2026-09-09 | 우선순위 6.75 | https://stock.pstatic.net/stock-research/economy/40/20260909_economy_845143000.pdf
 - [산업분석] 2026년 9월 9일 한눈에 투데이 | 한국투자증권 | 2026-09-09 | 우선순위 6.75 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159127
 - [종목분석] 스티펠 - 솔라리스 에너지 인프라스트럭처(SEI USA):깜짝 가이던스, 전력 솔루션 재평가의 시작 | 한국투자증권 | 2026-09-09 | 우선순위 6.65 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159136
 - [산업분석] 기타 - [ESG & Transition] 국내 배출권 공급 축소·.. | 한화투자증권 | 2026-09-09 | 우선순위 6.60 | https://stock.pstatic.net/stock-research/industry/16/20260909_industry_146591000.pdf
 - [산업분석] 기타 - [디지털자산] 9월: 디지털자산 정책 인사이트 | 한화투자증권 | 2026-09-09 | 우선순위 6.30 | https://stock.pstatic.net/stock-research/industry/16/20260909_industry_434270000.pdf
+- [투자정보] [Key Point] 대외 리스크 동시 부각, 위험자산 선호심.. | 대신증권 | 2026-09-09 | 우선순위 6.10 | https://stock.pstatic.net/stock-research/invest/15/20260909_invest_976325000.pdf
+- [산업분석] 은행; 8월 은행 여수신 동향 | 신한투자증권 | 2026-09-09 | 우선순위 6.08 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353780
 - [종목분석] 스티펠 - 보스턴 사이언티픽(BSX USA):사이버공격 복구 중, 실적 가이던스 달성은 어려워 | 한국투자증권 | 2026-09-09 | 우선순위 6.00 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159134
-- [투자정보] [Key Point] 대외 리스크 동시 부각, 위험자산 선호심.. | 대신증권 | 2026-09-09 | 우선순위 5.91 | https://stock.pstatic.net/stock-research/invest/15/20260909_invest_976325000.pdf
+- [종목분석] 국태해통증권 - 마오거핑화장품(01318 HKG):견조한 성장세 지속, 색조화장품 실적 호조 | 한국투자증권 | 2026-09-09 | 우선순위 5.75 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159140
+- [채권분석] Eugenes FICC Update | 유진투자증권 | 2026-09-09 | 우선순위 5.35 | https://stock.pstatic.net/stock-research/debenture/63/20260909_debenture_86328000.pdf
 - [시황정보] Daily Market Digest (9월 9일) | 신한투자증권 | 2026-09-09 | 우선순위 5.10 | https://finance.naver.com/research/market_info_read.naver?nid=37451&page=1
 - [종목분석] 스티펠 - X4 파머슈티컬(XFOR USA):FDA 임상 참가자 축소 승인, 큰 그림은 그대로 | 한국투자증권 | 2026-09-09 | 우선순위 5.10 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159133
 - [종목분석] 스티펠 - 다인 테라퓨틱스(DYN USA):노바티스 임상 실패로 동반 하락, 주가 약세는 매수 기회 | 한국투자증권 | 2026-09-09 | 우선순위 5.10 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159135
-- [채권분석] Eugenes FICC Update | 유진투자증권 | 2026-09-09 | 우선순위 5.04 | https://stock.pstatic.net/stock-research/debenture/63/20260909_debenture_86328000.pdf
+- [종목분석] 스티펠 - 타겟 호스피털리티(TH USA):지분 매각에 흔들려도, 변함없는 수주 기대 | 한국투자증권 | 2026-09-09 | 우선순위 5.10 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159141
+- [시황정보] SK증권 Global Carbon Market Daily_26090 | SK증권 | 2026-09-09 | 우선순위 5.05 | https://stock.pstatic.net/stock-research/market/64/20260909_market_313732000.pdf
+- [종목분석] 스티펠 - 어도비(ADBE USA):프리미엄 확대와 새 경영진 안착에는 시간 필요 | 한국투자증권 | 2026-09-09 | 우선순위 4.85 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159143
+- [산업분석] 피델리티 - 투자전략:중국 투자에 힘이 실리는 이유 | 한국투자증권 | 2026-09-09 | 우선순위 4.85 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159153
 - [종목분석] 스티펠 - 필립 모리스 인터내셔널(PM USA):환율 덕 본 FY26 가이던스 상향, 펀더멘털은 그대로 | 한국투자증권 | 2026-09-09 | 우선순위 4.85 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159132
-- [시황정보] SK증권 Global Carbon Market Daily_26090 | SK증권 | 2026-09-09 | 우선순위 4.84 | https://stock.pstatic.net/stock-research/market/64/20260909_market_313732000.pdf
-- [채권분석] Daily Bond Morning Brief(2026.09.09) | 다올투자증권 | 2026-09-09 | 우선순위 4.07 | https://stock.pstatic.net/stock-research/debenture/76/20260909_debenture_652415000.pdf
-- [시황정보] Market Issue | 미래에셋증권 | 2026-09-09 | 우선순위 3.20 | https://securities.miraeasset.com/bbs/download/2147186.pdf?attachmentId=2147186
-- [시황정보] 글로벌 마켓 브리핑(9월 9일) | 미래에셋증권 | 2026-09-09 | 우선순위 3.20 | https://securities.miraeasset.com/bbs/download/2147184.pdf?attachmentId=2147184
-- [시황정보] 마켓 뷰(9월 9일) | 미래에셋증권 | 2026-09-09 | 우선순위 3.20 | https://securities.miraeasset.com/bbs/download/2147187.pdf?attachmentId=2147187
+- [산업분석] 스티펠 - 차세대 운송:폭스바겐 인원 감축 승인, 미국 8월 경차 판매 감소 등 | 한국투자증권 | 2026-09-09 | 우선순위 4.60 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159144
+- [채권분석] Daily Bond Morning Brief(2026.09.09) | 다올투자증권 | 2026-09-09 | 우선순위 4.39 | https://stock.pstatic.net/stock-research/debenture/76/20260909_debenture_652415000.pdf
+- [시황정보] 핌코 - 경제 및 시장 코멘터리:K자형 경제가 자산기반금융 기회에 미치는 영향 | 한국투자증권 | 2026-09-09 | 우선순위 3.70 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159155
+- [시황정보] 핌코 - 경제 및 시장 코멘터리:인플레이션의 원인은 정말 임금일까? | 한국투자증권 | 2026-09-09 | 우선순위 3.45 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159156
+- [시황정보] 핌코 - 경제 및 시장 코멘터리:투자자가 주목해야 할 핵심 인플레이션 지표 | 한국투자증권 | 2026-09-09 | 우선순위 3.45 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159157
