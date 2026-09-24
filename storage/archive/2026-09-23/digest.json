@@ -1,19 +1,19 @@
 {
   "date": "2026-09-23",
-  "requested_date": "2026-09-23",
-  "generated_at": "2026-09-23T21:00:19+09:00",
-  "collection_note": "",
+  "requested_date": "2026-09-24",
+  "generated_at": "2026-09-24T12:55:39+09:00",
+  "collection_note": "2026-09-24 기준 리포트가 없어 2026-09-23 자료로 대체했습니다.",
   "dashboard_url": "https://lce99.github.io/report-collector/?date=2026-09-23",
-  "editorial_note": "이익 추정 상향 5건, 마진 개선 3건이 감지됐습니다. 오늘은 산업분석 리포트가 12건으로 가장 많았습니다. 한국투자증권, 신한투자증권, 미래에셋증권 발간 비중이 높았고, 우선 확인할 만한 핵심 리포트는 JP모간 - 투자전략:유럽 증시, 추가 호재로 모멘텀 강화, 스티펠 - 마이크로소프트(MSFT USA):성장 궤도 회복, 매수로 상향하고 목표가 575달러, 국내주식전략; 3Q 실적, 높아진 이익 기대와 낮아진 주가 사이입니다.",
+  "editorial_note": "이익 추정 상향 3건, 마진 개선 3건이 감지됐습니다. 오늘은 산업분석 리포트가 10건으로 가장 많았습니다. 한국투자증권, 미래에셋증권 발간 비중이 높았고, 우선 확인할 만한 핵심 리포트는 JP모간 - 투자전략:유럽 증시, 추가 호재로 모멘텀 강화, 스티펠 - 마이크로소프트(MSFT USA):성장 궤도 회복, 매수로 상향하고 목표가 575달러, 한국&중국 마켓 클로징(9월 23일)입니다.",
   "keywords": [
-    "JP",
-    "모간",
-    "투자전략",
-    "강화",
     "스티펠",
     "USA",
-    "AI",
-    "유럽"
+    "JP",
+    "모간",
+    "마켓",
+    "투자전략",
+    "강화",
+    "글로벌"
   ],
   "priority_filters": {
     "enabled": true,
@@ -35,24 +35,24 @@
       "항공"
     ],
     "priority_only": false,
-    "matched_reports": 10,
-    "matched_must_read": 8
+    "matched_reports": 5,
+    "matched_must_read": 5
   },
   "stats": {
-    "total_reports": 27,
-    "priority_match_reports": 10,
+    "total_reports": 21,
+    "priority_match_reports": 5,
     "pdf_text_reports": 0,
     "estimate_metric_reports": 0,
-    "estimate_signal_reports": 6,
-    "earnings_estimate_up": 5,
-    "earnings_estimate_down": 1,
+    "estimate_signal_reports": 4,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 0,
     "margin_estimate_up": 3,
     "margin_estimate_down": 0,
     "estimate_revision_up": 0,
     "estimate_revision_down": 0,
     "llm_summary_reports": 0,
     "llm_investment_memo_reports": 0,
-    "changed_reports": 6,
+    "changed_reports": 4,
     "collector_health": [
       {
         "source": "naver_research",
@@ -60,7 +60,7 @@
         "collector": "NaverResearchCollector",
         "status": "empty",
         "report_count": 0,
-        "duration_seconds": 12.0,
+        "duration_seconds": 11.63,
         "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
       },
       {
@@ -69,7 +69,7 @@
         "collector": "MiraeAssetCollector",
         "status": "ok",
         "report_count": 4,
-        "duration_seconds": 10.7,
+        "duration_seconds": 9.53,
         "message": ""
       },
       {
@@ -78,34 +78,34 @@
         "collector": "KoreaInvestmentCollector",
         "status": "ok",
         "report_count": 17,
-        "duration_seconds": 33.36,
+        "duration_seconds": 32.64,
         "message": ""
       },
       {
         "source": "shinhan_investment_official",
         "label": "신한투자증권 공식",
         "collector": "ShinhanInvestmentCollector",
-        "status": "ok",
-        "report_count": 6,
-        "duration_seconds": 7.43,
-        "message": ""
+        "status": "failed",
+        "report_count": 0,
+        "duration_seconds": 63.88,
+        "message": "URLError: <urlopen error timed out>"
       }
     ],
     "collector_health_summary": {
       "available": true,
       "active_date": "2026-09-23",
-      "attempt_count": 1,
-      "ok_sources": 3,
+      "attempt_count": 2,
+      "ok_sources": 2,
       "empty_sources": 1,
-      "failed_sources": 0,
-      "raw_report_count": 27,
-      "deduped_report_count": 27
+      "failed_sources": 1,
+      "raw_report_count": 21,
+      "deduped_report_count": 21
     },
     "collector_health_attempts": [
       {
-        "date": "2026-09-23",
-        "raw_report_count": 27,
-        "deduped_report_count": 27,
+        "date": "2026-09-24",
+        "raw_report_count": 0,
+        "deduped_report_count": 0,
         "collectors": [
           {
             "source": "naver_research",
@@ -113,7 +113,50 @@
             "collector": "NaverResearchCollector",
             "status": "empty",
             "report_count": 0,
-            "duration_seconds": 12.0,
+            "duration_seconds": 12.03,
+            "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
+          },
+          {
+            "source": "mirae_asset_official",
+            "label": "미래에셋증권 공식",
+            "collector": "MiraeAssetCollector",
+            "status": "empty",
+            "report_count": 0,
+            "duration_seconds": 1.55,
+            "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
+          },
+          {
+            "source": "korea_investment_official",
+            "label": "한국투자증권 공식",
+            "collector": "KoreaInvestmentCollector",
+            "status": "empty",
+            "report_count": 0,
+            "duration_seconds": 12.52,
+            "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
+          },
+          {
+            "source": "shinhan_investment_official",
+            "label": "신한투자증권 공식",
+            "collector": "ShinhanInvestmentCollector",
+            "status": "failed",
+            "report_count": 0,
+            "duration_seconds": 64.37,
+            "message": "URLError: <urlopen error timed out>"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-23",
+        "raw_report_count": 21,
+        "deduped_report_count": 21,
+        "collectors": [
+          {
+            "source": "naver_research",
+            "label": "네이버 금융 리서치",
+            "collector": "NaverResearchCollector",
+            "status": "empty",
+            "report_count": 0,
+            "duration_seconds": 11.63,
             "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
           },
           {
@@ -122,7 +165,7 @@
             "collector": "MiraeAssetCollector",
             "status": "ok",
             "report_count": 4,
-            "duration_seconds": 10.7,
+            "duration_seconds": 9.53,
             "message": ""
           },
           {
@@ -131,43 +174,55 @@
             "collector": "KoreaInvestmentCollector",
             "status": "ok",
             "report_count": 17,
-            "duration_seconds": 33.36,
+            "duration_seconds": 32.64,
             "message": ""
           },
           {
             "source": "shinhan_investment_official",
             "label": "신한투자증권 공식",
             "collector": "ShinhanInvestmentCollector",
-            "status": "ok",
-            "report_count": 6,
-            "duration_seconds": 7.43,
-            "message": ""
+            "status": "failed",
+            "report_count": 0,
+            "duration_seconds": 63.88,
+            "message": "URLError: <urlopen error timed out>"
           }
         ]
       }
     ],
-    "collector_alerts": [],
+    "collector_alerts": [
+      {
+        "type": "collector_failed",
+        "severity": "critical",
+        "source": "shinhan_investment_official",
+        "label": "신한투자증권 공식",
+        "title": "신한투자증권 공식 수집 실패",
+        "message": "URLError: <urlopen error timed out>",
+        "current_count": 0,
+        "average_count": 8.4,
+        "sample_days": 5
+      }
+    ],
     "collector_alert_summary": {
-      "available": false,
-      "total_alerts": 0,
-      "critical_alerts": 0,
+      "available": true,
+      "total_alerts": 1,
+      "critical_alerts": 1,
       "warning_alerts": 0,
-      "failed_sources": 0,
+      "failed_sources": 1,
       "empty_sources": 0,
       "volume_drop_alerts": 0
     },
     "link_health": {
-      "pdf_preferred": 10,
+      "pdf_preferred": 4,
       "detail_only": 17,
       "missing": 0,
-      "total": 27
+      "total": 21
     },
     "must_read_diversity": {
       "selected": 12,
-      "unique_subject_or_title": 10,
-      "unique_brokers": 3,
-      "max_broker_count": 5,
-      "max_subject_or_title_count": 2,
+      "unique_subject_or_title": 7,
+      "unique_brokers": 2,
+      "max_broker_count": 8,
+      "max_subject_or_title_count": 4,
       "broker_soft_limit": 3,
       "broker_hard_limit": 5,
       "subject_hard_limit": 2
@@ -175,7 +230,7 @@
     "categories": [
       {
         "label": "산업분석",
-        "count": 12
+        "count": 10
       },
       {
         "label": "종목분석",
@@ -183,11 +238,7 @@
       },
       {
         "label": "시황정보",
-        "count": 5
-      },
-      {
-        "label": "경제분석",
-        "count": 1
+        "count": 2
       }
     ],
     "brokers": [
@@ -196,30 +247,26 @@
         "count": 17
       },
       {
-        "name": "신한투자증권",
-        "count": 6
-      },
-      {
         "name": "미래에셋증권",
         "count": 4
       }
     ],
     "keywords": [
-      "JP",
-      "모간",
-      "투자전략",
-      "강화",
       "스티펠",
       "USA",
-      "AI",
-      "유럽"
+      "JP",
+      "모간",
+      "마켓",
+      "투자전략",
+      "강화",
+      "글로벌"
     ],
     "selection_performance": {
-      "tracked_selections": 1067,
+      "tracked_selections": 1071,
       "pending_by_horizon": {
-        "1d": 16,
-        "7d": 85,
-        "30d": 334
+        "1d": 20,
+        "7d": 89,
+        "30d": 338
       },
       "completed_by_horizon": {
         "1d": 1051,
@@ -814,7 +861,7 @@
   },
   "change_summary": {
     "available": true,
-    "changed_reports": 6,
+    "changed_reports": 4,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
@@ -822,9 +869,9 @@
     "opinion_down": 0,
     "analyst_changed": 0,
     "coverage_initiated": 0,
-    "estimate_signal_reports": 6,
-    "earnings_estimate_up": 5,
-    "earnings_estimate_down": 1,
+    "estimate_signal_reports": 4,
+    "earnings_estimate_up": 3,
+    "earnings_estimate_down": 0,
     "margin_estimate_up": 3,
     "margin_estimate_down": 0,
     "estimate_revision_up": 0,
@@ -1605,224 +1652,6 @@
           "has_change_signal": true
         },
         {
-          "source": "shinhan_investment_official",
-          "category": "industry",
-          "category_label": "산업분석",
-          "report_id": "shinhan-giindustry-941862",
-          "title": "[재공표] 방위산업; 대화 재개와 미뤄둔 계약의 복귀",
-          "display_title": "[재공표] 방위산업; 대화 재개와 미뤄둔 계약의 복귀",
-          "broker": "신한투자증권",
-          "published_date": "2026-09-23",
-          "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=giindustry&messageId=941862",
-          "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353966",
-          "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353966",
-          "primary_url_label": "PDF",
-          "subject": null,
-          "subject_key": null,
-          "ticker": null,
-          "views": 100,
-          "analyst": "이동헌",
-          "target_price": null,
-          "target_price_value": null,
-          "opinion": null,
-          "opinion_normalized": null,
-          "has_pdf_text": false,
-          "content_sources": [
-            "html"
-          ],
-          "excerpt": "긴장 완화는 악재가 아님: 먼저 급해진 쪽은 트럼프 현황: 208일의 봉쇄, 넓어진 전선, 앞당겨진 대화",
-          "summary": "긴장 완화는 악재가 아님: 먼저 급해진 쪽은 트럼프 현황: 208일의 봉쇄, 넓어진 전선, 앞당겨진 대화 긴장 완화는 악재가 아님: 먼저 급해진 쪽은 트럼프",
-          "summary_engine": "rule",
-          "investment_memo": {},
-          "estimate_metrics": [],
-          "estimate_signal_types": [],
-          "estimate_reasons": [],
-          "estimate_revisions": [],
-          "stance": "neutral",
-          "score": 9.8,
-          "score_reasons": [
-            "산업분석 카테고리",
-            "공식 소스",
-            "관심 섹터/키워드(방산, 우주, 항공)",
-            "우선 추적 증권사"
-          ],
-          "score_breakdown": [
-            {
-              "label": "관심 섹터/키워드",
-              "value": 2.8,
-              "kind": "boost"
-            },
-            {
-              "label": "산업분석 카테고리",
-              "value": 2.7,
-              "kind": "boost"
-            },
-            {
-              "label": "조회수",
-              "value": 2.0,
-              "kind": "boost"
-            },
-            {
-              "label": "우선 추적 증권사",
-              "value": 1.1,
-              "kind": "boost"
-            },
-            {
-              "label": "본문 정보량",
-              "value": 0.55,
-              "kind": "boost"
-            },
-            {
-              "label": "소스 가중치",
-              "value": 0.45,
-              "kind": "boost"
-            },
-            {
-              "label": "애널리스트",
-              "value": 0.2,
-              "kind": "boost"
-            }
-          ],
-          "link_health": {
-            "status": "pdf_preferred",
-            "primary_kind": "pdf",
-            "has_pdf": true,
-            "has_detail": true,
-            "detail_host": "bbs2.shinhansec.com",
-            "pdf_host": "bbs2.shinhansec.com",
-            "note": "PDF 링크를 대표 링크로 사용합니다."
-          },
-          "priority_subject_matches": [],
-          "priority_keyword_matches": [
-            "방산",
-            "우주",
-            "항공"
-          ],
-          "is_priority_match": true,
-          "previous_report_date": null,
-          "previous_target_price": null,
-          "previous_opinion": null,
-          "previous_analyst": null,
-          "target_price_change": null,
-          "target_price_change_pct": null,
-          "opinion_changed": false,
-          "opinion_change_direction": null,
-          "analyst_changed": false,
-          "coverage_initiated": false,
-          "change_types": [],
-          "change_reasons": [],
-          "has_change_signal": false
-        },
-        {
-          "source": "shinhan_investment_official",
-          "category": "industry",
-          "category_label": "산업분석",
-          "report_id": "shinhan-giindustry-941860",
-          "title": "방위산업; 대화 재개와 미뤄둔 계약의 복귀",
-          "display_title": "방위산업; 대화 재개와 미뤄둔 계약의 복귀",
-          "broker": "신한투자증권",
-          "published_date": "2026-09-23",
-          "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=giindustry&messageId=941860",
-          "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353964",
-          "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353964",
-          "primary_url_label": "PDF",
-          "subject": null,
-          "subject_key": null,
-          "ticker": null,
-          "views": 50,
-          "analyst": "이동헌",
-          "target_price": null,
-          "target_price_value": null,
-          "opinion": null,
-          "opinion_normalized": null,
-          "has_pdf_text": false,
-          "content_sources": [
-            "html"
-          ],
-          "excerpt": "긴장 완화는 악재가 아님: 먼저 급해진 쪽은 트럼프 현황: 208일의 봉쇄, 넓어진 전선, 앞당겨진 대화",
-          "summary": "긴장 완화는 악재가 아님: 먼저 급해진 쪽은 트럼프 현황: 208일의 봉쇄, 넓어진 전선, 앞당겨진 대화 긴장 완화는 악재가 아님: 먼저 급해진 쪽은 트럼프",
-          "summary_engine": "rule",
-          "investment_memo": {},
-          "estimate_metrics": [],
-          "estimate_signal_types": [],
-          "estimate_reasons": [],
-          "estimate_revisions": [],
-          "stance": "neutral",
-          "score": 9.5,
-          "score_reasons": [
-            "산업분석 카테고리",
-            "공식 소스",
-            "관심 섹터/키워드(방산, 우주, 항공)",
-            "우선 추적 증권사"
-          ],
-          "score_breakdown": [
-            {
-              "label": "관심 섹터/키워드",
-              "value": 2.8,
-              "kind": "boost"
-            },
-            {
-              "label": "산업분석 카테고리",
-              "value": 2.7,
-              "kind": "boost"
-            },
-            {
-              "label": "조회수",
-              "value": 1.7,
-              "kind": "boost"
-            },
-            {
-              "label": "우선 추적 증권사",
-              "value": 1.1,
-              "kind": "boost"
-            },
-            {
-              "label": "본문 정보량",
-              "value": 0.55,
-              "kind": "boost"
-            },
-            {
-              "label": "소스 가중치",
-              "value": 0.45,
-              "kind": "boost"
-            },
-            {
-              "label": "애널리스트",
-              "value": 0.2,
-              "kind": "boost"
-            }
-          ],
-          "link_health": {
-            "status": "pdf_preferred",
-            "primary_kind": "pdf",
-            "has_pdf": true,
-            "has_detail": true,
-            "detail_host": "bbs2.shinhansec.com",
-            "pdf_host": "bbs2.shinhansec.com",
-            "note": "PDF 링크를 대표 링크로 사용합니다."
-          },
-          "priority_subject_matches": [],
-          "priority_keyword_matches": [
-            "방산",
-            "우주",
-            "항공"
-          ],
-          "is_priority_match": true,
-          "previous_report_date": null,
-          "previous_target_price": null,
-          "previous_opinion": null,
-          "previous_analyst": null,
-          "target_price_change": null,
-          "target_price_change_pct": null,
-          "opinion_changed": false,
-          "opinion_change_direction": null,
-          "analyst_changed": false,
-          "coverage_initiated": false,
-          "change_types": [],
-          "change_reasons": [],
-          "has_change_signal": false
-        },
-        {
           "source": "mirae_asset_official",
           "category": "industry",
           "category_label": "산업분석",
@@ -1919,505 +1748,216 @@
           "change_types": [],
           "change_reasons": [],
           "has_change_signal": false
+        },
+        {
+          "source": "korea_investment_official",
+          "category": "industry",
+          "category_label": "산업분석",
+          "report_id": "kis-159572",
+          "title": "투자전략:왜 AI 연구소들은 AI 안전성을 경고하나",
+          "display_title": "JP모간 - 투자전략:왜 AI 연구소들은 AI 안전성을 경고하나",
+          "broker": "한국투자증권",
+          "published_date": "2026-09-23",
+          "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159572",
+          "pdf_url": null,
+          "primary_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159572",
+          "primary_url_label": "상세",
+          "subject": "JP모간",
+          "subject_key": "jp모간",
+          "ticker": null,
+          "views": 0,
+          "analyst": "리서치본부",
+          "target_price": null,
+          "target_price_value": null,
+          "opinion": null,
+          "opinion_normalized": null,
+          "has_pdf_text": false,
+          "content_sources": [
+            "html"
+          ],
+          "excerpt": "? 업계 주요 인사들이 모델 개발 속도 조절을 요구하고 있으며, 그 배경에는 실제 안전성 우려 뿐 아니라 재무적·정치적 이해관계도 함께 작용하고 있다.",
+          "summary": "? 업계 주요 인사들이 모델 개발 속도 조절을 요구하고 있으며, 그 배경에는 실제 안전성 우려 뿐 아니라 재무적·정치적 이해관계도 함께 작용하고 있다. ?",
+          "summary_engine": "rule",
+          "investment_memo": {},
+          "estimate_metrics": [],
+          "estimate_signal_types": [
+            "margin_estimate_up"
+          ],
+          "estimate_reasons": [
+            "마진율 추정 상승/개선"
+          ],
+          "estimate_revisions": [],
+          "stance": "positive",
+          "score": 6.35,
+          "score_reasons": [
+            "산업분석 카테고리",
+            "공식 소스",
+            "마진율 추정 상승/개선",
+            "우선 추적 증권사",
+            "핵심 키워드(투자전략)"
+          ],
+          "score_breakdown": [
+            {
+              "label": "산업분석 카테고리",
+              "value": 2.7,
+              "kind": "boost"
+            },
+            {
+              "label": "마진율 개선",
+              "value": 1.5,
+              "kind": "boost"
+            },
+            {
+              "label": "우선 추적 증권사",
+              "value": 1.05,
+              "kind": "boost"
+            },
+            {
+              "label": "제목 키워드: 투자전략",
+              "value": 0.5,
+              "kind": "boost"
+            },
+            {
+              "label": "소스 가중치",
+              "value": 0.4,
+              "kind": "boost"
+            },
+            {
+              "label": "애널리스트",
+              "value": 0.2,
+              "kind": "boost"
+            }
+          ],
+          "link_health": {
+            "status": "detail_only",
+            "primary_kind": "detail",
+            "has_pdf": false,
+            "has_detail": true,
+            "detail_host": "securities.koreainvestment.com",
+            "pdf_host": "",
+            "note": "상세 페이지 링크만 확보됐습니다."
+          },
+          "priority_subject_matches": [],
+          "priority_keyword_matches": [],
+          "is_priority_match": false,
+          "previous_report_date": "2026-09-16",
+          "previous_target_price": null,
+          "previous_opinion": null,
+          "previous_analyst": "리서치본부",
+          "target_price_change": null,
+          "target_price_change_pct": null,
+          "opinion_changed": false,
+          "opinion_change_direction": null,
+          "analyst_changed": false,
+          "coverage_initiated": false,
+          "change_types": [
+            "margin_estimate_up"
+          ],
+          "change_reasons": [
+            "마진율 추정 상승/개선"
+          ],
+          "has_change_signal": true
+        },
+        {
+          "source": "korea_investment_official",
+          "category": "industry",
+          "category_label": "산업분석",
+          "report_id": "kis-159596",
+          "title": "투자전략:연준이 움직이기 시작했다",
+          "display_title": "JP모간 - 투자전략:연준이 움직이기 시작했다",
+          "broker": "한국투자증권",
+          "published_date": "2026-09-23",
+          "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159596",
+          "pdf_url": null,
+          "primary_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159596",
+          "primary_url_label": "상세",
+          "subject": "JP모간",
+          "subject_key": "jp모간",
+          "ticker": null,
+          "views": 0,
+          "analyst": "리서치본부",
+          "target_price": null,
+          "target_price_value": null,
+          "opinion": null,
+          "opinion_normalized": null,
+          "has_pdf_text": false,
+          "content_sources": [
+            "html"
+          ],
+          "excerpt": "- 9월 FOMC 회의는 인플레이션을 목표 수준으로 되돌리겠다는 연준의 의지를 재확인했다. - 연준은 만장일치로 연방기금금리 목표 범위를 25bp 인상한 3.75~4.00%로 결정했다.",
+          "summary": "- 9월 FOMC 회의는 인플레이션을 목표 수준으로 되돌리겠다는 연준의 의지를 재확인했다. - 연준은 만장일치로 연방기금금리 목표 범위를 25bp 인상한 3.75~4.00%로 결정했다. - 함께 공개된 점도표는 연준 위원들의 보다 매파적인 기조를 반영했다.",
+          "summary_engine": "rule",
+          "investment_memo": {},
+          "estimate_metrics": [],
+          "estimate_signal_types": [],
+          "estimate_reasons": [],
+          "estimate_revisions": [],
+          "stance": "neutral",
+          "score": 4.85,
+          "score_reasons": [
+            "산업분석 카테고리",
+            "공식 소스",
+            "우선 추적 증권사",
+            "핵심 키워드(투자전략)"
+          ],
+          "score_breakdown": [
+            {
+              "label": "산업분석 카테고리",
+              "value": 2.7,
+              "kind": "boost"
+            },
+            {
+              "label": "우선 추적 증권사",
+              "value": 1.05,
+              "kind": "boost"
+            },
+            {
+              "label": "제목 키워드: 투자전략",
+              "value": 0.5,
+              "kind": "boost"
+            },
+            {
+              "label": "소스 가중치",
+              "value": 0.4,
+              "kind": "boost"
+            },
+            {
+              "label": "애널리스트",
+              "value": 0.2,
+              "kind": "boost"
+            }
+          ],
+          "link_health": {
+            "status": "detail_only",
+            "primary_kind": "detail",
+            "has_pdf": false,
+            "has_detail": true,
+            "detail_host": "securities.koreainvestment.com",
+            "pdf_host": "",
+            "note": "상세 페이지 링크만 확보됐습니다."
+          },
+          "priority_subject_matches": [],
+          "priority_keyword_matches": [],
+          "is_priority_match": false,
+          "previous_report_date": "2026-09-16",
+          "previous_target_price": null,
+          "previous_opinion": null,
+          "previous_analyst": "리서치본부",
+          "target_price_change": null,
+          "target_price_change_pct": null,
+          "opinion_changed": false,
+          "opinion_change_direction": null,
+          "analyst_changed": false,
+          "coverage_initiated": false,
+          "change_types": [],
+          "change_reasons": [],
+          "has_change_signal": false
         }
       ]
     },
     "macro": {
       "label": "매크로 랭킹",
       "reports": [
-        {
-          "source": "shinhan_investment_official",
-          "category": "market",
-          "category_label": "시황정보",
-          "report_id": "shinhan-gicomment-941856",
-          "title": "국내주식전략; 3Q 실적, 높아진 이익 기대와 낮아진 주가 사이",
-          "display_title": "국내주식전략; 3Q 실적, 높아진 이익 기대와 낮아진 주가 사이",
-          "broker": "신한투자증권",
-          "published_date": "2026-09-23",
-          "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=941856",
-          "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353961",
-          "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353961",
-          "primary_url_label": "PDF",
-          "subject": null,
-          "subject_key": null,
-          "ticker": null,
-          "views": 101,
-          "analyst": "노동길",
-          "target_price": null,
-          "target_price_value": null,
-          "opinion": null,
-          "opinion_normalized": null,
-          "has_pdf_text": false,
-          "content_sources": [
-            "html"
-          ],
-          "excerpt": "반도체 이익 전망 유지, 원화 강세는 비반도체의 성장 전망 약화 반도체 27년 이익 지속성 무게, 비반도체 실적 개선 경로별 접근",
-          "summary": "반도체 이익 전망 유지, 원화 강세는 비반도체의 성장 전망 약화 반도체 27년 이익 지속성 무게, 비반도체 실적 개선 경로별 접근 3분기 반도체 수출은 1,464억달러로 전분기 대비 28.1% 증가할 것으로 추정된다.",
-          "summary_engine": "rule",
-          "investment_memo": {},
-          "estimate_metrics": [],
-          "estimate_signal_types": [
-            "earnings_estimate_up",
-            "earnings_estimate_down"
-          ],
-          "estimate_reasons": [
-            "이익 추정 상향/증가",
-            "이익 추정 하향/감소"
-          ],
-          "estimate_revisions": [],
-          "stance": "neutral",
-          "score": 16.35,
-          "score_reasons": [
-            "시황정보 카테고리",
-            "공식 소스",
-            "관심 종목(삼성전자, SK하이닉스)",
-            "관심 섹터/키워드(반도체)",
-            "이익 추정 상향/증가"
-          ],
-          "score_breakdown": [
-            {
-              "label": "관심 종목",
-              "value": 4.35,
-              "kind": "boost"
-            },
-            {
-              "label": "관심 섹터/키워드",
-              "value": 2.4,
-              "kind": "boost"
-            },
-            {
-              "label": "조회수",
-              "value": 2.0,
-              "kind": "boost"
-            },
-            {
-              "label": "시황정보 카테고리",
-              "value": 1.8,
-              "kind": "boost"
-            },
-            {
-              "label": "이익 추정 상향",
-              "value": 1.8,
-              "kind": "boost"
-            },
-            {
-              "label": "이익 추정 하향",
-              "value": 1.1,
-              "kind": "boost"
-            },
-            {
-              "label": "우선 추적 증권사",
-              "value": 1.1,
-              "kind": "boost"
-            },
-            {
-              "label": "제목 키워드: 실적",
-              "value": 0.9,
-              "kind": "boost"
-            },
-            {
-              "label": "소스 가중치",
-              "value": 0.45,
-              "kind": "boost"
-            },
-            {
-              "label": "본문 정보량",
-              "value": 0.25,
-              "kind": "boost"
-            },
-            {
-              "label": "애널리스트",
-              "value": 0.2,
-              "kind": "boost"
-            }
-          ],
-          "link_health": {
-            "status": "pdf_preferred",
-            "primary_kind": "pdf",
-            "has_pdf": true,
-            "has_detail": true,
-            "detail_host": "bbs2.shinhansec.com",
-            "pdf_host": "bbs2.shinhansec.com",
-            "note": "PDF 링크를 대표 링크로 사용합니다."
-          },
-          "priority_subject_matches": [
-            "삼성전자",
-            "SK하이닉스"
-          ],
-          "priority_keyword_matches": [
-            "반도체"
-          ],
-          "is_priority_match": true,
-          "previous_report_date": null,
-          "previous_target_price": null,
-          "previous_opinion": null,
-          "previous_analyst": null,
-          "target_price_change": null,
-          "target_price_change_pct": null,
-          "opinion_changed": false,
-          "opinion_change_direction": null,
-          "analyst_changed": false,
-          "coverage_initiated": false,
-          "change_types": [
-            "earnings_estimate_up",
-            "earnings_estimate_down"
-          ],
-          "change_reasons": [
-            "이익 추정 상향/증가",
-            "이익 추정 하향/감소"
-          ],
-          "has_change_signal": true
-        },
-        {
-          "source": "shinhan_investment_official",
-          "category": "market",
-          "category_label": "시황정보",
-          "report_id": "shinhan-gicomment-941877",
-          "title": "국내 주식 마감 시황 - 하방 압력 진정, 상방 재료 강화(9월 23일)",
-          "display_title": "국내 주식 마감 시황 - 하방 압력 진정, 상방 재료 강화(9월 23일)",
-          "broker": "신한투자증권",
-          "published_date": "2026-09-23",
-          "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=941877",
-          "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353973",
-          "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353973",
-          "primary_url_label": "PDF",
-          "subject": null,
-          "subject_key": null,
-          "ticker": null,
-          "views": 28,
-          "analyst": "강진혁",
-          "target_price": null,
-          "target_price_value": null,
-          "opinion": null,
-          "opinion_normalized": null,
-          "has_pdf_text": false,
-          "content_sources": [
-            "html"
-          ],
-          "excerpt": "이틀 연속 KOSPI 전강후약에도 7,000p 방어 韓美 정상회담에서도 이어진 산업 협력 논의",
-          "summary": "이틀 연속 KOSPI 전강후약에도 7,000p 방어 韓美 정상회담에서도 이어진 산업 협력 논의 Macro 전환점과 Micro 재료들",
-          "summary_engine": "rule",
-          "investment_memo": {},
-          "estimate_metrics": [],
-          "estimate_signal_types": [
-            "earnings_estimate_up"
-          ],
-          "estimate_reasons": [
-            "이익 추정 상향/증가"
-          ],
-          "estimate_revisions": [],
-          "stance": "positive",
-          "score": 13.95,
-          "score_reasons": [
-            "시황정보 카테고리",
-            "공식 소스",
-            "관심 종목(삼성전자)",
-            "관심 섹터/키워드(반도체, 건설, 우주)",
-            "이익 추정 상향/증가"
-          ],
-          "score_breakdown": [
-            {
-              "label": "관심 종목",
-              "value": 4.0,
-              "kind": "boost"
-            },
-            {
-              "label": "관심 섹터/키워드",
-              "value": 2.8,
-              "kind": "boost"
-            },
-            {
-              "label": "시황정보 카테고리",
-              "value": 1.8,
-              "kind": "boost"
-            },
-            {
-              "label": "이익 추정 상향",
-              "value": 1.8,
-              "kind": "boost"
-            },
-            {
-              "label": "조회수",
-              "value": 1.45,
-              "kind": "boost"
-            },
-            {
-              "label": "우선 추적 증권사",
-              "value": 1.1,
-              "kind": "boost"
-            },
-            {
-              "label": "본문 정보량",
-              "value": 0.55,
-              "kind": "boost"
-            },
-            {
-              "label": "소스 가중치",
-              "value": 0.45,
-              "kind": "boost"
-            },
-            {
-              "label": "애널리스트",
-              "value": 0.2,
-              "kind": "boost"
-            },
-            {
-              "label": "제목 패널티: 마감",
-              "value": -0.2,
-              "kind": "penalty"
-            }
-          ],
-          "link_health": {
-            "status": "pdf_preferred",
-            "primary_kind": "pdf",
-            "has_pdf": true,
-            "has_detail": true,
-            "detail_host": "bbs2.shinhansec.com",
-            "pdf_host": "bbs2.shinhansec.com",
-            "note": "PDF 링크를 대표 링크로 사용합니다."
-          },
-          "priority_subject_matches": [
-            "삼성전자"
-          ],
-          "priority_keyword_matches": [
-            "반도체",
-            "건설",
-            "우주"
-          ],
-          "is_priority_match": true,
-          "previous_report_date": null,
-          "previous_target_price": null,
-          "previous_opinion": null,
-          "previous_analyst": null,
-          "target_price_change": null,
-          "target_price_change_pct": null,
-          "opinion_changed": false,
-          "opinion_change_direction": null,
-          "analyst_changed": false,
-          "coverage_initiated": false,
-          "change_types": [
-            "earnings_estimate_up"
-          ],
-          "change_reasons": [
-            "이익 추정 상향/증가"
-          ],
-          "has_change_signal": true
-        },
-        {
-          "source": "shinhan_investment_official",
-          "category": "market",
-          "category_label": "시황정보",
-          "report_id": "shinhan-gicomment-941868",
-          "title": "마켓레이더 - 연휴 대기, 매물 소화에 120일선 부근 숨고르기 (9월 23일)",
-          "display_title": "마켓레이더 - 연휴 대기, 매물 소화에 120일선 부근 숨고르기 (9월 23일)",
-          "broker": "신한투자증권",
-          "published_date": "2026-09-23",
-          "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=941868",
-          "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353969",
-          "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353969",
-          "primary_url_label": "PDF",
-          "subject": null,
-          "subject_key": null,
-          "ticker": null,
-          "views": 58,
-          "analyst": "강진혁",
-          "target_price": null,
-          "target_price_value": null,
-          "opinion": null,
-          "opinion_normalized": null,
-          "has_pdf_text": false,
-          "content_sources": [
-            "html"
-          ],
-          "excerpt": "KOSPI 0.3% 상승한 7,035.7p. UN 총회 발 유가 진정+반도체 훈풍 지속에도 연휴 관망에 7,000p 접근",
-          "summary": "KOSPI 0.3% 상승한 7,035.7p. UN 총회 발 유가 진정+반도체 훈풍 지속에도 연휴 관망에 7,000p 접근 KOSDAQ은 0.3% 상승한 836.9p.",
-          "summary_engine": "rule",
-          "investment_memo": {},
-          "estimate_metrics": [],
-          "estimate_signal_types": [],
-          "estimate_reasons": [],
-          "estimate_revisions": [],
-          "stance": "neutral",
-          "score": 12.61,
-          "score_reasons": [
-            "시황정보 카테고리",
-            "공식 소스",
-            "관심 종목(삼성전자, SK하이닉스)",
-            "관심 섹터/키워드(반도체)",
-            "우선 추적 증권사"
-          ],
-          "score_breakdown": [
-            {
-              "label": "관심 종목",
-              "value": 4.35,
-              "kind": "boost"
-            },
-            {
-              "label": "관심 섹터/키워드",
-              "value": 2.4,
-              "kind": "boost"
-            },
-            {
-              "label": "시황정보 카테고리",
-              "value": 1.8,
-              "kind": "boost"
-            },
-            {
-              "label": "조회수",
-              "value": 1.76,
-              "kind": "boost"
-            },
-            {
-              "label": "우선 추적 증권사",
-              "value": 1.1,
-              "kind": "boost"
-            },
-            {
-              "label": "본문 정보량",
-              "value": 0.55,
-              "kind": "boost"
-            },
-            {
-              "label": "소스 가중치",
-              "value": 0.45,
-              "kind": "boost"
-            },
-            {
-              "label": "애널리스트",
-              "value": 0.2,
-              "kind": "boost"
-            }
-          ],
-          "link_health": {
-            "status": "pdf_preferred",
-            "primary_kind": "pdf",
-            "has_pdf": true,
-            "has_detail": true,
-            "detail_host": "bbs2.shinhansec.com",
-            "pdf_host": "bbs2.shinhansec.com",
-            "note": "PDF 링크를 대표 링크로 사용합니다."
-          },
-          "priority_subject_matches": [
-            "삼성전자",
-            "SK하이닉스"
-          ],
-          "priority_keyword_matches": [
-            "반도체"
-          ],
-          "is_priority_match": true,
-          "previous_report_date": null,
-          "previous_target_price": null,
-          "previous_opinion": null,
-          "previous_analyst": null,
-          "target_price_change": null,
-          "target_price_change_pct": null,
-          "opinion_changed": false,
-          "opinion_change_direction": null,
-          "analyst_changed": false,
-          "coverage_initiated": false,
-          "change_types": [],
-          "change_reasons": [],
-          "has_change_signal": false
-        },
-        {
-          "source": "shinhan_investment_official",
-          "category": "economy",
-          "category_label": "경제분석",
-          "report_id": "shinhan-gieconomy-941851",
-          "title": "자산가격 메커니즘 변화 #11. 새로운 기준, 자산배분의 재구성",
-          "display_title": "자산가격 메커니즘 변화 #11. 새로운 기준, 자산배분의 재구성",
-          "broker": "신한투자증권",
-          "published_date": "2026-09-23",
-          "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gieconomy&messageId=941851",
-          "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353959",
-          "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353959",
-          "primary_url_label": "PDF",
-          "subject": null,
-          "subject_key": null,
-          "ticker": null,
-          "views": 91,
-          "analyst": "리서치센터",
-          "target_price": null,
-          "target_price_value": null,
-          "opinion": null,
-          "opinion_normalized": null,
-          "has_pdf_text": false,
-          "content_sources": [
-            "html"
-          ],
-          "excerpt": "채권 혼합 효과가 약해진 60/40 포트폴리오 채권을 흔드는 세 가지 충격",
-          "summary": "채권 혼합 효과가 약해진 60/40 포트폴리오 채권을 흔드는 세 가지 충격 정책과 물가에 맞춘 재구성",
-          "summary_engine": "rule",
-          "investment_memo": {},
-          "estimate_metrics": [],
-          "estimate_signal_types": [],
-          "estimate_reasons": [],
-          "estimate_revisions": [],
-          "stance": "neutral",
-          "score": 6.26,
-          "score_reasons": [
-            "경제분석 카테고리",
-            "공식 소스",
-            "우선 추적 증권사"
-          ],
-          "score_breakdown": [
-            {
-              "label": "경제분석 카테고리",
-              "value": 2.3,
-              "kind": "boost"
-            },
-            {
-              "label": "조회수",
-              "value": 1.96,
-              "kind": "boost"
-            },
-            {
-              "label": "우선 추적 증권사",
-              "value": 1.1,
-              "kind": "boost"
-            },
-            {
-              "label": "소스 가중치",
-              "value": 0.45,
-              "kind": "boost"
-            },
-            {
-              "label": "본문 정보량",
-              "value": 0.25,
-              "kind": "boost"
-            },
-            {
-              "label": "애널리스트",
-              "value": 0.2,
-              "kind": "boost"
-            }
-          ],
-          "link_health": {
-            "status": "pdf_preferred",
-            "primary_kind": "pdf",
-            "has_pdf": true,
-            "has_detail": true,
-            "detail_host": "bbs2.shinhansec.com",
-            "pdf_host": "bbs2.shinhansec.com",
-            "note": "PDF 링크를 대표 링크로 사용합니다."
-          },
-          "priority_subject_matches": [],
-          "priority_keyword_matches": [],
-          "is_priority_match": false,
-          "previous_report_date": null,
-          "previous_target_price": null,
-          "previous_opinion": null,
-          "previous_analyst": null,
-          "target_price_change": null,
-          "target_price_change_pct": null,
-          "opinion_changed": false,
-          "opinion_change_direction": null,
-          "analyst_changed": false,
-          "coverage_initiated": false,
-          "change_types": [],
-          "change_reasons": [],
-          "has_change_signal": false
-        },
         {
           "source": "mirae_asset_official",
           "category": "market",
@@ -2446,6 +1986,95 @@
           ],
           "excerpt": "**** 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
           "summary": "**** 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
+          "summary_engine": "rule",
+          "investment_memo": {},
+          "estimate_metrics": [],
+          "estimate_signal_types": [],
+          "estimate_reasons": [],
+          "estimate_revisions": [],
+          "stance": "neutral",
+          "score": 3.2,
+          "score_reasons": [
+            "시황정보 카테고리",
+            "공식 소스",
+            "우선 추적 증권사"
+          ],
+          "score_breakdown": [
+            {
+              "label": "시황정보 카테고리",
+              "value": 1.8,
+              "kind": "boost"
+            },
+            {
+              "label": "우선 추적 증권사",
+              "value": 0.75,
+              "kind": "boost"
+            },
+            {
+              "label": "소스 가중치",
+              "value": 0.45,
+              "kind": "boost"
+            },
+            {
+              "label": "애널리스트",
+              "value": 0.2,
+              "kind": "boost"
+            }
+          ],
+          "link_health": {
+            "status": "pdf_preferred",
+            "primary_kind": "pdf",
+            "has_pdf": true,
+            "has_detail": true,
+            "detail_host": "securities.miraeasset.com",
+            "pdf_host": "securities.miraeasset.com",
+            "note": "PDF 링크를 대표 링크로 사용합니다."
+          },
+          "priority_subject_matches": [],
+          "priority_keyword_matches": [],
+          "is_priority_match": false,
+          "previous_report_date": null,
+          "previous_target_price": null,
+          "previous_opinion": null,
+          "previous_analyst": null,
+          "target_price_change": null,
+          "target_price_change_pct": null,
+          "opinion_changed": false,
+          "opinion_change_direction": null,
+          "analyst_changed": false,
+          "coverage_initiated": false,
+          "change_types": [],
+          "change_reasons": [],
+          "has_change_signal": false
+        },
+        {
+          "source": "mirae_asset_official",
+          "category": "market",
+          "category_label": "시황정보",
+          "report_id": "mirae-2342922",
+          "title": "마켓 뷰 (9월 23일)",
+          "display_title": "마켓 뷰 (9월 23일)",
+          "broker": "미래에셋증권",
+          "published_date": "2026-09-23",
+          "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2342922&messageNumber=2576&categoryId=1521",
+          "pdf_url": "https://securities.miraeasset.com/bbs/download/2147403.pdf?attachmentId=2147403",
+          "primary_url": "https://securities.miraeasset.com/bbs/download/2147403.pdf?attachmentId=2147403",
+          "primary_url_label": "PDF",
+          "subject": null,
+          "subject_key": null,
+          "ticker": null,
+          "views": 0,
+          "analyst": "김석환",
+          "target_price": null,
+          "target_price_value": null,
+          "opinion": null,
+          "opinion_normalized": null,
+          "has_pdf_text": false,
+          "content_sources": [
+            "html"
+          ],
+          "excerpt": ".",
+          "summary": ".",
           "summary_engine": "rule",
           "investment_memo": {},
           "estimate_metrics": [],
@@ -2751,284 +2380,6 @@
       "change_reasons": [
         "이익 추정 상향/증가",
         "마진율 추정 상승/개선"
-      ],
-      "has_change_signal": true
-    },
-    {
-      "source": "shinhan_investment_official",
-      "category": "market",
-      "category_label": "시황정보",
-      "report_id": "shinhan-gicomment-941856",
-      "title": "국내주식전략; 3Q 실적, 높아진 이익 기대와 낮아진 주가 사이",
-      "display_title": "국내주식전략; 3Q 실적, 높아진 이익 기대와 낮아진 주가 사이",
-      "broker": "신한투자증권",
-      "published_date": "2026-09-23",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=941856",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353961",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353961",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 101,
-      "analyst": "노동길",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "반도체 이익 전망 유지, 원화 강세는 비반도체의 성장 전망 약화 반도체 27년 이익 지속성 무게, 비반도체 실적 개선 경로별 접근",
-      "summary": "반도체 이익 전망 유지, 원화 강세는 비반도체의 성장 전망 약화 반도체 27년 이익 지속성 무게, 비반도체 실적 개선 경로별 접근 3분기 반도체 수출은 1,464억달러로 전분기 대비 28.1% 증가할 것으로 추정된다.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [
-        "earnings_estimate_up",
-        "earnings_estimate_down"
-      ],
-      "estimate_reasons": [
-        "이익 추정 상향/증가",
-        "이익 추정 하향/감소"
-      ],
-      "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 16.35,
-      "score_reasons": [
-        "시황정보 카테고리",
-        "공식 소스",
-        "관심 종목(삼성전자, SK하이닉스)",
-        "관심 섹터/키워드(반도체)",
-        "이익 추정 상향/증가"
-      ],
-      "score_breakdown": [
-        {
-          "label": "관심 종목",
-          "value": 4.35,
-          "kind": "boost"
-        },
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.4,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 2.0,
-          "kind": "boost"
-        },
-        {
-          "label": "시황정보 카테고리",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 상향",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 하향",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "제목 키워드: 실적",
-          "value": 0.9,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.25,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [
-        "삼성전자",
-        "SK하이닉스"
-      ],
-      "priority_keyword_matches": [
-        "반도체"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_up",
-        "earnings_estimate_down"
-      ],
-      "change_reasons": [
-        "이익 추정 상향/증가",
-        "이익 추정 하향/감소"
-      ],
-      "has_change_signal": true
-    },
-    {
-      "source": "shinhan_investment_official",
-      "category": "market",
-      "category_label": "시황정보",
-      "report_id": "shinhan-gicomment-941877",
-      "title": "국내 주식 마감 시황 - 하방 압력 진정, 상방 재료 강화(9월 23일)",
-      "display_title": "국내 주식 마감 시황 - 하방 압력 진정, 상방 재료 강화(9월 23일)",
-      "broker": "신한투자증권",
-      "published_date": "2026-09-23",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=941877",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353973",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353973",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 28,
-      "analyst": "강진혁",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "이틀 연속 KOSPI 전강후약에도 7,000p 방어 韓美 정상회담에서도 이어진 산업 협력 논의",
-      "summary": "이틀 연속 KOSPI 전강후약에도 7,000p 방어 韓美 정상회담에서도 이어진 산업 협력 논의 Macro 전환점과 Micro 재료들",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [
-        "earnings_estimate_up"
-      ],
-      "estimate_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "estimate_revisions": [],
-      "stance": "positive",
-      "score": 13.95,
-      "score_reasons": [
-        "시황정보 카테고리",
-        "공식 소스",
-        "관심 종목(삼성전자)",
-        "관심 섹터/키워드(반도체, 건설, 우주)",
-        "이익 추정 상향/증가"
-      ],
-      "score_breakdown": [
-        {
-          "label": "관심 종목",
-          "value": 4.0,
-          "kind": "boost"
-        },
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.8,
-          "kind": "boost"
-        },
-        {
-          "label": "시황정보 카테고리",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 상향",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 1.45,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        },
-        {
-          "label": "제목 패널티: 마감",
-          "value": -0.2,
-          "kind": "penalty"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [
-        "삼성전자"
-      ],
-      "priority_keyword_matches": [
-        "반도체",
-        "건설",
-        "우주"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_up"
-      ],
-      "change_reasons": [
-        "이익 추정 상향/증가"
       ],
       "has_change_signal": true
     },
@@ -3495,149 +2846,6 @@
       "has_change_signal": true
     },
     {
-      "source": "shinhan_investment_official",
-      "category": "market",
-      "category_label": "시황정보",
-      "report_id": "shinhan-gicomment-941856",
-      "title": "국내주식전략; 3Q 실적, 높아진 이익 기대와 낮아진 주가 사이",
-      "display_title": "국내주식전략; 3Q 실적, 높아진 이익 기대와 낮아진 주가 사이",
-      "broker": "신한투자증권",
-      "published_date": "2026-09-23",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=941856",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353961",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353961",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 101,
-      "analyst": "노동길",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "반도체 이익 전망 유지, 원화 강세는 비반도체의 성장 전망 약화 반도체 27년 이익 지속성 무게, 비반도체 실적 개선 경로별 접근",
-      "summary": "반도체 이익 전망 유지, 원화 강세는 비반도체의 성장 전망 약화 반도체 27년 이익 지속성 무게, 비반도체 실적 개선 경로별 접근 3분기 반도체 수출은 1,464억달러로 전분기 대비 28.1% 증가할 것으로 추정된다.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [
-        "earnings_estimate_up",
-        "earnings_estimate_down"
-      ],
-      "estimate_reasons": [
-        "이익 추정 상향/증가",
-        "이익 추정 하향/감소"
-      ],
-      "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 16.35,
-      "score_reasons": [
-        "시황정보 카테고리",
-        "공식 소스",
-        "관심 종목(삼성전자, SK하이닉스)",
-        "관심 섹터/키워드(반도체)",
-        "이익 추정 상향/증가"
-      ],
-      "score_breakdown": [
-        {
-          "label": "관심 종목",
-          "value": 4.35,
-          "kind": "boost"
-        },
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.4,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 2.0,
-          "kind": "boost"
-        },
-        {
-          "label": "시황정보 카테고리",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 상향",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 하향",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "제목 키워드: 실적",
-          "value": 0.9,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.25,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [
-        "삼성전자",
-        "SK하이닉스"
-      ],
-      "priority_keyword_matches": [
-        "반도체"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_up",
-        "earnings_estimate_down"
-      ],
-      "change_reasons": [
-        "이익 추정 상향/증가",
-        "이익 추정 하향/감소"
-      ],
-      "has_change_signal": true
-    },
-    {
       "source": "mirae_asset_official",
       "category": "industry",
       "category_label": "산업분석",
@@ -3748,23 +2956,23 @@
       "has_change_signal": false
     },
     {
-      "source": "shinhan_investment_official",
-      "category": "economy",
-      "category_label": "경제분석",
-      "report_id": "shinhan-gieconomy-941851",
-      "title": "자산가격 메커니즘 변화 #11. 새로운 기준, 자산배분의 재구성",
-      "display_title": "자산가격 메커니즘 변화 #11. 새로운 기준, 자산배분의 재구성",
-      "broker": "신한투자증권",
+      "source": "mirae_asset_official",
+      "category": "market",
+      "category_label": "시황정보",
+      "report_id": "mirae-2342911",
+      "title": "글로벌 마켓 브리핑(9월 23일)",
+      "display_title": "글로벌 마켓 브리핑(9월 23일)",
+      "broker": "미래에셋증권",
       "published_date": "2026-09-23",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gieconomy&messageId=941851",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353959",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353959",
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2342911&messageNumber=2575&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2147401.pdf?attachmentId=2147401",
+      "primary_url": "https://securities.miraeasset.com/bbs/download/2147401.pdf?attachmentId=2147401",
       "primary_url_label": "PDF",
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 91,
-      "analyst": "리서치센터",
+      "views": 0,
+      "analyst": "김석환",
       "target_price": null,
       "target_price_value": null,
       "opinion": null,
@@ -3773,8 +2981,8 @@
       "content_sources": [
         "html"
       ],
-      "excerpt": "채권 혼합 효과가 약해진 60/40 포트폴리오 채권을 흔드는 세 가지 충격",
-      "summary": "채권 혼합 효과가 약해진 60/40 포트폴리오 채권을 흔드는 세 가지 충격 정책과 물가에 맞춘 재구성",
+      "excerpt": "**** 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
+      "summary": "**** 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
       "summary_engine": "rule",
       "investment_memo": {},
       "estimate_metrics": [],
@@ -3782,36 +2990,26 @@
       "estimate_reasons": [],
       "estimate_revisions": [],
       "stance": "neutral",
-      "score": 6.26,
+      "score": 3.2,
       "score_reasons": [
-        "경제분석 카테고리",
+        "시황정보 카테고리",
         "공식 소스",
         "우선 추적 증권사"
       ],
       "score_breakdown": [
         {
-          "label": "경제분석 카테고리",
-          "value": 2.3,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 1.96,
+          "label": "시황정보 카테고리",
+          "value": 1.8,
           "kind": "boost"
         },
         {
           "label": "우선 추적 증권사",
-          "value": 1.1,
+          "value": 0.75,
           "kind": "boost"
         },
         {
           "label": "소스 가중치",
           "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.25,
           "kind": "boost"
         },
         {
@@ -3825,373 +3023,13 @@
         "primary_kind": "pdf",
         "has_pdf": true,
         "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
+        "detail_host": "securities.miraeasset.com",
+        "pdf_host": "securities.miraeasset.com",
         "note": "PDF 링크를 대표 링크로 사용합니다."
       },
       "priority_subject_matches": [],
       "priority_keyword_matches": [],
       "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
-    },
-    {
-      "source": "shinhan_investment_official",
-      "category": "market",
-      "category_label": "시황정보",
-      "report_id": "shinhan-gicomment-941877",
-      "title": "국내 주식 마감 시황 - 하방 압력 진정, 상방 재료 강화(9월 23일)",
-      "display_title": "국내 주식 마감 시황 - 하방 압력 진정, 상방 재료 강화(9월 23일)",
-      "broker": "신한투자증권",
-      "published_date": "2026-09-23",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=941877",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353973",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353973",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 28,
-      "analyst": "강진혁",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "이틀 연속 KOSPI 전강후약에도 7,000p 방어 韓美 정상회담에서도 이어진 산업 협력 논의",
-      "summary": "이틀 연속 KOSPI 전강후약에도 7,000p 방어 韓美 정상회담에서도 이어진 산업 협력 논의 Macro 전환점과 Micro 재료들",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [
-        "earnings_estimate_up"
-      ],
-      "estimate_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "estimate_revisions": [],
-      "stance": "positive",
-      "score": 13.95,
-      "score_reasons": [
-        "시황정보 카테고리",
-        "공식 소스",
-        "관심 종목(삼성전자)",
-        "관심 섹터/키워드(반도체, 건설, 우주)",
-        "이익 추정 상향/증가"
-      ],
-      "score_breakdown": [
-        {
-          "label": "관심 종목",
-          "value": 4.0,
-          "kind": "boost"
-        },
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.8,
-          "kind": "boost"
-        },
-        {
-          "label": "시황정보 카테고리",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 상향",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 1.45,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        },
-        {
-          "label": "제목 패널티: 마감",
-          "value": -0.2,
-          "kind": "penalty"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [
-        "삼성전자"
-      ],
-      "priority_keyword_matches": [
-        "반도체",
-        "건설",
-        "우주"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_up"
-      ],
-      "change_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "has_change_signal": true
-    },
-    {
-      "source": "shinhan_investment_official",
-      "category": "market",
-      "category_label": "시황정보",
-      "report_id": "shinhan-gicomment-941868",
-      "title": "마켓레이더 - 연휴 대기, 매물 소화에 120일선 부근 숨고르기 (9월 23일)",
-      "display_title": "마켓레이더 - 연휴 대기, 매물 소화에 120일선 부근 숨고르기 (9월 23일)",
-      "broker": "신한투자증권",
-      "published_date": "2026-09-23",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=941868",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353969",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353969",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 58,
-      "analyst": "강진혁",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "KOSPI 0.3% 상승한 7,035.7p. UN 총회 발 유가 진정+반도체 훈풍 지속에도 연휴 관망에 7,000p 접근",
-      "summary": "KOSPI 0.3% 상승한 7,035.7p. UN 총회 발 유가 진정+반도체 훈풍 지속에도 연휴 관망에 7,000p 접근 KOSDAQ은 0.3% 상승한 836.9p.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [],
-      "estimate_reasons": [],
-      "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 12.61,
-      "score_reasons": [
-        "시황정보 카테고리",
-        "공식 소스",
-        "관심 종목(삼성전자, SK하이닉스)",
-        "관심 섹터/키워드(반도체)",
-        "우선 추적 증권사"
-      ],
-      "score_breakdown": [
-        {
-          "label": "관심 종목",
-          "value": 4.35,
-          "kind": "boost"
-        },
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.4,
-          "kind": "boost"
-        },
-        {
-          "label": "시황정보 카테고리",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 1.76,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [
-        "삼성전자",
-        "SK하이닉스"
-      ],
-      "priority_keyword_matches": [
-        "반도체"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
-    },
-    {
-      "source": "shinhan_investment_official",
-      "category": "industry",
-      "category_label": "산업분석",
-      "report_id": "shinhan-giindustry-941862",
-      "title": "[재공표] 방위산업; 대화 재개와 미뤄둔 계약의 복귀",
-      "display_title": "[재공표] 방위산업; 대화 재개와 미뤄둔 계약의 복귀",
-      "broker": "신한투자증권",
-      "published_date": "2026-09-23",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=giindustry&messageId=941862",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353966",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353966",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 100,
-      "analyst": "이동헌",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "긴장 완화는 악재가 아님: 먼저 급해진 쪽은 트럼프 현황: 208일의 봉쇄, 넓어진 전선, 앞당겨진 대화",
-      "summary": "긴장 완화는 악재가 아님: 먼저 급해진 쪽은 트럼프 현황: 208일의 봉쇄, 넓어진 전선, 앞당겨진 대화 긴장 완화는 악재가 아님: 먼저 급해진 쪽은 트럼프",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [],
-      "estimate_reasons": [],
-      "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 9.8,
-      "score_reasons": [
-        "산업분석 카테고리",
-        "공식 소스",
-        "관심 섹터/키워드(방산, 우주, 항공)",
-        "우선 추적 증권사"
-      ],
-      "score_breakdown": [
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.8,
-          "kind": "boost"
-        },
-        {
-          "label": "산업분석 카테고리",
-          "value": 2.7,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 2.0,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [
-        "방산",
-        "우주",
-        "항공"
-      ],
-      "is_priority_match": true,
       "previous_report_date": null,
       "previous_target_price": null,
       "previous_opinion": null,
@@ -4603,170 +3441,25 @@
       "change_types": [],
       "change_reasons": [],
       "has_change_signal": false
-    }
-  ],
-  "reports": [
-    {
-      "source": "shinhan_investment_official",
-      "category": "market",
-      "category_label": "시황정보",
-      "report_id": "shinhan-gicomment-941856",
-      "title": "국내주식전략; 3Q 실적, 높아진 이익 기대와 낮아진 주가 사이",
-      "display_title": "국내주식전략; 3Q 실적, 높아진 이익 기대와 낮아진 주가 사이",
-      "broker": "신한투자증권",
-      "published_date": "2026-09-23",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=941856",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353961",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353961",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 101,
-      "analyst": "노동길",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "반도체 이익 전망 유지, 원화 강세는 비반도체의 성장 전망 약화 반도체 27년 이익 지속성 무게, 비반도체 실적 개선 경로별 접근",
-      "summary": "반도체 이익 전망 유지, 원화 강세는 비반도체의 성장 전망 약화 반도체 27년 이익 지속성 무게, 비반도체 실적 개선 경로별 접근 3분기 반도체 수출은 1,464억달러로 전분기 대비 28.1% 증가할 것으로 추정된다.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [
-        "earnings_estimate_up",
-        "earnings_estimate_down"
-      ],
-      "estimate_reasons": [
-        "이익 추정 상향/증가",
-        "이익 추정 하향/감소"
-      ],
-      "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 16.35,
-      "score_reasons": [
-        "시황정보 카테고리",
-        "공식 소스",
-        "관심 종목(삼성전자, SK하이닉스)",
-        "관심 섹터/키워드(반도체)",
-        "이익 추정 상향/증가"
-      ],
-      "score_breakdown": [
-        {
-          "label": "관심 종목",
-          "value": 4.35,
-          "kind": "boost"
-        },
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.4,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 2.0,
-          "kind": "boost"
-        },
-        {
-          "label": "시황정보 카테고리",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 상향",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 하향",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "제목 키워드: 실적",
-          "value": 0.9,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.25,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [
-        "삼성전자",
-        "SK하이닉스"
-      ],
-      "priority_keyword_matches": [
-        "반도체"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_up",
-        "earnings_estimate_down"
-      ],
-      "change_reasons": [
-        "이익 추정 상향/증가",
-        "이익 추정 하향/감소"
-      ],
-      "has_change_signal": true
     },
     {
-      "source": "shinhan_investment_official",
+      "source": "mirae_asset_official",
       "category": "market",
       "category_label": "시황정보",
-      "report_id": "shinhan-gicomment-941877",
-      "title": "국내 주식 마감 시황 - 하방 압력 진정, 상방 재료 강화(9월 23일)",
-      "display_title": "국내 주식 마감 시황 - 하방 압력 진정, 상방 재료 강화(9월 23일)",
-      "broker": "신한투자증권",
+      "report_id": "mirae-2342922",
+      "title": "마켓 뷰 (9월 23일)",
+      "display_title": "마켓 뷰 (9월 23일)",
+      "broker": "미래에셋증권",
       "published_date": "2026-09-23",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=941877",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353973",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353973",
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2342922&messageNumber=2576&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2147403.pdf?attachmentId=2147403",
+      "primary_url": "https://securities.miraeasset.com/bbs/download/2147403.pdf?attachmentId=2147403",
       "primary_url_label": "PDF",
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 28,
-      "analyst": "강진혁",
+      "views": 0,
+      "analyst": "김석환",
       "target_price": null,
       "target_price_value": null,
       "opinion": null,
@@ -4775,143 +3468,8 @@
       "content_sources": [
         "html"
       ],
-      "excerpt": "이틀 연속 KOSPI 전강후약에도 7,000p 방어 韓美 정상회담에서도 이어진 산업 협력 논의",
-      "summary": "이틀 연속 KOSPI 전강후약에도 7,000p 방어 韓美 정상회담에서도 이어진 산업 협력 논의 Macro 전환점과 Micro 재료들",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [
-        "earnings_estimate_up"
-      ],
-      "estimate_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "estimate_revisions": [],
-      "stance": "positive",
-      "score": 13.95,
-      "score_reasons": [
-        "시황정보 카테고리",
-        "공식 소스",
-        "관심 종목(삼성전자)",
-        "관심 섹터/키워드(반도체, 건설, 우주)",
-        "이익 추정 상향/증가"
-      ],
-      "score_breakdown": [
-        {
-          "label": "관심 종목",
-          "value": 4.0,
-          "kind": "boost"
-        },
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.8,
-          "kind": "boost"
-        },
-        {
-          "label": "시황정보 카테고리",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 상향",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 1.45,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        },
-        {
-          "label": "제목 패널티: 마감",
-          "value": -0.2,
-          "kind": "penalty"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [
-        "삼성전자"
-      ],
-      "priority_keyword_matches": [
-        "반도체",
-        "건설",
-        "우주"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_up"
-      ],
-      "change_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "has_change_signal": true
-    },
-    {
-      "source": "shinhan_investment_official",
-      "category": "market",
-      "category_label": "시황정보",
-      "report_id": "shinhan-gicomment-941868",
-      "title": "마켓레이더 - 연휴 대기, 매물 소화에 120일선 부근 숨고르기 (9월 23일)",
-      "display_title": "마켓레이더 - 연휴 대기, 매물 소화에 120일선 부근 숨고르기 (9월 23일)",
-      "broker": "신한투자증권",
-      "published_date": "2026-09-23",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=941868",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353969",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353969",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 58,
-      "analyst": "강진혁",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "KOSPI 0.3% 상승한 7,035.7p. UN 총회 발 유가 진정+반도체 훈풍 지속에도 연휴 관망에 7,000p 접근",
-      "summary": "KOSPI 0.3% 상승한 7,035.7p. UN 총회 발 유가 진정+반도체 훈풍 지속에도 연휴 관망에 7,000p 접근 KOSDAQ은 0.3% 상승한 836.9p.",
+      "excerpt": ".",
+      "summary": ".",
       "summary_engine": "rule",
       "investment_memo": {},
       "estimate_metrics": [],
@@ -4919,43 +3477,21 @@
       "estimate_reasons": [],
       "estimate_revisions": [],
       "stance": "neutral",
-      "score": 12.61,
+      "score": 3.2,
       "score_reasons": [
         "시황정보 카테고리",
         "공식 소스",
-        "관심 종목(삼성전자, SK하이닉스)",
-        "관심 섹터/키워드(반도체)",
         "우선 추적 증권사"
       ],
       "score_breakdown": [
-        {
-          "label": "관심 종목",
-          "value": 4.35,
-          "kind": "boost"
-        },
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.4,
-          "kind": "boost"
-        },
         {
           "label": "시황정보 카테고리",
           "value": 1.8,
           "kind": "boost"
         },
         {
-          "label": "조회수",
-          "value": 1.76,
-          "kind": "boost"
-        },
-        {
           "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
+          "value": 0.75,
           "kind": "boost"
         },
         {
@@ -4974,18 +3510,13 @@
         "primary_kind": "pdf",
         "has_pdf": true,
         "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
+        "detail_host": "securities.miraeasset.com",
+        "pdf_host": "securities.miraeasset.com",
         "note": "PDF 링크를 대표 링크로 사용합니다."
       },
-      "priority_subject_matches": [
-        "삼성전자",
-        "SK하이닉스"
-      ],
-      "priority_keyword_matches": [
-        "반도체"
-      ],
-      "is_priority_match": true,
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
       "previous_report_date": null,
       "previous_target_price": null,
       "previous_opinion": null,
@@ -5000,6 +3531,318 @@
       "change_reasons": [],
       "has_change_signal": false
     },
+    {
+      "source": "korea_investment_official",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "kis-159592",
+      "title": "루멘텀 홀딩스(LITE USA):UHP 레이저 공급 부족 지속, NPO가 더 큰 기회",
+      "display_title": "스티펠 - 루멘텀 홀딩스(LITE USA):UHP 레이저 공급 부족 지속, NPO가 더 큰 기회",
+      "broker": "한국투자증권",
+      "published_date": "2026-09-23",
+      "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159592",
+      "pdf_url": null,
+      "primary_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159592",
+      "primary_url_label": "상세",
+      "subject": "스티펠",
+      "subject_key": "스티펠",
+      "ticker": null,
+      "views": 0,
+      "analyst": "리서치본부",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "ECOC 2026에서 Lumentum CEO Michael Hurlston과 투자자 미팅을 진행했다. 핵심은 AI 네트워크가 복잡해질수록 광통신 기술이 선택이 아닌 필수로 자리 잡고 있다는 점이다.",
+      "summary": "ECOC 2026에서 Lumentum CEO Michael Hurlston과 투자자 미팅을 진행했다. 핵심은 AI 네트워크가 복잡해질수록 광통신 기술이 선택이 아닌 필수로 자리 잡고 있다는 점이다. 당사는 이러한 흐름에서 LITE, COHR, CIEN이 모두 수혜를 볼 수 있다고 판단한다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "estimate_revisions": [],
+      "stance": "neutral",
+      "score": 7.5,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "공식 소스",
+        "관심 섹터/키워드(반도체)",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "종목분석 카테고리",
+          "value": 3.2,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 1.05,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.4,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "detail_only",
+        "primary_kind": "detail",
+        "has_pdf": false,
+        "has_detail": true,
+        "detail_host": "securities.koreainvestment.com",
+        "pdf_host": "",
+        "note": "상세 페이지 링크만 확보됐습니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": "2026-09-22",
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": "리서치본부",
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
+    {
+      "source": "korea_investment_official",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "kis-159591",
+      "title": "스파이어 글로벌(SPIR USA):NOAA 수주 확대, 2028년까지 매출 가시성 강화",
+      "display_title": "스티펠 - 스파이어 글로벌(SPIR USA):NOAA 수주 확대, 2028년까지 매출 가시성 강화",
+      "broker": "한국투자증권",
+      "published_date": "2026-09-23",
+      "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159591",
+      "pdf_url": null,
+      "primary_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159591",
+      "primary_url_label": "상세",
+      "subject": "스티펠",
+      "subject_key": "스티펠",
+      "ticker": null,
+      "views": 0,
+      "analyst": "리서치본부",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "SPIR는 미국 해양대기청(NOAA)으로부터 3,320만달러 규모의 위성 기반 기상 데이터 공급 계약을 수주했다. 계약기간은 2년으로, SPIR의 데이터가 실제 기상예보에 활용되고 있음을 다시 확인한 동시에 2028년까지의 매출 가시성도 높여주는 계약이다.",
+      "summary": "SPIR는 미국 해양대기청(NOAA)으로부터 3,320만달러 규모의 위성 기반 기상 데이터 공급 계약을 수주했다. 계약기간은 2년으로, SPIR의 데이터가 실제 기상예보에 활용되고 있음을 다시 확인한 동시에 2028년까지의 매출 가시성도 높여주는 계약이다. 향후 추가 물량 옵션이 실행되면 전체 계약 규모는 최대 6,600만달러까지 늘어날 수 있다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "estimate_revisions": [],
+      "stance": "positive",
+      "score": 6.9,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "공식 소스",
+        "이익 추정 상향/증가",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "종목분석 카테고리",
+          "value": 3.2,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 1.05,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.4,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "detail_only",
+        "primary_kind": "detail",
+        "has_pdf": false,
+        "has_detail": true,
+        "detail_host": "securities.koreainvestment.com",
+        "pdf_host": "",
+        "note": "상세 페이지 링크만 확보됐습니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-09-22",
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": "리서치본부",
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
+    },
+    {
+      "source": "korea_investment_official",
+      "category": "company",
+      "category_label": "종목분석",
+      "report_id": "kis-159570",
+      "title": "Weekly Market Review:주간 시장 요약",
+      "display_title": "JP모간 - Weekly Market Review:주간 시장 요약",
+      "broker": "한국투자증권",
+      "published_date": "2026-09-23",
+      "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159570",
+      "pdf_url": null,
+      "primary_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159570",
+      "primary_url_label": "상세",
+      "subject": "JP모간",
+      "subject_key": "jp모간",
+      "ticker": null,
+      "views": 0,
+      "analyst": "리서치본부",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "미 연준은 만장일치로 기준금리를 25bp 인상해 3.75~4%로 결정했다. 2023년 7월 이후 첫 인상으로, 물가 안정이 여전히 통화정책의 최우선 과제임을 재확인했다.",
+      "summary": "미 연준은 만장일치로 기준금리를 25bp 인상해 3.75~4%로 결정했다. 2023년 7월 이후 첫 인상으로, 물가 안정이 여전히 통화정책의 최우선 과제임을 재확인했다. 새롭게 발표된 연준 전망에서는 올해 말까지 한 차례 추가 금리 인상이 예상됐으며, 높은 금리 수준은 2027년까지 이어질 것으로 전망됐다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "estimate_revisions": [],
+      "stance": "neutral",
+      "score": 5.5,
+      "score_reasons": [
+        "종목분석 카테고리",
+        "공식 소스",
+        "우선 추적 증권사",
+        "핵심 키워드(weekly)"
+      ],
+      "score_breakdown": [
+        {
+          "label": "종목분석 카테고리",
+          "value": 3.2,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 1.05,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.4,
+          "kind": "boost"
+        },
+        {
+          "label": "제목 키워드: weekly",
+          "value": 0.4,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "detail_only",
+        "primary_kind": "detail",
+        "has_pdf": false,
+        "has_detail": true,
+        "detail_host": "securities.koreainvestment.com",
+        "pdf_host": "",
+        "note": "상세 페이지 링크만 확보됐습니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": "2026-09-16",
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": "리서치본부",
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    }
+  ],
+  "reports": [
     {
       "source": "mirae_asset_official",
       "category": "industry",
@@ -5234,224 +4077,6 @@
         "마진율 추정 상승/개선"
       ],
       "has_change_signal": true
-    },
-    {
-      "source": "shinhan_investment_official",
-      "category": "industry",
-      "category_label": "산업분석",
-      "report_id": "shinhan-giindustry-941862",
-      "title": "[재공표] 방위산업; 대화 재개와 미뤄둔 계약의 복귀",
-      "display_title": "[재공표] 방위산업; 대화 재개와 미뤄둔 계약의 복귀",
-      "broker": "신한투자증권",
-      "published_date": "2026-09-23",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=giindustry&messageId=941862",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353966",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353966",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 100,
-      "analyst": "이동헌",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "긴장 완화는 악재가 아님: 먼저 급해진 쪽은 트럼프 현황: 208일의 봉쇄, 넓어진 전선, 앞당겨진 대화",
-      "summary": "긴장 완화는 악재가 아님: 먼저 급해진 쪽은 트럼프 현황: 208일의 봉쇄, 넓어진 전선, 앞당겨진 대화 긴장 완화는 악재가 아님: 먼저 급해진 쪽은 트럼프",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [],
-      "estimate_reasons": [],
-      "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 9.8,
-      "score_reasons": [
-        "산업분석 카테고리",
-        "공식 소스",
-        "관심 섹터/키워드(방산, 우주, 항공)",
-        "우선 추적 증권사"
-      ],
-      "score_breakdown": [
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.8,
-          "kind": "boost"
-        },
-        {
-          "label": "산업분석 카테고리",
-          "value": 2.7,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 2.0,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [
-        "방산",
-        "우주",
-        "항공"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
-    },
-    {
-      "source": "shinhan_investment_official",
-      "category": "industry",
-      "category_label": "산업분석",
-      "report_id": "shinhan-giindustry-941860",
-      "title": "방위산업; 대화 재개와 미뤄둔 계약의 복귀",
-      "display_title": "방위산업; 대화 재개와 미뤄둔 계약의 복귀",
-      "broker": "신한투자증권",
-      "published_date": "2026-09-23",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=giindustry&messageId=941860",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353964",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353964",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 50,
-      "analyst": "이동헌",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "긴장 완화는 악재가 아님: 먼저 급해진 쪽은 트럼프 현황: 208일의 봉쇄, 넓어진 전선, 앞당겨진 대화",
-      "summary": "긴장 완화는 악재가 아님: 먼저 급해진 쪽은 트럼프 현황: 208일의 봉쇄, 넓어진 전선, 앞당겨진 대화 긴장 완화는 악재가 아님: 먼저 급해진 쪽은 트럼프",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [],
-      "estimate_reasons": [],
-      "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 9.5,
-      "score_reasons": [
-        "산업분석 카테고리",
-        "공식 소스",
-        "관심 섹터/키워드(방산, 우주, 항공)",
-        "우선 추적 증권사"
-      ],
-      "score_breakdown": [
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.8,
-          "kind": "boost"
-        },
-        {
-          "label": "산업분석 카테고리",
-          "value": 2.7,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 1.7,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [
-        "방산",
-        "우주",
-        "항공"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
     },
     {
       "source": "korea_investment_official",
@@ -6089,105 +4714,6 @@
         "마진율 추정 상승/개선"
       ],
       "has_change_signal": true
-    },
-    {
-      "source": "shinhan_investment_official",
-      "category": "economy",
-      "category_label": "경제분석",
-      "report_id": "shinhan-gieconomy-941851",
-      "title": "자산가격 메커니즘 변화 #11. 새로운 기준, 자산배분의 재구성",
-      "display_title": "자산가격 메커니즘 변화 #11. 새로운 기준, 자산배분의 재구성",
-      "broker": "신한투자증권",
-      "published_date": "2026-09-23",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gieconomy&messageId=941851",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353959",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=353959",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 91,
-      "analyst": "리서치센터",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "채권 혼합 효과가 약해진 60/40 포트폴리오 채권을 흔드는 세 가지 충격",
-      "summary": "채권 혼합 효과가 약해진 60/40 포트폴리오 채권을 흔드는 세 가지 충격 정책과 물가에 맞춘 재구성",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [],
-      "estimate_reasons": [],
-      "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 6.26,
-      "score_reasons": [
-        "경제분석 카테고리",
-        "공식 소스",
-        "우선 추적 증권사"
-      ],
-      "score_breakdown": [
-        {
-          "label": "경제분석 카테고리",
-          "value": 2.3,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 1.96,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.25,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
     },
     {
       "source": "korea_investment_official",
