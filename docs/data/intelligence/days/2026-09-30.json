@@ -1,0 +1,2165 @@
+{
+  "schema_version": 1,
+  "rule_version": "daily-intelligence-v1",
+  "date": "2026-09-30",
+  "requested_date": "2026-09-30",
+  "generated_at": "2026-09-30T13:45:13+09:00",
+  "freshness": {
+    "status": "current",
+    "effective_age_days": 0
+  },
+  "counts": {
+    "reports": 21,
+    "excluded_reports": 0,
+    "pdf_links": 14,
+    "pdf_text_extracted": 0,
+    "html_text_available": 19,
+    "title_only": 2,
+    "duplicate_groups": 21,
+    "numeric_revision_reports": 0
+  },
+  "collector_health": [
+    {
+      "source": "naver_research",
+      "status": "empty",
+      "report_count": 0,
+      "error_code": null
+    },
+    {
+      "source": "mirae_asset_official",
+      "status": "ok",
+      "report_count": 8,
+      "error_code": null
+    },
+    {
+      "source": "korea_investment_official",
+      "status": "ok",
+      "report_count": 7,
+      "error_code": null
+    },
+    {
+      "source": "shinhan_investment_official",
+      "status": "ok",
+      "report_count": 7,
+      "error_code": null
+    }
+  ],
+  "shortlist": [
+    "mirae_asset_official:mirae-2343021",
+    "mirae_asset_official:mirae-2343025",
+    "shinhan_investment_official:shinhan-gicomment-942024",
+    "shinhan_investment_official:shinhan-gicompanyanalyst-942007",
+    "korea_investment_official:kis-159708"
+  ],
+  "shortlist_policy": {
+    "limit": 5,
+    "broker_soft_limit": 2,
+    "duplicate_group_limit": 1,
+    "purpose": "reading_candidates"
+  },
+  "reports": [
+    {
+      "canonical_id": "mirae_asset_official:mirae-2343021",
+      "source": "mirae_asset_official",
+      "report_id": "mirae-2343021",
+      "broker": "미래에셋증권",
+      "title": "주식전략",
+      "published_date": "2026-09-30",
+      "upstream_category": "industry",
+      "upstream_category_label": "산업분석",
+      "upstream_subject": null,
+      "company": {
+        "name": null,
+        "ticker": null,
+        "status": "unresolved"
+      },
+      "classification": {
+        "category": "strategy",
+        "label": "시장·전략",
+        "method": "deterministic_rules",
+        "confidence": "medium",
+        "reasons": [
+          {
+            "field": "title",
+            "matched": "전략"
+          }
+        ]
+      },
+      "sectors": [
+        {
+          "name": "energy",
+          "field": "excerpt",
+          "matched": "유가"
+        }
+      ],
+      "themes": [
+        {
+          "name": "rates",
+          "field": "excerpt",
+          "matched": "금리"
+        },
+        {
+          "name": "commodities",
+          "field": "excerpt",
+          "matched": "유가"
+        }
+      ],
+      "content_status": {
+        "level": "html_excerpt",
+        "pdf_link_available": true,
+        "pdf_text_extracted": false,
+        "html_text_available": true,
+        "fulltext_read": false,
+        "extraction_error": "not_recorded"
+      },
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343021&messageNumber=2566&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2147478.pdf?attachmentId=2147478",
+      "provenance": {
+        "origin": "collector_public_metadata",
+        "link_verification": "not_checked",
+        "duplicate_group_id": "dg-1b19857d34e701f3d131",
+        "source_records": [
+          {
+            "canonical_id": "mirae_asset_official:mirae-2343021",
+            "source": "mirae_asset_official",
+            "report_id": "mirae-2343021",
+            "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343021&messageNumber=2566&categoryId=1521",
+            "pdf_url": "https://securities.miraeasset.com/bbs/download/2147478.pdf?attachmentId=2147478"
+          }
+        ],
+        "source_records_complete": false
+      },
+      "report_claims": {
+        "excerpt": "[10월] Rotation & Revision 매크로 이슈 지속: 금리, 유가, 중간선거",
+        "status": "author_claims_unverified"
+      },
+      "author_opinion": {
+        "rating": null,
+        "target_price": null,
+        "status": "collector_attributed_author_opinion"
+      },
+      "signals": {
+        "keyword_signals": [
+          "earnings_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "numeric_revisions": [],
+        "numeric_revision_status": "none",
+        "conflicting_keyword_directions": true
+      },
+      "read_priority": {
+        "rank": 1,
+        "score": 13,
+        "reasons": [
+          {
+            "code": "published_on_requested_date",
+            "points": 2
+          },
+          {
+            "code": "configured_priority_match",
+            "points": 8
+          },
+          {
+            "code": "pdf_link_available_for_selective_reading",
+            "points": 2
+          },
+          {
+            "code": "collector_excerpt_available",
+            "points": 1
+          }
+        ],
+        "action": "selective_pdf_read"
+      },
+      "errors": []
+    },
+    {
+      "canonical_id": "mirae_asset_official:mirae-2343025",
+      "source": "mirae_asset_official",
+      "report_id": "mirae-2343025",
+      "broker": "미래에셋증권",
+      "title": "Fixed Income Monthly",
+      "published_date": "2026-09-30",
+      "upstream_category": "industry",
+      "upstream_category_label": "산업분석",
+      "upstream_subject": null,
+      "company": {
+        "name": null,
+        "ticker": null,
+        "status": "unresolved"
+      },
+      "classification": {
+        "category": "fixed_income",
+        "label": "채권",
+        "method": "deterministic_rules",
+        "confidence": "medium",
+        "reasons": [
+          {
+            "field": "title",
+            "matched": "Fixed Income"
+          }
+        ]
+      },
+      "sectors": [],
+      "themes": [
+        {
+          "name": "rates",
+          "field": "excerpt",
+          "matched": "연준"
+        }
+      ],
+      "content_status": {
+        "level": "html_excerpt",
+        "pdf_link_available": true,
+        "pdf_text_extracted": false,
+        "html_text_available": true,
+        "fulltext_read": false,
+        "extraction_error": "not_recorded"
+      },
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343025&messageNumber=2568&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2147481.pdf?attachmentId=2147481",
+      "provenance": {
+        "origin": "collector_public_metadata",
+        "link_verification": "not_checked",
+        "duplicate_group_id": "dg-fea1eae7e35ee8fb6a7e",
+        "source_records": [
+          {
+            "canonical_id": "mirae_asset_official:mirae-2343025",
+            "source": "mirae_asset_official",
+            "report_id": "mirae-2343025",
+            "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343025&messageNumber=2568&categoryId=1521",
+            "pdf_url": "https://securities.miraeasset.com/bbs/download/2147481.pdf?attachmentId=2147481"
+          }
+        ],
+        "source_records_complete": false
+      },
+      "report_claims": {
+        "excerpt": "[10월] 합리적 과잉: 플랫 기회 잡기 연준 10월 연속 인상 우려 상존",
+        "status": "author_claims_unverified"
+      },
+      "author_opinion": {
+        "rating": null,
+        "target_price": null,
+        "status": "collector_attributed_author_opinion"
+      },
+      "signals": {
+        "keyword_signals": [],
+        "numeric_revisions": [],
+        "numeric_revision_status": "none",
+        "conflicting_keyword_directions": false
+      },
+      "read_priority": {
+        "rank": 2,
+        "score": 13,
+        "reasons": [
+          {
+            "code": "published_on_requested_date",
+            "points": 2
+          },
+          {
+            "code": "configured_priority_match",
+            "points": 8
+          },
+          {
+            "code": "pdf_link_available_for_selective_reading",
+            "points": 2
+          },
+          {
+            "code": "collector_excerpt_available",
+            "points": 1
+          }
+        ],
+        "action": "selective_pdf_read"
+      },
+      "errors": []
+    },
+    {
+      "canonical_id": "mirae_asset_official:mirae-2343030",
+      "source": "mirae_asset_official",
+      "report_id": "mirae-2343030",
+      "broker": "미래에셋증권",
+      "title": "삼성E&A (028050/매수)",
+      "published_date": "2026-09-30",
+      "upstream_category": "industry",
+      "upstream_category_label": "산업분석",
+      "upstream_subject": null,
+      "company": {
+        "name": "삼성E&A",
+        "ticker": null,
+        "status": "title_candidate"
+      },
+      "classification": {
+        "category": "company",
+        "label": "기업",
+        "method": "deterministic_rules",
+        "confidence": "medium",
+        "reasons": [
+          {
+            "field": "title",
+            "matched": "(028050/매수)"
+          }
+        ]
+      },
+      "sectors": [
+        {
+          "name": "industrials",
+          "field": "title",
+          "matched": "삼성E&A"
+        }
+      ],
+      "themes": [],
+      "content_status": {
+        "level": "html_excerpt",
+        "pdf_link_available": true,
+        "pdf_text_extracted": false,
+        "html_text_available": true,
+        "fulltext_read": false,
+        "extraction_error": "not_recorded"
+      },
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343030&messageNumber=2569&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2147486.pdf?attachmentId=2147486",
+      "provenance": {
+        "origin": "collector_public_metadata",
+        "link_verification": "not_checked",
+        "duplicate_group_id": "dg-0b0e0e6c7c784b2a4c12",
+        "source_records": [
+          {
+            "canonical_id": "mirae_asset_official:mirae-2343030",
+            "source": "mirae_asset_official",
+            "report_id": "mirae-2343030",
+            "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343030&messageNumber=2569&categoryId=1521",
+            "pdf_url": "https://securities.miraeasset.com/bbs/download/2147486.pdf?attachmentId=2147486"
+          }
+        ],
+        "source_records_complete": false
+      },
+      "report_claims": {
+        "excerpt": "관련종목 잘하는 것도, 잘할 것도 많다",
+        "status": "author_claims_unverified"
+      },
+      "author_opinion": {
+        "rating": null,
+        "target_price": null,
+        "status": "collector_attributed_author_opinion"
+      },
+      "signals": {
+        "keyword_signals": [
+          "earnings_estimate_up"
+        ],
+        "numeric_revisions": [],
+        "numeric_revision_status": "none",
+        "conflicting_keyword_directions": false
+      },
+      "read_priority": {
+        "rank": 3,
+        "score": 13,
+        "reasons": [
+          {
+            "code": "published_on_requested_date",
+            "points": 2
+          },
+          {
+            "code": "configured_priority_match",
+            "points": 8
+          },
+          {
+            "code": "pdf_link_available_for_selective_reading",
+            "points": 2
+          },
+          {
+            "code": "collector_excerpt_available",
+            "points": 1
+          }
+        ],
+        "action": "selective_pdf_read"
+      },
+      "errors": []
+    },
+    {
+      "canonical_id": "mirae_asset_official:mirae-2343037",
+      "source": "mirae_asset_official",
+      "report_id": "mirae-2343037",
+      "broker": "미래에셋증권",
+      "title": "방산/첨단항공우주 (비중확대/신규)",
+      "published_date": "2026-09-30",
+      "upstream_category": "market",
+      "upstream_category_label": "시황정보",
+      "upstream_subject": null,
+      "company": {
+        "name": null,
+        "ticker": null,
+        "status": "unresolved"
+      },
+      "classification": {
+        "category": "industry",
+        "label": "산업",
+        "method": "deterministic_rules",
+        "confidence": "medium",
+        "reasons": [
+          {
+            "field": "title",
+            "matched": "방산"
+          }
+        ]
+      },
+      "sectors": [
+        {
+          "name": "defense_aerospace",
+          "field": "title",
+          "matched": "방산"
+        }
+      ],
+      "themes": [],
+      "content_status": {
+        "level": "html_excerpt",
+        "pdf_link_available": true,
+        "pdf_text_extracted": false,
+        "html_text_available": true,
+        "fulltext_read": false,
+        "extraction_error": "not_recorded"
+      },
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343037&messageNumber=2570&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2147487.pdf?attachmentId=2147487",
+      "provenance": {
+        "origin": "collector_public_metadata",
+        "link_verification": "not_checked",
+        "duplicate_group_id": "dg-10aec074a72207f85063",
+        "source_records": [
+          {
+            "canonical_id": "mirae_asset_official:mirae-2343037",
+            "source": "mirae_asset_official",
+            "report_id": "mirae-2343037",
+            "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343037&messageNumber=2570&categoryId=1521",
+            "pdf_url": "https://securities.miraeasset.com/bbs/download/2147487.pdf?attachmentId=2147487"
+          }
+        ],
+        "source_records_complete": false
+      },
+      "report_claims": {
+        "excerpt": "관련종목 Executive Summary",
+        "status": "author_claims_unverified"
+      },
+      "author_opinion": {
+        "rating": null,
+        "target_price": null,
+        "status": "collector_attributed_author_opinion"
+      },
+      "signals": {
+        "keyword_signals": [],
+        "numeric_revisions": [],
+        "numeric_revision_status": "none",
+        "conflicting_keyword_directions": false
+      },
+      "read_priority": {
+        "rank": 4,
+        "score": 13,
+        "reasons": [
+          {
+            "code": "published_on_requested_date",
+            "points": 2
+          },
+          {
+            "code": "configured_priority_match",
+            "points": 8
+          },
+          {
+            "code": "pdf_link_available_for_selective_reading",
+            "points": 2
+          },
+          {
+            "code": "collector_excerpt_available",
+            "points": 1
+          }
+        ],
+        "action": "selective_pdf_read"
+      },
+      "errors": []
+    },
+    {
+      "canonical_id": "mirae_asset_official:mirae-2343046",
+      "source": "mirae_asset_official",
+      "report_id": "mirae-2343046",
+      "broker": "미래에셋증권",
+      "title": "[방산/첨단항공우주] LIG디펜스앤에어로스페이스 (079550/매수)",
+      "published_date": "2026-09-30",
+      "upstream_category": "invest",
+      "upstream_category_label": "투자정보",
+      "upstream_subject": null,
+      "company": {
+        "name": "LIG디펜스앤에어로스페이스",
+        "ticker": null,
+        "status": "title_candidate"
+      },
+      "classification": {
+        "category": "company",
+        "label": "기업",
+        "method": "deterministic_rules",
+        "confidence": "medium",
+        "reasons": [
+          {
+            "field": "title",
+            "matched": "(079550/매수)"
+          }
+        ]
+      },
+      "sectors": [
+        {
+          "name": "defense_aerospace",
+          "field": "title",
+          "matched": "방산"
+        }
+      ],
+      "themes": [],
+      "content_status": {
+        "level": "html_excerpt",
+        "pdf_link_available": true,
+        "pdf_text_extracted": false,
+        "html_text_available": true,
+        "fulltext_read": false,
+        "extraction_error": "not_recorded"
+      },
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343046&messageNumber=2573&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2147491.pdf?attachmentId=2147491",
+      "provenance": {
+        "origin": "collector_public_metadata",
+        "link_verification": "not_checked",
+        "duplicate_group_id": "dg-ec0b26bf1e3ec03ae873",
+        "source_records": [
+          {
+            "canonical_id": "mirae_asset_official:mirae-2343046",
+            "source": "mirae_asset_official",
+            "report_id": "mirae-2343046",
+            "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343046&messageNumber=2573&categoryId=1521",
+            "pdf_url": "https://securities.miraeasset.com/bbs/download/2147491.pdf?attachmentId=2147491"
+          }
+        ],
+        "source_records_complete": false
+      },
+      "report_claims": {
+        "excerpt": "관련종목 미사일 수요의 종착지",
+        "status": "author_claims_unverified"
+      },
+      "author_opinion": {
+        "rating": null,
+        "target_price": null,
+        "status": "collector_attributed_author_opinion"
+      },
+      "signals": {
+        "keyword_signals": [],
+        "numeric_revisions": [],
+        "numeric_revision_status": "none",
+        "conflicting_keyword_directions": false
+      },
+      "read_priority": {
+        "rank": 5,
+        "score": 13,
+        "reasons": [
+          {
+            "code": "published_on_requested_date",
+            "points": 2
+          },
+          {
+            "code": "configured_priority_match",
+            "points": 8
+          },
+          {
+            "code": "pdf_link_available_for_selective_reading",
+            "points": 2
+          },
+          {
+            "code": "collector_excerpt_available",
+            "points": 1
+          }
+        ],
+        "action": "selective_pdf_read"
+      },
+      "errors": []
+    },
+    {
+      "canonical_id": "shinhan_investment_official:shinhan-gicomment-942024",
+      "source": "shinhan_investment_official",
+      "report_id": "shinhan-gicomment-942024",
+      "broker": "신한투자증권",
+      "title": "마켓레이더 - 유가 진정, 금리 둔감, 실적 대기(9월 30일)",
+      "published_date": "2026-09-30",
+      "upstream_category": "market",
+      "upstream_category_label": "시황정보",
+      "upstream_subject": null,
+      "company": {
+        "name": null,
+        "ticker": null,
+        "status": "unresolved"
+      },
+      "classification": {
+        "category": "strategy",
+        "label": "시장·전략",
+        "method": "deterministic_rules",
+        "confidence": "medium",
+        "reasons": [
+          {
+            "field": "title",
+            "matched": "마켓"
+          }
+        ]
+      },
+      "sectors": [
+        {
+          "name": "energy",
+          "field": "title",
+          "matched": "유가"
+        }
+      ],
+      "themes": [
+        {
+          "name": "earnings",
+          "field": "title",
+          "matched": "실적"
+        },
+        {
+          "name": "rates",
+          "field": "title",
+          "matched": "금리"
+        },
+        {
+          "name": "commodities",
+          "field": "title",
+          "matched": "유가"
+        }
+      ],
+      "content_status": {
+        "level": "html_excerpt",
+        "pdf_link_available": true,
+        "pdf_text_extracted": false,
+        "html_text_available": true,
+        "fulltext_read": false,
+        "extraction_error": "not_recorded"
+      },
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=942024",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354031",
+      "provenance": {
+        "origin": "collector_public_metadata",
+        "link_verification": "not_checked",
+        "duplicate_group_id": "dg-18691d9e617adac539ca",
+        "source_records": [
+          {
+            "canonical_id": "shinhan_investment_official:shinhan-gicomment-942024",
+            "source": "shinhan_investment_official",
+            "report_id": "shinhan-gicomment-942024",
+            "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=942024",
+            "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354031"
+          }
+        ],
+        "source_records_complete": false
+      },
+      "report_claims": {
+        "excerpt": "KOSPI는 0.6% 상승한 6,909.7p. 유가 하락과 장기 금리 상승 등 Macro 엇갈림 속 Micron 실적 대기",
+        "status": "author_claims_unverified"
+      },
+      "author_opinion": {
+        "rating": null,
+        "target_price": null,
+        "status": "collector_attributed_author_opinion"
+      },
+      "signals": {
+        "keyword_signals": [],
+        "numeric_revisions": [],
+        "numeric_revision_status": "none",
+        "conflicting_keyword_directions": false
+      },
+      "read_priority": {
+        "rank": 6,
+        "score": 13,
+        "reasons": [
+          {
+            "code": "published_on_requested_date",
+            "points": 2
+          },
+          {
+            "code": "configured_priority_match",
+            "points": 8
+          },
+          {
+            "code": "pdf_link_available_for_selective_reading",
+            "points": 2
+          },
+          {
+            "code": "collector_excerpt_available",
+            "points": 1
+          }
+        ],
+        "action": "selective_pdf_read"
+      },
+      "errors": []
+    },
+    {
+      "canonical_id": "shinhan_investment_official:shinhan-gicompanyanalyst-942007",
+      "source": "shinhan_investment_official",
+      "report_id": "shinhan-gicompanyanalyst-942007",
+      "broker": "신한투자증권",
+      "title": "삼성전자; HBM 시장 침투 준비 완료",
+      "published_date": "2026-09-30",
+      "upstream_category": "company",
+      "upstream_category_label": "종목분석",
+      "upstream_subject": null,
+      "company": {
+        "name": "삼성전자",
+        "ticker": null,
+        "status": "title_candidate"
+      },
+      "classification": {
+        "category": "company",
+        "label": "기업",
+        "method": "deterministic_rules",
+        "confidence": "medium",
+        "reasons": [
+          {
+            "field": "title",
+            "matched": "삼성전자;"
+          }
+        ]
+      },
+      "sectors": [
+        {
+          "name": "semiconductors",
+          "field": "title",
+          "matched": "HBM"
+        }
+      ],
+      "themes": [
+        {
+          "name": "hbm",
+          "field": "title",
+          "matched": "HBM"
+        },
+        {
+          "name": "earnings",
+          "field": "excerpt",
+          "matched": "실적"
+        }
+      ],
+      "content_status": {
+        "level": "html_excerpt",
+        "pdf_link_available": true,
+        "pdf_text_extracted": false,
+        "html_text_available": true,
+        "fulltext_read": false,
+        "extraction_error": "not_recorded"
+      },
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=942007",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354022",
+      "provenance": {
+        "origin": "collector_public_metadata",
+        "link_verification": "not_checked",
+        "duplicate_group_id": "dg-530f1ea8c36c9ce765e0",
+        "source_records": [
+          {
+            "canonical_id": "shinhan_investment_official:shinhan-gicompanyanalyst-942007",
+            "source": "shinhan_investment_official",
+            "report_id": "shinhan-gicompanyanalyst-942007",
+            "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=942007",
+            "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354022"
+          }
+        ],
+        "source_records_complete": false
+      },
+      "report_claims": {
+        "excerpt": "신한생각: 올해도 견조하지만 내년 실적은 더욱 기대되는 시점 3Q26 Preview: 충당금 반영 후에도 영업이익 100조원 초과 전망",
+        "status": "author_claims_unverified"
+      },
+      "author_opinion": {
+        "rating": "매수",
+        "target_price": "125,105원",
+        "status": "collector_attributed_author_opinion"
+      },
+      "signals": {
+        "keyword_signals": [
+          "earnings_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "numeric_revisions": [],
+        "numeric_revision_status": "none",
+        "conflicting_keyword_directions": true
+      },
+      "read_priority": {
+        "rank": 7,
+        "score": 13,
+        "reasons": [
+          {
+            "code": "published_on_requested_date",
+            "points": 2
+          },
+          {
+            "code": "configured_priority_match",
+            "points": 8
+          },
+          {
+            "code": "pdf_link_available_for_selective_reading",
+            "points": 2
+          },
+          {
+            "code": "collector_excerpt_available",
+            "points": 1
+          }
+        ],
+        "action": "selective_pdf_read"
+      },
+      "errors": []
+    },
+    {
+      "canonical_id": "shinhan_investment_official:shinhan-gicompanyanalyst-942008",
+      "source": "shinhan_investment_official",
+      "report_id": "shinhan-gicompanyanalyst-942008",
+      "broker": "신한투자증권",
+      "title": "SK하이닉스; 흔들림 없는 실적 우상향",
+      "published_date": "2026-09-30",
+      "upstream_category": "company",
+      "upstream_category_label": "종목분석",
+      "upstream_subject": null,
+      "company": {
+        "name": "SK하이닉스",
+        "ticker": null,
+        "status": "title_candidate"
+      },
+      "classification": {
+        "category": "company",
+        "label": "기업",
+        "method": "deterministic_rules",
+        "confidence": "medium",
+        "reasons": [
+          {
+            "field": "title",
+            "matched": "SK하이닉스;"
+          }
+        ]
+      },
+      "sectors": [
+        {
+          "name": "semiconductors",
+          "field": "title",
+          "matched": "SK하이닉스"
+        }
+      ],
+      "themes": [
+        {
+          "name": "earnings",
+          "field": "title",
+          "matched": "실적"
+        },
+        {
+          "name": "valuation",
+          "field": "excerpt",
+          "matched": "Valuation"
+        }
+      ],
+      "content_status": {
+        "level": "html_excerpt",
+        "pdf_link_available": true,
+        "pdf_text_extracted": false,
+        "html_text_available": true,
+        "fulltext_read": false,
+        "extraction_error": "not_recorded"
+      },
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=942008",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354023",
+      "provenance": {
+        "origin": "collector_public_metadata",
+        "link_verification": "not_checked",
+        "duplicate_group_id": "dg-2c51dd471c7610ee2bf8",
+        "source_records": [
+          {
+            "canonical_id": "shinhan_investment_official:shinhan-gicompanyanalyst-942008",
+            "source": "shinhan_investment_official",
+            "report_id": "shinhan-gicompanyanalyst-942008",
+            "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=942008",
+            "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354023"
+          }
+        ],
+        "source_records_complete": false
+      },
+      "report_claims": {
+        "excerpt": "3Q26 Preview: 환 영향 → 추정치 조정 불가피하나 방향성은 불변 Valuation & Risk: 12MF PBR 2.1배, DRAM Peer 내 가장 저평가",
+        "status": "author_claims_unverified"
+      },
+      "author_opinion": {
+        "rating": "매수",
+        "target_price": "825,088원",
+        "status": "collector_attributed_author_opinion"
+      },
+      "signals": {
+        "keyword_signals": [
+          "earnings_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "numeric_revisions": [],
+        "numeric_revision_status": "none",
+        "conflicting_keyword_directions": true
+      },
+      "read_priority": {
+        "rank": 8,
+        "score": 13,
+        "reasons": [
+          {
+            "code": "published_on_requested_date",
+            "points": 2
+          },
+          {
+            "code": "configured_priority_match",
+            "points": 8
+          },
+          {
+            "code": "pdf_link_available_for_selective_reading",
+            "points": 2
+          },
+          {
+            "code": "collector_excerpt_available",
+            "points": 1
+          }
+        ],
+        "action": "selective_pdf_read"
+      },
+      "errors": []
+    },
+    {
+      "canonical_id": "shinhan_investment_official:shinhan-gicomment-942014",
+      "source": "shinhan_investment_official",
+      "report_id": "shinhan-gicomment-942014",
+      "broker": "신한투자증권",
+      "title": "글로벌 주식전략; 게임의 룰은 바뀌지 않았다",
+      "published_date": "2026-09-30",
+      "upstream_category": "market",
+      "upstream_category_label": "시황정보",
+      "upstream_subject": null,
+      "company": {
+        "name": null,
+        "ticker": null,
+        "status": "unresolved"
+      },
+      "classification": {
+        "category": "strategy",
+        "label": "시장·전략",
+        "method": "deterministic_rules",
+        "confidence": "medium",
+        "reasons": [
+          {
+            "field": "title",
+            "matched": "전략"
+          }
+        ]
+      },
+      "sectors": [],
+      "themes": [],
+      "content_status": {
+        "level": "html_excerpt",
+        "pdf_link_available": true,
+        "pdf_text_extracted": false,
+        "html_text_available": true,
+        "fulltext_read": false,
+        "extraction_error": "not_recorded"
+      },
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=942014",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354025",
+      "provenance": {
+        "origin": "collector_public_metadata",
+        "link_verification": "not_checked",
+        "duplicate_group_id": "dg-17da8933dd8dafa8befc",
+        "source_records": [
+          {
+            "canonical_id": "shinhan_investment_official:shinhan-gicomment-942014",
+            "source": "shinhan_investment_official",
+            "report_id": "shinhan-gicomment-942014",
+            "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=942014",
+            "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354025"
+          }
+        ],
+        "source_records_complete": false
+      },
+      "report_claims": {
+        "excerpt": "이번 강세장을 지배하는 게임의 룰은 바뀌지 않았다 전술적 관점에서도, 4분기 시장은 3분기보다 더 나은 위치로 이동",
+        "status": "author_claims_unverified"
+      },
+      "author_opinion": {
+        "rating": null,
+        "target_price": null,
+        "status": "collector_attributed_author_opinion"
+      },
+      "signals": {
+        "keyword_signals": [
+          "earnings_estimate_down",
+          "earnings_estimate_up"
+        ],
+        "numeric_revisions": [],
+        "numeric_revision_status": "none",
+        "conflicting_keyword_directions": true
+      },
+      "read_priority": {
+        "rank": 9,
+        "score": 5,
+        "reasons": [
+          {
+            "code": "published_on_requested_date",
+            "points": 2
+          },
+          {
+            "code": "pdf_link_available_for_selective_reading",
+            "points": 2
+          },
+          {
+            "code": "collector_excerpt_available",
+            "points": 1
+          }
+        ],
+        "action": "selective_pdf_read"
+      },
+      "errors": []
+    },
+    {
+      "canonical_id": "shinhan_investment_official:shinhan-gicomment-942015",
+      "source": "shinhan_investment_official",
+      "report_id": "shinhan-gicomment-942015",
+      "broker": "신한투자증권",
+      "title": "주식전략; (4분기 주식시장 전망) 고산병",
+      "published_date": "2026-09-30",
+      "upstream_category": "market",
+      "upstream_category_label": "시황정보",
+      "upstream_subject": null,
+      "company": {
+        "name": null,
+        "ticker": null,
+        "status": "unresolved"
+      },
+      "classification": {
+        "category": "strategy",
+        "label": "시장·전략",
+        "method": "deterministic_rules",
+        "confidence": "medium",
+        "reasons": [
+          {
+            "field": "title",
+            "matched": "전략"
+          }
+        ]
+      },
+      "sectors": [],
+      "themes": [
+        {
+          "name": "china",
+          "field": "excerpt",
+          "matched": "중국"
+        }
+      ],
+      "content_status": {
+        "level": "html_excerpt",
+        "pdf_link_available": true,
+        "pdf_text_extracted": false,
+        "html_text_available": true,
+        "fulltext_read": false,
+        "extraction_error": "not_recorded"
+      },
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=942015",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354026",
+      "provenance": {
+        "origin": "collector_public_metadata",
+        "link_verification": "not_checked",
+        "duplicate_group_id": "dg-2a0a487a12c2307251bb",
+        "source_records": [
+          {
+            "canonical_id": "shinhan_investment_official:shinhan-gicomment-942015",
+            "source": "shinhan_investment_official",
+            "report_id": "shinhan-gicomment-942015",
+            "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=942015",
+            "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354026"
+          }
+        ],
+        "source_records_complete": false
+      },
+      "report_claims": {
+        "excerpt": "미국 주식시장 전략 - 게임의 룰은 바뀌지 않았다 중국 주식시장 전략 - 파도가 걷히면 보이는 것",
+        "status": "author_claims_unverified"
+      },
+      "author_opinion": {
+        "rating": null,
+        "target_price": null,
+        "status": "collector_attributed_author_opinion"
+      },
+      "signals": {
+        "keyword_signals": [],
+        "numeric_revisions": [],
+        "numeric_revision_status": "none",
+        "conflicting_keyword_directions": false
+      },
+      "read_priority": {
+        "rank": 10,
+        "score": 5,
+        "reasons": [
+          {
+            "code": "published_on_requested_date",
+            "points": 2
+          },
+          {
+            "code": "pdf_link_available_for_selective_reading",
+            "points": 2
+          },
+          {
+            "code": "collector_excerpt_available",
+            "points": 1
+          }
+        ],
+        "action": "selective_pdf_read"
+      },
+      "errors": []
+    },
+    {
+      "canonical_id": "shinhan_investment_official:shinhan-gicompanyanalyst-942005",
+      "source": "shinhan_investment_official",
+      "report_id": "shinhan-gicompanyanalyst-942005",
+      "broker": "신한투자증권",
+      "title": "삼립; 실적으로 증명할 턴어라운드",
+      "published_date": "2026-09-30",
+      "upstream_category": "company",
+      "upstream_category_label": "종목분석",
+      "upstream_subject": null,
+      "company": {
+        "name": "삼립",
+        "ticker": null,
+        "status": "title_candidate"
+      },
+      "classification": {
+        "category": "company",
+        "label": "기업",
+        "method": "deterministic_rules",
+        "confidence": "medium",
+        "reasons": [
+          {
+            "field": "title",
+            "matched": "삼립;"
+          }
+        ]
+      },
+      "sectors": [
+        {
+          "name": "consumer",
+          "field": "title",
+          "matched": "삼립"
+        }
+      ],
+      "themes": [
+        {
+          "name": "earnings",
+          "field": "title",
+          "matched": "실적"
+        }
+      ],
+      "content_status": {
+        "level": "html_excerpt",
+        "pdf_link_available": true,
+        "pdf_text_extracted": false,
+        "html_text_available": true,
+        "fulltext_read": false,
+        "extraction_error": "not_recorded"
+      },
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=942005",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354020",
+      "provenance": {
+        "origin": "collector_public_metadata",
+        "link_verification": "not_checked",
+        "duplicate_group_id": "dg-085ea6d1766220e2e16a",
+        "source_records": [
+          {
+            "canonical_id": "shinhan_investment_official:shinhan-gicompanyanalyst-942005",
+            "source": "shinhan_investment_official",
+            "report_id": "shinhan-gicompanyanalyst-942005",
+            "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=942005",
+            "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354020"
+          }
+        ],
+        "source_records_complete": false
+      },
+      "report_claims": {
+        "excerpt": "신한생각: 국내 1위 경쟁력을 글로벌로 확장하는 원년 2030년 영업이익 1,700억원, 코스트코를 시작으로 글로벌 성장이 Key",
+        "status": "author_claims_unverified"
+      },
+      "author_opinion": {
+        "rating": "Not Rated",
+        "target_price": null,
+        "status": "collector_attributed_author_opinion"
+      },
+      "signals": {
+        "keyword_signals": [
+          "earnings_estimate_up",
+          "margin_estimate_up"
+        ],
+        "numeric_revisions": [],
+        "numeric_revision_status": "none",
+        "conflicting_keyword_directions": false
+      },
+      "read_priority": {
+        "rank": 11,
+        "score": 5,
+        "reasons": [
+          {
+            "code": "published_on_requested_date",
+            "points": 2
+          },
+          {
+            "code": "pdf_link_available_for_selective_reading",
+            "points": 2
+          },
+          {
+            "code": "collector_excerpt_available",
+            "points": 1
+          }
+        ],
+        "action": "selective_pdf_read"
+      },
+      "errors": []
+    },
+    {
+      "canonical_id": "shinhan_investment_official:shinhan-gicompanyanalyst-942006",
+      "source": "shinhan_investment_official",
+      "report_id": "shinhan-gicompanyanalyst-942006",
+      "broker": "신한투자증권",
+      "title": "LX인터내셔널; 순풍에 돛을 달다",
+      "published_date": "2026-09-30",
+      "upstream_category": "company",
+      "upstream_category_label": "종목분석",
+      "upstream_subject": null,
+      "company": {
+        "name": "LX인터내셔널",
+        "ticker": null,
+        "status": "title_candidate"
+      },
+      "classification": {
+        "category": "company",
+        "label": "기업",
+        "method": "deterministic_rules",
+        "confidence": "medium",
+        "reasons": [
+          {
+            "field": "title",
+            "matched": "LX인터내셔널;"
+          }
+        ]
+      },
+      "sectors": [
+        {
+          "name": "industrials",
+          "field": "excerpt",
+          "matched": "물류"
+        }
+      ],
+      "themes": [
+        {
+          "name": "earnings",
+          "field": "excerpt",
+          "matched": "Preview"
+        }
+      ],
+      "content_status": {
+        "level": "html_excerpt",
+        "pdf_link_available": true,
+        "pdf_text_extracted": false,
+        "html_text_available": true,
+        "fulltext_read": false,
+        "extraction_error": "not_recorded"
+      },
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=942006",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354021",
+      "provenance": {
+        "origin": "collector_public_metadata",
+        "link_verification": "not_checked",
+        "duplicate_group_id": "dg-190f9e2e9b8917d80dde",
+        "source_records": [
+          {
+            "canonical_id": "shinhan_investment_official:shinhan-gicompanyanalyst-942006",
+            "source": "shinhan_investment_official",
+            "report_id": "shinhan-gicompanyanalyst-942006",
+            "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=942006",
+            "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354021"
+          }
+        ],
+        "source_records_complete": false
+      },
+      "report_claims": {
+        "excerpt": "신한생각: 여러모로 끌린다 3Q26 Preview: 물류가 이끌 컨센서스 상회",
+        "status": "author_claims_unverified"
+      },
+      "author_opinion": {
+        "rating": "매수",
+        "target_price": "66,000원",
+        "status": "collector_attributed_author_opinion"
+      },
+      "signals": {
+        "keyword_signals": [
+          "earnings_estimate_up",
+          "margin_estimate_down",
+          "margin_estimate_up"
+        ],
+        "numeric_revisions": [],
+        "numeric_revision_status": "none",
+        "conflicting_keyword_directions": true
+      },
+      "read_priority": {
+        "rank": 12,
+        "score": 5,
+        "reasons": [
+          {
+            "code": "published_on_requested_date",
+            "points": 2
+          },
+          {
+            "code": "pdf_link_available_for_selective_reading",
+            "points": 2
+          },
+          {
+            "code": "collector_excerpt_available",
+            "points": 1
+          }
+        ],
+        "action": "selective_pdf_read"
+      },
+      "errors": []
+    },
+    {
+      "canonical_id": "korea_investment_official:kis-159708",
+      "source": "korea_investment_official",
+      "report_id": "kis-159708",
+      "broker": "한국투자증권",
+      "title": "2026년 9월 30일 한눈에 투데이",
+      "published_date": "2026-09-30",
+      "upstream_category": "industry",
+      "upstream_category_label": "산업분석",
+      "upstream_subject": null,
+      "company": {
+        "name": null,
+        "ticker": null,
+        "status": "unresolved"
+      },
+      "classification": {
+        "category": "strategy",
+        "label": "시장·전략",
+        "method": "deterministic_rules",
+        "confidence": "medium",
+        "reasons": [
+          {
+            "field": "title",
+            "matched": "한눈에 투데이"
+          }
+        ]
+      },
+      "sectors": [],
+      "themes": [],
+      "content_status": {
+        "level": "html_excerpt",
+        "pdf_link_available": false,
+        "pdf_text_extracted": false,
+        "html_text_available": true,
+        "fulltext_read": false,
+        "extraction_error": "not_recorded"
+      },
+      "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159708",
+      "pdf_url": null,
+      "provenance": {
+        "origin": "collector_public_metadata",
+        "link_verification": "not_checked",
+        "duplicate_group_id": "dg-63f8e5ea2e89c75e6963",
+        "source_records": [
+          {
+            "canonical_id": "korea_investment_official:kis-159708",
+            "source": "korea_investment_official",
+            "report_id": "kis-159708",
+            "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159708",
+            "pdf_url": null
+          }
+        ],
+        "source_records_complete": false
+      },
+      "report_claims": {
+        "excerpt": "한국 9월 전산업 기업심리지수는 전월 대비 0.5p 내린 99.1을 기록. 기업의 체감 경기 동향과 심리 상태가 석 달 만에 소폭 하락.",
+        "status": "author_claims_unverified"
+      },
+      "author_opinion": {
+        "rating": null,
+        "target_price": null,
+        "status": "collector_attributed_author_opinion"
+      },
+      "signals": {
+        "keyword_signals": [],
+        "numeric_revisions": [],
+        "numeric_revision_status": "none",
+        "conflicting_keyword_directions": false
+      },
+      "read_priority": {
+        "rank": 13,
+        "score": 3,
+        "reasons": [
+          {
+            "code": "published_on_requested_date",
+            "points": 2
+          },
+          {
+            "code": "collector_excerpt_available",
+            "points": 1
+          }
+        ],
+        "action": "selective_detail_read"
+      },
+      "errors": []
+    },
+    {
+      "canonical_id": "korea_investment_official:kis-159711",
+      "source": "korea_investment_official",
+      "report_id": "kis-159711",
+      "broker": "한국투자증권",
+      "title": "음식료:PB 상품 시장점유율 업데이트",
+      "published_date": "2026-09-30",
+      "upstream_category": "industry",
+      "upstream_category_label": "산업분석",
+      "upstream_subject": "스티펠",
+      "company": {
+        "name": null,
+        "ticker": null,
+        "status": "unresolved"
+      },
+      "classification": {
+        "category": "industry",
+        "label": "산업",
+        "method": "deterministic_rules",
+        "confidence": "medium",
+        "reasons": [
+          {
+            "field": "title",
+            "matched": "음식료"
+          }
+        ]
+      },
+      "sectors": [
+        {
+          "name": "consumer",
+          "field": "excerpt",
+          "matched": "유통"
+        }
+      ],
+      "themes": [],
+      "content_status": {
+        "level": "html_excerpt",
+        "pdf_link_available": false,
+        "pdf_text_extracted": false,
+        "html_text_available": true,
+        "fulltext_read": false,
+        "extraction_error": "not_recorded"
+      },
+      "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159711",
+      "pdf_url": null,
+      "provenance": {
+        "origin": "collector_public_metadata",
+        "link_verification": "not_checked",
+        "duplicate_group_id": "dg-e45973199150500564b5",
+        "source_records": [
+          {
+            "canonical_id": "korea_investment_official:kis-159711",
+            "source": "korea_investment_official",
+            "report_id": "kis-159711",
+            "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159711",
+            "pdf_url": null
+          }
+        ],
+        "source_records_complete": false
+      },
+      "report_claims": {
+        "excerpt": "최근 한 달간 PB(자체브랜드) 시장점유율은 전년동기대비 10bp 하락했고, 전월과 비교해서는 보합이었다. 9월 20일 종료된 최근 4주간 전체 유통채널 기준으로 PB 매출은 1.7% 증가, 브랜드 제품 매출은 2.3% 증가했다.",
+        "status": "author_claims_unverified"
+      },
+      "author_opinion": {
+        "rating": null,
+        "target_price": null,
+        "status": "collector_attributed_author_opinion"
+      },
+      "signals": {
+        "keyword_signals": [
+          "earnings_estimate_up"
+        ],
+        "numeric_revisions": [],
+        "numeric_revision_status": "none",
+        "conflicting_keyword_directions": false
+      },
+      "read_priority": {
+        "rank": 14,
+        "score": 3,
+        "reasons": [
+          {
+            "code": "published_on_requested_date",
+            "points": 2
+          },
+          {
+            "code": "collector_excerpt_available",
+            "points": 1
+          }
+        ],
+        "action": "selective_detail_read"
+      },
+      "errors": []
+    },
+    {
+      "canonical_id": "korea_investment_official:kis-159712",
+      "source": "korea_investment_official",
+      "report_id": "kis-159712",
+      "broker": "한국투자증권",
+      "title": "카니발(CCL USA):[Review] F3Q26 실적 훑어보기",
+      "published_date": "2026-09-30",
+      "upstream_category": "company",
+      "upstream_category_label": "종목분석",
+      "upstream_subject": "스티펠",
+      "company": {
+        "name": "카니발",
+        "ticker": null,
+        "status": "title_candidate"
+      },
+      "classification": {
+        "category": "company",
+        "label": "기업",
+        "method": "deterministic_rules",
+        "confidence": "medium",
+        "reasons": [
+          {
+            "field": "title",
+            "matched": "(CCL USA)"
+          }
+        ]
+      },
+      "sectors": [],
+      "themes": [
+        {
+          "name": "earnings",
+          "field": "title",
+          "matched": "실적"
+        }
+      ],
+      "content_status": {
+        "level": "html_excerpt",
+        "pdf_link_available": false,
+        "pdf_text_extracted": false,
+        "html_text_available": true,
+        "fulltext_read": false,
+        "extraction_error": "not_recorded"
+      },
+      "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159712",
+      "pdf_url": null,
+      "provenance": {
+        "origin": "collector_public_metadata",
+        "link_verification": "not_checked",
+        "duplicate_group_id": "dg-2ef52f0ccc28eb24268d",
+        "source_records": [
+          {
+            "canonical_id": "korea_investment_official:kis-159712",
+            "source": "korea_investment_official",
+            "report_id": "kis-159712",
+            "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159712",
+            "pdf_url": null
+          }
+        ],
+        "source_records_complete": false
+      },
+      "report_claims": {
+        "excerpt": "F3Q26 실적 리뷰: 매출총액/순매출액은 각각 84.4억 달러/65.5억 달러로 당사 추정치인 83.8억 달러/64.9억 달러와 컨센서스인 83.6억 달러/64.4억 달러를 소폭 상회했다. 연료비는 6.15억 달러(톤당 826달러), 순이자비용은 2.68억 달러를 기록했다.",
+        "status": "author_claims_unverified"
+      },
+      "author_opinion": {
+        "rating": null,
+        "target_price": null,
+        "status": "collector_attributed_author_opinion"
+      },
+      "signals": {
+        "keyword_signals": [
+          "earnings_estimate_up"
+        ],
+        "numeric_revisions": [],
+        "numeric_revision_status": "none",
+        "conflicting_keyword_directions": false
+      },
+      "read_priority": {
+        "rank": 15,
+        "score": 3,
+        "reasons": [
+          {
+            "code": "published_on_requested_date",
+            "points": 2
+          },
+          {
+            "code": "collector_excerpt_available",
+            "points": 1
+          }
+        ],
+        "action": "selective_detail_read"
+      },
+      "errors": []
+    },
+    {
+      "canonical_id": "korea_investment_official:kis-159713",
+      "source": "korea_investment_official",
+      "report_id": "kis-159713",
+      "broker": "한국투자증권",
+      "title": "스트라이커(SYK USA):2H26 실적 눈높이 낮추고 목표가 하향",
+      "published_date": "2026-09-30",
+      "upstream_category": "company",
+      "upstream_category_label": "종목분석",
+      "upstream_subject": "스티펠",
+      "company": {
+        "name": "스트라이커",
+        "ticker": null,
+        "status": "title_candidate"
+      },
+      "classification": {
+        "category": "company",
+        "label": "기업",
+        "method": "deterministic_rules",
+        "confidence": "medium",
+        "reasons": [
+          {
+            "field": "title",
+            "matched": "(SYK USA)"
+          }
+        ]
+      },
+      "sectors": [],
+      "themes": [
+        {
+          "name": "earnings",
+          "field": "title",
+          "matched": "실적"
+        }
+      ],
+      "content_status": {
+        "level": "html_excerpt",
+        "pdf_link_available": false,
+        "pdf_text_extracted": false,
+        "html_text_available": true,
+        "fulltext_read": false,
+        "extraction_error": "not_recorded"
+      },
+      "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159713",
+      "pdf_url": null,
+      "provenance": {
+        "origin": "collector_public_metadata",
+        "link_verification": "not_checked",
+        "duplicate_group_id": "dg-68eaf6e0ab638c947786",
+        "source_records": [
+          {
+            "canonical_id": "korea_investment_official:kis-159713",
+            "source": "korea_investment_official",
+            "report_id": "kis-159713",
+            "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159713",
+            "pdf_url": null
+          }
+        ],
+        "source_records_complete": false
+      },
+      "report_claims": {
+        "excerpt": "이달 초 경쟁사 헬스케어 컨퍼런스에서 경영진은 2H26 전망에 부담을 주는 예상 밖의 요인 두 가지를 언급했다. 첫째, 2Q26에 나타난 말초혈관(Peripheral Vascular, PV) 사업의 생산·공급 차질이 지속되고 있다.",
+        "status": "author_claims_unverified"
+      },
+      "author_opinion": {
+        "rating": null,
+        "target_price": null,
+        "status": "collector_attributed_author_opinion"
+      },
+      "signals": {
+        "keyword_signals": [
+          "earnings_estimate_down"
+        ],
+        "numeric_revisions": [],
+        "numeric_revision_status": "none",
+        "conflicting_keyword_directions": false
+      },
+      "read_priority": {
+        "rank": 16,
+        "score": 3,
+        "reasons": [
+          {
+            "code": "published_on_requested_date",
+            "points": 2
+          },
+          {
+            "code": "collector_excerpt_available",
+            "points": 1
+          }
+        ],
+        "action": "selective_detail_read"
+      },
+      "errors": []
+    },
+    {
+      "canonical_id": "korea_investment_official:kis-159714",
+      "source": "korea_investment_official",
+      "report_id": "kis-159714",
+      "broker": "한국투자증권",
+      "title": "텍토닉 테라퓨틱(TECX USA):TX2100 초기 데이터 긍정적, APEX 앞두고 리스크 완화",
+      "published_date": "2026-09-30",
+      "upstream_category": "company",
+      "upstream_category_label": "종목분석",
+      "upstream_subject": "스티펠",
+      "company": {
+        "name": "텍토닉 테라퓨틱",
+        "ticker": null,
+        "status": "title_candidate"
+      },
+      "classification": {
+        "category": "company",
+        "label": "기업",
+        "method": "deterministic_rules",
+        "confidence": "medium",
+        "reasons": [
+          {
+            "field": "title",
+            "matched": "(TECX USA)"
+          }
+        ]
+      },
+      "sectors": [
+        {
+          "name": "healthcare",
+          "field": "title",
+          "matched": "테라퓨틱"
+        }
+      ],
+      "themes": [
+        {
+          "name": "clinical_data",
+          "field": "title",
+          "matched": "초기 데이터"
+        }
+      ],
+      "content_status": {
+        "level": "html_excerpt",
+        "pdf_link_available": false,
+        "pdf_text_extracted": false,
+        "html_text_available": true,
+        "fulltext_read": false,
+        "extraction_error": "not_recorded"
+      },
+      "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159714",
+      "pdf_url": null,
+      "provenance": {
+        "origin": "collector_public_metadata",
+        "link_verification": "not_checked",
+        "duplicate_group_id": "dg-3b904607b476ef480134",
+        "source_records": [
+          {
+            "canonical_id": "korea_investment_official:kis-159714",
+            "source": "korea_investment_official",
+            "report_id": "kis-159714",
+            "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159714",
+            "pdf_url": null
+          }
+        ],
+        "source_records_complete": false
+      },
+      "report_claims": {
+        "excerpt": "TECX가 HHT(유전성 출혈성 모세혈관확장증) 치료제 TX2100의 건강한 자원자(HV) 대상 임상에서 초기 안전성 및 약동학(PK) 결과를 발표했다. 전반적으로 긍정적인 내용이다.",
+        "status": "author_claims_unverified"
+      },
+      "author_opinion": {
+        "rating": null,
+        "target_price": null,
+        "status": "collector_attributed_author_opinion"
+      },
+      "signals": {
+        "keyword_signals": [],
+        "numeric_revisions": [],
+        "numeric_revision_status": "none",
+        "conflicting_keyword_directions": false
+      },
+      "read_priority": {
+        "rank": 17,
+        "score": 3,
+        "reasons": [
+          {
+            "code": "published_on_requested_date",
+            "points": 2
+          },
+          {
+            "code": "collector_excerpt_available",
+            "points": 1
+          }
+        ],
+        "action": "selective_detail_read"
+      },
+      "errors": []
+    },
+    {
+      "canonical_id": "korea_investment_official:kis-159715",
+      "source": "korea_investment_official",
+      "report_id": "kis-159715",
+      "broker": "한국투자증권",
+      "title": "소프트웨어:소프트웨어 산업 동향: MDB, NVDA, SNOW, ADBE",
+      "published_date": "2026-09-30",
+      "upstream_category": "industry",
+      "upstream_category_label": "산업분석",
+      "upstream_subject": "스티펠",
+      "company": {
+        "name": null,
+        "ticker": null,
+        "status": "unresolved"
+      },
+      "classification": {
+        "category": "industry",
+        "label": "산업",
+        "method": "deterministic_rules",
+        "confidence": "medium",
+        "reasons": [
+          {
+            "field": "title",
+            "matched": "산업"
+          }
+        ]
+      },
+      "sectors": [
+        {
+          "name": "software",
+          "field": "title",
+          "matched": "소프트웨어"
+        }
+      ],
+      "themes": [
+        {
+          "name": "ai",
+          "field": "excerpt",
+          "matched": "에이전틱"
+        }
+      ],
+      "content_status": {
+        "level": "html_excerpt",
+        "pdf_link_available": false,
+        "pdf_text_extracted": false,
+        "html_text_available": true,
+        "fulltext_read": false,
+        "extraction_error": "not_recorded"
+      },
+      "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159715",
+      "pdf_url": null,
+      "provenance": {
+        "origin": "collector_public_metadata",
+        "link_verification": "not_checked",
+        "duplicate_group_id": "dg-a878e96c449102e4ab78",
+        "source_records": [
+          {
+            "canonical_id": "korea_investment_official:kis-159715",
+            "source": "korea_investment_official",
+            "report_id": "kis-159715",
+            "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159715",
+            "pdf_url": null
+          }
+        ],
+        "source_records_complete": false
+      },
+      "report_claims": {
+        "excerpt": "- 엔비디아, Open Agent Safety Platform 발표하며 실리콘 계층에서 에이전틱 보안 기능 도입 - 스노우플레이크, 37.5억 달러 규모의 제로쿠폰 전환사채 발행 가격 발표",
+        "status": "author_claims_unverified"
+      },
+      "author_opinion": {
+        "rating": null,
+        "target_price": null,
+        "status": "collector_attributed_author_opinion"
+      },
+      "signals": {
+        "keyword_signals": [],
+        "numeric_revisions": [],
+        "numeric_revision_status": "none",
+        "conflicting_keyword_directions": false
+      },
+      "read_priority": {
+        "rank": 18,
+        "score": 3,
+        "reasons": [
+          {
+            "code": "published_on_requested_date",
+            "points": 2
+          },
+          {
+            "code": "collector_excerpt_available",
+            "points": 1
+          }
+        ],
+        "action": "selective_detail_read"
+      },
+      "errors": []
+    },
+    {
+      "canonical_id": "korea_investment_official:kis-159716",
+      "source": "korea_investment_official",
+      "report_id": "kis-159716",
+      "broker": "한국투자증권",
+      "title": "Weekly Market Review:미·중 무역 긴장 완화와 중국 증시",
+      "published_date": "2026-09-30",
+      "upstream_category": "company",
+      "upstream_category_label": "종목분석",
+      "upstream_subject": "JP모간",
+      "company": {
+        "name": null,
+        "ticker": null,
+        "status": "unresolved"
+      },
+      "classification": {
+        "category": "strategy",
+        "label": "시장·전략",
+        "method": "deterministic_rules",
+        "confidence": "medium",
+        "reasons": [
+          {
+            "field": "title",
+            "matched": "Market"
+          }
+        ]
+      },
+      "sectors": [],
+      "themes": [
+        {
+          "name": "earnings",
+          "field": "title",
+          "matched": "Review"
+        },
+        {
+          "name": "china",
+          "field": "title",
+          "matched": "중국"
+        }
+      ],
+      "content_status": {
+        "level": "html_excerpt",
+        "pdf_link_available": false,
+        "pdf_text_extracted": false,
+        "html_text_available": true,
+        "fulltext_read": false,
+        "extraction_error": "not_recorded"
+      },
+      "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159716",
+      "pdf_url": null,
+      "provenance": {
+        "origin": "collector_public_metadata",
+        "link_verification": "not_checked",
+        "duplicate_group_id": "dg-8087268fc321b85795ed",
+        "source_records": [
+          {
+            "canonical_id": "korea_investment_official:kis-159716",
+            "source": "korea_investment_official",
+            "report_id": "kis-159716",
+            "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159716",
+            "pdf_url": null
+          }
+        ],
+        "source_records_complete": false
+      },
+      "report_claims": {
+        "excerpt": "트럼프-시진핑 정상회담의 핵심 의제였던 무역에서 양국이 휴전을 1월까지 연장한 점은 긴장 관리 의지를 재확인한 긍정적 신호다. 추가 진전 시 미국 매출 비중이 높은 산업재·기술·헬스케어 등 중국 수출주가 상대적으로 수혜를 받을 수 있으며, 정책 가시성 개선도 실적 기대를 뒷받침할 전망이다.",
+        "status": "author_claims_unverified"
+      },
+      "author_opinion": {
+        "rating": null,
+        "target_price": null,
+        "status": "collector_attributed_author_opinion"
+      },
+      "signals": {
+        "keyword_signals": [
+          "earnings_estimate_up"
+        ],
+        "numeric_revisions": [],
+        "numeric_revision_status": "none",
+        "conflicting_keyword_directions": false
+      },
+      "read_priority": {
+        "rank": 19,
+        "score": 3,
+        "reasons": [
+          {
+            "code": "published_on_requested_date",
+            "points": 2
+          },
+          {
+            "code": "collector_excerpt_available",
+            "points": 1
+          }
+        ],
+        "action": "selective_detail_read"
+      },
+      "errors": []
+    },
+    {
+      "canonical_id": "mirae_asset_official:mirae-2343022",
+      "source": "mirae_asset_official",
+      "report_id": "mirae-2343022",
+      "broker": "미래에셋증권",
+      "title": "글로벌 마켓 브리핑(9월 30일)",
+      "published_date": "2026-09-30",
+      "upstream_category": "market",
+      "upstream_category_label": "시황정보",
+      "upstream_subject": null,
+      "company": {
+        "name": null,
+        "ticker": null,
+        "status": "unresolved"
+      },
+      "classification": {
+        "category": "strategy",
+        "label": "시장·전략",
+        "method": "deterministic_rules",
+        "confidence": "medium",
+        "reasons": [
+          {
+            "field": "title",
+            "matched": "마켓"
+          }
+        ]
+      },
+      "sectors": [],
+      "themes": [],
+      "content_status": {
+        "level": "title_only",
+        "pdf_link_available": true,
+        "pdf_text_extracted": false,
+        "html_text_available": false,
+        "fulltext_read": false,
+        "extraction_error": "not_recorded"
+      },
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343022&messageNumber=2567&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2147479.pdf?attachmentId=2147479",
+      "provenance": {
+        "origin": "collector_public_metadata",
+        "link_verification": "not_checked",
+        "duplicate_group_id": "dg-2badffd5daf2403d6a2c",
+        "source_records": [
+          {
+            "canonical_id": "mirae_asset_official:mirae-2343022",
+            "source": "mirae_asset_official",
+            "report_id": "mirae-2343022",
+            "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343022&messageNumber=2567&categoryId=1521",
+            "pdf_url": "https://securities.miraeasset.com/bbs/download/2147479.pdf?attachmentId=2147479"
+          }
+        ],
+        "source_records_complete": false
+      },
+      "report_claims": {
+        "excerpt": "",
+        "status": "unavailable"
+      },
+      "author_opinion": {
+        "rating": null,
+        "target_price": null,
+        "status": "collector_attributed_author_opinion"
+      },
+      "signals": {
+        "keyword_signals": [],
+        "numeric_revisions": [],
+        "numeric_revision_status": "none",
+        "conflicting_keyword_directions": false
+      },
+      "read_priority": {
+        "rank": 20,
+        "score": 2,
+        "reasons": [
+          {
+            "code": "published_on_requested_date",
+            "points": 2
+          },
+          {
+            "code": "pdf_link_available_for_selective_reading",
+            "points": 2
+          },
+          {
+            "code": "title_only_requires_source_reading",
+            "points": -2
+          }
+        ],
+        "action": "selective_pdf_read"
+      },
+      "errors": []
+    },
+    {
+      "canonical_id": "mirae_asset_official:mirae-2343045",
+      "source": "mirae_asset_official",
+      "report_id": "mirae-2343045",
+      "broker": "미래에셋증권",
+      "title": "마켓 뷰(9월 30일)",
+      "published_date": "2026-09-30",
+      "upstream_category": "market",
+      "upstream_category_label": "시황정보",
+      "upstream_subject": null,
+      "company": {
+        "name": null,
+        "ticker": null,
+        "status": "unresolved"
+      },
+      "classification": {
+        "category": "strategy",
+        "label": "시장·전략",
+        "method": "deterministic_rules",
+        "confidence": "medium",
+        "reasons": [
+          {
+            "field": "title",
+            "matched": "마켓"
+          }
+        ]
+      },
+      "sectors": [],
+      "themes": [],
+      "content_status": {
+        "level": "title_only",
+        "pdf_link_available": true,
+        "pdf_text_extracted": false,
+        "html_text_available": false,
+        "fulltext_read": false,
+        "extraction_error": "not_recorded"
+      },
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343045&messageNumber=2572&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2147490.pdf?attachmentId=2147490",
+      "provenance": {
+        "origin": "collector_public_metadata",
+        "link_verification": "not_checked",
+        "duplicate_group_id": "dg-0868aedba52993a382d5",
+        "source_records": [
+          {
+            "canonical_id": "mirae_asset_official:mirae-2343045",
+            "source": "mirae_asset_official",
+            "report_id": "mirae-2343045",
+            "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343045&messageNumber=2572&categoryId=1521",
+            "pdf_url": "https://securities.miraeasset.com/bbs/download/2147490.pdf?attachmentId=2147490"
+          }
+        ],
+        "source_records_complete": false
+      },
+      "report_claims": {
+        "excerpt": "",
+        "status": "unavailable"
+      },
+      "author_opinion": {
+        "rating": null,
+        "target_price": null,
+        "status": "collector_attributed_author_opinion"
+      },
+      "signals": {
+        "keyword_signals": [],
+        "numeric_revisions": [],
+        "numeric_revision_status": "none",
+        "conflicting_keyword_directions": false
+      },
+      "read_priority": {
+        "rank": 21,
+        "score": 2,
+        "reasons": [
+          {
+            "code": "published_on_requested_date",
+            "points": 2
+          },
+          {
+            "code": "pdf_link_available_for_selective_reading",
+            "points": 2
+          },
+          {
+            "code": "title_only_requires_source_reading",
+            "points": -2
+          }
+        ],
+        "action": "selective_pdf_read"
+      },
+      "errors": []
+    }
+  ]
+}
