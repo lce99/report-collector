@@ -1,34 +1,38 @@
 # 2026-09-30 증권사 리포트 데일리
 
 - 요청 기준일: 2026-09-30
-- 생성 시각: 2026-09-30T13:45:13+09:00
+- 생성 시각: 2026-09-30T21:55:06+09:00
 - 대시보드: https://lce99.github.io/report-collector/?date=2026-09-30
-- 수집 건수: 21건
+- 수집 건수: 25건
 - PDF 텍스트 보강: 0건
 - OpenAI 요약 적용: 0건
 - LLM 투자 메모: 0건
-- 키워드: 실적, 스티펠, USA, 매수, LX, 인터내셔널, 순풍에, 돛을
+- 키워드: 실적, 스티펠, USA, 중국, LX, 인터내셔널, 순풍에, 돛을
+
+## 운영 알림
+
+- [주의] 미래에셋증권 공식 무출력: 오늘 0건입니다. 최근 평균은 4.0건입니다.
 
 ## 수집 소스 상태
 
-- 네이버 금융 리서치: 무출력, 0건, 11.75초 - 정상 종료됐지만 해당 날짜 리포트가 없습니다.
-- 미래에셋증권 공식: 정상, 8건, 15.86초
-- 한국투자증권 공식: 정상, 7건, 21.41초
-- 신한투자증권 공식: 정상, 7건, 5.93초
+- 네이버 금융 리서치: 무출력, 0건, 10.52초 - 정상 종료됐지만 해당 날짜 리포트가 없습니다.
+- 미래에셋증권 공식: 무출력, 0건, 1.40초 - 정상 종료됐지만 해당 날짜 리포트가 없습니다.
+- 한국투자증권 공식: 정상, 14건, 26.34초
+- 신한투자증권 공식: 정상, 11건, 6.09초
 
 ## 관심 필터
 - 관심 종목: 삼성전자, SK하이닉스, 미래에셋증권, 대한항공, 삼성에스디에스, 이노스페이스
 - 관심 섹터/키워드: 반도체, 방산, 원자력, 로봇, 건설, 우주, 항공
-- 일치 리포트: 8건
+- 일치 리포트: 5건
 - 엄격 필터 모드: 꺼짐
 
 ## 오늘의 한줄
-이익 추정 상향 10건, 마진 개선 2건이 감지됐습니다. 오늘은 종목분석 리포트가 8건으로 가장 많았습니다. 신한투자증권, 미래에셋증권, 한국투자증권 발간 비중이 높았고, 우선 확인할 만한 핵심 리포트는 LX인터내셔널; 순풍에 돛을 달다, 삼립; 실적으로 증명할 턴어라운드, SK하이닉스; 흔들림 없는 실적 우상향입니다.
+이익 추정 상향 12건, 마진 개선 2건이 감지됐습니다. 오늘은 종목분석 리포트가 13건으로 가장 많았습니다. 한국투자증권, 신한투자증권 발간 비중이 높았고, 우선 확인할 만한 핵심 리포트는 LX인터내셔널; 순풍에 돛을 달다, 삼립; 실적으로 증명할 턴어라운드, SK하이닉스; 흔들림 없는 실적 우상향입니다.
 
 ## 이익·마진 추정 변화
-- 변화 감지 리포트: 11건
+- 변화 감지 리포트: 13건
 - 추정치 수치 상향/하향: 0건 / 0건
-- 이익 추정 상향/하향: 10건 / 5건
+- 이익 추정 상향/하향: 12건 / 5건
 - 마진 개선/악화: 2건 / 1건
 - 목표가 상향/하향: 0건 / 0건
 - 의견 변경/애널리스트 변경: 0건 / 0건
@@ -53,76 +57,79 @@
 - 변화 유형: 이익 추정 하향/감소, 이익 추정 상향/증가
 - 대표 링크: https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354022
 
-### 5. 삼성E&A (028050/매수)
-- 증권사: 미래에셋증권
+### 5. 국내 주식 마감 시황 - Micron 실적 대기하며 맞이하는 4분기(9월 30일)
+- 증권사: 신한투자증권
 - 변화 유형: 이익 추정 상향/증가
-- 대표 링크: https://securities.miraeasset.com/bbs/download/2147486.pdf?attachmentId=2147486
+- 대표 링크: https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354042
 
-### 6. 주식전략
-- 증권사: 미래에셋증권
-- 변화 유형: 이익 추정 상향/증가, 이익 추정 하향/감소
-- 대표 링크: https://securities.miraeasset.com/bbs/download/2147478.pdf?attachmentId=2147478
+### 6. 신흥국 주식전략; 4Q 중국 주식시장 전략: 파도가 걷히면 보이는 것
+- 증권사: 신한투자증권
+- 변화 유형: 이익 추정 상향/증가
+- 대표 링크: https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354041
 
 ### 7. 글로벌 주식전략; 게임의 룰은 바뀌지 않았다
 - 증권사: 신한투자증권
 - 변화 유형: 이익 추정 상향/증가, 이익 추정 하향/감소
 - 대표 링크: https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354025
 
-### 8. 스티펠 - 카니발(CCL USA):[Review] F3Q26 실적 훑어보기
+### 8. 스티펠 - 제네락 홀딩스(GNRC USA):아마존 수주 등 반영해 2027년 전망 및 TP 상향
+- 증권사: 한국투자증권
+- 변화 유형: 이익 추정 상향/증가
+- 비교 기준일: 2026-09-29
+- 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159742
+
+### 9. 스티펠 - 카니발(CCL USA):[Review] F3Q26 실적 훑어보기
 - 증권사: 한국투자증권
 - 변화 유형: 이익 추정 상향/증가
 - 비교 기준일: 2026-09-29
 - 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159712
 
-### 9. JP모간 - Weekly Market Review:미·중 무역 긴장 완화와 중국 증시
+### 10. 스티펠 - 건자재:채널 재고 긴축설 점검: 뚜렷한 징후 없어
+- 증권사: 한국투자증권
+- 변화 유형: 이익 추정 상향/증가, 이익 추정 하향/감소
+- 비교 기준일: 2026-09-29
+- 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159743
+
+### 11. JP모간 - Weekly Market Review:미·중 무역 긴장 완화와 중국 증시
 - 증권사: 한국투자증권
 - 변화 유형: 이익 추정 상향/증가
 - 비교 기준일: 2026-09-23
 - 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159716
 
-### 10. 스티펠 - 음식료:PB 상품 시장점유율 업데이트
+### 12. 스티펠 - 음식료:PB 상품 시장점유율 업데이트
 - 증권사: 한국투자증권
 - 변화 유형: 이익 추정 상향/증가
 - 비교 기준일: 2026-09-29
 - 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159711
-
-### 11. 스티펠 - 스트라이커(SYK USA):2H26 실적 눈높이 낮추고 목표가 하향
-- 증권사: 한국투자증권
-- 변화 유형: 이익 추정 하향/감소
-- 비교 기준일: 2026-09-29
-- 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159713
 
 ## 카테고리 랭킹
 
 ### 종목 랭킹
 - 1. SK하이닉스; 흔들림 없는 실적 우상향 | 신한투자증권 | 우선순위 17.49
 - 2. 삼성전자; HBM 시장 침투 준비 완료 | 신한투자증권 | 우선순위 16.71
-- 3. LX인터내셔널; 순풍에 돛을 달다 | 신한투자증권 | 우선순위 13.71
-- 4. 삼립; 실적으로 증명할 턴어라운드 | 신한투자증권 | 우선순위 12.94
-- 5. 스티펠 - 카니발(CCL USA):[Review] F3Q26 실적 훑어보기 | 한국투자증권 | 우선순위 7.80
+- 3. LX인터내셔널; 순풍에 돛을 달다 | 신한투자증권 | 우선순위 13.84
+- 4. 삼립; 실적으로 증명할 턴어라운드 | 신한투자증권 | 우선순위 13.10
+- 5. KT지니뮤직; 순현금보다도 낮은 시가총액 | 신한투자증권 | 우선순위 8.60
 
 ### 산업 랭킹
-- 1. 삼성E&A (028050/매수) | 미래에셋증권 | 우선순위 13.56
-- 2. 주식전략 | 미래에셋증권 | 우선순위 10.15
-- 3. Fixed Income Monthly | 미래에셋증권 | 우선순위 7.25
-- 4. 스티펠 - 음식료:PB 상품 시장점유율 업데이트 | 한국투자증권 | 우선순위 6.40
-- 5. 2026년 9월 30일 한눈에 투데이 | 한국투자증권 | 우선순위 4.35
+- 1. 스티펠 - 건자재:채널 재고 긴축설 점검: 뚜렷한 징후 없어 | 한국투자증권 | 우선순위 7.50
+- 2. 은행; 8월 은행 여수신금리 동향 | 신한투자증권 | 우선순위 6.58
+- 3. 스티펠 - 음식료:PB 상품 시장점유율 업데이트 | 한국투자증권 | 우선순위 6.40
+- 4. 2026년 9월 30일 한눈에 투데이 | 한국투자증권 | 우선순위 4.35
+- 5. 국태해통증권 - 부동산:대출이자 지원으로 실수요층 직접 수혜, 정책 새 국면 진입 | 한국투자증권 | 우선순위 4.35
 
 ### 매크로 랭킹
-- 1. 마켓레이더 - 유가 진정, 금리 둔감, 실적 대기(9월 30일) | 신한투자증권 | 우선순위 13.63
-- 2. 글로벌 주식전략; 게임의 룰은 바뀌지 않았다 | 신한투자증권 | 우선순위 8.62
-- 3. 방산/첨단항공우주 (비중확대/신규) | 미래에셋증권 | 우선순위 6.85
-- 4. 주식전략; (4분기 주식시장 전망) 고산병 | 신한투자증권 | 우선순위 6.51
-- 5. 글로벌 마켓 브리핑(9월 30일) | 미래에셋증권 | 우선순위 3.20
-
-### 전략 랭킹
-- 1. [방산/첨단항공우주] LIG디펜스앤에어로스페이스 (079550/매수) | 미래에셋증권 | 우선순위 7.30
+- 1. 마켓레이더 - 유가 진정, 금리 둔감, 실적 대기(9월 30일) | 신한투자증권 | 우선순위 14.02
+- 2. 국내 주식 마감 시황 - Micron 실적 대기하며 맞이하는 4분기(9월 30일) | 신한투자증권 | 우선순위 10.67
+- 3. 신흥국 주식전략; 4Q 중국 주식시장 전략: 파도가 걷히면 보이는 것 | 신한투자증권 | 우선순위 9.23
+- 4. 글로벌 주식전략; 게임의 룰은 바뀌지 않았다 | 신한투자증권 | 우선순위 8.89
+- 5. 주식전략; (4분기 주식시장 전망) 고산병 | 신한투자증권 | 우선순위 6.74
 
 ## 우선 검토 후보
 ### 1. [종목분석] LX인터내셔널; 순풍에 돛을 달다
 - 증권사: 신한투자증권
 - 발행일: 2026-09-30
-- 우선순위 점수: 13.71
+- 우선순위 점수: 13.84
 - 선정 근거: 종목분석 카테고리, 공식 소스, 목표가 포함, 투자의견 포함, 실적/마진 추정치 포함
 - 요약 엔진: rule
 - 관심 필터 일치: 없음
@@ -133,7 +140,7 @@
 ### 2. [종목분석] 삼립; 실적으로 증명할 턴어라운드
 - 증권사: 신한투자증권
 - 발행일: 2026-09-30
-- 우선순위 점수: 12.94
+- 우선순위 점수: 13.10
 - 선정 근거: 종목분석 카테고리, 공식 소스, 투자의견 포함, 실적/마진 추정치 포함, 이익 추정 상향/증가
 - 요약 엔진: rule
 - 관심 필터 일치: 없음
@@ -152,50 +159,37 @@
 - 대표 링크: https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354023
 - 상세 페이지: https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=942008
 
-### 4. [종목분석] 스티펠 - 카니발(CCL USA):[Review] F3Q26 실적 훑어보기
+### 4. [종목분석] 스티펠 - 제네락 홀딩스(GNRC USA):아마존 수주 등 반영해 2027년 전망 및 TP 상향
 - 증권사: 한국투자증권
 - 발행일: 2026-09-30
-- 우선순위 점수: 7.80
-- 선정 근거: 종목분석 카테고리, 공식 소스, 이익 추정 상향/증가, 우선 추적 증권사, 핵심 키워드(실적)
+- 우선순위 점수: 8.00
+- 선정 근거: 종목분석 카테고리, 공식 소스, 이익 추정 상향/증가, 우선 추적 증권사, 핵심 키워드(전망)
 - 요약 엔진: rule
 - 관심 필터 일치: 없음
-- 요약: F3Q26 실적 리뷰: 매출총액/순매출액은 각각 84.4억 달러/65.5억 달러로 당사 추정치인 83.8억 달러/64.9억 달러와 컨센서스인 83.6억 달러/64.4억 달러를 소폭 상회했다. 연료비는 6.15억 달러(톤당 826달러), 순이자비용은 2.68억 달러를 기록했다. 조정 EBITDA는 29.9억 달러로 가이던스를 약 1.1억 달러 상회했다.
-- 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159712
+- 요약: 최근 아마존 수주와 데이터센터 생산능력 확대를 반영해 GNRC의 2027년 실적 전망과 목표주가를 상향한다. GNRC는 2Q26 말 기준 약 16억달러의 데이터센터 수주잔고를 보유한 데 이어, 최근 아마존으로부터 24억달러 규모의 초기 주문을 확보했다. 또한 데이터센터 생산능력을 현재의 3배인 연간 37.5억달러 규모로 2027년 하반기까지 확대할 계획이다.
+- 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159742
 
-### 5. [산업분석] 삼성E&A (028050/매수)
-- 증권사: 미래에셋증권
+### 5. [산업분석] 2026년 9월 30일 한눈에 투데이
+- 증권사: 한국투자증권
 - 발행일: 2026-09-30
-- 우선순위 점수: 13.56
-- 선정 근거: 산업분석 카테고리, 공식 소스, 관심 종목(삼성전자), 관심 섹터/키워드(건설), 실적/마진 추정치 포함
+- 우선순위 점수: 4.35
+- 선정 근거: 산업분석 카테고리, 공식 소스, 우선 추적 증권사
 - 요약 엔진: rule
-- 관심 필터 일치: 종목 삼성전자 / 키워드 건설
-- 요약: 관련종목 잘하는 것도, 잘할 것도 많다 3Q26 Preview : 현 시장 예상치 상회 추정
-- 대표 링크: https://securities.miraeasset.com/bbs/download/2147486.pdf?attachmentId=2147486
-- 상세 페이지: https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343030&messageNumber=2569&categoryId=1521
+- 관심 필터 일치: 없음
+- 요약: 한국 9월 전산업 기업심리지수는 전월 대비 0.5p 내린 99.1을 기록. 기업의 체감 경기 동향과 심리 상태가 석 달 만에 소폭 하락. 장기평균치인 100을 소폭 하회했으며, 올해 7-8월 상승분 일부 반납
+- 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159708
 
-### 6. [산업분석] 주식전략
-- 증권사: 미래에셋증권
+### 6. [산업분석] 국태해통증권 - 부동산:대출이자 지원으로 실수요층 직접 수혜, 정책 새 국면 진입
+- 증권사: 한국투자증권
 - 발행일: 2026-09-30
-- 우선순위 점수: 10.15
-- 선정 근거: 산업분석 카테고리, 공식 소스, 관심 섹터/키워드(반도체, 방산), 이익 추정 상향/증가, 이익 추정 하향/감소
+- 우선순위 점수: 4.35
+- 선정 근거: 산업분석 카테고리, 공식 소스, 우선 추적 증권사
 - 요약 엔진: rule
-- 관심 필터 일치: 종목 없음 / 키워드 반도체, 방산
-- 요약: [10월] Rotation & Revision 매크로 이슈 지속: 금리, 유가, 중간선거 연준은 9월 FOMC에서 38개월 만에 기준금리를 25bp 인상했다.
-- 대표 링크: https://securities.miraeasset.com/bbs/download/2147478.pdf?attachmentId=2147478
-- 상세 페이지: https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343021&messageNumber=2566&categoryId=1521
+- 관심 필터 일치: 없음
+- 요약: 2026년 9월 29일, 중국 재정부 등 여러 부처가 주택구입자 대출이자 지원 정책 시행에 관한 통지를 발표했다. 이번 이자 지원 정책은 가계의 실질 구매력을 직접 높일 수 있을 것으로 판단한다. 임대수익률과 주택담보대출 금리 간 격차가 지속적으로 축소되는 상황에서 이번 정책은 주택 구입의 경제성을 효과적으로 개선할 전망이다.
+- 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159736
 
-### 7. [투자정보] [방산/첨단항공우주] LIG디펜스앤에어로스페이스 (079550/매수)
-- 증권사: 미래에셋증권
-- 발행일: 2026-09-30
-- 우선순위 점수: 7.30
-- 선정 근거: 투자정보 카테고리, 공식 소스, 관심 섹터/키워드(방산, 우주, 항공), 우선 추적 증권사, 핵심 키워드(방산)
-- 요약 엔진: rule
-- 관심 필터 일치: 종목 없음 / 키워드 방산, 우주, 항공
-- 요약: 관련종목 미사일 수요의 종착지 LIG디펜스앤에어로스페이스 목표주가 112만원, Top-Pick 의견 제시
-- 대표 링크: https://securities.miraeasset.com/bbs/download/2147491.pdf?attachmentId=2147491
-- 상세 페이지: https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343046&messageNumber=2573&categoryId=1521
-
-### 8. [종목분석] 삼성전자; HBM 시장 침투 준비 완료
+### 7. [종목분석] 삼성전자; HBM 시장 침투 준비 완료
 - 증권사: 신한투자증권
 - 발행일: 2026-09-30
 - 우선순위 점수: 16.71
@@ -206,10 +200,10 @@
 - 대표 링크: https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354022
 - 상세 페이지: https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=942007
 
-### 9. [시황정보] 마켓레이더 - 유가 진정, 금리 둔감, 실적 대기(9월 30일)
+### 8. [시황정보] 마켓레이더 - 유가 진정, 금리 둔감, 실적 대기(9월 30일)
 - 증권사: 신한투자증권
 - 발행일: 2026-09-30
-- 우선순위 점수: 13.63
+- 우선순위 점수: 14.02
 - 선정 근거: 시황정보 카테고리, 공식 소스, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(로봇), 우선 추적 증권사
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 삼성전자, SK하이닉스 / 키워드 로봇
@@ -217,28 +211,17 @@
 - 대표 링크: https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354031
 - 상세 페이지: https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=942024
 
-### 10. [산업분석] Fixed Income Monthly
-- 증권사: 미래에셋증권
-- 발행일: 2026-09-30
-- 우선순위 점수: 7.25
-- 선정 근거: 산업분석 카테고리, 공식 소스, 관심 섹터/키워드(반도체, 건설), 우선 추적 증권사
-- 요약 엔진: rule
-- 관심 필터 일치: 종목 없음 / 키워드 반도체, 건설
-- 요약: [10월] 합리적 과잉: 플랫 기회 잡기 연준 10월 연속 인상 우려 상존 미국 도소매업체의 가격 결정력을 시사하는 PPI 유통마진(Trade service)이 상승하고 있다.
-- 대표 링크: https://securities.miraeasset.com/bbs/download/2147481.pdf?attachmentId=2147481
-- 상세 페이지: https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343025&messageNumber=2568&categoryId=1521
-
-### 11. [종목분석] 스티펠 - 스트라이커(SYK USA):2H26 실적 눈높이 낮추고 목표가 하향
+### 9. [종목분석] 스티펠 - 카니발(CCL USA):[Review] F3Q26 실적 훑어보기
 - 증권사: 한국투자증권
 - 발행일: 2026-09-30
-- 우선순위 점수: 7.10
-- 선정 근거: 종목분석 카테고리, 공식 소스, 이익 추정 하향/감소, 우선 추적 증권사, 핵심 키워드(실적)
+- 우선순위 점수: 7.80
+- 선정 근거: 종목분석 카테고리, 공식 소스, 이익 추정 상향/증가, 우선 추적 증권사, 핵심 키워드(실적)
 - 요약 엔진: rule
 - 관심 필터 일치: 없음
-- 요약: 이달 초 경쟁사 헬스케어 컨퍼런스에서 경영진은 2H26 전망에 부담을 주는 예상 밖의 요인 두 가지를 언급했다. 첫째, 2Q26에 나타난 말초혈관(Peripheral Vascular, PV) 사업의 생산·공급 차질이 지속되고 있다. 3월 11일 사이버 공격과 생산 중단 이후 “공정 관련 문제 해결”과 “완전 가동 정상화”가 예상보다 지연되고 있다.
-- 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159713
+- 요약: F3Q26 실적 리뷰: 매출총액/순매출액은 각각 84.4억 달러/65.5억 달러로 당사 추정치인 83.8억 달러/64.9억 달러와 컨센서스인 83.6억 달러/64.4억 달러를 소폭 상회했다. 연료비는 6.15억 달러(톤당 826달러), 순이자비용은 2.68억 달러를 기록했다. 조정 EBITDA는 29.9억 달러로 가이던스를 약 1.1억 달러 상회했다.
+- 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159712
 
-### 12. [종목분석] JP모간 - Weekly Market Review:미·중 무역 긴장 완화와 중국 증시
+### 10. [종목분석] JP모간 - Weekly Market Review:미·중 무역 긴장 완화와 중국 증시
 - 증권사: 한국투자증권
 - 발행일: 2026-09-30
 - 우선순위 점수: 7.05
@@ -248,26 +231,52 @@
 - 요약: 트럼프-시진핑 정상회담의 핵심 의제였던 무역에서 양국이 휴전을 1월까지 연장한 점은 긴장 관리 의지를 재확인한 긍정적 신호다. 추가 진전 시 미국 매출 비중이 높은 산업재·기술·헬스케어 등 중국 수출주가 상대적으로 수혜를 받을 수 있으며, 정책 가시성 개선도 실적 기대를 뒷받침할 전망이다. 다만 글로벌 무역 환경은 여전히 불확실하다.
 - 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159716
 
+### 11. [시황정보] 국내 주식 마감 시황 - Micron 실적 대기하며 맞이하는 4분기(9월 30일)
+- 증권사: 신한투자증권
+- 발행일: 2026-09-30
+- 우선순위 점수: 10.67
+- 선정 근거: 시황정보 카테고리, 공식 소스, 관심 섹터/키워드(반도체), 이익 추정 상향/증가, 우선 추적 증권사
+- 요약 엔진: rule
+- 관심 필터 일치: 종목 없음 / 키워드 반도체
+- 요약: 소부장 훈풍 지속, 대미투자 기대감 유입 물가 안정과 실적 호조가 모두 필요한 시장 Macro는 혼재된 모습이었습니다.
+- 대표 링크: https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354042
+- 상세 페이지: https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=942040
+
+### 12. [시황정보] 신흥국 주식전략; 4Q 중국 주식시장 전략: 파도가 걷히면 보이는 것
+- 증권사: 신한투자증권
+- 발행일: 2026-09-30
+- 우선순위 점수: 9.23
+- 선정 근거: 시황정보 카테고리, 공식 소스, 관심 섹터/키워드(반도체), 이익 추정 상향/증가, 우선 추적 증권사
+- 요약 엔진: rule
+- 관심 필터 일치: 종목 없음 / 키워드 반도체
+- 요약: 4분기 레짐의 네 가지 경로: 중국 경기(EPS)와 미국 금리(할인율)의 조합 상해종합지수 밴드 3,800~4,400p. 4분기 레짐의 네 가지 경로: 중국 경기(EPS)와 미국 금리(할인율)의 조합
+- 대표 링크: https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354041
+- 상세 페이지: https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=942039
+
 ## 전체 수집 결과
 
 - [종목분석] SK하이닉스; 흔들림 없는 실적 우상향 | 신한투자증권 | 2026-09-30 | 우선순위 17.49 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354023
 - [종목분석] 삼성전자; HBM 시장 침투 준비 완료 | 신한투자증권 | 2026-09-30 | 우선순위 16.71 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354022
-- [종목분석] LX인터내셔널; 순풍에 돛을 달다 | 신한투자증권 | 2026-09-30 | 우선순위 13.71 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354021
-- [시황정보] 마켓레이더 - 유가 진정, 금리 둔감, 실적 대기(9월 30일) | 신한투자증권 | 2026-09-30 | 우선순위 13.63 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354031
-- [산업분석] 삼성E&A (028050/매수) | 미래에셋증권 | 2026-09-30 | 우선순위 13.56 | https://securities.miraeasset.com/bbs/download/2147486.pdf?attachmentId=2147486
-- [종목분석] 삼립; 실적으로 증명할 턴어라운드 | 신한투자증권 | 2026-09-30 | 우선순위 12.94 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354020
-- [산업분석] 주식전략 | 미래에셋증권 | 2026-09-30 | 우선순위 10.15 | https://securities.miraeasset.com/bbs/download/2147478.pdf?attachmentId=2147478
-- [시황정보] 글로벌 주식전략; 게임의 룰은 바뀌지 않았다 | 신한투자증권 | 2026-09-30 | 우선순위 8.62 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354025
+- [시황정보] 마켓레이더 - 유가 진정, 금리 둔감, 실적 대기(9월 30일) | 신한투자증권 | 2026-09-30 | 우선순위 14.02 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354031
+- [종목분석] LX인터내셔널; 순풍에 돛을 달다 | 신한투자증권 | 2026-09-30 | 우선순위 13.84 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354021
+- [종목분석] 삼립; 실적으로 증명할 턴어라운드 | 신한투자증권 | 2026-09-30 | 우선순위 13.10 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354020
+- [시황정보] 국내 주식 마감 시황 - Micron 실적 대기하며 맞이하는 4분기(9월 30일) | 신한투자증권 | 2026-09-30 | 우선순위 10.67 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354042
+- [시황정보] 신흥국 주식전략; 4Q 중국 주식시장 전략: 파도가 걷히면 보이는 것 | 신한투자증권 | 2026-09-30 | 우선순위 9.23 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354041
+- [시황정보] 글로벌 주식전략; 게임의 룰은 바뀌지 않았다 | 신한투자증권 | 2026-09-30 | 우선순위 8.89 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354025
+- [종목분석] KT지니뮤직; 순현금보다도 낮은 시가총액 | 신한투자증권 | 2026-09-30 | 우선순위 8.60 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354037
+- [종목분석] 스티펠 - 제네락 홀딩스(GNRC USA):아마존 수주 등 반영해 2027년 전망 및 TP 상향 | 한국투자증권 | 2026-09-30 | 우선순위 8.00 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159742
 - [종목분석] 스티펠 - 카니발(CCL USA):[Review] F3Q26 실적 훑어보기 | 한국투자증권 | 2026-09-30 | 우선순위 7.80 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159712
-- [투자정보] [방산/첨단항공우주] LIG디펜스앤에어로스페이스 (079550/매수) | 미래에셋증권 | 2026-09-30 | 우선순위 7.30 | https://securities.miraeasset.com/bbs/download/2147491.pdf?attachmentId=2147491
-- [산업분석] Fixed Income Monthly | 미래에셋증권 | 2026-09-30 | 우선순위 7.25 | https://securities.miraeasset.com/bbs/download/2147481.pdf?attachmentId=2147481
+- [산업분석] 스티펠 - 건자재:채널 재고 긴축설 점검: 뚜렷한 징후 없어 | 한국투자증권 | 2026-09-30 | 우선순위 7.50 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159743
 - [종목분석] 스티펠 - 스트라이커(SYK USA):2H26 실적 눈높이 낮추고 목표가 하향 | 한국투자증권 | 2026-09-30 | 우선순위 7.10 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159713
 - [종목분석] JP모간 - Weekly Market Review:미·중 무역 긴장 완화와 중국 증시 | 한국투자증권 | 2026-09-30 | 우선순위 7.05 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159716
-- [시황정보] 방산/첨단항공우주 (비중확대/신규) | 미래에셋증권 | 2026-09-30 | 우선순위 6.85 | https://securities.miraeasset.com/bbs/download/2147487.pdf?attachmentId=2147487
-- [시황정보] 주식전략; (4분기 주식시장 전망) 고산병 | 신한투자증권 | 2026-09-30 | 우선순위 6.51 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354026
+- [시황정보] 주식전략; (4분기 주식시장 전망) 고산병 | 신한투자증권 | 2026-09-30 | 우선순위 6.74 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354026
+- [산업분석] 은행; 8월 은행 여수신금리 동향 | 신한투자증권 | 2026-09-30 | 우선순위 6.58 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354039
 - [산업분석] 스티펠 - 음식료:PB 상품 시장점유율 업데이트 | 한국투자증권 | 2026-09-30 | 우선순위 6.40 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159711
+- [종목분석] 스티펠 - 카니발(CCL USA):[Review] F3Q26 실적 뜯어보기: 가격·수요 위축이 웬 말 | 한국투자증권 | 2026-09-30 | 우선순위 6.00 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159740
+- [종목분석] 스티펠 - 다인 테라퓨틱스(DYN USA):장기 임상 1/2상 데이터 추가 분석에서도 긍정적 결과 확인 | 한국투자증권 | 2026-09-30 | 우선순위 5.10 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159739
+- [종목분석] 스티펠 - 유니큐어(QURE USA):3년 효과는 더 좋아져…4년 효과 둔화에도 허가 기대 유지 | 한국투자증권 | 2026-09-30 | 우선순위 5.10 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159741
 - [종목분석] 스티펠 - 텍토닉 테라퓨틱(TECX USA):TX2100 초기 데이터 긍정적, APEX 앞두고 리스크 완화 | 한국투자증권 | 2026-09-30 | 우선순위 5.10 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159714
 - [산업분석] 2026년 9월 30일 한눈에 투데이 | 한국투자증권 | 2026-09-30 | 우선순위 4.35 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159708
+- [산업분석] 국태해통증권 - 부동산:대출이자 지원으로 실수요층 직접 수혜, 정책 새 국면 진입 | 한국투자증권 | 2026-09-30 | 우선순위 4.35 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159736
 - [산업분석] 스티펠 - 소프트웨어:소프트웨어 산업 동향: MDB, NVDA, SNOW, ADBE | 한국투자증권 | 2026-09-30 | 우선순위 4.35 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159715
-- [시황정보] 글로벌 마켓 브리핑(9월 30일) | 미래에셋증권 | 2026-09-30 | 우선순위 3.20 | https://securities.miraeasset.com/bbs/download/2147479.pdf?attachmentId=2147479
-- [시황정보] 마켓 뷰(9월 30일) | 미래에셋증권 | 2026-09-30 | 우선순위 3.20 | https://securities.miraeasset.com/bbs/download/2147490.pdf?attachmentId=2147490
+- [산업분석] 국태해통증권 - 투자은행 및 중개업:중국 홍콩, 첫 5개년 계획 발표… 홍콩거래소의 중장기 투자 가치 긍정적 | 한국투자증권 | 2026-09-30 | 우선순위 4.35 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159735
