@@ -1,7 +1,7 @@
 # 2026-10-08 증권사 리포트 데일리
 
 - 요청 기준일: 2026-10-09
-- 생성 시각: 2026-10-09T14:18:47+09:00
+- 생성 시각: 2026-10-09T22:39:03+09:00
 - 대시보드: https://lce99.github.io/report-collector/?date=2026-10-08
 - 수집 건수: 36건
 - PDF 텍스트 보강: 0건
@@ -14,10 +14,10 @@
 
 ## 수집 소스 상태
 
-- 네이버 금융 리서치: 무출력, 0건, 9.26초 - 정상 종료됐지만 해당 날짜 리포트가 없습니다.
-- 미래에셋증권 공식: 정상, 10건, 14.15초
-- 한국투자증권 공식: 정상, 14건, 25.10초
-- 신한투자증권 공식: 정상, 12건, 5.76초
+- 네이버 금융 리서치: 무출력, 0건, 8.86초 - 정상 종료됐지만 해당 날짜 리포트가 없습니다.
+- 미래에셋증권 공식: 정상, 10건, 14.84초
+- 한국투자증권 공식: 정상, 14건, 26.37초
+- 신한투자증권 공식: 정상, 12건, 6.90초
 
 ## 관심 필터
 - 관심 종목: 삼성전자, SK하이닉스, 미래에셋증권, 대한항공, 삼성에스디에스, 이노스페이스
@@ -111,16 +111,16 @@
 ### 산업 랭킹
 - 1. 한국 마켓 클로징(10월 8일) | 미래에셋증권 | 우선순위 12.95
 - 2. 월스트리트파인더 Ep.209 | 미래에셋증권 | 우선순위 12.90
-- 3. 건설장비; 건설장비 만찬이 준비돼 있다 | 신한투자증권 | 우선순위 10.66
+- 3. 건설장비; 건설장비 만찬이 준비돼 있다 | 신한투자증권 | 우선순위 10.73
 - 4. LS ELECTRIC (010120/매수) | 미래에셋증권 | 우선순위 9.52
 - 5. 스티펠 - 운송:[Preview] 3Q26 LTL: 수요 회복 지속 여부가 관건 | 한국투자증권 | 우선순위 9.30
 
 ### 매크로 랭킹
-- 1. 국내 주식 마감 시황 - KOSPI 8월 이후 추세선 하단 이탈(10월 8일) | 신한투자증권 | 우선순위 15.70
-- 2. 마켓레이더 - 양 시장 지탱 2차전지, 소부장 가세에 KOSDAQ 선방 (10월 8일) | 신한투자증권 | 우선순위 14.79
-- 3. 국내주식전략; 신한 M.R.I: 블루웨이브 트레이드, 기대와 실적 사이 | 신한투자증권 | 우선순위 12.91
+- 1. 국내 주식 마감 시황 - KOSPI 8월 이후 추세선 하단 이탈(10월 8일) | 신한투자증권 | 우선순위 15.77
+- 2. 마켓레이더 - 양 시장 지탱 2차전지, 소부장 가세에 KOSDAQ 선방 (10월 8일) | 신한투자증권 | 우선순위 14.82
+- 3. 국내주식전략; 신한 M.R.I: 블루웨이브 트레이드, 기대와 실적 사이 | 신한투자증권 | 우선순위 12.96
 - 4. 항공업 (비중확대/유지) | 미래에셋증권 | 우선순위 11.45
-- 5. 신한 Econ Check-up; 헤드라인과 핵심 물가의 괴리 확인 구간 | 신한투자증권 | 우선순위 8.34
+- 5. 신한 Econ Check-up; 헤드라인과 핵심 물가의 괴리 확인 구간 | 신한투자증권 | 우선순위 8.41
 
 ### 전략 랭킹
 - 1. GS건설 (006360/매수) | 미래에셋증권 | 우선순위 10.46
@@ -216,7 +216,7 @@
 ### 9. [시황정보] 국내 주식 마감 시황 - KOSPI 8월 이후 추세선 하단 이탈(10월 8일)
 - 증권사: 신한투자증권
 - 발행일: 2026-10-08
-- 우선순위 점수: 15.70
+- 우선순위 점수: 15.77
 - 선정 근거: 시황정보 카테고리, 공식 소스, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(반도체, 방산), 이익 추정 상향/증가
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 삼성전자, SK하이닉스 / 키워드 반도체, 방산
@@ -227,7 +227,7 @@
 ### 10. [시황정보] 마켓레이더 - 양 시장 지탱 2차전지, 소부장 가세에 KOSDAQ 선방 (10월 8일)
 - 증권사: 신한투자증권
 - 발행일: 2026-10-08
-- 우선순위 점수: 14.79
+- 우선순위 점수: 14.82
 - 선정 근거: 시황정보 카테고리, 공식 소스, 관심 종목(삼성전자), 관심 섹터/키워드(반도체, 방산), 실적/마진 추정치 포함
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 삼성전자 / 키워드 반도체, 방산
@@ -259,32 +259,32 @@
 
 ## 전체 수집 결과
 
-- [시황정보] 국내 주식 마감 시황 - KOSPI 8월 이후 추세선 하단 이탈(10월 8일) | 신한투자증권 | 2026-10-08 | 우선순위 15.70 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354193
-- [시황정보] 마켓레이더 - 양 시장 지탱 2차전지, 소부장 가세에 KOSDAQ 선방 (10월 8일) | 신한투자증권 | 2026-10-08 | 우선순위 14.79 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354176
+- [시황정보] 국내 주식 마감 시황 - KOSPI 8월 이후 추세선 하단 이탈(10월 8일) | 신한투자증권 | 2026-10-08 | 우선순위 15.77 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354193
+- [시황정보] 마켓레이더 - 양 시장 지탱 2차전지, 소부장 가세에 KOSDAQ 선방 (10월 8일) | 신한투자증권 | 2026-10-08 | 우선순위 14.82 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354176
 - [종목분석] LG에너지솔루션; 회복의 이유가 더 많아졌다 | 신한투자증권 | 2026-10-08 | 우선순위 14.27 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354161
 - [종목분석] 원익IPS; 준비된 자는 두려울 것이 없다 | 신한투자증권 | 2026-10-08 | 우선순위 13.31 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354166
+- [시황정보] 국내주식전략; 신한 M.R.I: 블루웨이브 트레이드, 기대와 실적 사이 | 신한투자증권 | 2026-10-08 | 우선순위 12.96 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354160
 - [산업분석] 한국 마켓 클로징(10월 8일) | 미래에셋증권 | 2026-10-08 | 우선순위 12.95 | https://securities.miraeasset.com/bbs/download/2147690.pdf?attachmentId=2147690
-- [시황정보] 국내주식전략; 신한 M.R.I: 블루웨이브 트레이드, 기대와 실적 사이 | 신한투자증권 | 2026-10-08 | 우선순위 12.91 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354160
 - [산업분석] 월스트리트파인더 Ep.209 | 미래에셋증권 | 2026-10-08 | 우선순위 12.90 | https://securities.miraeasset.com/bbs/download/2147689.pdf?attachmentId=2147689
 - [시황정보] 항공업 (비중확대/유지) | 미래에셋증권 | 2026-10-08 | 우선순위 11.45 | https://securities.miraeasset.com/bbs/download/2147691.pdf?attachmentId=2147691
-- [산업분석] 건설장비; 건설장비 만찬이 준비돼 있다 | 신한투자증권 | 2026-10-08 | 우선순위 10.66 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354165
+- [산업분석] 건설장비; 건설장비 만찬이 준비돼 있다 | 신한투자증권 | 2026-10-08 | 우선순위 10.73 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354165
 - [종목분석] SK이노베이션; 탐방 후기: 다윈 LNG, 이익의 근거 | 신한투자증권 | 2026-10-08 | 우선순위 10.60 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354163
 - [투자정보] GS건설 (006360/매수) | 미래에셋증권 | 2026-10-08 | 우선순위 10.46 | https://securities.miraeasset.com/bbs/download/2147680.pdf?attachmentId=2147680
 - [산업분석] LS ELECTRIC (010120/매수) | 미래에셋증권 | 2026-10-08 | 우선순위 9.52 | https://securities.miraeasset.com/bbs/download/2147679.pdf?attachmentId=2147679
 - [종목분석] 스티펠 - IBM(IBM USA):3분기는 원래 비수기, 가시성도 평소보다 낮아 | 한국투자증권 | 2026-10-08 | 우선순위 9.50 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160005
 - [산업분석] 스티펠 - 운송:[Preview] 3Q26 LTL: 수요 회복 지속 여부가 관건 | 한국투자증권 | 2026-10-08 | 우선순위 9.30 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160006
-- [산업분석] 엔터테인먼트; 짝수 해 10월의 비밀 | 신한투자증권 | 2026-10-08 | 우선순위 8.83 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354162
+- [산업분석] 엔터테인먼트; 짝수 해 10월의 비밀 | 신한투자증권 | 2026-10-08 | 우선순위 8.92 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354162
 - [종목분석] 국태해통증권 - 선저우인터내셔널(02313 HKG):실적 단기 부담, 26H2 안정화와 회복 기대 | 한국투자증권 | 2026-10-08 | 우선순위 8.65 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159991
+- [경제분석] 신한 Econ Check-up; 헤드라인과 핵심 물가의 괴리 확인 구간 | 신한투자증권 | 2026-10-08 | 우선순위 8.41 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354188
 - [산업분석] 스티펠 - 은행:3Q26 Preview: 금리 상승과 NIM에 대한 집착 집중 분석 | 한국투자증권 | 2026-10-08 | 우선순위 8.40 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159988
-- [경제분석] 신한 Econ Check-up; 헤드라인과 핵심 물가의 괴리 확인 구간 | 신한투자증권 | 2026-10-08 | 우선순위 8.34 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354188
 - [산업분석] 스티펠 - 운송:슬림화된 배송망의 실전 시험대, 택배 시장 점유율 변화 | 한국투자증권 | 2026-10-08 | 우선순위 7.90 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159986
-- [시황정보] 신흥국 주식전략; 중국 고정자산투자 부진, 재정에서 답을 찾다 | 신한투자증권 | 2026-10-08 | 우선순위 7.58 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354167
+- [시황정보] 신흥국 주식전략; 중국 고정자산투자 부진, 재정에서 답을 찾다 | 신한투자증권 | 2026-10-08 | 우선순위 7.65 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354167
 - [산업분석] 스티펠 - 담배:담배주 3분기 및 2026년 전망 | 한국투자증권 | 2026-10-08 | 우선순위 7.50 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159985
 - [종목분석] 스티펠 - 인테그리스(ENTG USA):웨이퍼 생산량 회복의 핵심 수혜주, 매수로 분석 개시 | 한국투자증권 | 2026-10-08 | 우선순위 7.50 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160004
-- [산업분석] 신한 자동차/철강금속 Weekly(2026.10.08) | 신한투자증권 | 2026-10-08 | 우선순위 7.18 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354178
+- [산업분석] 신한 자동차/철강금속 Weekly(2026.10.08) | 신한투자증권 | 2026-10-08 | 우선순위 7.34 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354178
 - [산업분석] JP모간 - 투자전략:월간 전망: 금리 상승과 AI 리스크 부각, 포트폴리오 다각화 필요성 확대 | 한국투자증권 | 2026-10-08 | 우선순위 6.55 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160007
+- [경제분석] 신한 FX Check-up; 미국 핵심 물가 안정 시 완화될 강 달러 | 신한투자증권 | 2026-10-08 | 우선순위 6.13 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354189
 - [투자정보] NAV Dashboard Weekly | 미래에셋증권 | 2026-10-08 | 우선순위 6.10 | https://securities.miraeasset.com/bbs/download/2147692.pdf?attachmentId=2147692
-- [경제분석] 신한 FX Check-up; 미국 핵심 물가 안정 시 완화될 강 달러 | 신한투자증권 | 2026-10-08 | 우선순위 6.00 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354189
 - [산업분석] 인도 | 미래에셋증권 | 2026-10-08 | 우선순위 5.90 | https://securities.miraeasset.com/bbs/download/2147681.pdf?attachmentId=2147681
 - [종목분석] JP모간 - Weekly Market Review:주간 시장 요약 | 한국투자증권 | 2026-10-08 | 우선순위 5.50 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159989
 - [종목분석] 스티펠 - 서비스타이탄(TTAN USA):Max 저변 확대, 완전 자동화로 한 걸음 더 | 한국투자증권 | 2026-10-08 | 우선순위 5.10 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=159984
