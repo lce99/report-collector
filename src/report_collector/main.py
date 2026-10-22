@@ -71,6 +71,7 @@ def _report_preference(report: Report) -> tuple[int, int, int, int]:
 
 
 def _merge_duplicate_reports(current: Report, candidate: Report) -> Report:
+    source_records = _source_records(current) + _source_records(candidate)
     preferred = current
     fallback = candidate
     if _report_preference(candidate) > _report_preference(current):
@@ -85,12 +86,25 @@ def _merge_duplicate_reports(current: Report, candidate: Report) -> Report:
         if preferred_value in (None, "") and fallback_value not in (None, ""):
             setattr(preferred, field, fallback_value)
 
+    preferred.source_records = list({
+        (item["source"], item["report_id"]): item for item in source_records
+    }.values())
     return preferred
+
+
+def _source_records(report: Report) -> list[dict[str, object]]:
+    if report.source_records:
+        return report.source_records
+    return [{
+        "source": report.source, "report_id": report.report_id,
+        "detail_url": report.detail_url, "pdf_url": report.pdf_url,
+    }]
 
 
 def _dedupe_reports(reports: list[Report]) -> list[Report]:
     selected: dict[tuple[str, str], Report] = {}
     for report in reports:
+        report.source_records = _source_records(report)
         key = _report_dedupe_key(report)
         current = selected.get(key)
         if current is None:
