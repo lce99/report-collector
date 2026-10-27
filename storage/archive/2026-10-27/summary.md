@@ -1,40 +1,35 @@
 # 2026-10-27 증권사 리포트 데일리
 
 - 요청 기준일: 2026-10-27
-- 생성 시각: 2026-10-27T13:17:38+09:00
+- 생성 시각: 2026-10-27T21:36:15+09:00
 - 대시보드: https://lce99.github.io/report-collector/?date=2026-10-27
-- 수집 건수: 11건
+- 수집 건수: 30건
 - PDF 텍스트 보강: 0건
 - OpenAI 요약 적용: 0건
 - LLM 투자 메모: 0건
-- 키워드: 스티펠, USA, HD, 쌓이는, 건설기계, 일시적, 물류, 차질
-
-## 운영 알림
-
-- [주의] 전체 수집량 급감: 오늘 11건으로 최근 평균 26.2건 대비 낮습니다.
-- [주의] 한국투자증권 공식 수집량 급감: 오늘 6건으로 최근 평균 14.2건 대비 낮습니다.
+- 키워드: HD, 수익성, ANTHROPIC, 스티펠, 실적, 주가, 매수, 건설기계
 
 ## 수집 소스 상태
 
-- 네이버 금융 리서치: 무출력, 0건, 9.18초 - 정상 종료됐지만 해당 날짜 리포트가 없습니다.
-- 미래에셋증권 공식: 무출력, 0건, 1.26초 - 정상 종료됐지만 해당 날짜 리포트가 없습니다.
-- 한국투자증권 공식: 정상, 6건, 19.24초
-- 신한투자증권 공식: 정상, 5건, 5.97초
+- 네이버 금융 리서치: 무출력, 0건, 12.88초 - 정상 종료됐지만 해당 날짜 리포트가 없습니다.
+- 미래에셋증권 공식: 정상, 9건, 19.73초
+- 한국투자증권 공식: 정상, 14건, 37.62초
+- 신한투자증권 공식: 정상, 7건, 7.86초
 
 ## 관심 필터
 - 관심 종목: 삼성전자, SK하이닉스, 미래에셋증권, 대한항공, 삼성에스디에스, 이노스페이스
 - 관심 섹터/키워드: 반도체, 방산, 원자력, 로봇, 건설, 우주, 항공
-- 일치 리포트: 5건
+- 일치 리포트: 9건
 - 엄격 필터 모드: 꺼짐
 
 ## 오늘의 한줄
-이익 추정 상향 5건, 마진 개선 4건이 감지됐습니다. 오늘은 종목분석 리포트가 7건으로 가장 많았습니다. 한국투자증권, 신한투자증권 발간 비중이 높았고, 우선 확인할 만한 핵심 리포트는 HD건설기계; 일시적 물류 차질, 흔들림 없는 성장과 엔진, 마켓레이더 - AI 수익성 우려 균열, Anthropic이 연 KOSPI 사이드카 (10월 27일), 스티펠 - 비아비 솔루션스(VIAV USA):NDR 후기: 포트 속도 향상에서 테스트 물량 확대로 진화입니다.
+이익 추정 상향 16건, 마진 개선 10건이 감지됐습니다. 오늘은 종목분석 리포트가 11건으로 가장 많았습니다. 한국투자증권, 미래에셋증권, 신한투자증권 발간 비중이 높았고, 우선 확인할 만한 핵심 리포트는 HD건설기계; 일시적 물류 차질, 흔들림 없는 성장과 엔진, 마켓레이더 - AI 수익성 우려 균열, Anthropic이 연 KOSPI 사이드카 (10월 27일), 대우건설; 수익성 개선세 지속입니다.
 
 ## 이익·마진 추정 변화
-- 변화 감지 리포트: 5건
+- 변화 감지 리포트: 16건
 - 추정치 수치 상향/하향: 0건 / 0건
-- 이익 추정 상향/하향: 5건 / 3건
-- 마진 개선/악화: 4건 / 0건
+- 이익 추정 상향/하향: 16건 / 10건
+- 마진 개선/악화: 10건 / 3건
 - 목표가 상향/하향: 0건 / 0건
 - 의견 변경/애널리스트 변경: 0건 / 0건
 
@@ -48,45 +43,92 @@
 - 변화 유형: 이익 추정 상향/증가, 마진율 추정 상승/개선, 이익 추정 하향/감소
 - 대표 링크: https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354521
 
-### 3. 스티펠 - 비아비 솔루션스(VIAV USA):NDR 후기: 포트 속도 향상에서 테스트 물량 확대로 진화
+### 3. 대우건설; 수익성 개선세 지속
+- 증권사: 신한투자증권
+- 변화 유형: 이익 추정 상향/증가, 마진율 추정 상승/개선, 이익 추정 하향/감소
+- 대표 링크: https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354523
+
+### 4. 스티펠 - 비아비 솔루션스(VIAV USA):NDR 후기: 포트 속도 향상에서 테스트 물량 확대로 진화
 - 증권사: 한국투자증권
 - 변화 유형: 이익 추정 상향/증가, 마진율 추정 상승/개선
 - 비교 기준일: 2026-10-26
 - 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160574
 
-### 4. 스티펠 - 컴포트 시스템스 USA(FIX USA):[Review] 3Q26: 수주잔고 호조...마진, CFO 이슈가 부담
+### 5. HD현대일렉트릭 (267260/매수)
+- 증권사: 미래에셋증권
+- 변화 유형: 이익 추정 하향/감소, 이익 추정 상향/증가, 마진율 추정 상승/개선, 마진율 추정 하락/악화
+- 대표 링크: https://securities.miraeasset.com/bbs/download/2148055.pdf?attachmentId=2148055
+
+### 6. 스티펠 - 의료기술 & 용품:ALC/BLCO/GKOS: 실적 발표 전 최종 점검 및 10-Q 분석
+- 증권사: 한국투자증권
+- 변화 유형: 이익 추정 상향/증가, 이익 추정 하향/감소, 마진율 추정 상승/개선
+- 비교 기준일: 2026-10-26
+- 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160581
+
+### 7. 타타 컨슈머 프로덕트 (TATACONS IN/매수)
+- 증권사: 미래에셋증권
+- 변화 유형: 이익 추정 상향/증가, 마진율 추정 상승/개선, 이익 추정 하향/감소, 마진율 추정 하락/악화
+- 대표 링크: https://securities.miraeasset.com/bbs/download/2148042.pdf?attachmentId=2148042
+
+### 8. 에스티팜 (237690/매수)
+- 증권사: 미래에셋증권
+- 변화 유형: 이익 추정 하향/감소, 이익 추정 상향/증가, 마진율 추정 상승/개선
+- 대표 링크: https://securities.miraeasset.com/bbs/download/2148053.pdf?attachmentId=2148053
+
+### 9. 스티펠 - 컴포트 시스템스 USA(FIX USA):[Review] 3Q26: 수주잔고 호조...마진, CFO 이슈가 부담
 - 증권사: 한국투자증권
 - 변화 유형: 이익 추정 상향/증가, 마진율 추정 상승/개선
 - 비교 기준일: 2026-10-26
 - 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160575
 
-### 5. 씨에스윈드; 우려가 더 크게 반영된 주가
+### 10. 스티펠 - 은행:마진은 선방…순이자이익은 제자리
+- 증권사: 한국투자증권
+- 변화 유형: 이익 추정 상향/증가, 마진율 추정 상승/개선
+- 비교 기준일: 2026-10-26
+- 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160580
+
+### 11. 국내 주식 마감 시황 - SpaceX에 이은 Anthropic의 증명(10월 27일)
 - 증권사: 신한투자증권
-- 변화 유형: 이익 추정 하향/감소, 이익 추정 상향/증가
-- 대표 링크: https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354512
+- 변화 유형: 이익 추정 상향/증가
+- 대표 링크: https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354525
+
+### 12. 한국&중국 마켓 클로징(10월 27일)
+- 증권사: 미래에셋증권
+- 변화 유형: 이익 추정 상향/증가
+- 대표 링크: https://securities.miraeasset.com/bbs/download/2148054.pdf?attachmentId=2148054
 
 ## 카테고리 랭킹
 
 ### 종목 랭킹
-- 1. HD건설기계; 일시적 물류 차질, 흔들림 없는 성장과 엔진 | 신한투자증권 | 우선순위 16.93
-- 2. 씨에스윈드; 우려가 더 크게 반영된 주가 | 신한투자증권 | 우선순위 11.37
-- 3. 스티펠 - 비아비 솔루션스(VIAV USA):NDR 후기: 포트 속도 향상에서 테스트 물량 확대로 진화 | 한국투자증권 | 우선순위 11.20
-- 4. HD현대마린솔루션; 쌓이는 선박, 쌓이는 이익 | 신한투자증권 | 우선순위 9.84
-- 5. 스티펠 - 컴포트 시스템스 USA(FIX USA):[Review] 3Q26: 수주잔고 호조...마진, CFO 이슈가 부담 | 한국투자증권 | 우선순위 8.40
+- 1. HD건설기계; 일시적 물류 차질, 흔들림 없는 성장과 엔진 | 신한투자증권 | 우선순위 17.07
+- 2. 대우건설; 수익성 개선세 지속 | 신한투자증권 | 우선순위 15.55
+- 3. 씨에스윈드; 우려가 더 크게 반영된 주가 | 신한투자증권 | 우선순위 11.47
+- 4. 스티펠 - 비아비 솔루션스(VIAV USA):NDR 후기: 포트 속도 향상에서 테스트 물량 확대로 진화 | 한국투자증권 | 우선순위 11.20
+- 5. HD현대마린솔루션; 쌓이는 선박, 쌓이는 이익 | 신한투자증권 | 우선순위 10.06
 
 ### 산업 랭킹
-- 1. 스티펠 - 반도체 장비:실적 주간을 앞두고 핵심 포인트 점검: KLAC, TER, FORM | 한국투자증권 | 우선순위 8.40
+- 1. 한국&중국 마켓 클로징(10월 27일) | 미래에셋증권 | 우선순위 13.60
+- 2. ETF/파생 전략 | 미래에셋증권 | 우선순위 11.80
+- 3. HD현대일렉트릭 (267260/매수) | 미래에셋증권 | 우선순위 10.66
+- 4. 스티펠 - 의료기술 & 용품:ALC/BLCO/GKOS: 실적 발표 전 최종 점검 및 10-Q 분석 | 한국투자증권 | 우선순위 10.20
+- 5. 타타 컨슈머 프로덕트 (TATACONS IN/매수) | 미래에셋증권 | 우선순위 9.95
 
 ### 매크로 랭킹
-- 1. 마켓레이더 - AI 수익성 우려 균열, Anthropic이 연 KOSPI 사이드카 (10월 27일) | 신한투자증권 | 우선순위 16.42
-- 2. 한국 3분기 GDP; 수출에서 투자로 확산된 온기 | 신한투자증권 | 우선순위 7.20
-- 3. 2026년 10월 27일 한눈에 투데이 | 한국투자증권 | 우선순위 3.45
+- 1. 마켓레이더 - AI 수익성 우려 균열, Anthropic이 연 KOSPI 사이드카 (10월 27일) | 신한투자증권 | 우선순위 16.96
+- 2. 국내 주식 마감 시황 - SpaceX에 이은 Anthropic의 증명(10월 27일) | 신한투자증권 | 우선순위 14.18
+- 3. 에스티팜 (237690/매수) | 미래에셋증권 | 우선순위 9.22
+- 4. 한국 3분기 GDP; 수출에서 투자로 확산된 온기 | 신한투자증권 | 우선순위 8.88
+- 5. 핌코 - 경제 및 시장 코멘터리:크레딧 시장 관점: 채권 금리 상승의 이면 | 한국투자증권 | 우선순위 4.30
+
+### 전략 랭킹
+- 1. HD현대마린솔루션 (443060/매수) | 미래에셋증권 | 우선순위 9.44
+- 2. 메타 플랫폼스 (META US/매수) | 미래에셋증권 | 우선순위 7.35
 
 ## 우선 검토 후보
 ### 1. [종목분석] HD건설기계; 일시적 물류 차질, 흔들림 없는 성장과 엔진
 - 증권사: 신한투자증권
 - 발행일: 2026-10-27
-- 우선순위 점수: 16.93
+- 우선순위 점수: 17.07
 - 선정 근거: 종목분석 카테고리, 공식 소스, 관심 섹터/키워드(건설), 목표가 포함, 투자의견 포함
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 없음 / 키워드 건설
@@ -97,7 +139,7 @@
 ### 2. [시황정보] 마켓레이더 - AI 수익성 우려 균열, Anthropic이 연 KOSPI 사이드카 (10월 27일)
 - 증권사: 신한투자증권
 - 발행일: 2026-10-27
-- 우선순위 점수: 16.42
+- 우선순위 점수: 16.96
 - 선정 근거: 시황정보 카테고리, 공식 소스, 관심 종목(삼성전자), 관심 섹터/키워드(반도체, 로봇), 이익 추정 상향/증가
 - 요약 엔진: rule
 - 관심 필터 일치: 종목 삼성전자 / 키워드 반도체, 로봇
@@ -105,7 +147,18 @@
 - 대표 링크: https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354521
 - 상세 페이지: https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=943001
 
-### 3. [종목분석] 스티펠 - 비아비 솔루션스(VIAV USA):NDR 후기: 포트 속도 향상에서 테스트 물량 확대로 진화
+### 3. [종목분석] 대우건설; 수익성 개선세 지속
+- 증권사: 신한투자증권
+- 발행일: 2026-10-27
+- 우선순위 점수: 15.55
+- 선정 근거: 종목분석 카테고리, 공식 소스, 관심 섹터/키워드(건설), 목표가 포함, 투자의견 포함
+- 요약 엔진: rule
+- 관심 필터 일치: 종목 없음 / 키워드 건설
+- 요약: 신한생각: 투자우위는 신규수주 규모가 결정 3Q26 Review: 이번 분기에도 잔고마진 개선과 일회성 이익 발생 Valuation & Risk: 호실적 이상의 기대치가 반영된 밸류에이션
+- 대표 링크: https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354523
+- 상세 페이지: https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=943005
+
+### 4. [종목분석] 스티펠 - 비아비 솔루션스(VIAV USA):NDR 후기: 포트 속도 향상에서 테스트 물량 확대로 진화
 - 증권사: 한국투자증권
 - 발행일: 2026-10-27
 - 우선순위 점수: 11.20
@@ -115,10 +168,64 @@
 - 요약: 최근 VIAV 경영진과 진행한 NDR은 유럽 광통신 박람회(ECOC)에서 얻은 시사점을 재확인해 주었다. 경영진의 메시지는 AI 광통신 테스트 시장 기회와, 포트 속도 상승 사이클에서 다년간의 테스트 물량 증가로 이어지는 변화에 초점을 맞추고 있다. 이러한 변화는 1.6T 도입, 광섬유 집적도 상승, 광회선 스위칭(OCS), 그리고 궁극적으로 플러그형 광모듈에서 근접 패키지 광학(NPO) 및 공동 패키지 광학(CPO)으로의 전환에 의해 주도된다.
 - 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160574
 
-### 4. [종목분석] 씨에스윈드; 우려가 더 크게 반영된 주가
+### 5. [종목분석] 국태해통증권 - 닝더스다이(CATL)(300750 CHN):3Q 단기 요인으로 실적 변동, 과도한 주가 조정으로 투자 기회 부각
+- 증권사: 한국투자증권
+- 발행일: 2026-10-27
+- 우선순위 점수: 5.75
+- 선정 근거: 종목분석 카테고리, 공식 소스, 우선 추적 증권사, 핵심 키워드(실적)
+- 요약 엔진: rule
+- 관심 필터 일치: 없음
+- 요약: 2026년 3분기는 제품 믹스 변화와 세제 조정의 영향으로 단기적인 실적 변동이 나타났으나, 회사는 관련 영향에 적극 대응하고 있다. 2027년 리튬이온 배터리 수요는 20~30% 성장할 것으로 예상한다. 현재 밸류에이션도 낮은 수준으로, ‘매수’ 의견을 유지한다.
+- 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160578
+
+### 6. [산업분석] 한국&중국 마켓 클로징(10월 27일)
+- 증권사: 미래에셋증권
+- 발행일: 2026-10-27
+- 우선순위 점수: 13.60
+- 선정 근거: 산업분석 카테고리, 공식 소스, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(반도체, 방산, 건설), 이익 추정 상향/증가
+- 요약 엔진: rule
+- 관심 필터 일치: 종목 삼성전자, SK하이닉스 / 키워드 반도체, 방산, 건설
+- 요약: 한국&중국 마켓 클로징(10월 27일) 앤트로픽 훈풍에 상승 # 국내 마감
+- 대표 링크: https://securities.miraeasset.com/bbs/download/2148054.pdf?attachmentId=2148054
+- 상세 페이지: https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343680&messageNumber=2569&categoryId=1521
+
+### 7. [산업분석] ETF/파생 전략
+- 증권사: 미래에셋증권
+- 발행일: 2026-10-27
+- 우선순위 점수: 11.80
+- 선정 근거: 산업분석 카테고리, 공식 소스, 관심 종목(삼성전자, SK하이닉스), 관심 섹터/키워드(반도체), 우선 추적 증권사
+- 요약 엔진: rule
+- 관심 필터 일치: 종목 삼성전자, SK하이닉스 / 키워드 반도체
+- 요약: 12월 정기변경: 신규 산업분류체계 도입으로 변경 종목 수 증가 전망 국내 상장 2,559개 종목에 대해 섹터, 산업그룹, 산업, 하위산업 4단계 분류가 적용. 삼성전자, SK하이닉스는 정보기술 > 반도체에 배정, LG에너지솔루션은 산업재 > 배터리로 배정
+- 대표 링크: https://securities.miraeasset.com/bbs/download/2148041.pdf?attachmentId=2148041
+- 상세 페이지: https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343662&messageNumber=2565&categoryId=1521
+
+### 8. [투자정보] HD현대마린솔루션 (443060/매수)
+- 증권사: 미래에셋증권
+- 발행일: 2026-10-27
+- 우선순위 점수: 9.44
+- 선정 근거: 투자정보 카테고리, 공식 소스, 실적/마진 추정치 포함, 이익 추정 상향/증가, 이익 추정 하향/감소
+- 요약 엔진: rule
+- 관심 필터 일치: 없음
+- 요약: 관련종목 낮아진 밸류에이션 부담 3Q26 Review: 영업이익 컨센서스 9.6% 하회
+- 대표 링크: https://securities.miraeasset.com/bbs/download/2148039.pdf?attachmentId=2148039
+- 상세 페이지: https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343658&messageNumber=2563&categoryId=1521
+
+### 9. [시황정보] 국내 주식 마감 시황 - SpaceX에 이은 Anthropic의 증명(10월 27일)
 - 증권사: 신한투자증권
 - 발행일: 2026-10-27
-- 우선순위 점수: 11.37
+- 우선순위 점수: 14.18
+- 선정 근거: 시황정보 카테고리, 공식 소스, 관심 종목(삼성전자), 관심 섹터/키워드(반도체, 로봇, 건설), 이익 추정 상향/증가
+- 요약 엔진: rule
+- 관심 필터 일치: 종목 삼성전자 / 키워드 반도체, 로봇, 건설
+- 요약: Anthropic S-1 공개 후 KOSPI 매수 사이드카 Anthropic이 이겨낸 AI 자본 조달 우려 Anthropic S-1 공개 후 KOSPI 매수 사이드카
+- 대표 링크: https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354525
+- 상세 페이지: https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=943007
+
+### 10. [종목분석] 씨에스윈드; 우려가 더 크게 반영된 주가
+- 증권사: 신한투자증권
+- 발행일: 2026-10-27
+- 우선순위 점수: 11.47
 - 선정 근거: 종목분석 카테고리, 공식 소스, 투자의견 포함, 실적/마진 추정치 포함, 이익 추정 상향/증가
 - 요약 엔진: rule
 - 관심 필터 일치: 없음
@@ -126,88 +233,56 @@
 - 대표 링크: https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354512
 - 상세 페이지: https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=942977
 
-### 5. [종목분석] HD현대마린솔루션; 쌓이는 선박, 쌓이는 이익
-- 증권사: 신한투자증권
+### 11. [산업분석] HD현대일렉트릭 (267260/매수)
+- 증권사: 미래에셋증권
 - 발행일: 2026-10-27
-- 우선순위 점수: 9.84
-- 선정 근거: 종목분석 카테고리, 공식 소스, 목표가 포함, 투자의견 포함, 실적/마진 추정치 포함
+- 우선순위 점수: 10.66
+- 선정 근거: 산업분석 카테고리, 공식 소스, 실적/마진 추정치 포함, 이익 추정 상향/증가, 마진율 추정 상승/개선
 - 요약 엔진: rule
 - 관심 필터 일치: 없음
-- 요약: 신한생각: 일회성에 흔들린 3분기, 길게 보면 쌓이는 이익 3Q26 Review: 매출은 사상 최대, 이익은 일회성에 가려져 Valuation & Risk: 이익은 보수적으로, 옵션은 할증으로
-- 대표 링크: https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354517
-- 상세 페이지: https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=942985
+- 요약: 관련종목 3Q26 Review: 데이터센터를 위한 증설 3Q26 Review: 북미 매출 비중 축소와 환율 하락 영향으로 컨센서스 하회
+- 대표 링크: https://securities.miraeasset.com/bbs/download/2148055.pdf?attachmentId=2148055
+- 상세 페이지: https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2343681&messageNumber=2570&categoryId=1521
 
-### 6. [산업분석] 스티펠 - 반도체 장비:실적 주간을 앞두고 핵심 포인트 점검: KLAC, TER, FORM
+### 12. [산업분석] 스티펠 - 의료기술 & 용품:ALC/BLCO/GKOS: 실적 발표 전 최종 점검 및 10-Q 분석
 - 증권사: 한국투자증권
 - 발행일: 2026-10-27
-- 우선순위 점수: 8.40
-- 선정 근거: 산업분석 카테고리, 공식 소스, 관심 섹터/키워드(반도체), 우선 추적 증권사, 핵심 키워드(실적, 반도체)
-- 요약 엔진: rule
-- 관심 필터 일치: 종목 없음 / 키워드 반도체
-- 요약: 반도체 장비 업계가 공급망 제약을 그때그때 해소해 나가는 상황에서, 당사는 2027년 웨이퍼 제조장비(WFE) 시장에 대한 기대치를 낮출 필요가 있다고 판단한 바 있다. 지난주 램리서치(LRCX)가 제시한 신중한 12월 분기 매출 가이던스(+5% QoQ)와 2027년 WFE 시장 전망(2,000억 달러 이상)은 적어도 기대치를 조정하는 계기가 될 것이다. 이는 공급 제약을 강조하지만, 시간이 지나면서 WFE 시장이 도달할 수 있는 규모에 대한 기대까지 낮추는 것은 아니다.
-- 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160576
-
-### 7. [경제분석] 한국 3분기 GDP; 수출에서 투자로 확산된 온기
-- 증권사: 신한투자증권
-- 발행일: 2026-10-27
-- 우선순위 점수: 7.20
-- 선정 근거: 경제분석 카테고리, 공식 소스, 관심 섹터/키워드(반도체, 건설), 우선 추적 증권사
-- 요약 엔진: rule
-- 관심 필터 일치: 종목 없음 / 키워드 반도체, 건설
-- 요약: 3Q GDP QoQ 1.0% 증가하며 성장세 강화 반도체 설비투자 확대와 토목 건설 반등이 소비 위축 보완 4분기 투자 호조 후 내년 1분기 소비 강화.
-- 대표 링크: https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354522
-- 상세 페이지: https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gieconomy&messageId=943004
-
-### 8. [시황정보] 2026년 10월 27일 한눈에 투데이
-- 증권사: 한국투자증권
-- 발행일: 2026-10-27
-- 우선순위 점수: 3.45
-- 선정 근거: 시황정보 카테고리, 공식 소스, 우선 추적 증권사
+- 우선순위 점수: 10.20
+- 선정 근거: 산업분석 카테고리, 공식 소스, 이익 추정 상향/증가, 마진율 추정 상승/개선, 이익 추정 하향/감소
 - 요약 엔진: rule
 - 관심 필터 일치: 없음
-- 요약: - 26일 브라질 룰라 대통령이 대선에서 승리하며 4선에 성공. 1차 투표에서 보수 진영인 보우소나루 후보가 우위를 보이며 룰라의 패배가 예상됐으나, 예측 뒤엎고 2차 투표에서 룰라 대통령이 승리한 상황 - 1차 투표 결과 발표 이후 정권 교체 가능성 및 재정 건전화 기대감 확대됨에 따라 브라질 국채 10년물 금리 하루 동안 127bp 하락.
-- 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160570
-
-### 9. [종목분석] 스티펠 - 컴포트 시스템스 USA(FIX USA):[Review] 3Q26: 수주잔고 호조...마진, CFO 이슈가 부담
-- 증권사: 한국투자증권
-- 발행일: 2026-10-27
-- 우선순위 점수: 8.40
-- 선정 근거: 종목분석 카테고리, 공식 소스, 이익 추정 상향/증가, 마진율 추정 상승/개선, 우선 추적 증권사
-- 요약 엔진: rule
-- 관심 필터 일치: 없음
-- 요약: 매출은 시장 예상을 웃돌았지만, 매출총이익률은 기대에 못 미쳤다. 주요 원인은 1) 마진이 낮은 장비 매출 비중 확대(1H26 대비 약 2%p 상승), 2) 초기 단계 프로젝트 비중 증가, 3) 전분기대비 약 1,200만달러 늘어난 인수회계 조정, 4) 텍사스 전기 사업의 매출총이익률 하락이다. 3Q26 수주잔고에는 현재 모듈러 사업에서 대규모 시험 프로젝트를 진행 중인 세 번째 고객의 프로그램성 수주가 아직 포함되지 않았다.
-- 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160575
-
-### 10. [종목분석] 스티펠 - 오루카 테라퓨틱스(ORKA USA):ORKA-001, 임상에서 동급 최고 수준의 건선 치료 효과 재확인
-- 증권사: 한국투자증권
-- 발행일: 2026-10-27
-- 우선순위 점수: 5.10
-- 선정 근거: 종목분석 카테고리, 공식 소스, 우선 추적 증권사
-- 요약 엔진: rule
-- 관심 필터 일치: 없음
-- 요약: 차세대 IL-23p19 표적 치료제 ORKA-001의 건선 임상 2b상(EVERLAST-B)에서 긍정적인 주요 결과(topline data)가 발표됨에 따라 ORKA에 대한 투자의견 매수(Buy)를 유지한다. 가장 중요한 점은 ORKA-001 600mg 투여군의 PASI100 달성률이 61%를 기록하며, 임상 2a상 EVERLAST-A에서 확인된 동급 최고 수준의 치료 효과(63.5%)를 재현했다는 것이다. 안전성에서도 특별한 문제가 발견되지 않았다.
-- 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160572
-
-### 11. [종목분석] 스티펠 - 오빈티브(OVV USA):로건 에너지로 인수로 더해지는 몬트니 지역 내 확장 가능성
-- 증권사: 한국투자증권
-- 발행일: 2026-10-27
-- 우선순위 점수: 4.85
-- 선정 근거: 종목분석 카테고리, 공식 소스, 우선 추적 증권사
-- 요약 엔진: rule
-- 관심 필터 일치: 없음
-- 요약: 오빈티브(OVV)가 로건 에너지(Logan Energy)를 주당 1.40캐나다 달러(C$)에 현금 인수한다고 발표했다. 총 인수대금은 로건의 순부채를 포함해 약 8억 9,000만 달러(C$12.6억)다. 이번 거래는 2024년 이후 OVV이 캐나다 몬트니(Montney) 지역 내에서 진행하는 네번째 인수로, 높은 투자수익률(RoR)을 창출할 수 있는 유망한 오일 생산 입지를 매력적인 가격에 확보한다는 기존 전략의 연장선이다.
-- 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160573
+- 요약: 당사 커버리지 내 중대형 안과 의료기기 기업들의 실적 발표를 앞두고 최종 전망을 제시하고, 2Q26 10-Q(분기보고서)의 주요 내용을 점검한다. - 글라우코스(GKOS, 매수, TP $190): 3Q26 Epioxa에 대한 시장 기대치는 높지만, 매출액이 3,000만달러 이상이면 여전히 양호한 실적으로 평가할 수 있다. 다만 당사 설문조사에서 응답자들의 Epioxa 시술 건수가 2분기 대비 3분기에 4배 증가한 것으로 나타나, 이를 상회하는 실적에 대한 확신이 높아졌다.
+- 대표 링크: https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160581
 
 ## 전체 수집 결과
 
-- [종목분석] HD건설기계; 일시적 물류 차질, 흔들림 없는 성장과 엔진 | 신한투자증권 | 2026-10-27 | 우선순위 16.93 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354520
-- [시황정보] 마켓레이더 - AI 수익성 우려 균열, Anthropic이 연 KOSPI 사이드카 (10월 27일) | 신한투자증권 | 2026-10-27 | 우선순위 16.42 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354521
-- [종목분석] 씨에스윈드; 우려가 더 크게 반영된 주가 | 신한투자증권 | 2026-10-27 | 우선순위 11.37 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354512
+- [종목분석] HD건설기계; 일시적 물류 차질, 흔들림 없는 성장과 엔진 | 신한투자증권 | 2026-10-27 | 우선순위 17.07 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354520
+- [시황정보] 마켓레이더 - AI 수익성 우려 균열, Anthropic이 연 KOSPI 사이드카 (10월 27일) | 신한투자증권 | 2026-10-27 | 우선순위 16.96 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354521
+- [종목분석] 대우건설; 수익성 개선세 지속 | 신한투자증권 | 2026-10-27 | 우선순위 15.55 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354523
+- [시황정보] 국내 주식 마감 시황 - SpaceX에 이은 Anthropic의 증명(10월 27일) | 신한투자증권 | 2026-10-27 | 우선순위 14.18 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354525
+- [산업분석] 한국&중국 마켓 클로징(10월 27일) | 미래에셋증권 | 2026-10-27 | 우선순위 13.60 | https://securities.miraeasset.com/bbs/download/2148054.pdf?attachmentId=2148054
+- [산업분석] ETF/파생 전략 | 미래에셋증권 | 2026-10-27 | 우선순위 11.80 | https://securities.miraeasset.com/bbs/download/2148041.pdf?attachmentId=2148041
+- [종목분석] 씨에스윈드; 우려가 더 크게 반영된 주가 | 신한투자증권 | 2026-10-27 | 우선순위 11.47 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354512
 - [종목분석] 스티펠 - 비아비 솔루션스(VIAV USA):NDR 후기: 포트 속도 향상에서 테스트 물량 확대로 진화 | 한국투자증권 | 2026-10-27 | 우선순위 11.20 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160574
-- [종목분석] HD현대마린솔루션; 쌓이는 선박, 쌓이는 이익 | 신한투자증권 | 2026-10-27 | 우선순위 9.84 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354517
+- [산업분석] HD현대일렉트릭 (267260/매수) | 미래에셋증권 | 2026-10-27 | 우선순위 10.66 | https://securities.miraeasset.com/bbs/download/2148055.pdf?attachmentId=2148055
+- [산업분석] 스티펠 - 의료기술 & 용품:ALC/BLCO/GKOS: 실적 발표 전 최종 점검 및 10-Q 분석 | 한국투자증권 | 2026-10-27 | 우선순위 10.20 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160581
+- [종목분석] HD현대마린솔루션; 쌓이는 선박, 쌓이는 이익 | 신한투자증권 | 2026-10-27 | 우선순위 10.06 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354517
+- [산업분석] 타타 컨슈머 프로덕트 (TATACONS IN/매수) | 미래에셋증권 | 2026-10-27 | 우선순위 9.95 | https://securities.miraeasset.com/bbs/download/2148042.pdf?attachmentId=2148042
+- [투자정보] HD현대마린솔루션 (443060/매수) | 미래에셋증권 | 2026-10-27 | 우선순위 9.44 | https://securities.miraeasset.com/bbs/download/2148039.pdf?attachmentId=2148039
+- [시황정보] 에스티팜 (237690/매수) | 미래에셋증권 | 2026-10-27 | 우선순위 9.22 | https://securities.miraeasset.com/bbs/download/2148053.pdf?attachmentId=2148053
+- [경제분석] 한국 3분기 GDP; 수출에서 투자로 확산된 온기 | 신한투자증권 | 2026-10-27 | 우선순위 8.88 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354522
 - [산업분석] 스티펠 - 반도체 장비:실적 주간을 앞두고 핵심 포인트 점검: KLAC, TER, FORM | 한국투자증권 | 2026-10-27 | 우선순위 8.40 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160576
 - [종목분석] 스티펠 - 컴포트 시스템스 USA(FIX USA):[Review] 3Q26: 수주잔고 호조...마진, CFO 이슈가 부담 | 한국투자증권 | 2026-10-27 | 우선순위 8.40 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160575
-- [경제분석] 한국 3분기 GDP; 수출에서 투자로 확산된 온기 | 신한투자증권 | 2026-10-27 | 우선순위 7.20 | https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=354522
+- [종목분석] 스티펠 - 케이던스 디자인 시스템즈(CDNS USA):[Review] 호실적에 더해진 AI 경쟁력 | 한국투자증권 | 2026-10-27 | 우선순위 8.27 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160579
+- [산업분석] 스티펠 - 은행:마진은 선방…순이자이익은 제자리 | 한국투자증권 | 2026-10-27 | 우선순위 7.90 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160580
+- [투자정보] 메타 플랫폼스 (META US/매수) | 미래에셋증권 | 2026-10-27 | 우선순위 7.35 | https://securities.miraeasset.com/bbs/download/2148043.pdf?attachmentId=2148043
+- [종목분석] 국태해통증권 - 닝더스다이(CATL)(300750 CHN):3Q 단기 요인으로 실적 변동, 과도한 주가 조정으로 투자 기회 부각 | 한국투자증권 | 2026-10-27 | 우선순위 5.75 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160578
 - [종목분석] 스티펠 - 오루카 테라퓨틱스(ORKA USA):ORKA-001, 임상에서 동급 최고 수준의 건선 치료 효과 재확인 | 한국투자증권 | 2026-10-27 | 우선순위 5.10 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160572
 - [종목분석] 스티펠 - 오빈티브(OVV USA):로건 에너지로 인수로 더해지는 몬트니 지역 내 확장 가능성 | 한국투자증권 | 2026-10-27 | 우선순위 4.85 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160573
+- [종목분석] 국태해통증권 - 지리자동차(00175 HKG):기술 지리(Geely): Full-Domain AI 전면 적용 | 한국투자증권 | 2026-10-27 | 우선순위 4.85 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160577
+- [산업분석] 스티펠 - 바이오테크:[In-depth] ESMO에서 발표된 다양한 ADC 관련 연구 결과 주목 | 한국투자증권 | 2026-10-27 | 우선순위 4.60 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160583
+- [산업분석] 스티펠 - 핀테크:미 연방항소법원, 직불카드 정산 수수료 인하 가능성 열어 | 한국투자증권 | 2026-10-27 | 우선순위 4.35 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160582
+- [시황정보] 핌코 - 경제 및 시장 코멘터리:크레딧 시장 관점: 채권 금리 상승의 이면 | 한국투자증권 | 2026-10-27 | 우선순위 4.30 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160595
 - [시황정보] 2026년 10월 27일 한눈에 투데이 | 한국투자증권 | 2026-10-27 | 우선순위 3.45 | https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=160570
+- [시황정보] 글로벌 마켓 브리핑(10월 27일) | 미래에셋증권 | 2026-10-27 | 우선순위 3.20 | https://securities.miraeasset.com/bbs/download/2148038.pdf?attachmentId=2148038
+- [시황정보] 마켓 뷰(10월 27일) | 미래에셋증권 | 2026-10-27 | 우선순위 3.20 | https://securities.miraeasset.com/bbs/download/2148040.pdf?attachmentId=2148040
