@@ -17,6 +17,7 @@ from report_collector.estimates import (
     extract_estimate_signal_types,
 )
 from report_collector.market_data import normalize_ticker
+from report_collector.intelligence import build_daily_intelligence
 from report_collector.models import DailyDigest
 from report_collector.normalization import (
     normalize_opinion_value,
@@ -1054,6 +1055,13 @@ def publish_digest(
     )
     _write_json(docs_data_root / "index.json", _build_index(archive_root))
     _sync_subject_payloads(docs_data_root, archive_root)
+    # Sidecars share the existing archive writer and schedule. Legacy payloads stay intact.
+    intelligence_payload = build_daily_intelligence(digest_payload)
+    _write_json(
+        docs_data_root / "intelligence" / "days" / f"{digest.date}.json",
+        intelligence_payload,
+    )
+    _write_json(docs_data_root / "intelligence" / "latest.json", intelligence_payload)
 
 
 def _build_index(archive_root: Path) -> dict[str, list[dict[str, Any]]]:
