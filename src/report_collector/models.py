@@ -53,6 +53,7 @@ class Report:
     coverage_initiated: bool = False
     change_types: list[str] = field(default_factory=list)
     change_reasons: list[str] = field(default_factory=list)
+    source_records: list[dict[str, Any]] = field(default_factory=list)
 
     @property
     def display_title(self) -> str:
@@ -128,6 +129,10 @@ class Report:
 
     def to_public_dict(self) -> dict[str, Any]:
         return {
+            **({"source_records": [
+                {key: item.get(key) for key in ("source", "report_id", "detail_url", "pdf_url")}
+                for item in self.source_records
+            ]} if self.source_records else {}),
             "source": self.source,
             "category": self.category,
             "category_label": self.category_label,

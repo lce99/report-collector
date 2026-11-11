@@ -16,6 +16,12 @@
 
 중요: 저작권과 저장소 용량을 고려해서 원문 PDF나 본문 전체를 저장하지 않고, 메타데이터와 짧은 요약 중심으로 보관합니다.
 
+Investment Office 연동용 읽기 후보 피드는 `docs/data/intelligence/latest.json`과
+`docs/data/intelligence/days/YYYY-MM-DD.json`에 추가됩니다. 원래 분류를 보존하고
+규칙 분류 근거, PDF 링크와 본문 추출 상태, 중복 그룹, 읽기 우선순위를 제공합니다.
+전체 보고서 분석 완료를 뜻하지 않으며 별도 예약이나 유료 API를 추가하지 않습니다.
+필드와 연동 방법은 [일일 피드 계약](docs/DAILY_INTELLIGENCE_FEED.md)을 참고하세요.
+
 ## 현재 수집 소스
 
 - `네이버 금융 리서치`: 기본 수집원입니다.
