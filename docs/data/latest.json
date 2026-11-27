@@ -1,19 +1,19 @@
 {
   "date": "2026-11-27",
-  "requested_date": "2026-11-27",
-  "generated_at": "2026-11-27T16:28:32+09:00",
-  "collection_note": "",
+  "requested_date": "2026-11-28",
+  "generated_at": "2026-11-28T01:56:12+09:00",
+  "collection_note": "2026-11-28 기준 리포트가 없어 2026-11-27 자료로 대체했습니다.",
   "dashboard_url": "https://lce99.github.io/report-collector/?date=2026-11-27",
-  "editorial_note": "이익 추정 상향 8건, 마진 개선 4건이 감지됐습니다. 오늘은 종목분석 리포트가 8건으로 가장 많았습니다. 신한투자증권, 한국투자증권 발간 비중이 높았고, 우선 확인할 만한 핵심 리포트는 지씨지놈; 미국 액체생검 시장에 한 걸음 더, 자동차/철강금속; 성장의 시대에서 자본효율의 시대로, 인텔리안테크; 이제는 좋아질 일만입니다.",
+  "editorial_note": "이익 추정 상향 10건, 마진 개선 4건이 감지됐습니다. 오늘은 산업분석 리포트가 11건으로 가장 많았습니다. 신한투자증권, 미래에셋증권, 한국투자증권 발간 비중이 높았고, 우선 확인할 만한 핵심 리포트는 지씨지놈; 미국 액체생검 시장에 한 걸음 더, 자동차/철강금속; 성장의 시대에서 자본효율의 시대로, 인텔리안테크; 이제는 좋아질 일만입니다.",
   "keywords": [
-    "자동차",
-    "철강금속",
     "국태해통증권",
     "HKG",
     "확대",
+    "한국",
     "지씨지놈",
     "미국",
-    "액체생검"
+    "액체생검",
+    "시장에"
   ],
   "priority_filters": {
     "enabled": true,
@@ -35,16 +35,16 @@
       "항공"
     ],
     "priority_only": false,
-    "matched_reports": 5,
-    "matched_must_read": 3
+    "matched_reports": 13,
+    "matched_must_read": 7
   },
   "stats": {
-    "total_reports": 18,
-    "priority_match_reports": 5,
+    "total_reports": 32,
+    "priority_match_reports": 13,
     "pdf_text_reports": 0,
     "estimate_metric_reports": 3,
-    "estimate_signal_reports": 11,
-    "earnings_estimate_up": 8,
+    "estimate_signal_reports": 13,
+    "earnings_estimate_up": 10,
     "earnings_estimate_down": 5,
     "margin_estimate_up": 4,
     "margin_estimate_down": 1,
@@ -52,7 +52,7 @@
     "estimate_revision_down": 0,
     "llm_summary_reports": 0,
     "llm_investment_memo_reports": 0,
-    "changed_reports": 11,
+    "changed_reports": 13,
     "collector_health": [
       {
         "source": "naver_research",
@@ -60,17 +60,17 @@
         "collector": "NaverResearchCollector",
         "status": "empty",
         "report_count": 0,
-        "duration_seconds": 8.56,
+        "duration_seconds": 8.47,
         "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
       },
       {
         "source": "mirae_asset_official",
         "label": "미래에셋증권 공식",
         "collector": "MiraeAssetCollector",
-        "status": "empty",
-        "report_count": 0,
-        "duration_seconds": 1.43,
-        "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
+        "status": "ok",
+        "report_count": 11,
+        "duration_seconds": 11.8,
+        "message": ""
       },
       {
         "source": "korea_investment_official",
@@ -78,7 +78,7 @@
         "collector": "KoreaInvestmentCollector",
         "status": "ok",
         "report_count": 4,
-        "duration_seconds": 20.99,
+        "duration_seconds": 16.01,
         "message": ""
       },
       {
@@ -86,26 +86,26 @@
         "label": "신한투자증권 공식",
         "collector": "ShinhanInvestmentCollector",
         "status": "ok",
-        "report_count": 14,
-        "duration_seconds": 6.44,
+        "report_count": 17,
+        "duration_seconds": 5.04,
         "message": ""
       }
     ],
     "collector_health_summary": {
       "available": true,
       "active_date": "2026-11-27",
-      "attempt_count": 1,
-      "ok_sources": 2,
-      "empty_sources": 2,
+      "attempt_count": 2,
+      "ok_sources": 3,
+      "empty_sources": 1,
       "failed_sources": 0,
-      "raw_report_count": 18,
-      "deduped_report_count": 18
+      "raw_report_count": 32,
+      "deduped_report_count": 32
     },
     "collector_health_attempts": [
       {
-        "date": "2026-11-27",
-        "raw_report_count": 18,
-        "deduped_report_count": 18,
+        "date": "2026-11-28",
+        "raw_report_count": 0,
+        "deduped_report_count": 0,
         "collectors": [
           {
             "source": "naver_research",
@@ -113,7 +113,7 @@
             "collector": "NaverResearchCollector",
             "status": "empty",
             "report_count": 0,
-            "duration_seconds": 8.56,
+            "duration_seconds": 9.02,
             "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
           },
           {
@@ -122,8 +122,51 @@
             "collector": "MiraeAssetCollector",
             "status": "empty",
             "report_count": 0,
-            "duration_seconds": 1.43,
+            "duration_seconds": 1.72,
             "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
+          },
+          {
+            "source": "korea_investment_official",
+            "label": "한국투자증권 공식",
+            "collector": "KoreaInvestmentCollector",
+            "status": "empty",
+            "report_count": 0,
+            "duration_seconds": 12.2,
+            "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
+          },
+          {
+            "source": "shinhan_investment_official",
+            "label": "신한투자증권 공식",
+            "collector": "ShinhanInvestmentCollector",
+            "status": "empty",
+            "report_count": 0,
+            "duration_seconds": 2.6,
+            "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
+          }
+        ]
+      },
+      {
+        "date": "2026-11-27",
+        "raw_report_count": 32,
+        "deduped_report_count": 32,
+        "collectors": [
+          {
+            "source": "naver_research",
+            "label": "네이버 금융 리서치",
+            "collector": "NaverResearchCollector",
+            "status": "empty",
+            "report_count": 0,
+            "duration_seconds": 8.47,
+            "message": "정상 종료됐지만 해당 날짜 리포트가 없습니다."
+          },
+          {
+            "source": "mirae_asset_official",
+            "label": "미래에셋증권 공식",
+            "collector": "MiraeAssetCollector",
+            "status": "ok",
+            "report_count": 11,
+            "duration_seconds": 11.8,
+            "message": ""
           },
           {
             "source": "korea_investment_official",
@@ -131,7 +174,7 @@
             "collector": "KoreaInvestmentCollector",
             "status": "ok",
             "report_count": 4,
-            "duration_seconds": 20.99,
+            "duration_seconds": 16.01,
             "message": ""
           },
           {
@@ -139,25 +182,14 @@
             "label": "신한투자증권 공식",
             "collector": "ShinhanInvestmentCollector",
             "status": "ok",
-            "report_count": 14,
-            "duration_seconds": 6.44,
+            "report_count": 17,
+            "duration_seconds": 5.04,
             "message": ""
           }
         ]
       }
     ],
     "collector_alerts": [
-      {
-        "type": "collector_empty",
-        "severity": "warning",
-        "source": "mirae_asset_official",
-        "label": "미래에셋증권 공식",
-        "title": "미래에셋증권 공식 무출력",
-        "message": "오늘 0건입니다. 최근 평균은 4.8건입니다.",
-        "current_count": 0,
-        "average_count": 4.8,
-        "sample_days": 5
-      },
       {
         "type": "collector_volume_drop",
         "severity": "warning",
@@ -172,24 +204,24 @@
     ],
     "collector_alert_summary": {
       "available": true,
-      "total_alerts": 2,
+      "total_alerts": 1,
       "critical_alerts": 0,
-      "warning_alerts": 2,
+      "warning_alerts": 1,
       "failed_sources": 0,
-      "empty_sources": 1,
+      "empty_sources": 0,
       "volume_drop_alerts": 1
     },
     "link_health": {
-      "pdf_preferred": 14,
+      "pdf_preferred": 28,
       "detail_only": 4,
       "missing": 0,
-      "total": 18
+      "total": 32
     },
     "must_read_diversity": {
       "selected": 12,
       "unique_subject_or_title": 11,
-      "unique_brokers": 2,
-      "max_broker_count": 8,
+      "unique_brokers": 3,
+      "max_broker_count": 5,
       "max_subject_or_title_count": 2,
       "broker_soft_limit": 3,
       "broker_hard_limit": 5,
@@ -197,26 +229,34 @@
     },
     "categories": [
       {
+        "label": "산업분석",
+        "count": 11
+      },
+      {
         "label": "종목분석",
         "count": 8
       },
       {
-        "label": "산업분석",
+        "label": "시황정보",
         "count": 6
       },
       {
-        "label": "시황정보",
-        "count": 3
+        "label": "투자정보",
+        "count": 4
       },
       {
         "label": "경제분석",
-        "count": 1
+        "count": 3
       }
     ],
     "brokers": [
       {
         "name": "신한투자증권",
-        "count": 14
+        "count": 17
+      },
+      {
+        "name": "미래에셋증권",
+        "count": 11
       },
       {
         "name": "한국투자증권",
@@ -224,21 +264,21 @@
       }
     ],
     "keywords": [
-      "자동차",
-      "철강금속",
       "국태해통증권",
       "HKG",
       "확대",
+      "한국",
       "지씨지놈",
       "미국",
-      "액체생검"
+      "액체생검",
+      "시장에"
     ],
     "selection_performance": {
-      "tracked_selections": 1810,
+      "tracked_selections": 1816,
       "pending_by_horizon": {
-        "1d": 12,
-        "7d": 72,
-        "30d": 364
+        "1d": 18,
+        "7d": 78,
+        "30d": 370
       },
       "completed_by_horizon": {
         "1d": 1798,
@@ -833,7 +873,7 @@
   },
   "change_summary": {
     "available": true,
-    "changed_reports": 11,
+    "changed_reports": 13,
     "target_price_up": 0,
     "target_price_down": 0,
     "opinion_changed": 0,
@@ -841,8 +881,8 @@
     "opinion_down": 0,
     "analyst_changed": 0,
     "coverage_initiated": 0,
-    "estimate_signal_reports": 11,
-    "earnings_estimate_up": 8,
+    "estimate_signal_reports": 13,
+    "earnings_estimate_up": 10,
     "earnings_estimate_down": 5,
     "margin_estimate_up": 4,
     "margin_estimate_down": 1,
@@ -869,7 +909,7 @@
           "subject": null,
           "subject_key": null,
           "ticker": null,
-          "views": 140,
+          "views": 185,
           "analyst": "박현우",
           "target_price": "1,960원",
           "target_price_value": 1960,
@@ -917,7 +957,7 @@
           ],
           "estimate_revisions": [],
           "stance": "negative",
-          "score": 15.14,
+          "score": 15.26,
           "score_reasons": [
             "종목분석 카테고리",
             "공식 소스",
@@ -938,7 +978,7 @@
             },
             {
               "label": "조회수",
-              "value": 2.15,
+              "value": 2.27,
               "kind": "boost"
             },
             {
@@ -1044,7 +1084,7 @@
           "subject": null,
           "subject_key": null,
           "ticker": null,
-          "views": 147,
+          "views": 189,
           "analyst": "김아람",
           "target_price": "78,000원",
           "target_price_value": 78000,
@@ -1090,7 +1130,7 @@
           ],
           "estimate_revisions": [],
           "stance": "neutral",
-          "score": 14.56,
+          "score": 14.67,
           "score_reasons": [
             "종목분석 카테고리",
             "공식 소스",
@@ -1111,7 +1151,7 @@
             },
             {
               "label": "조회수",
-              "value": 2.17,
+              "value": 2.28,
               "kind": "boost"
             },
             {
@@ -1210,7 +1250,7 @@
           "subject": null,
           "subject_key": null,
           "ticker": null,
-          "views": 68,
+          "views": 108,
           "analyst": "김지영",
           "target_price": null,
           "target_price_value": null,
@@ -1276,7 +1316,7 @@
           ],
           "estimate_revisions": [],
           "stance": "positive",
-          "score": 12.06,
+          "score": 12.26,
           "score_reasons": [
             "종목분석 카테고리",
             "공식 소스",
@@ -1292,7 +1332,7 @@
             },
             {
               "label": "조회수",
-              "value": 1.83,
+              "value": 2.03,
               "kind": "boost"
             },
             {
@@ -1384,7 +1424,7 @@
           "subject": null,
           "subject_key": null,
           "ticker": null,
-          "views": 43,
+          "views": 68,
           "analyst": "김선미",
           "target_price": "4,900원",
           "target_price_value": 4900,
@@ -1407,7 +1447,7 @@
           ],
           "estimate_revisions": [],
           "stance": "positive",
-          "score": 9.93,
+          "score": 10.13,
           "score_reasons": [
             "종목분석 카테고리",
             "공식 소스",
@@ -1422,13 +1462,13 @@
               "kind": "boost"
             },
             {
-              "label": "이익 추정 상향",
-              "value": 1.8,
+              "label": "조회수",
+              "value": 1.83,
               "kind": "boost"
             },
             {
-              "label": "조회수",
-              "value": 1.63,
+              "label": "이익 추정 상향",
+              "value": 1.8,
               "kind": "boost"
             },
             {
@@ -1508,7 +1548,7 @@
           "subject": null,
           "subject_key": null,
           "ticker": null,
-          "views": 38,
+          "views": 57,
           "analyst": "김선미",
           "target_price": "4,500원",
           "target_price_value": 4500,
@@ -1531,7 +1571,7 @@
           ],
           "estimate_revisions": [],
           "stance": "negative",
-          "score": 9.18,
+          "score": 9.36,
           "score_reasons": [
             "종목분석 카테고리",
             "공식 소스",
@@ -1547,7 +1587,7 @@
             },
             {
               "label": "조회수",
-              "value": 1.58,
+              "value": 1.76,
               "kind": "boost"
             },
             {
@@ -1622,6 +1662,118 @@
       "label": "산업 랭킹",
       "reports": [
         {
+          "source": "mirae_asset_official",
+          "category": "industry",
+          "category_label": "산업분석",
+          "report_id": "mirae-2344601",
+          "title": "한국&중국 마켓 클로징(11월 27일)",
+          "display_title": "한국&중국 마켓 클로징(11월 27일)",
+          "broker": "미래에셋증권",
+          "published_date": "2026-11-27",
+          "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344601&messageNumber=2558&categoryId=1521",
+          "pdf_url": "https://securities.miraeasset.com/bbs/download/2148760.pdf?attachmentId=2148760",
+          "primary_url": "https://securities.miraeasset.com/bbs/download/2148760.pdf?attachmentId=2148760",
+          "primary_url_label": "PDF",
+          "subject": null,
+          "subject_key": null,
+          "ticker": null,
+          "views": 0,
+          "analyst": "박수진",
+          "target_price": null,
+          "target_price_value": null,
+          "opinion": null,
+          "opinion_normalized": null,
+          "has_pdf_text": false,
+          "content_sources": [
+            "html"
+          ],
+          "excerpt": "한국&중국 마켓 클로징(11월 27일) 코스닥 쏠림, 700pt 회복",
+          "summary": "한국&중국 마켓 클로징(11월 27일) 코스닥 쏠림, 700pt 회복 # 국내 마감",
+          "summary_engine": "rule",
+          "investment_memo": {},
+          "estimate_metrics": [],
+          "estimate_signal_types": [],
+          "estimate_reasons": [],
+          "estimate_revisions": [],
+          "stance": "neutral",
+          "score": 11.45,
+          "score_reasons": [
+            "산업분석 카테고리",
+            "공식 소스",
+            "관심 종목(삼성전자)",
+            "관심 섹터/키워드(반도체, 로봇, 우주)",
+            "우선 추적 증권사"
+          ],
+          "score_breakdown": [
+            {
+              "label": "관심 종목",
+              "value": 4.0,
+              "kind": "boost"
+            },
+            {
+              "label": "관심 섹터/키워드",
+              "value": 2.8,
+              "kind": "boost"
+            },
+            {
+              "label": "산업분석 카테고리",
+              "value": 2.7,
+              "kind": "boost"
+            },
+            {
+              "label": "우선 추적 증권사",
+              "value": 0.75,
+              "kind": "boost"
+            },
+            {
+              "label": "본문 정보량",
+              "value": 0.55,
+              "kind": "boost"
+            },
+            {
+              "label": "소스 가중치",
+              "value": 0.45,
+              "kind": "boost"
+            },
+            {
+              "label": "애널리스트",
+              "value": 0.2,
+              "kind": "boost"
+            }
+          ],
+          "link_health": {
+            "status": "pdf_preferred",
+            "primary_kind": "pdf",
+            "has_pdf": true,
+            "has_detail": true,
+            "detail_host": "securities.miraeasset.com",
+            "pdf_host": "securities.miraeasset.com",
+            "note": "PDF 링크를 대표 링크로 사용합니다."
+          },
+          "priority_subject_matches": [
+            "삼성전자"
+          ],
+          "priority_keyword_matches": [
+            "반도체",
+            "로봇",
+            "우주"
+          ],
+          "is_priority_match": true,
+          "previous_report_date": null,
+          "previous_target_price": null,
+          "previous_opinion": null,
+          "previous_analyst": null,
+          "target_price_change": null,
+          "target_price_change_pct": null,
+          "opinion_changed": false,
+          "opinion_change_direction": null,
+          "analyst_changed": false,
+          "coverage_initiated": false,
+          "change_types": [],
+          "change_reasons": [],
+          "has_change_signal": false
+        },
+        {
           "source": "shinhan_investment_official",
           "category": "industry",
           "category_label": "산업분석",
@@ -1637,7 +1789,7 @@
           "subject": null,
           "subject_key": null,
           "ticker": null,
-          "views": 23,
+          "views": 61,
           "analyst": "박광래",
           "target_price": null,
           "target_price_value": null,
@@ -1664,7 +1816,7 @@
           ],
           "estimate_revisions": [],
           "stance": "positive",
-          "score": 10.76,
+          "score": 11.19,
           "score_reasons": [
             "산업분석 카테고리",
             "공식 소스",
@@ -1684,13 +1836,13 @@
               "kind": "boost"
             },
             {
-              "label": "마진율 개선",
-              "value": 1.5,
+              "label": "조회수",
+              "value": 1.79,
               "kind": "boost"
             },
             {
-              "label": "조회수",
-              "value": 1.36,
+              "label": "마진율 개선",
+              "value": 1.5,
               "kind": "boost"
             },
             {
@@ -1769,7 +1921,7 @@
           "subject": null,
           "subject_key": null,
           "ticker": null,
-          "views": 69,
+          "views": 99,
           "analyst": "박광래",
           "target_price": null,
           "target_price_value": null,
@@ -1792,7 +1944,7 @@
           ],
           "estimate_revisions": [],
           "stance": "positive",
-          "score": 8.34,
+          "score": 8.5,
           "score_reasons": [
             "산업분석 카테고리",
             "공식 소스",
@@ -1807,7 +1959,7 @@
             },
             {
               "label": "조회수",
-              "value": 1.84,
+              "value": 2.0,
               "kind": "boost"
             },
             {
@@ -1867,6 +2019,115 @@
           "has_change_signal": true
         },
         {
+          "source": "mirae_asset_official",
+          "category": "industry",
+          "category_label": "산업분석",
+          "report_id": "mirae-2344593",
+          "title": "글로벌/한국 ETF 시장 동향",
+          "display_title": "글로벌/한국 ETF 시장 동향",
+          "broker": "미래에셋증권",
+          "published_date": "2026-11-27",
+          "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344593&messageNumber=2554&categoryId=1521",
+          "pdf_url": "https://securities.miraeasset.com/bbs/download/2148755.pdf?attachmentId=2148755",
+          "primary_url": "https://securities.miraeasset.com/bbs/download/2148755.pdf?attachmentId=2148755",
+          "primary_url_label": "PDF",
+          "subject": null,
+          "subject_key": null,
+          "ticker": null,
+          "views": 0,
+          "analyst": "윤재홍",
+          "target_price": null,
+          "target_price_value": null,
+          "opinion": null,
+          "opinion_normalized": null,
+          "has_pdf_text": false,
+          "content_sources": [
+            "html"
+          ],
+          "excerpt": "전반: 미국 증시는 젠슨 황의 엔비디아 CEO 복귀에 주 초 AI·반도체주를 중심으로 급반등했다. 24~25일에는 AI 투자 수익성 우려와 미국의 추가 관세 이슈가 겹치며 기술주가 다시 약세를 보였으나, 주 초 상승분을 지키며 전주 급락분을 일부 만회했다.",
+          "summary": "전반: 미국 증시는 젠슨 황의 엔비디아 CEO 복귀에 주 초 AI·반도체주를 중심으로 급반등했다. 24~25일에는 AI 투자 수익성 우려와 미국의 추가 관세 이슈가 겹치며 기술주가 다시 약세를 보였으나, 주 초 상승분을 지키며 전주 급락분을 일부 만회했다. 나스닥 100(QQQ US, +4.2%), 반도체(SMH US, +5.6%), 바이오(XBI US, +11.7%)도 강세였다.",
+          "summary_engine": "rule",
+          "investment_memo": {},
+          "estimate_metrics": [],
+          "estimate_signal_types": [],
+          "estimate_reasons": [],
+          "estimate_revisions": [],
+          "stance": "neutral",
+          "score": 7.65,
+          "score_reasons": [
+            "산업분석 카테고리",
+            "공식 소스",
+            "관심 섹터/키워드(반도체, 로봇)",
+            "우선 추적 증권사",
+            "핵심 키워드(etf)"
+          ],
+          "score_breakdown": [
+            {
+              "label": "산업분석 카테고리",
+              "value": 2.7,
+              "kind": "boost"
+            },
+            {
+              "label": "관심 섹터/키워드",
+              "value": 2.6,
+              "kind": "boost"
+            },
+            {
+              "label": "우선 추적 증권사",
+              "value": 0.75,
+              "kind": "boost"
+            },
+            {
+              "label": "본문 정보량",
+              "value": 0.55,
+              "kind": "boost"
+            },
+            {
+              "label": "소스 가중치",
+              "value": 0.45,
+              "kind": "boost"
+            },
+            {
+              "label": "제목 키워드: etf",
+              "value": 0.4,
+              "kind": "boost"
+            },
+            {
+              "label": "애널리스트",
+              "value": 0.2,
+              "kind": "boost"
+            }
+          ],
+          "link_health": {
+            "status": "pdf_preferred",
+            "primary_kind": "pdf",
+            "has_pdf": true,
+            "has_detail": true,
+            "detail_host": "securities.miraeasset.com",
+            "pdf_host": "securities.miraeasset.com",
+            "note": "PDF 링크를 대표 링크로 사용합니다."
+          },
+          "priority_subject_matches": [],
+          "priority_keyword_matches": [
+            "반도체",
+            "로봇"
+          ],
+          "is_priority_match": true,
+          "previous_report_date": null,
+          "previous_target_price": null,
+          "previous_opinion": null,
+          "previous_analyst": null,
+          "target_price_change": null,
+          "target_price_change_pct": null,
+          "opinion_changed": false,
+          "opinion_change_direction": null,
+          "analyst_changed": false,
+          "coverage_initiated": false,
+          "change_types": [],
+          "change_reasons": [],
+          "has_change_signal": false
+        },
+        {
           "source": "shinhan_investment_official",
           "category": "industry",
           "category_label": "산업분석",
@@ -1882,7 +2143,7 @@
           "subject": null,
           "subject_key": null,
           "ticker": null,
-          "views": 94,
+          "views": 126,
           "analyst": "박현진",
           "target_price": null,
           "target_price_value": null,
@@ -1901,7 +2162,7 @@
           "estimate_reasons": [],
           "estimate_revisions": [],
           "stance": "neutral",
-          "score": 6.97,
+          "score": 7.1,
           "score_reasons": [
             "산업분석 카테고리",
             "공식 소스",
@@ -1915,7 +2176,7 @@
             },
             {
               "label": "조회수",
-              "value": 1.97,
+              "value": 2.1,
               "kind": "boost"
             },
             {
@@ -1931,219 +2192,6 @@
             {
               "label": "소스 가중치",
               "value": 0.45,
-              "kind": "boost"
-            },
-            {
-              "label": "애널리스트",
-              "value": 0.2,
-              "kind": "boost"
-            }
-          ],
-          "link_health": {
-            "status": "pdf_preferred",
-            "primary_kind": "pdf",
-            "has_pdf": true,
-            "has_detail": true,
-            "detail_host": "bbs2.shinhansec.com",
-            "pdf_host": "bbs2.shinhansec.com",
-            "note": "PDF 링크를 대표 링크로 사용합니다."
-          },
-          "priority_subject_matches": [],
-          "priority_keyword_matches": [],
-          "is_priority_match": false,
-          "previous_report_date": null,
-          "previous_target_price": null,
-          "previous_opinion": null,
-          "previous_analyst": null,
-          "target_price_change": null,
-          "target_price_change_pct": null,
-          "opinion_changed": false,
-          "opinion_change_direction": null,
-          "analyst_changed": false,
-          "coverage_initiated": false,
-          "change_types": [],
-          "change_reasons": [],
-          "has_change_signal": false
-        },
-        {
-          "source": "korea_investment_official",
-          "category": "industry",
-          "category_label": "산업분석",
-          "report_id": "kis-161810",
-          "title": "Outlook 2027:변화 속에서 길 찾기",
-          "display_title": "피델리티 - Outlook 2027:변화 속에서 길 찾기",
-          "broker": "한국투자증권",
-          "published_date": "2026-11-27",
-          "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=161810",
-          "pdf_url": null,
-          "primary_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=161810",
-          "primary_url_label": "상세",
-          "subject": "피델리티",
-          "subject_key": "피델리티",
-          "ticker": null,
-          "views": 0,
-          "analyst": "리서치본부",
-          "target_price": null,
-          "target_price_value": null,
-          "opinion": null,
-          "opinion_normalized": null,
-          "has_pdf_text": false,
-          "content_sources": [
-            "html"
-          ],
-          "excerpt": "- 경기 사이클 후반부 투자 전략: 미국 경제의 견조한 성장세는 2027년을 앞두고 위험자산 선호 기조를 뒷받침하고 있지만, 채권금리 상승과 지정학적 리스크에 따른 압력이 커지고 있습니다. AI 투자 테마에 대해서는 선별적인 접근이 필요하며, 이를 보완할 수 있는 대체적인 알파 창출 기회도 모색해야 합니다.",
-          "summary": "- 경기 사이클 후반부 투자 전략: 미국 경제의 견조한 성장세는 2027년을 앞두고 위험자산 선호 기조를 뒷받침하고 있지만, 채권금리 상승과 지정학적 리스크에 따른 압력이 커지고 있습니다. AI 투자 테마에 대해서는 선별적인 접근이 필요하며, 이를 보완할 수 있는 대체적인 알파 창출 기회도 모색해야 합니다. - 시험대에 오른 실적: 기업 이익의 추가 성장과 완화된 밸류에이션 부담은 주식시장에 대한 긍정적인 전망에 힘을 싣고 있습니다.",
-          "summary_engine": "rule",
-          "investment_memo": {},
-          "estimate_metrics": [],
-          "estimate_signal_types": [
-            "earnings_estimate_up"
-          ],
-          "estimate_reasons": [
-            "이익 추정 상향/증가"
-          ],
-          "estimate_revisions": [],
-          "stance": "positive",
-          "score": 6.4,
-          "score_reasons": [
-            "산업분석 카테고리",
-            "공식 소스",
-            "이익 추정 상향/증가",
-            "우선 추적 증권사"
-          ],
-          "score_breakdown": [
-            {
-              "label": "산업분석 카테고리",
-              "value": 2.7,
-              "kind": "boost"
-            },
-            {
-              "label": "이익 추정 상향",
-              "value": 1.8,
-              "kind": "boost"
-            },
-            {
-              "label": "우선 추적 증권사",
-              "value": 1.05,
-              "kind": "boost"
-            },
-            {
-              "label": "소스 가중치",
-              "value": 0.4,
-              "kind": "boost"
-            },
-            {
-              "label": "본문 정보량",
-              "value": 0.25,
-              "kind": "boost"
-            },
-            {
-              "label": "애널리스트",
-              "value": 0.2,
-              "kind": "boost"
-            }
-          ],
-          "link_health": {
-            "status": "detail_only",
-            "primary_kind": "detail",
-            "has_pdf": false,
-            "has_detail": true,
-            "detail_host": "securities.koreainvestment.com",
-            "pdf_host": "",
-            "note": "상세 페이지 링크만 확보됐습니다."
-          },
-          "priority_subject_matches": [],
-          "priority_keyword_matches": [],
-          "is_priority_match": false,
-          "previous_report_date": "2026-11-17",
-          "previous_target_price": null,
-          "previous_opinion": null,
-          "previous_analyst": "리서치본부",
-          "target_price_change": null,
-          "target_price_change_pct": null,
-          "opinion_changed": false,
-          "opinion_change_direction": null,
-          "analyst_changed": false,
-          "coverage_initiated": false,
-          "change_types": [
-            "earnings_estimate_up"
-          ],
-          "change_reasons": [
-            "이익 추정 상향/증가"
-          ],
-          "has_change_signal": true
-        },
-        {
-          "source": "shinhan_investment_official",
-          "category": "industry",
-          "category_label": "산업분석",
-          "report_id": "shinhan-giindustry-944363",
-          "title": "신한 자동차/철강금속 Weekly (2026.11.27)",
-          "display_title": "신한 자동차/철강금속 Weekly (2026.11.27)",
-          "broker": "신한투자증권",
-          "published_date": "2026-11-27",
-          "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=giindustry&messageId=944363",
-          "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355245",
-          "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355245",
-          "primary_url_label": "PDF",
-          "subject": null,
-          "subject_key": null,
-          "ticker": null,
-          "views": 7,
-          "analyst": "박광래",
-          "target_price": null,
-          "target_price_value": null,
-          "opinion": null,
-          "opinion_normalized": null,
-          "has_pdf_text": false,
-          "content_sources": [
-            "html"
-          ],
-          "excerpt": "◆ Top Gainers (WoW %) - 자동차/타이어/부품: Stellantis (+8.6%), Ford (+8.3%)",
-          "summary": "◆ Top Gainers (WoW %) - 자동차/타이어/부품: Stellantis (+8.6%), Ford (+8.3%) - 철강/비철금속/광물: Lynas Rare Earths (+8%), 세아베스틸지주 (+6.3%)",
-          "summary_engine": "rule",
-          "investment_memo": {},
-          "estimate_metrics": [],
-          "estimate_signal_types": [],
-          "estimate_reasons": [],
-          "estimate_revisions": [],
-          "stance": "neutral",
-          "score": 6.25,
-          "score_reasons": [
-            "산업분석 카테고리",
-            "공식 소스",
-            "우선 추적 증권사",
-            "핵심 키워드(weekly)"
-          ],
-          "score_breakdown": [
-            {
-              "label": "산업분석 카테고리",
-              "value": 2.7,
-              "kind": "boost"
-            },
-            {
-              "label": "우선 추적 증권사",
-              "value": 1.1,
-              "kind": "boost"
-            },
-            {
-              "label": "조회수",
-              "value": 0.85,
-              "kind": "boost"
-            },
-            {
-              "label": "본문 정보량",
-              "value": 0.55,
-              "kind": "boost"
-            },
-            {
-              "label": "소스 가중치",
-              "value": 0.45,
-              "kind": "boost"
-            },
-            {
-              "label": "제목 키워드: weekly",
-              "value": 0.4,
               "kind": "boost"
             },
             {
@@ -2187,6 +2235,365 @@
           "source": "shinhan_investment_official",
           "category": "market",
           "category_label": "시황정보",
+          "report_id": "shinhan-gicomment-944375",
+          "title": "국내 주식 마감 시황 - 막혔던 유동성 숨통 트이며 온기 확산(11월 27일)",
+          "display_title": "국내 주식 마감 시황 - 막혔던 유동성 숨통 트이며 온기 확산(11월 27일)",
+          "broker": "신한투자증권",
+          "published_date": "2026-11-27",
+          "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=944375",
+          "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355259",
+          "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355259",
+          "primary_url_label": "PDF",
+          "subject": null,
+          "subject_key": null,
+          "ticker": null,
+          "views": 34,
+          "analyst": "강진혁",
+          "target_price": null,
+          "target_price_value": null,
+          "opinion": null,
+          "opinion_normalized": null,
+          "has_pdf_text": false,
+          "content_sources": [
+            "html"
+          ],
+          "excerpt": "삼성전자 배당+증안펀드+中 부양책 등 유동성 숨통 KOSDAQ 매수 사이드카+20일선 회복+700p 안착",
+          "summary": "삼성전자 배당+증안펀드+中 부양책 등 유동성 숨통 KOSDAQ 매수 사이드카+20일선 회복+700p 안착 구리(+5.1%)·은(+9.3%) 등 원자재 가격 반등했고, NASDAQ 선물도 2% 가까이 상승했습니다.",
+          "summary_engine": "rule",
+          "investment_memo": {},
+          "estimate_metrics": [],
+          "estimate_signal_types": [],
+          "estimate_reasons": [],
+          "estimate_revisions": [],
+          "stance": "neutral",
+          "score": 12.43,
+          "score_reasons": [
+            "시황정보 카테고리",
+            "공식 소스",
+            "관심 종목(삼성전자)",
+            "관심 섹터/키워드(반도체, 방산, 로봇)",
+            "우선 추적 증권사"
+          ],
+          "score_breakdown": [
+            {
+              "label": "관심 종목",
+              "value": 4.0,
+              "kind": "boost"
+            },
+            {
+              "label": "관심 섹터/키워드",
+              "value": 3.0,
+              "kind": "boost"
+            },
+            {
+              "label": "시황정보 카테고리",
+              "value": 1.8,
+              "kind": "boost"
+            },
+            {
+              "label": "조회수",
+              "value": 1.53,
+              "kind": "boost"
+            },
+            {
+              "label": "우선 추적 증권사",
+              "value": 1.1,
+              "kind": "boost"
+            },
+            {
+              "label": "본문 정보량",
+              "value": 0.55,
+              "kind": "boost"
+            },
+            {
+              "label": "소스 가중치",
+              "value": 0.45,
+              "kind": "boost"
+            },
+            {
+              "label": "애널리스트",
+              "value": 0.2,
+              "kind": "boost"
+            },
+            {
+              "label": "제목 패널티: 마감",
+              "value": -0.2,
+              "kind": "penalty"
+            }
+          ],
+          "link_health": {
+            "status": "pdf_preferred",
+            "primary_kind": "pdf",
+            "has_pdf": true,
+            "has_detail": true,
+            "detail_host": "bbs2.shinhansec.com",
+            "pdf_host": "bbs2.shinhansec.com",
+            "note": "PDF 링크를 대표 링크로 사용합니다."
+          },
+          "priority_subject_matches": [
+            "삼성전자"
+          ],
+          "priority_keyword_matches": [
+            "반도체",
+            "방산",
+            "로봇",
+            "우주"
+          ],
+          "is_priority_match": true,
+          "previous_report_date": null,
+          "previous_target_price": null,
+          "previous_opinion": null,
+          "previous_analyst": null,
+          "target_price_change": null,
+          "target_price_change_pct": null,
+          "opinion_changed": false,
+          "opinion_change_direction": null,
+          "analyst_changed": false,
+          "coverage_initiated": false,
+          "change_types": [],
+          "change_reasons": [],
+          "has_change_signal": false
+        },
+        {
+          "source": "shinhan_investment_official",
+          "category": "economy",
+          "category_label": "경제분석",
+          "report_id": "shinhan-gieconomy-944373",
+          "title": "신한 FX Check-up; 고용과 증시 변동성 주목. 원/달러 상단 제한",
+          "display_title": "신한 FX Check-up; 고용과 증시 변동성 주목. 원/달러 상단 제한",
+          "broker": "신한투자증권",
+          "published_date": "2026-11-27",
+          "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gieconomy&messageId=944373",
+          "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355257",
+          "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355257",
+          "primary_url_label": "PDF",
+          "subject": null,
+          "subject_key": null,
+          "ticker": null,
+          "views": 18,
+          "analyst": "최예찬",
+          "target_price": null,
+          "target_price_value": null,
+          "opinion": null,
+          "opinion_normalized": null,
+          "has_pdf_text": false,
+          "content_sources": [
+            "html"
+          ],
+          "excerpt": "Review: 증시 급변동에 달러 등락. 외국인 매도에 원화 약세",
+          "summary": "Review: 증시 급변동에 달러 등락. 외국인 매도에 원화 약세 Preview: 고용과 증시 변동성 주목.",
+          "summary_engine": "rule",
+          "investment_memo": {},
+          "estimate_metrics": [],
+          "estimate_signal_types": [],
+          "estimate_reasons": [],
+          "estimate_revisions": [],
+          "stance": "neutral",
+          "score": 12.26,
+          "score_reasons": [
+            "경제분석 카테고리",
+            "공식 소스",
+            "관심 종목(삼성전자)",
+            "관심 섹터/키워드(반도체)",
+            "우선 추적 증권사"
+          ],
+          "score_breakdown": [
+            {
+              "label": "관심 종목",
+              "value": 4.0,
+              "kind": "boost"
+            },
+            {
+              "label": "관심 섹터/키워드",
+              "value": 2.4,
+              "kind": "boost"
+            },
+            {
+              "label": "경제분석 카테고리",
+              "value": 2.3,
+              "kind": "boost"
+            },
+            {
+              "label": "조회수",
+              "value": 1.26,
+              "kind": "boost"
+            },
+            {
+              "label": "우선 추적 증권사",
+              "value": 1.1,
+              "kind": "boost"
+            },
+            {
+              "label": "본문 정보량",
+              "value": 0.55,
+              "kind": "boost"
+            },
+            {
+              "label": "소스 가중치",
+              "value": 0.45,
+              "kind": "boost"
+            },
+            {
+              "label": "애널리스트",
+              "value": 0.2,
+              "kind": "boost"
+            }
+          ],
+          "link_health": {
+            "status": "pdf_preferred",
+            "primary_kind": "pdf",
+            "has_pdf": true,
+            "has_detail": true,
+            "detail_host": "bbs2.shinhansec.com",
+            "pdf_host": "bbs2.shinhansec.com",
+            "note": "PDF 링크를 대표 링크로 사용합니다."
+          },
+          "priority_subject_matches": [
+            "삼성전자"
+          ],
+          "priority_keyword_matches": [
+            "반도체"
+          ],
+          "is_priority_match": true,
+          "previous_report_date": null,
+          "previous_target_price": null,
+          "previous_opinion": null,
+          "previous_analyst": null,
+          "target_price_change": null,
+          "target_price_change_pct": null,
+          "opinion_changed": false,
+          "opinion_change_direction": null,
+          "analyst_changed": false,
+          "coverage_initiated": false,
+          "change_types": [],
+          "change_reasons": [],
+          "has_change_signal": false
+        },
+        {
+          "source": "shinhan_investment_official",
+          "category": "economy",
+          "category_label": "경제분석",
+          "report_id": "shinhan-gieconomy-944372",
+          "title": "신한 Econ Check-up; 견조한 내수에도 추가 물가 자극은 제한적",
+          "display_title": "신한 Econ Check-up; 견조한 내수에도 추가 물가 자극은 제한적",
+          "broker": "신한투자증권",
+          "published_date": "2026-11-27",
+          "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gieconomy&messageId=944372",
+          "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355256",
+          "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355256",
+          "primary_url_label": "PDF",
+          "subject": null,
+          "subject_key": null,
+          "ticker": null,
+          "views": 14,
+          "analyst": "하건형",
+          "target_price": null,
+          "target_price_value": null,
+          "opinion": null,
+          "opinion_normalized": null,
+          "has_pdf_text": false,
+          "content_sources": [
+            "html"
+          ],
+          "excerpt": "Review: 양호한 성장이 되살린 물가, 긴축 경계 Preview: 견조한 내수에도 추가 물가 자극은 제한적",
+          "summary": "Review: 양호한 성장이 되살린 물가, 긴축 경계 Preview: 견조한 내수에도 추가 물가 자극은 제한적 Review: 양호한 성장이 되살린 물가, 긴축 경계",
+          "summary_engine": "rule",
+          "investment_memo": {},
+          "estimate_metrics": [],
+          "estimate_signal_types": [
+            "earnings_estimate_up"
+          ],
+          "estimate_reasons": [
+            "이익 추정 상향/증가"
+          ],
+          "estimate_revisions": [],
+          "stance": "positive",
+          "score": 9.95,
+          "score_reasons": [
+            "경제분석 카테고리",
+            "공식 소스",
+            "관심 섹터/키워드(반도체)",
+            "이익 추정 상향/증가",
+            "우선 추적 증권사"
+          ],
+          "score_breakdown": [
+            {
+              "label": "관심 섹터/키워드",
+              "value": 2.4,
+              "kind": "boost"
+            },
+            {
+              "label": "경제분석 카테고리",
+              "value": 2.3,
+              "kind": "boost"
+            },
+            {
+              "label": "이익 추정 상향",
+              "value": 1.8,
+              "kind": "boost"
+            },
+            {
+              "label": "조회수",
+              "value": 1.15,
+              "kind": "boost"
+            },
+            {
+              "label": "우선 추적 증권사",
+              "value": 1.1,
+              "kind": "boost"
+            },
+            {
+              "label": "본문 정보량",
+              "value": 0.55,
+              "kind": "boost"
+            },
+            {
+              "label": "소스 가중치",
+              "value": 0.45,
+              "kind": "boost"
+            },
+            {
+              "label": "애널리스트",
+              "value": 0.2,
+              "kind": "boost"
+            }
+          ],
+          "link_health": {
+            "status": "pdf_preferred",
+            "primary_kind": "pdf",
+            "has_pdf": true,
+            "has_detail": true,
+            "detail_host": "bbs2.shinhansec.com",
+            "pdf_host": "bbs2.shinhansec.com",
+            "note": "PDF 링크를 대표 링크로 사용합니다."
+          },
+          "priority_subject_matches": [],
+          "priority_keyword_matches": [
+            "반도체"
+          ],
+          "is_priority_match": true,
+          "previous_report_date": null,
+          "previous_target_price": null,
+          "previous_opinion": null,
+          "previous_analyst": null,
+          "target_price_change": null,
+          "target_price_change_pct": null,
+          "opinion_changed": false,
+          "opinion_change_direction": null,
+          "analyst_changed": false,
+          "coverage_initiated": false,
+          "change_types": [
+            "earnings_estimate_up"
+          ],
+          "change_reasons": [
+            "이익 추정 상향/증가"
+          ],
+          "has_change_signal": true
+        },
+        {
+          "source": "shinhan_investment_official",
+          "category": "market",
+          "category_label": "시황정보",
           "report_id": "shinhan-gicomment-944359",
           "title": "마켓레이더 - 非반도체 온기 확산, KQ 사이드카&20일선 회복(11월 27일)",
           "display_title": "마켓레이더 - 非반도체 온기 확산, KQ 사이드카&20일선 회복(11월 27일)",
@@ -2199,7 +2606,7 @@
           "subject": null,
           "subject_key": null,
           "ticker": null,
-          "views": 35,
+          "views": 50,
           "analyst": "강진혁",
           "target_price": null,
           "target_price_value": null,
@@ -2218,7 +2625,7 @@
           "estimate_reasons": [],
           "estimate_revisions": [],
           "stance": "neutral",
-          "score": 8.94,
+          "score": 9.1,
           "score_reasons": [
             "시황정보 카테고리",
             "공식 소스",
@@ -2239,7 +2646,7 @@
             },
             {
               "label": "조회수",
-              "value": 1.54,
+              "value": 1.7,
               "kind": "boost"
             },
             {
@@ -2314,7 +2721,7 @@
           "subject": null,
           "subject_key": null,
           "ticker": null,
-          "views": 49,
+          "views": 63,
           "analyst": "강진혁",
           "target_price": null,
           "target_price_value": null,
@@ -2333,7 +2740,7 @@
           "estimate_reasons": [],
           "estimate_revisions": [],
           "stance": "neutral",
-          "score": 7.89,
+          "score": 8.0,
           "score_reasons": [
             "시황정보 카테고리",
             "공식 소스",
@@ -2353,7 +2760,7 @@
             },
             {
               "label": "조회수",
-              "value": 1.69,
+              "value": 1.8,
               "kind": "boost"
             },
             {
@@ -2404,25 +2811,30 @@
           "change_types": [],
           "change_reasons": [],
           "has_change_signal": false
-        },
+        }
+      ]
+    },
+    "strategy": {
+      "label": "전략 랭킹",
+      "reports": [
         {
-          "source": "shinhan_investment_official",
-          "category": "market",
-          "category_label": "시황정보",
-          "report_id": "shinhan-gicomment-944368",
-          "title": "Shinhan China Weekly(11월 4주차); 반등을 가로막는 불확실성",
-          "display_title": "Shinhan China Weekly(11월 4주차); 반등을 가로막는 불확실성",
-          "broker": "신한투자증권",
+          "source": "mirae_asset_official",
+          "category": "invest",
+          "category_label": "투자정보",
+          "report_id": "mirae-2344603",
+          "title": "NAV Dashboard Weekly",
+          "display_title": "NAV Dashboard Weekly",
+          "broker": "미래에셋증권",
           "published_date": "2026-11-27",
-          "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=944368",
-          "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355250",
-          "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355250",
+          "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344603&messageNumber=2559&categoryId=1521",
+          "pdf_url": "https://securities.miraeasset.com/bbs/download/2148762.pdf?attachmentId=2148762",
+          "primary_url": "https://securities.miraeasset.com/bbs/download/2148762.pdf?attachmentId=2148762",
           "primary_url_label": "PDF",
           "subject": null,
           "subject_key": null,
           "ticker": null,
           "views": 0,
-          "analyst": "신승웅",
+          "analyst": "류제현",
           "target_price": null,
           "target_price_value": null,
           "opinion": null,
@@ -2431,8 +2843,8 @@
           "content_sources": [
             "html"
           ],
-          "excerpt": "반등을 가로막는 불확실성 당국의 시장 안정화 조치와 젠슨 황의 엔비디아 CEO 복귀 소식에 반등을 시도했으나 혼조세 지속.",
-          "summary": "반등을 가로막는 불확실성 당국의 시장 안정화 조치와 젠슨 황의 엔비디아 CEO 복귀 소식에 반등을 시도했으나 혼조세 지속. AI 자본조달 의구심이 여전한 가운데 미국의 추가 관세 부과 우려까지 부각.",
+          "excerpt": "관련종목 윤곽을 드러낸 제도, 반등한 지주회사",
+          "summary": "관련종목 윤곽을 드러낸 제도, 반등한 지주회사 커버리지 5사 평균 현할인 61.0% · 할인 최대 확대 LS +2.1%p · 최대 축소 CJ -4.5%p",
           "summary_engine": "rule",
           "investment_memo": {},
           "estimate_metrics": [],
@@ -2440,28 +2852,28 @@
           "estimate_reasons": [],
           "estimate_revisions": [],
           "stance": "neutral",
-          "score": 6.6,
+          "score": 8.3,
           "score_reasons": [
-            "시황정보 카테고리",
+            "투자정보 카테고리",
             "공식 소스",
-            "관심 섹터/키워드(로봇)",
+            "관심 종목(SK하이닉스)",
             "우선 추적 증권사",
             "핵심 키워드(weekly)"
           ],
           "score_breakdown": [
             {
-              "label": "관심 섹터/키워드",
-              "value": 2.4,
+              "label": "관심 종목",
+              "value": 4.0,
               "kind": "boost"
             },
             {
-              "label": "시황정보 카테고리",
-              "value": 1.8,
+              "label": "투자정보 카테고리",
+              "value": 2.5,
               "kind": "boost"
             },
             {
               "label": "우선 추적 증권사",
-              "value": 1.1,
+              "value": 0.75,
               "kind": "boost"
             },
             {
@@ -2471,6 +2883,211 @@
             },
             {
               "label": "제목 키워드: weekly",
+              "value": 0.4,
+              "kind": "boost"
+            },
+            {
+              "label": "애널리스트",
+              "value": 0.2,
+              "kind": "boost"
+            }
+          ],
+          "link_health": {
+            "status": "pdf_preferred",
+            "primary_kind": "pdf",
+            "has_pdf": true,
+            "has_detail": true,
+            "detail_host": "securities.miraeasset.com",
+            "pdf_host": "securities.miraeasset.com",
+            "note": "PDF 링크를 대표 링크로 사용합니다."
+          },
+          "priority_subject_matches": [
+            "SK하이닉스"
+          ],
+          "priority_keyword_matches": [],
+          "is_priority_match": true,
+          "previous_report_date": null,
+          "previous_target_price": null,
+          "previous_opinion": null,
+          "previous_analyst": null,
+          "target_price_change": null,
+          "target_price_change_pct": null,
+          "opinion_changed": false,
+          "opinion_change_direction": null,
+          "analyst_changed": false,
+          "coverage_initiated": false,
+          "change_types": [],
+          "change_reasons": [],
+          "has_change_signal": false
+        },
+        {
+          "source": "mirae_asset_official",
+          "category": "invest",
+          "category_label": "투자정보",
+          "report_id": "mirae-2344575",
+          "title": "에이피알 (278470/매수)",
+          "display_title": "에이피알 (278470/매수)",
+          "broker": "미래에셋증권",
+          "published_date": "2026-11-27",
+          "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344575&messageNumber=2550&categoryId=1521",
+          "pdf_url": "https://securities.miraeasset.com/bbs/download/2148750.pdf?attachmentId=2148750",
+          "primary_url": "https://securities.miraeasset.com/bbs/download/2148750.pdf?attachmentId=2148750",
+          "primary_url_label": "PDF",
+          "subject": null,
+          "subject_key": null,
+          "ticker": null,
+          "views": 0,
+          "analyst": "조세은",
+          "target_price": null,
+          "target_price_value": null,
+          "opinion": null,
+          "opinion_normalized": null,
+          "has_pdf_text": false,
+          "content_sources": [
+            "html"
+          ],
+          "excerpt": "관련종목 브랜드501 인수 코멘트: 브랜드 다각화 이상의 의미",
+          "summary": "관련종목 브랜드501 인수 코멘트: 브랜드 다각화 이상의 의미 - 11/26, 닥터멜락신 운영사 브랜드501의 지분 87.3%를 3,900억원에 인수 결정",
+          "summary_engine": "rule",
+          "investment_memo": {},
+          "estimate_metrics": [],
+          "estimate_signal_types": [
+            "earnings_estimate_up"
+          ],
+          "estimate_reasons": [
+            "이익 추정 상향/증가"
+          ],
+          "estimate_revisions": [],
+          "stance": "positive",
+          "score": 5.7,
+          "score_reasons": [
+            "투자정보 카테고리",
+            "공식 소스",
+            "이익 추정 상향/증가",
+            "우선 추적 증권사"
+          ],
+          "score_breakdown": [
+            {
+              "label": "투자정보 카테고리",
+              "value": 2.5,
+              "kind": "boost"
+            },
+            {
+              "label": "이익 추정 상향",
+              "value": 1.8,
+              "kind": "boost"
+            },
+            {
+              "label": "우선 추적 증권사",
+              "value": 0.75,
+              "kind": "boost"
+            },
+            {
+              "label": "소스 가중치",
+              "value": 0.45,
+              "kind": "boost"
+            },
+            {
+              "label": "애널리스트",
+              "value": 0.2,
+              "kind": "boost"
+            }
+          ],
+          "link_health": {
+            "status": "pdf_preferred",
+            "primary_kind": "pdf",
+            "has_pdf": true,
+            "has_detail": true,
+            "detail_host": "securities.miraeasset.com",
+            "pdf_host": "securities.miraeasset.com",
+            "note": "PDF 링크를 대표 링크로 사용합니다."
+          },
+          "priority_subject_matches": [],
+          "priority_keyword_matches": [],
+          "is_priority_match": false,
+          "previous_report_date": null,
+          "previous_target_price": null,
+          "previous_opinion": null,
+          "previous_analyst": null,
+          "target_price_change": null,
+          "target_price_change_pct": null,
+          "opinion_changed": false,
+          "opinion_change_direction": null,
+          "analyst_changed": false,
+          "coverage_initiated": false,
+          "change_types": [
+            "earnings_estimate_up"
+          ],
+          "change_reasons": [
+            "이익 추정 상향/증가"
+          ],
+          "has_change_signal": true
+        },
+        {
+          "source": "mirae_asset_official",
+          "category": "invest",
+          "category_label": "투자정보",
+          "report_id": "mirae-2344576",
+          "title": "[2027년 전망] ETF·파생 전략",
+          "display_title": "[2027년 전망] ETF·파생 전략",
+          "broker": "미래에셋증권",
+          "published_date": "2026-11-27",
+          "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344576&messageNumber=2551&categoryId=1521",
+          "pdf_url": "https://securities.miraeasset.com/bbs/download/2148751.pdf?attachmentId=2148751",
+          "primary_url": "https://securities.miraeasset.com/bbs/download/2148751.pdf?attachmentId=2148751",
+          "primary_url_label": "PDF",
+          "subject": null,
+          "subject_key": null,
+          "ticker": null,
+          "views": 0,
+          "analyst": "윤재홍",
+          "target_price": null,
+          "target_price_value": null,
+          "opinion": null,
+          "opinion_normalized": null,
+          "has_pdf_text": false,
+          "content_sources": [
+            "html"
+          ],
+          "excerpt": "더 빠르게 [고빈도 매매] 외국인 거래 급증 및 국내 외국인 고빈도 매매는 ‘거래대금 내 외국인 비중 급증’ → ‘고비중 유지’ → ‘비중 급감하며 거래대금도 감소’ 패턴 증가.",
+          "summary": "더 빠르게 [고빈도 매매] 외국인 거래 급증 및 국내 외국인 고빈도 매매는 ‘거래대금 내 외국인 비중 급증’ → ‘고비중 유지’ → ‘비중 급감하며 거래대금도 감소’ 패턴 증가. 순매수 여부와 상관없이 성과 부진.",
+          "summary_engine": "rule",
+          "investment_memo": {},
+          "estimate_metrics": [],
+          "estimate_signal_types": [],
+          "estimate_reasons": [],
+          "estimate_revisions": [],
+          "stance": "neutral",
+          "score": 5.65,
+          "score_reasons": [
+            "투자정보 카테고리",
+            "공식 소스",
+            "우선 추적 증권사",
+            "핵심 키워드(전망, etf)"
+          ],
+          "score_breakdown": [
+            {
+              "label": "투자정보 카테고리",
+              "value": 2.5,
+              "kind": "boost"
+            },
+            {
+              "label": "제목 키워드: 전망",
+              "value": 1.1,
+              "kind": "boost"
+            },
+            {
+              "label": "우선 추적 증권사",
+              "value": 0.75,
+              "kind": "boost"
+            },
+            {
+              "label": "소스 가중치",
+              "value": 0.45,
+              "kind": "boost"
+            },
+            {
+              "label": "제목 키워드: etf",
               "value": 0.4,
               "kind": "boost"
             },
@@ -2490,15 +3107,13 @@
             "primary_kind": "pdf",
             "has_pdf": true,
             "has_detail": true,
-            "detail_host": "bbs2.shinhansec.com",
-            "pdf_host": "bbs2.shinhansec.com",
+            "detail_host": "securities.miraeasset.com",
+            "pdf_host": "securities.miraeasset.com",
             "note": "PDF 링크를 대표 링크로 사용합니다."
           },
           "priority_subject_matches": [],
-          "priority_keyword_matches": [
-            "로봇"
-          ],
-          "is_priority_match": true,
+          "priority_keyword_matches": [],
+          "is_priority_match": false,
           "previous_report_date": null,
           "previous_target_price": null,
           "previous_opinion": null,
@@ -2514,23 +3129,23 @@
           "has_change_signal": false
         },
         {
-          "source": "shinhan_investment_official",
-          "category": "economy",
-          "category_label": "경제분석",
-          "report_id": "shinhan-gieconomy-944365",
-          "title": "경제분석; 관세 복원에도 불확실성은 정점 통과",
-          "display_title": "경제분석; 관세 복원에도 불확실성은 정점 통과",
-          "broker": "신한투자증권",
+          "source": "mirae_asset_official",
+          "category": "invest",
+          "category_label": "투자정보",
+          "report_id": "mirae-2344604",
+          "title": "[Earnings Revision] 12월 1주차",
+          "display_title": "[Earnings Revision] 12월 1주차",
+          "broker": "미래에셋증권",
           "published_date": "2026-11-27",
-          "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gieconomy&messageId=944365",
-          "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355247",
-          "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355247",
+          "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344604&messageNumber=2560&categoryId=1521",
+          "pdf_url": "https://securities.miraeasset.com/bbs/download/2148763.pdf?attachmentId=2148763",
+          "primary_url": "https://securities.miraeasset.com/bbs/download/2148763.pdf?attachmentId=2148763",
           "primary_url_label": "PDF",
           "subject": null,
           "subject_key": null,
           "ticker": null,
-          "views": 26,
-          "analyst": "최예찬",
+          "views": 0,
+          "analyst": "유명간",
           "target_price": null,
           "target_price_value": null,
           "opinion": null,
@@ -2539,8 +3154,8 @@
           "content_sources": [
             "html"
           ],
-          "excerpt": "경제분석; 관세 복원에도 불확실성은 정점 통과 과잉생산 관세, 새로운 충격보다는 복원적 성격",
-          "summary": "경제분석; 관세 복원에도 불확실성은 정점 통과 과잉생산 관세, 새로운 충격보다는 복원적 성격 미국 무역대표부(USTR)가 11월 25일 무역법 301조에 근거해 14개 경제권에 과잉생산 관세를 제안했다.",
+          "excerpt": "**** 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
+          "summary": "**** 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
           "summary_engine": "rule",
           "investment_memo": {},
           "estimate_metrics": [],
@@ -2548,36 +3163,26 @@
           "estimate_reasons": [],
           "estimate_revisions": [],
           "stance": "neutral",
-          "score": 5.71,
+          "score": 3.9,
           "score_reasons": [
-            "경제분석 카테고리",
+            "투자정보 카테고리",
             "공식 소스",
             "우선 추적 증권사"
           ],
           "score_breakdown": [
             {
-              "label": "경제분석 카테고리",
-              "value": 2.3,
-              "kind": "boost"
-            },
-            {
-              "label": "조회수",
-              "value": 1.41,
+              "label": "투자정보 카테고리",
+              "value": 2.5,
               "kind": "boost"
             },
             {
               "label": "우선 추적 증권사",
-              "value": 1.1,
+              "value": 0.75,
               "kind": "boost"
             },
             {
               "label": "소스 가중치",
               "value": 0.45,
-              "kind": "boost"
-            },
-            {
-              "label": "본문 정보량",
-              "value": 0.25,
               "kind": "boost"
             },
             {
@@ -2591,8 +3196,8 @@
             "primary_kind": "pdf",
             "has_pdf": true,
             "has_detail": true,
-            "detail_host": "bbs2.shinhansec.com",
-            "pdf_host": "bbs2.shinhansec.com",
+            "detail_host": "securities.miraeasset.com",
+            "pdf_host": "securities.miraeasset.com",
             "note": "PDF 링크를 대표 링크로 사용합니다."
           },
           "priority_subject_matches": [],
@@ -2632,7 +3237,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 68,
+      "views": 108,
       "analyst": "김지영",
       "target_price": null,
       "target_price_value": null,
@@ -2698,7 +3303,7 @@
       ],
       "estimate_revisions": [],
       "stance": "positive",
-      "score": 12.06,
+      "score": 12.26,
       "score_reasons": [
         "종목분석 카테고리",
         "공식 소스",
@@ -2714,7 +3319,7 @@
         },
         {
           "label": "조회수",
-          "value": 1.83,
+          "value": 2.03,
           "kind": "boost"
         },
         {
@@ -2806,7 +3411,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 23,
+      "views": 61,
       "analyst": "박광래",
       "target_price": null,
       "target_price_value": null,
@@ -2833,7 +3438,7 @@
       ],
       "estimate_revisions": [],
       "stance": "positive",
-      "score": 10.76,
+      "score": 11.19,
       "score_reasons": [
         "산업분석 카테고리",
         "공식 소스",
@@ -2853,13 +3458,13 @@
           "kind": "boost"
         },
         {
-          "label": "마진율 개선",
-          "value": 1.5,
+          "label": "조회수",
+          "value": 1.79,
           "kind": "boost"
         },
         {
-          "label": "조회수",
-          "value": 1.36,
+          "label": "마진율 개선",
+          "value": 1.5,
           "kind": "boost"
         },
         {
@@ -2938,7 +3543,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 147,
+      "views": 189,
       "analyst": "김아람",
       "target_price": "78,000원",
       "target_price_value": 78000,
@@ -2984,7 +3589,7 @@
       ],
       "estimate_revisions": [],
       "stance": "neutral",
-      "score": 14.56,
+      "score": 14.67,
       "score_reasons": [
         "종목분석 카테고리",
         "공식 소스",
@@ -3005,7 +3610,7 @@
         },
         {
           "label": "조회수",
-          "value": 2.17,
+          "value": 2.28,
           "kind": "boost"
         },
         {
@@ -3104,7 +3709,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 43,
+      "views": 68,
       "analyst": "김선미",
       "target_price": "4,900원",
       "target_price_value": 4900,
@@ -3127,7 +3732,7 @@
       ],
       "estimate_revisions": [],
       "stance": "positive",
-      "score": 9.93,
+      "score": 10.13,
       "score_reasons": [
         "종목분석 카테고리",
         "공식 소스",
@@ -3142,13 +3747,13 @@
           "kind": "boost"
         },
         {
-          "label": "이익 추정 상향",
-          "value": 1.8,
+          "label": "조회수",
+          "value": 1.83,
           "kind": "boost"
         },
         {
-          "label": "조회수",
-          "value": 1.63,
+          "label": "이익 추정 상향",
+          "value": 1.8,
           "kind": "boost"
         },
         {
@@ -3194,6 +3799,127 @@
       "priority_subject_matches": [],
       "priority_keyword_matches": [],
       "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
+    },
+    {
+      "source": "shinhan_investment_official",
+      "category": "economy",
+      "category_label": "경제분석",
+      "report_id": "shinhan-gieconomy-944372",
+      "title": "신한 Econ Check-up; 견조한 내수에도 추가 물가 자극은 제한적",
+      "display_title": "신한 Econ Check-up; 견조한 내수에도 추가 물가 자극은 제한적",
+      "broker": "신한투자증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gieconomy&messageId=944372",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355256",
+      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355256",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 14,
+      "analyst": "하건형",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "Review: 양호한 성장이 되살린 물가, 긴축 경계 Preview: 견조한 내수에도 추가 물가 자극은 제한적",
+      "summary": "Review: 양호한 성장이 되살린 물가, 긴축 경계 Preview: 견조한 내수에도 추가 물가 자극은 제한적 Review: 양호한 성장이 되살린 물가, 긴축 경계",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "estimate_revisions": [],
+      "stance": "positive",
+      "score": 9.95,
+      "score_reasons": [
+        "경제분석 카테고리",
+        "공식 소스",
+        "관심 섹터/키워드(반도체)",
+        "이익 추정 상향/증가",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "경제분석 카테고리",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 1.15,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.55,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "bbs2.shinhansec.com",
+        "pdf_host": "bbs2.shinhansec.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
       "previous_report_date": null,
       "previous_target_price": null,
       "previous_opinion": null,
@@ -3645,6 +4371,109 @@
       "has_change_signal": true
     },
     {
+      "source": "mirae_asset_official",
+      "category": "invest",
+      "category_label": "투자정보",
+      "report_id": "mirae-2344575",
+      "title": "에이피알 (278470/매수)",
+      "display_title": "에이피알 (278470/매수)",
+      "broker": "미래에셋증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344575&messageNumber=2550&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2148750.pdf?attachmentId=2148750",
+      "primary_url": "https://securities.miraeasset.com/bbs/download/2148750.pdf?attachmentId=2148750",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 0,
+      "analyst": "조세은",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "관련종목 브랜드501 인수 코멘트: 브랜드 다각화 이상의 의미",
+      "summary": "관련종목 브랜드501 인수 코멘트: 브랜드 다각화 이상의 의미 - 11/26, 닥터멜락신 운영사 브랜드501의 지분 87.3%를 3,900억원에 인수 결정",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "estimate_revisions": [],
+      "stance": "positive",
+      "score": 5.7,
+      "score_reasons": [
+        "투자정보 카테고리",
+        "공식 소스",
+        "이익 추정 상향/증가",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "투자정보 카테고리",
+          "value": 2.5,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 0.75,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "securities.miraeasset.com",
+        "pdf_host": "securities.miraeasset.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
+    },
+    {
       "source": "shinhan_investment_official",
       "category": "company",
       "category_label": "종목분석",
@@ -3660,7 +4489,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 140,
+      "views": 185,
       "analyst": "박현우",
       "target_price": "1,960원",
       "target_price_value": 1960,
@@ -3708,7 +4537,7 @@
       ],
       "estimate_revisions": [],
       "stance": "negative",
-      "score": 15.14,
+      "score": 15.26,
       "score_reasons": [
         "종목분석 카테고리",
         "공식 소스",
@@ -3729,7 +4558,7 @@
         },
         {
           "label": "조회수",
-          "value": 2.15,
+          "value": 2.27,
           "kind": "boost"
         },
         {
@@ -3835,7 +4664,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 69,
+      "views": 99,
       "analyst": "박광래",
       "target_price": null,
       "target_price_value": null,
@@ -3858,7 +4687,7 @@
       ],
       "estimate_revisions": [],
       "stance": "positive",
-      "score": 8.34,
+      "score": 8.5,
       "score_reasons": [
         "산업분석 카테고리",
         "공식 소스",
@@ -3873,7 +4702,7 @@
         },
         {
           "label": "조회수",
-          "value": 1.84,
+          "value": 2.0,
           "kind": "boost"
         },
         {
@@ -3948,7 +4777,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 38,
+      "views": 57,
       "analyst": "김선미",
       "target_price": "4,500원",
       "target_price_value": 4500,
@@ -3971,7 +4800,7 @@
       ],
       "estimate_revisions": [],
       "stance": "negative",
-      "score": 9.18,
+      "score": 9.36,
       "score_reasons": [
         "종목분석 카테고리",
         "공식 소스",
@@ -3987,7 +4816,7 @@
         },
         {
           "label": "조회수",
-          "value": 1.58,
+          "value": 1.76,
           "kind": "boost"
         },
         {
@@ -4074,7 +4903,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 68,
+      "views": 108,
       "analyst": "김지영",
       "target_price": null,
       "target_price_value": null,
@@ -4140,7 +4969,7 @@
       ],
       "estimate_revisions": [],
       "stance": "positive",
-      "score": 12.06,
+      "score": 12.26,
       "score_reasons": [
         "종목분석 카테고리",
         "공식 소스",
@@ -4156,7 +4985,7 @@
         },
         {
           "label": "조회수",
-          "value": 1.83,
+          "value": 2.03,
           "kind": "boost"
         },
         {
@@ -4248,7 +5077,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 23,
+      "views": 61,
       "analyst": "박광래",
       "target_price": null,
       "target_price_value": null,
@@ -4275,7 +5104,7 @@
       ],
       "estimate_revisions": [],
       "stance": "positive",
-      "score": 10.76,
+      "score": 11.19,
       "score_reasons": [
         "산업분석 카테고리",
         "공식 소스",
@@ -4295,13 +5124,13 @@
           "kind": "boost"
         },
         {
-          "label": "마진율 개선",
-          "value": 1.5,
+          "label": "조회수",
+          "value": 1.79,
           "kind": "boost"
         },
         {
-          "label": "조회수",
-          "value": 1.36,
+          "label": "마진율 개선",
+          "value": 1.5,
           "kind": "boost"
         },
         {
@@ -4380,7 +5209,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 147,
+      "views": 189,
       "analyst": "김아람",
       "target_price": "78,000원",
       "target_price_value": 78000,
@@ -4426,7 +5255,7 @@
       ],
       "estimate_revisions": [],
       "stance": "neutral",
-      "score": 14.56,
+      "score": 14.67,
       "score_reasons": [
         "종목분석 카테고리",
         "공식 소스",
@@ -4447,7 +5276,7 @@
         },
         {
           "label": "조회수",
-          "value": 2.17,
+          "value": 2.28,
           "kind": "boost"
         },
         {
@@ -4649,23 +5478,23 @@
       "has_change_signal": true
     },
     {
-      "source": "korea_investment_official",
+      "source": "mirae_asset_official",
       "category": "industry",
       "category_label": "산업분석",
-      "report_id": "kis-161810",
-      "title": "Outlook 2027:변화 속에서 길 찾기",
-      "display_title": "피델리티 - Outlook 2027:변화 속에서 길 찾기",
-      "broker": "한국투자증권",
+      "report_id": "mirae-2344601",
+      "title": "한국&중국 마켓 클로징(11월 27일)",
+      "display_title": "한국&중국 마켓 클로징(11월 27일)",
+      "broker": "미래에셋증권",
       "published_date": "2026-11-27",
-      "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=161810",
-      "pdf_url": null,
-      "primary_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=161810",
-      "primary_url_label": "상세",
-      "subject": "피델리티",
-      "subject_key": "피델리티",
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344601&messageNumber=2558&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2148760.pdf?attachmentId=2148760",
+      "primary_url": "https://securities.miraeasset.com/bbs/download/2148760.pdf?attachmentId=2148760",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
       "ticker": null,
       "views": 0,
-      "analyst": "리서치본부",
+      "analyst": "박수진",
       "target_price": null,
       "target_price_value": null,
       "opinion": null,
@@ -4674,8 +5503,223 @@
       "content_sources": [
         "html"
       ],
-      "excerpt": "- 경기 사이클 후반부 투자 전략: 미국 경제의 견조한 성장세는 2027년을 앞두고 위험자산 선호 기조를 뒷받침하고 있지만, 채권금리 상승과 지정학적 리스크에 따른 압력이 커지고 있습니다. AI 투자 테마에 대해서는 선별적인 접근이 필요하며, 이를 보완할 수 있는 대체적인 알파 창출 기회도 모색해야 합니다.",
-      "summary": "- 경기 사이클 후반부 투자 전략: 미국 경제의 견조한 성장세는 2027년을 앞두고 위험자산 선호 기조를 뒷받침하고 있지만, 채권금리 상승과 지정학적 리스크에 따른 압력이 커지고 있습니다. AI 투자 테마에 대해서는 선별적인 접근이 필요하며, 이를 보완할 수 있는 대체적인 알파 창출 기회도 모색해야 합니다. - 시험대에 오른 실적: 기업 이익의 추가 성장과 완화된 밸류에이션 부담은 주식시장에 대한 긍정적인 전망에 힘을 싣고 있습니다.",
+      "excerpt": "한국&중국 마켓 클로징(11월 27일) 코스닥 쏠림, 700pt 회복",
+      "summary": "한국&중국 마켓 클로징(11월 27일) 코스닥 쏠림, 700pt 회복 # 국내 마감",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "estimate_revisions": [],
+      "stance": "neutral",
+      "score": 11.45,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "공식 소스",
+        "관심 종목(삼성전자)",
+        "관심 섹터/키워드(반도체, 로봇, 우주)",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "관심 종목",
+          "value": 4.0,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.8,
+          "kind": "boost"
+        },
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 0.75,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.55,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "securities.miraeasset.com",
+        "pdf_host": "securities.miraeasset.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [
+        "삼성전자"
+      ],
+      "priority_keyword_matches": [
+        "반도체",
+        "로봇",
+        "우주"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
+    {
+      "source": "mirae_asset_official",
+      "category": "invest",
+      "category_label": "투자정보",
+      "report_id": "mirae-2344603",
+      "title": "NAV Dashboard Weekly",
+      "display_title": "NAV Dashboard Weekly",
+      "broker": "미래에셋증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344603&messageNumber=2559&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2148762.pdf?attachmentId=2148762",
+      "primary_url": "https://securities.miraeasset.com/bbs/download/2148762.pdf?attachmentId=2148762",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 0,
+      "analyst": "류제현",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "관련종목 윤곽을 드러낸 제도, 반등한 지주회사",
+      "summary": "관련종목 윤곽을 드러낸 제도, 반등한 지주회사 커버리지 5사 평균 현할인 61.0% · 할인 최대 확대 LS +2.1%p · 최대 축소 CJ -4.5%p",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "estimate_revisions": [],
+      "stance": "neutral",
+      "score": 8.3,
+      "score_reasons": [
+        "투자정보 카테고리",
+        "공식 소스",
+        "관심 종목(SK하이닉스)",
+        "우선 추적 증권사",
+        "핵심 키워드(weekly)"
+      ],
+      "score_breakdown": [
+        {
+          "label": "관심 종목",
+          "value": 4.0,
+          "kind": "boost"
+        },
+        {
+          "label": "투자정보 카테고리",
+          "value": 2.5,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 0.75,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "제목 키워드: weekly",
+          "value": 0.4,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "securities.miraeasset.com",
+        "pdf_host": "securities.miraeasset.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [
+        "SK하이닉스"
+      ],
+      "priority_keyword_matches": [],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
+    {
+      "source": "mirae_asset_official",
+      "category": "invest",
+      "category_label": "투자정보",
+      "report_id": "mirae-2344575",
+      "title": "에이피알 (278470/매수)",
+      "display_title": "에이피알 (278470/매수)",
+      "broker": "미래에셋증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344575&messageNumber=2550&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2148750.pdf?attachmentId=2148750",
+      "primary_url": "https://securities.miraeasset.com/bbs/download/2148750.pdf?attachmentId=2148750",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 0,
+      "analyst": "조세은",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "관련종목 브랜드501 인수 코멘트: 브랜드 다각화 이상의 의미",
+      "summary": "관련종목 브랜드501 인수 코멘트: 브랜드 다각화 이상의 의미 - 11/26, 닥터멜락신 운영사 브랜드501의 지분 87.3%를 3,900억원에 인수 결정",
       "summary_engine": "rule",
       "investment_memo": {},
       "estimate_metrics": [],
@@ -4687,17 +5731,17 @@
       ],
       "estimate_revisions": [],
       "stance": "positive",
-      "score": 6.4,
+      "score": 5.7,
       "score_reasons": [
-        "산업분석 카테고리",
+        "투자정보 카테고리",
         "공식 소스",
         "이익 추정 상향/증가",
         "우선 추적 증권사"
       ],
       "score_breakdown": [
         {
-          "label": "산업분석 카테고리",
-          "value": 2.7,
+          "label": "투자정보 카테고리",
+          "value": 2.5,
           "kind": "boost"
         },
         {
@@ -4707,17 +5751,12 @@
         },
         {
           "label": "우선 추적 증권사",
-          "value": 1.05,
+          "value": 0.75,
           "kind": "boost"
         },
         {
           "label": "소스 가중치",
-          "value": 0.4,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.25,
+          "value": 0.45,
           "kind": "boost"
         },
         {
@@ -4727,21 +5766,21 @@
         }
       ],
       "link_health": {
-        "status": "detail_only",
-        "primary_kind": "detail",
-        "has_pdf": false,
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
         "has_detail": true,
-        "detail_host": "securities.koreainvestment.com",
-        "pdf_host": "",
-        "note": "상세 페이지 링크만 확보됐습니다."
+        "detail_host": "securities.miraeasset.com",
+        "pdf_host": "securities.miraeasset.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
       },
       "priority_subject_matches": [],
       "priority_keyword_matches": [],
       "is_priority_match": false,
-      "previous_report_date": "2026-11-17",
+      "previous_report_date": null,
       "previous_target_price": null,
       "previous_opinion": null,
-      "previous_analyst": "리서치본부",
+      "previous_analyst": null,
       "target_price_change": null,
       "target_price_change_pct": null,
       "opinion_changed": false,
@@ -4772,7 +5811,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 140,
+      "views": 185,
       "analyst": "박현우",
       "target_price": "1,960원",
       "target_price_value": 1960,
@@ -4820,7 +5859,7 @@
       ],
       "estimate_revisions": [],
       "stance": "negative",
-      "score": 15.14,
+      "score": 15.26,
       "score_reasons": [
         "종목분석 카테고리",
         "공식 소스",
@@ -4841,7 +5880,7 @@
         },
         {
           "label": "조회수",
-          "value": 2.15,
+          "value": 2.27,
           "kind": "boost"
         },
         {
@@ -4933,65 +5972,66 @@
     },
     {
       "source": "shinhan_investment_official",
-      "category": "company",
-      "category_label": "종목분석",
-      "report_id": "shinhan-gicompanyanalyst-944333",
-      "title": "롯데리츠; 안정성에 더해 성장성 추가되는 중",
-      "display_title": "롯데리츠; 안정성에 더해 성장성 추가되는 중",
+      "category": "market",
+      "category_label": "시황정보",
+      "report_id": "shinhan-gicomment-944375",
+      "title": "국내 주식 마감 시황 - 막혔던 유동성 숨통 트이며 온기 확산(11월 27일)",
+      "display_title": "국내 주식 마감 시황 - 막혔던 유동성 숨통 트이며 온기 확산(11월 27일)",
       "broker": "신한투자증권",
       "published_date": "2026-11-27",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=944333",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355224",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355224",
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=944375",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355259",
+      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355259",
       "primary_url_label": "PDF",
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 43,
-      "analyst": "김선미",
-      "target_price": "4,900원",
-      "target_price_value": 4900,
-      "opinion": "매수",
-      "opinion_normalized": "buy",
+      "views": 34,
+      "analyst": "강진혁",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
       "has_pdf_text": false,
       "content_sources": [
         "html"
       ],
-      "excerpt": "신한생각: 상대적 투자우위 지속 예상 그룹 기반 배당 안정성에 호텔의 업사이드까지",
-      "summary": "신한생각: 상대적 투자우위 지속 예상 그룹 기반 배당 안정성에 호텔의 업사이드까지 Valuation & Risk –7%대의 안정적 배당이 매력적",
+      "excerpt": "삼성전자 배당+증안펀드+中 부양책 등 유동성 숨통 KOSDAQ 매수 사이드카+20일선 회복+700p 안착",
+      "summary": "삼성전자 배당+증안펀드+中 부양책 등 유동성 숨통 KOSDAQ 매수 사이드카+20일선 회복+700p 안착 구리(+5.1%)·은(+9.3%) 등 원자재 가격 반등했고, NASDAQ 선물도 2% 가까이 상승했습니다.",
       "summary_engine": "rule",
       "investment_memo": {},
       "estimate_metrics": [],
-      "estimate_signal_types": [
-        "earnings_estimate_up"
-      ],
-      "estimate_reasons": [
-        "이익 추정 상향/증가"
-      ],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
       "estimate_revisions": [],
-      "stance": "positive",
-      "score": 9.93,
+      "stance": "neutral",
+      "score": 12.43,
       "score_reasons": [
-        "종목분석 카테고리",
+        "시황정보 카테고리",
         "공식 소스",
-        "목표가 포함",
-        "투자의견 포함",
-        "이익 추정 상향/증가"
+        "관심 종목(삼성전자)",
+        "관심 섹터/키워드(반도체, 방산, 로봇)",
+        "우선 추적 증권사"
       ],
       "score_breakdown": [
         {
-          "label": "종목분석 카테고리",
-          "value": 3.2,
+          "label": "관심 종목",
+          "value": 4.0,
           "kind": "boost"
         },
         {
-          "label": "이익 추정 상향",
+          "label": "관심 섹터/키워드",
+          "value": 3.0,
+          "kind": "boost"
+        },
+        {
+          "label": "시황정보 카테고리",
           "value": 1.8,
           "kind": "boost"
         },
         {
           "label": "조회수",
-          "value": 1.63,
+          "value": 1.53,
           "kind": "boost"
         },
         {
@@ -5000,13 +6040,224 @@
           "kind": "boost"
         },
         {
-          "label": "목표가",
-          "value": 0.7,
+          "label": "본문 정보량",
+          "value": 0.55,
           "kind": "boost"
         },
         {
-          "label": "투자의견",
-          "value": 0.6,
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        },
+        {
+          "label": "제목 패널티: 마감",
+          "value": -0.2,
+          "kind": "penalty"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "bbs2.shinhansec.com",
+        "pdf_host": "bbs2.shinhansec.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [
+        "삼성전자"
+      ],
+      "priority_keyword_matches": [
+        "반도체",
+        "방산",
+        "로봇",
+        "우주"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
+    {
+      "source": "mirae_asset_official",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "mirae-2344593",
+      "title": "글로벌/한국 ETF 시장 동향",
+      "display_title": "글로벌/한국 ETF 시장 동향",
+      "broker": "미래에셋증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344593&messageNumber=2554&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2148755.pdf?attachmentId=2148755",
+      "primary_url": "https://securities.miraeasset.com/bbs/download/2148755.pdf?attachmentId=2148755",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 0,
+      "analyst": "윤재홍",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "전반: 미국 증시는 젠슨 황의 엔비디아 CEO 복귀에 주 초 AI·반도체주를 중심으로 급반등했다. 24~25일에는 AI 투자 수익성 우려와 미국의 추가 관세 이슈가 겹치며 기술주가 다시 약세를 보였으나, 주 초 상승분을 지키며 전주 급락분을 일부 만회했다.",
+      "summary": "전반: 미국 증시는 젠슨 황의 엔비디아 CEO 복귀에 주 초 AI·반도체주를 중심으로 급반등했다. 24~25일에는 AI 투자 수익성 우려와 미국의 추가 관세 이슈가 겹치며 기술주가 다시 약세를 보였으나, 주 초 상승분을 지키며 전주 급락분을 일부 만회했다. 나스닥 100(QQQ US, +4.2%), 반도체(SMH US, +5.6%), 바이오(XBI US, +11.7%)도 강세였다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "estimate_revisions": [],
+      "stance": "neutral",
+      "score": 7.65,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "공식 소스",
+        "관심 섹터/키워드(반도체, 로봇)",
+        "우선 추적 증권사",
+        "핵심 키워드(etf)"
+      ],
+      "score_breakdown": [
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.6,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 0.75,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.55,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "제목 키워드: etf",
+          "value": 0.4,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "securities.miraeasset.com",
+        "pdf_host": "securities.miraeasset.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체",
+        "로봇"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
+    {
+      "source": "mirae_asset_official",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "mirae-2344590",
+      "title": "Macro Week Ahead",
+      "display_title": "Macro Week Ahead",
+      "broker": "미래에셋증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344590&messageNumber=2553&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2148754.pdf?attachmentId=2148754",
+      "primary_url": "https://securities.miraeasset.com/bbs/download/2148754.pdf?attachmentId=2148754",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 0,
+      "analyst": "정형기",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "금융 환경 긴축에 주목하는 시장 (11/30~12/4) [Macro Issues]",
+      "summary": "금융 환경 긴축에 주목하는 시장 (11/30~12/4) [Macro Issues] 젠슨황 엔비디아",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "estimate_revisions": [],
+      "stance": "neutral",
+      "score": 6.75,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "공식 소스",
+        "관심 섹터/키워드(반도체)",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 0.75,
           "kind": "boost"
         },
         {
@@ -5030,13 +6281,15 @@
         "primary_kind": "pdf",
         "has_pdf": true,
         "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
+        "detail_host": "securities.miraeasset.com",
+        "pdf_host": "securities.miraeasset.com",
         "note": "PDF 링크를 대표 링크로 사용합니다."
       },
       "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
       "previous_report_date": null,
       "previous_target_price": null,
       "previous_opinion": null,
@@ -5047,13 +6300,9 @@
       "opinion_change_direction": null,
       "analyst_changed": false,
       "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_up"
-      ],
-      "change_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "has_change_signal": true
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
     },
     {
       "source": "korea_investment_official",
@@ -5157,461 +6406,6 @@
         "이익 추정 상향/증가"
       ],
       "has_change_signal": true
-    },
-    {
-      "source": "korea_investment_official",
-      "category": "industry",
-      "category_label": "산업분석",
-      "report_id": "kis-161805",
-      "title": "2026년 11월 27일 한눈에 투데이",
-      "display_title": "2026년 11월 27일 한눈에 투데이",
-      "broker": "한국투자증권",
-      "published_date": "2026-11-27",
-      "detail_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=161805",
-      "pdf_url": null,
-      "primary_url": "https://securities.koreainvestment.com/main/research/research/StrategyDetail.jsp?jkGubun=6&id=161805",
-      "primary_url_label": "상세",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 0,
-      "analyst": "리서치본부",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "- 한국은행은 26일 금통위에서 기준금리를 3.25%로 25bp 인상. 금리 동결 소수의견 2명 나타난 가운데, 함께 발표된 경제전망에서 내년 성장률 전망치는 2.9%에서 4.1%로 대폭 상향했고, 올해 성장률 전망치도 3.3%에서 3.9%로 상향",
-      "summary": "- 한국은행은 26일 금통위에서 기준금리를 3.25%로 25bp 인상. 금리 동결 소수의견 2명 나타난 가운데, 함께 발표된 경제전망에서 내년 성장률 전망치는 2.9%에서 4.1%로 대폭 상향했고, 올해 성장률 전망치도 3.3%에서 3.9%로 상향 - 점도표에서는 전체 21개 점 가운데 7개가 3.75%, 8개가 3.50%에 찍히며 추가 인상 가능성 시사.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [
-        "earnings_estimate_up"
-      ],
-      "estimate_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "estimate_revisions": [],
-      "stance": "positive",
-      "score": 6.15,
-      "score_reasons": [
-        "산업분석 카테고리",
-        "공식 소스",
-        "이익 추정 상향/증가",
-        "우선 추적 증권사"
-      ],
-      "score_breakdown": [
-        {
-          "label": "산업분석 카테고리",
-          "value": 2.7,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 상향",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.05,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.4,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "detail_only",
-        "primary_kind": "detail",
-        "has_pdf": false,
-        "has_detail": true,
-        "detail_host": "securities.koreainvestment.com",
-        "pdf_host": "",
-        "note": "상세 페이지 링크만 확보됐습니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_up"
-      ],
-      "change_reasons": [
-        "이익 추정 상향/증가"
-      ],
-      "has_change_signal": true
-    },
-    {
-      "source": "shinhan_investment_official",
-      "category": "company",
-      "category_label": "종목분석",
-      "report_id": "shinhan-gicompanyanalyst-944335",
-      "title": "ESR켄달스퀘어리츠; 아쉬웠던 타이밍, 시간이 필요",
-      "display_title": "ESR켄달스퀘어리츠; 아쉬웠던 타이밍, 시간이 필요",
-      "broker": "신한투자증권",
-      "published_date": "2026-11-27",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicompanyanalyst&messageId=944335",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355226",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355226",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 38,
-      "analyst": "김선미",
-      "target_price": "4,500원",
-      "target_price_value": 4500,
-      "opinion": "매수",
-      "opinion_normalized": "buy",
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "신한생각: 시간이 필요 금리 부담으로 강점이 약화되는 국면",
-      "summary": "신한생각: 시간이 필요 금리 부담으로 강점이 약화되는 국면 Valuation & Risk – 시장금리 인하가 중요",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [
-        "earnings_estimate_down"
-      ],
-      "estimate_reasons": [
-        "이익 추정 하향/감소"
-      ],
-      "estimate_revisions": [],
-      "stance": "negative",
-      "score": 9.18,
-      "score_reasons": [
-        "종목분석 카테고리",
-        "공식 소스",
-        "목표가 포함",
-        "투자의견 포함",
-        "이익 추정 하향/감소"
-      ],
-      "score_breakdown": [
-        {
-          "label": "종목분석 카테고리",
-          "value": 3.2,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 1.58,
-          "kind": "boost"
-        },
-        {
-          "label": "이익 추정 하향",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "목표가",
-          "value": 0.7,
-          "kind": "boost"
-        },
-        {
-          "label": "투자의견",
-          "value": 0.6,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.25,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "earnings_estimate_down"
-      ],
-      "change_reasons": [
-        "이익 추정 하향/감소"
-      ],
-      "has_change_signal": true
-    },
-    {
-      "source": "shinhan_investment_official",
-      "category": "market",
-      "category_label": "시황정보",
-      "report_id": "shinhan-gicomment-944359",
-      "title": "마켓레이더 - 非반도체 온기 확산, KQ 사이드카&20일선 회복(11월 27일)",
-      "display_title": "마켓레이더 - 非반도체 온기 확산, KQ 사이드카&20일선 회복(11월 27일)",
-      "broker": "신한투자증권",
-      "published_date": "2026-11-27",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=944359",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355244",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355244",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 35,
-      "analyst": "강진혁",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "KOSPI는 1.5% 상승한 4,781.4p. KOSDAQ은 5.3% 상승한 690.1p.",
-      "summary": "KOSPI는 1.5% 상승한 4,781.4p. KOSDAQ은 5.3% 상승한 690.1p. KOSPI는 1.5% 상승한 4,781.4p.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [],
-      "estimate_reasons": [],
-      "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 8.94,
-      "score_reasons": [
-        "시황정보 카테고리",
-        "공식 소스",
-        "관심 섹터/키워드(반도체, 방산, 로봇)",
-        "우선 추적 증권사",
-        "핵심 키워드(반도체)"
-      ],
-      "score_breakdown": [
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.8,
-          "kind": "boost"
-        },
-        {
-          "label": "시황정보 카테고리",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 1.54,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "제목 키워드: 반도체",
-          "value": 0.5,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [
-        "반도체",
-        "방산",
-        "로봇"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
-    },
-    {
-      "source": "shinhan_investment_official",
-      "category": "industry",
-      "category_label": "산업분석",
-      "report_id": "shinhan-giindustry-944344",
-      "title": "자동차/철강금속; 공급과잉의 Deja Vu",
-      "display_title": "자동차/철강금속; 공급과잉의 Deja Vu",
-      "broker": "신한투자증권",
-      "published_date": "2026-11-27",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=giindustry&messageId=944344",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355235",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355235",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 69,
-      "analyst": "박광래",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "자동차에 닥친 공급과잉의 궤적과 대응의 한계 공급과잉 국면에서 살아남는 기업의 조건",
-      "summary": "자동차에 닥친 공급과잉의 궤적과 대응의 한계 공급과잉 국면에서 살아남는 기업의 조건 자동차에 닥친 공급과잉의 궤적과 대응의 한계",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [
-        "margin_estimate_up"
-      ],
-      "estimate_reasons": [
-        "마진율 추정 상승/개선"
-      ],
-      "estimate_revisions": [],
-      "stance": "positive",
-      "score": 8.34,
-      "score_reasons": [
-        "산업분석 카테고리",
-        "공식 소스",
-        "마진율 추정 상승/개선",
-        "우선 추적 증권사"
-      ],
-      "score_breakdown": [
-        {
-          "label": "산업분석 카테고리",
-          "value": 2.7,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 1.84,
-          "kind": "boost"
-        },
-        {
-          "label": "마진율 개선",
-          "value": 1.5,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [
-        "margin_estimate_up"
-      ],
-      "change_reasons": [
-        "마진율 추정 상승/개선"
-      ],
-      "has_change_signal": true
     }
   ],
   "reports": [
@@ -5631,7 +6425,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 140,
+      "views": 185,
       "analyst": "박현우",
       "target_price": "1,960원",
       "target_price_value": 1960,
@@ -5679,7 +6473,7 @@
       ],
       "estimate_revisions": [],
       "stance": "negative",
-      "score": 15.14,
+      "score": 15.26,
       "score_reasons": [
         "종목분석 카테고리",
         "공식 소스",
@@ -5700,7 +6494,7 @@
         },
         {
           "label": "조회수",
-          "value": 2.15,
+          "value": 2.27,
           "kind": "boost"
         },
         {
@@ -5806,7 +6600,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 147,
+      "views": 189,
       "analyst": "김아람",
       "target_price": "78,000원",
       "target_price_value": 78000,
@@ -5852,7 +6646,7 @@
       ],
       "estimate_revisions": [],
       "stance": "neutral",
-      "score": 14.56,
+      "score": 14.67,
       "score_reasons": [
         "종목분석 카테고리",
         "공식 소스",
@@ -5873,7 +6667,7 @@
         },
         {
           "label": "조회수",
-          "value": 2.17,
+          "value": 2.28,
           "kind": "boost"
         },
         {
@@ -5958,6 +6752,244 @@
     },
     {
       "source": "shinhan_investment_official",
+      "category": "market",
+      "category_label": "시황정보",
+      "report_id": "shinhan-gicomment-944375",
+      "title": "국내 주식 마감 시황 - 막혔던 유동성 숨통 트이며 온기 확산(11월 27일)",
+      "display_title": "국내 주식 마감 시황 - 막혔던 유동성 숨통 트이며 온기 확산(11월 27일)",
+      "broker": "신한투자증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=944375",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355259",
+      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355259",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 34,
+      "analyst": "강진혁",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "삼성전자 배당+증안펀드+中 부양책 등 유동성 숨통 KOSDAQ 매수 사이드카+20일선 회복+700p 안착",
+      "summary": "삼성전자 배당+증안펀드+中 부양책 등 유동성 숨통 KOSDAQ 매수 사이드카+20일선 회복+700p 안착 구리(+5.1%)·은(+9.3%) 등 원자재 가격 반등했고, NASDAQ 선물도 2% 가까이 상승했습니다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "estimate_revisions": [],
+      "stance": "neutral",
+      "score": 12.43,
+      "score_reasons": [
+        "시황정보 카테고리",
+        "공식 소스",
+        "관심 종목(삼성전자)",
+        "관심 섹터/키워드(반도체, 방산, 로봇)",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "관심 종목",
+          "value": 4.0,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 3.0,
+          "kind": "boost"
+        },
+        {
+          "label": "시황정보 카테고리",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 1.53,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.55,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        },
+        {
+          "label": "제목 패널티: 마감",
+          "value": -0.2,
+          "kind": "penalty"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "bbs2.shinhansec.com",
+        "pdf_host": "bbs2.shinhansec.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [
+        "삼성전자"
+      ],
+      "priority_keyword_matches": [
+        "반도체",
+        "방산",
+        "로봇",
+        "우주"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
+    {
+      "source": "shinhan_investment_official",
+      "category": "economy",
+      "category_label": "경제분석",
+      "report_id": "shinhan-gieconomy-944373",
+      "title": "신한 FX Check-up; 고용과 증시 변동성 주목. 원/달러 상단 제한",
+      "display_title": "신한 FX Check-up; 고용과 증시 변동성 주목. 원/달러 상단 제한",
+      "broker": "신한투자증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gieconomy&messageId=944373",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355257",
+      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355257",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 18,
+      "analyst": "최예찬",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "Review: 증시 급변동에 달러 등락. 외국인 매도에 원화 약세",
+      "summary": "Review: 증시 급변동에 달러 등락. 외국인 매도에 원화 약세 Preview: 고용과 증시 변동성 주목.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "estimate_revisions": [],
+      "stance": "neutral",
+      "score": 12.26,
+      "score_reasons": [
+        "경제분석 카테고리",
+        "공식 소스",
+        "관심 종목(삼성전자)",
+        "관심 섹터/키워드(반도체)",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "관심 종목",
+          "value": 4.0,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "경제분석 카테고리",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 1.26,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.55,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "bbs2.shinhansec.com",
+        "pdf_host": "bbs2.shinhansec.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [
+        "삼성전자"
+      ],
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
+    {
+      "source": "shinhan_investment_official",
       "category": "company",
       "category_label": "종목분석",
       "report_id": "shinhan-gicompanyanalyst-944350",
@@ -5972,7 +7004,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 68,
+      "views": 108,
       "analyst": "김지영",
       "target_price": null,
       "target_price_value": null,
@@ -6038,7 +7070,7 @@
       ],
       "estimate_revisions": [],
       "stance": "positive",
-      "score": 12.06,
+      "score": 12.26,
       "score_reasons": [
         "종목분석 카테고리",
         "공식 소스",
@@ -6054,7 +7086,7 @@
         },
         {
           "label": "조회수",
-          "value": 1.83,
+          "value": 2.03,
           "kind": "boost"
         },
         {
@@ -6131,6 +7163,118 @@
       "has_change_signal": true
     },
     {
+      "source": "mirae_asset_official",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "mirae-2344601",
+      "title": "한국&중국 마켓 클로징(11월 27일)",
+      "display_title": "한국&중국 마켓 클로징(11월 27일)",
+      "broker": "미래에셋증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344601&messageNumber=2558&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2148760.pdf?attachmentId=2148760",
+      "primary_url": "https://securities.miraeasset.com/bbs/download/2148760.pdf?attachmentId=2148760",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 0,
+      "analyst": "박수진",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "한국&중국 마켓 클로징(11월 27일) 코스닥 쏠림, 700pt 회복",
+      "summary": "한국&중국 마켓 클로징(11월 27일) 코스닥 쏠림, 700pt 회복 # 국내 마감",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "estimate_revisions": [],
+      "stance": "neutral",
+      "score": 11.45,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "공식 소스",
+        "관심 종목(삼성전자)",
+        "관심 섹터/키워드(반도체, 로봇, 우주)",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "관심 종목",
+          "value": 4.0,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.8,
+          "kind": "boost"
+        },
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 0.75,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.55,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "securities.miraeasset.com",
+        "pdf_host": "securities.miraeasset.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [
+        "삼성전자"
+      ],
+      "priority_keyword_matches": [
+        "반도체",
+        "로봇",
+        "우주"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
+    {
       "source": "shinhan_investment_official",
       "category": "industry",
       "category_label": "산업분석",
@@ -6146,7 +7290,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 23,
+      "views": 61,
       "analyst": "박광래",
       "target_price": null,
       "target_price_value": null,
@@ -6173,7 +7317,7 @@
       ],
       "estimate_revisions": [],
       "stance": "positive",
-      "score": 10.76,
+      "score": 11.19,
       "score_reasons": [
         "산업분석 카테고리",
         "공식 소스",
@@ -6193,13 +7337,13 @@
           "kind": "boost"
         },
         {
-          "label": "마진율 개선",
-          "value": 1.5,
+          "label": "조회수",
+          "value": 1.79,
           "kind": "boost"
         },
         {
-          "label": "조회수",
-          "value": 1.36,
+          "label": "마진율 개선",
+          "value": 1.5,
           "kind": "boost"
         },
         {
@@ -6278,7 +7422,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 43,
+      "views": 68,
       "analyst": "김선미",
       "target_price": "4,900원",
       "target_price_value": 4900,
@@ -6301,7 +7445,7 @@
       ],
       "estimate_revisions": [],
       "stance": "positive",
-      "score": 9.93,
+      "score": 10.13,
       "score_reasons": [
         "종목분석 카테고리",
         "공식 소스",
@@ -6316,13 +7460,13 @@
           "kind": "boost"
         },
         {
-          "label": "이익 추정 상향",
-          "value": 1.8,
+          "label": "조회수",
+          "value": 1.83,
           "kind": "boost"
         },
         {
-          "label": "조회수",
-          "value": 1.63,
+          "label": "이익 추정 상향",
+          "value": 1.8,
           "kind": "boost"
         },
         {
@@ -6388,6 +7532,127 @@
     },
     {
       "source": "shinhan_investment_official",
+      "category": "economy",
+      "category_label": "경제분석",
+      "report_id": "shinhan-gieconomy-944372",
+      "title": "신한 Econ Check-up; 견조한 내수에도 추가 물가 자극은 제한적",
+      "display_title": "신한 Econ Check-up; 견조한 내수에도 추가 물가 자극은 제한적",
+      "broker": "신한투자증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gieconomy&messageId=944372",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355256",
+      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355256",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 14,
+      "analyst": "하건형",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "Review: 양호한 성장이 되살린 물가, 긴축 경계 Preview: 견조한 내수에도 추가 물가 자극은 제한적",
+      "summary": "Review: 양호한 성장이 되살린 물가, 긴축 경계 Preview: 견조한 내수에도 추가 물가 자극은 제한적 Review: 양호한 성장이 되살린 물가, 긴축 경계",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "estimate_revisions": [],
+      "stance": "positive",
+      "score": 9.95,
+      "score_reasons": [
+        "경제분석 카테고리",
+        "공식 소스",
+        "관심 섹터/키워드(반도체)",
+        "이익 추정 상향/증가",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "경제분석 카테고리",
+          "value": 2.3,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 1.15,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.55,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "bbs2.shinhansec.com",
+        "pdf_host": "bbs2.shinhansec.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
+    },
+    {
+      "source": "shinhan_investment_official",
       "category": "company",
       "category_label": "종목분석",
       "report_id": "shinhan-gicompanyanalyst-944335",
@@ -6402,7 +7667,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 38,
+      "views": 57,
       "analyst": "김선미",
       "target_price": "4,500원",
       "target_price_value": 4500,
@@ -6425,7 +7690,7 @@
       ],
       "estimate_revisions": [],
       "stance": "negative",
-      "score": 9.18,
+      "score": 9.36,
       "score_reasons": [
         "종목분석 카테고리",
         "공식 소스",
@@ -6441,7 +7706,7 @@
         },
         {
           "label": "조회수",
-          "value": 1.58,
+          "value": 1.76,
           "kind": "boost"
         },
         {
@@ -6526,7 +7791,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 35,
+      "views": 50,
       "analyst": "강진혁",
       "target_price": null,
       "target_price_value": null,
@@ -6545,7 +7810,7 @@
       "estimate_reasons": [],
       "estimate_revisions": [],
       "stance": "neutral",
-      "score": 8.94,
+      "score": 9.1,
       "score_reasons": [
         "시황정보 카테고리",
         "공식 소스",
@@ -6566,7 +7831,7 @@
         },
         {
           "label": "조회수",
-          "value": 1.54,
+          "value": 1.7,
           "kind": "boost"
         },
         {
@@ -6759,7 +8024,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 69,
+      "views": 99,
       "analyst": "박광래",
       "target_price": null,
       "target_price_value": null,
@@ -6782,7 +8047,7 @@
       ],
       "estimate_revisions": [],
       "stance": "positive",
-      "score": 8.34,
+      "score": 8.5,
       "score_reasons": [
         "산업분석 카테고리",
         "공식 소스",
@@ -6797,7 +8062,7 @@
         },
         {
           "label": "조회수",
-          "value": 1.84,
+          "value": 2.0,
           "kind": "boost"
         },
         {
@@ -6872,7 +8137,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 54,
+      "views": 70,
       "analyst": "김선미",
       "target_price": "6,300원",
       "target_price_value": 6300,
@@ -6891,7 +8156,7 @@
       "estimate_reasons": [],
       "estimate_revisions": [],
       "stance": "neutral",
-      "score": 8.23,
+      "score": 8.35,
       "score_reasons": [
         "종목분석 카테고리",
         "공식 소스",
@@ -6907,7 +8172,7 @@
         },
         {
           "label": "조회수",
-          "value": 1.73,
+          "value": 1.85,
           "kind": "boost"
         },
         {
@@ -6968,6 +8233,109 @@
       "has_change_signal": false
     },
     {
+      "source": "mirae_asset_official",
+      "category": "invest",
+      "category_label": "투자정보",
+      "report_id": "mirae-2344603",
+      "title": "NAV Dashboard Weekly",
+      "display_title": "NAV Dashboard Weekly",
+      "broker": "미래에셋증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344603&messageNumber=2559&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2148762.pdf?attachmentId=2148762",
+      "primary_url": "https://securities.miraeasset.com/bbs/download/2148762.pdf?attachmentId=2148762",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 0,
+      "analyst": "류제현",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "관련종목 윤곽을 드러낸 제도, 반등한 지주회사",
+      "summary": "관련종목 윤곽을 드러낸 제도, 반등한 지주회사 커버리지 5사 평균 현할인 61.0% · 할인 최대 확대 LS +2.1%p · 최대 축소 CJ -4.5%p",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "estimate_revisions": [],
+      "stance": "neutral",
+      "score": 8.3,
+      "score_reasons": [
+        "투자정보 카테고리",
+        "공식 소스",
+        "관심 종목(SK하이닉스)",
+        "우선 추적 증권사",
+        "핵심 키워드(weekly)"
+      ],
+      "score_breakdown": [
+        {
+          "label": "관심 종목",
+          "value": 4.0,
+          "kind": "boost"
+        },
+        {
+          "label": "투자정보 카테고리",
+          "value": 2.5,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 0.75,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "제목 키워드: weekly",
+          "value": 0.4,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "securities.miraeasset.com",
+        "pdf_host": "securities.miraeasset.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [
+        "SK하이닉스"
+      ],
+      "priority_keyword_matches": [],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
+    {
       "source": "shinhan_investment_official",
       "category": "market",
       "category_label": "시황정보",
@@ -6983,7 +8351,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 49,
+      "views": 63,
       "analyst": "강진혁",
       "target_price": null,
       "target_price_value": null,
@@ -7002,7 +8370,7 @@
       "estimate_reasons": [],
       "estimate_revisions": [],
       "stance": "neutral",
-      "score": 7.89,
+      "score": 8.0,
       "score_reasons": [
         "시황정보 카테고리",
         "공식 소스",
@@ -7022,7 +8390,7 @@
         },
         {
           "label": "조회수",
-          "value": 1.69,
+          "value": 1.8,
           "kind": "boost"
         },
         {
@@ -7076,6 +8444,228 @@
     },
     {
       "source": "shinhan_investment_official",
+      "category": "market",
+      "category_label": "시황정보",
+      "report_id": "shinhan-gicomment-944368",
+      "title": "Shinhan China Weekly(11월 4주차); 반등을 가로막는 불확실성",
+      "display_title": "Shinhan China Weekly(11월 4주차); 반등을 가로막는 불확실성",
+      "broker": "신한투자증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=944368",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355250",
+      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355250",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 14,
+      "analyst": "신승웅",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "반등을 가로막는 불확실성 당국의 시장 안정화 조치와 젠슨 황의 엔비디아 CEO 복귀 소식에 반등을 시도했으나 혼조세 지속.",
+      "summary": "반등을 가로막는 불확실성 당국의 시장 안정화 조치와 젠슨 황의 엔비디아 CEO 복귀 소식에 반등을 시도했으나 혼조세 지속. AI 자본조달 의구심이 여전한 가운데 미국의 추가 관세 부과 우려까지 부각.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "estimate_revisions": [],
+      "stance": "neutral",
+      "score": 7.75,
+      "score_reasons": [
+        "시황정보 카테고리",
+        "공식 소스",
+        "관심 섹터/키워드(로봇)",
+        "우선 추적 증권사",
+        "핵심 키워드(weekly)"
+      ],
+      "score_breakdown": [
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "시황정보 카테고리",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 1.15,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "제목 키워드: weekly",
+          "value": 0.4,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "bbs2.shinhansec.com",
+        "pdf_host": "bbs2.shinhansec.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "로봇"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
+    {
+      "source": "mirae_asset_official",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "mirae-2344593",
+      "title": "글로벌/한국 ETF 시장 동향",
+      "display_title": "글로벌/한국 ETF 시장 동향",
+      "broker": "미래에셋증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344593&messageNumber=2554&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2148755.pdf?attachmentId=2148755",
+      "primary_url": "https://securities.miraeasset.com/bbs/download/2148755.pdf?attachmentId=2148755",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 0,
+      "analyst": "윤재홍",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "전반: 미국 증시는 젠슨 황의 엔비디아 CEO 복귀에 주 초 AI·반도체주를 중심으로 급반등했다. 24~25일에는 AI 투자 수익성 우려와 미국의 추가 관세 이슈가 겹치며 기술주가 다시 약세를 보였으나, 주 초 상승분을 지키며 전주 급락분을 일부 만회했다.",
+      "summary": "전반: 미국 증시는 젠슨 황의 엔비디아 CEO 복귀에 주 초 AI·반도체주를 중심으로 급반등했다. 24~25일에는 AI 투자 수익성 우려와 미국의 추가 관세 이슈가 겹치며 기술주가 다시 약세를 보였으나, 주 초 상승분을 지키며 전주 급락분을 일부 만회했다. 나스닥 100(QQQ US, +4.2%), 반도체(SMH US, +5.6%), 바이오(XBI US, +11.7%)도 강세였다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "estimate_revisions": [],
+      "stance": "neutral",
+      "score": 7.65,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "공식 소스",
+        "관심 섹터/키워드(반도체, 로봇)",
+        "우선 추적 증권사",
+        "핵심 키워드(etf)"
+      ],
+      "score_breakdown": [
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.6,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 0.75,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.55,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "제목 키워드: etf",
+          "value": 0.4,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "securities.miraeasset.com",
+        "pdf_host": "securities.miraeasset.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체",
+        "로봇"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
+    {
+      "source": "shinhan_investment_official",
       "category": "industry",
       "category_label": "산업분석",
       "report_id": "shinhan-giindustry-944342",
@@ -7090,7 +8680,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 94,
+      "views": 126,
       "analyst": "박현진",
       "target_price": null,
       "target_price_value": null,
@@ -7109,7 +8699,7 @@
       "estimate_reasons": [],
       "estimate_revisions": [],
       "stance": "neutral",
-      "score": 6.97,
+      "score": 7.1,
       "score_reasons": [
         "산업분석 카테고리",
         "공식 소스",
@@ -7123,7 +8713,7 @@
         },
         {
           "label": "조회수",
-          "value": 1.97,
+          "value": 2.1,
           "kind": "boost"
         },
         {
@@ -7139,6 +8729,315 @@
         {
           "label": "소스 가중치",
           "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "bbs2.shinhansec.com",
+        "pdf_host": "bbs2.shinhansec.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
+    {
+      "source": "mirae_asset_official",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "mirae-2344590",
+      "title": "Macro Week Ahead",
+      "display_title": "Macro Week Ahead",
+      "broker": "미래에셋증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344590&messageNumber=2553&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2148754.pdf?attachmentId=2148754",
+      "primary_url": "https://securities.miraeasset.com/bbs/download/2148754.pdf?attachmentId=2148754",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 0,
+      "analyst": "정형기",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "금융 환경 긴축에 주목하는 시장 (11/30~12/4) [Macro Issues]",
+      "summary": "금융 환경 긴축에 주목하는 시장 (11/30~12/4) [Macro Issues] 젠슨황 엔비디아",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "estimate_revisions": [],
+      "stance": "neutral",
+      "score": 6.75,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "공식 소스",
+        "관심 섹터/키워드(반도체)",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 0.75,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "securities.miraeasset.com",
+        "pdf_host": "securities.miraeasset.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
+    {
+      "source": "mirae_asset_official",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "mirae-2344599",
+      "title": "월스트리트파인더 Ep.216",
+      "display_title": "월스트리트파인더 Ep.216",
+      "broker": "미래에셋증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344599&messageNumber=2556&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2148758.pdf?attachmentId=2148758",
+      "primary_url": "https://securities.miraeasset.com/bbs/download/2148758.pdf?attachmentId=2148758",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 0,
+      "analyst": "김석환",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "■ Key Takeaways - 연준의 추가 긴축 가능성:",
+      "summary": "■ Key Takeaways - 연준의 추가 긴축 가능성: 10월 근원 PCE 전년동월비 3.3% 상승, 12월 25bp 금리 인상 가능성 99.2% 반영.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "estimate_revisions": [],
+      "stance": "neutral",
+      "score": 6.75,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "공식 소스",
+        "관심 섹터/키워드(반도체)",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "관심 섹터/키워드",
+          "value": 2.4,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 0.75,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "securities.miraeasset.com",
+        "pdf_host": "securities.miraeasset.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [
+        "반도체"
+      ],
+      "is_priority_match": true,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
+    {
+      "source": "shinhan_investment_official",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "shinhan-giindustry-944363",
+      "title": "신한 자동차/철강금속 Weekly (2026.11.27)",
+      "display_title": "신한 자동차/철강금속 Weekly (2026.11.27)",
+      "broker": "신한투자증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=giindustry&messageId=944363",
+      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355245",
+      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355245",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 21,
+      "analyst": "박광래",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "◆ Top Gainers (WoW %) - 자동차/타이어/부품: Stellantis (+8.6%), Ford (+8.3%)",
+      "summary": "◆ Top Gainers (WoW %) - 자동차/타이어/부품: Stellantis (+8.6%), Ford (+8.3%) - 철강/비철금속/광물: Lynas Rare Earths (+8%), 세아베스틸지주 (+6.3%)",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "estimate_revisions": [],
+      "stance": "neutral",
+      "score": 6.72,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "공식 소스",
+        "우선 추적 증권사",
+        "핵심 키워드(weekly)"
+      ],
+      "score_breakdown": [
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "조회수",
+          "value": 1.32,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.55,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "제목 키워드: weekly",
+          "value": 0.4,
           "kind": "boost"
         },
         {
@@ -7277,114 +9176,6 @@
       "has_change_signal": true
     },
     {
-      "source": "shinhan_investment_official",
-      "category": "market",
-      "category_label": "시황정보",
-      "report_id": "shinhan-gicomment-944368",
-      "title": "Shinhan China Weekly(11월 4주차); 반등을 가로막는 불확실성",
-      "display_title": "Shinhan China Weekly(11월 4주차); 반등을 가로막는 불확실성",
-      "broker": "신한투자증권",
-      "published_date": "2026-11-27",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=gicomment&messageId=944368",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355250",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355250",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 0,
-      "analyst": "신승웅",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "반등을 가로막는 불확실성 당국의 시장 안정화 조치와 젠슨 황의 엔비디아 CEO 복귀 소식에 반등을 시도했으나 혼조세 지속.",
-      "summary": "반등을 가로막는 불확실성 당국의 시장 안정화 조치와 젠슨 황의 엔비디아 CEO 복귀 소식에 반등을 시도했으나 혼조세 지속. AI 자본조달 의구심이 여전한 가운데 미국의 추가 관세 부과 우려까지 부각.",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [],
-      "estimate_reasons": [],
-      "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 6.6,
-      "score_reasons": [
-        "시황정보 카테고리",
-        "공식 소스",
-        "관심 섹터/키워드(로봇)",
-        "우선 추적 증권사",
-        "핵심 키워드(weekly)"
-      ],
-      "score_breakdown": [
-        {
-          "label": "관심 섹터/키워드",
-          "value": 2.4,
-          "kind": "boost"
-        },
-        {
-          "label": "시황정보 카테고리",
-          "value": 1.8,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "제목 키워드: weekly",
-          "value": 0.4,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.25,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [
-        "로봇"
-      ],
-      "is_priority_match": true,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
-    },
-    {
       "source": "korea_investment_official",
       "category": "industry",
       "category_label": "산업분석",
@@ -7491,111 +9282,6 @@
         "이익 추정 상향/증가"
       ],
       "has_change_signal": true
-    },
-    {
-      "source": "shinhan_investment_official",
-      "category": "industry",
-      "category_label": "산업분석",
-      "report_id": "shinhan-giindustry-944363",
-      "title": "신한 자동차/철강금속 Weekly (2026.11.27)",
-      "display_title": "신한 자동차/철강금속 Weekly (2026.11.27)",
-      "broker": "신한투자증권",
-      "published_date": "2026-11-27",
-      "detail_url": "https://bbs2.shinhansec.com/siw/board/message/view.file.pop.do?boardName=giindustry&messageId=944363",
-      "pdf_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355245",
-      "primary_url": "https://bbs2.shinhansec.com/board/message/file.pdf.do?attachmentId=355245",
-      "primary_url_label": "PDF",
-      "subject": null,
-      "subject_key": null,
-      "ticker": null,
-      "views": 7,
-      "analyst": "박광래",
-      "target_price": null,
-      "target_price_value": null,
-      "opinion": null,
-      "opinion_normalized": null,
-      "has_pdf_text": false,
-      "content_sources": [
-        "html"
-      ],
-      "excerpt": "◆ Top Gainers (WoW %) - 자동차/타이어/부품: Stellantis (+8.6%), Ford (+8.3%)",
-      "summary": "◆ Top Gainers (WoW %) - 자동차/타이어/부품: Stellantis (+8.6%), Ford (+8.3%) - 철강/비철금속/광물: Lynas Rare Earths (+8%), 세아베스틸지주 (+6.3%)",
-      "summary_engine": "rule",
-      "investment_memo": {},
-      "estimate_metrics": [],
-      "estimate_signal_types": [],
-      "estimate_reasons": [],
-      "estimate_revisions": [],
-      "stance": "neutral",
-      "score": 6.25,
-      "score_reasons": [
-        "산업분석 카테고리",
-        "공식 소스",
-        "우선 추적 증권사",
-        "핵심 키워드(weekly)"
-      ],
-      "score_breakdown": [
-        {
-          "label": "산업분석 카테고리",
-          "value": 2.7,
-          "kind": "boost"
-        },
-        {
-          "label": "우선 추적 증권사",
-          "value": 1.1,
-          "kind": "boost"
-        },
-        {
-          "label": "조회수",
-          "value": 0.85,
-          "kind": "boost"
-        },
-        {
-          "label": "본문 정보량",
-          "value": 0.55,
-          "kind": "boost"
-        },
-        {
-          "label": "소스 가중치",
-          "value": 0.45,
-          "kind": "boost"
-        },
-        {
-          "label": "제목 키워드: weekly",
-          "value": 0.4,
-          "kind": "boost"
-        },
-        {
-          "label": "애널리스트",
-          "value": 0.2,
-          "kind": "boost"
-        }
-      ],
-      "link_health": {
-        "status": "pdf_preferred",
-        "primary_kind": "pdf",
-        "has_pdf": true,
-        "has_detail": true,
-        "detail_host": "bbs2.shinhansec.com",
-        "pdf_host": "bbs2.shinhansec.com",
-        "note": "PDF 링크를 대표 링크로 사용합니다."
-      },
-      "priority_subject_matches": [],
-      "priority_keyword_matches": [],
-      "is_priority_match": false,
-      "previous_report_date": null,
-      "previous_target_price": null,
-      "previous_opinion": null,
-      "previous_analyst": null,
-      "target_price_change": null,
-      "target_price_change_pct": null,
-      "opinion_changed": false,
-      "opinion_change_direction": null,
-      "analyst_changed": false,
-      "coverage_initiated": false,
-      "change_types": [],
-      "change_reasons": [],
-      "has_change_signal": false
     },
     {
       "source": "korea_investment_official",
@@ -7716,7 +9402,7 @@
       "subject": null,
       "subject_key": null,
       "ticker": null,
-      "views": 26,
+      "views": 42,
       "analyst": "최예찬",
       "target_price": null,
       "target_price_value": null,
@@ -7735,7 +9421,7 @@
       "estimate_reasons": [],
       "estimate_revisions": [],
       "stance": "neutral",
-      "score": 5.71,
+      "score": 5.92,
       "score_reasons": [
         "경제분석 카테고리",
         "공식 소스",
@@ -7749,7 +9435,7 @@
         },
         {
           "label": "조회수",
-          "value": 1.41,
+          "value": 1.62,
           "kind": "boost"
         },
         {
@@ -7780,6 +9466,581 @@
         "has_detail": true,
         "detail_host": "bbs2.shinhansec.com",
         "pdf_host": "bbs2.shinhansec.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
+    {
+      "source": "mirae_asset_official",
+      "category": "invest",
+      "category_label": "투자정보",
+      "report_id": "mirae-2344575",
+      "title": "에이피알 (278470/매수)",
+      "display_title": "에이피알 (278470/매수)",
+      "broker": "미래에셋증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344575&messageNumber=2550&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2148750.pdf?attachmentId=2148750",
+      "primary_url": "https://securities.miraeasset.com/bbs/download/2148750.pdf?attachmentId=2148750",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 0,
+      "analyst": "조세은",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "관련종목 브랜드501 인수 코멘트: 브랜드 다각화 이상의 의미",
+      "summary": "관련종목 브랜드501 인수 코멘트: 브랜드 다각화 이상의 의미 - 11/26, 닥터멜락신 운영사 브랜드501의 지분 87.3%를 3,900억원에 인수 결정",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [
+        "earnings_estimate_up"
+      ],
+      "estimate_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "estimate_revisions": [],
+      "stance": "positive",
+      "score": 5.7,
+      "score_reasons": [
+        "투자정보 카테고리",
+        "공식 소스",
+        "이익 추정 상향/증가",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "투자정보 카테고리",
+          "value": 2.5,
+          "kind": "boost"
+        },
+        {
+          "label": "이익 추정 상향",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 0.75,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "securities.miraeasset.com",
+        "pdf_host": "securities.miraeasset.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [
+        "earnings_estimate_up"
+      ],
+      "change_reasons": [
+        "이익 추정 상향/증가"
+      ],
+      "has_change_signal": true
+    },
+    {
+      "source": "mirae_asset_official",
+      "category": "invest",
+      "category_label": "투자정보",
+      "report_id": "mirae-2344576",
+      "title": "[2027년 전망] ETF·파생 전략",
+      "display_title": "[2027년 전망] ETF·파생 전략",
+      "broker": "미래에셋증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344576&messageNumber=2551&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2148751.pdf?attachmentId=2148751",
+      "primary_url": "https://securities.miraeasset.com/bbs/download/2148751.pdf?attachmentId=2148751",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 0,
+      "analyst": "윤재홍",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "더 빠르게 [고빈도 매매] 외국인 거래 급증 및 국내 외국인 고빈도 매매는 ‘거래대금 내 외국인 비중 급증’ → ‘고비중 유지’ → ‘비중 급감하며 거래대금도 감소’ 패턴 증가.",
+      "summary": "더 빠르게 [고빈도 매매] 외국인 거래 급증 및 국내 외국인 고빈도 매매는 ‘거래대금 내 외국인 비중 급증’ → ‘고비중 유지’ → ‘비중 급감하며 거래대금도 감소’ 패턴 증가. 순매수 여부와 상관없이 성과 부진.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "estimate_revisions": [],
+      "stance": "neutral",
+      "score": 5.65,
+      "score_reasons": [
+        "투자정보 카테고리",
+        "공식 소스",
+        "우선 추적 증권사",
+        "핵심 키워드(전망, etf)"
+      ],
+      "score_breakdown": [
+        {
+          "label": "투자정보 카테고리",
+          "value": 2.5,
+          "kind": "boost"
+        },
+        {
+          "label": "제목 키워드: 전망",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 0.75,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "제목 키워드: etf",
+          "value": 0.4,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "securities.miraeasset.com",
+        "pdf_host": "securities.miraeasset.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
+    {
+      "source": "mirae_asset_official",
+      "category": "industry",
+      "category_label": "산업분석",
+      "report_id": "mirae-2344594",
+      "title": "[2027년 전망] 자동차/모빌리티 (비중확대/유지)",
+      "display_title": "[2027년 전망] 자동차/모빌리티 (비중확대/유지)",
+      "broker": "미래에셋증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344594&messageNumber=2555&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2148756.pdf?attachmentId=2148756",
+      "primary_url": "https://securities.miraeasset.com/bbs/download/2148756.pdf?attachmentId=2148756",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 0,
+      "analyst": "김진석",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "관련종목 **** 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
+      "summary": "관련종목 **** 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "estimate_revisions": [],
+      "stance": "neutral",
+      "score": 5.2,
+      "score_reasons": [
+        "산업분석 카테고리",
+        "공식 소스",
+        "우선 추적 증권사",
+        "핵심 키워드(전망)"
+      ],
+      "score_breakdown": [
+        {
+          "label": "산업분석 카테고리",
+          "value": 2.7,
+          "kind": "boost"
+        },
+        {
+          "label": "제목 키워드: 전망",
+          "value": 1.1,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 0.75,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "securities.miraeasset.com",
+        "pdf_host": "securities.miraeasset.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
+    {
+      "source": "mirae_asset_official",
+      "category": "invest",
+      "category_label": "투자정보",
+      "report_id": "mirae-2344604",
+      "title": "[Earnings Revision] 12월 1주차",
+      "display_title": "[Earnings Revision] 12월 1주차",
+      "broker": "미래에셋증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344604&messageNumber=2560&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2148763.pdf?attachmentId=2148763",
+      "primary_url": "https://securities.miraeasset.com/bbs/download/2148763.pdf?attachmentId=2148763",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 0,
+      "analyst": "유명간",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "**** 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
+      "summary": "**** 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "estimate_revisions": [],
+      "stance": "neutral",
+      "score": 3.9,
+      "score_reasons": [
+        "투자정보 카테고리",
+        "공식 소스",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "투자정보 카테고리",
+          "value": 2.5,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 0.75,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "securities.miraeasset.com",
+        "pdf_host": "securities.miraeasset.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
+    {
+      "source": "mirae_asset_official",
+      "category": "market",
+      "category_label": "시황정보",
+      "report_id": "mirae-2344600",
+      "title": "2026년 12월 주요 경제지표 및 일정",
+      "display_title": "2026년 12월 주요 경제지표 및 일정",
+      "broker": "미래에셋증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344600&messageNumber=2557&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2148759.pdf?attachmentId=2148759",
+      "primary_url": "https://securities.miraeasset.com/bbs/download/2148759.pdf?attachmentId=2148759",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 0,
+      "analyst": "김석환",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": "2026년 12월 주요 경제지표 및 일정 # 12월 주요 일정",
+      "summary": "2026년 12월 주요 경제지표 및 일정 # 12월 주요 일정 4일 미국 폴리실리콘 파생상품 15% 관세 부과",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "estimate_revisions": [],
+      "stance": "neutral",
+      "score": 3.45,
+      "score_reasons": [
+        "시황정보 카테고리",
+        "공식 소스",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "시황정보 카테고리",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 0.75,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "본문 정보량",
+          "value": 0.25,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "securities.miraeasset.com",
+        "pdf_host": "securities.miraeasset.com",
+        "note": "PDF 링크를 대표 링크로 사용합니다."
+      },
+      "priority_subject_matches": [],
+      "priority_keyword_matches": [],
+      "is_priority_match": false,
+      "previous_report_date": null,
+      "previous_target_price": null,
+      "previous_opinion": null,
+      "previous_analyst": null,
+      "target_price_change": null,
+      "target_price_change_pct": null,
+      "opinion_changed": false,
+      "opinion_change_direction": null,
+      "analyst_changed": false,
+      "coverage_initiated": false,
+      "change_types": [],
+      "change_reasons": [],
+      "has_change_signal": false
+    },
+    {
+      "source": "mirae_asset_official",
+      "category": "market",
+      "category_label": "시황정보",
+      "report_id": "mirae-2344589",
+      "title": "마켓 뷰 (11월 27일)",
+      "display_title": "마켓 뷰 (11월 27일)",
+      "broker": "미래에셋증권",
+      "published_date": "2026-11-27",
+      "detail_url": "https://securities.miraeasset.com/bbs/board/message/view.do?messageId=2344589&messageNumber=2552&categoryId=1521",
+      "pdf_url": "https://securities.miraeasset.com/bbs/download/2148753.pdf?attachmentId=2148753",
+      "primary_url": "https://securities.miraeasset.com/bbs/download/2148753.pdf?attachmentId=2148753",
+      "primary_url_label": "PDF",
+      "subject": null,
+      "subject_key": null,
+      "ticker": null,
+      "views": 0,
+      "analyst": "김석환",
+      "target_price": null,
+      "target_price_value": null,
+      "opinion": null,
+      "opinion_normalized": null,
+      "has_pdf_text": false,
+      "content_sources": [
+        "html"
+      ],
+      "excerpt": ".",
+      "summary": ".",
+      "summary_engine": "rule",
+      "investment_memo": {},
+      "estimate_metrics": [],
+      "estimate_signal_types": [],
+      "estimate_reasons": [],
+      "estimate_revisions": [],
+      "stance": "neutral",
+      "score": 3.2,
+      "score_reasons": [
+        "시황정보 카테고리",
+        "공식 소스",
+        "우선 추적 증권사"
+      ],
+      "score_breakdown": [
+        {
+          "label": "시황정보 카테고리",
+          "value": 1.8,
+          "kind": "boost"
+        },
+        {
+          "label": "우선 추적 증권사",
+          "value": 0.75,
+          "kind": "boost"
+        },
+        {
+          "label": "소스 가중치",
+          "value": 0.45,
+          "kind": "boost"
+        },
+        {
+          "label": "애널리스트",
+          "value": 0.2,
+          "kind": "boost"
+        }
+      ],
+      "link_health": {
+        "status": "pdf_preferred",
+        "primary_kind": "pdf",
+        "has_pdf": true,
+        "has_detail": true,
+        "detail_host": "securities.miraeasset.com",
+        "pdf_host": "securities.miraeasset.com",
         "note": "PDF 링크를 대표 링크로 사용합니다."
       },
       "priority_subject_matches": [],
